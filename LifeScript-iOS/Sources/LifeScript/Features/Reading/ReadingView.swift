@@ -271,7 +271,7 @@ struct StoryNodeView: View {
                             .foregroundStyle(Color.textTertiary)
                     }
                 }
-                Text(""\(node.content)"")
+                Text("\u{201C}\(node.content)\u{201D}")
                     .font(.readingBody)
                     .foregroundStyle(Color.textPrimary)
                     .lineSpacing(6)

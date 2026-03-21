@@ -16,7 +16,7 @@ final class CoreFlowUITests: XCTestCase {
     }
 
     func test_navigateToBookDetail() {
-        let bookCard = app.staticTexts["龙隐都市"]
+        let bookCard = app.staticTexts["龙隐都市"].firstMatch
         XCTAssertTrue(bookCard.waitForExistence(timeout: 5))
         bookCard.tap()
 
@@ -27,17 +27,20 @@ final class CoreFlowUITests: XCTestCase {
 
     func test_startReading_showsChapterContent() {
         // Navigate to book detail
-        let bookCard = app.staticTexts["龙隐都市"]
+        let bookCard = app.staticTexts["龙隐都市"].firstMatch
         XCTAssertTrue(bookCard.waitForExistence(timeout: 5))
         bookCard.tap()
 
-        // Start reading
+        // Wait for chapters to load, then tap start reading
+        let chapterRow = app.staticTexts["宗祠之辱"]
+        XCTAssertTrue(chapterRow.waitForExistence(timeout: 5), "Expected chapter list to load")
+
         let startButton = app.buttons["开始阅读"]
         XCTAssertTrue(startButton.waitForExistence(timeout: 3))
         startButton.tap()
 
-        // Should see chapter content
-        let chapterTitle = app.staticTexts["宗祠之辱"]
-        XCTAssertTrue(chapterTitle.waitForExistence(timeout: 5), "Expected chapter title to appear")
+        // Should see chapter header in reading view
+        let chapterNumber = app.staticTexts["第1章"]
+        XCTAssertTrue(chapterNumber.waitForExistence(timeout: 5), "Expected reading view to appear")
     }
 }

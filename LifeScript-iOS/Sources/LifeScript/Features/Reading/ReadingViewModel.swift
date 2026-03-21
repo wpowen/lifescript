@@ -42,7 +42,7 @@ final class ReadingViewModel {
         self.book = book
         self.stats = book.initialStats
         self.statsBeforeChapter = book.initialStats
-        self.relationships = book.characters.map { char in
+        let initialRelationships = book.characters.map { char in
             RelationshipState(
                 characterId: char.id,
                 trust: 30, affection: 20, hostility: 10,
@@ -51,7 +51,8 @@ final class ReadingViewModel {
                 unlockedEvents: []
             )
         }
-        self.relationshipsBeforeChapter = relationships
+        self.relationships = initialRelationships
+        self.relationshipsBeforeChapter = initialRelationships
         self.contentLoader = contentLoader
         self._pendingChapterId = chapterId
     }
