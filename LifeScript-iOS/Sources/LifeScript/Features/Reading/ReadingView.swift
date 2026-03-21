@@ -19,8 +19,28 @@ struct ReadingView: View {
                 ProgressView()
                     .tint(Color.accentGold)
 
-            case .reading, .choosing:
-                readingContent
+            case .reading:
+                readingScrollContent
+                    .onTapGesture {
+                        withAnimation(.easeOut(duration: 0.3)) {
+                            viewModel.tapToAdvance()
+                        }
+                    }
+
+            case .choosing(let choiceNode):
+                ZStack(alignment: .bottom) {
+                    readingScrollContent
+                    ChoiceOverlayView(
+                        choiceNode: choiceNode,
+                        book: viewModel.book,
+                        currentStats: viewModel.stats
+                    ) { choice in
+                        withAnimation(.easeOut(duration: 0.3)) {
+                            viewModel.selectChoice(choice, in: choiceNode)
+                        }
+                    }
+                }
+                .ignoresSafeArea(edges: .bottom)
 
             case .chapterEnd:
                 chapterEndOverlay
@@ -38,11 +58,34 @@ struct ReadingView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { readingToolbar }
         .task { await viewModel.onAppear(modelContext: modelContext) }
+        .safeAreaInset(edge: .top, spacing: 0) {
+            readingProgressBar
+        }
     }
 
-    // MARK: - Reading Content
+    // MARK: - Progress Bar
 
-    private var readingContent: some View {
+    @ViewBuilder
+    private var readingProgressBar: some View {
+        switch viewModel.state {
+        case .reading, .choosing:
+            GeometryReader { geo in
+                ZStack(alignment: .leading) {
+                    Color.surfacePrimary
+                    Color.accentGold
+                        .frame(width: geo.size.width * viewModel.readingProgress)
+                        .animation(.easeOut(duration: 0.4), value: viewModel.readingProgress)
+                }
+            }
+            .frame(height: 2)
+        default:
+            EmptyView()
+        }
+    }
+
+    // MARK: - Reading Scroll Content
+
+    private var readingScrollContent: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: .spacing16) {
@@ -56,30 +99,24 @@ struct ReadingView: View {
                         StoryNodeView(
                             node: node,
                             book: viewModel.book,
-                            onChoiceSelected: { choice, choiceNode in
-                                viewModel.selectChoice(choice, in: choiceNode)
-                            }
+                            onChoiceSelected: nil // choices handled by ChoiceOverlayView
                         )
                         .id(node.id)
                         .transition(.opacity.combined(with: .move(edge: .bottom)))
                     }
 
-                    // Tap to continue indicator
+                    // Tap to continue indicator (only in .reading state)
                     if case .reading = viewModel.state {
                         tapToContinueHint
                             .id("tap_hint")
                     }
 
-                    Spacer(minLength: 100)
+                    Spacer(minLength: 120)
                 }
                 .padding(.horizontal, .spacing16)
                 .padding(.top, .spacing16)
             }
-            .onTapGesture {
-                withAnimation(.easeOut(duration: 0.3)) {
-                    viewModel.tapToAdvance()
-                }
-                // Scroll to latest node
+            .onChange(of: viewModel.displayedNodes.count) { _, _ in
                 if let lastId = viewModel.displayedNodes.last?.id {
                     withAnimation {
                         proxy.scrollTo(lastId, anchor: .bottom)
@@ -135,7 +172,6 @@ struct ReadingView: View {
         VStack(spacing: .spacing24) {
             Spacer()
 
-            // Chapter complete indicator
             VStack(spacing: .spacing12) {
                 Image(systemName: "checkmark.seal.fill")
                     .font(.system(size: 44))
@@ -237,9 +273,10 @@ struct StoryNodeView: View {
         case .dialogue(let dialogueNode):
             dialogueView(dialogueNode)
         case .choice(let choiceNode):
-            choiceView(choiceNode)
+            choiceHistoryView(choiceNode)
         case .notification(let notificationNode):
             notificationView(notificationNode)
+                .transition(.opacity.combined(with: .scale(scale: 0.95)))
         }
     }
 
@@ -311,42 +348,32 @@ struct StoryNodeView: View {
         .padding(.vertical, .spacing4)
     }
 
-    // MARK: - Choice
+    // MARK: - Choice (history view — shown after selection)
 
-    private func choiceView(_ node: ChoiceNode) -> some View {
-        VStack(spacing: .spacing12) {
-            Text(node.prompt)
-                .font(.labelLarge)
-                .foregroundStyle(Color.accentGold)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .multilineTextAlignment(.center)
-                .padding(.vertical, .spacing8)
-
-            ForEach(node.choices) { choice in
-                Button {
-                    onChoiceSelected?(choice, node)
-                } label: {
-                    VStack(alignment: .leading, spacing: .spacing4) {
-                        Text(choice.text)
-                            .font(.choiceTitle)
-                        if let desc = choice.description {
-                            Text(desc)
-                                .font(.captionLarge)
-                                .foregroundStyle(Color.textTertiary)
-                        }
-                        HStack(spacing: .spacing6) {
-                            Image(systemName: choice.satisfactionType.iconName)
-                                .font(.captionSmall)
-                            Text(choice.satisfactionType.displayName)
-                                .font(.captionSmall)
-                        }
-                        .foregroundStyle(Color.textTertiary)
-                    }
-                }
-                .buttonStyle(ChoiceButtonStyle())
+    private func choiceHistoryView(_ node: ChoiceNode) -> some View {
+        VStack(alignment: .leading, spacing: .spacing6) {
+            HStack(spacing: .spacing6) {
+                Image(systemName: "hand.tap")
+                    .font(.captionSmall)
+                    .foregroundStyle(Color.accentGold.opacity(0.6))
+                Text("选择节点")
+                    .font(.captionSmall)
+                    .foregroundStyle(Color.textTertiary)
             }
+            Text(node.prompt)
+                .font(.captionLarge)
+                .foregroundStyle(Color.textTertiary)
+                .italic()
         }
+        .padding(.horizontal, .spacing12)
         .padding(.vertical, .spacing8)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.surfacePrimary.opacity(0.5))
+        .clipShape(RoundedRectangle(cornerRadius: .radiusSmall))
+        .overlay(
+            RoundedRectangle(cornerRadius: .radiusSmall)
+                .stroke(Color.accentGold.opacity(0.2), lineWidth: 1)
+        )
     }
 
     // MARK: - Notification

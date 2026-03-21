@@ -32,6 +32,21 @@ final class ReadingViewModel {
     private let contentLoader: ContentProviding
     private var modelContext: ModelContext?
 
+    // MARK: - Progress
+
+    var readingProgress: Double {
+        guard !allNodes.isEmpty else { return 0 }
+        return Double(min(currentNodeIndex, allNodes.count)) / Double(allNodes.count)
+    }
+
+    var narrativeNodeCount: Int {
+        allNodes.filter {
+            if case .text = $0 { return true }
+            if case .dialogue = $0 { return true }
+            return false
+        }.count
+    }
+
     // MARK: - Init
 
     init(

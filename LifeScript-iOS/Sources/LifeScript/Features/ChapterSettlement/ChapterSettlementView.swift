@@ -72,13 +72,22 @@ struct ChapterSettlementView: View {
                     .foregroundStyle(Color.textTertiary)
             } else {
                 ForEach(choices) { choice in
-                    HStack(spacing: .spacing8) {
+                    HStack(alignment: .top, spacing: .spacing8) {
                         Circle()
                             .fill(Color.accentGold)
                             .frame(width: 8, height: 8)
-                        Text(choice.selectedChoiceId)
-                            .font(.bodyMedium)
-                            .foregroundStyle(Color.textPrimary)
+                            .padding(.top, 6)
+                        VStack(alignment: .leading, spacing: .spacing2) {
+                            Text(choiceText(for: choice))
+                                .font(.bodyMedium)
+                                .foregroundStyle(Color.textPrimary)
+                            if let prompt = choicePrompt(for: choice) {
+                                Text(prompt)
+                                    .font(.captionLarge)
+                                    .foregroundStyle(Color.textTertiary)
+                                    .lineLimit(1)
+                            }
+                        }
                     }
                 }
             }
@@ -197,6 +206,29 @@ struct ChapterSettlementView: View {
     }
 
     // MARK: - Helpers
+
+    private func choiceText(for record: UserChoiceRecord) -> String {
+        chapter.nodes
+            .compactMap { node -> ChoiceNode? in
+                if case .choice(let c) = node { return c }
+                return nil
+            }
+            .flatMap { $0.choices }
+            .first { $0.id == record.selectedChoiceId }
+            .map { $0.text } ?? record.selectedChoiceId
+    }
+
+    private func choicePrompt(for record: UserChoiceRecord) -> String? {
+        chapter.nodes
+            .compactMap { node -> ChoiceNode? in
+                if case .choice(let c) = node { return c }
+                return nil
+            }
+            .first { choiceNode in
+                choiceNode.choices.contains { $0.id == record.selectedChoiceId }
+            }
+            .map { $0.prompt }
+    }
 
     private func sectionTitle(_ title: String, icon: String) -> some View {
         Label(title, systemImage: icon)

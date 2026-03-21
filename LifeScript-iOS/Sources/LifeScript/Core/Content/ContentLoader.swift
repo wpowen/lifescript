@@ -1,6 +1,7 @@
 import Foundation
 
-/// Loads book and chapter content from bundled JSON files.
+/// Loads book and chapter content from bundled resources.
+/// Supports JSON files (existing) and Lifescript DSL files (.ls).
 /// Designed for easy migration to REST API in future versions.
 protocol ContentProviding: Sendable {
     func listBooks() async throws -> [Book]
@@ -37,10 +38,94 @@ final class BundledContentLoader: ContentProviding {
     }
 
     func loadAllChapters(bookId: String) async throws -> [Chapter] {
-        try loadJSON(filename: "chapters_\(bookId)", type: [Chapter].self)
+        // Prefer DSL format (.ls) over JSON for richer authoring experience.
+        // Falls back to JSON if no .ls file exists.
+        if let dsLChapters = try? await loadChaptersFromDSL(bookId: bookId) {
+            return dsLChapters
+        }
+        return try loadJSON(filename: "chapters_\(bookId)", type: [Chapter].self)
     }
 
-    // MARK: - Private
+    // MARK: - DSL Loading
+
+    /// Loads all chapters for a book from a Lifescript DSL file.
+    /// The DSL file is named `chapters_<bookId>.ls` in the bundle.
+    private func loadChaptersFromDSL(bookId: String) async throws -> [Chapter] {
+        let filename = "chapters_\(bookId)"
+        guard let url = Bundle.main.url(forResource: filename, withExtension: "ls") else {
+            throw ContentError.fileNotFound("\(filename).ls")
+        }
+
+        let content = try String(contentsOf: url, encoding: .utf8)
+        let book = try await loadBook(id: bookId)
+
+        return try await parseDSLContent(content, book: book)
+    }
+
+    /// Parses a multi-chapter DSL file.
+    /// Chapters are separated by `===` dividers.
+    private func parseDSLContent(_ content: String, book: Book) async throws -> [Chapter] {
+        let chapterBlocks = content.components(separatedBy: "\n===\n")
+        var chapters: [Chapter] = []
+
+        for block in chapterBlocks {
+            let trimmed = block.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !trimmed.isEmpty else { continue }
+
+            let metadata = try extractMetadata(from: trimmed, book: book)
+            let parser = LifescriptParser()
+            let chapter = try await parser.parse(content: trimmed, metadata: metadata)
+            chapters.append(chapter)
+        }
+
+        return chapters.sorted { $0.number < $1.number }
+    }
+
+    /// Extracts chapter metadata from the header lines of a DSL block.
+    private func extractMetadata(from block: String, book: Book) throws -> NovelMetadata {
+        let lines = block.components(separatedBy: "\n")
+
+        // First non-empty line must be: # chapterId | number | Title
+        guard let headerLine = lines.first(where: { !$0.trimmingCharacters(in: .whitespaces).isEmpty }),
+              headerLine.hasPrefix("# ") else {
+            throw NovelParseError.malformedHeader(lines.first ?? "")
+        }
+
+        let headerContent = String(headerLine.dropFirst(2))
+        let headerParts = headerContent.components(separatedBy: "|").map { $0.trimmingCharacters(in: .whitespaces) }
+
+        guard headerParts.count >= 3,
+              let chapterNumber = Int(headerParts[1]) else {
+            throw NovelParseError.malformedHeader(headerLine)
+        }
+
+        let chapterId = headerParts[0]
+        let title = headerParts[2]
+
+        var isPaid = false
+        var hook: String? = nil
+
+        for line in lines {
+            let trimmed = line.trimmingCharacters(in: .whitespaces)
+            if trimmed.hasPrefix("paid:") {
+                isPaid = trimmed.dropFirst("paid:".count).trimmingCharacters(in: .whitespaces) == "true"
+            } else if trimmed.hasPrefix("hook:") {
+                hook = String(trimmed.dropFirst("hook:".count)).trimmingCharacters(in: .whitespaces)
+            }
+        }
+
+        return NovelMetadata(
+            bookId: book.id,
+            chapterId: chapterId,
+            chapterNumber: chapterNumber,
+            title: title,
+            isPaid: isPaid,
+            nextChapterHook: hook,
+            characters: book.characters
+        )
+    }
+
+    // MARK: - JSON Loading
 
     private func loadJSON<T: Decodable>(filename: String, type: T.Type) throws -> T {
         guard let url = Bundle.main.url(forResource: filename, withExtension: "json") else {
