@@ -2,7 +2,10 @@ import Foundation
 
 /// A single unit of story content within a chapter.
 /// Chapters are composed of an ordered list of story nodes.
-enum StoryNode: Codable, Identifiable, Sendable {
+///
+/// JSON format uses case name as key with payload as value:
+/// `{"text": {"id": "...", "content": "..."}}`
+enum StoryNode: Identifiable, Sendable {
     /// Plain narrative text
     case text(TextNode)
 
@@ -21,6 +24,48 @@ enum StoryNode: Codable, Identifiable, Sendable {
         case .dialogue(let n): return n.id
         case .choice(let n): return n.id
         case .notification(let n): return n.id
+        }
+    }
+}
+
+// MARK: - Custom Codable (JSON uses {"caseName": {payload}} format)
+
+extension StoryNode: Codable {
+    private enum CodingKeys: String, CodingKey {
+        case text, dialogue, choice, notification
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        if let value = try container.decodeIfPresent(TextNode.self, forKey: .text) {
+            self = .text(value)
+        } else if let value = try container.decodeIfPresent(DialogueNode.self, forKey: .dialogue) {
+            self = .dialogue(value)
+        } else if let value = try container.decodeIfPresent(ChoiceNode.self, forKey: .choice) {
+            self = .choice(value)
+        } else if let value = try container.decodeIfPresent(NotificationNode.self, forKey: .notification) {
+            self = .notification(value)
+        } else {
+            throw DecodingError.dataCorrupted(
+                DecodingError.Context(
+                    codingPath: decoder.codingPath,
+                    debugDescription: "StoryNode must contain one of: text, dialogue, choice, notification"
+                )
+            )
+        }
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        switch self {
+        case .text(let value):
+            try container.encode(value, forKey: .text)
+        case .dialogue(let value):
+            try container.encode(value, forKey: .dialogue)
+        case .choice(let value):
+            try container.encode(value, forKey: .choice)
+        case .notification(let value):
+            try container.encode(value, forKey: .notification)
         }
     }
 }
