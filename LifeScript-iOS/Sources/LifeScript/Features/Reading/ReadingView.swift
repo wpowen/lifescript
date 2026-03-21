@@ -131,19 +131,21 @@ struct ReadingView: View {
                     .italic()
             }
 
-            Button("查看本章结算") {
-                coordinator.presentSheet(.chapterSettlement(
-                    book: viewModel.book,
-                    chapter: viewModel.currentChapter!,
-                    stats: viewModel.stats,
-                    previousStats: viewModel.statsBeforeChapter,
-                    relationships: viewModel.relationships,
-                    previousRelationships: viewModel.relationshipsBeforeChapter,
-                    choices: viewModel.chapterChoices
-                ))
+            if let chapter = viewModel.currentChapter {
+                Button("查看本章结算") {
+                    coordinator.presentSheet(.chapterSettlement(
+                        book: viewModel.book,
+                        chapter: chapter,
+                        stats: viewModel.stats,
+                        previousStats: viewModel.statsBeforeChapter,
+                        relationships: viewModel.relationships,
+                        previousRelationships: viewModel.relationshipsBeforeChapter,
+                        choices: viewModel.chapterChoices
+                    ))
+                }
+                .buttonStyle(.primary)
+                .padding(.horizontal, .spacing16)
             }
-            .buttonStyle(.primary)
-            .padding(.horizontal, .spacing16)
 
             Button("继续下一章") {
                 Task { await viewModel.proceedToNextChapter() }

@@ -18,7 +18,9 @@ targets:
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - Sources/LifeScript
+      - path: Sources/LifeScript
+        excludes:
+          - "Resources/**"
     resources:
       - Sources/LifeScript/Resources
     info:

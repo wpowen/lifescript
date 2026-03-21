@@ -1,10 +1,6 @@
 import SwiftUI
 
 extension Color {
-    // MARK: - Brand Colors
-    static let primaryBrand = Color("PrimaryBrand", bundle: .main)
-    static let secondaryBrand = Color("SecondaryBrand", bundle: .main)
-
     // MARK: - Semantic Colors (Dark-first atmospheric theme)
     static let backgroundPrimary = Color(light: .hex(0x0D0D12), dark: .hex(0x0D0D12))
     static let backgroundSecondary = Color(light: .hex(0x16161F), dark: .hex(0x16161F))

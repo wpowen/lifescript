@@ -23,10 +23,12 @@ struct BookshelfView: View {
                     LazyVStack(spacing: .spacing12) {
                         ForEach(readingBooks) { bookProgress in
                             if let book = allBooks.first(where: { $0.id == bookProgress.bookId }) {
-                                BookshelfCard(book: book, progress: bookProgress)
-                                    .onTapGesture {
-                                        coordinator.navigate(to: .reading(book, bookProgress.currentChapterId))
-                                    }
+                                BookshelfCard(book: book, progress: bookProgress) {
+                                    coordinator.navigate(to: .reading(book, bookProgress.currentChapterId))
+                                }
+                                .onTapGesture {
+                                    coordinator.navigate(to: .reading(book, bookProgress.currentChapterId))
+                                }
                             }
                         }
                     }
@@ -55,6 +57,7 @@ struct BookshelfView: View {
 struct BookshelfCard: View {
     let book: Book
     let progress: ReadingProgress
+    var onContinue: (() -> Void)?
 
     var body: some View {
         HStack(spacing: .spacing12) {
@@ -91,7 +94,7 @@ struct BookshelfCard: View {
 
             Spacer()
 
-            Button("继续") {}
+            Button("继续") { onContinue?() }
                 .buttonStyle(.secondary)
         }
         .padding(.spacing12)

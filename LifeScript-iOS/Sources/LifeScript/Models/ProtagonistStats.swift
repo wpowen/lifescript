@@ -1,7 +1,7 @@
 import Foundation
 
 /// The protagonist's current attribute values
-struct ProtagonistStats: Codable, Sendable, Equatable {
+struct ProtagonistStats: Codable, Hashable, Sendable {
     var combat: Int      // 战力
     var fame: Int        // 名望
     var strategy: Int    // 谋略
