@@ -11,7 +11,7 @@ struct EmptyStateView: View {
         VStack(spacing: .spacing16) {
             Image(systemName: symbol)
                 .font(.system(size: 56))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.accentGold)
             Text(title)
                 .font(.titleMedium)
                 .foregroundStyle(Color.textPrimary)
@@ -25,7 +25,8 @@ struct EmptyStateView: View {
                     .padding(.top, .spacing8)
             }
         }
-        .padding(.spacing32)
+        .scenePanel(accent: .accentGold, padding: .spacing32)
+        .padding(.spacing16)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

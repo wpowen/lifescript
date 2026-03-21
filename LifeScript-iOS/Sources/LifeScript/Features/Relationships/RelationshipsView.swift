@@ -9,26 +9,35 @@ struct RelationshipsView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(spacing: .spacing16) {
-                    ForEach(book.characters) { character in
-                        if let relationship = relationships.first(where: { $0.characterId == character.id }) {
-                            CharacterRelationshipCard(
-                                character: character,
-                                relationship: relationship,
-                                isExpanded: selectedCharacterId == character.id
-                            )
-                            .onTapGesture {
-                                withAnimation(.easeInOut(duration: 0.25)) {
-                                    selectedCharacterId = selectedCharacterId == character.id ? nil : character.id
+            ZStack {
+                SceneBackdrop(palette: book.palette)
+
+                ScrollView {
+                    VStack(alignment: .leading, spacing: .spacing24) {
+                        headerSection
+
+                        VStack(spacing: .spacing16) {
+                            ForEach(book.characters) { character in
+                                if let relationship = relationships.first(where: { $0.characterId == character.id }) {
+                                    CharacterRelationshipCard(
+                                        character: character,
+                                        relationship: relationship,
+                                        isExpanded: selectedCharacterId == character.id,
+                                        onToggle: {
+                                            withAnimation(.spring(response: 0.28, dampingFraction: 0.86)) {
+                                                selectedCharacterId = selectedCharacterId == character.id ? nil : character.id
+                                            }
+                                        }
+                                    )
                                 }
                             }
                         }
                     }
+                    .padding(.horizontal, .spacing16)
+                    .padding(.top, .spacing20)
+                    .padding(.bottom, .spacing40)
                 }
-                .padding(.spacing16)
             }
-            .background(Color.backgroundPrimary)
             .navigationTitle("角色关系")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -39,79 +48,96 @@ struct RelationshipsView: View {
             }
         }
     }
-}
 
-// MARK: - Character Relationship Card
+    private var headerSection: some View {
+        VStack(alignment: .leading, spacing: .spacing16) {
+            ScenePageHeader(
+                eyebrow: "局势面板",
+                title: "你和每个关键角色的关系，正在往哪边走",
+                subtitle: "关系页不该只是数值堆叠，而要让用户一眼看懂谁在靠近、谁在疏远、谁已经开始危险。",
+                accent: book.palette.secondary
+            )
+
+            HStack(spacing: .spacing10) {
+                SceneMetricPill(title: "关键角色", value: "\(book.characters.count) 位", systemImage: "person.3.fill", color: book.palette.primary)
+                SceneMetricPill(title: "当前焦点", value: selectedCharacterName, systemImage: "eye.fill", color: book.palette.secondary)
+                SceneMetricPill(title: "关系目标", value: "明确可读", systemImage: "scope", color: book.palette.tertiary)
+            }
+        }
+    }
+
+    private var selectedCharacterName: String {
+        guard let selectedCharacterId else { return "全部" }
+        return book.characters.first(where: { $0.id == selectedCharacterId })?.name ?? "全部"
+    }
+}
 
 struct CharacterRelationshipCard: View {
     let character: Character
     let relationship: RelationshipState
     var isExpanded: Bool = false
+    var onToggle: () -> Void
 
     var body: some View {
-        VStack(spacing: .spacing12) {
-            // Header row
-            HStack(spacing: .spacing12) {
+        VStack(alignment: .leading, spacing: .spacing14) {
+            HStack(alignment: .top, spacing: .spacing12) {
                 Circle()
-                    .fill(Color.surfaceHighlight)
-                    .frame(width: 48, height: 48)
+                    .fill(Color.surfaceSecondary)
+                    .frame(width: 54, height: 54)
                     .overlay(
                         Text(String(character.name.prefix(1)))
                             .font(.titleMedium)
-                            .foregroundStyle(Color.accentGold)
+                            .foregroundStyle(roleColor)
                     )
 
-                VStack(alignment: .leading, spacing: .spacing4) {
+                VStack(alignment: .leading, spacing: .spacing6) {
                     HStack {
                         Text(character.name)
                             .font(.labelLarge)
                             .foregroundStyle(Color.textPrimary)
-                        TagView(text: character.role.rawValue, color: roleColor)
+                        SceneAccentBadge(text: character.role.rawValue, color: roleColor)
                     }
+
                     Text(character.title)
                         .font(.captionLarge)
                         .foregroundStyle(Color.textSecondary)
+
+                    Text("当前态度: \(relationship.attitudeLabel)")
+                        .font(.bodySmall)
+                        .foregroundStyle(attitudeColor)
                 }
 
                 Spacer()
-
-                VStack(alignment: .trailing, spacing: .spacing2) {
-                    Text(relationship.attitudeLabel)
-                        .font(.labelMedium)
-                        .foregroundStyle(attitudeColor)
-                    if let reason = relationship.lastChangeReason {
-                        Text(reason)
-                            .font(.captionSmall)
-                            .foregroundStyle(Color.textTertiary)
-                    }
-                }
             }
 
-            // Expanded details
-            if isExpanded {
-                VStack(spacing: .spacing12) {
-                    Divider()
-                        .background(Color.surfaceHighlight)
+            if let reason = relationship.lastChangeReason {
+                Text(reason)
+                    .font(.captionLarge)
+                    .foregroundStyle(Color.textTertiary)
+            }
 
-                    // Relationship dimensions
+            Button(isExpanded ? "收起关系细节" : "查看关系细节", action: onToggle)
+                .buttonStyle(.secondary)
+
+            if isExpanded {
+                VStack(alignment: .leading, spacing: .spacing16) {
                     relationshipBar("信任", relationship.trust, .relationTrust)
                     relationshipBar("好感", relationship.affection, .relationAffection)
                     relationshipBar("敌意", relationship.hostility, .relationHostility)
                     relationshipBar("敬畏", relationship.awe, .relationAwe)
                     relationshipBar("依赖", relationship.dependence, .relationDependence)
 
-                    // Character description
                     Text(character.description)
                         .font(.bodySmall)
                         .foregroundStyle(Color.textSecondary)
-                        .padding(.top, .spacing4)
+                        .lineSpacing(4)
 
-                    // Unlocked events
                     if !relationship.unlockedEvents.isEmpty {
-                        VStack(alignment: .leading, spacing: .spacing4) {
+                        VStack(alignment: .leading, spacing: .spacing6) {
                             Text("已触发事件")
                                 .font(.labelSmall)
                                 .foregroundStyle(Color.textTertiary)
+
                             ForEach(relationship.unlockedEvents, id: \.self) { event in
                                 HStack(spacing: .spacing6) {
                                     Image(systemName: "checkmark.circle.fill")
@@ -128,9 +154,7 @@ struct CharacterRelationshipCard: View {
                 .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
-        .padding(.spacing16)
-        .background(Color.surfacePrimary)
-        .clipShape(RoundedRectangle(cornerRadius: .radiusMedium))
+        .scenePanel(accent: roleColor, padding: .spacing18)
     }
 
     private func relationshipBar(_ label: String, _ value: Int, _ color: Color) -> some View {

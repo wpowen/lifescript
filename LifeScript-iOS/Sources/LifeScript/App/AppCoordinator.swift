@@ -63,17 +63,17 @@ enum AppTab: Int, CaseIterable {
 
     var title: String {
         switch self {
-        case .home: return "发现"
-        case .bookshelf: return "书架"
+        case .home: return "故事"
+        case .bookshelf: return "在读"
         case .profile: return "我的"
         }
     }
 
     var icon: String {
         switch self {
-        case .home: return "compass"
-        case .bookshelf: return "books.vertical"
-        case .profile: return "person"
+        case .home: return "theatermasks"
+        case .bookshelf: return "bookmark"
+        case .profile: return "person.crop.circle"
         }
     }
 }
@@ -86,6 +86,17 @@ final class AppCoordinator {
     var homePath = NavigationPath()
     var bookshelfPath = NavigationPath()
     var presentedSheet: AppSheet?
+
+    var canGoBack: Bool {
+        switch selectedTab {
+        case .home:
+            return !homePath.isEmpty
+        case .bookshelf:
+            return !bookshelfPath.isEmpty
+        case .profile:
+            return false
+        }
+    }
 
     func navigate(to route: AppRoute) {
         switch selectedTab {
@@ -104,6 +115,26 @@ final class AppCoordinator {
 
     func selectTab(_ tab: AppTab) {
         selectedTab = tab
+    }
+
+    func goBack() {
+        switch selectedTab {
+        case .home:
+            guard !homePath.isEmpty else { return }
+            homePath.removeLast()
+        case .bookshelf:
+            guard !bookshelfPath.isEmpty else { return }
+            bookshelfPath.removeLast()
+        case .profile:
+            break
+        }
+    }
+
+    func returnToHome() {
+        presentedSheet = nil
+        homePath = NavigationPath()
+        bookshelfPath = NavigationPath()
+        selectedTab = .home
     }
 
     func popToRoot() {

@@ -7,6 +7,13 @@ protocol ContentProviding: Sendable {
     func loadBook(id: String) async throws -> Book
     func loadChapter(bookId: String, chapterId: String) async throws -> Chapter
     func loadAllChapters(bookId: String) async throws -> [Chapter]
+    func loadWalkthrough(bookId: String) async throws -> BookWalkthrough?
+}
+
+extension ContentProviding {
+    func loadWalkthrough(bookId: String) async throws -> BookWalkthrough? {
+        nil
+    }
 }
 
 final class BundledContentLoader: ContentProviding {
@@ -17,10 +24,15 @@ final class BundledContentLoader: ContentProviding {
     }()
 
     func listBooks() async throws -> [Book] {
-        try loadJSON(filename: "books", type: [Book].self)
+        let manifestBooks = (try? loadJSON(filename: "books", type: [Book].self)) ?? []
+        let generatedBooks = try loadGeneratedBooks()
+        return mergeBookCatalogs(manifest: manifestBooks, generated: generatedBooks)
     }
 
     func loadBook(id: String) async throws -> Book {
+        if let generated = try loadJSONIfPresent(filename: "book_\(id)", type: Book.self) {
+            return generated
+        }
         let books = try await listBooks()
         guard let book = books.first(where: { $0.id == id }) else {
             throw ContentError.bookNotFound(id)
@@ -40,6 +52,10 @@ final class BundledContentLoader: ContentProviding {
         try loadJSON(filename: "chapters_\(bookId)", type: [Chapter].self)
     }
 
+    func loadWalkthrough(bookId: String) async throws -> BookWalkthrough? {
+        try loadJSONIfPresent(filename: "walkthrough_\(bookId)", type: BookWalkthrough.self)
+    }
+
     // MARK: - Private
 
     private func loadJSON<T: Decodable>(filename: String, type: T.Type) throws -> T {
@@ -48,6 +64,28 @@ final class BundledContentLoader: ContentProviding {
         }
         let data = try Data(contentsOf: url)
         return try decoder.decode(T.self, from: data)
+    }
+
+    private func loadJSONIfPresent<T: Decodable>(filename: String, type: T.Type) throws -> T? {
+        guard let url = Bundle.main.url(forResource: filename, withExtension: "json") else {
+            return nil
+        }
+        let data = try Data(contentsOf: url)
+        return try decoder.decode(T.self, from: data)
+    }
+
+    private func loadGeneratedBooks() throws -> [Book] {
+        guard let urls = Bundle.main.urls(forResourcesWithExtension: "json", subdirectory: nil) else {
+            return []
+        }
+
+        return try urls
+            .filter { $0.deletingPathExtension().lastPathComponent.hasPrefix("book_") }
+            .sorted { $0.lastPathComponent < $1.lastPathComponent }
+            .map { url in
+                let data = try Data(contentsOf: url)
+                return try decoder.decode(Book.self, from: data)
+            }
     }
 }
 

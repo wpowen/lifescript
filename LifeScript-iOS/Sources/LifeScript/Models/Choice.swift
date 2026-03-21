@@ -18,6 +18,22 @@ struct Choice: Codable, Identifiable, Sendable {
     /// Story nodes to display after this choice is made
     let resultNodeIds: [String]
 
+    /// Inline story nodes that play out the immediate consequence of the choice.
+    /// This keeps interaction feeling like a scene with process, not a direct jump to outcome.
+    var resultNodes: [StoryNode]? = nil
+
+    /// The visible cost the user is accepting by taking this route.
+    var visibleCost: String? = nil
+
+    /// The visible reward promised by this route.
+    var visibleReward: String? = nil
+
+    /// A concise uncertainty hint that preserves suspense without hiding the goal.
+    var riskHint: String? = nil
+
+    /// The process variable this route mainly pushes, such as time, exposure, or trust.
+    var processLabel: String? = nil
+
     /// Whether this choice requires payment to unlock
     var isPremium: Bool = false
 }

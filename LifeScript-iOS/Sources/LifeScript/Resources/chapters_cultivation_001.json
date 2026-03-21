@@ -1,0 +1,431 @@
+[
+  {
+    "id": "cult_ch_001",
+    "book_id": "cultivation_001",
+    "number": 1,
+    "title": "葬剑台前",
+    "is_paid": false,
+    "next_chapter_hook": "葬剑台深处，那柄只对你鸣响的残剑已经被人盯上。今夜子时，剑冢会开一道只持续半炷香的暗门，而韩夜显然不打算让你活着走进去。",
+    "nodes": [
+      {
+        "text": {
+          "id": "cult_001_01",
+          "content": "辰时。葬剑台前。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "cult_001_02",
+          "content": "青石阶一共九十九层，层层压着古剑残意。外门弟子站在最底下都觉得胸口发闷，而你只是刚靠近，断裂三年的经脉就像被刀一点点剜开。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "cult_001_03",
+          "character_id": "char_han_ye",
+          "content": "废脉也来试剑？你要是真能走上第三层，我今天当着所有人的面向你赔罪。",
+          "emotion": "讥笑"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "cult_001_04",
+          "character_id": "char_mo_elder",
+          "content": "葬剑台认的是命，不认嘴。谁敢上，谁就自己担后果。",
+          "emotion": "冷肃"
+        }
+      },
+      {
+        "text": {
+          "id": "cult_001_05",
+          "content": "你抬头时，最上方那柄锈迹斑斑的残剑忽然轻轻一震。紧接着，一道只有你能听见的低哑嗓音在心底响起：",
+          "emphasis": "system"
+        }
+      },
+      {
+        "text": {
+          "id": "cult_001_06",
+          "content": "「往上走。别急着赢，先决定你要用哪种方式把他们的眼神撕开。」",
+          "emphasis": "system"
+        }
+      },
+      {
+        "choice": {
+          "id": "cult_choice_001",
+          "prompt": "第一重剑压已经落下。你决定怎么踏上葬剑台？",
+          "choice_type": "keyDecision",
+          "choices": [
+            {
+              "id": "cult_choice_001_a",
+              "text": "硬抗剑压，踩着裂骨声往上走",
+              "description": "用最直接的方式告诉所有人，断脉不等于跪地求饶。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 12 },
+                { "stat": "名望", "delta": 10 },
+                { "stat": "天命值", "delta": -6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_han_ye", "dimension": "敬畏", "delta": 20 },
+                { "character_id": "char_han_ye", "dimension": "敌意", "delta": 15 },
+                { "character_id": "char_qin_shuang", "dimension": "好感", "delta": 8 },
+                { "character_id": "char_mo_elder", "dimension": "信任", "delta": 5 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "cult_result_001_a_01",
+                    "content": "第一道剑压像山一样砸下来。你没有退，只把肩膀往下一沉，任由骨头在重压下发出细密裂响，再借那股痛意把脚生生钉进石阶。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_001_a_02",
+                    "content": "第二步踏出时，鞋底已经被磨穿。鲜血顺着脚踝淌过青石，原本沉寂的剑纹被一点点点亮，台阶两侧的断剑同时发出蜂鸣。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "cult_result_001_a_03",
+                    "character_id": "char_han_ye",
+                    "content": "他怎么还能站着？这不可能！",
+                    "emotion": "失声"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_001_a_04",
+                    "content": "你顶着最后一波剑压踏上第九层，背脊被压得几乎弯断，却偏偏在众目睽睽下把头重新抬了起来。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "cult_choice_001_b",
+              "text": "借步法绕开正面剑压，逼韩夜先乱阵脚",
+              "description": "不和葬剑台硬碰硬，先借局势把韩夜拉进来一起丢脸。",
+              "satisfaction_type": "扮猪吃虎",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 12 },
+                { "stat": "名望", "delta": 6 },
+                { "stat": "天命值", "delta": 4 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_han_ye", "dimension": "敌意", "delta": 20 },
+                { "character_id": "char_han_ye", "dimension": "敬畏", "delta": 10 },
+                { "character_id": "char_qin_shuang", "dimension": "信任", "delta": 10 },
+                { "character_id": "char_mo_elder", "dimension": "信任", "delta": 8 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "cult_result_001_b_01",
+                    "content": "你在第一道剑压落下前忽然侧步，整个人贴着台阶左缘掠了过去。最重的剑意擦着耳边落空，反倒把身后的石砖压出一道深沟。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_001_b_02",
+                    "content": "韩夜看你似乎只是狼狈躲闪，冷笑着追前半步。下一瞬，葬剑台积蓄的第二层剑压骤然偏转，全部砸到他那一步上，震得他袖口当场炸裂。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "cult_result_001_b_03",
+                    "character_id": "char_mo_elder",
+                    "content": "葬剑台前，谁给你的胆子越位？退下！",
+                    "emotion": "喝斥"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_001_b_04",
+                    "content": "你趁着全场视线都落在韩夜身上，连续三步切入内圈，用最省力的轨迹登上高台。直到站稳，人群才意识到丢脸的不是你。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "cult_choice_001_c",
+              "text": "以心头血唤醒残灵，让葬剑台替你选剑",
+              "description": "你愿意拿自己的命当钥匙，换葬剑台里真正的回应。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 8 },
+                { "stat": "黑化值", "delta": 10 },
+                { "stat": "天命值", "delta": 12 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_bone_sword", "dimension": "依赖", "delta": 20 },
+                { "character_id": "char_qin_shuang", "dimension": "信任", "delta": -5 },
+                { "character_id": "char_mo_elder", "dimension": "敌意", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "cult_result_001_c_01",
+                    "content": "你咬破舌尖，把涌上喉头的血硬生生咽回去一半，另一半则抹在掌心，重重按上第一层剑纹。温热鲜血顺着裂缝渗开，整座葬剑台像忽然活了。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "cult_result_001_c_02",
+                    "character_id": "char_bone_sword",
+                    "content": "终于有人敢用命来敲门了。",
+                    "emotion": "沙哑"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_001_c_03",
+                    "content": "四周残剑同时离地半寸，剑鸣如潮。狂暴剑意没有再压你，反而像被无形手掌牵引着向两侧退开，给你让出一条沾血的上行之路。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_001_c_04",
+                    "content": "你一步步向上，额角青筋暴起，耳边全是古老剑魂的低语。等你站上高台时，台顶那柄残剑已经自己转向了你。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "cult_001_07",
+          "content": "高台之上，风忽然变得极静。方才那些看热闹的目光，此刻全都从嘲笑变成了谨慎。连最不服气的韩夜，也没有立刻再开口。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "cult_001_08",
+          "character_id": "char_qin_shuang",
+          "content": "你不是在逞强。你是在等一把真正愿意认你的剑，对吗？",
+          "emotion": "压低声音"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "cult_001_09",
+          "character_id": "char_mo_elder",
+          "content": "子时之前，准你入剑冢半炷香。拿不到剑，是你命薄；拿到了剑，今晚就会有人来夺。",
+          "emotion": "平静"
+        }
+      },
+      {
+        "text": {
+          "id": "cult_001_10",
+          "content": "你握紧还在发烫的手掌，知道真正的试炼不是刚才那九十九层台阶，而是今夜那道会引来杀机的暗门。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cult_ch_002",
+    "book_id": "cultivation_001",
+    "number": 2,
+    "title": "剑冢第一响",
+    "is_paid": false,
+    "next_chapter_hook": "你带出的不是一柄普通残剑，而是一道会让整座宗门重新洗牌的旧名。韩夜已经联手外峰长老追来，而骨剑灵第一次提到了你父亲留下的‘断脉真相’。",
+    "nodes": [
+      {
+        "text": {
+          "id": "cult_002_01",
+          "content": "子时。剑冢暗门。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "cult_002_02",
+          "content": "石门只开了一指宽，阴冷剑气就已经先从缝里挤出来。你刚踏入其中，脚下就传来细碎的金属摩擦声，三具守墓剑傀同时从黑暗里睁开了眼。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "cult_002_03",
+          "character_id": "char_bone_sword",
+          "content": "选一种赢法。它们不是为了杀你，而是要看你配不配拿走我。",
+          "emotion": "低笑"
+        }
+      },
+      {
+        "choice": {
+          "id": "cult_choice_002",
+          "prompt": "三具剑傀一前两后封住了退路。你怎么破这第一关？",
+          "choice_type": "styleChoice",
+          "choices": [
+            {
+              "id": "cult_choice_002_a",
+              "text": "正面截杀，先碎最强的一具",
+              "description": "用硬碰硬把剑冢的门槛踢碎，告诉它们你不是来偷剑，而是来夺剑。",
+              "satisfaction_type": "碾压爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 14 },
+                { "stat": "名望", "delta": 8 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_bone_sword", "dimension": "敬畏", "delta": 15 },
+                { "character_id": "char_qin_shuang", "dimension": "好感", "delta": 6 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "cult_result_002_a_01",
+                    "content": "你不退反进，迎着最前方那具剑傀的剑锋撞了上去。对方一剑劈下时，你双臂同时抬起，把灵力全压在前臂骨上，硬接得袖口尽裂。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_a_02",
+                    "content": "趁着铁剑与骨肉相击的那一瞬，你借反震拧腰转身，膝盖狠狠撞上剑傀胸口。裂响传出，傀儡的护心铜片被你顶得凹陷进去半寸。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_a_03",
+                    "content": "另外两具剑傀从侧后方补杀而来，你却已经抢到了第一具剑傀失衡的那半拍。残剑出鞘，横斩而过，火星沿着黑暗一路炸开，三具剑傀的动作同时慢了一线。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_a_04",
+                    "content": "你踏着其中一具倒下的身躯借力跃起，一剑劈在最强剑傀头顶。石室回音轰然炸响，整座剑冢终于第一次为你让路。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "cult_choice_002_b",
+              "text": "拖它们进剑纹死角，让三具剑傀互相卡位",
+              "description": "这里是剑冢，不是擂台。借地形比硬拼更像真正的夺剑人。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 14 },
+                { "stat": "天命值", "delta": 6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_mo_elder", "dimension": "信任", "delta": 8 },
+                { "character_id": "char_han_ye", "dimension": "敬畏", "delta": 6 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "cult_result_002_b_01",
+                    "content": "你并没有立刻出剑，而是贴着石壁后退半步，把三具剑傀都引向那块刻满旧剑纹的方砖。它们齐齐突进时，脚下的阵纹被同时激活。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_b_02",
+                    "content": "最左边那具剑傀的长剑被突然抬起的石棱卡住，中间那具正要补位，反倒被它横出来的剑身拦住去路。你借着这一下空隙从两者缝隙里切了过去。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "cult_result_002_b_03",
+                    "character_id": "char_bone_sword",
+                    "content": "不错，你知道什么时候该让敌人替你出手。",
+                    "emotion": "赞许"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_b_04",
+                    "content": "等第三具剑傀转身追来，你已经站到了阵纹核心，一脚踏碎机关眼。连锁震荡从地底掀起，把三具剑傀一起甩进石壁，整个通道瞬间清空。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "cult_choice_002_c",
+              "text": "听剑灵指路，赌一次最险的贴身换命",
+              "description": "你把节奏交给那道残灵，用自己做诱饵，换它替你找出唯一破绽。",
+              "satisfaction_type": "情感爽",
+              "stat_effects": [
+                { "stat": "魅力", "delta": 8 },
+                { "stat": "战力", "delta": 6 },
+                { "stat": "黑化值", "delta": 6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_bone_sword", "dimension": "信任", "delta": 15 },
+                { "character_id": "char_qin_shuang", "dimension": "好感", "delta": 4 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "cult_result_002_c_01",
+                    "content": "你完全放弃了先手，任由第一具剑傀的剑锋逼到鼻尖。就在那冰冷锋芒快切开眉心的一瞬，心底那道声音忽然变得无比清晰。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "cult_result_002_c_02",
+                    "character_id": "char_bone_sword",
+                    "content": "现在，向左半寸。再进一尺。",
+                    "emotion": "冷静"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_c_03",
+                    "content": "你照做了。剑锋擦着鬓角划过，带起一缕断发，而你的身体已经贴进剑傀怀里。残剑自下而上挑起，把它胸口那枚藏得极深的灵核直接撬了出来。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "cult_result_002_c_04",
+                    "content": "余下两具剑傀同时失衡。你踩着灵核炸开的灵光转身斩出第二剑，石室里只剩下一道几乎把黑暗劈开的银线。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "cult_002_04",
+          "content": "三具剑傀倒下后，剑冢最深处那口石棺缓缓裂开，里面没有尸骨，只有一柄通体灰白、剑脊却泛着血线的古剑。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "cult_002_05",
+          "character_id": "char_bone_sword",
+          "content": "带我出去。然后去找当年亲手断你经脉的人。",
+          "emotion": "低沉"
+        }
+      },
+      {
+        "text": {
+          "id": "cult_002_06",
+          "content": "你伸手握住剑柄的瞬间，石门外忽然传来韩夜的脚步声。除此之外，还有第二道更沉更老的呼吸，像是某位长老亲自来了。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  }
+]

@@ -8,11 +8,15 @@ struct TagView: View {
         Text(text)
             .font(.captionLarge)
             .foregroundStyle(color)
-            .padding(.horizontal, .spacing8)
-            .padding(.vertical, .spacing4)
+            .padding(.horizontal, .spacing10)
+            .padding(.vertical, .spacing6)
             .background(
-                RoundedRectangle(cornerRadius: .radiusSmall)
-                    .fill(color.opacity(0.15))
+                Capsule(style: .continuous)
+                    .fill(color.opacity(0.14))
+                    .overlay(
+                        Capsule(style: .continuous)
+                            .strokeBorder(color.opacity(0.18), lineWidth: 1)
+                    )
             )
     }
 }
@@ -34,6 +38,12 @@ struct TagFlowView: View {
 
 struct FlowLayout: Layout {
     var spacing: CGFloat = 8
+    var rowSpacing: CGFloat = 8
+
+    init(spacing: CGFloat = 8, rowSpacing: CGFloat? = nil) {
+        self.spacing = spacing
+        self.rowSpacing = rowSpacing ?? spacing
+    }
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         let result = arrangeSubviews(proposal: proposal, subviews: subviews)
@@ -62,7 +72,7 @@ struct FlowLayout: Layout {
             let size = subview.sizeThatFits(.unspecified)
             if currentX + size.width > maxWidth, currentX > 0 {
                 currentX = 0
-                currentY += lineHeight + spacing
+                currentY += lineHeight + rowSpacing
                 lineHeight = 0
             }
             positions.append(CGPoint(x: currentX, y: currentY))

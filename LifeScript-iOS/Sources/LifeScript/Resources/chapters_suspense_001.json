@@ -1,0 +1,403 @@
+[
+  {
+    "id": "susp_ch_001",
+    "book_id": "suspense_001",
+    "number": 1,
+    "title": "停尸间第三次敲门",
+    "is_paid": false,
+    "next_chapter_hook": "你从停尸柜里拿到的门禁卡，只能再刷一次。而监控画面里，叶承舟正独自走向二十三层隔离区，白面人则站在他身后，像是早就在等你过去。",
+    "nodes": [
+      {
+        "text": {
+          "id": "susp_001_01",
+          "content": "凌晨三点十七分。市立医院地下一层停尸间。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "susp_001_02",
+          "content": "白雾已经从排风口渗进来了，灯管一闪一灭，冷柜表面全是细小水珠。你刚和许童把第七号柜推回去，里面那具刚登记完的男尸忽然从柜门缝里敲了第三下。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "susp_001_03",
+          "character_id": "char_xu_tong",
+          "content": "停尸柜里的人不可能自己敲门……对吧？",
+          "emotion": "发抖"
+        }
+      },
+      {
+        "text": {
+          "id": "susp_001_04",
+          "content": "敲门声停了。下一秒，柜门从里面被撞得猛地鼓起，金属摩擦声像有人用指甲一寸寸刮你的耳膜。",
+          "emphasis": "system"
+        }
+      },
+      {
+        "choice": {
+          "id": "susp_choice_001",
+          "prompt": "第七号柜要炸开了。你决定怎么处理第一只从白雾里爬出来的东西？",
+          "choice_type": "keyDecision",
+          "choices": [
+            {
+              "id": "susp_choice_001_a",
+              "text": "抄起手术托盘顶上去，近身封喉",
+              "description": "先把它按回柜门前，别让它把节奏带乱。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 10 },
+                { "stat": "名望", "delta": 4 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_xu_tong", "dimension": "信任", "delta": 12 },
+                { "character_id": "char_lu_jin", "dimension": "敬畏", "delta": 6 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "susp_result_001_a_01",
+                    "content": "柜门炸开的瞬间，你抄起不锈钢托盘横着顶了上去。那东西扑出来时，半张脸还保持着人样，另一半却被白雾撑得发胀，牙齿咬在托盘边缘发出刺耳金属声。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_001_a_02",
+                    "content": "你被撞得后退半步，鞋底在消毒水里打滑，却硬是借墙稳住。右手顺势抓起止血钳，贴着托盘边缘刺进它颈侧还算柔软的地方，连刺两下才逼得它身子一歪。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "susp_result_001_a_03",
+                    "character_id": "char_xu_tong",
+                    "content": "左边！它第二只手出来了！",
+                    "emotion": "尖叫"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_001_a_04",
+                    "content": "你抬膝顶住它腹部，把整具怪物重新撞回冷柜边缘，再一记托盘砸在它下巴上。骨裂声在停尸间里格外清楚，怪物终于滑倒在你脚边抽搐。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "susp_choice_001_b",
+              "text": "引它进冷冻间，借低温和铁门困死它",
+              "description": "停尸间不是决斗场，能借环境就不要在原地硬拼。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 12 },
+                { "stat": "天命值", "delta": 6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_xu_tong", "dimension": "信任", "delta": 8 },
+                { "character_id": "char_director_ye", "dimension": "敌意", "delta": 4 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "susp_result_001_b_01",
+                    "content": "你没有跟它抢第一步，而是拽着许童后退到冷冻间门口。怪物踩着拖地的塑封布追出来时，脚底被水渍和冰霜一带，身形明显顿了半拍。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_001_b_02",
+                    "content": "你趁机把装尸袋的金属架整排推倒，尖锐滚轮和横杆一起砸在它膝弯，把它撞得直接扑进冷冻间。等它转头，你已经一把抓住门把。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "susp_result_001_b_03",
+                    "character_id": "char_xu_tong",
+                    "content": "我来压门，你去把温度开到最低！",
+                    "emotion": "咬牙"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_001_b_04",
+                    "content": "你冲到控制面板前一把拧到底，压缩机轰然启动。冷冻间玻璃瞬间起白霜，门后那东西一下下撞得铁门发颤，却再没能冲出来。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "susp_choice_001_c",
+              "text": "熄灯听呼吸，先确认它是不是唯一一只",
+              "description": "如果白雾带来的不是单个怪物，最危险的就是乱动。",
+              "satisfaction_type": "延迟爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 10 },
+                { "stat": "黑化值", "delta": 4 },
+                { "stat": "天命值", "delta": 8 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_lu_jin", "dimension": "信任", "delta": 8 },
+                { "character_id": "char_xu_tong", "dimension": "依赖", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "susp_result_001_c_01",
+                    "content": "你抬手关掉停尸间主灯，整片冷白空间瞬间只剩应急出口那层幽绿。怪物刚冲出来半步，你却先闭住气，听见柜列另一头竟还有第二道更轻的刮擦声。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_001_c_02",
+                    "content": "你没有贸然出手，而是抓起地上的玻璃药瓶往左侧重重一砸。第一只怪物果然被声音引偏，扑过去时撞翻了另一具正在爬出的尸体，两个身影瞬间纠缠成一团。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "susp_result_001_c_03",
+                    "character_id": "char_xu_tong",
+                    "content": "原来不止一只……",
+                    "emotion": "窒息般地低声"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_001_c_04",
+                    "content": "你借着它们互相撕扯的空档拉开防火柜，抽出里面的消防斧，反手先砍断最近那只怪物扒门的手腕，再把许童护到了自己身后。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "susp_001_05",
+          "content": "等停尸间重新安静下来，你才发现第七号柜里原本应该装的是普通车祸死者，可他胸口口袋里却塞着一张只有高危隔离区才能刷开的红色门禁卡。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "susp_001_06",
+          "character_id": "char_lu_jin",
+          "content": "我是陆尽。医院已经被封控，任何人不得离开。你们两个如果还活着，就立刻上二十三层跟我汇合。",
+          "emotion": "电流里依然冷静"
+        }
+      },
+      {
+        "text": {
+          "id": "susp_001_07",
+          "content": "陆尽的话音刚落，头顶监控忽然闪了一下。雪花屏里，叶承舟正独自推开隔离区的大门，而他背后的镜面反光里，站着一个根本不该出现在医院里的白面人。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  },
+  {
+    "id": "susp_ch_002",
+    "book_id": "suspense_001",
+    "number": 2,
+    "title": "隔离区的玻璃雨",
+    "is_paid": false,
+    "next_chapter_hook": "你在隔离区尽头的病房门牌上，看见了妹妹失踪前用过的代号。门后有人在低声唱童谣，而陆尽刚刚告诉你，白雾中心正在往顶楼手术室移动。",
+    "nodes": [
+      {
+        "text": {
+          "id": "susp_002_01",
+          "content": "二十三层隔离区。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "susp_002_02",
+          "content": "长廊两侧全是钢化玻璃病房，白雾在走廊中央积成一条流动的河。你和许童刚冲出安全门，前方就有三扇玻璃同时炸裂，碎片像雨一样迎面扑来。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "susp_002_03",
+          "character_id": "char_lu_jin",
+          "content": "别停！白雾会追着热源走，原地躲就是等死！",
+          "emotion": "厉喝"
+        }
+      },
+      {
+        "choice": {
+          "id": "susp_choice_002",
+          "prompt": "玻璃雨落下，白雾里还有东西在逼近。你要怎么带着人穿过这段走廊？",
+          "choice_type": "styleChoice",
+          "choices": [
+            {
+              "id": "susp_choice_002_a",
+              "text": "推急救床当移动掩体，边顶边冲",
+              "description": "把最重的东西顶在前面，强行撕出一条能走的路。",
+              "satisfaction_type": "碾压爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 12 },
+                { "stat": "名望", "delta": 5 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_lu_jin", "dimension": "敬畏", "delta": 12 },
+                { "character_id": "char_xu_tong", "dimension": "依赖", "delta": 8 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "susp_result_002_a_01",
+                    "content": "你猛地把旁边的急救床掀起来当盾，碎玻璃劈头盖脸砸在金属护栏上，叮叮当当炸成一片。白雾里的黑影也跟着撞上来，整张床都被顶得向后滑。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_002_a_02",
+                    "content": "你咬住牙，把整辆床往前狠狠一送。轮子碾过碎玻璃发出刺耳声响，藏在雾里的怪物被床角撞中胸口，硬生生被你顶翻进病房门框。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "susp_result_002_a_03",
+                    "character_id": "char_lu_jin",
+                    "content": "就这么顶着冲，我给你清侧翼！",
+                    "emotion": "兴奋"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_002_a_04",
+                    "content": "你顺着陆尽打出的火力窗口一口气推进到长廊尽头，最后用床架卡住防火门。门合上的瞬间，外头密密麻麻的撞击声像暴雨一样砸了上来。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "susp_choice_002_b",
+              "text": "打爆喷淋头，让整段走廊先起水雾",
+              "description": "看不见不一定更危险，只要你比它们更知道下一步往哪跑。",
+              "satisfaction_type": "扮猪吃虎",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 12 },
+                { "stat": "天命值", "delta": 6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_lu_jin", "dimension": "信任", "delta": 10 },
+                { "character_id": "char_xu_tong", "dimension": "信任", "delta": 6 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "susp_result_002_b_01",
+                    "content": "你抡起灭火器砸断最近的喷淋头，冰冷水柱瞬间喷满整条走廊。白雾被打得翻卷，藏在里面的轮廓一下变得模糊，热气和冷水混成一层半透明的屏障。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_002_b_02",
+                    "content": "借着这几秒视线混乱，你先把许童按进护士站柜台后，再踩上操作台越过中段积雾。扑来的黑影失去方向，反倒一头撞碎了病房里的氧气瓶架。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "susp_result_002_b_03",
+                    "character_id": "char_xu_tong",
+                    "content": "右边安全门的指示灯亮了，我能找到路！",
+                    "emotion": "急促"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_002_b_04",
+                    "content": "你顺着她喊出的方向冲刺，最后回身一脚踹倒药架，把后方通道彻底堵死。等雾里那团东西再次扑出来时，只能撞上一片倾泻而下的钢架和药瓶。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "susp_choice_002_c",
+              "text": "自己断后，把许童和陆尽先送过去",
+              "description": "你要先把人送走，再回头跟白雾里的东西算账。",
+              "satisfaction_type": "情感爽",
+              "stat_effects": [
+                { "stat": "魅力", "delta": 10 },
+                { "stat": "战力", "delta": 6 },
+                { "stat": "黑化值", "delta": 4 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_xu_tong", "dimension": "好感", "delta": 12 },
+                { "character_id": "char_lu_jin", "dimension": "信任", "delta": 12 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "susp_result_002_c_01",
+                    "content": "你把许童往前一推，自己却停在原地，拎起消防斧转身迎向雾里扑来的第一道黑影。斧刃砍进肩胛时传来的触感不像人，倒像砍进一团含着骨头的湿布。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_002_c_02",
+                    "content": "对方没倒，反而顺着斧柄往你手臂上攀。你索性松手后退半步，让它整只扑空，再抄起地上的输液架狠狠贯进它膝窝，把它钉在地上。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "susp_result_002_c_03",
+                    "character_id": "char_lu_jin",
+                    "content": "人都过去了，撤！别真把自己留在这里！",
+                    "emotion": "急喝"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "susp_result_002_c_04",
+                    "content": "你最后一脚踹翻供氧车，引爆的高压气流把雾和怪物一并掀向走廊中央。借着这股空档，你翻过碎玻璃堆扑进安全门，门锁在身后重重咬合。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "susp_002_04",
+          "content": "安全门后是一段狭窄值班通道。尽头病房的门牌早已被人拆掉，只剩一道黑色记号笔写下的编号：A-17。那是你妹妹失踪前参与过的临床项目代号。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "susp_002_05",
+          "character_id": "char_lu_jin",
+          "content": "我查过所有封控名单，根本没有这个病房。有人把整层楼从系统里抹掉了。",
+          "emotion": "压低声音"
+        }
+      },
+      {
+        "text": {
+          "id": "susp_002_06",
+          "content": "病房门后忽然传来熟悉的童谣声。你站在门前，指尖发冷，因为那首歌只有一个人会唱给你听。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  }
+]

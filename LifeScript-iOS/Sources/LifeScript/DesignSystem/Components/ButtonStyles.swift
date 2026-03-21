@@ -10,18 +10,33 @@ struct PrimaryButtonStyle: ButtonStyle {
             .font(.labelLarge)
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity)
-            .frame(height: 52)
+            .frame(minHeight: 56)
+            .padding(.horizontal, .spacing20)
+            .padding(.vertical, .spacing6)
             .background(
-                LinearGradient(
-                    colors: [Color.accentGold, Color.accentAmber],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-                .opacity(isEnabled ? 1 : 0.4)
+                ZStack {
+                    LinearGradient(
+                        colors: [Color.accentGold, Color.accentCrimson],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                    .opacity(isEnabled ? 1 : 0.4)
+
+                    LinearGradient(
+                        colors: [Color.white.opacity(0.18), .clear],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                }
             )
-            .clipShape(RoundedRectangle(cornerRadius: .radiusMedium))
-            .scaleEffect(configuration.isPressed ? 0.97 : 1)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
+            .clipShape(RoundedRectangle(cornerRadius: .radiusLarge, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: .radiusLarge, style: .continuous)
+                    .strokeBorder(Color.white.opacity(0.18), lineWidth: 1)
+            )
+            .shadow(color: Color.accentCrimson.opacity(0.18), radius: 18, x: 0, y: 12)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1)
+            .animation(.spring(response: 0.22, dampingFraction: 0.85), value: configuration.isPressed)
     }
 }
 
@@ -42,18 +57,19 @@ struct ChoiceButtonStyle: ButtonStyle {
             .padding(.horizontal, .spacing16)
             .padding(.vertical, .spacing16)
             .background(
-                RoundedRectangle(cornerRadius: .radiusMedium)
-                    .fill(configuration.isPressed ? accentColor.opacity(0.3) : Color.surfaceSecondary)
+                RoundedRectangle(cornerRadius: .radiusLarge, style: .continuous)
+                    .fill(configuration.isPressed ? accentColor.opacity(0.30) : Color.surfaceSecondary.opacity(0.90))
             )
             .overlay(
-                RoundedRectangle(cornerRadius: .radiusMedium)
+                RoundedRectangle(cornerRadius: .radiusLarge, style: .continuous)
                     .strokeBorder(
                         accentColor.opacity(configuration.isPressed ? 0.8 : 0.3),
                         lineWidth: 1
                     )
             )
+            .shadow(color: accentColor.opacity(configuration.isPressed ? 0.16 : 0.06), radius: 12, x: 0, y: 8)
             .scaleEffect(configuration.isPressed ? 0.98 : 1)
-            .animation(.easeInOut(duration: 0.15), value: configuration.isPressed)
+            .animation(.spring(response: 0.22, dampingFraction: 0.86), value: configuration.isPressed)
     }
 }
 
@@ -63,15 +79,19 @@ struct SecondaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.labelMedium)
-            .foregroundStyle(Color.accentGold)
-            .padding(.horizontal, .spacing16)
-            .padding(.vertical, .spacing12)
+            .foregroundStyle(Color.textPrimary)
+            .padding(.horizontal, .spacing18)
+            .padding(.vertical, .spacing14)
             .background(
-                RoundedRectangle(cornerRadius: .radiusMedium)
-                    .fill(Color.accentGold.opacity(0.1))
+                RoundedRectangle(cornerRadius: .radiusLarge, style: .continuous)
+                    .fill(Color.surfaceSecondary.opacity(0.90))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: .radiusLarge, style: .continuous)
+                            .strokeBorder(Color.accentGold.opacity(0.18), lineWidth: 1)
+                    )
             )
-            .scaleEffect(configuration.isPressed ? 0.97 : 1)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1)
+            .animation(.spring(response: 0.22, dampingFraction: 0.86), value: configuration.isPressed)
     }
 }
 

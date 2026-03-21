@@ -26,9 +26,13 @@ final class ReadingViewModel {
     private(set) var chapterChoices: [UserChoiceRecord] = []
     private(set) var statsBeforeChapter: ProtagonistStats
     private(set) var relationshipsBeforeChapter: [RelationshipState]
+    private(set) var chapterGuide: WalkthroughChapterGuide?
+    private(set) var chapterStage: WalkthroughStage?
 
+    private var allChoiceRecords: [UserChoiceRecord] = []
     private var allNodes: [StoryNode] = []
-    private var resultNodes: [String: [StoryNode]] = [:] // choiceId -> result nodes
+    private var chapterSequence: [Chapter] = []
+    private var walkthrough: BookWalkthrough?
     private let contentLoader: ContentProviding
     private var modelContext: ModelContext?
 
@@ -72,18 +76,51 @@ final class ReadingViewModel {
     func loadChapter(id: String) async {
         state = .loading
         do {
+            await loadWalkthroughIfNeeded()
             let chapter = try await contentLoader.loadChapter(bookId: book.id, chapterId: id)
+            let loadedChapters = (try? await contentLoader.loadAllChapters(bookId: book.id)) ?? [chapter]
+
+            chapterSequence = loadedChapters.sorted { lhs, rhs in
+                if lhs.number == rhs.number {
+                    return lhs.id < rhs.id
+                }
+                return lhs.number < rhs.number
+            }
             currentChapter = chapter
+            _pendingChapterId = id
+            syncGuide(for: chapter)
             allNodes = chapter.nodes
             displayedNodes = []
             currentNodeIndex = 0
-            chapterChoices = []
+            chapterChoices = allChoiceRecords
+                .filter { $0.chapterId == chapter.id }
+                .sorted { $0.timestamp < $1.timestamp }
             statsBeforeChapter = stats
             relationshipsBeforeChapter = relationships
             state = .reading
             advanceToNextSegment()
         } catch {
             state = .error(AppError.from(error).localizedDescription)
+        }
+    }
+
+    private func loadWalkthroughIfNeeded() async {
+        guard walkthrough == nil else { return }
+        walkthrough = try? await contentLoader.loadWalkthrough(bookId: book.id)
+    }
+
+    private func syncGuide(for chapter: Chapter) {
+        guard let walkthrough else {
+            chapterGuide = nil
+            chapterStage = nil
+            return
+        }
+
+        chapterGuide = walkthrough.chapterGuides.first(where: { $0.chapterId == chapter.id })
+        if let stageId = chapterGuide?.stageId {
+            chapterStage = walkthrough.stages.first(where: { $0.id == stageId })
+        } else {
+            chapterStage = nil
         }
     }
 
@@ -162,13 +199,12 @@ final class ReadingViewModel {
             }
         }
 
-        // Reached end of chapter
+        // If the last readable beat was just appended, let the user read it first.
+        // Chapter-end presentation should happen on the next deliberate tap.
         if currentNodeIndex >= allNodes.count {
-            state = .chapterEnd
             saveProgress()
-        } else {
-            state = .reading
         }
+        state = .reading
     }
 
     /// Peek at the next node without consuming it
@@ -193,7 +229,13 @@ final class ReadingViewModel {
             selectedChoiceId: choice.id,
             timestamp: Date()
         )
+        chapterChoices.removeAll { $0.chapterId == record.chapterId && $0.choiceNodeId == record.choiceNodeId }
         chapterChoices.append(record)
+        chapterChoices.sort { $0.timestamp < $1.timestamp }
+
+        allChoiceRecords.removeAll { $0.chapterId == record.chapterId && $0.choiceNodeId == record.choiceNodeId }
+        allChoiceRecords.append(record)
+        allChoiceRecords.sort { $0.timestamp < $1.timestamp }
 
         // Apply stat effects
         stats = stats.applying(effects: choice.statEffects)
@@ -205,9 +247,11 @@ final class ReadingViewModel {
             return rel.applying(effects: effects)
         }
 
-        // Show result feedback nodes
-        // Insert result text after the choice node
-        if !choice.resultNodeIds.isEmpty {
+        // Show result feedback nodes.
+        // Prefer inline scene nodes so choices can play out with actual process.
+        if let resultNodes = choice.resultNodes, !resultNodes.isEmpty {
+            displayedNodes.append(contentsOf: resultNodes)
+        } else if !choice.resultNodeIds.isEmpty {
             let resultTextNode = StoryNode.text(TextNode(
                 id: "result_\(choice.id)",
                 content: choice.description ?? "",
@@ -250,17 +294,8 @@ final class ReadingViewModel {
     // MARK: - Navigation
 
     func proceedToNextChapter() async {
-        guard let current = currentChapter else { return }
-        // Mark current chapter as completed
-        let nextNumber = current.number + 1
-        do {
-            let allChapters = try await contentLoader.loadAllChapters(bookId: book.id)
-            if let next = allChapters.first(where: { $0.number == nextNumber }) {
-                await loadChapter(id: next.id)
-            }
-        } catch {
-            state = .error("无法加载下一章")
-        }
+        guard let next = nextChapter else { return }
+        await loadChapter(id: next.id)
     }
 
     // MARK: - Persistence
@@ -281,7 +316,7 @@ final class ReadingViewModel {
                 relationshipsBeforeChapter = savedRelationships
             }
             if let savedChoices = progress.choiceRecords {
-                chapterChoices = savedChoices
+                allChoiceRecords = savedChoices.sorted { $0.timestamp < $1.timestamp }
             }
         }
     }
@@ -304,7 +339,7 @@ final class ReadingViewModel {
         progress.lastReadDate = Date()
         progress.stats = stats
         progress.relationships = relationships
-        progress.choiceRecords = chapterChoices
+        progress.choiceRecords = allChoiceRecords
 
         if case .chapterEnd = state {
             if !progress.completedChapterIds.contains(chapter.id) {
@@ -312,5 +347,25 @@ final class ReadingViewModel {
             }
         }
         try? context.save()
+    }
+
+    var isAwaitingChapterEndTransition: Bool {
+        guard case .reading = state else { return false }
+        return currentNodeIndex >= allNodes.count && currentChapter != nil
+    }
+
+    var hasNextChapter: Bool {
+        nextChapter != nil
+    }
+
+    private var nextChapter: Chapter? {
+        guard let currentChapter else { return nil }
+        guard let currentIndex = chapterSequence.firstIndex(where: { $0.id == currentChapter.id }) else {
+            return nil
+        }
+
+        let nextIndex = chapterSequence.index(after: currentIndex)
+        guard nextIndex < chapterSequence.endIndex else { return nil }
+        return chapterSequence[nextIndex]
     }
 }

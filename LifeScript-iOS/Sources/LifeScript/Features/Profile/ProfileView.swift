@@ -1,96 +1,113 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @Environment(AppCoordinator.self) private var coordinator
-
     var body: some View {
-        ScrollView {
-            VStack(spacing: .spacing24) {
-                // User avatar
-                VStack(spacing: .spacing12) {
-                    Circle()
-                        .fill(Color.surfaceHighlight)
-                        .frame(width: 80, height: 80)
-                        .overlay(
-                            Image(systemName: "person.fill")
-                                .font(.system(size: 32))
-                                .foregroundStyle(Color.textTertiary)
-                        )
-                    Text("游客用户")
-                        .font(.titleMedium)
-                        .foregroundStyle(Color.textPrimary)
-                    Text("登录后可同步阅读进度")
-                        .font(.captionLarge)
-                        .foregroundStyle(Color.textSecondary)
+        ZStack {
+            SceneBackdrop(palette: StoryPalette(primary: .accentAmber, secondary: .accentSky, tertiary: .accentCrimson))
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: .spacing24) {
+                    headerSection
+
+                    settingsSection(title: "阅读体验", subtitle: "控制你看故事时的感受与反馈节奏", items: [
+                        ("textformat.size", "字体大小", "让正文更适合长时间沉浸"),
+                        ("moon.stars.fill", "夜间模式", "在不同光线下保持可读"),
+                        ("speaker.wave.2.fill", "音效反馈", "保留轻微动态和提示音"),
+                    ])
+
+                    settingsSection(title: "账号与权益", subtitle: "同步进度、解锁内容和后续会员能力", items: [
+                        ("person.badge.plus", "登录 / 注册", "保存你的故事档案"),
+                        ("crown.fill", "会员订阅", "查看后续权益规划"),
+                        ("creditcard.fill", "购买记录", "回看已解锁内容"),
+                    ])
+
+                    settingsSection(title: "帮助与说明", subtitle: "把产品边界和规则讲清楚", items: [
+                        ("questionmark.circle.fill", "帮助与反馈", "遇到问题时快速反馈"),
+                        ("doc.text.fill", "用户协议", "查看使用条款"),
+                        ("lock.shield.fill", "隐私政策", "查看数据与隐私说明"),
+                        ("info.circle.fill", "关于命书", "版本 1.0.0"),
+                    ])
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, .spacing24)
-
-                // Settings sections
-                settingsSection(title: "阅读设置", items: [
-                    ("textformat.size", "字体大小", nil),
-                    ("moon", "夜间模式", nil),
-                    ("speaker.wave.2", "音效", nil),
-                ])
-
-                settingsSection(title: "账号", items: [
-                    ("person.badge.plus", "登录 / 注册", nil),
-                    ("crown", "会员订阅", nil),
-                    ("creditcard", "购买记录", nil),
-                ])
-
-                settingsSection(title: "其他", items: [
-                    ("questionmark.circle", "帮助与反馈", nil),
-                    ("doc.text", "用户协议", nil),
-                    ("lock.shield", "隐私政策", nil),
-                    ("info.circle", "关于命书", "v1.0.0"),
-                ])
+                .padding(.horizontal, .spacing16)
+                .padding(.top, .spacing20)
+                .padding(.bottom, .spacing40)
             }
-            .padding(.spacing16)
         }
-        .background(Color.backgroundPrimary)
         .navigationTitle("我的")
     }
 
-    private func settingsSection(title: String, items: [(String, String, String?)]) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text(title)
-                .font(.labelSmall)
-                .foregroundStyle(Color.textTertiary)
-                .padding(.bottom, .spacing8)
+    private var headerSection: some View {
+        VStack(alignment: .leading, spacing: .spacing16) {
+            ScenePageHeader(
+                eyebrow: "个人操盘台",
+                title: "你的身份、偏好和阅读设定都在这里",
+                subtitle: "这一页不只是设置页，而是你的故事身份页。所有入口都用明确文字说明作用。",
+                accent: .accentAmber
+            )
 
-            VStack(spacing: 0) {
+            HStack(spacing: .spacing16) {
+                Circle()
+                    .fill(Color.surfaceSecondary)
+                    .frame(width: 84, height: 84)
+                    .overlay(
+                        Image(systemName: "person.fill")
+                            .font(.system(size: 30))
+                            .foregroundStyle(Color.accentAmber)
+                    )
+
+                VStack(alignment: .leading, spacing: .spacing6) {
+                    Text("游客用户")
+                        .font(.titleMedium)
+                        .foregroundStyle(Color.textPrimary)
+
+                    Text("登录后可同步你的故事进度、选择记录和关系变化。")
+                        .font(.bodySmall)
+                        .foregroundStyle(Color.textSecondary)
+                        .lineSpacing(4)
+
+                    SceneAccentBadge(text: "身份未绑定", color: .accentCrimson)
+                }
+            }
+            .scenePanel(accent: .accentAmber, padding: .spacing18)
+        }
+    }
+
+    private func settingsSection(title: String, subtitle: String, items: [(String, String, String)]) -> some View {
+        VStack(alignment: .leading, spacing: .spacing12) {
+            SceneSectionHeader(
+                title: title,
+                subtitle: subtitle,
+                accent: .accentSky
+            )
+
+            VStack(spacing: .spacing12) {
                 ForEach(items, id: \.1) { icon, label, detail in
-                    HStack {
+                    HStack(alignment: .top, spacing: .spacing12) {
                         Image(systemName: icon)
                             .font(.bodyMedium)
-                            .foregroundStyle(Color.accentGold)
-                            .frame(width: 24)
-                        Text(label)
-                            .font(.bodyLarge)
-                            .foregroundStyle(Color.textPrimary)
-                        Spacer()
-                        if let detail {
+                            .foregroundStyle(Color.accentAmber)
+                            .frame(width: 24, height: 24)
+
+                        VStack(alignment: .leading, spacing: .spacing4) {
+                            Text(label)
+                                .font(.labelMedium)
+                                .foregroundStyle(Color.textPrimary)
+
                             Text(detail)
                                 .font(.captionLarge)
-                                .foregroundStyle(Color.textTertiary)
+                                .foregroundStyle(Color.textSecondary)
+                                .lineSpacing(3)
                         }
+
+                        Spacer()
+
                         Image(systemName: "chevron.right")
                             .font(.captionSmall)
                             .foregroundStyle(Color.textTertiary)
                     }
-                    .padding(.vertical, .spacing12)
-                    .padding(.horizontal, .spacing12)
-
-                    if label != items.last?.1 {
-                        Divider()
-                            .background(Color.surfaceHighlight)
-                            .padding(.leading, 48)
-                    }
+                    .scenePanel(accent: .accentSky, padding: .spacing16)
                 }
             }
-            .background(Color.surfacePrimary)
-            .clipShape(RoundedRectangle(cornerRadius: .radiusMedium))
         }
     }
 }

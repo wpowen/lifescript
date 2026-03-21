@@ -4,6 +4,7 @@ import Foundation
 final class MockContentLoader: ContentProviding {
     var stubbedBooks: [Book] = []
     var stubbedChapters: [String: [Chapter]] = [:]
+    var stubbedWalkthroughs: [String: BookWalkthrough] = [:]
     var shouldThrow = false
 
     func listBooks() async throws -> [Book] {
@@ -31,5 +32,10 @@ final class MockContentLoader: ContentProviding {
     func loadAllChapters(bookId: String) async throws -> [Chapter] {
         if shouldThrow { throw ContentError.fileNotFound("mock_chapters") }
         return stubbedChapters[bookId] ?? []
+    }
+
+    func loadWalkthrough(bookId: String) async throws -> BookWalkthrough? {
+        if shouldThrow { throw ContentError.fileNotFound("mock_walkthrough") }
+        return stubbedWalkthroughs[bookId]
     }
 }

@@ -41,6 +41,8 @@ struct MainTabView: View {
             }
         }
         .tint(Color.accentGold)
+        .toolbarBackground(Color.backgroundPrimary.opacity(0.92), for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
         .sheet(item: $coordinator.presentedSheet) { sheet in
             sheetView(for: sheet)
         }

@@ -39,8 +39,42 @@ final class CoreFlowUITests: XCTestCase {
         XCTAssertTrue(startButton.waitForExistence(timeout: 3))
         startButton.tap()
 
-        // Should see chapter header in reading view
-        let chapterNumber = app.staticTexts["第1章"]
-        XCTAssertTrue(chapterNumber.waitForExistence(timeout: 5), "Expected reading view to appear")
+        // Should enter the immersive reading view and show opening chapter content
+        let immersiveView = app.scrollViews["immersiveReadingView"].firstMatch
+        XCTAssertTrue(immersiveView.waitForExistence(timeout: 5), "Expected immersive reading content to appear")
+    }
+
+    func test_readingView_canReturnToPreviousPage() {
+        let bookCard = app.staticTexts["龙隐都市"].firstMatch
+        XCTAssertTrue(bookCard.waitForExistence(timeout: 5))
+        bookCard.tap()
+
+        let startButton = app.buttons["开始阅读"]
+        XCTAssertTrue(startButton.waitForExistence(timeout: 5))
+        startButton.tap()
+
+        let backButton = app.buttons["readingBackButton"]
+        XCTAssertTrue(backButton.waitForExistence(timeout: 5))
+        backButton.tap()
+
+        XCTAssertTrue(startButton.waitForExistence(timeout: 5), "Expected to return to book detail page")
+    }
+
+    func test_readingView_canReturnToHome() {
+        let bookCard = app.staticTexts["龙隐都市"].firstMatch
+        XCTAssertTrue(bookCard.waitForExistence(timeout: 5))
+        bookCard.tap()
+
+        let startButton = app.buttons["开始阅读"]
+        XCTAssertTrue(startButton.waitForExistence(timeout: 5))
+        startButton.tap()
+
+        let homeButton = app.buttons["readingHomeButton"]
+        XCTAssertTrue(homeButton.waitForExistence(timeout: 5))
+        homeButton.tap()
+
+        XCTAssertTrue(app.tabBars.buttons["故事"].waitForExistence(timeout: 3), "Expected home tab bar to be visible again")
+        XCTAssertFalse(app.buttons["开始阅读"].waitForExistence(timeout: 1), "Expected to leave the book detail page when returning home")
+        XCTAssertFalse(app.buttons["readingHomeButton"].exists, "Expected to leave the immersive reading page when returning home")
     }
 }

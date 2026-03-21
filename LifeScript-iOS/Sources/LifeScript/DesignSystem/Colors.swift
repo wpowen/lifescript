@@ -1,26 +1,26 @@
 import SwiftUI
 
 extension Color {
-    // MARK: - Semantic Colors (Dark-first atmospheric theme)
-    static let backgroundPrimary = Color(light: .hex(0x0D0D12), dark: .hex(0x0D0D12))
-    static let backgroundSecondary = Color(light: .hex(0x16161F), dark: .hex(0x16161F))
-    static let backgroundTertiary = Color(light: .hex(0x1E1E2A), dark: .hex(0x1E1E2A))
+    // MARK: - Semantic Colors (cinematic parchment theme)
+    static let backgroundPrimary = Color(light: .hex(0xF4EEE3), dark: .hex(0x10161B))
+    static let backgroundSecondary = Color(light: .hex(0xEBE1D0), dark: .hex(0x172027))
+    static let backgroundTertiary = Color(light: .hex(0xD9C7AF), dark: .hex(0x23303A))
 
-    static let surfacePrimary = Color(light: .hex(0x1A1A26), dark: .hex(0x1A1A26))
-    static let surfaceSecondary = Color(light: .hex(0x232333), dark: .hex(0x232333))
-    static let surfaceHighlight = Color(light: .hex(0x2A2A3D), dark: .hex(0x2A2A3D))
+    static let surfacePrimary = Color(light: .hex(0xFFF8EE), dark: .hex(0x1B252D))
+    static let surfaceSecondary = Color(light: .hex(0xF0E5D5), dark: .hex(0x26333D))
+    static let surfaceHighlight = Color(light: .hex(0xE2CFAE), dark: .hex(0x334350))
 
-    static let textPrimary = Color(light: .hex(0xECECF1), dark: .hex(0xECECF1))
-    static let textSecondary = Color(light: .hex(0x9898A8), dark: .hex(0x9898A8))
-    static let textTertiary = Color(light: .hex(0x5C5C6E), dark: .hex(0x5C5C6E))
+    static let textPrimary = Color(light: .hex(0x221A13), dark: .hex(0xF6EEDF))
+    static let textSecondary = Color(light: .hex(0x6E6154), dark: .hex(0xC8B79E))
+    static let textTertiary = Color(light: .hex(0x9E8771), dark: .hex(0x887A69))
 
     // MARK: - Accent Colors (for different satisfaction types)
-    static let accentGold = Color(light: .hex(0xFFB800), dark: .hex(0xFFB800))
-    static let accentCrimson = Color(light: .hex(0xFF3B4A), dark: .hex(0xFF3B4A))
-    static let accentAmber = Color(light: .hex(0xFF8C00), dark: .hex(0xFF8C00))
-    static let accentEmerald = Color(light: .hex(0x00D68F), dark: .hex(0x00D68F))
-    static let accentViolet = Color(light: .hex(0xA855F7), dark: .hex(0xA855F7))
-    static let accentSky = Color(light: .hex(0x38BDF8), dark: .hex(0x38BDF8))
+    static let accentGold = Color(light: .hex(0xCC8F36), dark: .hex(0xE2A24A))
+    static let accentCrimson = Color(light: .hex(0xB95D47), dark: .hex(0xD1735B))
+    static let accentAmber = Color(light: .hex(0xD9A24A), dark: .hex(0xE4B460))
+    static let accentEmerald = Color(light: .hex(0x4A907A), dark: .hex(0x68B19B))
+    static let accentViolet = Color(light: .hex(0xB46A78), dark: .hex(0xD98A99))
+    static let accentSky = Color(light: .hex(0x4E8FA1), dark: .hex(0x72B6C8))
 
     // MARK: - Stat Colors
     static let statCombat = Color.accentCrimson
@@ -28,8 +28,8 @@ extension Color {
     static let statStrategy = Color.accentSky
     static let statWealth = Color.accentAmber
     static let statCharm = Color.accentViolet
-    static let statDarkness = Color(light: .hex(0x6B21A8), dark: .hex(0x6B21A8))
-    static let statDestiny = Color(light: .hex(0x06B6D4), dark: .hex(0x06B6D4))
+    static let statDarkness = Color(light: .hex(0x6C5A6C), dark: .hex(0x8E7690))
+    static let statDestiny = Color(light: .hex(0x4E9A9A), dark: .hex(0x6AB9B9))
 
     // MARK: - Relationship Colors
     static let relationTrust = Color.accentEmerald

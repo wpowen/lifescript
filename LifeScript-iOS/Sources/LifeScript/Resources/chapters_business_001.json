@@ -1,0 +1,417 @@
+[
+  {
+    "id": "biz_ch_001",
+    "book_id": "business_001",
+    "number": 1,
+    "title": "临时董事会",
+    "is_paid": false,
+    "next_chapter_hook": "董事会还没散，外盘账户就开始集中砸单。周恺的人想在夜盘把公司股价压穿，而苏晚递给你的那份底稿里，藏着一条足以反杀整条做空链的旧合约。",
+    "nodes": [
+      {
+        "text": {
+          "id": "biz_001_01",
+          "content": "晚上八点四十。曜石资本会议中心。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "biz_001_02",
+          "content": "长桌两侧坐满了董事和投资人，空气里只有咖啡、纸张和敌意的味道。你推门走进来时，本该属于你的主位已经换上了周恺的名牌。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "biz_001_03",
+          "character_id": "char_zhou_kai",
+          "content": "你来得正好。既然你坚持要旁听，那就顺便亲眼看看，市场为什么认为你已经不适合继续留在这家公司。",
+          "emotion": "从容"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "biz_001_04",
+          "character_id": "char_su_wan",
+          "content": "他说市场，你听到的其实是已经写好的结论。",
+          "emotion": "低声提醒"
+        }
+      },
+      {
+        "text": {
+          "id": "biz_001_05",
+          "content": "投影亮起，屏幕上是一张被故意放大的现金流风险图。几个原本还摇摆的董事开始皱眉，周恺顺势把矛头往你身上引，试图把所有问题都归到你离任前留下的扩张决策。"
+        }
+      },
+      {
+        "choice": {
+          "id": "biz_choice_001",
+          "prompt": "周恺已经把节奏抢到了自己手里。你要怎么把这场会从‘宣判’变回‘厮杀’？",
+          "choice_type": "keyDecision",
+          "choices": [
+            {
+              "id": "biz_choice_001_a",
+              "text": "直接扔出审计底稿，当场拆他的风险图",
+              "description": "不让对方继续讲故事，先把会场拖回事实层面。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "名望", "delta": 10 },
+                { "stat": "谋略", "delta": 8 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_su_wan", "dimension": "信任", "delta": 12 },
+                { "character_id": "char_old_fu", "dimension": "敬畏", "delta": 10 },
+                { "character_id": "char_zhou_kai", "dimension": "敌意", "delta": 18 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "biz_result_001_a_01",
+                    "content": "你没等他翻下一页，直接把那摞审计底稿甩到会议桌中央。纸张散开的声音不大，却像一把刀，把原本已经被他带顺的节奏硬生生切断。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_001_a_02",
+                    "character_id": "char_zhou_kai",
+                    "content": "这些只是未盖章的工作稿，不能作为董事会判断依据。",
+                    "emotion": "第一次皱眉"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_001_a_03",
+                    "content": "你没有接他的规则，而是翻到第三十二页，把其中一张供应链回款表投到大屏上。图里最危险的那块缺口，恰恰来自他上任后签下的两份关联采购合同。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_001_a_04",
+                    "character_id": "char_old_fu",
+                    "content": "继续。把这两份合同的审批链也放出来。",
+                    "emotion": "终于坐直"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "biz_choice_001_b",
+              "text": "先顺着他的话认半步，再逼他做经营保证",
+              "description": "不急着反驳，先让他亲口把自己绑到台上。",
+              "satisfaction_type": "延迟爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 14 },
+                { "stat": "天命值", "delta": 4 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_old_fu", "dimension": "信任", "delta": 10 },
+                { "character_id": "char_zhou_kai", "dimension": "敬畏", "delta": 6 },
+                { "character_id": "char_jin_li", "dimension": "信任", "delta": 6 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "biz_result_001_b_01",
+                    "content": "你先点了点头，像是默认了他刚才那套关于现金流的叙述。会议桌两侧不少人都松了口气，连周恺自己都微微后仰，以为你终于知道什么时候该闭嘴。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_001_b_02",
+                    "character_id": "char_zhou_kai",
+                    "content": "既然你也认同现状，那就别再拖延董事会做决定。",
+                    "emotion": "放松"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_001_b_03",
+                    "content": "你顺势把话接过去，只问了一个问题：‘既然你认为现有策略稳妥，那你愿不愿意对未来两个季度的营收缺口做连带经营保证？’整张桌子顿时安静。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_001_b_04",
+                    "character_id": "char_su_wan",
+                    "content": "如果管理层不敢签保证，那这份风险图就只是用来吓人的幻灯片。",
+                    "emotion": "冷静补刀"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "biz_choice_001_c",
+              "text": "连线关键客户，让周恺的‘订单稳定’当场破产",
+              "description": "数据可以美化，人不会。把话筒交给真正握着钱的人。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "魅力", "delta": 8 },
+                { "stat": "谋略", "delta": 10 },
+                { "stat": "财富", "delta": 6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_jin_li", "dimension": "信任", "delta": 10 },
+                { "character_id": "char_zhou_kai", "dimension": "敌意", "delta": 20 },
+                { "character_id": "char_su_wan", "dimension": "好感", "delta": 8 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "biz_result_001_c_01",
+                    "content": "你没有碰桌上的任何纸，只是把手机反扣在投影遥控旁边，然后拨通了一个所有人都以为今晚不会接通的号码。等待音只响了一声，对面就接了。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_001_c_02",
+                    "character_id": "char_zhou_kai",
+                    "content": "你这是什么意思？董事会不是给你做秀的地方。",
+                    "emotion": "脸色发沉"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_001_c_03",
+                    "content": "外放里传来客户采购负责人疲惫而清楚的声音：他们已经暂停了与公司新签的增量框架，因为周恺团队私自调高交付保证金。‘订单稳定’这四个字，瞬间变成了笑话。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_001_c_04",
+                    "character_id": "char_old_fu",
+                    "content": "好，至少现在这桌子上终于有人说了真话。",
+                    "emotion": "淡淡发笑"
+                  }
+                }
+              ],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "biz_001_06",
+          "content": "会场风向开始明显倾斜。刚才还准备举手表决的几位董事，全都把目光转向苏晚手里的文件夹，像在等第二刀落下。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "biz_001_07",
+          "character_id": "char_su_wan",
+          "content": "散会后别走。我把真正能致命的那份底稿给你看，但你只有一次出手机会。",
+          "emotion": "压得很低"
+        }
+      },
+      {
+        "text": {
+          "id": "biz_001_08",
+          "content": "你知道她说得没错。因为会场外的手机已经开始连续震动，海外盘前账户正在集中挂出巨量空单，今晚的董事会只是前菜，真正的刀还在夜盘里等着。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  },
+  {
+    "id": "biz_ch_002",
+    "book_id": "business_001",
+    "number": 2,
+    "title": "夜盘绞杀",
+    "is_paid": false,
+    "next_chapter_hook": "你刚把夜盘踩住，金梨就把一段匿名录音发到了你手机上。录音里，周恺提到了一个已经被注销的境外 SPV，而那家公司恰好和你父亲当年的离场事故有关。",
+    "nodes": [
+      {
+        "text": {
+          "id": "biz_002_01",
+          "content": "晚上十一点零二分。交易室。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "biz_002_02",
+          "content": "六块大屏同时亮着，盘口像高烧病人的心电图一样剧烈抽动。公司股价刚被砸穿第一道支撑，市场上开始有人放风，说你刚才在董事会上的露面只是最后的挣扎。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "biz_002_03",
+          "character_id": "char_jin_li",
+          "content": "再给你十分钟。十分钟后如果没有更硬的东西，舆论就会默认周恺是稳的一方。",
+          "emotion": "干脆"
+        }
+      },
+      {
+        "choice": {
+          "id": "biz_choice_002",
+          "prompt": "夜盘做空链已经压上来了。你准备怎么把这场绞杀反过来套在对方脖子上？",
+          "choice_type": "styleChoice",
+          "choices": [
+            {
+              "id": "biz_choice_002_a",
+              "text": "先发制人，把关联交易录音喂给媒体",
+              "description": "用舆论先刺穿周恺的防线，让空头自己开始怀疑站位。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "名望", "delta": 12 },
+                { "stat": "魅力", "delta": 8 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_jin_li", "dimension": "信任", "delta": 12 },
+                { "character_id": "char_zhou_kai", "dimension": "敌意", "delta": 18 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "biz_result_002_a_01",
+                    "content": "你没有先碰盘口，而是把苏晚刚整理出的录音摘要推给金梨。三十秒后，财经快讯群里第一条匿名爆料跳出来，直指周恺团队操纵关联交易和订单口径。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_002_a_02",
+                    "content": "原本整齐砸下来的空单节奏明显乱了一拍。几家跟风的账户开始撤单观望，因为他们最怕的不是波动，而是突然发现自己站到了即将塌掉的一边。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_002_a_03",
+                    "character_id": "char_jin_li",
+                    "content": "口子开了。我能继续放大，但你得在三分钟内给我第二个证据点。",
+                    "emotion": "兴奋却冷静"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_002_a_04",
+                    "content": "你反手把董事会现场截出来的审批时间线发过去。第二条快讯落地时，盘口上最大的那笔空头压单直接被人一口吃掉，场内情绪第一次从恐慌转向怀疑。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "biz_choice_002_b",
+              "text": "不碰媒体，先拉老股东组成承接盘",
+              "description": "真正的牌桌不靠喊话，靠谁愿意在最危险的时候把钱压上去。",
+              "satisfaction_type": "延迟爽",
+              "stat_effects": [
+                { "stat": "财富", "delta": 10 },
+                { "stat": "谋略", "delta": 10 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_old_fu", "dimension": "信任", "delta": 14 },
+                { "character_id": "char_su_wan", "dimension": "信任", "delta": 8 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "biz_result_002_b_01",
+                    "content": "你关掉了正在滚动的新闻弹窗，只留盘口和股东通讯录。第一通电话打给傅承业时，你没有解释情绪，只报了两个数字和一个时间窗口。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_002_b_02",
+                    "character_id": "char_old_fu",
+                    "content": "你确定能守住二十分钟？守不住，今天晚上就是一场陪葬。",
+                    "emotion": "沉声"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_002_b_03",
+                    "content": "你回答得很短：‘只要第一笔承接打出去，我就让周恺自己去解释那两份合同。’五分钟后，三家老股东账户同时进场，在最低点一把接走了最危险的抛盘。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_002_b_04",
+                    "content": "空头原本以为这是一条没人敢碰的深沟，却突然发现底下有人在铺钢板。盘口震荡依旧凶狠，但最致命的连锁踩踏已经被你亲手截断。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            },
+            {
+              "id": "biz_choice_002_c",
+              "text": "触发旧合约条款，让对方的境外资金先自救",
+              "description": "不跟他们正面拼体量，直接去捏整条做空链最脆的地方。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 14 },
+                { "stat": "黑化值", "delta": 6 },
+                { "stat": "天命值", "delta": 6 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_su_wan", "dimension": "好感", "delta": 10 },
+                { "character_id": "char_zhou_kai", "dimension": "敬畏", "delta": 8 },
+                { "character_id": "char_jin_li", "dimension": "信任", "delta": 6 }
+              ],
+              "result_node_ids": [],
+              "result_nodes": [
+                {
+                  "text": {
+                    "id": "biz_result_002_c_01",
+                    "content": "你翻开苏晚给的旧合约，找到那条几乎没人记得的交叉违约条款。只要境外 SPV 的担保主体出现声誉风险，相关授信就会被迫重新评估。"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_002_c_02",
+                    "content": "你当场让法务把触发函发往授信行，同时把周恺关联交易的材料抄送过去。整个动作不需要市场先相信你，只需要银行先开始怕。"
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "biz_result_002_c_03",
+                    "character_id": "char_su_wan",
+                    "content": "他们一旦开始补保证金，夜盘这波空单就得自己先缩。",
+                    "emotion": "呼吸终于放缓"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "biz_result_002_c_04",
+                    "content": "果然，盘口上最凶的那组境外席位突然开始撤退。不是因为他们认输，而是因为你比他们更早把火烧回了他们自己仓库里。",
+                    "emphasis": "dramatic"
+                  }
+                }
+              ],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "biz_002_04",
+          "content": "凌晨零点前，股价终于重新站回关键支撑上方。交易室里没人欢呼，因为所有人都知道，这还只是把脖子从绞索里先抽出来半寸。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "biz_002_05",
+          "character_id": "char_jin_li",
+          "content": "我刚收到一段匿名录音。内容不止和周恺有关，还提到了你父亲当年被迫离场的那家境外壳公司。",
+          "emotion": "比平时更认真"
+        }
+      },
+      {
+        "text": {
+          "id": "biz_002_06",
+          "content": "你接过耳机，第一句还没听完，整个人就慢慢站直了。因为那道声音，你小时候听过太多次，绝不会认错。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  }
+]

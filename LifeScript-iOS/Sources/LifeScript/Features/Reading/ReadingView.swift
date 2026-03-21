@@ -12,220 +12,336 @@ struct ReadingView: View {
 
     var body: some View {
         ZStack {
-            Color.backgroundPrimary.ignoresSafeArea()
+            SceneBackdrop(palette: viewModel.book.palette)
 
             switch viewModel.state {
             case .loading:
                 ProgressView()
-                    .tint(Color.accentGold)
-
-            case .reading, .choosing:
-                readingContent
-
-            case .chapterEnd:
-                chapterEndOverlay
+                    .tint(viewModel.book.palette.primary)
 
             case .error(let message):
                 EmptyStateView(
                     symbol: "exclamationmark.triangle",
-                    title: "加载失败",
+                    title: "当前场景载入失败",
                     subtitle: message,
-                    action: { Task { await viewModel.loadChapter(id: viewModel.currentChapter?.id ?? "") } },
-                    actionTitle: "重试"
+                    action: {
+                        Task {
+                            await viewModel.loadChapter(id: viewModel.currentChapter?.id ?? "")
+                        }
+                    },
+                    actionTitle: "重新进入场景"
                 )
+
+            case .reading, .choosing, .chapterEnd:
+                readingContent
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar { readingToolbar }
+        .toolbar(.hidden, for: .navigationBar)
+        .toolbar(.hidden, for: .tabBar)
         .task { await viewModel.onAppear(modelContext: modelContext) }
     }
 
-    // MARK: - Reading Content
-
     private var readingContent: some View {
         ScrollViewReader { proxy in
-            ScrollView {
-                VStack(alignment: .leading, spacing: .spacing16) {
-                    // Chapter header
-                    if let chapter = viewModel.currentChapter {
-                        chapterHeader(chapter)
-                    }
+            ZStack(alignment: .bottom) {
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: .spacing16) {
+                        if let chapter = viewModel.currentChapter {
+                            chapterMarker(chapter)
+                        }
 
-                    // Story nodes
-                    ForEach(viewModel.displayedNodes) { node in
-                        StoryNodeView(
-                            node: node,
-                            book: viewModel.book,
-                            onChoiceSelected: { choice, choiceNode in
-                                viewModel.selectChoice(choice, in: choiceNode)
-                            }
-                        )
-                        .id(node.id)
-                        .transition(.opacity.combined(with: .move(edge: .bottom)))
-                    }
+                        if let guide = viewModel.chapterGuide {
+                            chapterGuidePanel(guide: guide, stage: viewModel.chapterStage)
+                        }
 
-                    // Tap to continue indicator
-                    if case .reading = viewModel.state {
-                        tapToContinueHint
-                            .id("tap_hint")
-                    }
+                        ForEach(viewModel.displayedNodes) { node in
+                            StoryNodeView(
+                                node: node,
+                                book: viewModel.book,
+                                onChoiceSelected: { choice, choiceNode in
+                                    let previousCount = viewModel.displayedNodes.count
+                                    withAnimation(.spring(response: 0.30, dampingFraction: 0.88)) {
+                                        viewModel.selectChoice(choice, in: choiceNode)
+                                    }
+                                    scrollAfterUpdate(using: proxy, previousCount: previousCount)
+                                }
+                            )
+                            .id(node.id)
+                            .transition(.opacity.combined(with: .move(edge: .bottom)))
+                        }
 
-                    Spacer(minLength: 100)
+                        Spacer(minLength: 160)
+                    }
+                    .padding(.horizontal, .spacing20)
+                    .padding(.top, .spacing24)
+                    .padding(.bottom, .spacing32)
                 }
-                .padding(.horizontal, .spacing16)
-                .padding(.top, .spacing16)
-            }
-            .onTapGesture {
-                let previousCount = viewModel.displayedNodes.count
-                withAnimation(.easeOut(duration: 0.35)) {
-                    viewModel.tapToAdvance()
+                .accessibilityIdentifier("immersiveReadingView")
+                .contentShape(Rectangle())
+                .simultaneousGesture(
+                    TapGesture()
+                        .onEnded { advanceStory(using: proxy) }
+                )
+                .onChange(of: viewModel.displayedNodes.count) { oldValue, newValue in
+                    guard newValue > oldValue else { return }
+                    scrollAfterUpdate(using: proxy, previousCount: oldValue)
                 }
-                // Scroll to the first NEW node in the batch so user reads from the top
-                if viewModel.displayedNodes.count > previousCount {
-                    let firstNewId = viewModel.displayedNodes[previousCount].id
-                    withAnimation(.easeOut(duration: 0.4)) {
-                        proxy.scrollTo(firstNewId, anchor: .top)
-                    }
+
+                if case .chapterEnd = viewModel.state {
+                    chapterEndOverlay
+                } else if case .reading = viewModel.state {
+                    immersiveAdvanceHint
                 }
             }
         }
+        .safeAreaInset(edge: .top, spacing: 0) {
+            immersiveNavigationBar
+        }
     }
 
-    // MARK: - Chapter Header
+    private var immersiveNavigationBar: some View {
+        HStack(spacing: .spacing10) {
+            if coordinator.canGoBack {
+                immersiveChromeButton(
+                    title: "上一页",
+                    systemImage: "chevron.left",
+                    accessibilityIdentifier: "readingBackButton"
+                ) {
+                    coordinator.goBack()
+                }
+            }
 
-    private func chapterHeader(_ chapter: Chapter) -> some View {
+            immersiveChromeButton(
+                title: "首页",
+                systemImage: "house.fill",
+                accessibilityIdentifier: "readingHomeButton"
+            ) {
+                coordinator.returnToHome()
+            }
+
+            Spacer(minLength: 0)
+        }
+        .padding(.horizontal, .spacing16)
+        .padding(.top, .spacing8)
+        .padding(.bottom, .spacing12)
+        .background(
+            LinearGradient(
+                colors: [
+                    Color.backgroundPrimary.opacity(0.92),
+                    Color.backgroundPrimary.opacity(0)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
+    }
+
+    private func chapterMarker(_ chapter: Chapter) -> some View {
         VStack(spacing: .spacing8) {
             Text("第\(chapter.number)章")
                 .font(.chapterNumber)
-                .foregroundStyle(Color.accentGold)
+                .foregroundStyle(viewModel.book.palette.primary)
+
             Text(chapter.title)
                 .font(.displayMedium)
                 .foregroundStyle(Color.textPrimary)
                 .multilineTextAlignment(.center)
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, .spacing32)
+        .padding(.bottom, .spacing8)
+        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("readingChapterMarker")
     }
 
-    // MARK: - Tap Hint
-
-    private var tapToContinueHint: some View {
-        HStack(spacing: .spacing8) {
-            Circle()
-                .fill(Color.accentGold.opacity(0.4))
-                .frame(width: 6, height: 6)
-                .phaseAnimator([false, true]) { content, phase in
-                    content.opacity(phase ? 0.3 : 1.0)
-                } animation: { _ in .easeInOut(duration: 1.2).repeatForever() }
-            Text("点击继续")
+    private var immersiveAdvanceHint: some View {
+        VStack(spacing: .spacing6) {
+            Image(systemName: viewModel.isAwaitingChapterEndTransition ? "arrow.down.circle.fill" : "chevron.down.circle.fill")
+                .font(.bodyLarge)
+            Text(viewModel.isAwaitingChapterEndTransition ? "轻触进入章末" : "轻触继续")
                 .font(.captionLarge)
-                .foregroundStyle(Color.textTertiary)
-            Circle()
-                .fill(Color.accentGold.opacity(0.4))
-                .frame(width: 6, height: 6)
-                .phaseAnimator([false, true]) { content, phase in
-                    content.opacity(phase ? 0.3 : 1.0)
-                } animation: { _ in .easeInOut(duration: 1.2).repeatForever() }
         }
+        .foregroundStyle(Color.textSecondary.opacity(0.9))
+        .padding(.bottom, .spacing24)
         .frame(maxWidth: .infinity)
-        .padding(.top, .spacing24)
+        .background(
+            LinearGradient(
+                colors: [Color.backgroundPrimary.opacity(0), Color.backgroundPrimary.opacity(0.88)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
+        .allowsHitTesting(false)
+        .transition(.opacity)
     }
 
-    // MARK: - Chapter End Overlay
+    private func chapterGuidePanel(guide: WalkthroughChapterGuide, stage: WalkthroughStage?) -> some View {
+        VStack(alignment: .leading, spacing: .spacing12) {
+            HStack {
+                if let stage {
+                    SceneAccentBadge(text: stage.title, color: viewModel.book.palette.secondary)
+                }
+                SceneAccentBadge(text: "\(guide.visibleRoutes.count) 条公开路线", color: viewModel.book.palette.tertiary)
+                Spacer()
+            }
+
+            Text(guide.objective)
+                .font(.titleSmall)
+                .foregroundStyle(Color.textPrimary)
+
+            Text(guide.publicSummary)
+                .font(.bodySmall)
+                .foregroundStyle(Color.textSecondary)
+                .lineSpacing(4)
+
+            HStack(spacing: .spacing8) {
+                guideMetricChip(text: "~\(guide.estimatedMinutes) 分钟", color: viewModel.book.palette.primary)
+                guideMetricChip(text: "\(guide.interactionCount) 次交互", color: viewModel.book.palette.secondary)
+                if let hiddenRouteHint = guide.hiddenRouteHint {
+                    guideMetricChip(text: hiddenRouteHint, color: viewModel.book.palette.tertiary)
+                }
+            }
+        }
+        .scenePanel(accent: viewModel.book.palette.secondary, padding: .spacing16)
+    }
+
+    private func guideMetricChip(text: String, color: Color) -> some View {
+        Text(text)
+            .font(.captionLarge)
+            .foregroundStyle(color)
+            .padding(.horizontal, .spacing10)
+            .padding(.vertical, .spacing8)
+            .background(
+                Capsule(style: .continuous)
+                    .fill(color.opacity(0.10))
+            )
+    }
 
     private var chapterEndOverlay: some View {
         VStack(spacing: .spacing24) {
             Spacer()
 
-            // Chapter complete indicator
-            VStack(spacing: .spacing12) {
-                Image(systemName: "checkmark.seal.fill")
-                    .font(.system(size: 44))
-                    .foregroundStyle(Color.accentGold)
-                if let chapter = viewModel.currentChapter {
-                    Text("第\(chapter.number)章 完")
-                        .font(.chapterNumber)
-                        .foregroundStyle(Color.textSecondary)
-                }
-            }
-
-            if let hook = viewModel.currentChapter?.nextChapterHook {
-                Text(hook)
-                    .font(.readingBody)
-                    .foregroundStyle(Color.accentGold)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, .spacing24)
-                    .italic()
-                    .padding(.vertical, .spacing12)
-                    .background(Color.accentGold.opacity(0.05))
-                    .clipShape(RoundedRectangle(cornerRadius: .radiusMedium))
-                    .padding(.horizontal, .spacing16)
-            }
-
-            VStack(spacing: .spacing12) {
-                if let chapter = viewModel.currentChapter {
-                    Button("查看本章结算") {
-                        coordinator.presentSheet(.chapterSettlement(
-                            book: viewModel.book,
-                            chapter: chapter,
-                            stats: viewModel.stats,
-                            previousStats: viewModel.statsBeforeChapter,
-                            relationships: viewModel.relationships,
-                            previousRelationships: viewModel.relationshipsBeforeChapter,
-                            choices: viewModel.chapterChoices
-                        ))
+            VStack(alignment: .leading, spacing: .spacing16) {
+                HStack {
+                    SceneAccentBadge(text: "本章落幕", color: viewModel.book.palette.primary)
+                    Spacer()
+                    if let chapter = viewModel.currentChapter {
+                        Text("第\(chapter.number)章")
+                            .font(.chapterNumber)
+                            .foregroundStyle(Color.textSecondary)
                     }
-                    .buttonStyle(.primary)
                 }
 
-                Button("继续下一章") {
-                    Task { await viewModel.proceedToNextChapter() }
+                if let hook = viewModel.currentChapter?.nextChapterHook {
+                    Text(hook)
+                        .font(.readingBody)
+                        .foregroundStyle(Color.textPrimary)
+                        .italic()
+                        .lineSpacing(6)
                 }
-                .buttonStyle(.secondary)
+
+                VStack(spacing: .spacing12) {
+                    if let chapter = viewModel.currentChapter {
+                        Button {
+                            coordinator.presentSheet(.chapterSettlement(
+                                book: viewModel.book,
+                                chapter: chapter,
+                                stats: viewModel.stats,
+                                previousStats: viewModel.statsBeforeChapter,
+                                relationships: viewModel.relationships,
+                                previousRelationships: viewModel.relationshipsBeforeChapter,
+                                choices: viewModel.chapterChoices
+                            ))
+                        } label: {
+                            SceneCTAButtonLabel(
+                                title: "查看本章影响",
+                                subtitle: "看清这次落子带来的变化",
+                                systemImage: "list.bullet.rectangle.portrait.fill",
+                                subtitleColor: Color.textSecondary
+                            )
+                        }
+                        .buttonStyle(.secondary)
+                    }
+
+                    if viewModel.hasNextChapter {
+                        Button {
+                            Task { await viewModel.proceedToNextChapter() }
+                        } label: {
+                            SceneCTAButtonLabel(
+                                title: "进入下一章",
+                                subtitle: "继续把这条路线推进下去",
+                                systemImage: "arrow.right.circle.fill"
+                            )
+                        }
+                        .buttonStyle(.primary)
+                        .accessibilityIdentifier("readingNextChapterButton")
+                    } else {
+                        Button {
+                            coordinator.returnToHome()
+                        } label: {
+                            SceneCTAButtonLabel(
+                                title: "返回首页",
+                                subtitle: "这一卷已经读完，回到故事大厅",
+                                systemImage: "house.fill"
+                            )
+                        }
+                        .buttonStyle(.primary)
+                        .accessibilityIdentifier("readingReturnHomeButton")
+                    }
+                }
             }
+            .scenePanel(accent: viewModel.book.palette.primary, padding: .spacing20)
             .padding(.horizontal, .spacing16)
-
-            Spacer()
+            .padding(.bottom, .spacing24)
         }
-        .frame(maxWidth: .infinity)
+        .background(Color.black.opacity(0.24).ignoresSafeArea())
     }
 
-    // MARK: - Toolbar
-
-    @ToolbarContentBuilder
-    private var readingToolbar: some ToolbarContent {
-        ToolbarItem(placement: .principal) {
-            Text(viewModel.currentChapter?.title ?? "")
-                .font(.labelSmall)
-                .foregroundStyle(Color.textSecondary)
+    private func advanceStory(using proxy: ScrollViewProxy) {
+        guard case .reading = viewModel.state else { return }
+        let previousCount = viewModel.displayedNodes.count
+        withAnimation(.spring(response: 0.30, dampingFraction: 0.88)) {
+            viewModel.tapToAdvance()
         }
-        ToolbarItem(placement: .topBarTrailing) {
-            Menu {
-                Button {
-                    coordinator.presentSheet(.stats(
-                        stats: viewModel.stats,
-                        previousStats: viewModel.statsBeforeChapter
-                    ))
-                } label: {
-                    Label("主角属性", systemImage: "chart.bar")
-                }
-                Button {
-                    coordinator.presentSheet(.relationships(
-                        book: viewModel.book,
-                        relationships: viewModel.relationships
-                    ))
-                } label: {
-                    Label("角色关系", systemImage: "person.2")
-                }
-            } label: {
-                Image(systemName: "ellipsis.circle")
-                    .foregroundStyle(Color.textSecondary)
+        scrollAfterUpdate(using: proxy, previousCount: previousCount)
+    }
+
+    private func scrollAfterUpdate(using proxy: ScrollViewProxy, previousCount: Int) {
+        guard viewModel.displayedNodes.count > previousCount else { return }
+        let firstNewIndex = min(previousCount, viewModel.displayedNodes.count - 1)
+        let targetId = viewModel.displayedNodes[firstNewIndex].id
+        DispatchQueue.main.async {
+            withAnimation(.easeOut(duration: 0.35)) {
+                proxy.scrollTo(targetId, anchor: .top)
             }
         }
+    }
+
+    private func immersiveChromeButton(
+        title: String,
+        systemImage: String,
+        accessibilityIdentifier: String,
+        action: @escaping () -> Void
+    ) -> some View {
+        Button(action: action) {
+            Label(title, systemImage: systemImage)
+                .font(.captionLarge.weight(.semibold))
+                .foregroundStyle(Color.textPrimary)
+                .padding(.horizontal, .spacing12)
+                .padding(.vertical, .spacing10)
+                .background(
+                    Capsule(style: .continuous)
+                        .fill(Color.surfacePrimary.opacity(0.88))
+                        .overlay(
+                            Capsule(style: .continuous)
+                                .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
+                        )
+                )
+        }
+        .buttonStyle(.plain)
+        .shadow(color: Color.black.opacity(0.10), radius: 12, x: 0, y: 6)
+        .accessibilityIdentifier(accessibilityIdentifier)
     }
 }
-
-// MARK: - Story Node View
 
 struct StoryNodeView: View {
     let node: StoryNode
@@ -245,136 +361,167 @@ struct StoryNodeView: View {
         }
     }
 
-    // MARK: - Text
-
     private func textView(_ node: TextNode) -> some View {
         Group {
-            switch node.emphasis {
+            switch node.emphasis ?? .normal {
             case .dramatic:
                 Text(node.content)
                     .font(.readingBodyLarge)
-                    .foregroundStyle(Color.accentGold)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .multilineTextAlignment(.center)
-                    .padding(.vertical, .spacing8)
+                    .foregroundStyle(book.palette.primary)
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(8)
+                    .padding(.vertical, .spacing10)
+
             case .whisper:
                 Text(node.content)
                     .font(.bodySmall)
-                    .foregroundStyle(Color.textTertiary)
+                    .foregroundStyle(Color.textSecondary)
                     .italic()
+                    .padding(.leading, .spacing12)
+                    .overlay(alignment: .leading) {
+                        Capsule(style: .continuous)
+                            .fill(book.palette.tertiary.opacity(0.55))
+                            .frame(width: 3)
+                    }
+
             case .system:
-                Text(node.content)
-                    .font(.bodySmall)
-                    .foregroundStyle(Color.accentSky)
-                    .padding(.spacing12)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.accentSky.opacity(0.1))
-                    .clipShape(RoundedRectangle(cornerRadius: .radiusSmall))
-            default:
+                HStack(alignment: .top, spacing: .spacing8) {
+                    Image(systemName: "sparkles")
+                        .font(.captionLarge)
+                        .foregroundStyle(book.palette.tertiary)
+                    Text(node.content)
+                        .font(.bodyMedium)
+                        .foregroundStyle(Color.textSecondary)
+                        .lineSpacing(5)
+                }
+                .padding(.vertical, .spacing4)
+
+            case .normal:
                 Text(node.content)
                     .font(.readingBody)
                     .foregroundStyle(Color.textPrimary)
                     .lineSpacing(8)
             }
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
-
-    // MARK: - Dialogue
 
     private func dialogueView(_ node: DialogueNode) -> some View {
         let character = book.characters.first { $0.id == node.characterId }
-        return HStack(alignment: .top, spacing: .spacing12) {
-            Circle()
-                .fill(Color.surfaceHighlight)
-                .frame(width: 36, height: 36)
-                .overlay(
-                    Text(String(character?.name.prefix(1) ?? "?"))
-                        .font(.labelSmall)
-                        .foregroundStyle(Color.accentGold)
-                )
 
-            VStack(alignment: .leading, spacing: .spacing4) {
-                HStack(spacing: .spacing6) {
-                    Text(character?.name ?? "???")
-                        .font(.labelSmall)
-                        .foregroundStyle(Color.accentGold)
-                    if let emotion = node.emotion {
-                        Text("(\(emotion))")
-                            .font(.captionSmall)
-                            .foregroundStyle(Color.textTertiary)
-                    }
+        return VStack(alignment: .leading, spacing: .spacing6) {
+            HStack(spacing: .spacing8) {
+                Text(character?.name ?? "未知角色")
+                    .font(.labelMedium)
+                    .foregroundStyle(book.palette.primary)
+
+                if let emotion = node.emotion {
+                    Text(emotion)
+                        .font(.captionLarge)
+                        .foregroundStyle(Color.textTertiary)
                 }
-                Text("\u{201C}\(node.content)\u{201D}")
-                    .font(.readingBody)
-                    .foregroundStyle(Color.textPrimary)
-                    .lineSpacing(6)
             }
+
+            Text("“\(node.content)”")
+                .font(.readingBody)
+                .foregroundStyle(Color.textPrimary)
+                .lineSpacing(6)
         }
-        .padding(.vertical, .spacing4)
+        .padding(.leading, .spacing14)
+        .overlay(alignment: .leading) {
+            Capsule(style: .continuous)
+                .fill(book.palette.secondary.opacity(0.65))
+                .frame(width: 3)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    // MARK: - Choice
-
     private func choiceView(_ node: ChoiceNode) -> some View {
-        VStack(spacing: .spacing12) {
-            Text(node.prompt)
-                .font(.labelLarge)
-                .foregroundStyle(Color.accentGold)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .multilineTextAlignment(.center)
-                .padding(.vertical, .spacing8)
+        VStack(alignment: .leading, spacing: .spacing14) {
+            SceneAccentBadge(text: node.choiceType.displayName, color: book.palette.primary)
 
-            ForEach(node.choices) { choice in
-                Button {
-                    onChoiceSelected?(choice, node)
-                } label: {
-                    VStack(alignment: .leading, spacing: .spacing4) {
-                        Text(choice.text)
-                            .font(.choiceTitle)
-                        if let desc = choice.description {
-                            Text(desc)
-                                .font(.captionLarge)
-                                .foregroundStyle(Color.textTertiary)
+            Text(node.prompt)
+                .font(.titleMedium)
+                .foregroundStyle(Color.textPrimary)
+                .lineSpacing(5)
+
+            VStack(spacing: .spacing12) {
+                ForEach(node.choices) { choice in
+                    Button {
+                        onChoiceSelected?(choice, node)
+                    } label: {
+                        VStack(alignment: .leading, spacing: .spacing8) {
+                            HStack(alignment: .top) {
+                                Text(choice.text)
+                                    .font(.choiceTitle)
+                                Spacer()
+                                SceneAccentBadge(
+                                    text: choice.satisfactionType.displayName,
+                                    color: choice.satisfactionType.accentColor
+                                )
+                            }
+
+                            if let desc = choice.description {
+                                Text(desc)
+                                    .font(.bodySmall)
+                                    .foregroundStyle(Color.textSecondary)
+                                    .lineSpacing(4)
+                            }
+
+                            if choice.visibleCost != nil || choice.visibleReward != nil || choice.riskHint != nil || choice.processLabel != nil {
+                                FlowLayout(spacing: .spacing8) {
+                                    if let reward = choice.visibleReward {
+                                        choiceMetaChip(label: "收益", value: reward, color: .accentEmerald)
+                                    }
+                                    if let cost = choice.visibleCost {
+                                        choiceMetaChip(label: "代价", value: cost, color: .accentAmber)
+                                    }
+                                    if let risk = choice.riskHint {
+                                        choiceMetaChip(label: "风险", value: risk, color: .accentCrimson)
+                                    }
+                                    if let process = choice.processLabel {
+                                        choiceMetaChip(label: "过程", value: process, color: .accentSky)
+                                    }
+                                }
+                            }
                         }
-                        HStack(spacing: .spacing6) {
-                            Image(systemName: choice.satisfactionType.iconName)
-                                .font(.captionSmall)
-                            Text(choice.satisfactionType.displayName)
-                                .font(.captionSmall)
-                        }
-                        .foregroundStyle(Color.textTertiary)
                     }
+                    .buttonStyle(ChoiceButtonStyle(accentColor: choice.satisfactionType.accentColor))
                 }
-                .buttonStyle(ChoiceButtonStyle())
             }
         }
         .padding(.vertical, .spacing8)
     }
-
-    // MARK: - Notification
 
     private func notificationView(_ node: NotificationNode) -> some View {
         HStack(spacing: .spacing8) {
             Image(systemName: notificationIcon(node.type))
                 .font(.captionLarge)
                 .foregroundStyle(notificationColor(node.type))
+
             Text(node.message)
                 .font(.labelSmall)
-                .foregroundStyle(notificationColor(node.type))
+                .foregroundStyle(Color.textPrimary)
         }
         .padding(.horizontal, .spacing12)
-        .padding(.vertical, .spacing8)
-        .frame(maxWidth: .infinity)
-        .background(notificationColor(node.type).opacity(0.1))
-        .clipShape(RoundedRectangle(cornerRadius: .radiusSmall))
+        .padding(.vertical, .spacing10)
+        .background(
+            Capsule(style: .continuous)
+                .fill(notificationColor(node.type).opacity(0.12))
+                .overlay(
+                    Capsule(style: .continuous)
+                        .strokeBorder(notificationColor(node.type).opacity(0.18), lineWidth: 1)
+                )
+        )
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func notificationIcon(_ type: NotificationNode.NotificationType) -> String {
         switch type {
-        case .statChange: return "arrow.up.circle"
-        case .relationshipChange: return "person.2.circle"
-        case .itemGained: return "gift"
-        case .storyHint: return "lightbulb"
+        case .statChange: return "chart.bar.fill"
+        case .relationshipChange: return "person.2.fill"
+        case .itemGained: return "gift.fill"
+        case .storyHint: return "lightbulb.fill"
         }
     }
 
@@ -385,5 +532,21 @@ struct StoryNodeView: View {
         case .itemGained: return .accentEmerald
         case .storyHint: return .accentSky
         }
+    }
+
+    private func choiceMetaChip(label: String, value: String, color: Color) -> some View {
+        HStack(spacing: .spacing4) {
+            Text(label)
+                .font(.captionLarge.weight(.semibold))
+            Text(value)
+                .font(.captionLarge)
+        }
+        .foregroundStyle(color)
+        .padding(.horizontal, .spacing8)
+        .padding(.vertical, .spacing6)
+        .background(
+            Capsule(style: .continuous)
+                .fill(color.opacity(0.10))
+        )
     }
 }
