@@ -81,7 +81,7 @@ final class ReadingViewModel {
             statsBeforeChapter = stats
             relationshipsBeforeChapter = relationships
             state = .reading
-            advanceToNextNode()
+            advanceToNextSegment()
         } catch {
             state = .error(AppError.from(error).localizedDescription)
         }
@@ -89,34 +89,98 @@ final class ReadingViewModel {
 
     // MARK: - Reading Progression
 
-    func advanceToNextNode() {
+    /// Advances to the next logical "segment" of content.
+    /// A segment is a group of consecutive nodes displayed together,
+    /// stopping at natural pause points for better reading flow.
+    func advanceToNextSegment() {
         guard currentNodeIndex < allNodes.count else {
             state = .chapterEnd
             saveProgress()
             return
         }
 
-        let node = allNodes[currentNodeIndex]
-        currentNodeIndex += 1
+        var addedCount = 0
 
-        switch node {
-        case .choice(let choiceNode):
-            // Pause on choice — wait for user input
-            displayedNodes.append(node)
-            state = .choosing(choiceNode)
-        case .notification:
-            displayedNodes.append(node)
-            // Auto-advance after notification
-            advanceToNextNode()
-        default:
-            displayedNodes.append(node)
+        while currentNodeIndex < allNodes.count {
+            let node = allNodes[currentNodeIndex]
+
+            switch node {
+            case .choice(let choiceNode):
+                // Always pause before a choice — user must decide
+                if addedCount == 0 {
+                    // If this is the first node, show the choice
+                    displayedNodes.append(node)
+                    currentNodeIndex += 1
+                    state = .choosing(choiceNode)
+                } else {
+                    // Content was already shown; stop here so choice appears on next tap
+                    state = .reading
+                }
+                return
+
+            case .notification:
+                // Notifications are always added (they're small inline badges)
+                displayedNodes.append(node)
+                currentNodeIndex += 1
+                addedCount += 1
+                // Don't count notifications toward pause logic, keep going
+
+            case .text(let textNode):
+                displayedNodes.append(node)
+                currentNodeIndex += 1
+                addedCount += 1
+
+                // Pause AFTER dramatic or system emphasis text (scene breaks)
+                if textNode.emphasis == .dramatic || textNode.emphasis == .system {
+                    // But only pause if we've already shown some content
+                    // If this is the opening dramatic line, continue to build the scene
+                    if addedCount >= 2 {
+                        state = .reading
+                        return
+                    }
+                }
+
+            case .dialogue:
+                displayedNodes.append(node)
+                currentNodeIndex += 1
+                addedCount += 1
+
+                // After adding a dialogue, peek ahead:
+                // If the next node is NOT dialogue (conversation ended), consider pausing
+                if addedCount >= 3, !isNextNodeDialogue {
+                    state = .reading
+                    return
+                }
+            }
+
+            // Soft cap: after 5 content nodes (not counting notifications),
+            // pause if the next node starts a new "beat"
+            let contentCount = addedCount
+            if contentCount >= 5 {
+                state = .reading
+                return
+            }
+        }
+
+        // Reached end of chapter
+        if currentNodeIndex >= allNodes.count {
+            state = .chapterEnd
+            saveProgress()
+        } else {
             state = .reading
         }
     }
 
+    /// Peek at the next node without consuming it
+    private var isNextNodeDialogue: Bool {
+        guard currentNodeIndex < allNodes.count else { return false }
+        if case .dialogue = allNodes[currentNodeIndex] { return true }
+        return false
+    }
+
     func tapToAdvance() {
         guard case .reading = state else { return }
-        advanceToNextNode()
+        advanceToNextSegment()
     }
 
     // MARK: - Choice Selection
@@ -180,7 +244,7 @@ final class ReadingViewModel {
         saveProgress()
 
         // Continue advancing
-        advanceToNextNode()
+        advanceToNextSegment()
     }
 
     // MARK: - Navigation

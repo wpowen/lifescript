@@ -76,13 +76,15 @@ struct ReadingView: View {
                 .padding(.top, .spacing16)
             }
             .onTapGesture {
-                withAnimation(.easeOut(duration: 0.3)) {
+                let previousCount = viewModel.displayedNodes.count
+                withAnimation(.easeOut(duration: 0.35)) {
                     viewModel.tapToAdvance()
                 }
-                // Scroll to latest node
-                if let lastId = viewModel.displayedNodes.last?.id {
-                    withAnimation {
-                        proxy.scrollTo(lastId, anchor: .bottom)
+                // Scroll to the first NEW node in the batch so user reads from the top
+                if viewModel.displayedNodes.count > previousCount {
+                    let firstNewId = viewModel.displayedNodes[previousCount].id
+                    withAnimation(.easeOut(duration: 0.4)) {
+                        proxy.scrollTo(firstNewId, anchor: .top)
                     }
                 }
             }
