@@ -1,0 +1,62 @@
+name: LifeScript
+options:
+  bundleIdPrefix: com.lifescript
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ${DEVELOPMENT_TEAM}
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+
+targets:
+  LifeScript:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - Sources/LifeScript
+    info:
+      path: Sources/LifeScript/Info.plist
+      properties:
+        CFBundleDisplayName: "命书"
+        UILaunchScreen:
+          UIColorName: backgroundPrimary
+          UIImageName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: false
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.app
+        INFOPLIST_KEY_CFBundleDisplayName: "命书"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies: []
+
+  LifeScriptTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/LifeScriptTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: LifeScript
+
+  LifeScriptUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - Tests/LifeScriptUITests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: LifeScript

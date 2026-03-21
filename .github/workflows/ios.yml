@@ -1,0 +1,65 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'LifeScript-iOS/**'
+      - '.github/workflows/ios.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'LifeScript-iOS/**'
+      - '.github/workflows/ios.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Build & Test
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: LifeScript-iOS
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode Project
+        run: xcodegen generate
+
+      - name: Build
+        run: |
+          xcodebuild build \
+            -project LifeScript.xcodeproj \
+            -scheme LifeScript \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO | xcpretty
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+            -project LifeScript.xcodeproj \
+            -scheme LifeScript \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO | xcpretty
+
+      - name: Run UI Tests
+        run: |
+          xcodebuild test \
+            -project LifeScript.xcodeproj \
+            -scheme LifeScriptUITests \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO | xcpretty

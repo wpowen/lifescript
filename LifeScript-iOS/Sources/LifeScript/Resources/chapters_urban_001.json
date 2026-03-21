@@ -1,0 +1,580 @@
+[
+  {
+    "id": "ch_001",
+    "book_id": "urban_001",
+    "number": 1,
+    "title": "宗祠之辱",
+    "is_paid": false,
+    "next_chapter_hook": "古戒的声音再次响起：'你的选择，已经开始改变命运的轨迹。明天的宗门大比，将是你第一次真正的考验。'林月今晚会来找你——她似乎察觉到了什么……",
+    "nodes": [
+      {
+        "text": {
+          "id": "n_001_01",
+          "content": "深夜。林家宗祠。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_02",
+          "content": "你跪在冰冷的石板上，膝盖已经麻木。四周烛火摇曳，祖先牌位在阴影中若隐若现。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_03",
+          "content": "满堂长老端坐在高位，目光冷漠地俯视着你——就像看一只等待宰杀的羔羊。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_001_04",
+          "character_id": "char_elder_three",
+          "content": "三年了，你还有脸回来？当初若不是老族长护着你，你连跪在这里的资格都没有。",
+          "emotion": "冷笑"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_05",
+          "content": "三长老一脚踢翻你面前的供桌，茶水溅在你脸上。周围传来低低的嗤笑声。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_001_06",
+          "character_id": "char_zhang_wei",
+          "content": "三长老说得对，废物就是废物。三年前测不出灵根，三年后还是一样。林家不养废物。",
+          "emotion": "嘲讽"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_07",
+          "content": "你攥紧拳头，指甲嵌入掌心。你感觉到无名指上的古戒微微发烫——三年来第一次。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_08",
+          "content": "一道只有你能听见的声音，在脑海中响起：",
+          "emphasis": "system"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_09",
+          "content": "「封印已开始松动。宿主，现在你有三个选择。每个选择，都将改变你的命运轨迹。」",
+          "emphasis": "system"
+        }
+      },
+      {
+        "choice": {
+          "id": "choice_001_01",
+          "prompt": "你的体内涌起一股前所未有的力量。此刻，你选择——",
+          "choice_type": "keyDecision",
+          "choices": [
+            {
+              "id": "c_001_01_a",
+              "text": "当场摊牌，震碎测灵石",
+              "description": "释放封印之力，让所有人看到真正的你。三长老的脸，今晚就要打。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 15 },
+                { "stat": "名望", "delta": 10 },
+                { "stat": "天命值", "delta": -5 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_elder_three", "dimension": "敬畏", "delta": 25 },
+                { "character_id": "char_elder_three", "dimension": "敌意", "delta": 15 },
+                { "character_id": "char_zhang_wei", "dimension": "敬畏", "delta": 20 },
+                { "character_id": "char_lin_yue", "dimension": "好感", "delta": 10 }
+              ],
+              "result_node_ids": ["result_001_a"],
+              "is_premium": false
+            },
+            {
+              "id": "c_001_01_b",
+              "text": "忍下羞辱，暗中布局",
+              "description": "今晚不是时候。记住每一张嘲笑的脸，三个月后宗门大比再一一清算。",
+              "satisfaction_type": "延迟爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 15 },
+                { "stat": "天命值", "delta": 10 },
+                { "stat": "黑化值", "delta": 5 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_old_chen", "dimension": "信任", "delta": 15 },
+                { "character_id": "char_lin_yue", "dimension": "好感", "delta": -5 }
+              ],
+              "result_node_ids": ["result_001_b"],
+              "is_premium": false
+            },
+            {
+              "id": "c_001_01_c",
+              "text": "假意认错，先骗走藏宝阁钥匙",
+              "description": "既然他们看不起你，就让他们继续小看。趁机拿到藏宝阁钥匙，里面有你需要的东西。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 10 },
+                { "stat": "财富", "delta": 15 },
+                { "stat": "魅力", "delta": 5 },
+                { "stat": "黑化值", "delta": 10 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_elder_three", "dimension": "信任", "delta": 10 },
+                { "character_id": "char_old_chen", "dimension": "信任", "delta": -10 }
+              ],
+              "result_node_ids": ["result_001_c"],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_10",
+          "content": "你做出了选择。古戒上的纹路闪过一道微光，仿佛在回应你的决定。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_11",
+          "content": "在宗祠的角落里，陈伯默默注视着这一切。他浑浊的眼中，闪过一丝不易察觉的光芒。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_001_12",
+          "character_id": "char_old_chen",
+          "content": "少爷……终于要开始了吗。",
+          "emotion": "低语"
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_13",
+          "content": "夜色深沉，你走出宗祠。身后，林月的目光一直追随着你的背影。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_001_14",
+          "character_id": "char_lin_yue",
+          "content": "你……今晚怎么不一样了？",
+          "emotion": "若有所思"
+        }
+      },
+      {
+        "choice": {
+          "id": "choice_001_02",
+          "prompt": "林月追了出来。月光下，她的表情带着一丝担忧和好奇。你——",
+          "choice_type": "characterPref",
+          "choices": [
+            {
+              "id": "c_001_02_a",
+              "text": "微微一笑，什么都不说",
+              "description": "有些事，不需要解释。让她自己去猜。",
+              "satisfaction_type": "扮猪吃虎",
+              "stat_effects": [
+                { "stat": "魅力", "delta": 10 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_lin_yue", "dimension": "好感", "delta": 15 },
+                { "character_id": "char_lin_yue", "dimension": "信任", "delta": -5 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            },
+            {
+              "id": "c_001_02_b",
+              "text": "告诉她：'一切都会不一样的。等着看。'",
+              "description": "给她一个承诺，也给自己一个期限。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "名望", "delta": 5 },
+                { "stat": "魅力", "delta": 5 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_lin_yue", "dimension": "好感", "delta": 10 },
+                { "character_id": "char_lin_yue", "dimension": "信任", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "n_001_15",
+          "content": "月光洒在林家大院，你转身离去。掌心中的古戒温热如火。\n\n这一夜之后，一切都将不同。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_002",
+    "book_id": "urban_001",
+    "number": 2,
+    "title": "初露锋芒",
+    "is_paid": false,
+    "next_chapter_hook": "三长老已经开始调查昨夜的异动。而你收到了一封神秘的邀请函——来自城中最神秘的势力，'暗阁'。他们似乎知道你的真实身份……",
+    "nodes": [
+      {
+        "text": {
+          "id": "n_002_01",
+          "content": "翌日清晨。林家演武场。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_02",
+          "content": "宗门大比的预选赛正在进行。演武场四周站满了围观的林家弟子，议论纷纷。你站在角落，没有人注意到你。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_002_03",
+          "character_id": "char_zhang_wei",
+          "content": "听说昨晚那个废物在宗祠被训了一顿？哈哈，真是笑死人了。他还敢来大比？",
+          "emotion": "嘲笑"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_04",
+          "content": "张威的声音刻意提高，引来周围一片哄笑。他的目光扫过你时，带着赤裸裸的轻蔑。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_05",
+          "content": "抽签结果公布——第一轮，你的对手正是张威。\n\n全场哗然。有人已经开始为你默哀。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_002_06",
+          "character_id": "char_zhang_wei",
+          "content": "哟，运气不错嘛。正好让大家看看，废物和天才之间的差距有多大。",
+          "emotion": "傲慢"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_07",
+          "content": "你走上擂台。古戒中的力量在丹田处翻涌。你知道，以现在的实力，打败张威并不难。\n\n问题是——你想怎么赢。"
+        }
+      },
+      {
+        "choice": {
+          "id": "choice_002_01",
+          "prompt": "擂台上，张威已经摆好架势。全场的目光都在你们身上。你决定——",
+          "choice_type": "styleChoice",
+          "choices": [
+            {
+              "id": "c_002_01_a",
+              "text": "一招制敌，碾压式胜出",
+              "description": "不给他任何机会。一拳定胜负，让所有人闭嘴。",
+              "satisfaction_type": "碾压爽",
+              "stat_effects": [
+                { "stat": "战力", "delta": 10 },
+                { "stat": "名望", "delta": 20 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_zhang_wei", "dimension": "敬畏", "delta": 30 },
+                { "character_id": "char_zhang_wei", "dimension": "敌意", "delta": 20 },
+                { "character_id": "char_elder_three", "dimension": "敬畏", "delta": 15 },
+                { "character_id": "char_lin_yue", "dimension": "好感", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            },
+            {
+              "id": "c_002_01_b",
+              "text": "故意示弱，最后反杀",
+              "description": "先让他得意，让全场以为你要输了。然后——绝地翻盘，效果加倍。",
+              "satisfaction_type": "扮猪吃虎",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 10 },
+                { "stat": "名望", "delta": 15 },
+                { "stat": "魅力", "delta": 10 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_zhang_wei", "dimension": "敬畏", "delta": 20 },
+                { "character_id": "char_zhang_wei", "dimension": "敌意", "delta": 30 },
+                { "character_id": "char_lin_yue", "dimension": "好感", "delta": 15 },
+                { "character_id": "char_old_chen", "dimension": "信任", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            },
+            {
+              "id": "c_002_01_c",
+              "text": "不用武力，用智谋让他自己认输",
+              "description": "真正的高手不需要动手。找到他的弱点，让他在所有人面前自己崩溃。",
+              "satisfaction_type": "阴谋爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 20 },
+                { "stat": "魅力", "delta": 10 },
+                { "stat": "黑化值", "delta": 5 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_zhang_wei", "dimension": "敬畏", "delta": 15 },
+                { "character_id": "char_zhang_wei", "dimension": "敌意", "delta": 25 },
+                { "character_id": "char_elder_three", "dimension": "敬畏", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_08",
+          "content": "结果已定。张威倒在擂台上，满脸不可置信。全场死寂。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_09",
+          "content": "然后——议论声如潮水般涌来。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_002_10",
+          "character_id": "char_zhang_wei",
+          "content": "不……不可能！你明明是个废物……这不可能！",
+          "emotion": "震惊"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_11",
+          "content": "你低头看着张威，嘴角微微上扬。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_12",
+          "content": "高台之上，三长老的茶杯悬在半空，久久未能放下。他的瞳孔微缩，死死盯着你。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_002_13",
+          "character_id": "char_elder_three",
+          "content": "这小子……三年前明明测不出灵根。他在隐藏实力？还是说……",
+          "emotion": "震惊"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_14",
+          "content": "林月在观众席上站了起来，嘴唇微张，眼中闪烁着复杂的光芒——有惊讶，有欣喜，还有一丝……心疼。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_002_15",
+          "character_id": "char_lin_yue",
+          "content": "原来……你这三年，都在忍。",
+          "emotion": "心疼"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_16",
+          "content": "比赛结束后，陈伯在角落等着你。他递过来一杯热茶，浑浊的眼中透着笑意。"
+        }
+      },
+      {
+        "dialogue": {
+          "id": "n_002_17",
+          "character_id": "char_old_chen",
+          "content": "少爷，做得好。不过……三长老已经起疑了。从现在起，每一步都要小心。对了，有人托我转交这个给你。",
+          "emotion": "欣慰"
+        }
+      },
+      {
+        "text": {
+          "id": "n_002_18",
+          "content": "他递过来一封烫金的信函。上面没有署名，只印着一个神秘的暗红色徽记。\n\n你拆开信——\n\n「我们知道你是谁。明晚，暗阁恭候大驾。」"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_003",
+    "book_id": "urban_001",
+    "number": 3,
+    "title": "暗阁来邀",
+    "is_paid": false,
+    "next_chapter_hook": "暗阁的主人揭开面纱——竟然是你以为早已死去的母亲。她说：'你父亲留给你的，远不止一枚古戒。整个城市的暗面，都是你的遗产。'这一切，才刚刚开始……",
+    "nodes": [
+      {
+        "text": {
+          "id": "n_003_01",
+          "content": "入夜。城市的霓虹灯在远处闪烁，但你要去的地方，没有灯光。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_02",
+          "content": "按照信函上的地址，你来到了城西一条不起眼的巷子深处。一扇铁门，没有门牌，只有那个暗红色徽记。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_03",
+          "content": "门无声地打开了。一个黑衣人站在门后，微微欠身。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_04",
+          "content": "「请。」"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_05",
+          "content": "你走进去。通道很长，墙壁上挂着古老的画卷。空气中弥漫着沉香的气味。\n\n最终，你被带到一间巨大的地下厅堂。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_06",
+          "content": "厅堂中央，一个蒙着面纱的女人端坐在紫檀木椅上。她身后站着十二个黑衣护卫，气息深沉——每一个都不弱于张威。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_07",
+          "content": "她缓缓开口，声音带着一种奇异的熟悉感：",
+          "emphasis": "system"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_08",
+          "content": "「我等你很久了。坐。」"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_09",
+          "content": "桌上放着一份文件。你扫了一眼——那是你的完整身世档案。包括你生父的名字、古戒的来历，以及……一个你从未听说过的庞大势力版图。"
+        }
+      },
+      {
+        "choice": {
+          "id": "choice_003_01",
+          "prompt": "面对这个神秘的邀请和惊人的身世真相，你选择——",
+          "choice_type": "keyDecision",
+          "choices": [
+            {
+              "id": "c_003_01_a",
+              "text": "接受暗阁的力量，成为新的继承人",
+              "description": "这是你父亲留下的遗产。拿回属于你的一切，用暗阁的力量碾碎所有敌人。",
+              "satisfaction_type": "碾压爽",
+              "stat_effects": [
+                { "stat": "财富", "delta": 25 },
+                { "stat": "战力", "delta": 10 },
+                { "stat": "名望", "delta": 5 },
+                { "stat": "黑化值", "delta": 10 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_elder_three", "dimension": "敌意", "delta": 10 },
+                { "character_id": "char_old_chen", "dimension": "信任", "delta": 15 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            },
+            {
+              "id": "c_003_01_b",
+              "text": "暂不表态，先调查清楚暗阁的真实目的",
+              "description": "天上不会掉馅饼。她为什么现在才出现？暗阁想从你身上得到什么？先搞清楚再说。",
+              "satisfaction_type": "延迟爽",
+              "stat_effects": [
+                { "stat": "谋略", "delta": 20 },
+                { "stat": "天命值", "delta": 10 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_old_chen", "dimension": "信任", "delta": 20 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            },
+            {
+              "id": "c_003_01_c",
+              "text": "接受暗阁的资源，但提出自己的条件",
+              "description": "我不做任何人的棋子。资源我要，但规矩由我来定。从今天起，暗阁听我的。",
+              "satisfaction_type": "直接爽",
+              "stat_effects": [
+                { "stat": "财富", "delta": 15 },
+                { "stat": "谋略", "delta": 10 },
+                { "stat": "魅力", "delta": 10 },
+                { "stat": "天命值", "delta": 5 }
+              ],
+              "relationship_effects": [
+                { "character_id": "char_old_chen", "dimension": "敬畏", "delta": 15 },
+                { "character_id": "char_old_chen", "dimension": "信任", "delta": 10 }
+              ],
+              "result_node_ids": [],
+              "is_premium": false
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_10",
+          "content": "面纱女人沉默了片刻。然后，她缓缓伸手，揭开了面纱。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_11",
+          "content": "你的心跳骤然停了一拍。",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_12",
+          "content": "那张脸——你在梦里见过无数次。那是你以为在十五年前就已经死去的……母亲。"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_13",
+          "content": "她的眼中泛着泪光，声音微微发颤：",
+          "emphasis": "system"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_14",
+          "content": "「孩子，你父亲留给你的，远不止一枚古戒。」\n\n她站起身，身后的墙壁缓缓裂开，露出一幅巨大的城市全息地图。上面标注着无数红点——商铺、地产、势力分布……\n\n「整个城市的暗面，都是你的遗产。」",
+          "emphasis": "dramatic"
+        }
+      },
+      {
+        "text": {
+          "id": "n_003_15",
+          "content": "你深吸一口气，感觉古戒上的纹路在疯狂跳动。\n\n窗外，黎明的第一缕光芒刺破天际。\n\n这一切——才刚刚开始。",
+          "emphasis": "dramatic"
+        }
+      }
+    ]
+  }
+]
