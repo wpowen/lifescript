@@ -146,26 +146,55 @@ struct FeaturedBookCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing8) {
-            // Cover placeholder
-            RoundedRectangle(cornerRadius: .radiusMedium)
-                .fill(
-                    LinearGradient(
-                        colors: [Color.accentGold.opacity(0.3), Color.accentCrimson.opacity(0.3)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
+            // Cover with rich gradient and title overlay
+            ZStack(alignment: .bottomLeading) {
+                RoundedRectangle(cornerRadius: .radiusMedium)
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                Color.accentGold.opacity(0.25),
+                                Color.accentCrimson.opacity(0.15),
+                                Color.surfacePrimary
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .frame(width: 200, height: 140)
+                    .overlay(
+                        // Decorative character watermark
+                        Text(String(book.title.prefix(1)))
+                            .font(.system(size: 80, weight: .bold, design: .serif))
+                            .foregroundStyle(Color.accentGold.opacity(0.08))
+                            .offset(x: 40, y: -10)
+                    )
+
+                // Bottom gradient for text readability
+                LinearGradient(
+                    colors: [.clear, Color.black.opacity(0.5)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .frame(height: 60)
+                .clipShape(
+                    UnevenRoundedRectangle(
+                        bottomLeadingRadius: .radiusMedium,
+                        bottomTrailingRadius: .radiusMedium
                     )
                 )
-                .frame(width: 200, height: 120)
-                .overlay(
+
+                VStack(alignment: .leading, spacing: .spacing2) {
                     Text(book.title)
                         .font(.titleMedium)
                         .foregroundStyle(Color.textPrimary)
-                )
-
-            Text(book.title)
-                .font(.labelLarge)
-                .foregroundStyle(Color.textPrimary)
-                .lineLimit(1)
+                    Text(book.author)
+                        .font(.captionSmall)
+                        .foregroundStyle(Color.textTertiary)
+                }
+                .padding(.spacing12)
+            }
+            .frame(width: 200, height: 140)
+            .clipShape(RoundedRectangle(cornerRadius: .radiusMedium))
 
             TagFlowView(tags: Array(book.tags.prefix(3)))
         }
@@ -200,14 +229,25 @@ struct BookListCard: View {
 
     var body: some View {
         HStack(spacing: .spacing12) {
-            // Cover placeholder
+            // Book cover
             RoundedRectangle(cornerRadius: .radiusSmall)
-                .fill(Color.surfaceHighlight)
+                .fill(
+                    LinearGradient(
+                        colors: [Color.accentGold.opacity(0.2), Color.surfaceHighlight],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .frame(width: 70, height: 95)
                 .overlay(
-                    Text(String(book.title.prefix(1)))
-                        .font(.displayMedium)
-                        .foregroundStyle(Color.accentGold.opacity(0.6))
+                    VStack(spacing: .spacing4) {
+                        Text(String(book.title.prefix(1)))
+                            .font(.system(size: 28, weight: .bold, design: .serif))
+                            .foregroundStyle(Color.accentGold.opacity(0.7))
+                        Rectangle()
+                            .fill(Color.accentGold.opacity(0.3))
+                            .frame(width: 24, height: 1)
+                    }
                 )
 
             VStack(alignment: .leading, spacing: .spacing6) {

@@ -23,7 +23,9 @@ targets:
       path: Sources/LifeScript/Info.plist
       properties:
         CFBundleDisplayName: "命书"
-        UILaunchScreen: {}
+        UILaunchScreen:
+          UIColorName: backgroundPrimary
+          UIImageName: ""
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         NSAppTransportSecurity:
@@ -33,6 +35,8 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.app
         INFOPLIST_KEY_CFBundleDisplayName: "命书"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
     dependencies: []
 
   LifeScriptTests:
@@ -40,6 +44,9 @@ targets:
     platform: iOS
     sources:
       - Tests/LifeScriptTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
     dependencies:
       - target: LifeScript
 
@@ -48,5 +55,8 @@ targets:
     platform: iOS
     sources:
       - Tests/LifeScriptUITests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
     dependencies:
       - target: LifeScript

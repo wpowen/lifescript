@@ -108,19 +108,44 @@ struct ReadingView: View {
     // MARK: - Tap Hint
 
     private var tapToContinueHint: some View {
-        Text("点击继续")
-            .font(.captionLarge)
-            .foregroundStyle(Color.textTertiary)
-            .frame(maxWidth: .infinity)
-            .padding(.top, .spacing24)
-            .opacity(0.6)
+        HStack(spacing: .spacing8) {
+            Circle()
+                .fill(Color.accentGold.opacity(0.4))
+                .frame(width: 6, height: 6)
+                .phaseAnimator([false, true]) { content, phase in
+                    content.opacity(phase ? 0.3 : 1.0)
+                } animation: { _ in .easeInOut(duration: 1.2).repeatForever() }
+            Text("点击继续")
+                .font(.captionLarge)
+                .foregroundStyle(Color.textTertiary)
+            Circle()
+                .fill(Color.accentGold.opacity(0.4))
+                .frame(width: 6, height: 6)
+                .phaseAnimator([false, true]) { content, phase in
+                    content.opacity(phase ? 0.3 : 1.0)
+                } animation: { _ in .easeInOut(duration: 1.2).repeatForever() }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.top, .spacing24)
     }
 
     // MARK: - Chapter End Overlay
 
     private var chapterEndOverlay: some View {
-        VStack(spacing: .spacing20) {
+        VStack(spacing: .spacing24) {
             Spacer()
+
+            // Chapter complete indicator
+            VStack(spacing: .spacing12) {
+                Image(systemName: "checkmark.seal.fill")
+                    .font(.system(size: 44))
+                    .foregroundStyle(Color.accentGold)
+                if let chapter = viewModel.currentChapter {
+                    Text("第\(chapter.number)章 完")
+                        .font(.chapterNumber)
+                        .foregroundStyle(Color.textSecondary)
+                }
+            }
 
             if let hook = viewModel.currentChapter?.nextChapterHook {
                 Text(hook)
@@ -129,28 +154,34 @@ struct ReadingView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, .spacing24)
                     .italic()
+                    .padding(.vertical, .spacing12)
+                    .background(Color.accentGold.opacity(0.05))
+                    .clipShape(RoundedRectangle(cornerRadius: .radiusMedium))
+                    .padding(.horizontal, .spacing16)
             }
 
-            if let chapter = viewModel.currentChapter {
-                Button("查看本章结算") {
-                    coordinator.presentSheet(.chapterSettlement(
-                        book: viewModel.book,
-                        chapter: chapter,
-                        stats: viewModel.stats,
-                        previousStats: viewModel.statsBeforeChapter,
-                        relationships: viewModel.relationships,
-                        previousRelationships: viewModel.relationshipsBeforeChapter,
-                        choices: viewModel.chapterChoices
-                    ))
+            VStack(spacing: .spacing12) {
+                if let chapter = viewModel.currentChapter {
+                    Button("查看本章结算") {
+                        coordinator.presentSheet(.chapterSettlement(
+                            book: viewModel.book,
+                            chapter: chapter,
+                            stats: viewModel.stats,
+                            previousStats: viewModel.statsBeforeChapter,
+                            relationships: viewModel.relationships,
+                            previousRelationships: viewModel.relationshipsBeforeChapter,
+                            choices: viewModel.chapterChoices
+                        ))
+                    }
+                    .buttonStyle(.primary)
                 }
-                .buttonStyle(.primary)
-                .padding(.horizontal, .spacing16)
-            }
 
-            Button("继续下一章") {
-                Task { await viewModel.proceedToNextChapter() }
+                Button("继续下一章") {
+                    Task { await viewModel.proceedToNextChapter() }
+                }
+                .buttonStyle(.secondary)
             }
-            .buttonStyle(.secondary)
+            .padding(.horizontal, .spacing16)
 
             Spacer()
         }
