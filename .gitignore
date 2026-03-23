@@ -52,6 +52,23 @@ LifeScript-iOS/Gemfile.lock
 .idea/
 .vscode/
 
+# Agent / local memory
+.claude/
+.remember/
+
+# Build artifacts
+**/dist/
+**/__pycache__/
+.pytest_cache/
+*.pyc
+**/build-vm/
+**/.derivedData*/
+*.tgz
+
+# Story factory generated artifacts
+story-factory/projects/
+story-factory/tests/
+
 # Secrets (NEVER commit)
 *.p8
 *.p12

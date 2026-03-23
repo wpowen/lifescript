@@ -17,6 +17,8 @@ extension Book.Genre {
             StoryPalette(primary: .accentCrimson, secondary: .accentSky, tertiary: .accentAmber)
         case .businessWar:
             StoryPalette(primary: .accentSky, secondary: .accentGold, tertiary: .accentEmerald)
+        case .apocalypsePower:
+            StoryPalette(primary: .accentCrimson, secondary: .accentAmber, tertiary: .accentSky)
         }
     }
 
@@ -30,6 +32,8 @@ extension Book.Genre {
             "危机现场"
         case .businessWar:
             "权谋牌桌"
+        case .apocalypsePower:
+            "废土夺权"
         }
     }
 
@@ -43,6 +47,8 @@ extension Book.Genre {
             "每一步都关乎存活与真相，节奏和判断都不能慢。"
         case .businessWar:
             "你要操盘的是局势、人心和时机，不只是输赢。"
+        case .apocalypsePower:
+            "抢资源、控秩序、立规则，每一步都要把末日压力变成你的上位筹码。"
         }
     }
 }

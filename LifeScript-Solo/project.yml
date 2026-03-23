@@ -1,0 +1,233 @@
+name: LifeScriptSolo
+options:
+  bundleIdPrefix: com.lifescript
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+
+targetDefaults:
+  appSources: &appSources
+    - Sources/LifeScriptSolo
+    - ../LifeScript-iOS/Sources/LifeScript/Models
+    - ../LifeScript-iOS/Sources/LifeScript/Core/Content/ContentCatalog.swift
+    - ../LifeScript-iOS/Sources/LifeScript/Core/Content/ContentLoader.swift
+    - ../LifeScript-iOS/Sources/LifeScript/Core/Persistence/ReadingProgress.swift
+    - ../LifeScript-iOS/Sources/LifeScript/Core/Network/AppError.swift
+    - ../LifeScript-iOS/Sources/LifeScript/Features/Reading/ReadingViewModel.swift
+  baseInfo: &baseInfo
+    UILaunchScreen:
+      UIColorName: ""
+      UIImageName: ""
+    UISupportedInterfaceOrientations:
+      - UIInterfaceOrientationPortrait
+    NSAppTransportSecurity:
+      NSAllowsArbitraryLoads: false
+    ITSAppUsesNonExemptEncryption: false
+  apocalypseSkuInfo: &apocalypseSkuInfo
+    CFBundleDisplayName: "灰烬执政官"
+    SoloStoryID: "apocalypse_001"
+    SoloStoryDisplayName: "灰烬执政官"
+    SoloPalettePreset: "ashCrimson"
+    SoloEntryEyebrow: "末日剧场 · 互动长篇"
+    SoloPromise: "你不是在旁观末日。你是在决定谁能活到明天。"
+    SoloContinueHint: "回到停电后的安全区，让上一夜留下的余波继续扩散。"
+    SoloCurrentRunTitle: "当前夜线"
+    SoloRecapTitle: "上一夜回响"
+    SoloStageTitle: "当前生存阶段"
+    SoloObjectiveTitle: "眼下保命目标"
+    SoloDossierTitle: "生存档案"
+    SoloRouteMapTitle: "灾变路线"
+    SoloSettlementTitle: "本章余波"
+    SoloChapterUnitName: "章"
+    SoloAtmosphereLine: "警报还没停，火光已经把人心照得太清楚。"
+    SoloOrnamentSymbol: "bolt.horizontal.circle.fill"
+    SoloEntryInteractivePrompt: "你决定先救谁、怀疑谁、向谁隐瞒真相，都会让安全区里的关系和代价发生偏移。"
+    SoloEntryPrimaryActionTitle: "进入避难夜"
+    SoloEntrySecondaryActionTitle: "先看灾变路线"
+    SoloEntryIdentityLabel: "当前生存身份"
+    SoloEntryDossierSubtitle: "看谁还能信、谁已经松动，也看哪些关系正在被资源和恐惧拉扯。"
+    SoloEntryRouteMapSubtitle: "看明面上的撤离线，也看那些只露出半句警报的暗线。"
+    SoloEntryHookTitle: "今夜的第一声警报"
+    SoloEntryHookBody: "这不是目录，而是一场已经开始倒数的灾变夜。你越快进去，越能感到每一步决定到底在牺牲什么。"
+    SoloEntryValueCards:
+      - id: "apocalypse-dialogue"
+        title: "不是普通阅读"
+        detail: "每一次安抚、试探和命令，都会在断电夜里留下回声。"
+        tint: "ashCrimson"
+      - id: "apocalypse-branch"
+        title: "不是单线求生"
+        detail: "同一场警报，会因为你先保住谁、先牺牲谁，而长出完全不同的夜线。"
+        tint: "royalPlum"
+      - id: "apocalypse-replay"
+        title: "不是一次性消费"
+        detail: "重开不是重看，而是重新验证另一种生存策略会把世界推向哪里。"
+        tint: "moonJade"
+      - id: "apocalypse-crafted"
+        title: "不是廉价灾变壳"
+        detail: "警报、火光、余波与界面反馈一起服务于压迫感，而不是把末日题材随手贴在文字外面。"
+        tint: "sapphireMist"
+    SoloEntryFlowSteps:
+      - id: "apocalypse-enter"
+        title: "进入现场"
+        detail: "不是读旁白，而是直接进入电力崩塌、物资失衡和人心松动的那一夜。"
+        tint: "ashCrimson"
+      - id: "apocalypse-respond"
+        title: "做出回应"
+        detail: "你可以封锁、安抚、试探、强压，人物会沿着你的处理方式重新站队。"
+        tint: "moonJade"
+      - id: "apocalypse-change"
+        title: "灾变偏转"
+        detail: "资源、阵营、秘密与死亡名单都会变化，你走出来的夜线不会和别人一样。"
+        tint: "royalPlum"
+    SoloEntryProofCards:
+      - id: "apocalypse-dialogue-proof"
+        kind: "dialogue"
+        title: "对话预览"
+        detail: "你在恐慌里说过的话，会在下一次断电前重新找上你。"
+        tint: "ashCrimson"
+      - id: "apocalypse-choice-proof"
+        kind: "choice"
+        title: "分支预览"
+        detail: "不是选项换皮，而是真正会推动关系、资源和撤离线变化的决定。"
+        tint: "royalPlum"
+      - id: "apocalypse-dossier-proof"
+        kind: "dossier"
+        title: "生存档案"
+        detail: "人物态度、补给压力和当前站位，都会在这里留下痕迹。"
+        tint: "moonJade"
+      - id: "apocalypse-route-proof"
+        kind: "routeMap"
+        title: "灾变路线"
+        detail: "公开路线会给你撤离承诺，真正危险的变化往往藏在暗线后面。"
+        tint: "sapphireMist"
+  cultivationSkuInfo: &cultivationSkuInfo
+    CFBundleDisplayName: "残剑问仙"
+    SoloStoryID: "cultivation_full_001"
+    SoloStoryDisplayName: "残剑问仙"
+    SoloPalettePreset: "moonJade"
+    SoloEntryEyebrow: "残剑证道 · 互动长篇"
+    SoloPromise: "你不是在翻一卷故事。你是在替自己把那柄残剑重新举起来。"
+    SoloContinueHint: "回到试剑局里，让上一章压住的剑鸣继续往外传。"
+    SoloCurrentRunTitle: "当前剑局"
+    SoloRecapTitle: "上一章回响"
+    SoloStageTitle: "当前剑路"
+    SoloObjectiveTitle: "此刻破局点"
+    SoloDossierTitle: "人物与剑势"
+    SoloRouteMapTitle: "剑路图"
+    SoloSettlementTitle: "这一章留下了什么"
+    SoloChapterUnitName: "章"
+    SoloAtmosphereLine: "剑还没有出鞘，局却已经先动了。"
+    SoloOrnamentSymbol: "flame.fill"
+    SoloEntryInteractivePrompt: "你选择何时出剑、如何回应、要不要继续追问那句被压住的真相，都会改变剑局。"
+    SoloEntryPrimaryActionTitle: "进入第一幕"
+    SoloEntrySecondaryActionTitle: "先看剑路图"
+    SoloEntryIdentityLabel: "当前剑局"
+    SoloEntryDossierSubtitle: "看人物态度、剑势消长与谁正在把筹码压到你身上。"
+    SoloEntryRouteMapSubtitle: "看明面上的剑路，也看那些尚未真正亮出来的潜流。"
+    SoloEntryHookTitle: "今夜的第一道剑鸣"
+    SoloEntryHookBody: "这不是一次普通的开场，而是一场会持续发酵的试剑局。你越早进去，越能感觉到每一步后果。"
+    SoloEntryValueCards:
+      - id: "cultivation-dialogue"
+        title: "不是普通阅读"
+        detail: "人物不是等你看完，而是在等你回应。态度不同，回声就会不同。"
+        tint: "moonJade"
+      - id: "cultivation-branch"
+        title: "不是线性剑路"
+        detail: "同一柄残剑，可以走出不同的因果、不同的人心与不同的证道路。"
+        tint: "royalPlum"
+      - id: "cultivation-replay"
+        title: "不是一次性消费"
+        detail: "重开后你会看到先前忽略的暗示、错过的人物动机，以及另一套局势走向。"
+        tint: "emberGold"
+      - id: "cultivation-crafted"
+        title: "不是低成本拼装"
+        detail: "文案、界面、节奏和反馈共同构成沉浸感，而不是把文字简单装进壳子里。"
+        tint: "sapphireMist"
+    SoloEntryFlowSteps:
+      - id: "cultivation-enter"
+        title: "进入剧情"
+        detail: "以第一人称走进试剑局，而不是站在外面旁观一卷故事。"
+        tint: "moonJade"
+      - id: "cultivation-respond"
+        title: "做出回应"
+        detail: "你可以试探、压制、追问、退让，每一种姿态都会让人物重新判断你。"
+        tint: "emberGold"
+      - id: "cultivation-change"
+        title: "剑局偏转"
+        detail: "剧情分支、角色好感、隐藏线索和最终结局会随你的判断发生偏移。"
+        tint: "royalPlum"
+    SoloEntryProofCards:
+      - id: "cultivation-dialogue-proof"
+        kind: "dialogue"
+        title: "对话预览"
+        detail: "一段对话不仅推进剧情，也会把关系推向不同的温度。"
+        tint: "moonJade"
+      - id: "cultivation-choice-proof"
+        kind: "choice"
+        title: "分支预览"
+        detail: "一次回答方式的变化，可能就是另一条剑路的入口。"
+        tint: "royalPlum"
+      - id: "cultivation-dossier-proof"
+        kind: "dossier"
+        title: "人物与剑势"
+        detail: "角色态度、当前局势和你自己的命格变化都会被沉淀下来。"
+        tint: "emberGold"
+      - id: "cultivation-route-proof"
+        kind: "routeMap"
+        title: "剑路图"
+        detail: "公开路线展示方向，真正高价值的暗线则要靠你自己逼出来。"
+        tint: "sapphireMist"
+
+targets:
+  LifeScriptSolo:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: *appSources
+    info:
+      path: Sources/LifeScriptSolo/InfoApocalypse.plist
+      properties:
+        <<: *baseInfo
+        <<: *apocalypseSkuInfo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo
+        INFOPLIST_KEY_CFBundleDisplayName: "灰烬执政官"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies: []
+
+  LifeScriptSoloCultivation:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: *appSources
+    info:
+      path: Sources/LifeScriptSolo/InfoCultivation.plist
+      properties:
+        <<: *baseInfo
+        <<: *cultivationSkuInfo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.cultivation
+        INFOPLIST_KEY_CFBundleDisplayName: "残剑问仙"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIconCultivation
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColorCultivation
+    dependencies: []
+
+  LifeScriptSoloTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/LifeScriptSoloTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: LifeScriptSolo

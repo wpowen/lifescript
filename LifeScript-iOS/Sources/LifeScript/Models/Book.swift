@@ -21,6 +21,7 @@ struct Book: Codable, Identifiable, Hashable, Sendable {
         case cultivation = "修仙升级"
         case suspenseSurvival = "悬疑生存"
         case businessWar = "职场商战"
+        case apocalypsePower = "末日爽文"
 
         var displayName: String { rawValue }
 
@@ -30,6 +31,7 @@ struct Book: Codable, Identifiable, Hashable, Sendable {
             case .cultivation: return "flame"
             case .suspenseSurvival: return "eye.trianglebadge.exclamationmark"
             case .businessWar: return "chart.line.uptrend.xyaxis"
+            case .apocalypsePower: return "bolt.trianglebadge.exclamationmark.fill"
             }
         }
     }

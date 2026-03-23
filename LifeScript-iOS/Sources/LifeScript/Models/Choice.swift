@@ -5,37 +5,33 @@ struct Choice: Codable, Identifiable, Sendable {
     let id: String
     let text: String
     let description: String?
-
-    /// The satisfaction style this choice represents
     let satisfactionType: SatisfactionType
-
-    /// Effects on protagonist stats when chosen
     let statEffects: [StatEffect]
-
-    /// Effects on character relationships when chosen
     let relationshipEffects: [RelationshipEffect]
+    var resultNodeIds: [String]
+    var resultNodes: [StoryNode]?
+    var visibleCost: String?
+    var visibleReward: String?
+    var riskHint: String?
+    var processLabel: String?
+    var isPremium: Bool
 
-    /// Story nodes to display after this choice is made
-    let resultNodeIds: [String]
-
-    /// Inline story nodes that play out the immediate consequence of the choice.
-    /// This keeps interaction feeling like a scene with process, not a direct jump to outcome.
-    var resultNodes: [StoryNode]? = nil
-
-    /// The visible cost the user is accepting by taking this route.
-    var visibleCost: String? = nil
-
-    /// The visible reward promised by this route.
-    var visibleReward: String? = nil
-
-    /// A concise uncertainty hint that preserves suspense without hiding the goal.
-    var riskHint: String? = nil
-
-    /// The process variable this route mainly pushes, such as time, exposure, or trust.
-    var processLabel: String? = nil
-
-    /// Whether this choice requires payment to unlock
-    var isPremium: Bool = false
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decode(String.self, forKey: .id)
+        text = try c.decode(String.self, forKey: .text)
+        description = try c.decodeIfPresent(String.self, forKey: .description)
+        satisfactionType = try c.decode(SatisfactionType.self, forKey: .satisfactionType)
+        statEffects = (try? c.decode([StatEffect].self, forKey: .statEffects)) ?? []
+        relationshipEffects = (try? c.decode([RelationshipEffect].self, forKey: .relationshipEffects)) ?? []
+        resultNodeIds = (try? c.decode([String].self, forKey: .resultNodeIds)) ?? []
+        resultNodes = try? c.decode([StoryNode].self, forKey: .resultNodes)
+        visibleCost = try c.decodeIfPresent(String.self, forKey: .visibleCost)
+        visibleReward = try c.decodeIfPresent(String.self, forKey: .visibleReward)
+        riskHint = try c.decodeIfPresent(String.self, forKey: .riskHint)
+        processLabel = try c.decodeIfPresent(String.self, forKey: .processLabel)
+        isPremium = (try? c.decode(Bool.self, forKey: .isPremium)) ?? false
+    }
 }
 
 enum SatisfactionType: String, Codable, Sendable {

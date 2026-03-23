@@ -6,12 +6,24 @@
 
 - `SKILL.md`
   生成规则和硬约束
+- `concepts/*.json`
+  每本书的题材种子与高层概念
 - `templates/story_package.template.json`
   统一物料模板
+- `scripts/scaffold_*.py`
+  生成结构化书籍物料的脚手架
 - `scripts/compile_story_package.py`
   校验并编译物料
 - `projects/<book_id>/story_package.json`
   每本书的源物料
+
+## Supported Genres
+
+- `都市逆袭`
+- `修仙升级`
+- `悬疑生存`
+- `职场商战`
+- `末日爽文`
 
 ## What Goes In
 

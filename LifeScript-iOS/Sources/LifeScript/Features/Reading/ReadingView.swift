@@ -1,8 +1,16 @@
 import SwiftUI
 import SwiftData
 
+private struct BottomSentinelKey: PreferenceKey {
+    static var defaultValue: CGFloat = .greatestFiniteMagnitude
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = min(value, nextValue())
+    }
+}
+
 struct ReadingView: View {
     @State private var viewModel: ReadingViewModel
+    @State private var advancedForNodeCount: Int = -1
     @Environment(\.modelContext) private var modelContext
     @Environment(AppCoordinator.self) private var coordinator
 
@@ -70,32 +78,49 @@ struct ReadingView: View {
                             .transition(.opacity.combined(with: .move(edge: .bottom)))
                         }
 
+                        // Scroll-to-advance sentinel: fires when the bottom of content enters viewport
+                        GeometryReader { geo in
+                            Color.clear.preference(
+                                key: BottomSentinelKey.self,
+                                value: geo.frame(in: .global).minY
+                            )
+                        }
+                        .frame(height: 0)
+
                         Spacer(minLength: 160)
                     }
                     .padding(.horizontal, .spacing20)
                     .padding(.top, .spacing24)
                     .padding(.bottom, .spacing32)
+                    .onPreferenceChange(BottomSentinelKey.self) { sentinelY in
+                        autoAdvanceIfNeeded(sentinelY: sentinelY)
+                    }
                 }
                 .accessibilityIdentifier("immersiveReadingView")
-                .contentShape(Rectangle())
-                .simultaneousGesture(
-                    TapGesture()
-                        .onEnded { advanceStory(using: proxy) }
-                )
                 .onChange(of: viewModel.displayedNodes.count) { oldValue, newValue in
                     guard newValue > oldValue else { return }
                     scrollAfterUpdate(using: proxy, previousCount: oldValue)
                 }
 
                 if case .chapterEnd = viewModel.state {
-                    chapterEndOverlay
-                } else if case .reading = viewModel.state {
-                    immersiveAdvanceHint
+                    chapterEndBar
                 }
             }
         }
         .safeAreaInset(edge: .top, spacing: 0) {
             immersiveNavigationBar
+        }
+    }
+
+    private func autoAdvanceIfNeeded(sentinelY: CGFloat) {
+        let screenHeight = UIScreen.main.bounds.height
+        let nodeCount = viewModel.displayedNodes.count
+        guard sentinelY <= screenHeight,
+              case .reading = viewModel.state,
+              nodeCount != advancedForNodeCount else { return }
+        advancedForNodeCount = nodeCount
+        withAnimation(.spring(response: 0.30, dampingFraction: 0.88)) {
+            viewModel.tapToAdvance()
         }
     }
 
@@ -153,27 +178,6 @@ struct ReadingView: View {
         .accessibilityIdentifier("readingChapterMarker")
     }
 
-    private var immersiveAdvanceHint: some View {
-        VStack(spacing: .spacing6) {
-            Image(systemName: viewModel.isAwaitingChapterEndTransition ? "arrow.down.circle.fill" : "chevron.down.circle.fill")
-                .font(.bodyLarge)
-            Text(viewModel.isAwaitingChapterEndTransition ? "轻触进入章末" : "轻触继续")
-                .font(.captionLarge)
-        }
-        .foregroundStyle(Color.textSecondary.opacity(0.9))
-        .padding(.bottom, .spacing24)
-        .frame(maxWidth: .infinity)
-        .background(
-            LinearGradient(
-                colors: [Color.backgroundPrimary.opacity(0), Color.backgroundPrimary.opacity(0.88)],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-        )
-        .allowsHitTesting(false)
-        .transition(.opacity)
-    }
-
     private func chapterGuidePanel(guide: WalkthroughChapterGuide, stage: WalkthroughStage?) -> some View {
         VStack(alignment: .leading, spacing: .spacing12) {
             HStack {
@@ -216,93 +220,63 @@ struct ReadingView: View {
             )
     }
 
-    private var chapterEndOverlay: some View {
-        VStack(spacing: .spacing24) {
-            Spacer()
-
-            VStack(alignment: .leading, spacing: .spacing16) {
-                HStack {
-                    SceneAccentBadge(text: "本章落幕", color: viewModel.book.palette.primary)
-                    Spacer()
-                    if let chapter = viewModel.currentChapter {
-                        Text("第\(chapter.number)章")
-                            .font(.chapterNumber)
-                            .foregroundStyle(Color.textSecondary)
-                    }
+    private var chapterEndBar: some View {
+        VStack(spacing: .spacing12) {
+            if viewModel.hasNextChapter {
+                Button {
+                    Task { await viewModel.proceedToNextChapter() }
+                } label: {
+                    SceneCTAButtonLabel(
+                        title: "进入下一章",
+                        subtitle: "继续把这条路线推进下去",
+                        systemImage: "arrow.right.circle.fill"
+                    )
                 }
-
-                if let hook = viewModel.currentChapter?.nextChapterHook {
-                    Text(hook)
-                        .font(.readingBody)
-                        .foregroundStyle(Color.textPrimary)
-                        .italic()
-                        .lineSpacing(6)
+                .buttonStyle(.primary)
+                .accessibilityIdentifier("readingNextChapterButton")
+            } else {
+                Button {
+                    coordinator.returnToHome()
+                } label: {
+                    SceneCTAButtonLabel(
+                        title: "返回首页",
+                        subtitle: "这一卷已经读完，回到故事大厅",
+                        systemImage: "house.fill"
+                    )
                 }
-
-                VStack(spacing: .spacing12) {
-                    if let chapter = viewModel.currentChapter {
-                        Button {
-                            coordinator.presentSheet(.chapterSettlement(
-                                book: viewModel.book,
-                                chapter: chapter,
-                                stats: viewModel.stats,
-                                previousStats: viewModel.statsBeforeChapter,
-                                relationships: viewModel.relationships,
-                                previousRelationships: viewModel.relationshipsBeforeChapter,
-                                choices: viewModel.chapterChoices
-                            ))
-                        } label: {
-                            SceneCTAButtonLabel(
-                                title: "查看本章影响",
-                                subtitle: "看清这次落子带来的变化",
-                                systemImage: "list.bullet.rectangle.portrait.fill",
-                                subtitleColor: Color.textSecondary
-                            )
-                        }
-                        .buttonStyle(.secondary)
-                    }
-
-                    if viewModel.hasNextChapter {
-                        Button {
-                            Task { await viewModel.proceedToNextChapter() }
-                        } label: {
-                            SceneCTAButtonLabel(
-                                title: "进入下一章",
-                                subtitle: "继续把这条路线推进下去",
-                                systemImage: "arrow.right.circle.fill"
-                            )
-                        }
-                        .buttonStyle(.primary)
-                        .accessibilityIdentifier("readingNextChapterButton")
-                    } else {
-                        Button {
-                            coordinator.returnToHome()
-                        } label: {
-                            SceneCTAButtonLabel(
-                                title: "返回首页",
-                                subtitle: "这一卷已经读完，回到故事大厅",
-                                systemImage: "house.fill"
-                            )
-                        }
-                        .buttonStyle(.primary)
-                        .accessibilityIdentifier("readingReturnHomeButton")
-                    }
-                }
+                .buttonStyle(.primary)
+                .accessibilityIdentifier("readingReturnHomeButton")
             }
-            .scenePanel(accent: viewModel.book.palette.primary, padding: .spacing20)
-            .padding(.horizontal, .spacing16)
-            .padding(.bottom, .spacing24)
-        }
-        .background(Color.black.opacity(0.24).ignoresSafeArea())
-    }
 
-    private func advanceStory(using proxy: ScrollViewProxy) {
-        guard case .reading = viewModel.state else { return }
-        let previousCount = viewModel.displayedNodes.count
-        withAnimation(.spring(response: 0.30, dampingFraction: 0.88)) {
-            viewModel.tapToAdvance()
+            if let chapter = viewModel.currentChapter {
+                Button {
+                    coordinator.presentSheet(.chapterSettlement(
+                        book: viewModel.book,
+                        chapter: chapter,
+                        stats: viewModel.stats,
+                        previousStats: viewModel.statsBeforeChapter,
+                        relationships: viewModel.relationships,
+                        previousRelationships: viewModel.relationshipsBeforeChapter,
+                        choices: viewModel.chapterChoices
+                    ))
+                } label: {
+                    Text("查看本章影响")
+                        .font(.captionLarge)
+                        .foregroundStyle(Color.textSecondary)
+                }
+                .buttonStyle(.plain)
+            }
         }
-        scrollAfterUpdate(using: proxy, previousCount: previousCount)
+        .padding(.horizontal, .spacing16)
+        .padding(.vertical, .spacing20)
+        .background(
+            LinearGradient(
+                colors: [Color.backgroundPrimary.opacity(0), Color.backgroundPrimary.opacity(0.96)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea()
+        )
     }
 
     private func scrollAfterUpdate(using proxy: ScrollViewProxy, previousCount: Int) {
@@ -451,38 +425,15 @@ struct StoryNodeView: View {
                         onChoiceSelected?(choice, node)
                     } label: {
                         VStack(alignment: .leading, spacing: .spacing8) {
-                            HStack(alignment: .top) {
-                                Text(choice.text)
-                                    .font(.choiceTitle)
-                                Spacer()
-                                SceneAccentBadge(
-                                    text: choice.satisfactionType.displayName,
-                                    color: choice.satisfactionType.accentColor
-                                )
-                            }
+                            Text(choice.text)
+                                .font(.choiceTitle)
+                                .frame(maxWidth: .infinity, alignment: .leading)
 
                             if let desc = choice.description {
                                 Text(desc)
                                     .font(.bodySmall)
                                     .foregroundStyle(Color.textSecondary)
                                     .lineSpacing(4)
-                            }
-
-                            if choice.visibleCost != nil || choice.visibleReward != nil || choice.riskHint != nil || choice.processLabel != nil {
-                                FlowLayout(spacing: .spacing8) {
-                                    if let reward = choice.visibleReward {
-                                        choiceMetaChip(label: "收益", value: reward, color: .accentEmerald)
-                                    }
-                                    if let cost = choice.visibleCost {
-                                        choiceMetaChip(label: "代价", value: cost, color: .accentAmber)
-                                    }
-                                    if let risk = choice.riskHint {
-                                        choiceMetaChip(label: "风险", value: risk, color: .accentCrimson)
-                                    }
-                                    if let process = choice.processLabel {
-                                        choiceMetaChip(label: "过程", value: process, color: .accentSky)
-                                    }
-                                }
                             }
                         }
                     }
@@ -534,19 +485,4 @@ struct StoryNodeView: View {
         }
     }
 
-    private func choiceMetaChip(label: String, value: String, color: Color) -> some View {
-        HStack(spacing: .spacing4) {
-            Text(label)
-                .font(.captionLarge.weight(.semibold))
-            Text(value)
-                .font(.captionLarge)
-        }
-        .foregroundStyle(color)
-        .padding(.horizontal, .spacing8)
-        .padding(.vertical, .spacing6)
-        .background(
-            Capsule(style: .continuous)
-                .fill(color.opacity(0.10))
-        )
-    }
 }

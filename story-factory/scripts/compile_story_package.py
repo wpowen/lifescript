@@ -24,6 +24,15 @@ def chapter_text_length(chapter: dict[str, Any]) -> int:
             total += len(node["text"].get("content", ""))
         if "dialogue" in node:
             total += len(node["dialogue"].get("content", ""))
+        if "choice" in node:
+            for choice in node["choice"].get("choices", []):
+                total += len(choice.get("text", ""))
+                total += len(choice.get("description", ""))
+                for result_node in choice.get("result_nodes", []):
+                    if "text" in result_node:
+                        total += len(result_node["text"].get("content", ""))
+                    if "dialogue" in result_node:
+                        total += len(result_node["dialogue"].get("content", ""))
     return total
 
 

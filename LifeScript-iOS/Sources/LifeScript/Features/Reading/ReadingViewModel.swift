@@ -35,6 +35,7 @@ final class ReadingViewModel {
     private var walkthrough: BookWalkthrough?
     private let contentLoader: ContentProviding
     private var modelContext: ModelContext?
+    private var savedProgress: ReadingProgress?
 
     // MARK: - Init
 
@@ -91,14 +92,23 @@ final class ReadingViewModel {
             syncGuide(for: chapter)
             allNodes = chapter.nodes
             displayedNodes = []
-            currentNodeIndex = 0
             chapterChoices = allChoiceRecords
                 .filter { $0.chapterId == chapter.id }
                 .sorted { $0.timestamp < $1.timestamp }
-            statsBeforeChapter = stats
-            relationshipsBeforeChapter = relationships
-            state = .reading
-            advanceToNextSegment()
+            let restoredChapterState = restoredChapterStateIfAvailable(for: chapter)
+            if let restoredChapterState {
+                currentNodeIndex = restoredChapterState.savedNodeIndex
+                statsBeforeChapter = restoredChapterState.startStats
+                relationshipsBeforeChapter = restoredChapterState.startRelationships
+                displayedNodes = restoredChapterState.displayedNodes
+                state = currentNodeIndex >= allNodes.count ? .chapterEnd : .reading
+            } else {
+                currentNodeIndex = 0
+                statsBeforeChapter = stats
+                relationshipsBeforeChapter = relationships
+                state = .reading
+                advanceToNextSegment()
+            }
         } catch {
             state = .error(AppError.from(error).localizedDescription)
         }
@@ -307,6 +317,8 @@ final class ReadingViewModel {
             predicate: #Predicate { $0.bookId == bookId }
         )
         if let progress = try? context.fetch(descriptor).first {
+            savedProgress = progress
+            _pendingChapterId = progress.currentChapterId
             if let savedStats = progress.stats {
                 stats = savedStats
                 statsBeforeChapter = savedStats
@@ -341,7 +353,7 @@ final class ReadingViewModel {
         progress.relationships = relationships
         progress.choiceRecords = allChoiceRecords
 
-        if case .chapterEnd = state {
+        if currentNodeIndex >= allNodes.count {
             if !progress.completedChapterIds.contains(chapter.id) {
                 progress.completedChapterIds.append(chapter.id)
             }
@@ -368,4 +380,131 @@ final class ReadingViewModel {
         guard nextIndex < chapterSequence.endIndex else { return nil }
         return chapterSequence[nextIndex]
     }
+
+    private func restoredChapterStateIfAvailable(for chapter: Chapter) -> RestoredChapterState? {
+        guard let savedProgress else { return nil }
+        guard savedProgress.currentChapterId == chapter.id else { return nil }
+        guard savedProgress.currentNodeIndex > 0 else { return nil }
+
+        let savedNodeIndex = min(savedProgress.currentNodeIndex, allNodes.count)
+        let selectedChoices = selectedChoices(in: chapter)
+
+        return RestoredChapterState(
+            savedNodeIndex: savedNodeIndex,
+            displayedNodes: rebuiltDisplayedNodes(
+                until: savedNodeIndex,
+                selectedChoicesByNodeID: Dictionary(uniqueKeysWithValues: selectedChoices.map { ($0.nodeID, $0.choice) })
+            ),
+            startStats: revertedStats(
+                from: stats,
+                choices: selectedChoices.map(\.choice)
+            ),
+            startRelationships: revertedRelationships(
+                from: relationships,
+                choices: selectedChoices.map(\.choice)
+            )
+        )
+    }
+
+    private func selectedChoices(in chapter: Chapter) -> [(nodeID: String, choice: Choice)] {
+        let choiceRecordMap = Dictionary(uniqueKeysWithValues: chapterChoices.map { ($0.choiceNodeId, $0) })
+
+        return chapter.nodes.compactMap { node in
+            guard case .choice(let choiceNode) = node else { return nil }
+            guard let record = choiceRecordMap[choiceNode.id] else { return nil }
+            guard let choice = choiceNode.choices.first(where: { $0.id == record.selectedChoiceId }) else { return nil }
+            return (choiceNode.id, choice)
+        }
+    }
+
+    private func rebuiltDisplayedNodes(
+        until savedNodeIndex: Int,
+        selectedChoicesByNodeID: [String: Choice]
+    ) -> [StoryNode] {
+        var rebuilt: [StoryNode] = []
+
+        for node in allNodes.prefix(savedNodeIndex) {
+            rebuilt.append(node)
+
+            guard case .choice(let choiceNode) = node else { continue }
+            guard let choice = selectedChoicesByNodeID[choiceNode.id] else { continue }
+            rebuilt.append(contentsOf: feedbackNodes(for: choice))
+        }
+
+        return rebuilt
+    }
+
+    private func revertedStats(from current: ProtagonistStats, choices: [Choice]) -> ProtagonistStats {
+        choices.reversed().reduce(current) { partial, choice in
+            partial.applying(effects: choice.statEffects.map {
+                StatEffect(stat: $0.stat, delta: -$0.delta)
+            })
+        }
+    }
+
+    private func revertedRelationships(from current: [RelationshipState], choices: [Choice]) -> [RelationshipState] {
+        choices.reversed().reduce(current) { partial, choice in
+            partial.map { relation in
+                let reverseEffects = choice.relationshipEffects
+                    .filter { $0.characterId == relation.characterId }
+                    .map {
+                        RelationshipEffect(
+                            characterId: $0.characterId,
+                            dimension: $0.dimension,
+                            delta: -$0.delta
+                        )
+                    }
+                guard !reverseEffects.isEmpty else { return relation }
+                return relation.applying(effects: reverseEffects)
+            }
+        }
+    }
+
+    private func feedbackNodes(for choice: Choice) -> [StoryNode] {
+        var nodes: [StoryNode] = []
+
+        if let resultNodes = choice.resultNodes, !resultNodes.isEmpty {
+            nodes.append(contentsOf: resultNodes)
+        } else if !choice.resultNodeIds.isEmpty {
+            nodes.append(
+                .text(TextNode(
+                    id: "result_\(choice.id)",
+                    content: choice.description ?? "",
+                    emphasis: .dramatic
+                ))
+            )
+        }
+
+        for effect in choice.statEffects {
+            let sign = effect.delta > 0 ? "+" : ""
+            nodes.append(
+                .notification(NotificationNode(
+                    id: "stat_\(choice.id)_\(effect.stat.rawValue)",
+                    message: "\(effect.stat.rawValue) \(sign)\(effect.delta)",
+                    type: .statChange
+                ))
+            )
+        }
+
+        for effect in choice.relationshipEffects {
+            guard let char = book.characters.first(where: { $0.id == effect.characterId }) else { continue }
+            let sign = effect.delta > 0 ? "+" : ""
+            nodes.append(
+                .notification(NotificationNode(
+                    id: "rel_\(choice.id)_\(effect.characterId)",
+                    message: "\(char.name)的\(effect.dimension.rawValue) \(sign)\(effect.delta)",
+                    type: .relationshipChange
+                ))
+            )
+        }
+
+        return nodes
+    }
+}
+
+private struct RestoredChapterState {
+    let savedNodeIndex: Int
+    let displayedNodes: [StoryNode]
+    let startStats: ProtagonistStats
+    let startRelationships: [RelationshipState]
 }
