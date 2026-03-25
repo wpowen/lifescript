@@ -10,6 +10,7 @@ struct Character: Codable, Identifiable, Hashable, Sendable {
     let role: CharacterRole
 
     enum CharacterRole: String, Codable, Sendable {
+        case protagonist = "主角"
         case ally = "盟友"
         case rival = "宿敌"
         case loveInterest = "红颜"

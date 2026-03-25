@@ -183,6 +183,83 @@ targetDefaults:
         title: "剑路图"
         detail: "公开路线展示方向，真正高价值的暗线则要靠你自己逼出来。"
         tint: "sapphireMist"
+  validate50SkuInfo: &validate50SkuInfo
+    CFBundleDisplayName: "觉醒纪元"
+    SoloStoryID: "validate_50ch_001"
+    SoloStoryDisplayName: "觉醒纪元"
+    SoloPalettePreset: "ashCrimson"
+    SoloEntryEyebrow: "末日剧场 · 互动长篇"
+    SoloPromise: "你不是在旁观末日。你是在用空间异能决定谁来统治这片废土。"
+    SoloContinueHint: "回到废土，让上一战留下的余波继续发酵。"
+    SoloCurrentRunTitle: "当前战线"
+    SoloRecapTitle: "上一战回响"
+    SoloStageTitle: "当前崛起阶段"
+    SoloObjectiveTitle: "眼下扩张目标"
+    SoloDossierTitle: "废土档案"
+    SoloRouteMapTitle: "废土路线"
+    SoloSettlementTitle: "本章余波"
+    SoloChapterUnitName: "章"
+    SoloAtmosphereLine: "末日来临，异能觉醒，废土之上，唯强者生。"
+    SoloOrnamentSymbol: "bolt.trianglebadge.exclamationmark.fill"
+    SoloEntryInteractivePrompt: "你决定先扩张哪条线、信任谁、向谁动手，都会让废土上的势力格局和代价发生偏移。"
+    SoloEntryPrimaryActionTitle: "进入废土"
+    SoloEntrySecondaryActionTitle: "先看废土路线"
+    SoloEntryIdentityLabel: "当前废土身份"
+    SoloEntryDossierSubtitle: "看队伍状态、异能成长，以及谁在暗中观察你的每一步决策。"
+    SoloEntryRouteMapSubtitle: "看明面上的扩张线，也看那些只露出半句信号的暗线。"
+    SoloEntryHookTitle: "觉醒，从这一刻开始"
+    SoloEntryHookBody: "这不是目录，而是一场已经开始倒数的末日崛起。你越快进去，越能感受到每一步决定在废土上留下的代价。"
+    SoloEntryValueCards:
+      - id: "validate-dialogue"
+        title: "不是普通阅读"
+        detail: "每一次招募、压制和结盟，都会在废土上留下不可撤回的后果。"
+        tint: "ashCrimson"
+      - id: "validate-branch"
+        title: "不是单线崛起"
+        detail: "同一片废土，会因为你先保住谁、先对谁动手，而长出完全不同的势力格局。"
+        tint: "royalPlum"
+      - id: "validate-replay"
+        title: "不是一次性消费"
+        detail: "重开不是重看，而是重新验证另一条崛起路线会把废土推向哪里。"
+        tint: "moonJade"
+      - id: "validate-crafted"
+        title: "不是廉价废土壳"
+        detail: "异能、废土与界面反馈共同构成压迫感，而不是把末日题材随手贴在文字外面。"
+        tint: "sapphireMist"
+    SoloEntryFlowSteps:
+      - id: "validate-enter"
+        title: "进入废土"
+        detail: "不是旁观末日，而是直接进入废土崩塌、异能觉醒的那一刻。"
+        tint: "ashCrimson"
+      - id: "validate-respond"
+        title: "做出抉择"
+        detail: "你可以扩张、招募、压制、结盟，每一种选择都会让势力格局发生偏移。"
+        tint: "moonJade"
+      - id: "validate-change"
+        title: "格局偏转"
+        detail: "异能强度、势力版图、人心向背都会变化，你走出来的废土不会和别人一样。"
+        tint: "royalPlum"
+    SoloEntryProofCards:
+      - id: "validate-dialogue-proof"
+        kind: "dialogue"
+        title: "对话预览"
+        detail: "你在废土上说过的话，会在下一次对峙前重新找上你。"
+        tint: "ashCrimson"
+      - id: "validate-choice-proof"
+        kind: "choice"
+        title: "分支预览"
+        detail: "不是选项换皮，而是真正会推动势力、关系和异能路线变化的决定。"
+        tint: "royalPlum"
+      - id: "validate-dossier-proof"
+        kind: "dossier"
+        title: "废土档案"
+        detail: "队伍状态、异能成长和当前势力版图，都会在这里留下痕迹。"
+        tint: "moonJade"
+      - id: "validate-route-proof"
+        kind: "routeMap"
+        title: "废土路线"
+        detail: "公开路线会给你扩张承诺，真正危险的暗线往往藏在势力博弈之后。"
+        tint: "sapphireMist"
 
 targets:
   LifeScriptSolo:
@@ -219,6 +296,24 @@ targets:
         INFOPLIST_KEY_CFBundleDisplayName: "残剑问仙"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIconCultivation
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColorCultivation
+    dependencies: []
+
+  LifeScriptSoloValidate50:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: *appSources
+    info:
+      path: Sources/LifeScriptSolo/InfoValidate50ch001.plist
+      properties:
+        <<: *baseInfo
+        <<: *validate50SkuInfo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.validate50
+        INFOPLIST_KEY_CFBundleDisplayName: "觉醒纪元"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
     dependencies: []
 
   LifeScriptSoloTests:

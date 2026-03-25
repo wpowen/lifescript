@@ -108,7 +108,7 @@ struct SoloReadingView: View {
                             .padding(.bottom, 8)
                         }
 
-                        ForEach(viewModel.displayedNodes) { node in
+                        ForEach(Array(viewModel.displayedNodes.enumerated()), id: \.offset) { index, node in
                             SoloStoryNodeView(
                                 node: node,
                                 book: book,
@@ -123,7 +123,7 @@ struct SoloReadingView: View {
                                     scrollAfterUpdate(using: proxy, previousCount: previousCount)
                                 }
                             )
-                            .id(node.id)
+                            .id(displayNodeIdentity(at: index))
                             .transition(
                                 reduceMotion
                                     ? .identity
@@ -369,11 +369,17 @@ struct SoloReadingView: View {
 
     private func scrollAfterUpdate(using proxy: ScrollViewProxy, previousCount: Int) {
         guard viewModel.displayedNodes.count > previousCount else { return }
-        let targetId = viewModel.displayedNodes[min(previousCount, viewModel.displayedNodes.count - 1)].id
+        let targetIndex = min(previousCount, viewModel.displayedNodes.count - 1)
+        let targetId = displayNodeIdentity(at: targetIndex)
         DispatchQueue.main.async {
             withAnimation(reduceMotion ? .linear(duration: 0.01) : .easeOut(duration: 0.25)) {
                 proxy.scrollTo(targetId, anchor: .top)
             }
         }
+    }
+
+    private func displayNodeIdentity(at index: Int) -> String {
+        // Use display order as the stable identity to avoid collisions from duplicated content node ids.
+        "display-node-\(index)"
     }
 }

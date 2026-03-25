@@ -513,6 +513,13 @@ def validate_chapter(chapter: dict[str, Any], book_id: str) -> list[str]:
         errors.append(f"ch{chapter.get('number')}: too many choice nodes ({choice_count})")
 
     for node in chapter.get("nodes", []):
+        # 校验所有常见节点的 id 是否为合法的字符串，防止 LLM 幻觉输出嵌套字典
+        for node_type in ["text", "dialogue", "choice", "notification"]:
+            if node_type in node:
+                node_id = node[node_type].get("id")
+                if not isinstance(node_id, str):
+                    errors.append(f"ch{chapter.get('number')}: {node_type} 节点的 id 格式错误，期望 str，实际为 {type(node_id)}")
+
         if "choice" in node:
             for ch_opt in node["choice"].get("choices", []):
                 sat = ch_opt.get("satisfaction_type", "")

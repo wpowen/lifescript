@@ -40,6 +40,41 @@ def chapter_choice_nodes(chapter: dict[str, Any]) -> list[dict[str, Any]]:
     return [node["choice"] for node in chapter.get("nodes", []) if "choice" in node]
 
 
+def normalize_node_id_shape(payload: dict[str, Any]) -> int:
+    """
+    Normalize malformed node ids like {"id": {"id": "xxx"}} to {"id": "xxx"}.
+    Returns the number of corrected ids.
+    """
+    chapters = payload.get("chapters", [])
+    fixed_count = 0
+
+    def _normalize_node(node_obj: dict[str, Any]) -> None:
+        nonlocal fixed_count
+        for node_type in ["text", "dialogue", "choice", "notification"]:
+            if node_type not in node_obj:
+                continue
+            content = node_obj[node_type]
+            if not isinstance(content, dict):
+                continue
+            node_id = content.get("id")
+            if isinstance(node_id, dict):
+                nested_id = node_id.get("id")
+                if isinstance(nested_id, str):
+                    content["id"] = nested_id
+                    fixed_count += 1
+
+    for chapter in chapters:
+        for node in chapter.get("nodes", []):
+            _normalize_node(node)
+            if "choice" not in node:
+                continue
+            for choice in node["choice"].get("choices", []):
+                for result_node in choice.get("result_nodes", []):
+                    _normalize_node(result_node)
+
+    return fixed_count
+
+
 def validate_package(payload: dict[str, Any]) -> tuple[list[str], list[str], dict[str, Any]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -99,6 +134,22 @@ def validate_package(payload: dict[str, Any]) -> tuple[list[str], list[str], dic
                 f"{chapter['id']}: walkthrough interaction_count={recommended_interactions} but found {len(choice_nodes)} choice nodes"
             )
 
+        for node in chapter.get("nodes", []):
+            for node_type in ["text", "dialogue", "choice", "notification"]:
+                if node_type in node:
+                    node_id = node[node_type].get("id")
+                    if node_id is not None and not isinstance(node_id, str):
+                        errors.append(f"{chapter['id']}: {node_type} node id must be a string, found {type(node_id).__name__}")
+
+            if "choice" in node:
+                for choice in node["choice"].get("choices", []):
+                    for result_node in choice.get("result_nodes", []):
+                        for res_type in ["text", "dialogue"]:
+                            if res_type in result_node:
+                                res_id = result_node[res_type].get("id")
+                                if res_id is not None and not isinstance(res_id, str):
+                                    errors.append(f"{chapter['id']}::{choice.get('id', 'unknown')}: result_node {res_type} id must be a string, found {type(res_id).__name__}")
+
         for choice_node in choice_nodes:
             choices = choice_node.get("choices", [])
             total_options += len(choices)
@@ -147,6 +198,9 @@ def validate_package(payload: dict[str, Any]) -> tuple[list[str], list[str], dic
 
 def compile_package(package_path: Path, resources_dir: Path, output_dir: Path) -> None:
     payload = load_json(package_path)
+    fixed_ids = normalize_node_id_shape(payload)
+    if fixed_ids > 0:
+        print(f"normalized {fixed_ids} malformed node id field(s) before validation")
     errors, warnings, qa_report = validate_package(payload)
 
     if errors:
