@@ -1,0 +1,425 @@
+{
+  "id": "天机录_ch0317",
+  "book_id": "天机录",
+  "number": 317,
+  "title": "封印崩解",
+  "is_paid": true,
+  "next_chapter_hook": "就在众人惊魂未定之际，天机录的第三页竟自行显现——那上面绘着一只与封印深处完全相同的竖瞳，仿佛某种跨越万年的呼应。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0317_001",
+        "content": "眉心传来的刺痛如万针齐扎，陈机下意识按住额头，指尖触及的皮肤仿佛被烙铁灼过。天命值如决堤之水般倾泻——五十点、六十点、七十点——每流失一分，他的脸色便苍白一分。封印深处传来的低鸣愈发清晰，那不是声音，而是某种直接灌入神魂的意志波动。\"它\"正在醒来。四周的天地灵气骤然紊乱，以封印为中心形成一个巨大的漩涡，无数碎石从崖壁上剥落，坠入深不见底的裂隙。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0317_002",
+        "character_id": "char_suqingyao",
+        "content": "陈机！你脸色怎么这么难看？",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_003",
+        "content": "苏青瑶一把扶住摇摇欲坠的陈机，指尖触及他冰凉的肌肤时瞳孔微缩——这般虚弱绝非常态。她的目光掠过陈机死死按住的眉心，心中警铃大作。这个废物弟子，每次都能在关键时刻露出不该有的疲态，究竟藏着什么秘密？远处传来其他宗门弟子惊恐的叫喊，有人的飞剑因灵气紊乱而失控，径直坠向人群。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0317_004",
+        "character_id": "char_yeqing",
+        "content": "这股气息……不对，这不是普通的远古存在！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_005",
+        "content": "夜清的声音陡然拔高，魔道圣女向来从容的面容上罕见地浮现出惧色。她能感知到那封印深处涌动的力量——与她所修的魔道功法竟有几分诡异的共鸣，仿佛……仿佛同源。封印的裂痕正在以肉眼可见的速度扩张，一道幽绿色的光芒从缝隙中透出，照亮了半边天际。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0317_006",
+        "prompt": "封印崩解在即，远古存在即将苏醒，陈机必须做出抉择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0317_006_a",
+            "text": "率众撤离",
+            "description": "保存实力为上，封印既已无法阻止，当务之急是带人撤离危险区域，留得青山在。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "放弃探查封印真相的机会",
+            "visible_reward": "保全在场弟子性命，树立领袖威望",
+            "risk_hint": "远古存在的苏醒可能导致更大灾难",
+            "process_label": "率众撤离中",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0317_006_a_result_1",
+                  "content": "陈机深吸一口气，强压下眉心传来的剧痛。他环顾四周——混乱的人群、崩裂的山石、愈发刺目的绿光——局势已不可逆转。\"所有人听令！\"他的声音骤然响彻山谷，浑厚得与他往日的废物形象判若两人，\"立刻撤离！往东走，不要回头！\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0317_006_a_result_2",
+                  "character_id": "char_suqingyao",
+                  "content": "（心中震动）这道号令……如此果决，这还是那个任人欺辱的废物？",
+                  "emotion": "惊疑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "撤离成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0317_006_b",
+            "text": "冒险阻截",
+            "description": "趁封印尚未完全崩解，以残缺天机录的力量尝试压制，哪怕只是拖延片刻。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，可能当场昏迷",
+            "visible_reward": "若成功可彻底探清封印与天机录的关联",
+            "risk_hint": "以残缺的天机录对抗远古存在，风险极高",
+            "process_label": "尝试阻截中",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0317_006_b_result_1",
+                  "content": "陈机猛地咬破舌尖，以血为引，将残缺的天机录从眉心逼出。泛黄的纸页在虚空中徐徐展开，其上墨迹如活物般蠕动。他双手结印，低沉的咒语从唇间溢出。封印处扩散的绿光竟真的停滞了一瞬——仿佛被某种力量强行压制。"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0317_006_b_result_2",
+                  "character_id": "char_yeqing",
+                  "content": "（瞳孔剧震）这气息……天机录？你竟然有此等神物！",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "阻截尝试"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_007",
+        "content": "话音未落，封印的裂痕猛然扩大三倍。幽绿的光芒如潮水般涌出，所过之处，岩石化为齑粉，古木枯朽成灰。一股浩瀚如深渊的威压笼罩全场，修为低浅的弟子当场口吐鲜血，双膝发软。一个模糊的轮廓在绿光中若隐若现——那是一只竖瞳，竖瞳之中蕴含着足以令天地变色的力量。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0317_008",
+        "character_id": "char_suqingyao",
+        "content": "所有人快走！我来断后！",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_009",
+        "content": "苏青瑶拔剑而出，剑身绽放的寒光试图抵御那股威压。她的修为已是筑基后期，在年轻一辈中堪称翘楚，可那绿光中的竖瞳只是微微一瞥，便让她的剑意几近崩溃。冷汗从她额角滑落，心中涌起一股从未有过的无力感——这究竟是什么级别的存在？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_010",
+        "content": "混乱之中，各宗弟子四散奔逃。有人御剑而起，却因灵气紊乱而人剑俱坠；有人试图结阵防御，却被绿光瞬间瓦解。三大宗门苦心经营的探索队伍，在这一刻成了待宰的羔羊。玄武宗的弟子们满脸惊恐地望着那只竖瞳，一向引以为傲的强横肉身此刻颤抖不止。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0317_011",
+        "prompt": "局势急转直下，苏青瑶独自断后已现疲态，陈机必须再次抉择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0317_011_a",
+            "text": "掩护苏青瑶撤退",
+            "description": "红颜危在旦夕，不能让她独自送死。即便暴露部分实力，也要将她平安带走。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "彻底暴露与天机录的关联给苏青瑶",
+            "visible_reward": "加深与苏青瑶的羁绊，获得她更深的信任",
+            "risk_hint": "她会更加怀疑你的真实身份",
+            "process_label": "掩护撤退中",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0317_011_a_result_1",
+                  "content": "陈机眼底掠过一丝寒芒。他不能眼睁睁看着苏青瑶折在这里，即便她是他最大的威胁。他再次催动天机录，一股柔和却不可抗拒的力量将苏青瑶托起，强行向后方推移。\"走！\"他的声音冰冷得不带丝毫感情。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0317_011_b",
+            "text": "与夜清联手压制",
+            "description": "夜清的魔道迷雾能遮掩天机录气息，两人联手或可争取更多时间探查真相。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "与魔道圣女联手会落下口实",
+            "visible_reward": "深入了解封印与天机录的关联，可能获得关键线索",
+            "risk_hint": "正道弟子如何看待与魔道合作",
+            "process_label": "联手压制中",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0317_011_b_result_1",
+                  "content": "陈机与夜清的目光在空中交汇，无需言语便已达成默契。魔道圣女周身涌起浓稠的黑雾，与天机录的气息交缠在一起。两股本不该共存的力量竟诡异地融合，硬生生在那绿光中撕开一道裂口。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "魔道联手"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_012",
+        "content": "就在这时，封印彻底崩解。那只竖瞳缓缓睁开——瞳孔深处是一片混沌的星海，仿佛蕴含着宇宙初开时的全部奥秘。一道无声的意志横扫全场，陈机感觉自己的神魂被某种力量窥视，仿佛所有的秘密都无所遁形。天机录在他怀中剧烈震颤，纸页翻动的声音清晰可闻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_013",
+        "content": "陈机强忍着神魂被窥探的刺痛，脑中飞速运转。这远古存在的气息为何与天机录如此相似？它究竟是敌是友？天道之眼在卷八的真相中提到，天机录不过是它在世间布下的棋子之一……那么这封印中的存在，是否也是棋子？或者，是棋盘之外的力量？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0317_014",
+        "character_id": "char_chenji",
+        "content": "（心声）记下了。无论你是谁，今日之账，来日必清。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_015",
+        "content": "竖瞳的目光在混乱的人群中逡巡片刻，最终定格在陈机身上。那目光中没有杀意，反而带着一丝……审视，仿佛在确认什么。陈机浑身汗毛倒竖，却强迫自己保持镇定。他缓缓放下手中的天机录，任由纸页在虚空中漂浮。封印处的绿光与天机录交相辉映，在场所有人都目睹了这不可思议的一幕。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_016",
+        "content": "天机录的纸页猛然翻至第三页。泛黄的纸张上，一只与封印中完全相同的竖瞳赫然在目，而在竖瞳之下，是一行陈机从未见过的古老篆文——那字迹仿佛在呼吸，仿佛在诉说某个跨越万年的秘密。墨先生残魂的声音在陈机脑海中响起：\"第三页……解封条件已达成。它找到你了，小子。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_017",
+        "content": "绿光渐渐收敛，竖瞳缓缓闭合。那远古存在似乎只是在确认什么，确认完毕便重新沉入封印深处——或者说，它并非要苏醒，而只是\"睁眼看了一眼\"。但这短短一瞬，已让在场所有人肝胆俱裂。陈机死死盯着第三页上的篆文，心中涌起惊涛骇浪。天机录的第三页，为何会绘有远古存在的图腾？这两者之间，究竟有什么不为人知的关联？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0317_018",
+        "prompt": "远古存在重归沉寂，第三页显现，陈机面临最后抉择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0317_018_a",
+            "text": "立刻研读第三页",
+            "description": "机会稍纵即逝，必须趁远古存在沉睡之际，弄清它与天机录的关联。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "在场众人都能看到第三页内容",
+            "visible_reward": "获得关于远古存在与天机录关系的关键信息",
+            "risk_hint": "苏青瑶会更加确信天机录在你手中",
+            "process_label": "研读第三页中",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0317_018_a_result_1",
+                  "content": "陈机毫不犹豫地将神识探入第三页。刹那间，无数画面如走马灯般掠过他的脑海——远古祭坛、血腥献祭、天机录的诞生……以及一个被刻意抹去的名字。那个名字属于谁？为何被抹去？他尚未来得及看清，画面便骤然消散。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "第三页解锁"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0317_018_b",
+            "text": "先稳定人心",
+            "description": "比起真相，眼下更重要的是收拾残局，确立自己在这场危机中的领导地位。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过研读第三页的最佳时机",
+            "visible_reward": "在场众人对你感恩戴德，威望大增",
+            "risk_hint": "第三页的信息可能转瞬即逝",
+            "process_label": "稳定局势中",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0317_018_b_result_1",
+                  "content": "陈机收起天机录，转身面向瘫软在地的众人。他没有急于查看第三页的内容，而是快步走向受伤的弟子，开始分发丹药、指挥撤离。废墟之中，他忙碌的身影与方才号令三军的形象再次重叠。废物？此刻再无人敢用这个词形容他。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_019",
+        "content": "苏青瑶挣扎着从地上站起，目光死死锁定陈机。方才那一幕太过震撼——天机录、远古存在、还有陈机那与废物形象完全不符的冷静与决断。她想要追问，却在看到陈机平静如水的眼神时，将所有疑问咽了回去。这个男人……究竟还藏着多少秘密？而夜清则若有所思地望着陈机与苏青瑶之间微妙的气氛，嘴角勾起一抹玩味的弧度。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0317_020",
+        "content": "就在众人惊魂未定之际，天机录的第三页竟自行显现——那上面绘着一只与封印深处完全相同的竖瞳，仿佛某种跨越万年的呼应。竖瞳之下的古老篆文缓缓浮现：\"天机者，天道之眼所铸。然铸眼之人，非眼也。\"陈机盯着这句话，心跳骤然加速。墨先生的残魂在脑海中叹了口气：\"看来，是时候告诉你一些真相了……关于天机录真正的来历。\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

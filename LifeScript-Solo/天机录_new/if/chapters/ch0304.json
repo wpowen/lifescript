@@ -1,0 +1,393 @@
+{
+  "id": "天机录_ch0304",
+  "book_id": "天机录",
+  "number": 304,
+  "title": "守护之威",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机以为胜券在握之际，那守护傀儡空洞的眼眶中突然燃起一抹诡异的金光——那气息，竟与天机录残页的波动如出一辙。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0304_001",
+        "content": "浓烈的尘土从秘境深处翻涌而出，一道庞大的身影缓缓从迷雾中显现。那是一尊足有三丈高的石质傀儡，通体刻满了晦涩难懂的远古铭文，每一道纹路都流淌着幽蓝色的光芒，仿佛在诉说着上古岁月的沧桑。它的胸腔处嵌着一颗拳头大小的暗金色核心，每一次脉动都引发周围的灵气剧烈震颤——那是元婴初期修士才有的灵压，却以一种更加纯粹、更加古老的方式呈现。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_002",
+        "content": "身后传来一阵骚动，几名跟随而来的散修面露惧色，双腿不由自主地后退。元婴初期！这个境界对于他们这些筑基、金丹修士而言，简直是遥不可及的存在。有人已经打起了退堂鼓，低声议论着是否要趁守护傀儡尚未完全苏醒时逃离。然而陈机却纹丝不动，他的目光紧紧锁定在那傀儡胸口的暗金核心上，瞳孔深处闪过一抹难以察觉的精光。",
+        "emphasis": null
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0304_003",
+        "character_id": "char_chenji",
+        "content": "（原来如此……这守护傀儡体内的核心，与天机录残页产生了共鸣。有意思，这秘境的前主人，究竟想做什么？）",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0304_004",
+        "prompt": "元婴初期的守护傀儡，实力远超当前境界。陈机必须在战斗策略上做出关键决策。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0304_004_001",
+            "text": "天眼洞悉，精准预判",
+            "description": "消耗5点天命值开启天眼，预判守护傀儡的所有攻击轨迹，与夜清配合实施精准打击。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值 -5",
+            "visible_reward": "获得完美配合战斗评价",
+            "risk_hint": "天命值消耗后的虚弱期可能暴露破绽",
+            "process_label": "天眼洞悉",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0304_result_004_001_001",
+                  "content": "陈机眸中金光一闪，天机录残页悄然翻动。他只觉眼前的世界变得无比清晰，守护傀儡体内灵气的每一次流动、每一道铭文的能量传递，尽收眼底。三息之后，它的左肩将出现破绽——那是铭文衔接处最薄弱的一点。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0304_result_004_001_002",
+                  "character_id": "char_chenji",
+                  "content": "左肩，三息之后。",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": "完美预判",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0304_004_002",
+            "text": "引蛇出洞，消耗战术",
+            "description": "利用傀儡体型大的弱点，指挥众人以游走方式消耗其能量，寻找核心暴露的机会。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无直接消耗",
+            "visible_reward": "保存天命值，风险较低",
+            "risk_hint": "耗时较长，可能有伤亡",
+            "process_label": "引蛇出洞",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0304_result_004_002_001",
+                  "content": "陈机微微摇头，向夜清使了个眼色。两人无需言语便已心意相通——这傀儡虽强，却笨重迟缓。以巧破力，方为正道。",
+                  "emphasis": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "智取",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_005",
+        "content": "守护傀儡终于完全苏醒，那双空洞的眼眶中燃起幽蓝的火焰，发出一声震耳欲聋的咆哮。狂暴的灵压如潮水般向四周扩散，几名退得慢的散修被直接震飞出去，口吐鲜血。然而就在这千钧一发之际，陈机动了——他的身影化作一道残影，直取傀儡左肩！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0304_006",
+        "character_id": "char_yeqing",
+        "content": "（这废物……竟敢！）夜清心中闪过一丝惊异，但身体比意识更快做出反应。黑色的魔气从她掌心喷涌而出，化作一柄三尺长剑，直刺傀儡胸口核心——那是陈机用目光指引的方向。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_007",
+        "content": "配合得天衣无缝！陈机的攻击恰到好处地击中了铭文薄弱处，守护傀儡的身形猛然一滞；而夜清的魔剑更是精准无比，直直刺入那颗暗金核心三分。傀儡发出痛苦的嘶吼，体内灵气开始紊乱。然而就在众人以为得手之际，傀儡胸口的铭文突然亮起刺目的金光——它在强行催动某种禁忌之术！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0304_008",
+        "prompt": "守护傀儡催动禁忌之术，战局急转直下。必须做出决断！",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0304_008_001",
+            "text": "孤注一掷，破核心",
+            "description": "与夜清同时出手，以最强杀招直接摧毁核心。风险极高，但可一战定乾坤。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能受伤",
+            "visible_reward": "一击必杀，全场震惊",
+            "risk_hint": "若失败，将直面禁忌之术的反噬",
+            "process_label": "破核心",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0304_result_008_001_001",
+                  "content": "陈机眼中闪过一丝狠厉。天机录残页在他掌心微微发烫，一段模糊的画面闪过脑海——这一击，足以终结战斗。",
+                  "emphasis": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "信任一击",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0304_008_002",
+            "text": "暂避锋芒，寻破绽",
+            "description": "带领众人后撤，先躲开禁忌之术的威力，再寻找其他破绽。稳妥但可能错失战机。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去先机",
+            "visible_reward": "保存实力，寻找更安全的时机",
+            "risk_hint": "禁忌之术可能波及更多人",
+            "process_label": "暂避",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0304_result_008_002_001",
+                  "content": "陈机眉头微皱，正欲下令撤退，却见夜清的目光中透出一丝决然。那是一种……愿意将后背交给他的信任。",
+                  "emphasis": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "信任动摇",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_009",
+        "content": "不必！陈机大喝一声，手中不知何时多了一柄漆黑短剑。那是他从天机录残页中获得的秘宝——天机剑胚，平日里从不示人。此刻他将全身灵力灌注其中，剑身亮起与傀儡核心如出一辙的暗金光芒——这是他方才从那共鸣中领悟到的东西。魔道与天道，本就同源同根！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_010",
+        "content": "陈机与夜清的身影在空中交错，两道攻击同时落下——一道是凝聚了天机剑胚全部威能的暗金剑气，一道是蕴含魔道至高奥义的漆黑魔剑。一正一邪，一阳一阴，在触碰守护傀儡核心的瞬间，竟奇迹般地融合在一起，化作一道黑白交织的光芒，直接贯穿了傀儡的胸膛！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0304_011",
+        "character_id": "char_yeqing",
+        "content": "（这感觉……竟然如此契合？）夜清感受着体内残余的力量共振，心中涌起一股难以言喻的情绪。这个废物般的男人，究竟还隐藏着多少秘密？但此刻她无暇多想，因为傀儡的哀嚎已经响彻整个秘境。",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_012",
+        "content": "守护傀儡的身躯轰然崩塌，无数铭文化作流光消散于虚空之中。那颗暗金核心在空中悬浮了片刻，竟自行飞向了陈机——准确地说，是飞向了他怀中的天机录残页。两者的碰撞发出一声清脆的鸣响，残页上竟多出了一道从未有过的铭文。",
+        "emphasis": null
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0304_013",
+        "prompt": "战斗胜利，核心融入天机录。接下来如何处理这颗价值连城的守护核心？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0304_013_001",
+            "text": "收入囊中，秘而不宣",
+            "description": "趁众人还没反应过来，悄悄将核心收入天机录空间。神不知鬼不觉。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "无",
+            "visible_reward": "获得守护核心，强化天机录",
+            "risk_hint": "若被夜清察觉，可能影响信任",
+            "process_label": "收入囊中",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "财富",
+                "delta": 500
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0304_result_013_001_001",
+                  "content": "陈机不动声色地将残页合拢，那颗核心便已消失在众人眼前。一切发生得太快，快到连夜清都没看清究竟发生了什么。她只隐约感觉到，陈机的气息似乎在那一瞬间变得深邃了几分。",
+                  "emphasis": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "闷声发大财",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0304_013_002",
+            "text": "坦然展示，共分战果",
+            "description": "将核心展示给众人，表示愿意与盟友分享这份机缘。赢得人心。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "核心价值降低",
+            "visible_reward": "名望提升，获得追随者信任",
+            "risk_hint": "可能引来觊觎",
+            "process_label": "共分战果",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0304_result_013_002_001",
+                  "content": "陈机将核心托在掌心，神色平静地看向众人。这颗守护核心虽已融入天机录，但他早已用天机录复制了一道虚影。分你们一份机缘，日后也好相见。众人面露感激，唯有夜清目光闪烁，似在思索着什么。",
+                  "emphasis": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "笼络人心",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_014",
+        "content": "废墟之中，陈机缓缓收功，脸上依旧是那副人畜无害的神情。然而他的内心却掀起了惊涛骇浪——方才那一刻，当天机录残页与守护核心共鸣时，他隐约窥见了一段被封印的上古记忆。那记忆太过模糊，只依稀记得一双巨大的眼睛，正冷漠地注视着这片大地。",
+        "emphasis": null
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_015",
+        "content": "（那双眼睛……与墨先生描述的天道之眼，有几分相似。）陈机心中一凛，面上却不动声色。守护傀儡已灭，前方的至宝区域门户大开。众人欢呼雀跃，纷纷向深处涌去。陈机却驻足原地，目光深邃地望向那堆崩塌的碎石——在那里，似乎还残留着一丝若有若无的暗金光芒。",
+        "emphasis": null
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_016",
+        "content": "夜清走到他身边，难得没有冷嘲热讽。方才那一战，她对眼前这个废物般的男人有了全新的认知。那种默契的配合、精准的预判、果断的决策——绝非一个普通杂役弟子所能做到。她第一次产生了一个念头：也许，与他合作，真的是她此生最正确的决定之一。",
+        "emphasis": null
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0304_017",
+        "character_id": "char_yeqing",
+        "content": "废物……不，陈机。你究竟是什么人？夜清终于问出了心中的疑惑，声音比平时柔和了几分。陈机转头看向她，嘴角微微上扬，露出一个意味深长的笑容：我是谁不重要，重要的是——你我如今是同路人。",
+        "emotion": "试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_018",
+        "content": "夜清沉默片刻，最终轻轻点头。无论他藏着多少秘密，至少在这一刻，他的所作所为都证明了他的价值。魔道圣女的骄傲让她不会轻易信任任何人，但陈机……已经让她破例了一次。也许，还会有第二次、第三次。",
+        "emphasis": null
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_019",
+        "content": "就在此时，秘境深处突然传来一阵剧烈的震动。众人面色大变——守护傀儡虽已伏诛，但这秘境的危险显然不止于此。更令人心悸的是，那股震动中夹杂着一丝熟悉的气息，与方才的守护傀儡如出一辙，却又更加浓郁、更加狂暴。陈机瞳孔微缩，他感觉到了——那堆崩塌的碎石下，似乎有什么东西正在苏醒。而那股气息中蕴含的波动，竟与天机录残页产生了前所未有的强烈共鸣！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0304_020",
+        "content": "陈机下意识地将手按在天机录残页上，感受着那股越来越强烈的共鸣。他知道，这一刻起，一切都不一样了——守护傀儡体内的核心并非普通宝物，而是与天机录同源的上古遗物。如今它融入残页，等于是打开了某扇尘封已久的门。那门后，究竟藏着怎样的真相？又或者……是更加可怕的危险？",
+        "emphasis": null
+      }
+    }
+  ]
+}

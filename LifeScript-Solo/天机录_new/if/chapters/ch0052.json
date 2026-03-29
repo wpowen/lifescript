@@ -1,0 +1,635 @@
+{
+  "id": "天机录_ch0052",
+  "book_id": "天机录",
+  "number": 52,
+  "title": "黑马之名",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机接过纸条的瞬间，远处高楼之上，一道苍老的目光穿透人群，落在他背上——那是天青宗三长老独有的气息。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0052_001",
+        "content": "那声冷哼如寒铁撞击，在演武场上空回荡。韩烈双臂环胸，玄色劲装上绣着的玄武纹路在阳光下隐隐流动，那是玄武宗核心弟子才有的标识。他盯着陈机的目光，仿佛在看一只终于露出尾巴的狐狸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_002",
+        "character_id": "char_hanlie",
+        "content": "废物？呵，倒是本座眼拙了。",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_003",
+        "content": "周围外门弟子纷纷侧身让开，仿佛生怕被韩烈的气势波及。陈机却像是没听见一般，弯腰拾起地上散落的灵石，动作从容不迫，仿佛刚才击败赵元的不过是一场微不足道的切磋。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_004",
+        "character_id": "char_chenji",
+        "content": "韩师兄谬赞了，小弟不过是运气好，碰上了赵师兄体力不支。",
+        "emotion": "谦卑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_005",
+        "content": "这话落在韩烈耳中，比嘲讽还刺耳。运气？体力不支？他分明看见赵元被那一掌震断了三根肋骨！人群中忽然有人低呼：\"第二场开始了！对手是......周霆！外门种子选手排名第七！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0052_choice_001",
+        "prompt": "周霆，外门种子选手排名第七，一手奔雷剑法凌厉无比。面对如此强敌，陈机该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0052_opt_001a",
+            "text": "速战速决，展示绝对实力",
+            "description": "用天机录预判招式，三招之内结束战斗，让所有人看清差距",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗5点天命值",
+            "visible_reward": "名望大幅提升，震慑全场",
+            "risk_hint": "暴露太多实力会引起更高层关注",
+            "process_label": "催动天机录",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt001a_001",
+                  "content": "天机录残页微微发热，三息之后，陈机眼中闪过一丝了然。周霆的剑招轨迹、发力节点、破绽所在——一切尽在掌握。他嘴角微微上扬，身形骤然前冲。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt001a_002",
+                  "character_id": "char_chenji",
+                  "content": "抱歉，赶时间。",
+                  "emotion": "淡然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "展示了碾压实力"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0052_opt_001b",
+            "text": "险象环生，保留底牌",
+            "description": "装作勉强取胜，让众人以为只是运气，继续扮猪吃虎",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗少量灵力",
+            "visible_reward": "保持废物人设，降低关注度",
+            "risk_hint": "若控制不好可能阴沟翻船",
+            "process_label": "控制节奏",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt001b_001",
+                  "content": "陈机故意慢了半拍，被周霆的奔雷剑逼得连连后退。剑光擦着他耳畔掠过，削落几缕发丝。看台上一片惊呼，苏青瑶的笔尖微微一顿。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt001b_002",
+                  "character_id": "char_chenji",
+                  "content": "好......好快的剑！",
+                  "emotion": "惊险"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "维持废物人设"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0052_opt_001c",
+            "text": "以退为进，激怒对手",
+            "description": "言语刺激周霆，让他在愤怒中露出破绽",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能得罪周家",
+            "visible_reward": "削弱对手战力，不耗天命值",
+            "risk_hint": "若对方不上当会陷入被动",
+            "process_label": "心理博弈",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt001c_001",
+                  "content": "陈机侧身避开剑锋，忽然轻笑出声：\"奔雷剑法？小弟记得......这招的收势似乎有个老毛病？\"周霆脸色骤变，剑招果然一滞。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt001c_002",
+                  "character_id": "char_chenji",
+                  "content": "哦？看来周师兄也知道啊。",
+                  "emotion": "戏谑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "激怒周霆成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_006",
+        "content": "无论选择何种策略，战斗的结果都毫无悬念。陈机的掌风如潮水般涌向周霆，那看似刚猛的奔雷剑法在他眼中漏洞百出。\"砰\"的一声，周霆被震退十步，捂着手腕跪倒在地，眼中满是不可置信。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_007",
+        "character_id": "char_hanlie",
+        "content": "三招......连周霆都只接了三招！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_008",
+        "content": "外门弟子们面面相觑，之前嘲笑陈机的声音消失殆尽，取而代之的是窃窃私语。\"这人是谁？\"\"好像是那个杂役弟子......\"\"不可能！杂役弟子怎么可能有这种实力！\"人群后方的阴影里，苏青瑶合上手中的玉简，眸中精光一闪。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_009",
+        "content": "第三场紧随而至，对手是外门种子排名第四的孙浩。然而当陈机踏上擂台的瞬间，他敏锐地察觉到一道幽冷的目光正穿透人群，落在自己身上。那气息......不属于天青宗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0052_choice_002",
+        "prompt": "那道目光来自一位黑纱遮面的女子，她的气质与周围格格不入。如何应对这意外的注视？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0052_opt_002a",
+            "text": "主动点头示意，表达善意",
+            "description": "以江湖礼节回应，展现从容气度",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能被误解为结交魔道",
+            "visible_reward": "可能获得潜在盟友",
+            "risk_hint": "在场宗门长老可能会注意到",
+            "process_label": "颔首致意",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt002a_001",
+                  "content": "陈机不卑不亢地微微颔首，那黑纱女子似乎愣了一下，随即唇角勾起一丝玩味的弧度。这一幕落在苏青瑶眼中，让她执笔的手指微微收紧。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "引起夜清注意"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0052_opt_002b",
+            "text": "不动声色，暗中戒备",
+            "description": "装作没看见，专注于眼前的战斗",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过主动出击的时机",
+            "visible_reward": "不暴露对神秘人物的关注",
+            "risk_hint": "可能让对方觉得自己无礼",
+            "process_label": "无视试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt002b_001",
+                  "content": "陈机收回目光，将注意力完全放在孙浩身上。然而那道目光却愈发浓烈，像是在他后背烧出一个洞。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0052_opt_002c",
+            "text": "以眼神回击，试探深浅",
+            "description": "直接与对方对视，试探她的反应",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能暴露自己的警觉性",
+            "visible_reward": "获得对方真实态度的信息",
+            "risk_hint": "高手可能从中分析出你的实力",
+            "process_label": "眼神交锋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt002c_001",
+                  "content": "四目相对的刹那，陈机感到一阵幽寒侵入心神。然而他面不改色，只是微微挑眉。那女子轻笑一声，率先移开了目光。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt002c_002",
+                  "character_id": "char_yeqing",
+                  "content": "有趣。",
+                  "emotion": "兴味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "引起夜清兴趣"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_010",
+        "content": "孙浩的实力果然不俗，玄气护体之下竟与陈机缠斗了十余招。然而陈机早已通过天机录的预判看清了他的底细——外强中干，第七重玄气有暗伤。当孙浩使出压箱底的\"裂石拳\"时，陈机身形一闪，掌刀精准地切在他右肩的经脉上。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_011",
+        "character_id": "char_chenji",
+        "content": "孙师兄这裂石拳，威力有余，后劲不足啊。",
+        "emotion": "淡然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_012",
+        "content": "孙浩的右臂颓然垂下，剧痛让他面色惨白。三战三捷！外门演武场彻底沸腾了。\"黑马！绝对的超级黑马！\"\"那个废物杂役到底是怎么回事！\"\"我早说他不简单！\"议论声如潮水般涌来，陈机却面色平静地走下擂台，仿佛这一切都在预料之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_013",
+        "content": "演武场边的茶楼上，苏青瑶将玉简收入袖中，眉头微蹙。\"三场战斗，三种截然不同的风格......他在隐藏什么？\"她身旁的老仆低声道：\"小姐，要不要老奴去查一查此人？\"苏青瑶摇头：\"不急，他越是想藏，我就越想看看......他到底能藏多深。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_014",
+        "character_id": "char_suqingyao",
+        "content": "记录：掌法路数不明，玄气深厚程度存疑，战斗智商极高但刻意压制。三号重点观察对象。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_015",
+        "content": "就在此时，一道黑色身影悄然靠近陈机。来人正是那黑纱遮面的女子，她走到陈机身侧，声音压得极低，带着一丝沙哑的磁性。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_016",
+        "character_id": "char_yeqing",
+        "content": "陈公子，可否借一步说话？",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_017",
+        "content": "陈机心中微动，却没有立刻答应。他打量着眼前的女子——黑纱之下只能看见一双深邃的眼眸，以及那不属于天青宗的幽冷气质。这种气息，他在某个深夜从天机录的预言碎片中见过。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0052_choice_003",
+        "prompt": "神秘女子主动接触，她是敌是友？如何应对这突如其来的示好？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0052_opt_003a",
+            "text": "接受邀约，听她要说什",
+            "description": "跟神秘女子到僻静处，看看她葫芦里卖的什么药",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能陷入未知陷阱",
+            "visible_reward": "可能获得重要情报或盟友",
+            "risk_hint": "对方来历不明，可能有阴谋",
+            "process_label": "前往僻静处",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt003a_001",
+                  "content": "陈机点点头，跟着女子来到演武场后方的竹林中。四下无人后，女子忽然转身，眼中闪过一丝复杂的光芒。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt003a_002",
+                  "character_id": "char_yeqing",
+                  "content": "陈公子，你应该知道我是什么身份。",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "与夜清私下会面"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0052_opt_003b",
+            "text": "保持距离，言语试探",
+            "description": "不轻易跟她走，先用言语试探对方来意",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错过主动获取情报的机会",
+            "visible_reward": "不暴露自己的底牌",
+            "risk_hint": "对方可能失去耐心",
+            "process_label": "原地试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt003b_001",
+                  "content": "陈机脚步未动，只是微微侧头：\"姑娘认错人了吧？在下不过是个杂役弟子，与姑娘素不相识。\"女子的笑意更深了。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt003b_002",
+                  "character_id": "char_yeqing",
+                  "content": "杂役弟子？呵，那三掌震断赵元三根肋骨的，也是贵宗的'杂役'吗？",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0052_opt_003c",
+            "text": "婉言谢绝，转身离开",
+            "description": "不理会神秘女子，继续保持低调人设",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能失去重要线索",
+            "visible_reward": "维持现有安全状态",
+            "risk_hint": "对方可能不会第二次主动接触",
+            "process_label": "礼貌拒绝",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0052_result_opt003c_001",
+                  "content": "陈机拱手道：\"姑娘抬举了，在下还要回去复命，告辞。\"说完转身便走。女子的声音从身后传来，带着一丝意味深长。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0052_result_opt003c_002",
+                  "character_id": "char_yeqing",
+                  "content": "陈公子，我们还会再见的。",
+                  "emotion": "笃定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_018",
+        "content": "无论陈机如何选择，女子最终都会递上那张纸条。她从袖中取出一张泛黄的纸笺，上面只有一行娟秀的小字。当陈机接过纸条的瞬间，女子已经如鬼魅般消失在竹林深处，只留下一缕若有若无的幽香。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_019",
+        "content": "纸条上的字迹映入眼帘——\"三长老有问题\"。陈机的瞳孔骤然收缩。三长老？那个在入门仪式上对自己露出莫名笑意的老者？他下意识地将纸条收入袖中，心中的棋盘上又多了几枚新的棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0052_020",
+        "character_id": "char_chenji",
+        "content": "有意思......魔道圣女主动示好，还送上这等情报。她想要什么？",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_021",
+        "content": "竹林深处，夜清望着陈机的背影，唇角勾起一抹复杂的弧度。\"天机录......果然在你身上。\"她低声呢喃，\"陈机啊陈机，你知不知道，你身上背着的，可是连天道都要忌惮的东西......\"风过竹林，沙沙作响，仿佛在回应她的叹息。远处高楼之上，那道苍老的目光始终未曾移开。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0052_022",
+        "content": "演武场上的喧嚣渐渐散去，陈机连胜三场的消息如野火般蔓延至整个天青宗外门。\"黑马\"二字成了所有人谈论的焦点，那个曾经被人嘲笑的废物杂役，如今已成了最炙手可热的话题人物。然而在这热闹之下，暗流涌动——韩烈的忌惮、苏青瑶的关注、夜清的试探，以及那来自高楼的窥视......陈机知道，自己的棋局，才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

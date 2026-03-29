@@ -1,0 +1,507 @@
+{
+  "id": "天机录_ch1123",
+  "book_id": "天机录",
+  "number": 1123,
+  "title": "机心抉择",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机的手指触碰到那禁忌的第四道光芒时，整个天机录轰然展开——而天道之眼的注视，也在同一瞬间凝固成了永恒的恐惧。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1123_001",
+        "content": "那股震动来得毫无预兆，仿佛有一只无形的手在胸腔中猛然搅动。陈机下意识按住怀中那本泛黄的残页，天机录的古朴封面下，竟有什么滚烫得像是要将他的血肉烫穿。他低头看去，只见那残破的纸页之间，正有一点幽蓝色的光芒缓缓亮起，如同深渊中睁开了一只眼睛。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1123_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "有趣。三条死路摆在面前，你竟还有闲心去碰禁忌？陈机，你当真以为这世上有什么第四条路吗？",
+        "emotion": "讥讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_003",
+        "content": "陈机没有答话，他的意识已被那片幽蓝光芒完全吞噬。在那光芒之中，三条道路的幻影再次浮现——左边是天道意志许诺的永恒权柄，右边是与天道同归于尽的毁灭之路，正前方则是无数亡魂哭嚎的轮回深渊。然而此刻，他的目光死死锁在第四条路上。那是一条他从未见过的道路，模糊得像是被什么力量刻意抹去，却又真实得令他的天灵根都在颤抖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1123_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "那不是路，孩子。那是死胡同。天道之眼的声音忽然多了几分凝重，如同平静湖面下涌动的暗流。天机录给了你预见之力，你却想用这力量来窥探我的破绽？这世间的棋局，从来只在我的掌握之中。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_005",
+        "content": "是吗？陈机终于开口，嘴角勾起一抹淡漠的弧度。他的声音很轻，轻得像是深冬里即将熄灭的烛火，然而其中蕴含的寒意却让周围的空气都凝结成霜。他缓缓抬起头，那双平日里满是怯懦的眼睛，此刻却像是两汪深不见底的古井，倒映着命运交织的经纬。天道大人，我记下了。您方才说，棋局只在您的掌握之中——这句话，我也记了很多年了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1123_choice_001",
+        "prompt": "三条命运之路摆在陈机面前，天机录的第四道光芒正在禁忌页面上燃烧。他将如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1123_opt_001",
+            "text": "成为天道",
+            "description": "接受天道意志的权柄诱惑，以继承者身份掌控三界，成为新的执棋者。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去自我意志，成为天道的延续",
+            "visible_reward": "获得操控命运的绝对权力",
+            "risk_hint": "失去一切在乎之人，包括妹妹陈念",
+            "process_label": "陈机凝视着权柄的幻影",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_001_1",
+                  "content": "权柄的幻影在陈机眼前展开，那是一条铺满金银的神圣阶梯，向上无限延伸。然而就在他即将迈步的瞬间，脑海中浮现出陈念被囚禁的身影、苏青瑶孤独守护天青宗的背影——如果他成为天道，这一切都将失去意义。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1123_opt_002",
+            "text": "与天道同归于尽",
+            "description": "选择毁灭之路，以自身的消亡为代价拖天道一起坠入永恒的虚无。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "失去生命，放弃所有未完成的羁绊",
+            "visible_reward": "天道意志将随你一同湮灭于虚空",
+            "risk_hint": "天道之眼可能早有防备，同归于尽或成空谈",
+            "process_label": "陈机凝视着毁灭的深渊",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_002_1",
+                  "content": "毁灭之路的入口是一片漆黑的虚空，其中没有任何光芒，也没有任何声音。陈机感受到一股莫名的吸引力，仿佛只要他纵身跃下，一切都将结束。然而就在此时，天机录中墨先生残魂的叹息声响起：'这不是真正的答案，棋子。'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1123_opt_003",
+            "text": "打破天道",
+            "description": "拒绝成为棋子也拒绝同归于尽，以凡人之躯撼动天道秩序，建立新的规则。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "以凡人之躯对抗天道，成功率渺茫",
+            "visible_reward": "若成功，将彻底改写三界法则",
+            "risk_hint": "天道之眼绝不会坐视你打破它的规则",
+            "process_label": "陈机凝视着那条模糊的第四条路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_003_1",
+                  "content": "第四条路的幻影在陈机眼前逐渐清晰。那不是一条铺好的道路，而是一片混沌的空白——没有规则，没有秩序，一切皆可塑。这是他从未想过的可能，以凡人之躯重塑天道，而非取代或毁灭。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1123_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "你的眼神变了，陈机。天道之眼的声音陡然冰冷，如同万年寒冰凝结成的利刃。想打破天道？哈哈哈哈……千百万年来，无数预言者都曾这样想过。他们之中有比你强大的，有比你聪明的，有比你更接近真相的——可最终，他们都成了棋盘上的残子。你凭什么觉得自己会不同？",
+        "emotion": "狂妄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_007",
+        "content": "凭什么？陈机低低地笑了一声，那笑声在空旷的意识空间中回荡，带着一种说不清道不明的意味。他缓缓抬起右手，掌心浮现出一枚古朴的符文——那是他布局多年、从未动用的最后底牌。天道大人，您说得对，我确实不该觉得自己会不同。但您忘了一件事。他顿了顿，眼中的光芒陡然变得锐利无比。可是您，也没那么不同。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1123_007b",
+        "character_id": "char_tiandaozhiyan",
+        "content": "……什么意思？天道之眼的声音头一次出现了波动，那平静了千百万年的意志之海泛起了涟漪。",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_008",
+        "content": "陈机没有回答，只是轻轻翻转手掌，那枚符文在空中缓缓旋转，折射出七彩的光芒。与此同时，禁忌页面上的第四道光芒陡然暴涨，如同蛰伏已久的苍龙终于挣脱了枷锁。那光芒没有攻击任何人，却在空中编织出一张巨大的网，将天道之眼的投影牢牢锁在其中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1123_choice_002",
+        "prompt": "第四道光芒化作囚笼，天道之眼首次显露出动摇。陈机将如何收网？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1123_opt_004",
+            "text": "收网审问",
+            "description": "趁机逼问天机录的全部真相，以及妹妹陈念的下落与命运。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "耗费大量天命值，且天道可能说谎",
+            "visible_reward": "获取关键情报，为后续布局提供依据",
+            "risk_hint": "天道之言真伪难辨，可能被误导",
+            "process_label": "陈机将符文压向天道之眼",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_004_1",
+                  "content": "符文触及天道投影的瞬间，一股庞大的信息流冲入陈机的脑海。那是千百万年来所有预言者的记忆碎片——其中有一道身影，与陈念有着七分相似。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1123_opt_005",
+            "text": "彻底封印",
+            "description": "趁天道之眼不备，将其彻底封印在禁忌页面之中，断绝后患。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要消耗全部天命值，可能当场昏迷",
+            "visible_reward": "天道意志被封，三界秩序暂时由你主宰",
+            "risk_hint": "封印可能不完整，天道随时可能挣脱",
+            "process_label": "陈机将天机录完全展开",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_005_1",
+                  "content": "天机录的所有页面同时燃烧起来，化作一道璀璨的光柱直冲天际。当光芒散去时，天道之眼的投影已经支离破碎，只留下一道愤怒而不甘的咆哮在虚空中回荡：'陈机！你会后悔的！'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1123_opt_006",
+            "text": "谈判共存",
+            "description": "以封印为要挟，与天道之眼谈判新的共存法则，建立平衡。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天道可能表面答应，实则暗中布局",
+            "visible_reward": "获得喘息之机，可先救回陈念",
+            "risk_hint": "与虎谋皮，天道从不是守约之辈",
+            "process_label": "陈机将符文悬于天道之眼头顶",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_006_1",
+                  "content": "陈机的声音平静得像是在谈论天气：'天道大人，我无意毁灭您，也无意取代您。我只想要回我的妹妹，以及一个不被您随意摆布的人生。'天道之眼的投影剧烈颤抖着，似乎在权衡利弊。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_009",
+        "content": "就在此时，一道微弱却熟悉的灵魂波动从禁忌页面深处传来。那声音苍老而疲惫，却带着一丝欣慰的笑意：'做得好，孩子。你终于迈出了第一步。'是墨先生。那个以残魂形态守护天机录无数岁月的神秘存在，第一次主动与陈机建立了联系。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1123_010",
+        "character_id": "char_moxiansheng",
+        "content": "陈玄当年也站在这里，面对同样的选择。他选的是第二条路，想与我同归于尽。可他失败了，灵魂被天机录吞噬，只留下我这个残魂替他继续守候。墨先生的声音带着无尽的沧桑。而你，我的传承者，你选的是第四条路——打破天道，重塑秩序。这是陈玄都不敢想的事。",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_011",
+        "content": "陈机静静听着，脸上的表情没有太大变化。他早已从各种蛛丝马迹中拼凑出了陈玄的命运轨迹——那个被称为天机录正统传承者的先辈，最终成了天道的牺牲品。而他，不过是在重走一条被无数人走过、却无一人走通的道路罢了。区别只在于，他手中多了一张从未有人发现过的底牌。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1123_choice_003",
+        "prompt": "墨先生的残魂首次现身，揭示了陈玄的命运。陈机将如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1123_opt_007",
+            "text": "追问天机录完整形态",
+            "description": "询问墨先生如何集齐天机录的全部残页，以及完整的天机录究竟有何力量。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "墨先生可能不愿透露全部真相",
+            "visible_reward": "获得关键线索，解锁新能力",
+            "risk_hint": "知道太多可能动摇道心",
+            "process_label": "陈机向墨先生请教",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_007_1",
+                  "content": "墨先生沉默了片刻，终于开口：'天机录共有九页，分散于三界各处。你手中这一页只是第一页。当九页合一之时，你将拥有改写命运的力量——但代价是，你必须承受历代预言者积累的全部天命反噬。'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机追问天机录真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1123_opt_008",
+            "text": "询问妹妹陈念下落",
+            "description": "直接询问陈念被囚禁的地点，以及如何才能将她救出。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "墨先生可能不知道具体位置",
+            "visible_reward": "获得陈念的线索，坚定前行决心",
+            "risk_hint": "陈念身上藏有更大的秘密",
+            "process_label": "陈机说出妹妹的名字",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_008_1",
+                  "content": "当陈念的名字响起时，墨先生的残魂猛然一震。'你妹妹……她不是普通的祭品。'他的声音忽然变得复杂无比，'她是天机录第九页的活体容器——圣宗之所以囚禁她，是为了有朝一日将她彻底献祭，好让天机录永远消失。'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机得知妹妹真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1123_opt_009",
+            "text": "要求墨先生交出控制权",
+            "description": "既然要打破天道，就不能让任何人——包括墨先生——继续掌控天机录。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能失去墨先生的帮助",
+            "visible_reward": "彻底掌握天机录，获得完整使用权",
+            "risk_hint": "墨先生可能别有目的",
+            "process_label": "陈机伸出手，掌心符文大放光芒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1123_result_009_1",
+                  "content": "墨先生的残魂微微颤抖，似乎没想到陈机会提出这样的要求。沉默了许久之后，他发出一声苦涩的笑：'也好……我等这一天，已经等得太久了。'话音落下，天机录的控制权悄然转移到陈机手中，而墨先生的灵魂也越发淡薄。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机夺取天机录控制权",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_012",
+        "content": "当一切尘埃落定，陈机缓缓睁开双眼。现实世界中，他仍站在那片荒芜的山巅之上，周围的景物与离开时毫无二致，仿佛方才那场与天道之眼的对峙只是一场虚幻的梦境。然而掌心中那枚缓缓消散的符文，以及怀中天机录传来的温热，都在提醒他——这一切都是真实的。他做到了。他真的触碰到了那条从未有人走通的第四条路。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_013",
+        "content": "风从山谷中吹来，卷起他略显凌乱的发丝。陈机深吸一口气，感受着体内天命值的急剧消耗——方才那一系列操作，至少让他折损了大半的命数。然而他的眼眸中没有任何后悔，只有一种历经沧桑后的平静。他抬起头，望向远方天际，那里隐约可见三大宗门的轮廓，以及更远处魔道圣宗的阴影。天下棋局，刚刚开始。而他陈机，终于从棋子，变成了执棋之人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_014",
+        "content": "就在这时，怀中的天机录再次微微震动。他低头看去，只见那禁忌页面上的第四道光芒并未消散，反而凝结成了一行若隐若现的文字——'第二页，藏于幽冥渊底。'陈机盯着那行字看了许久，忽然轻轻笑了一声。他没有急着行动，而是从怀中取出一枚通讯玉符，往其中注入了一道灵力。片刻之后，一道熟悉的魔气从远处疾驰而来，正是夜清。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1123_015",
+        "character_id": "char_yeqing",
+        "content": "你叫我来，是有什么事？夜清落在陈机身前，美丽的容颜上带着一丝警惕。我警告你，要是敢骗我——",
+        "emotion": "戒备"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_016",
+        "content": "魔道迷雾，现在能用吗？陈机直接打断她的话，语气平淡得像是在询问今天的天气。夜清愣了一下，随即点了点头。陈机嘴角微微上扬，露出一个意味深长的笑容：那就走吧，带我去幽冥渊。我请你去看一样东西——一样能让你彻底摆脱圣宗控制的东西。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_017",
+        "content": "夜清的眼神瞬间变了，警惕之中夹杂着一丝难以掩饰的震动。她死死盯着陈机那张看似人畜无害的脸，试图从中找出一丝破绽。然而那双眼睛平静得像是两汪古井，深不见底，让她根本猜不透这个废物弟子究竟在谋划什么。良久，她终于开口：'你到底是谁？'陈机没有回答，只是转身望向天际，背影在夕阳的余晖中拉出一道长长的影子。天机录的最后一页在他怀中微微发热，仿佛在回应着他的心跳。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1123_018",
+        "content": "当陈机的手指触碰到那禁忌的第四道光芒时，整个天机录轰然展开——而天道之眼的注视，也在同一瞬间凝固成了永恒的恐惧。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

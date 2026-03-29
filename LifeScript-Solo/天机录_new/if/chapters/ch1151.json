@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch1151",
+  "book_id": "天机录",
+  "number": 1151,
+  "title": "誓约之夜",
+  "is_paid": true,
+  "next_chapter_hook": "苏青瑶执笔而书，墨迹渗入命运长河，一行行誓言化作金色铭文悬浮于天地之间——而就在她写完最后一个名字的瞬间，天机录深处传来一声苍老而欣慰的叹息。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1151_001",
+        "content": "天青宗后山，夜色如墨。众人围坐在临时搭建的誓坛前，篝火将每个人的面容映得忽明忽暗。陈机手中那卷残缺的天机录最后一页正泛着幽蓝微光，仿佛蛰伏已久的巨兽终于睁开了一只眼睛。墨先生的残魂在他识海中沉声道：「时机到了，残页共鸣之时，所有人的誓言都将被命运刻入因果——你想好了吗？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_002",
+        "character_id": "char_yeqing",
+        "content": "夜清率先起身，魔道圣女的气息在夜色中如墨莲绽放。她缓步走向誓坛中央，声音清冷却带着从未有过的郑重：「我，夜清，以魔道观测者之名立誓——此后无论陈机胜负、生死，我将以第三只眼记录他的一切选择。这些记录将成为……打破天道的证词。」",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_003",
+        "content": "魔道迷雾在夜清身周流转，化作无数细小的光点飘散向四方，那是天道观测者的权柄——她将自己的命运与陈机的轨迹彻底绑定。凌渊眯起眼，这个老狐狸第一次对夜清生出几分真正的敬意。韩烈则冷哼一声，却难得没有出言嘲讽。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_004",
+        "character_id": "char_chenji",
+        "content": "陈机站起身，走到夜清面前。他没有说什么感谢的话，只是伸出手，在她掌心轻轻点了一下。那是天机录残页共鸣的位置——一个无声的承诺。",
+        "emotion": "内敛"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_005",
+        "character_id": "char_lingyuan",
+        "content": "凌渊枯瘦的手指敲击着石桌，发出清脆的声响。这个被天机录抛弃的老人忽然笑了，笑声苍凉而意味深长：「老夫等这一天等了三百年……陈机，老夫承认，当初选择你是一个错误——但现在看来，这个错误或许能成就一场比正确更精彩的结局。」",
+        "emotion": "释然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_006",
+        "character_id": "char_hanlie",
+        "content": "韩烈猛然站起，玄武宗第一天才的气势如火山爆发：「老东西，你什么意思？」然而凌渊只是平静地看了他一眼：「我的意思是，这一战，我支持陈机。韩烈，你我宿怨可以战后再算——但今夜，我选择相信这个废物。」",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_007",
+        "content": "韩烈怒目圆睁，拳头捏得咯咯作响。三年了，他被陈机压了整整三年，每一次他以为胜券在握时，这个废物总能用卑鄙的手段翻盘。然而此刻，面对凌渊那双看透世事的眼睛，他忽然意识到——今夜若继续执着于个人恩怨，明日的战场上，他将失去唯一可能战胜陈机的机会。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_008",
+        "prompt": "宿敌罕见达成共识，你该如何回应这份沉甸甸的信任？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "yeqing_sworn",
+            "text": "坦然接受",
+            "description": "「好，今夜之后，旧怨两清。」一句话，不卑不亢，将选择权交还对方。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "凌渊、韩烈信任+10",
+            "risk_hint": "你的坦然会让凌渊更加高看，但韩烈可能认为你心虚。",
+            "process_label": "陈机接受了这份信任",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_sworn_001",
+                  "character_id": "char_lingyuan",
+                  "content": "凌渊点了点头，枯槁的眼中闪过一丝复杂的光：「你比老夫想象的更沉稳……好，老夫的三百年执念，今夜便放下。」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊放下执念"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "yeqing_challenge",
+            "text": "激将试探",
+            "description": "「韩烈，你确定不是因为害怕才选择合作？」嘴毒的本性暴露无遗。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能激怒韩烈",
+            "visible_reward": "激发韩烈战意，战斗中可获得其全力配合",
+            "risk_hint": "韩烈性格暴躁，可能当场翻脸。",
+            "process_label": "陈机用激将法试探韩烈",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_challenge_001",
+                  "character_id": "char_hanlie",
+                  "content": "韩烈猛然大笑，笑声震得篝火剧烈摇晃：「好！陈机，你果然还是那张臭嘴！行，老子今日就把话撂这儿——明日之战，老子替你挡三招！」",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈立下军令状"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "yeqing_secret",
+            "text": "揭示真相",
+            "description": "「凌渊前辈，天机录选中我，是因为它需要一柄能自毁的刀。」透露部分真相换取更深信任。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露弱点",
+            "visible_reward": "凌渊将倾囊相授三百年修为心得",
+            "risk_hint": "暴露天机录的致命缺陷可能引发连锁反应。",
+            "process_label": "陈机揭示天机录真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_secret_001",
+                  "character_id": "char_lingyuan",
+                  "content": "凌渊浑身一震，浑浊的老眼中忽然迸发出惊人的精光：「自毁之刀……原来如此！陈机，老夫明白了！你放心，明日之战，老夫会把压箱底的东西都给你！」",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊传授绝学"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_009",
+        "content": "篝火噼啪作响，众人的目光汇聚在陈机身上。墨先生的残魂在识海中低语：「天机录最后一页正在等待……所有誓言都将被记录为改写因果的锚点。你想好要以什么形式立下生死之约了吗？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_010",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的声音忽然从陈机识海溢出，回荡在整个誓坛上空：「诸位，天机录最后一页可记录三道誓言——第一道，天命之誓，以自身气运为注；第二道，血脉之誓，以血脉传承为押；第三道，轮回之誓，以来世轮回为契。不同的誓言，分量不同，力量也不同。」",
+        "emotion": "苍老"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_011",
+        "prompt": "生死之约，你选择哪种誓言形式？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianming_oath",
+            "text": "天命之誓",
+            "description": "以自身气运为注，誓言若破，气运崩散——这是最沉重的誓言。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "若败，气运归零",
+            "visible_reward": "誓言力量最强，可动摇天道因果律",
+            "risk_hint": "一旦失败，你将万劫不复。",
+            "process_label": "陈机选择天命之誓",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1151_result_tianming_oath_001",
+                  "content": "天机录最后一页猛然绽放出耀眼的金光，那光芒刺得众人纷纷侧首。凌渊低声道：「天命之誓……这少年疯了吗？」韩烈却罕见地沉默了，他第一次意识到，眼前这个废物赌上的，是比他全部骄傲更沉重的东西。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命之誓成立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "xuanyu_oath",
+            "text": "轮回之誓",
+            "description": "以来世轮回为契，若誓言破碎，来世将永堕轮回——这是最决绝的誓言。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "来世命运被锁定",
+            "visible_reward": "所有盟友与你生死绑定，即使死亡也会在轮回中重聚",
+            "risk_hint": "来世命运将永远与这些人纠缠。",
+            "process_label": "陈机选择轮回之誓",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1151_result_xuanyu_oath_001",
+                  "content": "天机录最后一页浮现出幽暗的铭文，那是轮回法则的印记。夜清忽然感觉心口一热——她的命运线与陈机的线缠绕在一起，再也无法分开。韩烈喃喃道：「这家伙……是认真的？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轮回之誓成立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_012",
+        "character_id": "char_chenji",
+        "content": "陈机深吸一口气，声音平静却带着不容置疑的决然：「今夜在此立誓——三界新生之日，我等必于此刻此地重聚。若违此誓……」他顿了顿，目光扫过每一个人，「天命崩碎，轮回不止。」",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_013",
+        "content": "话音落下，天机录最后一页轰然洞开，金色与幽蓝交织的光芒冲天而起，在夜空中形成一个巨大的誓约图腾。每个人的身上都浮现出与誓言相连的纹路——那是命运刻下的印记。凌渊闭上眼，感受到那股横跨三百年岁月的执念终于有了归处。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_014",
+        "character_id": "char_yeqing",
+        "content": "夜清缓步走到陈机身侧，她的声音轻柔却坚定：「我夜清，今日起效命于陈机——不是因为预言，不是因为交易，而是因为……」她顿了顿，「你是第一个让我觉得，改变命运这件事，值得赌上一切。」",
+        "emotion": "动容"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_015",
+        "character_id": "char_hanlie",
+        "content": "韩烈仰天大笑，笑声里带着三分癫狂七分痛快：「好！好一个废物！老子打了三年，输了三年，今夜才算真正服了你！陈机，明日之战——你若战死，老子替你收尸；你若不死，老子认你做大哥！」",
+        "emotion": "狂放"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_016",
+        "content": "篝火在这一刻仿佛有了灵性，火焰冲天而起，将所有人的誓言镌刻在夜空之上。墨先生的声音从识海深处传来，带着一丝罕见的温情：「做得好……这一夜之后，无论结局如何，你们的命运都将被改写。」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_017",
+        "prompt": "誓言已立，在众人沉醉于这一刻时，你选择……",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "speak_chenian",
+            "text": "提及陈念",
+            "description": "「还有一人……我的妹妹陈念。若我无法归来，希望你们能替我找到她。」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露软肋",
+            "visible_reward": "夜清、凌渊将把寻找陈念视为己任",
+            "risk_hint": "众人将知道陈念是你最大的弱点。",
+            "process_label": "陈机提及妹妹陈念",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_speak_chenian_001",
+                  "character_id": "char_lingyuan",
+                  "content": "凌渊微微眯眼，他想起了当年那个被带走的小女孩：「陈念……天命锁钥，圣宗的手笔。陈机，你放心，若你战死，老夫亲自去圣宗把她带出来。」",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "众人知晓陈念存在"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "silent_witness",
+            "text": "沉默注视",
+            "description": "什么都不说，只是静静注视着篝火映照下的每一张脸——这份沉默本身就是答案。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "无",
+            "visible_reward": "墨先生将额外解封一页天机录知识",
+            "risk_hint": "错过让众人深入了解你的机会。",
+            "process_label": "陈机选择沉默注视",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_silent_witness_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生的声音在识海中响起，带着几分赞许：「好，不说比说更好……记住今夜每一个面孔，他们将是打破天道的关键。」识海深处，一页尘封的知识缓缓解封。",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录知识解封"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_018",
+        "character_id": "char_suqingyao",
+        "content": "就在誓言余韵未散之际，一道清冷的声音从阴影中传来：「诸位好兴致。」苏青瑶缓步走出，手中握着一支通体雪白的玉笔——那是命运书写者的至宝。她目光扫过众人，最后定格在陈机身上：「生死之约……我苏青瑶，也想添一笔。」",
+        "emotion": "清冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_019",
+        "content": "命运书写者的玉笔悬于半空，苏青瑶口中默念咒语，一行行金色铭文从笔尖流淌而出，悬浮于天地之间。每一个名字都化作一个锚点，钉入因果长河。陈机看着那些名字——夜清、凌渊、韩烈、苏青瑶……还有自己。天机录最后一页的光芒与之呼应，誓约图腾彻底成型。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_020",
+        "content": "「这一夜，我记录下了足以改写命运的誓言。」苏青瑶收起玉笔，冰冷的眸子里闪过一丝不易察觉的温度，「明日决战，我会用命运之笔为你们开路——陈机，你最好活着回来，否则这些誓言将成为你最大的枷锁。」话落，她转身离去，背影消失在夜色中。夜风中，篝火渐渐熄灭，但那些金色铭文依然高悬天际，如同星辰般永恒闪烁。"
+      }
+    }
+  ]
+}

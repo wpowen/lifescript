@@ -1,0 +1,427 @@
+{
+  "id": "天机录_ch0930",
+  "book_id": "天机录",
+  "number": 930,
+  "title": "天机归一",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机踏入宇宙意志的终极殿堂，那超越时空的存在终于展露祂真正的面容——那是一张陈机无比熟悉的脸。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0930_001",
+        "content": "虚空震颤，陈机脚下的龟壳神器化作流光没入体内，与胸腔中那枚陈天命遗留的玉佩轰然共鸣。一股前所未有的力量从四肢百骸中涌出，冲刷着他全身经脉，将那些因窥视天机而留下的暗伤尽数修复。天机录的残页从眉心飞出，金光大盛中化作一柄古朴长剑，剑身上天机符文流转，仿佛记载着万古以来的所有秘密。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "愚蠢的棋子……你以为融合了几件破烂，就能与天道抗衡？万古以来，胆敢直视本座之人，无一不化作飞灰！",
+        "emotion": "藐视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_003",
+        "content": "陈机缓缓睁开双眼，瞳孔中倒映出无数星辰运转的轨迹。那是他曾经预见过的未来——三时辰内的所有可能，此刻尽数展开在他眼前，清晰得如同掌上观纹。然而这一次，他不再是被动窥视命运的乞儿，而是执掌棋盘的棋手。\"天道之眼？\"他轻笑出声，笑声中带着万年的压抑与隐忍，\"不，现在该叫你的本名了——命运书写者。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_004",
+        "character_id": "char_chenji",
+        "content": "我记下了。三万七千二百一十九次窥视天机，三万七千二百一十九次被你抹除未来。三万七千二百一十九次，我在死亡的边缘挣扎，你在棋盘后冷笑。今日这账，该清了。",
+        "emotion": "压抑的愤怒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0930_005",
+        "prompt": "天机录彻底觉醒，命运书写者的声音在陈机脑海中响起：一个选择摆在他面前，将决定他以何种姿态迎接最终决战。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0930_005_awakening",
+            "text": "彻底觉醒",
+            "description": "接受天机录全部传承，以完整形态迎接天道意志的审视，获得超越三界的力量。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值-100",
+            "visible_reward": "战力突破天界极限，天机剑完整形态觉醒",
+            "risk_hint": "力量波动可能惊动更多敌人",
+            "process_label": "天机归元",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5000
+              },
+              {
+                "stat": "天命值",
+                "delta": -100
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0930_result_awakening_001",
+                  "content": "天机录的符文疯狂涌入陈机体内，每一次融合都伴随着撕裂般的剧痛，却也伴随着力量的暴涨。金色光芒冲破九重云霄，照亮了整个三界联军战场，无数人仰头望天，满脸震撼。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "彻底觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0930_005_breakthrough",
+            "text": "极限突破",
+            "description": "以现有力量极限突破，保留部分天机录隐藏能力，为最终决战保留底牌。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "战力提升略低",
+            "visible_reward": "解锁「命运书写」隐藏技能，可在战斗中临时改写因果",
+            "risk_hint": "与天道意志对抗时可能陷入苦战",
+            "process_label": "逆天改命",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3500
+              },
+              {
+                "stat": "谋略",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0930_result_breakthrough_001",
+                  "content": "陈机选择了更稳健的道路。体内力量如同被压缩的火山，在极限中寻找突破口。一道暗金色的光芒从他周身迸发，那是超越常规天机的力量——命运书写者的本源能力。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "极限突破"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0930_005_declaration",
+            "text": "直接宣战",
+            "description": "不等力量完全融合，直接向天道意志发出挑战，以战代练，在战斗中完成蜕变。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "承受天道反噬伤害",
+            "visible_reward": "战斗中获得天道意志的碎片知识，窥见万古棋局的真相",
+            "risk_hint": "可能遭遇前所未有的危机",
+            "process_label": "战天问道",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 4000
+              },
+              {
+                "stat": "名望",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -80
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0930_result_declaration_001",
+                  "content": "陈机没有任何犹豫，天机剑横空一划，剑气撕裂虚空，直指那沉睡于时光尽头的存在。\"来。\"他只说了一个字，声音平静，却带着不容置疑的威严。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "直接宣战"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "什么？！你……你怎会知道那个名字？！那是本座在创世之初便封印的秘密！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_007",
+        "content": "虚空中，一张巨大的眼睛缓缓睁开，瞳孔中倒映着无数位面的生灭轮回。那便是天道之眼——或者说，命运书写者的本体投影。祂的威压如山岳倾覆，整个三界都在这股力量下颤抖。然而陈机却稳稳站在原地，甚至嘴角还噙着一丝讥讽的笑意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_008",
+        "character_id": "char_chenji",
+        "content": "我知道的比你想象的多得多。比如——你的本体根本不在这个宇宙。比如，你每隔十万年就需要吞噬一个天命者的灵魂来维持存在。比如……你怕我。",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_009",
+        "content": "天机剑在陈机手中嗡鸣，剑身上的符文化作金色流光，在虚空中编织成一张巨大的命运之网。陈机伸出手，轻轻触碰那张网的中心——那里有一根肉眼不可见的丝线，连向某个遥远而古老的时空。\"三万七千年前，你选中了我父亲陈天命。\"他缓缓开口，\"但你没想到他会留下我。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_010",
+        "character_id": "char_chenian",
+        "content": "哥哥！",
+        "emotion": "焦急而欣喜"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_011",
+        "content": "一道清脆的声音从陈机身后响起。陈念不知何时已挣脱了束缚她的光茧，那双被泪水洗过的眼眸中闪烁着前所未有的坚定。她的身上同样涌动着天机录的气息，与陈机遥相呼应。\"天命锁钥？\"天道之眼的声音第一次带上了情绪波动，\"不可能！我明明已经……\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_012",
+        "character_id": "char_chenji",
+        "content": "你明明已经抹除了她所有的记忆？是的，你做到了。但你忘了一件事——天机录的传承，从来不是依靠记忆。",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_013",
+        "content": "陈机与陈念同时伸出手，两道金色光芒在空中交汇，化作一道冲天的光柱。那光柱中蕴含的力量让天道之眼的瞳孔猛然收缩——那是超越命运本身的力量，是万古棋局开始之前便已存在的原初之力。龟壳神器、陈天命遗物、天机录残页，三件至宝在这一刻彻底融为一体，化作一柄通体晶莹的玉尺。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0930_014",
+        "prompt": "天机归一，三物合一化作「命运玉尺」，陈机即将完成最终蜕变。此刻，他面临最后的抉择。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0930_014_confident",
+            "text": "以王者的姿态宣战",
+            "description": "让天道意志见识何为真正的执棋者，万古棋局今日终结！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "无",
+            "visible_reward": "名望大幅提升，三界联军士气暴涨",
+            "risk_hint": "天道意志可能狗急跳墙",
+            "process_label": "天机论道",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 800
+              },
+              {
+                "stat": "魅力",
+                "delta": 300
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 50
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0930_result_confident_001",
+                  "content": "陈机踏前一步，命运玉尺横于身前，整个人散发出睥睨天下的气势。三界联军齐声高呼，声音震碎了一片片星辰。\"从今日起，\"他的声音响彻寰宇，\"我陈机，便是这万古棋局唯一的执棋者！\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "王者宣战"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0930_014_tactical",
+            "text": "冷静布局后发制人",
+            "description": "不急于与天道意志正面交锋，先看清祂的全部底牌再出手。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "给敌人喘息之机",
+            "visible_reward": "获得天道意志更多情报，解锁隐藏剧情线索",
+            "risk_hint": "可能错失最佳战机",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 400
+              },
+              {
+                "stat": "天命值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0930_result_tactical_001",
+                  "content": "陈机并未急于出手。他闭上眼，天机录的力量在脑海中推演着无数种可能。当他再次睁眼时，嘴角浮现一抹了然的笑意。\"原来如此，你的本体在时光长河的上游。难怪你从不亲自出手——因为那需要付出你无法承受的代价。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "冷静布局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0930_014_emotional",
+            "text": "先救妹妹",
+            "description": "不管天道意志如何，妹妹的安全是第一位的。兄妹携手，共赴终极一战。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能暴露弱点",
+            "visible_reward": "陈念好感度大幅提升，解锁「天命双生」隐藏羁绊",
+            "risk_hint": "天道意志可能利用陈念作为要挟",
+            "process_label": "天命相连",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 50
+              },
+              {
+                "stat": "魅力",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 100
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 80
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0930_result_emotional_001",
+                  "content": "陈机转身，将陈念护在身后。那一刻，他不再是算计无遗的棋手，只是一个守护妹妹的哥哥。\"念念，别怕。\"他轻声说道，声音中带着从未有过的温柔，\"有我在，谁也带不走你。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "兄妹情深"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "够了！你以为凭这些就能动摇本座？本座存在之时，你们所谓的三界不过是一粒微尘！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_016",
+        "content": "天道之眼爆发出毁天灭地的威能，无数道因果之线从虚空中射向陈机。那些线每一条都代表着一个被祂玩弄于鼓掌之间的命运——无数天才的陨落、无数文明的覆灭、无数不甘的灵魂在时光中哀嚎。然而面对这一切，陈机只是轻轻抬起手中的命运玉尺。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_017",
+        "character_id": "char_chenji",
+        "content": "万古棋局，今日终结。",
+        "emotion": "平静而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_018",
+        "content": "玉尺轻轻一挥，那些缠绕而来的因果之线尽数崩断。天道之眼发出一声难以置信的嘶吼，瞳孔中第一次映照出了恐惧的色彩。与此同时，陈机的脑海中响起了一道苍老而熟悉的声音——那是命运书写者的声音，也是天机录真正主人的声音。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0930_019",
+        "character_id": "char_chenji",
+        "content": "从今往后，你不再是棋子，而是执棋者。去吧，我的传承者。掀翻这万古棋盘，重写这不公的天道！",
+        "emotion": "欣慰与期许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0930_020",
+        "content": "天机剑彻底蜕变，化作一柄通体金白的神剑，剑身上「天机归一」四个上古符文熠熠生辉。陈机手握此剑，感受到一股前所未有的力量在体内流转。那是超越命运的力量——书写命运的力量。他可以斩断因果，可以改写生死，可以将不可能变为可能。而代价，是他与这个宇宙的羁绊将越来越淡，直至化为虚无。但那又如何？他等这一天，已经等了三万七千年。三界联军在陈机身后列阵，旌旗遮天蔽日，战意冲破云霄。天道之眼的投影在虚空中不断扭曲，祂的力量正在被命运玉尺一点一点瓦解。\"不……这不可能……\"祂的声音中带着癫狂，\"本座谋划万古，怎会输给你一个蝼蚁！\"陈机踏空而上，每一步都踩碎一层虚空的屏障。\"你错就错在，把我父亲当成弃子。\"他的声音冰冷如九幽寒潭，\"你以为抹去了他的痕迹，却没想到他会把你最大的敌人，留在这个世界上。\"天机归一剑高高举起，剑尖处汇聚了足以毁灭一个位面的能量。\"这一剑，为万古以来所有被你玩弄的灵魂。\"陈机淡淡说道，随即挥剑斩下。剑光所过之处，天道之眼的投影轰然崩碎，无数因果线化作漫天光点消散。三界联军爆发出震天的欢呼，而陈机却只是静静看着虚空深处——那里，还有一双眼睛正透过时光的缝隙，注视着他。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

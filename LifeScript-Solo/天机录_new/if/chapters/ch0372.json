@@ -1,0 +1,373 @@
+{
+  "id": "天机录_ch0372",
+  "book_id": "天机录",
+  "number": 372,
+  "title": "血脉绝杀",
+  "is_paid": true,
+  "next_chapter_hook": "天机录第四页解开，显现父亲留下的最后信息：'第四页是钥匙，也是最后的枷锁'",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0372_001",
+        "content": "那道声音在耳畔回荡，如毒蛇吐信，冰冷刺骨。陈机站在废墟中央，周身被数百道灵光锁定，圣宗的紫袍修士与皇朝的黄金甲士形成双重绞杀之局。他缓缓抬头，嘴角竟勾起一抹淡笑。「弃子？」他在心底默念这两个字，瞳孔深处寒芒一闪，「那便让这弃子，掀了你的棋盘。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「不自量力。」那超越性的声音带着几分玩味，「你以为区区一件残破的天机录，能改变什么？历代预言者皆是我的棋子，你也不例外。」",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_003",
+        "content": "废墟上空，黑云压顶。圣宗的为首者正是当日追杀苏青瑶的那位紫袍长老，此刻他手持一柄漆黑如墨的锁链——那是圣宗至宝「天命锁」，专克身怀大气运之人。「陈机，今日便是你的死期。」他居高临下，仿佛已经看到陈机血溅五步的场景。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_004",
+        "character_id": "char_hanlie",
+        "content": "「且慢！」一道霸道的声音从皇朝阵营中响起。韩烈踏空而来，玄色战甲上玄武纹路流转，双目如铜铃般盯着陈机，「这小子是我的！上次他用诡计胜我半招，今日我要亲手拧下他的脑袋！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_005",
+        "content": "陈机环顾四周，圣宗十二名金丹修士、皇朝十八名精锐甲士，再加上紫袍长老与韩烈这两大元婴强者。这阵容足以碾杀任何筑基修士。但他的目光平静如古井，深处却燃着幽冷的火焰。左手缓缓抬起，手背上一道淡金色的纹路若隐若现——那是陈家血脉的印记。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0372_006",
+        "prompt": "面对两大势力的联手围杀，陈机需要做出决断。是先发制人，以命相搏杀出一条血路？还是以智取胜，利用他们对天机录的贪婪布下反杀之局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_blood_rage",
+            "text": "血脉觉醒，以命相搏",
+            "description": "以陈家血脉催动遗迹禁制，在最短时间内爆发出超越境界的战力，以绝对的力量碾压所有敌人。风险极高，可能透支生命潜能。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗30点天命值",
+            "visible_reward": "血脉禁制激活，敌人措手不及",
+            "risk_hint": "可能重伤根基，后续战力下降",
+            "process_label": "催动血脉之力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_blood_rage_001",
+                  "content": "陈机低喝一声，左手猛地按向胸口。淡金色的血脉印记骤然亮起，如旭日初升，瞬间驱散了周遭的阴霾。一股浩瀚的远古气息从他体内喷涌而出，整个废墟都在这股气息下震颤。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_blood_rage_002",
+                  "content": "紫袍长老面色剧变：「这是……传承者血脉？！不可能！陈家早已断绝……」他的声音戛然而止，因为陈机已经动了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_cunning_scheme",
+            "text": "示弱诱敌，以智取胜",
+            "description": "假装力竭，诱使敌人放松警惕。待韩烈冒进时，以天机录残页发动预见，精准打断其攻势，再借遗迹之力完成反杀。稳健但耗时。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗15点天命值",
+            "visible_reward": "敌人陷入混乱，战力保存完整",
+            "risk_hint": "需要演技逼真，若被识破则陷入被动",
+            "process_label": "布下迷局",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cunning_scheme_001",
+                  "content": "陈机忽然踉跄后退两步，捂住胸口剧烈咳嗽，鲜血从嘴角溢出。「咳……咳咳……你们赢了……」他的声音虚弱，眼神却暗中观察着韩烈的反应。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cunning_scheme_002",
+                  "content": "韩烈果然中计，眼中闪过狂喜：「哈哈哈哈！我就知道这小子是银样蜡枪头！看老子取他项上人头！」他不顾一切地冲上前，战拳直取陈机面门。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 70
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_007",
+        "content": "无论选择何种策略，陈机的下一步都已注定。他的右手悄然结印，废墟深处传来沉闷的轰鸣，仿佛有什么古老的存在正在苏醒。地面上的符文开始亮起，金光流转间编织成一张巨大的阵图——这是陈家先祖留下的最后遗产，血脉禁制。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_008",
+        "character_id": "char_hanlie",
+        "content": "「不好！」韩烈终于意识到不对，但为时已晚。陈机猛然睁眼，眸中金光大盛，整个人如离弦之箭迎向韩烈的拳头。拳拳相交，爆发出震耳欲聋的轰鸣。韩烈感觉自己仿佛打在了一座山上，虎口震裂，鲜血迸溅。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_009",
+        "content": "「上次让你半招，你便以为我是废物？」陈机的声音冰冷如霜，五指如铁钳般扣住韩烈的手腕，「韩烈，你可知我为何一直藏拙？」他微微一笑，那笑容在韩烈眼中比魔鬼还要可怕，「因为你的价值，不在于杀，而在于——让所有人都看看，所谓的玄武天才，不过是块垫脚石。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_010",
+        "character_id": "char_hanlie",
+        "content": "「你——！」韩烈睚眦欲裂，想要挣脱却发现对方的力道如山岳般沉重。他从小被誉为天才，何曾受过这等屈辱？「陈机！我与你势不两立！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0372_011",
+        "prompt": "韩烈被制住，圣宗与皇朝势力蠢蠢欲动。此时该如何处置这玄武天才？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choice_cripple_hanlie",
+            "text": "废其修为，以儆效尤",
+            "description": "当众废除韩烈的修为，让他从天才沦为废人。这一击将震慑所有敌人，但也会彻底得罪玄武宗。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "与玄武宗彻底交恶",
+            "visible_reward": "圣宗与皇朝士气崩溃",
+            "risk_hint": "可能招来玄武宗疯狂报复",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cripple_hanlie_001",
+                  "content": "陈机没有说话，只是轻轻一扭。「咔嚓」一声脆响，韩烈的右手腕骨粉碎性骨折。紧接着，一股霸道的力量顺着经脉直冲其丹田，韩烈的脸色瞬间惨白如纸。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cripple_hanlie_002",
+                  "content": "「你……你废了我的修为？！」韩烈的声音尖锐得几乎变形，堂堂玄武宗第一天才，此刻却像个无助的孩童。他能感受到体内的灵力正在飞速消散，那种绝望比死亡更可怕。",
+                  "emotion": "绝望"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_humiliate_hanlie",
+            "text": "留其性命，当众羞辱",
+            "description": "不杀韩烈，但让他颜面尽失。将他的狼狈模样投影给天下人看，让他一辈子活在屈辱之中。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "韩烈可能成为永久的复仇者",
+            "visible_reward": "获得巨大名声，引发各方关注",
+            "risk_hint": "韩烈后期可能成为变数",
+            "process_label": "杀人诛心",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_humiliate_hanlie_001",
+                  "content": "陈机松开手，任由韩烈瘫倒在地。他从怀中取出一枚影像珠，轻轻捏碎。刹那间，一道光幕在半空展开，韩烈方才不可一世冲上来却被轻易碾压的场景，清晰地呈现在所有人面前。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_humiliate_hanlie_002",
+                  "content": "「诸位觉得，这影像珠值多少灵石？」陈机笑吟吟地看向紫袍长老，「若将它传遍天下，想必玄武宗会很感兴趣。当然，价格也好商量。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_012",
+        "content": "紫袍长老的额角渗出冷汗。他亲眼目睹陈机如何在举手投足间废掉韩烈，那份从容与狠辣让他心惊。更可怕的是，废墟中的血脉禁制已经完全激活，金色的符文正编织成一张大网，将所有敌人都笼罩其中。「撤！快撤！」他声嘶力竭地大喊。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_013",
+        "content": "但陈机岂会给他们机会？他双手结印，口中低喝：「起！」刹那间，废墟四周冲出无数金色光柱，每一道光柱都蕴含着先祖的意志，专克外敌入侵。金光所过之处，圣宗弟子的护体灵光如纸糊般破碎，惨叫声此起彼伏。皇朝甲士的黄金战甲也在金光下迅速黯淡，失去了所有防护能力。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_014",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你敢！」那超越性的声音终于带上了一丝怒意，「区区蝼蚁，也敢违抗天数？」天穹之上，一只巨大的眼眸缓缓睁开，瞳孔中倒映着陈机的身影。那是天道的注视，是至高意志的威压。",
+        "emotion": "震怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_015",
+        "content": "陈机抬头直视那只天道之眼，眼中毫无惧色。「天数？」他冷笑一声，「我陈机的命，从来只握在自己手中。」话音未落，他左手猛地按向胸口血脉印记，右手同时握住挂在颈间的天机录残页。两股力量在这一刻交汇、融合——陈家血脉与天机录产生了前所未有的共鸣！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_016",
+        "content": "天机录骤然绽放出耀眼的金光，纸页哗哗作响，仿佛有什么枷锁正在被打破。紫袍长老瞪大了眼睛，声音颤抖：「第四页……第四页在解开！那是天机录的核心禁制——不可能！历代传承者都无法解开，为何他能……」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_017",
+        "content": "金光冲破云层，与天道之眼的光芒激烈碰撞。天地间仿佛炸开了一道惊雷，狂风大作，飞沙走石。陈机感觉自己置身于惊涛骇浪之中，但他的意志如磐石般坚定。血脉之力源源不断地涌入天机录，两者相互呼应，共振的频率越来越高。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_018",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「够了！」天道之眼发出愤怒的咆哮，「你这是在玩火自焚！天机录的枷锁一旦解开，命运的的反噬将吞噬你的一切！」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_019",
+        "content": "陈机充耳不闻，血脉之力燃烧得更加猛烈。他的眼前开始模糊，无数画面如走马灯般闪过——那是天机录历代主人的命运，被天道操控一生，最终成为弃子的悲剧。但他没有退缩，反而笑得更灿烂。「原来如此……这就是你们的底牌吗？」他低声道，「可惜，我从来不信命。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_020",
+        "content": "「轰——」一声巨响，天机录第四页彻底揭开！金色的光芒中，一行古老的文字浮现出来，正是陈机父亲留下的最后信息：「第四页是钥匙，也是最后的枷锁。机儿，若你看到这段话，说明你已经走到了命运的岔路口。是打开枷锁拥抱自由，还是将它重新封印守护苍生——一切，由你决定。记住，无论你选择什么，父亲永远以你为荣。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_021",
+        "content": "陈机望着那行字，眼眶微微泛红。父亲失踪多年，他从未想过会以这种方式与父亲对话。那只天道之眼在金光中逐渐消散，它的声音变得飘渺而遥远：「你会后悔的……你一定会后悔的……」陈机没有回答，只是静静地看着第四页上的信息，心中涌起一股前所未有的坚定。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_022",
+        "content": "废墟之中，圣宗与皇朝的残兵败将早已逃之夭夭。韩烈被人抬走时，回头看了陈机一眼，那眼神中有恨、有惧，但更多的是一种难以言喻的复杂。陈机没有追击，只是负手而立，任由风吹动他的衣袍。四周一片狼藉，但他的身姿却如苍松般挺拔。「弃子？」他轻声呢喃，嘴角勾起一抹意味深长的笑容，「那就让这弃子，亲手为你送终。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

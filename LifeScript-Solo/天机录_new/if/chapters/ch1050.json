@@ -1,0 +1,579 @@
+{
+  "id": "天机录_ch1050",
+  "book_id": "天机录",
+  "number": 1050,
+  "title": "天机阁的召唤",
+  "is_paid": true,
+  "next_chapter_hook": "天机录完整版发出前所未有的光芒，预示着陈机命运转折点的到来——下一章，他将正式踏上打破七百章死亡预言的道路。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1050_001",
+        "content": "禁忌秘法的金光尚未散尽，陈机单手撑着那面残破的龟壳神器，额角渗出细密的汗珠。三条命运线的残影仍在他识海中交织缠绕，如三条择人而噬的毒蛇，随时可能咬出致命一击。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_002",
+        "content": "最左边那条线，通向一片焦土与尸山血海，隐约可见韩烈那浴血的身影；中间那条，则是一片混沌迷雾，什么都看不真切；而最右边那条线的尽头——陈机的手指微微收紧——站着一个他绝未想到的身影。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_003",
+        "character_id": "char_chenji",
+        "content": "念儿……",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_004",
+        "content": "那是他失踪多年的妹妹陈念。可她为何会出现在那条命运线的尽头？为何偏偏是这一条？陈机深吸一口气，强迫自己从震惊中抽离。无论如何，天界的布局不能停，凡间的棋子也该落子了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_001",
+        "prompt": "命运的棋盘已然铺开，陈机需要决定接下来的首要行动。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_001_opt_a",
+            "text": "立即联络苏青瑶",
+            "description": "内门首席已完成关键节点部署，需要确认她的进度并传达最终指令。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值2点",
+            "visible_reward": "获得苏青瑶最新情报，整合天青宗内部势力网",
+            "risk_hint": "长时间联络可能暴露行踪",
+            "process_label": "联络盟友",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_a_001",
+                  "content": "陈机从袖中取出一枚翠绿的传音符，指尖灵力轻轻一激。片刻后，苏青瑶清冷的声音在符箓中响起：\"你终于肯联系我了。外门那些眼线我已经清理干净，但凌渊那边……有些不对劲。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶情报整合",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_b",
+            "text": "先联系夜清确认魔道动向",
+            "description": "魔道圣宗的圣女掌握着遮掩天机录气息的关键能力，她的部署事关全局成败。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露与魔道勾连的风险",
+            "visible_reward": "获得魔道迷雾掩护，天机录气息得以完全遮掩",
+            "risk_hint": "此事一旦败露，将成为正道公敌",
+            "process_label": "魔道布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_b_001",
+                  "content": "陈机换了一枚漆黑的魔晶石，低声诵念一串古怪的咒语。片刻后，夜清慵懒的笑声传来：\"陈公子这么快就想我了？放心，魔道迷雾已布下三千里，就是天道之眼亲自来，也嗅不出你那破书页的味道。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "魔道迷雾就绪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_c",
+            "text": "独自推演第三条命运线",
+            "description": "那条尽头站着陈念的命运线最为诡异，必须看清其中的每一个细节。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗大量天命值，可能陷入反噬",
+            "visible_reward": "窥见陈念的位置与关键情报",
+            "risk_hint": "天命值骤降可能导致预见能力暂时失效",
+            "process_label": "窥探命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_c_001",
+                  "content": "陈机咬牙催动天机录，残页上的符文疯狂旋转。剧痛袭来，他看见了——一座被黑雾笼罩的古塔，陈念被锁链缚于塔顶，双目无神。而在她身后，站着凌渊那佝偻的身影。\"找到了……\"陈机嘴角溢出血丝，眼中却闪过凛冽的杀意。\"老东西，你敢动她一根汗毛。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": "陈念位置确认",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_005",
+        "content": "传音符中传来一阵细微的杂音，陈机眉头微皱——苏青瑶的语气虽然平静，但他听得出那压抑着的焦灼。天青宗内部的风暴，比他预料的来得更快。凌渊那个老狐狸，看来已经等不及要动手了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_006",
+        "character_id": "char_suqingyao",
+        "content": "陈机，你别误会。凌渊他……他在后山禁地布下了一道禁制，我进不去。但我能感觉到，那里面有什么东西在苏醒。",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_007",
+        "content": "陈机闭目沉思。天青宗后山禁地，那是历代掌门封印禁忌之物的所在。凌渊若要在那里布下禁制，无非是想掩盖什么——或者，释放什么。无论哪种可能，都意味着局势正在滑向他无法掌控的方向。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_002",
+        "prompt": "三路布局已近完成，但凌渊的动作打乱了节奏。陈机需要做出决断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_002_opt_a",
+            "text": "让苏青瑶强行突破禁制",
+            "description": "内门首席的实力足以撼动大部分禁制，强行闯入或许能看清凌渊的底牌。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "苏青瑶可能暴露，引来凌渊直接针对",
+            "visible_reward": "获取凌渊秘密的关键情报",
+            "risk_hint": "若失败，苏青瑶将陷入危险境地",
+            "process_label": "强攻禁制",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_a_001",
+                  "content": "苏青瑶沉默片刻，冷声道：\"你当我是什么人？\"话落，剑光暴涨。然而禁制反噬的力道远超预期，她闷哼一声，被震退数步。\"这禁制……不是普通的禁制，是上古封印术！陈机，那老东西到底在搞什么？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "上古封印术发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_b",
+            "text": "调动夜清的魔道力量从旁策应",
+            "description": "借助魔道秘法，或许能找到禁制的破绽，同时不暴露苏青瑶的身份。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "魔道介入天青宗，事后可能引发正道追查",
+            "visible_reward": "绕过禁制直接获取内部情报",
+            "risk_hint": "若被发现与魔道勾结，前功尽弃",
+            "process_label": "魔道策应",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_b_001",
+                  "content": "夜清的声音再次响起，这次多了几分凝重：\"有意思，这禁制连着我的血脉印记……陈公子，你那位凌渊老前辈，怕是比我们想象的更不安分。我闻到了一股熟悉的味道——圣宗的气息。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "圣宗气息发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_c",
+            "text": "暂时按兵不动，静观其变",
+            "description": "凌渊越是动作频繁，越说明他心虚。不如将计就计，让他自露马脚。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错失先机",
+            "visible_reward": "看清凌渊所有底牌后一击必杀",
+            "risk_hint": "若凌渊先下手为强，将陷入被动",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_c_001",
+                  "content": "陈机淡淡道：\"不急。\"他抬头望向天际，残页上的符文正在缓缓转动。\"让老狐狸再蹦跶两天。他越慌，破绽就越多。\"话音未落，龟壳神器突然剧烈震动，一道苍老而阴冷的声音从中传出：\"陈机……你以为你藏得很好吗？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "凌渊主动现身",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_008",
+        "content": "凌渊的声音如同一盆冰水当头浇下。陈机的瞳孔骤然收缩——他怎么也没想到，那个老狐狸竟然已经将神识延伸到了龟壳神器之中。这意味着什么？意味着对方的布局，远比他想象的更深、更早。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_009",
+        "character_id": "char_lingyuan",
+        "content": "呵呵，惊喜吗？当年我从你师父手中接过天机录候选人的资格时，就知道迟早会有这一天。可惜啊，他选了你这个废物，却选错了。",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_010",
+        "content": "陈机缓缓站直身体，脸上的懦弱与怯懦在这一刻褪去得干干净净。他抬起头，嘴角勾起一抹淡漠的笑意。那是真正的、属于棋手的笑容——冷酷、精准，不带一丝多余的情感。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_011",
+        "character_id": "char_chenji",
+        "content": "凌渊前辈，您老人家既然这么喜欢天机录，当初为何不直接抢？偏要等到今日，在后山禁地里搞这些见不得人的勾当？",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_003",
+        "prompt": "凌渊的嘲讽刺耳至极，但陈机知道，真正的交锋才刚刚开始。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_003_opt_a",
+            "text": "直接反唇相讥，揭穿他的底细",
+            "description": "把凌渊当年的丑事翻出来，让他在气势上先输一阵。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能激怒凌渊提前发难",
+            "visible_reward": "打击对方气焰，震慑暗中窥探者",
+            "risk_hint": "凌渊城府极深，不会轻易动怒",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_a_001",
+                  "character_id": "char_chenji",
+                  "content": "哦，我忘了。前辈当年可是被天机录亲口拒绝的人。被一本死物嫌弃的滋味不好受吧？所以您才这么恨我？恨我继承了你求而不得的东西？",
+                  "emotion": "傲慢"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_b",
+            "text": "冷嘲热讽，步步为营套话",
+            "description": "不正面交锋，而是用话术引诱对方透露更多信息。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要极高的语言技巧",
+            "visible_reward": "获取凌渊真实目的的关键线索",
+            "risk_hint": "若被识破，将打草惊蛇",
+            "process_label": "套取情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              },
+              {
+                "stat": "天命值",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_b_001",
+                  "character_id": "char_chenji",
+                  "content": "前辈在后山摆下这么大的阵仗，不会只是想跟晚辈叙叙旧吧？上古封印术、圣宗的气息……啧啧，您这是打算自立门户，还是打算把自己也卖了？",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_c",
+            "text": "亮出底牌震慑对方",
+            "description": "直接告知凌渊，他的妹妹陈念就在对方手中，以此试探对方反应。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露自己对陈念的在意，可能被对方利用",
+            "visible_reward": "看清凌渊对陈念的真实态度",
+            "risk_hint": "若凌渊以此要挟，将陷入被动",
+            "process_label": "以命相胁",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_c_001",
+                  "character_id": "char_chenji",
+                  "content": "对了，前辈。我那不成器的妹妹……您替我照顾得如何了？古塔顶层，风水不错吧？",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_012",
+        "content": "龟壳神器中的声音戛然而止。一瞬间的沉默，比任何言语都更能说明问题。陈机捕捉到了那一丝微不可察的惊愕——凌渊没想到他竟然已经查到了陈念的下落。这意味着，在接下来的博弈中，对方手中最大的筹码，已经不再是秘密。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_013",
+        "character_id": "char_lingyuan",
+        "content": "你……你怎么会知道！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_014",
+        "content": "陈机轻笑出声，那笑声清冷而从容，在寂静的虚空中回荡。他抬起手，残页上的符文骤然亮起，一道虚幻的画面从其中投射而出——正是那座被黑雾笼罩的古塔，塔顶缚着红衣少女，正是陈念。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_015",
+        "character_id": "char_chenji",
+        "content": "前辈，您以为只有您会布局吗？这盘棋，我下了七年。您的每一步，我都在看着。",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_016",
+        "content": "话音落下，龟壳神器中的气息陡然阴沉下去。片刻后，凌渊的声音再次响起，这一次少了那层伪装的慈祥，多了几分赤裸裸的杀意：\"好，好，好！不愧是陈玄的徒弟。既然你这么想见你妹妹，那老夫就成全你——七日后，天机阁开启，届时你若不来，她就替你去死！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_017",
+        "content": "通讯戛然中断。陈机握着龟壳神器，指节因用力而泛白。他的脸上没有愤怒，没有惊慌，只有一片深不见底的平静。七年了，他等了七年，终于等到凌渊自己跳出来。七日后，天机阁——那将是决定一切的战场。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_018",
+        "character_id": "char_chenji",
+        "content": "念儿，再等等哥哥。七日……不，三日之内，我一定来接你回家。",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_019",
+        "content": "天机录残页上的符文开始疯狂旋转，金色的光芒将陈机的身影完全笼罩其中。远处的天际线上，三道不同颜色的光柱正从三个方向汇聚而来——那是苏青瑶、夜清，以及他暗中布下的最后一枚棋子。三路归一，天下大乱的序幕，即将拉开。而陈机，就站在这风暴的中心，俯瞰着他亲手编织的棋局。天机阁的召唤已经发出，而这一次，他不再是那个任人宰割的废物——他是执棋之人。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

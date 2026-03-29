@@ -1,0 +1,323 @@
+{
+  "id": "天机录_ch0543",
+  "book_id": "天机录",
+  "number": 543,
+  "title": "青瑶的质问",
+  "is_paid": true,
+  "next_chapter_hook": "就在那道视线消散的瞬间，陈机忽然感知到一股熟悉的气息——那是凌渊身上独有的味道，苍老、腐朽，却又带着令人心悸的压迫感。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0543_001",
+        "content": "夜风骤起，将那枚染血令牌的血腥气息吹散在庭院之中。陈机看着夜清缓缓凝实的身影，面上却不见丝毫慌乱。他将手中最后一枚黑子轻轻落在棋盘之上，发出清脆的声响。「圣女既然想要答案，」他抬起头，眸光幽深如渊，「不如先听听另一个人的质问。」话音未落，庭院深处传来急促的脚步声，伴随着一声压抑着怒意的低喝——「陈机！」苏青瑶的身影自月门后闪出，白衣猎猎，面上寒霜密布。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0543_002",
+        "character_id": "char_suqingyao",
+        "content": "「假死脱身、独入禁地、暗中布局——陈机，你当我苏青瑶是什么？」她的声音在夜风中回荡，压抑的怒意让周围的空气都变得沉重起来，「你的计划里，有过我的位置吗？」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0543_003",
+        "content": "夜清见状，嘴角的笑意更深了几分，竟悠然向后退了一步，摆出一副看戏的姿态。陈机却像是没有看到她一般，全部的心神都被苏青瑶那双泛红的眼眶所牵动。他知道，这个倔强的女子越是愤怒，便越是伤心——她从不在人前流泪，今夜却破例了。月光洒落在她身上，将那微微颤抖的双肩映照得格外单薄。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0543_004",
+        "character_id": "char_chenji",
+        "content": "「青瑶，」他开口，声音里带着从未有过的涩然，「坐下说。」苏青瑶却是一步不退，逼近他身前，几乎是咬着牙问：「说什么？说你如何将我蒙在鼓里？说你独自赴死却连一句交代都不给？」",
+        "emotion": "心疼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0543_005",
+        "content": "夜风卷起落叶，在三人之间打了个旋儿。陈机垂下眼帘，那张平日里永远波澜不惊的脸上，第一次浮现出疲惫与挣扎。他的手指无意识地摩挲着袖口，那里藏着天机录残页的微凉触感。「因为我知道，」他终于开口，声音低沉得几乎听不清，「一旦告诉你们，就会有人要陪我赌命。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0543_006",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶浑身一震，那双怒意冲冲的眼眸中，忽然闪过一丝难以置信的神色。她张了张嘴，却发现自己的质问在这一刻全都堵在了喉咙里。月光下，她看见陈机抬起头，那双向来深不可测的眼睛里，竟有着她从未见过的脆弱。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0543_007",
+        "content": "「我见过太多人在我身边倒下，」陈机的声音很轻，像是在说给自己听，「每一个想要帮我的人，最后都成了棋盘上的弃子。我不想……」他的话语忽然顿住，喉结微微滚动，似乎在极力压抑着什么。夜色深沉，庭院里静得只听见三人若有若无的呼吸声。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0543_008",
+        "prompt": "面对苏青瑶的追问，陈机需要做出选择——是将一切和盘托出，还是继续隐瞒真相保护她？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0543_008_a",
+            "text": "坦诚相待",
+            "description": "将假死计划的全部真相告知苏青瑶，只隐瞒天机录与天命值等核心秘密。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去对计划的部分掌控",
+            "visible_reward": "苏青瑶的信任加深",
+            "risk_hint": "她可能会因知道太多而陷入危险",
+            "process_label": "有限度的坦诚",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0543_result_008_a_1",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶静静地听着陈机讲述他的布局，脸上的怒意渐渐褪去，取而代之的是一种复杂难言的神情。当陈机说完，她沉默了很久，才轻声道：「所以你一个人扛着这些？」",
+                  "emotion": "心疼"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0543_result_008_a_2",
+                  "content": "陈机没有回答，但那沉默本身便是答案。苏青瑶忽然上前一步，伸手握住了他的手腕——那只手在微微颤抖，却握得极紧。月光下，她的眼眶泛红，却倔强地没有让眼泪落下。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0543_008_b",
+            "text": "隐藏真心",
+            "description": "用半真半假的话敷衍苏青瑶，坚称一切都是为了保护大家，不透露真正的危险。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "苏青瑶的信任受损",
+            "visible_reward": "保守核心秘密",
+            "risk_hint": "她可能会察觉到谎言",
+            "process_label": "继续隐瞒",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0543_result_008_b_1",
+                  "character_id": "char_suqingyao",
+                  "content": "「保护大家？」苏青瑶冷笑一声，眼中的光芒却黯淡了几分，「陈机，你什么时候学会说这种冠冕堂皇的话了？」她的手指微微收紧，声音里带着一丝不易察觉的颤抖。",
+                  "emotion": "失望"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0543_result_008_b_2",
+                  "content": "陈机看着她的神情变化，心中微微一痛，却只能将那丝愧疚压在心底。他知道，有些事情说得越多，暴露的风险便越大。夜风卷过，将苏青瑶的发丝吹乱了，也吹散了她最后一丝期待。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0543_009",
+        "content": "一旁的夜清看着这一幕，眼中闪过一丝玩味的神色，却没有出声打断。她忽然觉得，这个看似冷漠无情的废材弟子，此刻的背影竟有些……孤独。片刻后，她轻轻叹了口气，身影缓缓淡去，将这方天地留给了那两人。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0543_010",
+        "character_id": "char_suqingyao",
+        "content": "「陈机，」苏青瑶忽然开口，声音很轻，却带着从未有过的坚定，「你知道我为什么要追问吗？」陈机抬起头，对上她那双泛着水光的眼眸。她一字一顿地道：「因为我不想再做局外人了。」",
+        "emotion": "心疼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0543_011",
+        "content": "月光倾泻而下，将两人的身影拉得很长、很近。陈机看着她，看见那双眼睛里燃烧着的光芒——不是愤怒，是比愤怒更让他心惊的东西。他几乎是下意识地开口：「青瑶，你不明白这意味着什么——」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0543_012",
+        "character_id": "char_suqingyao",
+        "content": "「我明白，」她打断他，声音里带着一丝决绝，「陪你赌命，对吗？」陈机浑身一震。她迎上他的目光，唇角微微上扬，那笑容里有心疼，有无奈，却更多的是一种破釜沉舟的坚定：「那就一起赌。」",
+        "emotion": "心疼"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0543_013",
+        "prompt": "苏青瑶的决心让陈机陷入两难——接受她的同进退，还是继续将她隔绝在危险之外？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0543_013_a",
+            "text": "接受约定",
+            "description": "同意与苏青瑶共进退，在月光下立下生死相依的约定。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去独自决策的自由",
+            "visible_reward": "获得苏青瑶「共命」契约的可能",
+            "risk_hint": "她的安危从此与你绑定",
+            "process_label": "月光下的约定",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 40
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0543_result_013_a_1",
+                  "content": "陈机看着她，许久，终于轻轻叹了口气。他抬起手，指尖与她的指尖相触，在月光下勾勒出一个无声的契约。「好，」他低声道，「同进退。」三个字很轻，却重若千钧。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0543_result_013_a_2",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶的眼眶终于红了，却倔强地扬起下巴，不让眼泪落下。她轻声说：「这是你欠我的。」夜风拂过，将这句话吹散在两人之间，也吹散了他们之间最后一层隔阂。",
+                  "emotion": "心疼"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命契约_解锁"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "月光誓约",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0543_013_b",
+            "text": "委婉拒绝",
+            "description": "拒绝苏青瑶的提议，声称危险太大，不想让她卷入。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "伤害苏青瑶的感情",
+            "visible_reward": "暂时保护她的安全",
+            "risk_hint": "她可能会独自行动",
+            "process_label": "独自承受",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0543_result_013_b_1",
+                  "character_id": "char_suqingyao",
+                  "content": "「不行。」陈机摇了摇头，声音里带着不容置疑的坚决，「这条路太危险，我不能让你——」「不能让我什么？」苏青瑶再次打断他，眼中闪过一丝受伤的神色，「不能让我帮你？不能让我陪着你？」",
+                  "emotion": "失望"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0543_result_013_b_2",
+                  "content": "她的声音带着一丝颤抖，却强撑着没有落泪。月光下，她的身影显得那样单薄而倔强。陈机看在眼里，心中如同被什么东西狠狠揪了一下。夜风忽然停了，庭院陷入一片死寂。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0543_014",
+        "content": "良久，陈机终于妥协了。他伸出手，轻轻握住了苏青瑶微凉的手指。掌心的温度透过肌肤传递过去，他感受到她的颤抖，也感受到那份颤抖之下隐藏的坚定。「好，」他低声道，「同进退。」月光如水，洒落在两人交握的手上，像是某种古老的见证。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0543_015",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶的眼眶红了，却在月光下扬起一个释然的笑容。她轻声道：「记住今晚说的话，陈机。无论发生什么，我都不会让你独自面对。」说完，她松开手，转身向月门走去。脚步声渐远，却在消失前顿了顿——「还有，」她的声音随风飘来，「下次再敢瞒我，我就不只是质问这么简单了。」",
+        "emotion": "心疼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0543_016",
+        "content": "陈机看着她的背影消失在月门之后，唇角微微上扬——那是一个真正的、不带任何算计的笑容。夜风再次拂过，带来一丝凉意，也带来了一个让他脊背微寒的感知。他忽然顿住脚步，目光如电般扫向庭院角落的阴影处。那里，有什么东西一闪而过。是错觉吗？陈机眉头微皱，却什么都没有看见。但他的直觉告诉他——从方才到现在，一直有一双眼睛在暗处注视着他的一举一动。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

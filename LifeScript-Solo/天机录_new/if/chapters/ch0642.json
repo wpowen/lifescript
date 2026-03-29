@@ -1,0 +1,626 @@
+{
+  "id": "天机录_ch0642",
+  "book_id": "天机录",
+  "number": 642,
+  "title": "命运博弈",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机推开那扇尘封已久的门扉，一道熟悉而陌生的残魂气息扑面而来——墨先生，你究竟还隐瞒了多少？",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0642_001",
+        "content": "虚空震颤，那只眼睛悬浮于混沌之上，瞳孔深处倒映着陈机七百章的生死轨迹。寒意如实质般压迫而来，陈机却缓缓勾起唇角——被看穿又如何？既然棋局已明，那便换个玩法。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_002",
+        "character_id": "char_chenji",
+        "content": "「你说得对，我的假死不过是你允许的戏码。」陈机负手而立，声音平静得近乎嘲讽，「但我很好奇——允许我演戏的人，自己是否也在演戏？」",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_003",
+        "content": "那只眼睛微微一缩，混沌深处似有无形波纹荡漾。陈机捕捉到这一丝变化，心中冷笑——果然，这东西并非全知全能。它在试探，也在忌惮。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你在试图寻找我的破绽。」那声音再次响起，带着某种玩味，「有趣……七百章以来，第一个敢与我对话的棋子。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_005",
+        "content": "「棋子？」陈机轻笑出声，笑意却不达眼底，「既是棋子，那我倒想问问——执棋之人，究竟是你，还是你背后的那位？」话音落下，虚空骤然凝滞。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "沉默片刻后，那声音再次响起，却多了一丝陈机从未听过的东西——疲惫？「你以为我是执棋之人？」那只眼睛缓缓转动，瞳孔中浮现出一个模糊的棋盘，「我不过是第三层罢了。」",
+        "emotion": "诡谲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_007",
+        "content": "第三层。陈机瞳孔骤缩。这句话透露的信息量太大了——天道之眼之上，还有更高的存在。而这东西……同样身不由己。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0642_008",
+        "prompt": "陈机意识到天道之眼并非终极Boss后，他决定……",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0642_008_a",
+            "text": "乘胜追击，质问更高存在",
+            "description": "既然它不是最强的那个，那便没有对它客气的理由。继续逼问，榨取更多情报。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗天命值10点",
+            "visible_reward": "获得关键情报碎片",
+            "risk_hint": "可能触怒天道之眼，导致关系破裂",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_a_1",
+                  "content": "陈机上前一步，目光如刀：「第三层？那第二层、第一层又是什么？说清楚。」他的气势陡然凌厉，七百章积压的隐忍在这一刻化作锋芒。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_008_a_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「你以为我在怕你？」那声音突然变得森然，「我只是在权衡——杀了你，与那位交代不过去。但若你再往前一步……」",
+                  "emotion": "威胁"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "逼问天道"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_008_b",
+            "text": "以退为进，展示诚意",
+            "description": "敌人的敌人就是朋友。既然它也是棋子，或许可以拉拢为盟友。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "可能获得天道之眼的配合",
+            "risk_hint": "暴露实力可能招来更大威胁",
+            "process_label": "以利诱之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_b_1",
+                  "content": "陈机收敛锋芒，语气转为平和：「你我都是棋子，何必互相为难？你想知道什么，我可以告诉你——作为交换。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_008_b_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "那只眼睛凝视陈机良久，瞳孔中的棋盘突然静止。「有意思……你想用第49号棋子的意志，换什么？」",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "试探合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_008_c",
+            "text": "沉默观察，等待破绽",
+            "description": "不主动暴露意图，让它先露出更多底牌。七百章的隐忍，他等得起。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "无直接消耗",
+            "visible_reward": "可能获得对方主动透露的情报",
+            "risk_hint": "可能错失逼问良机",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_c_1",
+                  "content": "陈机不答，只是静静站在原地，目光平静如渊。那只眼睛反而先沉不住气：「你不怕我？」声音里带着一丝困惑。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_c_2",
+                  "content": "「怕又如何，不怕又如何？」陈机淡淡道，「七百章的命都是你给的，我还不起吗？」这话看似示弱，实则暗藏机锋——他在提醒对方，杀了他就什么都没了。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_009",
+        "content": "「第49号棋子的意志……」天道之眼的声音突然变得古怪，「你从何处得知这个说法？」陈机心中一动——它果然不知道。这个信息是墨先生告诉他的独门消息。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_010",
+        "content": "陈机没有回答，只是从怀中取出一枚古朴的残页。天机录第一页微微发光，墨先生的残魂气息若有若无地散出。「这个，你认识吗？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "那只眼睛骤然收缩，瞳孔中掠过一丝陈机从未见过的情绪——惊惧？「不可能……那老东西竟然还有残魂留存？」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_012",
+        "content": "老东西。陈机精准捕捉到这个称呼。天道之眼称墨先生为老东西，说明它们是同一层级的存在。墨先生的身份，比他想象的还要恐怖。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0642_013",
+        "prompt": "天道之眼对墨先生残魂的出现表现出明显动摇，陈机决定……",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0642_013_a",
+            "text": "亮出墨先生残魂作为筹码",
+            "description": "「既然你认识他，那更好。告诉我七百章死亡预言的来源，我让你见他一面。」",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露墨先生存在",
+            "visible_reward": "获得死亡预言核心情报",
+            "risk_hint": "墨先生可能因此暴露在更大危险中",
+            "process_label": "以物换秘",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_013_a_1",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「你在和我谈条件？」那只眼睛冷冷道，「你知道七百章的死亡预言是谁下的吗？」",
+                  "emotion": "威胁"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_013_a_2",
+                  "content": "陈机心头一凛，但面上不动声色：「愿闻其详。」",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "交易进行中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_013_b",
+            "text": "假装不知情，继续套话",
+            "description": "让它自己说出来。既然它知道墨先生，就一定知道更多内情。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无",
+            "visible_reward": "不暴露自己真正底牌",
+            "risk_hint": "可能引起对方怀疑",
+            "process_label": "引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_013_b_1",
+                  "content": "「老东西？」陈机故作疑惑，「你说的是谁？」他将残页收回袖中，做出防备姿态，「这是我师尊留下的东西，与你何干？」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_013_b_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「师尊？」那只眼睛发出一声意味不明的笑声，「陈玄的徒弟，竟成了那个老东西的传人……有趣，真是太有趣了。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "隐藏底牌"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_014",
+        "content": "陈机。陈玄。这两个名字在天道之眼的语气中产生了奇异的反应。陈机敏锐地意识到——陈玄，天机录的前任持有者，与天道之眼之间有着不为人知的关联。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「七百章的死亡预言……」那只眼睛缓缓转动，瞳孔中浮现出一幅模糊的画面，「那不是我的布局。甚至不是那位大人的布局。」声音骤然低沉，「是陈玄自己写的。」",
+        "emotion": "诡谲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_016",
+        "content": "如遭雷击。陈机僵立原地，七百章的谜团在这一刻轰然碎裂——死亡预言的源头，竟是那位从未谋面的先祖陈玄？他为何要预言自己后代必死的命运？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_017",
+        "content": "「为什么？」陈机的声音艰涩，「他为什么要这样做？」天道之眼发出低沉的笑声：「你以为天机录是什么好东西？它本身就是诅咒的具现——预见未来，就要用命来还。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0642_018",
+        "prompt": "得知死亡预言是陈玄所下，陈机面临关键抉择……",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0642_018_a",
+            "text": "追问陈玄的下落与意图",
+            "description": "既然是他布下的局，那他一定留下了破解之法。找到他，就能打破诅咒。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗大量时间",
+            "visible_reward": "可能获得破咒线索",
+            "risk_hint": "陈玄可能已死，或成为更大的威胁",
+            "process_label": "追根溯源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_a_1",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「陈玄在哪里？」陈机逼问，「他还活着吗？」",
+                  "emotion": "急切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_a_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「活着？死了？」那只眼睛的笑声回荡在虚空中，「这个问题，你应该去问你的师尊。他知道的，比我多得多。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "线索指向墨先生"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_018_b",
+            "text": "质问天道之眼的立场",
+            "description": "既然都是棋子，那就谈条件。它透露这些，必有所图。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能暴露自己弱点",
+            "visible_reward": "与天道之眼达成某种协议",
+            "risk_hint": "可能被对方利用",
+            "process_label": "以利制衡",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_018_b_1",
+                  "content": "「你告诉我这些，想要什么？」陈机收起情绪，恢复冷静，「别告诉我天道之眼也会发善心。」",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_b_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「我想要……自由。」那只眼睛第一次用这种语气说话，「你若能打破这棋局，我便告诉你一切。否则，我们一起被困死在这里。」",
+                  "emotion": "诡谲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道之眼有求于他"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_018_c",
+            "text": "拿出第49号棋子意志做最后交易",
+            "description": "既然它有所图，那就用最核心的筹码换取最关键的信息。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗天命值20点",
+            "visible_reward": "获得完整破咒情报",
+            "risk_hint": "天命值大量消耗可能导致反噬",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_018_c_1",
+                  "content": "陈机深吸一口气，将天机录残页高举过头。墨先生的残魂气息猛然暴涨，化作一道璀璨光芒。「我用第49号棋子的意志，换取打破诅咒的方法。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_c_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "那只眼睛剧烈颤抖，瞳孔中的棋盘骤然崩解。「你疯了……那是你最后的底牌！」声音中竟带着一丝急切，「好，我告诉你——打破诅咒的方法，就在……」",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "破咒线索获取"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_019",
+        "content": "话音未落，虚空骤然撕裂。一道熟悉到令陈机心脏骤停的气息从裂缝中涌出——那是墨先生残魂的气息，却比以往任何时候都要浓烈。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_020",
+        "content": "「够了。」一个苍老而威严的声音在虚空中回荡。天机录残页剧烈震动，墨先生的虚影缓缓浮现。他的面容比陈机见过的任何时候都要清晰——那是一张饱经沧桑的脸，眼底藏着万年的秘密。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_021",
+        "character_id": "char_moxiansheng",
+        "content": "「小鬼，你问得太多了。」墨先生的虚影看向天道之眼，又看向陈机，眼中闪过一丝复杂的情绪，「有些答案，不是现在能给的。」",
+        "emotion": "威严"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_022",
+        "character_id": "char_chenji",
+        "content": "「师尊……」陈机张口欲言，却被墨先生抬手制止。那只天道之眼此刻竟罕见地沉默下来，仿佛在等待什么。",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_023",
+        "content": "「想知道答案？」墨先生终于开口，声音苍老而疲惫，却带着不容置疑的威严，「去问你真正的血脉吧。陈玄留下的东西，远不止天机录这一件。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_024",
+        "content": "话音落下，墨先生的虚影缓缓消散。天机录残页重新落回陈机掌心，余温尚存。虚空中只剩下那只眼睛，与陈机对峙。「你听到了。」它说，「你的血脉里，藏着比你想象中更可怕的东西。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_025",
+        "content": "混沌渐渐散去，陈机发现自己仍站在天青宗后山的悬崖边。月光洒落，他的影子被拉得很长。掌心的残页微微发烫，墨先生最后的话在脑海中反复回响——陈玄的血脉，陈玄留下的东西。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_026",
+        "character_id": "char_chenji",
+        "content": "「我的血脉……」陈机低声自语，脑海中闪过一个被刻意遗忘的名字——陈念。他的妹妹，被圣宗带走的妹妹。如果陈玄的血脉真有什么秘密，她是否知道？",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_027",
+        "content": "夜风拂过，带来一丝若有若无的魔气。陈机眉头微皱——那是夜清的「魔道迷雾」气息。她在这个时候出现，是巧合，还是……",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_028",
+        "content": "「陈机。」一道清冷的女声从暗处传来。夜清的身影从迷雾中浮现，面色凝重，「圣宗有动作了。他们……抓到了一个天青宗的人。」她顿了顿，「是苏青瑶。」",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_029",
+        "content": "陈机的眼神骤然冷了下来。苏青瑶，那个三次无限接近真相、却被他三次化解的女子。那个始终在调查他、却最终选择守护他的内门首席。她的存在，能干扰天机录的预见——因为她与陈机之间，早已被命运纠缠在一起。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_030",
+        "content": "「什么时候的事？」陈机的声音平静得可怕，指节却微微泛白。记下了，这笔账，他记下了。等时机成熟，他会连本带利讨回来。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_031",
+        "character_id": "char_yeqing",
+        "content": "「半个时辰前。」夜清走近几步，压低声音，「圣宗的人说……他们要用她来祭炼什么阵法。陈机，我知道你们天青宗的事，但如果再不动手……」",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_032",
+        "content": "陈机抬起头，月光照在他的脸上，那张向来懦弱平庸的面容上，此刻浮现出令人心悸的冷意。「带路。」他说，声音很轻，却带着不容置疑的决然，「敢动我的人……圣宗，是时候付出代价了。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

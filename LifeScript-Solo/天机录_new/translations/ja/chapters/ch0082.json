@@ -1,0 +1,423 @@
+{
+  "id": "天机录_ch0082",
+  "book_id": "天机录",
+  "number": 82,
+  "title": "虚弱なる刻",
+  "is_paid": true,
+  "next_chapter_hook": "陳機が思索する中、雑役居の外に突然重い足音が传来り、おなじみの傲慢な笑い声が伴った——韓烈が自ら来たのだ。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0082_001",
+        "content": "薄暗い雑役居の中、陳話は壁に背を預け座り、顔は紙のように蒼白だった。先ほどの一度の予見で、彼は審問の真実を見たが、代償も支払った——天命値が七十三から六十八に急落した。\n\n墨先生の声が脳裏に響き、几分の警告の意味を込めて：「天命値が六十を下回れば、予見能力を失う。五十を下回れば……それは真の死の始まりだ。」\n\n陳話は目を閉じ、四肢に伝わる怠さと無力感を感じていた。この身体は彼に代償を要求している。天機録を使うたびに、まるで寿命を燃やされているようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_002",
+        "content": "窓の外から足音が传来り、门の外で三人二人の低い囁きが止まった。\n\n「あの廃物，听说了吗？審問の結果は長老を指しているそうだ！」\n\n「ふん、あれ凭みで？自らか噛み付こうとしただけだろう。」\n\n「しっ、小声だが，听说ここ最近彼は得罪すべき人を得罪したようで、啧啧、見物だね。」\n\n陳話の口元が微かに上がり、しかし眼底には笑みなどない。これらの連中は聞こえないと思っているのか？彼は每个人的声を記憶している、一つ残らず。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0082_003",
+        "character_id": "char_chenji",
+        "content": "（弱々しくも穏やかな声で）面白い……噂は予想より早く広まっている……",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_004",
+        "content": "彼はゆっくりと手を上げ、指先が微かに震えていた。虚弱感が潮のように押し寄せ、これは天機録を使用した後の遗症——身体が一時的に吸い取られたように、まるで何か啃まれていた後のようだった。\n\nしかし彼の眼神はまだ明晰で、普段よりむしろ鋭い。\n\n（内心）審問の結果は偽りだ、あの長老はただの身代わり。真の黒幕……もう我慢のならず、動き出した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0082_005",
+        "prompt": "形勢は危急、噂が四散し、虚弱の中の陳話は選択を迫られる——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0082_opt1",
+            "text": "静観其変",
+            "description": "弱さを演じ続け、敵の警戒を解かせ、真の策士を密かに観察する",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "さらに締め付けられる可能性がある",
+            "visible_reward": "より多くの敵の弱みを握る",
+            "risk_hint": "リスクは低いが、反撃の機会を逃す可能性がある",
+            "process_label": "忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0082_result_ch0082_opt1_1",
+                  "content": "陳話はゆっくりと目を閉じ、呼吸は長く弱々しくなった。すべての人が、あの落ちぶれた者が完全に垮れたと思うようにする必要がある。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0082_opt2",
+            "text": "暗中反撃",
+            "description": "残余の天機録の力で、暗処で彼らに不利な局面を作り出す",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "より多くの天命値を消耗する",
+            "visible_reward": "敵同志の相互疑心を生む",
+            "risk_hint": "天機録の存在が露呈する可能性がある",
+            "process_label": "算",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0082_result_ch0082_opt2_1",
+                  "character_id": "char_chenji",
+                  "content": "（内心独白）急がない、盛り場は始まったばかり。君たちが遊びたいなら、付き合ってあげる。",
+                  "emotion": "阴沉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0082_result_ch0082_opt2_2",
+                  "content": "彼の枯瘦せた指が空中で虚に描き、まるで一张見えない網を張っているようだった。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_006",
+        "content": "ちょうどその時、扉が粗暴に押し開かれた。\n\n内門の服を着た青年が闊歩で走入し、後ろには鼻高々の雑役が二人付いていた。彼の眼差しには隠しようのない悪意が満ち、口元には嘲りの笑みを浮かべている。\n\n「おやお、そちらの『天之驕子』陳機师弟じゃないか？どう、病氣か？」青年は『病了』の二字をわざと強調し、眼中には白い歯を見せる喜びに満ちていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_007",
+        "content": "陳話は彼を知っていた——赵衡、三ヶ月前に宗门大比で自分に策略で負けさせた外門弟子。あの一戦、彼は光彩のある勝ち方ではなく、むしろみっともない勝利だった。\n\n赵衡も明らかにあの日のことを覚えている，数歩近づき、壁に背を預ける陳機を高い位置から見下ろした：「师弟が大きな事に巻き込まれたそうだね？啧啧、長老，得罪したなんて、どう收場するつもりだい。」\n\n彼の语气には晴れやかな喜びが満ち、まるで陳話が宗门から追い出される光景を既に見たようにしている。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0082_008",
+        "character_id": "char_chenji",
+        "content": "（弱々しく咳き込んで）赵师兄……咳咳……大駕光臨……",
+        "emotion": "虚弱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_009",
+        "content": "赵衡は哄笑し、その笑い声は耳障り極まりない：「哎呀、师弟の体は本当に弱いね！安心して安心して、师兄はただ見舞いに来ただけ、何もしないから。畢竟今の君は……啧啧、喪家之犬だからね！」\n\n後ろの二人の雑役も笑い、眼中には弱者踏みにじる喜びに満ちていた。\n\n陳話は俯き、肩が微かに震え、甚だしい屈辱に耐えているように見えた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0082_010",
+        "prompt": "崩れかけた者への石を落とす小人，面对えて、虚弱の中の陳話は如何に応答するか？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "ch0082_opt3",
+            "text": "引き続き弱さを示す",
+            "description": "让他们尽情嘲讽，暗中记下每张脸，等待日后清算",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "一時的に辱めを受ける",
+            "visible_reward": "実力を隠して感知されないようにする",
+            "risk_hint": "敵を更加嚣张させる可能性がある",
+            "process_label": "忍辱",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0082_result_ch0082_opt3_1",
+                  "character_id": "char_chenji",
+                  "content": "（声が掠れて）赵师兄の言う通り……师弟は悪かった……",
+                  "emotion": "卑微"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0082_result_ch0082_opt3_2",
+                  "content": "彼の声には丁度良い震えがあり、眼神は伏せられ、誰的眼差しとも合わない——これは完璧な廃物の姿だった。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0082_opt4",
+            "text": "言語反撃",
+            "description": "弱々しい声で人心を穿上言葉を放ち，对方に自分が彼にとって何ら重要性がないことを分からせる",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "一部の锋芒を露出する",
+            "visible_reward": "衆人前で面目を挽回する",
+            "risk_hint": "更なる注意を引き起こす可能性がある",
+            "process_label": "诛心",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0082_result_ch0082_opt4_1",
+                  "character_id": "char_chenji",
+                  "content": "（微かに笑いながら）赵师兄があの日に私に負けた試合……私は清楚地記憶している。师兄は当时、私が勝てばきっと報いると言った。今……私倒是見たい、师兄はどう私を報いるのかな？",
+                  "emotion": "锐利"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0082_result_ch0082_opt4_2",
+                  "content": "彼の声は虚弱だったが、その笑みが赵衡の背筋を寒くさせた。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_011",
+        "content": "赵衡の顔色は微かに變わり、明らかにこの言葉に深く傷つけられた。しかしすぐに平静を取り戻し、冷笑して：「良い口だな！可惜、今は誰もが知っている、君は得罪すべき人を得罪したって。长老……呵呵、翻身できると思っているのか？」\n\n彼は声を落とし、陳機の耳元に近づいた：「分別のあるなら、素直に罪を認めろ、死んでも全屍が残るかもな。」\n\n说完ると、彼は身を起こし、威風堂々と出口へ向かい、行く前にわざと陳機のベッドの側の薬碗を蹴り倒した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_012",
+        "content": "砕けた音が雑役居に響き渡り、陳話は药液が泥土に染み込んでいくのを眺め、眼中には一道の寒光が闪烁した。\n\n那是他托人从山下买来的培元丹——对恢复天命值消耗有奇效。有钱都买不到的好东西。\n\n（内心）记住了。赵衡，还有背后指点你的人。我一个都不会忘。\n\n墨先生的声音在脑海中响起：「小子，你的敌人比你想象的更多。那位长老……只是棋子。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0082_013",
+        "character_id": "char_chenji",
+        "content": "（内心回应）我知道。凌渊……he finally couldn't sit still.",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_013b",
+        "content": "Chen Ji struggled to stand up from the corner, supporting himself against the wall. His legs were weak, almost about to fall again, but he gritted his teeth and held on. Through the torn window paper, he saw several figures watching from a distance, all obviously there to enjoy the show. Those who used to avoid him like the plague now dared to openly kick him while he was down. This is human nature.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0082_014",
+        "prompt": "Heavy footsteps approached again outside the servants' quarters, and Chen Ji needed to decide—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0082_opt5",
+            "text": "Continue to wait",
+            "description": "Pretend not to notice, secretly observe the identity and purpose of the visitor",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May fall into a passive situation",
+            "visible_reward": "Gain more information",
+            "risk_hint": "The visitor may have the initiative",
+            "process_label": "潜伏",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0082_result_ch0082_opt5_1",
+                  "content": "Chen Ji slowly sat back against the wall, putting on a weak, dazed appearance, deliberately slowing his breathing.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0082_opt6",
+            "text": "Take the initiative to give warning",
+            "description": "Use the residual perception of Tianji Record to judge the visitor in advance, so as to be prepared",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume spiritual power",
+            "visible_reward": "Obtain key intelligence in advance",
+            "risk_hint": "May worsen the weakened state",
+            "process_label": "感知",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0082_result_ch0082_opt6_1",
+                  "character_id": "char_chenji",
+                  "content": "（Closing his eyes in concentration）That aura... fire-attribute elemental energy is overbearing and fierce, carrying an extremely confident momentum... someone from Xuanwu Sect?",
+                  "emotion": "警觉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0082_result_ch0082_opt6_2",
+                  "content": "Chen Ji opened his eyes, a meaningful smile appearing at the corner of his mouth. Han Lie had come faster than he expected.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_015",
+        "content": "The footsteps drew closer, finally stopping at the door of the servants' quarters. A tall figure appeared in the doorway, nearly blocking the entire entrance. The visitor wore Xuanwu Sect's distinctive black iron battle armor, with a roaring Xuanwu embroidered on the chest, his momentum pressing down like a mountain. It was precisely Xuanwu Sect's number one genius—Han Lie. Han Lie's gaze swept across the dilapidated servants' quarters, finally landing on Chen Ji, his brow slightly furrowing: \"This place?\" His tone carried undisguised contempt, as if coming here was beneath his dignity.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_016",
+        "content": "Chen Ji supported himself against the wall and slowly stood up, his face showing just the right amount of surprise and fear: \"Han... Han Gongzi? Why are you here?\" His voice was weak and trembling, his body swaying several times before barely稳住. This appearance would make anyone think he was a pitiful wretch. Han Lie stared at him for a long while, then suddenly burst out laughing: \"Hahaha! So this is the Chen Ji who defeated me three times? Look at this pathetic state! Just a sickly wretch!\" His laughter shook the dust from the roof, and his followers behind him joined in the laughter.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_017",
+        "content": "Chen Ji kept his head down, saying nothing, but his hands quietly tightened inside his sleeves. (Inner monologue) Han Lie... you've come at just the right time. I want to see, you brute, what tricks you're up to this time. Han Lie finished laughing and strode into the servants' quarters, almost standing face-to-face with Chen Ji, looking down at him from above: \"I heard you got into trouble? The three major sects are all spreading it—that Tianqing Sect's wretch Chen Ji offended someone he shouldn't have, and is about to be purged.\" He deliberately paused, a playful glint flashing in his eyes: \"I specifically came to see how you've fallen to such a state. After all... an opponent like you, if you die at someone else's hands, wouldn't that be too可惜?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0082_018",
+        "character_id": "char_chenji",
+        "content": "（Coughing twice,勉强挤出苦涩的笑）Han Gongzi...咳咳...你说的对。师弟如今确实是...虎落平阳...",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_019",
+        "content": "韩烈盯着他看了许久，似乎想从他脸上找出什么破绽。但陈机的表演太过完美——苍白的脸、颤抖的双手、躲闪的眼神——每一个细节都在诉说着一个「濒临崩溃的废物」的形象。终于，韩烈失去了兴趣，他退后几步，冷声道：「真没意思。本以为你还能再给我几次惊喜，没想到这么快就成了一滩烂泥。」他转身欲走，却又顿住脚步，回头丢下一句话：「对了，有人托我带句话给你——那位长老只是开胃菜，真正的清算……还在后面。」说完，他头也不回地大步离去，留下一室沉默。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0082_020",
+        "content": "脚步声渐渐远去，杂役居重新陷入死寂。陈机缓缓直起腰，脸上的虚弱与惶恐如潮水般褪去，取而代之的是一片冰冷。「开胃菜……清算还在后面……」他低声重复着韩烈的话，嘴角勾起一抹冷笑，「凌渊啊凌渊，你还真是沉不住气。」他重新坐回墙角，闭上眼睛。虚弱感依然在侵蚀着他的身体，但他的大脑却比任何时候都清醒。这一局，他输了半子。但棋局才刚刚开始。窗外，夕阳西沉，暮色渐浓。陈机知道，更大的风暴正在酝酿。而他，必须在风暴来临之前，重新站起来。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

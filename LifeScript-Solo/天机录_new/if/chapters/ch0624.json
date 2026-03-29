@@ -1,0 +1,510 @@
+{
+  "id": "天机录_ch0624",
+  "book_id": "天机录",
+  "number": 624,
+  "title": "天眼之下",
+  "is_paid": true,
+  "next_chapter_hook": "就在众人以为真相已大白之际，天空骤然阴沉，一只超越凡人认知的眼瞳缓缓睁开，降下追杀令的陈机将如何应对这超越天道意志的灭顶之灾？",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0624_001",
+        "content": "大长老的目光如实质般压来，人群自动分开一条道路。唯有陈机站在原地，面上挂着那抹惯常的怯懦笑意，指尖却在袖中悄然抚过天机录残页。墨先生的声音在识海中响起：「来了。你等了三年的机会。」陈机深吸一口气，心中默念——不错，他等这一刻，等了太久。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0624_002",
+        "character_id": "char_chenji",
+        "content": "大长老留步。晚辈有一事不明，斗胆请教。",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_003",
+        "content": "陈机缓步上前，身上气势陡然一变。方才还唯唯诺诺的杂役弟子，此刻竟有一种渊渟岳峙的气度。围观众人倒吸一口凉气，有人已认出他身上那袭银丝镶边的袍子——那是太子太师的朝服！整个大殿霎时安静得落针可闻。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0624_004",
+        "character_id": "char_hanlie",
+        "content": "韩烈瞳孔骤缩，怒喝道：\"你这废物何时……太子太师？你假冒朝廷命官，该当何罪！\"",
+        "emotion": "震惊愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_005",
+        "content": "陈机连眼皮都未抬，淡淡道：\"韩首席若对朝廷封赏有疑，大可去太常寺查档。本官在此，只问玄武宗大长老一事。\"他转向大长老，声音陡然转冷，\"敢问大长老，昨夜子时三刻，您在玄武宗后山的密室中，与何物对话？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0624_choice_001",
+        "prompt": "大长老面色微变，你选择如何步步紧逼？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0624_c1_1",
+            "text": "直接展示天机录异象",
+            "description": "激活天机录第六页，将大长老身上的异常直接投影给众人观看，以绝对证据碾压。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "真相大白于天下，大长老百口莫辩",
+            "risk_hint": "暴露天机录部分能力，可能引来更高层关注",
+            "process_label": "你选择以最强硬的姿态，正面碾压！",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c1_1_1",
+                  "content": "陈机单手结印，袖中天机录残页骤然发出刺目金光。众人惊呼声中，一道虚幻影像自残页上升腾而起——那是一只苍白的竖瞳，正从玄武宗后山密室中注视着大长老！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c1_1_2",
+                  "content": "大长老浑身一僵，面色惨白。他身周隐隐浮现的黑色纹路与那只竖瞳遥相呼应，昭示着某种不可告人的联系。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录暴露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0624_c1_2",
+            "text": "以言语层层剥茧",
+            "description": "不急于亮出底牌，先用一系列质问动摇大长老心防，让他在众人面前自露马脚。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无直接消耗",
+            "visible_reward": "大长老自己暴露破绽，真相比你说出更震撼",
+            "risk_hint": "大长老可能狗急跳墙，当场动手",
+            "process_label": "你选择以言语为刃，一步步将他逼入死角！",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c1_2_1",
+                  "content": "陈机负手而立，微微一笑：\"大长老不必紧张，晚辈只是好奇。听闻玄武宗历代长老，寿元皆不过三百年，唯独您已活了一千二百年。这其中，可有什么养生秘诀？\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c1_2_2",
+                  "content": "大长老眼中闪过一丝慌乱，强自镇定道：\"老夫闭关突破，延年益寿有何稀奇……\"他话音未落，袖口却不自觉向后缩了缩，那一闪而过的黑色纹路被眼尖之人捕捉。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0624_006",
+        "character_id": "char_hanlie",
+        "content": "韩烈挡在大长老身前，怒目圆睁：\"一派胡言！我师尊德高望重，岂容你污蔑！来人，将这疯子拿下！\"",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_007",
+        "content": "陈机轻笑出声，那笑声清朗却带着刺骨的寒意：\"韩首席何必如此激动？莫非你也知道些什么？\"他目光一转，扫向人群，\"诸位可还记得，百年前玄武宗与魔道圣宗的那场大战？那一战，玄武宗以一敌三，伤亡惨重——可战后短短十年，便恢复元气，门中高手更是翻了一倍。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0624_008",
+        "character_id": "char_chenji",
+        "content": "这恢复的速度，可不像正道宗门，倒像是……有人在背后不断输血啊。",
+        "emotion": "冷冽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_009",
+        "content": "此言一出，全场哗然。众人交头接耳，目光在大长老与韩烈之间来回游移。大长老面色铁青，袖中的手微微颤抖。他万万没想到，这个被全天下当作废物的杂役弟子，竟掌握着如此惊人的情报。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0624_choice_002",
+        "prompt": "局势已经倒向你这边，选择如何给出最后一击？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0624_c2_1",
+            "text": "亮出天机录铁证",
+            "description": "不再给大长老喘息之机，直接激活天机录，将那只超越天道的眼瞳投影展现给所有人看。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "再耗5点天命值",
+            "visible_reward": "真相无可辩驳，玄武宗千夫所指",
+            "risk_hint": "天道之眼必定震怒，可能当场出手",
+            "process_label": "是时候终结这场闹剧了！",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 40
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c2_1_1",
+                  "content": "陈机不再犹豫，掌心金光大盛。天机录第六页轰然展开，一道震慑人心的画面冲天而起——那是一只横亘苍穹的巨眼，瞳孔中倒映着无数扭曲的人影，正是历代被天道之眼操控的傀儡！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0624_result_c2_1_2",
+                  "character_id": "char_chenji",
+                  "content": "诸位请看！这便是玄武宗的靠山——天道之眼！它以各宗天骄为食，以天下苍生为棋！",
+                  "emotion": "慷慨激昂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道之眼显形"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0624_c2_2",
+            "text": "揭露玄武宗弟子失踪案",
+            "description": "抛出另一个重磅炸弹——玄武宗弟子莫名失踪的真相，将大长老彻底钉死。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "无",
+            "visible_reward": "众人自发倒戈，真相比预期更加震撼",
+            "risk_hint": "可能被大长老反咬一口",
+            "process_label": "你以为这就完了？真正的猛料还在后头！",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 35
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c2_2_1",
+                  "content": "陈机冷声道：\"既然大长老不承认，那晚辈再问一事——近三十年来，玄武宗共有七十三名天才弟子'外出历练'后再无音讯，这些人的魂灯却在宗内长明。人呢？\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c2_2_2",
+                  "content": "人群中有人惊呼：\"我表兄便是其中之一！他说去玄武宗交流，结果一去不回！\"越来越多的质疑声响起，大长老额上冷汗涔涔。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_010",
+        "content": "就在众人议论纷纷之际，天空骤然暗了下来。一股令人窒息的威压自九霄之外倾泻而下，所有人都不由自主地仰头望去——那只苍白的竖瞳，终于从云层深处显现。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0624_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "卑微的蝼蚁，竟敢窥探本座真容。",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_012",
+        "content": "那声音并非传入耳中，而是直接响彻在每个人的识海里。修为低浅者当场七窍流血，瘫软在地。即便是韩烈这等级别的天才，也面色惨白，双腿打颤。唯有陈机负手而立，唇角甚至勾起一抹笑意——他等这一刻，已经等了整整三年。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0624_choice_003",
+        "prompt": "天道之眼显形质问，你如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0624_c3_1",
+            "text": "以退为进，揭露真相",
+            "description": "不当场硬刚，而是将天道之眼的真面目告知天下，让它投鼠忌器。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗天命值10点",
+            "visible_reward": "天道之眼成为众矢之的，陈机趁乱脱身",
+            "risk_hint": "可能被天道之眼当场抹杀",
+            "process_label": "你以为显现真身就能吓住我？可笑！",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              },
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0624_result_c3_1_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机朗声道：\"诸位！这便是真相！天道之眼根本不是什么天意，而是以苍生为食的亘古凶物！玄武宗不过是它养的猪！\"",
+                  "emotion": "激昂"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c3_1_2",
+                  "content": "话音未落，天道之眼的瞳孔骤然收缩。一道毁灭性的力量自云层中劈下，直取陈机！却在半空中被一道剑光拦住——夜清的身影出现在陈机身前，魔道迷雾汹涌而出。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道之眼追杀"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0624_c3_2",
+            "text": "正面对决天道之眼",
+            "description": "激活天机录全部残页，与天道之眼硬碰硬，展示真正的实力。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗全部天命值",
+            "visible_reward": "当众击退天道之眼一击，名震天下",
+            "risk_hint": "天命值归零，可能当场暴毙",
+            "process_label": "想杀我？先问问天机录答不答应！",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "名望",
+                "delta": 80
+              },
+              {
+                "stat": "战力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 150
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0624_result_c3_2_1",
+                  "content": "陈机眼中精光暴涨，袖中六页天机录同时展开，金光与黑芒在半空中激烈碰撞。众人只觉天旋地转，那只天道之眼竟被生生逼退数丈，瞳孔中流露出一丝罕见的惊异。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0624_result_c3_2_2",
+                  "character_id": "char_chenji",
+                  "content": "陈机傲然道：\"千年布局，今日收网！\"",
+                  "emotion": "睥睨"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道之眼追杀",
+              "天机录全开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 15
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_013",
+        "content": "天道之眼的竖瞳微微眯起，冰冷的声音再次响彻天地：\"有趣……千年之后，终于又出现了一个能看见本座的人。\"它的目光落在陈机身上，带着审视与贪婪，\"你手中的残页，本座志在必得。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_014",
+        "content": "陈机不为所动，反而笑道：\"前辈想要，尽管来取。不过今日在场诸位都是见证——天道之眼亲口承认，它便是百年来祸乱天下的幕后黑手！\"他转向人群，拱手道，\"诸位同道，今日之后，何去何从，还请三思。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0624_015",
+        "character_id": "char_hanlie",
+        "content": "韩烈面色铁青，却无言以对。他转头望向大长老，却发现这位德高望重的老者浑身颤抖，袖口的黑色纹路已蔓延至脖颈——那是天道之眼抛弃棋子前的征兆。",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_016",
+        "content": "天道之眼的声音再次响起，却不再是对陈机所言，而是向整个天下宣告：\"自今日起，发布天道追杀令。凡取陈机项上人头者，可入本座座下，享长生不死。\"那声音冰冷刺骨，\"天下共诛之。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_017",
+        "content": "追杀令落下的刹那，陈机仰天大笑。那笑声畅快淋漓，仿佛要将三年来积压的郁气尽数抒发。他看着那只高高在上的天道之眼，心中默念：你以为我是猎物，却不知我才是执棋之人。这一局，才刚刚开始。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0624_018",
+        "content": "墨先生的声音在识海中响起，带着罕见的欣慰：\"做得好。接下来的路，会更难走。但你已经迈出了最难的一步。\"陈机微微颔首，环顾四周——人群中有震惊，有恐惧，也有少数几道目光中燃起的斗志。他知道，今日之后，天下将再无宁日，而他陈机，将站在风口浪尖，俯瞰这即将倾覆的天地。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

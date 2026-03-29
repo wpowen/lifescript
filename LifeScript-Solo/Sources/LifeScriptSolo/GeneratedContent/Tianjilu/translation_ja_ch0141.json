@@ -1,0 +1,519 @@
+{
+  "id": "天机录_ch0141",
+  "book_id": "天机录",
+  "number": 141,
+  "title": "対等契約",
+  "is_paid": true,
+  "next_chapter_hook": "「盟約が成立し、陈機が去ろうとしたとき、夜清は突然口を開いた——『 ещё один делоがある。』その深い瞳に異様な光が闪き、『陳玄は当年私の聖宗に三位の長老を失わせた、この借り……你以为一つの盟約で清算できる？』",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0141_001",
+        "content": "密室の蝋燭の炎が揺れ動き、二つの影の形を長くしたり短くしたりしている。夜清の掌にある令牌の欠片が蒼白い光を放ち、陳家の紋章は炎の下で獰悪な獣のように見える。『陳玄の息子』という四文字は千鈞の重みを帯び、空気の中に压し付けられ、陈機の心头にも压し付けられている。\n\n彼の表情は普段通りで、甚至还茶杯を手に取って、熱気を吹き飛ばしている。唯一、伏せたまぶたが微かに震え、その一瞬の波紋を泄露している。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_002",
+        "character_id": "char_yeqing",
+        "content": "「どう、知りたくないのか？」夜清は唇の端を上げ、令牌の欠片を指の間で回しながら、『お前の父親が当年誰の手にかかったか——これは私がお前と取引したい最初の注文だ。陈機、お前がどれだけ役立たずのキャラクターを演じていても、天機録を手に入れた瞬間の目の中のものは騙せない。』",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_003",
+        "character_id": "char_chenji",
+        "content": "茶杯が音を立てて卓に置かれる。陈機が顔を上げると、その淘浊に見えた瞳は今は清澈で近乎冷酷だった。『夜聖女はむしろ素直だな。既然如此——』彼は椅子の背もたれにもたれかかり、『では盟約をどう結ぶか，好好谈谈吧。』",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0141_004",
+        "content": "夜清は眉を上げ、おそらく彼がこんなにきっぱりと応じるとは思わなかった。令牌の欠片を袖にしまい、両手を重ねて卓の前に置き、耳を傾ける姿态をとる。密室の空気は实质のように凝固し、二頭の老狐が卓を隔てて向き合い、それぞれ策略を巡らせている。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0141_005",
+        "prompt": "「陳機がまず口を開き、三つの条件を提示する。どのような言葉遣いで誠意を示しながらも主導権を握るか？」",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0141_005a",
+            "text": "「単刀直入的要害を述べる」",
+            "description": "「三つの条件を直接抛出し、回り道をせず、全局を掌握する自信を示す」",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "「底牌を明かす」",
+            "visible_reward": "「交渉の主導権を握る」",
+            "risk_hint": "「条件が拒絶されれば、局面は受け身になる」",
+            "process_label": "展现强势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0141_result_005a_001",
+                  "content": "陳機が指で卓を軽く叩き、澄んだ声で言った：『第一に，魔道はお前の父親の当年死亡真相の手がかりを提供しなければならない。第二に、少なくとも一箇所の秘境入口の 정보를共有すること。第三に——』彼は一拍置き、眼光如刀のように、『核心的利益を互いに侵犯しない。お前の聖宗は天青宗に一歩も踏み込まないように，我也不插手你魔道の内政に干渉しない。』"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0141_005b",
+            "text": "「一歩引くことで相手を導き深く踏み込ませる」",
+            "description": "「まず弱さを見せ相手に値を言わせ、一つずつ反論して優勢を構築する」",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "「時間を耗费する」",
+            "visible_reward": "「相手の底线を探る」",
+            "risk_hint": "「夜清は獅子大张口する好機を得るかもしれない」",
+            "process_label": "迂回布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -1
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0141_result_005b_001",
+                  "content": "陳機が微かに目を伏せ、声が低くなった：『夜聖女既然主动提及家父，想必已有腹案。不如……你先开价？』彼は目を開け，眼中精光一闪即逝。この一招は一歩引くことで逃げ、誠意を見せつつ相手に底牌を先に触れさせる——そして先に底牌を明かした人は，往往陷入被动。』"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_006",
+        "character_id": "char_yeqing",
+        "content": "夜清は静かに聞き終え，忽然轻笑出声。那笑声在密室里回荡，带着几分说不清道不明的意味。『陳機、お前のこの三つの条件……前二条は認めるが、第三条——』彼女は身を前倾にし、蝋燭の光が彼女の眼底で跳ねる、『何谓之『核心利益』？天青宗のあの程度の場所なら興味ないが、でもお前のあの残頁天機録は、お前の核心的利益に入るのか？』",
+        "emotion": "挑衅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0141_007",
+        "content": "この言葉は極めて巧妙で、天機録への觊觎を示しながら、同時に球を陳機に戻している。夜清は椅子の背もたれにもたれかかり、怠惰な姿态ながら暗に锋芒を潜めている：『私も三つの条件がある。答应了盟約が成立する。』",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_008",
+        "character_id": "char_yeqing",
+        "content": "『第一に、私のために一人を殺せ。』夜清は一本の指を立て、语气平淡得像在说今日天气一样、『玄武道の大長老、韩烈の師匠。此人は私と私怨があり、お前が手を下ろせば、我在玄武宗の布局が知られていないことを保証する。』",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_009",
+        "character_id": "char_yeqing",
+        "content": "『第二に、一つの禁地に入り、あるものを取ってこい。』彼女は一拍置き、『天機録がお前の立身之本이라면、お前も知っているはずだ——上古に『天命炉』という场所があり、命格を补い、天命を逆转できる。その炉火を一縷取ってこい。』",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_010",
+        "character_id": "char_yeqing",
+        "content": "『第三に——』夜清の眼光は忽然鋭くなり、『私はお前に一つの人情を借り将来某一天、お前が私に何をする言っても、理由を聞かず、断りもなし。』",
+        "emotion": "危险"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0141_011",
+        "content": "三つの要求は一つ比一つ厳しい。第一条は彼に宗門の恩怨に直接巻き込ませ、第二条は彼に上古禁地へ踏み込ませ死に赴かせ、第三条は……更要将他彻底变成魔道の駒にする。陳機の指が茶杯の縁を轻轻摩挲し、面に喜怒は見えない。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0141_012",
+        "prompt": "夜清の提示した三つの条件は一つ比一つ厳しく、陈機はこの致命的な要求にどう対応すべきか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0141_012a",
+            "text": "「即座に拒绝し、卓を掀げて重来する」",
+            "description": "「对方毫无诚意を指摘し、交渉の破裂を招きながらも尊厳を保全する」",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "「協力の機会を失う」",
+            "visible_reward": "「夜清に彼の価値を重新評価させる」",
+            "risk_hint": "「夜清は转身而去し、他の協力对象寻找するかもしれない」",
+            "process_label": "强势反击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 2
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0141_result_012a_001",
+                  "character_id": "char_chenji",
+                  "content": "陳機が忽然笑い出し、その笑みには譏りの色が几分含まれていた。『夜聖女、この三条……私を侮辱しているのか？』彼は茶杯を下ろし、声音依旧平静、『第一条で人を殺せ、第二条で禁地を突破して死ね、第三条で身を売れ？天下にこんな取り引きがあるか。』",
+                  "emotion": "冷笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0141_012b",
+            "text": "「全面的に受け入れ、誠意を示す」",
+            "description": "「出乎意料地把所有条件都答应下来，先赢得夜清信任后再慢慢计较」",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "「背负三个沉重的负担」",
+            "visible_reward": "「深入魔道内部，获取核心情报」",
+            "risk_hint": "「三条承诺中任何一条无法兑现都将万劫不复」",
+            "process_label": "以身饲虎",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0141_result_012b_001",
+                  "character_id": "char_chenji",
+                  "content": "陳機が黙って片刻，竟点了点头。『いい。』ただ一字だけ、干脆得让夜清都愣了一瞬。彼は顔を上げ，眼中精光闪烁：『ただし私も一つ条件がある——各条마다、お前が十分な情報サポートを提供する必要がある。否则，恕不从命。』",
+                  "emotion": "深沉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0141_012c",
+            "text": "「天機録を展示し、未来を示す」",
+            "description": "「予言能力を使って夜清に彼女の最も恐れる未来を見させ、彼女に形势を再検討させる」",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "「5点的天命値を消耗する」",
+            "visible_reward": "「交渉局势を完全に扭转し、夜清を被动状态に陥らせる」",
+            "risk_hint": "「天機録の消耗过大，且暴露了予言の具体的な代価」",
+            "process_label": "以势压人",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0141_result_012c_001",
+                  "content": "陳機が言葉をつなげなかった。彼がゆっくりと目を閉じ、掌に蒼白い光が浮かんだ。次の瞬間、密室凭空浮现出一つの虚幻的な絵巻——那是天機録所展示的未来の一場面。夜清の瞳孔が忽然縮んだ。絵の中の彼女は鎖につながれ、聖宗の高手正在强行剥离她的魔根……"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_013",
+        "character_id": "char_yeqing",
+        "content": "絵が一变し、彼女が无数的剣光に貫かれる場面。そして彼女の神魂が聖宗教主に少しずつ飲み込まれる場面……最後に一张笑脸定格——聖宗教主が彼女を俯視し、声音温和：『いい子呀、お前はようやく反抗是无用だと分かったね。』",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_014",
+        "character_id": "char_yeqing",
+        "content": "絵が消える。夜清の顔は蒼白になり、指先が微微に震えている。彼女は陳機を睨み，眼中第一次流露出真正的忌惮。『お前……私の结末看到了？』声音不复先前的从容，带了一丝沙哑。",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_015",
+        "character_id": "char_chenji",
+        "content": "『未来には无数の可能性がある』陳機が掌を Поједина、表情淡然、『だがどの可能性の中でも、お前は聖宗教主の手から逃げられない。あの人は最初からあなたを策略していたのだ、夜聖女。お前が聖宗を離脱したのは自主的な選択だと思ったのか？いいえ、それがあの人が望んでいたことだ。』",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_016",
+        "character_id": "char_yeqing",
+        "content": "夜清は死ぬほど彼を睨み、胸が激しく上下している。長い間、彼女はようやく再び口を開き、声音却冷得像淬了毒：『お前が私にこれを見せたのは……何を说明したいのだ？私だけがあなたと協力して聖宗に対抗できるからなのか？私の価値はお前が思っているより大きいからだと言うのか？』",
+        "emotion": "戒备"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_017",
+        "character_id": "char_chenji",
+        "content": "『違う。』陳機が首を横に振り、『私はただあなたに分かってほしいのだ——我々は同じ船に乗っているということ。お前にはお前の死局があり、私には私の困局がある。互いに策略し合う不如、携手破局吧。』彼は身を前倾にし、『なので、あの三つの条件、改めましょう。』",
+        "emotion": "真诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0141_018",
+        "content": "密室は再び沈黙に陥る。蝋燭がパチパチと音を立て、二つの影が壁の上で無言に対峙している。今度こそ、夜清は先に口を開かなかった。彼女は待っている——陳機が彼の底牌を亮すのを。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0141_019",
+        "prompt": "交渉が僵局に陥り、陈機が主に让步を提出した。彼はどう趣き、夜清彻底的に感動させるか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0141_019a",
+            "text": "「我方の条件を放弃し、対等の地位换取する」",
+            "description": "「全部の三条件を撤回し、対等の協力関系の構築だけを求める」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "「父親の手がかりを得る機会を失う」",
+            "visible_reward": "「夜清の真の信頼を赢得し、对等な盟約を確立する」",
+            "risk_hint": "「あまりに簡単に放弃하면反而怀疑を招く可能性がある」",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 4
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0141_result_019a_001",
+                  "character_id": "char_chenji",
+                  "content": "陳機が忽然笑い出し、その笑みには蒼凉の色が几分含まれていた。『罢了。』彼は手を振り、『三つの条件は撤廃する。お前の提示した三条も、前二条만 이행한다。第三条——』彼は夜清を真っ直ぐ見つめ、『人情の借りは誰にもしたくない。だが一つだけ答应しよう。』",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0141_019b",
+            "text": "「妹の手がかりを亮出し、誠意换来誠意」",
+            "description": "「妹の陳念が聖宗に囚われているという情報を明かし、夜清の共感と让步换取する」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "「最大の急所破绽を露出する」",
+            "visible_reward": "「夜清の内心に触れ、利益を超えた関係纽带を構築する」",
+            "risk_hint": "「夜清は反过来この情報を利用威胁する可能性がある」",
+            "process_label": "以心换心",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0141_result_019b_001",
+                  "character_id": "char_chenji",
+                  "content": "陳機が目を伏せ、声音忽然低了下去。『私には妹がいる……陳念という子だ。彼女は長年姿を消している。』彼は一拍置き、『最近ようやく查った、彼女はおそらく……お前の聖宗のある場所に囚われているのかもしれない。』彼は顔を上げ、『これが私が言いたい第三条だ——彼女を見つけてくれ。見つけてくれたら，我们是生死之交。』",
+                  "emotion": "动容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_020",
+        "character_id": "char_yeqing",
+        "content": "夜清は怔住了。她盯着陈机，仿佛第一次认识这个人。那个在交渉桌上滴水不漏、城府深不见底的男子，此刻眼中竟流露出一丝脆弱——那是 родительの執念，是一个孤狼终于亮出的急所。",
+        "emotion": "震动"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_021",
+        "character_id": "char_yeqing",
+        "content": "『陳念……』彼女は繰り返し名を呟き，忽然何かを思い出して瞳孔が微かに縮んだ、『天命ロックキー……原来是她。』夜清の表情は複雑になり、陈機を见る目に了几分说不清道不明的意味が加わった。『道理で聖宗がずっと彼女を探していた。原来是用她……来对付你那本天機録啊。』",
+        "emotion": "恍然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_022",
+        "character_id": "char_yeqing",
+        "content": "陳機に否定はなかった。ただ静かに夜清を見つめ、彼女の答えを待っている。密室で蝋燭の炎が揺れ、二つの影が壁の上で交錯している。この瞬間、彼らはもはや互いに探り合う棋士ではなく、運命に巻き込まれる二つの駒だった。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_023",
+        "character_id": "char_yeqing",
+        "content": "長い間、夜清は深く息を吸い、手を差し出した。『成交。』彼女の声音は冷静さを取り戻したが、眼底の奥には陳看不透东西が几分ある。『本日より、お前は魔道聖宗の客卿、私は天青宗の外援。我々は各取所需、互不干涉。生死の关头、互通有无。』",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0141_024",
+        "content": "二只手が蝋燭の下で交握する。一方は魔道聖女の手で、冰凉如玉；もう一方は废物雑役の手で、粗糙布满茧子。誰も想到しない，这两个手が握り合い、整个修仙界の风云をかき立てるのだ。盟約は成立したが、陳機の心の奥底には淡淡的不安が浮かぶ——夜清の最後の眼差しは、あまりに意味深长だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0141_025",
+        "character_id": "char_yeqing",
+        "content": "握手结束 後、夜清は却没有收手。她忽然身を前倾にし，几乎贴到了陳機の耳元に、压低声音：『既然是盟友了，那我送你一个消息——お前のあの良い师兄凌渊は、すでに人を付けている。彼は……天機録の存在も察觉したようだ。』彼女は退き、唇の端に意味深长な弧を描き出した、『小心你身边的人。』",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0141_026",
+        "content": "言葉が落ちると、彼女は密室の奥へと转身而去し、背中が闇に溶けていった。陳期は站在那里，看着她消えた方向、眼中精光が闪烁した。凌淵……この老狐は，果然放弃していなかった。彼は袖の中の天機録残頁をつまみ、心の中に既に計略があった。今夜のこの駆け引きを見ると、彼は seemingly让步许多，实际上每一步都是精密计算された駒の落下だった。夜清は彼女が得をしたと思ったが誰が知道吗——棋局，才刚刚开始。'",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

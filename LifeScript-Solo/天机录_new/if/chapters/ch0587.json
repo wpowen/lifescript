@@ -1,0 +1,641 @@
+{
+  "id": "天机录_ch0587",
+  "book_id": "天机录",
+  "number": 587,
+  "title": "假死之局",
+  "is_paid": true,
+  "next_chapter_hook": "当一切准备就绪，假死的倒计时已然开始，然而就在此时，门外突然响起了三声不急不缓的叩门声——这个时辰，这座偏僻的杂役院落，不该有人来访。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0587_001",
+        "content": "天青宗后山，杂役弟子院落。\n\n月光被厚重的乌云吞噬，夜风裹挟着山间特有的潮湿寒意，穿过破旧的窗棂缝隙。陈机独坐于昏暗的油灯之下，面上毫无表情，唯有眼底深处，有一点微光如深渊中的萤火，幽幽跳动。\n\n那一眼——那只俯瞰众生命运的眼眸——仍在脑海中挥之不去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_002",
+        "content": "他缓缓抬起右手，凝视掌心那道若隐若现的纹路。天命值还剩四十三点，每一点都是命。窥见那双眼眸，消耗了他整整十点。\n\n\"执棋之人的恶意，从未停止……\"\n\n陈机轻声重复着方才在识海中看到的话语，唇角竟勾起一抹极淡的弧度。那不是苦笑，而是棋手面对绝境时特有的兴奋。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_003",
+        "character_id": "char_chenji",
+        "content": "\"想让我死？那就让你们亲眼看着我死。\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_004",
+        "content": "他抬手轻叩桌面三下，那是与苏青瑶约定的暗号。片刻后，窗外传来轻微的响动，一道纤细的身影如落叶般无声掠入。来人青纱遮面，正是天青宗内门首席——苏青瑶。\n\n她落地无声，目光如霜雪般扫过陈机，随即冷冷开口：",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_005",
+        "character_id": "char_suqingyao",
+        "content": "\"陈机，你知不知道你在做什么？假死欺瞒宗门，一旦败露，便是万劫不复的死罪。\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_006",
+        "content": "陈机没有回答，只是从袖中取出一枚玉简，轻轻推到她面前。玉简中记载的，正是三日之后皇朝赐婚大典的详细流程——届时三大宗门高层齐聚，天青宗宗主亦会亲自出席。\n\n\"所有人都在看赐婚大典，\"陈机终于开口，声音平静得近乎漠然，\"没人会注意一个杂役弟子的死活。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0587_choice_01",
+        "prompt": "苏青瑶凝视着玉简，眉心微蹙。她已不是第一次与陈机密谋，但每一次，这个\"废物\"展现出的算计都让她心惊。她该如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0587_c1_opt1",
+            "text": "选择信任，全力配合",
+            "description": "苏青瑶虽仍有疑虑，但想起陈机数次救她于危局，决定放下戒备，全力配合假死计划。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "承担巨大风险",
+            "visible_reward": "获得陈机更深信任",
+            "risk_hint": "若计划败露，她将同担罪责",
+            "process_label": "信任已托",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c1_opt1_001",
+                  "content": "苏青瑶深吸一口气，将玉简收入袖中。她的目光在陈机脸上停留片刻，似乎想从这个废物师弟眼中看出些什么。最终，她只淡淡道：\"说吧，你要我做什么。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶全力配合假死计划",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c1_opt2",
+            "text": "要求知晓全盘计划",
+            "description": "苏青瑶不愿再做一枚蒙眼的棋子，她要求陈机透露更多内幕，否则拒绝参与这场危险的博弈。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能触怒陈机",
+            "visible_reward": "获得更多情报",
+            "risk_hint": "陈机可能有所保留",
+            "process_label": "质疑中试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c1_opt2_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"我不是你的工具，\"苏青瑶的声音骤然冷了三分，\"既然要我冒生命危险，总该让我知道，我这颗棋子，究竟在整盘棋的什么位置。\"",
+                  "emotion": "质疑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶要求更多知情权",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c1_opt3",
+            "text": "试探他对凌渊的态度",
+            "description": "苏青瑶作为内门首席，对老掌门凌渊的异常早有察觉，她想借此机会试探陈机对这位暗中掌权者的真实态度。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露自己的怀疑",
+            "visible_reward": "确认陈机是否为盟友",
+            "risk_hint": "可能让陈机警觉",
+            "process_label": "试探进行中",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c1_opt3_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"老掌门对你……似乎格外关注，\"苏青瑶话锋一转，目光锐利如刀，\"陈机，你老实告诉我，凌渊到底知道多少？\"",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶与陈机谈及凌渊",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_007",
+        "content": "陈机闻言，神色不变，只是微微侧目。月光在他的侧脸上勾勒出一道冷硬的轮廓，让那张原本平凡的面容多了几分难以捉摸的深意。\n\n\"凌渊……\"他轻声念出这个名字，语气中竟带着一丝玩味的笑意，\"师姐既然问了，想必心中已有答案。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_008",
+        "character_id": "char_chenji",
+        "content": "\"他知道的，比你以为的多；他能做的，比你想象的少。\"",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_009",
+        "content": "这句话让苏青瑶心头一震。她正要追问，陈机却已起身，从暗格中取出一只通体漆黑的玉瓶。瓶中液体微微荡漾，散发出一股若有若无的腥甜气息。\n\n\"魔道秘药，\"陈机将玉瓶轻轻放在桌上，\"服下后可进入假死状态三日，心脉呼吸皆如死人，唯有一处穴位留存一线生机——足够我在关键时刻苏醒。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_010",
+        "character_id": "char_yeqing",
+        "content": "\"这是夜清派人送来的，\"陈机补充道，\"她说这是她欠我的第一笔债。\"",
+        "emotion": "淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_011",
+        "content": "苏青瑶看着那只玉瓶，眉头皱得更紧。魔道之物向来阴毒诡谲，她本能地想要反对，却又想起陈机从不做无把握之事。\n\n\"走火入魔的痕迹，你打算如何伪造？\"她最终问道。\n\n陈机微微一笑，从怀中取出一张符纸。符纸上绘满密密麻麻的阵纹，在昏暗的光线中泛着诡异的暗红色光芒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_012",
+        "character_id": "char_chenji",
+        "content": "\"走火入魔而死之人，体内经脉必然寸寸断裂。而这张符箓，可以在一炷香之内，模拟出这种伤势。\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_013",
+        "content": "他将符箓展开，指尖轻点其中一处阵眼。暗红色的光芒骤然亮起，随即一股狂暴得近乎疯狂的气息从符箓中涌出，让苏青瑶都不禁后退半步。\n\n那气息，与真正的走火入魔几乎一模一样！\n\n\"三日之后赐婚大典，\"陈机收起符箓，声音平静如常，\"我会在这间屋子里服下秘药，届时还需师姐在宗门验尸时……\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_014",
+        "character_id": "char_chenji",
+        "content": "\"……睁一只眼闭一只眼。\"",
+        "emotion": "淡然"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0587_choice_02",
+        "prompt": "苏青瑶沉默片刻。假死计划环环相扣，任何一个细节出错都可能导致满盘皆输。她该如何回应陈机的请求？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0587_c2_opt1",
+            "text": "答应帮忙掩盖死因",
+            "description": "苏青瑶决定配合到底，在验尸时做手脚，确保没有人能发现陈机假死的破绽。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "承担欺瞒宗门之罪",
+            "visible_reward": "加深与陈机的盟约",
+            "risk_hint": "一旦败露，声名尽毁",
+            "process_label": "承诺已下",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c2_opt1_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"好。\"苏青瑶的回答简短而坚定。她知道自己已经无法回头——从她决定站在陈机这一边的那一刻起，她们的命运就已经绑在了一起。",
+                  "emotion": "决然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶承诺掩盖假死真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c2_opt2",
+            "text": "提出附加条件",
+            "description": "苏青瑶愿意配合，但她要求陈机在计划成功后，必须告诉她关于凌渊的真相。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能惹恼陈机",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "陈机或有所保留",
+            "process_label": "谈判进行中",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c2_opt2_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"我可以帮你，但你要答应我一件事——\"苏青瑶目光灼灼地盯着陈机，\"无论你在谋划什么，无论凌渊在这其中扮演什么角色，事成之后，我要知道全部真相。\"",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶要求得知凌渊真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c2_opt3",
+            "text": "表达深层担忧",
+            "description": "苏青瑶内心深处仍有一丝不安，她担心这个计划太过顺利，反而可能是某种陷阱。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露内心软弱",
+            "visible_reward": "获得陈机更多提点",
+            "risk_hint": "或显得优柔寡断",
+            "process_label": "内心挣扎",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c2_opt3_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"太顺利了……\"苏青瑶喃喃道，\"夜清为何会无条件帮你？魔道圣宗的圣女，不可能没有所图。陈机，你真的信任她？\"",
+                  "emotion": "疑虑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶质疑夜清的动机",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_015",
+        "content": "陈机闻言，眸光微微一暗。他没有直接回答苏青瑶的担忧，而是缓步走到窗前，目光穿过夜色，望向远处那座云雾缭绕的主峰。\n\n\"信任？\"他的声音低沉，带着一丝难以言喻的疲惫，\"在这个世上，没有人会无缘无故信任另一个人。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_016",
+        "character_id": "char_chenji",
+        "content": "\"夜清之所以帮我，是因为我给了她一个选择——一个她无法拒绝的选择。至于她是否信任我……\"陈机转过身，嘴角勾起一抹冷笑，\"那不重要。重要的是，我们此刻有共同的利益。\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_017",
+        "content": "苏青瑶心中一凛。她突然意识到，眼前这个被称为废物的师弟，其城府之深，恐怕远超她的想象。\n\n而就在这时，陈机的神情骤然一凝。他的目光越过苏青瑶，直直望向窗外漆黑的夜空，仿佛察觉到了什么。\n\n\"有人来了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_018",
+        "character_id": "char_chenji",
+        "content": "苏青瑶心头一紧，下意识握紧了袖中的短剑。\n\n\"是凌渊的人？\"",
+        "emotion": "戒备"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_019",
+        "content": "陈机没有回答，只是迅速将桌上的玉瓶和符箓收入袖中，同时从怀中取出一张毫不起眼的阵盘。\n\n\"师姐先走。\"他的声音依旧平静，但苏青瑶却从中听出了一丝不容置疑的决断，\"从后窗离开，不要惊动任何人。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_020",
+        "character_id": "char_suqingyao",
+        "content": "\"那你——\"",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_021",
+        "character_id": "char_chenji",
+        "content": "\"无妨，\"陈机打断她，唇角勾起一抹意味深长的弧度，\"我等这一刻，已经等了很久了。\"",
+        "emotion": "深沉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0587_choice_03",
+        "prompt": "苏青瑶凝视陈机片刻，终于点头离去。就在她翻窗而出的瞬间，一道苍老的身影已出现在院门之外。是凌渊派来的探子，还是老掌门本人？陈机必须做出决定。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0587_c3_opt1",
+            "text": "主动示弱，装作惊慌失措",
+            "description": "陈机决定继续扮演废物人设，面对可能的监视者表现出应有的惊慌与狼狈，让对方放松警惕。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被进一步轻视",
+            "visible_reward": "加深伪装，降低凌渊戒心",
+            "risk_hint": "若被看穿，后果严重",
+            "process_label": "伪装启动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -1
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c3_opt1_001",
+                  "content": "陈机迅速收敛了眼中的精光，换上一副惶恐不安的神情。他甚至故意打翻了桌上的油灯，让房间陷入更深的黑暗，然后跌跌撞撞地冲向门口——仿佛一个被吓破胆的废物弟子。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机继续扮演废物",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c3_opt2",
+            "text": "以退为进，主动暴露部分计划",
+            "description": "陈机决定冒险透露部分计划内容，让监视者以为掌控了全局，实则正中陈机下怀。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能泄露关键信息",
+            "visible_reward": "将计就计，让敌人做棋子",
+            "risk_hint": "对方可能识破意图",
+            "process_label": "布局开始",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 2
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c3_opt2_001",
+                  "content": "陈机深吸一口气，做出一个大胆的决定。他非但没有躲藏，反而大步走到门口，主动推开了那扇破旧的木门。门外站着一个灰袍老者，正是凌渊的心腹——周管事。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机主动接触监视者",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c3_opt3",
+            "text": "启动天机录窥探来者意图",
+            "description": "陈机决定冒险使用天机录，在三时辰内窥探来者的真实目的和计划，以做出最精准的应对。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗5点天命值",
+            "visible_reward": "获得关键情报，做出最优决策",
+            "risk_hint": "天命值本就不足",
+            "process_label": "天机启动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c3_opt3_001",
+                  "content": "陈机闭上眼睛，一缕神识沉入识海深处。天机录残页缓缓展开，那熟悉的刺痛再次袭来——三个时辰后的画面如潮水般涌入脑海。画面模糊而破碎，但足够他看清一件事：来的不是敌人，而是……一个意想不到的人。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机窥见未来片段",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_022",
+        "content": "院门外，一道佝偻的身影静静伫立。月光从云层缝隙中透出，照亮了来者的面容——那是一张布满皱纹的脸，眼神浑浊却暗藏锋芒，正是凌渊座下最忠心的走狗，周管事。\n\n\"陈机，夜深了，怎么还不休息？\"周管事的声音沙哑而刻薄，\"老朽奉掌门之命前来送些补药，没想到打扰了师弟清修。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_023",
+        "character_id": "char_chenji",
+        "content": "\"多谢周管事挂念，\"陈机垂着头，声音微微发颤，\"弟子方才修炼时走火入魔，差点走火入魔伤了根基，正想去找医师……\"",
+        "emotion": "惶恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_024",
+        "content": "周管事的目光在陈机脸上停留片刻，又越过他的肩膀扫视屋内。昏暗的油灯、凌乱的书桌、地上散落的药渣——一切看起来都符合一个废物弟子走火入魔后的狼狈。\n\n\"哦？走火入魔？\"周管事眯起眼睛，意味深长地笑了笑，\"陈师侄可要小心啊，这杂役院的灵气本就稀薄，根基不稳的弟子稍有不慎便会出问题。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_025",
+        "content": "陈机低着头，唯唯诺诺地应着，一副被吓破胆的模样。但他的余光却始终捕捉着周管事每一个细微的动作、每一次眼神的闪烁。\n\n凌渊派人来\"送补药\"，真是关心后辈？陈机心中冷笑。分明是在试探，在监视，在等待他露出破绽。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_026",
+        "content": "周管事将一只瓷瓶塞入陈机手中，瓶身冰凉，触感诡异。\"这是掌门亲自炼制的培元丹，对稳固根基大有裨益。\"他的声音里带着一丝不易察觉的嘲讽，\"陈师侄可别糟蹋了掌门的一片心意。\"\n\n陈机双手接过药瓶，躬身行礼：\"弟子谢过掌门厚爱，定当好好珍惜。\"\n\n周管事冷哼一声，转身离去。他走出数步，忽然又停下脚步，回头看了陈机一眼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_027",
+        "character_id": "char_lingyuan",
+        "content": "\"对了，三日后的赐婚大典，掌门希望所有弟子都出席观礼。\"周管事的声音从夜色中飘来，\"陈师侄这般废物……啊不，根基浅薄的弟子，更应该去见见世面才是。\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_028",
+        "content": "陈机依旧低着头，躬着身，一副被训斥后大气都不敢出的模样。直到周管事的身影彻底消失在夜色中，他才缓缓直起腰。\n\n月光从云层后完全透出，照在他那张毫无表情的脸上。方才还惶恐不安的废物弟子，此刻眸中已是一片冰冷。\n\n\"凌渊……\"陈机轻声念着这个名字，指尖摩挲着手中的瓷瓶，\"你倒是比我还急。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_029",
+        "content": "他拔开瓶塞，一股刺鼻的药味扑面而来。陈机只是嗅了嗅，便已辨认出其中的成分——不过是寻常的培元丹，夹杂着些许安神的药材，对他的\"假死计划\"毫无影响。\n\n凌渊此举，不过是想借送药之名监视他的动向罢了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_030",
+        "content": "但这正合他意。\n\n陈机将瓷瓶收入袖中，转身走回屋内。他没有点灯，只是站在黑暗中，望着窗外的月亮，唇角缓缓勾起一抹冷笑。\n\n赐婚大典，三日之期，凌渊的监视，周管事的试探……一切都在按计划进行。\n\n\"来吧，\"他轻声自语，\"都来吧。让我看看，这盘棋的最终执棋者，究竟是谁。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_031",
+        "content": "假死的准备工作已近完成。魔道秘药在手，伪造伤势的符箓藏于袖中，苏青瑶的配合已定，凌渊的监视亦被他玩弄于股掌之间。\n\n三日后的赐婚大典，将是他\"死去\"的时刻。\n\n然而，就在陈机以为一切尽在掌控之时，门外突然响起了三声不急不缓的叩门声——\n\n咚、咚、咚。\n\n这个时辰，这座偏僻的杂役院落，不该有人来访。\n\n陈机的眼神骤然一凝。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_032",
+        "character_id": "char_chenji",
+        "content": "\"谁？\"",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_033",
+        "content": "门外没有回应。只有夜风穿过竹林，发出沙沙的声响，像是有什么东西在暗中窃笑。\n\n陈机没有动。他静静站在原地，呼吸放缓，心跳放缓，将感知扩散至极致——然后，他感应到了一股熟悉的气息。\n\n那气息冰冷、诡谲，却又带着一丝难以言喻的……温柔？\n\n\"是你……\"陈机低声呢喃，眸光闪烁不定。\n\n门外，一个清冷的女声响起：\"陈机，开门。我有话要问你。\"\n\n是夜清。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_034",
+        "content": "陈机没有立刻开门。他站在原地，快速权衡着利弊——夜清为何会在这个时辰亲自前来？魔道圣宗的圣女，冒险潜入天青宗，只为\"有话要问\"？\n\n这其中，必有蹊跷。\n\n然而，门外的夜清似乎并不打算给他思考的时间。\n\n\"我知道你在想什么，\"她的声音透过木门传来，冷静而笃定，\"但这件事，比你的假死计划更重要。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_035",
+        "character_id": "char_yeqing",
+        "content": "\"如果你的计划还想继续进行下去——开门。\"",
+        "emotion": "警告"
+      }
+    }
+  ]
+}

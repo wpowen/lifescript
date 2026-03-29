@@ -1,0 +1,419 @@
+{
+  "id": "天机录_ch0767",
+  "book_id": "天机录",
+  "number": 767,
+  "title": "遗迹前的嘲讽",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机低眉顺眼地接过扫帚时，远处传来一声冷哼，只见一道霸道的身影踏空而来——玄武宗第一天才韩烈亲至遗迹入口。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0767_001",
+        "content": "冲天金光映照半边皇都，遗迹入口处的灵气浓郁得几乎凝成实质。陈机站在人群后方，眯眼看着那道刻有「入此门者，方知何为天机」的石门，嘴角微微上扬。石门前已聚集了数百修士，三大宗门各有势力占据，而最嚣张的，当属那群穿着玄武宗服饰的弟子——他们竟然在入口处设起了卡。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_002",
+        "character_id": "char_hanlie",
+        "content": "“来来来，都排好队！想进遗迹？每人三百灵石，过路费！”一个尖嘴猴腮的玄武宗弟子高声叫嚷，肥硕的手掌向前一摊，“交钱的往左走，不交钱的……呵，那就从本大爷胯下钻过去！”",
+        "emotion": "嚣张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_003",
+        "content": "人群一阵骚动，有人怒目而视，有人默默交钱。陈机静静看着这一切，天机录残页在脑海中微微发热——他没有动用预测能力，这种小场面不值得消耗天命值。他更感兴趣的是观察。玄武宗的嚣张不是没有道理，韩烈可是能与金丹期过招的天才，而他们背后站着的是整个玄武宗。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_004",
+        "character_id": "char_chenji",
+        "content": "“哟，这不是天青宗的废物陈机吗？”尖嘴弟子忽然注意到人群中那张平淡无奇的脸，眼睛一亮，“啧，你们看，谁来了？那个连灵根都没有的杂役弟子！”",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_005",
+        "content": "周围哄笑声四起。那尖嘴弟子名叫周海，是玄武宗外门弟子中的一个小头目，专门负责在遗迹外围收刮油水。他踱步走到陈机面前，上下打量，眼中满是轻蔑：“听说你连筑基都没突破？啧啧，天青宗是没人了吗，这种废物也往遗迹里塞？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_006",
+        "character_id": "char_chenji",
+        "content": "陈机抬起头，露出一张懦弱而讨好的笑脸：“周师兄说得是，小弟确实资质愚钝。不过既然宗门允许我来，还望周师兄行个方便……”说着，他从怀中摸出一个沉甸甸的钱袋，“这里有五百灵石，算是给师兄的茶钱。”",
+        "emotion": "卑微"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0767_choice_001",
+        "prompt": "陈机选择以财物开路，但周海会如何反应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0767_opt_001a",
+            "text": "周海收下灵石放行",
+            "description": "周海见钱眼开，掂了掂钱袋后嘴角勾起一抹嘲讽的笑，大手一挥让陈机过去。废物送礼上门，不收白不收。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "财富-50",
+            "visible_reward": "避免冲突，保存实力",
+            "risk_hint": "可能被当成软柿子进一步欺负",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_001a_001",
+                  "content": "周海掂了掂钱袋，嗤笑一声：“哟，废物还挺识相。不过五百灵石？打发叫花子呢？”他把袋子往怀里一揣，“想进去？可以，但你得先帮师兄们打扫干净入口，表现出诚意来！”"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0767_opt_001b",
+            "text": "周海嫌少，当众羞辱",
+            "description": "周海看都不看钱袋，直接打落在地，冷笑道：“就这点破铜烂铁？天青宗穷成这样？不如你当众叫我三声爷爷，我考虑让你爬进去！”",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "名望-20",
+            "visible_reward": "周海恶行被众人目睹",
+            "risk_hint": "当场受辱，但敌人嚣张引众怒",
+            "process_label": "欲擒故纵",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_001b_001",
+                  "content": "钱袋落在地上，灵石滚落一地。周海抬脚踩住几颗，眼神轻蔑：“废物就是废物，连孝敬都舍不得下本钱。叫不叫？不叫就别想进去！”周围人群窃窃私语，有人面露不满却不敢出声。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_007",
+        "character_id": "char_chenji",
+        "content": "陈机弯腰捡起钱袋，动作慢条斯理，眼底却闪过一丝冷光。他心里已经在记账——周海是吧，筑基中期，玄武宗外门执事的小舅子，贪财好色，仗势欺人。等进了遗迹，有的是机会让你知道什么叫因果报应。",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_008",
+        "character_id": "char_chenji",
+        "content": "“周师兄，这……叫爷爷是不是有些……”陈机露出为难的神色，声音越来越小，“不如我帮师兄们打扫入口如何？杂役的活计我最是熟稔。”说着，他已从旁边的杂物堆里捡起一把破旧的扫帚。",
+        "emotion": "示弱"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0767_choice_002",
+        "prompt": "陈机愿意做杂役进入，周海会如何进一步刁难？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0767_opt_002a",
+            "text": "周海让他跪着扫地",
+            "description": "周海眼珠一转，冷笑道：“扫地？可以，但你得跪着扫！让在场所有人都看看，天青宗的废物是什么德行！”",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "尊严受损",
+            "visible_reward": "敌人恶行再添一笔",
+            "risk_hint": "当众受辱，但所有人都记住了这笔账",
+            "process_label": "忍辱负重",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_002a_001",
+                  "content": "陈机双膝一弯，真的跪了下去。他低着头扫地，动作认真，周围响起一阵哄笑。周海拍着手大笑：“大家都看看，这就是天青宗的弟子！啊不对，是杂役！”"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0767_opt_002b",
+            "text": "周海要求搜身才能进",
+            "description": "周海眯起眼睛，忽然起了坏心思：“杂役？行啊，不过进遗迹得搜身，谁知道你身上有没有藏什么值钱玩意儿？兄弟们，给他搜搜！”",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被搜出秘密",
+            "visible_reward": "敌人暴露贪婪本性",
+            "risk_hint": "若被搜身可能暴露天机录",
+            "process_label": "以身犯险",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_002b_001",
+                  "content": "陈机面色微变，但很快恢复平静。他主动张开双臂：“周师兄请便。”周海的两个手下扑上来翻找，却只摸到几件破旧衣物和一把生锈匕首。正要作罢，周海忽然盯住陈机胸口：“那是什么？给我拿出来！”"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_009",
+        "content": "就在这千钧一发之际，陈机胸口的玉佩微微发热——那是墨先生留下的预警。他神色不变，从容地掏出一块破布包着的东西：“周师兄别急，这是我的传家玉佩，不值钱，但对我有特殊意义……”他打开破布，里面是一块品相极差的劣质玉佩。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_010",
+        "character_id": "char_chenji",
+        "content": "“切，还以为是什么宝贝。”周海嫌弃地看了一眼，“就这破烂货？拿回去当尿壶都不够格！滚滚滚，滚进去吧废物！”他一脚踹在陈机屁股上，陈机踉跄着往前走了几步。",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_011",
+        "content": "陈机低着头走进遗迹入口，脸上依然挂着卑微的笑，但心中已冷静如冰——传家玉佩？不错，那确实是传家之物，只不过传的是天机录的秘密。等你在遗迹里遇到真正的危险时，你会发现那块“破烂货”到底值多少钱。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_012",
+        "content": "进入遗迹内部后，陈机借着人群的遮掩，悄然退到一处石柱后方。他快速扫视四周，将各方势力的布置尽收眼底：玄武宗占据东侧入口，约有三十余人；天青宗的人散落在北面，为首的正是苏青瑶；西侧则是一些散修和小宗门。而在南面的阴影中，他注意到几道若有若无的黑气——魔道暗探。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0767_choice_003",
+        "prompt": "陈机发现魔道暗探踪迹，他会如何处理这个情报？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0767_opt_003a",
+            "text": "暗中告知苏青瑶",
+            "description": "陈机悄然靠近苏青瑶，用只有两人能听到的声音说道：“苏师姐，南面有魔道的人。”",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露与苏青瑶的联系",
+            "visible_reward": "获得苏青瑶信任，埋下后续线索",
+            "risk_hint": "苏青瑶可能起疑：废物怎会发现魔道踪迹？",
+            "process_label": "暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0767_result_003a_001",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶眼眸微动，目光扫过南面阴影处，随即收回。她没有问陈机是如何发现的，只是淡淡道：“知道了。”转身时，她意味深长地看了陈机一眼，那眼神让陈机后背微微发凉——这个女人，似乎越来越接近真相了。",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0767_opt_003b",
+            "text": "记下位置暂不声张",
+            "description": "陈机默默记下魔道暗探的位置，心中冷笑：让他们先藏着，等玄武宗和天青宗拼个你死我活，魔道自然会跳出来收拾残局。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "错过提前布局的机会",
+            "visible_reward": "后续可利用魔道势力",
+            "risk_hint": "若魔道先下手可能损失盟友",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_003b_001",
+                  "content": "陈机悄然后退几步，混入人群之中。他需要找一个更隐蔽的位置观察，同时整理目前的情报。玄武宗设卡收费、苏青瑶带队前来、魔道暗探潜伏……这盘棋，越来越有意思了。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_013",
+        "content": "忽然，遗迹入口处传来一阵骚动。陈机抬头望去，只见原本围在入口处的玄武宗弟子纷纷散开，神色恭敬地让出一条道。紧接着，一股霸道的威压如潮水般涌来，压得在场众人都有些喘不过气。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_014",
+        "character_id": "char_hanlie",
+        "content": "“遗迹是我玄武宗先发现的，闲杂人等，给你们一炷香的时间退出入口百丈之外！”一道霸道的声音从天而降，众人抬头，只见一个身着黑色劲装的青年踏空而立，目光睥睨，俯瞰众人。正是玄武宗第一天才——韩烈！",
+        "emotion": "霸道"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_015",
+        "content": "陈机缩在人群中，脸上露出恰到好处的惊恐，心里却在飞速运转。韩烈，金丹期以下无敌手，据说曾以一己之力击退三名同阶高手的围攻。他的出现意味着玄武宗要彻底垄断这座遗迹了。不过……这也在预料之中。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_016",
+        "character_id": "char_hanlie",
+        "content": "周海一路小跑迎上去，点头哈腰：“韩师兄！您来得正好，这帮废物刚才还敢对咱们不敬，尤其是那个天青宗的废物陈机，嚣张得很呢！”说着，他指向人群中的陈机。",
+        "emotion": "谄媚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_017",
+        "content": "韩烈目光扫向陈机，那眼神如同在看一只蝼蚁。他冷哼一声：“天青宗的废物？就是你刚才让我师弟搜身的那位？”陈机低着头，声音发颤：“韩……韩师兄误会了，小弟只是来长长见识，绝无冒犯之意……”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_018",
+        "content": "韩烈懒得再看陈机一眼，大手一挥：“滚远点，别碍本少爷的眼！”说完，他径直飞向遗迹最深处，周海等弟子紧随其后。陈机慢慢直起身，看着韩烈消失的背影，眼中的怯懦渐渐褪去，取而代之的是一抹深不见底的寒光。记下了，韩烈，这个名字他记下了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_019",
+        "content": "苏青瑶不知何时走到陈机身侧，低声道：“你刚才做得对，韩烈此人不可力敌。”顿了顿，她目光复杂地看着陈机，“不过我很想知道，你到底是怎么发现那些魔道暗探的？”陈机只是憨厚地笑笑：“运气好而已，苏师姐。”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_020",
+        "content": "遗迹深处，金光涌动，无数机缘正等待着有缘人。而此刻的陈机，正默默跟随着人群往里走，心中却已勾勒出一张庞大的棋局。玄武宗想独吞遗迹？魔道暗探潜伏其中？天青宗各有心思？无所谓，都在他的算计之内。现在最重要的，是找到墨先生所说的那个东西——天机录的第二页残页。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

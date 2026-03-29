@@ -1,0 +1,572 @@
+{
+  "id": "天机录_ch0914",
+  "book_id": "天机录",
+  "number": 914,
+  "title": "墨先生的警告",
+  "is_paid": true,
+  "next_chapter_hook": "就在墨先生提及苏青瑶真名的刹那，天机录之外传来一阵剧烈的震动——有人在强行破阵。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0914_001",
+        "content": "陈机的手指悬停在光点前方不过三寸之处，那道熟悉的少女声音如冰锥般刺入他的神识。「哥，不要……」陈念的声音带着前所未有的惶急，仿佛她正在经历某种难以言说的痛苦。陈机的瞳孔骤然收缩，伸出的手僵在半空，指尖微微颤抖。他深吸一口气，强迫自己冷静下来，目光在光点与那片虚无之间来回游移。直觉告诉他，这个光点绝非寻常之物——它散发的气息与天机录本体的古老沧桑截然不同，反而带着某种……陷阱特有的诱人甜香。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_002",
+        "character_id": "char_chenji",
+        "content": "（低声呢喃）小念……你在害怕什么？是这个光点本身，还是……布下它的人？",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_003",
+        "content": "就在此时，天机录深处泛起一阵异样的涟漪。那原本平静如死水的金色空间突然泛起层层波纹，一道虚幻的人影从书页最深处缓缓浮现。来人一身灰白长袍，须发皆白，面容古拙得像是从上古壁画中走出的仙人。他的身影时明时暗，仿佛随时都会消散在虚无之中。陈机瞳孔一缩——这个身影他再熟悉不过，正是那位自称守护残魂的墨先生。然而此刻的墨先生，周身萦绕的气息却与往日大不相同，那股沧桑古老中竟隐隐透出一丝……凛冽杀意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_004",
+        "character_id": "char_moxiansheng",
+        "content": "（声音苍老却带着几分释然）你终于来了，孩子。若非你妹妹以最后一丝天命之力示警，恐怕你已经踏入了万劫不复的深渊。",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_005",
+        "character_id": "char_chenji",
+        "content": "（眼神骤然锐利）墨先生？不对……你身上的气息变了。以往你不过是残魂之态，为何此刻竟能让我感受到实质的压迫？你究竟是谁？",
+        "emotion": "质问"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_006",
+        "content": "墨先生闻言，苍老的面容上浮现出一抹苦涩的笑意。他缓缓抬手，虚幻的衣袖在虚无中无风自动，隐约可见其上绣着某种早已失传的上古纹路——那是天界仲裁者特有的标识。陈机的心猛地一沉，脑海中无数碎片轰然串联：墨先生对天机录了如指掌的诡异程度、每次关键时刻恰到好处的提点、从不对过去多做解释的刻意回避……一切都说得通了。墨先生并非普通的守护残魂，而是——",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_007",
+        "character_id": "char_moxiansheng",
+        "content": "（长叹一声）不错，我曾是天道仲裁司的七大执法者之一。千年前因反对天界对凡间的奴役计划而被剔除神籍，封印记忆后投入轮回。是你父亲陈玄的前世记忆唤醒了我，让我得以重拾这具残魂的部分力量。",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0914_choice_001",
+        "prompt": "墨先生揭露了震撼的真相，陈机需要迅速做出反应。面对这位隐藏极深的「天界叛逃者」，他该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0914_choice_001_A",
+            "text": "质问其真实意图",
+            "description": "直接追问墨先生隐瞒身份的动机，以及他暗中帮助自己的真正目的。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激怒墨先生，失去关键助力",
+            "visible_reward": "获得更多关于天界阴谋的真相",
+            "risk_hint": "墨先生的回答可能颠覆你对他的全部认知",
+            "process_label": "以攻为守，试探底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0914_result_001_A_001",
+                  "content": "陈机冷笑一声，后退半步拉开距离。他的目光如刀锋般锐利，直直刺向墨先生虚幻的眼眸。（沉声道）千年的执法者，天界叛逃者……这些身份未免太过惊人。敢问先生，您「暗中帮助」我这么久，究竟图谋为何？"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "质疑墨先生身份",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0914_choice_001_B",
+            "text": "请其解释当前局势",
+            "description": "暂时按捺质疑，要求墨先生先说明这个光点背后的危险以及天界的真正目的。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能显得软弱，被墨先生轻视",
+            "visible_reward": "获取关键情报，为决策提供依据",
+            "risk_hint": "真相可能比想象中更加残酷",
+            "process_label": "隐忍听计，以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0914_result_001_B_001",
+                  "content": "陈机收回悬停的手指，缓缓转身面向墨先生。他的表情平静如古井，深不见底。（淡淡道）既然先生身份已明，我倒想听听——这个光点究竟是何物？天界又在下怎样一盘大棋？"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "理性询问墨先生",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0914_choice_001_C",
+            "text": "提及妹妹陈念",
+            "description": "以陈念的安危为切入点，追问墨先生是否早已知晓妹妹的真实处境。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露内心最柔软的部分",
+            "visible_reward": "可能获得关于陈念下落的关键线索",
+            "risk_hint": "墨先生可能以此为要挟筹码",
+            "process_label": "以情动人，试探真心",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0914_result_001_C_001",
+                  "content": "陈机的眼神微微黯淡了一瞬，随即恢复清明。他没有追问墨先生的身份，而是低声道。（声音微颤）小念她……现在怎么样了？她说「不要」，是不要我触碰这个光点，还是不要我继续追查她的下落？"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "关切妹妹陈念",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_008",
+        "character_id": "char_moxiansheng",
+        "content": "（神色凝重）那光点是天道之眼设下的诱饵——它表面看是通往更高位面的捷径，实则是回收天机录的陷阱。一旦你触碰它，天机录将自动与你的神识剥离，被天道之眼回收。而你的妹妹……她体内封印的天命之力，正是启动这个陷阱的钥匙。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_009",
+        "content": "陈机的指节捏得发白，一股寒意从脊椎直窜头顶。他早该想到的——陈念被圣宗掳走，天命锁钥……这些看似独立的事件，背后竟隐藏着如此精密的布局。墨先生继续说道，声音中带着压抑的怒意。（冷哼）天界表面上要毁灭天道之眼，实则不过是想取而代之。一旦他们得逞，三界芸芸众生都将沦为傀儡，比被天道之眼控制更加悲惨——因为至少天道之眼追求的是平衡，而天界的统治者们……追求的是绝对的控制。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_010",
+        "character_id": "char_moxiansheng",
+        "content": "（眼中闪过一丝决然）但我并非什么都没有留下。千年的执法者生涯让我知晓一个被天界极力抹杀的秘密——第四种方案。它不需要牺牲你，不需要牺牲你妹妹，更不需要让三界陷入混乱。只是这条路……需要你做出一个艰难的选择。",
+        "emotion": "期待"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0914_choice_002",
+        "prompt": "墨先生提出了神秘的第四种方案，声称无需牺牲任何人。面对这个可能是转机也可能是陷阱的提议，陈机该如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0914_choice_002_A",
+            "text": "详细了解第四方案",
+            "description": "要求墨先生完整阐述第四种方案的具体内容和实施条件，评估其可行性。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耗费时间，可能错失其他机会",
+            "visible_reward": "获得扭转局势的关键情报",
+            "risk_hint": "方案可能存在未知的代价或副作用",
+            "process_label": "深思熟虑，谋定后动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0914_result_002_A_001",
+                  "character_id": "char_chenji",
+                  "content": "（眼神锐利）说。任何方案都有其代价，我需要知道完整的真相。",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "听取第四方案",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0914_choice_002_B",
+            "text": "坚持原有计划",
+            "description": "拒绝被动接受墨先生的安排，坚持按照自己既定的棋局继续推进。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能与墨先生决裂，失去重要情报源",
+            "visible_reward": "保持行动主动权，不被任何人左右",
+            "risk_hint": "原有计划可能已被天道之眼预判",
+            "process_label": "保持独立，掌控全局",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0914_result_002_B_001",
+                  "character_id": "char_chenji",
+                  "content": "（嘴角微微上扬）多谢先生好意，但陈机的棋局早已布下。千年来我以废物之姿行走天下，不是为了在最后关头将命运交予他人之手。",
+                  "emotion": "傲然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "拒绝第四方案",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0914_choice_002_C",
+            "text": "提出交换条件",
+            "description": "表示可以考虑第四方案，但要求墨先生先交出等价筹码作为诚意。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能激怒墨先生，谈判破裂",
+            "visible_reward": "获取额外保障，掌握谈判主动",
+            "risk_hint": "墨先生可能拒绝或提出更高要求",
+            "process_label": "以退为进，索取筹码",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0914_result_002_C_001",
+                  "character_id": "char_chenji",
+                  "content": "（目光幽深）方案可以谈，但先生需要先给我一个理由——为何选择我？千年轮回，您大可等待更合适的棋子，何必押注在一个「废物」身上？",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "要求交换条件",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_011",
+        "character_id": "char_moxiansheng",
+        "content": "（凝视陈机片刻，忽然笑了）好，好，好。千年来第一个敢与我讨价还价的凡人，不愧是陈玄的儿子。罢了……第四种方案的关键，在于「天道之眼」与「天界」之间的裂痕。天道之眼追求平衡，天界追求控制——这是根本性的对立。你需要做的，是同时引爆两者的矛盾，让他们互相消耗，而你……坐收渔利。",
+        "emotion": "赞许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_012",
+        "content": "墨先生抬手一挥，虚空中浮现出一幅由金色光芒编织成的图卷。图卷上，无数光点如繁星般散落，其间有线条相连，每一条线都代表着某种因果或利益关系。陈机凝神细看，瞳孔骤然紧缩——那图卷上标注的势力，远比他所知的更加庞大复杂。三大宗门不过是棋盘上明面的棋子，而暗处……还有圣宗、天界使团、上古遗族，以及他从未触及过的「彼岸势力」。（沉声道）这张图……是您用千年时间编织的情报网？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_013",
+        "character_id": "char_moxiansheng",
+        "content": "（点头）不错。但我需要提醒你，这张网上有一个节点最为危险，也最为脆弱——天青宗内门首席，苏青瑶。她并非表面那般简单……她体内流淌着天界执法者一脉的嫡系血脉，只是记忆被封印罢了。你与她走得越近，就越容易被天界察觉；而她若觉醒……第一个要杀的，就是你。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0914_choice_003",
+        "prompt": "墨先生透露了苏青瑶的惊天秘密，陈机必须做出选择：是继续这段感情，还是彻底斩断牵连？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0914_choice_003_A",
+            "text": "选择信任苏青瑶",
+            "description": "坚信苏青瑶不会背叛自己，即使她有天界血脉，也要将命运交予她手。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能遭受天界追杀，陷入绝境",
+            "visible_reward": "解锁「共命」隐藏剧情，与苏青瑶羁绊加深",
+            "risk_hint": "苏青瑶的觉醒时间与方式都是未知数",
+            "process_label": "以真心换真心，共赴危局",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0914_result_003_A_001",
+                  "character_id": "char_chenji",
+                  "content": "（沉默良久，忽然笑了）先生说的我明白了。但陈机这一生，从不因风险而放弃值得之人。苏青瑶如何，由她自己决定；而我如何待她，由我决定。",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择信任苏青瑶",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0914_choice_003_B",
+            "text": "决定疏远苏青瑶",
+            "description": "为了大局忍痛割爱，主动与苏青瑶保持距离，避免将她卷入危险。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能伤害苏青瑶，背负情感债",
+            "visible_reward": "降低被天界察觉的风险，行动更自由",
+            "risk_hint": "苏青瑶可能因被疏远而产生误解",
+            "process_label": "忍痛割舍，保护所爱",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0914_result_003_B_001",
+                  "character_id": "char_chenji",
+                  "content": "（闭上双眼，拳头缓缓握紧）……我明白了。若我的存在会给她带来灾祸，那我便离她远些。她值得更好的人生，而非与我这样的棋子一同沉沦。",
+                  "emotion": "压抑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定疏远苏青瑶",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0914_choice_003_C",
+            "text": "要求墨先生协助掌控",
+            "description": "既然苏青瑶身怀天界血脉，不如设法利用这一特质，将其转化为己方优势。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能被苏青瑶察觉动机，关系破裂",
+            "visible_reward": "获得对抗天界的特殊筹码",
+            "risk_hint": "利用感情可能导致不可逆的后果",
+            "process_label": "化劣势为优势，算计周全",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0914_result_003_C_001",
+                  "character_id": "char_chenji",
+                  "content": "（眼中闪过一丝冷光）既然她身怀天界血脉，那便是双刃剑。先生可有法子让我在她觉醒之前……占据主动？",
+                  "emotion": "冷酷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "企图掌控苏青瑶",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_014",
+        "character_id": "char_moxiansheng",
+        "content": "（意味深长地看了陈机一眼）你的选择……我记下了。无论你作何决定，我都会在暗中相助。毕竟，你若失败，我这把老骨头也难逃消散的命运。（忽然神色一凛）但我要提醒你——感情，是修行者最大的软肋。你对小念的执念，对苏青瑶的牵绊，都会成为敌人攻击你的破绽。尤其是现在……天道之眼已经注意到了你。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_015",
+        "content": "话音未落，天机录外突然传来一阵惊天动地的轰鸣。那原本沉寂的光点骤然爆发出刺目的白光，无数道锁链般的符文从中激射而出，朝着陈机的方向席卷而来。墨先生脸色大变，残魂剧烈颤抖。（厉声道）不好！天道之眼提前启动了回收程序！孩子，快……快退入天机录深处，只要它无法锁定你的气息——",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0914_016",
+        "character_id": "char_chenji",
+        "content": "（猛然回头，目光死死锁定那片白光）不……小念还在外面。那些锁链的方向，是朝着圣宗的方向——它们要抓走小念来完成回收！",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_017",
+        "content": "陈机不再犹豫，体内真气疯狂涌动。他一把抓住那片光点，任由灼热的痛楚从掌心蔓延至全身——他在强行将这个陷阱光点与天机录的联系斩断。墨先生惊呼出声，却来不及阻止。（怒吼）我不管什么回收程序！谁敢动我妹妹，我就让这天下……陪葬！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_018",
+        "content": "就在陈机与光点僵持的刹那，一道清脆却熟悉的声音再次在他脑海中响起——「哥，别冲动……我不是被他们抓走的……我是自己要留下的……」陈念的话语断断续续，仿佛正承受着巨大的痛苦。（瞳孔剧烈收缩）小念？你……你在说什么？什么叫做「自己要留下」？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_019",
+        "content": "然而回应他的只有一阵刺耳的杂音，随后那道联系彻底中断。墨先生的残魂已经淡得几乎透明，他用尽最后的力气开口。（声音嘶哑）孩子……记住，真正的棋局……不在三界之内……而在……（他的身影彻底消散，只留下一枚古朴的玉简缓缓落下）……天界……",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0914_020",
+        "content": "陈机单膝跪地，双手紧紧攥住那枚玉简。他的指节因用力而泛白，青筋暴起。良久，他缓缓抬起头，眼中的悲恸逐渐被某种冰冷的决然取代。（低声呢喃）小念……你说你是自己要留下的……为什么？那个地方究竟有什么，值得你宁可身陷囹圄也要守护？墨先生……天界……还有这所谓的「棋局」……你们所有人都把我当棋子，唯独你们……不曾问过我愿不愿意。（他站起身，目光如刀）好。既然如此，那我就掀了这棋盘，看看这天的尽头……究竟是什么。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

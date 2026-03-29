@@ -1,0 +1,381 @@
+{
+  "id": "天机录_ch1043",
+  "book_id": "天机录",
+  "number": 1043,
+  "title": "暗度陈仓",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机以为一切尽在掌握之际，仓御天的身影已悄然出现在天青宗城外的夜色之中。命运的棋盘上，一枚意料之外的棋子，落在了他最脆弱的位置。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1043_text_001",
+        "content": "两道隐秘的灵力波动几乎同时钻入识海——苏青瑶的讯息简短而急促：「凌渊与皇朝使者密谈，小心。」夜清的情报则更加详尽：「命运之轴牵涉甚广，皇朝此番另有图谋。」陈机心中一凛，面上却依旧挂着那副人畜无害的笑容，仿佛只是在欣赏天界的美景。而更令人不安的是，在人群角落里，一道苍老的目光正穿透虚空，紧紧锁定在他身上——那是凌渊，浑浊的老眼中此刻却锐利如刀。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_002",
+        "content": "天界盛宴，灯火辉煌。仙鹤盘旋于琼楼之上，琉璃盏中琼浆玉液流转着七彩灵光。三大宗门的高层分列两侧，皇朝使者赵无极居中而坐，一身锦袍绣着五爪金龙，傲然睥睨众生。陈机坐在末席，面前的灵果被他啃得汁水横流，活脱脱一个没见过世面的乡巴佬。周围的弟子们窃窃私语，眼中满是鄙夷——废物就是废物，连吃相都这么丢人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1043_dialogue_001",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「这位便是天青宗的陈机？久仰大名。」赵无极的目光忽然落在他身上，嘴角带着玩味的笑意，「听说你前些日子在禁地中有奇遇？怎么，天机录的残页，还没找到吗？」",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_003",
+        "content": "陈机放下手中的灵果，憨态可掬地挠了挠头：「大人说的是什么宝贝？小的人微言轻，连天机录的名字都没听说过。」他眨巴着眼睛，一脸无辜。赵无极眼中闪过一丝失望——果然是个废物，连天机录都不知道。他却不知道，陈机已将「天机录」三个字刻进了记忆最深处。废物人设，启动。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_004",
+        "content": "赵无极见他这副怂样，顿时来了兴致，压低声音「提点」道：「你这小子倒是有趣。既然入了我天界的局，本座便好心告诉你——皇朝早已探明，命运之轴的秘密就藏在天机录之中。只要找到持有者，便能顺藤摸瓜。」陈机听得连连点头，心中却冷笑：原来如此，皇朝的手已经伸到了三大宗门。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1043_choice_001",
+        "prompt": "赵无极说得兴起，继续透露皇朝在三大宗门都安插了眼线。你决定：",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "继续装傻",
+            "text": "装傻充愣套更多",
+            "description": "以废柴姿态示人，降低对方警惕，让他继续说下去",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被当软柿子捏",
+            "visible_reward": "获取关键情报",
+            "risk_hint": "有暴露的风险",
+            "process_label": "废物人设启动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1043_result_继续装傻_001",
+                  "content": "陈机歪着脑袋，一脸茫然地眨眼睛，活像听不懂人话的傻子。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1043_result_继续装傻_002",
+                  "character_id": "char_chenji",
+                  "content": "大人说得太深奥了，小的只听懂了天机录很重要……那三大宗门里，谁最有希望拿到啊？",
+                  "emotion": "谄媚好奇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "旁敲侧击",
+            "text": "用问题引他说更多",
+            "description": "看似无害的问题，却能引导对方透露更多关键细节",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能引起怀疑",
+            "visible_reward": "快速获取情报",
+            "risk_hint": "容易打草惊蛇",
+            "process_label": "主动出击",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1043_result_旁敲侧击_001",
+                  "content": "陈机装作好奇的样子，竖起耳朵听着。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1043_result_旁敲侧击_002",
+                  "character_id": "char_chenji",
+                  "content": "大人说找到了持有者就能找到命运之轴……那要是找不到呢？皇朝会怎么办？",
+                  "emotion": "天真好奇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_005",
+        "content": "赵无极嗤笑一声：「找不到？那就创造机会让他们找。」他意味深长地扫了一眼三大宗门的位置，「三只蝼蚁互相撕咬，总有一只会咬出答案。」陈机心中一凛——皇朝是要让三大宗门自相残杀！他的余光瞥向凌渊的方向，发现那老狐狸正若有所思地看着赵无极，两人之间似乎有某种默契。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_006",
+        "content": "角落里，凌渊的目光如同毒蛇般阴冷。陈机注意到，这位天青宗的老掌门与赵无极眉来眼去，绝非普通的宗门外交。他心中冷笑：老东西，藏得够深。天眼在袖中微微震动，已将这一幕完整记录。与此同时，陈机悄悄向天眼下达指令：以其人之道还治其人之身——是时候在三大宗门之间种下猜忌的种子了。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_007",
+        "content": "天眼化作无形之力，在人群中悄然穿梭。它将赵无极的傲慢话语「三只蝼蚁」传给了玄武宗弟子，将凌渊与赵无极的私交透露给了白虎宗代表。很快，会场中的气氛变得微妙起来。玄武宗第一天才韩烈冷哼一声，白虎宗的长老们交头接耳，就连凌渊的脸色也有些挂不住了——他显然察觉到了什么不对劲。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1043_choice_002",
+        "prompt": "假情报效果初显，三大宗门互相猜忌。你决定：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "火上浇油",
+            "text": "再添一把火",
+            "description": "趁机再透露一些「内幕」，让他们的矛盾更加激化",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能暴露自己",
+            "visible_reward": "三方彻底决裂",
+            "risk_hint": "凌渊可能在注意你",
+            "process_label": "阴谋深化",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1043_result_火上浇油_001",
+                  "content": "陈机趁着混乱，悄悄凑近玄武宗的席位，「不小心」说漏了嘴。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1043_result_火上浇油_002",
+                  "character_id": "char_chenji",
+                  "content": "（低声）听说皇朝只看重天青宗，另外两家不过是弃子……",
+                  "emotion": "故作神秘"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "以退为进",
+            "text": "见好就收",
+            "description": "今天的收获已经足够，不宜太过张扬",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "效果有限",
+            "visible_reward": "保持低调安全",
+            "risk_hint": "可能错失良机",
+            "process_label": "稳中求进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1043_result_以退为进_001",
+                  "content": "陈机默默退回角落，继续扮演他的废物角色。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1043_result_以退为进_002",
+                  "character_id": "char_chenji",
+                  "content": "（内心：今天的鱼够了，收网。）",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1043_dialogue_002",
+        "character_id": "char_suqingyao",
+        "content": "宴会结束后，苏青瑶悄然跟上陈机：「师兄，我注意到了一些事。」她压低声音，眼中闪过一丝忧虑，「凌渊师祖……似乎与皇朝使者走得很近。」",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_008",
+        "content": "陈机「惊讶」地瞪大眼睛：「师妹多虑了吧？师祖德高望重，怎会……」苏青瑶摇摇头：「我亲眼看到他们私下交谈，师祖还递了一封信过去。」她顿了顿，「信封上有皇朝的暗纹。」陈机心中一凛——苏青瑶的调查比他想象中更深，他已经布置好的棋局，正在恰到好处地发挥作用。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1043_text_009",
+        "content": "与此同时，夜清的情报网也已传回消息。她通过魔道秘术截获了赵无极与凌渊的部分通讯内容——皇朝许诺，只要凌渊配合找到天机录，便保他登上天青宗宗主之位。作为交换，凌渊需在宗门内部为皇朝培养势力，同时监视其他两宗的一举一动。陈机看完情报，嘴角勾起一抹冷笑：果然，老狐狸早就背叛了宗门。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1043_choice_003",
+        "prompt": "苏青瑶正等待你的回应，你决定：",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "继续隐瞒",
+            "text": "保持神秘",
+            "description": "苏青瑶虽然可靠，但知道的越少对她越安全",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能让苏青瑶失望",
+            "visible_reward": "保护她的安全",
+            "risk_hint": "可能影响后续配合",
+            "process_label": "深藏不露",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1043_result_继续隐瞒_001",
+                  "content": "陈机露出一个憨厚的笑容，轻轻摇了摇头。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1043_result_继续隐瞒_002",
+                  "character_id": "char_chenji",
+                  "content": "师妹，此事复杂，你我修为低微，还是别管了。",
+                  "emotion": "温和"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "适当透露",
+            "text": "透露部分真相",
+            "description": "苏青瑶的信任很重要，给她一些方向能让后续配合更顺畅",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "她可能涉险更深",
+            "visible_reward": "获得她的全力配合",
+            "risk_hint": "她可能冲动行事",
+            "process_label": "以诚相待",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1043_result_适当透露_001",
+                  "content": "陈机沉默片刻，叹了口气。",
+                  "emphasis": "system"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

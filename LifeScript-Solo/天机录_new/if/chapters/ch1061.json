@@ -1,0 +1,649 @@
+{
+  "id": "天机录_ch1061",
+  "book_id": "天机录",
+  "number": 1061,
+  "title": "执棋者的认可",
+  "is_paid": true,
+  "next_chapter_hook": "当仓御天的虚影即将消散时，他留下了最后一句话——\"你以为的棋局之外，还有人在看着你。\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1061_001",
+        "content": "那道声音并非从虚空传来，而是直接在他的识海中炸响，如同万年沉睡的巨兽终于睁开了眼。陈机感觉自己的神魂被一股浩瀚无垠的意识笼罩，那是一种超越了他此前所有认知的存在感——比天道之眼的冰冷审视更温暖，却比任何凡人的情感更沉重。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“能听到吾之声者，千年以降，你是第二个。”那声音带着一种奇异的欣慰，“第一个，是亲手将天机录交予你的那个人。”",
+        "emotion": "威严而苍老"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_003",
+        "content": "陈机强压下神魂的震荡。妹妹的哭声仍在耳边回荡，可此刻他必须集中精神应对这突如其来的变故。他知道，此刻自己面对的已经不是那个只会操纵命运棋子的冷漠天道，而是那个在历史阴影中布局万年的执棋者。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_004",
+        "character_id": "char_chenji",
+        "content": "“晚辈有一事不明。”陈机的声音在识海中回荡，他没有行礼，没有畏惧，甚至没有表现出任何被动的姿态，“天道之眼与执棋者，是何关系？”",
+        "emotion": "冷静而锋锐"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "虚空中传来一声低沉的笑，那笑声中带着苦涩与释然交织的复杂情绪。“好，好，好！”连说三个好字，“万年了，终于有人敢当面质问吾这个问题。”",
+        "emotion": "赞许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_006",
+        "content": "陈机的眼睛微微眯起。他注意到仓御天说的是\"质问\"而非\"询问\"。这个细微的措辞差异让他心中警铃大作——对方承认了这其中存在不可告人的秘密。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“天道之眼，是规则。”仓御天的声音变得郑重，“而执棋者，是规则的执行者——也是规则的囚徒。”他顿了顿，“你以为吾为何万年来只能以残魂形态寄居于天机录第一页？”",
+        "emotion": "苍凉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1061_choice_01",
+        "prompt": "面对执棋者仓御天首次坦露的隐秘，陈机该如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_guidance",
+            "text": "聆听执棋者的指引",
+            "description": "既然对方主动坦诚，不妨听听这万年存在究竟想说什么。或许能获得关于妹妹陈念下落的关键信息。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "欠下因果",
+            "visible_reward": "获得执棋者的部分真相",
+            "risk_hint": "仓御天的指引可能暗藏陷阱",
+            "process_label": "陈机选择了暂时隐忍，以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_accept_001",
+                  "content": "陈机没有立刻开口，而是缓缓闭上了眼睛。他知道仓御天能感知他的一切情绪，于是刻意让自己的神魂保持一种近乎空灵的平静。“请前辈明示。”他的声音不带任何情绪波动，却恰到好处地表达出了对信息本身的渴望。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1061_result_accept_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "“很好。”仓御天的语气中流露出一丝满意，“你比吾想象中更像他。那么，吾问你——你可知道，天机录真正的完整形态需要什么来激活？”",
+                  "emotion": "深邃"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "执棋者首次认可",
+            "branch_route_id": null
+          },
+          {
+            "id": "question_motive",
+            "text": "质疑执棋者的动机",
+            "description": "万年布局首次坦诚，必然有所图谋。陈机不会轻易相信一个掌控命运的存在会无缘无故地\"帮助\"自己。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能触怒对方",
+            "visible_reward": "逼出更多真相",
+            "risk_hint": "仓御天可能因此收回信任",
+            "process_label": "陈机决定先发制人，试探深浅",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_question_001",
+                  "content": "陈机忽然笑了，那笑容在识海中勾勒出一个讥诮的弧度。“前辈万年前布局天下，万年后主动现身解惑——晚辈斗胆问一句，这般\"恩赐\"，代价是什么？”",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1061_result_question_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "仓御天沉默了一瞬，随即爆发出一阵畅快的大笑。“哈哈哈！好一个陈机！好一个算无遗策！”笑声戛然而止，“你问得好，吾等的就是你这句话。”",
+                  "emotion": "赞赏与期待"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "正面交锋执棋者",
+            "branch_route_id": null
+          },
+          {
+            "id": "reverse_manipulate",
+            "text": "反向操控局中局",
+            "description": "既然对方以\"可敬的对手\"身份现身，陈机决定反客为主，让仓御天主动落入自己的节奏中。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗大量精神力",
+            "visible_reward": "掌握对话主动权",
+            "risk_hint": "可能被仓御天识破意图",
+            "process_label": "陈机准备将对方拉入自己的棋局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_reverse_001",
+                  "content": "陈机没有说话，只是轻轻抬起右手。刹那间，他识海中那页残缺的天机录散发出淡淡的光芒——那是他从未主动催动过的本源之力。仓御天的气息瞬间凝滞。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1061_result_reverse_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "“你——！”仓御天的声音中罕见地出现了波动，“你竟然能主动引动天机录的本源？不可能！这是连吾都无法做到的事！”",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 80
+            },
+            "memory_label": "展示隐藏底牌",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_008",
+        "content": "陈机感觉到识海中那页残缺的天机录正在发生微妙的变化。原本模糊不清的纹路此刻变得异常清晰，仿佛有什么东西正在从沉睡中苏醒。他知道，这是仓御天的出现触发了某种连锁反应。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“既然你问了，吾便告诉你。”仓御天的语气变得前所未有的认真，“天道之眼是棋盘，它只负责落子、吃子、判定输赢。而执棋者，是棋子的觉醒者——但觉醒的代价，是成为更大的棋局中的一部分。”",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_010",
+        "content": "陈机的瞳孔骤然收缩。他终于明白了——天道之眼与仓御天之间的关系，远比他想象的更加复杂。一个是规则的化身，一个却是试图突破规则的叛逆者。这种不对等的关系，恰恰解释了为何仓御天只能以残魂形态存在。",
+        "emphasis": "dramatic"
+      },
+      "dialogue": {
+        "id": "天机录_ch1061_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“万年前，吾试图打破这盘死棋。”仓御天的声音中带着无尽的疲惫，“吾失败了。天道之眼没有杀死吾，而是将吾囚禁在天机录的第一页——作为警示，作为儆戒。”他顿了顿，“而你手中的残页，是吾唯一留给这方天地的火种。”",
+        "emotion": "苍凉与期待"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1061_choice_02",
+        "prompt": "三结局线的最终抉择条件首次完整呈现，陈机该如何选择自己的道路？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ending_1",
+            "text": "超脱之路",
+            "description": "彻底摧毁天道之眼，打破命运棋局。这条路需要陈机献祭天机录全部力量，成功率极低，但若成功将彻底改变三界的运行规则。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "献祭天机录",
+            "visible_reward": "彻底改写命运规则",
+            "risk_hint": "成功率不足三成，且需要牺牲所有亲近之人的天命值",
+            "process_label": "陈机开始推演超脱之路的可能性",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_end1_001",
+                  "content": "陈机的眼中闪过一丝决然。他想起了妹妹陈念的哭声，想起了那些被他算计过的人，想起了自己在废物人设下隐藏的野心与不甘。如果这条路能让他保护所有想保护的人，能让妹妹获得真正的自由——",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1061_result_end1_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "“你确定？”仓御天的声音中带着一丝颤抖，“这条路的代价，远比你想象的更大。吾当年——就是因为走这条路，才落到如今的下场。”",
+                  "emotion": "复杂的情绪"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "超脱之路_已开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 100
+            },
+            "memory_label": "超脱之路",
+            "branch_route_id": "超脱线"
+          },
+          {
+            "id": "ending_2",
+            "text": "共谋之路",
+            "description": "与执棋者联手，在天道之眼的规则内逐步夺取控制权。这条路最为稳妥，但意味着陈机必须继承仓御天的意志，成为新的\"执棋者\"。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "背负万年的因果",
+            "visible_reward": "获得执棋者的全部传承",
+            "risk_hint": "可能重蹈仓御天覆辙",
+            "process_label": "陈机开始权衡共谋之利的得失",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_end2_001",
+                  "content": "陈机沉默了良久。如果选择这条路，他将成为仓御天的继承者，背负起对抗天道之眼的使命。但同时，他也能获得足够的力量去寻找妹妹，保护那些他想要保护的人。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1061_result_end2_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "“吾不会强迫你。”仓御天的声音变得温和，“但吾必须告诉你，共谋之路并非妥协，而是在规则中寻找破局的可能。吾等了一万年，终于等到一个有可能成功的人。”",
+                  "emotion": "期待"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "共谋之路_已开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 70
+            },
+            "memory_label": "共谋之路",
+            "branch_route_id": "共谋线"
+          },
+          {
+            "id": "ending_3",
+            "text": "独立之路",
+            "description": "拒绝执棋者的邀请，不依附于任何棋局。陈机将走出一条完全属于自己的道路——既不摧毁天道之眼，也不与之为敌，而是建立全新的秩序。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "失去执棋者的庇护",
+            "visible_reward": "保持绝对的自主权",
+            "risk_hint": "将同时面对天道之眼和执棋者的双重压力",
+            "process_label": "陈机决定开辟全新的第三种可能",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_end3_001",
+                  "content": "陈机忽然笑了，那笑容中带着一种仓御天从未见过的张扬与自信。“前辈，晚辈有一个问题。”他抬起头，目光仿佛穿透了识海的限制，直视着那个高高在上的存在，“为何我必须选择你所给出的路？”",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1061_result_end3_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "仓御天愣住了。万年来，无数天才英杰在他面前俯首称臣或慷慨赴死，从未有人敢用这种语气与他说话。但随即，他发出了今天最畅快的一次大笑。“哈哈哈哈！好！好！好！”",
+                  "emotion": "狂喜"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "独立之路_已开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "名望",
+              "min": 80
+            },
+            "memory_label": "独立宣言",
+            "branch_route_id": "独立线"
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_012",
+        "content": "陈机静静地等待着仓御天的回应。他知道自己刚才的话有多狂妄——一个连金丹都未突破的蝼蚁，竟敢质疑万年执棋者的权威。但他也清楚，正是这种态度，才能让对方真正将他视为对手，而非一颗可随意摆布的棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“你知道吗，陈机？”仓御天的声音中带着一丝复杂的感慨，“万年前，吾也曾像你这般狂傲。但吾最终失败了，因为吾没有找到一条真正属于自己的路。”他停顿了一下，“而你——或许真的能走出一条吾从未想过的道路。”",
+        "emotion": "欣慰与期许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_014",
+        "content": "陈机听出了仓御天话语中的认可。他的心跳微微加速——这不仅是执棋者对他实力的肯定，更是对他这条全新道路的肯定。这意味着，从今天起，他将不再是任何人的棋子，而是真正的执棋者候选人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“既然你有此志向，吾便送你一份大礼。”仓御天的声音变得郑重，“关于你妹妹的下落——她在\"彼岸禁地\"的最深处，被封印在\"天命锁钥\"之内。那里是连天道之眼都无法窥探的地方，也是吾当年失败后选择的退路。”",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1061_choice_03",
+        "prompt": "得知妹妹陈念的下落后，陈机该如何应对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "immediaterescue",
+            "text": "立刻动身营救",
+            "description": "既然知道妹妹的具体位置，陈机不愿再多等一刻。他将立刻前往彼岸禁地，哪怕那里危机四伏。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "准备不足",
+            "visible_reward": "可能提前救出妹妹",
+            "risk_hint": "彼岸禁地的危险程度远超想象",
+            "process_label": "陈机决定不惜一切代价",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_rescue_001",
+                  "content": "陈机的眼中燃起了前所未有的光芒。十年了！整整十年，他以废物人设行走天下，算计天下英雄，所做的一切都是为了今天这一刻。妹妹，等我！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "救妹心切",
+            "branch_route_id": null
+          },
+          {
+            "id": "strategicwait",
+            "text": "从长计议",
+            "description": "彼岸禁地既然连天道之眼都无法窥探，必然凶险万分。陈机决定先收集更多情报，做好万全准备后再行动。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "多等一段时间",
+            "visible_reward": "获得更多关于彼岸禁地的信息",
+            "risk_hint": "妹妹在禁地中可能承受更多痛苦",
+            "process_label": "陈机强压内心焦躁，恢复冷静",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_strategic_001",
+                  "content": "陈机深吸一口气，强迫自己冷静下来。他知道，越是在这种时刻，越不能冲动行事。十年的布局让他明白——一个不小心，不仅救不了妹妹，还会将自己也搭进去。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "理性抉择",
+            "branch_route_id": null
+          },
+          {
+            "id": "request_help",
+            "text": "请求执棋者协助",
+            "description": "既然仓御天主动透露了妹妹的下落，说明他愿意帮助陈机。陈机决定借此机会争取更多支援。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "欠下更大因果",
+            "visible_reward": "获得执棋者的实质帮助",
+            "risk_hint": "仓御天的帮助必然有其目的",
+            "process_label": "陈机开始与仓御天讨价还价",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1061_result_help_001",
+                  "content": "陈机微微躬身，但姿态中并无卑微之色。“前辈既然告知晚辈此事，想必已有相助之意。晚辈斗胆，敢问前辈可愿赐下一些方便？”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "借力打力",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_016",
+        "content": "识海中，那道苍老的虚影凝视着眼前这个年轻的修士。万年来，他见过太多天才的陨落，太多英雄的折戟，但从未见过像陈机这样的人——明明弱小如蝼蚁，却有着直视苍穹的勇气；明明满腹算计，却从未丢失过内心的坚守。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_017",
+        "character_id": "char_tiandaozhiyan",
+        "content": "“陈机。”仓御天忽然开口，声音中带着一种前所未有的郑重，“吾等了一万年，终于等到了一个真正值得认可的对手。无论你最终选择哪条路，吾都会在彼岸等你。”",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_018",
+        "content": "陈机抬起头，直视着那道虚影。他的眼中没有畏惧，没有感激，只有一种近乎冷酷的坚定。“前辈放心，晚辈不会让您失望。”他顿了顿，“毕竟——能被执棋者认可为对手，本身就是一种荣幸。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1061_019",
+        "character_id": "char_tiandaozhiyan",
+        "content": "仓御天发出一声低沉的笑，那笑声中带着欣慰、期待，还有一丝难以察觉的羡慕。“好，很好。”他的身影开始逐渐消散，“吾会在彼岸为你准备一份礼物——至于是什么，等你亲自来取。”",
+        "emotion": "深邃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1061_020",
+        "content": "当识海重新恢复平静，陈机缓缓睁开眼睛。周围的景象与之前并无不同，但他的心境却已发生了天翻地覆的变化。从今天起，他不再是那个在夹缝中求生的废物弟子，而是被万年执棋者正式认可的可敬对手。三条道路已经展现在他面前，而他的故事，才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

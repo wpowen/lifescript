@@ -1,0 +1,541 @@
+{
+  "id": "天机录_ch0616",
+  "book_id": "天机录",
+  "number": 616,
+  "title": "假死裂痕初现",
+  "is_paid": true,
+  "next_chapter_hook": "那熟悉的笔迹在烛光下若隐若现，仿佛来自一个早已被遗忘的故人……",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0616_001",
+        "content": "夜风如刀，皇城西角的破庙内，陈机独坐于残破的神像前，指尖轻轻摩挲着天机录残页。墨先生的残魂在书页间浮动，幽幽开口：“三股势力同时向你聚拢，这可不是什么好兆头。”陈机没有回答，只是将目光投向窗外漆黑的长街——玄武宗的密探，此刻就在三百步外的茶楼里。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_002",
+        "content": "他闭上眼，天机录残页上的纹路微微发亮。未来三时辰的画面如潮水般涌来——茶楼二层的雅间里，一个身穿青袍的中年男子正展开一幅画像，画的正是他陈机的面容。画像下方有一行小字：“活要见人，死要见尸，玄武宗悬赏三千灵石。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0616_003",
+        "character_id": "char_chenji",
+        "content": "三千灵石……倒是看得起我这张脸。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_004",
+        "content": "陈机睁开眼，嘴角勾起一抹讥讽的弧度。天命值再次被消耗了5点，如今他仅剩的天命值已经不足百数。每一次预见未来，都像是在燃烧自己的生命。可若不提前知道危险，他又如何在这盘棋局中存活？墨先生的声音再次响起，带着几分警告：“小子，太子那边也派人来了，比玄武宗更棘手。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_005",
+        "content": "几乎是同一时刻，破庙外传来了轻微的脚步声。陈机的眼神骤然锐利，却没有动。他的隐匿阵法足以骗过金丹期以下的修士，但来者若是太子身边的暗卫……脚步声在门外停下，紧接着，一张叠得整整齐齐的纸从门缝中被塞了进来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0616_006",
+        "character_id": "char_chenji",
+        "content": "（低声）送信的人走了？",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_007",
+        "content": "墨先生道：“走了，修为不高，但轻功极好，是暗卫的路数。”陈机缓步走向门口，将那张纸拾起。纸张粗糙，显然是有意选用这种不起眼的材质。但当他展开信纸，看到里面的内容时，整个人如遭雷击。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_008",
+        "content": "信上只有寥寥数语，却字字如刀：“太师未死，葬于城东乱葬岗。三日后，玄武宗与太子府之人将联手掘墓验证。陈兄若不想身份暴露，最好在三日之内做出决断。”信的末尾，没有署名，只画了一个符号——那是一只展翅的青鸾，与陈机记忆深处某个模糊的影像重叠。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0616_009",
+        "character_id": "char_chenji",
+        "content": "（手指微微颤抖）这个符号……不可能，她怎么会……",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_010",
+        "content": "陈机的脑海中电光火石般闪过一个念头。那个符号，是他在失踪多年的妹妹陈念的日记本上见过的。他以为那本日记早已在战火中化为灰烬，却没想到会以这种方式再次出现。是巧合，还是有人在刻意引导？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0616_choice_01",
+        "prompt": "三方势力的包围圈正在收紧，陈机必须做出选择：是继续隐匿等待时机，还是主动出击打乱敌人部署，亦或是设置陷阱反将一军？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0616_opt_隐匿",
+            "text": "隐匿蛰伏",
+            "description": "暂时撤出皇城，在暗处观察各方动向，等待更好的时机。风险较低，但可能失去对局势的主动权。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能失去对太子府调查的掌控",
+            "visible_reward": "保全实力，避免正面冲突",
+            "risk_hint": "三日后的掘墓验证将无法阻止",
+            "process_label": "连夜转移出城",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_隐匿_01",
+                  "content": "陈机冷笑一声，将信纸收入袖中。隐匿？在这盘棋局中，消极等待从来不是他的风格。但眼下确实需要先离开这个危险的地方。他迅速收拾好随身物品，在墨先生的指引下从密道悄然离去。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0616_result_隐匿_02",
+                  "character_id": "char_moxiansheng",
+                  "content": "（墨先生）你打算怎么做？就这样看着他们挖开那座空墓？",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_隐匿"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0616_opt_主动出击",
+            "text": "主动出击",
+            "description": "先发制人，直接去找玄武宗密探谈判或解决威胁。风险较高，但能重新掌握局势主动权。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能暴露更多实力，招致更大麻烦",
+            "visible_reward": "一次性解决玄武宗的威胁，震慑其他势力",
+            "risk_hint": "玄武宗背后可能有更大势力撑腰",
+            "process_label": "夜袭茶楼",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_出击_01",
+                  "content": "陈机的眼中闪过一丝狠厉。隐匿从来不是他的风格，既然他们想找死，那就成全他们。他起身，整理了一下衣衫，脸上浮现出那副熟悉的废柴表情——懦弱、胆小、毫无威胁。是的，这才是他行走天下的最佳面具。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0616_result_出击_02",
+                  "character_id": "char_chenji",
+                  "content": "墨先生，你有没有觉得，这世上总有些人，喜欢把别人当傻子？",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_主动出击"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0616_opt_设置陷阱",
+            "text": "设置陷阱",
+            "description": "利用假死身份和各方矛盾，设下圈套让他们互相消耗。风险中等，可能获得最大收益。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要精密布局，任何一步出错都可能满盘皆输",
+            "visible_reward": "让玄武宗与太子府反目，一石二鸟",
+            "risk_hint": "若被识破，将同时得罪两大势力",
+            "process_label": "布局诱导",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_陷阱_01",
+                  "content": "陈机重新坐回原位，指尖轻敲桌面，脑中飞速运转。玄武宗想要他的命，太子府想要查清真相，而那封匿名信……若能善加利用，未必不能让他们互相咬起来。他嘴角微扬，一个大胆的计划逐渐成形。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0616_result_陷阱_02",
+                  "character_id": "char_moxiansheng",
+                  "content": "（墨先生）你想让玄武宗和太子府的人，在那座空墓前相遇？",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_设置陷阱"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0616_011",
+        "content": "就在此时，天机录残页突然剧烈震动起来。陈机低头看去，只见原本模糊的纹路中，竟隐隐浮现出一只眼睛的轮廓——那眼睛冰冷、无情，仿佛在九天之上俯瞰众生。墨先生的声音骤然变得凝重：“它……又出现了。”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0616_012",
+        "character_id": "char_chenji",
+        "content": "（紧握残页）天道之眼……你以为用这种方式就能吓到我？",
+        "emotion": "压抑怒火"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_013",
+        "content": "那眼睛的轮廓只存在了片刻便消散了，但陈机知道，这绝不是偶然。天道之眼从未如此主动地显现过它的存在，这意味着什么？是警告，还是宣战？他深吸一口气，将残页收入怀中。无论如何，眼下最紧迫的，是处理那三方势力的包围。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_014",
+        "content": "他再次拿起那封匿名信，仔细端详信纸的材质、墨迹的深浅、笔锋的走势。这封信看似普通，但处处透露着蹊跷。首先，送信之人能精准找到他的藏身之所，说明此人对他的行踪了如指掌；其次，信中透露的情报太过精准，不像是道听途说，更像是亲眼所见。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0616_choice_02",
+        "prompt": "那封匿名信成为了关键线索，陈机需要决定下一步的行动方向。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0616_opt_追查信源",
+            "text": "追查信件来源",
+            "description": "顺着送信人的线索追查下去，或许能找到那个神秘的“青鸾”符号的主人。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能暴露自己的行踪，被其他势力盯上",
+            "visible_reward": "可能找到妹妹陈念的线索",
+            "risk_hint": "送信人可能是诱饵",
+            "process_label": "循迹追踪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_追查_01",
+                  "content": "陈机将信纸凑近鼻尖，轻轻嗅了嗅。墨香中夹杂着一丝若有若无的草药味，那是天青宗特有的安神香。他心中一动，天青宗内门才用得起这种香料，难道这封信是出自宗门内部之人之手？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "线索_天青宗"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0616_opt_分析布局",
+            "text": "分析各方局势",
+            "description": "冷静分析玄武宗、太子府、以及神秘信件之间的关系，寻找破绽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗时间和精力",
+            "visible_reward": "可能发现三股势力之间的矛盾点",
+            "risk_hint": "分析需要时间，三日之期转瞬即逝",
+            "process_label": "推演棋局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_分析_01",
+                  "content": "陈机闭上眼睛，将所有已知信息在脑中排列组合。玄武宗要的是他这个人，太子府要的是太师死亡的真相，而那封匿名信……像是第三方势力在暗中搅局。三方目标不同，利益纠葛，只要找到那个微妙的平衡点……",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "线索_三方博弈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0616_015",
+        "content": "窗外忽然传来一阵急促的脚步声，紧接着是敲门声。陈机的身体瞬间绷紧，右手已经摸上了腰间的短剑。墨先生的声音响起：“不是来找你的，是隔壁的人家。”陈机松了口气，却没有放松警惕。他悄悄靠近窗户，从缝隙中向外望去——",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_016",
+        "content": "只见一个身穿华服的中年男子正匆匆走过，身后跟着两个黑衣人。那华服男子的面容在月光下一闪而过，陈机却认出了他——这是太子府的长史，名叫周瑾，是太子身边最信任的谋士之一。他亲自出现在这里，说明太子对太师之死的调查已经升级到了最高级别。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0616_017",
+        "character_id": "char_chenji",
+        "content": "（喃喃自语）周瑾……看来太子的耐心到头了。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_018",
+        "content": "陈机快速在天机录上写下几个名字，然后合上书页。三日，只有三日的时间。若不能在此之前化解这场危机，他的假死之局将彻底崩塌。但更让他在意的，是那封信上的青鸾符号——那个只有他和陈念才知道的家族印记。这到底是怎么回事？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0616_choice_03",
+        "prompt": "时间紧迫，多条线索同时指向危险。陈机必须做出最后的决定。",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0616_opt_优先安全",
+            "text": "优先确保自身安全",
+            "description": "离开皇城这个危险之地，转移到更安全的地方重新布局。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "放弃对局势的直接掌控",
+            "visible_reward": "保存实力，日后可以更从容地反击",
+            "risk_hint": "一旦离开，将失去对太子府调查的干预机会",
+            "process_label": "战略转移",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_安全_01",
+                  "content": "陈机做出了决定。他迅速收拾好所有物品，包括那封至关重要的匿名信。在他离开之前，他在破庙的角落留下了一个小机关——若有人闯入，这个机关会无声无息地取走来者的血液样本。这，是他留的后手。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "行动_战略转移"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0616_opt_优先调查",
+            "text": "优先调查青鸾符号",
+            "description": "青鸾符号可能是找到妹妹陈念的关键线索，值得冒险追查。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露在更大危险中",
+            "visible_reward": "可能获得关于陈念的重要信息",
+            "risk_hint": "调查过程可能触动某些人的神经",
+            "process_label": "追查青鸾",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_调查_01",
+                  "content": "陈机的手指在信纸上反复摩挲，青鸾的图案在烛光下若隐若现。妹妹失踪多年，这封信却突然出现……他不能放过任何与她有关的线索。即便是陷阱，他也要亲自踏进去看一看。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "行动_追查陈念"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0616_opt_双管齐下",
+            "text": "双管齐下",
+            "description": "一边追查青鸾符号，一边布局引太子府和玄武宗相斗。风险最高，但收益也最大。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "精力分散，两边都可能出问题",
+            "visible_reward": "若成功，将彻底扭转被动局面",
+            "risk_hint": "需要在极短时间内完成两件高难度任务",
+            "process_label": "多线操作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0616_result_双线_01",
+                  "content": "陈机深吸一口气，眼中闪过一丝决然。他从来不是一个会选择的人——既然决定要做，那就要做到极致。他迅速在脑中规划好两条线的行动方案，时间紧迫，但足够。他相信自己的谋略，也相信天机录会给他足够的预见。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "行动_双线布局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 8
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0616_019",
+        "content": "就在陈机准备行动之际，天机录再次微微发热。他皱眉翻开书页，只见墨先生的残魂正凝视着他，眼中带着几分说不清道不明的意味。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0616_020",
+        "character_id": "char_moxiansheng",
+        "content": "（墨先生）小子，我劝你一句——那封信上的笔迹，你最好仔细辨认。或许，你会想起一些……你以为已经忘记的事情。",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_021",
+        "content": "陈机再次展开信纸，这一次，他不再关注内容，而是专注于那独特的笔锋。起笔凌厉，收笔温婉，转折处带着一个极不起眼的小勾……这个特征，他在很久以前见过。那是——陈念小时候练字时养成的习惯，因为这个奇怪的收笔，他还嘲笑过她很多次。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_022",
+        "content": "陈机的手微微颤抖，一种从未有过的情绪涌上心头。若这封信真的是妹妹所写，那她现在在哪里？她又是如何知道自己还活着的？更重要的是——她是否知道这封信可能会给自己带来多大的危险？天机录残页上，天道之眼的轮廓再次浮现，仿佛在无声地嘲笑他的动摇。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_023",
+        "content": "陈机将信纸紧紧攥在手中，指节泛白。片刻后，他松开手，将信纸平整地折好收入怀中。无论这是陷阱还是真相，他都要亲自去确认。但眼下，他还有更紧迫的事情要处理——三日之后的掘墓危机，必须首先解决。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_024",
+        "content": "他抬头望向夜空，星辰黯淡，乌云正从远方缓缓压来。一场暴风雨，即将来临。而他陈机，正站在这场风暴的中心，面临着假死以来最大的危机。但他的眼神，却比任何时候都要冷静。布局天下，本就是他最擅长的事情——既然他们想玩，那他就奉陪到底。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0616_025",
+        "content": "那熟悉的笔迹在烛光下若隐若现，仿佛来自一个早已被遗忘的故人……陈机闭上眼睛，妹妹陈念的面容在黑暗中浮现，带着久违的温暖，却也夹杂着无尽的谜团。天命值在不断消耗，局势在持续恶化，而他，必须在这场即将到来的风暴中，找到属于自己的生存之道。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "id": "天机录_ch0103",
+  "book_id": "天机录",
+  "number": 103,
+  "title": "The Demonic Path Attacks",
+  "is_paid": true,
+  "next_chapter_hook": "The demonic path leader stared at Chen Ji for a moment, then suddenly wore an eerie smile: \"Son of Chen Xuan, the debt your father owed back then should be repaid by you today.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0103_001",
+        "content": "The spiritual light barrier of the mountain protection formation shattered like broken琉璃, layer by layer collapsing. Countless dark figures surged into the Tianqing Sect Mountain Gate like a tide of rotting blood stench. Chen Ji stood atop the ruins of the Servants' Quarters, his clothes flapping violently in the fierce wind. Those eyes that always carried three parts of timidity were now cold as an ancient demon gazing at prey from the abyss. Thirty-seven dark figures landed first, their leader standing over a丈tall, surrounded by writhing black demonic energy, his face hidden in the shadow of a hood, only those scarlet pupils burning like candles in the darkness.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_002",
+        "character_id": "char_chenji",
+        "content": "Brother Han, is this the 'contact' you mentioned? Chen has truly opened his eyes today. So this is how the number one genius of Xuanwu Sect conducts his receiving work.",
+        "emotion": "讥讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_003",
+        "content": "Before the words even finished, an eerie smile actually appeared on Han Lie's usually arrogant and cold face. He walked slowly toward the demonic path camp, each step causing the blue stone slabs beneath his feet to crack into spider-web patterns, his imposing aura crushing forward like mountains. \"Chen Ji, do you think winning a few times makes you capable of seeing through all heroes in the world?\" he sneered, \"The true chess game, you haven't even touched a corner of.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_004",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao's sword light flashed, shielding Chen Ji. Her icy gaze swept across Han Lie's treacherous face: \"Han Lie, the sect treated you generously, yet you collude with the Demonic Path!\" Her voice shattered like ice, \"Today I shall cleanse the sect for you!\"",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_005",
+        "content": "Just then, a graceful figure descended from the clouds. Black silk danced in the wind like night butterflies—it was the Demonic Path Holy Sect Saintess Ye Qing. Her appearance caused the demonic cultivators' momentum to falter. Those purple eyes swept the battlefield before finally fixing on Chen Ji. \"Interesting,\" her voice was cold as night spring water, \"The waste servant of Tianqing Sect is far more intriguing than I imagined.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0103_choice_001",
+        "prompt": "The appearance of Saintess Ye Qing complicates the situation further, and Chen Ji must make a choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0103_c1_opt1",
+            "text": "Feigning compliance with Ye Qing",
+            "description": "Exploit internal contradictions within the Demonic Path, stabilize Ye Qing first while secretly seeking an opportunity to turn the tables",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Bear the risk of being misunderstood by the righteous path",
+            "visible_reward": "Gain intelligence on the Demonic Path's internal affairs, reducing pressure on the frontal battlefield",
+            "risk_hint": "If exposed by Su Qingyao, trust may be lost",
+            "process_label": "暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c1_opt1_001",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing slightly narrowed her purple eyes, a playful curve forming at her lips: \"Interesting, being able to remain calm in such circumstances, you're more intriguing than I thought.\" She raised her hand to stop the demonic experts about to act, \"Let's see what this young master Chen has to say.\"",
+                  "emotion": "玩味"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0103_result_c1_opt1_002",
+                  "content": "Chen Ji unobtrusively retreated half a step, his expression still timid, yet at an angle invisible to Ye Qing, he gave Su Qingyao a subtle look. That gaze was chillingly composed—the默契 developed through countless secret collaborations. Su Qingyao's sword edge slightly turned, seemingly attacking the Demonic Path but actually sealing Han Lie's retreat."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0103_c1_opt2",
+            "text": "Publicly expose Ye Qing's cards",
+            "description": "Display the contents predicted by the Tianji Record, exposing the truth that Ye Qing was being used by the Holy Sect",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 5 points of Heavenly Fate",
+            "visible_reward": "Shock the entire crowd, disrupting the Demonic Path's formation",
+            "risk_hint": "Heavenly Fate consumption will affect future foresight abilities",
+            "process_label": "展示底牌",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c1_opt2_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji's timid eyes suddenly became deep as an abyss. He stared directly at Ye Qing, his voice steady yet clearly carrying across the entire area: \"Saintess, do you know why the Holy Sect sent you here?\" Ye Qing's expression slightly changed, only to hear Chen Ji continue, \"What they want is not your victory, but your death.\"",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c1_opt2_002",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing shuddered throughout. Those purple eyes were swept by towering waves. She remembered the prophecy Chen Ji had shown her earlier—her corpse being discarded in the wilderness by the Holy Sect like a discarded piece. \"You...\" her voice trembled, \"How do you know?\"",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_006",
+        "character_id": "char_hanlie",
+        "content": "Enough! Han Lie impatiently cut in. Golden spiritual light exploded from his entire body. Xuanwu Sect's secret technique \"Xuanming Tyrant Body\" was fully activated. \"Stop your trickery! Today, no one in Tianqing Sect leaves alive!\" He threw a punch, the void trembling, directly toward Chen Ji's face.",
+        "emotion": "狂傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_007",
+        "content": "Just as the拳wind sufficient to shatter mountains was about to touch Chen Ji, an ice-blue sword light like a倒挂银河 sliced down. Su Qingyao's \"Qingming Sword\" carried the full fury of the Inner Disciple Senior Fellow, forcibly blocking Han Lie's attack. Sword qi and fist intent exploded outward, wind howling in all directions. Those low-level disciples were blown away like tumbleweeds.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0103_choice_002",
+        "prompt": "The true reason for Han Lie's betrayal surfaces, and Chen Ji must make a decisive judgment",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0103_c2_opt1",
+            "text": "Continue playing the pig to eat the tiger",
+            "description": "Feign weakness to lure Han Lie into underestimating him, secretly waiting for Mo Xiansheng to make a move",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May withstand Han Lie's attacks",
+            "visible_reward": "Let Han Lie expose more weaknesses",
+            "risk_hint": "If Mo Xiansheng doesn't act in time, may suffer injuries",
+            "process_label": "隐藏实力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0103_result_c2_opt1_001",
+                  "content": "Chen Ji let out an \"ah\" cry of alarm, scrambling behind Su Qingyao like a timid quail. Han Lie grinned wickedly upon seeing this: \"Trash is trash,只会 hiding behind women's skirts!\" His双拳 erupted together, golden spiritual light pressing down on Su Qingyao like mountains. \"Today I'll let this狗男女 die together!\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c2_opt1_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao冷哼一声, her sword techniques growing increasingly fierce. She exchanged dozens of moves with Han Lie, each side attacking and defending, but Han Lie was after all one major realm higher in cultivation, gradually gaining the upper hand. Beads of sweat appeared at Su Qingyao's temples, her breathing becoming急促.",
+                  "emotion": "凝重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0103_c2_opt2",
+            "text": "Take the initiative to attack and probe",
+            "description": "While Han Lie is underestimating you, counterattack with strength you've never displayed before",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Expose part of your hidden cards",
+            "visible_reward": "Instantly reverse the battlefield, shocking effect of slapping faces",
+            "risk_hint": "May attract Ling Yuan's attention",
+            "process_label": "强势反击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0103_result_c2_opt2_001",
+                  "content": "Just as Han Lie was志得意满, Chen Ji's originally timid expression suddenly vanished, replaced by a coldness that made one's marrow chill. His right hand reached out, pointing casually at Han Lie's拳锋. \"You...\" Han Lie's pupils contracted sharply. A vast power surged along his拳into his meridians, instantly sealing three of his acupoints!",
+                  "emotion": "震惊"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c2_opt2_002",
+                  "character_id": "char_hanlie",
+                  "content": "Han Lie stumbled backward, the arrogance on his face instantly replaced by panic: \"Impossible! How could a废物 like you...\" Before he could finish, Chen Ji had already advanced close, slapping his chest. Xuanwu Sect's proud \"Xuanming Tyrant Body\" was torn like thin paper! Han Lie spat blood and flew backward, his face filled with disbelief.",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_008",
+        "content": "However, the Demonic Path experts gave no one time to breathe. The leading丈tall demonic shadow let out a low growl. Black demonic energy spread outward like a tsunami. His aura had distinctly reached Foundation Building Grand Perfection—only half a step from Golden Core! \"Ants,\" his voice seemed to come from the Nine幽深渊, \"Before me, no one deserves to stand.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_009",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing suddenly moved. A flash of determination crossed her purple eyes. The Demonic Path mist spread like black silk, enveloping Chen Ji and Su Qingyao. \"His aura has been shielded by my mist,\" her voice was urgent, \"Run quickly, I'll hold them off!\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_010",
+        "content": "Just as the Demonic Path expert's black energy was about to engulf Ye Qing, an aged yet dignified voice rang from the void: \"Demonic whelp, to show off your凶before this old man, you're not qualified.\" The voice wasn't loud, yet it exploded like thunder in everyone's ears. Then, a giant hand formed from pure spiritual energy emerged from the void, seizing the Demonic Path expert in its grip!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_011",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's figure slowly materialized beside Chen Ji—an elderly man who appeared on the verge of death, yet now surrounded by faint golden spiritual light. Those turbid eyes concealed a terrifying depth. \"This old man has waited for this day for a very long time.\" His voice was calm as water. \"Son of Chen Xuan, your father left you enough hidden cards, you simply don't know how to use them yet.\"",
+        "emotion": "深沉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0103_choice_003",
+        "prompt": "Mo Xiansheng reveals his concealed strength, and the situation undergoes drastic change",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0103_c3_opt1",
+            "text": "Demand the truth about your father",
+            "description": "Seizing Mo Xiansheng's momentum, demand the secrets about your father Chen Xuan",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May obtain answers you don't want to know",
+            "visible_reward": "Gain key intelligence about your father",
+            "risk_hint": "The truth may be crueler than imagined",
+            "process_label": "探寻真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c3_opt1_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Chen Ji gazed at that figure who held the universe in his hand. Countless questions churned in his heart. He took a deep breath, suppressed all emotions, and clasped his fists: \"Master, who was my father... exactly? Why do all these Demonic Path people recognize him?\" Mo Xiansheng fell silent for a moment. A complex light flickered in those turbid eyes: \"This matter involves a chess game much larger than you can imagine. Your father did not die from an accident.\"",
+                  "emotion": "沉重"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c3_opt1_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "Just then, the Demonic Path leader's voice emerged from the captured palm, his阴恻恻laughter echoing across the battlefield: \"Son of Chen Xuan... hahaha, your father betrayed our Demonic Path Holy Sect back then, privately passing the Tianji Record to outsiders. Now his retribution has finally arrived!\" Mo Xiansheng's expression slightly changed. The spiritual energy in his palm abruptly surged, and the laughter abruptly stopped.",
+                  "emotion": "阴森"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0103_c3_opt2",
+            "text": "First resolve the immediate crisis",
+            "description": "Focus on the current battle, don't let emotions affect judgment",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Miss the best opportunity to demand the truth",
+            "visible_reward": "Take advantage of the chaos to lay out a bigger strategic advantage",
+            "risk_hint": "May lose the best chance to learn the truth",
+            "process_label": "冷静应战",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0103_result_c3_opt2_001",
+                  "content": "A sharp light flashed in Chen Ji's eyes as he pressed all questions down to the bottom of his heart. He quickly surveyed the battlefield, his mind racing: Demonic Path attack, Han Lie's betrayal, Mo Xiansheng's intervention—there must be a deeper scheme behind all this. He took a deep breath, lowered his voice to Su Qingyao: \"Senior Sister, now is not the time to demand answers. Help me stall those Demonic Path experts for three breaths. I have a plan.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0103_result_c3_opt2_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao hesitated slightly, but years of默契 made her ask no questions. Her sword light turned and she charged into the Demonic Path crowd. Chen Ji turned to Ye Qing, his expression serious: \"Saintess, as for the conditions of our cooperation, I can add one more—I will help you find the traitor within the Holy Sect. But now, I need to borrow your Demonic Path mist to completely chaos this battlefield.\" Ye Qing's purple eyes flickered. A smile curved her lips: \"Interesting, I'm starting to appreciate you more.\"",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_012",
+        "content": "Mo Xiansheng's giant hand of spiritual energy suddenly tightened. The Demonic Path leader let out a凄厉howl as the demonic energy around him dispersed like snow meeting the scorching sun. However, just as he was about to be completely annihilated, his hood was shattered by the spiritual energy, revealing an aged yet sinister face—that face bore a seven-fold resemblance to Ling Yuan!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_013",
+        "content": "Han Lie clutched his chest as he crawled out from the ruins. The moment he saw that face, his pupils contracted, disbelief written all over his face: \"Impossible! How could Senior Uncle Ling...\" His voice abruptly stopped. A terrible thought formed in his mind—so from the very beginning, he was the piece being used. The chess game Ling Yuan had set up was far larger than he imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_014",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing gazed at that face resembling Ling Yuan, then suddenly coldly laughed: \"So that's how it is. Old thing Ling Yuan has been colluding with the Demonic Path Holy Sect all along. No wonder his obsession with the Tianji Record ran so deep—he's not some discarded candidate of the Tianji Record, but a traitor who joined the Demonic Path after being defeated by Chen Xuan!\" Her voice was like ice, \"The Holy Sect has been using all of you, including me and this idiot Han Lie.\"",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_015",
+        "content": "Mo Xiansheng completely sealed the Demonic Path leader, then turned to look at Chen Ji. A hint of approval flickered in those turbid eyes: \"Not bad, you're much calmer than I anticipated. If Chen Xuan were aware below the springs, he should be relieved.\" He paused, his voice dropping, \"But remember—Ling Yuan is merely a piece. The true chess player is—\" Before he could finish, his figure began to fade, \"The time hasn't come yet. You cannot know too much.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_016",
+        "content": "Without their leader, the remaining Demonic Path cultivators became leaderless. Ye Qing seized the opportunity to spread her Demonic Path mist, dividing and surrounding the remaining experts. Su Qingyao's sword light moved like a游龙穿梭, Demonic Path disciples falling wherever it passed. Chen Ji still stood where he was, gazing at the sealed Demonic Path leader, his brow furrowed tightly. Father, Ling Yuan, Tianji Record, Demonic Path Holy Sect... all clues pointed toward a direction he dared not contemplate.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_017",
+        "content": "The battlefield gradually calmed, but the waves in Chen Ji's heart were far from over. Han Lie was captured alive. Those Demonic Path disciples were either dead or fled. Tianqing Sect's crisis was temporarily resolved. Yet he clearly knew—this was merely the calm before the storm. Ling Yuan's figure had yet to appear. That scheming power-holder watched his every step from the shadows, waiting for the perfect moment to close the net.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0103_018",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao sheathed her sword and walked to Chen Ji's side. Her voice was unusually gentle: \"You did well tonight.\" She paused, as if searching for words, \"But I understand you less and less, Chen Ji. How many secrets are you still hiding?\" Those clear, cold eyes stared directly at him—scrutinizing, confused, yet also carrying a trace of worry she herself was unwilling to admit.",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_019",
+        "content": "Chen Ji gazed at her cold face, then suddenly grinned. He reverted back to that timid, useless waste servant: \"What is Senior Sister talking about? I'm just someone who sweeps floors. What secrets could I possibly have.\" He bent down to pick up the broom on the ground, \"Dawn is approaching. I need to clean the blood from the plaza, otherwise the elders will scold me again.\" With that, he truly turned to leave. His silhouette was desolate and lonely.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_020",
+        "content": "Ye Qing gazed at Chen Ji's departing figure. A meaningful light flickered in her purple eyes. She slowly walked to Su Qingyao's side, her voice soft as the night wind yet carrying a warning: \"Su Chief, let me advise you one thing—this person, never try to see through him.\" She turned and drifted away gracefully, her black silk vanishing into the night air. Only a murmured whisper remained: \"Because the price of seeing through him, you cannot afford.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0103_021",
+        "content": "The first rays of morning light pierced through the clouds, illuminating the war-torn Tianqing Sect Mountain Gate. This night, some witnessed the rise of a废物, some glimpsed merely the tip of the chess game's iceberg, and more didn't know that—the true game had just begun. Chen Ji's hand gripping the broom trembled slightly. It wasn't fear, but rage suppressed for too long. Father... who exactly killed you? What is the truth behind the Tianji Record? These questions like venomous snakes gnawed at his heart, yet also made him increasingly calm. This chess game, he would definitely play through to the end.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -18,5 +18,7 @@ struct Character: Codable, Identifiable, Hashable, Sendable {
         case family = "家族"
         case neutral = "中立"
         case antagonist = "反派"
+
+        var displayName: String { SoloLocalization.localized(rawValue) }
     }
 }

@@ -23,7 +23,7 @@ struct Book: Codable, Identifiable, Hashable, Sendable {
         case businessWar = "职场商战"
         case apocalypsePower = "末日爽文"
 
-        var displayName: String { rawValue }
+        var displayName: String { SoloLocalization.localized(rawValue) }
 
         var iconName: String {
             switch self {

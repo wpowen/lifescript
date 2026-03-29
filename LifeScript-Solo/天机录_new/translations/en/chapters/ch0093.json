@@ -1,0 +1,588 @@
+{
+  "id": "天机录_ch0093",
+  "book_id": "天机录",
+  "number": 93,
+  "title": "Covert Probe",
+  "is_paid": true,
+  "next_chapter_hook": "Mo Xiansheng's voice suddenly dropped: \"Do you know why your father was so determined to leave the Tianqing Sect back then?\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0093_001",
+        "content": "Night wind swept through the Tianqing Sect Back Mountain. Chen Ji had just hidden the recorded Jade Slip when he saw the lights at the Elder's residence extinguish abruptly—Zhang Shen seemed to have noticed something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_002",
+        "content": "He didn't return to his quarters immediately, but turned toward the direction indicated by the first page of the Tianji Record. Mo Xiansheng's residual soul was there, waiting for him in an otherworldly manner. Under the moonlight, the prohibition runes at the cave entrance faintly glowed with a ghostly blue light, like the breathing of a sleeping giant beast.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_003",
+        "content": "Chen Ji stood still at the cave entrance, composing his expression. A废物弟子 seeking his master late at night—this should have raised suspicion, but Mo Xiansheng was different—he never asked about your purpose, only what you wanted. This was an advantage, but also a danger.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_004",
+        "character_id": "char_chenji",
+        "content": "\"Master, your disciple has something to consult.\"",
+        "emotion": "恭敬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_005",
+        "content": "A indifferent voice echoed from within the cave: \"Enter.\" The prohibition automatically dissolved, and Chen Ji stepped inside. Mo Xiansheng's figure floated above the stone platform, surrounded by a faint Spiritual Light—that unique ethereal quality of a residual soul—as if it could be scattered by wind at any moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_006",
+        "content": "But Chen Ji noticed something different. Within that Spiritual Light, there was a faint波动 similar to the Tianji Record—like an aura from the same source, flickering intermittently within Mo Xiansheng. This discovery made his heart skip a beat, though his expression remained unchanged.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_007",
+        "character_id": "char_moxiansheng",
+        "content": "\"Coming this late, it's not just about studying, is it?\"",
+        "emotion": "淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_008",
+        "content": "Mo Xiansheng's voice was calm like water, yet carried a razor-sharp insight that could pierce through everything. Chen Ji lowered his eyes, feigning contemplation, while secretly calculating—how much to reveal? How much to ask?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice001",
+        "prompt": "How does Chen Ji decide to approach this?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c001_a",
+            "text": "Directly inquire about his father",
+            "description": "Ask Mo Xiansheng directly about Chen Xuan, observing his reaction",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Expose the urgency to find clues about his father's whereabouts",
+            "visible_reward": "May obtain crucial information",
+            "risk_hint": "Being too eager may raise suspicion",
+            "process_label": "正面询问父亲的下落",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c001_a_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Master, your disciple wishes to ask... about my father Chen Xuan.\"",
+                  "emotion": "谨慎"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c001_b",
+            "text": "Covert probe",
+            "description": "Pretend to consult about cultivation techniques, secretly observe Mo Xiansheng's reaction to topics about his father",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consumes more time",
+            "visible_reward": "Obtain information without revealing intentions",
+            "risk_hint": "May not get what is wanted",
+            "process_label": "迂回试探墨先生的底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c001_b_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Master, your disciple has been cultivating the Tianji Record Fragment lately and encountered several obscure passages. I wish to seek the master's guidance.\"",
+                  "emotion": "恭谦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_009",
+        "content": "Mo Xiansheng fell silent for a moment, his surrounding Spiritual Light rippling slightly, like ripples on a lake's surface when a stone is cast in. Chen Ji stared intently at those ripples, carving every detail into his memory. This level of reaction... was certainly not ordinary.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_010",
+        "character_id": "char_moxiansheng",
+        "content": "\"The Tianji Record... your father asked me the same question back then.\"",
+        "emotion": "回忆"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_011",
+        "content": "The words struck like thunder in Chen Ji's heart. His pupils contracted sharply, his fingers trembling slightly in his sleeves—not from grief, but because he had finally caught a lead. His father's trail finally had its first tangible point of connection.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_012",
+        "character_id": "char_chenji",
+        "content": "\"Father... what did he ask?\"",
+        "emotion": "压抑激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_013",
+        "content": "Mo Xiansheng's figure suddenly became blurred, his voice taking on an ethereal quality: \"He asked me where the complete version of the Tianji Record was.\" Chen Ji held his breath, waiting for what came next. But Mo Xiansheng turned the conversation: \"He also asked another question—some things shouldn't be known, asking will get you killed. He asked anyway.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_014",
+        "content": "The temperature within the cave seemed to drop several degrees. Chen Ji felt an invisible pressure emanating from Mo Xiansheng—that was the instinctive response of a residual soul during emotional fluctuations. He became even more certain of his judgment—the relationship between Mo Xiansheng and the Tianji Record was绝非 simple guardianship.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice002",
+        "prompt": "How does Chen Ji handle this situation?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c002_a",
+            "text": "Directly press for answers",
+            "description": "Directly ask what forbidden thing his father inquired about",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May provoke Mo Xiansheng",
+            "visible_reward": "Directly obtain core information",
+            "risk_hint": "Highest risk but greatest reward",
+            "process_label": "直接逼问墨先生",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -8
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c002_a_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Master, what did my father ask? Your disciple... wants to know.\"",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c002_b",
+            "text": "Strategic retreat",
+            "description": "Pretend to be afraid, withdraw the question, observe Mo Xiansheng's reaction",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Temporarily abandon pressing for answers",
+            "visible_reward": "May cause Mo Xiansheng to volunteer information",
+            "risk_hint": "May miss the opportunity",
+            "process_label": "假装退缩引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c002_b_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Since my father said it was something that shouldn't be known... perhaps your disciple shouldn't ask.\"",
+                  "emotion": "退让"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c002_c",
+            "text": "Secret observation",
+            "description": "Don't react, use the Tianji Record Fragment to perceive the abnormal fluctuations within Mo Xiansheng",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consumes Heavenly Fate",
+            "visible_reward": "Confirm the connection between Mo Xiansheng and the Tianji Record",
+            "risk_hint": "Consuming Heavenly Fate carries risk",
+            "process_label": "暗中激活天机录感知",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0093_result_c002_c_001",
+                  "content": "Chen Ji lowered his eyes, secretly activating the Tianji Record Fragment within his Mental Sea. A mystical power surged from the depths of his consciousness, probing toward Mo Xiansheng—that波动 emanating from the same source as the Tianji Record became even clearer."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_015",
+        "content": "Silence descended upon the cave. Mo Xiansheng's figure drifted within the Spiritual Light like a painting that could fade at any moment. Chen Ji felt the other party scrutinizing him, that gaze seeming to penetrate all disguises and look directly into the soul.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_016",
+        "character_id": "char_moxiansheng",
+        "content": "\"You are very much like him.\"",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_017",
+        "content": "These words made Chen Ji's heart jolt. Mo Xiansheng continued: \"The same gaze, the same determination. I couldn't stop him back then, and now...\" He paused, \"Some things shouldn't be known. Are you certain you want to walk his path?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_018",
+        "content": "Chen Ji sensed the warning in Mo Xiansheng's words, but what interested him more was the hidden meaning in that sentence—\"couldn't stop him.\" This meant Mo Xiansheng had once tried to prevent his father from taking that road, yet his father ultimately chose it anyway. A chill rose along his spine.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice003",
+        "prompt": "How does Chen Ji respond to Mo Xiansheng's warning?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c003_a",
+            "text": "Show determination",
+            "description": "Firmly state that he will walk this path even if it leads to death",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May make Mo Xiansheng even more vigilant",
+            "visible_reward": "Showing determination may gain more guidance",
+            "risk_hint": "Being too forceful may backfire",
+            "process_label": "坚定表态不惧危险",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c003_a_001",
+                  "character_id": "char_chenji",
+                  "content": "\"It is this disciple's greatest wish to find my father. No matter what lies ahead, this disciple has no regrets.\"",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c003_b",
+            "text": "Display weakness and request guidance",
+            "description": "Request guidance from the master in a weak posture",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Appear weak",
+            "visible_reward": "Lower Mo Xiansheng's guard to obtain information",
+            "risk_hint": "May be seen as mediocre",
+            "process_label": "示弱获取同情",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c003_b_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Your disciple is foolish and doesn't know the depth of the road ahead. I beg the master to guide me—should I know or shouldn't I?\"",
+                  "emotion": "谦卑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_019",
+        "content": "Mo Xiansheng remained silent for a long while. The Spiritual Light within the cave flickered like an ember, the external manifestation of the residual soul's internal struggle. Finally, he sighed, and for the first time, a hint of warmth entered his voice: \"You child... you're as troublesome as your father.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_020",
+        "content": "He raised his illusory palm, and a ray of light shot into Chen Ji's Brow Center. Not a technique inheritance, but a fragment of memory—blurred, broken images. Chen Ji saw a familiar back standing before the Tianqing Sect Mountain Gate, with a woman beside him holding an infant in her arms.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_021",
+        "content": "That infant... was Chen Ji himself. And that woman—his mother? In the memory, his father's voice drifted over: \"Once some doors are opened, they can never be closed. Qingyao, take the child and leave here, the further the better.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_022",
+        "content": "The memory cut off abruptly. Chen Ji opened his eyes, only to find himself drenched in cold sweat. Mo Xiansheng's voice sounded again, this time with a meaningful tone: \"Your father chose a road of no return, but he also left behind an insurance.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_023",
+        "character_id": "char_moxiansheng",
+        "content": "Someone is secretly protecting you, Chen Ji. Closer than you imagine, and more dangerous.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_024",
+        "content": "The words struck like a heavy hammer on Chen Ji's heart. Closer than imagined—who could it be? Someone from the three major sects? The mother who never showed herself? Or could it be... a thought flashed through Chen Ji's mind, sending a chill down his back—Ling Yuan? That old Sect Master who appeared to shelter him?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_025",
+        "content": "Mo Xiansheng's figure began to fade even more, as if this exchange had depleted too much of his strength. \"What happened tonight must not be mentioned to anyone.\" His voice grew distant, \"Next time you come... bring news of your sister.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_026",
+        "content": "Chen Ji raised his head abruptly. Sister? Chen Nian? He had never mentioned Chen Nian to Mo Xiansheng—how did the other know? Unless—Mo Xiansheng had been secretly observing him, even more deeply than he realized. These thoughts churned in his mind, but Chen Ji's expression remained unruffled.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_027",
+        "content": "\"Disciple understands.\" Chen Ji bowed deeply, turned, and left the cave. Night wind brushed his face before he realized his back was already soaked with cold sweat. Tonight's gains far exceeded expectations—his father's trail, clues about his mother, a mysterious secret protector, and Mo Xiansheng's meaningful mention of \"sister.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_028",
+        "content": "The eastern horizon had begun to lighten. Chen Ji gazed at the rising sun, calculating silently in his heart. Zhang Shen had already noticed something—the time was growing even more urgent. And Mo Xiansheng's words, \"someone is secretly protecting you,\" were like a thorn lodged in his heart, leaving him both expectant and uneasy. Was that protector friend or foe?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_029",
+        "character_id": "char_chenji",
+        "content": "(Mo Xiansheng... how much do you really know?)",
+        "emotion": "深思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_030",
+        "content": "Chen Ji clenched his fists, the morning sun stretching his shadow long. Everything was just beginning. His father's trail, clues about his mother, a secret protector—these mysteries intertwined, weaving a net whose full picture he could not yet see. And he was already caught within it.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

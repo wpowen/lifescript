@@ -1,0 +1,444 @@
+{
+  "id": "天机录_ch0160",
+  "book_id": "天机录",
+  "number": 160,
+  "title": "议事厅风云",
+  "is_paid": true,
+  "next_chapter_hook": "就在众人以为大局已定时，二长老的眼中却闪过一丝疯狂的杀意——他要亲手抹杀这个知道他太多秘密的废物弟子。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0160_001",
+        "content": "晨钟敲响第三响时，天青宗议事厅的大门轰然敞开。晨光如金箔般倾泻而入，将厅内百余名修士的影子拉得老长。角落里，陈机低着头跟在人群末尾，灰色杂役袍在众多华服中显得格外寒酸。没有人注意到他——正如他们过去十二年习以为常的那样。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_002",
+        "content": "主位之上，大长老正襟危坐，两侧分列八位长老。二长老坐在第三席，今日穿了一身墨绿镶金的宗门礼服，面如冠玉，颌下三缕长髯随风微摆，端的是一副仙风道骨模样。他的目光扫过厅中，最后落在角落那个灰袍身影上，嘴角几不可察地勾起一丝冷笑。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_003",
+        "character_id": "char_lingyuan",
+        "content": "今日议事，有三件要务。其一，半月后的三宗论道；其二，新晋弟子考核；其三……",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_004",
+        "content": "大长老的话还未说完，角落里突然响起一个不合时宜的声音。众人循声望去，只见那灰袍杂役竟缓缓抬起了头——那双眼眸平静得可怕，仿佛深潭之下藏着翻涌的暗流。陈机的声音不大，却清晰地传入每个人耳中：「其三，二长老陈平可在议事之列？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_005",
+        "content": "厅内瞬间安静得落针可闻。众人面面相觑——一个杂役弟子，竟敢当众点名质问长老？二长老陈平的笑容僵在脸上，随即勃然大怒：「放肆！议事厅岂容你一个杂役撒野？来人，给我轰出去！」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_006",
+        "character_id": "char_chenji",
+        "content": "陈机不为所动，从袖中取出一枚玉简，高高举起：「弟子手中，有父亲陈玄当年被害的完整证据链。敢问二长老，您可敢当着列祖列宗、诸位同门的面，与弟子当堂对质？」",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_007",
+        "content": "此言一出，满堂哗然。十二年前陈玄之死至今仍是宗门的禁忌话题，有人说是外出历练遭遇意外，有人说是走火入魔，但从无人敢公开质疑。而今日，这个公认的废物竟要以卵击石，当众指控手握重权的二长老？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_008",
+        "character_id": "char_lingyuan",
+        "content": "大长老眉头紧锁，抬手制止了正要上前的执法弟子：「陈机，你可知道诬告长老是何罪？」他的目光深沉，似乎在审视着什么，「若证据不足，你便是死罪。」",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_009",
+        "character_id": "char_chenji",
+        "content": "「弟子愿以性命担保。」陈机直视大长老，声音平稳得没有一丝波澜，「但若证据确凿，还请大长老主持公道——还我父亲一个清白，还天青宗一个朗朗乾坤。」",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0160_choice_01",
+        "prompt": "二长老陈平冷笑一声，率先发难：「一个杂役也敢血口喷人？我倒要看看你能拿出什么证据来！」陈机该如何应对这第一波攻势？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0160_c1_aggressive",
+            "text": "直接呈上物证",
+            "description": "先拿出玉简中的记录，从二长老与大长老的私账往来、到当年的采购清单，逐一出示，用铁证堵住悠悠众口。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "奠定气势优势，让二长老陷入被动",
+            "risk_hint": "过早暴露所有证据，可能让对方找到反驳点",
+            "process_label": "以证逼人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0160_result_c1_aggressive_1",
+                  "content": "陈机将玉简激发，一幅幅画面投射在厅堂之上——十二年前的账簿、神秘的交易记录、以及一个模糊的身影潜入陈玄洞府。「诸位请看，这是父亲遇害前三日的宗门物资调度记录。」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0160_result_c1_aggressive_2",
+                  "character_id": "char_lingyuan",
+                  "content": "二长老脸色骤变，但很快恢复镇定，冷笑道：「这些不过是捕风捉影，谁能证明是我所为？说不定是你从哪里伪造来诬陷本座！」",
+                  "emotion": "色厉内荏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0160_c1_desperate",
+            "text": "言语刺激激怒他",
+            "description": "故意用嘲讽激怒二长老，让他在盛怒之下说漏嘴或做出失态之举，抓住把柄后再一击致命。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗时间",
+            "visible_reward": "让二长老自乱阵脚，露出破绽",
+            "risk_hint": "激怒长老可能招来当场报复",
+            "process_label": "引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0160_result_c1_desperate_1",
+                  "character_id": "char_chenji",
+                  "content": "「二长老何必如此动怒？」陈机微微一笑，那笑容在灰袍衬托下显得格外刺眼，「莫不是心虚了？说起来，当年父亲对您可是信任有加啊，连洞府的禁制令牌都给了您一把呢。」",
+                  "emotion": "嘲讽"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0160_result_c1_desperate_2",
+                  "character_id": "char_lingyuan",
+                  "content": "二长老面色铁青，猛地拍案而起：「你这废物休要血口喷人！我与你父亲情同手足，岂会加害于他？」话一出口，他便意识到失言，神色闪烁不定。",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_010",
+        "content": "就在二长老色厉内荏之际，陈机忽然将玉简高高抛向空中。他的双手飞速结印，口中低喝：「天机录，现！」那枚玉简骤然绽放出耀眼的金光，一幅巨大的影像在厅堂中央徐徐展开——那是一间熟悉的洞府，时间赫然是十二年前的那个血夜。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_011",
+        "character_id": "char_chenji",
+        "content": "影像中，陈玄重伤倒地，胸口插着一柄漆黑的短剑。一个身影从暗处走出，面容与二长老陈平一模一样——不，应该说就是二长老本人。他俯视着地上的陈玄，低声说道：「师兄，对不住了。天机录选了你，却没选我……这份机缘，你消受不起。」",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_012",
+        "content": "满堂死寂。所有人的目光都落在二长老身上，有人震惊，有人愤怒，更多人是不敢置信。那个平日里道貌岸然的二长老，那个口口声声与陈玄情同手足的伪君子，此刻面如死灰，身体微微颤抖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_013",
+        "character_id": "char_lingyuan",
+        "content": "「这是……这是伪造的！」二长老歇斯底里地咆哮，「天机录早在十二年前就丢失了残页，你一个废物怎么可能拥有？一定是你从哪里找来的邪术，伪造幻象蒙蔽众人！」他猛地指向陈机，「大长老，此子心怀叵测，当立即处死！」",
+        "emotion": "疯狂"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0160_choice_02",
+        "prompt": "二长老狗急跳墙，指控陈机使用邪术伪造证据。关键时刻，陈机该如何彻底击溃他的狡辩？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0160_c2_final",
+            "text": "亮出墨先生身份作证",
+            "description": "让墨先生以残魂形态现身说法，用陈玄师尊的身份从道义上彻底击溃二长老的狡辩。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露天机录守护者的存在",
+            "visible_reward": "证据升级为铁证，二长老无从抵赖",
+            "risk_hint": "墨先生暴露可能引来更高层的关注",
+            "process_label": "以魂为证",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0160_result_c2_final_1",
+                  "content": "陈机深吸一口气，咬破指尖在玉简上画出一道复杂的符文：「师尊，请现身吧。」金光大盛，一道虚幻的老者身影从玉简中飘出，正是墨先生的残魂虚影。他环顾四周，目光最后落在二长老身上，叹息道：「陈平，当年我将天机录传给陈玄，你便起了杀心。我说得可对？」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0160_result_c2_final_2",
+                  "character_id": "char_lingyuan",
+                  "content": "二长老浑身一震，声音都变了调：「你……你是陈玄的师父？你不是早就陨落了吗？这些……这些都是他的一面之词！」但他的声音已经带上了颤抖，底气全无。",
+                  "emotion": "绝望"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0160_c2_logic",
+            "text": "逻辑推理步步紧逼",
+            "description": "不用墨先生出面，而是用严密的逻辑链将二长老逼入死角——从禁制令牌、到时间线、到利益动机，环环相扣让他无话可说。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "二长老可能找到逻辑漏洞反击",
+            "visible_reward": "展示陈机的绝世谋略，让众人心服口服",
+            "risk_hint": "如果逻辑有漏洞，可能被对方抓住",
+            "process_label": "以理服人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0160_result_c2_logic_1",
+                  "character_id": "char_chenji",
+                  "content": "「好一个一面之词。」陈机冷笑，「那我问二长老——父亲洞府的禁制令牌，除了父亲本人，只有您有一把。当夜能悄无声息进入洞府的，除了您还能有谁？其二，您当年向宗门申报的父亲死因是'外出历练遭遇妖兽'，可这影像中明明是利器贯穿心脉，这又作何解释？」",
+                  "emotion": "凌厉"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0160_result_c2_logic_2",
+                  "character_id": "char_lingyuan",
+                  "content": "二长老张口结舌，额头上冷汗涔涔。周围的弟子和长老们开始窃窃私语，看向他的目光已经从怀疑变成了厌恶和愤怒。",
+                  "emotion": "慌乱"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_014",
+        "content": "大长老缓缓站起身，声音如洪钟大吕：「陈平，你还有何话说？」二长老面如死灰，双腿一软跌坐在地，嘴唇哆嗦着，却一个字也说不出来。十二年的精心伪装，在这一刻轰然崩塌。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0160_015",
+        "character_id": "char_chenji",
+        "content": "陈机收起玉简，环顾四周，目光平静得没有一丝波澜：「诸位同门，今日陈机斗胆揭露此事，不为私怨，只为我那含冤而死的父亲正名。」他微微躬身，「此后之事，全凭宗门公断。」",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_016",
+        "content": "就在这时，瘫坐在地的二长老眼中突然闪过一丝狠厉之色。他猛地暴起，手中不知何时多了一柄寒光闪闪的匕首，直刺陈机咽喉——「你这废物，给我去死！！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0160_choice_03",
+        "prompt": "二长老狗急跳墙，当众持刀刺杀！陈机早有准备，还是险象环生？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0160_c3_evade",
+            "text": "早有防备从容闪避",
+            "description": "陈机早料到二长老会狗急跳墙，侧身闪避的同时激发体内残存的天机之力护住要害，让他的刺杀落空。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗少量天命值",
+            "visible_reward": "从容脱险，展示深谋远虑",
+            "risk_hint": "消耗天命值可能影响后续能力",
+            "process_label": "料敌先机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0160_result_c3_evade_1",
+                  "content": "陈机仿佛早有预料，身形微微一晃便退开三尺，那匕首堪堪从他耳畔划过，带起一缕灰袍的布条。紧接着，他反手一掌拍在二长老胸口，将这位德高望重的长老震飞出去，重重摔在大殿中央。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0160_c3_counter",
+            "text": "以彼之道还施彼身",
+            "description": "既然二长老当年用禁制令牌入室行凶，陈机今日便用同样的方式让他尝尝被暗算的滋味——反手夺刀，制住他的要害。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要近身搏斗",
+            "visible_reward": "亲手制住仇人，满足感更强",
+            "risk_hint": "近身可能被对方暗算",
+            "process_label": "借刀杀人",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0160_result_c3_counter_1",
+                  "content": "电光火石间，陈机身形暴起，五指如铁钳般扣住二长老持刀的手腕。\"咔嚓\"一声脆响，匕首落地，二长老惨叫出声。陈机顺势将其按倒在地，声音依旧平静：「十二年前，您也是这样按住我父亲的吧？」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_017",
+        "content": "厅中一片哗然。执法弟子蜂拥而上，将瘫软在地的二长老死死按住。大长老面色铁青，猛地一拍扶手：「陈平！你竟敢在议事厅行凶！」他环顾四周，沉声道：「今日之事，铁证如山。着即日起，将陈平收押镇魔塔，移交宗门刑堂彻查！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_018",
+        "content": "二长老被拖走时，依然在疯狂叫喊：「这是陷害！这是陷害！！陈玄的死跟我没有关系！！」但没有人再相信他了。曾经的德高望重、曾经的仙风道骨，在铁证面前统统化为了笑话。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_019",
+        "content": "喧嚣散去后，大长老的目光落在陈机身上，神色复杂：「陈机，你且留下。」待众人散去，大殿中只剩下他们二人。大长老沉默良久，方才开口：「十二年隐忍，一朝翻盘……你比我想象的更不简单。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0160_020",
+        "content": "陈机垂首而立，灰袍在晨光中显得格外单薄。他的脸上没有胜利的喜悦，只有一种淡淡的疲惫。十二年的废物伪装，十二年的隐忍蛰伏，今日终于画上了一个句号。但这，不过是更大棋局的开始罢了。他的目光越过窗棂，望向远处隐约可见的镇魔塔——那里，将成为二长老余生的囚笼。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

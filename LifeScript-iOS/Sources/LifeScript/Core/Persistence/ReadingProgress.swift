@@ -76,3 +76,40 @@ struct UserChoiceRecord: Codable, Identifiable, Sendable {
     let selectedChoiceId: String
     let timestamp: Date
 }
+
+@MainActor
+enum StoryContentVersioning {
+    static func reconcilePersistedProgress(
+        bookId: String,
+        contentLoader: ContentProviding,
+        modelContext: ModelContext
+    ) async {
+        guard let contentVersion = try? await contentLoader.loadContentVersion(bookId: bookId),
+              !contentVersion.isEmpty else {
+            return
+        }
+
+        let defaultsKey = versionDefaultsKey(for: bookId)
+        let defaults = UserDefaults.standard
+        let recordedVersion = defaults.string(forKey: defaultsKey)
+
+        guard recordedVersion != contentVersion else {
+            return
+        }
+
+        let descriptor = FetchDescriptor<ReadingProgress>(
+            predicate: #Predicate { $0.bookId == bookId }
+        )
+
+        if let progress = try? modelContext.fetch(descriptor).first {
+            modelContext.delete(progress)
+            try? modelContext.save()
+        }
+
+        defaults.set(contentVersion, forKey: defaultsKey)
+    }
+
+    static func versionDefaultsKey(for bookId: String) -> String {
+        "story-content-version.\(bookId)"
+    }
+}

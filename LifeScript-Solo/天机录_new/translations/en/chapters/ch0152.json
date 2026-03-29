@@ -1,0 +1,640 @@
+{
+  "id": "天机录_ch0152",
+  "book_id": "天机录",
+  "number": 152,
+  "title": "\"The First to Arrive\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"The first seal left by his father emerges in the depths of the ruins, and Chen Ji's bloodline resonates intensely—and the patterns inscribed upon that seal are startlingly similar to the mark on Chen Ling's neck.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0152_001",
+        "content": "\"Moonlight falls like frost across the desolate valley. At the entrance of the forbidden grounds, an ancient stone gate stands in silent vigil, its surface mottled with moss, the weight of ages pressing forth. Chen Ji's steps halt briefly, his gaze piercing the night to settle upon a familiar figure—it is her, Chen Ling, the sister lost for years, who has somehow arrived here before him.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_002",
+        "character_id": "char_chenian",
+        "content": "\"Brother, it's been a while.\"",
+        "emotion": "淡然"
+      },
+      "text": {
+        "id": "天机录_ch0152_003",
+        "content": "\"Chen Ling turns around, a meaningful smile playing at her lips. She has grown gaunt since their parting years ago, yet her features carry a sharper edge, like a blade not yet drawn from its sheath. The night wind stirs the loose strands of hair at her temples, revealing a faintly glowing jade pendant at her neck—its patterns bear a striking resemblance to the Tianji Record Fragment resting against Chen Ji's chest.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_004",
+        "character_id": "char_chenji",
+        "content": "\"(Inner turmoil, yet expression unchanged) Three years apart, and you've grown choosier about your locations. This forbidden land isn't a place ordinary people can just stumble upon.\"",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_005",
+        "character_id": "char_chenian",
+        "content": "\"Brother jokes. This younger sister merely had some good fortune, blessed by a benefactor who guided me here.\"",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_006",
+        "content": "\"'Benefactor?' Chen Ji sneers inwardly. The Tianji Record grows faintly warm, a peculiar resonance emanating from the fragment in his arms—Chen Ling before him is shrouded in a hazy mist, one his foresight cannot penetrate. Is this interference from the Heavenly Eye, or does she harbor some secret? His fingers unconsciously trace the fragment's edge, his expression remaining placid as still water.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0152_choice_001",
+        "prompt": "\"Chen Ji's attitude toward Chen Ling's sudden appearance will determine the tone of their subsequent interaction\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "坦诚试探",
+            "text": "\"Candid Probe\"",
+            "description": "\"Directly inquire about Chen Ling's experiences over the years, observe her reactions, and probe into the Holy Sect's movements\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Exposes one's own information needs\"",
+            "visible_reward": "\"May gain key information\"",
+            "risk_hint": "\"If Chen Ling is hiding something, proactively revealing intent may lead to passivity\"",
+            "process_label": "试探性开口",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_坦诚试探_001",
+                  "character_id": "char_chenji",
+                  "content": "\"How did the Holy Sect treat you? Where have you been all these years?\"",
+                  "emotion": "沉声"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_坦诚试探_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Chen Ling sighs softly, her gaze falling upon the faintly glowing fragment in Chen Ji's chest. Since Brother asks, this younger sister will speak plainly—everything I know comes from a benefactor who refused to reveal his name. He told me that this ruin is intimately connected to the Chen bloodline, and that to unravel all the mysteries, this place is an unavoidable stop.\"",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "以退为进",
+            "text": "\"Strategic Retreat\"",
+            "description": "\"Pretend ignorance, letting Chen Ling reveal more on her own, observing how much she truly knows\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"May miss the opportunity to seize the initiative\"",
+            "visible_reward": "\"Obtain intelligence without revealing one's own intentions\"",
+            "risk_hint": "\"If Chen Ling has deeper reserves, she may instead extract information from you\"",
+            "process_label": "故作不解",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_以退为进_001",
+                  "character_id": "char_chenji",
+                  "content": "\"(Feigning surprise) Lingling? What are you doing here? Could it be you've been caught up in something as well?\"",
+                  "emotion": "关切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_以退为进_002",
+                  "character_id": "char_chenian",
+                  "content": "\"A glint of amusement flickers in Chen Ling's eyes, though she does not expose his act. As Brother may not know, this younger sister has endured years of hardship within the Holy Sect, all for this very moment. As for that benefactor... he said that Brother possesses something crucial to opening this ruin.\"",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "冷淡疏离",
+            "text": "\"Cold Distance\"",
+            "description": "\"Maintain a gap, indicate you have other purposes, see how she responds\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Relationship may grow further estranged\"",
+            "visible_reward": "\"Observe Chen Ling's bottom line\"",
+            "risk_hint": "\"If Chen Ling holds key information, she may withhold it on principle\"",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_冷淡疏离_001",
+                  "character_id": "char_chenji",
+                  "content": "\"I was merely passing through and noticed some unusual disturbance here. If you have business, attend to it as you wish.\"",
+                  "emotion": "淡漠"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_冷淡疏离_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Chen Ling falls silent for a moment, then lets out a soft laugh. Brother remains the same—won't shed tears until he sees the coffin. Very well, allow me to ask you this—do you truly not wish to know the truth behind Father's death?\"",
+                  "emotion": "锐利"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_007",
+        "content": "\"Father's death. Chen Ji's pupils contract slightly, and a tempest rages within his heart. That incident three years ago appeared to be an accident on the surface, but he had long been investigating in secret—Father's death was far from simple. And now Chen Ling brings it up—is it coincidence, or does she hold some unknown clue?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_008",
+        "character_id": "char_chenian",
+        "content": "\"Brother needn't look at me that way. If I wanted to harm you, why would I wait until today? The Holy Sect took me, but not to raise some idle person.\"",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_009",
+        "content": "\"Chen Ling steps closer, the moonlight outlining her cold, serene form. Her gaze falls upon the corner of the fragment in Chen Ji's chest, her expression complicated. Heaven's Fate Lock-Key—that was the label the Holy Sect assigned to her. Yet how laughable: the true key to unlocking that seal may have always been in her brother's possession. The indentation on the mechanism gate mirrors the fragment's shape perfectly.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0152_choice_002",
+        "prompt": "\"Chen Ling proposes cooperation to open the ruin, and Chen Ji must decide how to respond\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "有限合作",
+            "text": "\"Limited Cooperation\"",
+            "description": "\"Agree to cooperate but set conditions, demanding Chen Ling reveal more about the benefactor first\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"May trigger Tianji Record consumption\"",
+            "visible_reward": "\"Advance plans without exposing all cards\"",
+            "risk_hint": "\"The benefactor's identity is mysterious and may involve higher-tier powers\"",
+            "process_label": "设定条件",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_有限合作_001",
+                  "character_id": "char_chenji",
+                  "content": "\"I'll cooperate—but you must first tell me who this benefactor is, and what he thinks of our relationship.\"",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_有限合作_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Chen Ling gazes at him for a long moment before nodding. He calls himself Mo Xiansheng. Said he was entrusted by an old friend to look after me. As for his connection to Brother... perhaps you know better than I do.\"",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "全面戒备",
+            "text": "\"Full Vigilance\"",
+            "description": "\"Trust no information, use the Tianji Record to secretly observe Chen Ling's true intentions\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Consumes 5 Heavenly Fate points\"",
+            "visible_reward": "\"Obtain predictions of Chen Ling's actions for the next three hours\"",
+            "risk_hint": "\"Heavenly Fate is limited, and Chen Ling may interfere with the foresight results\"",
+            "process_label": "暗中窥探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_全面戒备_001",
+                  "content": "\"Chen Ji quietly activates the Tianji Record. A faint light emanates from the fragment, slipping into Chen Ling's brow center. In an instant, he sees it—three quarters of an hour later, Chen Ling will stride alone into the depths of the ruin, yet the mechanism at the entrance requires both their bloodlines to activate.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "转移话题",
+            "text": "\"Shift the Topic\"",
+            "description": "\"Don't dwell on the benefactor's identity; instead inquire about the ruins' interior\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Miss the chance to dig deeper into Mo Xiansheng's identity\"",
+            "visible_reward": "\"Obtain intelligence related to the ruins\"",
+            "risk_hint": "\"Chen Ling may sense you are evading the question\"",
+            "process_label": "另辟蹊径",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_转移话题_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Let's set Mo Xiansheng aside for now. Since you arrived before me, what discoveries have you made inside the ruin?\"",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_转移话题_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Chen Ling huffs softly, seemingly aware of his deflection. Yet she does not press the issue, merely stepping aside half a pace. If Brother wishes to know, see for yourself—the seal on the mechanism is connected to both of us.\"",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_010",
+        "content": "\"Mo Xiansheng. Chen Ji's heart tightens—wasn't that the remnant soul guardian within the Tianji Record Fragment? How could he be connected to Chen Ling, and why would he seek to bring them together at this moment? Countless thoughts churn in his mind, yet his face remains unruffled. Mo Xiansheng... I've noted the name.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_011",
+        "content": "\"The two walk side by side to the stone gate. Up close, the seal proves even more intricate—the left half depicts a celestial bird poised to take flight, while the right half bears a shattered ancient sword. The bird's patterns match the jade pendant at Chen Ling's neck precisely, and the broken sword's outline resonates with the echo deep within Chen Ji's bloodline.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_012",
+        "character_id": "char_chenian",
+        "content": "\"It seems Father made arrangements long ago. Brother's bloodline activates the sword seal, and mine activates the bird seal—only when both seals are lifted simultaneously will this gate open.\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_013",
+        "content": "\"Chen Ji does not move immediately. He calculates rapidly in his mind—whether Chen Ling speaks truth. If true, she is being candid; if false, then who directs her? Yet the Tianji Record's foresight tells him that in three quarters of an hour, Chen Ling will enter the ruins alone... What does this mean? Does she intend to part ways after activating the mechanism, or does she harbor other schemes?\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0152_choice_003",
+        "prompt": "\"Facing Chen Ling's offer of cooperation, Chen Ji must make a decision\"",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "配合激活",
+            "text": "\"Cooperate in Activation\"",
+            "description": "\"Temporarily set aside doubts, and activate the seal together with Chen Ling before entering the ruin\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"May be schemed against by Chen Ling\"",
+            "visible_reward": "\"Gain entry to the ruin\"",
+            "risk_hint": "\"The ruin's interior is unknown, and entering blindly carries risk\"",
+            "process_label": "注入血脉",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_配合激活_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Very well, I'll trust you this once. But inside this ruin, each of us relies on our own abilities—if you dare play any tricks, don't expect me to spare sibling sentiment.\"",
+                  "emotion": "冷厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_配合激活_002",
+                  "content": "\"Chen Ji slashes his fingertip, letting blood drip onto the broken sword's pattern. At the same moment, Chen Ling deposits her blood into the celestial bird's mouth. The two bloodlines converge upon the stone gate, erupting in dazzling golden light. With a thunderous rumble, the ancient gate, sealed for a thousand years, slowly opens—its breath carrying a mingled scent of decay and mystery.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "遗迹开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "附加条件",
+            "text": "\"附加条件\"",
+            "description": "\"Agree to cooperate but propose a condition: inside the ruin, Chen Ling must follow his movements\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "\"May provoke Chen Ling\"",
+            "visible_reward": "\"Maintain the initiative within the ruin\"",
+            "risk_hint": "\"If Chen Ling refuses, the cooperative relationship may collapse\"",
+            "process_label": "提出要求",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_附加条件_001",
+                  "character_id": "char_chenji",
+                  "content": "\"I'll cooperate, but you must stay behind me. The ruin's interior is unknown, and I won't rest easy with you acting alone.\"",
+                  "emotion": "强势"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_附加条件_002",
+                  "character_id": "char_chenian",
+                  "content": "\"A flicker of surprise crosses Chen Ling's eyes, dissolving into a knowing smile. Brother grows more imperious by the day. Very well, I accept—if only because the benefactor also said that this journey requires us both, neither absent.\"",
+                  "emotion": "妥协"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_附加条件_003",
+                  "content": "\"The two again pour their blood into the seal. Golden light blazes forth, the stone gate swings wide, and a dark corridor descends into the earth. A cold wind drifts from the depths, carrying with it an ancient and dangerous presence.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "遗迹开启",
+              "陈灵跟随"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "终止合作",
+            "text": "\"Terminate Cooperation\"",
+            "description": "\"Detect something amiss, decide to temporarily withdraw, let Chen Ling face the mechanism alone\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Miss the opportunity to enter the ruin\"",
+            "visible_reward": "\"Preserve one's cards and observe subsequent developments\"",
+            "risk_hint": "\"Chen Ling may independently obtain the fortune within the ruin\"",
+            "process_label": "转身欲走",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_终止合作_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Wait. This ruin... is probably more than a simple relic of antiquity. I need to think it over.\"",
+                  "emotion": "迟疑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_终止合作_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Chen Ling's smile freezes slightly. Is Brother afraid I'll harm him? Very well, wait outside then—the things within, I'll scout ahead for you.\"",
+                  "emotion": "冷淡"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_终止合作_003",
+                  "content": "\"With that, Chen Ling bites her fingertip unbidden, letting blood drip onto the celestial bird's pattern. As golden light flickers, the stone gate opens a narrow gap; she slips through sideways, casting Chen Ji a final glance laden with unspoken meaning. Brother, I'll see you in three quarters of an hour—if you are still standing there.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_014",
+        "content": "\"The corridor is deep and shadowed, torchlight casting dancing silhouettes upon the walls. Chen Ji and Chen Ling walk side by side, the atmosphere凝定如冰 as cold as ice. Ancient glyphs cover the surrounding stone walls, their lines primitive and enigmatic, as if narrating some forgotten legend. As he walks, Chen Ji covertly observes Chen Ling—her stride is steady, yet her gaze drifts repeatedly toward the corridor's depths, as if searching for something.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_015",
+        "content": "\"Suddenly, a faint glow appears ahead. It is a stone chamber, and at its center stands an altar upon which floats a jade slip emanating a ghostly blue radiance. Upon the jade slip are inscribed two characters—天机 (Tianji).\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_016",
+        "character_id": "char_chenian",
+        "content": "\"The Tianji Record! Chen Ling cries out involuntarily, then claps a hand over her mouth, her shock beyond concealment. No... this cannot be—the Tianji Record exists only in fragments, how could a complete version appear here...\"",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_017",
+        "content": "\"Chen Ji's heart lurches violently. The fragment in his chest flies out on its own, drawn toward the jade slip upon the altar. The instant the two meet, a brilliant flash erupts, illuminating the entire stone chamber as bright as day. Within the radiance, a phantom figure gradually coalesces—the face of a middle-aged man, bearing a striking seven-tenths resemblance to Chen Ji.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_017b",
+        "character_id": "char_chenji",
+        "content": "\"Father...!\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_018",
+        "content": "\"The phantom does not speak, merely gazing deeply at Chen Ji and Chen Ling before dissolving into scattered starlight that sinks into Chen Ji's brow center. A torrential flow of information floods his mind—these are the memories of the first seal left by his father, concealing the true secret of the Chen bloodline and the truth behind the Tianji Record's thousand-year incompleteness.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_019",
+        "content": "\"Chen Ji closes his eyes, letting that surge of information churn within his consciousness. He sees it—the moment of his father's death, the reason the Tianji Record was originally severed, and the pair of ever-present eyes lurking behind fate. Upon the altar, the jade slip has shattered, leaving only a line of searing words branded into his mind: My son, the Heavenly Eye never sleeps.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_020",
+        "content": "\"When Chen Ji opens his eyes once more, silence has returned to the stone chamber. The altar stands empty, a wisp of blue smoke curling upward. Chen Ling stands not far away, her expression complicated as she regards him—her eyes hold both wariness and a trace of indefinable concern. Chen Ji knows that from this moment, everything has changed—the secrets of the Tianji Record are far more terrifying than he imagined; and that entity known as the 'Heavenly Eye' may have already cast its gaze upon this place. Deeper within the ruin, greater trials await. His father's legacy is both fortune and shackle. And the unspoken bond between him and Chen Ling seems, in this instant, to have quietly undergone some shift.\""
+      }
+    }
+  ]
+}

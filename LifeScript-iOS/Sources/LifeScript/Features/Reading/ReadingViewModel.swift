@@ -24,6 +24,7 @@ final class ReadingViewModel {
     private(set) var stats: ProtagonistStats
     private(set) var relationships: [RelationshipState]
     private(set) var chapterChoices: [UserChoiceRecord] = []
+    private(set) var selectedChoiceIds: [String: String] = [:]
     private(set) var statsBeforeChapter: ProtagonistStats
     private(set) var relationshipsBeforeChapter: [RelationshipState]
     private(set) var chapterGuide: WalkthroughChapterGuide?
@@ -33,6 +34,7 @@ final class ReadingViewModel {
     private var allNodes: [StoryNode] = []
     private var chapterSequence: [Chapter] = []
     private var walkthrough: BookWalkthrough?
+    private var preloadedChapters: [Chapter]
     private let contentLoader: ContentProviding
     private var modelContext: ModelContext?
     private var savedProgress: ReadingProgress?
@@ -42,24 +44,21 @@ final class ReadingViewModel {
     init(
         book: Book,
         chapterId: String,
+        preloadedChapters: [Chapter] = [],
+        preloadedWalkthrough: BookWalkthrough? = nil,
         contentLoader: ContentProviding = BundledContentLoader()
     ) {
         self.book = book
         self.stats = book.initialStats
         self.statsBeforeChapter = book.initialStats
-        let initialRelationships = book.characters.map { char in
-            RelationshipState(
-                characterId: char.id,
-                trust: 30, affection: 20, hostility: 10,
-                awe: 10, dependence: 0,
-                lastChangeReason: nil,
-                unlockedEvents: []
-            )
-        }
+        let initialRelationships = Self.initialRelationships(for: book)
         self.relationships = initialRelationships
         self.relationshipsBeforeChapter = initialRelationships
+        self.preloadedChapters = preloadedChapters
         self.contentLoader = contentLoader
         self._pendingChapterId = chapterId
+        // 直接注入预加载的 walkthrough，跳过后续 IO
+        if let w = preloadedWalkthrough { self.walkthrough = w }
     }
 
     private var _pendingChapterId: String
@@ -68,6 +67,11 @@ final class ReadingViewModel {
 
     func onAppear(modelContext: ModelContext) async {
         self.modelContext = modelContext
+        await StoryContentVersioning.reconcilePersistedProgress(
+            bookId: book.id,
+            contentLoader: contentLoader,
+            modelContext: modelContext
+        )
         await loadSavedProgress()
         await loadChapter(id: _pendingChapterId)
     }
@@ -77,9 +81,21 @@ final class ReadingViewModel {
     func loadChapter(id: String) async {
         state = .loading
         do {
-            await loadWalkthroughIfNeeded()
-            let chapter = try await contentLoader.loadChapter(bookId: book.id, chapterId: id)
-            let loadedChapters = (try? await contentLoader.loadAllChapters(bookId: book.id)) ?? [chapter]
+            // 优先使用内存中已解码的章节数据，避免重复解析 JSON
+            let allChapters: [Chapter]
+            if !preloadedChapters.isEmpty {
+                allChapters = preloadedChapters
+            } else {
+                await loadWalkthroughIfNeeded()
+                allChapters = (try? await contentLoader.loadAllChapters(bookId: book.id)) ?? []
+            }
+
+            guard !allChapters.isEmpty else {
+                throw AppError.contentNotFound(id)
+            }
+
+            let chapter = allChapters.first(where: { $0.id == id }) ?? allChapters.first!
+            let loadedChapters = allChapters
 
             chapterSequence = loadedChapters.sorted { lhs, rhs in
                 if lhs.number == rhs.number {
@@ -88,20 +104,29 @@ final class ReadingViewModel {
                 return lhs.number < rhs.number
             }
             currentChapter = chapter
-            _pendingChapterId = id
+            _pendingChapterId = chapter.id
             syncGuide(for: chapter)
             allNodes = chapter.nodes
             displayedNodes = []
             chapterChoices = allChoiceRecords
                 .filter { $0.chapterId == chapter.id }
                 .sorted { $0.timestamp < $1.timestamp }
+            selectedChoiceIds = Dictionary(
+                uniqueKeysWithValues: chapterChoices.map { ($0.choiceNodeId, $0.selectedChoiceId) }
+            )
             let restoredChapterState = restoredChapterStateIfAvailable(for: chapter)
             if let restoredChapterState {
                 currentNodeIndex = restoredChapterState.savedNodeIndex
                 statsBeforeChapter = restoredChapterState.startStats
                 relationshipsBeforeChapter = restoredChapterState.startRelationships
                 displayedNodes = restoredChapterState.displayedNodes
-                state = currentNodeIndex >= allNodes.count ? .chapterEnd : .reading
+                if currentNodeIndex >= allNodes.count {
+                    state = .chapterEnd
+                } else if let pendingChoice = pendingChoiceNode(in: displayedNodes) {
+                    state = .choosing(pendingChoice)
+                } else {
+                    state = .reading
+                }
             } else {
                 currentNodeIndex = 0
                 statsBeforeChapter = stats
@@ -136,9 +161,8 @@ final class ReadingViewModel {
 
     // MARK: - Reading Progression
 
-    /// Advances to the next logical "segment" of content.
-    /// A segment is a group of consecutive nodes displayed together,
-    /// stopping at natural pause points for better reading flow.
+    /// Advances through all narrative content until the next choice node or chapter end.
+    /// Only pauses when user input is required (choice) or the chapter is complete.
     func advanceToNextSegment() {
         guard currentNodeIndex < allNodes.count else {
             state = .chapterEnd
@@ -146,82 +170,27 @@ final class ReadingViewModel {
             return
         }
 
-        var addedCount = 0
-
         while currentNodeIndex < allNodes.count {
             let node = allNodes[currentNodeIndex]
 
             switch node {
             case .choice(let choiceNode):
-                // Always pause before a choice — user must decide
-                if addedCount == 0 {
-                    // If this is the first node, show the choice
-                    displayedNodes.append(node)
-                    currentNodeIndex += 1
-                    state = .choosing(choiceNode)
-                } else {
-                    // Content was already shown; stop here so choice appears on next tap
-                    state = .reading
-                }
+                displayedNodes.append(node)
+                currentNodeIndex += 1
+                state = .choosing(choiceNode)
+                saveProgress()
                 return
 
-            case .notification:
-                // Notifications are always added (they're small inline badges)
+            case .text, .dialogue, .notification:
                 displayedNodes.append(node)
                 currentNodeIndex += 1
-                addedCount += 1
-                // Don't count notifications toward pause logic, keep going
-
-            case .text(let textNode):
-                displayedNodes.append(node)
-                currentNodeIndex += 1
-                addedCount += 1
-
-                // Pause AFTER dramatic or system emphasis text (scene breaks)
-                if textNode.emphasis == .dramatic || textNode.emphasis == .system {
-                    // But only pause if we've already shown some content
-                    // If this is the opening dramatic line, continue to build the scene
-                    if addedCount >= 2 {
-                        state = .reading
-                        return
-                    }
-                }
-
-            case .dialogue:
-                displayedNodes.append(node)
-                currentNodeIndex += 1
-                addedCount += 1
-
-                // After adding a dialogue, peek ahead:
-                // If the next node is NOT dialogue (conversation ended), consider pausing
-                if addedCount >= 3, !isNextNodeDialogue {
-                    state = .reading
-                    return
-                }
-            }
-
-            // Soft cap: after 5 content nodes (not counting notifications),
-            // pause if the next node starts a new "beat"
-            let contentCount = addedCount
-            if contentCount >= 5 {
-                state = .reading
-                return
             }
         }
 
-        // If the last readable beat was just appended, let the user read it first.
-        // Chapter-end presentation should happen on the next deliberate tap.
         if currentNodeIndex >= allNodes.count {
             saveProgress()
         }
         state = .reading
-    }
-
-    /// Peek at the next node without consuming it
-    private var isNextNodeDialogue: Bool {
-        guard currentNodeIndex < allNodes.count else { return false }
-        if case .dialogue = allNodes[currentNodeIndex] { return true }
-        return false
     }
 
     func tapToAdvance() {
@@ -232,6 +201,8 @@ final class ReadingViewModel {
     // MARK: - Choice Selection
 
     func selectChoice(_ choice: Choice, in choiceNode: ChoiceNode) {
+        selectedChoiceIds[choiceNode.id] = choice.id
+
         // Record the choice
         let record = UserChoiceRecord(
             chapterId: currentChapter?.id ?? "",
@@ -275,7 +246,7 @@ final class ReadingViewModel {
             let sign = effect.delta > 0 ? "+" : ""
             let notification = StoryNode.notification(NotificationNode(
                 id: "stat_\(choice.id)_\(effect.stat.rawValue)",
-                message: "\(effect.stat.rawValue) \(sign)\(effect.delta)",
+                message: "\(effect.stat.displayName) \(sign)\(effect.delta)",
                 type: .statChange
             ))
             displayedNodes.append(notification)
@@ -287,7 +258,13 @@ final class ReadingViewModel {
                 let sign = effect.delta > 0 ? "+" : ""
                 let notification = StoryNode.notification(NotificationNode(
                     id: "rel_\(choice.id)_\(effect.characterId)",
-                    message: "\(char.name)的\(effect.dimension.rawValue) \(sign)\(effect.delta)",
+                    message: SoloLocalization.format(
+                        "%@的%@ %@%d",
+                        char.name,
+                        effect.dimension.displayName,
+                        sign,
+                        effect.delta
+                    ),
                     type: .relationshipChange
                 ))
                 displayedNodes.append(notification)
@@ -301,6 +278,62 @@ final class ReadingViewModel {
         advanceToNextSegment()
     }
 
+    // MARK: - Branch Rewind
+
+    /// 当前章节内已选过的决策节点（供回溯 UI 列举）
+    var completedChoiceNodes: [(index: Int, node: ChoiceNode, chosenText: String)] {
+        allNodes.prefix(currentNodeIndex).enumerated().compactMap { index, node in
+            guard case .choice(let choiceNode) = node else { return nil }
+            guard let chosenId = selectedChoiceIds[choiceNode.id] else { return nil }
+            let chosenText = choiceNode.choices.first(where: { $0.id == chosenId })?.text ?? ""
+            return (index: index, node: choiceNode, chosenText: chosenText)
+        }
+    }
+
+    /// 天命值充足（>= 10）才可回溯
+    var canRewind: Bool { stats.destiny >= 10 }
+
+    /// 回溯到指定决策节点（消耗 10 点天命值，清除该节点及之后的所有选择）
+    func rewindToChoice(nodeIndex: Int) {
+        guard let chapter = currentChapter else { return }
+        guard nodeIndex < allNodes.count, case .choice(let targetNode) = allNodes[nodeIndex] else { return }
+
+        // 收集从 nodeIndex 起所有已选择节点对应的 Choice 对象
+        let laterChoicePairs: [(nodeId: String, choice: Choice)] = allNodes[nodeIndex...].compactMap { node in
+            guard case .choice(let cn) = node else { return nil }
+            guard let chosenId = selectedChoiceIds[cn.id] else { return nil }
+            guard let choice = cn.choices.first(where: { $0.id == chosenId }) else { return nil }
+            return (cn.id, choice)
+        }
+        let laterChoices = laterChoicePairs.map(\.choice)
+        let laterNodeIds = laterChoicePairs.map(\.nodeId)
+
+        // 逆向还原 stats 和 relationships
+        stats = revertedStats(from: stats, choices: laterChoices)
+        relationships = revertedRelationships(from: relationships, choices: laterChoices)
+
+        // 消耗天命值（回溯代价）
+        stats = stats.applying(effects: [StatEffect(stat: .destiny, delta: -10)])
+
+        // 清除已选记录
+        for id in laterNodeIds { selectedChoiceIds.removeValue(forKey: id) }
+        chapterChoices.removeAll { laterNodeIds.contains($0.choiceNodeId) }
+        allChoiceRecords.removeAll { record in
+            record.chapterId == chapter.id && laterNodeIds.contains(record.choiceNodeId)
+        }
+
+        // 重建 displayedNodes（到 nodeIndex 之前的节点 + 回溯目标决策节点本身）
+        let remaining = Dictionary(
+            uniqueKeysWithValues: selectedChoices(in: chapter).map { ($0.nodeID, $0.choice) }
+        )
+        displayedNodes = rebuiltDisplayedNodes(until: nodeIndex, selectedChoicesByNodeID: remaining)
+        displayedNodes.append(allNodes[nodeIndex])
+
+        currentNodeIndex = nodeIndex + 1
+        state = .choosing(targetNode)
+        saveProgress()
+    }
+
     // MARK: - Navigation
 
     func proceedToNextChapter() async {
@@ -312,6 +345,7 @@ final class ReadingViewModel {
 
     private func loadSavedProgress() async {
         guard let context = modelContext else { return }
+        resetRuntimeStateToBookDefaults()
         let bookId = book.id
         let descriptor = FetchDescriptor<ReadingProgress>(
             predicate: #Predicate { $0.bookId == bookId }
@@ -359,6 +393,16 @@ final class ReadingViewModel {
             }
         }
         try? context.save()
+    }
+
+    private func resetRuntimeStateToBookDefaults() {
+        savedProgress = nil
+        allChoiceRecords = []
+        stats = book.initialStats
+        statsBeforeChapter = book.initialStats
+        let initialRelationships = Self.initialRelationships(for: book)
+        relationships = initialRelationships
+        relationshipsBeforeChapter = initialRelationships
     }
 
     var isAwaitingChapterEndTransition: Bool {
@@ -415,6 +459,16 @@ final class ReadingViewModel {
             guard let choice = choiceNode.choices.first(where: { $0.id == record.selectedChoiceId }) else { return nil }
             return (choiceNode.id, choice)
         }
+    }
+
+    private func pendingChoiceNode(in nodes: [StoryNode]) -> ChoiceNode? {
+        for node in nodes.reversed() {
+            guard case .choice(let choiceNode) = node else { continue }
+            if selectedChoiceIds[choiceNode.id] == nil {
+                return choiceNode
+            }
+        }
+        return nil
     }
 
     private func rebuiltDisplayedNodes(
@@ -499,6 +553,21 @@ final class ReadingViewModel {
         }
 
         return nodes
+    }
+
+    private static func initialRelationships(for book: Book) -> [RelationshipState] {
+        book.characters.map { char in
+            RelationshipState(
+                characterId: char.id,
+                trust: 30,
+                affection: 20,
+                hostility: 10,
+                awe: 10,
+                dependence: 0,
+                lastChangeReason: nil,
+                unlockedEvents: []
+            )
+        }
     }
 }
 

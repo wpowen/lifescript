@@ -1,0 +1,462 @@
+{
+  "id": "天机录_ch0690",
+  "book_id": "天机录",
+  "number": 690,
+  "title": "危机伏笔",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机以为自己终于握住命运咽喉之时，那道来自天道之眼的注视悄然加深——它看到了一个有趣的棋子，正在按照它的剧本，一步步走向注定的结局。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0690_001",
+        "content": "夜风穿过天青宗后山的竹林，发出沙沙的轻响。苏青瑶的话如同一把钝刀，在陈机心口缓缓划开一道血痕。她说得平静，却字字惊雷：那个幕后主谋，就藏在他身边。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0690_002",
+        "character_id": "char_suqingyao",
+        "content": "不是外人。\"苏青瑶的声音压得极低，几乎与夜风融为一体，\"你想想，这五年来，谁对你的'废物'名号推波助澜最多？谁每次在你被人踩压时，恰好出现又恰好离开？",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_003",
+        "content": "陈机没有说话。他的手指在袖中轻轻敲击着折扇的扇骨，那是墨先生教他的计算方式——每敲一次，便在心中过一遍可能的答案。五年，身边之人，能接触到退婚之事核心的，不会超过三人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0690_004",
+        "character_id": "char_chenji",
+        "content": "我记下了。\"陈机终于开口，声音平静得可怕，\"只是青瑶师姐，你为何要告诉我这些？",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_005",
+        "content": "苏青瑶的眼神有一瞬的动摇，随即恢复清冷：\"因为我不希望我天青宗的内斗，便宜了外人。\"她顿了顿，\"更何况……你已经不完全是外人了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_006",
+        "content": "月光下，陈机的眼眸深处闪过一丝连他自己都难以察觉的暖意。但很快，他将它压下，转而开始梳理本弧的所有收获。天机阁的势力范围、皇朝暗线的布局、还有……妹妹陈灵的下落。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_007",
+        "content": "天机录残页在他识海中微微发热，一道信息自然浮现：玄武宗入侵天青宗一事，与天机阁遗迹的存在有着直接关联。墨先生的残魂在残页角落留下一行模糊的字迹：天机一出，宗门两断。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0690_choice_01",
+        "prompt": "面对这一连串的线索，陈机需要做出选择：是将所有信息整合分析，还是立刻寻找妹妹陈灵？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c1_analyze",
+            "text": "先整合线索",
+            "description": "天机录的信息显示玄武宗入侵与天机阁遗迹有关，这条线索必须优先处理",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "妹妹的下落暂时搁置",
+            "visible_reward": "获得玄武宗与天机阁关系的完整拼图",
+            "risk_hint": "可能错过妹妹的最佳接触时机",
+            "process_label": "推演中...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c1_analyze_1",
+                  "content": "陈机闭目沉思，手指在空中勾勒出一道道玄奥的轨迹。随着推演的深入，一幅令人心惊的图景逐渐浮现——玄武宗的入侵并非偶然，而是天机阁遗迹开启的必然结果。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c1_find_sister",
+            "text": "先找陈灵",
+            "description": "天机录无法预见妹妹相关的事件，这说明她身上藏有更大的秘密",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能遗漏玄武宗入侵的真正目的",
+            "visible_reward": "可能从陈灵处获得关于天机阁的线索",
+            "risk_hint": "妹妹身上的秘密可能超出预期",
+            "process_label": "感知中...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c1_find_sister_1",
+                  "content": "陈机调动天命值，尝试感应妹妹的位置。然而天机录的预见在她身上总是模糊不清——仿佛有一层看不见的屏障，阻挡着他的探查。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0690_008",
+        "content": "就在此时，竹林深处传来一阵异样的波动。陈机猛然睁眼，只见一道微弱的灵光在远处闪烁——那是陈灵的气息，但又不完全是她一个人。还有另一道气息，苍老而深邃，仿佛来自远古。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0690_009",
+        "character_id": "char_chenian",
+        "content": "哥哥？\"一道清脆的声音从灵光中传来，带着几分惊讶和欣喜，\"你怎么……不对，你的修为怎么……\", \"emotion\": \"惊讶\"}"
+      },
+      "text": {
+        "id": "天机录_ch0690_010",
+        "content": "陈灵的身影从灵光中走出，身后跟着一名身披黑袍的老者。老者面容模糊，仿佛被一层迷雾遮挡，但陈机却从那迷雾中感受到了一种熟悉的气息——那是天机录的气息。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0690_choice_02",
+        "prompt": "面对突然出现的黑袍老者，陈机该如何应对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "c2_confront",
+            "text": "直接质问",
+            "description": "这老者身上的气息与天机录相似，必须搞清楚他的来历",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能暴露自己的底牌",
+            "visible_reward": "获取关于天机录来源的关键信息",
+            "risk_hint": "对方实力深不可测",
+            "process_label": "质问中...",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0690_result_c2_confront_1",
+                  "character_id": "char_chenji",
+                  "content": "前辈是何人？为何身上有天机录的气息？\"陈机的声音不卑不亢，直视那黑袍老者。",
+                  "emotion": "警惕"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c2_confront_2",
+                  "content": "老者发出一声低沉的笑声：\"有意思，不愧是它选中的人。只是你知道吗？天机录选中的人，从来都没有好下场。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c2_observe",
+            "text": "暗中观察",
+            "description": "先不暴露自己，让对方先亮出底牌",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错失主动权",
+            "visible_reward": "看清对方真实意图后再做决定",
+            "risk_hint": "老者可能也在试探",
+            "process_label": "隐忍中...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c2_observe_1",
+                  "content": "陈机微微垂下眼眸，将天机录的气息压制到最低，表现出恰如其分的惊讶和警惕。他在等，等对方露出破绽。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c2_observe_2",
+                  "content": "老者似乎看穿了他的伪装，却并未点破，只是意味深长地笑了笑：\"装得真像。只是孩子，你以为你在布局，其实你一直在别人的棋盘上。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0690_011",
+        "content": "老者的目光在陈机身上停留了片刻，似乎在评估着什么。片刻后，他从袖中取出一枚古朴的令牌，抛向陈机：\"这是天机阁的入门令牌。既然你已经被它选中，总要知道自己的处境。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_012",
+        "content": "令牌入手冰凉，其上刻着一只竖瞳之眼，与陈机识海中的天机录残页遥相呼应。就在此时，一道微弱的声音传入陈机耳中——那是墨先生的残魂在说话。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0690_013",
+        "character_id": "char_moxiansheng",
+        "content": "小心。\"墨先生的声音比以往任何时候都要凝重，\"这老者……是上一代天机录的候选者。他没有成功，所以成了守门人。但他话里的意思……孩子，你已经被盯上了。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0690_choice_03",
+        "prompt": "获得天机阁令牌后，陈机面临一个关键抉择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c3_accept",
+            "text": "接受令牌",
+            "description": "既然已被盯上，不如顺势进入天机阁，看看他们到底在谋划什么",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "正式成为天机阁的棋子",
+            "visible_reward": "获得进入天机阁遗迹的资格，解锁更多天机录秘密",
+            "risk_hint": "可能正中对方下怀",
+            "process_label": "布局中...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c3_accept_1",
+                  "content": "陈机将令牌收入袖中，神色如常：\"多谢前辈指点。只是晚辈想知道，天机阁需要我做什么？\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c3_accept_2",
+                  "content": "老者的笑容更深了：\"聪明。你需要做的很简单——在下一场天地大劫中，活下来。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c3_refuse",
+            "text": "拒绝令牌",
+            "description": "不做他人棋子，哪怕对方实力深不可测",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能失去了解天机阁的机会",
+            "visible_reward": "保持独立地位，不受天机阁约束",
+            "risk_hint": "老者的态度可能逆转",
+            "process_label": "对抗中...",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c3_refuse_1",
+                  "content": "陈机将令牌掷回老者手中：\"晚辈不习惯做别人的棋子。前辈若有事相商，不妨直言。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0690_result_c3_refuse_2",
+                  "content": "老者接过令牌，脸上的笑容消失了，取而代之的是一种难以捉摸的惋惜：\"可惜了。你和你父亲一样骄傲。只是……骄傲的人，往往死得最早。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0690_014",
+        "content": "就在气氛即将凝固之际，陈灵突然开口了。她的声音带着一丝颤抖，仿佛在极力压抑着什么：\"前辈，您说的天地大劫……是指那个吗？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_015",
+        "content": "老者看向陈灵的目光变得柔和了几分：\"你知道？\"他似乎有些意外，随即点了点头，\"看来圣宗没骗你。是的，天道之眼即将苏醒，而它的苏醒，需要大量的天命值作为祭品。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_016",
+        "content": "天道之眼。陈机在心中默念这个名字。天机录残页猛然发出一道刺目的光芒，墨先生的残魂在识海中剧烈颤抖：\"它……它怎么会这么快就……\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_017",
+        "content": "老者似乎感应到了什么，抬头望向夜空。在那深邃的苍穹之上，仿佛有一只无形的眼睛正在缓缓睁开，注视着大地上的一切。陈机感到一阵彻骨的寒意，仿佛被某种超越理解的存在锁定了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0690_018",
+        "character_id": "char_tiandaozhiyan",
+        "content": "感觉到了吗？\"老者的声音在夜风中回荡，\"它一直在看着。从你得到天机录的那一刻起，它就在看着。它在等，等你变得更强大，等你积累更多的天命值……然后，一并收割。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_019",
+        "content": "陈机的瞳孔微微收缩。但他很快恢复了平静，嘴角甚至勾起一抹淡淡的弧度。被人当作猎物？很好，那就看看最后谁是猎人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_020",
+        "content": "就在此时，一道时空裂隙的波动从远处传来。陈机心中一动——那是陈天命的声音。他循着波动探去，一个坐标清晰地浮现在脑海中：东海之滨，蛟龙渊底，第七道裂隙。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_021",
+        "content": "老者似乎也感应到了那道裂隙，深深地看了陈机一眼：\"看来你的机缘到了。记住孩子，在这个世界上，没有无缘无故的给予。每一次得到，都要付出代价。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_022",
+        "content": "黑袍老者的身影渐渐模糊，最终融入夜色之中。陈灵望着他消失的方向，轻声道：\"哥哥，他说的是真的。天道之眼……我在圣宗也听说过它的存在。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0690_023",
+        "character_id": "char_chenian",
+        "content": "哥哥，\"陈灵突然握住了陈机的手，她的眼眶微微泛红，\"有些事我一直没告诉你。当年你得到天机录残页，不是偶然。是有人故意放在你面前的。而那个人……\"",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_024",
+        "content": "陈机轻轻拍了拍妹妹的头，打断了她的话：\"以后再说。\"他的目光投向东方天际，那里隐约有金光涌动。东海之滨，蛟龙渊底——那是命运的下一个坐标。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0690_025",
+        "content": "而在极远处的天道之上，那只无形的眼睛悄然眨动了一下。它看到了一个有趣的棋子，正在按照它的剧本，一步步走向注定的结局——只是它不知道的是，那个看似弱小的棋子，也在暗中编织着自己的网。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "id": "天机录_ch0400",
+  "book_id": "天机录",
+  "number": 400,
+  "title": "意外传送",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机踏入那间囚室的瞬间，墙壁上的阵纹骤然亮起——他的行踪，早已被人锁定。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0400_001",
+        "content": "远古传送阵的光芒散去，陈机脚下一沉，一股阴冷潮湿的气息扑面而来。他睁开眼，入目是一片幽暗的石室，穹顶镶嵌着数盏幽绿色的磷火，将四周照得如同鬼域。空气中弥漫着浓重的血腥味与腐朽的霉味，令他几欲作呕。\"这里……\"夜清的声音从身后传来，同样带着压抑的惊疑。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_002",
+        "content": "陈机强压下翻涌的不适，环顾四周。石壁上刻满了晦涩的符文，隐隐散发着令人心悸的灵力波动——那是封印阵纹，而且是极其古老的那种。脚下是巨大的圆形阵盘，与他们方才激活的传送阵如出一辙，却在边缘处多出了数十道支脉，如蛛网般蔓延向四面八方。\"圣宗的秘密据点。\"夜清的声音冷了下来，\"我们被送到这里来了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_003",
+        "content": "陈机没有回答，他的全部注意力都被另一种感觉攫住了——一股熟悉得令他心脏骤停的气息，正从石室深处透过来。那是……陈念的气息。三年了，他寻遍天下，以为妹妹早已不在人世，可此刻那股血脉相连的感应如此清晰、如此真实，正牵引着他向某个方向迈步。\"陈机？\"夜清皱眉看着他骤然苍白的脸色，\"怎么了？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0400_004",
+        "character_id": "char_chenji",
+        "content": "她在。\"陈机的声音沙哑得不像自己，\"陈念在这里。\"",
+        "emotion": "压抑的激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_005",
+        "content": "夜清瞳孔微缩。作为魔道圣女，她当然听说过陈念的名字——天命锁钥，陈氏遗孤，圣宗追缉多年的要犯。可她没想到，这个被传早已陨落的少女，竟真的还活着，更没想到会藏在这等隐秘之地。\"确定？\"她沉声问道，\"这可能是陷阱。\"陈机闭上眼，天机录在他脑海中微微发烫，那模糊的画面终于有了指向——三月初七，就在前方不远处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0400_006",
+        "character_id": "char_yeqing",
+        "content": "不管是不是陷阱，\"夜清眸光一闪，\"我刚才感知到，这据点里的守卫力量不强，多数人手似乎被调去了别处。这是个难得的机会。\"她看向陈机，\"怎么走，你来决定。\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0400_007",
+        "prompt": "感知到妹妹的存在后，陈机需要决定下一步行动方式——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "yeqing_lead",
+            "text": "让夜清带路潜入",
+            "description": "利用夜清的魔道迷雾遮掩气息，悄悄接近目标，避免打草惊蛇。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗时间，可能被巡逻发现",
+            "visible_reward": "安全接近目标，有时间观察敌情",
+            "risk_hint": "若被察觉，将陷入包围",
+            "process_label": "暗中潜行",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0400_result_yeqing_lead_001",
+                  "content": "夜清点点头，周身泛起一层淡薄的黑色雾气，将二人笼罩其中。\"别出声，跟紧我。\"她的声音压得极低，脚步却稳健如猫，每一步都精准地避开地上的阵纹纹路。陈机跟在她身后，心中暗暗惊讶——这魔道圣女的潜行本事，确实名不虚传。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "chenji_rush",
+            "text": "直接循气息冲过去",
+            "description": "血脉的呼唤让他无法再等待，哪怕暴露行踪也要第一时间确认妹妹的安全。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能触发机关警报，惊动敌人",
+            "visible_reward": "最快速度接近陈念",
+            "risk_hint": "将正面对上据点守卫",
+            "process_label": "急速突进",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0400_result_chenji_rush_001",
+                  "content": "陈机没有犹豫，循着那股熟悉的气息便向前冲去。夜清愣了一瞬，旋即咬牙跟上，\"你疯了！\"她低声急道，手中却已凝出一团魔气护在陈机身侧。陈机充耳不闻，他此刻眼中只有前方——那股血脉的牵绊越来越清晰，妹妹就在那里！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_008",
+        "content": "穿过三道幽暗的甬道，拐过两道拐角，陈机终于看到了她。陈念被囚禁在一间巨大的囚室中央，四周立着四根刻满符文的石柱，层层叠叠的禁制光幕将她笼罩其中。她的双手被锁链悬吊而起，衣衫褴褛，发丝凌乱，面颊上犹有干涸的血痕。可即便如此，她依然倔强地抬着头，那双眼睛——与他如出一辙的眉眼——即便隔着禁制光幕，依然让陈机的心脏狠狠抽痛。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0400_009",
+        "character_id": "char_chenian",
+        "content": "……机哥哥？\"陈念的声音沙哑而虚弱，却带着难以置信的颤抖，\"你怎么会……不，快走！这是陷阱！\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_010",
+        "content": "三年了。陈机看着眼前这个形销骨立的少女，拳头握得指节发白。三年前她被人掳走时，还是个会躲在他身后撒娇的小丫头；如今，却被折磨得不成人形，锁在这暗无天日的地底囚室。他深吸一口气，压下翻涌的杀意，正要开口，脚下突然传来一阵微弱的震动——从更深处传来的。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_011",
+        "content": "陈机循着那震动望去，瞳孔骤然紧缩。囚室的尽头有一扇巨大的石门，门缝中透出诡异的血红色光芒，伴随着低沉的诵经声。那声音苍老而晦涩，像是从远古传来的呢喃，每一个音节都带着令人心悸的力量。\"这是……\"夜清的脸色也变了，\"献祭仪式？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_012",
+        "content": "陈机闭上眼，天机录在他脑海中飞速运转。残页上的画面渐渐清晰——血红色的祭坛，堆叠的尸骸，以及一个巨大的阵法，正需要陈氏血脉作为\"引子\"来激活。三月初七的预言，终于完整地呈现在他眼前。圣宗要做的，不仅仅是囚禁陈念，而是要用她的血、用她的命，来完成某个惊天阴谋。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0400_013",
+        "character_id": "char_yeqing",
+        "content": "夜清凑到那石门缝隙处，看清了里面的景象后倒吸一口冷气。\"祭坛已经布好，看阵纹的亮度……最多还有三个时辰。\"她转头看向陈机，\"我们要同时做两件事——救人，和破坏仪式。但人手不够。\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_014",
+        "content": "陈机沉默片刻，目光在囚室与石门之间来回扫视。囚室中陈念的禁制需要破除，祭坛上的仪式需要阻止——两件事都不能耽搁，却又不可能同时完成。他的大脑飞速运转，计算着每一种可能。三百年来，他遇到过无数次这样的绝境，每一次都是靠精密的计算和果断的执行活下来的。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0400_015",
+        "prompt": "献祭仪式即将开始，陈机必须做出抉择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "rescue_nian",
+            "text": "先救陈念",
+            "description": "妹妹是他穿越三百年的执念，任何事都可以等，唯独她的命不能拿来赌。仪式可以之后再想办法破坏。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能来不及阻止献祭",
+            "visible_reward": "确保陈念安全，即便仪式成功也失去意义",
+            "risk_hint": "若仪式完成，后果不堪设想",
+            "process_label": "优先营救",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0400_result_rescue_nian_001",
+                  "content": "陈机不再犹豫，径直走向囚室。\"陈念，别怕。\"他的声音低沉而坚定，\"我来接你回家。\"他单手按上禁制光幕，天机录的力量瞬间涌出，残页上的符文与禁制产生共鸣，层层光幕开始出现裂纹。夜清守在一旁，警惕地注视着四周，随时准备出手。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "stop_ritual",
+            "text": "先毁祭坛",
+            "description": "陈念被困三年都没死，说明仪式还需要她作为活祭品。只要毁掉祭坛，就能争取到更多时间。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "陈念可能承受禁制反噬",
+            "visible_reward": "从根本上瓦解圣宗计划",
+            "risk_hint": "破阵动静会惊动所有人",
+            "process_label": "破坏仪式",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0400_result_stop_ritual_001",
+                  "character_id": "char_chenian",
+                  "content": "陈念听到陈机的计划，脸色惨白：\"不！祭坛那边有重兵把守，而且阵法核心……机哥哥，你不知道他们有多狠！\"她的声音带着哭腔，\"求你不要为了我冒险……\"",
+                  "emotion": "焦急"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_016",
+        "content": "就在此时，远处传来急促的脚步声与呼喝声。陈机的行踪，终究还是暴露了。一名守卫慌慌张张地跑来，看到陈机二人，脸色大变，正要示警，一道黑影闪过，那人便无声无息地倒下。夜清收回手，神色淡然：\"动作快些，他们调了更多人来。\"陈机点点头，目光却落在了陈念脚下的地面——那里的阵纹，与祭坛上的符文遥相呼应，隐隐勾勒出一个巨大的阵眼轮廓。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_017",
+        "content": "他明白了。这整个地下据点，就是一个巨大的阵法，而陈念所在的位置，恰好是阵眼所在。无论他先救谁后救谁，只要圣宗启动最终阵纹，一切都会回到原点。除非——他能在同一时刻，同时破坏阵眼与祭坛。陈机嘴角勾起一抹冷笑。三百年来，他最擅长的就是在绝境中找出那唯一的生路。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0400_018",
+        "character_id": "char_yeqing",
+        "content": "夜清，我需要你做一件事。\"陈机的声音恢复了往日的冷静，\"去祭坛，用你的魔道迷雾遮住那里的阵纹，能撑多久撑多久。\"夜清挑眉：\"那你呢？\"陈机没有回答，只是抬手，天机录在他掌心缓缓浮现，泛着古朴而神秘的光芒。墨先生说过，天机录越完整，命运的必死反噬就越强——但有时候，反噬本身就是最锋利的武器。",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0400_019",
+        "prompt": "陈机决定以天机录为核心同时破坏两处阵眼，这将带来巨大的反噬——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianji_full",
+            "text": "全力催动天机录",
+            "description": "消耗大量天命值，以天机录的力量同时轰击阵眼与祭坛，一举两得。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值大幅消耗，可能引发未知反噬",
+            "visible_reward": "同时破坏两处阵法核心，彻底瓦解圣宗计划",
+            "risk_hint": "反噬程度不可预测",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0400_result_tianji_full_001",
+                  "content": "陈机不再犹豫，将全部心神灌注天机录。古朴的残页骤然绽放出刺目的金光，庞大的信息流如潮水般涌入他的意识——这是预见的反噬，也是预见的馈赠。三百年来，他从未如此清晰地\"看见\"过未来：阵纹的每一道裂隙，诵经声中的每一处停顿，守卫眼中的每一丝恐惧，全都尽收眼底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_half",
+            "text": "保守方案",
+            "description": "只破坏阵眼，救出陈念后趁乱撤退，不与圣宗正面冲突。祭坛的威胁日后再解决。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "祭坛保留，圣宗仍有可能完成仪式",
+            "visible_reward": "稳妥救出陈念，保存实力",
+            "risk_hint": "留下后患",
+            "process_label": "稳中求胜",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0400_result_tianji_half_001",
+                  "content": "陈机思索片刻，选择了更稳妥的方案。他转向夜清：\"我先破阵眼，你在外围策应。若事不可为，我们立刻撤退。\"夜清点头，魔道迷雾已经悄然蔓延出去，将周围的气息遮掩得严严实实。陈机深吸一口气，天机录的力量开始在他掌心汇聚，却刻意压制着总量。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0400_020",
+        "content": "天机录的金光与禁制阵纹猛然碰撞，发出一声震耳欲聋的轰鸣。囚室中的四根石柱同时龟裂，层层光幕如玻璃般碎裂，陈念脚下的阵眼轰然崩塌。与此同时，夜清那边也传来一阵闷响——祭坛上的阵纹被魔道迷雾侵蚀，诵经声戛然而止。两处阵法核心，同时失效。陈念惊愕地看着眼前的一幕，不敢相信这是真的。\"机哥哥……\"她的声音颤抖着，\"你真的来救我了。\"陈机走上前，亲自为她解开锁链，目光温柔却带着一丝冷意：\"走，回家。\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "id": "天机录_ch0351",
+  "book_id": "天机录",
+  "number": 351,
+  "title": "枷锁代价",
+  "is_paid": true,
+  "next_chapter_hook": "陈机决定利用任务机制反向操作，主动寻找枷锁解除的线索——他要在天道编织的棋局中，找到属于自己的落子之处。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0351_001",
+        "content": "那道漆黑裂隙中的天道威压如同实质化的死亡宣告，陈机感觉自己的每一根骨头都在咯咯作响。化神境的威压——这是他目前绝对无法抗衡的力量。天机录第一页上的墨先生残魂剧烈颤抖，声音变得支离破碎：「它来了……比我预计的早了三百年……」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_002",
+        "content": "陈机没有慌乱。他缓缓抬头，直视那道仿佛能洞穿万物的漆黑深眸，声音出奇平静：「所以，天道之眼终于愿意和我说话了？」那一刻，他甚至笑了，笑容冰冷而讥诮，「我还以为你会继续躲在幕后，看我像其他傻子一样为你卖命到死。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_003",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你知道的比你以为的多。」天道之眼的声音并非从裂隙中传来，而是直接响彻在陈机的识海中，如同天雷碾过，「但知道得太多，从来都不是一件好事。」",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_004",
+        "content": "识海中的剧痛让陈机闷哼一声，七窍渗出细细血丝。但他依然站得笔直，擦去嘴角的血迹，冷声道：「既然已经现身，说明你有事要我做。说吧，什么任务？」他的语气像在谈一笔再普通不过的买卖，仿佛刚才被碾压的不是他自己。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「西荒废墟，第二页天机录残页。」天道之眼的声音毫无感情，「完成它，你将获得第三个能力。拒绝……」那漆黑的深眸微微眯起，「你应该知道拒绝的后果。」",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_006",
+        "content": "陈机感受到了那股如影随形的死亡威胁。天道之眼不需要多说什么，那股力量已经清楚地告诉他：拒绝任务，他会在一刻钟内暴毙。他曾经以为自己算无遗策，此刻才明白什么叫绝对的权力。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_007",
+        "content": "「我去。」陈机吐出两个字，干脆利落。天道之眼的注视渐渐消退，裂隙缓缓闭合。但在消失前，那道声音最后说道：「很好。记住，每一次使用天机录，你都会离终点更近一步。」陈机听出了其中的嘲讽。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_008",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的残魂在虚空中浮现，脸色前所未有的凝重：「主人，您不应该答应得这么快。这个任务的代价……恐怕比您想象的更加可怕。」",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0351_009",
+        "prompt": "墨先生欲言又止的模样让陈机感到不安，他该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "force_truth",
+            "text": "逼问真相",
+            "description": "直接质问墨先生，命令他说出所有隐瞒的信息，不再接受任何保留",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能动摇墨先生的信任",
+            "visible_reward": "获得完整情报",
+            "risk_hint": "墨先生可能说出令人绝望的真相",
+            "process_label": "逼迫师尊吐露全部秘密",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_force_truth_001",
+                  "content": "陈机猛地转身，眼中闪过一丝厉色：「墨先生，我叫你一声师尊，是敬你护我至今。但从现在开始，我只认事实——每一片残页的代价是什么？天道之眼的真正目的是什么？别再跟我打哑谜。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "patient_listen",
+            "text": "耐心倾听",
+            "description": "压下心中怒火，给墨先生说话的机会，听他解释来龙去脉",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "浪费时间",
+            "visible_reward": "了解任务全貌",
+            "risk_hint": "可能听到更多坏消息",
+            "process_label": "静心聆听师尊的解释",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_patient_listen_001",
+                  "content": "陈机深吸一口气，强压下翻涌的怒火，缓缓坐到蒲团上：「说。我听着。」他的语气平静得可怕，仿佛在听一个早已知晓的死刑判决。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "contact_yeqing",
+            "text": "联系夜清",
+            "description": "立刻联系魔道圣女夜清，用她掌握的情报网络验证墨先生的信息",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露行踪给夜清",
+            "visible_reward": "获得外部情报验证",
+            "risk_hint": "可能欠下夜清人情",
+            "process_label": "紧急联络魔道圣女",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_contact_yeqing_001",
+                  "content": "陈机没有立刻回应墨先生，而是取出夜清留下的通讯玉符，悄然激活。片刻后，玉符中传来夜清慵懒的声音：「这么快就想我了？」陈机冷冷道：「我需要你帮我查一件事——天机录历代持有者的死因。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_010",
+        "content": "三日后，西荒废墟。这片被称为\"天道坟场\"的绝地终年笼罩在灰黑色的瘴气中，空气中弥漫着腐朽与死亡的气息。传闻上古时期，这里曾是某位半步大能的自爆之地，方圆千里的灵气都被那场爆炸彻底摧毁。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_011",
+        "content": "陈机踏入废墟的瞬间，天机录上的文字骤然亮起。一个冰冷的指引出现在他脑海中：「东北方向三百丈，地下三十丈，第一页残页。」他顺着指引前行，脚步踏在龟裂的石地上，发出空洞的回响。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_012",
+        "content": "挖掘的过程并不困难。当陈机从地下取出一个布满灰尘的玉匣时，他的手指微微颤抖。不是因为激动，而是因为他已经感觉到了不对劲——玉匣上镌刻着密密麻麻的细小符文，那是……契约纹路。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_013",
+        "character_id": "char_chenji",
+        "content": "「果然。」陈机冷笑出声，用力打开玉匣。匣中躺着一页泛黄的残页，其上赫然写着附加条款：「持此页者，每使用一次天机录能力，天命值消耗翻倍。」他将残页攥在手中，指节发白，「好一个‘奖励’。」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_014",
+        "content": "陈机没有停下。他按照天机录的指引继续深入废墟，一个时辰后，他已经收集了三页残页。而每一页，都附带着更加苛刻的强制条款：第二页要求使用者必须对最近之人隐瞒天机录的存在；第三页则要求每解封一页，寿命减少一年。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_015",
+        "character_id": "char_chenji",
+        "content": "「寿命减少一年？」陈机的声音冷得像冰，「我已经从三个月变成两个月，现在又要再减一年？」他突然仰天大笑，笑声在废墟中回荡，带着几分癫狂，「好！好得很！天道之眼，你真是大方！」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_016",
+        "content": "就在这时，天机录第三页骤然觉醒。一股磅礴的力量从残页中涌出，化作一道金色的锁链虚影，紧紧缠绕在陈机的灵魂之上。他感觉到自己的寿命再次被压缩——三个月，两个月……一个月十五天。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_017",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的声音在脑海中响起，带着深深的愧疚：「主人……这是天机录的规则。每获得一页残页，枷锁就会收紧一分。我原本以为……以为您能打破这个循环……」他的声音越来越低，「对不起。」",
+        "emotion": "愧疚"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_018",
+        "character_id": "char_yeqing",
+        "content": "陈机刚刚离开废墟，玉符便剧烈震动。夜清的声音从里面传来，语气罕见地凝重：「陈机，我查到你要的情报了。你知道为什么天机录历代持有者都死得那么快吗？」她顿了顿，「因为他们都在替天道之眼完成任务。每完成一个任务，就要使用一次天机录，而每使用一次……天命值就会疯狂消耗。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_019",
+        "content": "「所有前任持有者，都死在这个循环里。」夜清的声音带着一丝寒意，「他们不是被敌人杀死的，是被天机录本身……被天道之眼，一点一点地榨干的。」陈机沉默了。夜清继续道：「更可怕的是，他们每个人临死前都在执行任务——就像被操纵的傀儡，直到天命值耗尽的那一刻。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_020",
+        "content": "陈机站在废墟边缘，望着远处渐暗的天际。他忽然笑了，笑容冰冷而讥诮：「所以，天道之眼不是在利用我——它是在养蛊。用天机录的能力吸引野心家，然后用任务驱使他们不断消耗，直到……死亡。」他的眼中闪过一丝疯狂的光芒，「它需要的是一个不断使用能力的工具，而不是一个真正的主人。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_021",
+        "character_id": "char_chenji",
+        "content": "「那么，」陈机的声音低沉而危险，「如果我不按它的规则玩呢？如果我……主动去寻找那些枷锁的解除方法呢？」他转头看向玉符，嘴角勾起一抹冷笑，「天道之眼以为它在操控一切，但它忘了一件事——我不是那些蠢货。」",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_022",
+        "content": "夜清在玉符那头沉默了片刻，然后轻笑出声：「有意思。你打算怎么做？」陈机没有回答。他的目光落在手中的天机录残页上，心中已经开始推演——既然每一片残页都附带强制条款，那这些条款本身，就是线索。制定规则的人，永远会留下破解之道。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0351_023",
+        "prompt": "陈机意识到自己陷入了一个死局——接受任务会加速死亡，但拒绝任务会立即死亡。他该如何破局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "execute_trap",
+            "text": "执行陷阱任务",
+            "description": "表面上顺从天机录的指引，暗中收集每一页残页的强制条款信息，寻找其中的漏洞",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "继续消耗天命值",
+            "visible_reward": "获得更多残页线索",
+            "risk_hint": "可能陷入更深的陷阱",
+            "process_label": "将计就计的反向操作",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_execute_trap_001",
+                  "content": "「好，那我就继续做你的好棋子。」陈机低声说道，语气中带着冰冷的嘲弄。他开始仔细记录每一页残页的强制条款，试图从中找出规律——既然天道之眼能制定规则，那就一定能找到规则的漏洞。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "find_third_way",
+            "text": "寻找第三条路",
+            "description": "暂时搁置任务，转而调查天机录本身的来源和枷锁的起源，寻找不为人知的解封方法",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "时间紧迫，枷锁倒计时继续",
+            "visible_reward": "可能发现隐藏线索",
+            "risk_hint": "天道之眼可能会惩罚抗命",
+            "process_label": "主动出击寻找破局之法",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_find_third_way_001",
+                  "content": "「我不需要按照它的剧本走。」陈机的眼中闪过一丝狠厉，「夜清，帮我查一个人——天机录的第一任持有者是谁。」既然这个局是天道之眼布下的，那它的起源，一定藏着打破循环的关键。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_with_heaven",
+            "text": "与天道谈判",
+            "description": "直接主动联系天道之眼，要求重新谈判任务条款，试探它的底线",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能暴露自己的意图",
+            "visible_reward": "可能获得喘息之机",
+            "risk_hint": "天道之眼可能看穿他的计划",
+            "process_label": "以进为退的豪赌",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_negotiate_with_heaven_001",
+                  "content": "陈机深吸一口气，将意识沉入识海，直面那道高高在上的漆黑深眸：「我有话要说。」天道之眼的声音带着一丝玩味：「哦？你想谈什么——是想求饶，还是想谈条件？」陈机冷声道：「都不是。我只是想知道，你到底在害怕什么。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_024",
+        "content": "无论选择哪条路，陈机都已经清楚地认识到一件事：他正身处一个精心设计的死亡游戏之中。接受任务会死得更快，拒绝任务会死得更早。这个两难的困局，仿佛无解。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_025",
+        "content": "但陈机不是普通人。他是算无遗策的陈机，是能在绝境中寻找生机的陈机。他的嘴角勾起一抹冷笑——天道之眼以为用枷锁和任务就能控制他，却忘了一件事：棋子和棋手之间的距离，有时候只是一念之差。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_026",
+        "content": "他缓缓合上天机录，目光变得幽深而危险。一个大胆的计划在他脑海中成型——既然天道之眼要他不断使用能力，那他就用。但不是被驱使着用，而是主动地、精准地、计算过每一分代价地用。他要让天道之眼看到它想要的结果，同时在暗处一步步瓦解这座看似无解的牢笼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_027",
+        "content": "远处，夜清的玉符再次亮起：「陈机，我查到了一些有趣的东西。天机录的枷锁……似乎和上古时代的一场浩劫有关。」她的声音变得低沉，「而那场浩劫的幸存者中，有一个人的名字，和你的姓氏一模一样。」陈机的心猛地一沉。陈——这个看似普通的姓氏，背后究竟隐藏着怎样的秘密？",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

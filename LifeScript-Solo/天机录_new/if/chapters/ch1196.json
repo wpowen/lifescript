@@ -1,0 +1,434 @@
+{
+  "id": "天机录_ch1196",
+  "book_id": "天机录",
+  "number": 1196,
+  "title": "毁灭之路",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机的意志化为新世界的本源，万物在他的牺牲中迎来真正的自由。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1196_001",
+        "content": "天机录残页在陈机眉心缓缓浮现，完整版的金色光芒将整个天青宗笼罩其中。他透过天道之眼俯瞰三界众生，却在最熟悉的角落里，看见了那张曾经刻骨铭心的面容——苏青瑶站在天青宗的山门前，眼神空洞，仿佛从未认识过他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_002",
+        "content": "那一刻，陈机的心脏仿佛被一只无形的手狠狠攥紧。他布局天下，算无遗策，却从未想过，天道之眼对他的惩罚，竟是让他的挚爱遗忘他的存在。「青瑶……」他轻声呼唤，声音里带着从未有过的颤抖，「你看着我，我是陈机啊。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1196_003",
+        "character_id": "char_suqingyao",
+        "content": "（眼神空洞地扫过他，如同看着一个陌生人）你是谁？这里不是你该来的地方，杂役弟子。",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_004",
+        "content": "陈机笑了，那笑容比哭还难看。他陈机算计一生，将天下人玩弄于股掌之间，却在这一刻输得彻彻底底。命运的残酷不在于它夺走你的生命，而在于它让你深爱的人，忘记了你的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_005",
+        "content": "「够了。」陈机缓缓闭上眼，再睁开时，眸中已是一片决绝的冰冷，「天道之眼，你以为这样就能让我屈服？呵……你太小看我陈机了。」他的声音平静得可怕，「既然你要玩，那我就陪你玩一局大的——第三条路。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1196_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（宏大的声音从虚空中响起，带着绝对的傲慢与轻蔑）第三条路？你不过是我布下的棋子，能有什么第三条路？",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1196_choice1",
+        "prompt": "面对天道之眼的嘲讽，陈机该如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1196_c1_a",
+            "text": "以残破天机录引爆完整版力量",
+            "description": "用残页与完整版天机录之间的排斥，引爆毁灭性的力量，与天道同归于尽。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗全部天命值",
+            "visible_reward": "与天道之眼同灭，换取万物新生",
+            "risk_hint": "牺牲自我，可能永远消散",
+            "process_label": "以命换命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1196_result_c1_a_1",
+                  "content": "陈机将手中残页猛然掷向虚空，金色光芒瞬间暴涨。残页与完整版天机录碰撞的瞬间，毁灭性的力量如同开天辟地般炸裂开来。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "牺牲之路"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1196_c1_b",
+            "text": "召唤所有盟友，共赴毁灭",
+            "description": "召集苏青瑶、夜清、陈念等人，以所有人的力量共同承担天命值消耗，完成最终一击。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "所有人的天命值",
+            "visible_reward": "以众人之力摧毁天道之眼",
+            "risk_hint": "将盟友置于险境",
+            "process_label": "同生共死",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1196_result_c1_b_1",
+                  "content": "陈机双手结印，天机录的光芒穿透虚空，将苏青瑶、夜清、陈念的身影一一召唤而来。「诸位，我需要你们的力量。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "众志成城"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1196_007",
+        "character_id": "char_yeqing",
+        "content": "（身影从魔道迷雾中凝聚而出，神色复杂）陈机，你终于肯叫我了。我等这一天，等了太久。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1196_008",
+        "character_id": "char_suqingyao",
+        "content": "（眼神依旧空洞，却在看到陈机的瞬间微微皱眉）虽然我不记得你是谁，但……我的心告诉我，我必须帮你。",
+        "emotion": "迷茫"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1196_009",
+        "character_id": "char_chenian",
+        "content": "（从虚空中踏出，眼眶泛红）哥……我终于找到你了。就算天道抹去了所有人对你的记忆，我也会永远记得你。",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_010",
+        "content": "陈机看着她们，眼眶微微泛红。他布局一生，将所有人当作棋子，却在这一刻发现，真正的棋子从来不是别人，而是他自己。而这些人，愿意与他共赴毁灭。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1196_choice2",
+        "prompt": "面对愿意与他同生共死的众人，陈机该如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1196_c2_a",
+            "text": "接受她们的力量，完成最终一击",
+            "description": "让所有人的力量汇聚于天机录，共同引爆，与天道同归于尽。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "所有人承担天命值消耗",
+            "visible_reward": "以众志成城之力摧毁天道之眼",
+            "risk_hint": "所有人可能一同消散",
+            "process_label": "众志成城",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5000
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1196_result_c2_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "（伸出手，将魔道迷雾尽数灌入天机录）我的命是你救的，今日还你。",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "众志成城"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1196_c2_b",
+            "text": "独自承担，不让她们涉险",
+            "description": "拒绝她们的力量，由自己一人完成牺牲，保护她们的安全。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗全部天命值",
+            "visible_reward": "独自摧毁天道之眼，保护众人",
+            "risk_hint": "力量可能不够，需要孤注一掷",
+            "process_label": "独自牺牲",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1196_result_c2_b_1",
+                  "content": "「不。」陈机摇头，声音坚定，「这条路只能我一个人走。你们……替我看看这新世界的样子。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "独自牺牲"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_011",
+        "content": "就在此时，虚空猛然震颤。天道之眼的声音再次响起，这一次，带着一丝从未有过的波动：「陈机……你当真要这样做？你可知道，一旦引爆天机录，你将永远消散，连轮回的机会都没有！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_012",
+        "content": "陈机仰天大笑，那笑声里带着无尽的畅快与悲凉：「天道之眼，你终于慌了？哈哈……我陈机布局一生，算无遗策，却唯独算漏了一件事——原来，真正的变数，是我自己的心。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1196_013",
+        "character_id": "char_suqingyao",
+        "content": "（空洞的眼神突然泛起一丝波动）陈机……这个名字……我的心里，为什么这么痛……",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1196_choice3",
+        "prompt": "苏青瑶的记忆开始恢复，陈机该如何面对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1196_c3_a",
+            "text": "让她想起一切",
+            "description": "用天机录的力量强行唤醒她的记忆，让她想起两人之间的所有过往。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "苏青瑶想起所有，恢复完整记忆",
+            "risk_hint": "可能加速天命值消耗",
+            "process_label": "唤醒记忆",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1196_result_c3_a_1",
+                  "character_id": "char_suqingyao",
+                  "content": "（眼中突然涌出泪水）陈机……我想起来了……你是陈机，是那个我一直在追查的废物弟子……也是我……我心里最重要的人……",
+                  "emotion": "泪流满面"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "记忆恢复"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1196_c3_b",
+            "text": "保持沉默，让她遗忘",
+            "description": "不让苏青瑶想起一切，让她带着空白的心继续活下去，不被即将消散的自己牵绊。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "放弃最后相认的机会",
+            "visible_reward": "苏青瑶平安无事，继续新世界的生活",
+            "risk_hint": "永远失去与她相认的机会",
+            "process_label": "守护到底",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1196_result_c3_b_1",
+                  "content": "陈机轻轻摇头，嘴角浮现一抹温柔的笑意：「不必了，青瑶……忘了就忘了吧。这样你才能……好好活下去。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "永恒遗忘"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_014",
+        "content": "陈机深吸一口气，双手猛然结印。完整版天机录在头顶缓缓展开，金色的光芒将整个三界照得如同白昼。他回头最后看了一眼苏青瑶，那眼神里带着无尽的温柔与决绝。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_015",
+        "content": "「诸位——」陈机的声音响彻三界，「我陈机算计一生，从未想过有朝一日，会为这天下苍生做一件真正的大事。天道之眼，你不是要操控命运吗？今日，我陈机便让你看看，何为——逆天改命！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_016",
+        "content": "话音落下，天机录轰然引爆。毁灭性的力量席卷三界，天道之眼发出震天的怒吼，却无法阻止这毁天灭地的一击。陈机的身影在金光中渐渐消散，他的脸上，却带着从未有过的平静与释然。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_017",
+        "content": "苏青瑶疯了一般冲向他，却在触及金光的瞬间被震飞出去。她只能眼睁睁看着，那个曾经被她追查、又被她爱上的男人，在光芒中化为虚无。「不——陈机——」她的嘶吼响彻天际。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_018",
+        "content": "然而就在陈机即将彻底消散的瞬间，一道温柔的声音在他耳边响起：「傻孩子……你做得很好。」那是墨先生的残魂，他用最后的力量，将自己融入了天机录的核心，「去吧……将你的意志，化为新世界的本源。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_019",
+        "content": "天机录的完整力量在陈机体内彻底爆发，那一刻，他感受到了前所未有的力量。他看到了天道的本质——那不过是一个由无数命运丝线编织而成的牢笼。而他，要将这牢笼彻底粉碎。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_020",
+        "content": "「天道之眼——」陈机的声音在虚空中回荡，「你输了。不是输给我的算计，而是输给了……这世间最简单、却也最强大的东西。」他的身影彻底消散，但那声音却如同洪钟大吕，「是爱。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_021",
+        "content": "天道之眼发出最后一声震天的悲鸣，庞大的意识体在金光中土崩瓦解。三界的命运丝线一根根断裂，所有的生灵都在这一刻感受到了前所未有的自由。而陈机的意志，化为了一道温和的光芒，融入了这片新生的天地。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_022",
+        "content": "苏青瑶跪倒在地，泪水无声滑落。她不知道发生了什么，但她知道，有什么重要的东西，永远离她而去了。夜清扶起她，轻声道：「他赢了……我们都自由了。」陈念望着天空，喃喃道：「哥……你看到了吗？这就是你说的……新世界。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1196_023",
+        "content": "万物新生。没有了天道之眼的操控，三界众生第一次真正掌握了自己的命运。而在那新生的世界本源深处，陈机的意志如同初升的朝阳，温柔地注视着这片因他而获得自由的大地。他虽然消散了，但他的意志，将永远守护这片没有命运操控的新世界。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "id": "天机录_ch0525",
+  "book_id": "天机录",
+  "number": 525,
+  "title": "破局之始",
+  "is_paid": true,
+  "next_chapter_hook": "龙脉深处传来天道之眼的愤怒咆哮——它察觉到了陈机的真正目的",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0525_001",
+        "content": "龟壳残片在掌心微微发烫，那段模糊的画面仍在脑海中挥之不去。陈念被囚于血色祭坛的身影，以及那个令他心惊的名字——「天命锁钥」。天机录残页震颤间，一行古朴的字迹浮现：「欲解此局，需入皇城禁地。」陈机睁开眼，眸中精光一闪。三年布局，今日终于到了收网的时刻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_002",
+        "content": "天青宗后山密室，陈机负手而立。面前悬浮着三枚玉简，分别刻着天青、玄武、圣宗的印记。「夜清，你那边准备好了吗？」他淡淡开口。玉简中传来魔道圣女清冷的声音：「圣宗守卫已被我调开三成，皇城东侧禁制入口可通行。但有一件事……」夜清顿了顿，「龙脉祭坛周围布置了『天罗地网阵』，据说是凌渊亲自布下的。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_003",
+        "character_id": "char_yeqing",
+        "content": "凌渊？那个老狐狸……陈机冷笑一声，「他以为凭一座阵法就能困住我？」他指尖轻弹，玉简中浮现出复杂的地形图，「告诉你的圣女，再替我做最后一件事——把韩烈引到禁地西侧。」夜清沉默片刻：「你这是要用蛮力对蛮力？」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_004",
+        "content": "不是对蛮力，是让蛮力去撞更硬的墙。陈机嘴角勾起一抹讥诮的弧度。韩烈那头蛮牛最受不了激将，只要稍微挑衅，他便会不顾一切地冲上来。而凌渊布置的阵法，恰恰是用来困杀这种莽夫的。三大宗门第一天才若是折在自家阵法里，那场面一定相当精彩。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0525_005",
+        "prompt": "营救行动即将展开，陈机需要选择突入方式。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0525_005_a",
+            "text": "声东击西",
+            "description": "让夜清制造混乱吸引守卫，陈机率小队从暗道潜入核心区域",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗夜清势力好感度",
+            "visible_reward": "降低被发现风险",
+            "risk_hint": "若夜清暴露，行动全盘失败",
+            "process_label": "暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_005_a_1",
+                  "content": "夜清的声音从玉简中传来，带着一丝不易察觉的担忧：「我明白了。三炷香后，东侧会有'意外'发生，届时守卫会全部被吸引过去。」陈机微微点头，他能感受到夜清话语中的分量——那意味着她要亲自涉险。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_005_b",
+            "text": "正面强攻",
+            "description": "以绝对实力碾压守卫，展示陈机全新姿态，让所有人见识真正的废材",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露全部底牌",
+            "visible_reward": "震慑全场，为后续布局争取时间",
+            "risk_hint": "可能惊动凌渊本体",
+            "process_label": "一力降十会",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_005_b_1",
+                  "content": "陈机收起玉简，深吸一口气。三年了，他在天青宗装疯卖傻，受尽冷眼，今日便让所有人看看——什么才是真正的扮猪吃虎。他抬手，天机录第四页在袖中隐隐发光，那是昨夜他刚刚解锁的禁术：「天机变」！",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_005_c",
+            "text": "借刀杀人",
+            "description": "利用韩烈对陈机的怨恨，让他打头阵消耗阵法威力，陈机坐收渔翁之利",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "韩烈可能提前警觉",
+            "visible_reward": "不费一兵一卒攻破禁制",
+            "risk_hint": "韩烈若死，可能激怒玄武宗全面开战",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_005_c_1",
+                  "content": "陈机取出一枚刻有韩烈特征的传讯玉简，以天机录推演出一段假情报：「皇城禁地发现天青宗秘宝，韩烈已连夜赶往。」玄武宗那位天才最恨被人抢先，这份'情报'足以让他失去理智地冲向陷阱。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0525_006",
+        "content": "皇城禁地之外，夜色如墨。陈机身着夜行衣，身后跟着七名精锐死士——这是他三年来暗中培养的力量。远处传来骚动，夜清动手了。守卫们如潮水般涌向东侧，西侧禁制入口的巡逻瞬间稀疏下来。「行动。」陈机淡淡吐出一个字，身形如鬼魅般掠向禁地深处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_007",
+        "content": "禁地甬道阴暗潮湿，两侧石壁上刻满了晦涩的符文。陈机脚步不停，天机录在识海中飞速运转，将每一条岔路、每一处禁制都标记出来。然而就在他即将抵达核心区域时，一道凌厉的剑光从暗处袭来！",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_008",
+        "character_id": "char_lingyuan",
+        "content": "「陈机，老夫等你很久了。」苍老的声音在甬道中回荡。凌渊的身影从黑暗中浮现，周身环绕着恐怖的威压。他的脸上挂着意味深长的笑容，「你以为你那点小把戏能瞒过老夫？夜清调开守卫的时机，恰好在老夫换班的空档——你觉得这是巧合吗？」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_009",
+        "content": "陈机脚步一顿，却没有丝毫慌乱。他抬眼看向凌渊，嘴角反而勾起一抹笑意：「凌前辈既然早就知道，为何不直接阻止？非要等我进入禁地才现身？」他顿了顿，眼底闪过一丝精光，「难道……这禁地里有什么东西，是凌前辈必须亲眼看着我触发不可的？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_010",
+        "content": "凌渊瞳孔微缩，那张苍老的面孔上闪过一丝难以察觉的忌惮。陈机所言正是他最担心的事——天机录的真正能力，或许只有触发特定条件才能显现。而他布置的一切，不过是将陈机引向那个「条件」的棋子。老狐狸与更老的狐狸，在这一刻目光交汇，各怀心思。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0525_011",
+        "prompt": "凌渊现身阻路，陈机必须做出抉择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0525_011_a",
+            "text": "摊牌对峙",
+            "description": "直接质问凌渊与陈天命被囚的关联，逼迫他露出破绽",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露陈天命相关信息",
+            "visible_reward": "可能动摇凌渊心境",
+            "risk_hint": "凌渊可能狗急跳墙",
+            "process_label": "针锋相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0525_result_011_a_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机负手而立，目光直视凌渊，「陈天命——这个名字，凌前辈应该不陌生吧？三十年前被天机录选中、又被他放弃的那个人……如今就关在禁地深处。凌前辈，你费尽心机把我引来此处，究竟是想杀我，还是想借我的手，释放他？」",
+                  "emotion": "冷厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_011_b",
+            "text": "以退为进",
+            "description": "假装不敌后撤，实则引凌渊追击，将他引入预设的陷阱",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗天机录天命值",
+            "visible_reward": "让凌渊暴露真正实力",
+            "risk_hint": "若凌渊识破伪装，处境危险",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_011_b_1",
+                  "content": "陈机故意露出一个破绽，身形踉跄后退。凌渊果然追击而来，掌风凌厉。然而就在他踏入某处禁制范围的瞬间，四周符文骤然大亮！陈机方才被\"逼退\"的位置，恰恰是整座阵法的阵眼——他从头到尾都在将计就计。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0525_012",
+        "content": "甬道深处传来轰鸣声，整个禁地开始震颤。陈机与凌渊同时变色——那是核心祭坛的方向。陈机瞳孔骤缩，天机录疯狂示警：陈念的气息正在急速消散！来不及了！他不再犹豫，天机录第四页骤然展开，一股足以改天换地的力量自他体内汹涌而出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_013",
+        "character_id": "char_moxiansheng",
+        "content": "「痴儿，你终于肯用这一招了。」墨先生残魂的声音在识海中响起，带着几分欣慰与忧虑，「天机变会燃烧你的天命值，每一息都是寿命的流逝。但此刻……或许没有更好的选择了。」陈机没有回答，他的身影已化作一道流光，直冲向祭坛方向。",
+        "emotion": "紧迫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_014",
+        "content": "禁地核心，血色祭坛。陈念被铁链锁于祭台中央，周身萦绕着诡异的血色光芒。她的双眼紧闭，面色苍白如纸，却依然倔强地紧抿着唇。在她周围，四名黑袍祭祀正在念念有词，祭坛上的阵法已经运转到了极致——「天命锁钥」的献祭，即将完成。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_015",
+        "content": "「住手！」陈机怒吼着从天而降，天机变的恐怖威压瞬间震碎了四周的黑袍祭祀。那些平日里作威作福的祭祀们，此刻在他面前脆弱得如同蝼蚁。然而就在这时，一道熟悉的身影挡在了陈念面前——那是陈天命，他的父亲！陈天命的身上缠绕着与陈念相同的血色锁链，眼神中却满是决绝。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_016",
+        "character_id": "char_chenji",
+        "content": "「机儿……你不该来的。」陈天命的声音沙哑而疲惫，他苦笑着看向陈机，「天命锁钥需要两个血脉……我自愿被囚，就是为了让圣宗以为只有一个。念念她……是我最后的底线。」陈机浑身颤抖，他死死盯着父亲，嘴唇动了动，却一个字也说不出来。三年来的疑问、怨恨、思念，在这一刻全部化作了沉默。",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_017",
+        "content": "陈念在昏迷中呢喃：「哥……哥哥……」那声微弱的呼唤如同重锤击中陈机的心脏。他深吸一口气，强压下翻涌的情绪，抬手，天机录第四页彻底绽放。一道璀璨的光芒笼罩住整个祭坛，那些血色锁链开始寸寸崩碎。「我说过，」陈机的声音冷如寒冰，「谁敢动我陈家人，我要他血债血偿。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0525_018",
+        "prompt": "陈天命与陈念同时被锁链束缚，陈机需要做出选择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0525_018_a",
+            "text": "先救陈念",
+            "description": "陈念年幼且是「天命锁钥」核心，必须优先解除她的危机",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陈天命继续承受痛苦",
+            "visible_reward": "确保陈念安全",
+            "risk_hint": "陈天命可能撑不到救援",
+            "process_label": "兄妹情深",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_018_a_1",
+                  "content": "陈机将全部力量灌入天机录，精准地斩断了陈念身上的锁链。小姑娘的身体软软地倒在他怀里，那双紧闭的眼睛终于颤动着睁开，泪水夺眶而出：「哥……真的是你……」陈机紧紧抱住她，声音嘶哑：「对不起，哥哥来晚了。」",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_018_b",
+            "text": "先救陈天命",
+            "description": "陈天命已被囚禁多年，体力已达极限，必须优先解除他的束缚",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陈念可能受到波及",
+            "visible_reward": "解开三年心结",
+            "risk_hint": "强行破阵可能伤及陈念",
+            "process_label": "父子重逢",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "黑化值",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0525_result_018_b_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机转向父亲，那张一向平静的脸上终于出现了裂痕：「爹……这三年，您受苦了。」陈天命老泪纵横，却还是强撑着笑：「傻孩子，你来得正好。快……先救念念……我还能撑住……」话音未落，他身上的锁链猛然收紧，鲜血飞溅。",
+                  "emotion": "悲痛"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_018_c",
+            "text": "同时破除",
+            "description": "以天机变为核心，配合祭坛本身的阵法反噬，一次性破除所有锁链",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗全部天命值",
+            "visible_reward": "一次性救出两人",
+            "risk_hint": "可能引发龙脉暴走",
+            "process_label": "一力担当",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "名望",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_018_c_1",
+                  "content": "陈机双掌结印，天机录第四页与祭坛阵法产生共鸣。璀璨的金光吞没了整个祭坛，所有的血色锁链在同一瞬间崩碎成漫天光点！陈天命与陈念同时脱困，陈念扑进陈机怀里哭泣，而陈天命则踉跄着站起，目光复杂地看着已经长大成人的儿子。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0525_019",
+        "content": "就在这时，祭坛深处传来一声震耳欲聋的咆哮。一条通体金色的巨龙虚影从地底冲出，那是龙脉之灵！它的双眼赤红如血，死死盯着陈机：「汝竟敢破坏献祭……天道之眼不会放过你的！」话音未落，禁地开始剧烈震动，各方势力的气息同时涌入——龙脉争夺战，正式爆发！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_020",
+        "content": "陈机一手扶着父亲，一手抱着妹妹，环顾四周。凌渊的身影已经消失，取而代之的是从各个方向涌入的高手——玄武宗、圣宗、甚至还有其他隐世势力的探子。他的嘴角勾起一抹讥诮的弧度：「想抢龙脉？」他低声冷笑，「那就看谁更有本事了。」天机录残页再次闪烁，陈机的眼中倒映出无数未来的可能——而这一次，他终于站在了棋盘的中央，成为执棋之人。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

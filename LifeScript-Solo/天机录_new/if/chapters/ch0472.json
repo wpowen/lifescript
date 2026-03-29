@@ -1,0 +1,566 @@
+{
+  "id": "天机录_ch0472",
+  "book_id": "天机录",
+  "number": 472,
+  "title": "三天之约",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机思索墨先生真实身份之际，门外那道急促的叩门声戛然而止，取而代之的是一个他再熟悉不过的声音——那皇朝使者，竟与墨先生的残魂波动如出一辙。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0472_001",
+        "content": "血红的警告如烙印般刻在天机录第六页上——继续追查者，死。陈机还未从父亲的死因中缓过神来，门外却已传来急促的叩门声。那节奏三长两短，是他与夜清约定的暗号。他深吸一口气，将天机录收入袖中，起身开门。门外站着的不仅是夜清，还有他失踪多年的妹妹——陈念。两人的神情都异常凝重，夜清手中还捏着一张泛黄的符纸，上面的墨迹尚未干透。\"兄长，墨先生的最后通牒到了。\"陈念的声音带着一丝颤抖，\"他说……只给你三天。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_002",
+        "character_id": "char_yeqing",
+        "content": "三天？呵，这老东西还真是心急。\"夜清冷笑着将符纸递给陈机，\"不过他的算盘打得倒是不错——他算定你不会拒绝，因为拒绝就意味着天机录的彻底封印。\"她的目光落在陈机脸上，\"但他漏算了一件事。\"",
+        "emotion": "冷笑中带着算计"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_003",
+        "content": "陈机接过符纸，目光在那些字迹上扫过。墨先生的字迹苍劲有力，每一笔都带着不可抗拒的威压。三天。这是他给陈机的最后期限。三天之内，要么交出天机录第六页的解读权，要么接受天机录被永久封印的后果。陈机将符纸折起收入袖中，面色平静得可怕。\"他不止是要天机录。\"他缓缓开口，\"他要的是我彻底成为他的棋子——一个失去自我意志的傀儡。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_004",
+        "character_id": "char_chenian",
+        "content": "兄长，我有一个办法。\"陈念突然开口，她的声音很轻，却带着一种决绝，\"墨先生真正想要的不是天机录，而是我。因为我是天命锁钥，我的存在可以干扰天机录的预见。\"她抬起头，目光直视陈机，\"如果我主动站出来，以天命锁钥的身份与他谈判……\"",
+        "emotion": "决绝而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_005",
+        "content": "不行。\"陈机几乎是在她话音落下的瞬间便开口打断，语气罕见地严厉，\"你知不知道天命锁钥意味着什么？一旦你的身份暴露，整个圣宗都会将你视为囊中之物。\"他的眼神暗了暗，\"我不会让你冒这个险。\"陈念张了张嘴想要反驳，却被夜清抬手制止。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_006",
+        "character_id": "char_yeqing",
+        "content": "别急着下结论，陈机。\"夜清绕过陈机，走到窗边，背对着两人，\"你妹妹的提议虽然冒险，但并非没有可取之处。墨先生要的是控制，而你妹妹的特殊体质恰好能打破这种控制——天命锁钥可以让天机录的预见产生偏差，这意味着他无法完全掌控你的命运。\"她转过身，\"我的建议是：假意答应他。表面交出一部分权限，实际上……我们另起炉灶。\"",
+        "emotion": "冷静分析中带着锋芒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0472_choice_001",
+        "prompt": "面对墨先生的最后通牒，陈机必须做出抉择。是接受夜清的提议假意顺从，还是另寻他法？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0472_accept_night",
+            "text": "采纳夜清的计策",
+            "description": "表面答应墨先生的要求，暗中保持独立布局，利用妹妹的天命锁钥身份作为反制筹码。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要欺骗一个知晓天机录全部真相的存在",
+            "visible_reward": "获得三天的缓冲时间，同时保留天机录的核心控制权",
+            "risk_hint": "墨先生若识破计谋，后果不堪设想",
+            "process_label": "布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_accept_night_001",
+                  "content": "陈机沉默片刻，终于点头：\"就按你说的办。不过，我需要做一些准备。\"他的目光落在陈念身上，\"妹妹，你愿意相信兄长一次吗？\"陈念毫不犹豫地点头。夜清嘴角微扬：\"很好，那我先回去布置魔道迷雾——遮掩天机录的气息，让你那场戏演得更真实些。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "采纳夜清计策"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "采纳夜清计策",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0472_reject_both",
+            "text": "拒绝一切妥协",
+            "description": "墨先生想让他成为棋子，那他偏不。哪怕天机录被封印，也要保留最后的主动权。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "失去墨先生的知识解封支持",
+            "visible_reward": "保持独立身份，不受任何一方完全控制",
+            "risk_hint": "三天后可能面临墨先生的直接制裁",
+            "process_label": "布局",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -3
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_reject_both_001",
+                  "content": "陈机的眼神骤然冷了下来：\"墨先生想要天机录？那就让他来拿。\"他的声音平静得可怕，\"不过在那之前，我要让他知道——陈机的棋盘上，从来没有‘必输’这一选项。\"夜清皱起眉头，欲言又止。陈念却握住了陈机的手，无声地表达支持。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "拒绝妥协"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "拒绝妥协",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0472_chenian_plan",
+            "text": "采纳陈念的方案",
+            "description": "让陈念以天命锁钥身份主动与墨先生谈判，用她独特的干扰能力作为谈判筹码。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陈念将暴露在天大的危险之中",
+            "visible_reward": "若成功，将彻底打破墨先生的控制格局",
+            "risk_hint": "墨先生可能设下针对天命锁钥的陷阱",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_chenian_001",
+                  "content": "陈机看向陈念，目光复杂。片刻后，他轻叹一声：\"好。\"只有一个字，却重若千钧。陈念的眼睛亮了起来，她上前一步，声音带着颤抖的坚定：\"兄长放心，我会让墨先生知道——天命锁钥的价值，远超他的想象。\"夜清若有所思地看了陈念一眼，没有说话。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "采纳陈念方案"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "采纳陈念方案",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_007",
+        "content": "就在此时，门外再次传来声响——这一次不是叩门，而是脚步声。稳健、有力，带着一种不怒自威的气势。陈机的瞳孔骤然收缩。这个脚步声……他在哪里听过？夜清的脸色也变了，她下意识地挡在陈念身前，低声道：\"是皇朝使者。\"陈机的心猛地一沉。三天之约，皇朝使者，墨先生——这些线索在他脑海中飞速交织，一个令他脊背发凉的念头浮现出来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_008",
+        "character_id": "char_moxiansheng",
+        "content": "陈机。\"门外传来一个低沉的声音，带着几分熟悉的沙哑，\"本使特来传达皇朝的最后通牒。\"陈机缓缓起身，走到门前，却没有立刻打开。他的手按在门框上，指节因用力而泛白。墨先生的声音，与这皇朝使者的声音……竟有七八分相似。不，不只是相似——简直如同一人。他的脑海中闪过天机录残页上的记载，那些被刻意模糊的预言片段。",
+        "emotion": "震惊与警觉交织"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0472_choice_002",
+        "prompt": "皇朝使者的到来打乱了陈机的计划。他该如何应对这突如其来的变数？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0472_face_directly",
+            "text": "正面开门对峙",
+            "description": "直接面对皇朝使者，以废柴弟子身份示弱，暗中观察对方的破绽。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能暴露已经察觉的秘密",
+            "visible_reward": "看清皇朝使者的真实面目",
+            "risk_hint": "对方可能是墨先生本人",
+            "process_label": "布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_face_001",
+                  "content": "陈机深吸一口气，缓缓拉开了门。门外站着一个身着玄色官袍的中年男子，面容儒雅，眼神却深邃得看不到底。四目相对的瞬间，陈机看到了对方眼中一闪而过的……熟悉。这不是第一次见面。但他可以确定——这个人，与墨先生有着某种他尚未参透的联系。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "正面接触"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0472_delay",
+            "text": "假称身体不适",
+            "description": "以身体不适为由暂时回避，争取时间让夜清先行撤离。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失了解真相的机会",
+            "visible_reward": "为后续行动争取布置时间",
+            "risk_hint": "皇朝使者可能识破拖延之计",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_delay_001",
+                  "content": "陈机朝夜清使了个眼色，后者立刻会意，拉着陈念退向内室。陈机清了清嗓子，用略带沙哑的声音道：\"使者大人恕罪，在下昨夜修炼出了岔子，正卧床休养……\"门外沉默了片刻，那低沉的声音再次响起：\"无妨。本使此来，只为一件事——三日后的宗门大比，皇朝要一个人。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "拖延接触"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_009",
+        "content": "陈机的眉头微皱。宗门大比？皇朝要一个人？这些信息在天机录中从未出现过——或者说，被刻意抹去了。他的手指在袖中悄然触碰天机录残页，试图从中窥见一二天机。然而，那些本该清晰的预言画面却如同被迷雾笼罩，模糊不清。\"陈念……\"他在心中低喃。她就在这里，她的出现本身就是最大的干扰。墨先生选择在这个时机让她出现，难道是巧合？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_010",
+        "character_id": "char_chenian",
+        "content": "兄长。\"陈念的声音从内室传来，带着一丝异样，\"我刚才感应到了……墨先生的气息，就在这门外。\"陈机的心猛地一跳。他看向门缝——皇朝使者的身影依旧笔直地站在那里，纹丝不动，像是一尊雕塑。但陈念的话不会有错。天命锁钥对天机录相关事物的感知，是她与生俱来的天赋。",
+        "emotion": "警觉而震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_011",
+        "content": "陈机的脑海中电光火石般闪过无数念头。三天之约、皇朝使者、墨先生、宗门大比——这些看似毫无关联的碎片，在他超强的逻辑推演下逐渐拼凑成一幅骇人的图景。墨先生和皇朝使者是同一人？不，不完全是。更准确地说……皇朝使者是墨先生的另一重身份，或者说，是墨先生在尘世的代言人。他选择以使者的身份亲自登门，既是最后通牒，也是一种试探。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_012",
+        "character_id": "char_moxiansheng",
+        "content": "陈机，本使知道你醒了。\"门外的声音平静得没有一丝波澜，\"也有些事想当面问你——关于天机录，关于你那位……妹妹。\"最后两个字咬得极重，仿佛带着某种深意。陈机的手缓缓握紧成拳。这个老东西，果然什么都知道。他费尽心机隐藏的底牌，在墨先生眼中似乎早已无所遁形。但那又如何？棋局尚未落子，胜负犹未可知。",
+        "emotion": "冷静中藏着锋芒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0472_choice_003",
+        "prompt": "墨先生（皇朝使者）已经点破了陈念的存在，陈机该如何破局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0472_reveal_chenian",
+            "text": "主动亮出陈念",
+            "description": "既然已经藏不住，不如主动暴露，以攻为守。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "失去所有隐藏筹码",
+            "visible_reward": "可能打乱墨先生的预判，争取主动权",
+            "risk_hint": "墨先生早有准备",
+            "process_label": "布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_reveal_001",
+                  "content": "陈机深吸一口气，一把拉开了门。他直视着那双深邃的眼睛，嘴角甚至勾起一丝淡笑：\"使者大人既然什么都知道了，那陈机便不再遮掩——这是我妹妹陈念，天命锁钥。\"他的声音不高，却带着不容置疑的坚定，\"大人想要的，是她，还是天机录？\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "主动亮牌"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0472_keep_hidden",
+            "text": "继续否认陈念存在",
+            "description": "咬死不承认，让对方陷入自我怀疑。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激怒对方",
+            "visible_reward": "为陈念争取转移时间",
+            "risk_hint": "对方显然有备而来",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 4
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_keep_001",
+                  "content": "陈机故作疑惑地皱起眉头：\"妹妹？使者大人说笑了，陈机自幼便是孤儿，何来妹妹？\"他的演技堪称完美，连眼神都带着恰到好处的茫然。门外沉默了数息，那皇朝使者忽然轻笑一声：\"好，很好。陈机，你的胆子比我想象的要大。\"话音未落，一股无形的威压骤然笼罩而下，陈机的膝盖微微一弯。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "继续隐藏"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0472_counter_attack",
+            "text": "反将一军",
+            "description": "直接质问对方身份，逼墨先生露出真面目。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "彻底撕破脸皮",
+            "visible_reward": "若成功，将彻底打破僵局",
+            "risk_hint": "对方实力深不可测",
+            "process_label": "布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 6
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0472_result_counter_001",
+                  "content": "陈机猛地挺直腰杆，直视那双深不见底的眼睛，一字一顿道：\"墨先生——或者该称呼您皇朝使者？三天之约，宗门大比，您这一环扣一环的布局，陈机佩服。\"空气仿佛凝固了一瞬。那皇朝使者的表情终于有了变化——嘴角微微上扬，眼中闪过一丝……赞赏？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "反将一军"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_013",
+        "content": "陈机的心猛地一沉。他知道夜清在担心什么——一旦陈念的天命锁钥身份暴露，整个圣宗都会将她视为必得之物。墨先生虽然强大，但圣宗的势力更是有过之而无不及。更重要的是，陈念是他唯一的亲人，他不可能拿她的安全去赌一场胜算不明的博弈。\"三天……\"他低声重复，\"足够了。\"夜清和陈念同时看向他，等待他的下文。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_014",
+        "character_id": "char_moxiansheng",
+        "content": "皇朝使者的嘴角勾起一丝玩味的弧度：\"你倒是沉得住气。不过，本使很好奇——面对这样的困局，你打算怎么办？交出天机录？牺牲妹妹？还是……\"他顿了顿，目光如刀，\"你还有别的底牌？\"陈机迎上他的目光，平静得如同一潭死水：\"使者大人说得对。棋局落子之前，一切皆有可能。\"",
+        "emotion": "平静对峙中暗流涌动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_015",
+        "content": "夜清忽然上前一步，站到陈机身侧。她的目光落在皇朝使者身上，嘴角勾起一抹讥诮的弧度：\"墨先生——或者该称呼您皇朝使者？三天之约，宗门大比，您这一环扣一环的布局，陈机佩服。\"皇朝使者的眼神微微闪动，似乎没料到夜清会如此直接地撕破这层窗户纸。\"魔道圣宗的圣女，果然名不虚传。\"他的声音里听不出喜怒，\"既然都知道了，那本使也不绕弯子——三日后的宗门大比，我要陈机参加。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_016",
+        "content": "宗门大比？\"陈机眉头微皱，\"那与我何干？\"皇朝使者微微一笑，那笑容里藏着说不清道不明的深意：\"因为这次大比，皇朝要挑选一个人——一个能代表皇朝参加天道试炼的人。\"天道试炼四个字如同一道惊雷，在陈机脑海中炸响。天机录残页中曾提及过这个名字——那是连接凡界与仙界的唯一通道，也是他寻找陈念、查清父亲死因的关键。皇朝使者……墨先生……这一切，竟然都是冲着天道试炼来的。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_017",
+        "character_id": "char_yeqing",
+        "content": "夜清的脸色骤然阴沉下来，她上前一步挡在陈机身前：\"墨先生好大的胃口。天道试炼的名额，三大宗门争了数百年都没能拿下，您一张嘴就要定？\"她的声音带着毫不掩饰的讽刺，\"还是说……您根本不是为了皇朝，而是为了您自己？\"皇朝使者沉默了片刻，忽然笑了起来：\"圣女果然聪明。不错，天道试炼对我而言确实有非同寻常的意义——那是我彻底摆脱这残魂状态的唯一机会。\"",
+        "emotion": "嘲讽与揭露交织"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_018",
+        "content": "彻底摆脱残魂状态？\"陈机终于开口，声音平静得可怕，\"所以您这三天之约，从一开始就是个幌子。您真正需要的不是天机录的控制权，而是一个能帮您通过天道试炼的棋子。\"他顿了顿，嘴角勾起一抹冷笑，\"而我，恰好符合您的所有条件——废柴身份不引人注目，天机录残页暗藏玄机，还有一个天命锁钥的妹妹。\"皇朝使者的眼中闪过一丝赞赏：\"你比我想象的更聪明。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0472_019",
+        "character_id": "char_chenian",
+        "content": "陈念忽然从陈机身侧走出，站到了皇朝使者面前。她的眼神平静得可怕，仿佛在审视一件物品：\"墨先生，您想要的是通过天道试炼摆脱残魂。但您有没有想过——若我的天命锁钥能力被天道意志察觉，第一个抹杀的就是您？\"皇朝使者的瞳孔微微收缩。这一刻，陈念的气势完全变了——不再是那个柔弱的妹妹，而是一个运筹帷幄的谋士。",
+        "emotion": "冷静而锐利"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_020",
+        "content": "就在气氛剑拔弩张之际，皇朝使者忽然退后一步，周身的威压如潮水般褪去。他的目光从陈机身上移开，落在陈念身上，最后轻轻叹了口气：\"罢了。你们既然都知道了，本使也不藏着掖着。三日后的宗门大比，陈机必须参加——这是条件。至于你们如何应对，那是你们的事。\"他转身欲走，却又停下脚步，回头看了陈机一眼，\"对了，还有一件事要提醒你——凌渊已经知道陈念的存在了。\"话音落下，身影已消失在夜色之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0472_021",
+        "content": "凌渊……\"陈机低声重复这个名字，眼神逐渐冷厉。老掌门的名字如同一个不散的阴魂，贯穿了他这具身体原主人所有的苦难记忆。天青宗、父亲的死、自己的废柴人设——这一切背后，或多或少都有凌渊的影子。如今他又盯上了陈念，这让陈机心中最后一丝侥幸彻底消散。\"三天。\"他喃喃道，\"三天之内，必须解决所有问题。\"夜清走到他身边，低声道：\"你打算怎么办？\"陈机没有回答，只是抬头望向窗外的夜空，眼中闪烁着复杂的光芒。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

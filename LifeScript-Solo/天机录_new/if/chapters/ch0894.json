@@ -1,0 +1,440 @@
+{
+  "id": "天机录_ch0894",
+  "book_id": "天机录",
+  "number": 894,
+  "title": "三生之约",
+  "is_paid": true,
+  "next_chapter_hook": "苏青瑶被困于上古禁地生死未卜，陈机必须在皇都与禁地之间做出抉择，而天道之眼的注视正悄然逼近。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0894_001",
+        "content": "当魔道主帅说出「三界交汇处」五个字时，陈机掌心的天命印记骤然滚烫——那是天道之眼正在注视此地的信号。那灼热的疼痛如同烙铁穿透皮肤，然而陈机面上依旧波澜不惊，唯有瞳孔深处掠过一丝冰冷的寒意。他缓缓收回右手，宽大的杂役袍袖恰好遮住了那枚滚烫的印记。魔道主帅——一位身披黑袍的中年男子，正以一种审视猎物的目光打量着这位「废物弟子」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_002",
+        "character_id": "char_chenji",
+        "content": "三界交汇处……前辈的意思是，魔族、妖族、人族三界将在此地重聚？",
+        "emotion": "平静试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_003",
+        "content": "魔道主帅冷笑一声，周身魔气翻涌如潮，压得周围空气都沉重了几分。「小子，你那点小心思在老夫面前毫无用处。天机录的残页……老夫要定了。」陈机闻言，嘴角却微微上扬，露出一抹玩味的笑容。这一刻，他不再是那个唯唯诺诺的废物，而是一个手握天下棋局的执棋人。夜清站在不远处，看到这一幕，心中微微一震——这才是真正的陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_004",
+        "character_id": "char_chenji",
+        "content": "前辈想要天机录，可以。不过晚辈有一个条件——三界交汇处开启之前，我们暂时停战。",
+        "emotion": "从容谈判"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_005",
+        "prompt": "魔道主帅审视着陈机，这个「废物」竟敢与自己谈条件。他会如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0894_005_a",
+            "text": "亮出底牌，展示天机录残页的力量",
+            "description": "让魔道主帅见识真正的神物威力，以绝对实力换取尊重",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "获得魔道主帅的暂时敬畏",
+            "risk_hint": "暴露天机录可能引来更多觊觎者",
+            "process_label": "展示天机录",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_005_a_1",
+                  "content": "陈机缓缓摊开右手，掌心那枚古老的天机录印记骤然绽放出幽蓝色的光芒。魔道主帅瞳孔骤缩，那光芒中蕴含的天地至理让他这位化神境强者都感到一阵心悸。「这是……」他的声音第一次带上了颤抖。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_005_b",
+            "text": "以退为进，用信息差换取谈判优势",
+            "description": "不暴露实力，而是用魔道主帅不知道的秘密来打动他",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无直接消耗",
+            "visible_reward": "在不暴露底牌的情况下达成同盟",
+            "risk_hint": "需要精准拿捏对方心理",
+            "process_label": "信息谈判",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_005_b_1",
+                  "content": "陈机收起光芒，只留下淡淡的笑容。「前辈可知，天道之眼已经开始注视此地？若我死，天机录将自动回归天道轮回。前辈确定要在三界交汇之前，与天道为敌？」魔道主帅面色阴沉如水，半晌后冷哼一声：「好，老夫答应你。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "temporary_truce_with_demon"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_006",
+        "content": "就在双方达成脆弱默契的瞬间，天空骤然撕裂，一道漆黑的裂缝中涌出无数魔影。夜清眸中寒光一闪，周身魔道迷雾骤然扩散，将陈机护在身后。「陈机，小心！」她低喝一声，手中魔剑已经出鞘。然而敌人来得太快，一道黑色的魔气如同毒蛇般绕过了夜清的防御，直刺陈机咽喉。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_007",
+        "character_id": "char_yeqing",
+        "content": "找死！",
+        "emotion": "愤怒护主"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_008",
+        "content": "夜清身形一闪，挡在陈机身前。魔剑横斩，将那道黑色魔气斩碎，然而另一道魔影趁机而入，一掌拍在夜清后背。鲜血从她唇角溢出，她却依然稳稳站在陈机身前，不曾后退半步。陈机看着那道血痕，心中某个地方突然剧烈跳动——这是他第一次为盟友的安危动容。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_009",
+        "character_id": "char_chenji",
+        "content": "夜清！",
+        "emotion": "动容呼唤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_010",
+        "content": "陈机一把扶住夜清的肩膀，那平日里总是从容淡定的面容上，第一次浮现出难以掩饰的焦急与心疼。夜清靠在他怀里，苍白的脸上却浮现出一抹虚弱而温柔的笑容。「别……别用那种眼神看我。我可是魔道圣女，没那么容易死。」她的声音很轻，却带着不容置疑的坚定。陈机沉默了片刻，忽然开口，声音低沉而认真。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_011",
+        "character_id": "char_chenji",
+        "content": "夜清，我有件事要告诉你。天机录预示了我的死亡——三个月后，我会被天道之眼抹杀。",
+        "emotion": "坦白真相"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_012",
+        "prompt": "夜清震惊于这个真相，她会如何回应陈机的坦白？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0894_012_a",
+            "text": "坚定表态，誓言打破命运",
+            "description": "夜清表示无论如何都会站在陈机身边，哪怕与天为敌",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "与夜清的羁绊加深，获得「共命」契约前置",
+            "risk_hint": "天道之眼可能因此盯上夜清",
+            "process_label": "誓言相随",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0894_result_012_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "夜清的眼神没有丝毫动摇，反而透出一股决绝。「天道之眼？呵，我夜清这一生，从不相信什么命运。」她抬手擦去嘴角的血迹，声音虽然虚弱却掷地有声，「你救过我的命，如今轮到我来守护你。无论发生什么，我都站在你身边。」",
+                  "emotion": "坚定誓言"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_pledge"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清誓言打破命运",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_012_b",
+            "text": "理性分析，寻找破解之法",
+            "description": "夜清冷静下来，提议两人一起研究如何对抗天道之眼的预言",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗时间",
+            "visible_reward": "获得夜清的战略支持，解锁「命运研讨」支线",
+            "risk_hint": "可能耽误最佳行动时机",
+            "process_label": "理性应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0894_result_012_b_1",
+                  "character_id": "char_yeqing",
+                  "content": "夜清深吸一口气，压下翻涌的情绪。「别急着感动，我们得想办法。」她凝视着陈机的眼睛，「天机录既然能预示死亡，就一定预示了破解之道。告诉我更多细节，我们一起找。」",
+                  "emotion": "冷静分析"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "destiny_research"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清提议共同研究命运",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_013",
+        "content": "陈机看着夜清坚定的眼神，心中涌起一股难以言喻的暖意。然而就在这时，他的眉心突然传来一阵剧烈的刺痛——那是血脉联系被强行激活的信号。陈念！他的妹妹，那个被圣宗带走作为「天命锁钥」的孩子，此刻正通过血脉传来一段模糊而急切的讯息：家族危机，苏青瑶被困。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_014",
+        "character_id": "char_chenian",
+        "content": "哥哥……救……禁地……瑶姐姐她……",
+        "emotion": "血脉呼唤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_015",
+        "content": "陈机面色骤变，那一向运筹帷幄的面容上浮现出前所未有的凝重。苏青瑶，那个一直试图揭开他秘密的女子，也是他暗中布局中不可或缺的棋子。如今她被困于某个上古禁地，生死未卜。而他刚刚与魔道主帅达成的同盟，他必须在皇都与禁地之间做出选择。陈机闭上眼睛，深吸一口气，再睁开时，眼中已是一片决然。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_016",
+        "prompt": "陈机必须做出选择——是留在皇都继续与魔道周旋，还是前往禁地营救苏青瑶？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0894_016_a",
+            "text": "放弃皇都，立刻前往禁地救苏青瑶",
+            "description": "苏青瑶是他的重要盟友和朋友，不能袖手旁观",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去皇都布局优势，可能得罪魔道",
+            "visible_reward": "苏青瑶好感大幅提升，可能解锁深度羁绊",
+            "risk_hint": "魔道主帅可能认为他毁约",
+            "process_label": "营救苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_016_a_1",
+                  "content": "「夜清，跟我走。」陈机没有丝毫犹豫，一把将夜清抱起，化作一道流光冲向禁地方向。身后，魔道主帅冷哼一声，却没有追击——三界交汇处的大计在前，他不急于这一时。夜清靠在陈机怀里，虚弱却带着笑意：「你这个……笨蛋。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rescue_mission"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择营救苏青瑶",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_016_b",
+            "text": "派人营救，自己留守皇都继续布局",
+            "description": "不亲自前往，但调动资源安排营救行动",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能来不及救下苏青瑶",
+            "visible_reward": "保持皇都布局优势，展现谋略",
+            "risk_hint": "营救可能失败",
+            "process_label": "委托营救",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_016_b_1",
+                  "content": "陈机沉吟片刻，迅速做出决定。「夜清，你先回圣宗调集人手。我有更重要的事要留在皇都。」他修书一封，命人以最快速度送往禁地。然而夜清却摇了摇头：「让我去。我了解禁地，也有能力救她。」她站起身，伤口仍在滴血，眼神却无比坚定。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "dispatch_rescue"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机委托夜清营救苏青瑶",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_017",
+        "content": "夜清带着陈机的亲笔信笺离去，伤口虽未痊愈，步伐却坚定如铁。陈机望着她远去的背影，心中五味杂陈。他握紧拳头，低声呢喃：「苏青瑶，你给我撑住。」话音未落，天机录再次滚烫起来——那是被称为「天道之眼」的存在，正透过命运的缝隙注视着他。陈机感受到一股无形的压力笼罩全身，仿佛有一双看不见的眼睛，正在窥探他的一切。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_018",
+        "content": "他深吸一口气，抬头望向天空，眸中闪过一丝嘲讽。天道之眼又如何？他陈机既然敢以凡人之躯执掌天机录，就已经做好了与天斗的准备。只是此刻，他更加确信了一件事——无论是苏青瑶、夜清还是陈念，他身边的人，都不能失去。夜幕降临，皇都的灯火在远处闪烁，陈机孤身一人站在风中，身影孤独却挺拔如松。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_019",
+        "content": "远处传来阵阵轰鸣，那是三界交汇处即将开启的前兆。而更远的地方，夜清正带着他的嘱托，奔赴那个生死未卜的禁地。陈机闭上眼睛，脑海中浮现出苏青瑶那高冷而倔强的面容，以及她三次无限接近真相时的执着。「等我。」他在心中默默说道，「这一次，换我来守护你们。」掌心的天命印记剧烈跳动，仿佛在回应他的决心。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_020",
+        "content": "与此同时，在某个上古禁地的深处，苏青瑶正被无数禁制困住，绝境之中却依然保持着冷静。她感知到了陈机的血脉联系，嘴角浮现出一丝若有若无的笑意。「陈机，你果然不简单。」她的眼眸中闪烁着奇异的光芒，「这一次，就让我看看，你究竟会如何选择。」禁制之外，传来阵阵凶兽的嘶吼，生死一线之间，苏青瑶却异常平静——因为她知道，那个「废物」一定会来。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

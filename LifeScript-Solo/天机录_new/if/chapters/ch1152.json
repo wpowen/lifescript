@@ -1,0 +1,514 @@
+{
+  "id": "天机录_ch1152",
+  "book_id": "天机录",
+  "number": 1152,
+  "title": "师徒诀别",
+  "is_paid": true,
+  "next_chapter_hook": "墨先生消散的瞬间，天机录最后一页缓缓展开——那里记载的不是预言，而是陈机自己的命运。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1152_001",
+        "content": "金色铭文在虚空中缓缓消散，苏青瑶执笔的手微微颤抖，墨迹渗入命运长河的余韵尚未褪去。便在这一刻，天机录深处传来一声苍老而欣慰的叹息，如同尘封万古的棋盘终于等到了落子之人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_002",
+        "content": "陈机眉心天机录印记骤然灼热，那道他已熟悉至极的气息正从书页深处涌出，带着三百年岁月的沉淀与即将消散的决然。他猛地睁大双眼，瞳孔中倒映出一道由虚化实的身影——墨先生那残破的魂体正从第一页中缓缓走出，每一步都在剥离着什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_003",
+        "character_id": "char_moxiansheng",
+        "content": "好徒儿，为师等这一刻，等了太久。",
+        "emotion": "欣慰与释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_004",
+        "content": "墨先生的形象比陈机记忆中更加模糊，仿佛随时会被风吹散的炊烟。他的目光落在陈机身上，没有慈祥，没有严厉，只有一种看透世事后的平静。他抬手，枯瘦的指尖点向天机录封印最深处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_005",
+        "character_id": "char_moxiansheng",
+        "content": "七百章的死亡预言，你可曾怨恨为师？",
+        "emotion": "试探与期许"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1152_006",
+        "prompt": "面对师父的询问，陈机如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1152_006_a",
+            "text": "质问预言真相",
+            "description": "七百章都在写他死，这算什么师父？哪怕是棋子也该有知情权！",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能惹怒师父",
+            "visible_reward": "获得真相的一部分",
+            "risk_hint": "若师父不愿说，可能陷入僵局",
+            "process_label": "压抑的质问",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_006_a_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "好！有怨气才有活气。",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_006_b",
+            "text": "平静接受安排",
+            "description": "师父既然如此布局，必有深意。他从不是会害自己之人。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "压抑内心波澜",
+            "visible_reward": "师父会更详细解释",
+            "risk_hint": "可能错过某些关键信息",
+            "process_label": "隐忍的信任",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_006_b_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "你比为师想象的更成熟。",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_006_c",
+            "text": "沉默等待揭秘",
+            "description": "与其猜测，不如等师父主动说。他布了三百年的局，必然有话要讲。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "内心煎熬",
+            "visible_reward": "完整接收信息",
+            "risk_hint": "可能显得过于被动",
+            "process_label": "冷静的旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_006_c_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "罢了，徒儿，且听为师说个故事。",
+                  "emotion": "感慨"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_007",
+        "content": "墨先生负手而立，残破的魂体在虚空中泛起淡淡光晕。他的声音苍老而悠远，仿佛从亘古传来：\"天机录每一页预言，都需要天命值来支撑。而为师给你的第一页，恰恰是最特殊的一页——它预言的不是你的生，而是你的死。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_008",
+        "content": "陈机瞳孔微缩，那七百章的死亡预言如走马灯般在脑海中闪过——每一次濒死、每一次绝境、每一次他拼尽全力才勉强活下来的瞬间。他猛然抬头：\"师父是说……那七百章，都在为今日铺垫？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_009",
+        "character_id": "char_moxiansheng",
+        "content": "不错。唯有以死亡为结局的预言，才能激活天机录最深处的封印。徒儿，你以为的天命值消耗，不过是为师在为你筑路。",
+        "emotion": "慈爱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_010",
+        "content": "墨先生抬手，枯瘦的指尖点向天机录最深处。刹那间，整座空间开始震颤，无数金色纹路从陈机脚下蔓延开来，如同棋盘上的经纬线交织缠绕。他感觉到了——那是一道从未触碰过的封印，正随着墨先生的生命力一同消融。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_011",
+        "content": "\"师父！\"陈机终于失态，他向前踏出一步，却被无形的屏障拦住。墨先生回过头，残魂上的裂痕正在以肉眼可见的速度扩散，每一道裂纹都带走了部分光晕。\"莫要阻我。\"老人摇摇头，语气平静得可怕，\"三百年前，为师也面临同样的选择——是用残魂守护封印，还是让你死在预言成真之前。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1152_012",
+        "prompt": "陈机该如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1152_012_a",
+            "text": "强行打破屏障阻止",
+            "description": "他算无遗策，不可能找不到方法阻止师父！哪怕天命值耗尽也在所不惜！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能重伤或死亡",
+            "visible_reward": "可能救下师父",
+            "risk_hint": "若失败，师父白白牺牲",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_012_a_001",
+                  "content": "屏障剧烈震颤，却纹丝不动。陈机双掌拍得鲜血淋漓，那道封印却如天道般冷酷无情。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_012_b",
+            "text": "含泪接受传承",
+            "description": "师父布了三百年的局，他不能成为那个毁掉一切的变数。忍着，必须忍着。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去师父的痛苦",
+            "visible_reward": "获得完整天机录",
+            "risk_hint": "可能留下永久心结",
+            "process_label": "痛苦的接受",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_012_b_001",
+                  "content": "陈机双膝跪地，额头重重磕在地面上，鲜血顺着眉骨流下。\"弟子……领命。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_012_c",
+            "text": "质问是否有他法",
+            "description": "他不信世间只有这一条路！师父一定有没告诉他的方法！",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能浪费时间",
+            "visible_reward": "可能获得关键信息",
+            "risk_hint": "若没有方法，会更绝望",
+            "process_label": "最后的挣扎",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_012_c_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "傻孩子，为师若有别的路，何必等三百年？",
+                  "emotion": "苦涩的笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_013",
+        "content": "封印彻底崩解的瞬间，天机录爆发出前所未有的光芒。那不是金色，而是混沌初开时的灰白色，如同盘古开天前的寂静。墨先生的魂体开始从边缘碎裂，化作点点星光融入那道光芒之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_014",
+        "character_id": "char_moxiansheng",
+        "content": "从今日起，你便是天机录唯一的主人。记住，天命归一录的真正力量，不在于预知未来，而在于——改写命运。",
+        "emotion": "最后的教诲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_015",
+        "content": "陈机看着师父的身影越来越淡，喉间哽咽着说不出话。那个从第一章就开始陪伴他的声音、那个无数次在关键时刻点醒他的存在、那个他从未见过真实面容却无比熟悉的人——正在他眼前消散。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_016",
+        "content": "\"师父！\"陈机的声音沙哑得不成样子。他想伸手去抓，指尖却只穿过虚无的光点。墨先生的轮廓已经模糊得几乎看不清，只剩下一双温和的眼睛还在注视着他。\"为师等这一天，等了三百年。\"老人的嘴角微微上扬，露出一个释然的笑容，\"替为师……看看那天道崩塌的样子。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1152_017",
+        "prompt": "陈机如何送别师父？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1152_017_a",
+            "text": "郑重叩首三次",
+            "description": "师恩如山，他无以为报，唯有这一跪，告慰师父在天之灵。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "获得师父最后的祝福",
+            "risk_hint": "可能显得过于形式",
+            "process_label": "传统的告别",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_017_a_001",
+                  "content": "三声闷响，陈机的额头撞击地面的声音在空旷的空间中回荡。每一叩都是誓言，每一叩都是承诺。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_017_b",
+            "text": "立下终极誓言",
+            "description": "天道崩塌——这是师父最后的心愿，也是他此生必达的使命。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "无",
+            "visible_reward": "解锁隐藏成就",
+            "risk_hint": "誓言过重，可能影响后续决策",
+            "process_label": "誓言的力量",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_017_b_001",
+                  "content": "陈机缓缓站起，双眼赤红却清明如镜。\"弟子陈机，今日立誓——天道不崩，誓不罢休。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_017_c",
+            "text": "沉默注视消散",
+            "description": "有些告别不需要言语，心意已在无言中传达。师父会懂的。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "获得师父完整的记忆",
+            "risk_hint": "可能显得过于冷漠",
+            "process_label": "无言的默契",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_017_c_001",
+                  "content": "陈机一动不动地站在原地，只是那双眼睛始终追随着光点消散的方向，直到最后一缕光芒融入天机录深处。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_018",
+        "content": "光芒渐渐收敛，天机录最深处的那道封印终于彻底消失。取而代之的，是一页泛着混沌之色的全新书页——上面没有任何预言文字，只有三个古朴的大字：天命归一录。陈机的脑海中涌入海量信息，那是墨先生三百年积累的全部知识、记忆与未竟之愿。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_019",
+        "content": "他终于明白了。师父之所以选择他，不是因为他天赋异禀，恰恰是因为他足够普通——普通到可以被天机录选中，普通到能够承载三百年的布局。从一开始，他就是师父棋盘上最重要的一颗棋子，也是唯一能够掀翻棋盘的人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_020",
+        "content": "陈机闭上眼，任由泪水无声滑落。怀中，天机录的重量似乎没有变化，但他知道，那个一直守护着他的声音，再也不会响起了。\"师父，弟子不会让您失望的。\"他低声呢喃，声音轻得像是怕惊扰了谁的安眠，\"您想看的天道崩塌，弟子替您看。您想灭的天道之眼，弟子替您灭。\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

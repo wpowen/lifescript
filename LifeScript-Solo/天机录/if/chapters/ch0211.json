@@ -1,0 +1,527 @@
+{
+  "id": "天机录_ch0211",
+  "book_id": "天机录",
+  "number": 211,
+  "title": "不速之客",
+  "is_paid": true,
+  "next_chapter_hook": "当陈念将那枚残片与陈机的龟甲并排而放时，两道微光竟隐隐产生了共鸣——这绝非巧合，而是血脉深处早已注定的羁绊。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0211_001",
+        "content": "子时三刻，天青宗杂役院落的灯火早已熄灭殆尽。陈机盘膝坐于破旧木榻之上，眉目低垂，仿佛早已沉入梦乡。然而他的神识却如蛛网般铺散开来，将整座院落笼罩其中。三年来，他从未真正睡过一夜安稳觉——天机录残页的代价太高，每一次预知都让他离那道必死反噬更近一步，所以他必须时刻保持警觉。今夜的风带着初秋的凉意，掠过窗棂时发出细微的呜咽声。就在这风声之中，陈机的神识猛然捕捉到一丝几不可察的异动——有人正在接近他的房间，而那气息……竟与他的血脉有着某种诡异的共鸣。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_002",
+        "character_id": "char_chenian",
+        "content": "（推门而入，身形在月光下显得纤细而苍白）哥，是我。",
+        "emotion": "紧张而克制"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_003",
+        "content": "陈机的眼睛缓缓睁开，那双眸子里没有半分惊讶，仿佛早已料到这一刻。借着窗外透入的月光，他看清了来人的面容——清瘦的脸庞，倔强的眉眼，与记忆中那个扎着双丫髻的小丫头判若两人，却又有着难以言说的相似。陈念。他的亲妹妹，被圣宗带走作为「天命锁钥」的妹妹。三年了，她竟然还活着，而且……找到了这里。陈机的心中掀起惊涛骇浪，面上却依旧是一片淡漠，甚至嘴角还噙着一丝懒散的笑意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_004",
+        "character_id": "char_chenji",
+        "content": "（不起身，不点灯，慢条斯理地整了整衣襟）深夜闯人居室，若是旁人，我早报执法堂治罪了。你倒是挑了个好时候。",
+        "emotion": "平静中带着审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_005",
+        "character_id": "char_chenian",
+        "content": "（神色凝重，在陈机对面坐下）哥，我知道你有很多疑问。但我没有时间解释——圣宗的人已经察觉到我的行踪了。我来，是要告诉你一件事……一件关乎你我血脉的秘密。",
+        "emotion": "焦虑而急切"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0211_006",
+        "prompt": "面对陈念的突然出现和「血脉秘密」的说辞，陈机需要决定以何种姿态应对——是直接试探深浅，还是保持被动观察，亦或是主动出击打乱她的节奏？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0211_006_a",
+            "text": "以退为进，静观其变",
+            "description": "不表现出任何急切，任由陈念自行透露信息，顺势观察她的一切反应与破绽。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错失先机",
+            "visible_reward": "获得更多信息，主动权仍在手中",
+            "risk_hint": "若陈念别有目的，可能被她牵着鼻子走",
+            "process_label": "陈机选择沉默，给对方施压的空间",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_006_a_1",
+                  "character_id": "char_chenji",
+                  "content": "（手指轻轻敲击着床沿，节奏不疾不徐）血脉秘密……有意思。那你倒是说说，这秘密从何而来，又为何偏偏选在今夜告诉我？",
+                  "emotion": "玩味且带着压迫感"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0211_006_b",
+            "text": "开门见山，直击要害",
+            "description": "直接点出她「天命锁钥」的身份，以及圣宗为何追杀她，逼她摊牌。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露自身情报网",
+            "visible_reward": "快速建立谈判优势",
+            "risk_hint": "若她所言另有隐情，可能错失真相",
+            "process_label": "陈机选择先发制人，打破对方的叙事节奏",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_006_b_1",
+                  "character_id": "char_chenji",
+                  "content": "（嘴角的笑意加深，眼底却是一片冰冷）天命锁钥……圣宗费尽心机培养的棋子，怎么如今倒成了丧家之犬？说吧，你来找我，是圣宗的授意，还是你自己要叛出师门？",
+                  "emotion": "嘲讽中带着试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0211_006_c",
+            "text": "情感牌，唤起旧情",
+            "description": "不提任何利害关系，只问她这些年过得如何，以兄长的身份试探她的真实来意。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能显得过于软弱",
+            "visible_reward": "可能唤醒她的真情实感，从而透露更多关键信息",
+            "risk_hint": "若她已彻底黑化，情感牌可能毫无用处",
+            "process_label": "陈机选择以情动人，展现温情一面",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_006_c_1",
+                  "character_id": "char_chenji",
+                  "content": "（沉默片刻，语气中多了几分罕见的柔和）……这些年，你过得好吗？当初圣宗的人把你带走的时候，我发誓要找到你。可我太弱了，什么都做不了。",
+                  "emotion": "压抑的愤怒与愧疚"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_007",
+        "character_id": "char_chenian",
+        "content": "（眼神微动，似乎被触动了什么，但很快恢复冷静）哥，你变了。以前的你不会说这种话……算了，这些以后再说。我来这里，是因为我发现了一件事——你身上那块龟甲，它不是普通的东西。我身上有一枚残片，与它……是一对。",
+        "emotion": "震惊而笃定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_008",
+        "content": "这句话如同一道惊雷，在陈机的心湖中炸开。他的天机录残页是师父陈玄临终前交付的，据说是上古预言者留下的遗物。他从未想过，这龟甲竟还有另一半——而且在陈念手中。陈机的瞳孔骤然收缩，但下一秒便恢复了平静。他低头看了看自己的右手，那里正握着那枚温热的龟甲。三年来，这东西从未离开过他的身边，每一次预知未来都消耗着他珍贵的「天命值」。如果真有另一半……那意味着什么？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0211_009",
+        "prompt": "陈念透露了龟甲的秘密，陈机需要在展示龟甲和隐藏底牌之间做出选择——这关乎他三年布局的核心筹码。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0211_009_a",
+            "text": "亮出底牌，展示龟甲",
+            "description": "将龟甲取出，观察陈念的反应与那所谓的「共鸣」是否属实，同时判断她的真实意图。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露核心底牌",
+            "visible_reward": "验证陈念所言真伪，可能发现龟甲新能力",
+            "risk_hint": "若她借机夺宝或设局，将毫无退路",
+            "process_label": "陈机决定冒险验证，但保持随时收回的姿态",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_009_a_1",
+                  "character_id": "char_chenji",
+                  "content": "（缓缓摊开手掌，那枚古朴的龟甲在月光下泛着幽微的光泽）你说的，可是这个？三年了，它从未离身。若你真有另一半……拿出来让我看看。",
+                  "emotion": "表面淡然，内心紧绷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0211_009_b",
+            "text": "守住底牌，让她先亮",
+            "description": "声称龟甲早已遗失，反过来要求陈念先拿出她的残片，以此试探她的诚意与情报。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能引发陈念怀疑",
+            "visible_reward": "不暴露核心底牌，同时获取更多信息",
+            "risk_hint": "若她因此离开，将错失验证机会",
+            "process_label": "陈机决定说谎，以此观察对方的反应",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_009_b_1",
+                  "character_id": "char_chenji",
+                  "content": "（神色不变，将右手收回袖中）龟甲？你说的东西，我三年前就丢了。或许……你说的那个「它」，根本不在我这里。你确定没有找错人？",
+                  "emotion": "故作困惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0211_009_c",
+            "text": "转移话题，追问圣宗动向",
+            "description": "暂不回应龟甲之事，转而询问圣宗为何追杀她、以及她叛逃的真正原因，先搞清楚敌我态势。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能显得过于谨慎",
+            "visible_reward": "获取圣宗内部情报，为后续布局提供参考",
+            "risk_hint": "陈念可能不耐烦，拂袖而去",
+            "process_label": "陈机选择暂不深究，先摸清敌人的底牌",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_009_c_1",
+                  "character_id": "char_chenji",
+                  "content": "（轻笑一声，不置可否）有趣。不过我更想知道的是——圣宗为何要追杀一个「天命锁钥」？是你失了利用价值，还是……你知道了什么不该知道的东西？",
+                  "emotion": "玩味且精明"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_010",
+        "character_id": "char_chenian",
+        "content": "（目光锐利，似乎看穿了陈机的心思）哥，你不必试探我。圣宗追杀我，是因为我发现了一个他们拼命想要掩盖的真相——天机录根本不是什么上古遗物，而是……（压低声音）我们陈家先祖亲手炼制的血脉法器。你我，才是它真正的主人。",
+        "emotion": "震惊而笃定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_011",
+        "content": "陈家先祖。陈机的心脏猛地一缩。他从未听师父陈玄提起过这层关联。墨先生——那个寄宿于天机录第一页的残魂守护者，也从未透露过半字。如果陈念所言属实，那他这三年来的所有布局、所有算计，都建立在一个巨大的谎言之上。他的师父陈玄，究竟是什么人？为何要将这龟甲交给他？又为何选择性地隐瞒这些关键信息？陈机的脑海中飞速闪过无数念头，但他的面色依旧如古井般波澜不惊。三年来的扮猪吃虎生涯，早已让他学会了如何在惊涛骇浪中保持表面的风平浪静。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_012",
+        "character_id": "char_chenji",
+        "content": "（终于露出一丝认真之色，缓缓开口）你倒是说说，我们陈家先祖……是什么人？为何能炼制这等逆天之物？若你说不出个所以然来，我可要当你是在胡言乱语了。",
+        "emotion": "表面质疑，内心震动"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_013",
+        "character_id": "char_chenian",
+        "content": "（从怀中缓缓取出一枚龟甲残片，其形制、大小、纹路竟与陈机的那枚如出一辙）这是我从圣宗禁地中偷出来的。哥，你看看……这两枚，是否能够合在一起？",
+        "emotion": "期待而紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_014",
+        "content": "月光下，两枚龟甲散发着微弱的光芒。陈机的手微微颤抖——不是因为恐惧，而是因为某种血脉深处的悸动。他能清晰地感受到，那枚残片正在呼唤他胸口的龟甲，仿佛失散多年的亲人终于重逢。他深吸一口气，将自己的龟甲取出，两相对照。当它们相距不足三寸时，一股温热的气息从掌心传来，两枚龟甲竟开始微微震颤，发出只有陈机与陈念能够听到的低鸣。这一刻，陈机终于意识到——他不是天机录的偶然继承者，而是……命中注定的传承者。而这个真相，可能将彻底颠覆他三年来的所有布局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0211_015",
+        "prompt": "两枚龟甲产生共鸣，陈机面临最终抉择——是将自己的龟甲交出合二为一，还是保留底牌以观后效？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0211_015_a",
+            "text": "合二为一，接受命运",
+            "description": "将龟甲与陈念的残片合一，正式开启血脉觉醒之路，即使这意味着打破现有布局也义无反顾。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "三年布局可能作废",
+            "visible_reward": "天机录可能进化，解锁完整能力",
+            "risk_hint": "命运反噬可能提前降临",
+            "process_label": "陈机决定赌上一切，迎接命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_015_a_1",
+                  "character_id": "char_chenji",
+                  "content": "（深吸一口气，将龟甲递向陈念）……既然天意如此，那我便没什么好顾虑的了。念儿，把它们合在一起吧。",
+                  "emotion": "决绝而坦然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0211_015_b",
+            "text": "暂不合一，留待观察",
+            "description": "收起龟甲，表示需要时间验证陈念所言，同时暗中计划找墨先生求证。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能让陈念失望",
+            "visible_reward": "保住现有能力，为验证争取时间",
+            "risk_hint": "若陈念所言属实，可能错失最佳时机",
+            "process_label": "陈机决定不急于做决定，保持现状",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_015_b_1",
+                  "character_id": "char_chenji",
+                  "content": "（将龟甲收回袖中，神色复杂）你说的这些，我需要时间消化。此事干系重大，容我先验证一二。你若真是我妹妹，这些年受的苦，我陈机必会加倍讨回来。",
+                  "emotion": "谨慎而克制"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0211_015_c",
+            "text": "要求陈念先证明身份",
+            "description": "让陈念展示只有陈家人知道的信物或往事，以此验证她是否真是失散多年的妹妹，而非圣宗的陷阱。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能显得过于多疑",
+            "visible_reward": "确保不会落入敌人圈套",
+            "risk_hint": "陈念可能因不被信任而心寒",
+            "process_label": "陈机决定先验明正身，再做打算",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0211_result_015_c_1",
+                  "character_id": "char_chenji",
+                  "content": "（后退一步，眼神转冷）空口白话，谁都会说。你若真是念儿，可还记得我们小时候的事？父亲教给我们的第一句话是什么？",
+                  "emotion": "审视且防备"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0211_016",
+        "character_id": "char_chenian",
+        "content": "（苦涩一笑，眼中闪过一丝追忆）父亲说的第一句话……是「机儿，念儿，你们是天的弃子，也是地的宠儿。天弃我，我不怨；地宠我，我必报。」哥，这句话……你还记得吗？",
+        "emotion": "哽咽而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_017",
+        "content": "这句话如同一把钥匙，打开了陈机尘封已久的记忆闸门。他想起来了——那是父亲临终前的最后一句话。那时的他还年幼，不懂这句话的含义，只觉得父亲的手很凉、声音很轻。后来他被师父陈玄收养，再后来师父也死了，他独自一人在这天青宗的最底层挣扎求存，从未忘记过父亲的话。天的弃子，地的宠儿……原来，从一开始，他和陈念就不是普通人。陈机缓缓闭上眼睛，将翻涌的情绪压回心底。再睁眼时，那双眸子里已是一片深不见底的平静。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_018",
+        "content": "陈机的嘴唇微微动了动，却最终什么也没说出口。他缓缓从袖中取出那枚跟随了他三年的龟甲，月色下，它的纹路与陈念手中的残片如镜像般对应。当两枚龟甲逐渐靠近时，陈机感到掌心传来一阵灼热——那是血脉深处涌动的力量，陌生却又熟悉得可怕。三年来他小心翼翼隐藏的底牌，此刻正在命运之手的推动下缓缓揭开面纱。他知道，无论今夜做出何种选择，他的人生都将彻底改变。子时的钟声从远处隐约传来，陈念焦急的目光与他对视，那里面藏着太多他还未曾了解的秘密与苦难。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_019",
+        "content": "（沉默良久，终于开口，声音低沉而沙哑）这句话……我记得。念儿，这些年，苦了你了。（将龟甲轻轻放在掌心，凝视着那道微微发光的裂痕）既然天意如此，那我便没什么好犹豫的。来吧，让我们看看，这天机录的另一半……究竟藏着什么秘密。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0211_020",
+        "content": "当两枚龟甲终于合为一体的刹那，一道耀眼的白光从陈机的胸口迸发而出，将整间小屋照得如同白昼。陈机感到天旋地转，无数陌生的画面如潮水般涌入脑海——他看见了一个陌生的男子身着古装、手持龟甲，在九天之上与一道巨大的意志对峙；他看见了无尽的鲜血与尸骨，还有那句如同诅咒般的低语：「天机不可泄，泄者必遭焚……」当光芒散去，陈机猛然惊醒，发现自己的鼻间正缓缓流淌下一缕鲜血。而陈念的脸色同样苍白如纸，显然也承受了某种巨大的反噬。两枚龟甲已经彻底融为一体，静静躺在他们之间的木桌上，散发着诡异的微光——那光芒似乎在诉说着一个被掩盖了千年的惊天秘密。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

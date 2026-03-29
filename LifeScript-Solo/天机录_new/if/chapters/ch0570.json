@@ -1,0 +1,470 @@
+{
+  "id": "天机录_ch0570",
+  "book_id": "天机录",
+  "number": 570,
+  "title": "新局将启",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机以为一切尽在掌握时，时空裂隙深处传来一个熟悉的声音——是陈天命在呼唤他。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0570_001",
+        "content": "晨雾未散，陈机负手立于窗前，目光穿透重重迷雾，落在远方圣宗的方向。太子太师提亲的消息如一柄软刀，看似温柔却直插要害。他嘴角微微上扬，勾勒出一抹意味深长的弧度——死人最不怕的就是活人的算计。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_002",
+        "character_id": "char_moxiansheng",
+        "content": "「小子，你这招臭棋。」墨先生的残魂自天机录第一页浮现，声音带着几分戏谑，「你妹妹在天牢里，你在深渊外，中间隔着整个皇朝的虎狼之师。你打算怎么托梦？用意念飞行吗？」",
+        "emotion": "揶揄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_003",
+        "content": "陈机转过身，烛火在他瞳孔中跳跃，映出一片深不见底的寒潭。他缓缓伸出右手，掌心浮现一枚黯淡的符篆——那是用三滴精血和五点天命值换来的「幽冥通灵符」。墨先生说得没错，这确实是臭棋。但有时候，臭棋也能将军。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0570_choice_001",
+        "prompt": "托梦之法凶险万分，稍有不慎便会暴露行踪，陈机该如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0570_opt_001a",
+            "text": "亲自入梦",
+            "description": "以幽冥通灵符为媒，陈机亲自进入陈念梦境。风险极高，但能传递最完整的信息。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗5点天命值，承受反噬",
+            "visible_reward": "与妹妹建立心灵链接，可随时传递指令",
+            "risk_hint": "天命值降至临界点，可能触发必死反噬",
+            "process_label": "陈机亲自入梦",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt001a_001",
+                  "content": "符篆燃起幽蓝火焰，陈机眉心微微刺痛，一股磅礴的寒意自脚底升腾而起。他感到自己的意识如同一缕轻烟，缓缓脱离躯壳，向着圣宗的方向飘去。墨先生的惊呼被他抛在身后——这小子疯了！"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt001a_002",
+                  "character_id": "char_chenian",
+                  "content": "「谁？！」陈念猛然惊醒，却发现四周一片虚无，一个熟悉的身影正从迷雾中走出。「机……机哥哥？！」她的声音颤抖，眼眶瞬间泛红。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0570_opt_001b",
+            "text": "借刀传话",
+            "description": "利用夜清的魔道迷雾遮掩气息，让她在圣宗内部传递信息给陈念。更隐蔽，但信息可能被篡改。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "欠夜清一个人情",
+            "visible_reward": "不消耗天命值，保持最佳状态应对后续变局",
+            "risk_hint": "夜清可能有其他盘算",
+            "process_label": "借助魔道力量传递信息",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt001b_001",
+                  "content": "陈机收起符篆，转而取出一枚黑色玉简。魔道迷雾悄无声息地缠绕上来，夜清的声音自虚空中响起：「陈公子这么快就想我了？」语气慵懒，却带着几分认真。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt001b_002",
+                  "character_id": "char_yeqing",
+                  "content": "「帮我带句话给我妹妹。」陈机的声音平静如水，「告诉她，哥哥还活着。另外，让她配合我演一出戏。」夜清沉默片刻，低笑道：「有意思，我这就派人去。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_004",
+        "content": "与此同时，皇朝太师府内，一场密议正在进行。韩烈端坐于主位，眼中闪烁着复杂的光芒。太子太师求娶陈念的计策，正是他一手推动。这个废物陈机，活着的时候碍眼，死了居然还要蹦跶——他绝不允许任何人染指陈念。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_005",
+        "character_id": "char_hanlie",
+        "content": "「少主，那废物陈机已死，陈念不过是笼中之鸟，何必大费周章？」心腹谋士小心翼翼地开口。韩烈冷哼一声，眼中杀意毕露：「废物？他若真是废物，岂能三番五次坏我大事？！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_006",
+        "content": "他猛然起身，走到窗前，望着圣宗的方向，喃喃自语：「陈机，你以为死了就能解脱？你在乎的人，我一个都不会放过。」他的声音如同寒冰，谋士不由自主地打了个寒颤。这个疯子，又要发什么疯？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_007",
+        "content": "然而韩烈不知道的是，就在他志得意满之际，一个惊人的消息正在各大势力间悄然传播——死人陈机，临死前在圣宗留下了诅咒：得陈念者，必遭天谴！",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0570_choice_002",
+        "prompt": "谣言已起，陈机该如何推波助澜，让这出死人诅咒的大戏更加精彩？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0570_opt_002a",
+            "text": "添油加醋",
+            "description": "散布更多细节：诅咒当日天象异变、圣宗长老莫名暴毙等，让谣言更加可信。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量精力伪造证据",
+            "visible_reward": "谣言可信度飙升，皇朝内部开始分裂",
+            "risk_hint": "过度神化可能引来天道之眼的注意",
+            "process_label": "深化诅咒谣言",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt002a_001",
+                  "content": "陈机嘴角勾起一抹冷笑。他从怀中取出一枚玉简，开始编织更大的网——天象异变？有！他在数日前便在圣宗附近布下了引动灵气异常的阵法。长老暴毙？更有！他早就在那位长老的丹药中动了手脚。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt002a_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生的残魂看得目瞪口呆：「好小子，原来你早就埋好了这些伏笔！」陈机淡淡道：「死人最大的优势，就是可以提前做好所有准备。」",
+                  "emotion": "惊叹"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0570_opt_002b",
+            "text": "以假乱真",
+            "description": "不做多余动作，让谣言自然发酵。更稳妥，但效果较慢。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耐心等待",
+            "visible_reward": "不暴露更多底牌，保持战略主动性",
+            "risk_hint": "韩烈可能抢先一步破局",
+            "process_label": "让谣言自然发酵",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt002b_001",
+                  "content": "陈机收回玉简，负手而立。有时候，最好的谣言就是让它看起来像真的一样。他只需要等待，等那些心虚的人自己吓自己。死人不可怕，可怕的是活着的人心里有鬼。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt002b_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "「你这小子，比老夫当年还阴险。」墨先生感慨道，「不过，老夫喜欢。」陈机没有回答，目光深邃如渊——真正的猎人，永远在等待最佳的出手时机。",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_008",
+        "content": "三日后，圣宗内部已是人心惶惶。那位原本支持联姻的长老，在众目睽睽之下突然口吐鲜血、倒地不起。虽然没有性命之忧，但所有人都看到了他倒下前眼中的恐惧——那是一种看见了什么可怕东西的眼神。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_009",
+        "character_id": "char_chenian",
+        "content": "「这不关你们的事！」陈念的声音从内殿传出，冰冷而决绝，「告诉太子太师，陈念此生不嫁！若他执意逼迫……」她顿了顿，声音陡然转厉，「就让他来问问那个死人的诅咒答不答应！」",
+        "emotion": "强硬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_010",
+        "content": "消息传回太师府时，韩烈正搂着美姬饮酒作乐。听到禀报，他手中的酒杯骤然捏碎，碎片刺入掌心，鲜血直流，他却浑然不觉。「废物！一群废物！」他怒吼道，「连个女人都降不住！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_011",
+        "character_id": "char_hanlie",
+        "content": "「少主息怒！」谋士连忙跪下，「那陈念仗着有几分修为，又仗着太子殿下的宠爱，才敢如此放肆。但只要太子殿下亲自施压……」韩烈猛然打断他：「你是说让太子出面？」他冷笑一声，「太子那个废物，除了在床上威风，还能干什么？！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_012",
+        "content": "就在此时，一名黑衣人无声无息地出现在大厅角落。他是韩烈安插在圣宗的眼线，此刻却带来了一个令人不安的消息：「少主，属下在圣宗附近发现了魔道中人的踪迹。而且……」他犹豫了一下，「属下似乎看到了陈机的身影。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0570_choice_003",
+        "prompt": "韩烈得知陈机可能还活着的消息，他该如何应对？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0570_opt_003a",
+            "text": "亲自追杀",
+            "description": "不管消息真假，亲自带人追杀陈机。以他的实力，碾死陈机如碾死蚂蚁。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能落入陷阱",
+            "visible_reward": "亲手杀死陈机的快感",
+            "risk_hint": "陈机既然敢现身，必有后手",
+            "process_label": "韩烈决定亲自出手",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt003a_001",
+                  "content": "韩烈猛然站起，眼中闪过一抹疯狂的光：「他没死？哈哈哈！好！好得很！」他抓起战戟，大步向外走去，「传令下去，点齐三千玄武精骑，随本座去会会这个死而复生的废物！」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt003a_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生的声音在陈机脑海中响起，带着几分凝重：「小子，玄武宗的人动了。韩烈亲自带队，足足三千精骑。」陈机却笑了，那笑容温和得让人发寒：「让他们来。我倒要看看，是他的铁骑快，还是我的布局快。」",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0570_opt_003b",
+            "text": "暗中调查",
+            "description": "韩烈虽然愤怒，但能成为玄武宗第一天才，他并非只有蛮力。他决定先派人暗中调查，确认消息真假。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过最佳时机",
+            "visible_reward": "避免落入陷阱，保留实力",
+            "risk_hint": "调查期间，陈念那边可能生变",
+            "process_label": "韩烈决定先调查真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt003b_001",
+                  "content": "韩烈深吸一口气，强行压下心中的怒火。他虽然冲动，但并不愚蠢。陈机若真的没死，必然有所依仗。他转向黑衣人：「盯紧圣宗，盯紧所有可疑之人。有任何消息，立刻回报。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt003b_002",
+                  "character_id": "char_hanlie",
+                  "content": "「还有……」韩烈的眼中闪过一丝狠厉，「去查查那个诅咒的来源。本座倒要看看，是谁在背后装神弄鬼！」他冷笑一声，「死人就是死人，休想翻身！」",
+                  "emotion": "阴狠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_013",
+        "content": "与此同时，皇朝内部也掀起了波澜。太子太师求娶陈念，本是政治联姻的经典之作，却没想到被一个「死人诅咒」搅得满城风雨。朝中大臣纷纷上书，以「天象示警」为由，请求暂停此事。就连皇帝陛下，也开始犹豫了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_014",
+        "character_id": "char_chenian",
+        "content": "夜清的魔道迷雾中，陈念的影像缓缓浮现。她看着兄长，眼中满是心疼与骄傲：「机哥哥，谣言已经起了作用。圣宗的长老们已经开始动摇了。不过……」她犹豫了一下，「我总觉得有人在暗中调查你。」",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_015",
+        "content": "陈机微微一笑，那笑容如同春风拂面，却又带着几分寒意：「让他们查。一个死人最大的价值，就是让活人永远猜不透。」他看着妹妹，目光柔和了一瞬：「小念，你做得很好。等这盘棋下完，哥哥就带你离开这里。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {}
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_017",
+        "content": "他的声音里带着几分期待，又带着几分坚定。期待，是因为他即将完成又一布局；坚定，是因为他知道，无论前方有多少荆棘，他都要将妹妹带离这个泥沼。死人不可怕，可怕的是死人的执念。而他的执念，就是陈念。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_018",
+        "content": "然而就在此时，一道苍老而威严的声音突然在陈机脑海中炸响——那不是墨先生的声音，而是一个更加古老、更加深邃的存在。「陈机……你终于走到这一步了……」那声音带着一丝诡异的欣喜，「来……到时空裂隙来……让我看看你……」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_019",
+        "content": "陈机的脸色骤然一变。天道之眼——那个超越一切的存在，终于注意到了他。他的天机录微微发烫，仿佛在回应着什么。他深吸一口气，强压下心中的惊涛骇浪。布局天下是一回事，被更高维度的存在盯上，则是另一回事了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_020",
+        "content": "墨先生的残魂剧烈颤抖起来，他的声音带着前所未有的凝重：「小子……它找到你了。」陈机没有回答，只是静静地望着远方。他的眼眸深处，燃烧着一团不屈的火焰。被发现了又如何？他陈机这一生，从来不惧任何存在。死人敢布局，活人敢翻天——而他，连死人都敢做！",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

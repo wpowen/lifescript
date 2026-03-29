@@ -5,20 +5,20 @@ struct SoloEntryHeroScene: View {
     let snapshot: SoloEntrySnapshot
     let primaryActionTitle: String
     let secondaryActionTitle: String
-    let openReading: () -> Void
+    let readingRoute: SoloRoute?
     let openWorld: () -> Void
+    let animationsEnabled: Bool
 
     @AppStorage("solo.reduceMotion") private var reduceMotion = false
 
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            // 主题艺术背景画 — 全出血，自带底部渐变消融
-            SoloHeroArtwork(preset: snapshot.branding.palettePreset)
+            heroBackdrop
 
             // 内容叠层
             contentStack
         }
-        .frame(maxWidth: .infinity, minHeight: 620)
+        .frame(maxWidth: .infinity, minHeight: isTianjiluVisualEnabled ? 700 : 620)
     }
 
     // MARK: - Content anchored to bottom (Netflix style)
@@ -33,12 +33,17 @@ struct SoloEntryHeroScene: View {
                 .foregroundStyle(SoloTheme.gold)
                 .padding(.bottom, 14)
 
-            // Title — oversized, cinematic
-            Text(book.title)
-                .font(SoloTypography.posterTitle(size: 56))
-                .foregroundStyle(SoloTheme.ink)
-                .fixedSize(horizontal: false, vertical: true)
-                .padding(.bottom, 10)
+            // Title — xianxia calligraphic style for 天机录
+            if isTianjiluVisualEnabled {
+                tianjiluCalligraphicTitle
+                    .padding(.bottom, 10)
+            } else {
+                Text(book.title)
+                    .font(SoloTypography.posterTitle(size: 56))
+                    .foregroundStyle(SoloTheme.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 10)
+            }
 
             // Promise tagline
             Text(snapshot.branding.promise)
@@ -51,14 +56,24 @@ struct SoloEntryHeroScene: View {
             // Meta chips row
             HStack(spacing: 8) {
                 cinemaChip(book.genre.displayName, SoloTheme.gold)
-                cinemaChip("\(book.totalChapters) \(snapshot.branding.chapterUnitName)", SoloTheme.crimson)
-                cinemaChip("买断制", SoloTheme.jade)
+                cinemaChip(serialChipText, SoloTheme.crimson)
+                cinemaChip(interactionChipText, SoloTheme.jade)
             }
             .padding(.bottom, 6)
+
+            if isTianjiluVisualEnabled {
+                volumeSpotlight
+                    .padding(.bottom, 14)
+            }
 
             Text(snapshot.branding.landing.identityLabel + " · " + snapshot.currentIdentityValue)
                 .font(.caption.weight(.medium))
                 .foregroundStyle(SoloTheme.muted)
+                .padding(.bottom, 8)
+
+            Text("天命值 \(snapshot.destinyStatus.value) · \(snapshot.destinyStatus.headline)")
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(destinyAccent.opacity(0.88))
                 .padding(.bottom, 22)
 
             // Primary action — portal threshold button
@@ -105,21 +120,23 @@ struct SoloEntryHeroScene: View {
     // MARK: - Portal Entry Button
 
     private var primaryPortalButton: some View {
-        Group {
-            if reduceMotion {
-                portalButtonLayer(pulse: 0.5)
-            } else {
-                TimelineView(.animation(minimumInterval: 0.05)) { tl in
-                    let t = tl.date.timeIntervalSinceReferenceDate
-                    let pulse = (sin(t * 1.15) + 1) / 2
-                    portalButtonLayer(pulse: pulse)
-                }
+        primaryPortalControl(pulse: portalPulse)
+    }
+
+    @ViewBuilder
+    private func primaryPortalControl(pulse: Double) -> some View {
+        if let readingRoute {
+            NavigationLink(value: readingRoute) {
+                portalButtonLabel(pulse: pulse)
             }
+            .buttonStyle(.plain)
+        } else {
+            portalButtonLabel(pulse: pulse)
+                .opacity(0.58)
         }
     }
 
-    private func portalButtonLayer(pulse: Double) -> some View {
-        Button(action: openReading) {
+    private func portalButtonLabel(pulse: Double) -> some View {
             VStack(alignment: .leading, spacing: 0) {
                 // Eyebrow — ceremony / threshold language
                 Text("点击踏入")
@@ -202,8 +219,113 @@ struct SoloEntryHeroScene: View {
                 radius: CGFloat(10 + pulse * 14),
                 x: 0, y: 5
             )
+    }
+
+    private var portalPulse: Double {
+        if reduceMotion { return 0.42 }
+        return animationsEnabled ? 0.74 : 0.42
+    }
+
+    @ViewBuilder
+    private var heroBackdrop: some View {
+        if isTianjiluVisualEnabled {
+            ZStack {
+                TianjiluHomeScene(
+                    illustration: TianjiluArtworkCatalog.homeHeroMaster,
+                    animationsEnabled: animationsEnabled
+                )
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                LinearGradient(
+                    colors: [
+                        Color.black.opacity(0.08),
+                        Color.black.opacity(0.26),
+                        Color.black.opacity(0.76),
+                        Color.black,
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+
+                RadialGradient(
+                    colors: [
+                        SoloTheme.gold.opacity(0.16),
+                        SoloTheme.crimson.opacity(0.10),
+                        Color.clear,
+                    ],
+                    center: UnitPoint(x: 0.72, y: 0.22),
+                    startRadius: 10,
+                    endRadius: 320
+                )
+            }
+            .clipped()
+        } else {
+            SoloHeroArtwork(preset: snapshot.branding.palettePreset)
         }
-        .buttonStyle(.plain)
+    }
+
+    private var volumeSpotlight: some View {
+        let volume = TianjiluArtworkCatalog.volume(for: max(snapshot.progress.currentChapterNumber, 1))
+
+        return HStack(alignment: .top, spacing: 12) {
+            ZStack(alignment: .bottomLeading) {
+                SoloBundledArtworkImage(resourceName: volume.cover.resourceName, contentMode: .fill)
+                    .frame(width: 86, height: 124)
+                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
+                    )
+
+                LinearGradient(
+                    colors: [Color.clear, Color.black.opacity(0.72)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+
+                Text(volume.volumeLabel)
+                    .font(.caption2.weight(.bold))
+                    .foregroundStyle(SoloTheme.ink)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 8)
+            }
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("当前卷面")
+                    .font(.caption2.weight(.bold))
+                    .tracking(1.4)
+                    .foregroundStyle(SoloTheme.gold)
+                Text(volume.cover.subtitle)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(SoloTheme.ink)
+                if let caption = volume.cover.caption {
+                    Text(caption)
+                        .font(.caption)
+                        .foregroundStyle(SoloTheme.warmInk)
+                        .lineSpacing(4)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+        }
+        .padding(12)
+        .background(
+            ZStack {
+                Color.white.opacity(0.06)
+                if isTianjiluVisualEnabled {
+                    SoloBundledArtworkImage(
+                        resourceName: TianjiluArtworkCatalog.homeHeroMaster.resourceName,
+                        contentMode: .fill
+                    )
+                    .opacity(0.16)
+                }
+            }
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
+        )
     }
 
     private func cinemaChip(_ text: String, _ color: Color) -> some View {
@@ -217,5 +339,140 @@ struct SoloEntryHeroScene: View {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .fill(color.opacity(0.14))
             )
+    }
+
+    private var serialChipText: String {
+        guard snapshot.generatedChapterCount > 0 else { return "章节接入中" }
+        return "\(snapshot.generatedChapterCount)\(snapshot.branding.chapterUnitName)内容"
+    }
+
+    private var interactionChipText: String {
+        book.interactionTags.first ?? "多结局"
+    }
+
+    private var destinyAccent: Color {
+        switch snapshot.destinyStatus.level {
+        case .abundant:
+            return SoloTheme.jade
+        case .steady:
+            return SoloTheme.gold
+        case .strained, .critical:
+            return SoloTheme.crimson
+        }
+    }
+
+    private var isTianjiluVisualEnabled: Bool {
+        book.id == "天机录"
+    }
+
+    // MARK: - 天机录 Calligraphic Title
+
+    private var tianjiluCalligraphicTitle: some View {
+        VStack(spacing: 0) {
+            topOrnamentLine
+                .padding(.bottom, 8)
+
+            HStack(alignment: .bottom, spacing: 6) {
+                calligraphyChar("天", size: 62, yOffset: -2)
+                calligraphyChar("机", size: 72, yOffset: 0)
+                calligraphyChar("录", size: 58, yOffset: 2)
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                Color.clear,
+                                SoloTheme.gold.opacity(0.40 + portalPulse * 0.20),
+                                SoloTheme.jade.opacity(0.20),
+                                Color.clear,
+                            ],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 1.5)
+                    .offset(y: 42)
+            )
+            .padding(.bottom, 10)
+
+            bottomOrnamentLine
+        }
+    }
+
+    private func calligraphyChar(_ char: String, size: CGFloat, yOffset: CGFloat) -> some View {
+        Text(char)
+            .font(.system(size: size, weight: .black, design: .serif))
+            .foregroundStyle(
+                LinearGradient(
+                    colors: [
+                        Color(red: 0.96, green: 0.86, blue: 0.52),
+                        Color(red: 0.88, green: 0.72, blue: 0.38),
+                        Color(red: 0.50, green: 0.82, blue: 0.76),
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+            )
+            .shadow(color: SoloTheme.gold.opacity(0.55 + portalPulse * 0.30), radius: 12, x: 0, y: 4)
+            .shadow(color: SoloTheme.jade.opacity(0.20 + portalPulse * 0.10), radius: 24, x: 0, y: 0)
+            .offset(y: yOffset)
+    }
+
+    private var topOrnamentLine: some View {
+        HStack(spacing: 8) {
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [Color.clear, SoloTheme.gold.opacity(0.50)],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 48, height: 1)
+
+            Image(systemName: "diamond.fill")
+                .font(.system(size: 5))
+                .foregroundStyle(SoloTheme.gold.opacity(0.72))
+
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [SoloTheme.gold.opacity(0.50), Color.clear],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 48, height: 1)
+        }
+    }
+
+    private var bottomOrnamentLine: some View {
+        HStack(spacing: 6) {
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [Color.clear, SoloTheme.jade.opacity(0.30)],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 36, height: 0.8)
+
+            Text("谋天改命")
+                .font(.system(size: 10, weight: .medium))
+                .tracking(4)
+                .foregroundStyle(SoloTheme.gold.opacity(0.48 + portalPulse * 0.12))
+
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [SoloTheme.jade.opacity(0.30), Color.clear],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 36, height: 0.8)
+        }
     }
 }

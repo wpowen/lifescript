@@ -108,6 +108,9 @@ final class SoloStoryStoreTests: XCTestCase {
         XCTAssertEqual(snapshot.hiddenRouteHint, "有人在暗中盯你")
         XCTAssertEqual(snapshot.currentIdentityValue, "第 2 章 · 暗潮试探")
         XCTAssertEqual(snapshot.destinyStatusLine, "守住你刚抢来的优势")
+        XCTAssertEqual(snapshot.generatedChapterCount, 3)
+        XCTAssertEqual(snapshot.plannedChapterCount, 3)
+        XCTAssertEqual(snapshot.destinyStatus.headline, "反噬逼近")
         XCTAssertEqual(snapshot.hookLine, "下一章钩子")
         XCTAssertEqual(snapshot.experienceStats.map(\.title), ["章节规模", "公开分路", "关键人物", "交互密度"])
         XCTAssertEqual(snapshot.experienceStats.map(\.valueText), ["3 章", "0 条", "1 人", "5 次"])
@@ -172,6 +175,11 @@ final class SoloStoryStoreTests: XCTestCase {
 
         XCTAssertEqual(snapshot.currentChapterID, "chapter_2")
         XCTAssertEqual(snapshot.currentStageID, "stage_2")
+        XCTAssertEqual(snapshot.currentStageTitle, "暗潮试探")
+        XCTAssertEqual(snapshot.currentObjective, "推进")
+        XCTAssertEqual(snapshot.generatedChapterCount, 3)
+        XCTAssertEqual(snapshot.plannedChapterCount, 3)
+        XCTAssertEqual(snapshot.destinyStatus.headline, "反噬逼近")
         XCTAssertEqual(snapshot.completedChapterIDs, ["chapter_1"])
     }
 
@@ -202,6 +210,7 @@ final class SoloStoryStoreTests: XCTestCase {
         XCTAssertEqual(snapshot.statCards.map(\.title), ["剑势", "声名", "机锋", "灵资", "气度", "心魇", "天命"])
         XCTAssertEqual(snapshot.moduleCards.count, 3)
         XCTAssertEqual(snapshot.moduleCards.map(\.title), ["境界势能", "人脉因果", "名望与筹码"])
+        XCTAssertEqual(snapshot.destinyStatus.headline, "天命充盈")
         XCTAssertEqual(snapshot.relationshipSpotlight?.characterName, "秦霜")
         XCTAssertEqual(snapshot.relationshipSpotlight?.attitudeLabel, "信任")
     }
@@ -252,6 +261,7 @@ final class SoloStoryStoreTests: XCTestCase {
 
         XCTAssertEqual(snapshot.statCards.map(\.title), ["战备", "声噪", "决断", "补给", "凝聚", "异化", "火种"])
         XCTAssertEqual(snapshot.moduleCards.map(\.title), ["避难区承压", "队伍信号", "生存筹码"])
+        XCTAssertEqual(snapshot.destinyStatus.headline, "天命充盈")
         XCTAssertEqual(snapshot.relationshipSpotlight?.characterName, "沈砚")
         XCTAssertEqual(snapshot.relationshipSpotlight?.attitudeLabel, "关注")
     }
@@ -287,5 +297,111 @@ final class SoloStoryStoreTests: XCTestCase {
 
         XCTAssertEqual(summary.completedChapterCount, 1)
         XCTAssertTrue(routeSnapshot.completedChapterIDs.contains("chapter_1"))
+    }
+
+    func test_entrySnapshot_exposesSerialReleaseStateWhenBookPlanExceedsGeneratedChapters() async {
+        let loader = MockContentLoader()
+        loader.stubbedBook = Book(
+            id: SoloStoryConfig.storyId,
+            title: "天机录",
+            author: "命书工作室",
+            coverImageName: "cover_tianjilu",
+            synopsis: "测试简介",
+            genre: .cultivation,
+            tags: ["修仙"],
+            interactionTags: ["高互动"],
+            totalChapters: 1200,
+            freeChapters: 20,
+            characters: TestFixtures.makeBook().characters,
+            initialStats: ProtagonistStats(combat: 15, fame: 5, strategy: 75, wealth: 10, charm: 30, darkness: 0, destiny: 80)
+        )
+        loader.stubbedChapters = [
+            TestFixtures.makeChapter(id: "chapter_1", number: 1),
+            TestFixtures.makeChapter(id: "chapter_2", number: 2),
+            TestFixtures.makeChapter(id: "chapter_3", number: 3),
+        ]
+        loader.stubbedWalkthrough = TestFixtures.makeWalkthrough()
+
+        let sut = SoloStoryStore(contentLoader: loader)
+        await sut.reload()
+
+        let snapshot = sut.entrySnapshot(progress: nil)
+
+        XCTAssertEqual(snapshot.generatedChapterCount, 3)
+        XCTAssertEqual(snapshot.plannedChapterCount, 1200)
+        XCTAssertTrue(snapshot.serialReleaseLine.contains("3 / 1200"))
+        XCTAssertEqual(snapshot.destinyStatus.headline, "天命充盈")
+    }
+
+    func test_resumeChapterId_fallsBackToFirstChapterWhenSavedChapterIsMissing() async {
+        let loader = MockContentLoader()
+        loader.stubbedBook = TestFixtures.makeBook()
+        loader.stubbedChapters = [
+            TestFixtures.makeChapter(id: "chapter_1", number: 1),
+            TestFixtures.makeChapter(id: "chapter_2", number: 2),
+        ]
+
+        let sut = SoloStoryStore(contentLoader: loader)
+        await sut.reload()
+
+        let staleProgress = ReadingProgress(bookId: SoloStoryConfig.storyId, currentChapterId: "chapter_999")
+
+        XCTAssertEqual(sut.resumeChapterId(progress: staleProgress), "chapter_1")
+
+        let summary = sut.progressSummary(progress: staleProgress)
+        XCTAssertEqual(summary.currentChapterTitle, loader.stubbedChapters.first?.title)
+        XCTAssertEqual(summary.currentChapterNumber, 1)
+    }
+
+    func test_dossierSnapshot_usesTianjiluSpecificTerminology() {
+        let sut = SoloStoryStore(contentLoader: MockContentLoader())
+        let book = Book(
+            id: "天机录",
+            title: "天机录",
+            author: "命书工作室",
+            coverImageName: "cover_tianjilu",
+            synopsis: "测试简介",
+            genre: .cultivation,
+            tags: ["修仙", "谋局"],
+            interactionTags: ["高互动"],
+            totalChapters: 1200,
+            freeChapters: 20,
+            characters: [
+                Character(
+                    id: "char_1",
+                    name: "苏青瑶",
+                    title: "外门师姐",
+                    avatarImageName: "avatar",
+                    description: "角色描述",
+                    role: .ally
+                )
+            ],
+            initialStats: .initial
+        )
+        let relationships = [
+            RelationshipState(
+                characterId: "char_1",
+                trust: 64,
+                affection: 36,
+                hostility: 12,
+                awe: 18,
+                dependence: 8,
+                customDimensions: [
+                    RelationshipEffect.RelationshipDimension.curiosity.rawValue: 61,
+                    RelationshipEffect.RelationshipDimension.vigilance.rawValue: 22,
+                ],
+                lastChangeReason: "她开始怀疑你是不是提前知道了结果。",
+                unlockedEvents: []
+            )
+        ]
+
+        let snapshot = sut.dossierSnapshot(
+            book: book,
+            stats: ProtagonistStats(combat: 44, fame: 38, strategy: 81, wealth: 27, charm: 52, darkness: 19, destiny: 73),
+            relationships: relationships
+        )
+
+        XCTAssertEqual(snapshot.statCards.map { $0.title }, ["落子", "牌面", "机锋", "残页", "人心", "心魇", "天命"])
+        XCTAssertEqual(snapshot.moduleCards.map { $0.title }, ["天机余裕", "关系阈值", "暗线牵引"])
     }
 }

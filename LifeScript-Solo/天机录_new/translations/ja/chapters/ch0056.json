@@ -1,0 +1,415 @@
+{
+  "id": "天机录_ch0056",
+  "book_id": "天机录",
+  "number": 56,
+  "title": "絶境逃亡",
+  "is_paid": true,
+  "next_chapter_hook": "蘇青瑶が陳機を天青宗後山禁地に連れてきた。月明かりの中、彼女の表情は前所未有的凝重さを帯びていた：「陳機、お前が招いたものが一体何の存在か知っているか？」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0056_001",
+        "content": "黒衣者の刀芒が空夜を裂く。陳機の瞳孔が縮まる――だが、その致命的一刀が落下하려는瞬間、彼の手首が微かに光を放ち、馴染み深い魔道の気配が闇夜の幽火のように猛然と咲き渡る。「お前が……」黒衣者の刀勢が一瞬止まり、目に驚きが過ぎる。陳機の心の中で冷笑する。これが彼の隠した最後の切り札――夜清からの魔道烙印だ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0056_002",
+        "character_id": "char_chenji",
+        "content": "（夜清の声が脳裏に響く）「北へ、三息後に分岐点、左折。」陳機は考える間もなく、本能的に北方へと疾走する。彼にとって、これは夜清が魔道迷雾を通じて争い取った一線の生機だった。背後では、黒衣者の刀気が影のように付き従い、背中の衣を撕裂していた。",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_003",
+        "content": "三息が過ぎた。陳회는迷わず左折した。背後から黒衣者の低い呪いの声が聞こえた。明らかに相手も彼が逃生路を正確に予測できるとは思っていなかった。「この程度の廃物居然にこのような机缘が……」黒衣者の声が次第に冷たくなる。「逃げられると思うか？」刀芒がまたも近づき、陳会の背中は刀気によって血痕が刻まれ、青衣に血が染みついた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_004",
+        "content": "痛みが全身に電流のように走り抜ける。陳会は歯を食いしばり、脑裏で高速に回転させる。天機録残頁が意識の奥底で微かな光を放つ――每一次の使用で三时辰先まで予見できるが、代价は天命値5点を消費する。此処で重傷を負った身でありながら、天機録を再び使えば……「不可。」彼は强い意志でこの考えを抑え、最も危急な時に温存することにした。",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0056_005",
+        "prompt": "生死の狭間で、陳会は决断を下さねばならない――夜清の指引に頼り続けるか、それとも天機録の予見の力を危険を冒して使うか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0056_005_a",
+            "text": "夜清を信じ、逃亡を続ける",
+            "description": "夜清の魔道烙印はもう二度も彼を救った。此処では彼女の指引に頼り続けるべきであり、貴重天命値を消耗するよりも。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "背中の傷口から出血し続け、体力が急速に低下する",
+            "visible_reward": "天命値を温存し、夜清との協力の黙契を維持する",
+            "risk_hint": "もし夜清の指引が誤り거나黑衣人に追上されたら、絶境に陥る",
+            "process_label": "赌一把，继续跑！",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0056_result_005_a_001",
+                  "content": "陳會は天機録を使う衝動を抑え、意識の中の那道魔道の声完全的に信じる。「前方二十丈に枯井がある、飛び込め！」夜清の声は急促で堅定していた。陳會は迷うことなくつま先で地面を蹴り、身形が幽霊のようにその荒草に覆われた枯井へと飛び去る――"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "信任夜清的指引",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0056_005_b",
+            "text": "天機録で予見する",
+            "description": "黑衣人の実力は予想を超えていた。天機録の完全な予見だけが真の生路を見つけられるたとえ天命値を消費する代價を払っても。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命値5点を消費する",
+            "visible_reward": "すべての変数を含めた完全な逃生路線の予見を得る",
+            "risk_hint": "天命値が枯渇すれば運命の必死の反噬を引き起こす",
+            "process_label": "天机录，启动！",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0056_result_005_b_001",
+                  "character_id": "char_chenji",
+                  "content": "陳は歯を食いしばり，眉心处の天機録残頁が忽ち熱を帯びる。玄奥な符文が目の前に浮かび上がり——未来三时辰の映像が走馬灯のように過ぎる。三つの伏撃点、两条の逃生路線、そして……予想外的身影が見えた。",
+                  "emotion": "痛苦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录已使用"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_006",
+        "content": "陳が枯井へ飛び込む瞬间，侧方から一道の劒光が切り落とした！「铛——」金鉄が交わる音の中で，黑衣人の刀勢は無理やり弾き返された。陳は這一瞬の息的間に翻身して井戸に落ちるが，井壁には赫然と馴染み深い劒痕が刻まれている——那是天青宗内門劒法独有的標記。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0056_007",
+        "character_id": "char_suqingyao",
+        "content": "「廃物就是廃物，连逃命都要人救。」一道清冷的声音从井口传来。陈机抬头，月光下，一道白衣身影傲立于井沿之上，剑指黑衣人。苏青瑶！她的目光扫过陈机狼狈的模样，眼中闪过一丝复杂神色，\"下次再被人追杀，别死在外面，丢我天青宗的脸。\"",
+        "emotion": "高冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_008",
+        "content": "「在我天青宗地界追杀我宗门弟子，你问过我手中的剑没有？」话音未落，她已化作一道白虹，剑芒直取黑衣人咽喉！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_009",
+        "content": "陈机靠在井壁上喘息，目光却始终紧盯着上方的战局。苏青瑶的剑法凌厉无匹，每一剑都带着内门首席应有的霸道。然而黑衣人的身法诡异至极，竟能在电光火石间避开所有致命攻击。两人的战斗余波震得井壁碎石簌簌落下。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0056_010",
+        "prompt": "苏青瑶正与黑衣人激战，但陈机发现黑衣人似乎在拖延时间——他必须做出选择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0056_010_a",
+            "text": "出言提醒苏青瑶",
+            "description": "陈机看穿黑衣人的意图，选择信任苏青瑶，将自己的发现告知她，共同御敌。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露部分观察力，引起苏青瑶怀疑",
+            "visible_reward": "加速战斗结束，避免更多变数",
+            "risk_hint": "苏青瑶可能追问他为何能看出端倪",
+            "process_label": "他撑不了多久！",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0056_result_010_a_001",
+                  "character_id": "char_chenji",
+                  "content": "「他在等援军！」陈机高声提醒，声音穿透夜风。苏青瑶眼神微凛，剑势骤然一变，不再留手。刹那间，剑光如银河倾泻，将黑衣人完全笼罩——",
+                  "emotion": "焦急"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "提醒苏青瑶黑衣人意图",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0056_010_b",
+            "text": "静观其变保全自己",
+            "description": "苏青瑶实力强横，无需他多言。保留精力观察战局，若有变故再做打算。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错失展示价值的机会",
+            "visible_reward": "不暴露自己，继续维持废物人设",
+            "risk_hint": "若苏青瑶陷入危机，他可能错失最佳支援时机",
+            "process_label": "不急，先看戏",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0056_result_010_b_001",
+                  "content": "陈机默然垂下眼帘，做出一副力竭无力的模样。然而他的目光始终没有离开战局，脑中飞速分析着每一个细节。苏青瑶的剑法固然凌厉，但黑衣人似乎对她的剑路了如指掌……"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_011",
+        "content": "剑光交错间，黑衣人突然身形一晃，面具下传出一声闷哼——苏青瑶的剑气终于伤到了他的肩头。「你……」黑衣人踉跄后退，目光阴沉地扫过陈机所在的方向，「今日之事，没完。」话音未落，他的身形已化作一道黑烟，消散在夜色之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0056_012",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶收剑入鞘，目光落在井底的陈机身上，神情复杂：「能从他手中撑到现在，你倒是比我想象的命硬。」她顿了顿，声音微沉，「不过这件事，比你想象的要严重得多。」陈机扶着井壁勉强站起，嘴角扯出一抹苦笑。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_013",
+        "content": "「那个组织，叫'彼岸'。」苏青瑶的声音在夜风中显得格外清冷，「他们不属于三大宗门，也不属于魔道，是一群游离于所有势力之外的杀手。传闻……他们只接受一个势力的委托。」陈机眉头微皱，「什么势力？」苏青瑶沉默片刻，缓缓吐出四个字：「天道之眼。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0056_014",
+        "character_id": "char_chenji",
+        "content": "天道之眼——这个名字如同一盆冰水浇在陈机心头。他想起墨先生曾提及的那个超越性存在，难道从一开始，他获得天机录就不是偶然？苏青瑶似乎没有注意到他的异样，自顾自地说道：「你身上有什么他们想要的东西，我不知道。但从今往后，你我之间……必须合作。」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0056_015",
+        "prompt": "苏青瑶提出合作，陈机必须做出回应——是坦诚相告还是继续隐藏？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0056_015_a",
+            "text": "半真半假，保留底牌",
+            "description": "陈机决定透露部分真相以换取信任，但核心秘密仍藏在心底。这符合他一贯的谨慎作风。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能引起苏青瑶怀疑",
+            "visible_reward": "建立初步合作关系，不暴露天机录",
+            "risk_hint": "苏青瑶极为聪慧，可能察觉他在隐瞒",
+            "process_label": "说出部分真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0056_result_015_a_001",
+                  "character_id": "char_chenji",
+                  "content": "「彼岸……天道之眼……」陈机低声重复着这两个名字，脸上露出恰到好处的茫然与恐惧，「我只是天青宗最普通的杂役弟子，为何会被这样的存在盯上？」他故意露出手腕上那道魔道烙印的痕迹，「至于这个……我也不知从何而来。」",
+                  "emotion": "示弱"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "向苏青瑶展示魔道烙印",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0056_015_b",
+            "text": "坦然接受合作",
+            "description": "既然苏青瑶已经救他一命，不如顺势建立更深的信任关系，共同应对彼岸的威胁。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "完全暴露在苏青瑶的审视下",
+            "visible_reward": "与内门首席结盟，获得强大助力",
+            "risk_hint": "若苏青瑶发现他一直在演戏，信任将彻底崩塌",
+            "process_label": "点头同意",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0056_result_015_b_001",
+                  "character_id": "char_suqingyao",
+                  "content": "陈机沉默片刻，终于点了点头：「苏师姐今日救命之恩，陈机铭记于心。若师姐不嫌弃，我愿与师姐携手，共抗彼岸。」苏青瑶目光微闪，似乎没料到他会答应得如此干脆，「……你倒是比传言中识趣。」",
+                  "emotion": "意外"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "与苏青瑶结盟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与苏青瑶正式结盟",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_016",
+        "content": "月色如水，洒落在荒废的枯井之上。苏青瑶从袖中取出一枚玉瓶，随手抛给陈机：「疗伤丹药，先服下。明日午时，来天青宗后山的听雨轩找我。」她转身欲走，又顿了顿脚步，「还有……今夜之事，不要对任何人提起。包括掌门。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0056_017",
+        "content": "陈机接过玉瓶，看着苏青瑶的身影消失在夜色之中。手腕处的魔道烙印已经暗淡下去，夜清的声音也随之沉寂。他靠在井壁上，脑海中不断回响着「天道之眼」这四个字。天机录、预言者、天命值……一切似乎都被一只无形的手操控着。「彼岸……天道之眼……」他低声呢喃，眼中闪过一丝从未有过的寒光，「想把我当棋子？那就看看，谁才是真正的执棋人。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

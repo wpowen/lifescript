@@ -31,34 +31,43 @@ private struct SoloPanelModifier: ViewModifier {
         switch style {
         case .hero:
             return LinearGradient(
-                colors: [Color.white.opacity(0.04), Color.white.opacity(0.02)],
+                colors: [
+                    Color.white.opacity(0.08 + prominence * 0.04),
+                    Color.white.opacity(0.04),
+                ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
         case .stage:
             return LinearGradient(
-                colors: [Color.white.opacity(0.05), Color.white.opacity(0.02)],
+                colors: [
+                    Color.white.opacity(0.07 + prominence * 0.03),
+                    Color.white.opacity(0.04),
+                ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
         case .evidence:
             return LinearGradient(
                 colors: [
-                    Color.white.opacity(0.04 + (prominence * 0.03)),
-                    Color.white.opacity(0.02)
+                    Color.white.opacity(0.06 + prominence * 0.04),
+                    Color.white.opacity(0.03),
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
         case .quiet:
             return LinearGradient(
-                colors: [Color.white.opacity(0.03), Color.clear],
+                colors: [Color.white.opacity(0.05), Color.white.opacity(0.02)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
         case .alert:
             return LinearGradient(
-                colors: [SoloTheme.crimson.opacity(0.10), Color.white.opacity(0.02)],
+                colors: [
+                    SoloTheme.crimson.opacity(0.14),
+                    Color.white.opacity(0.04),
+                ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )

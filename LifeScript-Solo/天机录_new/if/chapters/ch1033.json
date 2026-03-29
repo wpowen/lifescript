@@ -1,0 +1,521 @@
+{
+  "id": "天机录_ch1033",
+  "book_id": "天机录",
+  "number": 1033,
+  "title": "凡间的变故",
+  "is_paid": true,
+  "next_chapter_hook": "就在皇朝来使踏入陈府大门的瞬间，陈机胸口贴身收藏的龟壳神器骤然滚烫，一道与那金牌上如出一辙的古老符文在夜色中隐隐浮现——更高存在的意志，已然降临凡间。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1033_001",
+        "content": "天界边界的虚空之中，陈机死死盯着那道正缓缓向他飘来的熟悉气息——那是母亲陈玄独有的、混着冰雪与檀香的气息，如同冬夜燃起的檀香，沁入骨髓。然而就在他准备迎上去的瞬间，天机录残页骤然滚烫，一道刺目的金光从凡间方向冲天而起，直接撕裂了他与母亲之间的感应。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_002",
+        "content": "与此同时，凡间三大宗门境内，天地灵气骤然紊乱。玄武宗主峰之上，掌门韩啸天骤然睁眼，手中龟甲自行碎裂，指向天穹深处；白虎宗圣殿之内，闭关多年的老怪物纷纷破关而出，惊疑不定地望向天际；而朱雀宗的火焰山巅，一座沉寂千年的古钟自行轰鸣，惊动了整个宗门。三大宗门同时感应到那股令天地变色的气息，误以为是天道降临，纷纷敲响战备钟声。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_003",
+        "character_id": "char_chenian",
+        "content": "陈府之内，陈念正在演武场指点族人修炼，忽然天降异象，漫天星辰竟在白昼显现。她抬头望天，心中骤然涌起一股不安——那是兄长所在的方向。\"兄长……\"她低声呢喃，手中长剑嗡鸣作响，似乎感应到了主人的焦虑。",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_004",
+        "content": "就在此时，一名斥候急匆匆闯入，跪禀道：\"禀家主！皇朝来使已至城外三十里，手持金牌，言明要见我陈家家主！\"陈念眉心一跳，与身旁的周老对视一眼。皇朝向来不干涉宗门事务，此时派人前来，必有深意。更诡异的是，这时机恰好卡在天降异象之后——绝非巧合。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_005",
+        "character_id": "char_chenian",
+        "content": "\"来使可有报上名号？\"陈念沉声问道，声音平稳得让人听不出任何情绪。斥候禀报：\"来人自称'天枢使'，手持一枚古朴金牌，上刻……\"斥候犹豫了一下，\"上刻一个从未见过的符文。\"陈念心中一震——那个符文，她曾在兄长的龟壳神器上见过。",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1033_006",
+        "prompt": "皇朝来使携带着刻有神秘符文的金牌现身，声称代表更高存在的意志而来。陈念必须决定如何应对这突如其来的变数。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch1033_meet_envoy",
+            "text": "亲自出迎，一探虚实",
+            "description": "以陈家现任家主身份亲自迎接来使，探查皇朝意图及那神秘令牌的来历。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能暴露陈家底牌",
+            "visible_reward": "获取关键情报",
+            "risk_hint": "对方来意不明，恐有陷阱",
+            "process_label": "陈念整理衣衫，准备前往城门",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_meet_envoy_001",
+                  "content": "陈念整了整衣冠，正要迈步，忽然感知到胸口一阵滚烫——那是兄长临行前留给她的一枚护身玉符，此刻正在急速升温，仿佛在传递什么讯息。她的脚步顿住，眉头紧锁。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_meet_envoy_002",
+                  "character_id": "char_chenian",
+                  "content": "\"兄长……\"她闭上双眼，尝试通过玉符感知兄长的状况，片刻后骤然睁眼，脸色微变，\"他遇到麻烦了。\"周老急问：\"什么麻烦？\"陈念摇了摇头，看向城门的方向，\"先处理眼前的事，兄长的布局，不能在这里出差错。\"",
+                  "emotion": "焦虑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "envoy_met"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_wait_envoy",
+            "text": "紧闭大门，静观其变",
+            "description": "以不变应万变，让来使进城后再做观察，同时暗中调动防护阵法。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能得罪皇朝",
+            "visible_reward": "掌握主动权",
+            "risk_hint": "来使若有强硬手段，可能激化矛盾",
+            "process_label": "陈念下令启动护山大阵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_wait_envoy_001",
+                  "content": "陈念抬手一挥，整个陈府范围内的阵法悄然激活，一层淡金色的光幕在府邸周围浮现。周老微微点头，少主的决断颇为老练。\"把那枚护身玉符的感应屏蔽掉，\"陈念低声吩咐，\"我不想让兄长分心。\"她知道兄长正在天界面对强敌，不能让他感知到凡间的变故。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "defense_raised"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_investigate_envoy",
+            "text": "派人暗中调查来使底细",
+            "description": "不急于见面，先派人摸清来使的来历、随从人数以及那枚金牌的秘密。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耗费时间",
+            "visible_reward": "获取完整情报后再行动",
+            "risk_hint": "可能错过与来使直接接触的机会",
+            "process_label": "陈念暗中布置眼线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_investigate_envoy_001",
+                  "character_id": "char_chenian",
+                  "content": "\"周老，派人去查查这'天枢使'的来历，\"陈念吩咐道，\"还有那金牌上的符文，我要知道它的出处。\"周老领命而去，陈念独自站在演武场中央，抬头望着那仍在嗡鸣的长剑，心中默默计算着时间——兄长那边，应该已经知道凡间出事了吧？",
+                  "emotion": "忧虑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "investigation_started"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_007",
+        "content": "与此同时，天界入口处的魔雾之中，夜清的身影骤然浮现。她身后跟着数十名魔道圣宗的精锐弟子，每个人的脸上都带着狂热的神色。\"圣女殿下，入口处的封印已经松动，\"一名弟子禀报道，\"再有一个时辰，就能强行破开。\"夜清望着那道散发着柔和光芒的入口，眼中闪过一丝复杂的神色——那个男人说过，让他先处理天界的事，等他需要的时候，她再出现。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_008",
+        "character_id": "char_yeqing",
+        "content": "\"再等等。\"夜清的声音清冷，却带着不容置疑的坚定。弟子不解：\"殿下，机不可失——\"夜清猛然转身，眸中寒光四射，\"本座说再等等！\"她的声音骤然冷了下来，\"你们以为本座不知道你们圣宗打什么主意？那天界入口一旦破开，你们是打算让本座当先锋，还是想借机把那东西放出来？\"众弟子面面相觑，不敢再言。",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_009",
+        "content": "就在夜清与魔道弟子僵持之际，天青宗境内，苏青瑶猛然睁开双眼。她的感知能力在这一刻被放大到了极致，整个天青宗范围内的风吹草动都尽收耳中。然而有一处地方却让她感到了异常——那是陈机离开的方向，某种她无法理解的气息正在剧烈波动。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_010",
+        "character_id": "char_suqingyao",
+        "content": "\"他在和什么东西对峙？\"苏青瑶低声呢喃，眉头紧锁。作为内门首席，她很清楚陈机的实力——绝对不可能是眼前这股力量的对手。除非……她骤然想起陈机那天在密室中说的话：\"有些事，你知道了反而危险。\"她霍然起身，\"不行，我得去看看。\"",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_011",
+        "content": "苏青瑶刚踏出房门，便看见夜清的身影从天而降。两人对视一眼，无需多言，都从对方眼中看到了同样的焦虑。\"你也感觉到了？\"苏青瑶问道。夜清点了点头：\"他遇到麻烦了，比我预想的还要大。\"两人沉默片刻，苏青瑶率先开口：\"去天界。\"夜清勾唇一笑：\"难得你和我想到一块去了。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1033_012",
+        "prompt": "苏青瑶与夜清决定前往天界支援陈机，但天界入口的位置只有有限的情报，两人必须选择前进路线。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch1033_rush_entrance",
+            "text": "直接奔赴天界入口",
+            "description": "以最快速度赶往魔雾笼罩的天界入口，与夜清的势力汇合后强行进入。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能遭遇魔道伏击",
+            "visible_reward": "第一时间抵达陈机身边",
+            "risk_hint": "魔道势力正在入口附近活动，风险极高",
+            "process_label": "两人化作遁光破空而去",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_rush_entrance_001",
+                  "content": "两道遁光划破长空，苏青瑶与夜清以最快速度掠过天际。然而就在接近魔雾范围时，夜清忽然拉住苏青瑶的手腕，\"等等。\"她眯起眼睛，\"有埋伏。\"苏青瑶顺着她的目光看去，只见下方的山谷中隐藏着数十道黑影，正虎视眈眈地盯着天界入口的方向。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_rush_entrance_002",
+                  "character_id": "char_yeqing",
+                  "content": "\"是圣宗的人。\"夜清的声音冷了下来，\"看来他们不打算让我自由行动。\"苏青瑶皱眉：\"怎么办？\"夜清嘴角勾起一抹冷笑：\"我的手下，还是我来收拾。\"她抬手一挥，魔道迷雾骤然涌动，将那些埋伏的黑影尽数笼罩。片刻后，迷雾散去，埋伏者已尽数昏迷。",
+                  "emotion": "冷厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "entrance_approached"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_seek_alliance",
+            "text": "先去联系其他势力",
+            "description": "联合三大宗门的力量共同前往天界，以人多势众之势压过魔道干扰。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耗费更多时间",
+            "visible_reward": "获得强大后援",
+            "risk_hint": "可能遭到宗门拒绝或趁机要挟",
+            "process_label": "两人分头联系宗门",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_seek_alliance_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"我去找玄武宗的韩烈。\"苏青瑶说道，\"那家伙虽然脑子不好使，但战斗力确实强。\"夜清挑眉：\"你确定他会帮忙？\"苏青瑶淡淡道：\"他欠我一个人情。\"夜清耸耸肩：\"那我去联系朱雀宗的人，顺便……\"她顿了顿，\"看看圣宗那边有没有可利用的棋子。\"",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "alliance_seeking"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_013",
+        "content": "凡间某处隐秘山谷之中，一支黑甲军队正在集结。领头之人身披漆黑战甲，面容隐藏在头盔之下，只露出一双幽绿色的眼眸。这支军队的旗帜上，绣着一只展翅的黑凤凰——那是上古禁忌势力\"堕神阁\"的标志。\"禀告统领，\"一名斥候跪禀，\"天界入口已经松动，预计一个时辰后可以强行破开。另外，目标的妹妹就在附近的陈家——\"斥候话音未落，统领已抬手打断了他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_014",
+        "character_id": "char_chenian",
+        "content": "\"陈家？\"统领的声音沙哑而低沉，\"那个废物陈机的妹妹？\"他忽然笑了起来，笑声在山谷中回荡，\"有趣……太有趣了。主上说过，那小子是天机录的传承者，他的妹妹是'天命锁钥'……今夜，我们就把这对兄妹一起收走。\"他抬手一挥，黑甲军队如潮水般涌向陈家方向，\"出发！\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_015",
+        "content": "夜幕降临，陈家府邸外围忽然杀声四起。陈念站在演武场中央，望着四面八方涌来的黑影，眼中闪过一丝寒芒。敌人比她预想的还要多——至少三百人，清一色的黑衣黑甲，训练有素。而她手中的陈家护卫只有区区百人，其中能战的修士不过五十。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_016",
+        "character_id": "char_chenian",
+        "content": "\"结阵！\"陈念的声音清冷而坚定。陈家护卫迅速列阵，以演武场为中心形成防御圈。然而敌人中领头的黑甲统领只是淡淡一笑，抬手一挥，一道黑色的光芒直接轰向陈家大门——轰然巨响中，护山大阵剧烈颤抖，裂痕迅速蔓延。\"就这点阵法？\"统领不屑道，\"给我破！\"",
+        "emotion": "嚣张"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1033_017",
+        "prompt": "陈家大阵即将被破，敌人势大，陈念必须做出决定——是战是退？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch1033_fight_enemy",
+            "text": "死守，等待兄长回援",
+            "description": "带领族人死守府邸，拖住敌人，等待兄长陈机从战场归来。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "族人可能死伤惨重",
+            "visible_reward": "为兄长争取时间",
+            "risk_hint": "若兄长耽搁太久，陈家可能覆灭",
+            "process_label": "陈念拔剑而立",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_fight_enemy_001",
+                  "character_id": "char_chenian",
+                  "content": "\"陈家子弟，随我死战！\"陈念的声音响彻夜空，她手中的长剑骤然绽放出璀璨的光芒，那是她苦修多年的底蕴。陈家护卫们齐齐呐喊，战意高昂。然而敌人统领却笑出了声：\"死战？就凭你们这些人？\"他踏前一步，恐怖的威压如潮水般压来，\"今夜的陈家，一个不留！\"",
+                  "emotion": "悲壮"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "last_stand"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈念在关键时刻选择为兄长死守",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_retreat_family",
+            "text": "带核心族人突围转移",
+            "description": "留下部分族人断后，带核心人员突围保存陈家血脉。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "断后者可能牺牲",
+            "visible_reward": "保全陈家血脉",
+            "risk_hint": "可能背负抛弃族人的骂名",
+            "process_label": "陈念秘密召集核心族人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_retreat_family_001",
+                  "content": "陈念低声对周老说道：\"启动备用通道，带族人从密道撤离。\"周老面色一变：\"少主，断后者——\"陈念打断他：\"我来断后。\"周老还要再说，陈念已抬手制止，\"我意已决。快走！\"她转身望向那道即将破碎的大阵，眼中闪过一丝决然——兄长，妹妹为你做的，只能到这里了吗？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "tactical_retreat"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_use_trump_card",
+            "text": "动用兄长留下的底牌",
+            "description": "启动陈机临行前布置的最后一道防线，以秘法强行激活龟壳神器的部分力量。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能暴露陈机布局",
+            "visible_reward": "瞬间扭转战局",
+            "risk_hint": "可能引发更大的关注和危险",
+            "process_label": "陈念取出一枚古朴玉符",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_use_trump_card_001",
+                  "content": "陈念从怀中取出一枚古朴的玉符，那是兄长临行前交给她的最后手段——\"若遇必死之局，捏碎此符。\"此刻，正是必死之局。她猛然捏碎玉符，一股磅礴的力量从碎片中涌出，在陈家府邸上空凝聚成一只巨大的金色龟影，俯视众生。敌人统领的笑容瞬间僵在脸上：\"这是——天机录的气息？！\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "trump_card_activated"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_018",
+        "content": "与此同时，天界深处，陈机胸口骤然一痛。他低头看去，只见那枚贴身收藏的龟壳神器忽然滚烫起来，一道微弱的金光从中透出，仿佛在与什么遥相呼应。墨先生的声音在他脑海中响起：\"凡间出事了……而且，是冲着你妹妹去的。\"陈机的瞳孔骤然收缩，脸上的平静在这一刻彻底崩塌，取而代之的是一股令人心悸的杀意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_019",
+        "character_id": "char_moxiansheng",
+        "content": "就在陈机准备不顾一切返回凡间的瞬间，天界边界的方向，那道熟悉的气息再次浮现——母亲的冰雪檀香之气，比之前更近了，仿佛只要他伸手就能触及。与此同时，一道恢弘的声音在天地间响起：\"陈家后人，皇朝有旨，着你即刻觐见。\"那声音来自凡间方向，带着一种超越世俗的威严。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_020",
+        "content": "就在皇朝来使踏入陈府大门的瞬间，陈机胸口贴身收藏的龟壳神器骤然滚烫，一道与那金牌上如出一辙的古老符文在夜色中隐隐浮现——更高存在的意志，已然降临凡间。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "id": "天机录_ch0059",
+  "book_id": "天机录",
+  "number": 59,
+  "title": "廃物の逆襲",
+  "is_paid": true,
+  "next_chapter_hook": "凌淵が惨めな敗北を演じ、土下座して許しを乞う。宗主の顔は曇っている——天青宗の格局は、まさにこの一戦で完全に書き改められるのだ。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0059_001",
+        "content": "剣光は天の川の如く逆さまに垂れ込め、天地を滅ぼす威を込めてChen Jiの喉元を直撃する。Ling Yuanの鬚髪が逆立ち、目は必殺の残忍さに満ちている——彼はこの瞬間を待ち望んでいた。あまりに長く待ち、各瞬が永遠のように感じた。「廃物には廃物の死に方がある！」の咆哮が周囲の壁を震わせ、青石は気浪で蹴り飛ばされ、底の深い褐色の泥土が露わになる。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_002",
+        "content": "Chen Jiは原地に立ち、近づく剣芒を見つめ、唇元がふと持ち上がる。その微笑みは冬の湖面に一瞬の霧のように淡く消え、Ling Yuanの心の奥底に漠然とした不安を誘う——まるで猟師が罠の傍らで突然獰猛な獣の気配を嗅いだような感覚だ。次の瞬間、Chen Jiは動く。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0059_003",
+        "character_id": "char_chenji",
+        "content": "凌淵上前輩、この一剑、三寸ズレています。",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_004",
+        "content": "话音刚落、Chen Jiの身形が微かに傾き、剣鋒が最も凌厉な箇所を見事にかわす。彼の足取りは奇怪至極で、まるで剣光の走向を事前に知っているかのように、Ling Yuanの攻撃の合間の一歩一歩を踏み外さない。明らかな死を懸けた対決なのに、彼の動作は自家庭先で散歩するように余裕さくらかで、風で乱れた袖を整える余裕さえある。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0059_choice_01",
+        "prompt": "Ling Yuanは連続七剣を全て外し、顔は蒼白となる。Chen Jiは既に彼の剣筋を見透かしている——今、どのようにこの対決を終結させるか？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0059_01_a",
+            "text": "己の道を以て己に施す",
+            "description": "Ling Yuanの剣招を用いてLing Yuanに反撃し、衆目の前で彼が盗み学んだ他派の絶学を暴き、真実を天下に知らしめる",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命値を10点消費する",
+            "visible_reward": "Ling Yuanの名声が崩れ、真実大白",
+            "risk_hint": "过多な実力を暴露すれば更大的关注を招く可能性がある",
+            "process_label": "以其人之道还治其人之身",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 50
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_01_a_1",
+                  "character_id": "char_chenji",
+                  "content": "いやいや凌淵上前輩、他派の剣法を以て威張るのはお好きでしたよね、では後輩が復習のお手伝いをいたしましょう。",
+                  "emotion": "讥讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0059_01_b",
+            "text": "直接圧力",
+            "description": "最も简单粗暴な方法でLing Yuanを正面から撃破し、彼に絶対的な差距が 무엇인지分からせてやる",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命値を15点消費する",
+            "visible_reward": "Ling Yuanの一招が廃され、戦力が崩壊",
+            "risk_hint": "天機録の能力の一部が暴露される可能性がある",
+            "process_label": "一力降十会",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_01_b_1",
+                  "character_id": "char_chenji",
+                  "content": "凌淵上前輩、お前さんはあまりに遅い。",
+                  "emotion": "平淡"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0059_01_c",
+            "text": "心理的压力",
+            "description": "急がず言葉を以てLing Yuanの心を瓦解させ、自ら崩壊させる",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗なし",
+            "visible_reward": "Ling Yuanの心境が崩れ、戦意全くなし",
+            "risk_hint": "敵に息的 기회를 주면 변数が生じる可能性がある",
+            "process_label": "攻心为上",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_01_c_1",
+                  "character_id": "char_chenji",
+                  "content": "凌淵上前輩、なぜ天機録はあなた，而非您を選んだのか、お分かりですか？",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_005",
+        "content": "Ling Yuanの顔色は激変した。Chen Jiがこの 순간施展している剣法を认出した——それこそ三十年前、玄武帝에서盗み学んだ「裂石斬」、人に見せことのない絶学だった。まさか彼が……そんなことが怎么可能！冷汗が背筋を伝い、Ling Yuanは初めて徹底的な恐怖を感じた。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0059_006",
+        "character_id": "char_lingyuan",
+        "content": "お前……一体どうしてお前この招を学んだ！これは玄武帝の……",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_007",
+        "content": "Chen Jiは答えず、ただ剣勢一转、「裂石斬」の第七式——最も威力強く、防ぎにくい一式をそのままLing Yuanに向かって斬り下ろす。剣芒が空気を引き裂く音は尖锐で刺耳く、まるで無数の亡魂が慟哭するようだった。Ling Yuanは慌てて剣を上げて防ごうとするが招式変化のリズムについていけない。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_008",
+        "content": "轰然たる音の後、Ling Yuanは十歩も退き，虎口が崩れ、血が剣柄の半分を染め上げた。周囲は死寂と化した。围观の内門弟子たちは目を丸くし、难以置信の思いで眼前の一幕を見つめる——堂堂たる天青宗の長老，居然被一个杂役弟子用自己的剑法撃敗した？"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_009",
+        "content": "Chen Jiはゆっくりと歩み寄り、一歩一歩がLing Yuanの心臓を踏みつけるようだった。彼の目は穏やかで可怕く、怒りも嘲笑もなく、ただ近乎冷徹な吟味だけがある。「凌淵上前輩、三十年前、玄武帝でかした那些事、後輩が思い出시켜あげましょうか？」声は高くはないが、Ling Yuanを震えさせるには十分だった。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0059_choice_02",
+        "prompt": "Ling Yuanは惨めな姿で后退し、目に狂気の光が闪いた——彼は一擲千金にでるつもりだ！Chen Jiはどう应对すべきか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0059_02_a",
+            "text": "徹底的な暴露",
+            "description": "すべての人の目の前で、Ling Yuanが魔道と結託し、宗門を裏切る陰謀を言い渡し、彼を万劫不复に陥らせる",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "天機録の能力来源が暴露される可能性がある",
+            "visible_reward": "Ling Yuanは名声を失い、永遠に翻身できない",
+            "risk_hint": "真実余りにも驚愕であり、宗門に動揺を引き起こす可能性がある",
+            "process_label": "揭露真相",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 80
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_02_a_1",
+                  "character_id": "char_chenji",
+                  "content": "凌淵上前輩、聖宗がお前に約束したことは、おそらく果たされないでしょうね。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0059_02_b",
+            "text": "余裕を残す",
+            "description": "倒すだけで殺绝せず、Ling Yuanに改心の機会を与え、自分もいい名前を保てるようにする",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ling Yuanは後日報復する可能性がある",
+            "visible_reward": "在场众人はChen Jiに感謝している",
+            "risk_hint": "虎を敵に放てば、后患无穷",
+            "process_label": "点到为止",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 40
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_02_b_1",
+                  "character_id": "char_chenji",
+                  "content": "凌淵上前輩、あなたはこの対決に負けた。今日之事、ここまでだ。",
+                  "emotion": "淡然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_010",
+        "content": "Ling Yuanの瞳孔が思わず收缩した。聖宗？Chen Ji怎么会知道聖宗的事？那是他埋藏了二十年的秘密，是他午夜梦回时最不敢触碰的禁忌。他张了张嘴，想要否认，却发现自己的声音像是被什么东西扼住了喉咙。恐惧如潮水般将他淹没。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_011",
+        "content": "就在这时，一道凌厉的目光从人群中射来。Su Qingyao站在不远处，美眸中闪烁着复杂的光芒。她死死盯着Chen Ji的背影，心中翻涌着惊涛骇浪——这个她一直暗中调查的男人，果然深不可测。但不知为何，她心底竟隐隐升起一丝……安心？"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_012",
+        "content": "Ling Yuanはついに崩壊した。彼は地に崩れ落ち、全身が震え、往年の威厳は影も形もなかった。「私……私が降伏します……」彼の声は擦れげて卑微小气不再是方才那个不可一世的长老。圍観衆哗然、天青宗的长老竟然向一个杂役弟子求饶？这一幕将永远刻在所有人的记忆中。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_013",
+        "content": "Chen Jiは高い位置から地に跪くLing Yuanを見下ろし，神情淡漠如霜。「凌淵上前輩、あなたは先ほど、废物就该有废物的死法と言いましたね。」彼の声は高くはないが、清晰地传入每个人耳中、「後輩的には、废物は怖くない、怖い的是明明是废物，却偏要装作天纵奇才。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0059_014",
+        "character_id": "char_lingyuan",
+        "content": "お前……お前到底是什么人？天機録怎么会选你这个废物！",
+        "emotion": "癫狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_015",
+        "content": "Chen Ji闻言，唇角勾起一抹意味深长的弧度。他缓缓转身，在众人敬畏的目光中向场外走去，背影孤独而从容。「天機録选谁，不由我定，也不由您定。」他的声音渐渐远去，带着一种说不清道不明的怅然，「凌上前輩，您输给的从来不是我，而是天意。」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_016",
+        "content": "Ling Yuanが惨めな敗北的消息は短短一个时辰 내에天青宗全体に広がった。驚き、疑い，更多的人难以置信——那个被称为废物的杂役弟子，竟然击败了堂堂长老？宗主殿内，一道阴沉的目光正注视着远方，那是Ling Yuan真正的靠山……或者说、他自以为の靠山。"
+      }
+    }
+  ]
+}

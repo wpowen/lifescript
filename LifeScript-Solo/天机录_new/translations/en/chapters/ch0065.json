@@ -1,0 +1,378 @@
+{
+  "id": "天机录_ch0065",
+  "book_id": "天机录",
+  "number": 65,
+  "title": "\"Inner Sect Attention\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"Just as everyone was discussing animatedly, a sharp sword light suddenly swept across the horizon—that was the aura of Mo Xiansheng emerging from seclusion! The residual soul guardian actually wanted to personally watch Chen Ji's next match.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0065_001",
+        "content": "\"Ling Yuan's gaze pressed down on his shoulder like solid substance, yet Chen Ji merely lowered his eyes, assuming his usual timorous demeanor. His knuckles tightened slightly within his sleeve as the Tianji Record Fragment pulsed with faint light in the depths of his consciousness—he had seen three breaths into the future, the elder would turn and leave. This foresight was enough for him to respond composedly. As expected, Ling Yuan coldly snorted and swept his sleeves away, departing as if today was merely a routine inspection. Only Chen Ji knew that the scrutiny hidden in those eyes was far more dangerous than the surface suggested. 'Master comes early today.' He murmured softly, his voice carrying恰到好处的惶恐, and turned to continue sweeping the stone steps, his spine straight as a sword.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_002",
+        "character_id": "char_suqingyao",
+        "content": "\"What did you see?\" Su Qingyao's voice came from behind him without any warning. She stood in the corridor's shadows with arms crossed, her gaze locked on her prey like a hawk. In that instant, she had clearly seen Chen Ji's expression change—that composure was absolutely not something a废物 should possess.\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0065_003",
+        "content": "\"Chen Ji turned around, his face wearing its usual expression of惶恐: 'Senior Sister Su? Disciple was just frightened by Master's gaze...' He lowered his head, his shoulders slightly trembling, his acting flawless. Su Qingyao frowned slightly—she had approached the truth three times now, yet this boy always slipped away at the final moment. Was she overthinking, or was this废物 truly hiding too deeply? She recalled yesterday's sparring match, where Chen Ji clearly had three moves that could secure victory, yet he declared it 'fluke.' Too many coincidences cease to be coincidences. 'You better not be lying to me.' She left these words and departed, leaving behind a trail of cold fragrance.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_004",
+        "character_id": "char_lingyuan",
+        "content": "\"Meanwhile, inside the Tianqing Sect Council Hall, three figures sat around a table. The cyan-robed young man at the head played with a Jade Slip, a playful smile hanging at the corner of his mouth: 'Tell me, what luck did that废物 stumble upon? He even beat Brother Han's puppet.' This was precisely the number one prodigy of the Inner Sect—Zhou Zixuan, at the pinnacle of Foundation Building, one of the Tianqing Twin Gems.\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_005",
+        "character_id": "char_lingyuan",
+        "content": "\"The crimson-robed woman at the lower seat twirled her hair, speaking casually: 'I actually find it interesting. Last time he dodged my probe, his footwork was absurdly refined.' Liu Feiyan, the second prodigy of the Inner Sect, her Scorching Heaven Palm shocking all peers. 'And that alchemy match...' Zhou Zixuan squinted, 'Three furnaces of waste elixirs, yet the final one unexpectedly succeeded—is that coincidence?' The two exchanged glances, both seeing the same conclusion in each other's eyes: this废物, is not simple.\"",
+        "emotion": "好奇"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0065_choice_001",
+        "prompt": "\"Inner Sect prodigies are paying attention to you, the situation is delicate. How will you respond?\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0065_opt_weak",
+            "text": "\"Actively Show Weakness\"",
+            "description": "\"Deliberately embarrass yourself in front of them, letting them believe you're just a lucky废物, proactively lowering their guard\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Reputation -5\"",
+            "visible_reward": "\"Hostility -10, Action Freedom +1\"",
+            "risk_hint": "\"May seem deliberate, instead deepening suspicion\"",
+            "process_label": "陈机决定演一出好戏",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0065_result_weak_001",
+                  "content": "\"Chen Ji 'accidentally' knocked over a medicine bottle at the Martial Arena,狼狈地 kneeling to pick things up, drawing bursts of laughter. He glimpsed Zhou Zixuan's condescending smile from the corner of his eye,冷笑 in his heart—they took the bait.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0065_opt_ally",
+            "text": "\"Recruit Allies\"",
+            "description": "\"Find ways to establish connections with Inner Sect prodigies, even if treated as a subordinate, better than being seen as a potential threat\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Wealth -200 Spirit Stones\"",
+            "visible_reward": "\"Gain Inner Sect intelligence channel, Hostility -5\"",
+            "risk_hint": "\"Expose social abilities, may provoke greater vigilance\"",
+            "process_label": "陈机考虑寻找中间人",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": -200
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0065_result_ally_001",
+                  "content": "\"Chen Ji secretly had someone deliver a breakthrough-assisting Elixir to Zhou Zixuan—of course, it was an old item that 'accidentally' circulated. After Zhou Zixuan accepted it, he appeared thoughtful.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0065_opt_hide",
+            "text": "\"Continue to Lie Low\"",
+            "description": "\"Maintain the status quo, reduce presence, wait for the storm to pass\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"None\"",
+            "visible_reward": "\"Maintain status quo, buy time\"",
+            "risk_hint": "\"They may actively probe instead, becoming passive\"",
+            "process_label": "陈机决定以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0065_result_hide_001",
+                  "content": "\"Chen Ji became more low-key than usual, daily routines consisting only of menial tasks and seclusion. Inner Sect disciples' discussions gradually quieted, as if he truly was just an insignificant minor character.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0065_006",
+        "content": "\"Just as Inner Sect gossip was rising, a figure silently arrived at the edge of the Tianqing Sect Forbidden Grounds. Han Lie, the number one genius of Xuanwu Sect, his aura vast as abyss and sea—his visit startled no one except Ling Yuan. 'Han Shixian's visit is indeed rare.' The aged voice came from deep within the Bamboo Grove. Ling Yuan stood with hands behind his back as if he had known the visitor all along. Han Lie clasped his fist: 'Junior has a matter to discuss.' The two faced each other—one deep and scheming, the other imposing and domineering—yet reached a kind of tacit understanding over a shared objective. Chen Ji, this name, was mentioned together for the first time. 'That废物?' Ling Yuan sneered, 'This old man thought Han Shixian looked down upon such minor characters.' 'Ants are small, yet their bites hurt.' Han Lie's gaze turned ice-cold, 'I want to see how long he can continue jumping.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_007",
+        "character_id": "char_lingyuan",
+        "content": "\"Ling Yuan stroked his beard and smiled: 'Han Shixian, speak directly if you have something to say.' Han Lie didn't beat around the bush: 'I want to know his origins. A Servant Disciple of Tianqing Sect with nearly zero cultivation resources, yet in three months he consecutively defeated three of my puppets—there must be something suspicious here.' Ling Yuan's eyes flickered: 'What does Shixian mean...?' 'Investigate his bloodline.' Han Lie coldly said, 'If he's truly a废物, I lose gracefully; if he's hiding something...' The unfinished words carried killing intent.\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0065_008",
+        "content": "\"Ling Yuan contemplated silently, then suddenly said: 'The Fifth Elder mentioned something similar a few days ago.' Han Lie's brow rose: 'Oh?' 'He said Chen Ji's meridian pathways bear some resemblance to records of an ancient reclusive family.' Ling Yuan's gaze turned profound, 'If he truly carries that bloodline... things become interesting.' The two exchanged glances, each with ulterior motives. What Han Lie thought about was how to completely crush this waste who made him lose all face; what Ling Yuan thought about was—whether the Tianji Record's inheritance is related to that legendary bloodline? Different interests, yet didn't prevent temporary cooperation. 'Investigate.' Ling Yuan made the decision, 'This old man will have the Fifth Elder begin.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_009",
+        "character_id": "char_lingyuan",
+        "content": "\"Inside the Fifth Elder's Hall, a withered old man frowned at a Jade Slip. The Jade Slip contained Chen Ji's entry physical examination records—when he was judged as废物 due to mixed spiritual roots and hastily assigned to servant duties. But looking more closely now, some meridian pathways held hidden mysteries. 'Interesting...' The Fifth Elder murmured to himself, his turbid old eyes flashing brilliance. He cultivated Source Tracing Secret Art, specializing in tracing bloodline origins. If this Chen Ji truly was related to that faction... His finger hovered over the communication talisman, hesitating to press.\"",
+        "emotion": "贪婪"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0065_010",
+        "content": "\"At this moment, Chen Ji was quietly meditating in the Servants' Quarters. He didn't know that a large net was quietly tightening around him. The Tianji Record Fragment trembled slightly in the depths of his consciousness—that was a danger warning—yet due to blurry imagery, the source couldn't be seen. 'Heavenly Fate Lock Key...' He murmured, recalling what Mo Xiansheng once said. Chen Nian's existence interfered with foresight, causing all imagery involving her to be shrouded in fog. And the direction the Fifth Elder was investigating happened to be related to his estranged younger sister. Chen Ji's eyes snapped open, a cold killing intent flashing through them. If anyone dared to touch Chen Nian's trail... He wouldn't mind making Tianqing Sect lose an Elder early.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0065_choice_002",
+        "prompt": "\"Crisis approaches, you must make a decision\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0065_opt_investigate",
+            "text": "\"Strike First\"",
+            "description": "\"Actively investigate the Fifth Elder, grasp the intelligence he holds, gain initiative before the opponent acts\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"Heavenly Fate -5\"",
+            "visible_reward": "\"Acquire Fifth Elder's intelligence, discover the hidden truth behind the bloodline investigation\"",
+            "risk_hint": "\"Consume Heavenly Fate, and may alert the enemy\"",
+            "process_label": "陈机决定主动出击",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0065_result_invest_001",
+                  "content": "\"The Tianji Record suddenly flipped, and Chen Ji saw the Fifth Elder sneaking into the scripture vault at night—he was accessing a long-sealed archive: 'Secret Chen Family Bloodline Genealogy.'\n\nChen Ji's pupils contracted sharply.\n\nSecret Chen Family—that was a forbidden clan that controlled Heavenly Secrets and numerology in ancient times, reportedly destroyed over ten thousand years ago. Why would the Fifth Elder suddenly investigate this? Chen Ji's mind raced, a terrifying guess surfacing: could his origins be even more complex than imagined?\n\nWhat chilled him more was the final note on this archive—'If descendants of this bloodline awaken, they may inherit the authority of the Tianji Record.'\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0065_opt_prevent",
+            "text": "\"Sabotage Secretly\"",
+            "description": "\"Create an accident, temporarily obstruct the Fifth Elder's investigation, buy yourself buffer time\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Reputation -3\"",
+            "visible_reward": "\"Delay enemy investigation, gain time window\"",
+            "risk_hint": "\"May expose your alertness\"",
+            "process_label": "陈机决定暗中阻挠",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0065_result_prevent_001",
+                  "content": "\"Chen Ji handed a special talisman to an Outer Disciple who 'happened' to pass by, letting him 'accidentally' paste it on the scripture vault door—that talisman could disrupt tracing secret arts for three days.\n\nThree days.\n\nEnough.\n\nChen Ji gazed at the night, a slight smile curving his lips. He wanted to use these three days to devise a permanent solution. At minimum, he needed to make the Fifth Elder understand—some secrets are not for him to touch.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0065_opt_ignore",
+            "text": "\"React with Stillness to Uncertainty\"",
+            "description": "\"Continue pretending ignorance, see what they're investigating while secretly gathering more intelligence\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"None\"",
+            "visible_reward": "\"See through enemy cards, but may fall into passive position\"",
+            "risk_hint": "\"Once investigation yields results, will be extremely passive\"",
+            "process_label": "陈机决定静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0065_result_ignore_001",
+                  "content": "\"Chen Ji withdrew his focus and continued his '废物' daily routine. Sweeping, carrying water, meditating—everything proceeded as usual, as if oblivious to the approaching storm.\n\nBut his divine sense perpetually enveloped a hundred zhang in all directions; every move of the Fifth Elder was under his control.\n\nSince they want to investigate, let them investigate. In the end, they'll only discover what Chen Ji wants them to discover. As for the true secrets... those ants are not yet qualified to touch.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0065_011",
+        "content": "\"In the following days, the surface of Tianqing Sect remained calm while undercurrents surged beneath. The Fifth Elder's investigation, disrupted by that talisman, progressed slowly; Han Lie sharpened his knives in the shadows, waiting for the right moment; while Ling Yuan, under the pretext of 'elder's concern,' frequently appeared before Chen Ji, nominally examining his studies but every gaze like wanting to dissect him for closer inspection. Chen Ji performed flawlessly, respectfully handling each encounter, acting out every aspect a废物 disciple should possess—timidity, clumsiness, gratitude and devotion to Master's concern. Only he himself knew that every glance exchanged with Ling Yuan was a silent chess match.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_012",
+        "character_id": "char_suqingyao",
+        "content": "\"'You're playing with fire.' Su Qingyao's voice sounded on the moonlit night, appearing outside the Servants' Quarters without notice, her beautiful face icy cold. Chen Ji was polishing a magical artifact in the courtyard; upon hearing her words, he looked up with his usual blankness: 'What does Senior Sister Su mean?' Su Qingyao coldly snorted: 'You noticed Master's increased attention to you lately, didn't you?' She paused, lowering her voice, 'And Han Lie's visit... you think no one knows about it?' Chen Ji's hand movement slightly paused, then resumed: 'Disciple doesn't know Brother Han visited the sect.' Su Qingyao stared at him for a long time before finally sighing: 'Fine, if you're truly a废物, then continue being a废物; if not...' She hesitated, and before turning to leave, tossed out: 'Don't die before the truth comes out.'\"",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0065_013",
+        "content": "\"Chen Ji gazed at her departing figure, a complex emotion flickering in his eyes. Su Qingyao was the only person at Tianqing Sect he couldn't see through—her intuition was too sharp, nearly tearing open his disguise every time. Yet precisely, she had never truly exposed him. 'Shared fate...' He murmured the fragments Mo Xiansheng had revealed. If one day he truly became bound to Su Qingyao, the Heavenly Fate consumption could be shared. But that also meant she would be completely drawn into this chess game. Enemy or ally, unclear yet. Night wind brushed past, bringing a chill. Chen Ji收回思绪, about to return inside, when suddenly—a sharp sword light ripped across the sky, accompanied by a vast and ancient aura, surging like a tide across the entire Tianqing Sect. That aura carried the vicissitudes of time, as if a giant sleeping for a thousand years was awakening. Everyone stopped their movements at that moment, looking skyward. Chen Ji's pupils contracted sharply—that was Mo Xiansheng's aura.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0065_014",
+        "character_id": "char_moxiansheng",
+        "content": "\"'From this day forward, this seat will personally observe every match of the Tianqing Sect Inner Sect Competition.' The aged yet authoritative voice echoed across heaven and earth, as if divine decree descended. 'Especially—that disciple named Chen Ji.' The topic shifted, carrying a meaningful scrutiny, 'This seat wants to see how far this Chess Piece can go.' The two words 'Chess Piece' were emphasized heavily; Chen Ji caught the deeper meaning—Mo Xiansheng was warning him, also cautioning him. The guardian of the Tianji Record had finally ended his long seclusion. And his first words pushed Chen Ji to the forefront of the storm. The entire Tianqing Sect was shaken. Everyone's gaze focused on that Servant Disciple in that moment—including that pair of gloomy eyes in the shadows.\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0065_015",
+        "content": "\"Ling Yuan's expression slightly changed upon hearing 'Chess Piece,' then recovered as usual. He looked up at that sword light, a flicker of wariness in his eyes. Although Mo Xiansheng was merely a residual soul, he held part of the Tianqing Sect Founder's inheritance, his status transcendent—even this sect leader didn't dare offend easily. Moreover, the implication of 'Chess Piece' in Mo Xiansheng's words... He recalled when he himself was once a candidate for the Tianji Record, yet was rejected by that fragment without reason, and couldn't help but feel a surge of bitterness and resentment. Chen Ji, who exactly are you? Han Lie likewise gritted his teeth in the shadows. He had originally planned to proceed slowly, investigate Chen Ji's background thoroughly before launching a killing blow. But Mo Xiansheng inserted himself, disrupting all plans. What hidden cards does that废物 have that he doesn't know about? Ye Qing stood in the Holy Sect's forbidden grounds, sensing this aura through secret methods, a meaningful arc curling at her lips—she knew her 'partner' had begun to make a name for himself.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0065_016",
+        "content": "\"And at this moment, Chen Ji stood in the small courtyard of the Servants' Quarters, gazing up at that gradually fading sword light, his expression平静得近乎冷漠. Chess Piece? Mo Xiansheng was using this opportunity to admonish him, to tell him—even if planning across the world, he couldn't escape the palm of the Chess Player. But Chen Ji refused to accept fate. Since the Tianji Record chose him, he would fight against this Heavenly Will. 'Many thanks for the reminder, Senior.' He murmured to himself, his voice swallowed by the night wind, only those ink-black eyes burning with flames of defiance. Tomorrow is the Inner Sect Competition's preliminary selection, and he will stand before everyone, using a victory to tell those restless家伙—废物 also has temper. In the distance, Mo Xiansheng's residual soul flickered in the Void, gazing at that stubborn figure, and a smile actually appeared on his withered face: 'Interesting...'"
+      }
+    }
+  ]
+}

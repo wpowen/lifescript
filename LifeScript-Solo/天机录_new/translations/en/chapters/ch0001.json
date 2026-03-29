@@ -1,0 +1,508 @@
+{
+  "id": "天机录_ch0001",
+  "book_id": "天机录",
+  "number": 1,
+  "title": "\"Waste Discarded\"",
+  "is_paid": false,
+  "next_chapter_hook": "\"Just as he was about to give up, the turtle shell that had never shown any reaction suddenly grew warm, as if something long dormant was slowly awakening...\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0001_001",
+        "content": "\"Tianqing Sect, Martial Arena.\n\nThe morning mist had yet to disperse, the dew on the blue stone slabs reflecting the rising sun, sharp and biting. A gaunt figure was bending over, wiping the ground, his movements mechanical and熟练, as if he had repeated them thousands of times.\n\nChen Ji lifted his sleeve to wipe the sweat from his forehead, his gaze calmly sweeping across the distant Inner Sect Tower. Those buildings with carved beams and painted rafters, shrouded in immortal aura, were places he could never enter in this lifetime.\n\nOuter Disciple/Servant—this was his entire identity in this sect.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_002",
+        "content": "\"Three years ago, he could still make a name for himself as a 'genius' within the sect. At twelve, he broke through to Qi Refining Third Layer, and an elder declared he would 'surely achieve greatness in the future.' However, after his father's disappearance, everything changed.\n\nHis spiritual root withered, his cultivation stalled. The former prodigy plummeted into a废物 others could bully. His cultivation resources were stripped away, his techniques recalled, even his living quarters were demoted from Inner Disciple quarters to a woodshed in the corner of the Martial Arena.\n\n'Three years.' Chen Ji muttered to himself, a self-mocking curve forming at the corner of his mouth. 'A废物 should have a废物的觉悟.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_003",
+        "character_id": "char_hanlie",
+        "content": "\"'Oh, isn't this our 'Great Genius Chen'? A brazen voice broke the morning silence.\n\nChen Ji's movements paused as he slowly straightened up.\n\nThe newcomer was Han Lie, the number one genius of Xuanwu Sect. At just fifteen years old, he had already broken through to Qi Refining Seventh Layer. Now he stood with hands clasped behind his back, followed by seven or eight Outer Disciples, each strutted with arrogance.\n\nHan Lie looked down at Chen Ji, his contempt undisguised: 'Three years stuck at Qi Refining Second Layer—I'd say the word '废物' insults this term. Why not change it to 'parasite' instead? A parasite that exclusively eats the sect's grain.'\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_004",
+        "character_id": "char_chenji",
+        "content": "\"Chen Ji watched him silently, saying nothing.\n\nThat gaze, so平静 it approached emptiness, made Han Lie inexplicably irritable. In his imagination, this废物 should either kowtow and beg for mercy, or flare up in retort—either way, it would give him proper justification to 'teach him a lesson.'\n\nBut this fellow simply wore the expression of a dead pig unafraid of boiling water, as if Han Lie didn't exist at all.\n\n'What? Cat got your tongue?' Han Lie stepped forward, kicking over the water bucket beside Chen Ji, dirty water splashing all over him. 'I'm talking to you,废物!'\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0001_005",
+        "prompt": "\"Faced with Han Lie's public humiliation, what will you do?\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0001_005_A",
+            "text": "\"Lower your head and apologize\"",
+            "description": "\"Bow and apologize, admitting you are a废物, avoiding direct conflict\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Reputation -2\"",
+            "visible_reward": "\"Avoid immediate confrontation\"",
+            "risk_hint": "\"Spectators will despise you even more\"",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_A_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Yes, Han Shixiong is right.' Chen Ji lowered his head, his voice平静 without a trace of波动. 'I'm a废物.\n\nHe bent down to pick up the water bucket, as if nothing had happened, continuing to wipe the floor.\n\nHan Lie愣了一下, then burst out laughing: 'Hahaha! Did you hear that? The废物 admitted it himself!' The小弟 behind him joined in the laughter.\n\nBut deep in Chen Ji's eyes, a cold light flashed—he记下了.\"",
+                  "emotion": "隐忍"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_A_2",
+                  "character_id": "char_hanlie",
+                  "content": "\"Laugh, laugh.' Han Lie laughed until he rocked back and forth, yet failed to notice that Chen Ji's knuckles gripping the mop had turned white.\n\n'Someday...' Chen Ji silently said in his heart, 'Today's humiliation, a hundred times returned.'\"",
+                  "emotion": "暗怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_005_B",
+            "text": "\"Cold-eyed counterattack\"",
+            "description": "\"Use a平淡 tone to say something that puts the other party in an untenable position\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"May provoke the other party\"",
+            "visible_reward": "\"Spectators will reassess you\"",
+            "risk_hint": "\"Han Lie might make a move\"",
+            "process_label": "毒舌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_B_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji slowly straightened up, wiping the dirty water from his face with his sleeve.\n\nHe didn't look at Han Lie, but rather at the surrounding disciples, his voice not loud yet clearly entering each person's ears: 'Three years, and the number one genius of Xuanwu Sect comes here daily, just to bully a废物?'\n\nHe paused, a slight smile forming: 'Han Shixiong, your time... truly is worthless.'\"",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_005_B_2",
+                  "content": "\"The surrounding disciples instantly fell silent, then erupted into suppressed snickering.\n\nHan Lie's face turned livid, his fists clenched tight, veins bulging. 'What did you say?!' He stepped forward sharply, the pressure of Qi Refining Seventh Layer pouring out.\n\nChen Ji had already lowered his head again, continuing to wipe the floor, as if those words hadn't come from him at all.\"",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_005_C",
+            "text": "\"Silent disregard\"",
+            "description": "\"Say nothing, expressing disdain through actions\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"The other party may go even further\"",
+            "visible_reward": "\"Preserve strength\"",
+            "risk_hint": "\"Will be seen as cowardly\"",
+            "process_label": "沉默",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_C_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji said nothing.\n\nHe merely picked up the water bucket and continued his work, as if Han Lie was nothing but a gust of noisy wind.\n\nThis silence was more devastating than any words. Han Lie felt like he'd punched into cotton, suffocatingly frustrated.\"",
+                  "emotion": "漠然"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_C_2",
+                  "character_id": "char_hanlie",
+                  "content": "\"废物就是废物，连反驳的胆子都没有！' Han Lie flew into a rage, kicking away the mop in Chen Ji's hand. '给我记住，今天的羞辱只是开始！\n\nWith that, he coldly snorted and turned to leave.\n\nChen Ji gazed at his retreating back, his pupils deep and幽深—棋局已布，静待落子.',\"",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_006",
+        "content": "\"日上三竿，演武场渐渐热闘起来。\n\n内门弟子们陆续出现，三三两两地在广场上修炼切磋。偶尔有人投来目光，却无一人为陈机说话。在他们眼中，一个连灵根都枯竭的废物，根本不值得浪费注意力。\n\n\"陈机！\"一个管事模样的中年男子走了过来，扔给他一块令牌，\"今日的杂役结束了。明日轮到藏经阁打扫，卯时之前到。\"\n\n陈机接过令牌，恭敬地行了一礼：\"是。\"\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_007",
+        "content": "\"管事瞥了他一眼，眼中闪过一丝怜悯，却很快被淡漠取代。\n\n\"别怨天尤人，\"他压低声音说了一句，便转身离去。\n\n陈机望着他的背影，唇角微微上扬。这位管事是少数几个对他没有恶意的人，虽然也从未帮过他。\n\n\"至少……还有人愿意说这么一句。\"他低声喃喃，将令牌收入怀中。\n\n怀中，一枚温润的龟甲贴着他的胸口，隐隐传来一丝不易察觉的温度。\"",
+        "emotion": "若有所思"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0001_008",
+        "prompt": "\"After completing servant duties, what do you plan to do?\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0001_008_A",
+            "text": "\"Go to the dining hall for a meal\"",
+            "description": "\"Though only able to eat leftovers, the body is the capital of revolution\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May encounter Han Lie again\"",
+            "visible_reward": "\"Maintain physical strength\"",
+            "risk_hint": "\"May be bullied again\"",
+            "process_label": "务实",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_008_A_1",
+                  "content": "\"Chen Ji dragged his exhausted body toward the dining hall.\n\nAlong the way, disciples cast various gazes his way—some mocking, some pitying, most indifferent. Chen Ji accepted them all, his expression unchanged.\n\nInside the dining hall, Outer Disciples and Servant Disciples crowded in a corner, their food thin soup and weak vegetables, barely filling the stomach. On the other side, Inner Disciples' area was fragrant with wine and meat, exotic delicacies.\n\nChen Ji scooped a bowl of thin porridge, found a corner, and ate silently.\"",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_008_B",
+            "text": "\"Return to the woodshed to rest\"",
+            "description": "\"Conserve energy, cultivate the turtle shell method left by his father\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May miss some information\"",
+            "visible_reward": "\"Time to study the turtle shell\"",
+            "risk_hint": "\"The turtle shell's secret may be discovered\"",
+            "process_label": "暗中蓄势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_008_B_1",
+                  "content": "\"Chen Ji did not go to the dining hall but went straight back to the woodshed.\n\nThat small room in the corner of the Martial Arena was merely a few feet wide, the dilapidated wooden bed covered with thin bedding. The only valuable item in the room was the turtle shell left by his father.\n\nChen Ji sat cross-legged on the bed, took the turtle shell from his chest, and placed it in his palm. The pale yellow turtle shell was simple and plain, its patterns already blurred and indistinct, showing nothing special.\n\nBut he knew—within this turtle shell lay the truth of his father's disappearance.\"",
+                  "emotion": "沉思"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_008_C",
+            "text": "\"Scout the Scripture Library\"",
+            "description": "\"Go ahead and survey the Scripture Library environment, look for possible opportunities\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May be stopped by guards\"",
+            "visible_reward": "\"May discover useful information\"",
+            "risk_hint": "\"Outer Disciples have no right to enter\"",
+            "process_label": "谋定后动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_008_C_1",
+                  "content": "\"Chen Ji calculated briefly in his mind and decided to scout the Scripture Library in advance.\n\nAs an Outer Servant, he had a few opportunities each month to sweep the outer areas of the Scripture Library. But the interior was off-limits to Outer Disciples.\n\nHowever, opportunities often hide within the cracks of rules.\n\nHe deliberately took a few detours, avoided the crowd, and came to the quiet area behind the Scripture Library. From a distance, the three-story pavilion was grand and imposing, yet protected by three layers of formations.\n\nChen Ji narrowed his eyes, silently memorizing all this, then slipped away.\"",
+                  "emotion": "沉稳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_009",
+        "content": "\"Night fell, and Tianqing Sect fell into silence.\n\nIn the woodshed, Chen Ji lit an oil lamp the size of a bean, its dim yellow light barely illuminating a small space. He sat on the bed, the turtle shell in his hand, his gaze complex.\n\nThree years.\n\nFor three years, he endured daily humiliation, did the dirtiest and hardest work, ate the worst food, lived in a place worse than even a woodshed. Everyone waited to see him completely decline, waiting for him to become a true废物.\n\n'Father...' Chen Ji murmured softly, his fingertips gently stroking the patterns on the turtle shell. 'When will the person you mentioned appear?'\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_010",
+        "content": "\"The turtle shell lay quietly in his palm, showing no response.\n\nChen Ji苦笑. Before his father's disappearance, he left this turtle shell, saying when 'the time comes,' he would naturally understand everything. But three years passed, and the turtle shell remained a dead object, without a trace of divinity.\n\nPerhaps his father's prophecy was merely wishful thinking. Perhaps he truly had become a废物, with no chance of翻身.\n\nJust as his thoughts wandered—\n\nThe turtle shell suddenly grew slightly warm.\n\nChen Ji shuddered all over, looking down. The turtle shell's surface revealed a faint glow, and those originally blurred patterns actually faintly outlined a certain pattern.\n\n'This is...' His pupils contracted sharply.\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_011",
+        "character_id": "char_moxiansheng",
+        "content": "\"'Three years, and you finally call to me at night.'\n\nAn elderly and ethereal voice rang in Chen Ji's mind.\n\nChen Ji猛然抬头, only to see above the turtle shell, a虚幻 figure slowly condensing. It was a white-haired elder, his features blurred, yet with deep eyes like an abyss.\n\n'Who are you...' Chen Ji suppressed the shock in his heart.\n\n'I am Mo Xiansheng,' the elder微微一笑, 'by your father's orders, waiting here.'\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0001_012",
+        "prompt": "\"Facing the suddenly appearing Mo Xiansheng, will you?\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0001_012_A",
+            "text": "\"Ask about father's whereabouts\"",
+            "description": "\"Immediately inquire about father's news—this is what you most want to know\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"May delay understanding the situation\"",
+            "visible_reward": "\"Learn clues about father\"",
+            "risk_hint": "\"May touch on sad matters\"",
+            "process_label": "亲情",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_A_1",
+                  "character_id": "char_chenji",
+                  "content": "\"'My father!' Chen Ji blurted almost reflexively. 'Where is he now? Why did he leave back then? Is he okay?'\n\nA stream of questions poured out, the emotions compressed for three years bursting forth at this moment.\n\nMo Xiansheng沉默片刻, a complex emotion flickering in his eyes: 'Your father... he went to a very far place. There are great dangers there, but also heavenly opportunities.'\"",
+                  "emotion": "急切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_A_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "\"The elder sighed: 'He went to protect you, and also to seek a method to counter 'that thing.''\n\n'That thing?' Chen Ji frowned.\n\n'Now is not the time to speak of it,' Mo Xiansheng shook his head. 'You only need to know—your father is still alive. But to find him, you must grow stronger.'\"",
+                  "emotion": "怅然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_012_B",
+            "text": "\"Inquire about the turtle shell's origin\"",
+            "description": "\"First clarify the turtle shell's origin and function\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May miss father's news\"",
+            "visible_reward": "\"Understand your situation\"",
+            "risk_hint": "\"May not be able to bear the truth\"",
+            "process_label": "理性",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_B_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji深吸一口气, forcing himself to冷静下来.\n\n'This turtle shell, exactly what is it?' He raised the turtle shell in his hand. 'Father left it saying 'when the time comes, you'll naturally understand,' but three years passed, and it never showed any reaction.'\n\nMo Xiansheng微微一笑: 'The turtle shell is the vessel, and you—' He paused, his gaze profound. 'Are that 'timing.''\"",
+                  "emotion": "疑惑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_B_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "\"'The spiritual root in your body has not withered,' Mo Xiansheng slowly said. 'It has been sealed by a powerful force. This seal originates from the 'Heavenly Secrets' bloodline you carry in your blood.'\n\nHe raised his finger and gently tapped the turtle shell.\n\nIn that instant, Chen Ji felt his mind explode like thunder, countless pieces of information flooding in like a tide—\n\nTianji Record.\nForesee three hours into the future.\nEach use consumes 5 points of Heavenly Fate.\"",
+                  "emotion": "震撼"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_012_C",
+            "text": "\"Question the other party's identity\"",
+            "description": "\"Stay vigilant, first confirm whether the other party is an enemy in disguise\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"May offend an ally\"",
+            "visible_reward": "\"Ensure your own safety\"",
+            "risk_hint": "\"May disappoint Mo Xiansheng\"",
+            "process_label": "谨慎",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_C_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji did not immediately believe.\n\nThree years of treacherous hearts had cultivated his instinctive vigilance. He stepped back, his voice deep: 'Why should I believe you?'\n\nMo Xiansheng slightly startled, then laughed: 'Good, good! Caution is good. If you easily believed others, your father would反而 disappointed.'\"",
+                  "emotion": "戒备"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_C_2",
+                  "character_id": "char_chenji",
+                  "content": "\"The elder raised his hand, and a段画面 emerged in empty air—it was three years ago, a man handing a turtle shell to young Chen Ji, softly saying: 'A-Ji, Father has to go on a long journey. This turtle shell, you must keep it safe. The day it grows warm will mean the time has come.'\n\nChen Ji shuddered all over. That voice, that back—正是 his father Chen Xuan!\n\n'Now, do you believe?' Mo Xiansheng asked.\"",
+                  "emotion": "动摇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_013",
+        "character_id": "char_moxiansheng",
+        "content": "\"Mo Xiansheng's form began to fade, clearly maintaining this形态 consumed him great power.\n\n'Tonight you have contacted the introductory method of the Tianji Record,' he郑重地看着 Chen Ji. 'But this is merely the beginning. The Tianji Record is incomplete; to complete it, you need to achieve a series of goals. And with each goal completed, this old one will unseal a page of knowledge.'\n\nChen Ji nodded, recording every word faithfully in his heart.\"",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_014",
+        "character_id": "char_moxiansheng",
+        "content": "\"'The first scroll's goal is only one,' Mo Xiansheng's voice grew more ethereal. 'Survive the Sect Tournament.'\n\n'Sect Tournament?' Chen Ji frowned.\n\n'That's right. In three months, Tianqing Sect will hold its triennial Sect Tournament.' A profound light flashed in Mo Xiansheng's eyes. '届时，所有外门弟子都要参加。而你——'\n\nHe didn't finish, but the meaning was clear enough.\n\nWith Chen Ji's current 'Qi Refining Second Layer' strength, in the Sect Tournament he would either be eliminated, or... die.\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_015",
+        "content": "\"Mo Xiansheng's form completely dissolved, leaving only one sentence echoing in the woodshed:\n\n'Remember, the power of the Tianji Record is not infinite. Heavenly Fate is the foundation of your survival in this world; once exhausted, you will...'\n\nThe voice cut off abruptly.\n\nChen Ji looked down at the turtle shell in his hand. After the extraordinary phenomenon just now, the turtle shell had returned to平静, but he could feel—the connection between them was deeper now.\n\nIn his mind, a残缺画面 faintly emerged—that was the雏形 of some cultivation method.\n\n'Tianji Record...' Chen Ji murmured, his eyes flashing with complex light.\n\nThree years of忍, three years of布局, today finally saw the dawn.\"",
+        "emotion": "坚毅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_016",
+        "content": "\"Outside the window, night wind howled, causing the dilapidated wooden window to creak.\n\nChen Ji lay on the bed, yet sleep was nowhere to be found. His mind kept replaying tonight's information—Tianji Record, father, Heavenly Fate, Sect Tournament...\n\nThree months.\n\nHe only had three months.\n\n'Han Lie, Ling Yuan, and those enemies hiding in the dark...' Chen Ji closed his eyes, a cold smile curling at his lips. 'Since you all want to see me die, let me show you what truly means—扮猪吃虎.'\n\nOutside the woodshed, moonlight like water.\n\nAnd just as Chen Ji was about to fall asleep, the turtle shell grew warm again, as if responding to something.\"",
+        "emotion": "冷冽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_017",
+        "content": "\"Just as he was about to give up, the turtle shell that had never shown any reaction suddenly grew warm, as if something long dormant was slowly awakening...\"",
+        "emotion": "悬念"
+      }
+    }
+  ]
+}

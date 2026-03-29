@@ -1,0 +1,538 @@
+{
+  "id": "天机录_ch0991",
+  "book_id": "天机录",
+  "number": 991,
+  "title": "执棋者遗冢",
+  "is_paid": true,
+  "next_chapter_hook": "遗迹深处，一个苍老而熟悉的声音骤然响起：「你终于来了……我等你，很久了。」那声音的主人，竟与天机录残页中记载的第一代执棋者一模一样。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0991_001",
+        "content": "天界边缘，虚空裂隙如狰狞伤口，横亘于苍穹与混沌之间。凛冽的罡风裹挟着腐朽的灵气，割得人面皮生疼。陈机站在一块浮空的碎石上，袍角被风撕扯得猎猎作响，双目却定定望向裂隙深处那片若隐若现的阴影。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_002",
+        "content": "那阴影轮廓古拙，仿佛一座坍塌的残破宫殿，檐角挂着的铜铃早已锈蚀成铁疙瘩，却在罡风中发出呜咽般的低鸣。陈机眉心微蹙，天机录残页在识海中陡然一震，泛起前所未有的灼热——那种感觉，像是游子归乡，又像是久旱逢甘霖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_003",
+        "character_id": "char_moxiansheng",
+        "content": "「少主，此处气息诡异……那残殿之中，似有大道法则残存。」墨先生的声音从识海深处幽幽响起，带着一丝罕见的凝重，「万年前第一位执棋者陨落之地，便在天界边缘。这不是巧合。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_004",
+        "content": "陈机没有答话，掌心摊开，那泛黄残页自行浮现其上。残页边缘的裂纹正以肉眼可见的速度愈合，又在某一刻戛然而止——就像某种封印被触动，却又被更强大的力量强行按住。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0991_choice_001",
+        "prompt": "残殿近在眼前，天机录的反应愈发剧烈。是直接踏入，还是先行探查？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "direct_entry",
+            "text": "直接踏入",
+            "description": "天机录既然如此渴望，说明此处机缘不可延误。执棋者遗冢，焉有退缩之理？",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能遭遇未知危险",
+            "visible_reward": "抢先获得执棋者传承线索",
+            "risk_hint": "遗迹内或有机关禁制",
+            "process_label": "踏入遗迹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_direct_entry_001",
+                  "content": "陈机目光一凝，抬步便踏入残殿大门。殿内昏暗如夜，唯有墙壁上斑驳的荧光苔藓散发着幽冷微芒。脚下石砖咔嚓作响，似有什么机关被触发。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_direct_entry_002",
+                  "content": "「来了。」一道苍老的声音骤然在殿内回荡，却非从某个具体方位传来，而是仿佛自虚空本身渗出。陈机脚步骤停，天机录残页剧烈颤抖起来。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "entered_temple"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "scout_first",
+            "text": "先行探查",
+            "description": "万年前遗迹必有凶险，贸然踏入乃下策。先以天机录窥探三时辰之变，再做定夺。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值窥探",
+            "visible_reward": "获得遗迹内部情报，降低风险",
+            "risk_hint": "天机录消耗不可逆",
+            "process_label": "窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_scout_first_001",
+                  "content": "陈机深吸一口气，指尖轻点残页。天机录瞬间绽放出刺目金光，陈机视野陡然切换——他看见了殿内的景象：坍塌的石柱、散落的玉简、以及……一具盘坐于祭台之上的枯骨。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_scout_first_002",
+                  "content": "那枯骨虽已逝去万年，周身却萦绕着与天机录如出一辙的大道气息。枯骨掌心攥着一枚破碎的令牌，上刻「执棋」二字——那是第一位执棋者的身份象征。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_005",
+        "content": "殿内空旷，唯有正中央的祭台格外醒目。祭台以青铜铸就，四角雕刻着蜷缩的囚徒形象，那些囚徒面容扭曲，似在承受无尽煎熬。台上铭刻的纹路与陈机掌心的天机录残页如出一辙——同源同根，分明是一体两面。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_006",
+        "content": "陈机缓步上前，目光扫过祭台边缘的铭文。那字迹以古篆书写，苍劲中透着疯狂：「吾以天命为薪，燃大道之烛。纵天道弃我，我亦不弃苍生——第一条路，破枷。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_007",
+        "content": "破枷？陈机眉峰微挑。天机录在识海中疯狂震颤，仿佛要冲破禁锢投入祭台怀中。与此同时，他的胸口陡然传来撕裂般的剧痛——那是血脉深处沉睡已久的印记被唤醒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_008",
+        "character_id": "char_moxiansheng",
+        "content": "「这是……天命共鸣。」墨先生的声音陡然拔高，失态之态尽显，「少主，您体内流淌的竟是与第一位执棋者相同的血脉！他将部分传承刻入了血脉之中，代代相传，只待有缘人开启！」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_009",
+        "content": "陈机咬紧牙关，任由血脉中的力量翻涌。胸口的灼热逐渐化为温热，那感觉像是有一道枷锁正在松动。他能清晰地感知到——那是套在天机录上的天道封印，是压在历代执棋者身上的宿命。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_010",
+        "content": "就在此时，殿外的天色骤然暗沉下来。原本凛冽的罡风忽然静止，一股浩瀚而冷漠的威压自苍穹之上倾泻而下，如同一只无形的眼睛，正穿透重重虚空，凝视着残殿之内的一切。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "那威压之中蕴含的声音冰冷机械，不带丝毫情感：「检测到天机录残页进入遗冢……执棋者血脉觉醒……启动清除程序。」",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_012",
+        "content": "天道之眼！陈机瞳孔骤缩。这股威压他再熟悉不过——每一次天机录窥探天机时那如芒在背的注视感，便是来源于此。他从未想过，这尊超越性的意识体竟会在此刻直接现身！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0991_choice_002",
+        "prompt": "天道之眼的威压如山岳倾覆，祭台上的传承正等待接纳。是冒险接受传承，还是暂避锋芒？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_inheritance",
+            "text": "冒险接受传承",
+            "description": "天道既已现身，便是图穷匕见之时。退缩只会让枷锁越套越紧，不如借执棋者之力，与这天道意志正面对抗！",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "直面天道之眼的攻击",
+            "visible_reward": "获得第一位执棋者的破枷之法",
+            "risk_hint": "天道之眼威能不可测",
+            "process_label": "血脉共鸣",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_accept_001",
+                  "content": "陈机猛然抬手，掌心按上祭台。青铜古纹瞬间亮起刺目金光，顺着他的经脉蔓延至全身。那一瞬，他体内沉睡的血脉彻底沸腾，与祭台上的执棋者传承轰然相融！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_accept_002",
+                  "content": "剧痛袭来，陈机感觉自己正在被某种古老的力量重塑。识海深处，一段尘封的记忆涌入脑海——第一位执棋者的一生，他如何获得天机录，如何被天道选中，又如何……被天道抛弃。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "first_inheritance_awakened"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "evade_temporarily",
+            "text": "暂避锋芒",
+            "description": "天道之眼既现，硬拼必败。不如先退一步，留得青山在，传承迟早可取。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时放弃眼前机缘",
+            "visible_reward": "保全自身，另寻机会",
+            "risk_hint": "传承可能消失",
+            "process_label": "战略撤退",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_evade_001",
+                  "content": "陈机身形暴退，足尖点地便欲冲出殿外。然而就在此时，一道金色锁链自虚空射出，精准地缠上他的脚踝。那锁链的力道之大，竟直接将他拖回祭台前！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_evade_002",
+                  "content": "「逃不掉的。」那冰冷的声音再次响起，「执棋者血脉一旦觉醒，便已落入棋盘。你以为，枷锁是你想挣脱便能挣脱的？」",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_013",
+        "content": "金色锁链散发着灼热的高温，灼得陈机脚踝皮肉焦黑。然而他的脸上却无半分慌乱，嘴角反而勾起一抹冷笑——这表情，与他平日里唯唯诺诺的废物人设判若两人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_014",
+        "character_id": "char_chenji",
+        "content": "「想让我入局？」陈机的声音低沉而平静，却带着不容置疑的锋芒，「既如此，那我便入局。只是——入局之人，未必都是棋子。」",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_015",
+        "content": "话音未落，天机录残页陡然绽放出璀璨光华。残页边缘的裂纹在金光中飞速愈合，一行古老的文字浮现其上：「第一条路已启，枷锁将裂——代价，天命归零。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_016",
+        "content": "天命归零——这四个字如惊雷炸响。陈机瞳孔骤缩，他比任何人都清楚这意味着什么。天命值归零，便是必死之局！天道之眼此举，分明是要以他的性命为代价，强行终结执棋者的传承！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_017",
+        "content": "殿内空气凝滞到了极点。金色锁链在陈机脚下绷紧，天道威压如实质般压在他肩头。而祭台上的传承之光却愈发炽烈，仿佛在催促他做出抉择。进，是死局；退，亦是死局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_018",
+        "content": "陈机静静站在原地，那张平日里总是挂着怯懦神情的脸上，此刻却是一片死寂般的平静。他的眼珠缓缓转动，扫过殿内每一处细节——坍塌的石柱、斑驳的壁画、祭台上的铭文——所有信息在他脑海中飞速整合。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_019",
+        "content": "「第一条路，破枷。」陈机低声重复着铭文上的字句，忽然轻笑出声，「原来如此……破枷的代价，从来不是天命，而是——执念。」他的目光重新落在祭台上，「第一位执棋者留下的不是陷阱，而是一把破局的钥匙。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0991_choice_003",
+        "prompt": "洞悉真相后，陈机面临最后抉择：接受传承付出天命代价，还是另辟蹊径以执念破局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "use_willpower",
+            "text": "以执念破局",
+            "description": "天道要的是天命，我偏不给。将所有执念灌注天机录，以意志打破枷锁！",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "执念反噬",
+            "visible_reward": "摆脱天道锁定，获得破枷之法",
+            "risk_hint": "执念反噬可能伤及神魂",
+            "process_label": "以意破天",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_willpower_001",
+                  "content": "陈机闭上双眼，任由体内翻涌的力量冲击神魂。他的执念如同一柄无形的利刃，狠狠刺向那道金色锁链——那是他对妹妹陈念的思念，对天道的恨意，对自由的渴望！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_willpower_002",
+                  "content": "金色锁链在执念之刃的劈斩下轰然崩碎！与此同时，祭台上的传承之光暴涨，一道玄奥的符文自虚空中凝聚，缓缓烙印在陈机额头——那是第一位执棋者的意志传承，是真正的破枷之法！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "first_path_awakened"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "accept_fate",
+            "text": "接受天命代价",
+            "description": "既然逃不掉，那便赌一场。天命归零又如何？置之死地而后生！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值归零触发必死",
+            "visible_reward": "完整获得执棋者传承",
+            "risk_hint": "必死之局，无人可救",
+            "process_label": "以命相搏",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_fate_001",
+                  "content": "陈机猛然睁开双眼，双手死死按住祭台。天命值如决堤之水般倾泻而出，数值疯狂坠落——100、50、20、5……然而就在即将归零的刹那，一道温润的光芒自祭台深处涌出，与陈机的血脉轰然相融！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_fate_002",
+                  "content": "「好胆色。」苍老的声音再次响起，却不再是那冰冷的机械音，而是带着一丝欣慰，「万年等待，总算等来一个敢与天博弈的疯子。接受传承吧，第一位执棋者的全部遗产——包括，如何摆脱天道的终极法门。」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "full_inheritance_awakened"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_020",
+        "content": "传承之光照耀整个残殿，将天道之眼的威压硬生生逼退三分。陈机感觉自己脑海中多了无数玄奥的信息——那是第一位执棋者毕生所学，是他对抗天道的全部经验，是他临终前留下的最后嘱托：「莫信天道，莫为棋子。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_021",
+        "content": "就在传承即将完成的瞬间，殿外的虚空忽然裂开一道更大的缝隙。一只巨大的眼眸自缝隙中探出，那眼眸漆黑如渊，瞳孔中流转着无数星辰碎灭的景象。天道之眼的本体——终于降临！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_022",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「够了。」那声音不再是机械的播报，而是带着一丝罕见的怒意，「区区蝼蚁，竟敢窃取本不该属于你的东西。」那只巨眸缓缓转动，瞳孔中倒映出陈机的身影，「你以为挣脱了枷锁？可笑……你不过是换了一副更精巧的镣铐罢了。」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_023",
+        "content": "陈机缓缓站起身，方才传承灌顶带来的眩晕感尚未完全消退，但他的眼神却比任何时候都要清明。他仰头直视那只遮天巨眸，嘴角勾起一抹意味深长的弧度：「是吗？那就劳烦天道大人告诉我——这副镣铐，该怎么打开？」",
+        "emotion": "挑衅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_024",
+        "content": "天道之眼沉默了。那漆黑如渊的瞳孔微微收缩，仿佛在重新审视眼前这个渺小的存在。片刻后，冰冷的声音再次响起：「执棋者……有意思。但愿你的棋局，能撑到你亲眼见证真相的那一天。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_025",
+        "content": "话音未落，那只巨眸连同遮天的威压一同消散。残殿重归寂静，唯有祭台上那行铭文还在微微发光：「纵天道弃我，我亦不弃苍生——第一条路，已启。」陈机低头看着掌心，天机录残页正散发着柔和的光芒，上面的裂纹又愈合了一分。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_026",
+        "content": "他深深吐出一口浊气，转身欲离开遗迹。然而就在此时，一道苍老而熟悉的声音骤然从祭台深处响起——那声音的主人，竟与天机录残页中记载的第一代执棋者一模一样：「你终于来了……我等你，很久了。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_027",
+        "content": "陈机脚步骤停，猛然回头。祭台上的铭文正在缓缓消散，取而代之的是一道虚幻的人影。那人影面容模糊，周身萦绕着与天机录同源的大道气息，静静地悬浮在祭台之上，仿佛等待这一刻已等了万年。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_028",
+        "content": "「不必惊讶。」那人影的声音苍老而疲惫，「这只是我留在传承中的一缕残念。真正的我，早已陨落在万年前的天道审判之下。但在那之前，我将所有真相都封存在了这条路上——包括，天道之眼真正的目的。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_029",
+        "content": "陈机静静听着，面上不动声色，心中却已是惊涛骇浪。万年前的第一位执棋者——那个曾与天道对弈的存在，竟以这种方式留下了线索。他知道，从踏入这遗迹的那一刻起，自己便已踏入了一盘跨越万年的棋局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_030",
+        "content": "残殿外，罡风再起。陈机最后望了一眼那道悬浮的虚影，将所有信息刻入识海深处。第一位执棋者的遗产、破枷之法的初窥、天道之眼的威胁——这一切都在提醒他：棋局已成，落子无悔。而他陈机，将是这万古棋盘上，唯一一个不按常理落子的执棋者。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "id": "天机录_ch0241",
+  "book_id": "天机录",
+  "number": 241,
+  "title": "秘境开启·入场仪式",
+  "is_paid": true,
+  "next_chapter_hook": "陈机当众揭露魔道阴谋，刺客三人组反被击杀，正道各派哗然——而这一切，不过是他棋盘上落下的第一子。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0241_001",
+        "content": "天光大亮，古老的祭坛之上，九道金色光柱冲天而起，将整片苍穹染成玄黄之色。上古秘境「天机阁」开启仪式，正式开始。各宗长老御空而至，天青宗、玄武宗、白虎宗的旗帜在云端猎猎作响，数十名核心弟子分列两侧，气氛庄严肃穆到了极点。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_002",
+        "content": "陈机站在核心弟子队列之中，一身青色道袍随风轻摆，面上一派平静如水。周围投来的目光却并不平静——讥讽、嫉妒、怀疑，各种情绪交织。这废物凭什么站在这里？天青宗内门弟子们交头接耳，声音虽低，却清晰地传入陈机耳中。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_003",
+        "character_id": "char_chenji",
+        "content": "（面上微笑，心中冷笑）废物？有意思。等会儿让你们看看，谁才是真正的废物。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_004",
+        "content": "天机录残页忽然微微发热，那熟悉的刺痛感从眉心蔓延开来。墨先生的残魂声音在脑海中响起：「来了。西北角，三人，刺杀目标——玄武宗大长老。」陈机眸子微缩，面上却不动声色，继续以那副人畜无害的表情环顾四周。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_005",
+        "character_id": "char_moxiansheng",
+        "content": "「小心行事。这三人是魔道圣宗的死士，擅长隐匿气息。」墨先生的声音带着一丝凝重，「你若直接出手，恐怕会暴露太多。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_006",
+        "content": "陈机心中快速盘算。三名魔道死士，刺杀玄武宗大长老——这场面可比自己被嘲笑有意思多了。天机录的画面再次浮现：三道黑影从人群中暴起，毒针破空，大长老当场倒地，血溅三尺。而他陈机，将作为目击者被各宗问责。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0241_007",
+        "prompt": "刺客即将动手，时间紧迫！陈机必须做出选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "直接对抗",
+            "text": "直接出手拦截",
+            "description": "以雷霆之势当场格挡毒针，当众展露实力震慑全场，但会引起各宗关注与调查。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "获得玄武宗大长老好感",
+            "risk_hint": "可能引来凌渊老掌门的注意",
+            "process_label": "拦截刺客",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_直接对抗_001",
+                  "content": "陈机身形一晃，在众人还未反应过来之际，已然掠至半空。袖袍一挥，三道寒芒被他尽数拂落，那三名死士还没来得及惊呼，便被一股柔劲震退数丈。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_直接对抗_002",
+                  "character_id": "char_chenji",
+                  "content": "（微微拱手，面带歉意）大长老受惊了。这几位……似乎对您不太礼貌。",
+                  "emotion": "温和"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借势",
+            "text": "借势引爆全场",
+            "description": "引导刺客刺杀成功，借机让玄武宗与魔道圣宗结仇，坐收渔翁之利，但大长老可能陨落。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "玄武宗大长老可能陨落",
+            "visible_reward": "魔道与正道彻底交恶，各宗联盟瓦解",
+            "risk_hint": "若被察觉居心，后果不堪设想",
+            "process_label": "引导刺杀",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_借势_001",
+                  "content": "陈机嘴角微微上扬，故意后退一步，让出一条通路。三名死士见状大喜，以为找到了绝佳的刺杀角度，齐齐暴起——",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_借势_002",
+                  "character_id": "char_chenji",
+                  "content": "（心中默念）去吧，让玄武宗知道魔道的厉害。这笔账，日后再算。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "隐忍",
+            "text": "隐忍暗中布局",
+            "description": "按兵不动，待刺客得手后再揭发，以“目击证人”身份介入，保持废物人设同时掌控局势。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "大长老受伤",
+            "visible_reward": "以目击者身份获得各宗信任",
+            "risk_hint": "若大长老重伤不治，可能被怀疑是同谋",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_隐忍_001",
+                  "content": "陈机垂下眼帘，将气息压制到最低限度，完美地扮演着一个被吓傻了的废物弟子。三道黑影暴起，毒针破空——玄武宗大长老闷哼一声，肩头染血。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_隐忍_002",
+                  "character_id": "char_chenji",
+                  "content": "（压低声音惊呼）有刺客！魔道的人！",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_008",
+        "content": "就在此时，一道幽冷的声音在陈机脑海中响起，与墨先生的苍老截然不同——那是夜清，魔道圣宗圣女的声音：「陈机，我看到你的布局了。刺客是我们的人，但你不会真的让他们成功，对吗？」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_009",
+        "character_id": "char_yeqing",
+        "content": "「有趣。」夜清的声音带着几分玩味，「你想借刀杀人，还是想英雄救美？告诉我，我可以帮你一把——当然，作为交换，你欠我一个人情。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_010",
+        "content": "陈机眸光微闪。这位魔道圣女，果然不简单。他快速思索——夜清的「魔道迷雾」可以遮掩天机录气息，若能得到她的配合，这次布局将更加完美。但与她合作，无异于与虎谋皮。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0241_011",
+        "prompt": "夜清提出合作，陈机该如何回应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "接受合作",
+            "text": "接受合作",
+            "description": "与夜清联手，借她的魔道迷雾掩护自己的行动，建立初步信任关系。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "欠下人情",
+            "visible_reward": "获得魔道迷雾遮掩天机录气息",
+            "risk_hint": "夜清心思深沉，人情难还",
+            "process_label": "建立合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_接受合作_001",
+                  "character_id": "char_chenji",
+                  "content": "（传音）好，我答应你。但记住，你的迷雾只能用来遮掩我的气息，刺杀的事——让他们去。",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_接受合作_002",
+                  "character_id": "char_yeqing",
+                  "content": "「成交。」夜清的声音带着笑意，「你比我想象的有趣多了，陈机。」",
+                  "emotion": "愉悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "拒绝合作",
+            "text": "拒绝合作",
+            "description": "婉拒夜清的好意，保持独立行动，不欠魔道任何人情。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "失去魔道迷雾掩护",
+            "visible_reward": "保持绝对独立，不留把柄",
+            "risk_hint": "天机录气息可能暴露",
+            "process_label": "独立行动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_拒绝合作_001",
+                  "character_id": "char_chenji",
+                  "content": "（传音）不必了。我陈机的棋局，不需要外人插手。",
+                  "emotion": "冷淡"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_拒绝合作_002",
+                  "character_id": "char_yeqing",
+                  "content": "「……有意思。」夜清沉默了片刻，「那我就看看，你这只小狐狸怎么从这盘棋里脱身。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_012",
+        "content": "刺客的毒针已经离手，三道寒芒直取玄武宗大长老面门。就在这千钧一发之际，陈机终于动了——他并没有直接拦截，而是在电光火石之间，用袖袍卷起一阵劲风，将毒针的方向微微一偏。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_013",
+        "character_id": "char_hanlie",
+        "content": "玄武宗第一天才韩烈大喝一声：「何方宵小，敢伤我宗门长老！」他一拳轰出，将其中一名死士震成血雾。另外两名死士见势不妙，正要撤退，却被天青宗的几位长老联手封锁了退路。",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_014",
+        "content": "全场哗然。各宗弟子惊慌失措，长老们纷纷祭出法宝护住自家弟子。而陈机，则在混乱中悄然后退几步，重新变回那副惊恐失措的废物模样。只是他的嘴角，勾起了一抹不易察觉的弧度。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_015",
+        "character_id": "char_suqingyao",
+        "content": "天青宗内门首席苏青瑶眉头微皱，目光在人群中扫过，最终定格在陈机身上。她的直觉告诉她，刚才那阵风来得太过蹊跷——可当她想要细看时，那废物已经缩进了人群深处，一脸无害。",
+        "emotion": "怀疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_016",
+        "content": "两名魔道死士被生擒，在各宗长老的审问下，供出了幕后主使——魔道圣宗。玄武宗大长老虽然受伤，但因陈机那一袖偏转，毒针并未命中要害，此刻正铁青着脸，与天青宗、白虎宗的长老商议对策。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_017",
+        "content": "陈机趁乱离开人群，寻了一处僻静角落。墨先生的声音再次响起：「做得好。偏转毒针而非直接拦截，既救了人，又不引人注目——但苏青瑶已经起疑了。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_018",
+        "character_id": "char_moxiansheng",
+        "content": "「无妨。」陈机淡淡开口，「让她疑着。只要没有证据，她就永远只能在门外徘徊。」他的目光越过人群，落在远处云端那道若隐若现的黑影上——那是夜清，正在饶有兴味地注视着他。",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_019",
+        "content": "秘境入口缓缓开启，金色光柱中浮现出一座巍峨的宫殿轮廓。各宗长老商议后决定：入场仪式照常进行，但各宗需加倍警惕，魔道势力显然已经渗透进来。玄武宗大长老冷哼一声，亲自领队进入秘境，陈机紧随其后。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_020",
+        "content": "踏入秘境的一瞬间，陈机感到天机录猛然震动了一下。他心中一凛——这里面，果然藏着更大的秘密。而他即将面对的，或许不仅仅是魔道的阴谋，还有那冥冥之中注视着他的「天道之眼」。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

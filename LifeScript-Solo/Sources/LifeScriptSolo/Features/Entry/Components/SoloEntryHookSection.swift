@@ -4,7 +4,7 @@ struct SoloEntryHookSection: View {
     let snapshot: SoloEntrySnapshot
     let primaryActionTitle: String
     let secondaryActionTitle: String
-    let openReading: () -> Void
+    let readingRoute: SoloRoute?
     let openWorld: () -> Void
 
     var body: some View {
@@ -28,16 +28,33 @@ struct SoloEntryHookSection: View {
             }
 
             VStack(spacing: 12) {
-                Button(action: openReading) {
+                if let readingRoute {
+                    NavigationLink(value: readingRoute) {
+                        HStack {
+                            Text(primaryActionTitle)
+                                .font(SoloTypography.label)
+                            Spacer()
+                            Image(systemName: "arrow.right.circle.fill")
+                                .font(.title3)
+                        }
+                    }
+                    .buttonStyle(SoloPrimaryActionButtonStyle())
+                } else {
                     HStack {
-                        Text(primaryActionTitle)
+                        Text("章节装载中")
                             .font(SoloTypography.label)
                         Spacer()
-                        Image(systemName: "arrow.right.circle.fill")
+                        Image(systemName: "hourglass")
                             .font(.title3)
                     }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 15)
+                    .foregroundStyle(Color.black.opacity(0.65))
+                    .background(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.white.opacity(0.75))
+                    )
                 }
-                .buttonStyle(SoloPrimaryActionButtonStyle())
 
                 Button(action: openWorld) {
                     HStack {

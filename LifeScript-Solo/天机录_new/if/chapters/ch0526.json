@@ -1,0 +1,524 @@
+{
+  "id": "天机录_ch0526",
+  "book_id": "天机录",
+  "number": 526,
+  "title": "故人夜访",
+  "is_paid": true,
+  "next_chapter_hook": "墨先生的身影消失后，那枚古旧玉简上的裂纹似乎又深了一分，陈机知道，今夜注定无眠。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0526_001",
+        "content": "子时三刻，天青宗杂役房内。陈机盘膝坐于破旧蒲团之上，呼吸吐纳间，周身灵气稀薄得几乎凝不成丝。窗外夜风呜咽，吹得那盏油灯摇摇欲坠。这间漏风的破屋，是他这具「废物」身体最好的伪装——没有人在意一个连灵根都是残次的杂役弟子，更没有人会想到，天机录的残页，就藏在他贴身的那枚玉佩之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0526_002",
+        "character_id": "char_moxiansheng",
+        "content": "「陈机。」\n\n一道苍老而沙哑的声音，骤然在他识海中响起。那声音仿佛从极远处穿透而来，又仿佛就在耳畔低语，带着一种说不清道不明的威压。\n\n「今夜子时，后山断崖。吾有要事相商。」\n\n声音戛然而止，来无影去无踪。",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_003",
+        "content": "陈机猛然睁开双眼，瞳孔骤缩。识海中那枚封印于天机录第一页的残魂——墨先生——从未主动与他联系过。除非……是有什么不得不说的事情。他垂眸，指尖轻轻摩挲着玉佩上那道隐秘的纹路，心中飞速盘算。这位自称守护者的存在，从第一卷开始就显得讳莫如深，每每欲言又止，今日主动现身，究竟意欲何为？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_004",
+        "content": "他起身推开木窗，冷风裹挟着后山特有的松脂气息扑面而来。远处的断崖在月色下若隐若现，像一头蛰伏的巨兽。那是宗门禁地的边缘，寻常弟子绝不敢涉足，却也正因如此，成了某些秘密会面的绝佳场所。陈机嘴角微微勾起一抹冷笑——墨先生选这地方，倒是懂他的心思。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0526_005",
+        "prompt": "墨先生深夜相邀，陈机决定……",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0526_005_A",
+            "text": "暗中设下反制后手",
+            "description": "在赴约地点周围布置感知阵法，确保自己进退自如。以防墨先生有不轨之心。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗部分精神力布置阵法",
+            "visible_reward": "获得战术优势，主动权在手",
+            "risk_hint": "若被墨先生察觉，会暴露不信任",
+            "process_label": "布置后手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0526_result_005_A_001",
+                  "content": "陈机袖中暗掐法诀，数枚毫不起眼的石子悄然没入夜色。他没有立刻起身，而是在屋内踱步片刻，将天机录残页中记录的几处警戒阵法方位默记于心。一切就绪后，那张看似平静的面孔下，藏着的是随时可以反戈一击的杀招。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 3
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0526_005_B",
+            "text": "只身前去，展现诚意",
+            "description": "既然墨先生掌握着天机录的秘密，或许值得冒一次险。以坦荡之姿换取更多信息。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能陷入被动",
+            "visible_reward": "或可赢得墨先生更多信任",
+            "risk_hint": "若墨先生包藏祸心，将毫无还手之力",
+            "process_label": "只身赴约",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0526_result_005_B_001",
+                  "content": "陈机整了整洗得发白的道袍，深吸一口气后推门而出。他选择赌一把——赌墨先生此时还需要他。月光下，他的背影显得格外单薄，唯有那双眸子里，偶尔闪过一丝与他「废物」人设截然不符的锐利。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0526_005_C",
+            "text": "用天机录窥探今夜的走向",
+            "description": "先耗费5点天命值，预见未来三时辰内与墨先生会面的可能走向，再做决定。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值5点（当前：未知）",
+            "visible_reward": "获得关键信息，提前规避风险",
+            "risk_hint": "天命值消耗不可逆，且可能看到不想看的画面",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0526_result_005_C_001",
+                  "content": "天机录残页在玉佩中微微发烫，一股玄奥的力量自眉心蔓延开来。画面闪烁间，陈机看到自己立于断崖边缘，而墨先生的虚影……竟是一片模糊。无论他如何努力，都无法看清那张面容背后的真实意图。这是他第一次在推演中遇到如此强烈的干扰——仿佛有什么力量，在刻意遮蔽墨先生的身份。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_006",
+        "content": "后山断崖，夜风如刀。\n\n陈机踏着枯枝落叶悄然抵达，月光将他瘦削的身影拉得细长。崖边一块青石上，一道虚幻的人影正背对着他而立。那人影周身笼罩着淡淡的墨色雾气，轮廓飘渺不定，仿佛随时会消散于风中。墨先生的残魂，果然非同寻常。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0526_007",
+        "character_id": "char_moxiansheng",
+        "content": "「你来了。」\n\n墨先生没有回头，那道沙哑苍老的声音在夜风中回荡，带着一种历经沧桑的疲惫。\n\n「老朽等了很久……久到几乎忘了自己还活着。」",
+        "emotion": "疲惫"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0526_008",
+        "character_id": "char_chenji",
+        "content": "陈机没有立刻靠近，而是保持着三丈距离，声音平静得不起波澜：\n\n「墨先生深夜相邀，想必不是来叙旧的。有话不妨直说。」",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_009",
+        "content": "墨先生终于转过身来。那是一张无法形容的脸——五官模糊如水中倒影，唯有那双眼睛清晰无比，深邃得仿佛藏着整个星河。他看着陈机，目光中竟有一丝……怜悯？\n\n「直说？」墨先生发出一声低哑的笑，「有些话，说出来便要承担代价。你可想好了，当真要听？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0526_010",
+        "prompt": "墨先生的话暗藏玄机，陈机如何回应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0526_010_A",
+            "text": "「先生既已开口，又何必试探。」",
+            "description": "直接挑明态度，不吃墨先生那套欲言又止的把戏。逼他摊牌。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能触怒墨先生",
+            "visible_reward": "或可迫使墨先生透露更多",
+            "risk_hint": "若墨先生因此闭口，将错失重要信息",
+            "process_label": "直接摊牌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0526_result_010_A_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生微微一怔，随即发出一声意味深长的笑：「好，好得很。你这孩子，倒比你那先祖更像几分。」他负手而立，墨色雾气在他周身涌动，「既如此，老朽便问你一句——你可知道，你我之间，究竟是什么关系？」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0526_010_B",
+            "text": "「先生想说什么，陈机听着便是。」",
+            "description": "以退为进，给足墨先生面子，看他到底要透露什么。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "显得被动",
+            "visible_reward": "墨先生或会主动透露更多隐藏信息",
+            "risk_hint": "可能被墨先生牵着鼻子走",
+            "process_label": "以退为进",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0526_result_010_B_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生满意地点点头，虚影向前飘近一步：「孺子可教。」他的声音忽然低沉下来，「陈机，你可曾想过——你所走的每一步，看似自由，实则都在一张无形的棋盘之上？」",
+                  "emotion": "深沉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0526_010_C",
+            "text": "「代价？」陈机冷笑，「先生的代价是什么？」",
+            "description": "不按常理出牌，反问墨先生的立场。试探他是否真的中立。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "显得过于防备",
+            "visible_reward": "或可试探出墨先生的真实目的",
+            "risk_hint": "墨先生可能因此警觉，不再透露更多",
+            "process_label": "反向试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0526_result_010_C_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生的虚影停顿了一瞬，那双深邃的眸子里闪过一丝复杂的光芒：「好一个反客为主。」他轻声道，「老朽的代价么……不过是多在这世间停留一日，便多看一日的棋局罢了。」",
+                  "emotion": "感慨"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_011",
+        "content": "棋局。\n\n这个词第二次出现。陈机将这个细节牢牢记在心中，面上却不动声色。夜风卷起他破旧的袍角，断崖下的深渊传来阵阵回响，仿佛有什么远古巨兽在沉睡中呼吸。墨先生就那样静静地看着他，像是在等待什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0526_012",
+        "character_id": "char_moxiansheng",
+        "content": "「你以为天机录是什么？」墨先生忽然开口，声音里带着一丝说不清的意味，「预知未来的神物？逆天改命的机缘？」\n\n他摇了摇头，墨色雾气剧烈翻涌：「它不过是棋盘上的一枚棋子。而你，陈机……」\n\n他顿了顿，目光骤然锐利：「你是被选中的棋手，也是……注定要被牺牲的弃子。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_013",
+        "content": "陈机的心猛地一沉，但他面上依然波澜不惊。墨先生的话信息量太大了——天机录是棋子，那棋手是谁？而他所谓的「弃子」之论，又意味着什么？他想起天机录每次使用后那种莫名的虚弱感，想起那些模糊到无法看清的画面，心中隐隐有了一个可怕的猜测。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0526_014",
+        "content": "墨先生似乎看穿了他的心思，苍老的笑声在夜风中回荡：「你在想，是谁在背后操控这一切，对吗？」\n\n他伸出一只虚幻的手，指向头顶的苍穹：「你抬头看看，这片天……它有眼睛。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0526_015",
+        "character_id": "char_chenji",
+        "content": "陈机没有抬头。他知道墨先生在说什么——天道之眼，那个在第八卷才会揭开的恐怖真相。但此刻，他不能表现出任何异常。\n\n「先生的棋局，」他缓缓开口，声音平静得可怕，「究竟是什么？」",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0526_016",
+        "prompt": "墨先生的揭露步步深入，陈机选择……",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0526_016_A",
+            "text": "步步紧逼，索要完整真相",
+            "description": "既然已经开口，就让他一次说清楚。哪怕要付出什么代价，也要知道全部。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能触发某种禁制或反噬",
+            "visible_reward": "或可获得天机录核心秘密",
+            "risk_hint": "未知风险极大",
+            "process_label": "追根究底",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 2
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0526_result_016_A_001",
+                  "content": "话音刚落，墨先生的虚影猛然一颤。那双深邃的眼眸中竟闪过一丝惊惧：「住口！」他低喝一声，声音里第一次带上了真正的情绪，「有些名字，在此界不能轻提。你若执意要问……」他闭上眼，虚影竟开始剧烈扭曲，「罢了，今日到此为止。」"
+                }
+              },
+              {
+                "id": "天机录_ch0526_016_B",
+                "text": "沉默接受，静观其变",
+                "description": "墨先生的话已经透露太多，先消化这些信息，不要打草惊蛇。",
+                "satisfaction_type": "延迟爽",
+                "visible_cost": "可能错失深入了解的机会",
+                "visible_reward": "保存实力，不暴露底牌",
+                "risk_hint": "墨先生可能会认为他怯懦",
+                "process_label": "静待时机",
+                "stat_effects": [],
+                "relationship_effects": [
+                  {
+                    "character_id": "char_moxiansheng",
+                    "dimension": "信任",
+                    "delta": 1
+                  }
+                ],
+                "result_nodes": [
+                  {
+                    "text": {
+                      "id": "天机录_ch0526_result_016_B_001",
+                      "content": "陈机垂眸，做出若有所思之态。墨先生见此，微微点头：「你比老朽想象中更沉得住气。」虚影重新稳固下来，那股扭曲消散于无形，「记住今夜的每一句话。等你准备好了，我们再谈。」"
+                    }
+                  }
+                ],
+                "is_premium": false,
+                "flags_set": [],
+                "requires_flag": null,
+                "forbids_flag": null,
+                "stat_gate": null,
+                "memory_label": null,
+                "branch_route_id": null
+              },
+              {
+                "id": "天机录_ch0526_016_C",
+                "text": "抛出试探：「先生是第几号弃子？」",
+                "description": "既然都是棋子，那就看看这老家伙知道多少，顺便试探他和天机录的真实关系。",
+                "satisfaction_type": "扮猪吃虎",
+                "visible_cost": "可能触犯墨先生禁忌",
+                "visible_reward": "或可试探出墨先生的真实身份",
+                "risk_hint": "墨先生反应将决定后续关系走向",
+                "process_label": "犀利试探",
+                "stat_effects": [
+                  {
+                    "stat": "谋略",
+                    "delta": 2
+                  }
+                ],
+                "relationship_effects": [
+                  {
+                    "character_id": "char_moxiansheng",
+                    "dimension": "敬畏",
+                    "delta": 2
+                  }
+                ],
+                "result_nodes": [
+                  {
+                    "dialogue": {
+                      "id": "天机录_ch0526_result_016_C_001",
+                      "character_id": "char_moxiansheng",
+                      "content": "墨先生愣住了。\n\n那双深邃的眼眸中，罕见地流露出一种复杂至极的神色——有苦涩，有释然，甚至还有一丝……敬意？\n\n「好……好一个几号弃子。」他轻声重复，声音里带着沧桑，「老朽的编号，早已不记得了。但你记住——每一代天机录的传承者，都是上一代的掘墓人。」",
+                      "emotion": "感慨"
+                    }
+                  }
+                ],
+                "is_premium": false,
+                "flags_set": [],
+                "requires_flag": null,
+                "forbids_flag": null,
+                "stat_gate": null,
+                "memory_label": null,
+                "branch_route_id": null
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "天机录_ch0526_017",
+              "content": "每一代天机录的传承者，都是上一代的掘墓人。\n\n这句话如同一盆冰水，从陈机头顶浇下。他想起第一卷时，墨先生曾说过自己是「棋盘守护者」——守护棋盘，而非守护他陈机。那么，他守护的究竟是什么？是等待下一任传承者来终结上一任的使命？",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0526_018",
+              "character_id": "char_moxiansheng",
+              "content": "「你在想什么，老朽一清二楚。」墨先生的声音打断了他的思绪，「但有一件事，你必须明白——老朽与那些高高在上的棋手不同。」\n\n他顿了顿，虚影竟微微躬身：「陈玄当年选中了你，老朽便是你的护道人，而非你的催命鬼。这一点……从未改变。」",
+              "emotion": "郑重"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0526_019",
+              "content": "陈机没有接话。夜风愈发凛冽，吹得他几乎睁不开眼，但他依然一动不动地站在原地，与那道虚幻的身影对视。墨先生说他与那些棋手不同——可谁知道这不是另一种话术？在这盘命运的棋局中，谁又能真正信任谁？",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0526_020",
+              "character_id": "char_moxiansheng",
+              "content": "「罢了，今夜说得太多。」墨先生忽然开口，虚影开始逐渐淡去，「临别之际，老朽送你一句话——」\n\n他的声音越来越远，却字字清晰：\n\n「棋局之中，唯一的自由，是选择何时落子。至于落在哪里……」\n\n他最后看了陈机一眼，那目光中竟带着一丝罕见的温柔：「等你真正想要赢的那一刻，自然会知道。」",
+              "emotion": "深沉"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0526_021",
+              "content": "墨色雾气彻底消散，断崖之上只剩陈机一人。\n\n他独自立于月光之下，仰望那片深邃的夜空。方才的对话如同一把钥匙，打开了某扇尘封已久的门——门后是更加复杂的局面，更加深沉的阴谋，以及……一个他从未想过的真相。\n\n天道之眼，命运棋局，每一代的弃子……\n\n他忽然想起妹妹陈念的脸。那个在天机录预见中永远模糊不清的身影——她的存在，究竟是巧合，还是另一个变数？",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0526_022",
+              "content": "陈机收回思绪，转身向来路走去。月光将他的背影拉得修长，那张平静的面孔下，是翻涌不息的惊涛骇浪。\n\n墨先生今夜透露的信息，他已经全部记在心中。棋局、弃子、天道之眼……这些关键词如同散落的拼图碎片，正在他脑海中缓缓拼凑成一幅骇人的图景。\n\n但最让他在意的，是墨先生离去前那个眼神——那分明是……在看一个将死之人的眼神。",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0526_023",
+              "content": "回到杂役房，陈机没有立刻休息。他点燃那盏快要燃尽的油灯，从怀中取出天机录残页。玉简上的裂纹比昨日又深了几分——这是天命值流逝的痕迹。他盯着那道裂纹看了许久，忽然轻笑一声：「弃子吗……」\n\n他将残页收回怀中，闭上双眼。明日还有很多事要做，苏青瑶那边的调查还在继续，圣宗的动向也需要关注，而那个所谓的命运棋局……\n\n总有一天，他会把这盘棋掀翻。",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0526_024",
+              "content": "窗外夜风渐歇，东方隐约泛起鱼肚白。\n\n陈机躺在那张吱呀作响的木板床上，望着漏风的屋顶，脑海中不断回放着墨先生最后那句话——「等你真正想要赢的那一刻，自然会知道。」\n\n想要赢？\n\n他忽然意识到，自己一直以来小心翼翼地布局、步步为营地算计，真的只是为了「赢」吗？还是说……他只是在拼命挣扎，试图逃脱那早已被写好的命运？\n\n无论如何，今夜的对话让他明白了一件事——从获得天机录的那一刻起，他就已入局。而这盘棋的赌注，是他的命，也是他所有在意之人的命。",
+              "emphasis": "dramatic"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

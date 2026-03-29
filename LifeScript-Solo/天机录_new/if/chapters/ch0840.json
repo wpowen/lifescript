@@ -1,0 +1,507 @@
+{
+  "id": "天机录_ch0840",
+  "book_id": "天机录",
+  "number": 840,
+  "title": "命运黎明",
+  "is_paid": true,
+  "next_chapter_hook": "当那道超越因果的目光彻底锁定陈机的瞬间，他听到了来自万年前的低语——那是终极执棋者布下的第一枚棋子。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0840_001",
+        "content": "玄武宗深处的波动如同一把无形的刀，划破了九州大陆数万年来的因果秩序。陈机站在天青宗废墟之上，脚下的碎石仍带着方才激战的余温，而他的神识却被一种前所未有的压迫感攫住——仿佛有一双眼睛，正从时间的尽头注视着他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_002",
+        "character_id": "char_moxiansheng",
+        "content": "它醒了……比你预想的更快。墨先生的声音从脑海中浮现，带着一丝陈机从未听过的凝重，那不是某个人的意志，而是万年前便已存在的'天道之眼'——它将历代预言者视为棋子，包括你。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_003",
+        "content": "陈机没有回应。他的意识沉入丹田深处，那枚陪伴了他无数生死关头的天机录残页正在剧烈震颤——这不是危机时的躁动，而是一种近乎狂喜的共振，仿佛游子终于等到了归期。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_004",
+        "character_id": "char_chenji",
+        "content": "你想说，这便是你一直等待的时刻？陈机在心中低语，指尖不自觉地抚上胸口那道金色纹路——那是天机录与他灵魂融合的印记，十五年来，它从未如此灼热。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "空间中骤然响起一道超越声音本身的存在感，那不是耳畔的轰鸣，而是直接烙印在神魂深处的震颤：\"陈机——天机录第十七代传承者。\"那道声音没有情绪，却让陈机浑身的汗毛倒竖，\"你篡改了本不该属于你的棋局。\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_006",
+        "content": "陈机缓缓抬头。他看见了——在玄武宗的方向，一只眼眸正缓缓睁开。那瞳孔中没有眼白与虹膜之分，唯有无尽流转的因果丝线编织而成的深渊，而深渊的尽头，是无数被他\"预见\"过的未来正在崩塌。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0840_choice_001",
+        "prompt": "天道之眼质问陈机篡改了不该属于他的棋局，这是历史性时刻——命运的规则正在被改写。面对这超越天道本身的存在，陈机必须做出回应。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0840_c1_1",
+            "text": "直视天道之眼，冷声反问",
+            "description": "以弱者姿态质问强者：若一切皆在你掌控，我的\"篡改\"岂非也在你棋局之内？",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露对天机录的深度掌控",
+            "visible_reward": "震慑天道之眼，获得关键信息",
+            "risk_hint": "可能暴露全部底牌",
+            "process_label": "以退为进，试探终极真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0840_result_c1_1_1",
+                  "content": "陈机迎着那道超越因果的目光，嘴角勾起一丝冷笑：\"前辈既知我篡改了棋局，想必也该知道——被棋子反噬，从来都是棋手最大的疏忽。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0840_c1_2",
+            "text": "保持沉默，激活天机录本体",
+            "description": "不与天道之眼正面交锋，而是将意识沉入天机录核心，等待本体完全觉醒的时机。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "承受更大压迫",
+            "visible_reward": "天机录本体觉醒，与陈机成为真正的伙伴",
+            "risk_hint": "可能被视为怯懦",
+            "process_label": "积蓄力量，等待反击时刻",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0840_result_c1_2_1",
+                  "content": "陈机没有开口。他的意识如潮水般退入丹田深处，触及那枚震颤不止的残页。刹那间，一道温热的力量从残页中涌出，与他的神魂缠绕交融——那是等待了十五年的契约终于完整。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_007",
+        "content": "就在陈机做出选择的刹那，天机录残页骤然绽放出耀眼的金光。那光芒不再局限于丹田，而是冲破了他的肉身，在天地间形成一道横亘万里的金色长河——所有被编织过的因果线在同一瞬间发出共鸣般的颤音。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_008",
+        "character_id": "char_moxiansheng",
+        "content": "它完整了……墨先生的声音颤抖着浮现，十五年了，传承者与天机录终于成为真正的伙伴。陈玄当年没能完成的融合，今日由你实现。此刻的你，已不再是棋子——你是执棋之人。",
+        "emotion": "激动"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "天道之眼的瞳孔骤然收缩。那些由因果丝线编织的深渊中，第一次浮现出类似情绪的波动——那是惊讶，是愤怒，更是一种被冒犯的傲慢。\"你竟敢……\"它的声音中多了从未有过的波动，\"触碰天机录的本源？\"",
+        "emotion": "震怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_010",
+        "content": "陈机感到一股信息流冲入神识——那是天机录本体解封的知识，关于天道之眼的真正来历：万年前，一位超越了大乘期的存在将自身意志分裂，一部分化作天道法则，另一部分则化为这只\"眼睛\"，企图以众生为棋，永恒执掌命运。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_011",
+        "character_id": "char_chenian",
+        "content": "就在此时，一道模糊的影像在陈机眼前闪现——那是陈念的面容，被无数锁链束缚在某个黑暗空间中。她的存在如同一把钥匙，干扰着所有因果的预见，让陈机此刻看到的画面支离破碎、无法连贯。",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_012",
+        "character_id": "char_chenji",
+        "content": "念念……陈机的心神剧烈波动。十五年的布局，无数次的预见未来，都是为了找到她。而此刻，天机录完整觉醒后，他第一次清晰地感应到了妹妹的存在——她在圣宗最深处，被当作\"天命锁钥\"封印着。",
+        "emotion": "心痛"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0840_choice_002",
+        "prompt": "天机录本体觉醒，陈机获得了关于天道之眼的关键真相，同时感应到了妹妹陈念的准确位置。这是打破枷锁的历史性时刻，但天道之眼正在全力压制他。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0840_c2_1",
+            "text": "以天机录本源之力，正面撕裂天道之眼的因果网络",
+            "description": "这是疯狂之举——用完整的天机录本源力量，与天道之眼进行因果层面的对决，可能彻底改写命运的规则。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗50点天命值",
+            "visible_reward": "改写命运棋局规则，震动整个修仙界",
+            "risk_hint": "天命值过低将导致神魂崩溃",
+            "process_label": "以本源对本源，正面决战",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "战力",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0840_result_c2_1_1",
+                  "content": "陈机将天机录本源之力凝聚于指尖，金色的光芒化作一柄无形的剑，直刺向那只深渊般的眼眸。刹那间，九州大陆上空风云变色，无数因果丝线在碰撞中崩断、重组——那是命运规则被改写的轰鸣。\""
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0840_c2_2",
+            "text": "退而求次，先救陈念",
+            "description": "天道之眼不可力敌，但陈念的位置已经锁定。优先救出妹妹，获得\"天命锁钥\"的力量后再与天道之眼决战。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "给天道之眼喘息之机",
+            "visible_reward": "获得陈念，共命buff激活",
+            "risk_hint": "天道之眼可能抢先对陈念下手",
+            "process_label": "战略转移，曲线救国",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0840_result_c2_2_1",
+                  "content": "陈机收回目光，对天道之眼的威压置若罔闻。他的神识锁定圣宗深处那道模糊的锁链，身形一晃便要破空而去——\"想走？\"天道之眼震怒，\"你当我是什么？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0840_c2_3",
+            "text": "与天道之眼谈判，以信息换时间",
+            "description": "利用天机录完整后获得的信息优势，与天道之眼进行博弈——也许万年前的那场棋局，还藏着未被发现的变数。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "获得关键情报，发现终极执棋者的线索",
+            "risk_hint": "可能被天道之眼算计",
+            "process_label": "以情报为筹码，智取",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0840_result_c2_3_1",
+                  "content": "陈机骤然停步，转身直视那只深渊眼眸：\"前辈布局万年，难道不想知道——那把你也当作棋子的人，究竟是谁？\"话音落下，天道之眼的瞳孔剧烈收缩。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_013",
+        "content": "天道之眼的因果网络骤然停滞。那只深渊般的瞳孔中，无数因果丝线疯狂翻涌，像是被触及了某个尘封万年的禁忌。片刻的沉默后，那道超越因果的声音再次响起，却多了一丝连它自己都未曾察觉的……动摇。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_014",
+        "character_id": "char_tiandaozhiyan",
+        "content": "你……知道什么？天道之眼的声音第一次出现了裂痕。万年前的那场棋局，它从未向任何人提起——它以为自己才是唯一的执棋者，却不知在更久远的过去，它自身也不过是某人的一枚棋子。",
+        "emotion": "动摇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_015",
+        "content": "陈机感受到天机录本体传来的信息洪流——那是墨先生在关键时刻解封的最后一层真相：天道之眼不过是终极执棋者布下的第一枚棋子。真正的执棋者，从未出现在任何因果线之中，因为它的存在本身，便超越了\"因果\"的定义。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_016",
+        "character_id": "char_moxiansheng",
+        "content": "这就是为什么天机录必须完整——墨先生的声音疲惫却欣慰，因为只有完整的天机录，才能窥见那位终极执棋者的冰山一角。陈玄当年差一步便能触及真相，却功亏一篑……今日，轮到你了。",
+        "emotion": "期待"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0840_choice_003",
+        "prompt": "终极真相的碎片已经浮现。天道之眼是被人操控的棋子，而那位终极执棋者隐藏在因果之外。这是历史性时刻——陈机必须决定如何利用这个情报。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0840_c3_1",
+            "text": "向天道之眼抛出橄榄枝：合作对抗真正的敌人",
+            "description": "将天道之眼从\"敌人\"转化为\"盟友\"——毕竟它也是被利用者。让敌人变成战友，是陈机最擅长的棋局。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要展示足够诚意",
+            "visible_reward": "天道之眼暂时退让，获得喘息之机",
+            "risk_hint": "天道之眼可能假意合作后反噬",
+            "process_label": "化敌为友，共谋大计",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -30
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0840_result_c3_1_1",
+                  "content": "陈机负手而立，金光在他周身流转如龙蛇飞舞：\"前辈布局万年，却不知自己也是棋子——这棋局，何不让我们联手掀翻？\"天道之眼的瞳孔剧烈收缩，那道超越因果的存在沉默了。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0840_c3_2",
+            "text": "趁天道之眼动摇，以天机录本源彻底压制它",
+            "description": "敌人动摇的瞬间便是最佳攻击时机。用完整的天机录本源力量，将天道之眼暂时封印，为最终决战争取时间。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "天道之眼暂时退隐，命运棋局出现真空期",
+            "risk_hint": "可能激怒终极执棋者提前现身",
+            "process_label": "趁胜追击，封印大患",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -40
+              },
+              {
+                "stat": "战力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 60
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天录_ch0840_result_c3_2_1",
+                  "content": "陈机不再犹豫。他将天机录本源之力催发至极致，金色的长河化作无数锁链，向那只深渊眼眸缠绕而去。天道之眼发出震怒的咆哮：\"你敢——！\"但它的因果网络已在崩解，瞳孔中第一次浮现出恐惧。\""
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_017",
+        "content": "就在金色锁链即将完全束缚天道之眼的刹那，一道超越时间与空间的声音骤然响起——那声音不在任何方位，却同时存在于所有因果之中。陈机的预见在这一刻被彻底打断，他看见的最后一个画面，是一只苍白的手，正从虚空中缓缓伸出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_018",
+        "character_id": "char_tiandaozhiyan",
+        "content": "它来了……天道之眼的声音中竟带着一丝……敬畏？那只深渊瞳孔疯狂转动，挣脱了部分金色锁链的束缚，\"终极执棋者……万年了，你终于肯现身？\"它的质问中混杂着愤怒与恐惧，却再无方才俯瞰众生的傲慢。",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_019",
+        "content": "陈机感到一股前所未有的压力。那不是来自天道之眼的威压，而是一种更深沉、更古老、更超越认知的存在感。天机录本体在他神识中疯狂震颤，像是在警告，又像是在……迎接。墨先生的声音颤抖着浮现：\"它就是万年前布下这盘棋的人——终极执棋者。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0840_020",
+        "character_id": "char_chenji",
+        "content": "陈机深吸一口气，将天机录的力量收回丹田。金光逐渐收敛，他没有继续进攻天道之眼，而是负手而立，目光穿透因果的迷雾，直视那只正从虚空中伸出的苍白之手。\"我等你很久了——\"他的声音平静得可怕，\"布局万年的执棋者。\"",
+        "emotion": "冷傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_021",
+        "content": "苍白之手停在半空，一道声音从那手中传出，温和得近乎慈悲，却让陈机的神魂不由自主地战栗：\"天机录第十七代传承者……你比我预想的更出色。\"顿了顿，那声音继续道，\"但你可知，你所追求的一切——你妹妹、你师父、你以为能战胜的命运——从一开始，便在我的棋局之中？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_022",
+        "content": "九州大陆在这一刻陷入了诡异的寂静。天道之眼停止了挣扎，玄武宗深处的诡异波动暂归平息，就连远在魔道圣宗的陈念，似乎也感应到了什么，模糊的预见画面在她眼前一闪而过——那是一个年轻人的背影，正独自面对着整个因果长河的源头。\n\n陈机站在天青宗废墟之上，衣袂被狂风吹得猎猎作响。他的眼中有冷静，有决绝，更有一丝连他自己都未曾察觉的……期待。十五年了。从一个被视为废物的杂役弟子，到如今执掌完整天机录、敢于直面终极执棋者的存在——这条路，他走得比任何人都孤独，却也走得比任何人都彻底。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0840_023",
+        "content": "那就让我看看——\"陈机缓缓抬手，天机录本体的金光再次凝聚成形，却不再是攻击的姿态，而是一卷缓缓展开的金色书卷，\"你那万劫不复的棋局，究竟有没有我陈机的一席之地。他的声音不高，却穿透了因果的迷雾，回荡在九天十地的每一个角落。\n\n历史在这一刻定格。命运的规则已被改写，新的棋局即将展开。而陈机，这位曾经的废物弟子，正站在棋盘的中央，等待着与终极执棋者的第一次正面交锋。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

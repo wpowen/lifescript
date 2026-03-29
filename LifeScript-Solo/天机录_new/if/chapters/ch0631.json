@@ -1,0 +1,423 @@
+{
+  "id": "天机录_ch0631",
+  "book_id": "天机录",
+  "number": 631,
+  "title": "裂隙反噬",
+  "is_paid": true,
+  "next_chapter_hook": "那四个字的墨迹尚未干透，陈机却感到一阵彻骨的寒意自尾椎攀升至后颈——有人在暗中窥视着他，而且这个人，知晓他所有的秘密。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0631_001",
+        "content": "天青宗外围三百里，一座不起眼的荒村。破败的祠堂内，陈机盘膝坐于积满灰尘的蒲团之上，面前摊开一卷残缺的古籍。他面容枯槁，鬓角染了几分灰白，看起来像个落魄的散修。三日前那场假死戏码，骗过了所有人——除了她自己。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_002",
+        "content": "天机录残页上的字迹微微闪烁，那是墨先生残魂尚未完全苏醒的征兆。陈机凝视着那些若隐若现的符文，指尖轻轻摩挲纸面。假死之后，他的天命值骤降至三百二十点，距离墨先生警告的临界点，只剩下一百八十点的余量。每一分消耗，都如同在他心脏上剜下一刀。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0631_003",
+        "character_id": "char_chenji",
+        "content": "墨先生，您老倒是睡得安稳。晚辈这边可是焦头烂额得很。",
+        "emotion": "自嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_004",
+        "content": "古籍深处传来一声苍老的嗤笑，墨先生的声音如游丝般飘出：\"小鬼，你以为老夫愿意看着你胡闹？假死脱身虽是妙计，可你暴露了天机录残页的气息——那帮嗅着血腥味的秃鹫，已经动了。\"话音未落，祠堂外的枯枝上，几只乌鸦骤然惊飞。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_005",
+        "content": "陈机眯起眼睛，神识悄然延伸出去。荒村外围，至少有三道气息在游弋——一道带着玄武宗特有的厚重土元力，一道散发着魔道特有的阴煞之气，还有一道……极其隐晦，像是皇朝暗卫特有的气息。三方势力，竟在同一时间摸到了这里。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0631_006",
+        "prompt": "三方势力同时逼近，陈机需要在暴露之前做出选择：是冒险提前联络苏青瑶，还是先设法引开这些探子？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0631_006a",
+            "text": "冒险联络苏青瑶",
+            "description": "苏青瑶是唯一察觉假死真相的人，现在只有她能提供内部情报。但联络她意味着暴露自己的位置。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "承受被追踪的风险",
+            "visible_reward": "获得皇朝内部第一手情报",
+            "risk_hint": "若被第三方察觉，局面将彻底失控",
+            "process_label": "使用隐秘传音符联系苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_006a_1",
+                  "content": "陈机指尖凝出一枚微弱的灵光，以特殊频率注入传音符中。三息之后，符箓燃尽，一道冰冷的女声在他识海响起：\"你还敢联系我？知不知道外面已经闹翻天了！\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0631_result_006a_2",
+                  "character_id": "char_suqingyao",
+                  "content": "皇朝暗卫已经介入，他们在追查你假死的真相。更麻烦的是……凌渊那老狐狸，似乎也在暗中推波助澜。",
+                  "emotion": "焦急"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶主动提供皇朝内部情报",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_006b",
+            "text": "布下迷阵引开探子",
+            "description": "利用天机录残页残留的气息，布下多个虚假踪迹，将三方势力的注意力引向不同方向。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗天机录气息，可能引起更大觊觎",
+            "visible_reward": "争取到更多布局时间",
+            "risk_hint": "天机录气息一旦被锁定，后患无穷",
+            "process_label": "布置三重幻影阵法",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_006b_1",
+                  "content": "陈机双手结印，将天机录残页上的一缕气息抽离，化作三道虚假轨迹向不同方向散去。他嘴角微扬：\"想抓我？先学会分辨真假再说。\"片刻后，祠堂外的三道气息果然开始分化。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_006c",
+            "text": "静待时机观察来者",
+            "description": "不主动出击，以不变应万变，观察这三方势力的目的和相互关系，从破绽中寻找脱身之机。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过最佳撤退时机",
+            "visible_reward": "获得更完整的情报网络图",
+            "risk_hint": "若三方同时逼近，退路将被彻底封死",
+            "process_label": "收敛气息潜伏观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_006c_1",
+                  "content": "陈机收敛全部气息，如一块顽石般融入祠堂阴影中。三道气息逐渐逼近，他屏息凝神，听到了外围传来的交谈声——那玄武宗的弟子，竟在向魔道之人询问\"那个废物\"的下落。废物二字入耳，陈机眼底闪过一丝冷意。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_007",
+        "content": "祠堂外，脚步声渐近。陈机透过破损的窗棂缝隙，看见一名身着玄武宗制式铠甲的青年正四处张望。韩烈的人——那张狂傲的脸，他隔着虚空都能认出来。更远处，一道纤细的黑影在树影间若隐若现，是魔道圣宗的人。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0631_008"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_009",
+        "content": "陈机心头一沉。时空裂隙的波动……比预想中来得更快、更猛烈。那股超越天道之眼的力量，究竟来自何方？就在此时，他怀中的传讯玉简骤然发烫——那是他与夜清约定的紧急联络方式。魔道圣女，为何此时联系他？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0631_010",
+        "prompt": "夜清的紧急联络与时空裂隙的异变几乎同时发生，陈机必须在有限的时间内做出判断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0631_010a",
+            "text": "优先查看夜清的讯息",
+            "description": "魔道圣宗的消息往往关乎大局，夜清既然动用紧急联络，必有要事。先情报后应对。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过观察三方动向的时机",
+            "visible_reward": "获得魔道视角的关键情报",
+            "risk_hint": "夜清的情报真实性需自行判断",
+            "process_label": "激活夜清的传讯玉简",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0631_result_010a_1",
+                  "character_id": "char_yeqing",
+                  "content": "陈机，天机录的气息在裂隙边缘失控了！圣宗长老说，那不是天道之眼的力量——是更古老的东西。它在……它在呼唤你。",
+                  "emotion": "惊惧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清预警：裂隙中有超越天道之眼的存在在呼唤陈机",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_010b",
+            "text": "冒险动用天机录预见",
+            "description": "消耗10点天命值，预见未来三时辰内三方势力的动向与时空裂隙的进一步变化。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天命值-10，当前剩余310点",
+            "visible_reward": "获得完整的三时辰预知图",
+            "risk_hint": "天命值已逼近危险区域，慎用！",
+            "process_label": "激活天机录预见能力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_010b_1",
+                  "content": "天机录残页骤然绽放出刺目的金芒，陈机眼前一阵恍惚。画面浮现——时空裂隙在两个时辰后急剧扩张，玄武宗与魔道之人在荒村火并，而他自己……被一道无法辨认的黑影堵在了祠堂后山。那黑影的轮廓，与陈念失踪前的描述惊人相似。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 200
+            },
+            "memory_label": "预见显示：陈念可能与裂隙异变有关",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_011",
+        "content": "祠堂外的脚步声骤然停止。那玄武宗弟子似乎察觉到了什么，朝祠堂方向看来。陈机立刻中断传讯，将全部气息收敛至若有若无。墨先生的声音在识海响起：\"小鬼，皇朝暗卫的那个……走了。但他的气息，分明是往天青宗方向去的——凌渊那老东西，怕是等不及了。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0631_012",
+        "character_id": "char_chenji",
+        "content": "凌渊……老狐狸。陈机眸光微冷，假死之后最怕的不是敌人明攻，而是暗箭。他原本计划以新身份潜伏半月，等风头过去再做打算。如今看来，时间不等人。",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_013",
+        "content": "就在此时，一道细微的破空声从祠堂破损的窗棂穿透而入。陈机瞳孔骤缩——那是一枚没有任何灵力波动的普通飞刀，刀尖上钉着一张泛黄的纸笺。飞刀入木三分，纸笺却纹丝不动，这份控制力……来者不善。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0631_014",
+        "prompt": "神秘飞刀与纸笺的突然出现，让陈机意识到有第三方势力介入了这场博弈。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0631_014a",
+            "text": "冷静分析纸笺内容",
+            "description": "来者既然能神不知鬼不觉地送达讯息，必然有所凭仗。先看内容，再做判断。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能陷入对方设下的心理陷阱",
+            "visible_reward": "获取神秘势力的第一手信息",
+            "risk_hint": "对方似乎对陈机的行踪了如指掌",
+            "process_label": "谨慎取下纸笺查看",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_014a_1",
+                  "content": "陈机以神识探查确认无毒无咒后，方才将纸笺取下。展开一看，四個墨字触目惊心——\"天眼在望\"。字迹古朴苍劲，每一笔都蕴含着说不清道不明的道韵。这四个字的分量，让陈机后背瞬间被冷汗浸透。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_014b",
+            "text": "追踪飞刀来源",
+            "description": "对方敢送上门来，就说明他们并不惧怕陈机的反击。追踪飞刀来源，或许能找到这神秘势力的线索。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能暴露自身位置",
+            "visible_reward": "获得对方据点情报",
+            "risk_hint": "来者实力深不可测，正面交锋凶多吉少",
+            "process_label": "循着飞刀轨迹追踪",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_014b_1",
+                  "content": "陈机循着飞刀轨迹掠出祠堂，神识全力搜索。然而方圆百丈之内，除了几片被削落的枯叶，再无任何异常。来者来去无踪，如同鬼魅。墨先生的声音再次响起，带着前所未有的凝重：\"这气息……像是天道之眼，却又不完全是。它在看着你，从一开始就在看着你。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_015",
+        "content": "夜色渐深，荒村中只剩风声与虫鸣。陈机立于祠堂残垣之上，手中那张纸笺被晚风吹得猎猎作响。\"天眼在望\"——这四个字如同一道无形的枷锁，将他牢牢钉在了命运的棋盘之上。墨先生说，天道之眼在卷八才会真正显现，可眼下这痕迹……难道一切早已提前？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_016",
+        "content": "陈机忽然低低笑了一声。那笑声在寂寥的夜里显得格外瘆人，却又透着一股破釜沉舟的决绝。他将纸笺收入怀中，转身没入夜色深处。既然天道之眼已经在望，那他便要让这双眼睛，好好看看——一个废物，是如何掀翻整盘棋局的。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_017",
+        "content": "三日后，天青宗山门外。一个面容平凡的散修青年递交了入宗申请，神情拘谨，修为低微，负责登记的弟子连正眼都懒得瞧他一下。废物陈机已死，活下来的只是一个想在天青宗讨口饭吃的无名之辈。至于那些暗中搜寻的势力……让他们找去吧。找到的，只会是一具他们永远抓不到的幽灵。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_018",
+        "content": "那四个字的墨迹尚未干透，陈机却感到一阵彻骨的寒意自尾椎攀升至后颈——有人在暗中窥视着他，而且这个人，知晓他所有的秘密。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

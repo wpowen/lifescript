@@ -1,0 +1,427 @@
+{
+  "id": "天机录_ch0338",
+  "book_id": "天机录",
+  "number": 338,
+  "title": "智破迷阵",
+  "is_paid": true,
+  "next_chapter_hook": "就在那张地图残片上，第七层的标注赫然与一个被岁月尘封的名字相连——陈玄，天机录的创造者，竟与这座秘境有着如此直接的关联。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0338_001",
+        "content": "幽蓝的光雾如潮水般涌来，将三人吞没。陈机只觉得眼前一花，身体便已踏入另一重天地。四周是茫茫白雾，看不见天，看不见地，唯有脚下一条蜿蜒的石径通向未知深处。空气中弥漫着一股若有若无的檀香，沁人心脾，却又令人莫名警觉。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_002",
+        "character_id": "char_suqingyao",
+        "content": "这是幻阵第一层——心境试炼。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_003",
+        "content": "苏青瑶环顾四周，指尖凝聚出一缕灵力探向前方，却如泥牛入海，激起层层涟漪后消失无踪。她柳眉微蹙，低声道：\"此阵以心神为媒，强行破阵只会触发更危险的机关。我们必须找到阵眼所在，以巧破力。\"说罢，她侧目看向陈机，目光中带着几分审视，\"陈师弟，你有何看法？\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_004",
+        "character_id": "char_chenian",
+        "content": "等等，这阵纹的走势……",
+        "emotion": "专注"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_005",
+        "content": "陈念忽然蹲下身，指尖轻触脚下的石径。一道细微的光芒顺着她的手指蔓延开来，在青石板上勾勒出一个繁复的阵纹图案。那图案如流水般灵动，却又在某处戛然而止，透出一丝不协调的僵硬。\"这里，阵纹在此处断裂，必是有人后加的。\"她抬头看向陈机，眼中闪烁着兴奋的光芒，\"哥，这阵法被人动过手脚！\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_006",
+        "content": "陈机心中微动。天机录的气息在感知中愈发清晰，那呼唤仿佛就在咫尺之遥，却又隔着一层看不见的屏障。他不动声色地凝神感知，识海中残页微微发热，一幅模糊的画面浮现——雾中藏有三座石碑，分别刻着\"智\"、\"力\"、\"合\"三字。碑后各有一条路径，唯有\"智\"字碑后的道路通向真正的阵眼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_007",
+        "content": "三座石碑在雾中若隐若现。\"智\"字碑古朴苍劲，碑身刻满蝌蚪般的符文；\"力\"字碑则浑厚霸道，表面的裂纹中隐隐透出煞气；\"合\"字碑最为普通，却散发着柔和的微光。幻阵的考验如此直白——选择即命运。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0338_choice001",
+        "prompt": "三座石碑横亘眼前，阵法的考验降临。走智道以巧破力，还是信蛮力以势压阵，亦或是让团队各展所长？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "智取",
+            "text": "以智破阵",
+            "description": "借天机录之力看穿幻象本质，找到阵眼真正所在，以巧劲破局。风险最低，但需消耗天命值5点。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天命值 -5",
+            "visible_reward": "完美破解幻阵，获得地图残片，队友零伤亡",
+            "risk_hint": "消耗珍贵的天命值",
+            "process_label": "探查阵纹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_智取_001",
+                  "content": "陈机闭目凝神，意识沉入识海深处。残页上的符文如活物般游动，一道精纯的神识探入脚下的阵纹之中。刹那间，他“看”到了——阵法的经脉如蛛网般错综复杂，而在正中位置，有一个拳头大小的光点正在缓缓跳动，那便是阵眼所在。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0338_result_智取_002",
+                  "character_id": "char_chenian",
+                  "content": "哥，我明白了！阵纹在第三息处有个转折——向右偏移三寸，对，就是那里！",
+                  "emotion": "兴奋"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "幻阵_智破"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "强破",
+            "text": "强行破阵",
+            "description": "以绝对的力量碾压幻阵，触发阵法反噬的风险极高，但若成功可震慑队友，展示绝对实力。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能触发机关陷阱",
+            "visible_reward": "震慑全场，队友刮目相看",
+            "risk_hint": "高风险：可能触发阵内机关，造成己方伤亡",
+            "process_label": "蛮力碾压",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_强破_001",
+                  "content": "苏青瑶眉心一跳，挡在陈机身前，素手扬起便要凝聚灵力。\"不可！\"陈念急声道，\"这阵法的反击机制极为诡异，强行破阵会让——\"话音未落，石碑轰然震动，一道凌厉的剑气从\"力\"字碑中激射而出！"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "幻阵_强破触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "团队配合",
+            "text": "团队配合",
+            "description": "发挥各自特长：苏青瑶正面牵制，陈念解析阵纹，陈机寻找破绽。三人合力，稳扎稳打。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耗时较长",
+            "visible_reward": "团队默契提升，三人均有收获",
+            "risk_hint": "进度较慢，但零风险",
+            "process_label": "分工协作",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 4
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_团队配合_001",
+                  "content": "苏青瑶点点头，指尖凝聚出三道灵剑虚影，分别射向三座石碑的底座。陈念则闭目感悟阵纹的流动规律，时而在地上比划，时而摇头否定。陈机站在原地，看似无所事事，实则暗中以天机录的气息牵引着两人的配合节奏。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0338_result_团队配合_002",
+                  "character_id": "char_suqingyao",
+                  "content": "原来如此——三碑互为犄角，破解的钥匙不是力量，而是找到它们的共鸣点！",
+                  "emotion": "恍然大悟"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "幻阵_团队配合"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_008",
+        "content": "幻阵应声而动，白雾如退潮般消散，露出阵心所在。一座古朴的石台矗立眼前，台上放着一枚泛着幽光的玉简与一株通体晶莹的灵药。苏青瑶眼疾手快，一把将灵药收入囊中——那是罕见的\"凝神露\"，对突破瓶颈有奇效。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_009",
+        "character_id": "char_suqingyao",
+        "content": "这株凝神露少说值三千灵石，陈师弟倒是大方。",
+        "emotion": "意外"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_010",
+        "content": "陈机不答，径直走向石台。他的目光落在那枚玉简之上，伸手取过，神识探入——一幅残破的地图在识海中徐徐展开。秘境共分九层，而他们目前所在不过第一层。真正令陈机心跳加速的是地图尽头那个标注：第七层，赫然写着\"陈\"字。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_011",
+        "content": "陈念凑过来看了一眼，小脸顿时变了颜色。\"哥，这个‘陈’字……和咱们家的族徽好像。\"她的声音微微发颤，\"难道这座秘境，和我们失踪那一年……有关？\"陈机没有回答。他的手指无意识地摩挲着玉简边缘，心中翻涌着惊涛骇浪。陈玄，天机录的创造者，这个名字在他的脑海中不断回响，与父亲失踪前的只言片语渐渐重叠。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0338_choice002",
+        "prompt": "地图揭示了惊人真相，而那道呼唤依旧在识海深处回响。如何继续？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "立即探索",
+            "text": "趁热打铁直取第七层",
+            "description": "线索就在眼前，不容错过。立刻带领团队深入秘境，追查陈玄留下的线索。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "准备不足，可能遭遇未知危险",
+            "visible_reward": "第一时间接触核心秘密",
+            "risk_hint": "前方可能有超越当前实力的机关或守护",
+            "process_label": "深入秘境",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -2
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_立即探索_001",
+                  "content": "苏青瑶一把拉住陈机的袖子，神色罕见地严肃起来。\"陈师弟，你知道自己在说什么吗？第一层的幻阵我们都险些栽跟头，第七层……\"她深吸一口气，\"你我现在的实力，去了就是送死。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_直取第七层"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "稳扎稳打",
+            "text": "稳扎稳打逐层推进",
+            "description": "按部就班清理各层机关，一来可以继续搜刮资源强化队伍，二来能对秘境有更深入的了解。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耗时较长",
+            "visible_reward": "队伍实力稳步提升，为最终探索积蓄力量",
+            "risk_hint": "可能夜长梦多，被其他势力抢先",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "财富",
+                "delta": 1500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0338_result_稳扎稳打_001",
+                  "character_id": "char_suqingyao",
+                  "content": "这才对。",
+                  "emotion": "赞许"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_稳扎稳打_002",
+                  "content": "苏青瑶的眼中闪过一丝赞许。陈机的沉稳让她稍稍安心——这个师弟虽看似废物，实则心思缜密得可怕。她取出一枚玉瓶，倒出一粒丹药递给陈念：\"这是培元丹，接下来几日你与我们一同探索，路上好好研读那阵法。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_稳扎稳打"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_012",
+        "content": "正当众人商议之际，陈机识海中的残页再次震动。那道呼唤变得前所未有的清晰，仿佛有一只无形的手正穿过重重阵纹，轻轻叩响他的神魂。\"来……来……\"苍老而疲惫的声音在意识深处响起，\"我等了你……很久了……\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_013",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的声音骤然响起，带着一丝罕见的凝重：\"小子，那不是幻象。是天机录的上一任主人留下的残念，就在第七层深处。他……在等你。\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_014",
+        "content": "陈机的瞳孔骤然收缩。上任主人？那岂不是说，这道残念与陈玄本人有着直接关联？他的呼吸急促起来，脑海中闪过父亲临终前的画面——\"机儿，记住，天机录会选择它的主人……当它完全觉醒之日，一切真相都将大白……\"真相，就藏在第七层。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_015",
+        "content": "陈念察觉到哥哥的异样，伸手握住他的手掌。少女的手心微微发凉，却传递着无声的支持。\"哥，不管前面是什么，我都陪着你。\"她轻声说道，眼中闪烁着坚定的光芒。苏青瑶在一旁看着这对兄妹，心中莫名涌起一股说不清道不明的情绪——这个废物师弟，究竟还藏着多少秘密？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_016",
+        "content": "陈机深吸一口气，将心中的激荡压下。他抬头望向秘境深处，那里白雾茫茫，看似平常无奇，却仿佛藏着一头蛰伏万年的巨兽。第七层，陈玄的遗迹，天机录的秘密——所有的线索都指向同一个方向。他转身看向两位同伴，嘴角勾起一抹意味深长的弧度。\"既然来了，总要走到底才算不虚此行。\"他顿了顿，眼中闪过一丝精光，\"不过，饭要一口一口吃，路要一步一步走。先把前面几层的资源搜刮干净，再去会会那位‘故人’。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_017",
+        "content": "苏青瑶忍不住轻笑出声：\"好一句‘会会故人’，陈师弟倒是好气魄。\"她收起方才的凝重，眉眼间多了几分玩味，\"行，我倒要看看你这废物皮囊里，还能倒出多少斤两。\"陈念在一旁捂嘴偷笑，却在看到哥哥投来的目光后立刻装作什么都没听见。三人的身影渐渐没入第二层的入口，欢声笑语中，一场更大的冒险悄然启程。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_018",
+        "content": "就在三人踏入第二层的那一刻，远处云雾之中，一道凌厉的目光穿透层层屏障，直直落在陈机背上。那目光中带着审视，带着算计，更带着一丝不易察觉的杀意。天青宗老掌门凌渊的身影在云端若隐若现，他看着陈机离去的方向，嘴角勾起一抹阴冷的弧度。\"有意思……天机录的新主人，果然不简单。\"他喃喃自语，声音被风吹散，\"不过，越是精彩的游戏，结局才越是有趣。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_019",
+        "content": "而就在那张泛黄的地图残片上，第七层的标注赫然与一个被岁月尘封的名字相连——\"禁区·陈\"。陈玄，天机录的创造者，这个名字在修真界的历史中早已被刻意抹去，如今却以这样一种方式重见天日。陈机的脚步顿了一瞬，随即便如常踏入下一层迷宫。他不知道的是，一双看不见的眼睛正穿透时间与空间，静静注视着他的每一步行动。命运的棋局已然铺开，而他，究竟是棋子，还是那执棋之人？",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

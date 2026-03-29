@@ -1,0 +1,511 @@
+{
+  "id": "天机录_ch0884",
+  "book_id": "天机录",
+  "number": 884,
+  "title": "新的开始",
+  "is_paid": true,
+  "next_chapter_hook": "天机录上的金色纹路猛然亮起，一行冰冷的字迹浮现：终极棋手的下一步棋，落在皇都。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0884_001",
+        "content": "那道低语如冰锥刺入神魂，陈机浑身僵住，仿佛被一只无形的手攥住了心脏。“你……终于走到这一步了。”那声音苍老而疲惫，却带着一丝说不清道不明的欣慰。墨先生的残魂在天机录第一页微微颤动，幽幽金光中浮现出一张模糊的面孔。“我等这一天，等了八百年。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_002",
+        "character_id": "char_moxiansheng",
+        "content": "“八百年？”陈机强压下翻涌的情绪，嗓音沙哑，“你到底还藏了多少事？”",
+        "emotion": "压抑着愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_003",
+        "content": "墨先生的面孔在金光中若隐若现，嘴角竟扯出一丝苦涩的笑意。“该说的，我从未隐瞒。只是有些真相……时机未到，说出来便是害你。”他顿了顿，声音低沉下去，“你方才触碰命运共鸣，可知自己开启了怎样的潘多拉魔盒？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_004",
+        "character_id": "char_chenji",
+        "content": "“害我？”陈机冷笑一声，眸中寒光乍现，“我从废柴爬到今天，哪一步不是在刀尖上跳舞？”他抬手，天机录残页在掌心嗡嗡震颤，“说吧，我受得起。”",
+        "emotion": "冷傲且坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_005",
+        "content": "墨先生沉默片刻，金光忽地一盛。天机录残页剧烈抖动，竟自行翻至一页从未显现过的空白处。墨迹如活物般在纸面上游走，一行古篆缓缓浮现：天机录·完整版显现。“这是……第二页。”墨先生的声音微微颤抖，“命运共鸣打通了最后一层封印。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_006",
+        "content": "陈机盯着那行古篆，瞳孔骤缩。他能清晰感知到天机录与体内那股魔道之力正在以一种诡异的频率共振——不是冲突，而是交融！夜清那日种下的魔道迷雾，此刻竟化作一道道暗紫色的丝线，与天机录的金光缠绕在一起。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_007",
+        "character_id": "char_moxiansheng",
+        "content": "“天机录与魔道之力融合，这本是禁忌。”墨先生的声音带着几分凝重，“但你做到了。代价是——你的天命值消耗速度会增加三成。”",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_008",
+        "character_id": "char_chenji",
+        "content": "“三成？”陈机嗤笑出声，眸中闪过一丝锋芒，“我用天机录预见未来，每次才消耗五点。三成不过是一点五……这点账我还算得清。”他活动了一下手腕，语气淡然，“说吧，这融合给我带来了什么？”",
+        "emotion": "算计精明"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_009",
+        "content": "墨先生凝视他片刻，眼中竟浮现一丝赞许。“果然是你。”金光一闪，天机录完整版上的墨迹开始剧烈变化，三条截然不同的路径如三条蜿蜒的长河，在纸面上徐徐展开。第一条线：以力破局，以绝对的武力碾压终极棋手。第二条线：以谋定天，以终极棋手的棋路反噬其身。第三条线：以身入局，融入天道，成为新的执棋人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0884_choice_001",
+        "prompt": "三条结局线摆在眼前，陈机需要做出选择。每一条路都意味着不同的风险与收获。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "path_force",
+            "text": "以力破局",
+            "description": "集结所有力量，正面碾压终极棋手。风险最高，但回报也最直接——彻底打破命运的枷锁。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值消耗翻倍，众盟友可能折损",
+            "visible_reward": "解锁天机录·终式：天命碾压",
+            "risk_hint": "若失败，所有人将陪葬",
+            "process_label": "破釜沉舟",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_path_force_001",
+                  "content": "陈机盯着第一条路径，眸中闪过一丝炽热。他伸出手，指尖点在那条金色的长河上，低声道：“以力破局……我喜欢。”话音未落，天机录猛然一震，金光如潮水般涌入他体内，四肢百骸都在沸腾。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "path_force_selected"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "path_scheme",
+            "text": "以谋定天",
+            "description": "反向推演终极棋手的布局，以其人之道还治其人之身。这条路最符合陈机的风格，但需要耗费大量时间布局。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要深入虎穴，一旦暴露将万劫不复",
+            "visible_reward": "解锁天机录·禁式：棋盘推演",
+            "risk_hint": "若被终极棋手察觉，计划将彻底暴露",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_path_scheme_001",
+                  "content": "陈机沉吟片刻，手指在第二条路径上缓缓划过。暗紫色的魔道之力顺着他的指尖渗入天机录，一幅模糊的棋盘虚影在空气中浮现。“以谋定天……”他嘴角勾起一抹冷笑，“这才是我的主场。”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "path_scheme_selected"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 75
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "path_sacrifice",
+            "text": "以身入局",
+            "description": "融入天道意志，从棋子变为棋盘本身。这条路最危险，但也最彻底——彻底改写规则。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能失去自我意识，永远困于天道之中",
+            "visible_reward": "解锁天机录·极式：天道执笔",
+            "risk_hint": "若失败，灵魂将永远消散",
+            "process_label": "破釜沉舟",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_path_sacrifice_001",
+                  "content": "陈机看着第三条路径，沉默良久。他的手悬在半空，指尖微微颤抖。这条路太险了，可若成功……他深吸一口气，眸中闪过一丝决绝。“若能改写规则，区区自我又算得了什么？”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "path_sacrifice_selected"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_010",
+        "content": "就在三条路径渐渐稳定之际，天机录再次剧烈震颤。完整版下方，一行极淡的灰色字迹缓缓浮现，笔迹歪歪扭扭，仿佛出自另一人之手——那是陈机从未见过的笔迹，却让他头皮一阵发麻。“陈机，你以为这是选择？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_011",
+        "character_id": "char_chenji",
+        "content": "“这字迹……”陈机瞳孔猛缩，声音不自觉地压低，“终极棋手？”",
+        "emotion": "震惊且警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_012",
+        "content": "灰色字迹仿佛听到了他的话，笔画竟微微蠕动，像是活物一般扭动着身躯，组成了新的文字：“每一条路，都是我为你铺好的。你选哪条，都在我的棋盘上。”陈机只觉一股寒意从脚底窜上天灵盖。八百年的布局，他以为自己已是执棋人，原来……还是棋子？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0884_choice_002",
+        "prompt": "终极棋手的嘲讽赤裸裸地摆在眼前，陈机必须证明自己并非任人摆布的棋子。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "defy",
+            "text": "言语反击",
+            "description": "冷冷一笑，当面嘲讽终极棋手的狂妄——能被人看到的棋局，就已经不是完美的棋局了。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能彻底激怒终极棋手",
+            "visible_reward": "逼出终极棋手露出更多破绽",
+            "risk_hint": "对方可能提前发难",
+            "process_label": "以言破局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0884_result_defy_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机忽然放声大笑，笑声在空旷的识海中回荡。他盯着那行灰色字迹，眸中寒光凛冽：“能被我看到的棋局，你确定你还赢定了吗？”他伸手，指尖点在第一条路径上，“这一条，我选。以力破局——破的，就是你这张棋盘。”",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "defied_ultimate_player"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "silent",
+            "text": "沉默蓄势",
+            "description": "一言不发，将这口气硬生生咽下。真正的杀招，永远留到最后——记住这份羞辱，届时加倍奉还。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时隐忍，承受心理压力",
+            "visible_reward": "获得隐藏状态：卧薪尝胆——后续对终极棋手的伤害提升20%",
+            "risk_hint": "可能被认为是软弱",
+            "process_label": "暗中布局",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_silent_001",
+                  "content": "陈机没有说话。他只是静静地看着那行灰色字迹，眸中的杀意如深海暗流，汹涌却无声。他在心底默默记下：终极棋手……我记住了。等到终局那一天，我会让你知道什么叫“请君入瓮”。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hidden_grudge_formed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_013",
+        "content": "灰色字迹蠕动了片刻，似乎在审视陈机的反应。片刻后，它再次变换，组成了新的语句：“有点意思。但你妹妹在我手中，你确定不先救她？”陈念！陈机的瞳孔骤然收缩，指节捏得咔咔作响。这个名字，是他最后的软肋，也是终极棋手手中最锋利的刀。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_014",
+        "character_id": "char_moxiansheng",
+        "content": "“别冲动。”墨先生的声音突然响起，带着几分急切，“终极棋手最擅长的就是以情乱智。陈念的确在圣宗手中，但你若因此乱了方寸，正中他的下怀。”",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_015",
+        "character_id": "char_chenji",
+        "content": "陈机深吸一口气，缓缓闭上眼睛。片刻后，他睁开眼，眸中已恢复一贯的冷静。“我知道。”他的声音低沉而平稳，“陈念是我的软肋，但不是我的破绽。”他抬起头，直视那行灰色字迹，“你想用她拿捏我？行，我等着。”",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0884_choice_003",
+        "prompt": "终极棋手亮出了陈念这张牌，陈机需要决定下一步行动。",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "investigate",
+            "text": "启动天机录·棋盘推演",
+            "description": "动用新解锁的能力，窥探终极棋手的布局痕迹。既然对方已经摊牌，不妨看看他究竟有什么底牌。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，且可能被对方察觉",
+            "visible_reward": "获得关键情报：终极棋手的下一步行动方向",
+            "risk_hint": "窥探天道意志，有被反噬的风险",
+            "process_label": "主动出击",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -25
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_investigate_001",
+                  "content": "陈机不再犹豫，他将全部意识灌入天机录。完整版轰然展开，金紫交织的光芒中，一幅模糊的棋盘虚影缓缓浮现。无数光点如星辰般散落，其中一颗格外明亮——那是一处繁华的都城轮廓。皇都。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "棋盘推演已启动"
+            ],
+            "requires_flag": "path_scheme_selected",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "contact",
+            "text": "联络夜清",
+            "description": "动用魔道圣女的战略级能力，遮掩天机录气息。既然终极棋手能监视天机录，不如先切断他的眼睛。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "需要兑现之前的承诺，加深与夜清的羁绊",
+            "visible_reward": "获得魔道迷雾·极式：天道盲区，可屏蔽终极棋手的窥视一个时辰",
+            "risk_hint": "欠下夜清人情，日后可能被要挟",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_contact_001",
+                  "content": "陈机取出夜清临别时留下的魔道玉简，将一缕意识注入其中。片刻后，玉简微微发热，夜清清冷的声音在脑海中响起：“陈机？这么快就想我了？”他嘴角一抽，直接开门见山：“我需要你的天道盲区。”",
+                  "emotion": "直接"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清协助已获得"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与夜清达成深度合作",
+            "branch_route_id": null
+          },
+          {
+            "id": "wait",
+            "text": "按兵不动",
+            "description": "既然对方已经亮牌，说明终极棋手也急了。越是紧要关头，越要沉得住气——等待破绽出现。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错失先机，让敌人抢占有利位置",
+            "visible_reward": "获得隐藏增益：以静制动——下一次交锋时，防御和反击伤害提升30%",
+            "risk_hint": "被动等待可能导致局势恶化",
+            "process_label": "以逸待劳",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0884_result_wait_001",
+                  "content": "陈机没有回应那行灰色字迹。他闭上眼睛，任由识海中的风暴渐渐平息。终极棋手主动亮出底牌，说明他也开始着急了——这恰恰是对方露出破绽的开始。他默默调整呼吸，将所有杂念排空。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "以静制动已激活"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_016",
+        "content": "识海中，灰色字迹似乎感受到了陈机的冷漠，它蠕动了几下，最终化作一声似有若无的叹息，缓缓消散。“有趣。”这是它留下的最后两个字。而天机录完整版上的三条路径，此刻正散发着幽幽光芒，仿佛在等待被唤醒。陈机睁开眼睛，发现自己仍盘坐在闭关的石室中。掌心的天机录微微发烫，一行新的文字正缓缓浮现。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_017",
+        "content": "天机录上的金色纹路猛然亮起，一行冰冷的字迹浮现：终极棋手的下一个动作，落在皇都。皇都……那是整个天下的中心，三大宗门、魔道圣宗、甚至天道的根基都盘踞于此。陈机缓缓站起身，推开石室的门。外面是熟悉的演武场，夕阳将天青宗的亭台楼阁染成一片金红。苏青瑶的身影出现在不远处，正冷冷地看着他。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_018",
+        "character_id": "char_suqingyao",
+        "content": "“闭关三天，连内门弟子都知道你在搞什么名堂。”苏青瑶走近几步，凤眸微眯，“说吧，又在算计谁？”",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0884_019",
+        "character_id": "char_chenji",
+        "content": "陈机看了她一眼，嘴角微微上扬。“算计谁？”他轻笑一声，抬手指向天边渐沉的落日，“不，我只是在想……皇都的日出，是不是比这里更红一些。”",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0884_020",
+        "content": "苏青瑶瞳孔微缩。作为天青宗内门首席，她比任何人都清楚“皇都”这两个字的分量。三大宗门之首的玄武宗总部便在那里，而天道之眼在人间的代言人——大周皇室，也盘踞在那座城中。“你要去皇都？”她的声音压得很低，“你知道那里是什么地方吗？”陈机转过身，夕阳将他的影子拉得很长。“我当然知道。”他的眸中倒映着火红的天际，声音平静却带着一丝不容置疑的锋芒，“那是我命运的终点，也是终极棋手的坟墓。”",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

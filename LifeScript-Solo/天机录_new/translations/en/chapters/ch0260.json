@@ -1,0 +1,358 @@
+{
+  "id": "天机录_ch0260",
+  "book_id": "天机录",
+  "number": 260,
+  "title": "Breaking Formation Thunderclap",
+  "is_paid": true,
+  "next_chapter_hook": "The moment his soul mark was inscribed into the secret realm, Chen Ji felt a will beyond mortal power pierce through the void, examining each of his moves like the eye of Heavenly Dao—far more ancient and terrifying than Ye Qing's warnings had suggested.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0260_001",
+        "content": "Ye Qing's warning was like a tiny thorn, lodged deep in Chen Ji's soul. His expression remained unchanged, his steps steady as he led the squad through the remnant formations, but waves churned within his heart. Something in the secret realm's depths was watching him—could it be a hidden agent of the Demonic Path, or something even more ancient? His Tianji Record grew slightly warm, as if resonating with something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_002",
+        "content": "Passing through the final formation rune, they emerged into openness. The formation's core was a white jade altar, roughly thirty feet across, its inscribed runes mostly dimmed—clearly previous intruders had consumed massive energy. Floating at the altar's center was a jade slip, the pass item for the first level. Yet at this moment, everyone's gaze fell upon a figure at the altar's edge.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_003",
+        "character_id": "char_hanlie",
+        "content": "Useless thing, what are you dawdling for? A single remnant formation took half an incense stick's time—you're slower than my family's spirit turtle!",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_004",
+        "content": "Han Lie's sneer echoed across the altar, and several Xuanwu Sect disciples joined in the laughter. Chen Ji ignored them completely, but his gaze swept subtly to Li Hao—this Inner Disciple of Tianqing Sect had fine beads of cold sweat on his forehead, his right hand gripping his sleeve tightly as if concealing something. His position was also extremely subtle, precisely in the shadow at the altar's edge, ready to retreat at any moment.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_005",
+        "character_id": "char_chenji",
+        "content": "Brother Li seemed quite hasty earlier. I wonder what interesting discovery you made at the altar's edge?",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_006",
+        "content": "Chen Ji's voice was neither soft nor loud, yet like a soft blade it pierced directly into Li Hao's heart. The latter's body stiffened, forcing a laugh: 'Chen Junior Brother is joking. I was merely... observing the formation's trajectory.' Chen Ji stepped forward slowly, each step perfectly measured, a faint smile playing at the corner of his mouth: 'Oh? Then what formation runes has Senior Brother Li concealed in his sleeve that causes such nervous tension?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_007",
+        "character_id": "char_hanlie",
+        "content": "You Chen family cur, stop being so sarcastic! If you have the guts, just take the jade slip and leave—what are you interrogating people for?",
+        "emotion": "急躁"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0260_choice_001",
+        "prompt": "Han Lie openly championed for Li Hao. How should Chen Ji respond to this sudden provocation?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "彻底揭露",
+            "text": "Public Body Search",
+            "description": "Directly expose Li Hao's hidden cards, leaving him completely exposed before everyone, with ironclad evidence leaving no room for escape.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Completely sever ties with Li Hao, potentially triggering greater conflict",
+            "visible_reward": "Thoroughly destroy Li Hao's reputation, intimidating everyone present",
+            "risk_hint": "Evidence might be destroyed, possibly leading to being counter-accused",
+            "process_label": "揭露李昊",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_彻底揭露_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji's gaze turned cold. He suddenly raised his hand, spiritual energy forming chains that wrapped around Li Hao's wrist: 'Since Brother Han is so protective, why don't we all see what shameful secret Brother Li conceals in his sleeve!'",
+                  "emotion": "冷酷"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_彻底揭露_002",
+                  "content": "Li Hao tried to flee in terror but was immobilized by Chen Ji's spiritual chains. His sleeve was torn open by spiritual energy, and a pitch-black jade pendant rolled onto the altar—with a demon pattern unmistakably carved upon it, matching the emblem of the Holy Sect of the Demonic Path!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "li_hao_exposed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "彻底揭露李昊勾结魔道的证据",
+            "branch_route_id": null
+          },
+          {
+            "id": "留有余地",
+            "text": "Retreat to Advance",
+            "description": "表面上放过李昊，实则步步紧逼，让他自行露出破绽。表面上放过李昊，实则步步紧逼，让他自行露出破绽。表面上放过李昊，实则步步紧逼，让他自行露出破绽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Give Li Hao breathing room, possibly missing the best opportunity",
+            "visible_reward": "Li Hao panics and reveals deeper conspiracies",
+            "risk_hint": "If Li Hao regains composure, he might turn the tables",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_留有余地_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji withdrew his hand, smiling faintly: 'Brother Han is right, I overthought things. Brother Li, please.' He stepped aside, clearing the path, appearing completely at ease as if nothing had happened.",
+                  "emotion": "隐忍"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_留有余地_002",
+                  "content": "Li Hao felt as if granted reprieve, turning to leave. However, the moment he turned, the jade pendant in his sleeve accidentally slipped out, striking the white jade altar with a clear sound—the demon pattern gleaming under everyone's gaze, glaringly impossible to ignore.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "li_hao_exposed_subtle"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "用计谋让李昊自己露出马脚",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_008",
+        "character_id": "char_hanlie",
+        "content": "This... this is framing! Chen cur, you planted it in his sleeve!",
+        "emotion": "惊怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_009",
+        "content": "Han Lie's voice cracked with strain, making his cover-up even more obvious. Chen Ji picked up the demonic jade pendant, giving it a gentle shake—several transmission talisman runes appeared within, recording the entire process of Li Hao's dealings with the Demonic Path!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_010",
+        "character_id": "char_chenji",
+        "content": "Framing? Brother Han, what bold words. These transmission talisman runes were naturally generated within the formation, specifically designed to record the movements of those breaking through the array. Are you implying that a Foundation Building initial stage废物 could alter the secret mechanisms within this formation?'",
+        "emotion": "讽刺"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0260_choice_002",
+        "prompt": "Evidence is conclusive, and Elder Five is also observing. How should Chen Ji conclude this spectacle?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "言语碾压",
+            "text": "Beating a Dead Dog",
+            "description": " relentlessness, thoroughly dissecting Li Hao and Han Lie's ugliness before everyone, letting the righteous disciples see these two's true colors.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Words too sharp may offend more neutral forces",
+            "visible_reward": "Reputation soars, disciples present now regard Chen Ji with new eyes",
+            "risk_hint": "Too many enemies, may invite later retaliation",
+            "process_label": "言语打击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_言语碾压_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji surveyed his surroundings, his voice clear and loud: 'Fellow senior and junior brothers, the demonic sect token that fell from Brother Li's sleeve, the transmission talisman runes naturally generated within the formation—this is the true face of Tianqing Sect's Inner Disciple. Brother Han Lie goes so far as to distort truth to defend him. Is he an accomplice, or simply so foolish he's being used as a pawn?'",
+                  "emotion": "凌厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_言语碾压_002",
+                  "content": "At these words, the entire arena erupted. The Xuanwu Sect disciples exchanged glances, no one daring to speak in support. Han Lie trembled with rage, but the evidence was irrefutable, leaving no room for argument. Elder Five emerged from the shadows, his gaze lingering on Chen Ji for a moment before giving a slight nod.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "wu_zhanglao_notice"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "当众羞辱李昊与韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "见好就收",
+            "text": "Know When to Stop",
+            "description": "Seeing Elder Five had already made a decision, stop pressing the attack. Leave the reputation of showing mercy, secretly keeping track of Han Lie's debt.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Failed to thoroughly suppress Han Lie, may be seen as weak",
+            "visible_reward": "Display temperament before the Elder, laying groundwork for a longer game",
+            "risk_hint": "Han Lie might think Chen Ji feared him",
+            "process_label": "收放自如",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_见好就收_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji tucked the demonic jade pendant into his sleeve, clasped his hands toward Elder Five: 'This disciple only spoke based on facts. How to handle this item is entirely Elder Five's decision.' Having said this, he stepped aside, his demeanor peaceful as if he had merely done something insignificant.",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_见好就收_002",
+                  "content": "Elder Five gave Chen Ji a profound look, then waved his hand to bind the collapsed Li Hao, saying sternly: 'Consorting with the Demonic Path, unforgivable crime. Take him back to the sect for further interrogation!' Han Lie tried to speak, but was silenced by Elder Five's glare.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "wu_zhanglao_notice_gentle"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "在长老面前展现从容气度",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_011",
+        "content": "Chen Ji took the jade slip from the altar, spiritual light fusing into his brow center. In that instant, a vast will pierced through the void, sweeping across his soul—the sensation was cold and distant, as if an ancient existence's eye of Heavenly Dao was examining this newly emerging chess piece through the secret realm's recording formation.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_012",
+        "character_id": "char_moxiansheng",
+        "content": "(A low sigh from Mo Xiansheng echoed through the Tianji Record) It has noticed you. Faster than I anticipated... Little one, the move you made, someone does not wish to see.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_013",
+        "content": "Chen Ji's heart tightened, but his expression remained unmoved. The probing sensation from the secret realm's core gradually faded, but Mo Xiansheng's words were like a basin of cold water, extinguishing his rising triumph. He lowered his gaze to the jade slip in his palm—first level cleared, soul mark recorded by the secret realm. From this moment on, every step he takes in this secret realm will be observed by that eye of Heavenly Dao.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_014",
+        "content": "Walking out of the altar's range, night mountain winds brushed against his face, carrying the unique chill of the secret realm. Chen Ji lifted his head to gaze at the heavens—stars hidden behind thin mist, exactly like his current mood—long road ahead, undercurrents churning. The victory just now was merely an insignificant chess piece, and his true opponent was never in the open.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

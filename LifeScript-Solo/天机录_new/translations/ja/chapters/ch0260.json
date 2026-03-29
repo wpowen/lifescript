@@ -1,0 +1,358 @@
+{
+  "id": "天机录_ch0260",
+  "book_id": "天机录",
+  "number": 260,
+  "title": "破陣驚雷",
+  "is_paid": true,
+  "next_chapter_hook": "魂魄の印が秘境に刻まれた刹那、陳機の身に人間の力を超える意志が虚空を貫き、天道の眼のように彼の指差しを監視しているのを感じた——その覗きは、夜清の口中的警告よりもはるかに古く、はるかに恐怖であった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0260_001",
+        "content": "夜清の警告は細い棘のように陳機の神魂の奥に刺さっていた。彼は表情も変えず、足取りも穏やかに小隊を率いて残陣の間を抜けていったが、心の中では既に驚涛怒浪が渦巻いていた。秘境の奥底で、何かが見ているのか？魔道が仕掛けた暗部の柱か、それとも魔道よりも古い存在か？彼の天機録は微かに熱を持ち、まるで何かとの共鳴に応えているようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_002",
+        "content": "最後の陣紋を抜け、視界が開けた。陣法の中核は白亜の玉の祭壇で、方圆十里もあり、壇上に銘刻された陣紋は既に大半が薄れていた——明らかに先に踏み込んだ者が大量のエネルギーを消耗していた。祭壇の中央には玉簡が一つ浮かび上がっており、まさに第一層のクリアの信物である。しかし此刻，所有人都の視線は祭壇の縁にいる那道身影に集まっていた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_003",
+        "character_id": "char_hanlie",
+        "content": "役立たずめ、なぜもたもたしている？区区の残陣に半柱香もかかるなんて、うちの子亀よりも遅い！",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_004",
+        "content": "韓烈の嘲笑が祭壇間に反響し、何人かの玄武宗弟子也跟着哄笑。陳期は耳に入らず、目光はうますかりもなく李昊を扫过した——この天青宗内門弟子の額には細い汗が滲み，右手は袖口死死に握りしめ，仿佛何かを隠そうとしているようだった。彼の立つ位置も極めて微妙で、ちょうど祭壇の縁の影處にあり，随时可以撤退といった距離だった。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_005",
+        "character_id": "char_chenji",
+        "content": "李师兄 方才走得匆忙，想必是在祭壇边缘发现了什么有趣的东西？",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_006",
+        "content": "陳期の聲は軽くもなく重くもなく、まるで柔らかい刃のように李昊の心に直接突き刺さった。後者の身形は一瞬硬直し、乾笑して言った：「陳师弟冗談を言われる，我只是……陣紋の走势を観察していたのだ。」陳期は歩み寄り、一歩一歩極めてリズムを踏み、口元には晴れ晴れとした笑みを浮かべた：「ほう？那么李师兄の袖に隠しているのはどんな陣紋で、そんなに緊張させるのだろうか？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_007",
+        "character_id": "char_hanlie",
+        "content": "陳という奴め、そんな屁理屈を並べるな！できるなら玉簡を持って行け、ここで何を審問している？",
+        "emotion": "急躁"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0260_choice_001",
+        "prompt": "韓烈が公然と李昊の肩を持ち、陳期はどのようにこの突然の挑発に応じるべきか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "彻底揭露",
+            "text": "衆目の中で身体を検査する",
+            "description": "直接李昊の底牌を掀き，众人の前で无所遁形，铁证如山，不留余地。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "李昊と完全に顔を撕き、更大な衝突を引き起こす可能性がある",
+            "visible_reward": "李昊の信誉を完全に破壊し、在場所有人を震慑させる",
+            "risk_hint": "証拠が破壊された場合、反而倒打一耙される可能性がある",
+            "process_label": "揭露李昊",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_彻底揭露_001",
+                  "character_id": "char_chenji",
+                  "content": "陳期の瞳は急に冷たくなり，忽然抬手，一道灵力化作锁链缠向李昊的手腕：「既然韓师兄这么护着，不如就让诸位看看，李师兄の袖には一体どんな見苦しいものが隠されているのか！」",
+                  "emotion": "冷酷"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_彻底揭露_002",
+                  "content": "李昊は驚いて逃げようとしたが、陳期の灵力鎖链に制されて动弹不得。其の袖口は灵力に撕裂され、漆黒の玉佩が祭壇に滚落——その玉佩には赫然と魔紋が刻まれており、魔道聖宗の標誌と一模一样！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "li_hao_exposed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "彻底揭露李昊勾结魔道的证据",
+            "branch_route_id": null
+          },
+          {
+            "id": "留有余地",
+            "text": "退いて進む",
+            "description": "表面上是放过李昊，实则步步紧逼，让他自己露出马脚，杀人不见血。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "李昊に喘息的余裕を与え、最良の機会を逸する可能性がある",
+            "visible_reward": "李昊が自乱阵脚，露出更深的陰謀",
+            "risk_hint": "李昊が落ち着きを取り戻した場合、反咬一口される可能性がある",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_留有余地_001",
+                  "character_id": "char_chenji",
+                  "content": "陳期は手を撤回淡淡一笑：「韓师兄说得是，是我多慮了。李师兄，请。」。彼は道を譲るように旁に寄り、何事もなかったかのように当たり前な神情を浮かべた。",
+                  "emotion": "隐忍"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_留有余地_002",
+                  "content": "李昊は文字通り恩赦を得たように感じ，转身便要离开。然而就在他转身的瞬间，袖中の玉佩が误って滑り落ち、白亜の祭壇に清脆な音を立てた——魔紋が衆目の注視の下熠熠生辉、眩しくて见逃せないほどだった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "li_hao_exposed_subtle"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "用计谋让李昊自己露出马脚",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_008",
+        "character_id": "char_hanlie",
+        "content": "これは……これは濡れ衣だ！陳という奴め、お前が彼の袖に入れたのだろう！",
+        "emotion": "惊怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_009",
+        "content": "韓烈の声音はかすれ、甚至显得此地无银三百両。陳期はあの魔道玉佩を拾い上げ，轻轻一抖竟、数道の伝音符文が玉佩から浮かび上がった——記録されていたのはまさしく李昊と魔道が接触した全过程だった！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_010",
+        "character_id": "char_chenji",
+        "content": "濡れ衣？韓师兄の口气は大きなものだ。この伝音符文は陣中の天然生成で、陣突破者の足取りを記録するために設置された。韓师兄の言うように、私が築基初期の役立たずが、陣中の天機を改竄でもできるということか？",
+        "emotion": "讽刺"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0260_choice_002",
+        "prompt": "証拠は確かであり、五長老も旁观している。陳期はどのようにこの一场闹剧，终えるべきか？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "言语碾压",
+            "text": "痛打落水狗",
+            "description": "付け上がる者に容赦せず、公开の場で李昊・韓烈の醜態を完肤无悔に分析和し、正道弟子たちがこの二人の本性を見分けるようにする。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "言葉があまりに尖锐，可能会得罪更多中立势力",
+            "visible_reward": "名望大涨，在场弟子对陳期刮目相看",
+            "risk_hint": "樹敵过多，可能招致后续报复",
+            "process_label": "言语打击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_言语碾压_001",
+                  "character_id": "char_chenji",
+                  "content": "陳期は四周を見回し，声音清朗：「诸位师兄师姐，方才李师兄袖中滑落的魔道信物、阵中自然生成的伝音符文，这就是天青宗内门弟子的本性。韓烈师兄が黑白を顛倒してまで擁護しているのは、共犯か、それとも単に愚かで人の槍にされているだけか？」",
+                  "emotion": "凌厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_言语碾压_002",
+                  "content": "この言葉一出、満場哗然。玄武宗弟子たちは面面相觑，再也不敢出声附和。韓烈は气得浑身发抖，偏偏証拠は確かでは言い訳もない。五長老が暗部から姿を現し、目光が陳期身上に留まった片刻，微微顰首した。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "wu_zhanglao_notice"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "当众羞辱李昊与韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "见好就收",
+            "text": "点到为止",
+            "description": "五長老已有决断，便不再窮追猛打，留下得饶人处且饶人の好名声，暗中记下韓烈の帳。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "未能彻底打压韓烈，可能被视为软弱",
+            "visible_reward": "在長老面前展现气度，埋下更长線の布局",
+            "risk_hint": "韓烈可能认为陳期怕了他",
+            "process_label": "收放自如",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_见好就收_001",
+                  "character_id": "char_chenji",
+                  "content": "陳期は魔道玉佩を袖に收入，对五長老拱手道：「弟子只是就事論事，此物がどのように処置されるかは，全て長老の定めるところに従います。」言い終えると同時に旁，退き、神态平和得仿佛只是一件の微不足道な小事のように振る舞った。",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_见好就收_002",
+                  "content": "五長老は深く陳期看了一眼，挥手将瘫软在地的李昊束缚，沉声道：「魔道との結託は罪に問え、再審のために宗门に戻す！」韓烈は何かを言おうとしたが、五長老の一つの眼差しに黙らされた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "wu_zhanglao_notice_gentle"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "在长老面前展现从容气度",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_011",
+        "content": "陳期は祭壇上の玉簡を取り、霊光が眉心に入り込んだ。刹那，一股浩瀚的意志が虚空を貫き、彼の神魂を扫过した——その感觉は冰冷で悠遠で，仿佛亙古存在的天道の眼が、秘境の記録陣法を通じて、このたくましく頭角を現した駒を監視しているようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_012",
+        "character_id": "char_moxiansheng",
+        "content": "（天機録の中から墨先生低沉的歎息が伝わってくる）それはお前気づいた。比我想更快……小さな奴め、お前が指差し的那一步の棋を、誰かが見たくないのだ。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_013",
+        "content": "陳期の心は凜としながらも、面上は不动声色。秘境中那股窥探的感觉渐渐消散，但墨先生の言葉は冷水のように、彼のほんの少しの得意を吹き飛ばした。彼は掌中の玉簡，低头——第一層のクリア、魂魄の印は既に秘境に記録された。此刻から、彼の秘境での全ての指差しは、あの天道の眼に監視されることとなる。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_014",
+        "content": "祭壇の範囲を出ると，夜色の山風が頬を撫で，带着秘境特有の清冷。陳期が天を仰ぎ見ると、星辰は薄霧の後ろに隠れ，恰如彼此刻の心绪——前路漫漫，暗流涌动。方々の勝利は取るに足らぬ駒に過ぎず、彼の真の对手は決して明處にはいない。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

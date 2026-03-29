@@ -1,0 +1,456 @@
+{
+  "id": "天机录_ch0723",
+  "book_id": "天机录",
+  "number": 723,
+  "title": "身份危机",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机追问那徽记来历时，来使嘴角勾起一抹意味深长的笑——「陈大人，您当真不记得了？万年前那场大火，可是您亲手点的。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0723_001",
+        "content": "皇朝来使踏入天青宗山门的那一刻，陈机瞳孔骤缩——那张脸，与天机录万年前名单上的陈家分支徽记，如出一辙。来使身着玄色官袍，腰悬白玉佩，步履间龙行虎步，分明是久居上位者的气度。他身后跟着十二名金甲护卫，每一人身上都散发着不低于结丹期的威压。这是赤裸裸的武力威慑，更是一场精心设计的政治围猎的开场。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_002",
+        "character_id": "char_lingyuan",
+        "content": "「太子太师陈机，恭迎皇恩。」来使在陈机三尺之外站定，阴阳怪气地念出这个称呼，「好大的威风啊，杂役出身的太子太师，本使还是头一遭见。」他的目光扫过四周，最终定格在陈机脸上，眸中精光一闪，「本使此行，乃是奉陛下口谕——彻查天青宗私藏魔道余孽一案。」",
+        "emotion": "讥讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_003",
+        "content": "陈机面色不变，心中却如惊涛骇浪。魔道余孽？天青宗何时私藏过魔道之人？除非……他知道，指的是谁。那枚天机录残页在识海中微微发烫，仿佛感应到了某种危险。而更让他心悸的是，来使那张脸上的陈家徽记——万年前的分支，在百年前的那场大火中灭族。而那场大火的纵火者，正是……",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_004",
+        "character_id": "char_suqingyao",
+        "content": "「来使大人，此乃天青宗内务，何劳皇朝过问？」苏青瑶从人群中踏出一步，剑眉倒竖，「更何况，魔道余孽一说，不知从何谈起？内门首席在此，从未见过任何魔道中人。」她的声音冷冽如霜，却在转身时悄悄向陈机使了个眼色——来者不善，善者不来。",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_005",
+        "content": "就在这时，一道熟悉的身影从山道阴影处走出。夜清一袭黑纱覆面，魔道圣女的气息被「魔道迷雾」压制得几不可察，但在陈机面前，她依然能感受到那层若有若无的联系。她朝来使行了一礼，声音甜腻：「圣女宗夜清，见过大人。」来使眉头一皱，正要发作，夜清却抢先道：「大人要查魔道余孽？不如让夜清帮您指认？」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0723_006",
+        "prompt": "夜清主动请缨「指认魔道余孽」，这是明显的陷阱——她想借刀杀人，还是另有图谋？陈机必须立刻做出判断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0723_006_a",
+            "text": "将计就计，顺势而为",
+            "description": "假装中计，让夜清指认一个不存在的目标，当场揭穿她与皇朝勾结的真面目。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露夜清是内鬼",
+            "visible_reward": "获得当众拆穿夜清的机会",
+            "risk_hint": "可能逼夜清狗急跳墙",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_006_a_001",
+                  "content": "陈机嘴角微扬，做出一副惶恐之态：「夜清姑娘要指认？好啊，不知您要指认谁？」他的语气里带着恰到好处的颤抖，演技堪称完美。来使与夜清交换了一个眼神——他们上钩了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清陷阱触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_006_b",
+            "text": "先发制人，揭穿其身份",
+            "description": "直接揭露夜清是魔道圣女，当众指出她与来使的勾结，将她架在火上烤。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能打草惊蛇",
+            "visible_reward": "震慑全场",
+            "risk_hint": "来使可能有后手",
+            "process_label": "主动出击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_006_b_001",
+                  "content": "陈机忽然冷笑一声，声音清越：「夜清姑娘，好大的胆子。魔道圣宗圣女，亲自跑到天青宗来『指认魔道余孽』？这出戏，演给谁看？」全场哗然。来使脸色骤变，夜清更是浑身一震——她没想到陈机会如此果断地掀桌子。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清身份曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_006_c",
+            "text": "暗中布局，引蛇出洞",
+            "description": "假装不知夜清身份，让苏青瑶配合演戏，等对方露出更多底牌再收网。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "时间较长",
+            "visible_reward": "获得更多情报",
+            "risk_hint": "变数增加",
+            "process_label": "静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_006_c_001",
+                  "content": "陈机微微颔首，做出一副「愿闻其详」的姿态。夜清正要开口，忽然——一道模糊的画面在陈机识海中闪过。是他妹妹陈念的脸，在一片混沌中若隐若现，与天机录第四页产生了诡异的共鸣。他心中一凛，面上却不动声色：「夜清姑娘请便。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念共鸣触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_007",
+        "content": "识海中，天机录残页剧烈震颤。模糊的画面不断闪现——陈念被锁链囚禁，身处一个刻满符文的密室；凌渊老掌门的背影站在暗处，似乎在与人交谈；而夜清，她的面容扭曲，嘴里说着「对不起」三个字，眼神中却藏着深深的挣扎与不甘。陈机死死攥紧拳头。他记下了。等时机成熟，他会连本带利讨回来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_008",
+        "character_id": "char_yeqing",
+        "content": "夜清环顾四周，终于开口：「魔道余孽……远在天边，近在眼前。」她缓缓抬起手，指向人群边缘一个毫不起眼的杂役弟子，「就是他！」那杂役弟子面露惊恐，正要辩解，金甲护卫已如狼似虎地扑上去将其拿下。夜清的眼底闪过一丝愧疚，但转瞬即逝——她别无选择。",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_009",
+        "content": "陈机冷眼旁观。那杂役弟子是真正的无辜者，但他没有出手相救——不是不能，而是不愿在此刻暴露实力。他在等，等夜清露出更大的破绽。等来使亮出真正的底牌。只是……「对不起」三个字在天机录画面中反复回响，让他心中泛起一丝异样的涟漪。夜清，你到底在承受着什么？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_010",
+        "character_id": "char_lingyuan",
+        "content": "「好！」来使抚掌大笑，「既然魔道余孽已经伏法，本使还有一事要宣布——」他从袖中取出一卷明黄圣旨，高声道，「奉天承运，皇帝诏曰：太子太师陈机，系前朝余孽陈氏血脉，着即押解入京受审！」话音未落，十二名金甲护卫齐齐逼上前来，结丹期威压如山岳倾轧而下。天青宗众弟子面色惨白，却无人敢动。",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_011",
+        "content": "「前朝余孽？」陈机忽然笑了。那笑声不大，却清清楚楚地传入在场每一个人的耳中。来使眉头一皱：「你笑什么？」陈机负手而立，目光平静如水：「本座笑的是，皇朝查案，竟连『前朝余孽』这种万年前的陈年旧账都能翻出来。不知是哪位高人，在背后指点迷津？」他顿了顿，话锋一转，「还是说……有人想借皇朝的手，杀一个『废物』？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_012",
+        "content": "来使脸色阴沉下来。他没想到这个传闻中的废物杂役，言语竟如此锋利。更让他不安的是，对方似乎早已洞悉一切。陈机的下一句话，更是让他如坠冰窟：「来使大人脖子上那枚徽记，姓陈，对吧？万年前陈家分支，百年前被灭门的那个分支——据说，那场大火是陈家主脉派人点的。」陈机微微一笑，「所以，是来报仇的，还是来灭口的？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0723_013",
+        "prompt": "真相被撕开一道口子，来使的真实身份呼之欲出。夜清在旁蠢蠢欲动，似乎在寻找逃跑的时机。苏青瑶的手已经按上了剑柄。局势千钧一发，陈机必须做出最终决断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0723_013_a",
+            "text": "乘胜追击，逼他来使摊牌",
+            "description": "继续施压，当众揭露来使是陈家分支遗孤，逼迫他暴露真实目的。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能引发激战",
+            "visible_reward": "当众揭露阴谋",
+            "risk_hint": "金甲护卫实力不俗",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_013_a_001",
+                  "content": "「万年前被灭门的陈家分支，唯一的漏网之鱼——」陈机一字一顿，「就是阁下吧？叫什么好呢，陈……守真？」来使瞳孔剧震，下意识退后一步。那一瞬间的失态，胜过千言万语。四周响起此起彼伏的惊呼声。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈守真身份暴露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_013_b",
+            "text": "转向夜清，揭露她的背叛",
+            "description": "暂时放过来使，转而质问夜清为何传递假情报，将她钉在耻辱柱上。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "放过来使的破绽",
+            "visible_reward": "切断来使的帮手",
+            "risk_hint": "夜清可能有后手",
+            "process_label": "分化瓦解",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_013_b_001",
+                  "content": "陈机忽然将目光移向夜清，声音陡然转冷：「夜清姑娘，那条假情报，是你传给我的吧？『皇朝只派了一个结丹期的使者』——你是在替谁打掩护？」夜清浑身一僵，脸色煞白。来使暗叫不好，想要开口帮腔，却被苏青瑶一剑逼退三尺。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清背叛坐实"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_013_c",
+            "text": "使用天机录，窥探真相",
+            "description": "消耗5点天命值，启动天机录预见未来三时辰，找出幕后真正的操控者。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命值-5",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "暴露天机录气息",
+            "process_label": "窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_013_c_001",
+                  "content": "陈机闭目凝神，识海中天机录残页轰然展开。画面飞速流转——来使、夜清、凌渊、甚至远在皇都的某位神秘人物……他们的命运线交织在一起，而所有线条的尽头，指向一只巨大的、由无数符文构成的眼睛。那是……天道之眼？！陈机猛然睁眼，冷汗涔涔而下。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录暴露风险"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_014",
+        "content": "就在此时，一阵剧烈的头痛袭来。陈机单手扶住额角，视野中出现了短暂的模糊。识海里，天机录残页的边缘开始隐隐发光——第四页，那是他从未触碰过的一页，此刻竟主动与他产生了共鸣。一股陌生又熟悉的力量涌入体内，带着淡淡的……陈念的气息。妹妹，是你吗？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_015",
+        "character_id": "char_chenian",
+        "content": "一道模糊的声音在陈机识海中响起，断断续续，如风中残烛：「哥……别信她……是陷阱……凌渊他……和天道之眼……」声音戛然而止，仿佛被什么力量强行切断。陈机的心狠狠揪紧。妹妹在警告他！凌渊——果然从始至终都是那只幕后黑手的棋子。而夜清……她的背叛，或许并非出于本意。",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_016",
+        "content": "陈机深吸一口气，强压下翻涌的情绪。他重新抬起头，目光如刀，直视来使——不，应该叫他陈守真。对方脸色铁青，显然没想到自己的底细会被一个「废物」当众揭穿。而夜清，她站在一旁，身体微微颤抖，眼神复杂地看着陈机，有恐惧，有愧疚，还有……一丝解脱？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_017",
+        "content": "「有意思。」陈机忽然开口，语气云淡风轻，「陈守真，万年前陈家分支遗孤；夜清，魔道圣宗圣女，实际上是凌渊老掌门的棋子；而凌渊……」他故意停顿，目光扫过四周，「凌老掌门，您是不是也该出来见见老朋友了？」人群骚动，一道苍老的身影从山门深处缓缓走出。正是天青宗老掌门——凌渊。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_018",
+        "character_id": "char_lingyuan",
+        "content": "「好徒孙，果然瞒不过你。」凌渊拄杖而立，浑浊的老眼中精光一闪，「但你只猜对了一半。夜清不是我的棋子，她是天道的弃子——正如你一样。」他看向陈机，嘴角勾起一抹意味深长的笑，「你以为天机录选择了你是巧合？孩子，这盘棋从你出生那一刻就开始了，而我们……都只是棋子。」",
+        "emotion": "阴森"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_019",
+        "content": "凌渊的话如同一盆冷水浇下。天道之眼、陈家灭门、万年布局——所有的线索在陈机脑海中飞速串联。他终于明白，天机录残页为什么会出现在他手中，天机录为什么会在万年前就将他列入名单。一切，早在万年前就已注定。而他所谓的「算无遗策」，或许从一开始就在别人的剧本里。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_020",
+        "content": "「剧本？」陈机忽然笑了。那笑声由低到高，最后化作仰天长啸，「凌老掌门，您说得对，我们都是棋子。但您忘了一件事——」他抬眸，眼中精光暴涨，「棋子也能吃掉执棋的人！」话音未落，他猛然催动天机录残页。一道璀璨的光芒从他眉心激射而出，直冲云霄，撕裂了笼罩在天青宗上空的层层迷雾。命运的棋局，从这一刻起，正式开始翻盘。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

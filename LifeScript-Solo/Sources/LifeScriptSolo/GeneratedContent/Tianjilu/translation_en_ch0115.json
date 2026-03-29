@@ -1,0 +1,611 @@
+{
+  "id": "天机录_ch0115",
+  "book_id": "天机录",
+  "number": 115,
+  "title": "Seven-Day Pact",
+  "is_paid": true,
+  "next_chapter_hook": "A strange call echoes from the depths of the Forbidden Grounds, the Tianji Record Fragment actually glowing on its own, as if pointing toward some direction...",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0115_001",
+        "content": "The reverberation of the stone door crashing open had yet to fade when Su Qingyao's figure glided past the threshold like a startled swan goose. Yet in the next instant, she froze completely in place. The stench of blood rushed to meet her, mingled with the acrid bitterness of burned elixirs. Chen Ji lay supine in a pool of blood, dark crimson seeping from his seven apertures, already staining the entire blue stone floor beneath him, reflecting a sinister black-purple sheen in the flickering firelight.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_002",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji! Chen Ji! Wake up!",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_003",
+        "content": "Su Qingyao rushed to his side in three swift strides, kneeling on one knee. Her trembling fingers reached toward his nostrils. Faint, but still breathing. She exhaled in relief, then drew him into her embrace, pressing her palm against his back as spiritual power flowed like a gentle stream into his nearly depleted meridians. Yet in the next instant, her pupils constricted sharply—threadlike black veins, finer than hair, writhed like living creatures within his meridians. Those were restraint seals she had never seen before.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_004",
+        "character_id": "char_chenji",
+        "content": "(Coughing)... Su Qingyao, how did you... get in...",
+        "emotion": "虚弱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_005",
+        "content": "Chen Ji forced his eyes open with difficulty. That face, usually calm as still water, was now pale to the point of translucence, a strand of fresh blood still clinging to the corner of his mouth. He instinctively tried to push himself up, only to find all four limbs and every bone seemed hollowed out, unable to move a single inch. Only the tattered page over his chest remained slightly warm, like some stubborn insistence.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_006",
+        "character_id": "char_suqingyao",
+        "content": "How did I get in? Your mountain-protecting formations posed no barrier to me. You think I'm a fool? Your 'useless' persona can deceive others, but not me!",
+        "emotion": "怒意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_007",
+        "content": "Su Qingyao's eye sockets faintly reddened, but she forced the tears back. She stared at the faintly glowing fragment on his chest, her voice trembling yet carrying unshakable resolve: \"Three years, Chen Ji. How long do you plan to keep lying to me?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_008",
+        "character_id": "char_chenji",
+        "content": "(Bitterness) Su Qingyao, some things... it's better for you not to know.",
+        "emotion": "无奈"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_009",
+        "content": "Chen Ji turned his gaze away, his tone cold as if discussing someone else's affairs: \"You've seen my current state. The price of glimpsing heavenly secrets is far heavier than you imagine.\" He paused, a self-mocking curve twisting his lips, \"Ridiculous thing is, even after paying such an excruciating price, I can still only see events within three hours.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_010",
+        "character_id": "char_suqingyao",
+        "content": "Three hours? Heavenly Fate? What are these?",
+        "emotion": "追问"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_011",
+        "content": "Su Qingyao's hand unconsciously clenched his sleeve tighter, her knuckles whitening. She could feel the subtle vibrations the black veins caused as they moved through his meridians, like some greedy creature feasting on the very essence of his life. \"Tell me,\" her voice dropped low, yet every word cut like a blade, \"or I will not leave this place for even half a step.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0115_012",
+        "prompt": "Chen Ji faces Su Qingyao's questioning and must make a choice: push her away to bear this curse alone, or honestly share the burden to face the approaching storm together?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0115_012_a",
+            "text": "Bear it alone",
+            "description": "Push her away, tell Su Qingyao this has nothing to do with her. Let her stay far from this chess game destined to fail, stop making meaningless sacrifices.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Lose the only person who trusted you",
+            "visible_reward": "Protect Su Qingyao from being implicated",
+            "risk_hint": "Su Qingyao might become even more determined to investigate the truth",
+            "process_label": "陈机试图推开苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0115_result_012_a_001",
+                  "content": "Chen Ji艰难地抬起手，轻轻推开苏青瑶的怀抱。他的手指冰凉，却在触碰到她衣袖的瞬间微微颤抖。\"苏师姐，\"他垂下眼睫，声音沙哑，\"你我本就不是一路人。我这条命，早就不属于自己了。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0115_result_012_a_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Not the same kind of person? Chen Ji, you think I'll leave just because you say some heartless words? What kind of person do you think Su Qingyao is?",
+                  "emotion": "愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶_追问到底"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0115_012_b",
+            "text": "Face it together",
+            "description": "Reveal the truth of the Tianji Record to Su Qingyao, including the price of Heavenly Fate, the threat of the Heavenly Eye, and the life-and-death situation in seven days.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose your most vulnerable side",
+            "visible_reward": "Gain Su Qingyao's full support and protection",
+            "risk_hint": "Once the news leaks, will face even greater crisis",
+            "process_label": "陈机决定向苏青瑶坦白",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0115_result_012_b_001",
+                  "content": "Chen Ji closed his eyes and let out a long, heavy breath. When he opened them again, there was no more coldness or calculation in those pupils—only a vulnerability bordering on candidness. He slowly untied his robe, exposing the strange, faintly glowing fragment on his chest.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0115_result_012_b_002",
+                  "character_id": "char_chenji",
+                  "content": "This is the Tianji Record. A fragment of my Chen family's inherited artifact. It can foresee everything within three hours, yet every use consumes five points of Heavenly Fate. Once Heavenly Fate reaches zero...",
+                  "emotion": "沉重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录真相揭露",
+              "苏青瑶加入阵营"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶得知天机录真相",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_013",
+        "content": "The patterns on the fragment slowly swirled before Su Qingyao's eyes, those intricate runes moving like living things. She could sense the terrifying power contained within, but what shocked her more were those black veins—they were greedily devouring Chen Ji's life essence, converting it into some indescribable energy.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_014",
+        "character_id": "char_suqingyao",
+        "content": "Seven days... you only have seven days?",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_015",
+        "content": "Chen Ji did not speak, but his silence was the best answer. Su Qingyao felt as if a heavy hammer had struck her chest, a suffocating pain spreading through her. She bit her lower lip hard, only tasting blood to barely suppress the churning emotions. \"Seven days,\" she took a deep breath, \"is enough.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_016",
+        "character_id": "char_chenji",
+        "content": "Su Qingyao, you don't have to—",
+        "emotion": "动摇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_017",
+        "content": "Before she could finish, Su Qingyao abruptly lifted her head, tears glistening in her eyes yet carrying unwavering resolve: \"Don't have to what? Not worry about you? Not do anything for you? Chen Ji, what do you think my persistence for three years has been for?\" Her voice trembled, yet every word rang like iron, \"I investigated your secrets, not to expose you, but to find a way to help you!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0115_018",
+        "prompt": "Su Qingyao has made her stance clear, willing to face the upcoming life-and-death situation together with Chen Ji. Next they need to formulate a plan on how to find a way to break the situation within seven days.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0115_018_a",
+            "text": "Go to the Sect's Forbidden Grounds",
+            "description": "The Forbidden Grounds of Tianqing Sect seal ancient treasures that might reverse the Heavenly Fate consumption. But the Forbidden Grounds are fraught with dangers—one misstep could lead to total destruction.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Might trigger dangerous mechanisms in the Forbidden Grounds",
+            "visible_reward": "Obtain key clues to reverse Heavenly Fate",
+            "risk_hint": "The Forbidden Grounds contain ancient formations that will obliterate those of insufficient strength",
+            "process_label": "决定进入宗门禁地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0115_result_018_a_001",
+                  "content": "Chen Ji remained silent for a moment, then finally nodded slightly. \"The Sect's Forbidden Grounds... perhaps there's a sliver of hope.\" His gaze deepened, \"But ancient era taboos are sealed there—even past Sect Masters dared not tread lightly.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0115_result_018_a_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Dare not tread lightly? Then we'll be the first.",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁地探索开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0115_018_b",
+            "text": "Seek external help",
+            "description": "Contact Ye Qing of the Holy Sect's Demonic Path—her 'Demonic Mist' might conceal the Tianji Record's aura. Meanwhile, Ye Qing possesses intelligence regarding the Heavenly Eye.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Expose evidence of colluding with the Demonic Path",
+            "visible_reward": "Gain powerful tactical support and intelligence",
+            "risk_hint": "Ye Qing's allegiance is unstable,，存在背叛风险",
+            "process_label": "决定联系夜清",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0115_result_018_b_001",
+                  "content": "A glimmer of sharp light flashed in Chen Ji's eyes, \"Ye Qing... perhaps she can buy us some time.\" He paused, \"But those of the Demonic Path are notoriously treacherous. I need you to help me gauge her true intentions.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0115_result_018_b_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Demonic Path Saint Woman? When did you... Never mind, now is not the time to追究这个。",
+                  "emotion": "复杂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清联络开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_019",
+        "content": "Su Qingyao took out a lustrous elixir from her storage bag, its surface flowing with soft golden light, emanating a refreshing fragrance. \"This is the Nine-Turn Soul-Reviving Pill my master left me,\" she fed the pill into Chen Ji's mouth, \"It can temporarily suppress the formation backlash in your body, but it's only a temporary solution.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_020",
+        "character_id": "char_chenji",
+        "content": "(The elixir enters the body, limbs gradually warming)... Su Qingyao, your master's keepsake, I...",
+        "emotion": "动容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_021",
+        "content": "Before Chen Ji could finish, Su Qingyao raised her hand to press against his lips. Her fingertips were slightly cool yet carried an undeniable warmth. \"Don't say such formalities,\" she turned her head away, not letting him see her reddened eyes, \"In seven days, you must return it to me, every single one.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_022",
+        "character_id": "char_chenji",
+        "content": "(Gazing at her profile, lips slightly curving) Very well. A promise is a promise.",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_023",
+        "content": "The elixir's warmth slowly circulated through his body. Color gradually returned to Chen Ji's pallid face. He slowly pushed himself up, feeling the suppressed black veins in his meridians, a complex light flickering in his eyes. At this moment, that ice-cold wall he had built around his heart for twenty years seemed to develop a tiny crack.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0115_024",
+        "prompt": "The elixir has temporarily stabilized Chen Ji's injuries, but the seven-day countdown has already begun. They must make a choice within limited time: first enter the Forbidden Grounds to find a way to reverse fate, or first contact Ye Qing for more intelligence?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0115_024_a",
+            "text": "Forbidden Grounds first",
+            "description": "Time is tight; every second counts. Enter the Forbidden Grounds first. If they can find a way to reverse Heavenly Fate, the battles ahead will become much easier.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Might encounter Forbidden Grounds dangers before preparation is complete",
+            "visible_reward": "Obtain key plot items or techniques for breaking the situation",
+            "risk_hint": "Dangers within the Forbidden Grounds are unpredictable",
+            "process_label": "决定先行进入禁地",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0115_result_024_a_001",
+                  "content": "The two no longer hesitated. Su Qingyao helped Chen Ji stand, taking out an ancient token from her bosom. \"This is what I discovered deep within the scripture library years ago,\" she injected spiritual power into the token, \"Said to be the Forbidden Grounds key only held by past Sect Masters.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁地令牌获得"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0115_024_b",
+            "text": "Intelligence first",
+            "description": "Know yourself, know your enemy, and you shall win every battle. First contact Ye Qing to obtain intelligence about the Heavenly Eye, then formulate a targeted Forbidden Grounds exploration plan.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Waste a precious day",
+            "visible_reward": "Obtain key intelligence, greatly reducing Forbidden Grounds exploration risk",
+            "risk_hint": "Contacting Ye Qing carries exposure risk",
+            "process_label": "决定先行收集情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0115_result_024_b_001",
+                  "content": "Chen Ji nodded slightly, taking out a black transmission jade talisman from his sleeve. \"Left by Ye Qing three days ago,\" he injected spiritual power into the talisman. After a moment, the jade talisman glowed with cold, dim light, \"Hope she remembers our agreement.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清联络进行中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_025",
+        "content": "Half an hour later, in the secret chamber. The elixir's warmth still slowly circulated through his meridians, Chen Ji's complexion had improved greatly. He sat on a meditation cushion, Su Qingyao quietly seated across from him, holding an ancient token. The entrance to the Forbidden Grounds lies hidden behind a sheer cliff at the Tianqing Sect Back Mountain, requiring the Sect Master's token to open.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_026",
+        "character_id": "char_chenji",
+        "content": "Su Qingyao, are you certain? Once we enter the Forbidden Grounds, life and death become unpredictable.",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_027",
+        "content": "Su Qingyao did not answer, merely tucking the token into her sleeve and rising to walk toward the chamber door. Her silhouette appeared especially resolute in the flickering firelight, her shoulders trembling slightly, yet she never looked back. \"Seven days,\" her voice drifted from the doorway, carrying unwavering resolve, \"I will walk these seven days with you. Whatever lies ahead.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_028",
+        "character_id": "char_chenji",
+        "content": "(Gazing at her departing figure, murmuring softly) Fool...",
+        "emotion": "动容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_029",
+        "content": "Chen Ji slowly rose, walking toward the hidden compartment in the chamber's corner. He took out a black cloak from the compartment, its surface embroidered with intricate runes, glowing with a faint silver light. This was a concealment treasure he had casually obtained years ago, capable of concealing one's aura fluctuations. \"In the Forbidden Grounds, the dangers aren't just formations and mechanisms,\" he murmured to himself, donning the cloak, \"But also those... things that shouldn't exist.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_030",
+        "content": "The Back Mountain Cliff, cold wind howling. Night ink-black, only a sliver of moonlight piercing through layers of dark clouds, spilling onto the seemingly ordinary yet secretly mystical blue stone atop the cliff. Su Qingyao stood before the cliff, the token in her hand radiating soft light, echoing with the patterns on the blue stone. Chen Ji stood behind her, the cloak's hood obscuring most of his features, only revealing a pair of deep, abyss-like eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_031",
+        "character_id": "char_chenji",
+        "content": "Are you ready? Once inside, nothing can be predicted.",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_032",
+        "content": "Su Qingyao did not answer, merely pressing the token onto the blue stone. In an instant, brilliant light erupted. Countless intricate patterns emerged on the blue stone's surface, those patterns writhing and spreading like living things, ultimately converging into a portal of light large enough for two to pass through side by side. A cold, sinister aura rushed out from the portal, carrying an ancient, terrifying pressure that chilled hearts.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_033",
+        "content": "Just as the two were about to step into the portal, the Tianji Record Fragment on Chen Ji's chest suddenly emitted a sharp hum, its azure glow especially striking in the darkness. His expression changed slightly as he looked down—the runes on the fragment were flickering in some strange frequency, as if transmitting some warning to him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_034",
+        "character_id": "char_suqingyao",
+        "content": "What's wrong?",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_035",
+        "content": "Chen Ji frowned tightly, taking the fragment from his chest and cradling it in his palm. Within the azure glow, he faintly glimpsed a blurry image—something deep within the Forbidden Grounds seemed to be calling to him. That call was ancient and distant, carrying an irresistible allure, urging him to hurry deeper. Yet simultaneously, an inexplicable chill climbed up his spine, making even his soul tremble.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_036",
+        "content": "\"Something... is waiting for me.\" Chen Ji's voice was low, complex light flickering in his eyes. He knew the Forbidden Grounds would surely be perilous, but the Tianji Record Fragment's reaction was unexpectedly intense, as if something closely tied to his fate lay hidden within. He took a deep breath, exchanging a glance with Su Qingyao: \"Let's go.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_037",
+        "content": "Beyond the portal lay a dark corridor. Ancient runes carved on both stone walls glowed with a faint blue light, like some sleeping yet still-breathing life forms. The air carried the scent of decay and dampness. Occasionally, the echo of dripping water from the depths could be heard, especially clear in the silence. The two walked side by side, their footsteps echoing through the corridor, as if some ancient ritual was quietly commencing.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_038",
+        "content": "At the corridor's end, it suddenly opened up. A massive underground palace, its dome so high it disappeared from view. The surrounding walls were inlaid with countless glowing crystals, rendering the entire palace dreamlike and ethereal. At the palace's center stood a majestic stone monument, its surface covered in dense,密密麻麻的文字，每一个文字都在微微蠕动，仿佛下一刻就要破壁而出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0115_039",
+        "character_id": "char_chenji",
+        "content": "(盯着石碑，面色骤变) This is impossible...",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_040",
+        "content": "Chen Ji's voice trembled slightly, his pupils reflecting the text on the monument. Those characters were all too familiar to him—identical to the runes on the Tianji Record Fragment, unmistakably the same ancient script. What made his heart even more shaken was that on the monument's base, two characters were carved: Tianji.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0115_041",
+        "content": "Just then, the runes on the monument suddenly blazed brilliantly. An ancient, majestic voice echoed throughout the entire palace: \"Tianji successor... you have finally arrived.\" That voice seemed to traverse endless years, carrying a certain scrutiny and anticipation, \"This old one has been waiting for quite some time.\" Chen Ji felt a sharp pain in his mind. The Tianji Record Fragment actually flew out from his chest on its own, hovering above the monument, emanating a light that resonated with the fragment in his body.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

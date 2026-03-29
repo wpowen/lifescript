@@ -1,0 +1,438 @@
+{
+  "id": "天机录_ch0089",
+  "book_id": "天机录",
+  "number": 89,
+  "title": "兄妹重逢",
+  "is_paid": true,
+  "next_chapter_hook": "陈念从怀中取出一枚古朴的玉佩，上面隐约浮现出第二片天机录残页的线索图案——陈机意识到，父亲临终前留下的，或许远不止一个遗物这么简单。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0089_001",
+        "content": "天青宗杂役处的晨雾尚未散尽，陈机蹲在药田边，手里机械地拔着杂草，神情却早已神游天外。墨先生消散时那句\"第七百章的命运，不是终点，而是开始\"，像一根刺扎在他识海深处，怎么也拔不出来。他闭上眼，天机录残页微微发热，那模糊的未来画面仍在眼前若隐若现——三日后，宗门大比，有人会死。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_002",
+        "character_id": "char_chenian",
+        "content": "陈机？陈机在吗？",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_003",
+        "content": "这声音……陈机猛地站起身，手中的杂草散落一地。他以为自己听错了，又或者这是天机录预见的幻象之一。但那音色太过熟悉，熟悉到他十年来无数次在梦中期盼、在噩梦中恐惧——是他妹妹的声音，是陈念。杂役处的破旧木门被推开，一道纤细的身影逆光而立，晨光勾勒出她消瘦的轮廓，依稀可见幼时的模样。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_004",
+        "character_id": "char_chenian",
+        "content": "哥……我找到你了。",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_005",
+        "content": "陈机愣在原地，嘴唇微微颤抖。十年了，自圣宗将她掳走那日起，他便以为这辈子再也见不到她。天机录从未能预见到关于她的清晰画面——那片朦胧如雾的气息一直在提醒他，陈念的存在本身就在干扰天机之力。他曾无数次揣测她是否还活着，此刻她就站在面前，真实得近乎残忍。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_006",
+        "character_id": "char_chenian",
+        "content": "你……你怎么进来的？守山弟子没有拦你？圣宗的人呢？有没有跟踪？",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_007",
+        "content": "陈机一连串的问题脱口而出，语气中的锐利连他自己都没察觉。他上前一步，双手扣住陈念的肩膀，目光飞速扫向门外——周围没有可疑气息，没有阵法的异常波动，一切似乎太过平静。作为一个习惯在阴影中布局的人，这种\"恰到好处\"的顺利反而让他脊背发凉。他记下了，眼前的重逢固然让他心潮澎湃，但暗处的危险或许正在逼近。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0089_choice_01",
+        "prompt": "陈念的出现太过突然，以陈机多年的布局经验，他必须确认是否有危险跟随。但眼前是他失踪十年的妹妹，理智与情感在激烈交锋。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0089_选择_信任妹妹",
+            "text": "无条件信任，拥抱重逢",
+            "description": "十年离散，他已厌倦算计。妹妹既然能独自找到这里，就说明她有自保的能力。先享受这难得的团聚时刻。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能暴露自身弱点",
+            "visible_reward": "兄妹情感升温，获得家族情报",
+            "risk_hint": "如果她被人控制或跟踪，后果不堪设想",
+            "process_label": "放下戒心，真情流露",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0089_result_选择_信任妹妹_001",
+                  "character_id": "char_chenian",
+                  "content": "哥……你怎么瘦了这么多？",
+                  "emotion": "心疼"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0089_result_选择_信任妹妹_002",
+                  "content": "陈机的防线彻底崩塌。他一把将陈念拉入怀中，声音沙哑得几乎认不出：\"十年……我找了你十年。\"他闭上眼，任由那些精心编织的算计暂时退散——在这个拥抱里，他不是什么布局天下的棋手，只是一个终于找到妹妹的兄长。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹重逢_选择信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0089_选择_保持警惕",
+            "text": "暗中观察，先问清来意",
+            "description": "越是感人时刻越要冷静。圣宗的手段他见识过，心魔控魂术可以让人不知不觉成为棋子。先试探她知道多少。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能伤害妹妹感情",
+            "visible_reward": "提前发现隐患，掌握主动权",
+            "risk_hint": "若陈念真心归来，会对她造成二次伤害",
+            "process_label": "压下情绪，审视全局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0089_result_选择_保持警惕_001",
+                  "character_id": "char_chenian",
+                  "content": "哥？哥你怎么了？我是念儿啊，你……你不认识我了吗？",
+                  "emotion": "受伤"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0089_result_选择_保持警惕_002",
+                  "content": "陈机松开手，退后半步，目光在陈念脸上逡巡。她眉眼间依稀有幼时轮廓，但十年光阴足以改变太多。他注意到她腕间若隐若现的黑色纹路——那是圣宗印记，绝非伪装能伪造的。\"念儿，你怎么逃出来的？圣宗那些人呢？\"他的语气温和，眸底却闪过一丝不易察觉的冷意——如果这是陷阱，他需要知道是谁在背后布局。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹重逢_保持警惕",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_008",
+        "content": "陈念似乎察觉到了哥哥的复杂情绪，她没有生气，反而露出一个了然的微笑——那笑容和记忆中如出一辙，让她整个人瞬间鲜活起来。\"哥，你还是老样子。我一路上留下记号了，你没发现吗？\"她抬起手，指尖凝出一缕淡金色的灵力，在空中勾勒出一个古老而简单的符文。陈机瞳孔微缩——那是陈家血脉独有的印记，外人绝不可能知晓。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_009",
+        "character_id": "char_chenian",
+        "content": "爹临终前把这个教给了我，说如果有一天我找到你，就用这个证明身份。哥，他还活着的时候，天天都在念叨你……",
+        "emotion": "悲伤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_010",
+        "content": "陈机的心猛地揪紧。父亲去世时他正在闭关冲击境界，错过了最后一面，这件事成了他心中最深的遗憾之一。他看着妹妹眼中的泪光，所有的算计和防备都在这一刻土崩瓦解。他上前一步，重新握住她的手：\"念儿，对不起……是哥没用，没能保护好你们。\"他的声音低沉，每一个字都像是从胸腔里挤出来的。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_011",
+        "character_id": "char_chenian",
+        "content": "不是哥的错，是圣宗那群恶魔！哥，爹走的时候很安详，他让我把这个交给你……",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0089_choice_02",
+        "prompt": "陈念说她带来了父亲的遗物，陈机需要决定如何面对这份可能的家族传承。",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0089_选择_追问圣宗",
+            "text": "先问圣宗情况，情报优先",
+            "description": "父亲已逝，追问细节无益。当务之急是了解圣宗为何放她离开，是否有阴谋。保护妹妹的前提是先掌握敌情。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暂时搁置父亲遗物",
+            "visible_reward": "获取圣宗动向情报",
+            "risk_hint": "可能让妹妹觉得你不重视父亲的嘱托",
+            "process_label": "整理思绪，获取关键情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0089_result_追问圣宗_001",
+                  "character_id": "char_chenian",
+                  "content": "念儿，圣宗怎么会放你离开？你是怎么逃出来的？他们有没有派人跟踪你？",
+                  "emotion": "严肃"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0089_result_追问圣宗_002",
+                  "content": "陈念愣了一下，随即眼眶泛红，但她很快稳住情绪，用力点头：\"哥，我明白的。圣宗最近出了大事，内部大乱，顾不上看管我们这些'特殊材料'……\"她顿了顿，\"但我知道，他们很快就会反应过来。我必须在那之前把爹交代的事告诉你。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹重逢_追问圣宗",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0089_选择_先看遗物",
+            "text": "先看父亲留下的东西",
+            "description": "父亲临终嘱托必然有深意。既然念儿能走到这里，说明她有足够的谨慎和智慧。眼下先完成父亲遗愿。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暂时无法判断当前危险程度",
+            "visible_reward": "获得父亲遗物及关键线索",
+            "risk_hint": "如果遗物涉及重大秘密，可能引来觊觎",
+            "process_label": "尊重父亲遗愿",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0089_result_先看遗物_001",
+                  "content": "陈机深吸一口气，按捺住心中的急切。不管前方有什么阴谋，眼下最重要的是父亲临终的嘱托。他轻声说：\"念儿，把爹留给我的东西给我看看。\"陈念点点头，颤抖着从怀中取出一个用粗布包裹的小盒子。盒子看起来十分陈旧，边角已经磨损，但被保养得很仔细。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0089_result_先看遗物_002",
+                  "character_id": "char_chenian",
+                  "content": "爹说，这个东西很重要，重要到要用我们陈家祖传的'天命锁钥'来保管……哥，你知道什么是天命锁钥吗？",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹重逢_先看遗物",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_012",
+        "content": "天命锁钥——这四个字如惊雷般在陈机识海中炸响。他想起天机录残页中那段模糊的记载：\"天命锁钥，可封天机之变，可解天数之劫。\"陈念作为天命锁钥被圣宗带走，而他作为天机录的传承者被天机录选中——父亲留下的这个盒子里，究竟藏着什么秘密？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_013",
+        "character_id": "char_chenian",
+        "content": "哥，爹说……他说天机录不只一页。第二页的线索，就藏在这个盒子里。但他让我警告你，在你足够强大之前，不要去找……",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_014",
+        "content": "陈机接过盒子，指腹摩挲着粗糙的布面。他能感受到盒子内部传来的微弱灵力波动，熟悉而陌生，像是在呼唤他识海中的天机录残页。墨先生消散前说过，\"第七百章的命运不是终点\"——如果天机录真的有第二页，那么父亲留下的这个线索，是否就是打开那扇门的钥匙？他缓缓解开粗布，露出盒盖上古朴的陈家印记。就在这时——",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0089_choice_03",
+        "prompt": "盒子即将打开，但陈机敏锐地感知到一丝异样——这丝异样让他必须做出最终决断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0089_选择_立刻打开",
+            "text": "当着念儿的面打开",
+            "description": "这是父亲留给他的遗物，念儿亲眼见证是理所应当。而且他需要知道里面究竟是什么，才能判断接下来的行动方向。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能暴露重要线索给潜在敌人",
+            "visible_reward": "第一时间获取完整信息",
+            "risk_hint": "如果有人监视，可能暴露天机录的秘密",
+            "process_label": "当机立断，揭开谜底",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0089_result_立刻打开_001",
+                  "content": "陈机不再犹豫，他深吸一口气，轻轻掀开盒盖。盒中躺着一枚温润的玉佩，玉佩上刻着一个古老的符文，符文中央，隐约浮现着一幅微缩的地图——不，那不是普通的地图，而是第二片天机录残页的轮廓！陈机的瞳孔骤然收缩，他感到识海中的天机录残页剧烈震动起来，像是在欢呼，又像是在悲鸣。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹重逢_打开遗物",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0089_选择_先布结界",
+            "text": "先设下感知结界再打开",
+            "description": "父亲特意叮嘱\"不够强大时不要去找\"，说明第二页牵涉极大危险。在打开任何可能暴露秘密的东西前，先确保不被窥视。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗时间和灵力",
+            "visible_reward": "安全获取信息，避免暴露",
+            "risk_hint": "结界可能被高手察觉",
+            "process_label": "谨慎行事，步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0089_result_先布结界_001",
+                  "content": "陈机抬手，灵力在指尖凝聚成一个隐晦的符文——这是他从某个遗迹中偶然学来的小术，可以暂时隔绝五百丈内的所有探查。\"念儿，帮我看着门外。\"陈念虽不解，但还是点头走到门边。陈机再次深吸一口气，缓缓掀开盒盖。盒中的玉佩泛着柔和的光芒，那一刻，他感到识海中沉睡已久的某种力量被唤醒——第二片天机录残页的线索，就在这枚看似普通的玉佩之中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹重逢_谨慎开盒",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_015",
+        "content": "就在这时，陈念突然脸色大变：\"哥，有人来了！至少三个，都是筑基后期！\"陈机眸光一凛，天机录残页在识海中疯狂震动——那个模糊的未来画面正在变得清晰：三日后宗门大比，有人会死，而那个人的脸……他紧紧握住玉佩，冷声道：\"念儿，跟紧我。今天的事，一个字都不能让第四个人知道。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0089_016",
+        "character_id": "char_chenian",
+        "content": "哥，我不怕。十年了，我等这一天等了太久。不管前面是刀山火海，念儿都陪着你。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0089_017",
+        "content": "陈机看着妹妹眼中与自己如出一辙的光芒，心中涌起一股难以言喻的暖流。十年前那个被掳走时只会哭泣的小女孩，如今已长成能与他并肩而立的战士。他将玉佩收入怀中，转身拉着陈念隐入药田深处。墨先生的话仍在耳边回响，天机录的秘密才刚刚揭开冰山一角，而属于他的棋局，正步入一个全新的阶段。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

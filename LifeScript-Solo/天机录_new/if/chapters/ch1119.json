@@ -1,0 +1,502 @@
+{
+  "id": "天机录_ch1119",
+  "book_id": "天机录",
+  "number": 1119,
+  "title": "旧敌新盟",
+  "is_paid": true,
+  "next_chapter_hook": "临时同盟初成，然而凌渊望向陈机的眼神深处，那抹不加掩饰的杀意，让这脆弱的合作随时可能崩裂。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1119_001",
+        "content": "天穹裂开一道墨紫色的缝隙，仿佛某只无形的巨眼正从裂缝深处窥视人间。凌渊一袭青袍立于云端，身后跟着十余名天青宗长老，威压如山岳倾覆，整个山谷都在微微颤抖。“陈机！”凌渊的声音冰冷彻骨，“老夫倒要看看，没有那层结界保护，你还能躲到几时！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_002",
+        "character_id": "char_lingyuan",
+        "content": "凌渊负手而立，目光如鹰隼般锐利，“维度裂缝虽危险，却也孕育绝世机缘。你以为老夫不知道你在打什么主意？”他冷笑一声，“今日这裂缝，老夫要定了！”",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_003",
+        "content": "陈机缓缓从废墟中站起，拍了拍衣袍上的尘土，脸上看不出半分惧色。他抬头望着那道横亘天际的裂痕，心中飞速盘算——维度裂缝的能量正在以肉眼可见的速度扩张，若不阻止，方圆百里都将沦为炼狱。凌渊想趁机夺宝，简直是与虎谋皮。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_004",
+        "character_id": "char_chenji",
+        "content": "“老前辈，晚辈有一事不明。”陈机不紧不慢地开口，声音里带着几分玩味，“您堂堂天青宗掌门，亲自来这穷乡僻壤抓一个杂役弟子，这排场是不是有点太给面子了？还是说……”他故意顿了顿，“您其实是专程来送死的？”",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_005",
+        "character_id": "char_lingyuan",
+        "content": "凌渊面色一沉，周身灵力骤然爆发，一名长老竟被震退数步。“黄口小儿，安敢在此狂吠！”他抬手便要施展神通。然而就在这时，远处天际传来一声暴喝——",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_006",
+        "content": "“都给本座让开！”一道赤金色的流光破空而至，来人正是玄武宗第一天才韩烈。他浑身浴血，狼狈不堪，身后同样跟着一群残兵败将。堂堂玄武宗精锐，此刻竟像是被什么东西追着逃命。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_007",
+        "character_id": "char_hanlie",
+        "content": "韩烈一眼看到陈机，眼中闪过复杂的神色——有愤怒，有不甘，更多的是难以置信。“怎么是你！”他咬牙切齿，“那个废物居然还活着！”",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_008",
+        "content": "陈机看着韩烈那副狼狈相，嘴角微微上扬。好消息：韩烈也来了。坏消息：能让这家伙怕成这样，那维度裂缝里的东西，恐怕比他预想的还要棘手。夜清的身影悄然出现在陈机身侧，低声道：“公子，裂缝里的气息很不对劲。”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1119_choice_001",
+        "prompt": "三方势力齐聚，维度裂缝的威胁迫在眉睫。面对曾经的宿敌，陈机需要做出选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianji_ch1119_opt_sincere",
+            "text": "真诚合作",
+            "description": "放下成见，坦诚告知维度裂缝的危险，建议三方联手应对。毕竟内斗的前提是大家都活着。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "可能获得凌渊和韩烈的有限信任",
+            "risk_hint": "凌渊可能趁机发难",
+            "process_label": "坦诚相待",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_sincere_001",
+                  "content": "陈机深吸一口气，收起平日的懒散，正色道：“凌掌门，韩兄，维度裂缝里的东西，不是咱们任何一方能单独对付的。”他指向那道不断扩张的裂痕，“看那能量波动，三日之内，整个青云山脉都会化为齑粉。”"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_watchful",
+            "text": "互相提防",
+            "description": "保持警惕，观察凌渊和韩烈的动向。让他们先试探裂缝的威力，自己坐收渔翁之利。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失最佳合作时机",
+            "visible_reward": "保留底牌，观察敌人弱点",
+            "risk_hint": "裂缝扩大可能失控",
+            "process_label": "静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_watchful_001",
+                  "content": "陈机后退半步，做出一副愿闻其详的姿态。他看向凌渊，拱手道：“老前辈修为通玄，晚辈自愧不如。这裂缝该如何处置，还请前辈示下。”他心中暗笑：让你先上，看看你有几斤几两。凌渊眉头一皱，似乎察觉到了什么，却又说不清楚。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_calculate",
+            "text": "暗中算计",
+            "description": "趁机挑拨凌渊和韩烈的关系，让他们先打起来，自己好从中渔利。反正这两个都不是什么好东西。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激怒双方",
+            "visible_reward": "可能削弱两方势力",
+            "risk_hint": "被识破将腹背受敌",
+            "process_label": "挑拨离间",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_calculate_001",
+                  "content": "陈机目光微闪，忽然轻笑一声：“韩兄，你可知道凌掌门为何亲自出手？”他悠悠道，“天机录的秘密，恐怕比那裂缝里的东西更让某些人感兴趣呢。”话音落下，韩烈面色骤变，望向凌渊的眼神顿时多了几分审视。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_009",
+        "content": "就在气氛剑拔弩张之际，维度裂缝猛然爆发出一道刺目的紫光。一只由纯粹能量凝聚的巨大手臂从裂缝中探出，足有百丈之巨，一把抓向众人！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_010",
+        "character_id": "char_hanlie",
+        "content": "韩烈想都没想，抬手便是玄武宗绝学“玄甲破”轰出。赤金色的拳芒与那只巨手相撞，爆发出震耳欲聋的轰鸣。然而那巨手只是微微一顿，便继续压下，韩烈竟被震得连退数步，口角溢血。“操！”他忍不住爆了粗口，“这什么鬼东西！”",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_011",
+        "character_id": "char_yeqing",
+        "content": "夜清眉头紧锁，低声道：“这不是普通的维度生物……是守墓者！”她看向陈机，眼中闪过一丝凝重，“传说维度裂缝的尽头，连接着上古禁地。而那些禁地里，埋葬着不该存在于世间的东西。”",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_012",
+        "content": "凌渊面色铁青，方才的傲慢荡然无存。他厉声道：“所有长老，随老夫迎敌！”然而那巨手的威压太过恐怖，几名修为稍弱的长老竟被压得跪倒在地。凌渊自己也感受到了前所未有的压力——那不是人力可以抗衡的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1119_choice_002",
+        "prompt": "守墓者的出现让局势急转直下。三方势力不得不正视同一个威胁——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "tianji_ch1119_opt_lead",
+            "text": "挺身而出",
+            "description": "陈机决定暴露部分实力，施展天机录的力量。虽然会消耗天命值，但若能暂时压制守墓者，便有机会建立真正的同盟。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗天命值",
+            "visible_reward": "三方刮目相看",
+            "risk_hint": "暴露天机录存在",
+            "process_label": "义不容辞",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_lead_001",
+                  "content": "陈机深吸一口气，咬紧牙关。墨先生的声音在脑海中响起：“小子，你确定？这可是守墓者……”陈机没有回答，天机录的残页在他掌心浮现，金色的符文流转，一股远超当前境界的威压从他身上爆发开来！"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_coordinate",
+            "text": "指挥调度",
+            "description": "陈机决定不亲自出手，而是用他的智谋协调三方势力。让他们各自发挥特长，协同作战。这种方式虽然慢，但能保存实力。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "耗费心神",
+            "visible_reward": "展现指挥才能",
+            "risk_hint": "可能被当成传话筒",
+            "process_label": "运筹帷幄",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_coordinate_001",
+                  "content": "陈机环顾四周，大脑飞速运转。他指向韩烈：“你正面硬扛！”又看向凌渊：“老前辈，您的阵法能否困住它片刻？”最后对夜清道：“用魔道迷雾遮掩我们的气息，让它找不到精准目标！”三人同时一愣——这废物，什么时候有这种魄力了？"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_013",
+        "content": "夜清第一个响应，她双手结印，周身涌起一层漆黑的迷雾。魔道迷雾如同活物般蔓延开来，将那巨手的攻击轨迹搅得混乱不堪。韩烈咬了咬牙，冷哼一声：“本座最讨厌被人指挥！”但脚下却已经冲了出去，玄武神通全力爆发。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_014",
+        "character_id": "char_lingyuan",
+        "content": "凌渊深深的看了陈机一眼，眼中闪过复杂的神色。他忽然发现，这个所谓的废物弟子，在这一刻展现出的冷静与决断，远超他的想象。但他没有多言，而是双手掐诀，一座巨大的困阵从天而降，将那只巨手牢牢锁住。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_015",
+        "content": "三方攻势同时落在那只巨手之上。守墓者的手臂终于出现了裂痕，但随即又以肉眼可见的速度愈合。韩烈怒吼连连，凌渊额头青筋暴起，夜清的迷雾也在急剧消耗。“撑不了多久！”她咬牙道，“它的恢复速度太快了！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_016",
+        "content": "陈机看着眼前的场景，心中已有计较。他忽然高声道：“别只打手！看它手臂连接裂缝的地方——那是本体所在！”他指向那道裂痕的边缘，那里正有一团蠕动黑影，正是守墓者的核心！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_017",
+        "character_id": "char_hanlie",
+        "content": "韩烈二话不说，脚下发力，整个人化作一道赤金色的流光，直扑那团黑影。凌渊眉头一皱，却也没有阻止，反而加大了阵法的输出，将巨手的动作彻底锁死。夜清默契地收敛迷雾，改为辅助韩烈冲刺。",
+        "emotion": "配合"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_018",
+        "content": "“轰！”韩烈的拳芒正中黑影核心，一声凄厉的嘶吼从裂缝深处传来。那只巨手猛然僵住，随即寸寸崩解，化作漫天能量碎片消散。守墓者被逼退了——至少暂时如此。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_019",
+        "content": "战斗结束，山谷中一片狼藉。三方人马彼此对视，气氛尴尬得能拧出水来。韩烈擦着嘴角的血，恶狠狠地瞪着陈机：“你……你这废物，什么时候变得这么厉害了？”陈机耸耸肩，一副人畜无害的表情：“韩兄过奖了，小弟只是瞎猫碰上死耗子。”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_020",
+        "character_id": "char_lingyuan",
+        "content": "凌渊走近几步，目光如刀：“陈机，你方才的指挥……”他顿了顿，似乎在斟酌用词，“倒是有几分当年的风范。”陈机心中一凛——当年的风范？他在暗示什么？面上却依旧笑嘻嘻的：“老前辈谬赞，晚辈惶恐。”",
+        "emotion": "试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_021",
+        "content": "夜清适时插话，打破了剑拔弩张的气氛：“诸位，守墓者只是暂时退却，以它的恢复速度，最多两个时辰就会卷土重来。”她看向三人，“在座的各位，若还想活着离开这里，恐怕得认真考虑一下……合作的问题了。”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1119_choice_003",
+        "prompt": "守墓者虽被逼退，但危机并未解除。面对夜清的建议，三方势力需要做出回应——",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "tianji_ch1119_opt_ally",
+            "text": "建立同盟",
+            "description": "陈机主动提议，既然大家都不想死，不如暂时放下恩怨，签订互不侵犯的临时协议。等度过这次危机再说。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "需要信任曾经的敌人",
+            "visible_reward": "获得喘息之机",
+            "risk_hint": "凌渊未必可信",
+            "process_label": "握手言和",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_ally_001",
+                  "content": "陈机上前一步，对凌渊和韩烈拱手道：“两位都是当世英杰，想必也明白当前的局势。守墓者不是咱们任何一方能对付的，不如先放下私怨，共渡难关？”韩烈冷哼一声，别过脸去，却没有开口反对。凌渊深深看了陈机一眼，良久，终于点了点头。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_guard",
+            "text": "保持戒备",
+            "description": "陈机同意合作，但要求各自保持警惕。毕竟凌渊和韩烈都是曾经的敌人，谁知道他们会不会趁机捅刀子。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能影响配合",
+            "visible_reward": "保存警惕心",
+            "risk_hint": "合作效率低下",
+            "process_label": "各怀心思",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_guard_001",
+                  "content": "陈机点点头，但话锋一转：“合作可以，但咱们丑话说在前头——谁敢在背后动手，别怪其他人联手对付他。”他看向凌渊，笑眯眯道，“老前辈德高望重，想必不会做这种事的，对吧？”凌渊嘴角抽搐了一下，这小子是在敲打他？"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_022",
+        "content": "就在三方勉强达成共识之际，远处忽然传来一阵银铃般的笑声。“哎呀呀，这是什么风，把正道三杰和魔道圣女都吹到一块儿了？”苏青瑶的身影出现在山谷边缘，她扫了一眼满目疮痍的战场，嘴角勾起一抹意味深长的弧度，“有意思，看来我错过了不少好戏。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_023",
+        "content": "陈机看到苏青瑶，心中暗叹一声麻烦。这女人的直觉太准了，每次都能嗅到不对劲的气息。他连忙换上一副受惊的模样：“苏师姐！您怎么来了？这里危险，快离开！”苏青瑶似笑非笑地看了他一眼，没有说话，但那眼神分明在说——你觉得我会信？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_024",
+        "content": "三方势力外加强势围观的苏青瑶，场面一时变得更加微妙。夜清轻咳一声，试图转移话题：“那个……守墓者随时可能再次出现，咱们是不是应该先找个安全的地方商议对策？”凌渊点点头，目光却始终没有离开陈机。他心中隐隐有种感觉——这个废物弟子，恐怕比他想象的还要危险得多。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_025",
+        "content": "一行人找到了山谷深处的一座废弃古殿暂且落脚。韩烈一屁股坐在石柱旁，嘴里还在骂骂咧咧；凌渊则负手而立，目光不时扫过陈机；夜清默默在角落布置结界；苏青瑶则站在陈机身侧，似笑非笑地看着他。气氛诡异到了极点，却又在某个微妙的平衡点上维持着。陈机心中苦笑——这阵容，打麻将都够格了。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

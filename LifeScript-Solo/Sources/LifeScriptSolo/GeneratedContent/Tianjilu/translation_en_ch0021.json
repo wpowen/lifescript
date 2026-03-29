@@ -1,0 +1,407 @@
+{
+  "id": "天机录_ch0021",
+  "book_id": "天机录",
+  "number": 21,
+  "title": "Father's Testament",
+  "is_paid": false,
+  "next_chapter_hook": "The moment Chen Ji's fingertips touched the faint light stirring on the turtle shell, an elderly exclamation of unease rang out from the first page of the Tianji Record—Mo Xiansheng's voice, one that had never shown such agitation before.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0021_001",
+        "content": "The candlelight flickered, casting eerie shadows on the walls of the secret chamber. Chen Ji gripped the yellowed letter, his knuckles white from the force. His father Chen Xuan's personal seal gleamed with a dull golden luster in the candlelight—that was the honorific mark only the Tianqing Sect Master could possess, yet now it seared into his eyes like a brand.\n\n\"My son, if you are reading this letter, it means Zhang Shen has made his move.\"\n\nThe meaning of these words exploded in his mind like thunder. Zhang Shen—the current Law Enforcement Elder of Tianqing Sect, his father's killer. And his father had foreseen all this years ago, yet could only seal the truth within this testament letter.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_002",
+        "content": "Chen Ji took a deep breath, forcing himself to remain composed. He continued reading, his pupils constricting tighter with each line.\n\n\"The Tianji Record was never mine to possess—it belongs to Heavenly Fate. I was merely its temporary guardian. The true inheritance requires the stir of Chen blood within you to activate it. I exhausted my entire life yet could never fully control its power.\"\n\nHis hand trembled slightly. The so-called waste bloodline, the so-called servant disciple—was he actually the most crucial piece in this chess game?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0021_003",
+        "character_id": "char_chenji",
+        "content": "Chen Ji murmured to himself, his voice hoarse like sandpaper scraping across dead wood: \"Father, how much did you know? How much did you hide from me?\"\n\nHis gaze fell upon the letter's end, where there was still a line of smaller text, the ink fainter than the main text, as if written with trembling hands in one's final moments.",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_004",
+        "content": "\"Remember—each use of the Tianji Record diminishes the holder's Heavenly Fate by a fraction. I spent thirty years of my life span just to glimpse a fraction of its truth. The clearer the future you see, the closer you are to death.\"\n\nChen Ji abruptly closed his eyes. He recalled every moment he had used his foresight ability—that feeling of his soul being torn away, the constantly depleting Heavenly Fate Value. So every glimpse into Heavenly Secrets was burning away his life.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_005",
+        "content": "But the letter wasn't finished. On the back of the last page was another passage, not in his father's handwriting, but an ancient script nearly lost to time.\n\n\"The key to Heavenly Fate lies within the Holy Sect.\"\n\nThese five words struck Chen Ji's heart like a heavy hammer. The key to Heavenly Fate—that was the legendary item capable of opening the gate to Heavenly Fate. He suddenly recalled that name, the one he had deliberately buried deep in his memory: Chen Nian."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0021_choice_001",
+        "prompt": "Chen Nian—this name was like a thorn lodged in Chen Ji's heart for years. Now she was in the Holy Sect's hands—how should he choose?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0021_cho1_a",
+            "text": "Plan the rescue immediately",
+            "description": "Regardless of the cost, rescue my sister first. She is my only relative, and the bond of blood cannot be severed.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May expose the existence of the Tianji Record",
+            "visible_reward": "Reunion with Chen Nian, key to unraveling the mystery of his origins",
+            "risk_hint": "The Holy Sect's power is immense; reckless action carries extremely high risk",
+            "process_label": "营救陈念",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0021_result_cho1_a_001",
+                  "content": "Chen Ji's gaze suddenly turned sharp. Holy Sect? Three Great Sects? If they dare to harm his sister in any way, he wouldn't hesitate to throw the entire world into chaos.\n\nHe tucked the secret letter into his chest, turned, and walked toward the sand table in the corner. The rescue plan began now."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_rescue_nian"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0021_cho1_b",
+            "text": "Investigate the truth first",
+            "description": "Stay calm and analyze. The letter states that Chen Nian is the 'key to Heavenly Fate,' meaning she herself is some kind of crucial existence. Understand the truth before acting.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Need time to gather intelligence",
+            "visible_reward": "A more comprehensive plan reduces mistakes",
+            "risk_hint": "The longer we delay, the more dangerous Chen Nian's situation may become",
+            "process_label": "调查天命锁钥",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0021_result_cho1_b_001",
+                  "content": "Chen Ji suppressed his anxiety. He had waited this many years—What's a few more days? He needed to know more—what exactly was the key to Heavenly Fate? Why did the Holy Sect take her? What role did his father play?\n\nOnly by understanding these could he devise a flawless plan."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "investigate_tianming"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_006",
+        "content": "As his thoughts churned, the turtle shell in his chest suddenly emitted a faint vibration. That was a reaction from the Tianji Record—a warm current溢出 from the turtle shell, flowing gently through his meridians.\n\nCould that be... Father's presence?\n\nChen Ji's eyes widened, not daring to believe his perception. Was a remnant of his father's will sealed within the Tianji Record?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0021_007",
+        "character_id": "char_moxiansheng",
+        "content": "An elderly yet familiar voice sounded in his mind, carrying fatigue and tenderness:\n\n\"Ji'er... you've finally found this letter. I've been waiting for you for so long.\"\n\nChen Ji's breath caught. This was his father's voice—the one he most longed to hear in his midnight dreams. He opened his mouth but couldn't make a sound.",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_008",
+        "content": "\"Don't rush into grief. Listen to what I have to say.\" Chen Xuan's voice was gentle yet urgent, \"Your bloodline is not waste—it is the rightful successor chosen by the Tianji Record. Zhang Shen betrayed me back then precisely to seize this inheritance. But the Tianji Record recognizes blood, not people. His efforts are destined to be in vain.\"\n\nChen Ji gripped the turtle shell tightly, his knuckles white. He could feel that wisp of remnant will gradually fading away.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0021_009",
+        "character_id": "char_moxiansheng",
+        "content": "\"There is one more thing.\" Chen Xuan's voice grew fainter, \"Nian'er is not your blood sister—she is the incarnation of the key to Heavenly Fate, a tool of Heavenly Will used to seal the Tianji Record. The Holy Sect took her to completely erase the power of the Tianji Record.\"\n\n\"But remember...\" the voice grew increasingly distant, \"She is your family—this will never change...\"\n\nThe words fell, the remnant will completely dissipated, leaving only the turtle shell's lingering warmth.",
+        "emotion": "悲伤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_010",
+        "content": "Chen Ji stood frozen, as if struck by lightning. Not a blood sister? Incarnation of the key to Heavenly Fate? Tool of Heavenly Will? This information flooded his mind like a tide, nearly drowning his reason.\n\nBut one thing became utterly clear at this moment.\n\nWhatever Chen Nian was, she was the sister he had watched grow up. The girl who would drape an outer robe over him on winter nights, the girl who believed in him when everyone else mocked him.\n\nThis, no one could change.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0021_choice_002",
+        "prompt": "Father revealed shocking truths. Chen Ji must make a choice: inherit his father's legacy and oppose Heavenly Will, or rescue Chen Nian first?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0021_cho2_a",
+            "text": "Inherit the legacy and oppose Heavenly Will",
+            "description": "Father spent his entire life fighting against Heavenly Will. Since the Tianji Record chose him, he must bear this responsibility. But first, he must rescue Chen Nian.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Using the Tianji Record accelerates Heavenly Fate consumption",
+            "visible_reward": "Gain father's complete inheritance and unlock deeper powers",
+            "risk_hint": "Opposing Heavenly Will means being at odds with the entire world",
+            "process_label": "继承遗志",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0021_result_cho2_a_001",
+                  "content": "Chen Ji slowly closed his eyes. When he opened them again, the confusion had vanished, replaced by a chilling coldness that sent shivers down one's spine.\n\n\"Father, rest assured.\" He spoke softly, his voice calm as still deep waters, \"The things you didn't finish, I will complete for you. And those who hurt you, who hurt Nian'er...\"\n\nThe corner of his mouth slightly rose—that was a smile utterly befitting of someone far removed from the word \"废物\"."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "inherit_father_will"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0021_cho2_b",
+            "text": "Rescuing Chen Nian comes first",
+            "description": "Whatever Heavenly Will, whatever Tianji Record inheritance—none compare to Nian'er's safety. Even if it means opposing the whole world, he would bring her back.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May alert the enemy and expose one's intentions",
+            "visible_reward": "Reunion with Chen Nian and gaining her special ability assistance",
+            "risk_hint": "The Holy Sect runs deep—one misstep and it's total defeat",
+            "process_label": "誓救陈念",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0021_result_cho2_b_001",
+                  "content": "Chen Ji pressed the turtle shell against his heart, feeling its lingering warmth.\n\n\"Father, forgive me.\" He silently prayed in his heart, \"Whatever Heavenly Will, whatever fate arrangement—if these so-called heavens want to take away the people I care about, then what if I become their enemy?\"\n\nHe stood up and pushed open the door to the secret chamber. Outside was endless night, yet the flames burning in his eyes outshone any star."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "save_nian_first"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_011",
+        "content": "Just as he prepared to leave the secret chamber, the turtle shell vibrated violently once more. This time was different—the first page of the Tianji Record suddenly flipped open, Mo Xiansheng's elderly figure manifesting from the void, his expression grave beyond anything seen before.\n\n\"Young Master!\" Mo Xiansheng's voice carried urgency, \"Something... is watching you!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0021_012",
+        "character_id": "char_moxiansheng",
+        "content": "\"What do you mean?\" Chen Ji frowned, his fingers instinctively tightening around the turtle shell in his chest.\n\nMo Xiansheng's gaze pierced through the void, as if gazing upon some distant existence: \"The moment the Tianji Record is activated, it produces a unique energy fluctuation. If a powerful being is monitoring the Tianji Record's movements...\"\n\nHe didn't finish, but the meaning was already clear.\n\nChen Ji's pupils contracted sharply. He thought of one person—Ling Yuan. That old sect master who had his sights set on his father and the Tianji Record.",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_013",
+        "content": "Chen Ji took a deep breath, quickly composing himself. Whether or not a powerful being was watching, he couldn't lose his composure. The priority was—\n\n\"Mr. Mo,\" he asked, his voice steady, \"Does the Tianji Record contain any records about the key to Heavenly Fate? My sister... Chen Nian—what exactly is her current state?\"\n\nMo Xiansheng was silent for a moment, his expression complex: \"It does. But Young Master, are you certain you want to know? Some truths, once known, cannot be undone.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0021_choice_003",
+        "prompt": "Mo Xiansheng seems to know more truths about Chen Nian. Should he press for the whole truth?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0021_cho3_a",
+            "text": "I need the complete truth",
+            "description": "Since we've come this far, there's no turning back. He must know everything about Chen Nian, even if the truth proves unbearable.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May destabilize the current state of mind",
+            "visible_reward": "Gain key intelligence and formulate a more complete plan",
+            "risk_hint": "The truth may be more cruel than imagined",
+            "process_label": "追问真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0021_result_cho3_a_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Chen Ji's voice held not the slightest hesitation: \"Speak.\"\n\nMo Xiansheng sighed: \"The key to Heavenly Fate is a tool Heavenly Will uses to seal the Tianji Record. Within Chen Nian's soul, half consists of the Tianji Record's original power. After the Holy Sect took her, this force is being gradually extracted...\"\n\n\"And after it's extracted?\" Chen Ji pressed.\n\nMo Xiansheng's voice was heavy: \"She will die. And the Tianji Record will be completely reclaimed by Heaven.\"",
+                  "emotion": "沉重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "know_full_truth"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0021_cho3_b",
+            "text": "Deal with the immediate crisis first",
+            "description": "Pressing for answers now will only disturb one's state of mind. Better to first handle Ling Yuan's possible surveillance and ensure safety before slowly understanding the situation.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss key information",
+            "visible_reward": "Ensure safety and buy more preparation time",
+            "risk_hint": "Time is urgent—may not make it in time to save Chen Nian",
+            "process_label": "谨慎行事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0021_result_cho3_b_001",
+                  "content": "Chen Ji shook his head: \"This isn't the time to press for answers. Tell me first—is there a way to mask the Tianji Record's energy fluctuations? Regarding Ling Yuan, I must deal with that first.\"\n\nA glint of approval flashed in Mo Xiansheng's eyes: \"Young Master is indeed level-headed. There is—but external assistance is needed. The 'Demonic Mist' from the Holy Sect of the Demonic Path happens to be able to conceal the Tianji Record's aura.\"\n\nChen Ji's eyes slightly moved. Ye Qing... It's time to meet again."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_counter_surveillance"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_014",
+        "content": "Chen Ji carefully folded the secret letter and tucked it into his chest. This letter contained too much information—he needed time to digest it all. But one thing was already very clear—from this moment on, he was no longer the downtrodden waste servant disciple.\n\nHe was the successor of the Tianji Record, the son of Chen Xuan, the brother of Chen Nian.\n\nAny one of these identities meant he had to stand up and face the forces that had been secretly manipulating fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_015",
+        "content": "He cast one final glance at the flickering candlelight in the secret chamber, then turned to push open the stone door. Night wind rushed toward him, carrying the distinctive herbal fragrance of Tianqing Sect. In the distance, several solitary lanterns swayed in the night sky—the lights of patrolling disciples.\n\nChen Ji took a deep breath, his expression already returning to its usual woodenness and timidity. An almost imperceptible self-mockery hung at the corner of his mouth. No one could see the flames burning within this \"waste\"'s heart.\n\nThe chess game had just begun.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_016",
+        "content": "However, the moment he stepped out of the secret chamber, the turtle shell in his chest suddenly transmitted a burning sting. That was a violent reaction never before seen from the Tianji Record—as if something was approaching from the void, probing his consciousness.\n\nWas that... an eye?\n\nChen Ji turned sharply, only seeing the dark night sky and distant twinkling stars. But that feeling of being watched clung to him like a bone-deep disease, impossible to shake.\n\nHeaven's Eye—it was truly watching him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_017",
+        "content": "Chen Ji's pupils contracted sharply, his fingertips growing cold. This feeling of being completely seen through was more despair-inducing than facing Ling Yuan. It was an existence beyond mortal comprehension,审视着他这只蝼蚁.\n\nBut the corner of his mouth slowly rose at this moment.\n\n\"Watching?\" he murmured softly, his voice light as a sigh in the wind, \"Then watch closely—there will come a day when I make you regret today's choice.\"\n\nHe resumed his stride, vanishing into the night. Behind him, that pressure of observation lingered like a shadow, yet could never truly lock onto his position.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0021_018",
+        "content": "The stone door of the secret chamber slowly closed, sealing all secrets once more in darkness. The candlelight extinguished, leaving only deathly silence.\n\nBut the moment before the stone door fully shut, the patterns on the turtle shell suddenly lit with a faint glow. The Tianji Record was operating on its own—it seemed to sense something, a call from deep within the bloodline.\n\nIt was Chen Nian.\n\nIn the Holy Sect's Forbidden Grounds thousands of miles away, a girl who had slept for many years suddenly opened her eyes, tears streaming silently down her face.\n\n\"Brother...\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

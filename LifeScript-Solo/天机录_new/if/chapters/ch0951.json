@@ -1,0 +1,598 @@
+{
+  "id": "天机录_ch0951",
+  "book_id": "天机录",
+  "number": 951,
+  "title": "皇朝使者",
+  "is_paid": true,
+  "next_chapter_hook": "终极棋手的棋盘已经展开，而陈机即将踏入那决定命运的禁地。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0951_001",
+        "content": "金光如潮，从天际尽头倾泻而下，将整个天青宗笼罩在一片肃杀之中。陈机站在杂役院中，抬头望着那道从天而降的身影，眉心处的天机录残页剧烈震颤，仿佛在警告着什么。\n\n那道人影周身缠绕着金芒，每一缕都蕴含着毁天灭地的威能。陈机眯起眼睛，感受到一股超越他认知的压力——这股力量，甚至凌驾于天青宗掌门之上。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "陈机，本座等你很久了。\n\n那道身影缓缓降落，周身金光萦绕，面容威严得令人窒息。他的声音不大，却清晰地传入在场每一个人的耳中，带着不容置疑的帝王之威。\n\n废材陈机，今日一见，果然名不虚传。那金色瞳孔中闪过一丝玩味，你这废物人设，倒是演得入木三分。",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_003",
+        "content": "陈机感受着那股无形的压迫，心中却是出奇的平静。他知道这一刻迟早会来，但没想到来得如此之快。\n\n皇朝使者亲临，陈机何德何能？他微微拱手，脸上挂着那副惯常的怯懦表情，声音却是不卑不亢。不知使者大人找我这小小杂役，有何贵干？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "皇朝使者冷哼一声，金色瞳孔中闪过一丝不屑。少在这里装蒜，你以为本座不知道你的底细？\n\n他猛然踏前一步，周身金芒暴涨，形成一道肉眼可见的威压光环。天机录残页在你识海之中，这是终极棋手的安排。本座此来，是奉命取回属于棋盘的东西。",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_005",
+        "content": "终极棋手？\n\n陈机心中一震，这个名字他还是第一次听到。天机录残页在识海中微微发热，仿佛在回应着什么。他突然意识到，自己一直在寻找的真相，或许就在眼前。\n\n皇朝使者见他沉默，嘴角勾起一抹讥讽的弧度。怎么，怕了？终极棋手的意志，岂是你这蝼蚁能够违抗的？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0951_choice_001",
+        "prompt": "皇朝使者步步紧逼，陈机面临第一个抉择：如何应对这远超预期的威胁？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0951_1_confess",
+            "text": "坦诚相见",
+            "description": "直接承认拥有天机录残页，以退为进试探对方底线",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露底牌",
+            "visible_reward": "获取终极棋手情报",
+            "risk_hint": "可能被强行夺走天机录",
+            "process_label": "坦诚",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_1_confess_001",
+                  "content": "陈机眼中闪过一丝精光，随即恢复了那副懦弱模样。既然使者大人已经知晓，那陈机便不隐瞒了。不错，天机录残页确实在我识海之中。只是不知这终极棋手……究竟是何方神圣？",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_1_confess_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者眉头微皱，显然没料到他会如此坦诚。你倒是识趣，不过……终极棋手的名讳，岂是你能随意打听的？他冷笑一声，你只需要知道，你不过是棋盘上的一枚棋子罢了。",
+                  "emotion": "讥讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0951_1_deny",
+            "text": "继续伪装",
+            "description": "咬死废物人设不松口，拖延时间暗中布局",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能被识破",
+            "visible_reward": "保持伪装争取时间",
+            "risk_hint": "惹怒使者后果严重",
+            "process_label": "伪装",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_1_deny_001",
+                  "content": "陈机脸上露出茫然之色，身子微微发抖。大、大人说的是什么？天机录？小、小人只是个杂役弟子，哪里见过什么天机录……",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_1_deny_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者眼中闪过一丝寒光，蝼蚁之辈，也敢在本座面前演戏？他猛然抬手，一道金光激射而出，直取陈机眉心。不过是对你的小小考验，看你如何反应。",
+                  "emotion": "冰冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0951_1_threaten",
+            "text": "反客为主",
+            "description": "直接质问皇朝与终极棋手的关系，展示自己的价值",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "得罪皇朝",
+            "visible_reward": "掌握对话主动权",
+            "risk_hint": "可能被当场击杀",
+            "process_label": "反击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_1_threaten_001",
+                  "content": "陈机忽然笑了，那笑容中带着一丝说不清道不明的意味。使者大人既然知道天机录在我识海中，那想必也知道这东西的用处。您说我是棋子，可终极棋手真的舍得毁掉这枚棋子吗？",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_1_threaten_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者的脸色微微一变，金色瞳孔中闪过一丝惊讶。他没想到这个废物弟子竟敢如此说话。好胆色！他冷哼一声，不过你以为凭这就敢跟本座谈条件？",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "皇朝使者负手而立，金芒在他周身流转，映照得他如同神祇降世。你以为皇朝是什么？帝国的最高统治者？他冷笑一声，皇朝不过是终极棋手在世间布下的棋子，而你天机录的传承者，更是棋子中的棋子。",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_007",
+        "content": "陈机听到这话，心中的震撼无以复加。原来如此……他喃喃自语，皇朝、宗门、魔道，所有势力都不过是棋盘上的棋子。而天机录，才是终极棋手真正想要的东西。\n\n天机录在他识海中剧烈震颤，似乎在回应着这个可怕的真相。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "终极棋手已经注视你很久了，陈机。皇朝使者的声音变得低沉而森寒，自你得到天机录的那一刻起，你就已经被纳入了棋局。本座此来，是给你一个机会——臣服，或者死。",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0951_choice_002",
+        "prompt": "终极棋手的意志摆在陈机面前，他必须做出决定：如何面对这超越一切的敌人？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0951_2_cooperate",
+            "text": "假意臣服",
+            "description": "先稳住皇朝使者，潜伏在敌人内部等待时机",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时低头",
+            "visible_reward": "获取更多情报",
+            "risk_hint": "可能被长期监视",
+            "process_label": "臣服",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_2_cooperate_001",
+                  "content": "陈机深吸一口气，缓缓跪下。陈机愿意归顺皇朝，听候终极棋手的调遣。他低着头，眼中却闪过一丝不易察觉的寒光。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_2_cooperate_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者满意地点点头。识时务者为俊杰，既然你愿意臣服，本座可以保你在皇朝中有一席之地。不过……他话锋一转，天机录必须交由本座保管。",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0951_2_resist",
+            "text": "誓死不从",
+            "description": "宁死不屈，展示真正的傲骨，即使明知不敌也不妥协",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "当场受辱",
+            "visible_reward": "保持尊严，赢得未来盟友尊重",
+            "risk_hint": "可能被当场击杀",
+            "process_label": "抵抗",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -10
+              },
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_2_resist_001",
+                  "content": "陈机缓缓站起身来，脸上的怯懦之色一扫而空，取而代之的是一种前所未有的平静。使者大人，陈机虽是废物，却也知道有些事，宁死不能做。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_2_resist_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者的眼中闪过一丝惊讶，随即是毫不掩饰的杀意。敬酒不吃吃罚酒！他抬手一掌拍出，金色掌印遮天蔽日地向陈机压来。",
+                  "emotion": "震怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0951_2_negotiate",
+            "text": "讨价还价",
+            "description": "展示自己的价值，与终极棋手建立平等对话的可能",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露野心",
+            "visible_reward": "可能获得喘息之机",
+            "risk_hint": "可能被当成威胁优先处理",
+            "process_label": "谈判",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_2_negotiate_001",
+                  "content": "陈机直视着那金色瞳孔，平静地开口。终极棋手需要天机录，是因为天机录能做一些它做不到的事。既然如此，使者大人何不与我谈谈条件？",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_2_negotiate_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者眯起眼睛，似乎在重新审视眼前这个年轻人。有意思，你竟然敢跟本座谈条件？他冷笑一声，说说看，你想要什么？",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_009",
+        "content": "就在双方僵持之际，天机录残页忽然在陈机识海中爆发出一阵耀眼的光芒。那光芒中蕴含着一种超越人间的力量，直接将皇朝使者的威压震退数步。\n\n使者的脸色大变，难以置信地望着陈机眉心处浮现的金色符文。这是……天机显灵？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_010",
+        "character_id": "char_moxiansheng",
+        "content": "一道苍老的声音忽然在陈机脑海中响起：痴儿，你终于触及了真相的边缘。终极棋手并非一人，而是天道意志的具象。它操控命运，编织因果，而你手中的天机录，是唯一能打破这一切的东西。",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0951_choice_003",
+        "prompt": "天机录显灵，墨先生透露关键信息，陈机需要在震惊中做出抉择",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0951_3_fight",
+            "text": "趁势反击",
+            "description": "借助天机录显灵的力量，试探性地对皇朝使者发起攻击",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "可能重创使者，威慑敌人",
+            "risk_hint": "可能引来终极棋手的直接关注",
+            "process_label": "反击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -12
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_3_fight_001",
+                  "content": "陈机眼中精光一闪，双手结印，天机录的力量如潮水般涌出。一道金色符文从他眉心激射而出，直取皇朝使者面门。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_3_fight_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者冷哼一声，袖袍一挥，将那金色符文击散。但他的眼中已经多了一丝忌惮。天机录的力量……果然名不虚传。不过，就凭现在的你，还远远不够。",
+                  "emotion": "忌惮"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0951_3_retreat",
+            "text": "借机脱身",
+            "description": "利用天机录显灵的混乱，立刻撤离现场，保存实力",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "放弃反击机会",
+            "visible_reward": "安全撤离，保留底牌",
+            "risk_hint": "可能被追杀",
+            "process_label": "撤退",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_3_retreat_001",
+                  "content": "陈机抓住这稍纵即逝的机会，身形暴退。与此同时，夜清的魔道迷雾悄然从他袖中弥漫开来，将他整个人笼罩其中。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_3_retreat_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "皇朝使者冷哼一声，想要追击，却发现那魔道迷雾极为诡异，竟能完全遮蔽天机录的气息。想跑？他冷笑一声，你跑不掉的，迟早还会再见。",
+                  "emotion": "威胁"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0951_3_hear",
+            "text": "追问真相",
+            "description": "暂时搁置与使者的对峙，向墨先生追问终极棋手的更多情报",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "错失撤退良机",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "可能激怒使者",
+            "process_label": "追问",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0951_result_ch0951_3_hear_001",
+                  "content": "陈机没有理会皇朝使者，而是在心中急切问道：墨先生，您说的天道意志是什么意思？终极棋手与我手中的天机录，究竟是什么关系？",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0951_result_ch0951_3_hear_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生的声音再次响起，透着无尽的沧桑。天机录本是天道的一部分，却被剥离出来，流落人间。终极棋手想要将它收回，从而彻底掌控命运。而你……是它选中的执棋人。",
+                  "emotion": "严肃"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "皇朝使者负手而立，金芒渐渐收敛，但眼中的威胁之意却愈发浓烈。陈机，今日之事，本座会如实上报终极棋手。他嘴角勾起一抹冷笑，下次见面，可就不是这么好说话了。\n\n说罢，金光一闪，那使者已消失在原地。",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_012",
+        "content": "陈机站在原地，望着使者消失的方向，久久无言。夜清的魔道迷雾已经散去，她的身影从暗处浮现，神情凝重。\n\n终极棋手……天道意志……陈机喃喃自语，心中掀起惊涛骇浪。原来从一开始，他就已经被卷入了一场跨越无数岁月的棋局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0951_013",
+        "character_id": "char_yeqing",
+        "content": "夜清走到他身边，罕见地露出一丝担忧的神色。陈机，你还好吗？皇朝的势力远超我们想象，若是他们全力出手……\n\n陈机转头看向她，眼中闪过一丝复杂的光芒。但也正因如此，我才更加确定了一件事。",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_014",
+        "content": "陈机深吸一口气，声音低沉而坚定。皇朝不过是终极棋手的下层棋子，而天机录……是唯一能打破这一切的东西。他抬头望向虚空，仿佛在直视着某个无形的存在。终极棋手，你想要的东西，我会亲手送到你面前——不过是以我的方式。\n\n夜清感受到他话语中的决绝，心中微微一震。这一刻，她看到了一个与废物人设完全不同的陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_015",
+        "content": "夜深了，天青宗的灯火渐渐熄灭。陈机独自站在山巅，望着远方翻涌的云海，脑海中不断回放着今日的一切。\n\n皇朝、终极棋手、天道意志……这些名词在他心中交织，形成了一幅前所未有的宏大图景。他知道，从这一刻起，自己面对的敌人已经完全不同了。\n\n但他没有恐惧，反而感到一种前所未有的清醒。既然棋局已经揭开，那就让我来执子落定——陈机低声说道，眼中闪烁着坚定的光芒——终有一日，我会将这棋盘，彻底掀翻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_016",
+        "content": "天机录在他识海中缓缓震动，仿佛在回应着他的决心。墨先生的声音再次响起，带着几分欣慰：痴儿，你终于迈出了第一步。不过，前路漫漫，你要有心理准备——终极棋手不会给你太多时间。\n\n陈机点了点头，目光愈发坚定。他知道，真正的博弈才刚刚开始，而他，已经做好了迎接一切的准备。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0951_017",
+        "content": "就在陈机沉思之际，远在皇都深处的某个隐秘之地，一双金色的眼睛缓缓睁开。那眼中没有任何情感，只有冰冷的算计。\n\n有意思……一个苍老而威严的声音在虚空中响起，这个陈机，比历代预言者都要有趣得多。不过，再有趣的棋子，也逃不出棋盘。\n\n金色瞳孔中闪过一丝寒光，终极棋手已经做好了迎接新一局博弈的准备。而陈机，即将踏入那决定命运的禁地。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

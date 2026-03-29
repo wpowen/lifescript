@@ -1,0 +1,302 @@
+{
+  "id": "天机录_ch0647",
+  "book_id": "天机录",
+  "number": 647,
+  "title": "血脉牵引",
+  "is_paid": true,
+  "next_chapter_hook": "壁画上那双眼睛仿佛穿透万年时光与他对视，陈机敢确定——那不是巧合，那是血脉在呼应。下一章，他将面对自己最不愿承认的身份：上古预言者血脉的最后传人。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0647_001",
+        "content": "那声低语如同烙铁，直直烫进陈机的神魂深处。\n\n他站在古老石门前，感受着体内血液如沸腾的岩浆般躁动——那是比天机录反噬更原始、更狂暴的力量。血脉深处，仿佛有什么东西正在苏醒。\n\n石门上的符文开始泛起幽蓝光芒，一圈一圈向外扩散，如同在辨认什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0647_002",
+        "character_id": "char_chenji",
+        "content": "（低声自语）这个声音...为什么像是刻在我骨头里的？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_003",
+        "content": "石门无声滑开，没有丝毫阻碍。\n\n陈机瞳孔微缩——他分明感应到这扇门内布满了足以绞杀元婴期的禁制阵法，可此刻，那些杀机森然的阵纹正如同恭敬的仆从，纷纷向两侧退去。\n\n不是禁制失效，是它们在向他行礼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_004",
+        "content": "甬道深处，墙壁上镶嵌的夜明珠依次亮起，仿佛在迎接归来的主人。\n\n陈机强迫自己冷静下来，意识海中，天机录残页泛起微光——墨先生的残魂正在苏醒。\n\n脚步声在空旷的通道里回荡，每一步都踩在命运的脉搏上。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0647_005",
+        "character_id": "char_moxiansheng",
+        "content": "（天机录残魂，苍老而凝重）孩子...你的血脉在回应这片遗迹。往前走，但记住——无论看到什么，不要试图抗拒真相。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_006",
+        "content": "甬道尽头豁然开朗。\n\n陈机踏入一座巨大的地下殿堂，穹顶高耸入云，绘制着漫天星辰与远古诸神交战的壁画。而正中央的石壁上，赫然刻着一幅画像——\n\n画中人面容清俊，眼角带着与陈机如出一辙的弧度。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_007",
+        "content": "陈机的心脏猛地收缩。\n\n那画像之下，密密麻麻刻满了古老的预言文字。他读得懂——不知为何，这些本该晦涩难解的远古文字，此刻却如同刻在血脉中的本能，让他一目了然。\n\n「预言者血脉，最后的承继者...」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0647_008",
+        "prompt": "壁画上的文字揭示了陈机可能是预言者血脉的最后传人。面对这个可能颠覆他所有认知的真相，陈机选择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "confront_bloodline",
+            "text": "直面血脉真相",
+            "description": "伸手触碰壁画，主动唤醒沉睡的血脉之力，哪怕代价是承受预言者代代累积的记忆冲击。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗10点天命值",
+            "visible_reward": "血脉觉醒，获得上古预言者的部分记忆传承",
+            "risk_hint": "记忆冲击可能导致神魂震荡，且会被天道之眼察觉",
+            "process_label": "触碰壁画",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0647_result_confront_bloodline_001",
+                  "content": "陈机深吸一口气，手指按上冰冷的石壁。刹那间，一股滚烫的力量顺着指尖涌入体内——那是跨越万年的记忆洪流，带着血与火的画面汹涌而来。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉觉醒中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "observe_first",
+            "text": "冷静观察壁画",
+            "description": "压下心中的震惊，仔细研究壁画中的每一处细节，试图从旁证中找到线索，而非贸然接触。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "无",
+            "visible_reward": "获得壁画中隐藏的上古典籍线索，为后续布局提供情报优势",
+            "risk_hint": "可能错过血脉觉醒的最佳时机",
+            "process_label": "研究壁画",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0647_result_observe_first_001",
+                  "content": "陈机收回伸出的手，指节微微发白。他退后两步，目光如刀般扫过壁画上的每一道线条。天机录给他最大的馈赠，不是预知未来的能力，而是——耐心。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得壁画线索"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_009",
+        "content": "壁画描绘的是一场惊天之战。\n\n九天之上，一只巨大的眼睛俯瞰苍生，眼眸中没有任何情感，只有冰冷的秩序与规则。而在那只眼睛之下，无数身影振臂而起——他们的眼瞳中闪烁着与陈机此刻相同的幽蓝光芒。\n\n预言者，他们被称为预言者。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_010",
+        "content": "陈机的指尖在壁画上滑动，触碰到了画像下方的一行小字。\n\n「天机录乃吾之遗物，血脉为钥，承继者当谨记——」\n\n文字在此处戛然而止，仿佛刻意留下空白。\n\n陈机嘴角勾起一抹冷笑：果然，从一开始就没有巧合。天机录选中他，不是因为运气，是因为血脉。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0647_011",
+        "character_id": "char_moxiansheng",
+        "content": "（残魂低语）你看到了吧...天机录的传承从来不是随机的。上一代预言者陨落前，将一切托付给了你的血脉先祖。而你，是被血脉选中的人。",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_012",
+        "content": "殿堂深处突然传来低沉的轰鸣。\n\n石壁裂开，一道幽蓝的光柱冲天而起，直直照在陈机身上。那光芒温热而熟悉，像是久别重逢的拥抱——\n\n陈机体内沉睡的力量彻底苏醒了。\n\n那是一股比天机录更原始、更纯粹的力量，源自血脉最深处，源自万年前那群敢于挑战天道的预言者。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_013",
+        "content": "血脉觉醒的瞬间，陈机的感知发生了翻天覆地的变化。\n\n他“看”到了这座遗迹的全貌——不是用眼睛，而是用血脉中流淌的本能。每一道禁制、每一座阵法、每一处机关，在此刻都如同摊开的棋谱般清晰呈现在他眼前。\n\n而更远处，他隐约感应到了三道熟悉的气息正在靠近。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0647_014",
+        "prompt": "血脉觉醒让陈机的感知范围大幅扩张，他感应到有三道气息正在接近遗迹。是立刻隐藏气息，还是利用新觉醒的能力探查来者身份？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "probe_visitors",
+            "text": "探查来者身份",
+            "description": "利用血脉觉醒后的增强感知，主动探查三道气息的身份与目的，在对方发现他之前掌握主动权。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗5点天命值",
+            "visible_reward": "获知来者具体身份及目的，获得先手优势",
+            "risk_hint": "主动探查可能暴露自身位置",
+            "process_label": "强化感知",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0647_result_probe_visitors_001",
+                  "content": "陈机眼眸微闭，血脉之力向外延伸。片刻后，他的眉头紧锁——三道气息中，有一道让他极为意外。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "hide_and_wait",
+            "text": "隐藏气息观察",
+            "description": "收敛血脉气息，隐入暗处观察来者动向。利用刚获得的遗迹感知能力，选择最有利的位置设伏。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无",
+            "visible_reward": "保留血脉觉醒的神秘感，让对方在不知情的情况下暴露更多信息",
+            "risk_hint": "可能错过重要情报收集时机",
+            "process_label": "隐匿气息",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0647_result_hide_and_wait_001",
+                  "content": "陈机收敛气息，身形融入阴影之中。他冷眼看着光柱的方向，心底却在飞速盘算——来者不善，但此刻暴露底牌绝非上策。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_015",
+        "content": "陈机压下心中翻涌的情绪，将注意力集中在那三道气息上。\n\n第一道，阴冷诡谲，带着魔道特有的腐蚀气息——夜清？不，比夜清更强，更古老，是魔道圣宗的长老级人物。\n\n第二道，正气凛然，剑意冲霄——天青宗的气息。韩烈？还是......凌渊？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_016",
+        "content": "第三道让陈机的心脏猛然一缩。\n\n那气息微弱而熟悉，如同游丝般飘忽，却带着一股无法言喻的亲近感——那是与他同源的血脉气息！\n\n「不可能...」陈机瞳孔骤缩，「陈念？」\n\n失踪多年的妹妹，为何会出现在这里？为何会与魔道和天青宗的人同时出现？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0647_017",
+        "character_id": "char_chenji",
+        "content": "（咬牙低语）陈念...你怎么会在这里！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_018",
+        "content": "殿堂入口处传来脚步声，三道身影缓缓步入。\n\n为首者是一位身着玄袍的老者，正是天青宗老掌门凌渊。他身后跟着一个陈机没有见过的魔道强者，而最让陈机揪心的——是两人之间那个被锁链束缚的瘦弱身影。\n\n那张脸，那双眼睛，分明就是他苦寻多年的妹妹。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_019",
+        "content": "凌渊环顾四周，目光最终定格在那幅壁画上。他的表情极为复杂，既有得逞的快意，又有难以掩饰的忌惮。\n\n「果然在这里...」凌渊喃喃道，「预言者的血脉，天机录的传承...今日，老夫要将这一切彻底抹除。」\n\n他身后的魔道长老冷笑：「凌老头，你可别忘了我们的约定。这血脉，还有那天命锁钥，都归圣宗所有。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0647_020",
+        "content": "陈机藏在暗处，指甲深深嵌入掌心。\n\n他看着妹妹苍白的面容，看着她身上那些触目惊心的伤痕，看着她那双曾经清澈如今却满是恐惧的眼睛——\n\n心底某处名为理智的弦，断了。\n\n「凌渊...」他的声音低得如同来自九幽地狱，「我本想一步步将你逼入绝境，让你尝尝绝望的滋味。但你千不该万不该，碰我的家人。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

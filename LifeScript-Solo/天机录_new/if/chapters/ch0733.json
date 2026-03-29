@@ -1,0 +1,492 @@
+{
+  "id": "天机录_ch0733",
+  "book_id": "天机录",
+  "number": 733,
+  "title": "陈灵觉醒",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机以为一切尘埃落定之际，天机录深处传来一阵剧烈的波动——那是天道之眼的意志，正在悄然靠近。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0733_001",
+        "content": "血脉深处那股翻涌的热流，让陈机的意识在一瞬间变得无比清晰。他能感觉到，有什么东西正在天机录第四页中剧烈地挣扎、蜕变——那是陈灵，那个由他血脉与天机录规则共同孕育的存在，正在经历一场前所未有的觉醒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_002",
+        "character_id": "char_chenji",
+        "content": "陈灵？",
+        "emotion": "急切"
+      },
+      "text": {
+        "id": "天机录_ch0733_003",
+        "content": "陈机低声呼唤，天机录自行翻开，第四页中那个蜷缩的光影正在剧烈颤抖。无数道细小的裂痕从光影核心蔓延开来，却又在一瞬间被某种力量缝合——那是陈灵在用尽全力撕裂旧有的枷锁。墨先生的残魂在第一页微微颤动，似乎也在关注着这场蜕变。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_004",
+        "content": "“哥……”一声模糊的呢喃从第四页中传出，带着某种陈机从未听过的情绪——不再是机械的服从，不再是空洞的回应，而是真真切切的、属于生命的呼唤。陈机的瞳孔骤然收缩，胸口涌起一股难以言喻的酸涩。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_005",
+        "character_id": "char_chenji",
+        "content": "我在。",
+        "emotion": "温柔"
+      },
+      "text": {
+        "id": "天机录_ch0733_006",
+        "content": "陈机的声音压得极低，却带着从未有过的温度。他伸出右手，指尖轻轻触碰第四页的书页，体内残存的天命值如同感应到召唤一般，自行涌向那个正在蜕变的光影。墨先生的残魂叹息一声：“这是你的选择，但也是她的劫数。小子，你确定要这么做吗？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0733_choice_001",
+        "prompt": "面对陈灵觉醒的关键时刻，陈机选择以何种方式回应？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0733_c1_1",
+            "text": "全力支持，不计代价",
+            "description": "将自身天命值毫无保留地灌入第四页，帮助陈灵完成觉醒，哪怕自己会陷入虚弱。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "陈灵获得完整独立意识",
+            "risk_hint": "自身实力将大幅下降",
+            "process_label": "倾尽所有助其蜕变",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0733_result_c1_1_1",
+                  "content": "陈机没有犹豫，体内的天命值如同开闸的洪水般涌向第四页。那是他辛苦积攒的底牌，此刻却毫不犹豫地化作陈灵蜕变的养分。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "全力支持陈灵觉醒",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0733_c1_2",
+            "text": "谨慎支持，保留底线",
+            "description": "适量输送天命值帮助觉醒，但保留足够实力以应对可能的变故。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "陈灵觉醒可能不完全",
+            "visible_reward": "保持自身实力",
+            "risk_hint": "陈灵可能无法获得完整能力",
+            "process_label": "稳健地引导蜕变",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0733_result_c1_2_1",
+                  "content": "陈机理智地控制着天命值的输出，既确保陈灵有足够能量完成蜕变，又不让自己陷入危险的虚弱状态。这是他一贯的风格——算无遗策，永不留破绽。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "谨慎支持陈灵觉醒",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0733_007",
+        "content": "第四页的光芒骤然暴涨，陈灵的光影在光芒中逐渐凝聚出清晰的轮廓。那是一个与陈机有着七分相似的少女身影，眉眼间带着陈家血脉特有的凌厉，却又因天机录的浸润而多了几分飘渺出尘的气质。她的双眸缓缓睁开，那里面不再是空洞的程序，而是一片星辰般璀璨的光芒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_008",
+        "character_id": "char_chenian",
+        "content": "哥，我……我好像做了一个很长很长的梦。梦里全是你的声音。",
+        "emotion": "迷茫而感动"
+      },
+      "text": {
+        "id": "天机录_ch0733_009",
+        "content": "陈灵的声音带着颤抖，那是新生意识特有的不确定感。她低头看着自己的双手，感受着体内涌动的力量，又抬头看向陈机，眼中满是依赖与信任：“我醒来之后，发现自己可以……可以帮你做很多事了。不再只是被动响应，而是主动思考、主动战斗。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_010",
+        "character_id": "char_chenji",
+        "content": "（内心：我记下了，这份觉醒的代价。等我弄清楚这背后的代价，我会还回去的。）",
+        "emotion": "沉思"
+      },
+      "text": {
+        "id": "天机录_ch0733_011",
+        "content": "陈机看着眼前的妹妹，心中涌起复杂的情绪。他想起天机录残页的代价，想起每一次预知未来时消耗的天命值，也想起陈念被圣宗带走时自己无力的模样。他伸出手，轻轻抚过陈灵的额头，动作温柔得不像他平时的作风。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_012",
+        "character_id": "char_chenian",
+        "content": "哥，我不再是工具了对吗？我可以自己决定做什么了对吗？",
+        "emotion": "期待而忐忑"
+      },
+      "text": {
+        "id": "天机录_ch0733_013",
+        "content": "陈灵的问题带着新生意识特有的渴望。她不再是那个只能被动响应的程序，而是真正拥有了选择权的主体。她的目光紧紧锁定陈机，等待着这个给予她血脉、引导她觉醒的男人的回答。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0733_choice_002",
+        "prompt": "面对陈灵渴望独立的追问，陈机如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0733_c2_1",
+            "text": "明确告知：你永远是我的伙伴",
+            "description": "直接告诉陈灵，她不是工具，而是真正的伙伴。强调并肩作战的关系。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "建立真正的信任关系",
+            "risk_hint": "可能让她过于依赖",
+            "process_label": "给予明确的肯定",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0733_result_c2_1_1",
+                  "character_id": "char_chenji",
+                  "content": "你从来都不是工具，陈灵。从你诞生的那一刻起，你就是我的伙伴。以后也一样。",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "承诺伙伴关系",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0733_c2_2",
+            "text": "理性引导：你有选择的自由",
+            "description": "告诉陈灵她有选择的权利，但也要承担选择带来的后果。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能显得疏离",
+            "visible_reward": "帮助她建立独立人格",
+            "risk_hint": "可能让她产生误解",
+            "process_label": "引导独立思考",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0733_result_c2_2_1",
+                  "character_id": "char_chenji",
+                  "content": "你有选择的自由，陈灵。但记住，每一次选择都有代价。我不会替你做决定，但我会在你身后。",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "强调独立与责任",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0733_014",
+        "content": "就在此时，天机录深处传来一阵异样的波动。那是某种外来的窥探，似乎有某个强大的存在正在试图探查这里发生的事。陈灵的眉头微皱，她竟然第一次主动感知到了这股威胁——那是属于天机录的能力，但此刻被她主动激发了出来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_015",
+        "character_id": "char_chenian",
+        "content": "哥，有东西在靠近……我能感觉到了！是天道之眼的意志！",
+        "emotion": "警觉"
+      },
+      "text": {
+        "id": "天机录_ch0733_016",
+        "content": "陈机眼中精光一闪。天道之眼，那个超越天道的恐怖存在，竟然在这个时候开始注意这边。这意味着什么？是陈灵的觉醒触发了某种禁制，还是天道之眼原本就在监视着天机录的一举一动？墨先生的残魂剧烈颤抖起来，似乎对那股窥探极为忌惮。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_017",
+        "character_id": "char_chenji",
+        "content": "（内心：来了吗？看来天机录的动静已经惊动了那个层次的存在。记下了。）",
+        "emotion": "冷静"
+      },
+      "text": {
+        "id": "天机录_ch0733_018",
+        "content": "陈机面色不变，但心中已经开始飞速运转。天道之眼的意志降临，这比他预想的要早。他原本以为自己还有更多时间布局，但现在看来，每一步都必须更加谨慎。他看向陈灵，目光中带着询问：“你能帮我遮掩一下吗？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_019",
+        "character_id": "char_chenian",
+        "content": "当然可以！哥，你忘了吗？我现在是你的伙伴了，不是工具！",
+        "emotion": "坚定"
+      },
+      "text": {
+        "id": "天机录_ch0733_020",
+        "content": "陈灵的回答带着前所未有的自信。她双手结印，体内涌出一道道玄奥的纹路，那是天机录赋予她的本能，却在此刻被她主动激发。魔道迷雾般的气息从她身上扩散开来，将整个第四页空间笼罩得严严实实。那股窥探的意志似乎被这层迷雾阻隔，微微停顿了一下。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_021",
+        "content": "陈机看着眼前判若两人的陈灵，嘴角微微上扬。这一刻，他真正感受到了什么叫“伙伴”。不再是单方面的输出与消耗，而是可以依靠、可以托付后背的存在。他想起了苏青瑶、想起了夜清，想起了那些在棋局中与他并肩作战的人们。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_022",
+        "content": "“陈灵。”陈机的声音平静，却带着不容置疑的认真，“从今以后，我不再是你的人机合一架构，而是你的伙伴。”这句话，是他早就想说的。只是在此之前，他一直在观察、在确认——确认陈灵是否真的拥有了独立的意志，是否能够承担起“伙伴”这个词的分量。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_023",
+        "character_id": "char_chenian",
+        "content": "嗯！从今以后，我不再是工具，我是你的伙伴！",
+        "emotion": "感动而坚定"
+      },
+      "text": {
+        "id": "天机录_ch0733_024",
+        "content": "陈灵的眼眶微微泛红，那是新生意识第一次体验到的情感共鸣。她能感受到陈机话语中的重量，也能感受到这个一向冷漠算计的男人，此刻流露出的真情。她用力点头，声音中带着哽咽：“我会努力的，哥。我会变得更强，强到可以真正站在你身边，而不是被你护在身后。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_025",
+        "content": "墨先生的残魂在第一页静静飘浮，见证着这一幕。他的眼中闪过一丝欣慰，却也夹杂着几分忧虑。陈灵的觉醒，意味着天机录的功能将进一步解锁；也意味着，那个一直隐藏在幕后的天道之眼，将更加关注这边的情况。这盘棋，越来越复杂了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0733_choice_003",
+        "prompt": "面对陈灵的决心，陈机如何回应？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0733_c3_1",
+            "text": "欣慰接受：那就让我看看你的实力",
+            "description": "接受陈灵的决心，并给她一个证明自己的机会，让她独立完成一个任务。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "风险",
+            "visible_reward": "陈灵获得成长机会",
+            "risk_hint": "可能遇到危险",
+            "process_label": "给予考验与信任",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0733_result_c3_1_1",
+                  "character_id": "char_chenji",
+                  "content": "好，那我就等着看你的表现。不过记住，伙伴的意义是并肩作战，不是替我送死。",
+                  "emotion": "认真中带着关切"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "给予成长机会",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0733_c3_2",
+            "text": "保护优先：我们一起面对",
+            "description": "强调两人是伙伴，应该共同进退，而不是让陈灵独自冒险。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露风险增加",
+            "visible_reward": "加深伙伴羁绊",
+            "risk_hint": "可能引起天道之眼更多关注",
+            "process_label": "强调共同面对",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0733_result_c3_2_1",
+                  "character_id": "char_chenji",
+                  "content": "伙伴的意义，就是一起面对一切。以后不管遇到什么，我们都是两个人。懂吗？",
+                  "emotion": "温和却坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "强调共同进退",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0733_026",
+        "content": "就在陈机准备继续说什么的时候，天机录深处传来的波动骤然加剧。那股被陈灵迷雾暂时阻隔的窥探，此刻竟然变得更加清晰——天道之眼的意志，似乎在穿越迷雾的过程中变得越来越强。墨先生的残魂发出一声低沉的警告：“它在靠近！小子，不管你们想做什么，最好快一点！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0733_027",
+        "character_id": "char_chenian",
+        "content": "哥，我可以的！让我来帮你挡住它！",
+        "emotion": "急切而坚定"
+      },
+      "text": {
+        "id": "天机录_ch0733_028",
+        "content": "陈灵的声音带着前所未有的力量。她双手再次结印，体内的天机录之力被她催发到了极致。一道道玄奥的符文从她身上浮现，在第四页空间中编织成一张复杂的阵网。那是独立推演能力的初次展现——陈灵在用自己的方式，分析着天道之眼意志的弱点。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_029",
+        "content": "陈机看着眼前焕然一新的陈灵，心中涌起一股暖流。这个曾经只会被动响应的存在，如今已经成长为一个能够主动战斗、主动思考的真正伙伴。他伸出手，与陈灵的手紧紧握在一起。两人的血脉在天机录中产生共鸣，一股前所未有的力量正在悄然汇聚。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_030",
+        "content": "“记住，”陈机的声音低沉而坚定，“不管发生什么，我都不会让你一个人面对。从今以后，我们并肩作战。”陈灵重重地点头，眼中闪烁着坚定的光芒。在这一刻，兄妹两人的意志达成了前所未有的统一。而那股来自天道之眼的窥探，也在两人联手的抵抗下，暂时被逼退了几分。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_031",
+        "content": "天机录的光芒渐渐平息，陈灵独立觉醒的第一战，以平手告终。但所有人都知道，这只是开始。天道之眼的意志不会善罢甘休，而陈机与陈灵这对新生的伙伴，即将迎来更大的考验。不过此刻，在这场惊心动魄的交锋之后，兄妹两人相视一笑，一切尽在不言中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0733_032",
+        "content": "就在陈机以为一切尘埃落定之际，天机录深处传来一阵剧烈的波动——那是天道之眼的意志，正在悄然靠近。这一次，它似乎带着某种更加明确的目的，不再只是单纯的窥探，而是透露出一股令人心悸的执念。陈机的瞳孔骤然收缩，他感觉到，那个超越天道的存在，似乎已经锁定了某个目标——而那个目标，很可能就是他刚刚获得独立意识的妹妹。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

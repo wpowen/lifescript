@@ -1,0 +1,536 @@
+{
+  "id": "天机录_ch0935",
+  "book_id": "天机录",
+  "number": 935,
+  "title": "血脉共鸣",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈灵以血脉之力压制住体内翻涌的远古意志时，那道沉睡了万载的残念却在被镇压的刹那，发出一声令陈机魂魄震颤的低语——\"我们终将合一\"。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0935_001",
+        "content": "面具落地的脆响，在寂静的大殿中回荡出无尽的余韵。陈机望着那张与记忆中相差无几的面容，一时间竟有些恍惚。七年了。他以为妹妹早已死在圣宗那场浩劫中，他以为那些午夜梦回时的愧疚将伴随终生。可此刻她就站在三丈之外，眉眼间的稚气虽已褪尽，却依然是那个会扯着他衣角喊着\"哥哥\"的小丫头。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_002",
+        "character_id": "char_chenian",
+        "content": "哥哥。\"陈灵的声音微微发颤，七年未曾在舌尖滚过的称呼，此刻吐出来竟带着几分生涩。她望着眼前这个气质截然不同的男子，眼眶倏然泛红，\"你瘦了。\"",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_003",
+        "content": "陈机喉头滚动了一下，嘴角那抹惯常的淡漠笑意悄然碎裂。他上前一步，却又在抬脚的瞬间顿住——体内的天机录残页骤然滚烫，那从未有过的灼痛让他眉头紧皱。命运在这一刻似乎露出了獠牙，而他竟看不透眼前这一幕究竟是福是祸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_004",
+        "character_id": "char_chenian",
+        "content": "我知道你在担心什么。\"陈灵擦去眼角的泪痕，目光骤然变得清明而深邃，\"天机录在你体内生出了排斥反应，因为它感知到了我身上的......另一种气息。\"她顿了顿，\"玄武精锐，随我而来的三百人，已将这座大殿围得水泄不通。但他们不是来抓你的，哥哥——他们是来还债的。\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0935_005",
+        "prompt": "陈灵说她带来了玄武精锐，陈机该如何应对这一突如其来的\"包围\"？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0935_005_a",
+            "text": "先稳住局面，暗中催动天机录窥探虚实",
+            "description": "尽管天机录对陈灵产生排斥，但窥探未来的本能让陈机不愿放弃这关键情报。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "获取陈灵此行真实目的的关键信息",
+            "risk_hint": "天机录可能因排斥而给出模糊预见",
+            "process_label": "天机录在你掌心泛起微光，命运的丝线却缠绕成乱麻......",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_005_a_1",
+                  "content": "天机录残页在掌心颤动，陈机凝视着泛起的模糊光影。画面中陈灵的身影时隐时现，仿佛隔着一层水雾——这是从未有过的异象。\"天命锁钥......\"他低喃，瞳孔骤缩，\"她的存在会让预见变得模糊......\"陈灵所说的\"第七位执棋者转世\"竟是真的。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_005_b",
+            "text": "主动向前，试探陈灵是否还记得幼时之事",
+            "description": "血脉至亲的本能让陈机想要确认眼前之人是否真是他苦寻多年的妹妹。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露内心柔软",
+            "visible_reward": "确认陈灵身份，同时唤醒她更完整的记忆",
+            "risk_hint": "若陈灵记忆有缺，可能落入未知陷阱",
+            "process_label": "你的指尖在袖中微微颤抖，七年的思念在这一刻决堤......",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_005_b_1",
+                  "content": "陈机深吸一口气，抬步向前。\"小灵，你还记得......那年除夕，你偷吃了我的糖人，被娘亲罚跪的事吗？\"陈灵浑身一震，眼眶再次泛红。\"你哭得稀里哗啦，还非要我替你跪......\"她扑上来紧紧抱住他，\"哥哥，我都想起来了。全部都想起来了。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "血脉相认",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_005_c",
+            "text": "冷笑质问：皇朝来使为何会是玄武精锐？",
+            "description": "陈机的谨慎让他无法轻易相信这突如其来的\"亲情\"，毕竟他的仇人可不少。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能伤害陈灵感情",
+            "visible_reward": "试探陈灵真实立场，获取更多信息",
+            "risk_hint": "若陈灵真是盟友，可能因猜忌而心生芥蒂",
+            "process_label": "你的语气骤然转冷，眼底的温度消失殆尽——这才是外人熟知的废材陈。",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_005_c_1",
+                  "content": "陈机负手而立，嘴角勾起一抹讥诮的弧度。\"皇朝来使、玄武精锐、陈家遗孤......陈灵姑娘，你身上套了多少层皮？\"他缓缓踱步，\"我不记得欠玄武宗什么债，倒想知道，你此番大张旗鼓，究竟所为何来？\"陈灵没有恼怒，反而露出一个意味深长的笑：\"哥哥果然还是那个算无遗策的哥哥。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0935_006",
+        "content": "无论陈机作何选择，陈灵都缓缓走到大殿正中，从怀中取出一枚古朴的玉简。那玉简上刻着一个陈机再熟悉不过的符文——与他掌心天机录残页上的纹路如出一辙。\"这是父亲临终前留给我的。\"她的声音清冷而坚定，\"他说，等找到哥哥的这一天，就把这枚玉简交给你。里面记载的，是第七位执棋者的完整真相。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_007",
+        "character_id": "char_chenian",
+        "content": "父亲......\"陈机喃喃低语，那个在他记忆中早已模糊的身影，此刻竟仿佛跨越时空与他对视。陈天命，天青宗百年前的天纵之才，也是天机录上一代选定的传承者。他在卷宗中留下的只言片语曾让陈机拼凑出一个模糊的轮廓，却从未想过，真相竟隐藏在这个他以为早已死去的妹妹身上。",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_008",
+        "content": "陈灵将玉简递到陈机面前，指尖却在触及他的瞬间骤然僵住。\"哥哥，你体内......有东西在苏醒！\"话音未落，陈机周身蓦然爆发出刺目的血芒，一股苍凉而浩瀚的气息从他眉心处轰然涌出。那是天机录残页从未展现过的异象——仿佛有什么沉睡了万载的存在，正在借他的身躯苏醒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_009",
+        "character_id": "char_chenian",
+        "content": "不要抗拒！\"陈灵厉喝一声，猛地咬破指尖，一道殷红的血箭激射而出，直直没入陈机眉心。那是她血脉中最本源的力量——陈家世代守护的\"天命锁钥\"之血。滚烫的血液在陈机体内炸开，却并非灼烧，而是如春风化雨般抚平了翻涌的异力。远古意志的咆哮在他脑海中回荡，却始终无法突破那道血脉铸就的屏障。",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_010",
+        "content": "陈机只觉浑身剧痛如裂，却在陈灵血脉之力的浇灌下逐渐平静下来。他望着眼前面色苍白的少女，那双眼睛里写满了担忧与决绝。\"小灵......\"他哑声道。\"没事的，哥哥。\"陈灵勉强扯出一个笑容，\"父亲说过，天命锁钥的作用，就是在关键时刻稳住执棋者的神魂。你体内的远古意志......它想趁机夺舍。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0935_011",
+        "prompt": "远古意志的夺舍被暂时压制，陈机该如何面对这个一直潜伏在自己体内的存在？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0935_011_a",
+            "text": "向陈灵追问远古意志的来历",
+            "description": "既然陈灵知晓天命锁钥的秘密，或许也知道这远古意志的底细。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时搁置对远古意志的警惕",
+            "visible_reward": "获取关于远古意志的重要情报",
+            "risk_hint": "远古意志可能趁对话时再度冲击封印",
+            "process_label": "你按捺住心中的不安，决定先弄清楚敌人究竟是什么。",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_011_a_1",
+                  "content": "陈机稳住心神，看向陈灵。\"那远古意志究竟是什么？为何会寄居在天机录中？\"陈灵沉默片刻，缓缓道：\"那是上古时代一位半步飞升的大能残魂。父亲说，天机录本身就是一件跨界法器，它在漫长的岁月中吸引了不少残念栖息。而那位......是其中最强的一个。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_011_b",
+            "text": "尝试以天机录之力反噬远古意志",
+            "description": "陈机向来不是被动挨打之人，即便对手是远古存在，他也想主动出击。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能反噬自身，消耗大量天命值",
+            "visible_reward": "可能重伤远古意志，削弱其夺舍能力",
+            "risk_hint": "若失败，远古意志将彻底失控",
+            "process_label": "你眼中闪过一丝狠厉，掌心天机录残页骤然绽放出璀璨光华......",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_011_b_1",
+                  "content": "天机录残页骤然爆发出前所未有的威能，金色符文如锁链般缠向那股远古意志。脑海中传来一声凄厉的嘶吼，那存在似乎没料到陈机敢主动出击，一时间竟被压制得动弹不得。\"小灵，趁现在！\"陈机厉喝。陈灵会意，又一道血脉之力灌入，两股力量夹击之下，远古意志发出愤怒的咆哮，被重新封入更深的沉睡。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "远古意志被压制"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_011_c",
+            "text": "保持沉默，思索陈天命当年布局的深意",
+            "description": "陈机意识到父亲将陈灵培养成天命锁钥绝非偶然，这一切背后必有更深的目的。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暂时无法获取更多信息",
+            "visible_reward": "可能推测出父亲布局的关键脉络",
+            "risk_hint": "远古意志可能趁机恢复，错过最佳反击时机",
+            "process_label": "你的眼神变得幽深，命运的棋盘在你脑海中缓缓展开......",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_011_c_1",
+                  "content": "陈机没有说话，脑海中却在飞速运转。父亲将天机录残页传给自己，将天命锁钥的秘密传给妹妹，又故意让他们在此时此刻相认......这绝非巧合。陈天命早在数十年前就已经布下了这步棋，而他和陈灵，不过是棋盘上终于走到一起的两枚棋子。\"父亲他......究竟想要我们做什么？\"他低声道。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0935_012",
+        "content": "大殿中的气氛凝滞如冰，三百玄武精锐的脚步声在殿外整齐划一，却无一人敢擅入。陈机与陈灵对视片刻，终于伸手接过那枚玉简。指尖触及玉简的瞬间，一股磅礴的信息流冲入他的识海——那是陈天命留下的毕生心血，也是第七位执棋者的完整传承。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_013",
+        "character_id": "char_chenian",
+        "content": "父亲说，天机录共有九页，分散于不同的时代与位面。\"陈灵的声音在陈机耳畔响起，\"而执棋者，是天机录选中来拼凑它的人。父亲是第六代，你是第七代。但你与他不同......你体内还有另一个存在在觊觎这具身躯。\"她顿了顿，\"所以父亲才让我成为天命锁钥——我是打破命运枷锁的关键媒介。没有我，你永远无法真正掌控天机录。\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_014",
+        "content": "陈机望着玉简中浮现的密密麻麻的文字，那是父亲对天机录、对远古意志、对天道之眼、对整个修仙界格局的终极揭秘。他越看越是心惊——原来所谓的天道意志，不过是一个以\"天道\"为名、操控所有预言者的幕后黑手；而天机录在世间的每一次传承，都是它布下的棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_015",
+        "character_id": "char_chenian",
+        "content": "哥哥，我还有一件事要告诉你。\"陈灵突然握住他的手，眼眶微红，\"我在玄武宗这些年，一直在暗中寻找关于你的一切。圣宗当年抓我，是想用天命锁钥的血脉做实验......但他们失败了，因为我的记忆被父亲封印了。直到三个月前封印松动，我才想起一切——想起我有个哥哥，想起父亲的遗命，想起......\"她哽咽了一下，\"想起我欠你七年的陪伴。\"",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0935_016",
+        "prompt": "面对陈灵的愧疚与真情流露，陈机该如何回应？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0935_016_a",
+            "text": "将妹妹拥入怀中",
+            "description": "七年的分离在这一刻彻底瓦解，陈机选择用最直接的方式回应这份血浓于水的亲情。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露内心最柔软的一面",
+            "visible_reward": "兄妹羁绊加深，血脉之力共鸣增强",
+            "risk_hint": "可能让在场玄武精锐窥见废材陈的另一面",
+            "process_label": "你的手臂微微颤抖，这个在敌人眼中冷酷无情的执棋者，在这一刻只是一个想要弥补遗憾的哥哥。",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_016_a_1",
+                  "content": "陈机将陈灵紧紧拥入怀中，下巴抵在她发顶。\"傻丫头，哥哥找了你七年......不是为了让你说对不起。\"他的声音有些沙哑，\"活着就好。活着就好。\"两人血脉之力在这一刻产生共鸣，大殿中竟凭空浮现出淡金色的光点，如萤火般环绕着这对苦别重逢的兄妹。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "血脉羁绊",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_016_b",
+            "text": "故作轻松地调侃",
+            "description": "陈机习惯用玩世不恭的态度掩饰真情，但语气中的温度却藏不住。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能让陈灵觉得哥哥在敷衍",
+            "visible_reward": "缓和气氛，兄妹间的隔阂彻底消融",
+            "risk_hint": "若语气太过轻佻，可能伤了陈灵的心",
+            "process_label": "你的嘴角勾起一抹久违的笑意，眼底却是化不开的温柔。",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_016_b_1",
+                  "content": "陈机揉了揉陈灵的头顶，像小时候那样。\"哭什么，堂堂玄武精锐的首领，哭鼻子可不好看。\"他故作嫌弃地说，眼角却微微泛红，\"再说了，谁让你乱跑的？以后不许了，听到没有？\"陈灵破涕为笑，用力点头。这一刻，七年的苦涩与等待，仿佛都有了意义。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_016_c",
+            "text": "冷静分析当前局势，务实地规划下一步",
+            "description": "虽然内心翻涌，但陈机明白此刻不是感慨的时候，乱世之中唯有实力才能守护亲情。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能让陈灵觉得哥哥太冷漠",
+            "visible_reward": "获取更多关于打破命运枷锁的具体方法",
+            "risk_hint": "陈灵可能因不被理解而心生失落",
+            "process_label": "你深吸一口气，强迫自己冷静下来——废材陈的皮囊下，是执棋者的理智。",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_016_c_1",
+                  "content": "陈机轻轻拍了拍陈灵的肩膀，随即将话题拉回正轨。\"小灵，你说你是打破命运枷锁的关键媒介——具体是什么意思？\"他的眼神锐利起来，\"父亲在玉简中留下的信息太多，我需要你帮我梳理出最关键的部分。\"陈灵收敛情绪，神色转为严肃，\"很简单......天机录想要完整，必须以天命锁钥之血为引。而我，就是那把钥匙。\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0935_017",
+        "content": "就在陈灵说出\"钥匙\"二字的瞬间，陈机体内那股被压制的远古意志骤然暴动。它似乎感知到了什么可怕的东西，发出震耳欲聋的咆哮，疯狂地撞击着血脉铸就的屏障。陈机的脸色瞬间苍白，额角青筋暴起，豆大的汗珠顺着脸颊滑落。\"哥哥！\"陈灵惊呼，连忙再度咬破指尖，将更多的血脉之力渡入他体内。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_018",
+        "character_id": "char_chenian",
+        "content": "它在害怕......\"陈机从牙缝中挤出几个字，额头的汗珠滚落，\"它害怕你......不，是害怕你和我联手......\"他猛地抬头，眼底闪过一丝精光，\"小灵，我明白了！天命锁钥不仅是媒介，更是封印！只要你在我身边，那东西就无法完全苏醒！\"",
+        "emotion": "恍然大悟"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_019",
+        "content": "陈灵的眼睛骤然亮起。\"所以父亲才安排我们相认！\"她激动地说，\"他早就算到会有这一天——天机录选中你，远古意志寄生在你体内，而唯一能压制它的，只有与我这个天命锁钥的血脉共鸣！\"话音未落，两人的血脉之力再度交织，金色的光芒大盛，远古意志的咆哮声逐渐微弱下去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_020",
+        "content": "然而就在陈机以为一切尘埃落定之际，一道冰冷的声音骤然在他脑海中炸响——那声音苍老而威严，带着不可抗拒的压迫感：\"你以为这样就能永远压制本座？\"陈机浑身僵住。\"陈天命太小看本座了......\"那声音发出一声嗤笑，\"血脉锁钥？不过是延缓罢了。等你收集更多天机录残页，本座的力量也会随之恢复。届时——\"声音骤然低沉，带着令人毛骨悚然的笃定，\"我们终将合一。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_021",
+        "content": "陈机猛地睁开眼，瞳孔中金芒闪烁。\"哥哥？你怎么了？\"陈灵察觉到异样，焦急地握住他的手。陈机没有回答，只是望着虚空中某个看不见的方向，嘴角缓缓勾起一抹冷冽的弧度。\"合一？\"他低声道，语气中带着与年龄不符的深沉与嘲讽，\"那就等着瞧吧。\"他转头看向陈灵，目光柔和下来，\"小灵，从今往后，你就留在我身边。\"顿了顿，他补充道，\"不是作为玄武精锐的首领——而是作为陈机的妹妹。\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

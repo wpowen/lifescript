@@ -1,0 +1,689 @@
+{
+  "id": "天机录_ch0646",
+  "book_id": "天机录",
+  "number": 646,
+  "title": "遗迹显现",
+  "is_paid": true,
+  "next_chapter_hook": "那扇古老石门后传来的低语，仿佛在呼唤着陈机的名字——那是一个他从未听过，却又刻在血脉深处的名字。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0646_001",
+        "content": "时空裂隙的余波如潮水般退去，天青宗后山的废墟之上，空气中弥漫着焦灼与混沌交织的气息。陈机单膝跪地，额头冷汗涔涔，方才那场天机术的反噬让他五脏六腑如被烈火灼烧。然而，就在他强撑着站起身来时，脚下的土地突然传来一阵异样的震颤。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_002",
+        "character_id": "char_suqingyao",
+        "content": "陈机！你还好吗？",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_003",
+        "content": "苏青瑶疾步上前，一把扶住陈机的手臂。她素来冷傲的面容此刻竟罕见地浮现出几分担忧，那双清冷的眸子中，倒映着陈机苍白如纸的脸色。她方才明明还在三丈之外，此刻却已不知何时来到了他身边，这份身法速度，在内门首席弟子中也是顶尖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_004",
+        "character_id": "char_chenji",
+        "content": "（勉强扯出一丝笑容）多谢苏师姐关心，不过是些许反噬，尚能支撑。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_005",
+        "content": "然而话音未落，地面再次剧烈震颤。一道幽蓝色的光芒自废墟深处冲天而起，那光芒之中，隐约可见一座巍峨殿宇的轮廓正在缓缓凝实。陈机的瞳孔骤然收缩——那是天机阁的遗迹！他体内的天机录残页猛然震动，仿佛感应到了什么久违的呼唤。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_006",
+        "character_id": "char_suqingyao",
+        "content": "这气息……不对！这里怎会有天机阁的遗迹？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_007",
+        "content": "苏青瑶的声音中带着明显的警惕。她是内门首席，见识广博，自然知晓天机阁在传说中意味着什么——那是上古时期专司推演天机、窥探天道的禁地，据说早已在万年前的大劫中毁于一旦。如今遗迹却在这时空裂隙的余波中显现，其中蹊跷，绝非寻常。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_008",
+        "content": "陈机没有回答。他的目光死死盯着那道幽蓝光芒，瞳孔深处隐隐有符文流转。那是一种来自血脉深处的共鸣，仿佛有什么沉睡已久的东西正在他体内苏醒。那种感觉陌生而又熟悉，像是久别重逢，又像是宿命使然。天机录残页在他意识海中疯狂震颤，似乎在催促他尽快前往。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_009",
+        "character_id": "char_suqingyao",
+        "content": "陈机，你疯了吗？这遗迹刚刚显现，谁知道里面藏着什么危险！",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_010",
+        "content": "苏青瑶一把抓住陈机的衣袖，阻止他前进的脚步。她的手指微微用力，指节因过度担忧而泛白。这一刻，她不再是那个高高在上的内门首席，而只是一个担心同伴安危的普通女子。然而陈机那双平静得近乎冷漠的眼眸，却让她心中莫名一凛。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0646_choice_01",
+        "prompt": "天机阁遗迹近在眼前，体内天机录残页的呼唤越来越强烈。苏青瑶的警告言犹在耳，可那血脉深处的共鸣却如潮水般汹涌。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "冒险深入",
+            "text": "冒险深入",
+            "description": "血脉的呼唤不可抗拒，必须立刻进入遗迹探寻真相。机不可失，时不再来。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能面临未知危险",
+            "visible_reward": "天机录第四页的线索",
+            "risk_hint": "遗迹内危机四伏",
+            "process_label": "坚定地向遗迹走去",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_冒险深入_01",
+                  "character_id": "char_chenji",
+                  "content": "（轻轻拂开苏青瑶的手）苏师姐，我意已决。",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_冒险深入_02",
+                  "content": "陈机的声音依旧平淡，可那双眸子深处，却燃起了某种炽烈的光芒。他迈开步伐，朝着那道幽蓝光芒走去。每一步落下，都仿佛踏在命运的脉搏之上。苏青瑶想要再次阻止，可当她对上陈机的目光时，却发现自己根本无法开口。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "进入遗迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机展现了异常的决断力",
+            "branch_route_id": null
+          },
+          {
+            "id": "谨慎探索",
+            "text": "谨慎探索",
+            "description": "先观察遗迹入口，等待时机再深入，确保万无一失。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错过最佳时机",
+            "visible_reward": "更安全的探索策略",
+            "risk_hint": "遗迹可能随时消失",
+            "process_label": "驻足观察遗迹",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_谨慎探索_01",
+                  "character_id": "char_suqingyao",
+                  "content": "你……你终于肯听劝了。",
+                  "emotion": "欣慰"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_谨慎探索_02",
+                  "content": "苏青瑶微微松了口气，看向陈机的目光中多了几分赞许。这个废材师弟虽然修为低微，却难得地懂得审时度势。她上前一步，与陈机并肩而立，目光扫视着眼前的遗迹入口，试图从中找出些许端倪。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "谨慎模式"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机展现出超乎年龄的冷静",
+            "branch_route_id": null
+          },
+          {
+            "id": "询问天机录",
+            "text": "询问天机录",
+            "description": "先向天机录残页中的墨先生请教，了解遗迹情况再做决定。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗精力",
+            "visible_reward": "获得关键信息",
+            "risk_hint": "墨先生未必会如实相告",
+            "process_label": "闭目与墨先生沟通",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_询问天机录_01",
+                  "character_id": "char_moxiansheng",
+                  "content": "（意识海中响起苍老的声音）唔……这座遗迹确实是真的。不过，小子，你确定要在此时进去？",
+                  "emotion": "神秘"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_询问天机录_02",
+                  "content": "墨先生的声音中带着一丝意味深长的警告。陈机心中一凛，却并未退缩。他知道自己已经没有退路——天机录第四页的下落，很可能就藏在这座遗迹之中。无论前方是龙潭还是虎穴，他都必须踏进去。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生似乎知道遗迹的秘密",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_011",
+        "content": "随着陈机逐渐靠近遗迹入口，那股血脉共鸣愈发强烈。幽蓝色的光芒在他周身流转，仿佛无数细小的溪流正在涌入他的身体。天机录残页在他意识海中疯狂翻涌，那些原本晦涩难懂的符文，此刻竟一个接一个地亮起，如同星辰被依次点燃。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_012",
+        "character_id": "char_suqingyao",
+        "content": "等等！你身上这股气息……怎么回事？",
+        "emotion": "惊疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_013",
+        "content": "苏青瑶猛然睁大眼睛。她清晰地感知到，陈机身上正在发生某种不可思议的变化——那股气息与遗迹入口散发的气息如出一辙，甚至更加纯粹、更加古老。她的脑海中闪过一个荒谬的念头：这个废物师弟，与这座遗迹之间，究竟有什么关联？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_014",
+        "content": "然而陈机此刻已经无暇顾及苏青瑶的震惊。他的全部注意力都被那座缓缓凝实的殿宇所吸引。在幽蓝光芒的深处，他隐约看见了一扇古老的石门。门上镌刻着无数繁复的符文，那些符文的排列方式，与他脑海中天机录残页上的符文竟是完全一致。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0646_choice_02",
+        "prompt": "古老的石门近在咫尺，门上的符文与天机录完美契合。门缝中透出的光芒忽明忽暗，仿佛在等待着什么。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "立即推门",
+            "text": "立即推门",
+            "description": "既然门与天机录如此契合，那就毫不犹豫地推开它。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "未知危险",
+            "visible_reward": "进入遗迹核心",
+            "risk_hint": "可能触发机关",
+            "process_label": "伸手推向石门",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_立即推门_01",
+                  "content": "陈机深吸一口气，抬起右手按上了那扇古老的石门。他的掌心刚一接触门面，那些符文便骤然亮起，刺目的光芒几乎让他睁不开眼。石门发出一声沉闷的轰鸣，缓缓向两侧开启。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": "进入遗迹",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "让苏青瑶同行",
+            "text": "让苏青瑶同行",
+            "description": "邀请苏青瑶一起进入，两人相互照应，降低风险。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "分薄机缘",
+            "visible_reward": "获得同伴支援",
+            "risk_hint": "可能暴露秘密",
+            "process_label": "转身邀请苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_让苏青瑶同行_01",
+                  "character_id": "char_suqingyao",
+                  "content": "苏师姐，你可愿与我一同进入？",
+                  "emotion": "认真"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_让苏青瑶同行_02",
+                  "character_id": "char_suqingyao",
+                  "content": "（眼中闪过一丝惊讶，随即点头）好，我陪你。",
+                  "emotion": "坚定"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_让苏青瑶同行_03",
+                  "content": "苏青瑶的回答出乎意料地干脆。她走上前，与陈机并肩而立，目光中闪烁着复杂的光芒。她知道自己或许正在踏入一个巨大的漩涡，但不知为何，她选择相信眼前这个看似废物的男子。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶同行"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶决定信任陈机",
+            "branch_route_id": null
+          },
+          {
+            "id": "独自进入",
+            "text": "独自进入",
+            "description": "让苏青瑶在外面接应，独自一人深入遗迹。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "孤立无援",
+            "visible_reward": "独占机缘",
+            "risk_hint": "危险增大",
+            "process_label": "示意苏青瑶在外等候",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_独自进入_01",
+                  "character_id": "char_suqingyao",
+                  "content": "你确定要一个人进去？",
+                  "emotion": "担忧"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_独自进入_02",
+                  "content": "苏青瑶的眉头紧锁，看向陈机的目光中带着几分不解和担忧。这个决定太过冒险，遗迹中的一切都是未知的，独自进入无异于自寻死路。然而陈机只是淡淡一笑，那笑容中带着某种她看不懂的深意。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_015",
+        "content": "石门彻底开启的瞬间，一股浩瀚如海的气息扑面而来。陈机只觉眼前一花，整个人便被一股无形的力量卷入了门内。待他再次睁开眼时，发现自己已身处一座巨大的殿堂之中。四周的墙壁上镌刻着密密麻麻的符文，每一道符文都在散发着幽幽蓝光，将整座殿堂映照得如同深海宫殿。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_016",
+        "content": "而在大殿正中央，一座三尺高的石台静静矗立。石台之上，一卷散发着金色光芒的古籍正悬浮在半空。那古籍的封面上，赫然写着三个古朴的大字——天机录！陈机的心脏几乎停止了跳动。第四页，他苦寻多时的第四页，竟然就这样出现在了他的眼前。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_017",
+        "character_id": "char_moxiansheng",
+        "content": "（意识海中再次响起墨先生的声音）小心！这并非真正的天机录，而是……",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_017b",
+        "content": "然而墨先生的话还未说完，殿堂深处便传来一阵阴恻恻的笑声。那笑声回荡在空旷的大殿之中，带着几分戏谑，几分玩味，仿佛早已等候多时。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_018",
+        "character_id": "char_lingyuan",
+        "content": "呵呵……陈机，老夫等你很久了。",
+        "emotion": "阴险"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_019",
+        "content": "一道苍老的身影自阴影中缓步走出。那人身穿天青宗长老服饰，面容枯槁，眼神却锐利如刀。陈机瞳孔微缩——来人竟是天青宗老掌门凌渊！那个表面上对他百般照顾，暗地里却心怀叵测的老狐狸。他早该想到，能在这时空裂隙中显现的遗迹，又怎会没有半点埋伏？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_020",
+        "character_id": "char_lingyuan",
+        "content": "怎么，见到老夫很意外？天机录的传人……不，或许该说是棋子，终于来了。",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_021",
+        "content": "凌渊的笑声在大殿中回荡，那双浑浊的老眼中闪烁着贪婪的光芒。他盯着陈机，仿佛在看一件稀世珍宝。\"老夫筹谋数十年，终于等到这一天的到来。天机录第四页，它本就该属于我！\"他的声音陡然拔高，\"陈玄那个废物当年抢走了属于我的一切，今日，就让你来偿还这笔血债！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0646_choice_03",
+        "prompt": "凌渊的阴谋终于暴露，天机录第四页近在眼前却危机四伏。这位老谋深算的对手，显然早有准备。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "正面对峙",
+            "text": "正面对峙",
+            "description": "既然撕破脸皮，那就堂堂正正地与凌渊一战，用实力说话。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "修为差距悬殊",
+            "visible_reward": "可能揭露凌渊阴谋",
+            "risk_hint": "凌渊修为深不可测",
+            "process_label": "挺身直面凌渊",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_正面对峙_01",
+                  "character_id": "char_chenji",
+                  "content": "（嘴角勾起一抹冷笑）凌老掌门好大的气派，可惜……你算漏了一件事。",
+                  "emotion": "冷笑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_正面对峙_02",
+                  "content": "陈机的语气依旧平静，可那双眸子里却闪烁着危险的光芒。他缓缓抬起右手，掌心处天机录残页的符文若隐若现。\"你以为我会毫无准备地踏入你的陷阱？\"他的声音带着几分嘲讽，\"凌老掌门，你我都是棋手，何必装出这副吃相难看的模样？\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机展现出与修为不符的底气",
+            "branch_route_id": null
+          },
+          {
+            "id": "拖延时间",
+            "text": "拖延时间",
+            "description": "与凌渊周旋，等待苏青瑶的支援或其他变数出现。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失良机",
+            "visible_reward": "争取时间布下后手",
+            "risk_hint": "凌渊可能识破",
+            "process_label": "故作镇定与凌渊交谈",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_拖延时间_01",
+                  "character_id": "char_chenji",
+                  "content": "哦？凌老掌门既然说算漏了一件事，那不如说来听听？",
+                  "emotion": "从容"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_拖延时间_02",
+                  "content": "陈机不疾不徐地开口，语气中带着几分玩味。他在赌——赌苏青瑶不会坐视他独自涉险，赌天机录残页中还隐藏着某种他尚未觉醒的力量，赌凌渊并不知道他真正的底牌。这种以身入局的赌博，他从小到大已经做过无数次。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "激活天机录",
+            "text": "激活天机录",
+            "description": "不顾一切激活天机录的预见能力，查看接下来三时辰内的命运走向。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值10点",
+            "visible_reward": "获取关键预见",
+            "risk_hint": "天命值严重透支",
+            "process_label": "暗中催动天机录",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_激活天机录_01",
+                  "content": "陈机心念一动，天机录残页在他意识海中轰然展开。那些金色符文疯狂旋转，一个模糊的画面逐渐成形——然而就在他即将看清那画面的瞬间，一道刺目的白光猛然炸开，将一切尽数吞没。画面太过模糊，仿佛有什么力量在刻意遮掩。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0646_result_激活天机录_02",
+                  "character_id": "char_moxiansheng",
+                  "content": "（墨先生急切的声音）有干扰！画面被遮蔽了——这种手段，只有圣宗才有！",
+                  "emotion": "震惊"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0646_result_激活天机录_03",
+                  "content": "陈机心头一凛。圣宗的干扰、陈念的存在、凌渊的埋伏……所有的线索在这一刻交织成一张巨大的网，而他，似乎正站在网的中心。天机录的预见第一次出现了如此严重的偏差，这究竟是意外，还是某种更高层次的布局？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "预见失败"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录被圣宗力量干扰",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_022",
+        "content": "凌渊的笑声戛然而止。他盯着陈机，目光中闪过一丝忌惮。\"你倒是沉得住气。\"他缓缓说道，\"不过你以为这样就能逃出老夫的手掌心？这座遗迹早已被老夫布下天罗地网，纵然你有通天的本事，今日也插翅难飞！\"说罢，他袖袍一挥，数十道阵纹自四面八方亮起，将整座大殿笼罩得严严实实。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_023",
+        "content": "然而陈机却不为所动。他平静地看着凌渊，嘴角甚至勾起一抹若有若无的笑意。\"凌老掌门，你这阵法确实精妙，可惜……你漏算了一件事。\"他的声音不疾不徐，\"天机录选中我，可不仅仅是因为我的血脉。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_024",
+        "character_id": "char_lingyuan",
+        "content": "你什么意思？",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_025",
+        "content": "凌渊眉头紧皱，一股不祥的预感涌上心头。然而还未等他反应过来，大殿之外便传来一阵惊天动地的轰鸣。紧接着，一道凌厉的剑光破空而入，直接撕裂了他布置的阵法一角！苏青瑶的身影如流光般冲入大殿，素手一挥，无数剑气如暴风骤雨般向凌渊席卷而去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0646_026",
+        "character_id": "char_suqingyao",
+        "content": "陈机，我来助你！",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_027",
+        "content": "苏青瑶的声音清冷如霜，可其中蕴含的情意却让陈机心中微微一动。这个骄傲的女子，竟然真的不顾危险前来支援他。他转头看向她，四目相对的瞬间，千言万语尽在不言中。而凌渊的脸色已经阴沉到了极点——他万万没想到，自己精心布下的绝杀之局，竟会被一个黄毛丫头轻易破局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_028",
+        "content": "就在三方僵持之际，那悬浮在石台上的金色古籍忽然爆发出刺目的光芒。一道苍老而威严的声音在大殿中响起：\"天机阁重开，有缘者得之。\"话音未落，那古籍便化作一道流光，直直地朝陈机眉心射去。与此同时，凌渊和苏青瑶也同时动了——一人想要抢夺，一人想要拦截。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_029",
+        "content": "陈机下意识地抬手，那道流光便径直没入了他的掌心。刹那间，一股磅礴的信息如洪水般涌入他的意识——那是天机录第四页的内容，记载着关于上古大劫的秘密，以及一个让他心惊胆战的名字：天道之眼！与此同时，他的脑海中响起墨先生的声音：\"第四页解封了，小子，你终于有资格知道一些真相了……\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0646_030",
+        "content": "那扇古老石门后传来的低语，仿佛在呼唤着陈机的名字——那是一个他从未听过，却又刻在血脉深处的名字。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

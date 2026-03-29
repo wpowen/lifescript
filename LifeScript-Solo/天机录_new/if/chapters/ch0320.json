@@ -1,0 +1,504 @@
+{
+  "id": "天机录_ch0320",
+  "book_id": "天机录",
+  "number": 320,
+  "title": "远古觉醒",
+  "is_paid": true,
+  "next_chapter_hook": "就在远古存在的威压达到顶峰之际，陈机体内沉寂多年的血脉突然沸腾——那是陈家先祖留下的最后遗产，在生死边缘轰然觉醒。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0320_001",
+        "content": "传音符中夜清的声音尚未消散，脚下的地面已经开始剧烈震颤。陈机猛地抬头，只见天际裂开一道漆黑的缝隙，那并非乌云，而是某种比黑暗更加深沉的气息——那是远古存在苏醒的前兆。空气中弥漫起一股令人窒息的威压，仿佛有一尊沉睡了万年的巨兽正在缓缓睁开眼睛。秘境中的灵气疯狂涌动，所有生物都在这一刻感受到了那股来自血脉深处的恐惧。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_002",
+        "character_id": "char_yeqing",
+        "content": "陈机，那东西不是普通的存在！是远古凶兽饕餮的后裔，它的境界至少在化神境巅峰——我们所有人加起来都不够它塞牙缝！",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_003",
+        "content": "陈机嘴角勾起一抹冷笑。化神境巅峰？在天机录的推演中，他见过更可怕的对手。他单手掐诀，天机录残页在识海中轰然展开，金色文字如洪流般涌出。三息之内，他必须做出选择——是趁远古存在尚未完全苏醒之际遁走，还是冒险一搏争取更多机缘。威压越来越重，空气中开始飘荡起远古凶兽特有的腥甜气息，那是猎食者的味道。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_004",
+        "character_id": "char_suqingyao",
+        "content": "陈机！你在哪里？秘境内层突然出现了一只——我从未见过这种东西！它正在追杀夜清！",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_005",
+        "content": "苏青瑶的声音透过另一枚传音符传来，带着压抑不住的颤抖。陈机瞳孔骤缩——天机录的画面中，两道身影正在狼狈奔逃。夜清浑身浴血，魔道迷雾已经稀薄到近乎透明；苏青瑶的白色裙裾被撕裂多处，肩头有一道深可见骨的伤口。她们身后，一头浑身覆盖漆黑鳞甲的巨兽正在稳步逼近，每一步都踏碎山石。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0320_006",
+        "prompt": "远古凶兽的威压已经笼罩整个秘境，苏青瑶与夜清危在旦夕。陈机必须在瞬息之间做出抉择——是保全自身等待时机，还是以命相搏护住盟友？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0320_choice_sacrifice",
+            "text": "以命相搏",
+            "description": "激活天机录全部预判能力，以必死之心冲向战场，在远古凶兽爪下救下两位红颜。代价是消耗50点天命值，可能陷入长期虚弱。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗50点天命值",
+            "visible_reward": "英雄救美，两位红颜好感度与信任度大幅提升",
+            "risk_hint": "天命值过低将触发必死反噬",
+            "process_label": "燃烧天命，强行突破",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_sacrifice_01",
+                  "content": "陈机眼中闪过一丝决绝。他将天机录催动到极限，金色文字疯狂旋转，预判未来三时辰的画面如走马灯般在识海中闪过——每一次他试图救人的轨迹，都指向同一个结果：重伤。但同时，他也看清了远古凶兽的唯一破绽。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "远古凶兽仇恨转移",
+              "天命值危险"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以命相搏救红颜",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0320_choice_escape",
+            "text": "保全自身",
+            "description": "趁远古存在尚未锁定自己，立刻撤退到安全区域，从旁策应。保存实力以图后手，但两位红颜将独自面对远古凶兽。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去盟友信任，名望下降",
+            "visible_reward": "保存完整实力，可从容布局",
+            "risk_hint": "苏青瑶与夜清可能重伤甚至陨落",
+            "process_label": "战略撤退，伺机而动",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_escape_01",
+                  "content": "陈机眉头紧皱。天机录的推演告诉他，若他此时出手，至少有七成把握救出二人，但代价是自身重伤。可若不出手……识海中浮现出苏青瑶失望的眼神，以及夜清那抹嘲讽中带着心寒的笑意。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "权衡利弊后撤退",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_007",
+        "content": "就在这时，秘境深处传来一声震天动地的咆哮。远古存在的苏醒进入最后阶段，威压陡然翻了数倍。远处的山峰开始崩塌，河流倒灌，天地间一片末日景象。苏青瑶的传音符突然断裂，最后传来的只有一个惊恐的喊声。陈机握紧拳头，指节泛白。墨先生那残魂形态的声音在识海中幽幽响起：'抉择时刻已至，传承者。'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_008",
+        "character_id": "char_moxiansheng",
+        "content": "小辈，老夫当年追随陈玄纵横天下，从未见他退缩过半步。远古凶兽又如何？当年陈玄以筑基之躯照样斩杀过元婴老怪！记住，天机录选中你，不是因为你足够聪明，而是因为你骨子里有股疯劲！",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_009",
+        "content": "墨先生的话如同一记惊雷，将陈机脑海中的犹豫尽数劈碎。他深吸一口气，天机录残页在识海中爆发出前所未有的光芒——那是燃烧天命值的征兆。金色文字疯狂旋转，勾勒出一条通向远古凶兽的路径，每一个文字都代表着一次攻击的预判、每一道光线都意味着一个致命的死角。陈机身形一晃，化作一道流光冲向战场。风声在耳边呼啸，他的心却前所未有的平静。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_010",
+        "character_id": "char_yeqing",
+        "content": "陈机？！你疯了！你来这里干什么！",
+        "emotion": "震惊与感动交织"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_011",
+        "content": "陈机没有回答。他的目光越过夜清和苏青瑶，直直锁定那头远古凶兽。巨兽形如巨蜥，浑身覆盖漆黑鳞甲，每一片鳞片上都刻满了远古符文。它的眼睛是血红色的，竖瞳中倒映着陈机的身影，带着居高临下的审视。那是一头即将踏入化神大圆满的存在，是这片秘境中最可怕的掠食者。它张开巨口，露出满口参差獠牙，发出一声震碎山岳的咆哮。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0320_012",
+        "prompt": "远古凶兽已经注意到陈机的存在，血红竖瞳中流露出一丝玩味。它似乎在等待什么——等待猎物展示更多的挣扎，然后享受绝望的滋味。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0320_choice_mockery",
+            "text": "嘲讽挑衅",
+            "description": "用最刻薄的言语激怒远古凶兽，吸引它全部仇恨，为苏青瑶和夜清创造逃脱机会。展现陈机记仇不莽、嘴毒打脸的爽文特质。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "成为远古凶兽唯一目标",
+            "visible_reward": "嘲讽成功，激怒凶兽，赢得两位红颜敬畏",
+            "risk_hint": "激怒远古存在可能招致更猛烈的攻击",
+            "process_label": "口吐芬芳，主动拉仇恨",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0320_result_mockery_01",
+                  "character_id": "char_chenji",
+                  "content": "就这？我还以为远古存在有多厉害，原来就是个头大点的蜥蜴啊。怎么，沉睡了万年，脑子也睡傻了？来抓我啊，蠢货！",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凶兽锁定陈机"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "嘴毒嘲讽远古存在",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0320_choice_tactical",
+            "text": "战术牵制",
+            "description": "不正面硬刚，利用天机录预判与凶兽周旋，拖延时间等待两位红颜恢复战力后再合力突围。展现谋略型主角本色。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无法一次性解决威胁",
+            "visible_reward": "保存实力，为后续战斗布局",
+            "risk_hint": "凶兽可能识破战术",
+            "process_label": "游走牵制，伺机而动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_tactical_01",
+                  "content": "陈机双眸微眯，天机录疯狂运转，将远古凶兽的攻击轨迹、速度、习惯全部收入眼底。他在电光火石间计算出最佳躲避路线，同时不断变换位置，确保凶兽的注意力始终集中在自己身上。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "智取远古凶兽",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（远古凶兽喉间震动，发出低沉的声音）卑微的人类……竟敢用言语挑衅本座？很好，本座会一寸一寸捏碎你的骨头，让你亲眼看着自己是怎么变成肉泥的。",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_014",
+        "content": "远古凶兽血红色的竖瞳骤然收缩，它庞大的身躯化作一道黑色闪电，利爪撕裂空气直取陈机胸口。天机录在这一刻爆发出刺目金光，陈机的瞳孔中倒映出未来三息的所有画面——他看见了那道爪痕的轨迹，看见了自己闪避的角度，也看见了身后苏青瑶与夜清的惊愕面容。说时迟那时快，陈机身形一扭，以不可思议的角度躲开了致命一击，同时反手一掌拍在凶兽的鳞片上。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_015",
+        "character_id": "char_suqingyao",
+        "content": "陈机！你怎么——你明明只是个杂役弟子，为什么……为什么会有这种实力？！",
+        "emotion": "震惊到语无伦次"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_016",
+        "content": "陈机没有回头。他的手掌按在凶兽的鳞片上，却感受到一股磅礴的远古气息反震回来，震得他整条手臂发麻。凶兽发出震怒的咆哮，尾巴横扫而来，速度快得超乎想象。天机录疯狂闪烁，提示他必须立刻后撤——但就在他准备闪避的瞬间，一道白衣身影挡在了他面前。苏青瑶！她的长剑出鞘，剑芒如银河倒泻，硬生生挡下了那一击，却被巨力震得倒飞出去，口中喷出一口鲜血。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_017",
+        "character_id": "char_yeqing",
+        "content": "苏青瑶！你这个蠢货，谁让你挡的！陈机，快走，我和这疯女人断后！",
+        "emotion": "焦急且心疼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_018",
+        "content": "夜清的魔道迷雾骤然暴涨，将三人笼罩其中，同时无数魔道符箓如暴雨般射向远古凶兽。然而凶兽只是张开大口一吸，所有符箓尽数被它吞噬，连魔道迷雾都被撕开一道巨大的裂口。陈机的天机录在这一刻疯狂震动——他看到了一个致命的破绽，就在凶兽张嘴的瞬间，它的咽喉处有一道若隐若现的光芒，那是它的妖核所在！"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0320_019",
+        "prompt": "远古凶兽的妖核暴露在喉间，这是唯一的破绽！但要击中那里，必须贴近凶兽巨口，等于把自己送入它的獠牙之间。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0320_choice_final_attack",
+            "text": "孤注一掷",
+            "description": "燃烧最后的天命值激活天眼最强状态，将全部力量凝聚于一指，直刺凶兽妖核。这是置之死地而后生的打法，成功率约六成。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗剩余天命值，陷入极度虚弱",
+            "visible_reward": "一击重创远古凶兽，三人情谊升华",
+            "risk_hint": "失败将直接被凶兽吞噬",
+            "process_label": "破釜沉舟，孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 35
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_final_01",
+                  "content": "陈机深吸一口气，眼中闪过决然之色。他对苏青瑶和夜清说：'相信我。'然后他的身形化作一道金色流光，直直冲入凶兽张开的巨口之中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉觉醒触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以身为饵，直取妖核",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0320_choice_coordinate",
+            "text": "三人合力",
+            "description": "让夜清用魔道迷雾遮掩气息，苏青瑶从左侧佯攻吸引注意，自己从右侧寻找机会。三人配合，成功率提升到八成，但无法给予致命一击。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无法彻底解决威胁",
+            "visible_reward": "三人配合默契提升，为后续羁绊奠定基础",
+            "risk_hint": "凶兽可能逃脱",
+            "process_label": "三人联手，协同作战",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0320_result_coordinate_01",
+                  "character_id": "char_chenji",
+                  "content": "陈机快速传音：'夜清，你的迷雾能遮蔽多强气息？青瑶师姐，你从左侧牵制，给我三息时间。'",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "三人配合击退凶兽",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_020",
+        "character_id": "char_chenji",
+        "content": "远古凶兽的巨口近在咫尺，腥臭的气息扑面而来。陈机目光如炬，天机录的预判在这一刻达到极致——他看见了凶兽妖核的位置，看见了自己指尖与那颗妖核之间不足三寸的距离，也看见了凶兽獠牙落下的轨迹。一切尽在掌握！他的指尖爆发出璀璨金光，直直刺向那团散发远古气息的妖核！",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_021",
+        "content": "就在金光即将触及妖核的瞬间，凶兽似乎察觉到了危险，它发出震天的嘶吼，妖核表面浮现出一层漆黑护罩。然而陈机嘴角却勾起一抹冷笑——他等的就是这一刻。天机录的预判告诉他，这一击足以击破护罩，但真正的杀招还在后面。他的指尖在触及护罩的瞬间骤然变向，以一个不可思议的角度滑过妖核表面，狠狠插入妖核与凶兽咽喉连接的薄弱处！"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_022",
+        "character_id": "char_tiandaozhiyan",
+        "content": "远古凶兽发出痛苦的嘶吼，巨大的身躯剧烈颤抖。它想合上巨口，却已经来不及了——陈机的手指深深插入它的妖核之中，金色的能量如毒蛇般在妖核表面蔓延。妖核开始龟裂，无数远古符文从裂缝中溢出，在空中形成一幅复杂的阵图。那是……那是封印阵！",
+        "emotion": "痛苦与惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_023",
+        "content": "陈机感受到一股磅礴到可怕的力量从凶兽体内爆发出来，那是远古存在积攒了万年的怨气与妖力。天机录疯狂震动，警告他若不撤退必将形神俱灭。然而他没有退。身后是苏青瑶和夜清，他若退，两女必死无疑。就在这千钧一发之际，陈机体内沉寂多年的血脉突然沸腾起来——那是陈家先祖留下的最后遗产，一段被封印了千年的记忆如洪流般涌入他的识海。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_024",
+        "content": "远古凶兽的妖核彻底碎裂，一股狂暴的能量席卷整个秘境。山峰崩塌，大地龟裂，仿佛末日降临。然而就在这毁灭性的能量中心，陈机的身体表面浮现出一层淡金色的纹路——那是陈家血脉觉醒的标志。那些纹路与他体内的天机录残页产生共鸣，金色与淡金交织在一起，形成一个完美的循环。远古凶兽发出最后一声哀嚎，庞大的身躯轰然倒地，溅起漫天尘土。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_025",
+        "character_id": "char_suqingyao",
+        "content": "陈机！陈机！你没事吧？！你醒醒！",
+        "emotion": "泣不成声"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_026",
+        "content": "陈机缓缓睁开眼睛，映入眼帘的是苏青瑶满是泪痕的脸庞。她的双手紧紧握着他的手臂，指节因为用力而泛白。夜清站在一旁，魔道迷雾已经散去，她的表情复杂至极——有震惊、有心疼，还有一丝说不清道不明的情愫。秘境中的威压已经消散大半，那头远古凶兽的尸体横亘在远处，宣告着这场生死之战落下帷幕。而陈机体内的金色纹路正在缓缓消退，取而代之的是一股前所未有的力量感——那是血脉觉醒带来的蜕变。"
+      }
+    }
+  ]
+}

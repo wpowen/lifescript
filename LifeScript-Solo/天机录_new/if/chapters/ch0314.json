@@ -1,0 +1,530 @@
+{
+  "id": "天机录_ch0314",
+  "book_id": "天机录",
+  "number": 314,
+  "title": "联盟裂痕",
+  "is_paid": true,
+  "next_chapter_hook": "当那枚温热的玉佩落入掌心，陈机忽然意识到——他接下的不仅是夜清的信物，更是她以命相托的全部信任。魔道的追杀令，或许今夜就会到来。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0314_001",
+        "content": "当那串符文在虚空中缓缓浮现，陈机知道通往妹妹的最后一道门，已经为他打开了——但门后的路，他究竟该独自踏足，还是带上那些可能背刺他的人？\n\n他站在探索队营地边缘的山崖上，夜风灌入衣袍，吹得那盏孤灯明灭不定。身后是篝火残焰与沉睡的队友，眼前是无尽黑暗与未知。他忽然觉得，这道符文就像是天道对他开的一个玩笑——明明给了希望，却又将选择的重压一并压在他肩上。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_002",
+        "character_id": "char_yeqing",
+        "content": "\"你打算一个人去？\"",
+        "emotion": "平静中带着一丝试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_003",
+        "content": "那声音从身后传来，带着夜清特有的清冷。陈机没有回头，他能感觉到那道目光正穿透夜色打量着他的背影。这个女人总是这样无声无息地出现，像一只蛰伏的夜鸦。\n\n\"你跟来做什么？\"他的声音很淡，\"魔道圣女与天青宗废物同行，传出去可不好听。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_004",
+        "character_id": "char_yeqing",
+        "content": "\"你以为我是来看热闹的？\"夜清走到他身侧，同样望向那片黑暗，\"陈机，我来这里不是为了看戏。圣宗的事......你该知道一些了。\"",
+        "emotion": "罕见的郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_005",
+        "content": "陈机微微侧目。夜清的面容在月光下显得格外苍白，那双总是带着疏离的眼睛此刻却有着他从未见过的复杂情绪。他忽然意识到，这个女人今晚来找他，并非偶然。\n\n\"说吧。\"他转过身，面对着她，\"你口中的'该知道'，是指什么？\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_006",
+        "character_id": "char_yeqing",
+        "content": "\"圣宗要动你了。\"夜清的声音很轻，却字字清晰，\"不只是因为你得罪了玄武宗，更因为......他们察觉到天机录的气息。你以为魔道主帅为何会在这个时候大举进攻？他是来收割的。\"",
+        "emotion": "压抑的焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_007",
+        "content": "夜风骤起，吹乱了夜清的长发。她没有去理会，只是紧紧盯着陈机的眼睛，仿佛要从那双深邃的眸子里看到他真正的想法。\n\n\"陈机，你以为我是你的棋子，你是我的工具，对吗？\"她忽然笑了，那笑容里带着说不清的苦涩，\"但你有没有想过，为什么我会在这个时候告诉你这些？\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0314_choice_01",
+        "prompt": "夜清的话让陈机陷入短暂的沉默。他忽然发现，这个女人今晚的眼神与以往都不同——那里面没有算计，没有试探，只有一种他从未见过的......脆弱？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0314_c1_opt1",
+            "text": "直接询问她的目的",
+            "description": "\"既然你选择告诉我这些，说明你已经有了决定。你想要什么？\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能暴露更多想法",
+            "visible_reward": "打开夜清心防",
+            "risk_hint": "她可能是在试探",
+            "process_label": "坦诚以对",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0314_result_c1_opt1_001",
+                  "character_id": "char_yeqing",
+                  "content": "\"你果然聪明。\"夜清轻声道，\"我想活下去。不是作为圣宗的棋子，而是作为我自己。这个理由，够不够？\"",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清袒露心声",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0314_c1_opt2",
+            "text": "用沉默给她压力",
+            "description": "陈机没有说话，只是静静地看着她，等待她自己说下去。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能显得冷漠",
+            "visible_reward": "看清她的底牌",
+            "risk_hint": "她可能退缩",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0314_result_c1_opt2_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清沉默片刻，忽然自嘲地笑了：\"你在等我求你？好，我承认，今晚我是来求你的。\"",
+                  "emotion": "无奈"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0314_result_c1_opt2_002",
+                  "content": "她说完这句话，整个人仿佛都卸下了什么伪装。月光下，她不再是那个高高在上的魔道圣女，只是一个被命运捉弄的普通女子。\n\n陈机心中微动。他第一次看见夜清如此......真实。\n\n\"圣宗需要一个替罪羊。\"她的声音很轻，\"他们选中的那个人，是你。但如果你死了，下一个就是我。\"",
+                  "is_premium": false,
+                  "flags_set": [],
+                  "requires_flag": null,
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "夜清的危机",
+                  "branch_route_id": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_008",
+        "content": "夜风忽然停了，四周的虫鸣也仿佛在这一刻静默。陈机看着夜清，忽然发现她的手指在微微颤抖。这个杀伐果断的魔道圣女，此刻竟然像个无助的孩子。\n\n\"我记下了。\"他忽然开口，声音很淡，\"圣宗的事，我记下了。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_009",
+        "character_id": "char_yeqing",
+        "content": "\"......你不问我为什么告诉你这些？\"夜清有些惊讶地看着他。",
+        "emotion": "意外"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_010",
+        "content": "\"不需要问。\"陈机转过身，重新望向那片黑暗，\"能在这种时候来找我，要么是真心想合作，要么是想让我当冤大头替你挡刀。无论哪种，我都得接着。\"\n\n他顿了顿，声音忽然放轻了一些：\"但我更希望是前者。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_011",
+        "character_id": "char_yeqing",
+        "content": "夜清怔怔地看着他的背影，眼眶忽然有些发热。她想起了自己的过去——在圣宗的那些年里，她学会了不相信任何人，学会了把所有人都当作棋子。可眼前这个被她算计过、被她威胁过、甚至被她追杀过的男人，此刻却给了她从未有过的......安心感。\n\n\"陈机。\"她忽然开口，声音带着从未有过的柔软，\"我想告诉你一些事。关于我的。关于圣宗的。全部。\"",
+        "emotion": "下定决心的坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0314_choice_02",
+        "prompt": "夜清的话让气氛微微凝滞。她说要告诉他“全部”？这个一直把自己包裹得严严实实的女人，为何会在今夜忽然敞开？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0314_c2_opt1",
+            "text": "\"我听着。\"",
+            "description": "陈机没有转身，只是平静地开口，仿佛这只是一场普通的对话。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "承担更多秘密",
+            "visible_reward": "获得夜清完全信任",
+            "risk_hint": "可能被牵连更深的阴谋",
+            "process_label": "坦然接受",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0314_result_c2_opt1_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清走到他身侧，与他并肩而立。她开始讲述——八岁被带入圣宗，十岁第一次杀人，十五岁成为圣女，十八岁发现自己不过是个傀儡......",
+                  "emotion": "平静叙述"
+                }
+              },
+              {
+                "text": "\"说吧，但我不保证会帮你。\"",
+                "id": "天机录_ch0314_c2_opt2",
+                "description": "陈机转过头，认真地看着她，\"我可以听，但最终的决定权在我。\"",
+                "satisfaction_type": "延迟爽",
+                "visible_cost": "显得过于理性",
+                "visible_reward": "保持主动权",
+                "risk_hint": "可能伤害她的信任",
+                "process_label": "理性对待",
+                "stat_effects": [
+                  {
+                    "stat": "谋略",
+                    "delta": 2
+                  }
+                ],
+                "relationship_effects": [
+                  {
+                    "character_id": "char_yeqing",
+                    "dimension": "信任",
+                    "delta": 3
+                  },
+                  {
+                    "character_id": "char_yeqing",
+                    "dimension": "敬畏",
+                    "delta": 5
+                  }
+                ],
+                "result_nodes": [
+                  {
+                    "dialogue": {
+                      "id": "天机录_ch0314_result_c2_opt2_001",
+                      "character_id": "char_yeqing",
+                      "content": "夜清的笑容有些苦涩：\"你还真是......公平。好，我接受。\"",
+                      "emotion": "理解"
+                    }
+                  },
+                  {
+                    "text": {
+                      "id": "天机录_ch0314_result_c2_opt2_002",
+                      "content": "她深吸一口气，开始讲述自己的过去。陈机静静地听着，偶尔插一两句简短的问题。他发现，这个女人的经历比他想象的还要复杂——她在圣宗的每一步都是如履薄冰，稍有不慎就是万劫不复。\n\n\"说完了？\"陈机问。\n\n\"说完了。\"夜清看着他的眼睛，\"现在，你该知道我为什么要找你了吧？\"",
+                      "is_premium": false,
+                      "flags_set": [],
+                      "requires_flag": null,
+                      "forbids_flag": null,
+                      "stat_gate": null,
+                      "memory_label": null,
+                      "branch_route_id": null
+                    }
+                  }
+                ],
+                "is_premium": false,
+                "flags_set": [],
+                "requires_flag": null,
+                "forbids_flag": null,
+                "stat_gate": null,
+                "memory_label": null,
+                "branch_route_id": null
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "天机录_ch0314_012",
+              "content": "星空很静，仿佛整个世界都在屏息倾听。夜清说完后，两人都陷入了沉默。\n\n陈机没有立刻回答。他想起了天机录中那些模糊的预见——有夜清的片段，但每一次都像隔着一层迷雾。他一直以为是自己修为不够，现在想来，或许是因为这个女人的命数本就与他纠缠太深。\n\n\"夜清。\"他忽然开口，声音比平时柔和了一些，\"你说你想活下去，那你想过没有，活下去之后要做什么？\""
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0314_013",
+              "character_id": "char_yeqing",
+              "content": "\"我......\"夜清愣住了，这个问题她从未想过。在圣宗的这些年，她只想着如何活过今天，从不敢想明天。此刻被陈机这样直接地问出来，她忽然发现自己竟然无言以对。\n\n\"我不知道。\"她最终说道，声音里带着一丝迷茫，\"我从来没想过'之后'。\"",
+              "emotion": "迷茫"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0314_014",
+              "content": "陈机转过身，面对着她。夜风吹起他的衣角，却没有吹散他眼中的平静。\n\n\"那我告诉你。\"他说，声音很淡，却带着一种让人无法忽视的力量，\"活下去，然后看圣宗覆灭。看你亲手建立的势力不再是任何人的棋子。看那些曾经践踏你的人，跪在你面前求饶。\""
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0314_015",
+              "character_id": "char_yeqing",
+              "content": "夜清怔怔地看着他，眼眶忽然有些湿润。她从未想过有一天会有人对她说这样的话——不是命令，不是利用，而是一个承诺。一个属于\"之后\"的承诺。\n\n\"陈机......\"她的声音有些哽咽，\"你为什么......\"",
+              "emotion": "感动到说不出话"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0314_016",
+              "content": "\"因为我也是这么想的。\"陈机打断了她，嘴角微微上扬，露出一个极淡的笑意，\"你的敌人和我的敌人，有一半是重叠的。与其各自为战，不如......一起走这条路。\"\n\n他顿了顿，补充道：\"当然，如果你哪天想甩开我，我不会拦着。\""
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0314_017",
+              "character_id": "char_yeqing",
+              "content": "夜清忽然笑了，是那种发自内心的、毫无保留的笑。这个笑容让她看起来年轻了许多，少了圣女的光环，多了几分人间烟火气。\n\n\"陈机，你这个人真是......\"她摇了摇头，\"明明是在说合作，怎么听起来像是在求婚？\"",
+              "emotion": "难得的打趣"
+            }
+          },
+          {
+            "choice": {
+              "id": "天机录_ch0314_choice_03",
+              "prompt": "夜清难得的打趣让气氛缓和了不少。但陈机知道，这不过是暴风雨前的宁静。圣宗的追杀令不会因为他们的一夜长谈而取消，而他们即将面对的，可能是比想象中更危险的未来。",
+              "choice_type": "styleChoice",
+              "choices": [
+                {
+                  "id": "天机录_ch0314_c3_opt1",
+                  "text": "\"那就当是求婚吧。\"",
+                  "description": "以玩笑回应玩笑，顺势确认盟友关系。",
+                  "satisfaction_type": "情感爽",
+                  "visible_cost": "可能被当真",
+                  "visible_reward": "关系彻底确定",
+                  "risk_hint": "未来可能尴尬",
+                  "process_label": "以诚换诚",
+                  "stat_effects": [
+                    {
+                      "stat": "魅力",
+                      "delta": 3
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_yeqing",
+                      "dimension": "好感",
+                      "delta": 10
+                    },
+                    {
+                      "character_id": "char_yeqing",
+                      "dimension": "依赖",
+                      "delta": 5
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch0314_result_c3_opt1_001",
+                        "character_id": "char_yeqing",
+                        "content": "夜清的脸微微一红，但很快恢复平静：\"好，那我答应了。不过陈机，我丑话说在前头——我这个人记仇，谁敢负我，我必百倍还之。\"",
+                        "emotion": "认真"
+                      }
+                    },
+                    {
+                      "text": {
+                        "id": "天机录_ch0314_result_c3_opt1_002",
+                        "content": "\"正合我意。\"陈机点头，\"我也是睚眦必报的人。\""
+                      },
+                      "is_premium": false,
+                      "flags_set": [],
+                      "requires_flag": null,
+                      "forbids_flag": null,
+                      "stat_gate": null,
+                      "memory_label": "盟友之约",
+                      "branch_route_id": null
+                    },
+                    {
+                      "id": "天机录_ch0314_c3_opt2",
+                      "text": "\"玩笑归玩笑，我们还是说正事吧。\"",
+                      "description": "保持距离，将话题拉回实际合作。",
+                      "satisfaction_type": "扮猪吃虎",
+                      "visible_cost": "错失深化关系的机会",
+                      "visible_reward": "保持清醒判断",
+                      "risk_hint": "可能显得过于冷漠",
+                      "process_label": "保持理性",
+                      "stat_effects": [
+                        {
+                          "stat": "谋略",
+                          "delta": 2
+                        }
+                      ],
+                      "relationship_effects": [
+                        {
+                          "character_id": "char_yeqing",
+                          "dimension": "信任",
+                          "delta": 5
+                        },
+                        {
+                          "character_id": "char_yeqing",
+                          "dimension": "敬畏",
+                          "delta": 3
+                        }
+                      ],
+                      "result_nodes": [
+                        {
+                          "dialogue": {
+                            "id": "天机录_ch0314_result_c3_opt2_001",
+                            "character_id": "char_yeqing",
+                            "content": "夜清的表情微微一滞，但很快恢复如常：\"好，说正事。圣宗的三路大军，我只知道其中一路的动向。\"",
+                            "emotion": "收敛情绪"
+                          }
+                        },
+                        {
+                          "text": {
+                            "id": "天机录_ch0314_result_c3_opt2_002",
+                            "content": "她的眼神变得认真起来，仿佛刚才那个会开玩笑的女子只是错觉。\n\n\"中路军由圣子亲自率领，目标是天青宗主峰。而我负责的是东路，负责切断天青宗的退路。\"她看着陈机，\"你妹妹陈念......就在中路军。\""
+                          },
+                          "is_premium": false,
+                          "flags_set": [],
+                          "requires_flag": null,
+                          "forbids_flag": null,
+                          "stat_gate": null,
+                          "memory_label": "战略情报",
+                          "branch_route_id": null
+                        },
+                        {
+                          "id": "天机录_ch0314_c3_opt3",
+                          "text": "\"等这一切结束，我请你喝酒。\"",
+                          "description": "用一个简单的承诺约定未来。",
+                          "satisfaction_type": "延迟爽",
+                          "visible_cost": "模糊了关系定义",
+                          "visible_reward": "留下情感伏笔",
+                          "risk_hint": "可能被当成敷衍",
+                          "process_label": "含蓄承诺",
+                          "stat_effects": [
+                            {
+                              "stat": "魅力",
+                              "delta": 1
+                            }
+                          ],
+                          "relationship_effects": [
+                            {
+                              "character_id": "char_yeqing",
+                              "dimension": "好感",
+                              "delta": 6
+                            },
+                            {
+                              "character_id": "char_yeqing",
+                              "dimension": "信任",
+                              "delta": 7
+                            }
+                          ],
+                          "result_nodes": [
+                            {
+                              "dialogue": {
+                                "id": "天机录_ch0314_result_c3_opt3_001",
+                                "character_id": "char_yeqing",
+                                "content": "夜清怔了一下，随即笑了：\"好，一言为定。不过陈机，我可不是随便就能打发的人。\"",
+                                "emotion": "期待"
+                              }
+                            },
+                            {
+                              "text": {
+                                "id": "天机录_ch0314_result_c3_opt3_002",
+                                "content": "她说完，忽然伸手解下腰间的一枚玉佩，塞入陈机掌心。那玉佩温热，残留着她的体温。\n\n\"这是魔道主帅的信物。\"她说，声音很轻，\"拿着它，或许对你有用。\"",
+                                "is_premium": false,
+                                "flags_set": [],
+                                "requires_flag": null,
+                                "forbids_flag": null,
+                                "stat_gate": null,
+                                "memory_label": "玉佩信物",
+                                "branch_route_id": null
+                              }
+                            }
+                          ],
+                          "is_premium": false,
+                          "flags_set": [],
+                          "requires_flag": null,
+                          "forbids_flag": null,
+                          "stat_gate": null,
+                          "memory_label": null,
+                          "branch_route_id": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": {
+                    "id": "天机录_ch0314_017",
+                    "content": "那玉佩入手温润，陈机能感觉到上面残留的气息——那是夜清常年贴身佩戴之物，是她身为魔道圣女最珍贵的信物之一。此刻她将它交给自己，等于是将性命交到了他手中。\n\n\"你确定？\"他没有立刻收下，而是看着夜清的眼睛，\"这东西在你身上，或许比我拿着更有用。\""
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "天机录_ch0314_018",
+                    "character_id": "char_yeqing",
+                    "content": "\"正因为有用，我才给你。\"夜清的声音很平静，\"我要回东路军了，带着它反而危险。但如果你拿着，至少在关键时刻能调动一部分人。\"\n\n她顿了顿，补充道：\"而且，这是我欠你的。你救过我一次——虽然你自己可能不记得了。\"",
+                    "emotion": "郑重"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "天机录_ch0314_019",
+                    "content": "陈机一怔。救过她？他搜索记忆，却没有找到相关的片段。天机录的预见从未有过这一段，是被刻意抹去了，还是......\"\n\n\"三个月前，枯骨崖。\"夜清看出了他的疑惑，轻声道，\"你用天机录救下的那个人，是我的替身。圣宗一直想除掉我，那次差点成功。\"\n\n她没有再多说，只是看着陈机，眼中有着复杂的情绪。\n\n\"所以现在，我们两清了。\"她转过身，\"接下来是新的账——陈机，我等着和你一起算。\""
+                  }
+                },
+                {
+                  "text": {
+                    "id": "天机录_ch0314_020",
+                    "content": "夜风再次吹起，带走了夜清离去的身影。陈机站在原地，掌心里那枚玉佩还带着她的余温。他忽然发现，这个一直被他当作棋子的女人，或许比他想象的更复杂。\n\n而这一夜，一枚玉佩、一个承诺、一段纠葛的过往，都成了他们之间新的羁绊。\n\n圣宗的追杀令，或许今夜就会到来。但此刻，陈机心中想的却是另一件事——三个月前的枯骨崖，他究竟做了什么？为何天机录没有任何记录？\n\n答案，或许就藏在那枚玉佩的深处。\n\n而天机录的第一页，墨先生留下的那道裂痕，今夜似乎又深了几分。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "id": "天机录_ch0292",
+  "book_id": "天机录",
+  "number": 292,
+  "title": "遗迹机关",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机将手探入光幕的瞬间，指尖触碰到的不是冰冷的机关枢纽，而是一块温热如活物、脉动如心脏的残页——那是天机录的第二页。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0292_001",
+        "content": "那声震响如同苍天裂帛，震得整座遗迹都在颤抖。陈机脚下青砖骤然亮起繁复纹路，如同被唤醒的血脉，向四面八方蔓延开去。\n\n「不好——是守护傀儡的唤醒阵！」夜清厉喝一声，魔气在周身炸开，化作一层漆黑屏障将三人笼罩其中。\n\n陈机眯起眼睛，脑中天机录残页飞速翻动。他看见了——三息之后，这座沉寂万年的遗迹将彻底苏醒，无数机关傀儡从墙壁中破壁而出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0292_002",
+        "character_id": "char_suqingyao",
+        "content": "陈机！你到底知道多少？\n\n苏青瑶剑光横扫，将一块飞射而来的碎石斩成齑粉。她眼中闪烁着复杂的光芒，这废墟中的危险远超预期，而眼前这个\"废物\"的反应却快得离谱。\n\n「先活下来再说。」陈机侧身避开一道激射的阵纹，声音平静得不像身处险境。",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0292_003",
+        "content": "轰隆隆——\n\n正前方，丈高的石门轰然洞开。一尊浑身缠绕金铜色光芒的傀儡缓缓踏出，每一步都震得地面颤抖。它胸腔处镶嵌的阵盘飞速转动，散发出令人窒息的压迫感。\n\n「玄阶上品的守护傀儡！」夜清倒吸一口冷气，「这遗迹的等级比我想象的还要高！」\n\n傀儡空洞的眼眶中亮起幽光，锁定了最近的陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0292_004",
+        "character_id": "char_chenji",
+        "content": "陈机纹丝不动，任由那道灵识扫过全身。他嘴角微微上扬，露出一个淡淡的笑。\n\n「它锁定的是我。」他转头看向两女，「你们有两个选择——硬闯、智取、或者等死。」\n\n夜清与苏青瑶对视一眼，前者眼中闪过玩味，后者则满是审视。",
+        "emotion": "从容"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0292_choice_001",
+        "prompt": "守护傀儡步步逼近，危机迫在眉睫。三人必须在电光火石间做出抉择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "hard_way",
+            "text": "硬闯破解",
+            "description": "以力破力，苏青瑶与夜清联手以绝对战力碾压守护傀儡。风险最高但见效最快。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗大量灵力",
+            "visible_reward": "快速通过考验，但可能惊动更多傀儡",
+            "risk_hint": "若灵力不足，将陷入持久消耗战",
+            "process_label": "硬碰硬",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_hard_way_001",
+                  "content": "苏青瑶剑意冲霄，寒冰剑气裹挟着凛冽杀机直取傀儡要害。夜清同时出手，魔道迷雾如丝如缕缠向傀儡四肢。\n\n两道截然不同的攻击竟然配合得天衣无缝——寒冰封住傀儡关节，魔气侵蚀其核心阵法！"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_hard_way_002",
+                  "character_id": "char_suqingyao",
+                  "content": "「攻它左肋的阵眼！」苏青瑶冷喝一声。\n\n夜清毫不犹豫，一掌拍出，漆黑的魔元精准命中傀儡弱点。\n\n咔嚓——\n\n傀儡胸腔碎裂，轰然倒地。",
+                  "emotion": "冷傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "smart_way",
+            "text": "智取机关",
+            "description": "陈机看破机关阵法运转规律，以巧破千钧。风险最低但需要精准判断。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "完美破解机关，保留完整实力",
+            "risk_hint": "天机录消耗后会出现短暂虚弱",
+            "process_label": "巧破阵",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_smart_way_001",
+                  "content": "陈机深吸一口气，天机录残页在脑海中飞速翻动。他看见了——傀儡的驱动核心在胸腔正中，而维系它运转的是脚下那张繁复的阵图。\n\n「阵眼在它正下方三尺处，青铜色那块。」他的声音冷静得可怕，「夜清，魔气干扰它三息。苏青瑶，剑气切阵纹。」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_smart_way_002",
+                  "character_id": "char_yeqing",
+                  "content": "两女闻言立刻行动。\n\n魔气翻涌间，傀儡的动作明显迟滞了半拍。就在这电光火石之间，苏青瑶的剑气如银蛇出洞，精准斩断阵纹枢纽！\n\n傀儡轰然倒地，眼中幽光熄灭。",
+                  "emotion": "惊讶"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_smart_way_003",
+                  "character_id": "char_suqingyao",
+                  "content": "你怎么知道的？\n\n苏青瑶收剑，目光复杂地盯着陈机。这废物刚才的表现，哪里有半分废物的样子？\n\n陈机只是淡淡笑了笑，没有回答。天机录的秘密，他不打算让任何人知道。",
+                  "emotion": "审视"
+                },
+                "is_premium": false,
+                "flags_set": [],
+                "requires_flag": null,
+                "forbids_flag": null,
+                "stat_gate": {
+                  "stat": "谋略",
+                  "min": 40
+                },
+                "memory_label": "陈机展现了惊人的阵法理解力",
+                "branch_route_id": null
+              },
+              {
+                "id": "outside_help",
+                "text": "借助外力",
+                "description": "利用遗迹本身的规则漏洞，以天机录残页的气息扰乱傀儡识别系统。",
+                "satisfaction_type": "阴谋爽",
+                "visible_cost": "可能暴露天机录存在",
+                "visible_reward": "傀儡系统陷入混乱，创造逃脱窗口",
+                "risk_hint": "若被察觉可能招来更强守卫",
+                "process_label": "借规则",
+                "stat_effects": [
+                  {
+                    "stat": "天命值",
+                    "delta": -3
+                  },
+                  {
+                    "stat": "名望",
+                    "delta": 1
+                  }
+                ],
+                "relationship_effects": [
+                  {
+                    "character_id": "char_yeqing",
+                    "dimension": "好感",
+                    "delta": 5
+                  }
+                ],
+                "result_nodes": [
+                  {
+                    "text": {
+                      "id": "天机录_ch0292_result_outside_help_001",
+                      "content": "陈机眉心微动，一缕天机录的气息悄然溢出。那是与傀儡同源的力量——都是上古预言体系的残留。\n\n果然，傀儡的动作猛然一滞。它眼眶中的幽光剧烈闪烁，似乎在困惑于某种无法理解的信息。",
+                      "emphasis": "dramatic"
+                    }
+                  },
+                  {
+                    "dialogue": {
+                      "id": "天机录_ch0292_result_outside_help_002",
+                      "character_id": "char_yeqing",
+                      "content": "「走！」\n\n夜清反应极快，一把拽住陈机手腕，三人借着傀儡愣神的瞬间冲向甬道深处。\n\n她侧头看了陈机一眼，目光中多了几分意味深长。这个男人的底牌，比她想象的还要深。",
+                      "emotion": "玩味"
+                    }
+                  }
+                ],
+                "is_premium": false,
+                "flags_set": [],
+                "requires_flag": null,
+                "forbids_flag": null,
+                "stat_gate": null,
+                "memory_label": "夜清察觉到了陈机身上的异常气息",
+                "branch_route_id": null
+              }
+            ]
+          }
+        ],
+        "text": {
+          "id": "天机录_ch0292_007",
+          "content": "甬道幽深，火把的光芒被某种无形的力量吞噬，只剩下脚下偶尔闪烁的阵纹提供微弱的照明。空气中弥漫着远古的尘埃与一股说不清道不明的腐朽气息。\n\n陈机突然停下脚步。\n\n前方的通道分成了三条岔路，每一条都深不见底，而在三条通道的交汇处，矗立着一座三丈高的石碑，上面刻满了密密麻麻的古老铭文。",
+          "emphasis": "system"
+        }
+      },
+      "dialogue": {
+        "id": "天机录_ch0292_008",
+        "character_id": "char_yeqing",
+        "content": "这是……三选一的命途阵？\n\n夜清的声音罕见地凝重了几分。魔道典籍中曾记载过类似的机关——每一条路都通向不同的命运，而选择错误的人，将永远迷失在时间的夹缝中。\n\n「左边那条，」陈机忽然开口，「死路，走进去会被空间绞杀。」\n\n苏青瑶与夜清同时看向他。",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0292_009",
+        "character_id": "char_suqingyao",
+        "content": "你怎么知道？\n\n苏青瑶的手已经按在剑柄上，眸光冷冽如霜。这个废物对她的追问避而不答，却对遗迹机关了如指掌——这其中的问题，她必须弄清楚。\n\n陈机转过身，迎上她的目光，嘴角勾起一抹意味深长的弧度。\n\n「猜的。」",
+        "emotion": "审视"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0292_choice_002",
+        "prompt": "三岔路口的选择摆在他们面前。陈机似乎已经看穿了其中的玄机，但苏青瑶显然不会轻易相信——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "explain_way",
+            "text": "展示推演",
+            "description": "用天机录看到的画面片段向两女解释选择依据，以理性说服她们。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露部分能力",
+            "visible_reward": "获得两女更深的信任与配合",
+            "risk_hint": "可能加深苏青瑶的怀疑",
+            "process_label": "说清楚",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_explain_001",
+                  "content": "陈机蹲下身，指尖拂过地面残留的阵纹痕迹。\n\n「看这里——」他点向左侧通道入口，「阵纹走向是向内收敛的，这意味着空间会被不断压缩。三息之内，走进去的人就会被碾成齑粉。」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_explain_002",
+                  "character_id": "char_yeqing",
+                  "content": "夜清凑近观察，果然在阵纹中发现了微弱的压缩痕迹，不禁挑眉。\n\n「你倒是看得仔细。」她的语气中多了几分真诚的认可，「中间那条呢？」\n\n「中间是真正的路，但有考验。右边……」他顿了顿，「是陷阱中的陷阱，也是机缘中的机缘。」",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机展现了惊人的观察力与推理能力",
+            "branch_route_id": null
+          },
+          {
+            "id": "mysterious_way",
+            "text": "保持神秘",
+            "description": "不解释原因，直接带路。让她们在行动中自己验证你的判断。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能引发两女不满",
+            "visible_reward": "保持信息优势，加深神秘感",
+            "risk_hint": "苏青瑶的戒心会加重",
+            "process_label": "不解释",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 3
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_mysterious_001",
+                  "content": "陈机站起身，拍了拍手上的灰尘，头也不回地走向中间那条通道。\n\n「信我的，跟上。不信的，原路返回。」\n\n他的语气淡漠得像在说今天的天气不错。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_mysterious_002",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶咬了咬牙，最终还是跟了上去。\n\n她堂堂内门首席，何时被人这样命令过？但理智告诉她，这个废物知道的东西，比他表现出来的多得多。\n\n夜清则笑着摇了摇头，紧随其后。",
+                  "emotion": "不甘"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶对陈机的戒心与好奇同步增长",
+            "branch_route_id": null
+          },
+          {
+            "id": "trick_way",
+            "text": "故意误导",
+            "description": "让两女先走危险的路，自己暗中保护。看清她们的真实态度。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗精力设局",
+            "visible_reward": "试探出两女的真实立场",
+            "risk_hint": "若被发现会严重损害信任",
+            "process_label": "设考验",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_trick_001",
+                  "content": "陈机看似随意地指了指右边通道。\n\n「那边清净些，走那边吧。」\n\n夜清目光一闪，似乎察觉到了什么，但很快恢复正常，率先踏入右边通道。苏青瑶犹豫了一下，也跟了上去。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_trick_002",
+                  "content": "然而两女刚走出三步，陈机便在她们身后轻轻屈指一弹。一道肉眼难辨的灵力悄然没入通道入口，将即将触发的陷阱重新封印。\n\n一切发生在电光火石之间，两女浑然不觉。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清隐约感觉到被算计，但无法确定",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0292_012",
+        "content": "中间通道比想象中狭窄得多，两侧的墙壁上刻满了晦涩难明的符文，随着三人的深入，那些符文开始缓缓亮起，散发出幽幽的蓝光。\n\n忽然，前方出现一道光幕。\n\n光幕如水波般荡漾，其中隐约可见一道人影盘坐其中。那人影通体被金色锁链缠绕，气息微弱却透着一股令人心悸的威压。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0292_013",
+        "character_id": "char_chenji",
+        "content": "陈机瞳孔骤缩。\n\n天机录在这一刻疯狂震动，残页上的文字竟然自行浮现——「天机守护者·残魂·封印中」。\n\n他压下心中的惊涛骇浪，面不改色地继续前行。\n\n「前面有考验，」他的声音平静如常，「准备好战斗。」",
+        "emotion": "克制"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0292_014",
+        "content": "话音刚落，光幕猛然炸开！\n\n那道残魂人影瞬间睁眼，两道实质般的目光如利剑般刺向三人。紧接着，无数道金色锁链从四面八方激射而出，带着毁灭一切的气势席卷而来！\n\n「守护傀儡！」夜清厉喝，魔气在身前凝聚成盾。\n\n苏青瑶剑光暴涨，寒冰剑气与魔气之盾交相辉映，勉强挡住了第一波攻击。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0292_choice_003",
+        "prompt": "残魂守护者的攻击凌厉而诡异，无数金色锁链如同活物般缠绕而来。两女的防线正在被逐步瓦解——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "offensive_way",
+            "text": "全力进攻",
+            "description": "两女与陈机同时出手，以最强攻势打碎残魂核心。风险最高但可能一击制胜。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "三人灵力大量消耗",
+            "visible_reward": "速战速决，震慑残魂",
+            "risk_hint": "若攻击被化解将陷入更大危机",
+            "process_label": "全力一击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_offensive_001",
+                  "content": "「动手！」\n\n苏青瑶剑意冲霄，一剑斩出，寒冰剑气化作冰龙直扑残魂。夜清同时出手，魔道大手印轰然压下。\n\n陈机则悄然掐诀，一道隐晦的灵力混入两女的攻势之中——那是天机录的气息，专门针对这类守护机关。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_offensive_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "残魂人影发出一声凄厉的嘶吼，金色锁链在触及那道隐晦灵力的瞬间竟然停滞了！\n\n「天……天机……你是……」残魂的声音充满了不可置信。\n\n下一瞬，两女的攻击轰然砸落，残魂人影瞬间崩碎，化作漫天光点。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "残魂认出了天机录的气息",
+            "branch_route_id": null
+          },
+          {
+            "id": "defensive_way",
+            "text": "防守观察",
+            "description": "固守待变，让残魂先暴露更多底牌，寻找破绽。稳妥但耗时。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "时间流逝，两女体力消耗",
+            "visible_reward": "看清残魂弱点，一击必杀",
+            "risk_hint": "可能陷入持久消耗",
+            "process_label": "以守为攻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_defensive_001",
+                  "content": "陈机按住两女的肩膀。\n\n「别急，看它的锁链。」\n\n两女强压攻势，仔细观察。果然，那金色锁链虽然凌厉，但每次攻击后都会有一瞬间的停滞——那是阵法运转的间隙。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_defensive_002",
+                  "character_id": "char_yeqing",
+                  "content": "「我看到了！」夜清眼眸一亮，「下一次收缩的瞬间，攻它胸口的阵眼！」\n\n三息后，金色锁链果然再次收缩。\n\n苏青瑶一剑刺出，精准命中弱点。残魂发出一声哀嚎，阵法瞬间崩溃！",
+                  "emotion": "兴奋"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "三人配合默契度提升",
+            "branch_route_id": null
+          },
+          {
+            "id": "special_way",
+            "text": "天机共鸣",
+            "description": "以天机录残页与残魂产生共鸣，唤醒它的自我意识，让它主动解除封印。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值消耗10点",
+            "visible_reward": "残魂可能成为助力或提供关键信息",
+            "risk_hint": "可能引发不可控的后果",
+            "process_label": "以印解印",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0292_result_special_001",
+                  "content": "陈机缓缓闭上双眼，脑海中天机录残页骤然绽放出耀眼光芒。一道无形的波动从他体内扩散开来，与残魂的气息产生了奇异的共振。\n\n金色锁链猛然停滞！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0292_result_special_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "「传承……者……？」残魂的声音不再是机械的敌意，而是带上了几分颤抖，「你……你是玄祖的……」\n\n陈机睁开眼睛，声音平静。\n\n「我来取回属于天机录的东西。」\n\n残魂沉默了片刻，然后缓缓散去了金色锁链，露出其中苍老而虚弱的面容。",
+                  "emotion": "激动"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 15
+            },
+            "memory_label": "陈机展现了远超废物设定的力量",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0292_017",
+        "content": "残魂缓缓飘落在地，金色锁链已经尽数散去。他的身影虚幻得几乎透明，显然封印已经耗尽了他大部分力量。\n\n「我等了很久了……」残魂的声音沙哑而疲惫，「天机录的继承者，终于来了。」\n\n苏青瑶和夜清同时看向陈机，目光中满是震惊。这个废物，到底还藏着多少秘密？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0292_018",
+        "character_id": "char_suqingyao",
+        "content": "天机录？你到底是什么人？\n\n苏青瑶的声音几乎是从牙缝里挤出来的。从入门开始，这个废物就一直在欺骗所有人。她靠近一步，剑气在指尖凝聚。\n\n「陈机，你最好给我一个解释。」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0292_019",
+        "content": "陈机没有回答苏青瑶的质问，而是看向残魂。\n\n「机关核心在哪里？」\n\n残魂指向身后那道缓缓散去的屏障。在屏障的深处，一座古朴的石台静静矗立，而在石台之上，一道柔和的光芒正在轻轻脉动。\n\n那光芒……与天机录的气息如出一辙。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0292_020",
+        "content": "残魂似乎看出了陈机的渴望，苍老的脸上浮现出一丝复杂的笑意。\n\n「去吧……那是第二页……等你很久了……」\n\n话音未落，残魂便彻底消散，化作点点星光融入石台之中。他的使命，终于完成了。\n\n陈机深吸一口气，向石台走去。身后，苏青瑶和夜清对视一眼，都从对方眼中看到了同样的疑问——这个男人的身上，到底还隐藏着多少秘密？",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

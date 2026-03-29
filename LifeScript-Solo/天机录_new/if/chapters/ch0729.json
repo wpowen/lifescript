@@ -1,0 +1,503 @@
+{
+  "id": "天机录_ch0729",
+  "book_id": "天机录",
+  "number": 729,
+  "title": "命运书写",
+  "is_paid": true,
+  "next_chapter_hook": "墨先生的残魂在光芒中逐渐凝实，他看向陈机的眼神中，竟带着一丝陈机从未见过的……愧疚？",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0729_001",
+        "content": "大地轰鸣声中，陈机感受到一股浩瀚如深渊的气息正从地底苏醒。他的手指还停在夜清额头，那一刻，夜清身体内残存的魔道印记仿佛遇到了故人，发出悲鸣般的颤抖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_002",
+        "character_id": "char_yeqing",
+        "content": "这是……不可能！万年前的波动？陈机，快退开，这不是你能触碰的层次！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_003",
+        "content": "然而就在陈机欲抽手之际，一道虚幻的身影自夜清体内缓缓浮现——那是一个身穿素白长袍的中年男子，面容清癯，眉目间尽是看透世事的淡然。他的身影半透明，显然只是一缕残魂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_004",
+        "character_id": "char_moxiansheng",
+        "content": "不必惊慌，小家伙。老夫等这一天，已等了万年。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_005",
+        "content": "陈机瞳孔骤缩。这个声音，正是天机录第一页残魂的声音——墨先生。可眼前这人，分明是万年前名录的编撰者之一，他的身份比陈机所知的要古老得多！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_006",
+        "character_id": "char_chenji",
+        "content": "（内心翻涌）墨先生……原来你一直在夜清体内？不，你到底是谁？",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_007",
+        "character_id": "char_moxiansheng",
+        "content": "我是墨先生，万年前被你们口中的「陈天命」选中，成为天机录的守护残魂。但在那之前，我还有另一个身份——命运书写者，天道之眼的失败挑战者。",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_008",
+        "content": "命运书写者？陈机心中掀起惊涛骇浪。天道之眼——那是他从墨先生处得知的最终敌人，是超越一切的存在。而眼前这个看似无害的残魂，竟然曾挑战过那个存在？"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_009",
+        "character_id": "char_moxiansheng",
+        "content": "万年前，我们七人一同挑战天道意志。我是唯一的幸存者，却也只能以残魂之态苟延残喘。陈天命找到我时，我的力量已所剩无几。",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_010",
+        "content": "墨先生的虚影缓缓飘向陈机，目光深邃如宇宙星空。他抬手，指向陈机胸口那若隐若现的天机录印记。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_011",
+        "character_id": "char_moxiansheng",
+        "content": "你手中残页的命运，比你以为的更加沉重。天机录并非天道的恩赐，而是我们七人的意志结晶——对天道之眼的囚笼。",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0729_choice_001",
+        "prompt": "墨先生的揭露震惊人心，陈机必须做出选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0729_trust",
+            "text": "选择相信",
+            "description": "墨先生掌握着他不知道的万年前真相，继续追问天机录的完整计划。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能暴露更多弱点",
+            "visible_reward": "获得关键信息",
+            "risk_hint": "墨先生可能别有用心",
+            "process_label": "追问真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_trust_001",
+                  "character_id": "char_chenji",
+                  "content": "（眼神沉稳）既然你选中了陈天命，又为何选中我？我不过是个废物杂役。",
+                  "emotion": "试探"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_trust_002",
+                  "content": "陈机的问题直指核心。墨先生残魂的眼眸深处，竟闪过一丝难以察觉的波动——那是万年等待后终于遇见对的人的欣慰。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生信任线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生首次认可",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0729_probe",
+            "text": "试探虚实",
+            "description": "不轻信墨先生，用天机录能力暗中窥探其话语真假。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗5点天命值",
+            "visible_reward": "看穿墨先生是否有隐瞒",
+            "risk_hint": "可能被反噬",
+            "process_label": "暗中窥探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_probe_001",
+                  "character_id": "char_chenji",
+                  "content": "（手指微动）你说你是失败者，却活到了现在。我该如何相信，你不是天道的另一个棋子？",
+                  "emotion": "冷冽"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_probe_002",
+                  "content": "墨先生微微一怔，随即苦笑。他似乎察觉到了陈机暗中调动天机录的动作，却并未阻止。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "试探墨先生"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0729_trap",
+            "text": "设下后手",
+            "description": "表面配合，实则暗中布置后手，以防墨先生突然发难。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "分散注意力",
+            "visible_reward": "获得安全退路",
+            "risk_hint": "可能触怒墨先生",
+            "process_label": "暗布棋子",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_trap_001",
+                  "character_id": "char_chenji",
+                  "content": "（悄然激活袖中符箓）前辈既然等待万年，想必有重要之事。不如直说，我陈机洗耳恭听。",
+                  "emotion": "沉稳"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_trap_002",
+                  "content": "墨先生的目光落在陈机袖口若隐若现的灵光上，眼中竟浮现一丝赞赏。这个少年能在万年前古人的残魂面前依然保持警惕，确实有资格继承天机录。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生后手"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_012",
+        "character_id": "char_moxiansheng",
+        "content": "好问题。陈天命选中你，正是因为你是个「废物」。天机录需要的是不被命运眷顾之人——只有如此，才能在必死之局中杀出血路。",
+        "emotion": "深邃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_013",
+        "content": "墨先生的身影突然靠近，虚幻的手指点向陈机胸口。那一刻，陈机感受到一股磅礴的信息流涌入脑海——那是万年前陈天命布下的完整棋局的一角。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_014",
+        "character_id": "char_moxiansheng",
+        "content": "陈天命不只是留下了天机录。他将天道之眼的注意力引向自己，用自己的存在为代价，换取了天机录的诞生。而你，是这盘棋的最后一步。",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_015",
+        "content": "夜清在一旁听得心惊胆战。她终于明白为何陈机身上总有一种说不清的违和感——那不是伪装，而是一个背负万年前宿命之人的沉重。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_015b",
+        "character_id": "char_yeqing",
+        "content": "（传音）陈机，他在说什么？我听不懂，但我感觉到这股信息量足以压垮普通修士的神识！",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0729_choice_002",
+        "prompt": "陈机正承受着万年前真相的冲击：",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0729_continue",
+            "text": "继续承受",
+            "description": "强行接收更多信息，哪怕神识受损也在所不惜。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "神识受损，可能昏迷",
+            "visible_reward": "获得完整布局真相",
+            "risk_hint": "可能当场晕厥",
+            "process_label": "强行接收",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_continue_001",
+                  "content": "陈机咬紧牙关，任由那股信息流冲刷神识。他的识海中，无数画面如走马灯般闪过——陈天命的身影，天道之眼的威压，还有无数被他遗忘的细节。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "真相接收"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0729_interrupt",
+            "text": "强行打断",
+            "description": "切断信息流，要求墨先生先解释最关键的部分。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能遗漏重要信息",
+            "visible_reward": "保持主动权",
+            "risk_hint": "墨先生可能不满",
+            "process_label": "主动掌控",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 10
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_interrupt_001",
+                  "character_id": "char_chenji",
+                  "content": "（猛然切断链接）够了。我不需要知道全部，只需要知道——我该怎么做。",
+                  "emotion": "冷冽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "主动打断"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_016",
+        "character_id": "char_moxiansheng",
+        "content": "（轻叹）你倒是比陈天命当年更谨慎。他太急了，所以只能以自身为饵。而你……或许能走得更远。",
+        "emotion": "欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_017",
+        "content": "墨先生的残魂缓缓后退，看向陈机的目光中带着一种陈机从未见过的复杂情绪——那是愧疚，是期待，也是一种跨越万年的信任。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_018",
+        "character_id": "char_moxiansheng",
+        "content": "既然你问了，老夫便告诉你最关键的一点：陈天命还活着。但他的归来，需要你付出代价。",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_019",
+        "content": "这句话如同一记惊雷，在陈机脑海中炸开。他的父亲——那个传说中的存在——还活着？而所谓的代价，又是什么？夜清的呼吸都停滞了，她从未见过陈机的表情如此失控。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_020",
+        "content": "墨先生的身影已开始消散，显然万年残魂无法维持太久。他最后看向陈机的眼神中，带着一丝解脱与期许。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_021",
+        "character_id": "char_moxiansheng",
+        "content": "天机录会指引你。至于代价……当你真正找到他时，你自然会明白。记住，小家伙，万年前我们七人都败了，不是因为不够强，而是因为太自负。希望你不要重蹈覆辙。",
+        "emotion": "沧桑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_022",
+        "content": "墨先生的残魂彻底消散，只留下一枚古朴的玉简悬浮在空中，缓缓落入陈机掌心。那一瞬间，他感受到了玉简中蕴含的磅礴力量——那是万年前陈天命留下的最后遗物。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_023",
+        "character_id": "char_yeqing",
+        "content": "（急切）陈机，你没事吧？刚才那一瞬，我感觉你的气息紊乱到了极点……",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_024",
+        "content": "夜清连忙扶住摇摇欲坠的陈机，魔道迷雾下意识地包裹住两人，遮掩这异常的气息波动。她的手触碰到陈机的瞬间，能感受到他体内的灵力正以前所未有的方式运转着。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_025",
+        "character_id": "char_chenji",
+        "content": "（勉强站稳，声音沙哑）我没事……只是需要时间消化。夜清，记住今夜之事，不得对任何人提起。",
+        "emotion": "疲惫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_026",
+        "content": "陈机紧紧握住手中玉简，感受到一股温热的力量正缓缓流入体内，修复着方才受损的神识。他的目光深邃如渊，心中已是一片惊涛骇浪——父亲还活着，而这个\"代价\"，恐怕比他想象的更加沉重。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_027",
+        "content": "天机录在他体内微微震颤，仿佛感应到了同源之物的存在。而墨先生最后的话语，仍在他脑海中回响：万年前的失败者，万人之上的天道之眼，以及那个或许还活着的父亲……这盘棋，比他以为的还要复杂百倍。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_028",
+        "content": "墨先生的残魂在消散前，最后看了一眼陈机胸口浮现的天机录印记，喃喃自语：\"陈天命，你的孩子……终于走到这一步了。\"随后，他的身影彻底化为点点光芒，融入了那枚古老的玉简之中。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

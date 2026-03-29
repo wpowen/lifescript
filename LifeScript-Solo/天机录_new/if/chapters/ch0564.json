@@ -1,0 +1,448 @@
+{
+  "id": "天机录_ch0564",
+  "book_id": "天机录",
+  "number": 564,
+  "title": "终极赌局",
+  "is_paid": true,
+  "next_chapter_hook": "太子太师亲眼看着陈机的“尸体”在龙脉爆炸中化为飞灰，脸上露出得意笑容——然而那具焦黑躯壳之下，真相究竟是什么？",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0564_001",
+        "content": "太子太师的脚步声在第七层通道中回荡，每一步都如同擂鼓，震得石壁簌簌落尘。陈机握着陈念的手，指节泛白，却稳如磐石。禁地第七层的龙脉核心近在咫尺，幽蓝色的光芒在穹顶流转，映得陈机平静的面容忽明忽暗。他知道，这是他此生布下的最后一局棋——赢了，兄妹从此天涯；输了，万劫不复。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_002",
+        "character_id": "char_chenji",
+        "content": "念念，听我说。龙脉核心下方三尺处有一道封印裂隙，那是你体内的钥匙共鸣点。我会在那里布置“涅槃假死阵”，阵法激活的瞬间，你立刻催动龙脉之力引爆核心——记住，不是要毁掉它，而是要让它与你的血脉彻底融合。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_003",
+        "content": "陈念的眸子微微颤动，泪痕未干的脸上浮现出一丝惊惧。她张了张嘴，想要说什么，却被陈机一个眼神制止。那眼神里没有半分犹豫，有的只是将一切托付于她的决绝。十二年了，她在圣宗的囚牢中无数次幻想过与兄长重逢，却从未想过，重逢的代价竟是看着他以命相搏。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_004",
+        "character_id": "char_chenian",
+        "content": "哥……你确定吗？那个阵法一旦启动，连天机录都无法窥探你的生死。我、我怕……",
+        "emotion": "颤抖"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_005",
+        "prompt": "太子太师的脚步声越来越近，陈机必须在有限的时间内完成布置——他该如何向陈念传达最后的信任？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0564_005_a",
+            "text": "以兄长之名立下誓言",
+            "description": "陈机将额头抵在陈念额头，以血为誓，承诺此战之后必与她相认。无论生死，这份羁绊都不会断绝。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗天命值5点（立誓之力）",
+            "visible_reward": "陈念获得「血脉共鸣」状态，保护其在龙脉融合中不受反噬",
+            "risk_hint": "天命值本就珍贵的陈机，此举将消耗关键资源",
+            "process_label": "陈机额头抵住陈念额头，低声起誓",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_005_a_001",
+                  "character_id": "char_chenji",
+                  "content": "我陈机以血为誓，此战之后，无论我身在何处、存亡与否，必与你相认。若违此誓，天道弃之。",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_005_a_002",
+                  "content": "一滴精血自陈机指尖渗出，落在陈念眉心，化作一枚淡金色的印记。那印记一闪而逝，却让陈念感受到一股前所未有的暖流——那是兄长血脉的温度，是十二年思念的重量。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_005_b",
+            "text": "以利益共同体说服她",
+            "description": "陈机冷静分析局势：唯有他假死脱身，陈念才能名正言顺获得龙脉认可，二人才能真正摆脱棋局。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "情感共鸣稍弱",
+            "visible_reward": "陈念获得「理性觉醒」状态，执行计划时更加冷静精准",
+            "risk_hint": "缺少情感羁绊可能导致执行时出现犹豫",
+            "process_label": "陈机以谋士的口吻快速分析局势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_005_b_001",
+                  "character_id": "char_chenji",
+                  "content": "念念，你是龙脉锁钥，我是天机残页。我们本就是这盘棋局的核心棋子——但若我死了，你就不再是棋子，而是变数。变数，才是破局的唯一方法。",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_005_b_002",
+                  "content": "陈念的眸中闪过一丝明悟。十二年的囚禁教会了她隐忍，却从未让她学会像兄长这样将命运玩弄于股掌之间。她深吸一口气，重重点头。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_006",
+        "content": "脚步声骤然加快。陈机袖中飞出数十枚阵旗，在龙脉核心周围勾勒出繁复的纹路。那是「涅槃假死阵」的核心阵眼——以天机录残页之力为引，将使用者的气息彻底从世间抹去。他嘴角勾起一抹冷笑：太子太师想看他死？那便让他看个够。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_007",
+        "character_id": "char_chenian",
+        "content": "哥，阵旗埋好了……我感应到了龙脉核心，它在呼唤我。",
+        "emotion": "紧绷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_008",
+        "content": "陈机猛然抬头。第七层入口处的石门轰然炸开，漫天尘屑中，一道身影逆光而立。太子太师身着玄黑官袍，面容古井无波，唯有嘴角那一抹玩味的笑意透露出居高临下的傲慢。他的目光扫过陈机与陈念，落在龙脉核心上，如同在看两只困兽。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_009",
+        "character_id": "char_hanlie",
+        "content": "陈机，本座还以为你会逃。想不到堂堂天机传人，竟蠢到在这绝地等死？",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_010",
+        "prompt": "太子太师现身，陈机的计划已无退路——他该如何应对这最后关头？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0564_010_a",
+            "text": "激将法：请君入瓮",
+            "description": "陈机冷笑出声，嘲讽太子太师不过是天道棋盘上的走卒，连他为何在此都一无所知。将对方引入阵法核心，为陈念争取启动时机。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "彻底暴露陈机早有预谋",
+            "visible_reward": "太子太师被激怒，进入阵法范围，陈念获得完整启动时间",
+            "risk_hint": "激怒强敌可能引发不可控变数",
+            "process_label": "陈机以嘲讽之态激怒太子太师",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_010_a_001",
+                  "character_id": "char_chenji",
+                  "content": "走卒终究是走卒。你以为你是棋手？不，你连这盘棋长什么样都不知道。过来，让我教教你什么叫真正的布局。",
+                  "emotion": "轻蔑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_010_a_002",
+                  "content": "太子太师面色骤沉，眼中杀意沸腾。他袖袍一挥，滔天威压如山岳倾覆，整个人化作一道黑芒直扑陈机——正正落入阵法核心范围。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "阵法启动就绪"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_010_b",
+            "text": "示弱：诱敌深入",
+            "description": "陈机故作惊恐，拉着陈念退向龙脉核心，摆出困兽之斗的姿态。暗中让陈念悄悄激活钥匙，等待最佳时机。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "陈念需分心激活，可能暴露意图",
+            "visible_reward": "太子太师放松警惕，陈机获得更从容的启动时机",
+            "risk_hint": "演技被识破将陷入绝境",
+            "process_label": "陈机以惊恐之态掩饰真正意图",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_010_b_001",
+                  "character_id": "char_chenji",
+                  "content": "太、太师大人……我只是误入此地，绝无冒犯之意！求大人开恩，放我兄妹一条生路！",
+                  "emotion": "惊恐"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_010_b_002",
+                  "content": "陈机悄悄将陈念的手推向身后，指尖在她掌心快速划出一道符文。陈念心领神会，垂下的袖子遮住了微微发光的左手。太子太师眯起眼睛，似乎在欣赏猎物的绝望。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "钥匙激活中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_011",
+        "content": "陈机缓缓抬手，掌心浮现出一枚古朴残页。天机录的气息在这一刻毫无保留地释放，与龙脉核心产生共鸣。整个第七层空间开始扭曲，幽蓝色的光芒中掺杂着金色的裂隙，如同苍穹被撕裂。太子太师面色微变，却并未后退——他以为这不过是困兽之斗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_012",
+        "character_id": "char_chenji",
+        "content": "太师大人，你想知道我为何选择这里吗？因为这里……是这方天地唯一不受天道注视的角落。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_013",
+        "content": "话音落，阵起。陈机脚下的纹路轰然亮起，金红色的火焰自地底喷涌而出，将他整个人吞没。与此同时，陈念仰天发出一声清啸，体内龙脉钥匙彻底觉醒——一道璀璨的光柱自她天灵盖冲霄而起，直贯龙脉核心。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_014",
+        "character_id": "char_hanlie",
+        "content": "你——！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_015",
+        "prompt": "龙脉爆炸在即，陈机的假死阵法已然激活——这最后的瞬间，他心中所想是什么？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0564_015_a",
+            "text": "对陈念的期许",
+            "description": "陈机在火焰中回望陈念，用眼神传递最后的嘱托：活下去，变强，然后替我看看这天道究竟是什么东西。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "意识在假死中完全沉睡",
+            "visible_reward": "陈念获得「兄长遗志」永久BUFF，战力+20%，对天道之眼的感知力大幅提升",
+            "risk_hint": "假死期间完全失去行动能力",
+            "process_label": "陈机在烈焰中最后望向陈念",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_015_a_001",
+                  "content": "烈焰焚身之际，陈机看到的是陈念拼命催动龙脉之力的身影。他在心中默念：念念，从今往后，你不再是任何人的棋子。你是自己的执棋人。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假死完成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_015_b",
+            "text": "对太师的无声嘲讽",
+            "description": "陈机在火中勾起嘴角，以口型对太子太师说出四个字：你输了。在对方惊骇的目光中，涅槃之火将一切吞噬。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "失去嘲讽后手的时机",
+            "visible_reward": "太子太师陷入自我怀疑，「心魔」种子埋下，后续剧情触发点解锁",
+            "risk_hint": "过于挑衅可能激怒对方做出不理智行为",
+            "process_label": "陈机以口型无声嘲讽太子太师",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_015_b_001",
+                  "content": "陈机张开嘴，无声地勾勒出四个字。太子太师瞳孔骤缩——那是“你输了”。他想阻止，却发现龙脉之力已将整个空间彻底封锁。他只能眼睁睁看着那道身影在金红烈焰中化为灰烬。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假死完成",
+              "心魔种子"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_016",
+        "content": "龙脉核心炸裂。恐怖的时空裂隙如同远古巨兽张开的巨口，将整个第七层吞没。太子太师被冲击波震退数丈，袖袍尽碎，狼狈不堪。而在他眼前，陈机的身影已在金红烈焰中彻底消散，连一丝残渣都未曾留下。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_017",
+        "content": "太子太师缓缓站起身，灰头土脸却难掩眼底得意。他仰天大笑，笑声在崩塌的空间中回荡：“天机传人？不过如此！机关算尽，终究难逃一死！哈哈哈哈——”他的笑声戛然而止。因为他看见陈念——那个本该同样被时空裂隙吞噬的少女，正站在光柱中央，毫发无损地注视着他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_018",
+        "content": "陈念的眼眸中已无半分先前的怯懦，取而代之的是一种超越年龄的冰冷。她周身龙脉之气流转，与核心融为一体，如同这方天地真正的主人。太子太师心头一跳，一股不祥的预感涌上心头——他似乎漏算了什么。但当他再次环顾四周，确认陈机确实已死之后，那丝不安又被得意冲淡。他想：陈机已死，那个威胁他地位的天才终于不复存在。而他亲眼见证的“死亡”，将成为他日后邀功的资本。太子太师整了整残破的衣袍，脸上浮现出满足的笑容。他不知道的是，在那具化为飞灰的躯壳之下，真正的陈机早已借由涅槃假死阵逃离了此方世界。他的胜利，不过是另一盘棋局的开始。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

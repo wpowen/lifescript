@@ -1,0 +1,374 @@
+{
+  "id": "天机录_ch0416",
+  "book_id": "天机录",
+  "number": 416,
+  "title": "龍脈覚醒",
+  "is_paid": true,
+  "next_chapter_hook": "龍脈の力が完全に融合した瞬間、Chen Jiは無間の外に成功，熟悉的气，急激向けて感知した――那是魔道主帅独有的息急而，更令他心惊的是，对方身上竟然流淌着与自己同源的血脉。運命的双生子，终于要在这遗迹深处相见。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0416_001",
+        "content": "無間深处的甬道尽头，一扇尘封万载的石门缓缓开启。Chen Ji站在门前，感受着门后传来的若有若无の脈動――那是龍脈の心拍で、彼胸腔中の血液と共振し、一呼一吸間に、仿佛在进行某种跨越时空の对话。Mo Xiansheng把那枚玉佩递到他手中，触感温润如玉，却隐隐发烫，仿佛在提醒他什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_002",
+        "content": "穿过石门，眼前的景象让Chen Ji瞳孔骤缩。一条巨大的龙形地脉横亘于地下宫殿之中，通体由金色Spiritual Mine构成，龙首高昂，龙尾蜿蜒数千丈，散发着远古洪荒の威圧。而最令人心惊的是，那龍脈の核心处，有一枚拳头大小的金色Dragon Pearl，正随着脈動明滅不定。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0416_003",
+        "character_id": "char_moxiansheng",
+        "content": "这就是龙脉核心……\"Mo Xianshengの残魂声音微微颤抖，\"当年你祖上Chen Xuan正是从这里带走了Tianji Recordの残页。这枚Dragon Pearl蕴含着改变因果的力量，但想要让它认主，必须承受万鳞穿心之痛。",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_004",
+        "content": "Chen Ji没有说话，只是将那枚玉佩收入怀中，然后缓步走向龍脈。每走一步，他都能感受到来自龍脈の审视——那股力量在扫描他的血脈、他的灵魂、他的一切。最终，他站在Dragon Pearl面前，伸出手，掌心贴上了那颗滚烫的金色珠子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0416_005",
+        "character_id": "char_chenji",
+        "content": "万鳞穿心？\"Chen Ji忽然笑了，笑容里带着几分玩味，\"比我预想的要轻松。毕竟，这些年我承受过的痛楚，早已让我习惯了极限の边缘。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0416_choice_001",
+        "prompt": "Dragon Pearl已经触手可及，融合的过程却凶险万分。Chen Ji需要做出选择——是凭借Tianji Recordの预见能力快速融合抢占先机，还是稳扎稳打承受完整の考验以获得更纯粹的力量？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "rapid_fusion",
+            "text": "快速融合",
+            "description": "消耗10点Heavenly Fate激活Tianji Recordの深层预测能力，在龍脈の考验中抢占先机，大幅缩短融合时间。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命値-10",
+            "visible_reward": "融合时间缩短七成，保留更多Heavenly Fate应对后续危机",
+            "risk_hint": "可能无法获得龍脈最完整の传承，且快速融合の气息波动更容易被外界察觉",
+            "process_label": "快速融合中...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 800
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0416_r_001",
+                  "content": "Chen Ji眼中闪过一丝决然。Heavenly Fate瞬间燃烧，化作一道金光包裹住他的手掌。Dragon Pearl仿佛感应到了什么，主动绽放出耀眼光芒，开始快速涌入他的经脉。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "龙脉快速融合"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "steady_fusion",
+            "text": "稳扎稳打",
+            "description": "不借助Tianji Record的力量，以纯粹的意志和血脉契合完成龍脈认主，承受完整の万鳞穿心之痛。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "剧痛考验",
+            "visible_reward": "获得龍脈最完整の传承，融合後の力量更加纯粹无杂质",
+            "risk_hint": "融合时间长达三个时辰，期间若被打断后果不堪设想",
+            "process_label": "稳扎稳打融合中...",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1500
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0416_r_002",
+                  "content": "Chen Ji深吸一口气，撤去了指尖のTianji Record之力。他选择用最笨拙、最痛苦、却也最扎实的方式来完成这场融合。掌心贴上Dragon Pearl的瞬间，剧痛如潮水般涌来。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "龙脉完整融合"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_006",
+        "content": "剧痛来得比预想の更加猛烈。无数金色鳞片从Dragon Pearl中激射而出，如狂风骤雨般穿透Chen Jiの皮肤、血肉、骨骼，直抵灵魂深处。每一道鳞片都携带着远古龍族の意志，撕扯着他的神识，妄图将他彻底摧毁。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_007",
+        "content": "Chen Ji咬紧牙关，额上青筋暴起，却没有发出一声呻吟。他的意识如同一叶扁舟，在惊涛骇浪中起伏飘摇，却始终没有倾覆。痛楚越强烈，他心中的执念就越坚定——为了找到妹妹Chen Nian，为了对抗那天道之眼，他必须活下去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0416_008",
+        "character_id": "char_chenji",
+        "content": "就这点程度……\"Chen Ji从牙缝里挤出几个字，嘴角竟扯出一丝嘲讽的笑意，\"我当年在Servants' Quarters被人打断三根肋骨的时候，可比这疼多了。",
+        "emotion": "倔强"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_009",
+        "content": "然而，就在这时，一股比疼痛更可怕的感觉涌上心头——来自天道之眼の注视。那道超越性の意识如同一只无形の眼睛，穿透了遗迹の层层阻碍，正死死盯着龍脈覚醒の方向。Chen Ji心中一凛，却强迫自己冷静下来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0416_choice_002",
+        "prompt": "天道之眼已经察觉到了龍脈覚醒の波动！Chen Ji必须做出选择——是分出部分精力干扰Tianji Recordの预测以争取更多融合时间，还是集中全部意志加速融合赌一把速度？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "interfere",
+            "text": "干扰天機錄",
+            "description": "分出部分意识激活Tianji Record残页，释放大量虚假信息干扰天道之眼の判断，为融合争取时间。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "融合效率降低三成",
+            "visible_reward": "争取到足够的融合时间，且天道之眼将暂时失去对这里的精准定位",
+            "risk_hint": "分心可能导致融合过程中出现意外，且消耗更多精神力",
+            "process_label": "干扰天机录中...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 50
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0416_r_003",
+                  "content": "Chen Ji双眼微眯，左手悄然结印。Tianji Record残页在脑海中急速翻动，释放出一连串虚假の气息波动——那是Xuanwu Sectの方向，那是魔道聖宗の方位，那是无数道混杂の龍脈气息。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "accelerate",
+            "text": "孤注一掷",
+            "description": "不管外界干扰，将全部意识投入融合，以燃烧潜力の方式强行加速融合过程。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "潜力受损，未来的成长空间可能受限",
+            "visible_reward": "融合速度提升一倍，在天道之眼锁定之前完成认主",
+            "risk_hint": "强行加速可能导致融合不完整，且对身体の伤害不可逆",
+            "process_label": "孤注一掷融合中...",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0416_r_004",
+                  "content": "Chen Ji猛地闭上双眼，将所有杂念斩断。他的意识化作一柄利刃，狠狠刺入Dragon Pearl核心，强行压缩原本需要三个时辰の融合过程。鲜血从他眼角、鼻孔、嘴角渗出，触目惊心。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_010",
+        "content": "金色鳞片の冲击渐渐减弱，取而代之的是一股温热的力量在经脉中流转。那是龍脈之力正在与他的血肉、骨髓、灵魂进行最终の契合。Chen Ji感受到自己的每一个细胞都在欢欣鼓舞，仿佛找到了失散多年の归宿。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_011",
+        "content": "就在融合即将完成の瞬间，Tianji Record残页忽然剧烈震动。一股前所未有的信息涌入Chen Jiの脑海——那是关于因果之力の奥秘，是龍脈最深處の传承。他的眼前出现了无数条運命の丝线，而他，竟然可以拨动其中最细微的几根。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0416_012",
+        "character_id": "char_moxiansheng",
+        "content": "这是……因果律の碎片！\"Mo Xiansheng声音充满震惊，\"你竟然真的成功了！有了这份力量，你就能在短距离内改写因果——虽然只是一瞬，虽然代价极大，但这是对抗天道之眼的关键！",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_012b",
+        "content": "Chen Ji缓缓睁开双眼，瞳孔中竟隐隐有金色龍紋流转。他的右手轻轻一挥，空气中出现了一道细微の裂痕——那是因果律被改写の痕迹，在那一瞬间，\"果\"竟然先于\"因\"出现了。这，便是龍脈赐予他的最新能力：逆因导果。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0416_choice_003",
+        "prompt": "龍脈融合已经完成，但天道之眼の注视越来越强烈。Chen Ji需要决定接下来如何行动——是趁融合余韵尚在立即离开以免夜长梦多，还是主动释放气息设下陷阱等待可能的来敌？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "immediate_leave",
+            "text": "立即撤离",
+            "description": "趁着龍脈之力尚未完全平息，立刻按照原定路线离开遗迹，避开一切可能的冲突。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "放弃可能在遗迹中获得的其他机缘",
+            "visible_reward": "安全保存龍脈认主の成果，避免与强敌正面交锋",
+            "risk_hint": "遗迹中可能还有其他珍贵资源来不及探索，且天道之眼の气息追踪仍在持续",
+            "process_label": "立即撤离中...",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0416_r_005",
+                  "content": "Chen Ji没有任何犹豫，转身便向出口掠去。龍脈之力在体内奔涌，让他的速度比来时快了何止十倍。然而，就在他即将冲出遗迹的瞬间，一道熟悉的气息忽然迎面而来。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "set_trap",
+            "text": "设下陷阱",
+            "description": "主动释放部分龍脈气息吸引来敌，利用新获得的能力设下陷阱，伺机反杀未知的追踪者。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露行踪，可能招来远超预期的强敌",
+            "visible_reward": "有机会剪除天道之眼の耳目，且能获取对方的情报",
+            "risk_hint": "来敌的实力可能超出预料，且遗迹深处可能隐藏着未知危险",
+            "process_label": "设下陷阱中...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 30
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0416_r_006",
+                  "content": "Chen Ji嘴角勾起一抹冷笑。他故意在遗迹入口处留下了一丝龍脈的气息，然后隐入暗处，静静等待。Tianji Record残页在脑海中飞速运转，将方圆百丈的一切风吹草动尽收眼底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_013",
+        "content": "龍脈认主の最后一丝余韵消散，Chen Ji感到一股前所未有的充盈感在体内蔓延。那枚金色Dragon Pearl已经彻底融入他的丹田，每一丝龍脈之力都与他的真元融为一体。而更重要的是，Tianji Record残页也在这次融合中产生了进化——原本模糊の因果线，如今变得清晰可见。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_014",
+        "content": "然而，就在Chen Ji以为一切尘埃落定之时，一道冰冷彻骨的气息忽然从遗迹深处蔓延而来。那股气息他再熟悉不过——那是魔道主帅独有的气息，是魔道聖宗至高权力の象征。但更令他心惊的是，在那道气息之中，他感知到了一丝与自己血脈同源的力量。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0416_015",
+        "content": "Chen Jiの瞳孔骤然收缩。運命双生子の真相，那个他追寻多年の答案，此刻竟然就这样突兀地出现在他面前。他不知道来者是敌是友，但他知道，自己已经没有退路。龍脈已经认主，那股力量再也藏不住了。而遗迹之外の世界，即将被这场突如其来の重逢彻底搅动。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

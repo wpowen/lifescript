@@ -1,0 +1,328 @@
+{
+  "id": "天机录_ch0746",
+  "book_id": "天机录",
+  "number": 746,
+  "title": "夜清的真情",
+  "is_paid": true,
+  "next_chapter_hook": "夜清昏迷前的话语如惊雷炸响，陈机死死握住她的手腕——他从未见过自己的母亲，却有太多人知道那个名字。远处传来天青宗特有的号角声，凌渊的势力已经包围了这片山谷。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0746_001",
+        "content": "陈机站在破碎的山崖边，魔道主帅的话如同一把钝刀，反复切割着他的心脏。夜清背叛——这四个字此刻听来竟如此讽刺。他缓缓闭上眼睛，手指摩挲着怀中的天机录残页。那些他以为掌握的命运线索，此刻正在崩塌重组。风声呼啸而过，吹乱了他额前的碎发，也吹不散心中翻涌的疑云。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0746_002",
+        "character_id": "char_chenji",
+        "content": "（手指触碰到残页的瞬间，声音冷得像是从九幽传来）夜清……你最好给我一个能让我信服的理由。否则，我会让你知道什么叫天机录的代价。",
+        "emotion": "压抑怒火"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_003",
+        "content": "天机录的文字在他脑海中闪烁，一幅模糊的画面逐渐清晰——夜清被人强行灌下一枚漆黑的丹药，那丹药表面流转着天道之眼独有的纹路。他看到了，夜清眼中的挣扎与绝望，看到了她被控制后依然拼尽最后一丝神智去保护某个人的画面。那个被保护的人……是他陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_004",
+        "content": "记忆如同破碎的镜片重新拼凑。陈机看到了夜清被关押在圣宗地牢的场景，看到了一个黑衣人将控制丹强行塞入她口中，看到了她眼角滑落的泪水——那泪水不是为自己流的，而是为了那个她无法保护的人。天道之眼……又是那个该死的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0746_005",
+        "prompt": "天机录的追溯耗费了陈机整整一个时辰的天命值，但真相已经浮出水面。此刻他站在圣宗秘密据点的入口处，夜清就被关押在里面。他需要做出选择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0746_005_a",
+            "text": "不惜代价救她",
+            "description": "夜清是他唯一的魔道盟友，更是被命运操控的受害者。即便消耗更多天命值，他也要将她救出。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗大量天命值，可能危及后续计划",
+            "visible_reward": "获得夜清的完全信任，解锁「共命」前置条件",
+            "risk_hint": "天命值将降至危险区间",
+            "process_label": "燃烧天命值",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 50
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0746_result_005_a_001",
+                  "content": "陈机深吸一口气，推开那扇锈迹斑斑的铁门。阴暗潮湿的通道中弥漫着血腥与腐朽的气息，每一步都踩在他紧绷的心弦上。拐过最后一个弯道，他看到了她——"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "救人决心",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0746_005_b",
+            "text": "暗中监视收集证据",
+            "description": "先确认夜清是否真的无辜，再决定是否出手。他不能让感情蒙蔽判断。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "夜清可能继续遭受折磨",
+            "visible_reward": "获得更多关于天道之眼的线索",
+            "risk_hint": "可能错过最佳救援时机",
+            "process_label": "隐忍观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0746_result_005_b_001",
+                  "content": "陈机收敛气息，退入阴影之中。天机录再次闪烁，他又看到了更多画面——夜清在昏迷中反复呼唤着某个名字，一遍又一遍。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_006",
+        "content": "记忆的封印终于被撕开一道裂口。陈机看到了一个他从未想象过的画面——夜清被天道之眼的使者强行灌下控制丹的那一刻，她的嘴唇无声地动了动，似乎在说着什么。他读懂了那个口型：「对不起，我必须保护他。」那个他，就是陈机自己。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_007",
+        "content": "陈机的拳头紧紧攥住，指节发白。他终于明白了为何当初夜清会莫名其妙地与他合作，为何她总是能在最关键的时刻出现，为何她的「背叛」显得如此矛盾——所有的反常都有了解释。她不是叛徒，她是用自己的方式在守护他。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_008",
+        "content": "穿过重重守卫，陈机终于来到了关押夜清的地牢。那是一个阴暗潮湿的洞穴，冰冷的水珠不断从岩壁滴落。而她就那样被铁链悬挂在半空中，衣衫破碎，遍体鳞伤，鲜血顺着脚尖滴落在地面的水洼中，溅起微小的涟漪。她的头低垂着，黑发遮住了大半张脸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0746_009",
+        "character_id": "char_chenji",
+        "content": "（声音沙哑得几乎听不出原本的清冷）夜清……我来了。",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_010",
+        "content": "夜清缓缓抬起头，那张曾经冷艳动人的脸上如今满是伤痕，但那双眼睛依然清澈——只是多了几分沧桑与疲惫。看到陈机的瞬间，她的瞳孔骤然收缩，嘴唇剧烈颤抖起来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0746_011",
+        "prompt": "陈机伸出手，指尖触碰着夜清冰冷的脸颊。她的身体在微微发抖，那双眼睛里有太多复杂的情绪。而陈机必须做出决定——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0746_011_a",
+            "text": "用命运书写解除封印",
+            "description": "消耗大量因果之力，强行解除控制丹的封印。这将让陈机的战力大打折扣。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "因果之力大量消耗，战力暂时下降",
+            "visible_reward": "夜清完全恢复，重获魔道迷雾能力",
+            "risk_hint": "解除过程凶险，可能遭遇反噬",
+            "process_label": "以命换命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0746_result_011_a_001",
+                  "content": "陈机没有犹豫，双手结印，天机录的力量在他掌心汇聚成一道耀眼金光。他将手掌按在夜清额头，低喝道：「给我碎！」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0746_011_b",
+            "text": "先斩断铁链带走她",
+            "description": "先确保夜清的安全，封印的问题之后再想办法解决。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "封印未解除，夜清仍有被控制的风险",
+            "visible_reward": "保全自身力量",
+            "risk_hint": "夜清可能在关键时刻失控",
+            "process_label": "稳妥优先",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0746_result_011_b_001",
+                  "content": "陈机拔剑斩断铁链，夜清的身体软软地倒向他。他一把将她揽入怀中，感觉到她轻得可怕——这段时间的折磨让她瘦得不成人形。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_012",
+        "content": "金光与黑气在地牢中激烈碰撞，每一次冲击都让陈机感觉自己的灵魂被撕裂。他咬紧牙关，额头青筋暴起，血丝从眼角渗出，染红了半边脸颊。但他没有退缩，反而将更多的力量灌入那道金光之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_013",
+        "content": "咔嚓——一声清脆的碎裂声响起，那枚漆黑丹药终于在夜清体内崩解，化作一缕黑烟消散在空气中。而陈机也因为力量的反噬单膝跪地，大口大口地喘息着。他的脸色苍白如纸，体内的天命值已经消耗殆尽。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0746_014",
+        "character_id": "char_yeqing",
+        "content": "（眼中的迷茫逐渐褪去，取而代之的是清晰的痛楚与自责，泪水夺眶而出）陈机……你怎么这么傻……为了我……不值得……",
+        "emotion": "哭泣"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_015",
+        "content": "陈机勉强撑起身体，伸手擦去夜清脸上的泪水，嘴角勾起一抹淡淡的笑意。那笑容中没有了往日的冷漠与算计，只有纯粹的温柔。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0746_016",
+        "character_id": "char_chenji",
+        "content": "（轻轻将她拥入怀中，声音低哑却坚定）值不值得，还轮不到你来替我决定。夜清，你为我付出的一切，我都看到了。从今以后，谁也别想再动你一根手指。",
+        "emotion": "温柔坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_017",
+        "content": "夜清的身体在他怀中瑟瑟发抖，多年的委屈与压抑在这一刻全部决堤。她哭得像个孩子，手指紧紧攥住陈机的衣襟，仿佛生怕这只是一场梦。她知道陈机的母亲是谁，那个被天青宗灭门的女人——而她本该是陈机母亲最忠诚的守护者。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0746_018",
+        "character_id": "char_yeqing",
+        "content": "（泣不成声，声音断断续续）对不起……我没能保护好她……你的母亲……当年天青宗的人追杀她的时候……我被圣宗的人拦住了……我亲眼看着她死在我面前……却什么都做不了……",
+        "emotion": "崩溃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_019",
+        "content": "陈机抱着夜清的手臂骤然收紧，指节发白。他从未见过自己的母亲，关于她的一切都是空白。而现在，这个在他面前哭泣的女人，竟然是他母亲命运的见证者。山洞外传来号角声——天青宗的追兵到了。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0746_020",
+        "character_id": "char_chenji",
+        "content": "（声音低沉，眼中的温柔逐渐被冰冷取代）我母亲的事，你慢慢告诉我。现在，我们先离开这里。（站起身，将夜清稳稳护在身后）无论来的是谁，今晚都别想活着离开。",
+        "emotion": "冷酷护短"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0746_021",
+        "content": "夜清抹去眼泪，嘴角竟也勾起一抹笑意，那是重获自由后的释然，也是对陈机的信任。她知道，从这一刻起，她不再是孤身一人。远处山巅亮起火光，凌渊的势力已经包围了这片区域——而这，仅仅是更大风暴的开端。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

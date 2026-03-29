@@ -14,6 +14,7 @@ settings:
 targetDefaults:
   appSources: &appSources
     - Sources/LifeScriptSolo
+    - Sources/LifeScriptSolo/GeneratedContent
     - ../LifeScript-iOS/Sources/LifeScript/Models
     - ../LifeScript-iOS/Sources/LifeScript/Core/Content/ContentCatalog.swift
     - ../LifeScript-iOS/Sources/LifeScript/Core/Content/ContentLoader.swift
@@ -29,6 +30,9 @@ targetDefaults:
     NSAppTransportSecurity:
       NSAllowsArbitraryLoads: false
     ITSAppUsesNonExemptEncryption: false
+  signingSettings: &signingSettings
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: PGQH8BWU56
   apocalypseSkuInfo: &apocalypseSkuInfo
     CFBundleDisplayName: "灰烬执政官"
     SoloStoryID: "apocalypse_001"
@@ -183,6 +187,83 @@ targetDefaults:
         title: "剑路图"
         detail: "公开路线展示方向，真正高价值的暗线则要靠你自己逼出来。"
         tint: "sapphireMist"
+  tianjiluSkuInfo: &tianjiluSkuInfo
+    CFBundleDisplayName: "天机录"
+    SoloStoryID: "天机录"
+    SoloStoryDisplayName: "天机录"
+    SoloPalettePreset: "oracleJade"
+    SoloEntryEyebrow: "谋天改命 · 互动仙侠"
+    SoloPromise: "你不是在旁观陈机布局。你是在亲手决定哪一步提前落子。"
+    SoloContinueHint: "回到天机将开的那一局，让上一章埋下的后手继续发酵。"
+    SoloCurrentRunTitle: "当前棋局"
+    SoloRecapTitle: "上一章余波"
+    SoloStageTitle: "当前命途"
+    SoloObjectiveTitle: "此刻破局点"
+    SoloDossierTitle: "人物与天机"
+    SoloRouteMapTitle: "命途图"
+    SoloSettlementTitle: "这一局留下了什么"
+    SoloChapterUnitName: "章"
+    SoloAtmosphereLine: "天机未明，众生先入局。"
+    SoloOrnamentSymbol: "eye.trianglebadge.exclamationmark.fill"
+    SoloEntryInteractivePrompt: "你选择何时动用天机录、先稳哪条关系、要不要提前摊牌，都会让因果链条发生偏转。"
+    SoloEntryPrimaryActionTitle: "进入天机局"
+    SoloEntrySecondaryActionTitle: "先看命途图"
+    SoloEntryIdentityLabel: "当前棋局"
+    SoloEntryDossierSubtitle: "看谁开始信你、谁在提防你，也看天命值与因果压力如何堆高。"
+    SoloEntryRouteMapSubtitle: "看主线阶段，也看那些要靠关系阈值与天命代价才能逼出来的暗线。"
+    SoloEntryHookTitle: "命数第一次回响"
+    SoloEntryHookBody: "这不是普通书架，而是一场会越走越深的谋局修仙。你越早进去，越能感到每一次提前落子都在改命。"
+    SoloEntryValueCards:
+      - id: "tianjilu-dialogue"
+        title: "不是旁观布局"
+        detail: "陈机不是替你表演，他的每次试探、示弱和反杀都要你亲手拍板。"
+        tint: "moonJade"
+      - id: "tianjilu-fate"
+        title: "不是空喊改命"
+        detail: "天命值、残页与血脉觉醒会持续拉扯，你越贪快，代价越清楚。"
+        tint: "emberGold"
+      - id: "tianjilu-relationship"
+        title: "不是单一好感条"
+        detail: "苏青瑶的信任、夜清的好奇、凌渊的警惕，都可能把后续棋路拧向另一边。"
+        tint: "royalPlum"
+      - id: "tianjilu-crafted"
+        title: "不是套壳修仙"
+        detail: "预见反馈、章节钩子、关系回响和命途图都服务于“算无遗策”的核心爽感。"
+        tint: "sapphireMist"
+    SoloEntryFlowSteps:
+      - id: "tianjilu-enter"
+        title: "先入局"
+        detail: "直接进入宗门暗流、残页异动与主角伪装生存的现场，而不是看长铺垫。"
+        tint: "moonJade"
+      - id: "tianjilu-plan"
+        title: "落关键子"
+        detail: "决定何时预见、何时示弱、先拉哪条关系线，每一步都在提前布局。"
+        tint: "emberGold"
+      - id: "tianjilu-shift"
+        title: "改命偏转"
+        detail: "人物态度、命数压力和隐藏线路一起偏转，后果会在下一章立刻回响。"
+        tint: "royalPlum"
+    SoloEntryProofCards:
+      - id: "tianjilu-dialogue-proof"
+        kind: "dialogue"
+        title: "对话预览"
+        detail: "你一句藏锋或摊牌，都会让人物对你的判断立刻变味。"
+        tint: "moonJade"
+      - id: "tianjilu-choice-proof"
+        kind: "choice"
+        title: "反馈预览"
+        detail: "不只是选项文案变化，还会直接弹出天命值、信任与警惕的即时回响。"
+        tint: "royalPlum"
+      - id: "tianjilu-dossier-proof"
+        kind: "dossier"
+        title: "人物与天机"
+        detail: "角色当前最强的态度维度会被显性记录，不再只剩一条模糊好感。"
+        tint: "emberGold"
+      - id: "tianjilu-route-proof"
+        kind: "routeMap"
+        title: "命途图"
+        detail: "主线卷段、连载里程碑和暗线提示会一起沉淀，适合长线追更。"
+        tint: "sapphireMist"
   validate50SkuInfo: &validate50SkuInfo
     CFBundleDisplayName: "觉醒纪元"
     SoloStoryID: "validate_50ch_001"
@@ -274,6 +355,7 @@ targets:
         <<: *apocalypseSkuInfo
     settings:
       base:
+        <<: *signingSettings
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo
         INFOPLIST_KEY_CFBundleDisplayName: "灰烬执政官"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -292,10 +374,56 @@ targets:
         <<: *cultivationSkuInfo
     settings:
       base:
+        <<: *signingSettings
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.cultivation
         INFOPLIST_KEY_CFBundleDisplayName: "残剑问仙"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIconCultivation
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColorCultivation
+    dependencies: []
+
+  LifeScriptSoloTianjilu:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: *appSources
+    preBuildScripts:
+      - name: Compile Tianjilu Content Bundle
+        basedOnDependencyAnalysis: false
+        inputFiles:
+          - $(SRCROOT)/天机录_new/if/story_package.json
+        outputFiles:
+          - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/book_天机录.json
+          - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/chapters_天机录.json
+          - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/manifest_天机录.json
+          - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/walkthrough_天机录.json
+        script: |
+          set -euo pipefail
+          python3 "$SRCROOT/Scripts/compile_directory_story_bundle.py" \
+            "$SRCROOT/天机录_new/if" \
+            "$SRCROOT/Sources/LifeScriptSolo/GeneratedContent/Tianjilu"
+      - name: Compile Tianjilu Translation Bundle
+        basedOnDependencyAnalysis: false
+        inputFiles:
+          - $(SRCROOT)/天机录_new/translations/glossary.json
+        outputFiles:
+          - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/translation_manifest.json
+        script: |
+          set -euo pipefail
+          python3 "$SRCROOT/Scripts/compile_directory_story_translations.py" \
+            "$SRCROOT/天机录_new/translations" \
+            "$SRCROOT/Sources/LifeScriptSolo/GeneratedContent/Tianjilu"
+    info:
+      path: Sources/LifeScriptSolo/InfoCultivation.plist
+      properties:
+        <<: *baseInfo
+        <<: *tianjiluSkuInfo
+    settings:
+      base:
+        <<: *signingSettings
+        PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.tianjilu
+        INFOPLIST_KEY_CFBundleDisplayName: "天机录"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIconTianjilu
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColorTianjilu
     dependencies: []
 
   LifeScriptSoloValidate50:
@@ -310,6 +438,7 @@ targets:
         <<: *validate50SkuInfo
     settings:
       base:
+        <<: *signingSettings
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.validate50
         INFOPLIST_KEY_CFBundleDisplayName: "觉醒纪元"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

@@ -1,0 +1,567 @@
+{
+  "id": "天机录_ch0503",
+  "book_id": "天机录",
+  "number": 503,
+  "title": "龙脉之争",
+  "is_paid": true,
+  "next_chapter_hook": "圣宗禁地结界上那道诡异的裂隙，正散发着只有他能感应到的血脉共鸣——陈念，就在那里。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0503_001",
+        "content": "苏青瑶拆开那封来自皇城的烫金密函时，她的手指微微颤抖——三日后，太子寿宴。然而真正令她心惊的，是密函末尾那行小字：「皇城禁地深处，远古龙脉异动，震动天下。」她抬起头，目光不由自主地飘向角落里那个正在扫地的人影。陈机扫地的动作依旧不紧不慢，仿佛这天地间的风云变幻，与他毫无关系。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_002",
+        "content": "几乎是同一时刻，皇城三百里外的天青宗后山禁地，一股无形的威压自地底深处蔓延开来。守山弟子手中的长剑嗡鸣作响，有修为低浅者竟直接被这股威压震得口吐鲜血。凌渊站在闭关石室前，枯瘦的手掌缓缓握紧——龙脉觉醒的时机，比他预想的早了整整三年。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_003",
+        "character_id": "char_moxiansheng",
+        "content": "「来了。」墨先生苍老的声音自天机录第一页中传出，带着一丝难以察觉的凝重，「龙脉之争，本质上是天下气运的重新分配。你若想救她，这便是最好的时机——也是最危险的时机。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_004",
+        "content": "陈机扫地的动作终于停了下来。他抬头望向皇城的方向，眼中闪过一丝锐利的光芒。三年布局，五十点天命值投入的暗子，如今终于到了收获的时候。圣宗禁地的结界每三十年会有一次波动——而龙脉之争引发的天地元气紊乱，正是打破这道屏障的最佳时机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0503_choice_001",
+        "prompt": "龙脉之争已起，各方势力蠢蠢欲动。陈机需要在混乱中做出抉择——是借势争夺龙脉以获更大筹码，还是趁乱潜入圣宗营救妹妹？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0503_c001_01",
+            "text": "争夺龙脉",
+            "description": "龙脉蕴含的气运之力可加速天机录修复，强大的实力才是根本。营救之事可以稍缓，但龙脉绝不能落入他人之手。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "错过最佳救援时机，陈念可能再次转移",
+            "visible_reward": "获得龙脉气运加持，天机录解封更多功能",
+            "risk_hint": "凌渊也在争夺龙脉，正面交锋风险极高",
+            "process_label": "布局龙脉争夺战",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c001_01_01",
+                  "content": "陈机将扫帚靠在墙边，嘴角微微上扬。废物杂役？正好——谁也不会注意一只蝼蚁的动向。他转身走向后山的方向，脚步无声无息，仿佛一缕青烟融入夜色。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "龙脉路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c001_02",
+            "text": "专注营救",
+            "description": "陈念已被囚禁太久，龙脉之争引发的结界裂隙是千载难逢的机会。若再次错过，不知还要等多少年。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "放弃龙脉争夺，天下气运将重新洗牌",
+            "visible_reward": "若成功救出陈念，将获得「天命锁钥」的关键信息",
+            "risk_hint": "圣宗禁地防守森严，贸然进入九死一生",
+            "process_label": "潜入圣宗禁地",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c001_02_01",
+                  "content": "陈机的眼神暗了暗。三年来他无数次在梦中见到妹妹模糊的身影，那是他在这个世界上唯一的血缘至亲。龙脉可以再等，但陈念……他不能再让她多等一刻。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "营救路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "营救妹妹是陈机最大的执念",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c001_03",
+            "text": "双线并进",
+            "description": "利用暗子同时操控两条线——自己潜入圣宗，暗中安排的夜清代为争夺龙脉。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要消耗更多天命值维系两边的信息同步",
+            "visible_reward": "既有机会救出陈念，又不放弃龙脉气运",
+            "risk_hint": "一旦某条线出现纰漏，可能满盘皆输",
+            "process_label": "两线同时布局",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c001_03_01",
+                  "character_id": "char_yeqing",
+                  "content": "「你倒是信得过我。」夜清的声音从暗处传来，带着几分玩味，「龙脉之争可是决定天下气运归属的大事，你就这么放心让我代劳？」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双线路线",
+              "夜清参与"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_005",
+        "content": "皇城太子宫中，灯火通明。太子萧衍将密函付之一炬，眼中精光闪烁：「龙脉觉醒，此乃天赐良机。传令下去，寿宴当日，玄武宗、青云阁、天青宗三派核心人物必须到场——朕要亲自看看，谁才是真正的龙脉之主。」他的声音冰冷而傲慢，全然不知暗处已有多双眼睛盯上了这场盛筵。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_006",
+        "content": "天青宗议事大殿内，凌渊端坐于主位之上，下方站着韩烈等核心弟子。枯瘦的手指轻轻敲击着扶手，他的声音仿佛从九幽传来：「龙脉之争，关乎我天青宗百年气运。陈机那个废物也来凑热闹？」他冷笑一声，「让他去。废物自有废物的用处——死在外面，倒也省得我亲自动手。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_007",
+        "content": "然而此刻，陈机已悄然离开了天青宗。他沿着小路穿行于崇山峻岭之间，每一步都精准地踩在天地元气流动的节点上。天机录残页在识海中微微发热，模糊的画面不断浮现——皇城方向，龙脉之气如巨蟒翻涌；更远处的圣宗禁地，一道细微的裂隙正随着龙脉的震动而缓缓扩大。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_008",
+        "character_id": "char_lingyuan",
+        "content": "「陈机。」凌渊苍老的声音突然在陈机身后响起，枯瘦的身影不知何时已立于十丈之外，「龙脉之争在即，你要去哪里？」他的目光如毒蛇般阴冷，仿佛已将陈机看穿。",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0503_choice_002",
+        "prompt": "凌渊突然出现，挡住了陈机的去路。是巧合，还是他早已察觉了什么？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0503_c002_01",
+            "text": "示弱隐忍",
+            "description": "以废物人设应对，声称只是外出散心，绝不暴露真实目的。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "浪费宝贵时间，凌渊可能会进一步试探",
+            "visible_reward": "保持伪装，凌渊暂时不会起疑",
+            "risk_hint": "凌渊疑心已起，单纯的谎言未必能瞒过他",
+            "process_label": "伪装废物姿态",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c002_01_01",
+                  "character_id": "char_chenji",
+                  "content": "「回禀掌门，」陈机连忙弯腰行礼，声音带着几分惶恐，「弟子近日修炼总不得寸进，想去山下透透气……绝不敢耽误宗门大事！」他的姿态卑微至极，仿佛一片随时会被风吹走的枯叶。",
+                  "emotion": "惶恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c002_02",
+            "text": "反客为主",
+            "description": "直接质问凌渊为何在此，以攻代守，打乱他的节奏。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分锋芒，可能加深凌渊的警觉",
+            "visible_reward": "掌握对话主动权，逼凌渊露出破绽",
+            "risk_hint": "凌渊是老谋深算之辈，正面对抗风险极大",
+            "process_label": "主动出击试探",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c002_02_01",
+                  "character_id": "char_chenji",
+                  "content": "陈机直起身，目光平静地与凌渊对视。那双眼睛里没有半分废物该有的怯懦，反而深邃如渊，仿佛能看透人心。「掌门深夜至此，不知所为何事？」他的声音不高，却清晰地穿透了夜风。",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c002_03",
+            "text": "暗中动用天机录",
+            "description": "消耗5点天命值，窥探未来三时辰内凌渊的动向，借此找到脱身之法。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗珍贵的天命值",
+            "visible_reward": "获得关键信息，找到完美的脱身时机",
+            "risk_hint": "天命值有限，过度消耗可能影响后续行动",
+            "process_label": "使用天机录窥探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c002_03_01",
+                  "content": "天机录残页在识海中微微震动，一股玄奥的力量涌向双眼。陈机眼前的世界骤然变得清晰——三刻钟后，凌渊会收到来自皇城的传讯，被迫返回宗门。届时，他将拥有短暂的无阻碍行动窗口。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "已使用天机录"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_009",
+        "content": "正如天机录所预见的那样，凌渊的眉头突然皱起。一枚玉简从袖中飞出，化作一道流光没入他的眉心。片刻后，他脸上的阴冷笑意凝固了：「皇城急召……」他看了陈机一眼，眼中闪过一丝不耐，「罢了，你去吧。龙脉之争若需要人手，本座自会召唤。」说罢，他的身影化作一道青烟，消失在夜色之中。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_010",
+        "content": "陈机站在原地，目送凌渊离去。他的表情依旧平静，但攥紧的拳头却微微发抖。刚才那一瞬间，他分明感受到了一股熟悉的波动——那是陈念的气息。圣宗禁地的结界裂隙，比他想象的还要剧烈。龙脉之争引发的天地元气紊乱，正在撕裂那道囚禁他妹妹的牢笼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_011",
+        "character_id": "char_moxiansheng",
+        "content": "「看到了吗？」墨先生的声音在识海中响起，带着几分欣慰，「龙脉之争，本就是天道气运的重新洗牌。你的妹妹被囚禁之处，恰好位于龙脉支流之上。龙脉异动产生的裂隙，正是你破开圣宗禁制的钥匙——但也是最危险的引信。一旦你动她，天道之眼的目光，必然会落在你身上。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0503_choice_003",
+        "prompt": "陈念的位置已经锁定，但圣宗禁地的防守和天道的注视都是致命威胁。此刻的他，必须做出最后的决断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0503_c003_01",
+            "text": "只身潜入",
+            "description": "趁圣宗高手被龙脉之争吸引，独自潜入禁地营救陈念。风险最高，但不会牵连他人。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "若失败，将独自面对圣宗的怒火",
+            "visible_reward": "成功救出陈念，获得「天命锁钥」的秘密",
+            "risk_hint": "禁地深处可能有超越认知的危险",
+            "process_label": "独自行动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c003_01_01",
+                  "content": "陈机深吸一口气，抬脚向圣宗方向走去。他的背影在月光下显得孤独而决绝。三年的隐忍，三年的布局，一切都是为了这一刻。纵使前方是龙潭虎穴，他也要亲自走一趟。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "独自营救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 25
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c003_02",
+            "text": "联络夜清",
+            "description": "借助夜清的「魔道迷雾」遮掩天机录气息，联手潜入禁地。有她相助，安全性大增。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "欠下夜清人情，且魔道迷雾有时限",
+            "visible_reward": "在遮掩下行动，被天道察觉的风险大大降低",
+            "risk_hint": "夜清是否愿意冒此大险，仍是未知数",
+            "process_label": "联手行动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c003_02_01",
+                  "character_id": "char_yeqing",
+                  "content": "夜清从暗影中走出，魔道迷雾在她身周流转。她看着陈机，嘴角勾起一抹意味深长的笑容：「为了你妹妹，你倒是舍得下本钱。」她的声音忽然低了下去，「不过我喜欢——被人需要的感觉。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "联手营救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清与陈机建立了基于共同利益的深度信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c003_03",
+            "text": "放弃这次机会",
+            "description": "时机仍不够成熟，贸然行动可能赔上所有筹码。等待下一次更好的机会。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "陈念在禁地中多受一日苦，且裂隙可能自行愈合",
+            "visible_reward": "保全现有布局，积累更多力量后再行动",
+            "risk_hint": "可能需要再等数十年",
+            "process_label": "按兵不动",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c003_03_01",
+                  "content": "陈机闭上眼睛，指节因用力而泛白。理智告诉他，现在不是最佳时机。但脑海中不断浮现的那张模糊面容，却如同一根根细针，扎在他的心头。三年的分离，已经够久了……可他终究还是转过了身，向来时的方向走去。活着，才有希望。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暂缓营救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择了理性的道路，但这决定让他内心备受煎熬",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_012",
+        "content": "就在陈机做出选择的同一时刻，圣宗禁地深处，一道微弱的光芒在层层封印之下若隐若现。陈念被铁链锁在冰冷的石壁上，精致的面容已消瘦了三分，唯有那双眼睛依然明亮如星。她感应到了什么，猛然抬起头——那是大哥的气息！虽然微弱，却真实存在。泪水无声地滑落，她攥紧了拳头。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_013",
+        "content": "「龙脉醒了。」圣宗深处，一个古老的声音回荡在虚空之中，「那个孩子也开始行动了。命运之轮已经开始转动……这一局，究竟是他棋高一着，还是天道早已布好了局？」虚空深处，一双无形的眼睛缓缓睁开，漠然地注视着世间的一切——那便是凌驾于所有棋手之上的「天道之眼」。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_014",
+        "content": "与此同时，皇城方向的天空骤然亮起一道金色光柱，龙脉之气直冲云霄。整个天下都感应到了这股磅礴的力量——龙脉之争，正式拉开序幕。三大宗门、魔道圣宗、甚至皇室的力量，都将在这场角逐中短兵相接。而陈机，正站在这场风暴的中心，他的每一步选择，都将影响天下的格局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_015",
+        "character_id": "char_lingyuan",
+        "content": "凌渊站在天青宗最高峰，遥望皇城方向。他的嘴角勾起一抹阴冷的笑意：「龙脉之争，天下气运尽在于此。陈机那废物以为躲在暗处便能置身事外？」他枯瘦的手掌猛然握紧，「可惜，他不知道——我等这一天，已经等了六十年。」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_016",
+        "content": "陈机收回目光，最后看了一眼圣宗禁地的方向。结界上的裂隙已经扩大到足以让一人通过，但守卫的力量也在急剧增加。他深吸一口气，转身消失在夜色之中。太子寿宴还有三日，龙脉之争不过是棋盘上的明棋——真正的胜负手，永远藏在暗处。三日后，他会出现在皇城，以一个「废物杂役」的身份，见证这场改变天下格局的盛事。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_017",
+        "content": "圣宗禁地结界上那道诡异的裂隙，正散发着只有他能感应到的血脉共鸣——陈念，就在那里。这一夜，陈机做了一个决定：无论付出什么代价，他都要在龙脉之争的混乱中，找到那条通往妹妹的路。哪怕要与整个天下为敌，他也在所不惜。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

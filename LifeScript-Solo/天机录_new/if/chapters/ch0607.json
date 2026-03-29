@@ -1,0 +1,474 @@
+{
+  "id": "天机录_ch0607",
+  "book_id": "天机录",
+  "number": 607,
+  "title": "陈念现身",
+  "is_paid": true,
+  "next_chapter_hook": "陈念指向虚空，那双肉眼不可见的眼睛正在注视——它比天道之眼更可怕，因为它是编织这场万年棋局的执棋者。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0607_001",
+        "content": "晨雾未散，陈机手中那枚龟壳印记仍泛着幽光。他将密信反复看了三遍，每一个字都像是刻进骨头里。城郊破庙，无名落款，只有一句话：「故人将归。」笔迹陌生，却在最后一笔收锋处，有一道极淡的、他再熟悉不过的弧度——那是幼时他教妹妹写字时，刻意纠正过的起笔习惯。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_002",
+        "character_id": "char_moxiansheng",
+        "content": "「城郊破庙，三面漏风，毫无遮拦——这地方选得有意思。」残魂守护者的声音从第一页悠悠传出，带着几分玩味，「老夫倒是好奇，什么样的人敢约你陈机去这种地方？」",
+        "emotion": "好奇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_003",
+        "content": "陈机没有回答。他的目光落在那弧度上，指尖微微发颤。十年了，他几乎以为那个名字只存在于记忆里。陈念——他的妹妹，被圣宗带走的妹妹。他布局天下、算无遗策，唯独这件事，是他心底最深的执念，也是天机录唯一无法触及的盲区。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0607_004",
+        "prompt": "面对这封可能暗藏杀机的信，陈机该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0607_direct",
+            "text": "只身赴约",
+            "description": "无论是否是陷阱，他必须亲自确认。这可能是妹妹的唯一线索。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露行踪",
+            "visible_reward": "与妹妹重逢的可能",
+            "risk_hint": "若有埋伏，孤立无援",
+            "process_label": "只身踏入未知",
+            "stat_effects": [],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_direct_001",
+                  "content": "陈机将密信收入袖中，起身时神色已恢复平静。他没有通知任何人，甚至没有带上那柄从不离身的短剑。墨先生的声音在身后幽幽响起：「小心些，老夫可不想这么早换人伺候。」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_direct_002",
+                  "content": "城郊的破庙比他想象中更破败。残垣断壁间野草疯长，一尊残缺的石像半埋在尘土中，佛首早已不知所踪。陈机踏进庙门的那一刻，晨风骤停，连鸟鸣都消失了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_careful",
+            "text": "暗中部署",
+            "description": "派心腹在周围埋伏，自己先行探路。若有异动，立刻撤退。",
+            "satisfaction_type": "谋略爽",
+            "visible_cost": "暴露谨慎性格",
+            "visible_reward": "多一层保障",
+            "risk_hint": "若被发现，可能打草惊蛇",
+            "process_label": "谨慎布局后再赴约",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_careful_001",
+                  "content": "陈机没有立刻动身。他唤来暗处的两名心腹，低声交代了几句。半个时辰后，这座破庙方圆三里内，已悄然布下了三道暗哨。他这才独自踏入晨雾中，脚步不疾不徐。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_hesitate",
+            "text": "按兵不动",
+            "description": "这封信来得太巧，先用天机录推演一番再说。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "提前获知赴约结果",
+            "risk_hint": "天命值珍贵，且天机录对她是盲区",
+            "process_label": "犹豫中消耗天机之力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_hesitate_001",
+                  "content": "他闭上眼，天机录残页在意识中缓缓展开。然而令他心头一沉的是——每当画面触及「陈念」二字，便如投入深潭的石子，涟漪扩散后只剩混沌。他耗去五点天命值，换来的只是一个模糊的轮廓：破庙之中，有人等待。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0607_005",
+        "content": "庙内光线昏暗，唯有屋顶破洞处漏下一道光柱，照在满是尘埃的地面上。光柱边缘，站着一个人影。逆光中看不清面容，但那身形——纤细却挺拔，不再是记忆中那个躲在他身后、扯着他衣角要糖吃的小姑娘了。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_006",
+        "character_id": "char_chenian",
+        "content": "「哥。」\n\n那声音很轻，像是怕惊扰了什么。可就是这一个字，让陈机整个人僵在原地。他见过无数大场面，布局过惊天棋局，可此刻喉咙像是被什么堵住，半晌说不出话来。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_007",
+        "content": "光影流转间，那人的面容终于清晰。陈念比十年前高了半头，昔日的稚气全然褪去，眉眼间透着英气与……一丝难以言说的坚毅。她的左眉角有一道淡淡的疤痕，不知是何时留下的。曾经最爱哭鼻子的小姑娘，如今站得笔直，眼眶微红却一滴泪也没有落。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_008",
+        "character_id": "char_chenian",
+        "content": "「我知道你在想什么。」陈念向前迈了一步，声音带着一丝哽咽却强自压下，「『长大了』对吗？我也这么觉得。十年了，哥，十年了。」她的手指攥紧袖口，指节泛白，「当年那些人把我带走的时候，我每天都在想你什么时候会来救我。后来我不等了，我想……我要变强，强到可以自己找到你。」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_009",
+        "content": "陈机终于迈动脚步。他走得很慢，每一步都像踏在刀尖上。他想说很多——想问她这些年过得好不好，想问她有没有受苦，想把那十年的愧疚一股脑倒出来。可最后他只是抬起手，轻轻落在她头顶，就像小时候那样。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_010",
+        "character_id": "char_chenji",
+        "content": "「长高了。」他听到自己的声音有些哑，带着连自己都没察觉的颤抖，「比我高了。」\n\n陈念终于没忍住，眼泪夺眶而出，却笑着捶了他胸口一下：「傻子，我还没说完呢！」那一拳毫无力道，却让陈机胸口某处坚硬的壁垒轰然碎裂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0607_011",
+        "prompt": "重逢之后，陈机该如何开口询问真相？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "ch0607_gentle",
+            "text": "温柔询问",
+            "description": "「这些年……你是怎么过来的？」先听她讲述，再问关键信息。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "增进兄妹感情",
+            "risk_hint": "可能触发她的痛苦回忆",
+            "process_label": "轻声询问妹妹的经历",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_gentle_001",
+                  "content": "陈机拉着她在残破的石阶上坐下，就像小时候在院子里乘凉那样。他没有急着追问那些年的细节，只是静静听着。陈念断断续续说着——被圣宗带走后，她差点死在一个祭祀仪式上，直到那个「不该存在的人」出现。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_direct_ask",
+            "text": "直接追问",
+            "description": "「救你的人是谁？天机阁分支又是什么？」先搞清楚最关键的信息。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能显得冷漠",
+            "visible_reward": "快速获取关键情报",
+            "risk_hint": "可能破坏难得的温情氛围",
+            "process_label": "直截了当地询问核心问题",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_direct_ask_001",
+                  "content": "陈机沉默了片刻，还是问出了那个问题。陈念愣了一瞬，随即苦笑：「你还是这样，哥。不过没关系，我能理解——你想保护的人太多，所以必须先知道危险在哪里。」她的目光变得深邃，「救我的人……不是凡人，他来自天机阁。」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0607_result_direct_ask_002",
+                  "character_id": "char_chenian",
+                  "content": "「天机阁？」墨先生的声音突然在天机录中炸开，带着难以掩饰的震惊，「不可能！天机阁早在三千年前就已经……你确定是这个名字？」陈机面色不变，心中却已掀起惊涛骇浪——能让这个老狐狸失态，天机阁绝非寻常势力。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_ability",
+            "text": "询问能力",
+            "description": "「你说能看见命运丝线……这是什么意思？」先了解她的能力再做判断。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无",
+            "visible_reward": "了解陈念的能力本质",
+            "risk_hint": "可能让她联想到不好的记忆",
+            "process_label": "试探性地询问她的能力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_ability_001",
+                  "content": "陈念擦了擦眼角的泪痕，神色逐渐变得凝重。「那是我被救下之后获得的……能力。」她抬起手，在虚空中比划了一下，「我能看见每个人身上的丝线。那些线连接着他们的命运——爱恨情仇，生死祸福，都缠在那根线上。」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_ability_002",
+                  "content": "她突然凑近陈机，目光落在他身上某处，脸色骤然一变：「哥，你身上……」陈机心头一紧：「我身上怎么了？」陈念的声音开始发抖：「你被两个……两个不同的眼睛注视着。一只在天上，还有一只……在更深的地方。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "dialogue": {
+        "id": "天机录_ch0607_012",
+        "character_id": "char_chenian",
+        "content": "陈念深吸一口气，像是在组织语言。「哥，你身上有两根丝线。一根是金色的，很亮，很粗，那应该是……天机录的力量。它和天道之眼连着，我能看见那条线的尽头，是一个巨大的漩涡。」她的声音越来越低，「但是另一根……那根是黑色的。细得多，却深得多。它从你脚底蔓延下去，一直延伸到……我看不见的地方。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_013",
+        "character_id": "char_moxiansheng",
+        "content": "「黑色丝线……」墨先生的声音罕见地沉默了几息，再开口时带着一丝凝重，「老夫活了这么多年，只在一个人身上见过那种颜色。那是……比天道更古老的存在。」他顿了顿，「陈机，你这盘棋，可能从一开始就被人盯着。不是天道，是别的什么东西。」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_014",
+        "content": "陈机没有说话。他的表情依然平静，平静得有些可怕。手指轻轻敲击着膝盖，一下，两下，三下——这是他思考时的习惯。墨先生的声音、天道之眼的注视、还有陈念所说的「更深处的眼睛」……这些碎片在他脑中飞速组合，拼凑出一个让他脊背发凉的可能。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_015",
+        "character_id": "char_chenian",
+        "content": "陈念突然抓住他的手腕，力道大得惊人。她的眼睛死死盯着虚空某处，瞳孔骤然收缩：「哥！它……它在看你！那只眼睛，它知道我能看见它了——」她的声音戛然而止，身体猛地一僵，像是看到了什么极为恐怖的东西。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0607_016",
+        "prompt": "面对这突如其来的异变，陈机该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0607_protect",
+            "text": "护住陈念",
+            "description": "「别怕，哥在。」将她拉到身后，挡在她与「那只眼睛」之间。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "自己暴露在危险中",
+            "visible_reward": "保护妹妹的安全与信任",
+            "risk_hint": "不知对方底细，可能吃亏",
+            "process_label": "本能地将妹妹护在身后",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_protect_001",
+                  "content": "陈机的动作比思维更快。他一把将陈念拉到身后，自己挡在她面前。那一瞬间，他感觉到一股无形的压力从头顶倾泻而下，像是有什么东西正在审视他——审视他体内的天机录，审视他这些年的布局，甚至审视他此刻的选择。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_fight",
+            "text": "激活天机录",
+            "description": "主动催动天机录的力量，看清那只「眼睛」的真面目。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值消耗不可控",
+            "visible_reward": "可能获得关键情报",
+            "risk_hint": "天命值可能剧烈流失，且对方会察觉",
+            "process_label": "以天机之力对抗神秘注视",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_fight_001",
+                  "content": "陈机眼中精光一闪，天机录残页在意识中剧烈震颤。他强忍着脑海中如针刺般的痛楚，试图捕捉那道注视的来源。然而就在那一刻，他看到了——在那无边的黑暗深处，有一只眼睛正在缓缓睁开。那瞳孔之中，倒映着整个天地的运行轨迹，而他自己，不过是其中一个微不足道的点。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_retreat",
+            "text": "立刻撤离",
+            "description": "此地不宜久留，带着陈念先离开再说。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "放弃这次情报收集机会",
+            "visible_reward": "暂时脱离险境",
+            "risk_hint": "可能错失关键信息，且对方可能追踪",
+            "process_label": "果断带妹妹撤离险地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_retreat_001",
+                  "content": "「走！」陈机低喝一声，拉起陈念的手就往外冲。他的直觉在疯狂警报——这个地方不能再待了。可就在他们冲出庙门的瞬间，陈念猛地拽住他：「哥！它……它笑了。」她的声音带着颤抖，「那只眼睛笑了。它说……『终于找到你了』。」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_retreat_002",
+                  "content": "破庙外，晨雾不知何时已经散尽。阳光照在身上，却驱不散陈机心底的寒意。墨先生的声音悠悠响起，带着一丝从未有过的凝重：「陈机，你妹妹说得没错。这局棋，比你我想象的都要大。天道之眼只是棋盘上的棋子……而那只东西，才是真正的执棋人。」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_retreat_003",
+                  "content": "陈机站在破庙外，回头看了一眼那残破的佛首。十年布局，他以为自己是下棋的人。可现在看来，他不过是棋盘上最关键的一颗子——一颗从一开始就被人算计好的棋子。他轻轻握紧拳头，指节泛白。陈念站在他身侧，轻轻握住了他的手：「哥，不管是什么，我会和你一起面对。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0607_017",
+        "content": "陈机没有回答。他只是轻轻回握住妹妹的手，那双算无遗策的眼睛望着天空某处，神色晦暗难明。片刻后，他低声开口，声音平静得听不出任何情绪：「我记下了。」这三个字从他嘴里说出来，却比任何誓言都要沉重。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_018",
+        "content": "陈念指向虚空，那双肉眼不可见的眼睛正在注视——它比天道之眼更可怕，因为它是编织这场万年棋局的执棋者。「哥，那只眼睛……比天道之眼更可怕。」她的声音很轻，却字字清晰，「它在编织一个跨越万年的棋局。而我们，可能从出生的那一刻起，就已经被放进了棋盘。」晨风骤起，吹动她鬓边的碎发，也吹散了破庙中最后一丝温暖的气息。"
+      }
+    }
+  ]
+}

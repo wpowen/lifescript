@@ -1,0 +1,381 @@
+{
+  "id": "天机录_ch0316",
+  "book_id": "天机录",
+  "number": 316,
+  "title": "秘境惊变",
+  "is_paid": true,
+  "next_chapter_hook": "就在封印深处的低鸣与天机录产生共鸣的刹那，陈机感到眉心一阵刺痛——那是天命值疯狂流失的警告。他知道，有什么不该被唤醒的东西，正在缓缓睁开眼睛。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0316_001",
+        "content": "秘境核心区域，天地灵气浓郁得几乎凝成实质。陈机率领的探查小队已深入三日，一路上遇到的禁制机关不下百道，却都被他以诡异的直觉一一规避。身后数名天青宗弟子对这位\"废物师兄\"的敬佩已到了盲目地步——他们不知道，这位废材大师兄脑中正飞速运算着每一步棋局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_002",
+        "character_id": "char_yeqing",
+        "content": "这里的灵气浓度不对劲，\"夜清的声音在陈机识海中响起，带着一丝凝重，\"比圣宗典籍中记载的上古秘境要浓三成不止。有人在后面补充灵气。",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_003",
+        "content": "陈机脚步不停，目光却微微眯起。天机录残页在识海中微微发热——这是预兆功能被触发的信号，却不像单纯的预警，更像是某种......召唤。他没有声张，只是微微放慢了脚步，让队伍与自己保持三丈距离。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_004",
+        "character_id": "char_chenji",
+        "content": "夜清姑娘，你在圣宗可曾听过\"天命锁钥\"四字？\"陈机的声音极低，几乎只有夜清能通过神识捕捉。这是他第一次主动询问对方关于陈念的线索。",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_005",
+        "content": "夜清沉默了一瞬，才道：\"圣宗确实有相关记载，但都是最高机密......你怎么知道——\"话音未落，前方隧道尽头骤然亮起一道刺目金光。封印！陈机瞳孔骤缩，那道金光中蕴含的威压远超寻常禁制，带着上古洪荒的苍莽气息。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_006",
+        "content": "散开！\"陈机暴喝一声，灵力瞬间在身前凝成屏障。就在众人惊慌后退之际，他注意到一个细节——那道金光并非被触发，而是......被人为引导着朝他们方向汇聚。有人，在背后操控这一切。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0316_007",
+        "prompt": "封印出现异动，金光汇聚而来，背后显然有人操控。队伍已经暴露在危险之中——你如何应对这突如其来的危机？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "cautious",
+            "text": "谨慎探查",
+            "description": "立即后撤，利用天机录预见三时辰内变化，寻找安全路线重新规划",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "获得完整情报，掌握敌人布局",
+            "risk_hint": "可能错失先机",
+            "process_label": "以天机录窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_cautious_001",
+                  "content": "陈机眸光一闪，天机录残页骤然转动。五息之内，他看见了——封印并非单一禁制，而是由三重嵌套阵法构成，最外层已经被人改动。他们现在所在的位置，恰好是第三重阵法的触发点。\"往左退三丈，那里有阵法盲区。\"他的声音冷静得可怕。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "aggressive",
+            "text": "冒险深入",
+            "description": "将计就计，顺着金光引导的方向强行突进，直取封印核心",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能触发未知陷阱",
+            "visible_reward": "抢先占据核心区域，掌握主动权",
+            "risk_hint": "正面冲突风险极高",
+            "process_label": "以其人之道还治其人之身",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_aggressive_001",
+                  "content": "陈机嘴角勾起一抹冷笑。\"既然有人想请我们入瓮，那便遂了他的愿。\"话音未落，他身形骤然暴射而出，直直冲向金光汇聚之处，速度快得连夜清都来不及阻止。身后弟子惊呼出声，却见陈机单手结印，竟将那道金光强行牵引，朝自己掌心汇聚。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_008",
+        "character_id": "char_yeqing",
+        "content": "你疯了！那是上古封印，不是——\"夜清的声音戛然而止，因为她感受到了陈机掌心中那股力量的性质。那不是单纯的灵力，而是......魔道功法！而且是极其纯正的魔道功法，与她所修如出一辙。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_009",
+        "content": "陈机没有回答，只是将那道金光强行压缩成一团，抛向身后弟子。\"接着。\"他头也不回地道。身后传来弟子惊呼，却见那团金光在半空中骤然散开，化作无数细丝没入各人眉心——竟是某种护身禁制。陈机在眨眼之间，就完成了阵法改造。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_010",
+        "content": "这时，封印深处传来一阵低沉的嗡鸣。那不是机关运转的声音，而是某种生物的呼吸——极其古老，极其庞大，每一次吐息都让空间微微震颤。夜清的脸色瞬间煞白：\"这是......不可能！封印里怎么会——\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0316_011",
+        "prompt": "封印中的远古存在正在苏醒，同时你还感应到了一股熟悉的气息——魔道特有的气息。这绝非偶然，是谁在背后布局？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "analyze",
+            "text": "冷静分析",
+            "description": "先摸清局势，让夜清确认魔道气息来源",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗时间",
+            "visible_reward": "确认幕后黑手身份",
+            "risk_hint": "可能错失撤退时机",
+            "process_label": "顺藤摸瓜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0316_result_analyze_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清闭上双眼，神识全力向外延伸。三息后，她猛然睁眼，眼中满是难以置信：\"这股气息......是圣宗长老级别的！而且不止一人，至少有三位！他们用魔道迷雾遮掩了气息，若非我对这套功法极为熟悉，根本察觉不到。\"",
+                  "emotion": "惊骇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "confront",
+            "text": "主动出击",
+            "description": "不废话，直接冲着魔道气息来源出手",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露实力",
+            "visible_reward": "先发制人，打乱对方节奏",
+            "risk_hint": "对方人数优势",
+            "process_label": "以其人之道",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_confront_001",
+                  "content": "陈机没有犹豫，掌心灵力骤然凝聚，化作一道无形剑气朝左侧岩壁斩去。\"出来吧。\"他的声音淡漠如霜。下一秒，岩壁碎裂，三道黑影狼狈退出，为首者面色铁青——他没想到自己的魔道迷雾竟被一个区区天青宗杂役看穿。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_012",
+        "content": "与此同时，封印中的低鸣愈发清晰。那声音仿佛来自九幽深渊，带着令人灵魂颤栗的威压。陈机感到胸口一阵灼热——天机录残页正在疯狂震颤，识海中浮现出模糊的画面：一只遮天巨眼，正从封印深处缓缓睁开。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_013",
+        "character_id": "char_chenji",
+        "content": "夜清，\"陈机的声音压得极低，\"这秘境是你们圣宗开启的？\"他的目光没有看向夜清，而是死死盯着那道金光涌来的方向。他在试探——如果夜清知情，反应会出卖她。",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_014",
+        "character_id": "char_yeqing",
+        "content": "夜清摇头，神色罕见地认真：\"圣宗确实在寻找这座秘境，但我来之前它从未开启过。这次异变......是有人故意触发的。\"她顿了顿，压低声音，\"而且那三股气息，不是来找我们的——他们是来唤醒封印中那东西的。\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_015",
+        "content": "陈机心中冷笑。唤醒封印之物？好大的手笔。三位圣宗长老级人物，冒着暴露身份的风险潜入天青宗秘境，只为唤醒一只上古存在？这里面牵扯的利益，远比他想象的要大。夜清主动提出合作，看来也是被逼到了墙角。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0316_016",
+        "prompt": "局势已经明朗——有人在唤醒封印中的远古存在，而你需要做出选择：是阻止这一切，还是......趁乱谋取更大的利益？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "stop",
+            "text": "阻止异变",
+            "description": "与夜清联手压制封印异动，保住秘境不被破坏",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗大量灵力",
+            "visible_reward": "获得夜清完全信任，揭开圣宗部分阴谋",
+            "risk_hint": "可能与三位长老正面冲突",
+            "process_label": "逆天改命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_stop_001",
+                  "content": "陈机深吸一口气，双手结出复杂法印。\"我需要你配合。\"他对夜清道，\"你的魔道迷雾能遮掩我的气息，我需要争取十息时间，重新稳固封印阵法。\"夜清深深看了他一眼，点头。下一瞬，漆黑如墨的雾气从她体内涌出，将陈机完全笼罩。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清第一次完全信任陈机的判断",
+            "branch_route_id": null
+          },
+          {
+            "id": "exploit",
+            "text": "趁机渔利",
+            "description": "让他们唤醒那东西，自己则在混乱中夺取封印核心的控制权",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "背负巨大因果",
+            "visible_reward": "获得封印核心控制权，实力大涨",
+            "risk_hint": "可能被远古存在盯上",
+            "process_label": "浑水摸鱼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0316_result_exploit_001",
+                  "character_id": "char_yeqing",
+                  "content": "陈机嘴角勾起一抹意味深长的弧度。\"让他们斗。\"他的声音带着一丝冰冷，\"那东西既然要出来，总得有人付出代价。三位长老的命，正好用来献祭。\"夜清瞳孔骤缩，看向陈机的目光中多了一丝复杂的忌惮。这个男人，比她想象的更加......狠辣。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清首次见识到陈机的真实面目",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_017",
+        "content": "就在此时，封印深处传来一声沉闷的低鸣。那声音不再是隐约的呼吸，而是清晰的......呼唤。陈机感到眉心一阵剧痛，天机录残页仿佛被某种力量牵引，正在疯狂震颤。他知道，有什么东西正在注视着这里，注视着他。而那股注视中蕴含的恶意，让他的灵魂都在颤抖。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

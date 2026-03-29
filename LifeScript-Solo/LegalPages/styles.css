@@ -1,0 +1,150 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0c10;
+  --panel: rgba(17, 22, 29, 0.88);
+  --panel-strong: rgba(22, 28, 36, 0.96);
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f5f3ee;
+  --muted: #b6b9c2;
+  --gold: #d8b36a;
+  --jade: #80c8b3;
+  --crimson: #d86c6c;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  --radius: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(216, 179, 106, 0.12), transparent 32%),
+    linear-gradient(180deg, #0c0f14 0%, #090b0f 100%);
+  color: var(--text);
+}
+
+.shell {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nav a.active,
+.nav a:hover {
+  color: var(--text);
+  border-color: rgba(216, 179, 106, 0.24);
+}
+
+.hero,
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(20px);
+}
+
+.hero {
+  padding: 28px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--gold);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.02;
+}
+
+.summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  padding: 22px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.meta {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.accent-jade h2 {
+  color: var(--jade);
+}
+
+.accent-gold h2 {
+  color: var(--gold);
+}
+
+.accent-crimson h2 {
+  color: var(--crimson);
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: min(100% - 20px, 920px);
+    padding-top: 20px;
+  }
+
+  .hero,
+  .card {
+    padding: 20px;
+  }
+}

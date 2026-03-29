@@ -1,0 +1,376 @@
+{
+  "id": "天机录_ch0912",
+  "book_id": "天机录",
+  "number": 912,
+  "title": "魔道主帅现身",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机即将做出抉择之际，天机录残页突然剧烈震颤——墨先生的声音在脑海中炸响：「不要答应他！他在骗你！」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0912_001",
+        "content": "虚空调律殿内，陈机正闭目消化天界来使留下的信息，那段关于天机录真正来历的话语如同烙铁般灼烧着他的神经。然而就在此时，殿外禁制轰然碎裂，一股足以让天地变色的威压如潮水般倾泻而入。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_002",
+        "character_id": "char_moxiansheng",
+        "content": "「来了。」墨先生的声音在陈机识海中响起，「命运的双生子，终于要正式碰面了。陈机，小心——他与你血脉相连，却未必与你利益相合。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_003",
+        "content": "陈机猛然睁眼，只见殿顶虚空如镜面般碎裂。一道身影自裂隙中踏出，周身缠绕着浓郁得近乎实质的魔气。然而当那人完全显形时，陈机的瞳孔骤然收缩——那张脸，竟与他有三分相似。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_004",
+        "character_id": "char_chenji",
+        "content": "陈机面色不变，语气却带了几分刺骨的寒意：「魔道主帅亲临，不知所为何事？我天青宗庙小，恐怕容不下您这尊大佛。」",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_005",
+        "content": "那魔道主帅闻言竟笑了起来，笑声低沉如深渊中的龙吟：「陈机，你我血脉相连，你身上流着与我相同的血，何必说这种见外的话？」他的目光落在陈机眉心，「天机录……果然在你手中。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_006",
+        "character_id": "char_chenji",
+        "content": "陈机眸光微闪：「血脉相连？主帅说笑了，我不过一介废材，如何能与阁下这等人物攀上关系。」他嘴角勾起一抹嘲讽的弧度，「倒是没想到，魔道主帅也学会攀亲戚这套了。」",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_007",
+        "content": "话音未落，一股奇异的共鸣自两人胸口同时爆发。陈机只觉体内精血翻涌，仿佛有一道无形的丝线将两人的灵魂紧紧缠绕。他面色微变——这是血脉共鸣，且强度远超寻常血亲。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_008",
+        "character_id": "char_chenji",
+        "content": "「看来你也感觉到了。」魔道主帅缓步上前，魔气在他身后翻涌成巨大的黑色羽翼虚影，「这不是普通的血脉，而是——命运层面的羁绊。陈机，你知道你父亲陈天命，当年为何会死吗？」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_009",
+        "content": "这个名字如惊雷般炸响在陈机耳畔。他的父亲——那个从未在他面前展现过任何异能、只是默默守护天机录残页的普通中年人——竟有另一个身份？陈机死死压下心头的震动：「你想说什么？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0912_choice001",
+        "prompt": "面对魔道主帅提及父亲的过往，陈机需要决定自己的态度：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0912_opt1",
+            "text": "冷眼相对，言语试探",
+            "description": "保持警惕，用话术试探对方底牌与真实意图，不轻易露出情绪破绽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失重要信息",
+            "visible_reward": "保持战略主动权，不被对方牵着鼻子走",
+            "risk_hint": "对方可能因此失去耐心",
+            "process_label": "观察并分析对方的微表情与话语破绽",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0912_result_天机录_ch0912_opt1_1",
+                  "content": "陈机冷笑一声，双手负于身后：「我父亲的事，与你何干？倒是主帅大人，对我陈家之事倒是了如指掌，不知有何居心？」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0912_opt2",
+            "text": "以退为进，表示愿意合作",
+            "description": "暂时放下敌意，展现合作诚意，换取更多关键信息。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能暴露自身弱点",
+            "visible_reward": "获得关于父亲死因的真相线索",
+            "risk_hint": "对方可能在套取你的信任后反噬",
+            "process_label": "收敛锋芒，展现诚意",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0912_result_天机录_ch0912_opt2_1",
+                  "content": "陈机沉默片刻后拱手道：「既然主帅如此坦诚，陈某洗耳恭听。有什么条件，不妨直说。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0912_opt3",
+            "text": "直接摊牌，追问身份",
+            "description": "既然血脉共鸣无法掩饰，不如直接挑明核心问题——你究竟是谁？",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能引发直接冲突",
+            "visible_reward": "让对方知道你不是好糊弄的",
+            "risk_hint": "可能触发血脉共鸣的副作用",
+            "process_label": "主动出击，掌握节奏",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0912_result_天机录_ch0912_opt3_1",
+                  "content": "陈机上前一步，目光如刀：「你说我与你血脉相连，那我倒要问问——你到底是我的谁？」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_010",
+        "character_id": "char_chenji",
+        "content": "魔道主帅闻言，眼中闪过一丝赞赏：「不愧是他的儿子。这份谨慎，像极了你父亲当年。」他负手而立，「我来，是想与你做一笔交易——你帮我解开天命锁，我告诉你陈天命的真正死因。」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_011",
+        "content": "天命锁！陈机心头剧震——那是他在天机录残页中偶尔窥见的禁忌词汇，据传是上古大能用来封印天命之力的禁术。他面上不动声色：「天命锁钥？我如何知道你说的是真是假？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_012",
+        "character_id": "char_chenji",
+        "content": "「你当然知道。」魔道主帅意味深长地看着他，「陈念——你失踪多年的妹妹，她就是天命锁钥的承载者。圣宗当年带走她，可不只是为了威胁你这么简单。」",
+        "emotion": "得意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_013",
+        "content": "这个名字如同一把尖刀刺入陈机心脏。陈念——他那个从小体弱多病、被父母和他共同守护的妹妹，竟与天命锁钥有关？他的指甲深深掐入掌心，强迫自己保持冷静：「你想用我妹妹来要挟我？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_014",
+        "character_id": "char_chenji",
+        "content": "「要挟？」魔道主帅摇头失笑，「陈机，你误会了。我与陈天命的恩怨，与你妹妹无关。相反，我比任何人都希望她能活着——因为她活着，你才能没有弱点。」他顿了顿，「而没有弱点的你，才是我最需要的合作伙伴。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0912_choice002",
+        "prompt": "魔道主帅的话让陈机陷入深思——这个人究竟是敌是友？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0912_opt4",
+            "text": "接受合作，共同对抗圣宗",
+            "description": "敌人的敌人就是朋友，先联手解决眼前的威胁再说。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能引狼入室",
+            "visible_reward": "获得魔道资源支持，加快救出陈念的进度",
+            "risk_hint": "魔道主帅的真正目的仍是未知数",
+            "process_label": "权衡利弊后决定暂时合作",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0912_result_天机录_ch0912_opt4_1",
+                  "content": "陈机深吸一口气：「合作可以，但我有一个条件——我妹妹必须由我亲自去救，你只需提供情报和掩护。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0912_opt5",
+            "text": "拒绝合作，保持独立",
+            "description": "无论对方说什么，都不能相信这个来历不明的魔道主帅。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "失去获取关键信息的渠道",
+            "visible_reward": "保持战略自由度，不受他人牵制",
+            "risk_hint": "可能错失救陈念的最佳时机",
+            "process_label": "婉拒对方，保留余地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0912_result_天机录_ch0912_opt5_1",
+                  "content": "陈机冷冷道：「我陈机行事，从不假手于人。主帅的好意，陈某心领了。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_015",
+        "character_id": "char_chenji",
+        "content": "就在此时，天机录残页突然在陈机识海中剧烈震颤，墨先生的声音带着前所未有的紧迫：「陈机，他在说谎！陈念确实与天命锁钥有关，但她的作用远不止于此——」",
+        "emotion": "急切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_016",
+        "content": "然而墨先生的话被一股强横的神识直接切断。魔道主帅嘴角勾起一抹意味深长的笑：「看来你的守护者有话要说。不过没关系，你早晚会知道全部真相。」他转身欲走，「三日之内，给我答复。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0912_017",
+        "character_id": "char_chenji",
+        "content": "陈机突然开口：「等等。」他的声音平静得可怕，「你说我父亲陈天命——你到底是他什么人？」",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_018",
+        "content": "魔道主帅脚步一顿，缓缓回头。虚空中的魔气在这一刻仿佛都凝固了，那双与陈机相似却又截然不同的眼眸中，闪过一丝复杂的情绪：「这个问题……」他轻声说，「三日后，你会得到答案——如果你选择合作的话。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_019",
+        "content": "撕裂的虚空缓缓愈合，魔道主帅的身影消失在那片混沌之中。然而他留下的信息却如同一颗巨石，在陈机心湖中激起惊涛骇浪。血脉共鸣、天命锁钥、父亲的死因——所有的谜团都指向同一个方向。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0912_020",
+        "content": "陈机独自站在空旷的大殿中，拳头缓缓握紧。他抬头望向虚空，嘴角勾起一抹冷冽的弧度：「合作？呵……你以为你是执棋者，却不知你也是局中子。」他喃喃道，「三日……足够我看清你的底牌了。」天机录残页在他识海中微微发光，似乎在回应着主人的决心。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

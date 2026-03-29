@@ -1,0 +1,442 @@
+{
+  "id": "天机录_ch1028",
+  "book_id": "天机录",
+  "number": 1028,
+  "title": "天界边界的对决",
+  "is_paid": true,
+  "next_chapter_hook": "就在胜负将分的刹那，一道超越天地的意志骤然降临，将两人同时卷入了一场跨越万年的记忆幻境——那是仓御天布下的最后一道棋局。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1028_001",
+        "content": "天机录残页的震颤如利刃刺入神魂，墨先生的警示带着万载沧桑的沉重。陈机面色不改，指尖却已悄然凝出一道玄青色的灵纹护罩，将那股来自天青宗方向的威压隔绝在外。凌渊那老狐狸终于坐不住了。他在心中冷笑，面上却维持着那副废材杂役的怯懦模样，余光扫过身侧魔道主帅那张写满试探意味的面孔。一个凌渊已经够头疼，眼下还得先解决这位\"盟友\"的诚意试探。陈机缓缓抬手，做了个请的手势，声音平淡如水：\"主帅既想验证陈某是否有资格与您平起平坐，那便以剑说话吧。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1028_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "魔道主帅周身魔气翻涌如渊海，那双深不见底的眼眸中闪过一丝玩味。他缓步上前，每一步都让脚下虚空崩裂出蛛网般的裂纹，万古修为的威压如山岳倾覆。\"陈机，你当真以为凭借那几页残卷，便有资格与本座对弈？\"他的声音低沉如远古魔兽的呢喃，\"本座修行万载，见过的天才如过江之鲫，你若不能让本座看到真正的价值，这联盟不提也罢。\"话音未落，一道漆黑如墨的魔刃已凝聚于他掌心，那刃上缠绕的法则之力让周遭灵气都在哀鸣。",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1028_choice_01",
+        "prompt": "魔道主帅以万古威压逼问陈机的价值，陈机必须做出回应！",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "全力",
+            "text": "全力以赴",
+            "description": "不再藏拙，以三路归一的准至强实力正面迎战，让对方见识真正的天机录传人该有的气象。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗大量灵力和天机录预判次数",
+            "visible_reward": "彻底震慑魔道主帅，获得平等对话权",
+            "risk_hint": "暴露实力可能引来更多势力觊觎",
+            "process_label": "天机录全力催动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 150
+              },
+              {
+                "stat": "名望",
+                "delta": 80
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_全力_01",
+                  "content": "陈机眼底精光一闪，嘴角勾起一抹淡笑。他不再压制体内翻涌的气血，天机录五页之力如决堤洪流般倾泻而出，青金色的光芒在他周身交织成一张璀璨的法则之网。三路归一的准至强气息冲破压制，与那万古威压硬生生撞在一处，震得周遭山岳都在颤抖。\"主帅既想看真正的价值——\"他的声音骤然转冷，\"那便睁大眼睛瞧好了。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "藏拙",
+            "text": "藏拙示弱",
+            "description": "故意保留三成实力，只展现天机录前两页的能力，让对方低估自己的底牌深度。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被视为实力不足而失去平等地位",
+            "visible_reward": "保留底牌，为后续博弈留足余地",
+            "risk_hint": "对方若看穿伪装，将陷入被动",
+            "process_label": "压制气息示敌以弱",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 100
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_藏拙_01",
+                  "content": "陈机眼中闪过一丝狡黠，随即收敛气息，将天机录之力压制到仅仅两页的程度。他身形微晃，故作艰难地抵挡着那股威压，额角沁出汗珠。\"主帅说笑了，陈某不过是侥幸得了残卷，如何敢与万古大能相比？\"他的语气谦卑至极，眼底却藏着洞察一切的冷光。这一招以退为进，正是他惯用的扮猪吃虎之术——让敌人轻视自己，才是最大的底牌。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "智取",
+            "text": "以智取胜",
+            "description": "不正面硬拼，而是以天机录的预判能力寻找对方破绽，一击制敌展现头脑碾压。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗10点天命值进行深度预判",
+            "visible_reward": "以最小代价获取最大战果，证明智谋比蛮力更有价值",
+            "risk_hint": "预判一旦失败，将毫无还手之力",
+            "process_label": "启动天机录预判模式",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 120
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 30
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_智取_01",
+                  "content": "陈机不闪不避，眉心处的天眼骤然睁开，金色的竖瞳中倒映出无数条命运的丝线。未来的三时辰在他眼前如走马灯般掠过，那魔道主帅的招式、换气、甚至心跳的频率都被他尽收眼底。\"主帅，万载修为固然可敬——\"他缓步上前，每一步都精准踩在对方招式的破绽之上，\"但您右肩旧伤未愈，气血运转有三息延迟，这便是您万年来最大的弱点。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1028_003",
+        "content": "魔道主帅面色骤变，那双深不见底的眼眸中闪过一丝惊愕。他万载修行从未向人提及的暗伤，竟被眼前这个\"废物\"一语道破。右肩传来的隐痛仿佛在提醒他，这小子绝非等闲之辈。\"好！好一个天机录传人！\"他仰天长笑，魔气如实质般在身周炸开，化作千万道黑色的剑芒，\"既然你看穿了本座的弱点，那便来看看，你有没有本事抓住它！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1028_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "万道魔剑齐发，遮天蔽日，每一道都携带着足以毁山断岳的威能。魔道主帅出手便是杀招，显然是被陈机的洞察之言激怒，要以绝对的力量将他碾压成齑粉。\"这一招，名为万魔朝宗！\"他的声音带着睥睨天下的傲然，\"你那预判三时辰的天机录，能看到这一招的结局吗？\"",
+        "emotion": "狂傲"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1028_choice_02",
+        "prompt": "万魔朝宗铺天盖地而来，陈机必须做出应对！",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "硬接",
+            "text": "硬接绝学",
+            "description": "以天机录五页之力正面硬抗魔道主帅的万年前绝学，以力量碾压力量。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "承受巨大反噬，可能重伤",
+            "visible_reward": "彻底击碎对方心理防线，赢得绝对尊重",
+            "risk_hint": "对方是万古修为，硬拼风险极高",
+            "process_label": "天机录五页齐出",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 100
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_硬接_01",
+                  "content": "陈机深吸一口气，天机录五页在他身后同时展开，青金色的光芒交织成一道璀璨的屏障。他双掌合十，口中低喝：\"天机不可违——但我便是天机！\"五页之力与那万道魔剑轰然相撞，巨大的冲击波将方圆百里的山岳尽数夷为平地。烟尘散去，魔道主帅首次露出了凝重的神色——那小子竟真的接下了他万年前的绝学！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "闪避",
+            "text": "闪避寻隙",
+            "description": "利用天眼预判的每一丝信息，在万剑洪流中寻找唯一的生路，直取对方右肩旧伤。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "灵力消耗巨大",
+            "visible_reward": "以弱胜强，展现绝对智谋碾压",
+            "risk_hint": "万剑之中寻隙，稍有不慎便是粉身碎骨",
+            "process_label": "天眼锁定破绽",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 80
+              },
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 35
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_闪避_01",
+                  "content": "陈机身形如鬼魅般穿梭于万剑之间，天眼的金色竖瞳中映照出每一道剑芒的轨迹。他在电光火石之间计算出唯一的生路，以毫厘之差避开致命攻击，最终如一柄出鞘的利剑，直直刺向魔道主帅的右肩。\"主帅——您的破绽，我收了！\"话音未落，他的手掌已贴上对方旧伤之处，一股凌厉的灵力瞬间封锁了那处经脉。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1028_005",
+        "content": "战斗进入白热化阶段，两人从天上打到地下，又从地下斗到云端。魔道主帅越打越是心惊——这小子明明只是个结丹期的废物，为何能与他周旋如此之久？更令他不安的是，每一次他变换招式，对方都像是提前知晓一般，总是能精准地找到应对之策。这种感觉让他想起了那个传说中的存在——天道之眼。\"你……\"他猛地后撤，魔气在身周凝成一道屏障，\"你到底是什么人？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1028_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "魔道主帅的面色阴晴不定，那双深不见底的眼眸中闪烁着复杂的光芒。万载修行让他见惯了天才妖孽，却从未见过如此诡异的存在。\"好……好得很！\"他忽然仰天大笑，笑声中带着几分癫狂，\"本座倒是小瞧了你！既然如此——\"他的气息骤然暴涨，额头处一道漆黑的印记缓缓浮现，那是封印了万年的第七页力量！\"便让你见识见识，什么叫真正的天机！\"",
+        "emotion": "疯狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1028_007",
+        "content": "第七页的力量如混沌初开般席卷而来，那是一种超越认知的存在。陈机瞳孔骤缩，天机录五页在这股力量面前竟开始剧烈颤抖，仿佛遇到了天敌。他感受到一股前所未有的压力——那是来自天道本身的威压！墨先生的声音在脑海中急促响起：\"主人小心！这是被封印的禁忌之力，它与天机录同源，却走向了另一条极端的道路！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1028_choice_03",
+        "prompt": "第七页禁忌之力爆发，陈机必须做出最终抉择！",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "对轰",
+            "text": "正面对轰",
+            "description": "以天机录五页之力硬撼第七页禁忌，双方同源相残，胜负在此一举。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天机录可能受损，自身遭受重创",
+            "visible_reward": "彻底证明自己的价值，与魔道主帅平起平坐",
+            "risk_hint": "同源之力相撞，后果难以预料",
+            "process_label": "天机录全力爆发",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 60
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_对轰_01",
+                  "content": "陈机不再犹豫，天机录五页在身后轰然展开，金青色的光芒与那漆黑如墨的第七页力量在半空中猛然相撞。同源相残的冲击波撕裂了虚空，两道身影在混沌中不断交错、分离、再碰撞。魔道主帅的眼中闪过一丝难以置信——这小子竟然真的在与他分庭抗礼！最终，两股力量同时溃散，两人各退数步，俱是面色苍白，却谁也无法奈何对方。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "融合",
+            "text": "以智引导",
+            "description": "不硬拼而是引导第七页力量与天机录共鸣，化解同源相残的毁灭性后果。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗巨大精力进行精密控制",
+            "visible_reward": "展现超越力量的智慧，让对方彻底心服",
+            "risk_hint": "引导失败将遭受反噬，后果更严重",
+            "process_label": "启动同源共鸣",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 150
+              },
+              {
+                "stat": "天命值",
+                "delta": -12
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 50
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1028_result_融合_01",
+                  "content": "陈机深吸一口气，做出了一个令魔道主帅瞠目结舌的举动——他收起了所有攻势，反而张开双臂，以一种近乎虔诚的姿态迎接那毁天灭地的第七页力量。\"同源之物，何必相残？\"他的声音平静如水，\"你我都不过是天道棋盘上的棋子，真正的对手，从来都不是彼此。\"在他的引导下，两股同源之力竟开始缓缓融合，形成了一道前所未有的新力量。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1028_008",
+        "content": "战斗落幕，两人相对而立。魔道主帅看着眼前这个年轻人，眼中的傲慢早已被一种复杂的神色取代。他修行万载，阅人无数，却从未见过如此诡异的存在——明明实力远逊于他，却能在关键时刻爆发出超乎想象的力量；明明满身破绽，却总能在绝境中找到生机。\"你小子……\"他忽然笑了，那笑容中带着几分真诚的欣赏，\"有意思。本座承认，你确实有资格与本座平起平坐。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1028_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "魔道主帅负手而立，周身魔气收敛如渊海，那双深不见底的眼眸中闪烁着审视的光芒。万载岁月赋予了他阅尽沧桑的智慧，也让他比任何人都清楚——真正的强者，从来不是修为最高的那一个。\"陈机，\"他的声音低沉而郑重，\"本座问你一个问题。你获得了天机录残页，又与本座战成平手，未来打算如何？\"他的目光如刀，仿佛要将眼前这个年轻人看透，\"是继续在这乱世中做一枚被人摆布的棋子，还是——成为执棋之人？\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1028_010",
+        "character_id": "char_chenji",
+        "content": "陈机缓缓抬手，将天机录残页收入袖中，那张看似懦弱的脸上浮现出一抹意味深长的笑容。他抬头直视魔道主帅的眼睛，声音平静却带着不可动摇的笃定：\"执棋之人？\"他轻笑一声，\"主帅此言差矣。棋盘之上，棋子与执棋者从来只是相对而言。您以为自己是执棋者，殊不知在那天道之眼的棋盘上，您我又何尝不是棋子？\"他的目光深邃如渊，\"陈某从不做别人的棋子——我要做的，是掀翻整张棋盘。\"",
+        "emotion": "睥睨"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1028_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "魔道主帅闻言，眼中精光一闪，随即放声大笑。笑声回荡在天际，带着几分畅快，几分释然，更带着几分由衷的敬意。\"好！好一个掀翻整张棋盘！\"他收敛笑容，神色郑重地向陈机微微颔首，\"本座修行万载，还是第一次听到如此狂言。但从你口中说出，本座竟觉得……有几分可信。\"他伸出右手，掌心魔气凝成一枚漆黑的令牌，\"此乃本座信物，从今往后，你我联盟共进，退路共担。\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1028_012",
+        "content": "就在陈机接过令牌的瞬间，一股超越天地的意志骤然降临。那意志浩瀚如海，冰冷如渊，带着审视蝼蚁般的淡漠。陈机和魔道主帅同时面色大变——那种感觉他们都不陌生，那是天道之眼的注视！陈机瞳孔骤缩，天机录残页剧烈震颤，墨先生的声音在脑海中惊恐响起：\"主人！它……它来了！\"话音未落，两人的意识同时被一股无形的力量攫住，周围景象如镜花水月般碎裂，一段段支离破碎的画面开始涌入他们的神魂——那是仓御天的记忆，是被封印万年的真相。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

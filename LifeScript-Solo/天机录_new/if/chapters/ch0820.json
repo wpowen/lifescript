@@ -1,0 +1,377 @@
+{
+  "id": "天机录_ch0820",
+  "book_id": "天机录",
+  "number": 820,
+  "title": "暗流涌动",
+  "is_paid": true,
+  "next_chapter_hook": "三日之期，陈机必须做出抉择——是直面皇朝使者的锋芒，还是主动放弃太子太师的身份？而那个在暗处注视一切的存在，正等待着将他彻底碾碎。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0820_01",
+        "content": "当陈机睁开双眼的刹那，他感知到了某种注视——那不是来自天机之眼，而是来自更高的存在。墨先生的警告在耳边回响：\"它醒了。\"\n\n那目光冰冷、古老，仿佛亘古之前便已存在。它并非针对陈机的肉身，而是穿透了他的神魂，像是在审视一枚棋盘上微不足道的棋子。\n\n\"醒了……\"\n\n陈机低声重复，指尖微微发颤。这三个字的分量，远比任何人想象的都要沉重。天道之眼并非终点，而是一个更高存在的触角——那么这个存在，又是什么？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_02",
+        "content": "陈机强压下心底的寒意，将意识从那片幽深的黑暗中拽回现实。他发现自己仍盘膝坐在天机录残页前，周身依旧是那片诡异的虚空。\n\n然而，下一瞬，他感知到了异样。\n\n皇都方向，天机录残页剧烈震颤，传来一阵阵令人心悸的波动。那不是普通的灵力波动，而是——国运。是大齐皇朝数百年积累的龙脉之气，正以一种近乎失控的方式向外宣泄。\n\n太子太师府，出事了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_03",
+        "content": "天青宗外，皇都使者的仪仗正如乌云般压来。\n\n为首之人身着玄色官袍，腰悬天子剑，面容冷峻如铁。他身后跟着三十六名金甲护卫，每一人的气息都不低于筑基后期——这是皇朝专司处置\"叛逆\"的玄铁卫。\n\n\"圣上有旨——\"\n\n使者展开明黄圣旨，声音在灵力的加持下传遍四方，\"太子太师陈机，私通魔道、意图谋反，着三日内入皇都面圣述职。逾期不至，以叛贼论处，满门抄斩。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_04",
+        "content": "围观的人群中爆发出一阵骚动。\n\n\"太子太师？那不是天青宗的杂役弟子吗？\"\n\"听说他攀上了太子这条线，没想到这么快就要倒了。\"\n\"三天？呵呵，怕是连路上都到不了。\"\n\n而在人群边缘，一道挺拔如枪的身影静静站立。玄武宗第一天才韩烈，嘴角勾起一抹玩味的弧度，仿佛在看一场早已注定结局的闹剧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0820_05",
+        "character_id": "char_hanlie",
+        "content": "\"三天？\"\n\n韩烈嗤笑一声，声音不大，却精准地传入每个人耳中，\"皇朝这帮老狐狸，怕是高估了那废物的命硬程度。陈机啊陈机，你以为攀上太子就能高枕无忧？\"\n\n他迈步上前，金色的战意在周身流转，\"本少爷等这一天，可等了很久了。\"",
+        "emotion": "讥讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_06",
+        "content": "与此同时，皇都的另一处角落。\n\n一道纤细的身影立于阴影之中，正是魔道圣女夜清。她的脸上没有了往日的从容，取而代之的是一种复杂至极的神情。\n\n\"陈机……对不起。\"\n\n她的声音低如蚊蚋，旋即又变得冰冷，\"但这也是为了……更大的一盘棋。\"",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0820_choice_01",
+        "prompt": "陈机在虚空中感知到外界的剧变，他必须立刻做出决定。面对皇朝的最后通牒和暗处的敌意，他将如何应对这场危机？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianji_ch820_opt_01_face",
+            "text": "正面迎击",
+            "description": "以太子太师身份正面回应皇朝使者，展现强硬姿态，绝不示弱。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露更多实力",
+            "visible_reward": "震慑宵小，名望+15",
+            "risk_hint": "可能暴露天机录的部分能力",
+            "process_label": "正面硬刚",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0820_result_face_01",
+                  "content": "陈机从虚空中回归肉身的刹那，嘴角勾起一抹冷笑。\n\n\"太子太师陈机，恭领圣谕。\"\n\n他的声音平静如水，却带着一股令人心悸的从容。这种淡定，让本该趾高气扬的皇朝使者，莫名其妙地感到一阵不安。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "皇朝对峙"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch820_opt_02_evade",
+            "text": "暂避锋芒",
+            "description": "不与皇朝正面冲突，先利用天机录查明幕后黑手再做定夺。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暂时放弃太子太师身份带来的便利",
+            "visible_reward": "争取布局时间，谋略+20",
+            "risk_hint": "可能被误解为畏罪潜逃",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0820_result_evade_01",
+                  "content": "陈机悄然隐入人群深处，将气息收敛至极致。\n\n既然对方想玩，那他便奉陪到底。三天时间，足够他查清这背后的水有多深了。\n\n\"皇朝使者？\"\n\n他的声音从阴影中传出，冰冷而讥诮，\"不急。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暗中布局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch820_opt_03_counter",
+            "text": "将计就计",
+            "description": "利用夜清背叛的情报，反向布局，将所有敌人一网打尽。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要精准把控时机",
+            "visible_reward": "可能获得关键情报",
+            "risk_hint": "如果夜清背后真有更高存在操控，可能反噬",
+            "process_label": "借刀杀人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0820_result_counter_01",
+                  "content": "陈机眸光一闪，心中已有了计较。\n\n夜清的背叛？未必是真心。但他注意到夜清眼中的挣扎——那是被人操控的痕迹。\n\n\"好一出大戏。\"\n\n他低声呢喃，\"那便让我看看，你们究竟想把戏唱到何种程度。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "识破伪装"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_07",
+        "content": "就在众人议论纷纷之际，一道凌厉的剑意冲天而起。\n\n韩烈出手了。\n\n他身形如电，瞬间欺近太子太师府大门，一拳轰出——那是玄武宗绝学\"玄武真意\"，足以轰碎半个天青宗。\n\n\"陈机！给我滚出来！\"\n\n他的怒吼震得山门前的古树簌簌作响，\"今日，我要让天下人看看，谁才是真正的废物！\"",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0820_08",
+        "character_id": "char_hanlie",
+        "content": "\"上次在禁地，让你侥幸逃脱。\"\n\n韩烈步步紧逼，每一步都踩得地面龟裂，\"这一次，本少爷倒要看看，你还有什么花招！\"\n\n他的眼中燃烧着偏执的怒火。这个被称为\"废物\"的男人，已经成为他武道之路上最大的心魔。",
+        "emotion": "偏执"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_09",
+        "content": "然而，下一瞬，一道黑雾悄无声息地蔓延开来。\n\n魔道圣女夜清出手了。她的\"魔道迷雾\"本是遮掩气息的绝佳手段，此刻却笼罩向韩烈。\n\n\"韩烈，你越界了。\"\n\n夜清的声音清冷如霜，\"陈机是我的……合作伙伴。\"",
+        "emotion": "冷淡"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0820_choice_02",
+        "prompt": "夜清突然出手相助，但陈机知道她已经背叛。这一刻，他将如何选择？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "tianji_ch820_opt_04_trust",
+            "text": "配合演出",
+            "description": "假装不知夜清背叛，与她联手逼退韩烈，暗中寻找真相。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能让夜清更加放松警惕",
+            "visible_reward": "争取时间调查幕后黑手",
+            "risk_hint": "夜清可能在关键时刻反水",
+            "process_label": "虚与委蛇",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0820_result_trust_01",
+                  "character_id": "char_chenji",
+                  "content": "陈机从阴影中走出，脸上浮现一抹淡然的笑意。\n\n\"夜清姑娘说得对。\"\n\n他负手而立，目光落在韩烈身上，\"韩公子何必如此急躁？你我之间的账，早晚要算。\"",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch820_opt_05_expose",
+            "text": "揭露真相",
+            "description": "当场戳穿夜清背叛的事实，让她措手不及。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能打草惊蛇",
+            "visible_reward": "可能迫使夜清背后的势力现身",
+            "risk_hint": "夜清可能狗急跳墙",
+            "process_label": "当众揭穿",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0820_result_expose_01",
+                  "content": "陈机目光如炬，直直刺向夜清。\n\n\"合作伙伴？\"\n\n他的声音骤然转冷，\"夜清姑娘，你背后的那位'大人'，可曾告诉你，要如何背叛我？\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "公开对峙"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch820_opt_06_wait",
+            "text": "静观其变",
+            "description": "不表态，看夜清和韩烈之间的博弈，等待最佳时机出手。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能被人认为怯战",
+            "visible_reward": "观察各方反应，获取更多信息",
+            "risk_hint": "可能错失主动权",
+            "process_label": "坐山观虎斗",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0820_result_wait_01",
+                  "content": "陈机退后一步，饶有兴致地看着这一幕。\n\n魔道圣女对上玄武天才？有趣。当这两个看似敌人的人碰撞在一起时，背后究竟隐藏着怎样的秘密？\n\n他忽然发现，这盘棋，比他想象的还要复杂。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_10",
+        "content": "韩烈被魔道迷雾笼罩，顿时怒火中烧。\n\n\"魔道妖女！\"\n\n他周身金光大盛，玄武真意化作一头巨大的玄龟虚影，硬生生撕裂黑雾，\"你和那废物一样，都是该死之人！\"\n\n然而，就在这电光火石之间，夜清的眼神骤然一变——那不是愤怒，而是一种深入骨髓的恐惧。",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0820_11",
+        "character_id": "char_yeqing",
+        "content": "陈机捕捉到了那抹恐惧，心中一动。\n\n他顺着夜清的目光望去——天际深处，一道若隐若现的符文正缓缓浮现。那符文的形状，与天机录残页上的纹路，竟有几分相似。\n\n\"它在看着我们。\"\n\n夜清的声音陡然压低，带着一丝颤抖，\"陈机，那是……天道之眼真正的主人。\"",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_12",
+        "content": "天道之眼真正的主人。\n\n这六个字如同一盆冰水，浇灭了陈机心中最后一丝侥幸。他终于明白，夜清的背叛并非出于本意——她被人操控了，而操控她的，正是那个超越天机录的存在。\n\n\"我记下了。\"\n\n陈机的声音平静得可怕，\"等时机到了，我会让你们都付出代价。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_13",
+        "content": "远处，皇朝使者的目光穿透人群，正好与陈机对上。\n\n那一瞬间，陈机感受到了一股熟悉的气息——那是老掌门凌渊的气息。\n\n原来如此。\n\n皇朝使者、凌渊、那个更高的存在……这盘棋局，远比陈机想象的更加庞大。而他，不过是被推上棋盘的一枚棋子罢了。\n\n但棋子，也有棋子的用处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0820_14",
+        "content": "夜风呼啸，吹乱了陈机的衣袂。\n\n他转身，没入人群深处，留下一句淡淡的话：\n\n\"三天？够了。\"\n\n足够他翻云覆雨，足够他将所有的敌人碾成齑粉。\n\n韩烈望着那个消失的背影，第一次感受到了一种莫名的寒意。而夜清，则死死咬着嘴唇，指尖已经渗出了血。\n\n这一夜，注定无眠。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

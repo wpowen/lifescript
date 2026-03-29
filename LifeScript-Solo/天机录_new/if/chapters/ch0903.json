@@ -1,0 +1,589 @@
+{
+  "id": "天机录_ch0903",
+  "book_id": "天机录",
+  "number": 903,
+  "title": "天机录终极秘密",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机触及那被封印万古的真相边缘时，天道之眼的意志如冰锥般刺入他的识海——下一瞬，他听见了妹妹陈念在无尽黑暗中发出的凄厉呼救。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0903_001",
+        "content": "时空裂隙中，那道注视如实质般压在陈机肩头。虚空震颤间，一道苍老而威严的声音自裂隙深处传来：「千年轮回，你终究走到了这一步。」陈天命负手而立，周身天命之力流转如星河，他的目光越过陈机，落在那道若隐若现的身影上，眉宇间闪过一丝凝重。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_002",
+        "character_id": "char_chenji",
+        "content": "（陈机感到识海中天机录残页剧烈震颤，那股被窥视的感觉令他浑身汗毛倒竖）陈天命前辈，您说真正的考验才刚开始……这注视，究竟是什么？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_003",
+        "content": "陈天命没有立刻回答。他抬手一挥，一道虚幻的光幕在众人面前展开。光幕中浮现出一幅模糊的画面——无尽虚空深处，一只竖瞳缓缓睁开，瞳孔中倒映着无数星辰的毁灭与重生。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_004",
+        "character_id": "char_chenji",
+        "content": "（陈机盯着那光幕，心脏猛然一缩）这……这只眼睛，我曾在突破时瞥见过它的残影。它就是天道之眼？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_005",
+        "character_id": "char_chenji",
+        "content": "陈天命的声音骤然低沉：「不，它不是天道之眼。它是天道的眼睛——两者有本质的区别。」他转过身，第一次正视陈机，「天机录的终极秘密，我本不该在此刻告诉你。但它已经盯上了你，隐瞒已无意义。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_006",
+        "content": "时空裂隙中，那道身影愈发凝实。一股超越陈机认知的威压如潮水般涌来，仿佛整个天地都在向他的意志施压。墨先生的残魂剧烈波动：「不好，它在定位我们！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_007",
+        "character_id": "char_chenji",
+        "content": "（陈机感受到那股威压如山岳压顶，却强撑着脊背不弯）陈天命前辈，请说！我陈机既已走到这一步，就不会被真相吓退！",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_008",
+        "character_id": "char_chenji",
+        "content": "陈天命长叹一声，袖袍一挥，那道光幕中的画面骤然变化——呈现出一座巍峨的天门，天门之下，无数身着白衣的身影正在铸造一卷泛着金光的书册。「天机录，最初的名字是'天命枷锁'。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_009",
+        "content": "光幕中的画面继续演化。那卷金书被不断添加封印，最终沉入凡间，落入一个少年的手中——那少年眉眼与陈天命有几分相似，却更加锋芒毕露。「我，是第一个打破枷锁的人。」陈天命的声音带着沧桑，「但打破枷锁的瞬间，我也成为了它新的囚徒。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0903_choice_01",
+        "prompt": "陈天命的言语如惊雷在识海中炸响，陈机感到天机录残页传来阵阵刺痛——那是来自命运本身的警告。他该如何面对这颠覆认知的真相？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_truth",
+            "text": "接受命运",
+            "description": "既然前辈能打破枷锁，我陈机便也能走出一条属于自己的路。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗10点天命值",
+            "visible_reward": "获得陈天命的认可，解锁'天命共鸣'状态",
+            "risk_hint": "可能引发天道之眼的进一步关注",
+            "process_label": "承天之命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0903_result_accept_truth_01",
+                  "content": "陈天命眼中闪过一丝欣慰：「好，有这份气魄，你才配接过这副担子。」他抬手，一道天命之力没入陈机眉心，刹那间，天机录残页金光大盛，无数尘封的文字如潮水般涌入陈机的识海。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命共鸣"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "question_heaven",
+            "text": "质疑天道",
+            "description": "天道制定的规则凭什么要我遵守？我要亲自去看看，这枷锁究竟锁住了什么！",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天命值-15",
+            "visible_reward": "天机录产生未知共鸣，可能触发隐藏剧情",
+            "risk_hint": "极度危险，但可能揭开更深层的秘密",
+            "process_label": "逆天而行",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0903_result_question_heaven_01",
+                  "content": "陈天命神色微变：「你……」话音未落，那来自天道之眼的威压猛然加剧，仿佛在回应陈机的挑衅。墨先生的残魂惊骇道：「它被激怒了！陈机，你疯了吗！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "逆天之始"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "find_third_path",
+            "text": "寻找第三条路",
+            "description": "枷锁也好，钥匙也罢——我要的是打破规则本身，而非在规则内挣扎。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暂时无法获得陈天命传承",
+            "visible_reward": "解锁隐藏线索：天命锁钥的真正用途",
+            "risk_hint": "可能错过关键机缘，但揭示全新可能",
+            "process_label": "跳出棋盘",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0903_result_third_path_01",
+                  "content": "陈天命沉默良久，忽然笑了：「跳出棋盘……有意思。但你可知道，当年我选择打破枷锁时，也曾这样想过？」他的笑容中带着苦涩，「这第三条路，代价可能比你想象的更大。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "第三条路"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_010",
+        "content": "光幕再次变换。画面中，那道少年身影——年少的陈天命——手持金书，仰天大笑，随后金书碎裂，化作无数残页散落人间。「打破枷锁的瞬间，我确实获得了窥视天机的能力。但天道不会允许任何人真正自由。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_011",
+        "character_id": "char_chenji",
+        "content": "（陈机看着光幕中那与自己何其相似的身影，心中涌起一股难以言喻的复杂情绪）所以，天道之眼的注视……是从那时就开始了？",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_012",
+        "character_id": "char_chenji",
+        "content": "陈天命颔首，声音如古钟：「是的。它将天机录当作棋子，将历代预言者当作棋子。我、你、甚至更早的那些人……不过是被摆弄的蝼蚁。」他顿了顿，目光变得锐利，「但完整版的天机录，真正能力不是'预见命运'——而是'重写天道'。」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_013",
+        "content": "此言一出，时空裂隙猛然一震。那道注视仿佛被触怒，一股毁灭性的力量如狂潮般向众人压来。墨先生惊呼：「它在阻止这个秘密被说出！」陈天命冷哼一声，袖袍一震，硬生生将那股力量挡在众人身前。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_014",
+        "character_id": "char_chenji",
+        "content": "（陈机感到天机录残页在识海中疯狂震颤，似乎在与某种力量产生共鸣）重写天道……所以，这就是我妹妹被带走的真正原因？陈念，她和这有关？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_015",
+        "character_id": "char_chenji",
+        "content": "陈天命的神色第一次出现波动：「你果然察觉了。」他抬手，光幕中浮现出一个被锁链囚禁的少女身影——那少女眉眼与陈机有七分相似，周身缠绕着金色的符文。陈机的瞳孔骤然收缩：「陈念！」",
+        "emotion": "悲愤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_016",
+        "content": "光幕中，陈念的身影在无尽黑暗中挣扎。她的存在干扰着周围的天机运转，任何预言在她身边都变得模糊不清。「天命锁钥……她本身就是一把钥匙。」陈天命的声音低沉，「圣宗带走她，不是为了利用她——而是为了确保她永远不能落入你手中。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0903_choice_02",
+        "prompt": "得知妹妹被囚禁的真相，陈机感到一股怒火在胸中燃烧。然而在陈天命面前，他必须保持冷静——冲动只会坏事。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "demand_rescue",
+            "text": "要求营救",
+            "description": "既然陈念是关键，那我必须立刻去救她！不管付出什么代价！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能打草惊蛇",
+            "visible_reward": "获得陈天命提供的圣宗情报",
+            "risk_hint": "陈天命警告：时机未到，贸然行动只会害了她",
+            "process_label": "救妹心切",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0903_result_demand_rescue_01",
+                  "character_id": "char_chenji",
+                  "content": "陈天命抬手制止：「冷静。她被困在圣宗禁地核心，那里汇聚了天道之眼的意志碎片。你现在去，不是救人——是送死。」他的声音冰冷却带着一丝无奈，「你以为圣宗为何至今没有杀她？因为杀不了，她是活的枷锁。」",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "救妹执念"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "seek_guidance",
+            "text": "寻求指引",
+            "description": "请前辈告诉我，究竟该如何才能救她，又不落入天道的算计？",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时放下执念",
+            "visible_reward": "陈天命传授'天机推演'秘法，可窥探圣宗禁地的部分布局",
+            "risk_hint": "需要时间成长，但获得了明确的方向",
+            "process_label": "隐忍待发",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0903_result_seek_guidance_01",
+                  "content": "陈天命微微点头：「孺子可教。」他屈指一弹，一道流光没入陈机眉心。刹那间，无数阵法图谱、守卫布局如潮水般涌入识海。「这是我当年潜入圣宗禁地时留下的记忆残片。」他顿了顿，「但记住——她只是钥匙，不是锁。要开门，你还需要一样东西。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机推演"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_017",
+        "content": "陈机压下心中翻涌的情绪，沉声问道：「什么东西？」陈天命抬手，指向那道依然虎视眈眈的注视：「它——天道之眼的核心。」他的声音如惊雷，「要彻底打破枷锁，必须摧毁它的核心。届时，锁住陈念的禁制、锁住历代预言者的命运、锁住整个人间的天道法则……都将一同瓦解。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_018",
+        "character_id": "char_chenji",
+        "content": "（陈机感到一股前所未有的压力降临肩头——这不再是宗门恩怨，不再是修仙争斗，而是……与天道的终极对决）摧毁天道之眼的核心……前辈，您当年为何没有做到？",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_019",
+        "character_id": "char_chenji",
+        "content": "陈天命沉默良久，那双眼眸中仿佛倒映着千年的沧桑：「因为我只有一个人。」他转身，直视陈机，「而你不一样。你有天机录的残页，有愿意为你分担天命之人，有……」他的目光扫过虚空某处，「尚未觉醒的盟友。」",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_020",
+        "content": "时空裂隙中，那道注视愈发浓郁，仿佛随时会凝聚成实质。陈天命知道时间不多了，他的声音急促起来：「陈机，最后一件事——天机录的完整版需要集齐九页残页。你现在手中有一页，我这里有一页。其余七页，散落各处……」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0903_choice_03",
+        "prompt": "陈天命的话语戛然而止，那股天道之眼的威压已经近在咫尺。墨先生的残魂焦急地催促离开，但陈机心中有太多疑问亟待解答。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "force_answer",
+            "text": "逼问下落",
+            "description": "其余残页在哪里？我需要知道它们的全部下落！哪怕只多知道一页，也是胜算！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能被天道之眼锁定",
+            "visible_reward": "获得一页残页的明确线索",
+            "risk_hint": "陈天命警告：说太多同样会被它察觉",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0903_result_force_answer_01",
+                  "character_id": "char_chenji",
+                  "content": "陈天命目光一凝，旋即低声道：「玄武宗有一页，被韩烈那小子无意中激活。魔道圣宗有一页，在夜清手中。」话音未落，那股威压猛然加剧，似乎天道之眼已经捕捉到了关键词。墨先生惊骇道：「它在定位了！」",
+                  "emotion": "紧迫"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "残页线索"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "strategic_retreat",
+            "text": "战略撤退",
+            "description": "留得青山在，不怕没柴烧。前辈，告诉我最重要的一件事——如何才能联系您？",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时放弃追问",
+            "visible_reward": "获得陈天命的信物，可关键时刻呼唤其残魂支援",
+            "risk_hint": "安全离开，但可能错过某些关键信息",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0903_result_strategic_retreat_01",
+                  "content": "陈天命欣慰地点头，从袖中取出一枚古朴的玉佩：「此物名为'天命令'。当你集齐三页残页后，捏碎它，我便能感知你的位置。」他抬手一挥，一道时空裂隙在陈机身旁撕开，「现在，走！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命令"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "face_the_eye",
+            "text": "直面注视",
+            "description": "既然它已经盯上我，不如就在此刻，与它正面交锋！",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "极度危险，可能当场陨落",
+            "visible_reward": "可能触发'天命共鸣'，获得意想不到的突破",
+            "risk_hint": "墨先生强烈反对：这是自寻死路！",
+            "process_label": "以命相搏",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "黑化值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0903_result_face_eye_01",
+                  "character_id": "char_chenji",
+                  "content": "陈机猛然抬头，直视那道注视！刹那间，天机录残页爆发出刺目金光，与那注视正面碰撞。墨先生惊恐地尖叫：「不！你疯了吗——」然而下一瞬，奇异的事情发生了：那注视竟微微一滞，仿佛在陈机身上看到了什么令它忌惮的东西。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "直视天道"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 100
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_021",
+        "content": "就在众人惊愕之际，时空裂隙中猛然传来一道清脆而凄厉的声音——那声音细若游丝，却如利刃般刺入陈机识海：「哥……救我……」是陈念！她的声音被某种力量强行切断，但那一瞬的呼唤却让陈机浑身血液都凝固了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0903_022",
+        "character_id": "char_chenji",
+        "content": "（陈机的双拳紧握，指甲深深嵌入掌心。妹妹的呼救如烙印般刻在灵魂深处）陈念……等着我。无论付出什么代价，我一定会去救你！",
+        "emotion": "悲愤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_023",
+        "content": "陈天命的声音在耳边响起：「听到了吗？这是她的意志在抵抗禁制时泄露的一缕神念。」他深深看了陈机一眼，「她还在等你。所以，活下去，变得更强——这是你唯一能为她做的事。」话音落下，那道时空裂隙猛然扩张，一股不可抗拒的力量将陈机卷入其中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0903_024",
+        "content": "光芒散去，陈机发现自己已身处天青宗后山的隐秘之地。月光如水，洒在他身上，却驱不散心中的寒意。陈念的呼救仍在耳畔回响，天机录残页在识海中微微震颤，仿佛在回应他的决心。从今日起，他不再是那个只求自保的废材弟子——他是天机录的传承者，是注定要与天道为敌的逆命之人。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

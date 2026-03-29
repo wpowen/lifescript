@@ -1,0 +1,546 @@
+{
+  "id": "天机录_ch1084",
+  "book_id": "天机录",
+  "number": 1084,
+  "title": "恩威并施",
+  "is_paid": true,
+  "next_chapter_hook": "魔道主帅派人送来拜帖，内容只有四个字：故人重逢",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1084_001",
+        "content": "晨钟敲响第七响时，天青宗议事大殿已挤满了人。陈机负手立于玉阶之上，玄色长袍在晨光中泛着冷冽的光泽。韩烈昨夜离去时的狂言犹在耳畔，他却只是淡淡扫过殿中诸人，嘴角噙着一抹意味不明的笑。“诸位来得倒齐。”他的声音不高，却清晰地传入每个人耳中，“今日朝会，只议三件事——新秩序、旧恩怨、以及……有些人还没看清的局势。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_002",
+        "character_id": "char_chenji",
+        "content": "陈机缓步走下玉阶，每一步都踩在众人心弦上。“新秩序第一条——”他停顿片刻，目光扫过那些面带惧色的旧臣，“观测者制度正式运行。从今日起，任何人不得私自窥探天机，违者……”他抬手，一道金光没入殿中石碑，“天眼自会处置。”",
+        "emotion": "威严"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_003",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶站在侧殿，目光复杂地看着那道金光没入石碑。她上前一步，声音清冷：“敢问观测者大人，若有人质疑此制，该当如何？”她的问题看似刁难，实则是在给陈机搭台阶——这分明是在替他立威。",
+        "emotion": "试探"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_004",
+        "character_id": "char_chenji",
+        "content": "陈机转身看向苏青瑶，眼中闪过一丝赞赏。“问得好。”他抬手，一道光幕浮现，上面列出三条选择：质疑者可选择离开宗门、永不踏入修真界、或者……“接受天眼审判，清除关于新秩序的一切记忆。”他笑了笑，语气轻描淡写，“当然，若有人觉得自己命硬，大可试试。”",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_005",
+        "character_id": "char_yeqing",
+        "content": "殿中响起一阵骚动。就在这时，夜清从侧殿走出，一身玄黑长裙衬得她肤色如玉。她凑近陈机耳边，声音压得极低：“魔道那边有动静了，主帅已经拔营。”陈机面色不变，只是微微点头，示意她稍安勿躁。",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1084_006",
+        "content": "一位白发苍苍的老臣突然出列，声音颤抖却带着几分悲壮：“陈天命！老臣追随天青宗三百年，从未见过如此……如此悖逆天道之举！观测者制度，分明是窃取天机、欺师灭祖！”他的声音在大殿中回荡，引得一片哗然。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_007",
+        "character_id": "char_chenji",
+        "content": "陈机没有动怒，只是静静看着那位老臣，嘴角的笑意反而更深了几分。“三百年？”他缓步走向老臣，每一步都带着压迫感，“三百年追随，却连天道已经换人都不知晓——这位老前辈，您追随的究竟是天青宗，还是您自己幻想出来的旧梦？”",
+        "emotion": "讽刺"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1084_008",
+        "content": "话音刚落，殿中天眼骤然亮起一道金光。那老臣惨叫一声，双目失焦，整个人如遭雷击般跌坐在地。片刻后，他茫然地看向四周，竟已不认得任何人。天眼的声音在殿中回响：“记忆清除完毕。违逆新秩序者，当以此为戒。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1084_choice_01",
+        "prompt": "天眼已经展示了铁腕，接下来该如何安抚惶恐的旧臣们？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1084_choice_01_opt1",
+            "text": "铁腕震慑",
+            "description": "趁热打铁，继续用强硬手段压服反对者，让所有人明白忤逆的下场",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能加深旧臣恐惧，名望-5",
+            "visible_reward": "彻底压制反对声音，秩序稳固+10",
+            "risk_hint": "过度强硬可能引发反弹",
+            "process_label": "铁腕镇压",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1084_result_01_01",
+                  "content": "陈机冷冷扫视全场：“还有谁想试试？”殿中鸦雀无声，连呼吸都轻了几分。那些原本蠢蠢欲动的旧臣，此刻一个个低下了头。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "铁腕路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1084_choice_01_opt2",
+            "text": "怀柔收心",
+            "description": "展示宽容，给予旧臣选择权和尊严，化敌为友",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "部分人可能得寸进尺",
+            "visible_reward": "旧臣好感大幅提升，信任+15",
+            "risk_hint": "软弱形象可能影响后续威信",
+            "process_label": "怀柔安抚",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1084_result_01_02",
+                  "character_id": "char_chenji",
+                  "content": "陈机亲自扶起那位老臣，目光温和了几分：“老人家受惊了。天眼行事虽急，却也是为宗门百年计。诸位若有疑虑，尽可私下寻我，陈某必一一解答。”他的声音如春风化雨，瞬间化解了殿中凝重的气氛。",
+                  "emotion": "温和"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "怀柔路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1084_choice_01_opt3",
+            "text": "制度创新",
+            "description": "让苏青瑶提出设立观测者法庭，用法治代替人治",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要时间建立制度威信",
+            "visible_reward": "开启全新政治体系，名望+10，谋略+5",
+            "risk_hint": "制度建立初期可能有人钻空子",
+            "process_label": "制度创新",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1084_result_01_03",
+                  "character_id": "char_chenji",
+                  "content": "陈机看向苏青瑶，微微颔首。苏青瑶会意，出列朗声道：“既如此，不如设立观测者法庭，由多人共同审议，杜绝一言堂之弊。”此言一出，殿中气氛顿时不同——这分明是在给陈机的权力套上枷锁，却也给了所有人希望。",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "法治路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1084_009",
+        "content": "苏青瑶的提议在殿中激起千层浪。那些原本惶恐的旧臣们，眼中重新燃起了希望的光芒——有法庭就有规矩，有规矩就有活路。陈机看着她，心中暗暗点头。这个女人，总能在关键时刻递上最恰当的棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_010",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶继续道：“法庭成员由各脉弟子共同推举，观测者亦需受其监督。如此，既保新秩序之威严，亦顾全宗门之和气。”她看向陈机，眼中闪过一丝只有他能读懂的深意：“不知陈师兄意下如何？”",
+        "emotion": "默契"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_011",
+        "character_id": "char_chenji",
+        "content": "陈机抚掌大笑：“苏师妹深得我心。”他环顾四周，声音清朗，“诸位都听见了——法庭之事，就按苏师妹说的办。不过……”他话锋一转，眼中闪过凌厉之光，“在法庭成立之前，观测者仍有一票否决之权。想闹事的，趁早收心。”",
+        "emotion": "恩威并施"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1084_choice_02",
+        "prompt": "殿中气氛稍缓，此时夜清再次示意有紧急军情，该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1084_choice_02_opt1",
+            "text": "当场公开",
+            "description": "当着所有人的面听取魔道军情，展示对盟友的信任，也让众人明白当前局势",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "旧臣可能更加恐慌",
+            "visible_reward": "夜清信任度大增，威望+5",
+            "risk_hint": "魔道势力介入可能引发连锁反应",
+            "process_label": "公开军情",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1084_result_02_01",
+                  "character_id": "char_yeqing",
+                  "content": "夜清上前一步，声音清冷却足够让所有人听见：“魔道主帅已拔营，十万大军正向天青宗方向移动。距此……三日。”殿中顿时一片哗然，那些刚刚还惶恐不安的旧臣，脸色瞬间变得惨白。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "公开魔道情报"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1084_choice_02_opt2",
+            "text": "私下密谈",
+            "description": "示意夜清稍后私下汇报，先稳定朝堂人心",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过最佳战机",
+            "visible_reward": "朝堂稳定，人心不乱",
+            "risk_hint": "若消息泄露，会显得刻意隐瞒",
+            "process_label": "私下密报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1084_result_02_02",
+                  "character_id": "char_chenji",
+                  "content": "陈机微微摇头，示意夜清稍安勿躁。他转向众臣，声音依旧平稳：“诸位不必惊慌，些许风浪，翻不了天青宗这艘大船。”说着，他看向苏青瑶，“朝会继续，苏师妹，把法庭细则说一下。”",
+                  "emotion": "镇定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "私下处理"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1084_012",
+        "content": "无论选择哪条路，夜清的目光都始终落在陈机身上。她见过太多所谓的英雄，在危机面前手忙脚乱、口不择言。但眼前这个男人，即便听到十万大军压境，依然气定神闲，仿佛一切都在他预料之中。这种感觉让她既安心，又有些……不寒而栗。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_013",
+        "character_id": "char_yeqing",
+        "content": "夜清压低声音，只有陈机能听见：“主帅派来的使者已经到了宗门之外。他说……想见见故人。”她的眼神闪烁，“我总觉得来者不善。”",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1084_014",
+        "content": "陈机眉头微动。故人？这个词让他想起了韩烈离去时的狂言，想起了那个被天眼抹去记忆的老臣，想起了自己布局多年的天下棋局。“有意思。”他喃喃道，“看来这场朝会之后，还有更大的热闹要瞧。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_015",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶似乎察觉到了异样，她走下玉阶，来到陈机身侧，低声道：“发生什么事了？”她的直觉告诉她，有什么事正在超出控制。陈机侧头看她，嘴角勾起一抹笑：“小事。有人想来认亲戚，我正准备好好招待。”",
+        "emotion": "调侃"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1084_choice_03",
+        "prompt": "魔道使者已在门外等候，该如何安排这场会面？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch1084_choice_03_opt1",
+            "text": "高调迎接",
+            "description": "亲自率众出迎，展示天青宗新秩序的开放与自信",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能被视为示弱",
+            "visible_reward": "名望大涨，各方势力刮目相看",
+            "risk_hint": "若对方有意挑衅，可能当众失态",
+            "process_label": "高调相迎",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1084_result_03_01",
+                  "content": "陈机整理衣冠，竟亲自向殿外走去。这一举动让所有人都愣在原地——那个废物弟子，那个被全宗嘲笑的杂役，如今要以如此姿态迎接魔道来客？苏青瑶跟在身后，心中涌起一股说不清的情绪。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "高调路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1084_choice_03_opt2",
+            "text": "冷处理",
+            "description": "让夜清先去试探，自己在幕后观察来者意图",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能显得傲慢",
+            "visible_reward": "掌握主动权，进退自如",
+            "risk_hint": "若对方目的单纯，可能错失良机",
+            "process_label": "幕后观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1084_result_03_02",
+                  "content": "陈机对夜清使了个眼色。夜清会意，转身向殿外走去。陈机则不紧不慢地回到玉阶之上，端起茶杯轻抿一口，仿佛只是在等一个无关紧要的消息。苏青瑶看着这一幕，心中暗叹：这个男人的心思，真是深不见底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "隐策略"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1084_choice_03_opt3",
+            "text": "威严对峙",
+            "description": "摆出最高规格的戒备姿态，让魔道知道天青宗不好惹",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能激化矛盾",
+            "visible_reward": "展示实力，威慑宵小",
+            "risk_hint": "若对方实力更强，可能弄巧成拙",
+            "process_label": "以势压人",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1084_result_03_03",
+                  "content": "陈机一挥手，殿外顿时金光大盛——那是天眼全开的状态。他朗声道：“请魔道使者入殿。”声音不高，却传遍四方，震得山门嗡鸣。这一手，既是邀请，也是警告。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "威慑路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1084_016",
+        "content": "不多时，夜清领着一名黑袍使者步入大殿。那使者周身笼罩着淡淡的魔气，却有着一张出人意料的俊秀面容。他扫视一圈殿中众人，目光最后落在陈机身上，嘴角勾起一抹意味深长的笑：“陈天命……不，应该叫你陈机才对。久仰大名，今日终于得见。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_017",
+        "character_id": "char_chenji",
+        "content": "陈机放下茶杯，目光平静地与那使者对视：“使者远道而来，不知主帅有何赐教？”他的语气平淡，像是在问今天天气如何。那使者却不答话，只是从怀中取出一封拜帖，轻轻放在玉阶之下：“主帅说，四个字——故人重逢。”",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1084_018",
+        "content": "故人重逢。这四个字如同一记惊雷，在陈机心中炸开。他面色不变，心中却已掀起惊涛骇浪——魔道主帅是谁？为何称他为故人？难道是……不可能，那个人早就死了。就在他思绪翻涌之际，那使者已经转身离去，只留下一句话在殿中回响：“三日后，主帅亲临。届时，一切真相自会揭晓。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1084_019",
+        "content": "殿中再次陷入死寂。陈机缓缓站起身，走到那封拜帖之前。拜帖上没有任何署名，只有一朵熟悉的印记——那是他幼时在陈家祠堂见过的图腾。他的手指微微颤抖，随即恢复平静，将拜帖收入袖中。转身看向苏青瑶和夜清，他的眼神已经恢复了往日的深沉：“看来，我们有一场硬仗要打了。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1084_020",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶上前一步，声音低沉：“那个印记……我好像在哪里见过。”她皱着眉，努力回忆着。陈机和夜清同时看向她，前者的眼神带着几分紧张，后者则满是疑惑。陈机开口，声音罕见地柔和了几分：“苏师妹，你可愿告诉我，你在哪里见过这个印记？”",
+        "emotion": "紧张"
+      }
+    }
+  ]
+}

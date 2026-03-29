@@ -1,0 +1,468 @@
+{
+  "id": "天机录_ch0413",
+  "book_id": "天机录",
+  "number": 413,
+  "title": "兄妹血脉共鸣",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机以为一切都已尘埃落定之际，天机录深处那道残魂守护者墨先生的声音骤然响起：「你以为赢了？不……你只是刚刚踏入棋局的入口。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0413_001",
+        "content": "识海深处，陈机的意识如风中残烛，明明已经飘摇欲灭，却在最后一刻被一股灼热的力量重新凝聚。残页之上，那道沉寂已久的纹路正在缓缓亮起，仿佛有什么东西正在苏醒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_002",
+        "content": "就在意识即将彻底涣散之际，一股温热的力量突然从胸口涌出，顺着血脉直冲识海。陈机猛然睁开眼睛——他感觉到了，那是血脉的呼唤，来自远方的呼唤。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_003",
+        "character_id": "char_chenian",
+        "content": "哥……我在这里。",
+        "emotion": "温柔而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_004",
+        "content": "那声音清冷如冰，却带着血脉相连的温度。陈机胸口的龙纹骤然绽放出耀眼光芒，一股前所未有的力量在血脉中激荡。他看到了混沌中模糊的身影——陈念，她正站在某个黑暗的角落，用尽全力维持着这条血脉通道。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_005",
+        "character_id": "char_lingyuan",
+        "content": "这是什么！你的身上怎会有如此纯粹的血脉之力！",
+        "emotion": "震惊愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_006",
+        "content": "凌渊的脸在那一瞬间扭曲，眼中满是难以置信。他是元婴境界的老怪物，亲眼看着陈机被自己的威压碾成死狗，然而此刻，那废物体内竟涌动着连他都无法忽视的血脉波动。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0413_choice_01",
+        "prompt": "血脉之力觉醒，陈机面临抉择：是独自承受突破的重压，还是接受妹妹的力量共享？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "solo_breakthrough",
+            "text": "独自突破",
+            "description": "将血脉之力全部转化为战力，独自冲击元婴门槛，承受所有反噬",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，可能导致根基不稳",
+            "visible_reward": "展现纯粹的战斗力，让所有人见证废物的逆袭",
+            "risk_hint": "风险极高，但回报最为直接",
+            "process_label": "独自承受血脉觉醒",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 300
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0413_result_solo_01",
+                  "content": "陈机咬牙将血脉之力尽数纳入体内，天机录在识海中疯狂旋转，残页上的纹路正在以肉眼可见的速度蔓延。他的气息在一瞬间暴涨，直接冲破了筑基巅峰的桎梏。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "blood_resonance",
+            "text": "血脉共鸣",
+            "description": "与陈念建立完整的血脉共鸣，共同承受突破的反噬，大幅降低消耗",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "需要分出一半突破之力给陈念",
+            "visible_reward": "解锁「共命」雏形，大幅降低天命值消耗，且与妹妹建立深层联结",
+            "risk_hint": "相对安全，且能获得额外战略优势",
+            "process_label": "血脉共鸣突破",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0413_result_resonance_01",
+                  "content": "陈机没有独自吞噬这股力量，而是主动打开血脉通道，将陈念的力量纳入体内。两道血脉在这一刻交织共鸣，天机录的残页上骤然浮现出新的纹路。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "共命雏形"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "首次成功与妹妹建立血脉共鸣",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_007",
+        "content": "天机录在识海中发出一声清鸣，残页上的纹路如春水破冰般蔓延开来。陈机的气息在疯狂攀升，筑基巅峰、假丹境界、直至触碰到了那个传说中的门槛——元婴！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_008",
+        "character_id": "char_lingyuan",
+        "content": "不可能！你不过是筑基期的废物，怎可能触及元婴之门！",
+        "emotion": "惊恐万分"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_009",
+        "content": "凌渊的声音在颤抖，他活了数百年，从未见过如此荒谬之事。一个被整个宗门认定为废物的杂役弟子，竟在生死存亡之际完成了他苦修百年都未能达到的突破。虽然只是短暂的触碰，但那确实是元婴境界才有的气息压制。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_010",
+        "character_id": "char_chenji",
+        "content": "老东西，你刚才说什么来着？废物？",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_011",
+        "content": "陈机缓缓站起身来，全身上下的骨骼发出炒豆般的脆响。他感受着体内澎湃的力量，天机录的残页在识海中散发着温热的光辉。这一刻，他没有急着进攻，而是将目光落在了凌渊袖口处的一道符文上。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_012",
+        "content": "那是一道陈机极为熟悉的符文——圣宗的传讯符。他曾在那场大战中见过类似的东西，当时夜清身上的圣宗印记与这符文如出一辙。天青宗的老掌门，竟与魔道圣宗暗中勾结？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0413_choice_02",
+        "prompt": "陈机发现了凌渊与圣宗的秘密，他该如何处理这个信息？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "expose_publicly",
+            "text": "当场揭穿",
+            "description": "当着凌渊的面点破他与圣宗的关系，将这个丑闻彻底公开",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能引起宗门动荡，凌渊狗急跳墙",
+            "visible_reward": "彻底摧毁凌渊的威名，让整个天青宗见证他的真面目",
+            "risk_hint": "风险较高，但爽感最强",
+            "process_label": "揭露凌渊真面目",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 150
+              },
+              {
+                "stat": "黑化值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0413_result_expose_01",
+                  "content": "陈机抬手一道灵光，直接将凌渊袖口的符文击碎。符文炸裂之际，一道凄厉的惨叫声从中传出——那是圣宗之人被暴露的恐惧。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "secret_leverage",
+            "text": "暗中记下",
+            "description": "不公开，但将这个秘密作为日后要挟凌渊的筹码",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无法立即获得打脸的快感",
+            "visible_reward": "获得一张关键底牌，可在未来关键时刻使用",
+            "risk_hint": "较为稳妥，收益延迟但巨大",
+            "process_label": "将秘密收入囊中",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0413_result_leverage_01",
+                  "content": "陈机收回目光，唇角勾起一抹不易察觉的微笑。他已经将这一幕牢牢记在心里——凌渊与圣宗的关系，日后自有大用。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊把柄"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_013",
+        "content": "然而陈机的目标并不在凌渊身上。他感受着血脉通道中陈念传来的信息，心中掀起惊涛骇浪。她在圣宗内部发现了一个惊天秘密——她的存在不仅仅是「天命锁钥」，更是能够干扰天机录预见能力的关键。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_014",
+        "character_id": "char_chenian",
+        "content": "哥，我明白了。我的血脉能干扰天机录的预见——有我在的地方，你看不清未来。这不是缺陷，而是我们陈家的天赋！",
+        "emotion": "激动而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_015",
+        "content": "陈机瞬间明白了其中的奥义。天机录让他能预见未来三时辰，然而有陈念参与的预见，画面都是模糊的。这意味着什么？意味着只要陈念在他身边，任何人都无法通过天机录或类似的能力窥探他们的布局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_016",
+        "content": "这是一对完美的互补——天机录的预见能力与陈念的干扰能力结合，将成为世间最强大的组合。而此刻，远在圣宗的陈念正将这股认知通过血脉传递给陈机，两人的灵魂在这一刻前所未有地紧密相连。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0413_choice_03",
+        "prompt": "血脉共鸣成功后，陈机需要做出最终决断：如何处置凌渊？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "kill_lingyuan",
+            "text": "斩草除根",
+            "description": "趁凌渊虚弱之际将其彻底击杀，消除未来隐患",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能引起宗门动荡，且会暴露自己的真实实力",
+            "visible_reward": "彻底消除宿敌，且能夺取凌渊的修炼资源",
+            "risk_hint": "风险极高，但可永绝后患",
+            "process_label": "终结凌渊",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 100
+              },
+              {
+                "stat": "黑化值",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0413_result_kill_01",
+                  "content": "陈机眼中闪过一抹冷光，抬手便是一道凌厉的剑气。然而就在剑气即将触及凌渊之际，一股奇异的力量将他的攻击偏转了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "spare_lingyuan",
+            "text": "留其性命",
+            "description": "不杀凌渊，将其作为棋子，让敌人看到废物的“仁慈”而放松警惕",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "凌渊日后必然报复，需持续防备",
+            "visible_reward": "维持废物人设，且能继续利用凌渊的身份行事",
+            "risk_hint": "相对安全，且爽感来自于扮猪吃虎的快感",
+            "process_label": "放虎归山",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 80
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0413_result_spare_01",
+                  "content": "陈机收回剑气，冷冷地看着凌渊：「老东西，今日我不杀你。不是不能，而是不屑。回去告诉圣宗的人，他们的小动作我都看在眼里。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_017",
+        "content": "凌渊捂着胸口，满脸都是屈辱与恐惧。他想说什么，却发现自己竟被一个曾经的废物用威压钉在原地，动弹不得。这种感觉，比死还难受。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_018",
+        "character_id": "char_lingyuan",
+        "content": "陈机……你等着！今日之辱，老夫必定百倍奉还！",
+        "emotion": "怨毒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_019",
+        "content": "凌渊的身影在威压消散后踉跄逃离，那曾经不可一世的元婴老怪，此刻狼狈得如同一只受伤的老狗。陈机没有追击，他只是静静地站在原地，感受着血脉通道中陈念传来的温暖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_020",
+        "character_id": "char_chenian",
+        "content": "哥，我们成功了。你感觉到了吗？这就是我们的羁绊。",
+        "emotion": "喜悦而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_021",
+        "content": "陈机轻轻闭上眼睛。是的，他感觉到了。那是与血脉相连的温暖，是多年分离后终于重新连接的羁绊。天机录在识海中缓缓转动，残页上的纹路比以往任何时候都要明亮，仿佛在回应着这份失而复得的亲情。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0413_022",
+        "character_id": "char_chenian",
+        "content": "哥，我发现了我们血脉的秘密。天机录的持有者与天命锁钥，竟是一体两面。我的存在，就是为了守护你。",
+        "emotion": "温柔而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_023",
+        "content": "陈机的身体微微颤抖。天命锁钥与天机录持有者，一体两面。他终于明白了为何陈念会被圣宗带走，为何她的存在能干扰天机录的预见。这一切，从一开始就不是巧合。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0413_024",
+        "content": "就在此时，天机录深处那道沉寂已久的残魂守护者墨先生的声音骤然响起：「终于走到这一步了。血脉共鸣已成，棋局正式开始。」那声音平静却带着一丝难以察觉的欣慰，「记住，天命锁钥与天机录持有者，二者缺一不可。你妹妹的存在，是你最大的软肋，也是你最强的后盾。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

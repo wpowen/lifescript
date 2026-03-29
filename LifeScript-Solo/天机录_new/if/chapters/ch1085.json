@@ -1,0 +1,422 @@
+{
+  "id": "天机录_ch1085",
+  "book_id": "天机录",
+  "number": 1085,
+  "title": "天命归位",
+  "is_paid": true,
+  "next_chapter_hook": "正当所有人以为今日大典将以陈机的胜利告终时，人群深处突然传来一声颤抖的呼唤——「哥！」那道声音穿透喧嚣，直直撞入陈机心底最柔软的角落。失踪多年的陈念，就这样毫无预兆地出现在了他面前。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1085_001",
+        "content": "晨曦初破，皇都上空却已凝聚起厚重的灵云。陈机立于皇宫太和殿前的九龙台上，一身玄青长袍随风微动，面上不见丝毫波澜。台下万民翘首，无数道目光汇聚于此——有人期待，有人惶恐，更有人暗中磨刀霍霍。三日前魔道主帅派人送来的那张拜帖，此刻就静静躺在他的袖中。四个字如烙铁般灼烧着他的神经：故人重逢。这四个字背后，究竟是敌是友？"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1085_002",
+        "character_id": "char_chenji",
+        "content": "诸位既然来了，何不现身一见？",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_003",
+        "content": "话音未落，太和殿侧门轰然洞开。数道身影鱼贯而出，为首者正是玄武宗第一天才韩烈。他身后跟着十余名气息深沉的老者，皆是各大世家推举出的代表。韩烈眼中战意沸腾，嘴角却噙着一抹不屑的冷笑：「陈机，你不过是个走了狗屎运的废物，也敢在此装神弄鬼？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1085_004",
+        "character_id": "char_hanlie",
+        "content": "我玄武宗三十七名长老联名上书，要求彻查你的身份来历。一个杂役弟子，凭什么掌控皇朝命运？",
+        "emotion": "挑衅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_005",
+        "content": "韩烈的质问掷地有声，引得台下议论纷纷。那些原本就心怀不满的旧贵胄们纷纷挺直了腰杆，似乎看到了翻盘的希望。天青宗方向，凌渊缓缓睁开半阖的双眼，目光深邃难测。而人群之中，苏青瑶眉头紧锁，指尖已悄然凝聚起一道剑意——她知道，陈机从不做无准备之事。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1085_choice_001",
+        "prompt": "面对韩烈的当众质疑，陈机该如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1085_opt_001a",
+            "text": "以力压人，直接展示血脉共鸣",
+            "description": "不屑与蝼蚁废话，以绝对实力让所有人闭嘴。简短、粗暴、却最能震慑宵小。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗大量灵力",
+            "visible_reward": "全场震慑，无人再敢质疑",
+            "risk_hint": "过早暴露底牌，可能引来更大觊觎",
+            "process_label": "展示血脉之力",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 50
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1085_result_001a_001",
+                  "content": "陈机微微抬眸，目光如古井深潭，不起半分涟漪。下一瞬，一道璀璨的金色光柱自他天灵盖冲霄而起，瞬间撕裂了皇都上空的阴云。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1085_opt_001b",
+            "text": "以言入道，揭露韩烈阴谋",
+            "description": "将韩烈的质问逐条反驳，以言语为刃，将玄武宗的野心暴露于天下人眼前。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露部分布局",
+            "visible_reward": "韩烈颜面尽失，玄武宗阴谋曝光",
+            "risk_hint": "言语之战难以令所有人信服",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 40
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1085_result_001b_001",
+                  "character_id": "char_chenji",
+                  "content": "韩烈，你可知你父亲当年暗中与魔道勾结的证据，此刻就在我手中？",
+                  "emotion": "冷笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1085_opt_001c",
+            "text": "以退为进，等待最佳时机",
+            "description": "暂时隐忍不发，让对方充分表演后再一击致命。扮猪吃虎，方为上策。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暂时承受质疑",
+            "visible_reward": "积蓄气势，后发制人效果翻倍",
+            "risk_hint": "若时机把握不好，可能被认为心虚",
+            "process_label": "隐忍待机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1085_result_001c_001",
+                  "content": "陈机淡淡一笑，既不反驳也不辩解，只是负手而立，那份从容姿态反而让韩烈心中升起一丝不安。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_006",
+        "content": "金色光柱冲破九霄，方圆百里内的天地灵气如百川归海般向陈机汇聚。那道光芒中隐约可见九条五爪金龙盘旋缠绕，龙吟之声震颤大地。韩烈的脸色瞬间惨白——那是传说中的「天命真龙相」，唯有真正的天命之子方能显现的血脉异象。台下万民纷纷跪伏，连那些心怀叵测的旧贵胄也不得不低下头颅。凌渊的瞳孔骤然收缩，藏在袖中的双手已悄然掐诀。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_007",
+        "content": "陈机缓缓抬手，五指张开。虚空之中，无数道法则锁链如银蛇游动，从四面八方汇聚而来，在他掌心凝成一枚熠熠生辉的玉玺虚影。那是皇权法则的具象化——他要以天命之子的身份，重新书写这片天地的规则。所有人屏息凝神，等待着这位新主的宣判。空气中弥漫着紧张到令人窒息的气息，苏青瑶的手已按上剑柄，随时准备应对突发状况。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1085_008",
+        "character_id": "char_chenji",
+        "content": "尔等可知，当年陈天命为何而死？",
+        "emotion": "沉痛"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_009",
+        "content": "这个问题如惊雷炸响在每个人耳畔。陈天命——那个曾经主宰整个皇朝的名字，如今再次被人提起。韩烈的脸色变得极为难看，他显然没料到陈机会如此直接地揭开这段往事。凌渊的眼皮跳了跳，随即恢复平静。人群中开始窃窃私语，无数道目光在陈机身上来回打量，试图从他脸上找到答案。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1085_choice_002",
+        "prompt": "此刻陈机要如何公开自己的身世？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1085_opt_002a",
+            "text": "直言相告，承认天命之子身份",
+            "description": "大大方方地宣布自己就是陈天命的儿子，让天下人亲眼见证陈家血脉的回归。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "成为众矢之的",
+            "visible_reward": "名正言顺，号令天下无人敢违",
+            "risk_hint": "陈天命仇家遍布天下，公开身份必将引来无穷追杀",
+            "process_label": "当众认祖",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 60
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1085_result_002a_001",
+                  "character_id": "char_chenji",
+                  "content": "不错，我便是陈天命之子，陈机。父亲的遗志，由我来继承！",
+                  "emotion": "豪迈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "公开身份"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1085_opt_002b",
+            "text": "借势造势，不正面回应",
+            "description": "不直接承认，而是让众人自己得出结论。既保留退路，又能享受身份带来的红利。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "部分人仍存疑虑",
+            "visible_reward": "进可攻退可守，主动权在手",
+            "risk_hint": "暧昧态度可能让部分势力继续观望",
+            "process_label": "引导舆论",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 35
+              },
+              {
+                "stat": "名望",
+                "delta": 40
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1085_result_002b_001",
+                  "content": "陈机不答，只是抬手在空中虚画。一道陈家独有的血脉印记浮现，那正是陈天命留给后人的传承烙印。答案不言自明。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1085_opt_002c",
+            "text": "反问激将，让韩烈自食其言",
+            "description": "既然韩烈要查身份，那就让他先拿出证据。若拿不出，便是诬陷之罪。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能激化矛盾",
+            "visible_reward": "韩烈进退两难，当众出丑",
+            "risk_hint": "若对方真有证据，可能弄巧成拙",
+            "process_label": "以彼之道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 30
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1085_result_002c_001",
+                  "character_id": "char_chenji",
+                  "content": "韩烈，你口口声声要查我身份，那便拿出证据来。若拿不出，你便是欺君之罪！",
+                  "emotion": "凌厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_010",
+        "content": "血脉印记在空中缓缓旋转，金光大盛。那道印记中蕴含的古老气息令在场所有人都感到一阵窒息般的压迫——那是陈家历代先祖积淀的力量，是货真价实的皇室正统血脉传承。韩烈双膝一软，险些跪倒在地，他身后的那些老者更是面如死灰。凌渊终于站起身来，苍老的声音回荡在广场之上：「老夫天青宗凌渊，愿奉新主。」此言一出，局势彻底定鼎。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_011",
+        "content": "随着凌渊的臣服，九龙台下的万民如波浪般纷纷跪下。山呼海啸般的「万岁」声直冲云霄，震得皇都城墙都在微微颤抖。苏青瑶收剑入鞘，嘴角浮现一抹欣慰的笑意——这个男人，从来不会让她失望。墨先生的虚影在天机录上浮现，他的声音只有陈机能听见：「倒计时二十九日。天命之争，已入中局。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_012",
+        "content": "天机录的提醒如一盆冷水浇在心头。陈机面上不动声色，心中却已飞速运转。二十九日——这便是他与命运赛跑的时间。魔道主帅的「故人重逢」是福是祸？陈念是否安全？这些念头在脑海中一闪而过，他面上却依旧云淡风轻，俯瞰着脚下臣服的众生。恰在此时，一道微弱却无比熟悉的气息，从人群深处传来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_013",
+        "content": "那道气息如同一把钥匙，精准地插入了他心底最柔软的那道锁。陈机的呼吸骤然一窒，向来波澜不惊的瞳孔中竟泛起了难以抑制的涟漪。他猛地转头，目光如电般射向人群深处——在那里，一个衣衫褴褛却眉眼清秀的女子正踉跄着向九龙台跑来。她的脸上满是泪痕，嘴唇颤抖着，发出沙哑却清晰的声音：",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1085_014",
+        "character_id": "char_chenian",
+        "content": "哥——！哥！我终于找到你了！",
+        "emotion": "悲喜交加"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_015",
+        "content": "皇都的喧嚣在这一刻仿佛被按下了静音键。万民屏息，无数道目光落在那奔跑而来的女子身上。陈机的身形微微晃动了一下——这是他来到这个世界后，第一次失态。那张清秀却憔悴的面容，那声带着哭腔的呼唤，将他苦心经营多年的冷漠面具彻底击碎。失踪多年的妹妹，就这样出现在了他面前。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_016",
+        "content": "陈机深吸一口气，压下心中翻涌的情绪。他缓步走下九龙台，每一步都像是踏在众人心尖之上。万民自觉让出一条通道，所有人都静静地看着这一幕——方才还高高在上的天命之子，此刻却只是一个急于与亲人相认的哥哥。苏青瑶悄悄拭去眼角的湿润，嘴角浮现一抹温柔的笑意。墨先生的虚影微微闪烁，似乎在记录着这历史性的一刻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_017",
+        "content": "陈念扑进陈机怀中，哭声撕心裂肺。那些被圣宗囚禁的日子，那些独自逃亡的艰辛，此刻全都化作滚烫的泪水浸透了他的衣襟。陈机轻轻拍着她的背，声音低哑却温柔：「没事了……哥在这里。」这一刻，他不再是算无遗策的陈机，只是一个终于找到妹妹的哥哥。周围的禁卫军默默后退了数步，给这对苦命的兄妹留出了空间。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_018",
+        "content": "良久，陈念终于止住了哭泣。她抬起头，泪眼朦胧地看着陈机，声音沙哑：「哥，我听到他们说……你今天要在皇都登基？」陈机微微点头，伸手为她拭去脸上的泪痕。人群中传来阵阵骚动——天命之子竟然还有一个妹妹？这个消息如长了翅膀般迅速传开。凌渊的眼中闪过一丝精光，似乎在盘算着什么。而人群之外的某处暗影中，一双幽深的眼眸正静静注视着这一切。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1085_019",
+        "content": "天机录的残页在陈机识海中微微震颤，关于陈念的预见画面依旧是模糊不清的——这是「天命锁钥」的特殊体质在作祟。她的出现会干扰天机录的预言，让未来变得不可捉摸。陈机眉头微皱，心中涌起一丝隐忧。但下一刻，他便将这份忧虑压下。不管未来如何，这个妹妹，他陈机护定了！"
+      }
+    }
+  ]
+}

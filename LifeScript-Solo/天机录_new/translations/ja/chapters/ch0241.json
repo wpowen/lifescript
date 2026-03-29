@@ -1,0 +1,422 @@
+{
+  "id": "天机录_ch0241",
+  "book_id": "天机录",
+  "number": 241,
+  "title": "秘境開放・入場式",
+  "is_paid": true,
+  "next_chapter_hook": "Chen Jiは公の場で魔道の陰謀を暴き刺客三人組は逆に撃殺され、正道各派は騒然となった——そしてこれらすべては、彼の棋盤に落ちた第一子に過ぎなかった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0241_001",
+        "content": "天光が大きく輝き、古老なる祭壇の上に、九本の金色光柱が空へと突き立ち、蒼穹全体を玄黄色に染めた。上古秘境「天機閣」開放儀式が正式に始まった。各宗の長老たちが空を御して到来し、天青宗・玄武宗・白虎宗の旗が雲端で翻り、数十名の核心弟子が両側に並び、雰囲気は厳か到了极点。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_002",
+        "content": "Chen Jiは核心弟子の列の中に立ち、一身の青色道袍が風に揺れ、面上は静水のように平静そのもの。周囲から向けられる視線は決して平静ではない——嘲り、嫉妬、疑念、さまざまな情绪が入り混じる。この廃物凭什么站在这里？天青宗内門弟子たちが内々話し、その声は低くは言っても、明確にChen Jiの耳に届いた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_003",
+        "character_id": "char_chenji",
+        "content": "（面上微笑，心中冷笑）廃物？有意思。等会儿让你们看看，谁才是真正的废物。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_004",
+        "content": "天機録残頁忽然微微发热，那熟悉的刺痛感从眉心蔓延开来。Mo Xianshengの残魂声音が脑海中に响起：「来た。西北角，三人，刺杀目標——玄武宗大长老。」Chen Ji眸微缩，面上却不动声色，继续以那副人畜无害的表情环顾四周。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_005",
+        "character_id": "char_moxiansheng",
+        "content": "「小心行事。この三人は魔道聖宗の死士で、气息隠蔽に擅长している。」Mo Xianshengの声には一丝凝重が込められ、「もし直接手を出すなら、多大な'attention'を引いてしまうだろう。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_006",
+        "content": "Chen Ji心中快速盘算。三名の魔道死士、玄武宗大长老を刺杀——この場面は自分への嘲笑よりずっと興味深い。天機録の映像再び浮现：三道の黑影が人群中暴起し、毒針が空を裂き、大长老当场倒地，血が三尺飞散。而他Chen Ji，将作为目击者被各宗问责。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0241_007",
+        "prompt": "刺客即将动手，时间紧迫！Chen Ji必须做出选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "直接对抗",
+            "text": "直接出手拦截",
+            "description": "雷霆の势いで毒針当场格挡，公的实力展示して全场を震慑させるが，各宗の'attention'と調査を引き起こす。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "玄武宗大长老好感获得",
+            "risk_hint": "凌渊老掌门的'attention'を招く可能性がある",
+            "process_label": "拦截刺客",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_直接对抗_001",
+                  "content": "Chen Ji身形一晃，众人还未反应过来之际，已然掠至半空。袖袍一挥，三道寒芒被他尽数拂落，那三名死士还没来得及惊呼，便被一股柔劲震退数丈。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_直接对抗_002",
+                  "character_id": "char_chenji",
+                  "content": "（微微拱手，面带歉意）大长老受惊了。この数名……对你的不太礼貌ですね。",
+                  "emotion": "温和"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借势",
+            "text": "借势引爆全场",
+            "description": "刺客の刺杀成功を誘導し，玄武宗と魔道聖宗の仇恨坐收漁翁之利とするが，大长老が陨落する可能性あり。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "玄武宗大长老可能陨落",
+            "visible_reward": "魔道与正道彻底交恶，各宗联盟瓦解",
+            "risk_hint": "若被察觉居心，后果不堪设想",
+            "process_label": "引导刺杀",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_借势_001",
+                  "content": "Chen Ji嘴角微微上扬，故意后退一步，让出一条通路。三名死士见状大喜，以为找到了绝佳的刺杀角度，齐齐暴起——",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_借势_002",
+                  "character_id": "char_chenji",
+                  "content": "（心中默念）去吧，让玄武宗知道魔道の厉害。这笔账，日后再算。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "隐忍",
+            "text": "隐忍暗中布局",
+            "description": "按兵不动，待刺客得手后再揭发，以“目击证人”身份介入，保持废物人设同时掌控局势。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "大长老受伤",
+            "visible_reward": "以目击者身份获得各宗信任",
+            "risk_hint": "若大长老重伤不治，可能被怀疑是同谋",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_隐忍_001",
+                  "content": "Chen Ji垂下眼帘，将气息压制到最低限度，完美地扮演着一个被吓傻了的废物弟子。三道黑影暴起，毒針破空——玄武宗大长老闷哼一声，肩头染血。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_隐忍_002",
+                  "character_id": "char_chenji",
+                  "content": "（压低声音惊呼）有刺客！魔道の者だ！",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_008",
+        "content": "就在此时，一道幽冷的声音在Chen Ji脑海中响起，与Mo Xianshengの苍老截然不同——那是Ye Qing，魔道聖宗圣女的声音：「Chen Ji，我看到你的布局了。刺客是我们的人，但你不会真的让他们成功，对吗？」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_009",
+        "character_id": "char_yeqing",
+        "content": "「有趣。」Ye Qing的声音带着几分玩味，「你想借刀杀人，还是想英雄救美？告诉我，我可以帮你一把——当然，作为交换，你欠我一个人情。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_010",
+        "content": "Chen Ji眸光微闪。这位魔道圣女，果然不简单。他快速思索——Ye Qingの「魔道迷雾」可以遮掩天機録气息，若能得到她的配合，这次布局将更加完美。但与她合作，无异于与虎谋皮。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0241_011",
+        "prompt": "Ye Qing提出合作，Chen Ji该如何回应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "接受合作",
+            "text": "接受合作",
+            "description": "与Ye Qing联手，借她的魔道迷雾掩护自己的行动，建立初步信任关系。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "欠下人情",
+            "visible_reward": "获得魔道迷雾遮掩天機録气息",
+            "risk_hint": "Ye Qing心思深沉，人情难还",
+            "process_label": "建立合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_接受合作_001",
+                  "character_id": "char_chenji",
+                  "content": "（传音）好，我答应你。但记住，你的迷雾只能用来遮掩我的气息，刺杀的事——让他们去。",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_接受合作_002",
+                  "character_id": "char_yeqing",
+                  "content": "「成交。」Ye Qing的声音带着笑意，「你比我想象的有趣多了，Chen Ji。」",
+                  "emotion": "愉悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "拒绝合作",
+            "text": "拒绝合作",
+            "description": "婉拒Ye Qing的好意，保持独立行动，不欠魔道任何人情。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "失去魔道迷雾掩护",
+            "visible_reward": "保持绝对独立，不留把柄",
+            "risk_hint": "天機録气息可能暴露",
+            "process_label": "独立行动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_拒绝合作_001",
+                  "character_id": "char_chenji",
+                  "content": "（传音）不必了。Chen Jiの棋局，不需要外人插手。",
+                  "emotion": "冷淡"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_拒绝合作_002",
+                  "character_id": "char_yeqing",
+                  "content": "「……有意思。」Ye Qing沉默了片刻，「那我就看看，你这只小狐狸怎么从这盘棋里脱身。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_012",
+        "content": "刺客の毒針已经离手，三道寒芒直取玄武宗大长老面门。就在这千钧一发之际，Chen Ji终于动了——他并没有直接拦截，而是在电光火石之间，用袖袍卷起一阵劲风，将毒針的方向微微一偏。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_013",
+        "character_id": "char_hanlie",
+        "content": "玄武宗第一天才是Han Lie，大喝一声：「何方宵小，敢伤我宗门长老！」彼の一拳轰出，将其中一名死士震成血雾。另外两名死士见势不妙，正要撤退，却被天青宗的几位长老联手封锁了退路。",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_014",
+        "content": "全场哗然。各宗弟子惊慌失措，长老们纷纷祭出法宝护住自家弟子。而Chen Ji，则在混乱中悄然后退几步，重新变回那副惊恐失措的废物模样。只是他的嘴角，勾起了一抹不易察觉的弧度。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_015",
+        "character_id": "char_suqingyao",
+        "content": "天青宗内門首席Su Qingyao眉微皱，目光在人群中扫过，最终定格在Chen Ji身上。彼女の直感告诉她，刚才那阵风来得太过蹊跷——可当她想要细看时，那废物已经缩进了人群深处，一脸无害。",
+        "emotion": "怀疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_016",
+        "content": "两名魔道死士被生擒，在各宗长老的審問下，供出了幕后主使——魔道聖宗。玄武宗大长老虽然受伤，但因Chen Ji那一袖偏转，毒針并未命中要害，此刻正铁青着脸，与天青宗、白虎宗的长老商议对策。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_017",
+        "content": "Chen Ji趁乱离开人群，寻了一处僻静角落。Mo Xiansheng的声音再次响起：「做得好。毒針を偏转而非直接拦截，既救了人，又不引人注目——但Su Qingyao已经起疑了。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_018",
+        "character_id": "char_moxiansheng",
+        "content": "「无妨。」Chen Ji淡淡开口，「让她疑着。只要没有证据，她就永远只能在门外徘徊。」彼の目光越过人群，落在远处云端那道若隐若现的黑影上——那是Ye Qing，正在饶有兴味地注视着他。",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_019",
+        "content": "秘境入口缓缓开启，金色光柱中浮现出一座巍峨の宮殿輪郭。各宗长老商议后决定：入場仪式照常进行，但各宗需加倍警惕，魔道势力显然已经渗透进来。玄武宗大长老冷哼一声，亲自领队进入秘境，Chen Ji紧随其后。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_020",
+        "content": "踏入秘境的一瞬间，Chen Ji感到天機録猛然震动了一下。的心中一凛——这里面，果然藏着更大的秘密。而他即将面对的，或许不仅仅是魔道の阴谋，还有那冥冥之中注视着他的「天道之眼」。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

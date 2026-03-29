@@ -1,0 +1,376 @@
+{
+  "id": "天机录_ch1177",
+  "book_id": "天机录",
+  "number": 1177,
+  "title": "废物反击",
+  "is_paid": true,
+  "next_chapter_hook": "就在两宗高手以为胜券在握之际，一道跨越维度的意志投影轰然降临——那是维度入侵者的主帅，它第一次正眼看向了这个所谓的废物。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1177_001",
+        "content": "令牌落地的脆响在祭坛上回荡，凌渊的瞳孔骤然收缩——那枚令牌上，一只漆黑的竖瞳正冷冷地注视着他，仿佛天道本身的凝视。天青宗历代掌门令牌皆以真龙为纹，唯独这枚……是天青宗开派三千年以来，从未出现过的禁忌印记。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_002",
+        "character_id": "char_lingyuan",
+        "content": "不可能……这令牌是我亲手销毁的！当年我将陈玄推入禁地之时，亲眼看着这枚令牌在雷劫中化为飞灰！",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_003",
+        "content": "凌渊的声音第一次失去了那副高高在上的从容，指节微微颤抖。他身后的天青宗长老们面面相觑——他们从未见过掌门如此失态。陈机站在原地，衣袍染血，狼狈不堪，可嘴角却缓缓勾起了一抹弧度，那笑意冷得像腊月的霜。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_004",
+        "character_id": "char_chenji",
+        "content": "销毁？凌掌门，您销毁的不过是第一层幻象罢了。真正的令牌，一直在皇陵深处等着您回来取呢。",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_005",
+        "content": "话音未落，祭坛四周骤然亮起十二道光柱，每一道光柱中都浮现出一枚古老的符文——那是天青宗开派祖师的封印阵法，本该随着祖师飞升而消散，此刻却被人重新激活。凌渊脸色剧变：“这阵法只有掌门才能开启……你究竟是谁！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_006",
+        "character_id": "char_hanlie",
+        "content": "够了！跟一个废物废什么话！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_007",
+        "content": "玄武宗方向，韩烈再也按捺不住，一声暴喝震动四野。他双拳轰出，玄武真意化作一头吞噬天地的巨兽虚影，朝陈机碾压而去。那是他成名绝技“玄武碎虚拳”，曾一拳轰碎过一座宗门山脉。废物？在他眼里，从未有人配得上这三个字——除了他自己。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_008",
+        "character_id": "char_chenji",
+        "content": "韩师兄，何必这么急呢？您不是说废物不配与您同台吗？那您亲自出手，岂不是自降身份？",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_009",
+        "content": "陈机的声音不疾不徐，哪怕那拳风已经近在咫尺，他的眼神依然平静如水。说时迟那时快，祭坛中央那座尘封已久的皇陵石门轰然洞开，一道璀璨得近乎刺目的光芒冲霄而出，将韩烈的玄武虚影生生撞碎！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1177_choice_001",
+        "prompt": "皇陵大门开启，被封印的远古力量正在苏醒。两宗高手被眼前的异变吸引，注意力出现短暂真空——这是绝佳的反击时机，但陈机也感知到门后那股力量的危险。他该如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1177_choice_001_opt1",
+            "text": "借势",
+            "description": "借助皇陵释放的力量，正面硬刚两宗联手，以绝对实力碾压",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗10点天命值",
+            "visible_reward": "三界共鸣之力首次完整展现，名震天下",
+            "risk_hint": "天命值消耗过大，后续战斗难以为继",
+            "process_label": "借皇陵之力反击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 50
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1177_result_choice_001_opt1_01",
+                  "content": "陈机眼中精光一闪，双手结印，天机录残页在眉心处浮现出刺目的金光。他不再隐忍——三年的隐忍已经够了。刹那间，三界之力如百川归海般涌入他体内，那股力量磅礴得让天地都在颤抖。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1177_choice_001_opt2",
+            "text": "隐忍",
+            "description": "继续示弱，引诱更多敌人进入皇陵力量波及范围，一网打尽",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "承受一击",
+            "visible_reward": "将两宗核心战力全部引入陷阱",
+            "risk_hint": "若被针对可能当场陨落",
+            "process_label": "以身为饵设局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 40
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1177_result_choice_001_opt2_01",
+                  "content": "陈机身体一晃，踉跄后退三步，一口鲜血喷出，染红了胸前的衣襟。众人只见废物吐血，却不知那口血精准地落在了皇陵阵法的核心节点上——血祭，已成。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_011",
+        "content": "皇陵深处传来的轰鸣声越来越响，一尊高达百丈的石像从门内缓缓升起。那石像面目模糊，身披残破的帝王冕服，周身缠绕着三道颜色各异的光芒——红、蓝、紫，代表着人、鬼、仙三界的力量。它睁眼的瞬间，天地变色，两宗高手的护体灵光同时黯淡了三分。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_012",
+        "character_id": "char_lingyuan",
+        "content": "三界……三界之力！不可能，上古时代就已经没有人能同时驾驭三界之力了！",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_013",
+        "content": "凌渊的脸色彻底变了，他猛然意识到什么，厉声高喊：“所有人撤退！这是陷阱！那个废物从一开始就在布局——”然而，他的命令还没喊完，那尊石像忽然动了。它缓缓抬起一只手，掌心向下，轻轻一压。只是一压，玄武宗方向便有七名核心弟子当场化为血雾，连惨叫都来不及发出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_014",
+        "character_id": "char_hanlie",
+        "content": "韩烈目眦欲裂，双拳疯狂输出，玄武真意化作无数道黑色闪电劈向石像。然而那些足以轰碎金丹期修士所有防御的攻击，落在石像身上连一道痕迹都没能留下。他第一次在正面交锋中被如此无视，脸上的傲慢终于碎裂成了纯粹的恐惧。",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1177_choice_002",
+        "prompt": "石像的力量已经展示完毕，两宗高手陷入混乱。陈机的布局已经成功了一大半，但他仍有机会选择接下来的行动——是继续看戏让他们自相残杀，还是亲自出手收割战果？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1177_choice_002_opt1",
+            "text": "直接对抗",
+            "description": "亲自动手，当着所有人的面展现真正的观测者之力，震慑全场",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露天机录的存在",
+            "visible_reward": "凌渊与韩烈当场失态，彻底击碎他们的傲慢",
+            "risk_hint": "可能引来更高层次的关注",
+            "process_label": "亲自出手终结",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 30
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              },
+              {
+                "stat": "魅力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 60
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1177_result_choice_002_opt1_01",
+                  "character_id": "char_chenji",
+                  "content": "够了。",
+                  "emotion": "淡漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1177_choice_002_opt2",
+            "text": "借势",
+            "description": "让石像继续碾压，借两宗的手消耗石像力量，自己坐收渔翁之利",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "两宗可能有人逃脱",
+            "visible_reward": "同时削弱两宗核心战力，坐山观虎斗",
+            "risk_hint": "石像力量失控可能伤及无辜",
+            "process_label": "坐山观虎斗",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 35
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1177_result_choice_002_opt2_01",
+                  "content": "陈机负手而立，冷眼看着祭坛上的混乱。石像的力量虽然强大，但陈机心里清楚，这不过是皇陵封印松动时泄漏出的一缕气息罢了。真正的考验，还在后面。他需要的，只是让这些自以为是的家伙多流一点血。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_016",
+        "content": "就在两宗高手被石像压制得节节败退之际，一道跨越虚空的意志投影轰然降临。那投影没有实体，只有一双眼睛——一双由纯粹维度之力凝聚的眼睛，冷漠地扫过在场所有人，最后落在了陈机身上。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_017",
+        "character_id": "char_tiandaozhiyan",
+        "content": "有意思。",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_018",
+        "content": "只有三个字，但那三个字落在陈机耳中，却如同惊雷炸响。天道之眼的意志投影——维度入侵者的主帅，居然亲自现身了。这意味着什么？意味着他布下的这盘棋，终于引起了那个凌驾于一切之上的存在的注意。凌渊和韩烈此刻都愣住了，他们从未见过维度入侵者的主帅真容，此刻却亲眼目睹它向一个废物……点头致意？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_019",
+        "character_id": "char_tiandaozhiyan",
+        "content": "天青宗废物弟子陈机，你很有意思。本帅记住你了。",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_020",
+        "content": "话音落，维度投影消散。祭坛上一片死寂，所有人都僵在原地——堂堂维度入侵者的主帅，亲自现身承认一个废物是值得正视的对手？韩烈的脸色青一阵白一阵，他张了张嘴，想说什么，却发现自己的喉咙像是被什么东西堵住了。凌渊的指尖在微微发抖，三千年的算计、三千年的隐忍，在这一刻全部化为了笑话——他苦心打压的废物，被天道之眼亲自点了名。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1177_021",
+        "character_id": "char_chenji",
+        "content": "陈机缓缓抬手，拂去衣襟上的血迹，语气平淡得像在说今日天气：“凌掌门，韩师兄，还有各位……棋局还没结束，这才刚刚开始。你们刚才不是很喜欢看废物挣扎吗？现在轮到我了。”",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1177_022",
+        "content": "皇陵石门缓缓合拢，三界之力重新归于沉寂。但所有人都知道，那个被他们嘲笑了三年的废物，已经撕下了所有的伪装。维度入侵者主帅的亲自点名，像一记响亮的耳光抽在了在场每一个人的脸上——包括那些曾经对陈机冷嘲热讽的天青宗弟子，此刻全都噤若寒蝉。他们这才意识到，自己嘲笑的，根本不是什么废物，而是一头正在苏醒的猛兽。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

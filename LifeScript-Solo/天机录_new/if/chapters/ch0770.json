@@ -1,0 +1,411 @@
+{
+  "id": "天机录_ch0770",
+  "book_id": "天机录",
+  "number": 770,
+  "title": "遗迹第一关",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机踏入通道的瞬间，一道虚幻的影像在墓穴深处凝聚——那是陈玄的模样，却带着令人心悸的威压：\"后来者，你终于来了。\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0770_001",
+        "content": "阴冷的气息如实质般压来，陈机站在第一道石门之后，眼前是令他瞳孔骤缩的景象——数以万计的棺椁整齐排列，每一具都泛着幽暗的青铜光泽，仿佛沉睡的巨兽蛰伏在这片亘古的黑暗中。棺椁之上，密密麻麻的符文如血管般蔓延，交织成一张覆盖整个墓穴的巨大阵网。空气中弥漫着腐朽与古老交织的气息，像是有无数亡魂在低语。陈机的手指微微颤抖——不是恐惧，而是兴奋。他等待这一刻已经太久。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0770_002",
+        "character_id": "char_moxiansheng",
+        "content": "「这是万魂封天阵。」墨先生的声音从陈机眉心响起，带着罕见的凝重，「每一具棺椁中都封印着一缕残魂，它们是陈玄当年征战的见证，也是这座遗迹的第一道考验。想要通过，你必须让这张阵网主动为你让开道路——强行破坏，只会让你成为这万魂之一。」",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_003",
+        "content": "陈机缓缓闭上双眼，天机录残页在识海中微微发热。那熟悉的天命值消耗感涌上心头——5点，为了窥见这三时辰内的关键。他没有犹豫，任由那股力量在眉心炸开。刹那间，未来的画面如走马灯般掠过——阵法核心在东南方向，那里有一处肉眼难辨的能量漩涡，是整张阵网的命门所在。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0770_004",
+        "prompt": "天机录已经指明了阵法核心的位置，但陈机必须选择如何抵达那里——这将决定他在这道考验中的消耗程度。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0770_004_硬闯",
+            "text": "硬闯破解",
+            "description": "以自身灵力强行撕裂阵网阻碍，最快但消耗巨大，且可能惊醒沉睡的亡魂。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗灵力30%，激怒亡魂",
+            "visible_reward": "快速通过，震慑潜在敌人",
+            "risk_hint": "万魂齐出的风险",
+            "process_label": "硬闯",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_硬闯_001",
+                  "content": "陈机低笑一声，青色灵力在掌心凝聚成刃。他身形如电，直接冲入阵网最密集的区域。灵力刃划过的瞬间，符文剧烈扭曲，发出刺耳的悲鸣。沉睡的棺椁开始震动，一缕缕黑雾从中溢出——亡魂正在苏醒。但陈机没有停下，反而加速冲向东南方向。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "激怒亡魂"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0770_004_借力",
+            "text": "借力打力",
+            "description": "引导阵法本身的能量作为驱动力，顺势而为，消耗最小但需要精确控制。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要时间布局",
+            "visible_reward": "灵力消耗仅10%，保持隐蔽",
+            "risk_hint": "阵法能量反噬风险",
+            "process_label": "借力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_借力_001",
+                  "content": "陈机停下脚步，目光扫过那些符文脉络。他在识海中飞速推演——这阵法本质是循环系统，有吸必有吐。片刻后，他盘膝而坐，以天机录残页为媒介，在阵网上撕开一道微小的裂口。阵法的本能修复机制立刻启动，能量如潮水般涌向裂口，陈机顺势滑入那股洪流之中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "阵法借力"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0770_004_智取",
+            "text": "以智取胜",
+            "description": "激活天机录的全部推演能力，模拟阵法运行逻辑，找出完美路径。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗天命值10点",
+            "visible_reward": "获得阵法完整运行图，可能发现额外机缘",
+            "risk_hint": "天命值大量消耗",
+            "process_label": "智取",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_智取_001",
+                  "content": "陈机深吸一口气，任由天机录在识海中燃烧。那是一种灵魂被抽离的感觉，天命值如流水般消逝，但换取来的是前所未有的清晰——整张阵网在他眼中化为一张完整的脉络图，每一个节点、每一条能量流向都无所遁形。他甚至看到了核心处那个隐藏的第二入口——一条陈玄特意留下的后门。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "完整阵图",
+              "隐藏入口"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_005",
+        "content": "无论选择哪条路，陈机终于站在了阵法核心之前。那是一颗悬浮在半空的晶石，内部流转着混沌的光芒，像是一颗被囚禁的心脏。而晶石之上，赫然刻着一行古朴的文字——「天机者，以命换天机，可乎？」陈机的心脏猛地一跳，这正是他一直想要知道的真相。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0770_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "就在此时，一道冰冷的声音在陈机脑海中炸响——那是超越的存在，直接穿透了他的识海。「陈机，天机录的继承者。」那声音没有情感，却带着令人窒息的威压，「你以为你是棋手？不，你只是我落下的又一颗棋子。每一任预言者，都以为自己能够改写命运，最终都成为命运的一部分。」",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_007",
+        "content": "陈机的瞳孔骤缩，但他很快压下心中的惊涛骇浪。墨先生曾说过，天道之眼一直在注视着他——但真正面对这股超越性的力量时，他才意识到自己有多么渺小。然而，渺小不代表无用。他嘴角勾起一抹冷笑：「既然是棋子，那我就做一颗能吃掉整盘棋的棋子。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0770_008",
+        "prompt": "天道之眼的威压如实质般笼罩着陈机，而阵法核心正在等待他的回应。他必须选择如何面对这个超越性的存在。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0770_008_硬抗",
+            "text": "正面硬抗",
+            "description": "以天机录的力量对抗天道之眼的压制，展现不屈意志。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值-15，灵魂受损",
+            "visible_reward": "在对抗中领悟枷锁本质，获得抵抗能力",
+            "risk_hint": "可能触发天道之眼更强制裁",
+            "process_label": "对抗",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_硬抗_001",
+                  "content": "陈机猛然睁开双眼，天机录残页在识海中爆发出刺目的光芒。他不再是被动承受，而是主动迎向那股威压。灵魂层面的碰撞让他七窍溢血，但天道之眼的压迫竟然被撼动了一瞬。「这就是枷锁的真相吗？」他嘶哑地笑道，「以我的天命值为锁链，换取预知未来的能力——我偏要打破这条锁链！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "枷锁松动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0770_008_周旋",
+            "text": "隐忍周旋",
+            "description": "暂时收敛锋芒，以退为进，暗中寻找破绽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "承受威压侵蚀",
+            "visible_reward": "保存实力，发现天道之眼的监视盲区",
+            "risk_hint": "可能被天道之眼看穿意图",
+            "process_label": "周旋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_周旋_001",
+                  "content": "陈机收敛心神，表面承受着威压，暗中却在分析这股力量的运作规律。天道之眼的压迫并非无懈可击——它在监视，却没有直接出手干预的能力。这说明什么？说明它受制于某种规则，不能亲手抹杀预言者。这是枷锁，也是保护。陈机将这个发现深埋心底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "监视盲区"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_009",
+        "content": "就在陈机与天道之眼对峙的关键时刻，阵法核心的晶石突然炸裂。一道苍老而威严的声音从中传出，带着万年岁月的沉淀：「够了。」仅仅两个字，天道之眼的威压便如潮水般退去。陈玄的残影在晶石碎片中缓缓凝聚，那是一张与陈机有三分相似的面孔，眼中没有陈机惯有的冷漠，只有深深的疲惫。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0770_010",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的声音再次响起，这一次带着难以抑制的激动：「陈玄前辈！您终于……」话未说完，陈玄的残影便抬手制止了他。「墨先生，好久不见。」陈玄的目光落在陈机身上，仿佛在看一件精心布置的艺术品，「你做得很好，比我当年更好。能在第一关就看穿天道之眼的真面目，你的枷锁松动得比我预想的更快。」",
+        "emotion": "欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_011",
+        "content": "陈机直视着这位传说中的先祖，声音平静得可怕：「所以，枷锁的真相究竟是什么？」陈玄的残影沉默了片刻，然后缓缓开口：「天机录确实以天命值为代价换取预知能力，但真正的枷锁不在于消耗，而在于——每一次预知，都是在天道之眼的注视下进行。你看到的未来，是它想让你看到的。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0770_012",
+        "character_id": "char_moxiansheng",
+        "content": "陈玄的残影继续说道，每一个字都像是从远古传来的钟鸣：「但你有一处不同——你的妹妹陈念。天命锁钥的存在干扰了天机录的预见，那些模糊的画面，恰恰是天道之眼无法触及的盲区。这是缺陷，也是突破枷锁的唯一钥匙。」陈机的心脏猛地收紧，他想起了那个被圣宗带走的女孩，心中涌起前所未有的愤怒。",
+        "emotion": "悲痛"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0770_013",
+        "prompt": "陈玄揭示了枷锁的真相——陈念就是打破枷锁的关键。陈机必须决定接下来如何行动。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0770_013_立即追问",
+            "text": "立即追问陈念下落",
+            "description": "陈念是陈机最大的软肋，立刻追问她的具体位置。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能显得急躁",
+            "visible_reward": "获得关键信息",
+            "risk_hint": "陈玄可能有所隐瞒",
+            "process_label": "追问",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_立即追问_001",
+                  "content": "「陈念在哪？」陈机的声音不再平静，那是他压抑多年的情感第一次如此明显地流露，「告诉我，她在哪？」陈玄的残影看着他的后人，眼中闪过一丝复杂的神色：「她的位置我无法直接告诉你，但我可以告诉你第二关的入口。在那里，你会得到更多线索。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得第二关线索"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈念下落",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0770_013_压下情绪",
+            "text": "压下情绪继续询问",
+            "description": "保持冷静，先弄清遗迹的全部真相再寻找陈念。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "内心煎熬",
+            "visible_reward": "获得更完整的信息和遗迹地图",
+            "risk_hint": "可能错过最佳时机",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0770_result_压下情绪_001",
+                  "content": "陈机闭上眼睛，用了三息时间将翻涌的情绪重新压回心底。再睁眼时，他的目光已恢复冰冷：「第二关的入口在哪里？还有，我需要知道更多关于天道之眼的事。」陈玄的残影微微颔首：「好。能在这种情况下保持理智，你比我更适合走这条路。」残影抬手，一道光芒没入陈机眉心。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "完整遗迹图"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_014",
+        "content": "陈玄的残影开始消散，但他的声音依然在墓穴中回荡：「最后一件事。当你找到陈念时，你会面临一个选择——用她的天命锁钥之力彻底打破枷锁，还是保留她的完整。这个选择没有对错，只有代价。」残影彻底消失的瞬间，阵法核心的晶石碎裂处，一道幽深的通道缓缓显现。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_015",
+        "content": "陈机站在通道前，感受着从深处传来的压迫感。万魂封天阵的威压已经消失，取而代之的是一种更加纯粹的力量——那是来自上古的气息，仿佛有什么沉睡的存在正在苏醒。墨先生的声音在脑海中响起：「第二关比第一关危险十倍，你确定要现在进去？以你现在的状态，天命值已经不足三十点了。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_016",
+        "content": "陈机没有回答墨先生的问题。他低头看着自己的双手，感受着体内灵力的流转，以及识海中天机录残页的微弱跳动。枷锁确实松动了——不是因为他的力量变强了，而是因为他第一次真正看清了这条锁链的全貌。从今以后，每一次使用天机录，他都将带着这份清醒。他嘴角勾起一抹冷笑：「走吧。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0770_017",
+        "content": "就在陈机踏入通道的瞬间，一道虚幻的影像在墓穴深处凝聚——那是陈玄的模样，却带着令人心悸的威压。那影像开口，声音苍老而威严：「后来者，你终于来了。」陈机停下脚步，瞳孔微缩。陈玄的残影在通道入口处缓缓成形，那张与陈机有三分相似的面孔上没有任何表情，只有无尽的深邃。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

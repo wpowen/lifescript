@@ -1,0 +1,618 @@
+{
+  "id": "天机录_ch0620",
+  "book_id": "天机录",
+  "number": 620,
+  "title": "皇城暗流",
+  "is_paid": true,
+  "next_chapter_hook": "那枚刻有天机阁遗迹特有纹路的玉简，究竟来自何人之手？而此人调查陈念的目的，又是为了什么？",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0620_001",
+        "content": "夜色如墨，皇城东南角的醉仙楼却灯火通明。\n\n陈机换下那身招摇的朝服，着一袭青衫立于二楼雅间窗前，指尖轻叩着檀木窗棂。楼下街巷的喧嚣被刻意隔在外头，只余烛火噼啪声响，映得他眉眼愈发深邃。\n\n\"公子，兵部尚书秦大人已到楼下。\"侍从低声禀报。\n\n陈机唇角微扬，那笑里没有半分温度。方才朝堂之上，那位使者捂脸退去的狼狈模样犹在眼前，而眼下——才是他真正布下的第一枚棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_002",
+        "character_id": "char_chenji",
+        "content": "有请。\n\n陈机转身，亲自为秦尚书斟了一盏茶。动作行云流水，仿佛这不是一场尔虞我诈的博弈，而是故人重逢的闲叙。\n\n秦明达五十余岁，身形魁梧，面上沟壑纵横，一双虎目精光内敛。他扫了一眼茶盏，又看向陈机，沉默片刻方道：\"陈大人好兴致，深夜相邀，不怕隔墙有耳？\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_003",
+        "character_id": "char_chenji",
+        "content": "陈机将茶盏往前一推，笑意温和：\"秦大人戎马半生，难道还怕几堵薄墙？\"\n\n他顿了顿，语气忽而转凉：\"实不相瞒，今日请大人前来，是有一桩互利之事相商。玄武宗近日蠢蠢欲动，大人可知晓？\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_004",
+        "content": "秦明达端起茶盏浅啜一口，目光却始终钉在陈机脸上。这位年轻的朝堂新贵，不过数日便将玄武宗使者得罪了个彻底——偏偏陛下还护着他。\n\n朝堂上的风向变得太快，快到这老狐狸都有些不适应。但秦明达见过太多起起落落，深知能在风波中屹立不倒的，从来不是最锋利的那把刀，而是藏得最深的那只手。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0620_005",
+        "prompt": "秦明达久居官场，老谋深算。陈机需要展示足够的筹码才能打动这头老狐狸——你打算用什么方式说服他？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0620_005_A",
+            "text": "利益交换",
+            "description": "直接亮出筹码：玄武宗内部的兵力部署图，以及三处秘密粮仓的位置。军权需要情报支撑，这是最实在的东西。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗一份珍贵情报",
+            "visible_reward": "获得秦明达信任，兵部暗中支持",
+            "risk_hint": "情报一旦给出便失去主动权，若秦明达转投他主，将成隐患",
+            "process_label": "以利驱之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_005_A_1",
+                  "content": "秦明达接过陈机递来的密函，展开一看，瞳孔骤然收缩。\n\n\"这……\"他声音微哑，\"陈大人从何处得来？\"\n\n陈机只是笑：\"秦大人只需知道，这份情报足够让玄武宗在开战前便折损三成战力。至于来源——\"他顿了顿，\"大人日后自会明白。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_A_2",
+                  "character_id": "char_chenji",
+                  "content": "秦明达沉默良久，忽然拱手一礼：\"陈大人有此筹码，本官自然愿意听候差遣。只是——\"他目光闪烁，\"大人既要与玄武宗为敌，又打算如何应对天青宗内部的暗流？\"\n\n陈机眸光微动。这老狐狸果然嗅到了什么。",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_005_B",
+            "text": "威胁合作",
+            "description": "不急着亮底牌，而是暗示自己知道秦明达私通魔道的事。以把柄相挟，逼他站队。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能结下死仇",
+            "visible_reward": "秦明达被迫服从，不敢有二心",
+            "risk_hint": "秦明达是沙场老将，逼急了狗急跳墙，反而可能成为敌人",
+            "process_label": "以势压之",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_B_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机笑意不减，从袖中取出一枚玉牌轻轻搁在桌上。玉牌表面刻着一道诡异的魔纹，那是魔道圣宗的标识。\n\n\"秦大人可认得此物？\"他的声音温和得近乎残忍，\"三年前北境之战，大人与魔道暗通款曲的证据——本官手里还有一些。\"",
+                  "emotion": "阴冷"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_B_2",
+                  "character_id": "char_chenji",
+                  "content": "秦明达面色骤变，虎目中精光暴涨，手已悄然按上腰间佩剑。\n\n陈机却似浑然不觉，端起茶盏悠然道：\"大人不必紧张。本官若要告发，何必亲自前来？今日请大人来，是想做一笔买卖——您手里的北境兵权，换本官的缄默。\"\n\n空气凝滞片刻，秦明达终于缓缓松开了剑柄。",
+                  "emotion": "隐忍"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_005_C",
+            "text": "展示实力",
+            "description": "不露底牌，只展示自己掌控的信息网络。让秦明达意识到，与自己为敌远比与自己为友危险得多。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露部分情报网络",
+            "visible_reward": "秦明达主动示好，不敢耍花样",
+            "risk_hint": "展示实力可能招来更多势力的觊觎和试探",
+            "process_label": "以威服之",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 4
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_005_C_1",
+                  "content": "陈机不答反问：\"秦大人可知，令千金今日在城西胭脂铺买的那盒珍珠粉，是谁送的？\"\n\n秦明达面色微变。\n\n\"还有令郎在赌坊欠下的三千两灵石——\"陈机慢条斯理地续道，\"恐怕下月就要到期了。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_C_2",
+                  "character_id": "char_chenji",
+                  "content": "秦明达额上渗出细汗。他自诩行事周密，却不想在这年轻人面前如赤身示人。\n\n陈机适时收势，语气转为和缓：\"本官无意为难大人。只是提醒大人一句——这皇城的水，比大人想象的深。与其被人当棋子，不如——\"\n\n他话锋一转，笑意温和：\"与明白人同行。\"",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_006",
+        "content": "雅间内烛火摇曳，茶香袅袅。\n\n秦明达终于开口，声音沙哑：\"陈大人想要什么？\"\n\n\"很简单。\"陈机竖起一根手指，\"玄武宗若有异动，大人按兵不动即可。另外——\"他顿了顿，目光幽深，\"本官需要借用大人的驿道通行令，三日内用一次。\"\n\n这要求看似简单，秦明达却心中一凛。驿道通行令能调动官方驿站的快马和情报网络，这是在要军方的眼睛和腿脚。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_007",
+        "character_id": "char_chenji",
+        "content": "陈机似是看穿了他的顾虑，补了一句：\"放心，不会让大人为难。届时若有差池，本官一人担着。\"\n\n秦明达盯着他看了许久，终于长叹一声：\"好。老夫便信你一回。\"\n\n他起身告辞，走到门口却又停下：\"陈大人，老夫多一句嘴——凌渊那边，你当真应付得来？\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_008",
+        "content": "陈机目送秦明达的背影消失在楼梯转角，唇角那抹淡笑缓缓敛去。\n\n凌渊。\n\n这三个字像一根刺，扎在他心底最深处。那位天青宗老掌门表面和蔼，实则心机深沉得像一口枯井——陈玄当年的传承之位，便是栽在此人手里。\n\n而今夜，还有一件更要紧的事。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_009",
+        "content": "子时三刻，一道黑影无声无息地掠入醉仙楼后巷。\n\n陈机推开暗门，迎进一位蒙面女子。来人摘下面纱，露出一张冷艳如霜的脸——正是魔道圣女夜清。\n\n\"有急事。\"夜清开门见山，声音压得极低，\"天机阁遗迹附近的时空裂隙，今夜出现异常波动。\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_010",
+        "character_id": "char_yeqing",
+        "content": "陈机神色微凝：\"异常波动？什么程度？\"\n\n\"比上次强了三成。\"夜清从袖中取出一枚玉简递给他，\"而且波动频率在加快——像是在酝酿什么。我的人不敢靠近，但那气息……\"\n\n她顿了顿，眼中闪过一丝忌惮：\"像是有什么东西想要从里面出来。\"",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_011",
+        "content": "陈机接过玉简，神识探入其中。玉简内封存着一缕波动残留的气息，诡异而古老，仿佛来自时光本身的皱褶深处。\n\n天机阁遗迹……时空裂隙……\n\n他脑海中飞速闪过天机录残页上的记载。上古时期，天机阁曾是天道意志在人间的代行机构，而那遗迹之下，据说封印着某段不可言说的历史真相。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_012",
+        "character_id": "char_chenji",
+        "content": "陈机将玉简收入袖中，神色如常：\"我记下了。还有别的吗？\"\n\n夜清本已转身欲走，闻言却顿住脚步，回头看了他一眼。那目光复杂难辨，似有几分探究，又有几分说不清道不明的情绪。\n\n\"你……真的不怕？\"她忽然问道，\"那遗迹里的东西若是出来，恐怕整个修行界都要天翻地覆。\"",
+        "emotion": "困惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_013",
+        "character_id": "char_chenji",
+        "content": "陈机淡然一笑：\"怕又如何，不怕又如何？该来的总会来。与其杞人忧天，不如——\"\n\n他话音未落，忽然眉头一皱。\n\n袖中天机录残页微微发烫，一段模糊的画面涌入脑海：有人正在调查一个名为\"陈念\"的女子，而那调查者的手法……带着天机阁遗迹特有的气息。",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_014",
+        "content": "陈机面色骤变。\n\n陈念——他失踪多年的妹妹，被圣宗带走作为\"天命锁钥\"的存在。天机录对任何涉及她的预见都是模糊的，这也是他一直无法锁定她位置的原因。\n\n可现在，居然有人在暗中调查她？\n\n更令他心惊的是，那调查者使用的是天机阁遗迹的手法。这意味着什么？难道遗迹中还有别的幸存者？还是说——有人从遗迹里获得了什么？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0620_015",
+        "prompt": "天机录捕捉到了关于陈念的模糊预见，这极其反常。陈机必须在有限的信息中做出判断——你打算如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0620_015_A",
+            "text": "让夜清动用魔道情报网",
+            "description": "请求夜清利用魔道圣宗的情报渠道追查此人。作为合作条件，可以透露一部分天机录的信息作为交换。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露部分底牌给夜清",
+            "visible_reward": "获得魔道情报网全力支持",
+            "risk_hint": "夜清虽为盟友，但魔道内部势力复杂，情报可能泄露",
+            "process_label": "借力盟友",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_A_1",
+                  "character_id": "char_yeqing",
+                  "content": "夜清听完他的请求，沉默了片刻。\n\n\"陈念……天命锁钥……\"她低声重复着这几个字，眼中闪过复杂神色，\"原来那便是你的软肋。\"\n\n陈机没有否认，只是静静看着她。",
+                  "emotion": "复杂"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_A_2",
+                  "character_id": "char_yeqing",
+                  "content": "片刻后，夜清点了点头：\"好。魔道情报网可以用，但我有一个条件。\"\n\n\"说。\"\n\n\"如果查到此人与天机阁遗迹有关——我要第一时间知道。\"她的目光灼灼，\"那处遗迹，我圣宗也觊觎已久。\"",
+                  "emotion": "精明"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_015_B",
+            "text": "亲自暗中追查",
+            "description": "不惊动任何人，利用自己手头的暗线单独追查。这是陈念的事，他不信任任何人。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗时间和精力，可能错过关键线索",
+            "visible_reward": "保持绝对隐秘，不暴露弱点",
+            "risk_hint": "单独行动力量有限，若对方有备而来可能陷入被动",
+            "process_label": "独行",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_015_B_1",
+                  "content": "陈机摇了摇头：\"不必。此事我自有安排。\"\n\n夜清眉头微蹙，显然对这个回答不满意，但她没有追问。她与陈机合作至今，深知此人从不做无谓之事。\n\n\"也罢。\"她转身走向窗口，\"三日之内，我会把遗迹波动的详细情报送到你手上。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_B_2",
+                  "character_id": "char_yeqing",
+                  "content": "临走前，夜清忽然回头：\"对了，那处遗迹的气息……我总觉得有些熟悉。\"\n\n陈机心头一动：\"熟悉？\"\n\n\"像是很久以前，在哪里感受过类似的东西。\"她蹙眉沉思片刻，摇头道，\"想不起来了。或许是我多心。\"\n\n说罢，她纵身跃入夜色，消失在皇城的屋脊之间。",
+                  "emotion": "若有所思"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_015_C",
+            "text": "试探凌渊的态度",
+            "description": "凌渊与天机阁遗迹必有渊源，不妨借机试探此人的反应。若他与此有关，必露破绽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能打草惊蛇",
+            "visible_reward": "若凌渊确有牵连，可提前布局反制",
+            "risk_hint": "凌渊城府极深，试探不成反被算计",
+            "process_label": "以身为饵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_015_C_1",
+                  "content": "陈机沉吟片刻，做了个决定。\n\n\"夜清，你可知道——\"他忽然开口，\"天青宗老掌门凌渊，与那天机阁遗迹可有什么渊源？\"\n\n夜清脚步一顿，回眸看他，眼中闪过一丝惊讶：\"你怀疑他？\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_C_2",
+                  "character_id": "char_yeqing",
+                  "content": "陈机没有正面回答，只是淡淡道：\"我只是在想，能在朝堂和宗门之间游刃有余这么多年，这位老掌门手里……怕是藏了不少秘密。\"\n\n夜清若有所思：\"你打算怎么做？\"\n\n\"先不急。\"陈机眸光微沉，\"让子弹飞一会儿。我倒要看看，是谁在查我妹妹——又为何要查。\"",
+                  "emotion": "冷厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_016",
+        "content": "夜清离去后，陈机独自立于窗前。\n\n皇城的夜依旧喧嚣，远处传来更夫的打更声，悠悠荡荡穿过层层屋脊。他低头看着掌心的那枚玉简——调查者留下的痕迹太过刻意，仿佛是故意要让他发现一般。\n\n是陷阱，还是线索？\n\n无论如何，此人的目的绝不简单。陈念是陈机唯一的软肋，这一点他从未告诉任何人——可对方却精准地触碰到了这个禁区。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_017",
+        "content": "陈机眸光渐冷。\n\n天机阁遗迹的气息……时空裂隙的波动……凌渊的暗中窥伺……这些线索在他脑海中飞速交织，渐渐勾勒出一张模糊的网。\n\n网的中心，是陈念。\n\n他深吸一口气，将所有情绪压回心底。无论对方是谁，敢打陈念的主意，便是与他为敌。欠下的账，他陈机从来记得清清楚楚。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0620_018",
+        "prompt": "夜已深，陈机需要决定下一步行动。面对多方势力的角逐，他必须有所取舍——你希望他怎么做？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0620_018_A",
+            "text": "稳扎稳打",
+            "description": "按计划继续稳固基本盘，明日若无异动便去会见礼部侍郎，进一步扩大政治影响力。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "时间成本",
+            "visible_reward": "政治基本盘进一步稳固",
+            "risk_hint": "调查者可能趁此空窗期有进一步动作",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_018_A_1",
+                  "content": "陈机整理好衣襟，转身走向暗门。\n\n今夜已经收获颇丰——秦明达的军权支持、时空裂隙的情报、以及那个神秘的调查者。不管对方是谁，既然敢露头，就别怪他日后算总账。\n\n\"明日的棋局，且看下回分解。\"他低声道，唇角浮起一丝意味深长的笑。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_018_B",
+            "text": "主动出击",
+            "description": "连夜动用秦明达的驿道通行令，派人追查那枚玉简气息的来源。兵贵神速，不给对方准备时间。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "提前消耗秦明达这张牌",
+            "visible_reward": "可能抢先一步找到线索",
+            "risk_hint": "动用秦明达可能引起其他势力警觉",
+            "process_label": "先发制人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_018_B_1",
+                  "content": "陈机当机立断，取出秦明达留下的驿道令牌。\n\n半刻钟后，三匹快马自皇城东门疾驰而出，马上骑士身着驿卒服饰，却个个气息内敛——那是陈机暗中培养的死士。\n\n目标：追踪玉简气息的源头。\n\n而陈机本人，则负手立于醉仙楼窗前，目送那几点灯火消失在夜色尽头。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_018_C",
+            "text": "请示墨先生",
+            "description": "天机录残页中封存的墨先生或许知道更多内情。残魂守护者虽然每次只说\"该说的部分\"，但此刻已顾不了那么多。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能听到不想听的消息",
+            "visible_reward": "获得关键信息",
+            "risk_hint": "墨先生的话往往暗藏玄机，听懂不易，听错更糟",
+            "process_label": "问道于师",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_018_C_1",
+                  "character_id": "char_moxiansheng",
+                  "content": "陈机回到住处，取出天机录残页。淡金色的光芒流转间，一道苍老的身影自书页中浮现。\n\n\"小子，又出事了？\"墨先生的声音沙哑而悠远。\n\n\"有人在查陈念。\"陈机直截了当，\"用的是天机阁遗迹的手法。\"",
+                  "emotion": "急切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_018_C_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "墨先生沉默片刻，残魂微微波动。\n\n\"有意思。\"他终于开口，语气中带着几分意味深长，\"看来，有人比老夫预想的更着急。\"\n\n陈机眉头一皱：\"你知道是谁？\"\n\n\"老夫只说该说的部分——\"墨先生的声音渐渐飘渺，\"天机阁的覆灭，从来不是意外。而你妹妹……比你自己更重要。\"",
+                  "emotion": "神秘"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_019",
+        "content": "陈机将天机录残页收好，抬眼望向窗外。\n\n东方天际已泛起鱼肚白，漫长的一夜即将过去。可他清楚地知道，真正的风暴才刚刚开始。\n\n玄武宗的仇恨、时空裂隙的异变、神秘调查者的出现、凌渊深不可测的城府……这些棋子正在棋盘上缓缓移动，而他陈机——绝不会甘心只做一颗被人摆布的子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_020",
+        "content": "那枚刻有天机阁遗迹特有纹路的玉简，究竟来自何人之手？而此人调查陈念的目的，又是为了什么？\n\n晨光渐盛，皇城开始苏醒。新的一日，新的棋局。而陈机，已经落下了他的第一子。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

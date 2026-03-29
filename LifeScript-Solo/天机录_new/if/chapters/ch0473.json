@@ -1,0 +1,380 @@
+{
+  "id": "天机录_ch0473",
+  "book_id": "天机录",
+  "number": 473,
+  "title": "墨先生的真面目",
+  "is_paid": true,
+  "next_chapter_hook": "墨先生消散前的最后遗言在耳边回荡——陈机，你是我千年布局的最后一步棋，也是唯一的希望。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0473_001",
+        "content": "门轴发出一声刺耳的嘎吱声，烛火在穿堂风中剧烈摇曳。陈机的手已经悄然探入袖中，指尖触到那张泛着幽光的残页——天机录。然而他没有动用预见之力，因为门外那道声音太过熟悉，熟悉到让他脊背发凉。\"陈小友，深夜叨扰，还望见谅。\"那声音温润如玉，与记忆中那个藏在天机录第一页的残魂别无二致。皇朝使者推门而入，锦袍玉带，眉目含笑，可陈机分明看见他瞳孔深处有某种超越凡人的、古老的波动。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_002",
+        "character_id": "char_moxiansheng",
+        "content": "\"不必紧张，我若想取你性命，你连反应的机会都不会有。\"皇朝使者自顾自地落座于案前，袖袍轻拂，茶盏竟自行斟满。他抬眸看向陈机，眼中掠过一丝复杂的神色，\"你一定有很多疑问。比如……为什么我的残魂会与皇朝使者气息相连？\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_003",
+        "content": "陈机缓缓收回袖中的手，却没有丝毫松懈。他盯着那张与自己有几分相似的面容，脑海中飞速运转——墨先生曾言，他是被天机录选中之人。而皇朝使者此刻的出现，意味着什么？意味着从一开始，他的每一步棋都可能被监视着。愤怒如野火般在胸腔中蔓延，但面上依旧是那副人畜无害的怯懦模样。\"前辈深夜造访，总不会是为了与我叙旧吧。\"",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_004",
+        "character_id": "char_moxiansheng",
+        "content": "\"叙旧？\"皇朝使者发出一声苦涩的笑，笑声中夹杂着千年岁月的沧桑，\"我等这一天，已经等了一千两百年。\"他缓缓起身，走向窗边，月光洒在他身上，却映出一个诡异的重影——那是一道被强行压制在躯壳内的残魂。\"你知道吗，陈机？天机录选中你，并非偶然。因为你体内流淌的，是我的血脉。\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_005",
+        "content": "空气仿佛凝固。陈机瞳孔骤缩，一千两百年前，正是陈家先祖创立天机录的时代。而眼前这个皇朝使者，自称是他的先祖？墨先生残魂的波动、皇朝使者的气息、乃至天机录对陈家人的特殊眷顾……所有碎片在这一刻拼凑成一个令他浑身发冷的事实。\"你是……陈家初代家主？\"陈机的声音微微发颤，那是他第一次在\"废物\"面具下露出真实的动摇。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_006",
+        "character_id": "char_moxiansheng",
+        "content": "\"陈机这个名字，是我取的。\"皇朝使者转过身，月光下他的面容似乎苍老了几分，眼中浮现出追忆之色，\"千年前，我是天机录的第一任宿主，如同你现在一般，预见未来，布局天下。然而天道之眼……\"他的声音陡然转冷，\"它选中了我，将我炼化成它的傀儡。我挣扎了三百年，最终选择以残魂形态寄生于天机录残页，等待下一个能够打破它控制的人。\"",
+        "emotion": "悲凉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0473_choice01",
+        "prompt": "陈机得知墨先生竟是陈家先祖，心中怒火与震惊交织。面对这跨越千年的真相，他必须做出选择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0473_c1_confront",
+            "text": "质问真相",
+            "description": "为何选中我？你可知这条路会让多少人陪葬？",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗精力",
+            "visible_reward": "获得更多真相",
+            "risk_hint": "真相往往比想象中更残酷",
+            "process_label": "追问真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c1_confront_01",
+                  "content": "陈机猛然抬头，眼中怒火几乎要喷薄而出。他上前一步逼近皇朝使者，声音低沉如雷：\"一千二百年……你等了一千二百年，可你知道这一千二百年里，有多少人死在你布的局中？\"他的手微微颤抖，那不是恐惧，而是压抑到极致的愤怒。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0473_c1_accept",
+            "text": "接受宿命",
+            "description": "既然血脉相连，我愿继承先祖遗志，与天道之眼一战",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "承担重责",
+            "visible_reward": "获得先祖传承",
+            "risk_hint": "宿命之路九死一生",
+            "process_label": "接纳命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c1_accept_01",
+                  "content": "陈机深吸一口气，将胸中翻涌的怒火强行压下。他缓缓跪下，行了一个叩拜之礼：\"后辈子孙陈机，见过先祖。\"这一跪，既是认祖归宗，也是接过这副千斤重担。墨先生的身影在月光中微微颤动，似乎被触动了什么。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_007",
+        "character_id": "char_moxiansheng",
+        "content": "\"你问我为何选中你？\"墨先生的残魂发出一声叹息，\"因为你是千年来唯一一个在天机录试炼中，让它感到恐惧的人。\"他抬手，一道幽光射入陈机眉心，刹那间，无数画面如走马灯般掠过——那是历代宿主被天道之眼吞噬的场景，痛苦、绝望、沦为傀儡。\"它害怕了，陈机。害怕到不惜一切代价要在你成长起来之前除掉你。\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_008",
+        "content": "陈机闭目承受着那些画面传来的剧痛，每一帧都是一段悲惨的命运。他的牙关咬得咯咯作响，拳头攥紧到指节发白。天道之眼……那个自诩为天道意志的存在，竟然将历代预言者当作棋子，随意摆弄，生杀予夺。愤怒如熔岩般在他血管中奔涌，灼烧着他的理智。\"它的弱点……\"他睁开眼，声音嘶哑却透着刺骨的冷意，\"告诉我它的弱点是什么。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "就在这时，一道超越声音的波动自虚空深处传来——那是天道之眼的意志。它似乎感知到了墨先生的背叛，整座宅邸的空气瞬间降至冰点。陈机的天机录残页剧烈颤抖，耳边响起一个冰冷无机质的声音：\"叛徒……你以为躲在血脉之中就能逃脱？陈家小儿，不过是新一任的傀儡罢了。\"这声音直接响彻在他的神魂深处，威压如山。",
+        "emotion": "威压"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0473_choice02",
+        "prompt": "天道之眼的意志直接降临，在其威压之下，陈机感到神魂几乎要被冻结——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0473_c2_defy",
+            "text": "直面威压",
+            "description": "我命由我不由天！纵是天道又何惧之有！",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "承受反噬",
+            "visible_reward": "觉醒血脉之力",
+            "risk_hint": "可能重伤神魂",
+            "process_label": "硬抗威压",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0473_result_ch0473_c2_defy_01",
+                  "character_id": "char_chenji",
+                  "content": "陈机猛然仰天长啸，额头青筋暴起。他硬生生承受着那股威压，一字一顿道：\"傀儡？\"嘴角竟勾起一抹讥讽的弧度，\"你以为我这一路走来，是靠谁的施舍？\"他的眼中燃起熊熊怒火，那是被逼至绝路后爆发出的滔天战意。",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0473_c2_endure",
+            "text": "隐忍蓄势",
+            "description": "留得青山在，不怕没柴烧。先祖，请助我隐藏气息",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暂时示弱",
+            "visible_reward": "获得喘息之机",
+            "risk_hint": "可能被视为软弱",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c2_endure_01",
+                  "content": "陈机收敛气息，主动降低了存在感。他向墨先生使了个眼色，后者立刻会意，一层淡薄的雾气自残页中溢出，笼罩住陈机周身。那道意志扫描而过，竟一时未能锁定他的存在。\"算你识相。\"那个冰冷的声音渐渐远去，但陈机眼中的恨意却愈发浓烈。",
+                  "emotion": "隐忍"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_010",
+        "character_id": "char_moxiansheng",
+        "content": "\"它走了。\"墨先生的残魂虚弱了几分，显然刚才的遮掩耗费了他大量魂力，\"但这只是暂时的。天道之眼无处不在，只要你还使用天机录，它就能追踪到你。\"他凝视着陈机，目光中竟有一丝愧疚，\"所以在它下一次锁定你之前，你必须学会……命运共鸣。\"",
+        "emotion": "急切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_011",
+        "content": "命运共鸣？陈机眉头紧锁。墨先生没有解释，而是直接化作一道流光没入天机录残页之中。刹那间，陈机感觉自己的神魂与某种宏大的存在产生了连接——那是无数陈家先祖残留的意志碎片，是千年以来所有被天道之眼吞噬的预言者的怨念与不甘。它们如星河般汇聚，向他涌来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_012",
+        "content": "剧烈的痛楚贯穿陈机的神魂，他仿佛看见了一千两百年前的自己——那个意气风发的少年，同样被天机录选中，同样野心勃勃地想要逆天改命。然而最终，他败了，败给了那个自诩为天道的怪物。\"记住，\"墨先生的声音在耳边响起，\"命运共鸣的要点不是对抗，而是……共振。你要成为它们的眼睛，它们的耳朵，将被天道之眼遮蔽的未来，重新照亮。\"",
+        "emotion": "传承"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0473_choice03",
+        "prompt": "先祖的传承如洪流般涌入陈机的神魂，他感到自己的力量正在发生质变——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "ch0473_c3_embrace",
+            "text": "完全接纳",
+            "description": "我愿背负所有先祖的意志，直面天道之眼！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "神魂震荡",
+            "visible_reward": "觉醒【命运共鸣】",
+            "risk_hint": "可能迷失自我",
+            "process_label": "融合传承",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c3_01",
+                  "content": "陈机张开双臂，任由那些意志碎片涌入自己的神魂。痛苦、愤怒、不甘、希冀……千年积压的情感在这一刻找到了宣泄口。他感到自己的感知在无限扩张，仿佛能够触及这片天地间每一丝命运的脉络。\"这就是……命运共鸣吗？\"他低声呢喃，瞳孔中倒映出点点星光。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0473_c3_selective",
+            "text": "有选择地吸收",
+            "description": "我只继承有用的部分，绝不让自己被前人的意志吞噬",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "传承不完整",
+            "visible_reward": "保持自我清醒",
+            "risk_hint": "可能无法完全掌控新能力",
+            "process_label": "筛选融合",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0473_result_ch0473_c3_02",
+                  "character_id": "char_moxiansheng",
+                  "content": "陈机猛然睁开眼，伸手在虚空中划出一道符文，主动筛选起那些涌入的意志。墨先生的残魂微微皱眉：\"你……要保持清醒？\"陈机冷笑一声：\"我是我，不是任何人的容器。承载先祖遗志可以，但若连自己都丢了，还谈什么逆天？\"他只吸收了其中最精纯的命运法则碎片，将那些过于浓烈的情感隔绝在外。",
+                  "emotion": "果决"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_013",
+        "content": "墨先生的残魂在完成传承后，已然淡得几乎透明。他看着眼前这个兼具智慧与果决的后辈，眼中浮现出欣慰与释然。\"你比我当年强。\"他的声音虚弱却带着笑意，\"记住，天道之眼的核心弱点是……命运共鸣产生的共振波。届时，你需要找到与你命运相连之人，共同催动这种力量，才能打破它对命运的垄断。\"",
+        "emotion": "告慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_014",
+        "content": "陈机静静地看着那道残魂逐渐消散，心中五味杂陈。一千二百年的等待，一千二百年的布局……眼前这个即将消散的灵魂，为了这一刻燃烧殆尽了自己最后的痕迹。\"先祖，\"他开口，声音有些沙哑，\"我会赢的。\"墨先生的身影彻底化作点点星光，只留下一句回荡在耳畔的遗言：",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_015",
+        "content": "\"陈机，你是我千年布局的最后一步棋，也是唯一的希望。\"星光散尽，室内重归寂静。陈机独自站在月光下，手中紧握着天机录残页。他能感受到其中残留的先祖气息正在一点点消失，取而代之的是一股前所未有的力量——命运共鸣，已经觉醒。天道之眼，我们之间的博弈，才刚刚开始。窗外夜风骤起，仿佛在为这场跨越千年的交接画上句号，又仿佛在为即将到来的风暴奏响前奏。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

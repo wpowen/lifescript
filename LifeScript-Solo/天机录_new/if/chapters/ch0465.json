@@ -1,0 +1,559 @@
+{
+  "id": "天机录_ch0465",
+  "book_id": "天机录",
+  "number": 465,
+  "title": "新局开启",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机将战略部署之际，天机录第五页骤然绽放刺目金光——那行古老的字迹仿佛活了过来，在虚空中不断重组。墨先生的残魂第一次显出惊愕之色：'它……居然在回应你妹妹的存在。这不可能，除非……'",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0465_001",
+        "content": "凌渊狼狈离去的背影如同一道烙印，深深嵌在陈机的心头。月光下，他独自站在天青宗后山的巨石之上，衣袂被夜风吹得猎猎作响。那句关于大周龙庭与陈天命的话语，此刻正化作一柄无形的利刃，一下一下地剜着他心底最柔软的位置。\n\n他缓缓闭上眼睛，任由记忆如潮水般涌来——那是他从未谋面的父亲，那是传说中能与天道对话的先祖，那是整个陈家数代人用命守护的秘密。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_002",
+        "content": "“大周龙庭……”陈机低声呢喃，眸中闪过一抹复杂的光。\n\n他并非不知龙庭的存在。恰恰相反，为了今日这盘棋局，他已经暗中查探了整整三年。龙庭，号称大周皇朝历代天子陨落后灵魂归处，是超越一切宗门的存在——连三大顶级宗门都要仰其鼻息。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_003",
+        "character_id": "char_chenji",
+        "content": "“父亲，您究竟给我留下了什么？”陈机轻声道，声音被山风撕成碎片，“还有……那个凌渊口中的陈天命，又是谁？”\n\n他睁开眼，眸中的迷茫已被决然取代。无论前路多少荆棘，他都必须走下去。为了复仇，为了真相，更为了那个失踪多年、至今仍音讯全无的妹妹。",
+        "emotion": "决然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_004",
+        "content": "一道幽香悄然袭来，如同深夜中绽放的曼珠沙华，妖冶而危险。陈机的神情没有丝毫波动，仿佛早已预料到此人的到来。他依然负手而立，目光投向远方层峦叠嶂的夜色之中。\n\n“魔道圣宗的圣女，深夜造访我天青宗后山，就不怕我大声示警，叫来满山守卫？”他的语气平淡如水，听不出半分怒意或惧意。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_005",
+        "character_id": "char_yeqing",
+        "content": "“你若想示警，早便示警了，何必等到现在？”夜清的声音如冰泉击石，清冷中带着一丝玩味，“况且，以陈公子的手段，就算我叫来满山守卫，恐怕也留不住你吧？”\n\n她缓步上前，与陈机并肩而立，目光同样投向远处的夜空。月光洒落在她的侧脸上，勾勒出一张冷艳绝伦的面容——那是足以让无数修士神魂颠倒的容颜。",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_006",
+        "content": "“圣女倒是坦诚。”陈机侧目看了她一眼，嘴角微微上扬，“既然如此，我便也不藏着掖着了。夜圣女深夜造访，想必不是为了与我赏月谈心吧？”\n\n夜清转过身来，正视着陈机，眸中的玩味之色渐渐褪去，取而代之的是一抹罕见的凝重：“我需要一个盟友。”",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0465_007",
+        "prompt": "夜清开门见山地提出结盟，陈机需要决定如何回应——这是关乎未来战略布局的关键抉择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0465_007_a",
+            "text": "先听条件",
+            "description": "不急于表态，先听听夜清能提供什么筹码，再决定合作深度。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "获取夜清信任",
+            "risk_hint": "可能让对方摸清自己的底线",
+            "process_label": "陈机侧耳倾听",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_a_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清眸中闪过一丝赞赏：“爽快。我需要你帮我打破圣宗的禁制。”她的声音微微低沉，“作为交换，我可以为你遮掩天机录的气息，让任何人都无法推演你的行踪。”",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_basic"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_007_b",
+            "text": "直接拒绝",
+            "description": "魔道中人不可信，贸然结盟可能引火烧身，还是保持距离为妙。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去潜在盟友",
+            "visible_reward": "保持独立立场",
+            "risk_hint": "可能激怒夜清",
+            "process_label": "陈机神色微冷",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_b_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清的笑容凝固在脸上，旋即化作一声轻笑：“陈公子果然谨慎。不过，你以为拒绝我，就能独善其身？”她的语气骤然转冷，“天机录的气息，我已经感应到了。整个天下，觊觎它的人何止万千。”",
+                  "emotion": "警告"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_007_c",
+            "text": "提出对赌",
+            "description": "展示部分天机录能力，换取夜清先拿出诚意，证明她的价值。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗天命值",
+            "visible_reward": "获取更多信息",
+            "risk_hint": "可能暴露天机录的局限性",
+            "process_label": "陈机意味深长地笑了",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_yeqing",
+                  "content": "陈机没有说话，只是抬起手，天机录残页在掌心浮现淡淡金光。他轻声说出一个时辰后会发生的事，条理分明，细节精确。\n\n夜清的脸色骤变，看向陈机的目光中涌起惊涛骇浪：“你……这是真正的天机预言？”",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_shown_power"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_008",
+        "content": "夜风骤起，卷起漫天落叶。就在这时，一道熟悉的气息从远处山道上传来——那是一种刻入骨髓的血脉相连之感，是任何伪装都无法掩盖的至亲羁绊。\n\n陈机的身形猛然僵住。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_009",
+        "character_id": "char_chenji",
+        "content": "“阿兄……”\n\n那声音轻柔而熟悉，如同记忆中那个总爱跟在他身后的小丫头。陈机猛然转身，瞳孔骤缩——月光下，一个身着素衣的少女正站在不远处，亭亭玉立，明眸皓齿，眉眼之间与他竟有七分相似。\n\n是陈念。是他失踪多年的妹妹。",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_010",
+        "content": "陈机的呼吸骤然急促起来。他的双手微微颤抖，无数次在梦中见过的面孔，此刻正真实地出现在眼前。三年了，整整三年，他踏遍千山万水寻找的妹妹，竟然就这样出现在他面前。\n\n然而多年的隐忍让他迅速压下心头的激动，目光反而变得更加深邃：“念儿……你怎么会在这里？”",
+        "emotion": "克制"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0465_011",
+        "prompt": "兄妹重逢，陈机需要在激动的情绪中保持清醒——陈念为何会出现在这里？是否安全？这关系到接下来的布局。",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0465_011_a",
+            "text": "先确认安全",
+            "description": "压下情绪，先问清陈念是如何逃离圣宗的，是否被人跟踪。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能显得冷漠",
+            "visible_reward": "确保妹妹安全",
+            "risk_hint": "妹妹可能误解哥哥的关心",
+            "process_label": "陈机快步上前",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_chenian",
+                  "content": "陈念的眼眶微红，却没有落泪。她轻轻摇头：“阿兄放心，圣宗的人不知道我在这里。是那位墨先生指引我来寻你的。”她的声音微微颤抖，“这三年，我无时无刻不在想你……”",
+                  "emotion": "哽咽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chennian_joined"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_011_b",
+            "text": "立刻拥抱",
+            "description": "三年的寻找终于有了结果，这一刻让理智见鬼去吧！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能暴露弱点给夜清",
+            "visible_reward": "兄妹情深",
+            "risk_hint": "作为布局者，不应在敌人面前失态",
+            "process_label": "陈机大步流星",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_b_001",
+                  "character_id": "char_chenian",
+                  "content": "陈机再也忍不住，大步上前将妹妹拥入怀中。他的声音有些沙哑：“没事了……阿兄在这里，以后谁也不能再伤害你。”\n\n陈念伏在他肩头，泪水终于夺眶而出。三年来的恐惧、孤独、思念，在这一刻尽数化作滚烫的泪水。",
+                  "emotion": "哭泣"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chennian_joined"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_011_c",
+            "text": "冷静分析",
+            "description": "为何墨先生会指引陈念来此？这其中是否有什么深意？",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "错过温情时刻",
+            "visible_reward": "提前察觉布局",
+            "risk_hint": "可能让妹妹觉得被疏远",
+            "process_label": "陈机眯起眼睛",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_chenian",
+                  "content": "陈机的目光微微一凝：“墨先生指引你来？”他眉头紧锁，“他可还说了什么？”\n\n陈念擦了擦眼泪，从怀中取出一枚古朴的玉佩：“他说……让你把这个交给天机录。”",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chennian_joined",
+              "获得玉佩"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_012",
+        "content": "陈机接过玉佩，只见其上刻着一个古朴的符文，与天机录残页上的纹路竟有几分相似。他将玉佩贴近天机录，刹那间——\n\n刺目的金光从残页中迸发而出，照亮了整片夜空！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_013",
+        "content": "天机录第五页的轮廓缓缓浮现，那原本模糊不清的空白处，此刻正有一行古老的字迹逐渐显现——\n\n“天命锁钥，皇朝之巅。”\n\n八个大字，如同天道亲笔，每一个都散发着令人心悸的威压。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_014",
+        "character_id": "char_moxiansheng",
+        "content": "就在此时，一道虚幻的声音在陈机脑海中响起——那是墨先生的残魂。\n\n“第五页……竟然在这种时候显现了。”墨先生的声音中罕见地带着一丝激动，“天命锁钥，皇朝之巅……原来如此，原来如此！小主人，你父亲留给你的，不仅仅是天机录，还有整个大周龙庭的命脉！”",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_015",
+        "content": "陈机的心跳骤然加速。大周龙庭的命脉？父亲究竟是什么身份？那个陈天命，又与龙庭有何关联？\n\n他深吸一口气，强迫自己冷静下来。无论真相如何，眼下最要紧的是整合手中的资源，为即将到来的风暴做好准备。",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_016",
+        "content": "他转身看向夜清和陈念，目光中闪烁着锐利的光芒。魔道圣女、残魂守护者、天命锁钥——三个原本毫无交集的存在，此刻因为他，因为天机录，命运线交织在了一起。\n\n“接下来，我们要做的事，可能会让整个修行界天翻地覆。”他的声音低沉而坚定，“你们，可愿与我一同入局？”",
+        "emotion": "决然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_017",
+        "character_id": "char_yeqing",
+        "content": "夜清率先开口，眸中闪烁着炽热的光芒：“我本就是局中人，与你合作，或许还能搏出一线生机。若是独自挣扎，不过是圣宗案板上的鱼肉罢了。”\n\n她顿了顿，嘴角勾起一抹冷艳的笑容：“况且，能让圣宗吃瘪的事，我向来很有兴趣。”",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_018",
+        "character_id": "char_chenian",
+        "content": "陈念轻轻拉住哥哥的衣袖，柔声道：“阿兄，念儿不怕。三年了，念儿终于找到你了。无论你要做什么，念儿都陪着你。”\n\n她的目光温柔而坚定：“而且……念儿或许能帮上忙。那些圣宗的人一直拿我当什么'锁钥'，我虽不知具体含义，但隐约能感应到一些东西。”",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0465_019",
+        "prompt": "战略同盟正式建立，陈机需要决定接下来的首要行动方向——是打探龙庭消息，还是先巩固现有力量？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0465_019_a",
+            "text": "布局皇朝",
+            "description": "立刻开始收集大周龙庭的情报，为夺取'天命锁钥'做准备。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗大量时间精力",
+            "visible_reward": "获取龙庭核心信息",
+            "risk_hint": "可能打草惊蛇",
+            "process_label": "陈机眼中精光闪烁",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0465_result_a_001",
+                  "content": "陈机沉声道：“既然天机录指向皇朝之巅，那我们便从皇朝入手。夜圣女，你在魔道多年，可知道龙庭有什么暗线？”\n\n夜清思索片刻：“龙庭行事隐秘，但每代天子都会在凡间留下血脉后裔。若能找到那些后裔，或许能撬开一道口子。”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "主线_皇朝线开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_019_b",
+            "text": "稳固后方",
+            "description": "先整合现有资源，巩固在天青宗的根基，确保后院不起火。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能错过时机",
+            "visible_reward": "势力更加稳固",
+            "risk_hint": "可能让敌人抢占先机",
+            "process_label": "陈机负手而立",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 8
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0465_result_b_001",
+                  "content": "陈机微微点头：“不急。龙庭蛰伏千年，不是一朝一夕能撼动的。当务之急，是先稳固我们的根基。”\n\n他看向夜清：“圣女若要留在天青宗附近，需要一个合理的身份。我可以安排。”\n\n夜清轻笑：“陈公子倒是周全。”",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳固后方"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_019_c",
+            "text": "追查凌渊",
+            "description": "凌渊知道太多秘密，必须尽快搞清楚他与陈天命、大周龙庭的关系。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "风险较高",
+            "visible_reward": "获取关键情报",
+            "risk_hint": "凌渊实力深不可测",
+            "process_label": "陈机目光冷冽",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_chenian",
+                  "content": "陈机的眼中闪过一抹寒芒：“凌渊此人，绝不能放任不管。他既知陈天命之事，又提及龙庭，其心可诛。”\n\n陈念闻言神色微变：“阿兄，凌渊……我在圣宗时曾听他们提起过这个名字，说他是天青宗的'旧日遗珠'，似乎与上古某段秘辛有关。”",
+                  "emotion": "凝重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊线开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_020",
+        "content": "夜色渐深，山风呼啸。陈机站在巨石之上，衣袂猎猎，目光如炬。他的身后，夜清与陈念一左一右，如同两柄出鞘的利剑。\n\n至此，天机录的持有者终于不再是孤身一人。一个是以\"废物\"之名行走天下的废材弟子，一个是魔道圣宗的叛逆圣女，一个是天命所归的神秘少女——三个被命运抛弃的人，在这个波澜壮阔的大世中，终于走到了一起。",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_021",
+        "content": "天机录第五页的金光渐渐收敛，但那八个大字却如同烙印一般刻在了陈机的心头——天命锁钥，皇朝之巅。这短短八个字，揭开了一个尘封千年的惊天大局。\n\n而他陈机，这个曾经被所有人嘲笑的废物，必将亲手执子落局，搅动这天下风云！\n\n新一轮的博弈，正式开启。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

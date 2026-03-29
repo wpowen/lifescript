@@ -1,0 +1,542 @@
+{
+  "id": "天机录_ch0058",
+  "book_id": "天机录",
+  "number": 58,
+  "title": "Top Four Spot",
+  "is_paid": true,
+  "next_chapter_hook": "Ling Yuan strikes with full force, Chen Ji appears to be cornered, yet a light flickers in the depths of his eyes that no one can comprehend—the true chess game has just begun.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0058_001",
+        "content": "Before the Tianqing Hall, morning mist lingers. Chen Ji stands at the edge of the Arena, feeling the subtle yet oppressive presence in the air. The old Sect Master's aura has grown even more凌厉 than last night, like a sword drawn from its sheath, pointing directly at his vitals. A large crowd of disciples has gathered around, with elders from the three major Sects seated high on the viewing platform. The entire Tianqing Sect's attention is focused on this Top Four semifinal match. No one notices the cold glint that flashes across Chen Ji's eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_002",
+        "content": "On the draw platform, the presiding Elder's voice echoes across the plaza: \"The first match of the semifinals—Tianqing Sect, Chen Ji!\" A ripple of commotion runs through the crowd. When the name of that waste of a Servant is called again, sneers erupt one after another. \"The second match—Tianqing Sect, Ling Yuan!\" The entire arena falls deathly silent.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0058_003",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan slowly ascends the high platform, his white hair billowing in the wind. Beneath his frail, aged appearance lies an unfathomable presence. He looks down at Chen Ji with contempt and asks, \"I thought you'd spend your whole life sweeping floors for the Sect. Didn't expect you'd actually stand here.\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_004",
+        "content": "Surrounding disciples burst into laughter. Someone shouts loudly, \"Chen Ji, if you know what's good for you, just concede! Don't waste Senior Ling Yuan's time!\" Chen Ji stands motionless, his face perfectly displaying fear and anxiety. Yet beneath his sleeve, his fingers tremble—not from terror, but from rage. He silently repeats to himself: I've made a note of this. Waiting for the right moment.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0058_005",
+        "prompt": "Ling Yuan humiliates you publicly, and facing the mockery of the entire hall, you choose:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0058_005_忍",
+            "text": "Lower your head and endure",
+            "description": "Feign weakness, bow your head in silence, letting everyone believe you're terrified. Secretly keep a mental record of this debt.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Endure the humiliation",
+            "visible_reward": "Cause Ling Yuan to lower his guard",
+            "risk_hint": "May affect morale if performed too well",
+            "process_label": "隐忍不发",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0058_result_忍_001",
+                  "content": "Chen Ji slowly lowers his head, voice trembling yet clear: \"Disciple... disciple understands.\" His fists clench tight, knuckles white. This posture, in everyone's eyes, further confirms his \"waste\" image. Ling Yuan waves dismissively, as if shooing away a fly.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "隐忍之辱",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0058_005_讽",
+            "text": "Cold mockery in return",
+            "description": "Use sharp tongue to give Ling Yuan a taste of his own medicine, making the old man lose face publicly. Immediate satisfaction but may expose your strength and draw greater attention.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose your edge",
+            "visible_reward": "Vent your anger",
+            "risk_hint": "May alert Ling Yuan prematurely",
+            "process_label": "唇枪舌剑",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0058_result_讽_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji suddenly raises his head, a faint smile appearing at the corner of his mouth: \"Senior Ling Yuan is right, disciple can indeed only sweep floors. However—even sweeping requires being thorough. Some people standing on stage look like garbage.\"",
+                  "emotion": "冷笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0058_005_疑",
+            "text": "Play dumb and probe",
+            "description": "Put on an act of not understanding, counter by asking why Ling Yuan targets a Servant Disciple, implying unfairness.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May appear overly cowardly",
+            "visible_reward": "Beg for sympathy",
+            "risk_hint": "Might be thought truly stupid",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0058_result_疑_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji blinks, face full of confusion: \"Senior Ling Yuan? Disciple is just a Servant. Why... why would you... Disciple doesn't understand what offense I've committed?\" His voice carries恰到好处的 bewilderment, drawing sympathetic gazes from some disciples.",
+                  "emotion": "无辜"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0058_006",
+        "content": "The murmuring in the crowd gradually subsides, and the draw continues. However, just as everyone thinks this风波 has ended, a cold voice rings out from the Inner Sect seats. Su Qingyao stands up, her gaze sharp as a blade: \"Senior Ling Yuan, you're an elder. Why must you make things difficult for a junior disciple?\" The entire hall erupts in shock. The Inner Disciple Senior Fellow is defending the waste?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_007",
+        "content": "Ling Yuan's clouded old eyes narrow slightly, his gaze toward Su Qingyao carrying a hint of amusement: \"Qingyao girl, you're quite protective. But—I was merely speaking the truth. If this waste lacks any self-awareness, once on the Arena Platform, it won't just be about losing face.\" Chen Ji's head remains lowered, but he files Su Qingyao's name away in his heart.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_008",
+        "content": "At the third mark of the Snake Hour, the competition officially begins. Chen Ji steps onto the Arena Platform. Across from him stands Ling Yuan's seemingly aged yet unfathomable figure. The referee Elder's voice rings out: \"Semifinals Match One, both sides prepare—begin!\" Ling Yuan doesn't immediately strike. Instead, he stands with hands clasped behind his back, studying Chen Ji with the eyes one would use to look at an ant: \"I'll give you a chance. Concede now, kneel and磕three响头, and I'll spare your dog's life.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0058_009",
+        "prompt": "Ling Yuan forces you to kneel—this is the most direct humiliation. You choose:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0058_009_跪",
+            "text": "Feign kneeling",
+            "description": "Pretend to submit, secretly activate the Tianji Record's foresight ability to find Ling Yuan's weakness. Play the pig to eat the tiger, delay gratification.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Dignity damaged",
+            "visible_reward": "Obtain crucial intelligence",
+            "risk_hint": "If exposed, consequences severe",
+            "process_label": "以屈待伸",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0058_result_跪_001",
+                  "content": "Chen Ji's knees bend slightly. Just as he's about to kneel, his hand secretly forms a seal within his sleeve. The Tianji Record Fragment in his Mental Sea emits a faint glow—images from the next three hours flash by like a carousel. His pupils suddenly contract, a smile tugging at the corner of his lips that no one could possibly detect.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0058_009_战",
+            "text": "Fight back directly",
+            "description": "Don't make any submission, directly test Ling Yuan's true strength with a strike. Use actual combat to verify the Tianji Record's foresight.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose partial strength",
+            "visible_reward": "Gain combat data",
+            "risk_hint": "May be instantly killed by Ling Yuan",
+            "process_label": "正面交锋",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0058_result_战_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji stands upright, the timidity in his eyes receding like a tide, replaced by a cold, piercing light: \"Senior Ling Yuan, disciple may be waste, but my knees haven't softened enough to kneel before everyone.\" He forms a seal with one hand, and a blade of Spiritual Energy tears through the air!",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0058_009_引",
+            "text": "Lure the enemy deeper",
+            "description": "Deliberately appear weak, induce Ling Yuan to underestimate you and rush in recklessly, exposing greater weaknesses before counterattacking.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May take damage and get injured",
+            "visible_reward": "Make Ling Yuan careless",
+            "risk_hint": "May truly suffer serious injury",
+            "process_label": "请君入瓮",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0058_result_引_001",
+                  "content": "Chen Ji's body sways, stumbling backward several steps, terror spreading across his face: \"Th-this power...\" His Spiritual Energy shield wavers precariously under Ling Yuan's overwhelming pressure, appearing utterly miserable. Ling Yuan sneers, extending one finger: \"One finger is more than enough.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0058_010",
+        "content": "No matter Chen Ji's choice, Ling Yuan maintains absolute overwhelming advantage. Each of the old Sect Master's attacks carries霸道 force that crushes everything. Chen Ji's defenses tear apart repeatedly, wounds quickly appearing on his body. Blood stains the Arena Platform floor. Shouts of alarm rise from the spectator seats, some shake their heads and sigh, others gloat gleefully.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_011",
+        "content": "Su Qingyao clenches her fists tightly in her seat, knuckles white. She wants to intervene and stop the match, but the competition rules are strict. She can only anxiously watch in her heart. \"Chen Ji... you fool, why don't you just concede?\" she screams internally. Ling Yuan's attacks grow increasingly凌厉: \"Waste is waste—even conceding won't be done right? Then let me teach you—what true despair feels like!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_012",
+        "content": "Just as everyone believes Chen Ji is destined for defeat, a strange light flickers in the depths of his eyes. The Tianji Record's foresight has fully unfolded—he can clearly see Ling Yuan's weakness after three moves, can see the true trajectory of this match. But he sees something else too: in a future scene, behind Ling Yuan, a vague figure is quietly approaching...",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0058_013",
+        "prompt": "The Tianji Record has revealed crucial information. Now you must make a choice:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0058_013_等",
+            "text": "Continue enduring",
+            "description": "Use the weakness foreseen by the Tianji Record to continue stalling, waiting for the mysterious figure's moment to act.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Sustain more damage",
+            "visible_reward": "Use the knife to kill",
+            "risk_hint": "May not survive to that moment",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0058_result_等_001",
+                  "content": "Chen Ji clenches his teeth, letting Ling Yuan's attacks land on him. Blood trickles from the corner of his mouth, but his eyes grow clearer. He silently counts in his heart: Three... two... one... The mysterious figure's aura is getting closer.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0058_013_爆",
+            "text": "Explode with full force",
+            "description": "No longer hide your strength—counter Ling Yuan directly using the weakness foreseen by the Tianji Record!",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Expose the Tianji Record's existence",
+            "visible_reward": "Slap face publicly",
+            "risk_hint": "Ling Yuan may have more tricks",
+            "process_label": "逆天改命",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0058_result_爆_001",
+                  "content": "Chen Ji's aura suddenly surges, and he steps forward, talismans in his sleeve burning all at once: \"Senior Ling Yuan, thanks for your 'guidance' just now—now it's disciple's turn to return the favor!\" His attack lands precisely on Ling Yuan's weakness, causing the old Sect Master to stumble back three steps!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 15
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0058_013_退",
+            "text": "Concede and exit the stage",
+            "description": "Preserve strength, avoid direct confrontation with Ling Yuan, treat this defeat as foreshadowing for future settlement.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Abandon this opportunity",
+            "visible_reward": "Preserve hidden cards",
+            "risk_hint": "May be seen as truly worthless",
+            "process_label": "战略撤退",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0058_result_退_001",
+                  "content": "Chen Ji falls to his knees with a thud, voice weak yet stubborn: \"Disciple... concedes.\" Ling Yuan looks down at him with cold amusement: \"Waste is indeed waste—even the skill of standing and taking hits is absent.\" He turns and walks away, his back full of arrogance.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0058_014",
+        "content": "However, just as Ling Yuan turns, his feet suddenly falter. A wisp of extremely faint black Qi drifts out from Chen Ji's sleeve, silently wrapping around Ling Yuan's ankle. It's the \"Demonic Path Mist\" that Ye Qing gave him, specifically designed to conceal the Tianji Record's aura. Ling Yuan is completely unaware, but a smile spreads in Chen Ji's heart: This debt, I've recorded.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_015",
+        "content": "Outside the Arena Platform, Su Qingyao's gaze never leaves Chen Ji. She notices the fleeting smile at the corner of Chen Ji's lips, and an inexplicable tightness rises in her heart. \"This person... what exactly is he hiding?\" she murmurs to herself. The referee Elder's voice sounds: \"Match One, Ling Yuan wins! Chen Ji—disqualified from the Top Four.\" The entire arena erupts. The waste disciple is indeed waste—can't even survive the semifinals. Yet no one sees the vengeful fire burning in Chen Ji's downcast eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0058_016",
+        "character_id": "char_chenji",
+        "content": "Chen Ji is helped down the Arena Platform, his entire body covered in blood, utterly disheveled. However, as he passes by Ling Yuan, he suddenly whispers words only the two of them can hear: \"Senior Ling Yuan, that black Qi on your body... have you been feeling unlucky lately?\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_017",
+        "content": "Ling Yuan's footsteps freeze. He turns to look at Chen Ji, only to find the young man has already been swallowed by the crowd, leaving only a swaying背影. A shadow flickers in the old Sect Master's eyes, and an inexplicable unease rises in his heart. How could this waste... say something like that? Yet he doesn't know that in Chen Ji's Mental Sea, the Tianji Record Fragment is emanating a faint glow, recording a massive upheaval three days later that will be enough to overturn the entire Tianqing Sect.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_018",
+        "content": "In a secluded corner outside the competition grounds, Ye Qing's figure emerges from the shadows. She holds a communication Jade Slip, lips parting slightly: \"Chen Ji, are you certain about this?\" Chen Ji lifts his head, his wounds and bloodstains especially glaring under the sunlight, yet his voice is terrifyingly calm: \"In three days, there will be abnormal changes in the Forbidden Grounds.届时... I need you to help me with something.\" Ye Qing frowns slightly: \"What thing?\" Chen Ji gazes toward the Tianqing Hall direction, a cold smile curling at the corner of his mouth: \"Make Ling Yuan... die in his own arrogance.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_019",
+        "content": "Ye Qing falls silent for a moment, then nods: \"Alright. I'll prepare the core formation eye for the Demonic Path Mist. However—the thing you promised me, don't forget.\" Chen Ji offers no reply, simply producing from his怀a yellowed page from his robes, intricate formation patterns drawn upon it. That's the third page fragment of the Tianji Record, containing records of some ancient forbidden technique. The two complete their exchange and disappear into the crowd. Yet neither notices that beneath the shade of a nearby tree, Su Qingyao quietly observes all of this, her eyes flickering with complex emotions.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0058_020",
+        "content": "The Tianqing Sect competition continues, but Chen Ji is no longer the center of attention. Ling Yuan's overwhelming victory leads everyone to believe the championship is his to lose. Yet no one knows that this so-called \"waste\" Servant Disciple is quietly drawing a grand chessboard in his heart. When the Forbidden Grounds opens in three days, it will be time to close the net. Ling Yuan thinks he has won everything, but he doesn't know—the true prey always walks into the trap of its own accord.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

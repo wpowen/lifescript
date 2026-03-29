@@ -1,0 +1,374 @@
+{
+  "id": "天机录_ch0848",
+  "book_id": "天机录",
+  "number": 848,
+  "title": "意外的喜剧",
+  "is_paid": true,
+  "next_chapter_hook": "韩烈捂着被踩的脸落荒而逃，发誓下次必取陈机性命。然而他不知道的是，陈机早已在他后背留下了追踪印记——这场闹剧的真正得利者，始终在棋盘之外冷眼旁观。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0848_001",
+        "content": "天青宗后山，一处被密林遮掩的僻静山谷中，陈机正倚在一块青石上，手中捏着半盏残茶，眉宇间难得浮现几分悠闲。皇朝来使的话犹在耳畔——父亲留下的最后任务，竟与皇朝有关？这盘棋，比他想象的还要大。然而此刻，他只想享受这难得的片刻安宁。远处似乎有鸟雀惊飞，陈机眉头微皱，却没有起身查看的意思。哼，总有些人喜欢打破别人的清净。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_002",
+        "character_id": "char_hanlie",
+        "content": "陈机！你给老子滚出来！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_003",
+        "content": "一声震天的怒吼打破了山谷的宁静。陈机手中残茶一晃，眼皮都未抬一下。韩烈？来得倒是快。他前几日故意在韩烈面前露了几次行踪，就是为了引这条疯狗上钩——只是没想到，这疯狗比他预想的还要急切。树影摇曳间，一道魁梧的身影破林而出，正是满脸杀意的韩烈。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_004",
+        "character_id": "char_hanlie",
+        "content": "废物东西！上次在藏经阁的账，今日就让你用命来还！",
+        "emotion": "暴戾"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_005",
+        "content": "陈机缓缓放下茶盏，正要开口说些什么，一道幽冷的笑声却从另一侧传来：\"哟，这是哪来的野狗，在此乱吠？\"夜清不知何时已立于三丈之外，周身魔气若隐若现。她瞥了韩烈一眼，嘴角勾起一抹讥诮：\"天青宗的地界，什么时候轮到玄武宗的狗来撒野了？\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_006",
+        "character_id": "char_hanlie",
+        "content": "魔道妖女！",
+        "emotion": "惊怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_007",
+        "content": "韩烈瞳孔骤缩，随即狂笑起来：\"好！好得很！废物找了个魔道妖女做帮手，今日便让你们这对狗男女一同上路！\"话音未落，他周身玄气暴涨，一双铁拳已带着呼啸的风声朝夜清砸去。夜清冷笑一声，身形化作一道黑雾，轻易避开了这笨拙的一击：\"就这？玄武宗第一天才？呵，不过是个头脑简单的蛮夫。\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0848_008",
+        "prompt": "眼看夜清与韩烈就要打出真火，陈机必须做出选择——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0848_008_a",
+            "text": "火上浇油，让局面更乱",
+            "description": "趁乱给韩烈补一刀，让他和夜清拼个两败俱伤，自己坐收渔利。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗韩烈对自己的仇恨值",
+            "visible_reward": "削弱韩烈实力，同时让夜清欠自己人情",
+            "risk_hint": "可能暴露与夜清的同盟关系",
+            "process_label": "暗中引导战斗走向",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0848_result_008_a_1",
+                  "character_id": "char_chenji",
+                  "content": "（假装惊慌后退，实则暗暗在韩烈落脚处留下一道禁制）哎呀，两位别打了，都是误会！",
+                  "emotion": "惊慌（伪装）"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0848_result_008_a_2",
+                  "content": "陈机那惊慌失措的模样落入韩烈眼中，只让他愈发得意——这废物果然只会躲在女人身后。然而他不知，自己每踏出一步，都在陈机的算计之中。禁制悄然激活的一瞬，韩烈脚下土地突然下陷半寸，他的攻势瞬间一滞。高手过招，一瞬便是生死。夜清的魔气毫不犹豫地趁虚而入，一掌拍在韩烈肩头。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0848_008_b",
+            "text": "化解误会，扮猪吃虎",
+            "description": "继续装弱，用三寸不烂之舌将这场冲突化解于无形，同时给夜清使眼色让她配合。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要消耗精力圆谎",
+            "visible_reward": "维持废物人设，韩烈继续小瞧自己",
+            "risk_hint": "夜清性格高傲，可能不配合",
+            "process_label": "以理服人（伪装）",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0848_result_008_b_1",
+                  "character_id": "char_chenji",
+                  "content": "韩师兄，误会了！这位姑娘只是路过的旅人，我们并不相识啊！",
+                  "emotion": "焦急"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0848_result_008_b_2",
+                  "content": "夜清挑了挑眉，正要反驳，却瞥见陈机朝自己隐秘地眨了眨眼。她心思一转，冷哼一声收回了魔气：\"一个废物而已，本座还不屑与他为伍。倒是你这蛮牛，本座今日心情好，饶你一命。\"韩烈愣了愣，随即狂笑起来：\"听见没有？废物！连魔道妖女都看不上你！\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0848_008_c",
+            "text": "暗中标记，静待时机",
+            "description": "不直接介入冲突，趁乱在韩烈身上留下追踪印记，然后安然撤退，让夜清拖住他。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要夜清配合演戏",
+            "visible_reward": "获得追踪韩烈的能力，未来可随时掌握其行踪",
+            "risk_hint": "若被韩烈缠住，可能有危险",
+            "process_label": "悄悄布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0848_result_008_c_1",
+                  "character_id": "char_chenji",
+                  "content": "（悄无声息地从袖中取出一枚符篆，在韩烈愤怒挥拳时将追踪印记打入其后背）两位慢慢打，陈某先告辞了！",
+                  "emotion": "镇定"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0848_result_008_c_2",
+                  "content": "夜清心领神会，魔气骤然暴涨三分，硬生生挡住了韩烈的视线：\"想追他？先问问本座的魔雾答不答应。\"韩烈怒吼着与其缠斗起来，却不知那枚追踪印记已深深嵌入他的体内——只要他想，陈机随时能知道这蛮牛身在何处，正在做什么。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "追踪印记_韩烈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_009",
+        "content": "韩烈被夜清一掌拍得踉跄后退，脸上闪过一丝惊愕。他显然没想到这魔道妖女的实力竟如此棘手。\"好！好一个魔道妖女！\"韩烈咬牙切齿，抹去嘴角的血迹，眼中杀意更浓，\"今日之事，本座记下了！待我玄武宗大军踏平天青宗之日，便是你们的死期！\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_010",
+        "character_id": "char_chenji",
+        "content": "韩师兄威武，小弟佩服得五体投地！师兄慢走，下次再来啊！",
+        "emotion": "谄媚（伪装）"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_011",
+        "content": "陈机躲在树后，看着韩烈狼狈离去的身影，唇角微微上扬。那谄媚的声音连他自己都觉得恶心，但效果是极好的——韩烈眼中的不屑几乎要溢出来，只当他是条摇尾乞怜的狗。夜清收回魔气，飘然落在陈机身侧，似笑非笑地看着他：\"陈机，你这废物人设，还真是演得入木三分。\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0848_012",
+        "prompt": "夜清对你竖起了大拇指，这场闹剧暂时收场。但接下来该如何收尾？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0848_012_a",
+            "text": "请夜清喝茶，顺势聊聊皇朝之事",
+            "description": "刚才的巧合让你灵光一闪——皇朝、父亲、韩烈……这些线索之间是否有什么关联？夜清作为魔道圣女，消息灵通，或许知道些什么。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗珍藏的好茶",
+            "visible_reward": "获得皇朝相关的情报，加深与夜清的同盟关系",
+            "risk_hint": "夜清可能趁机打探你的底牌",
+            "process_label": "交换情报",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0848_result_012_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "哦？你这废物还藏有好茶？行，本座就赏脸尝尝。",
+                  "emotion": "玩味"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0848_result_012_a_2",
+                  "content": "陈机从储物袋中取出一套精致的茶具，动作行云流水。夜清看得微微挑眉：\"你这废物，倒是懂得享受。说吧，想从本座这里知道什么？\"陈机为她斟上一杯：\"皇朝最近，可有什么异动？\"夜清接过茶盏，眼中精光一闪：\"皇朝……你倒是问到点子上了。最近确实有些有意思的消息。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0848_012_b",
+            "text": "各自分开，继续调查皇朝线索",
+            "description": "夜清虽是可用的盟友，但她的立场毕竟在魔道。有些事，还是自己查更稳妥。你决定先独自调查皇朝与父亲的关联。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "独自行动风险更高",
+            "visible_reward": "保持消息封锁，不让夜清知道太多",
+            "risk_hint": "可能遗漏重要情报",
+            "process_label": "独自行动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0848_result_012_b_1",
+                  "character_id": "char_yeqing",
+                  "content": "这么急着赶本座走？罢了，下次有好戏记得叫上我。",
+                  "emotion": "不满"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0848_result_012_b_2",
+                  "content": "夜清冷哼一声，身形化作黑雾消散在原地。陈机望着她离去的方向，眼中闪过一丝复杂。父亲的任务、皇朝的动向、韩烈的出现……这一切似乎都指向同一个方向。他摊开手掌，一缕若有若无的玄气在指尖凝聚——韩烈后背的追踪印记，正在发出微弱的波动。呵，蛮夫终究是蛮夫。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_013",
+        "content": "山谷重归寂静，陈机收拾好茶具，正欲离去，却见一道白衣身影从林间步出——苏青瑶手持长剑，眉宇间带着几分审视。\"陈机，方才那动静是怎么回事？\"她的目光扫过地上的打斗痕迹，又看了看陈机完好无损的模样，眉头皱得更深，\"韩烈那个蠢货又来找你麻烦？\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_014",
+        "character_id": "char_suqingyao",
+        "content": "那个废物怎么可能伤到韩师兄分毫？不过是他运气好，遇到了路过的散修帮忙罢了。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_015",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶深深地看了他一眼，那目光仿佛要将他看穿：\"是吗？那个路过的散修，倒是来去如风。\"她顿了顿，忽然冷笑一声，\"陈机，你最好祈祷自己身上没有藏着什么秘密。否则被我查出来——\"陈机露出一个无害的笑容：\"苏师姐多虑了，师弟只是个杂役弟子，能有什么秘密？\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_016",
+        "content": "苏青瑶冷哼一声，转身离去，留下一句意味深长的话：\"最好如此。\"陈机望着她的背影，眼中精光微闪。这位内门首席的好奇心，可比韩烈那个蠢货危险多了。不过眼下，他还有更重要的事要做。韩烈背后那个追踪印记，正隐隐传来一股躁动的气息——像是玄武宗的方向，发生了什么变故。陈机唇角勾起一抹玩味的弧度：看来，有好戏要开场了。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0848_017",
+        "character_id": "char_hanlie",
+        "content": "陈机！你给老子记住！下次见面，我必取你性命！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0848_018",
+        "content": "远处传来韩烈愤怒的咆哮，声音在山谷间回荡。陈机摇了摇头，这蠢货受了伤还这么中气十足，看来玄武宗的底蕴确实不凡。只是他不知道的是，就在他放狠话的同时，陈机留在他后背的追踪印记已悄然激活——无论他逃到天涯海角，陈机都能精准锁定他的位置。这场闹剧的真正得利者，始终在棋盘之外冷眼旁观。皇朝的谜题还未解开，父亲的布局仍在迷雾之中，但陈机已有了新的棋子。韩烈，你且好好活着，等我需要你的时候。"
+      }
+    }
+  ]
+}

@@ -5,6 +5,9 @@ enum SoloRoute: Hashable {
     case reading(String)
     case dossier
     case routeMap
+    case destinyAtlas
+    case humanHearts
+    case darklineBoard
     case settings
 }
 

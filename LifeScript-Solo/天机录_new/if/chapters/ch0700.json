@@ -1,0 +1,541 @@
+{
+  "id": "天机录_ch0700",
+  "book_id": "天机录",
+  "number": 700,
+  "title": "死期将至",
+  "is_paid": true,
+  "next_chapter_hook": "就在天道之眼即将完成最终审判的刹那，一道来自天机阁的干预强行撕裂了命运的剧本——那道声音冰冷而古老：\"天机录持有者，尚未到陨落之时。\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0700_001",
+        "content": "天青宗的夜总是来得格外漫长。陈机站在破旧杂役房的窗前，看着自己的手指尖正在以肉眼可见的速度变得透明——那是天机录第七百章死亡预言的前兆。他的身体正在被某种看不见的力量一点点侵蚀，如同被无形的火焰灼烧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_002",
+        "content": "\"果然来了。\"陈机低声说道，声音平静得不像是面对死亡的人。他抬起手，看着月光穿透自己的掌心，在地上投下淡淡的光斑。三年前他第一次看到这段预言时，只当是玩笑；一年前第二次看到时，他开始布局；而现在，预言如约而至，而他还未找到破局之法。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_003",
+        "character_id": "char_chenji",
+        "content": "天机录，我记得上面写过——“命运可违，因果可断，唯情字最难解”。既然如此，那就用情来破你的局。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_004",
+        "content": "他踉跄着走出杂役房，每一步都像踩在刀尖上。胸口的剧痛提醒着他，预言正在加速实现。按照天机录的显示，他会在三个时辰内死于“心脉寸断”——一种最屈辱的死法，死后连尸骨都会化为飞灰，仿佛从未存在过。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_005",
+        "content": "然而陈机的眼神却异常清明。他不是在等死，他是在计算。每一个呼吸之间，他的脑海中都在飞速运转着无数个可能性。预言说“心脉寸断”，那如果他的心脉已经不是原来的心脉呢？预言说“化为飞灰”，那如果有人愿意替他承受这份业力呢？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0700_choice_01",
+        "prompt": "陈机必须在预言实现前做出选择——他要用什么方式来打破这必死之局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0700_choice_01_opt_a",
+            "text": "以智破局，逆向推演",
+            "description": "利用天机录的漏洞——预言是“看见的未来”，而非“唯一的未来”。只要改变观测者身份，预言就会产生偏差。",
+            "satisfaction_type": "智慧",
+            "visible_cost": "消耗10点天命值",
+            "visible_reward": "获得30分钟喘息时间",
+            "risk_hint": "天道之眼可能会察觉并加速预言",
+            "process_label": "陈机开始逆向推演预言逻辑...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_opt_a_01",
+                  "content": "陈机闭上眼睛，将全部精神灌注进天机录残页。他开始主动“观看”自己死亡的瞬间——不是被动等待，而是主动观测。当他以第一人称视角进入那段预言时，奇异的事情发生了：画面开始扭曲。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "逆向观测启动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_01_opt_b",
+            "text": "以情破局，引渡业力",
+            "description": "让天青（他暗中培养的暗子）主动接受他的“死亡因果”，用羁绊的力量将命运线搅乱。牺牲一人，换取生机。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天青将承受三年病痛折磨",
+            "visible_reward": "完全打破预言因果链",
+            "risk_hint": "天青可能因此死亡",
+            "process_label": "陈机启动天青体内的封印...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tianqing",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_opt_b_01",
+                  "content": "陈机咬破舌尖，以精血为引，激活了埋在天青体内的远古封印。一道赤红色的光芒从他胸口射出，穿透夜空，直达数里之外。天青的身体猛然一僵，然后痛苦地蜷缩起来——那是陈机三年前就准备好的“替死符”。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "业力转移启动",
+              "天青承受中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_01_opt_c",
+            "text": "以命破局，正面硬抗",
+            "description": "放弃一切算计，用最原始的方式——燃烧自身全部天命值，强行在命运长河中撕开一道口子。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗全部50点天命值",
+            "visible_reward": "可能直接打破预言并触发隐藏剧情",
+            "risk_hint": "若失败将彻底死亡且无法复活",
+            "process_label": "陈机开始燃烧天命...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "战力",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_opt_c_01",
+                  "content": "陈机狂笑起来。他张开双臂，任由那股死亡力量在体内蔓延。与此同时，他开始疯狂燃烧自己辛苦积攒的天命值。每一点天命值的燃烧都在对抗着命运的侵蚀，如同在黑暗中点燃火炬。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "天命燃烧中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_006",
+        "content": "就在陈机选择以智破局的瞬间，他感觉到一股冰冷的意识从虚空中降临。那是天道之眼——那个超越性的存在正在通过某种方式“注视”着他。陈机的心跳猛然加速，但他强迫自己保持冷静。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "陈机，汝竟敢窥视天机？汝以为这区区幻术能瞒过本座？",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_008",
+        "content": "那道声音如同远古洪钟，在陈机的脑海中回荡。他感觉自己的逆向观测正在被一股无形的力量侵蚀，画面越来越不稳定。然而陈机并没有慌张——他等的，就是这一刻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_009",
+        "character_id": "char_chenji",
+        "content": "天道之眼前辈，您终于肯现身了。晚辈等这一天，等了很久。您说的没错，逆向观测确实无法打破预言——但它能引您出来，这就够了。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_010",
+        "content": "陈机猛然睁开眼睛，瞳孔中倒映出一幅模糊的图案——那是他三年来通过各种渠道搜集到的关于天道之眼的信息碎片。他不知道这东西究竟是什么，但他知道，这玩意儿并非无敌。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0700_choice_02",
+        "prompt": "陈机成功引出了天道之眼的意识投影，现在他必须做出下一步决策——如何利用这个千载难逢的机会？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0700_choice_02_opt_a",
+            "text": "套取真相",
+            "description": "利用这短暂的“对话”机会，试探天道之眼的真实目的和弱点。陈机的嘴毒和话术是他的最大武器。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗5分钟时间",
+            "visible_reward": "获得关于天道之眼的重要情报",
+            "risk_hint": "可能暴露自己的底牌",
+            "process_label": "陈机开始套话...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_02_a_01",
+                  "content": "陈机嘴角勾起一抹讥讽的笑意，声音虽然虚弱，但每一个字都清晰无比：“前辈每次都要用这种方式决定他人的命运吗？用一个模糊的预言就让人生，让 人死——您就不觉得无聊？”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_02_opt_b",
+            "text": "直接宣战",
+            "description": "不再伪装，直接向天道之眼宣告自己的反抗意志。用最霸气的方式告诉它：你杀不了我。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能被天道之眼直接抹杀",
+            "visible_reward": "在天下人面前立下不灭威名",
+            "risk_hint": "当前实力完全无法对抗天道之眼",
+            "process_label": "陈机发出挑战...",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_02_b_01",
+                  "content": "陈机仰天长笑，声音中带着一股破釜沉舟的悲壮：“我陈机不过是个废物杂役弟子，但我偏不信这所谓的命运！今日你杀我，来日我必踏平你这所谓的天！”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道宣战"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_02_opt_c",
+            "text": "拖延时间",
+            "description": "不挑衅，不套话，只是不断消耗天道之眼的注意力。为即将到来的天机阁干预争取时间。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "每分钟消耗3点天命值",
+            "visible_reward": "确保天机阁干预成功",
+            "risk_hint": "可能在天机阁到达前耗尽天命值",
+            "process_label": "陈机开始无意义地循环对话...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -12
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_02_c_01",
+                  "content": "陈机开始漫无边际地说着废话，从天青宗的历史说到三大宗门的恩怨，从上古禁地的传说聊到魔道入侵的原因。他的声音虚弱但坚定，像是在进行一场绝望的马拉松。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "时间拖延中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_011",
+        "content": "然而就在此时，陈机感觉到身体内的死亡征兆猛然加剧。那股冰冷的侵蚀力量突然变得狂暴起来，仿佛是天道之眼察觉到了他的意图。一股剧痛从心脏处爆发，陈机单膝跪地，一口鲜血喷涌而出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_012",
+        "content": "\"不陪你玩了。\"陈机擦去嘴角的血迹，眼神中闪过一丝疯狂。他知道自己的时间不多了——也许只剩下最后一次机会。胸口的剧痛越来越剧烈，他能感觉到自己的心脉正在一点点断裂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_013",
+        "content": "就在这千钧一发之际，陈机想起了天机录残页上的一段古老文字：“天机不可泄，命数犹可违。唯有心存执念者，方能在必死之局中寻得一线生机。”他一直以为这只是一句空洞的鼓励，但现在，他似乎明白了什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0700_choice_03",
+        "prompt": "死亡的倒计时已经开始，陈机必须做出最后的抉择——如何利用这最后的执念打破宿命？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0700_choice_03_opt_a",
+            "text": "执念一：找到妹妹",
+            "description": "陈念——那个被圣宗带走的妹妹，是他最大的软肋，也是他活下去的最大动力。用这份执念激活天机录的隐藏功能。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗20点天命值",
+            "visible_reward": "触发天机录隐藏剧情\"天命羁绊\"",
+            "risk_hint": "可能暴露妹妹的存在给天道之眼",
+            "process_label": "陈机全力释放对妹妹的执念...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_03_a_01",
+                  "content": "陈机闭上眼睛，在心中拼命呼唤着一个名字——陈念。那个模糊的、从未清晰过的身影在这一刻变得无比清晰。一股奇异的力量从他的天机录残页中爆发出来，那是“羁绊”的力量。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "羁绊激活",
+              "妹妹线索显现"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_03_opt_b",
+            "text": "执念二：复仇天道",
+            "description": "将所有愤怒和怨恨转化为力量，发誓要让天道之眼付出代价。这份纯粹的恨意可能激活天机录的某种禁忌功能。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "黑化值+30",
+            "visible_reward": "解锁\"天敌\"称号，获得对天道之眼的抗性",
+            "risk_hint": "可能彻底沦为天道的对立面",
+            "process_label": "陈机释放全部恨意...",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 30
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_03_b_01",
+                  "content": "陈机猛然抬头，眼中满是疯狂的杀意。他的声音变得低沉而可怕：“你以为你是谁？高高在上的天道？决定他人生死的判官？总有一天，我会亲手把你从神坛上拉下来！”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天敌觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_03_opt_c",
+            "text": "执念三：守护苍生",
+            "description": "将个人的生死置之度外，心中只想保护那些无辜的人。这份大义可能感动某种超越性的存在介入。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能失去所有修为",
+            "visible_reward": "触发\"天命逆转\"事件",
+            "risk_hint": "天道之眼可能因此锁定他为最大威胁",
+            "process_label": "陈机燃烧生命守护苍生...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 25
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_03_c_01",
+                  "content": "陈机想起了那些因为他而获得救赎的人，想起了天青宗那些无辜的弟子，想起了整个天下即将遭受的劫难。一股温暖的力量从他心底升起，那是“守护”的力量。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命逆转准备"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_014",
+        "content": "陈机选择了第一条路——对妹妹的执念。当那个名字在心中响起时，整个天机录残页都震动了起来。一道温暖的金光从残页中升起，缓缓包裹住陈机正在崩溃的身体。死亡的侵蚀速度骤然减缓。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_015",
+        "content": "\"找到了！\"陈机猛然睁开眼睛，眼中满是惊喜。在那道金光中，他看到了一个模糊的画面——陈念被囚禁在一个神秘的地下密室中，周围布满了复杂的阵法。她还活着，而且就在天青宗附近！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_016",
+        "content": "然而天道之眼显然也察觉到了这一切。那股冷酷的意识猛然加强，金光开始剧烈颤抖。陈机感觉自己的脑袋像是被什么东西狠狠挤压，剧痛难忍。\"放弃吧，陈机。你保护不了任何人。\"天道之眼的声音再次响起。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_017",
+        "character_id": "char_chenji",
+        "content": "保护不了？我从来就没想过要保护任何人。我只是……想让一个人好好活着。这点小小的愿望，你也要阻止吗？",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_018",
+        "content": "陈机的声音在颤抖，但他的意志却前所未有的坚定。就在这时，天空突然裂开一道巨大的裂缝，一道古老而威严的气息从裂缝中降临。那是天机阁的干预——一个比天道之眼更加神秘的存在介入了这场战争。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_019",
+        "content": "\"天机录持有者，尚未到陨落之时。\"那道声音冰冷而古老，如同远古的神谕。陈机感觉身上的死亡征兆猛然停止，那股侵蚀身体的力量被一股更强大的力量强行压制。天道之眼的意识发出一声愤怒的咆哮，然后缓缓退去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_020",
+        "content": "陈机瘫坐在地上，大口大口地喘着气。他的身体仍然虚弱，但死亡的威胁暂时解除了。然而他知道，这只是暂时的喘息——天道之眼不会就此罢休，而天机阁的干预也并非没有代价。天机录残页上，新增了一行模糊的文字：“第七百章，死亡预言——未完待续。”",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

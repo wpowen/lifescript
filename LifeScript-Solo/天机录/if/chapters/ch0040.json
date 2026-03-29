@@ -1,0 +1,313 @@
+{
+  "id": "天机录_ch0040",
+  "book_id": "天机录",
+  "number": 40,
+  "title": "大比首战",
+  "is_paid": true,
+  "next_chapter_hook": "看台最高处，一个黑衣身影缓缓收回目光，指尖轻轻敲击扶手，似笑非笑——\"有点意思\"。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0040_001",
+        "content": "天青宗演武场，晨雾未散，数千弟子的喧哗声已冲破云霄。今日是宗门大比首日，阳光穿透薄雾洒在青石擂台上，映出斑驳光影。各脉弟子按序落座，空气中弥漫着紧张与兴奋交织的气息。\n\n陈机站在人群最边缘的位置，一身灰色杂役服在众多华服中格外扎眼。几个路过的弟子故意撞了他肩膀，嗤笑道：\"哟，废物也来看大比？不怕被真气余波震死？\"\n\n陈机脚步不停，唇角微微上扬——他记下了，等时机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_002",
+        "character_id": "char_chenji",
+        "content": "（低声自语）韩烈说得对，今天确实是\"自废修为\"……不过是废掉某些人的修为。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_003",
+        "content": "高台之上，苏青瑶一袭青衣裙袍，眉目如霜。她目光扫过人群，在陈机身上停了半息——这个废物杂役为何总给她一种说不清的感觉？\n\n\"抽签开始。\"执事长老声如洪钟。\n\n铜箱前人头攒动，签条翻飞。当陈机伸手入箱时，身后传来一个阴阳怪气的声音：\"哟，陈废物也来抽签？该不会是抽到和我对打吧？那可真是老天开眼，让我好好\"指点\"你几招！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_004",
+        "character_id": "char_chenji",
+        "content": "陈机转身，看向那张熟悉的面孔——孙浩，内门弟子，三个月前当众羞辱过他的家伙。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_005",
+        "character_id": "char_chenji",
+        "content": "（淡淡道）孙师兄好运气，抽到了\"指点\"的机会。放心，我会让你……刻骨铭心的。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_006",
+        "content": "孙浩愣了一瞬，随即放声大笑：\"哈哈哈！废物还会放狠话了！我倒要看看你怎么让我刻骨铭——\"\n\n话未说完，执事长老已展开签条，朗声道：\"首轮第三场，陈机对孙浩！\"\n\n全场哄笑声骤起，有人甚至吹起了口哨。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_007",
+        "character_id": "char_chenji",
+        "content": "（踏上演武台，神色如常）孙师兄，请。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0040_008",
+        "prompt": "面对孙浩的轻蔑，你打算如何应对这场必胜之战？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "crush_streak",
+            "text": "碾压速胜，一招制敌",
+            "description": "不给孙浩任何反应机会，一拳将其击溃，用绝对实力打脸所有嘲讽者",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "全场震惊，孙浩颜面尽失",
+            "risk_hint": "可能引起苏青瑶注意",
+            "process_label": "全力出击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0040_result_crush_streak_001",
+                  "content": "孙浩嗤笑一声，双掌结印，真气涌动——他甚至不屑于先出手，想让陈机先攻再当场羞辱。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "hide_power",
+            "text": "隐藏实力，扮猪吃虎",
+            "description": "故意示弱，引诱孙浩轻敌深入，然后关键时刻反击，让他输得不明不白",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能先挨几下",
+            "visible_reward": "孙浩得意忘形时当场打脸，反差更大",
+            "risk_hint": "观众可能先骂你废物",
+            "process_label": "后发制人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0040_result_hide_power_001",
+                  "content": "孙浩见陈机沉默，以为对方吓傻了，得意地勾了勾手指：\"怎么？腿软了？废物就是废物，连上台的勇气都没有——哦等等，你不是上来了吗？抱歉，我忘了。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_009",
+        "content": "陈机没有回答孙浩的挑衅，只是微微侧身，摆出一个看似笨拙的起手式。\n\n\"废物就是废物，这姿势都能摔着自己。\"孙浩摇摇头，真气催动，一记\"裂石掌\"劈向陈机——他甚至懒得用武技，只是想一掌把对方拍下擂台。\n\n掌风呼啸，台下观众已准备好嘲笑声。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_010",
+        "character_id": "char_chenji",
+        "content": "（眼中精光一闪）……就是现在。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_011",
+        "content": "陈机动了。\n\n不是躲避，不是格挡——而是迎着掌风踏前一步。\n\n那看似笨拙的身形陡然爆发出惊人的速度，右拳如毒蛇出洞，精准地砸在孙浩的手腕内侧。\n\n\"咔嚓！\"\n\n骨裂声清脆悦耳。孙浩的\"裂石掌\"偏斜而出，整个人被反震之力掀得踉跄后退，眼中满是难以置信。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_012",
+        "character_id": "char_suqingyao",
+        "content": "（美眸微凝）这一拳……他隐藏了实力？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_013",
+        "content": "不等孙浩反应，陈机已欺身而上。\n\n\"你、你——\"\n\n孙浩想说什么，嘴巴刚张开，一记重拳已迎面砸来。\n\n\"砰！\"\n\n沉闷的击打声响彻演武场。孙浩仰面倒下，鼻血横流，眼前金星乱舞。他想挣扎着站起来，却发现浑身上下仿佛被巨石碾过，连抬手的力气都没有。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_014",
+        "character_id": "char_chenji",
+        "content": "（居高临下，俯视孙浩）孙师兄，这就是你说的\"指点\"？",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0040_015",
+        "prompt": "孙浩已被击倒，台下一片哗然。你打算？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "mock_hard",
+            "text": "嘴毒嘲讽，踩脸输出",
+            "description": "用最讽刺的话当众羞辱孙浩，让所有人都记住今天的画面",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能显得太嚣张",
+            "visible_reward": "全场震撼，废物人设彻底崩塌",
+            "risk_hint": "可能引起某些人嫉妒",
+            "process_label": "嘲讽拉满",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 50
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0040_result_mock_hard_001",
+                  "character_id": "char_chenji",
+                  "content": "（蹲下身，声音不大，却足以让全场听见）裂石掌？裂的是自己的骨头吧？孙师兄，我记得你上次说要把我\"按在地上摩擦\"？嗯，现在这个姿势倒是挺适合你的。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "mock_cool",
+            "text": "轻描淡写，傲然离场",
+            "description": "不多废话，转身离去，用行动证明实力比言语更有力量",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "没能充分打脸",
+            "visible_reward": "留下悬念，让所有人猜测你的真实实力",
+            "risk_hint": "观众可能觉得赢得侥幸",
+            "process_label": "冷酷收场",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 40
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0040_result_mock_cool_001",
+                  "character_id": "char_chenji",
+                  "content": "（起身，拍了拍膝盖上并不存在的灰尘）听说你很期待这场对决？嗯，我也很期待……期待下次你还能说出\"废物\"这两个字。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_016",
+        "content": "全场死寂。\n\n数千道目光齐刷刷落在陈机身上，有震惊、有困惑、有难以置信……方才还在嘲笑\"废物\"的人群，此刻仿佛被人扼住了喉咙。\n\n孙浩躺在地上，眼眶通红，嘴唇颤抖着，却一个字都说不出来——不是因为伤重，而是因为屈辱。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_017",
+        "character_id": "char_chenji",
+        "content": "（转身，对执事长老拱手）长老，胜负已分，可以宣布了吗？",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0040_018",
+        "character_id": "char_lingyuan",
+        "content": "（高台阴影处，一个黑衣身影微微眯眼，指尖轻敲扶手）……有点意思。",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_019",
+        "content": "执事长老愣了一瞬，才反应过来：\"首轮第三场，陈机……胜！\"\n\n声音在演武场回荡，却像石子投入死水，激不起半点涟漪。所有人都还在震惊中没能回神。\n\n陈机已走下擂台，灰色杂役服的背影消失在人群中。阳光洒在他肩上，映出一道孤独而锋利的轮廓。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0040_020",
+        "content": "角落里，苏青瑶收回目光，眉心微蹙。她低头看着手中的签筒，指尖无意识地摩挲着竹签边缘。\n\n\"陈机……\"她喃喃道，\"你到底还藏了多少秘密？\"\n\n演武场另一侧，看台最高处，晨雾中那道黑衣身影缓缓收回目光。凌渊嘴角勾起一抹意味深长的弧度，仿佛看见了什么有趣的东西。\n\n棋局已动，而真正的博弈，才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

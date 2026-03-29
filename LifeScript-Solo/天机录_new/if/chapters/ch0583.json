@@ -1,0 +1,453 @@
+{
+  "id": "天机录_ch0583",
+  "book_id": "天机录",
+  "number": 583,
+  "title": "兄妹密谋",
+  "is_paid": true,
+  "next_chapter_hook": "就在二人谋划之际，一道暗紫色的传音符箓破窗而入，夜清急促的声音在密室中炸响：「陈机！凌渊被魔道三大护法围困于青云峡，生死一线——速来！」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0583_001",
+        "content": "密室之中，烛火摇曳，将陈机与陈念的影子投在斑驳的墙壁上，恍若一幅水墨画卷。陈机静静听完妹妹的话，面色未改，唯有垂在身侧的手指微微蜷曲，骨节泛白。他没有立刻开口，而是将目光缓缓移向窗外沉沉夜色，似在思索，又似在压抑什么。良久，他才轻声道：「改写天命……好大的口气。」语气平淡如述说今日天气，唯有熟悉他的人方能听出那平静表象下翻涌的暗流。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_002",
+        "character_id": "char_chenian",
+        "content": "哥，你在禁地里……看到的那些，是不是也和这有关？",
+        "emotion": "关切而试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_003",
+        "content": "陈机转过身来，烛光在他深邃的眼眸中跳跃，映出一片晦暗不明的光影。他缓步走向陈念，在她面前站定，抬手轻轻拂过她鬓边散落的发丝，动作温柔得不像平日那个算计无遗的少年。「我看到的东西，比你想象的更多。」他的声音低沉，带着一丝连他自己都未曾察觉的疲惫，「但有些事，看到了也未必是好事。念念，你不该回来。」他顿了顿，喉结微动，似乎有什么话哽在喉间，最终只化作一声几不可闻的叹息。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_004",
+        "character_id": "char_chenian",
+        "content": "不该回来？哥，你一个人扛了这么多年，我这个做妹妹的，难道就该在暗处苟活？",
+        "emotion": "倔强中带着哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_005",
+        "content": "陈念的眼眶微微泛红，却硬是忍住没有落泪。她自幼被圣宗带走，在那些暗无天日的日子里，支撑她活下去的念头只有一个——找到哥哥，亲口告诉他，她还活着，她还记得小时候他背着她走过长街去买糖葫芦的温暖午后。「我在圣宗这十几年，每一天都在想，你会不会以为我死了。」她抬起头，目光灼灼地直视陈机，「哥，我不是当年那个需要你护着的小姑娘了。」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_006",
+        "prompt": "面对陈念的坚持，陈机该如何回应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0583_006_a",
+            "text": "温柔地接受她的决定",
+            "description": "陈机沉默片刻，终于放下执念，承认妹妹已经长大，选择尊重她的选择",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去独自掌控全局的安心感",
+            "visible_reward": "兄妹二人真正并肩作战，信任度大幅提升",
+            "risk_hint": "战斗中需分心照顾妹妹安危",
+            "process_label": "接受并肩",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_006_a_result_1",
+                  "character_id": "char_chenji",
+                  "content": "好。既然念念执意如此……那我们便一起。",
+                  "emotion": "释然与温柔"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sibling_battle_partner"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹并肩",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_006_b",
+            "text": "坚持让她退居幕后",
+            "description": "陈机摆出兄长的威严，要求陈念在幕后提供情报支援，而非亲自涉险",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能伤害妹妹的自尊心",
+            "visible_reward": "保护妹妹周全，掌握更安全的战略位置",
+            "risk_hint": "陈念可能产生抵触情绪，影响后续合作",
+            "process_label": "坚持保护",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_006_b_result_1",
+                  "character_id": "char_chenian",
+                  "content": "哥！你总是这样，什么都自己扛……你以为我是累赘吗？",
+                  "emotion": "委屈与愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_backstage"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "理念冲突",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_007",
+        "content": "兄妹二人相对而立，空气中弥漫着一种微妙的张力。窗外夜风忽起，吹得烛火剧烈摇曳，在陈念脸上投下明灭不定的光影。她深吸一口气，从怀中缓缓取出一枚古朴的玉佩，那玉佩通体幽蓝，内里似有流光涌动，隐隐散发着与陈机怀中残页相似的气息。「哥，这是我这些年偷学圣宗秘术凝聚的龙脉碎片。」她将玉佩托于掌心，「圣宗的人不知道，我已经能够感应到另一块碎片的所在——那是完整天机录的埋藏之处。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_008",
+        "character_id": "char_chenji",
+        "content": "你疯了？龙脉碎片与你的神魂相连，一旦取出……",
+        "emotion": "震惊与担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_009",
+        "content": "陈机的话戛然而止，他当然知道代价是什么。龙脉碎片取出的瞬间，神魂必将受到重创，轻则修为倒退，重则根基尽毁。他的目光落在陈念苍白的面色上，又移向她手中那枚幽光流转的玉佩，心中某个角落隐隐作痛。这个傻丫头，为了这一刻，究竟在暗中筹谋了多久？他的嘴唇抿成一条线，良久才沉声道：「你告诉我的这些……圣宗知道吗？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_010",
+        "character_id": "char_chenian",
+        "content": "暂时不知。但皇帝和圣宗已经察觉到我的异动，所以才急着进行那场仪式。哥，皇朝内部并非铁板一块，三大宗门虎视眈眈，魔道更是蠢蠢欲动……这是我们的机会。",
+        "emotion": "冷静而坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_011",
+        "prompt": "陈机该如何整合这些情报，制定下一步计划？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0583_011_a",
+            "text": "先取天机录，再破皇帝",
+            "description": "利用陈念的龙脉感应能力，先找到完整天机录增强实力，再图皇帝",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要冒险潜入未知禁地",
+            "visible_reward": "获得完整天机录，实力飞跃提升",
+            "risk_hint": "禁地中可能有皇帝布下的陷阱",
+            "process_label": "寻觅天机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_011_a_result_1",
+                  "content": "好，便依你所言。不过在那之前，你需要先养好伤，龙脉碎片之事……容后再议。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_heaven_record_first"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "先取天机录",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_011_b",
+            "text": "利用皇帝仪式，釜底抽薪",
+            "description": "在皇帝仪式进行到关键时刻出手，毁掉仪式的同时削弱皇朝与圣宗势力",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "需要精确把握时机，容错率极低",
+            "visible_reward": "一举两得，既阻止皇帝又可能获得龙脉之力",
+            "risk_hint": "仪式现场必是龙潭虎穴",
+            "process_label": "破坏仪式",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_011_b_result_1",
+                  "content": "皇帝想要改写天命……呵，那便让他见识见识，什么叫真正的天命所归。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_sabotage_ritual"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "釜底抽薪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_011_c",
+            "text": "联络魔道圣女，三方博弈",
+            "description": "通过夜清建立与魔道的秘密联盟，借刀杀人，让皇朝与圣宗互相消耗",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能引狼入室，魔道未必可信",
+            "visible_reward": "获得强大外援，同时分散敌人注意力",
+            "risk_hint": "魔道势力介入后局面可能失控",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 7
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_011_c_result_1",
+                  "character_id": "char_chenian",
+                  "content": "哥，你信得过魔道的人？",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_alliance_demon"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "借力打力",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_012",
+        "content": "陈机负手而立，烛光在他背后勾勒出一道清瘦的轮廓。他沉吟片刻，终于露出一丝淡淡的笑意，那笑容里带着几分久违的温度。「你长大了，念念。」他缓步走到窗前，推开窗户，夜风裹挟着远山的松涛声涌入密室，「这些年我布局天下，看似算无遗策，实则……孤掌难鸣。」他转过身，目光落在陈念身上，「有你这句话，我便知道，这盘棋，还没到收官的时候。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_013",
+        "character_id": "char_chenian",
+        "content": "哥，你说的那个墨先生……他真的可信吗？他毕竟只是残魂，真的知道天机录的全部真相？",
+        "emotion": "谨慎而好奇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_014",
+        "content": "陈机闻言，嘴角微微上扬，却笑得意味深长。「可信？」他摇了摇头，「念念，在这世上，没有谁是绝对可信的。墨先生也好，凌渊也罢，甚至天道本身……」他的目光变得深邃，仿佛穿透了这方小小的密室，看向更遥远的虚空，「重要的从来不是他们可不可信，而是——我能不能在他们背叛我之前，先一步将他们的价值榨干。」他的语气平静如水，陈念却听得后背微微发凉。这便是她的哥哥，在那张温和的面孔下，藏着一颗何等冷酷的心？"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_015",
+        "prompt": "陈机与妹妹深入交谈后，是否该向她透露更多关于天机录的秘密？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0583_015_a",
+            "text": "坦诚相告天机录代价",
+            "description": "告诉陈念天机录每次使用都会消耗天命值，以及命运的必死反噬",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陈念可能因担心而做出冲动之举",
+            "visible_reward": "消除隔阂，兄妹真正坦诚相对",
+            "risk_hint": "陈念可能试图阻止陈机使用天机录",
+            "process_label": "袒露真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_015_a_result_1",
+                  "character_id": "char_chenian",
+                  "content": "哥！你……你怎么不早说！",
+                  "emotion": "震惊与心疼"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_knows_cost"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "坦白代价",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_015_b",
+            "text": "只透露部分信息",
+            "description": "告诉陈念天机录的能力，但不提及天命值消耗等致命缺陷",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "隐瞒可能在未来造成信任危机",
+            "visible_reward": "保护妹妹不被天机录的秘密所累",
+            "risk_hint": "关键时刻陈念可能因不知情而判断失误",
+            "process_label": "有所保留",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_015_b_result_1",
+                  "content": "天机录虽强，却也有其局限。念念，你只需知道，只要我在，便没有人能动你分毫。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_partial_info"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "适度隐瞒",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_016",
+        "content": "夜风忽然变得凛冽，密室中的烛火骤然一暗。陈机的眉头微微皱起，他感应到一股熟悉而陌生的气息正破空而来。那是魔道特有的暗紫灵光——夜清的传音符箓。他的手指轻轻一抬，那道紫光便稳稳落入掌心，符箓燃烧的瞬间，夜清急促而紧张的声音在密室中炸响：「陈机！凌渊被魔道三大护法围困于青云峡，生死一线——速来！」符箓燃尽，灰烬簌簌落下，陈机的眼眸骤然收缩。凌渊……那个表面庇护他、实则暗藏祸心的老掌门，此刻竟真的命悬一线？"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_017",
+        "character_id": "char_chenian",
+        "content": "凌渊？哥，他不是你一直防备的人吗？为什么要救他？",
+        "emotion": "困惑"
+      },
+      "text": {
+        "id": "天机录_ch0583_018",
+        "content": "陈机没有立刻回答。他负手而立，目光深邃地望向窗外，脑海中飞速运转着无数念头。凌渊，天青宗老掌门，他的宿敌，却也是这盘棋局中至关重要的一枚棋子。若他就此死去，那背后的布局、那些尚未揭开的真相……都会随之沉入深渊。况且，若凌渊死于魔道之手，天青宗与魔道必将彻底决裂，届时整个修仙界的格局都将被彻底搅乱。他缓缓转身，对陈念道：「棋局未完，棋子不能死。」他的声音低沉而冷静，「念念，你方才说要与我并肩作战——现在，可能要让你见识一下，什么叫乱局之中求生路。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_019",
+        "character_id": "char_chenian",
+        "content": "哥，你说怎么办，我听你的。",
+        "emotion": "坚定而信任"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_020",
+        "content": "陈机看着妹妹眼中的光芒，心中涌起一股难以言喻的情绪。十几年分离，骨肉重逢，她却毫无怨言地选择站在他身边，与他一同踏入这混沌乱世。他上前一步，伸手轻轻按住陈念的肩膀，掌心的温度透过薄薄的衣料传递过去。「念念，记住今晚的话。」他的声音忽然变得温和，褪去了平日的冷漠与算计，「无论将来发生什么，哥哥都会护你周全。这一次——我们一起。」话音落下，密室中的烛火似乎都亮了几分。陈念的眼眶微微泛红，她用力点了点头，将那份滚烫的承诺深深刻入心底。窗外夜色如墨，远处隐隐传来风雷之声——青云峡的方向，一场足以搅动天下的风暴正在酝酿。而陈机，已经踏上了新的征途。"
+      }
+    }
+  ]
+}

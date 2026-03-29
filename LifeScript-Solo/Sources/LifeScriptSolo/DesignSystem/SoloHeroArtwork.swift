@@ -32,7 +32,7 @@ struct SoloHeroArtwork: View {
                 if reduceMotion {
                     glowLayer(w: w, h: h, t: 0)
                 } else {
-                    TimelineView(.animation) { tl in
+                    TimelineView(.animation(minimumInterval: 0.033)) { tl in
                         let t = tl.date.timeIntervalSinceReferenceDate
                         let shake = meteorShake(t: t)
                         ZStack {
@@ -107,6 +107,14 @@ struct SoloHeroArtwork: View {
                 .init(color: Color(red: 0.06, green: 0.20, blue: 0.30), location: 0.76),
                 .init(color: Color(red: 0.07, green: 0.26, blue: 0.34), location: 1.00),
             ]
+        case .oracleJade:
+            return [
+                .init(color: Color(red: 0.03, green: 0.08, blue: 0.16), location: 0.00),
+                .init(color: Color(red: 0.04, green: 0.14, blue: 0.24), location: 0.18),
+                .init(color: Color(red: 0.05, green: 0.22, blue: 0.31), location: 0.44),
+                .init(color: Color(red: 0.07, green: 0.30, blue: 0.38), location: 0.72),
+                .init(color: Color(red: 0.08, green: 0.18, blue: 0.24), location: 1.00),
+            ]
         case .royalPlum:
             return [
                 .init(color: Color(red: 0.10, green: 0.03, blue: 0.16), location: 0.00),
@@ -155,7 +163,7 @@ struct SoloHeroArtwork: View {
 
     private func drawStars(ctx: GraphicsContext, size: CGSize) {
         // Fire themes: dim stars (sky too bright near horizon)
-        let scale: CGFloat = preset == .moonJade ? 1.0 : preset == .sapphireMist ? 0.85 : 0.55
+        let scale: CGFloat = preset == .moonJade ? 1.0 : preset == .oracleJade ? 1.08 : preset == .sapphireMist ? 0.85 : 0.55
         for (sx, sy, r, a) in starData {
             guard sy < 0.38 else { continue }
             let cx = sx * size.width
@@ -220,6 +228,18 @@ struct SoloHeroArtwork: View {
                     .frame(width: w * 1.2, height: h * 0.22)
                     .position(x: w * 0.35, y: h * 0.52)
                     .blur(radius: 28)
+            } else if preset == .oracleJade {
+                Ellipse()
+                    .fill(Color(red: 0.10, green: 0.42, blue: 0.46).opacity(0.30))
+                    .frame(width: w * 1.35, height: h * 0.28)
+                    .position(x: w * 0.56, y: h * 0.58)
+                    .blur(radius: 34)
+
+                Ellipse()
+                    .fill(Color(red: 0.82, green: 0.68, blue: 0.26).opacity(0.10))
+                    .frame(width: w * 0.62, height: h * 0.18)
+                    .position(x: w * 0.50, y: h * 0.64)
+                    .blur(radius: 24)
             }
         }
         .frame(width: w, height: h)
@@ -229,6 +249,7 @@ struct SoloHeroArtwork: View {
         switch preset {
         case .ashCrimson:   Color(red: 0.20, green: 0.09, blue: 0.06)
         case .moonJade:     Color(red: 0.08, green: 0.24, blue: 0.28)
+        case .oracleJade:   Color(red: 0.08, green: 0.28, blue: 0.32)
         case .royalPlum:    Color(red: 0.20, green: 0.08, blue: 0.28)
         case .emberGold:    Color(red: 0.22, green: 0.12, blue: 0.04)
         case .sapphireMist: Color(red: 0.06, green: 0.14, blue: 0.32)
@@ -247,6 +268,12 @@ struct SoloHeroArtwork: View {
                      with: .color(Color(red: 0.03, green: 0.08, blue: 0.14).opacity(0.85)))
             // Near mountain
             ctx.fill(mountainPath(w: w, h: h), with: .color(.black))
+        } else if preset == .oracleJade {
+            ctx.fill(distantMountainPath(w: w, h: h),
+                     with: .color(Color(red: 0.02, green: 0.10, blue: 0.16).opacity(0.86)))
+            ctx.fill(oracleTerracePath(w: w, h: h),
+                     with: .color(Color(red: 0.01, green: 0.05, blue: 0.08).opacity(0.96)))
+            ctx.fill(oracleObservatoryPath(w: w, h: h), with: .color(.black))
         } else {
             // Distant destroyed city
             ctx.fill(distantCityPath(w: w, h: h),
@@ -359,6 +386,48 @@ struct SoloHeroArtwork: View {
         return p
     }
 
+    private func oracleTerracePath(w: CGFloat, h: CGFloat) -> Path {
+        var p = Path()
+        let baseY = h * 0.81
+        p.move(to: CGPoint(x: 0, y: h))
+        p.addLine(to: CGPoint(x: 0, y: baseY))
+        p.addLine(to: CGPoint(x: w * 0.16, y: baseY - h * 0.06))
+        p.addLine(to: CGPoint(x: w * 0.28, y: baseY - h * 0.02))
+        p.addLine(to: CGPoint(x: w * 0.40, y: baseY - h * 0.10))
+        p.addLine(to: CGPoint(x: w * 0.55, y: baseY - h * 0.03))
+        p.addLine(to: CGPoint(x: w * 0.72, y: baseY - h * 0.08))
+        p.addLine(to: CGPoint(x: w * 0.84, y: baseY - h * 0.02))
+        p.addLine(to: CGPoint(x: w, y: baseY - h * 0.05))
+        p.addLine(to: CGPoint(x: w, y: h))
+        p.closeSubpath()
+        return p
+    }
+
+    private func oracleObservatoryPath(w: CGFloat, h: CGFloat) -> Path {
+        var p = Path()
+        let baseY = h * 0.82
+        p.move(to: CGPoint(x: 0, y: h))
+        p.addLine(to: CGPoint(x: w * 0.18, y: h))
+        p.addLine(to: CGPoint(x: w * 0.18, y: baseY - h * 0.05))
+        p.addLine(to: CGPoint(x: w * 0.27, y: baseY - h * 0.05))
+        p.addLine(to: CGPoint(x: w * 0.30, y: baseY - h * 0.16))
+        p.addLine(to: CGPoint(x: w * 0.36, y: baseY - h * 0.16))
+        p.addLine(to: CGPoint(x: w * 0.42, y: baseY - h * 0.30))
+        p.addLine(to: CGPoint(x: w * 0.48, y: baseY - h * 0.44))
+        p.addLine(to: CGPoint(x: w * 0.53, y: baseY - h * 0.22))
+        p.addLine(to: CGPoint(x: w * 0.58, y: baseY - h * 0.16))
+        p.addLine(to: CGPoint(x: w * 0.64, y: baseY - h * 0.16))
+        p.addLine(to: CGPoint(x: w * 0.67, y: baseY - h * 0.08))
+        p.addLine(to: CGPoint(x: w * 0.80, y: baseY - h * 0.08))
+        p.addLine(to: CGPoint(x: w * 0.84, y: baseY - h * 0.18))
+        p.addLine(to: CGPoint(x: w * 0.90, y: baseY - h * 0.18))
+        p.addLine(to: CGPoint(x: w * 0.94, y: baseY - h * 0.04))
+        p.addLine(to: CGPoint(x: w, y: baseY - h * 0.04))
+        p.addLine(to: CGPoint(x: w, y: h))
+        p.closeSubpath()
+        return p
+    }
+
     // ─────────────────────────────────────────────────────────────────────────
     // MARK: - Dynamic Glow
     // ─────────────────────────────────────────────────────────────────────────
@@ -450,6 +519,46 @@ struct SoloHeroArtwork: View {
                     .frame(width: 280, height: 280)
                     .position(x: w * 0.74, y: h * 0.16)
                     .blur(radius: 20)
+            } else if preset == .oracleJade {
+                Circle()
+                    .strokeBorder(
+                        AngularGradient(
+                            colors: [
+                                hotspot.opacity(0.95 * pulse2),
+                                primaryGlow.opacity(0.78 * pulse),
+                                Color.white.opacity(0.90 * pulse3),
+                                hotspot.opacity(0.95 * pulse2)
+                            ],
+                            center: .center
+                        ),
+                        lineWidth: 2.2
+                    )
+                    .frame(width: 184, height: 184)
+                    .position(x: w * 0.72, y: h * 0.22)
+                    .blur(radius: 0.6)
+
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [Color.white.opacity(0.76 * pulse), hotspot.opacity(0.28), .clear],
+                            center: .center, startRadius: 0, endRadius: 82
+                        )
+                    )
+                    .frame(width: 168, height: 168)
+                    .position(x: w * 0.72, y: h * 0.22)
+                    .blur(radius: 4)
+
+                Capsule(style: .continuous)
+                    .fill(primaryGlow.opacity(0.74 * pulse2))
+                    .frame(width: 10, height: 72)
+                    .position(x: w * 0.72, y: h * 0.22)
+                    .blur(radius: 2)
+
+                RoundedRectangle(cornerRadius: 999, style: .continuous)
+                    .strokeBorder(hotspot.opacity(0.86 * pulse3), lineWidth: 1.5)
+                    .frame(width: 72, height: 32)
+                    .position(x: w * 0.72, y: h * 0.22)
+                    .blur(radius: 0.8)
             }
         }
         .frame(width: w, height: h)
@@ -459,6 +568,7 @@ struct SoloHeroArtwork: View {
         switch preset {
         case .ashCrimson:   Color(red: 0.90, green: 0.38, blue: 0.08)
         case .moonJade:     Color(red: 0.24, green: 0.76, blue: 0.64)
+        case .oracleJade:   Color(red: 0.22, green: 0.84, blue: 0.78)
         case .royalPlum:    Color(red: 0.68, green: 0.22, blue: 0.88)
         case .emberGold:    Color(red: 0.95, green: 0.64, blue: 0.12)
         case .sapphireMist: Color(red: 0.26, green: 0.58, blue: 0.96)
@@ -468,13 +578,31 @@ struct SoloHeroArtwork: View {
         switch preset {
         case .ashCrimson:   Color(red: 1.00, green: 0.74, blue: 0.24)
         case .moonJade:     Color(red: 0.78, green: 0.98, blue: 0.90)
+        case .oracleJade:   Color(red: 0.98, green: 0.86, blue: 0.48)
         case .royalPlum:    Color(red: 0.90, green: 0.66, blue: 1.00)
         case .emberGold:    Color(red: 1.00, green: 0.90, blue: 0.44)
         case .sapphireMist: Color(red: 0.68, green: 0.88, blue: 1.00)
         }
     }
-    private var glowCX:    CGFloat { preset == .moonJade ? 0.50 : 0.40 }
-    private var hotspotCX: CGFloat { preset == .moonJade ? 0.74 : 0.38 }
+    private var glowCX: CGFloat {
+        switch preset {
+        case .moonJade, .oracleJade:
+            return 0.50
+        default:
+            return 0.40
+        }
+    }
+
+    private var hotspotCX: CGFloat {
+        switch preset {
+        case .moonJade:
+            return 0.74
+        case .oracleJade:
+            return 0.72
+        default:
+            return 0.38
+        }
+    }
 
     // ─────────────────────────────────────────────────────────────────────────
     // MARK: - Lightning Flash (rare dramatic effect)
@@ -501,6 +629,7 @@ struct SoloHeroArtwork: View {
         switch preset {
         case .ashCrimson, .emberGold: drawEmbers(ctx: ctx, w: size.width, h: size.height, t: t)
         case .moonJade:               drawWisps(ctx: ctx, w: size.width, h: size.height, t: t)
+        case .oracleJade:             drawOracleMotes(ctx: ctx, w: size.width, h: size.height, t: t)
         case .royalPlum:              drawAshParticles(ctx: ctx, w: size.width, h: size.height, t: t)
         case .sapphireMist:           drawWisps(ctx: ctx, w: size.width, h: size.height, t: t)
         }
@@ -588,6 +717,39 @@ struct SoloHeroArtwork: View {
             ctx.fill(Path(ellipseIn: haloRect), with: .color(wispColor.opacity(alpha * 0.18)))
             let rect = CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)
             ctx.fill(Path(ellipseIn: rect), with: .color(wispColor.opacity(alpha * 0.85)))
+        }
+    }
+
+    private func drawOracleMotes(ctx: GraphicsContext, w: CGFloat, h: CGFloat, t: Double) {
+        let count = 34
+        let ringCenter = CGPoint(x: w * 0.72, y: h * 0.22)
+        for i in 0..<count {
+            let fi = Double(i)
+            let orbit = 52.0 + fi.truncatingRemainder(dividingBy: 5.0) * 10.0
+            let angle = t * (0.24 + fi * 0.004) + fi * 0.67
+            let driftX = cos(angle) * orbit
+            let driftY = sin(angle) * orbit * 0.55
+            let x = ringCenter.x + driftX
+            let y = ringCenter.y + driftY
+            let alpha = 0.28 + (sin(t * 0.9 + fi) * 0.5 + 0.5) * 0.56
+            let r = CGFloat(1.2 + fi.truncatingRemainder(dividingBy: 3.0) * 0.5)
+
+            let haloRect = CGRect(x: x - r * 3.8, y: y - r * 3.8, width: r * 7.6, height: r * 7.6)
+            ctx.fill(Path(ellipseIn: haloRect), with: .color(primaryGlow.opacity(alpha * 0.14)))
+
+            let rect = CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)
+            ctx.fill(Path(ellipseIn: rect), with: .color(hotspot.opacity(alpha)))
+        }
+
+        let streamCount = 22
+        for i in 0..<streamCount {
+            let fi = Double(i)
+            let progress = (t * 0.12 + fi * 0.07).truncatingRemainder(dividingBy: 1.0)
+            let x = w * (0.18 + CGFloat(fi.truncatingRemainder(dividingBy: 6.0)) * 0.12)
+            let y = h * (0.86 - CGFloat(progress) * 0.56)
+            let alpha = progress < 0.18 ? progress / 0.18 : progress > 0.82 ? (1.0 - progress) / 0.18 : 1.0
+            let rect = CGRect(x: x - 1.2, y: y - 1.2, width: 2.4, height: 2.4)
+            ctx.fill(Path(ellipseIn: rect), with: .color(primaryGlow.opacity(alpha * 0.75)))
         }
     }
 

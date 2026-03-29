@@ -1,0 +1,535 @@
+{
+  "id": "天机录_ch0923",
+  "book_id": "天机录",
+  "number": 923,
+  "title": "天机剑出",
+  "is_paid": true,
+  "next_chapter_hook": "魔道主帅的身影在虚空中逐渐消散，只留下一串震人心魄的狂笑回荡在天地之间——那笑声中蕴含的深意，令陈机眸光骤寒，因为下一场真正的命运之战，已悄然拉开了序幕。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0923_001",
+        "content": "凌渊老者的声音在混沌虚空中回荡，带着不可抗拒的威压——而就在两道意志僵持之际，天道之眼那超越性的注视愈发浓烈，仿佛下一刻便会降下不可逆转的天罚。陈机立于虚空之中，周身衣袂猎猎作响，那双深邃如渊的眸子却平静得可怕。\"命运？\"他低低重复了一遍这两个字，嘴角竟勾起一抹讥诮的弧度。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_002",
+        "character_id": "char_lingyuan",
+        "content": "（凌渊负手而立，周身道韵流转如河，语气中带着掌控天下的从容）\"不错，你手中的天机录不过是残卷，真正的完整之道，藏于老夫百年布局之中。陈机，你以为凭一己之力便能逆天改命？可笑至极。\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_003",
+        "content": "陈机闻言，那张向来平静的面容上终于浮现出一丝波动——却不是恐惧，而是难以遏制的嘲讽。他缓步向前，每一步落下，虚空中便有一道肉眼可见的涟漪荡开，那是他体内天机录本源在共鸣。\"百年布局？\"他的声音不高，却清晰地穿透了混沌的咆哮，\"凌渊前辈，你布局百年的依仗，不也被天机录选中之人，一剑斩断了么？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼的意志如潮水般汹涌，带着裁决万物的冷漠）\"陈机，你的选择将决定三界未来。接受命运的安排，或——灰飞烟灭。\"",
+        "emotion": "威压"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0923_choice_001",
+        "prompt": "面对天道之眼的威压与凌渊的招揽，陈机必须做出抉择——他的回应将决定这场命运级对决的走向。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0923_正面对抗",
+            "text": "正面对抗",
+            "description": "以天机剑正面斩断命运连线，用实力证明自己的道路不需要任何存在的庇护",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "天机剑完整形态显现，三界共鸣",
+            "risk_hint": "可能触发天道之眼更强的反噬",
+            "process_label": "拔剑问天",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "名望",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_正面对抗_001",
+                  "content": "陈机猛然抬首，那双眼眸中爆发出的光芒比天道之眼的注视更为炽烈。他缓缓抬手，虚空中骤然浮现出一柄通体晶莹的古剑——那是天机录的本源具现，天机剑！剑身上流转的符文与混沌之力剧烈碰撞，整个虚空都在颤抖。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_以退为进",
+            "text": "以退为进",
+            "description": "假意接受提议深入虎穴，实则暗中布局寻找破绽，等待一击必杀的机会",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要承受凌渊的监视",
+            "visible_reward": "获得凌渊百年布局的关键情报",
+            "risk_hint": "若被识破将陷入绝境",
+            "process_label": "将计就计",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_以退为进_001",
+                  "content": "陈机眸光微闪，面上浮现出一丝\"挣扎\"之色。凌渊见状，眼中闪过一抹得意，以为此子终于屈服。然而就在他伸手欲接过陈机递出的天机录残页时，陈机低垂的嘴角却勾起一抹冰冷至极的弧度——这老狐狸，终究还是上钩了。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_威慑",
+            "text": "威慑",
+            "description": "展示部分天机录力量令对方忌惮，迫使魔道主帅暂时退却，保存实力以备后续决战",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "魔道主帅心生忌惮，百年内不敢轻举妄动",
+            "risk_hint": "可能引来更多势力觊觎",
+            "process_label": "不战屈人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 400
+              },
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "魅力",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_威慑_001",
+                  "content": "陈机并未拔剑，只是将右手轻轻按在胸口的天机录印记上。一瞬间，浩瀚如海的气息从他体内倾泻而出，那股力量之纯粹、之古老，令凌渊瞳孔骤缩。他退后一步，声音发颤：\"这……这是完整的天机之力？！你怎么可能……\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_005",
+        "content": "天机剑通体爆发出的光芒撕裂了混沌虚空，那些原本汹涌的黑暗之力在这柄古剑面前竟如纸糊一般脆弱。陈机握剑而立，剑身上的天机符文与他的血脉完美契合，仿佛这一剑本就是为他而生。他缓步向凌渊逼近，每一步都带着不可阻挡的威势。\"凌渊前辈，你说我是废物？\"他的声音平静得可怕，\"那今日，便让这天下看看，废物是如何斩断你所谓命运的。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_006",
+        "character_id": "char_lingyuan",
+        "content": "（凌渊面色剧变，周身道韵疯狂涌动，却无法掩饰那双眼底深处的恐惧）\"不可能！天机剑需要完整的天机录才能驱动，你区区残卷——\"",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_007",
+        "content": "陈机没有给他说完的机会。天机剑高高扬起，那一瞬间，整个三界都感知到了这股超越天界的力量——无数闭关的老怪物猛然睁眼，三大宗门的护山大阵同时亮起警示之光，就连天青宗深处的禁地里，某道沉睡万年的意志都微微颤动了一下。陈机一剑斩落，平静地吐出四个字：\"天机——剑出。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_008",
+        "content": "剑气如银河倾泻，横扫而过的瞬间，凌渊百年布局所凝聚的命运连线被彻底斩断。那些缠绕在陈机身上的因果丝线纷纷崩碎，化作点点星光消散于虚空之中。凌渊惨叫一声，口中喷出一口鲜血，他的脸上写满了难以置信——百年的心血，竟被一个\"废物\"一剑斩灭！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼的意志中竟罕见地闪过一丝波动，仿佛对这个结果既意外又满意）\"有趣……万载以来，第一个敢在天罚之下拔剑的人类。陈机，你比历代预言者都要疯狂。\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0923_choice_002",
+        "prompt": "一剑斩断命运连线后，陈机面对天道之眼的注视与受伤的凌渊，需要决定下一步行动。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0923_追击凌渊",
+            "text": "乘胜追击",
+            "description": "趁凌渊重伤给予致命一击，彻底消除这个潜伏的威胁",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，可能被天道之眼干预",
+            "visible_reward": "凌渊百年修为尽废，天青宗隐患彻底解除",
+            "risk_hint": "凌渊可能有保命底牌",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_追击_001",
+                  "content": "陈机眸光冰冷，天机剑再度扬起。然而就在剑锋即将触及凌渊的瞬间，虚空中骤然降临一股浩瀚如海的威压——天道之眼出手了！"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_威慑退敌",
+            "text": "威慑退敌",
+            "description": "以天机剑的完整形态展示压倒性力量，迫使凌渊与魔道势力暂时撤退",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露天机剑真实威力",
+            "visible_reward": "凌渊仓皇逃窜，三界震动，主角威望大增",
+            "risk_hint": "可能招来更多强者觊觎",
+            "process_label": "不战屈人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 500
+              },
+              {
+                "stat": "魅力",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 80
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_威慑_001",
+                  "content": "陈机没有追击，而是将天机剑横于胸前，剑尖遥遥指向凌渊。\"滚。\"他只说了一个字，语气平淡得仿佛在驱赶一只蝼蚁。凌渊瞳孔中闪过屈辱与恐惧交织的光芒，最终化作一声不甘的怒吼，身影消失在虚空裂缝之中。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_质问天道",
+            "text": "质问天道",
+            "description": "直接向天道之眼发出质问，追问它真正的目的与天机录的完整真相",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能触怒天道之眼",
+            "visible_reward": "获得关键信息，为最终决战埋下伏笔",
+            "risk_hint": "天道之眼可能给出模棱两可的回答",
+            "process_label": "逆天而问",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_质问_001",
+                  "content": "陈机收剑而立，仰首直视虚空中那只超越性的眼眸。\"天道之眼，你将历代预言者当作棋子，天机录不过是你布下的棋子之一。\"他的声音在虚空中回荡，\"那我倒想知道——你最终的棋局，究竟是什么？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_010",
+        "content": "凌渊仓皇逃窜的瞬间，虚空裂缝中传来他怨毒的声音：\"陈机！你给老夫记住！今日之辱，老夫必将百倍奉还！\"然而话音未落，一道剑气穿透虚空，直接将那裂缝绞得粉碎。凌渊的惨叫回荡在混沌之中，却也掩饰不住那深入骨髓的恐惧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_011",
+        "content": "三界在这一刻产生了剧烈的共鸣。天青宗内，正在闭关的苏青瑶猛然睁眼，她感知到了那股熟悉而陌生的气息——那是陈机，却又与往日那个懦弱的杂役弟子截然不同。她的心剧烈跳动，不安与期待交织。魔道圣宗深处，夜清的嘴角勾起一抹意味深长的笑容：\"他终于不再隐藏了么？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_012",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼的意志如潮水般退去，却在最后一刻传来一道意味深长的声音）\"陈机，你比历代预言者都要出色。但记住——天机录越完整，命运的必死反噬就越强。吾在天道的尽头，等你来战。\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_013",
+        "content": "凌渊的身影在虚空中彻底消散，然而就在所有人都以为这场命运级对决已经落幕之际，一道狂放的笑声骤然从混沌深处传来。那笑声震得整个虚空都在颤抖，其中蕴含的力量竟丝毫不弱于方才的天机剑！\"陈机！\"那笑声戛然而止，取而代之的是一道充满狂热与兴奋的声音，\"不愧是能让天道之眼亲自关注的男人！这一剑，本帅记下了！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_014",
+        "character_id": "char_chenji",
+        "content": "（陈机握紧天机剑，眸中闪过一抹冷厉之色，却并未追击。他知道，真正的命运之战尚未开始，而现在暴露太多底牌只会让后续的棋局更加被动）",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_015",
+        "content": "魔道主帅的声音继续回荡在虚空之中，带着玩味与期待：\"今日不过是本帅的试探罢了。你那天机剑虽强，但以你现在的修为，又能挥出几剑？\"笑声再度响起，\"下次见面，便是真正的命运之战。届时，本帅会让你明白——你所谓的选择，不过是在吾为你划定的棋盘上挣扎！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_016",
+        "content": "话音落下，那股狂傲的气息也随之消散。虚空逐渐恢复平静，混沌之力退去，天道之眼的注视也缓缓隐没。然而陈机知道，这不过是暴风雨前的宁静。他低头看向手中的天机剑，剑身上的符文正在缓缓暗淡，仿佛方才那一剑已经消耗了它大部分的力量。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_017",
+        "content": "陈机缓缓收剑，那张俊逸的面容上浮现出一抹淡淡的疲惫。\"试探？\"他低低重复了一遍魔道主帅的话，嘴角勾起一抹讥诮的弧度，\"那便让你试试，我这个'废物'还能给你多少惊喜。\"他抬头望向虚空深处，眸中精光一闪，\"下次见面，我会让你明白——我陈机的路，从来都是自己走的。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_018",
+        "content": "随着魔道主帅的身影彻底消散，这场惊天动地的命运级对决终于落下帷幕。三界之内，无数修士都在方才那股力量波动中惊骇不已——他们不知道发生了什么，但他们知道，有一位绝世强者在这一战中横空出世，以一剑之威斩断了命运的连线，更让魔道主帅都不得不暂时退却！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0923_choice_003",
+        "prompt": "战斗结束，陈机需要决定接下来的行动——是休养生息恢复消耗，还是趁热打铁继续布局？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0923_休整",
+            "text": "返回休整",
+            "description": "回到天青宗恢复消耗，与苏青瑶商议后续计划，稳固后方",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能错过追击魔道主帅的时机",
+            "visible_reward": "与苏青瑶的关系更进一步，获得她的信任与支持",
+            "risk_hint": "凌渊可能在此时机反扑",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 30
+              },
+              {
+                "stat": "魅力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0923_result_休整_001",
+                  "character_id": "char_suqingyao",
+                  "content": "（苏青瑶的身影在虚空中浮现，她的眼中闪烁着复杂的光芒——有震惊，有担忧，更有一丝难以掩饰的骄傲）\"陈机……你瞒得我好苦。\"",
+                  "emotion": "复杂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_追击",
+            "text": "趁胜追击",
+            "description": "追踪魔道主帅的气息，乘胜扩大战果，不给对方喘息之机",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "状态未满，风险极大",
+            "visible_reward": "可能彻底击溃魔道主帅在天青宗的势力，削弱其百年布局",
+            "risk_hint": "可能落入敌方陷阱",
+            "process_label": "宜将剩勇追穷寇",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -40
+              },
+              {
+                "stat": "名望",
+                "delta": 300
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_追击_001",
+                  "content": "陈机眸光一寒，身形化作流光冲向魔道主帅消散的方向。然而就在他即将追上之际，虚空中骤然亮起无数道禁制光芒——那是一个早就布置好的陷阱！魔道主帅的狂笑声再度响起：\"陈机，你以为本帅真的会不留后手？哈哈哈！\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_019",
+        "content": "然而出乎所有人意料的是，陈机面对那足以困杀大能者的禁制大阵，面上竟无丝毫惧色。他缓缓抬起右手，天机剑再度凝聚于掌心。\"雕虫小技。\"他淡淡开口，剑光一闪，那看似牢不可破的禁制大阵便如纸糊般崩碎。魔道主帅的笑声戛然而止，沉默片刻后才咬牙切齿地吐出一句话：\"好！很好！本帅倒要看看，你的天机剑还能挥出几剑！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_020",
+        "content": "笑声渐远，魔道主帅的气息彻底消失在三界之中。陈机立于虚空，衣袂飘飘，仿若一尊战神临世。然而只有他自己知道，方才那一剑已经消耗了他近乎三成的天命值，若再来几次这样的战斗，天机录的代价将令他难以承受。他收剑而立，目光深邃：\"下一次……我会让你连逃的机会都没有。\"话音落下，他转身向天青宗的方向飞去，留给三界一个永恒的传说。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

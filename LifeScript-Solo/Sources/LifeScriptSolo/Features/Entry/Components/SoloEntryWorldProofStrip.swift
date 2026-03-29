@@ -58,7 +58,7 @@ struct SoloEntryWorldProofStrip: View {
 
     private var riskLine: String {
         guard let character = book.characters.first else {
-            return "关键人物还没有完全现身。"
+            return SoloLocalization.localized("关键人物还没有完全现身。")
         }
         return "\(character.name) · \(character.title)"
     }
@@ -70,11 +70,16 @@ struct SoloEntryWorldProofStrip: View {
         if let hiddenRouteHint = snapshot.hiddenRouteHint {
             return hiddenRouteHint
         }
-        return "公开路线还没有完全显形。"
+        return SoloLocalization.localized("公开路线还没有完全显形。")
     }
 
     private var replayLine: String {
-        "\(snapshot.progress.totalChapterCount) \(snapshot.branding.chapterUnitName)长线体验 · \(book.characters.count) 名关键人物"
+        SoloLocalization.format(
+            "%d %@长线体验 · %d 名关键人物",
+            snapshot.progress.totalChapterCount,
+            snapshot.branding.chapterUnitName,
+            book.characters.count
+        )
     }
 
     private func evidenceCard(title: String, body: String, footnote: String, tint: Color) -> some View {

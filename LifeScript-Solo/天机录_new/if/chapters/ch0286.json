@@ -1,0 +1,519 @@
+{
+  "id": "天机录_ch0286",
+  "book_id": "天机录",
+  "number": 286,
+  "title": "遗迹入口",
+  "is_paid": true,
+  "next_chapter_hook": "那低沉的呼唤如远古的钟鸣，穿透层层石壁直抵灵魂深处，陈机敢肯定——遗迹深处有什么东西，正在等待他。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0286_001",
+        "content": "暮色四合，苍茫的山脉如蛰伏的巨兽轮廓。天青宗的废墟已被抛在身后三百里外，陈机一行三人终于站在了那座传说中的上古遗迹入口前。巨大的石门嵌入山体，高逾十丈，门楣上刻满了晦涩难辨的铭文，历经万载风霜却依然泛着幽幽青光。苏青瑶手持长剑，目光警惕地扫视四周；夜清则微微眯起那双妖异的紫眸，嘴角噙着一抹玩味的笑意，似乎在期待着什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_002",
+        "character_id": "char_suqingyao",
+        "content": "这里的灵气浓度……不对劲。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_003",
+        "character_id": "char_yeqing",
+        "content": "圣宗古籍中记载，上古遗迹多以'灵潮'为锁，入门者若无相应血脉或信物，必被灵气绞杀。看来我们选对地方了。",
+        "emotion": "笃定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_004",
+        "content": "陈机没有说话，目光在那扇石门上停留了片刻。天机录残页在脑海中微微发热，那是一种前所未有的感应——仿佛门后有什么东西正在呼唤他，呼唤得如此热切，又如此悲凉。他不动声色地收回视线，转而看向石门两侧矗立的傀儡。这些傀儡身高丈二，通体由漆黑金属铸就，表面刻满了繁复的阵法纹路，手中所持巨剑泛着森寒的杀意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_005",
+        "character_id": "char_suqingyao",
+        "content": "上古守护傀儡……传闻它们皆是半步金丹的战力，一旦激活便是不死不休。陈机，你确定要进去？",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_006",
+        "content": "陈机正要回答，石门两侧的傀儡却突然动了。沉闷的机械声响起，十八具傀儡齐齐转头，那空洞的眼眶中燃起了幽蓝色的魂火。它们没有举起巨剑，反而——单膝跪地。金属与山石碰撞的巨响在山谷中回荡，十八道幽蓝魂火齐刷刷地朝向陈机，仿佛在朝拜它们等待了万年的主人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_007",
+        "character_id": "char_yeqing",
+        "content": "……有意思。",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_008",
+        "character_id": "char_suqingyao",
+        "content": "你做了什么？！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_009",
+        "content": "苏青瑶的惊呼在寂静的山谷中格外清晰。她的目光在跪伏的傀儡与陈机之间来回移动，素来高冷的脸上罕见地浮现出动摇之色。她想起过去无数次对陈机的试探——那些被他用各种借口搪塞过去的疑点，那些看似合理实则漏洞百出的解释，如今似乎都有了答案。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0286_010",
+        "prompt": "面对这突如其来的异变，陈机必须做出选择。是坦然接受遗迹的认可，还是继续保持低调伪装？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_bloodline",
+            "text": "坦然承认血脉",
+            "description": "既然遗迹已经暴露了血脉的秘密，不如顺势而为，向两人坦白自己与这处遗迹的关联。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "身份暴露",
+            "visible_reward": "遗迹认可加深",
+            "risk_hint": "苏青瑶的信任可能动摇",
+            "process_label": "坦然相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_accept_bloodline_01",
+                  "character_id": "char_chenji",
+                  "content": "我姓陈。这遗迹……或许与我的家族有些渊源。",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_accept_bloodline_02",
+                  "content": "陈机没有隐瞒，也没有炫耀，只是用最平静的语气说出了事实。但正是这份平静，让苏青瑶心中翻涌起惊涛骇浪。她死死盯着陈机的侧脸，忽然发现这个她研究了无数次的男人，此刻竟是如此陌生。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "首次向盟友坦白血脉秘密",
+            "branch_route_id": null
+          },
+          {
+            "id": "hide_identity",
+            "text": "继续隐藏身份",
+            "description": "傀儡的反应虽然异常，但可以用其他理由搪塞。保持神秘感，不要让任何人摸清自己的底牌。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "遗迹认可可能受阻",
+            "visible_reward": "保持信息优势",
+            "risk_hint": "苏青瑶的怀疑会更深",
+            "process_label": "淡然处之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_hide_identity_01",
+                  "character_id": "char_chenji",
+                  "content": "可能是某种阵法感应……上古遗迹的机关，谁说得准呢。",
+                  "emotion": "漫不经心"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_hide_identity_02",
+                  "character_id": "char_suqingyao",
+                  "content": "是吗？那这阵法倒是精准得很，偏偏只对你一人行礼。",
+                  "emotion": "质疑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_hide_identity_03",
+                  "content": "苏青瑶的语气中带着一丝嘲讽。她不傻，恰恰相反，作为天青宗内门首席，她的洞察力在整个宗门都是顶尖的。陈机的每一次敷衍，她都记在心里。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "divert_attention",
+            "text": "转移话题",
+            "description": "不正面回应傀儡的反应，而是将注意力引向遗迹本身，暗示这是进入遗迹的契机而非个人秘密。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错过遗迹认可",
+            "visible_reward": "不暴露任何信息",
+            "risk_hint": "遗迹可能有后续反应",
+            "process_label": "避重就轻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_divert_01",
+                  "character_id": "char_chenji",
+                  "content": "比起纠结这些傀儡为什么跪下，我更关心那扇门什么时候能打开。你们看——",
+                  "emotion": "转移"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_divert_02",
+                  "content": "话音未落，陈机便将两人的注意力引向了石门。偏偏就在这时，那扇沉寂万年的石门竟真的有了动静——幽蓝色的光芒从门缝中透出，沿着铭文的轨迹缓缓流淌，最终汇聚成一个清晰的图案。那是一只展翅的玄鸟，羽翎毕现，眼眸如生，而玄鸟之下，是一个古朴的\"陈\"字。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0286_011",
+        "content": "陈家的血脉印记……居然真的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_012",
+        "character_id": "char_yeqing",
+        "content": "圣宗秘档中记载，上古时期曾有一个陈氏旁支以玄鸟为族徽，后来那一支似乎触怒了什么禁忌，全族覆灭，只留下一些血脉流落在外。没想到这传说是真的。",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_013",
+        "content": "夜清的声音平静，但眼底却闪过一丝精光。魔道圣宗的圣女，掌握着常人难以想象的秘密。她看向陈机的目光多了几分审视——这个看似废物的男人，身上究竟还藏着多少秘密？石门上的玄鸟图腾愈发清晰，陈字的光芒也在逐渐增强，整座山谷的灵气都在向此处汇聚。傀儡们的魂火愈发明亮，却依然保持着跪伏的姿态，仿佛在等待着什么仪式的完成。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_014",
+        "character_id": "char_suqingyao",
+        "content": "陈机，你还要瞒我到什么时候？",
+        "emotion": "压抑的怒意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_015",
+        "content": "苏青瑶的声音很轻，却带着一种从未有过的坚定。她一步步走向陈机，素白的手指握紧了剑柄，指节因用力而泛白。这是她第一次用这种眼神看他——不是审视，不是怀疑，而是一种近乎决绝的质问。陈机忽然意识到，这个女人或许比他想象中更难以糊弄过去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0286_016",
+        "prompt": "苏青瑶的质问让气氛降至冰点，陈机必须在坦白与继续伪装之间做出抉择。这一次，他无法再用那些蹩脚的借口蒙混过关。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "partial_confession",
+            "text": "透露部分真相",
+            "description": "承认自己与遗迹有血脉关联，但隐瞒天机录和更多细节。给苏青瑶一个交代，同时保留核心秘密。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去部分信息优势",
+            "visible_reward": "苏青瑶的信任回升",
+            "risk_hint": "夜清可能会察觉到隐瞒",
+            "process_label": "有限坦白",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_partial_01",
+                  "character_id": "char_chenji",
+                  "content": "……我确实不知道自己身上流着什么血脉。但既然遗迹认我，我便会进去看看。至于其他的——等我弄清楚再说。",
+                  "emotion": "真诚"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_partial_02",
+                  "content": "这番话半真半假，却比之前的任何解释都更令人信服。苏青瑶沉默了片刻，终于松开了剑柄。\"好，我信你。但你给我记住——\"她的声音忽然冷了下来，\"你若再敢骗我，我会亲手……\"话未说完，她已转身面向石门，只留下一个清冷的背影。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "在遗迹前做出有限坦白",
+            "branch_route_id": null
+          },
+          {
+            "id": "show_strength",
+            "text": "展示绝对实力",
+            "description": "不再解释，直接以行动证明自己的资格。用实力说话，让两人的质疑不攻自破。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露更多底牌",
+            "visible_reward": "彻底压制质疑",
+            "risk_hint": "可能引来更大关注",
+            "process_label": "强势回应",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_strength_01",
+                  "character_id": "char_chenji",
+                  "content": "信不信我，是你的事。能不能进去，是我的事。",
+                  "emotion": "淡漠"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_strength_02",
+                  "content": "陈机没有再看苏青瑶，而是径直向石门走去。他的步伐不快，却带着一种令人窒息的压迫感。傀儡们的魂火随着他的靠近而愈发明亮，当他在石门前站定时，十八具傀儡齐声发出低沉的轰鸣，仿佛在迎接王者的归来。石门上的玄鸟图腾骤然绽放出刺目的光芒，陈字缓缓裂开——门，开了。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "invoke_trial",
+            "text": "主动要求考验",
+            "description": "遗迹既然认可血脉，必然会降下考验。不如主动提出，证明自己靠的不是血脉而是实力。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能面临危险",
+            "visible_reward": "彻底获得遗迹认可",
+            "risk_hint": "考验难度未知",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_trial_01",
+                  "character_id": "char_chenji",
+                  "content": "血脉不过是入场券。若这遗迹真有灵智，想必不会只认血脉而不认心志。让我进去——若我有资格留下，若我没有，遗迹自会给我答案。",
+                  "emotion": "坦荡"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_trial_02",
+                  "content": "话音刚落，石门上的玄鸟图腾竟真的有了回应。它振翅欲飞，眼眸中流露出一丝……欣慰？紧接着，一道苍老而威严的声音在三人脑海中响起：\"陈氏血脉，汝可愿接受天机之试？\"傀儡们齐齐抬头，幽蓝魂火汇聚成一道光柱，直指陈机。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "主动请求遗迹考验",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0286_017",
+        "content": "面对那苍老的询问，陈机没有立刻回答。他能感受到苏青瑶和夜清都在等他的决定——这是她们第一次如此一致地注视着他，等待他揭示答案。天机录残页在脑海中微微发热，似乎也在等待他的选择。陈机深吸一口气，正欲开口——",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_018",
+        "content": "就在此时，石门深处忽然传来一声低沉的呼唤。那声音古老而悠远，仿佛穿越了万载光阴，带着某种说不清道不明的眷恋。它不像是对话，更像是一声轻轻的叹息，一个等待了太久太久的人，终于等到了访客。傀儡们的魂火齐齐颤动，那苍老的询问声忽然消失了，取而代之的是另一句话：\"……你终于来了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_019",
+        "character_id": "char_suqingyao",
+        "content": "这声音……遗迹里有人？",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_020",
+        "character_id": "char_yeqing",
+        "content": "不对，这不是人。这是……器灵？",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_021",
+        "content": "陈机的瞳孔骤然收缩。那声音……为什么如此熟悉？天机录残页在他脑海中疯狂地震动，仿佛见到了失散多年的亲人。他忽然想起墨先生曾对他说过的话——\"天机录并非无主之物，它一直在等它的继承者回到原点。\"原点……难道就是这里？石门上的玄鸟图腾彻底活了过来，它展翅高飞，绕着陈机盘旋三圈后，一头扎入他的眉心。刹那间，万千画面如潮水般涌入他的意识——上古的陈氏家族，覆灭的真相，以及……一个被囚禁在遗迹深处的身影。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_022",
+        "character_id": "char_chenji",
+        "content": "是你在叫我？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_023",
+        "content": "陈机的声音很轻，却带着一种从未有过的颤动。那个被囚禁的身影……那道身影……为何与记忆中那人的轮廓如此相似？天机录残页的信息洪流还未平息，他隐约看见了一间石室，一道模糊的人影，以及一柄悬浮在半空、散发着滔天剑意的长剑。那剑意……那是陈家祖传的玄鸟剑意！陈机的呼吸骤然急促起来。遗迹深处，那道苍老的声音再次响起，这一次却带着一丝颤抖：\"孩子……你果然来了。进来吧，让为父……好好看看你。\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

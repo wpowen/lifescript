@@ -1,0 +1,652 @@
+{
+  "id": "天机录_ch0475",
+  "book_id": "天机录",
+  "number": 475,
+  "title": "协议签订",
+  "is_paid": true,
+  "next_chapter_hook": "就在盟约墨迹未干之际，天机录第七页骤然显化，那行血字仿佛天道之眼的嘲讽——陈机，第七位预言者，你的死期已经写好。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0475_001",
+        "content": "金丹初期的威压如实质般从陈机体内涌出，震得周围灵光一阵紊乱。他微微眯眼，感受着体内澎湃的灵力——这是命运共鸣的馈赠，也是天机录对他的补偿。殿内众人神色各异，有人惊喜，有人忌惮，而凌渊的眸底深处，一抹阴鸷一闪即逝。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_002",
+        "character_id": "char_lingyuan",
+        "content": "恭喜陈机师侄突破金丹。此等机缘，当真是天佑我天青宗。",
+        "emotion": "虚伪的欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_003",
+        "content": "凌渊的笑容如同一层精致的面具，陈机看得分明——面具之下是毫不掩饰的贪婪与算计。这位老掌门怕是已经在盘算如何将他这枚\"棋子\"的价值榨干，再弃如敝履。\"多谢掌门师尊。\"陈机拱手作揖，姿态恭敬得无可挑剔。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_004",
+        "character_id": "char_yeqing",
+        "content": "正道的礼数倒是周全。不过凌掌门，咱们的时间可不多——天机录共鸣的气息，恐怕已经惊动了某些不该惊动的人。",
+        "emotion": "冷淡的催促"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_005",
+        "prompt": "盟约签订在即，凌渊的虚伪与韩烈的敌意并存，陈机需要在维护盟约的同时敲打这两位\"不速之客\"——选择你的应对策略：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiaojin",
+            "text": "敲打凌渊，展示实力",
+            "description": "金丹初成的威压正好用来敲打凌渊——让他知道谁是这棋局的主人，谁才是被利用的棋子。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "凌渊忌惮加深，不敢轻举妄动",
+            "risk_hint": "过早暴露实力可能引起更多势力警觉",
+            "process_label": "威压试探",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaojin_001",
+                  "content": "陈机淡然一笑，金丹初成的威压如同海潮般向凌渊涌去。老掌门的笑容僵在脸上，衣袍无风自动，额头竟沁出了细密的汗珠。\"掌门师尊，您脸色似乎不太好？\"陈机的声音温和，关切之意溢于言表。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaojin_002",
+                  "character_id": "char_lingyuan",
+                  "content": "无事……无事，不过是方才灵力消耗过大罢了。",
+                  "emotion": "强撑颜面"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊已敲打"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "敲打凌渊",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tiaohan",
+            "text": "无视韩烈，彰显格局",
+            "description": "韩烈不过是个头脑简单的莽夫，陈机的目光应该放在更宏大的棋局上——表现出不屑一顾的气度。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激化韩烈敌意",
+            "visible_reward": "在场众人见识陈机的气度与格局",
+            "risk_hint": "韩烈可能当众发难",
+            "process_label": "冷眼相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaohan_001",
+                  "content": "陈机连看都没看韩烈一眼，只是淡淡对夜清道：\"夜圣女，盟约之事要紧，某些跳梁小丑不必理会。\"韩烈脸色涨红如猪肝，双拳紧握，青筋暴起。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaohan_002",
+                  "character_id": "char_hanlie",
+                  "content": "陈机！你给我等着！",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无视韩烈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "无视韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_lianggui",
+            "text": "两不得罪，稳健推进",
+            "description": "盟约签订才是当务之急，没必要在这种时候节外生枝。先把大事办妥，私怨以后再算。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "错过立威时机",
+            "visible_reward": "盟约签订更加顺利，各方都能保持表面和谐",
+            "risk_hint": "显得软弱，后续可能被更多势力轻视",
+            "process_label": "息事宁人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_lianggui_001",
+                  "content": "陈机微微颔首，不疾不徐地走到盟约书案前。凌渊与韩烈对视一眼，均从对方眼中看到了失望——他们本想借此机会试探陈机的底线，没想到这废物竟如此沉得住气。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳健推进"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "稳健推进",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_006",
+        "content": "盟约书帛铺展在千年古檀制成的长案之上，金粉书写的文字在烛火映照下熠熠生辉。这份协议将打破正魔两道延续千年的对立格局——而执笔者，正是陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_007",
+        "character_id": "char_yeqing",
+        "content": "陈公子，请吧。圣宗那边，本座已经斡旋妥当。只要这边签订，协议即刻生效。",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_008",
+        "content": "陈机提起灵毫笔，笔尖悬于书帛之上。这一笔，将决定未来数十年天下格局的走向。他深吸一口气，体内天机录的气息隐隐流转，与笔尖的金粉产生微妙共鸣。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_009",
+        "prompt": "落笔之前，陈机还可以添加最后一条款——这既是他的私心，也是他为妹妹陈念留下的后手。选择你要添加的条款：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiannian",
+            "text": "保护陈念条款",
+            "description": "将寻找并保护陈念列为盟约优先事项，任何签约方不得伤害她——这是陈机最大的软肋，也是他布局的核心。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露自己弱点",
+            "visible_reward": "陈念安全获得正魔双方背书",
+            "risk_hint": "有心人会借此要挟",
+            "process_label": "亲笔添加",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiannian_001",
+                  "content": "陈机笔锋一转，在盟约末尾添上一行小字：\"签约各方有义务协助寻找陈念，并确保其人身安全。\"凌渊眉头微皱，却未出声反对——这一条反而让他对陈机的轻视更甚几分。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiannian_002",
+                  "character_id": "char_yeqing",
+                  "content": "（低声）陈公子倒是念旧。放心，圣宗那边本座亲自盯着。",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念保护条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保护陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tianji",
+            "text": "天机录共享条款",
+            "description": "要求各方共享天机录研究成果，看似大方实则让陈机掌握了信息筛选权——给什么、给多少，全由他说了算。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要定期\"分享\"天机录信息",
+            "visible_reward": "陈机成为信息唯一出口，掌控所有情报流",
+            "risk_hint": "可能引发某些人对天机录的觊觎",
+            "process_label": "巧妙措辞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tianji_001",
+                  "content": "\"各方可就天机录研究成果进行共享。\"陈机的笔尖在\"共享\"二字上顿了顿，唇角微不可察地上扬。这两个字大有文章——谁说共享就不能有选择性地给？",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tianji_002",
+                  "character_id": "char_lingyuan",
+                  "content": "共享……好一个共享。陈机师侄果然深谙此道。",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录共享条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录条款",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_fengxian",
+            "text": "无需添加，保持简洁",
+            "description": "盟约已经足够完善，额外的条款只会徒增变数。信任是合作的基础，过度的防备反而显得小家子气。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "放弃一条布局",
+            "visible_reward": "显得光明磊落，赢得更多信任",
+            "risk_hint": "后续若有人违约，缺乏制约手段",
+            "process_label": "干净利落",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "谋略",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_fengxian_001",
+                  "content": "陈机收回笔锋，书帛上的文字在灵力催动下缓缓浮现出光泽。\"不必了，盟约既成，各凭诚信。\"他语气平淡，仿佛真的只是个不屑权谋的磊落之人。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无额外条款"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保持简洁",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_010",
+        "content": "陈机落笔的瞬间，盟约书帛骤然绽放出璀璨金光。字迹仿佛活了过来，在书帛上游走一圈后，各自飞向签约各方——凌渊、韩烈、夜清，以及陈机本人各执一份。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_011",
+        "character_id": "char_yeqing",
+        "content": "成了。千年未有之盟约，今日由你我见证。",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_012",
+        "content": "就在这时，陈机胸口的天机录残页猛然发烫，一股凌驾于金丹威压之上的磅礴气息从书页中涌出。殿内所有人同时变色——这股气息不属于陈机，而是来自那神秘的第七页！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_013",
+        "prompt": "天机录第七页显现，陈机感受到一股前所未有的压迫感——这是天道之眼的死亡宣告！如何在众人面前应对这一异象：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_yanxia",
+            "text": "当场展示，化危为机",
+            "description": "既然藏不住，不如大方展示。用天道之眼的威胁来巩固盟约，让正魔双方都意识到他们的共同敌人有多可怕。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露更多天机录秘密",
+            "visible_reward": "盟约更加稳固，各方对陈机依赖加深",
+            "risk_hint": "可能招来天道之眼的直接注视",
+            "process_label": "坦然展示",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yanxia_001",
+                  "content": "陈机神色不变，伸手将天机录残页取出，金光中的第七页文字清晰可见：\"第七位预言者，你的死期已经写好。\"在场众人倒吸一口凉气，凌渊的脸色尤为精彩。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_yanxia_002",
+                  "character_id": "char_hanlie",
+                  "content": "这是什么意思？天道之眼要杀你？",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录第七页已展示"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "化危为机",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_yinhua",
+            "text": "以退为进，示弱博同情",
+            "description": "装出一副被天道之眼威胁的可怜模样，激发在场之人的保护欲——谁会防备一个随时可能死去的可怜虫呢？",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被某些人轻视",
+            "visible_reward": "更低的姿态换来更高的信任度",
+            "risk_hint": "装过头会显得虚伪",
+            "process_label": "隐忍不发",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yinhua_001",
+                  "content": "陈机苦涩一笑，将残页收入怀中。\"诸位见笑，陈某不过是天机录选中的一枚棋子，随时都可能被丢弃。\"他语气中带着自嘲，却在凌渊眼中捕捉到一闪而过的杀意——这老狐狸果然上钩了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "示弱成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以退为进",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_xiaorong",
+            "text": "轻描淡写，一笔带过",
+            "description": "\"不过是天机录的一点小把戏，让诸位见笑了。\"用轻描淡写的态度掩盖这惊天秘密，让在场之人摸不清虚实。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错过震慑众人的机会",
+            "visible_reward": "保持神秘感，让各方更加忌惮",
+            "risk_hint": "夜清可能看穿陈机的伪装",
+            "process_label": "若无其事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_xiaorong_001",
+                  "content": "\"不过是天机录的一点小把戏，让诸位见笑了。\"陈机的语气云淡风轻，仿佛那行血字不过是一阵微不足道的风。天机录残页的光芒悄然收敛，归于沉寂。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_xiaorong_002",
+                  "character_id": "char_yeqing",
+                  "content": "（低声，只有陈机听得见）陈公子好演技。本座倒要看看，你这\"小把戏\"还能玩多久。",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轻描淡写"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "轻描淡写",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_014",
+        "content": "殿内气氛凝滞了数息，随后凌渊率先打破沉默。他抚须笑道：\"陈机师侄既有天机录护身，又有夜圣女鼎力相助，当真是天选之人。这盟约签订之后，我天青宗上下必当全力配合。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_015",
+        "character_id": "char_hanlie",
+        "content": "哼！别得意太早，天道之眼要杀的人，从来没有好下场！",
+        "emotion": "不甘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_016",
+        "content": "韩烈拂袖而去，脚步声在空旷的大殿中回荡。夜清意味深长地看了陈机一眼，随即化作一道黑烟消散在虚空中。陈机站在原地，手指摩挲着怀中的天机录残页——第七页的血字仿佛还在灼烧他的意识。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_017",
+        "content": "凌渊走到陈机身旁，拍了拍他的肩膀。\"师侄放心，有老夫在一日，便没人能动你。\"话音温和，力道却暗含警告。陈机躬身行礼：\"多谢掌门师尊。\"——两人相视而笑，各怀鬼胎。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_018",
+        "content": "待众人散去，陈机独自立于殿中。他取出天机录，凝视着那缓缓浮现的第七页。血字之下，又有一行金色小字浮现：\"死亡倒计时：七七四十九日。\"陈机嘴角勾起一抹冷笑——天道之眼想用恐惧击垮他？未免太天真了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_019",
+        "content": "四十九日，足够了。陈机将天机录收入怀中，大步走出大殿。盟约已成，正魔两道的格局将被彻底改写。而他，这个曾经的废物杂役弟子，终于站到了天下棋盘的正中央。天道之眼的死亡宣告？不过是另一场博弈的开端罢了。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

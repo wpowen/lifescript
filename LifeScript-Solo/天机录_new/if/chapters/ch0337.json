@@ -1,0 +1,623 @@
+{
+  "id": "天机录_ch0337",
+  "book_id": "天机录",
+  "number": 337,
+  "title": "秘境开启",
+  "is_paid": true,
+  "next_chapter_hook": "就在三人准备深入之时，一道只有陈机能感知的呼唤自秘境深处传来——那气息与天机录残页如出一辙，仿佛在指引他前往某个被遗忘的禁忌之地。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0337_001",
+        "content": "就在陈机还未消化那句宿命般的谶语时，天青宗山门外的天空骤然撕裂出一道血色裂隙——那是唯有化神境强者全力出手才会出现的天地异象。裂隙深处隐约可见一座悬浮的宫殿群，云雾缭绕间透出亘古苍凉的气息，正是传闻中的上古秘境入口。所有人的目光都被那道裂隙吸引，而陈机却注意到更多——墨先生的残魂在天机录中微微颤动，那频率与他获得的残页产生了某种共鸣。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_002",
+        "character_id": "char_moxiansheng",
+        "content": "「时机到了。」墨先生的声音苍老而疲惫，「秘境内藏有第二页天机残页，但你需记住——入秘境后，前三层试炼会封锁你与我的联系。在那之前，把该问的都问了。」",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_003",
+        "content": "陈机深吸一口气。墨先生终于肯告诉他第二页的线索了，但他只剩半个时辰的准备时间。远处各大宗门的修士已经开始向秘境入口集结，天空中流光溢彩，无数飞行法器划破长空。他需要做出选择——是低调混入队伍，还是趁混乱之际抢占先机？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0337_004",
+        "prompt": "面对秘境的开启，陈机该如何行动？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0337_004_001",
+            "text": "高调亮相",
+            "description": "以天青宗核心弟子身份正式登场，在各方势力面前确立自己的存在，震慑潜在对手",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露实力，引发更多关注",
+            "visible_reward": "名望+15，在秘境中获得优先选择权",
+            "risk_hint": "会成为众矢之的，遭受更多挑战",
+            "process_label": "陈机决定高调现身",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_001",
+                  "content": "陈机整理衣衫，踏着稳健的步伐走向宗门集合点。他的出现引起一阵骚动——废材弟子竟然以核心弟子身份出席？天青宗的长老们面色微变，却无人出声制止。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_004_002",
+            "text": "暗中蛰伏",
+            "description": "隐藏身份混入普通弟子队伍，利用天机录暗中观察各方势力，寻找可利用的破绽和机会",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过初期资源争夺",
+            "visible_reward": "谋略+10，获得更多情报优势",
+            "risk_hint": "可能错过关键机缘",
+            "process_label": "陈机决定隐匿行踪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_002",
+                  "content": "陈机悄然退至人群后方，运转玄功收敛气息。他很快淹没在普通弟子之中，无人注意到那个不起眼的身影正将全场局势尽收眼底。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_004_003",
+            "text": "震慑立威",
+            "description": "主动挑衅潜在威胁者，以绝对实力碾压的方式建立威信，让所有人不敢轻视",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗部分底牌",
+            "visible_reward": "战力+10，威望大增",
+            "risk_hint": "可能暴露部分实力，引来更强者关注",
+            "process_label": "陈机决定主动立威",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_003",
+                  "content": "陈机嘴角微扬，大步走向场中央最嚣张的挑衅者。那人正高声嘲讽天青宗无人敢应战，下一刻陈机的剑意已锁定其眉心——三息之内，胜负已分。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0337_005",
+        "content": "秘境的入口悬浮在高空，血色裂隙如同一只张开的巨眼，中心处一道璀璨的光柱直贯而下。光柱周围已经聚集了数十名各宗精英弟子，个个气势不凡，剑拔弩张的气氛弥漫其间。陈机从墨先生处得知，秘境前三层会对他的天机能力产生压制，必须尽快在第一层找到方向。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_006",
+        "character_id": "char_chenji",
+        "content": "「苏师姐，陈念，等会儿进入秘境后跟紧我。」陈机压低声音，目光扫过对面玄武宗的人群，「那个叫韩烈的，一直盯着我们。」",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_007",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶微微蹙眉，顺着陈机的目光看去。韩烈正是玄武宗第一天才，据说已突破金丹后期，实力深不可测。「他为何针对我们天青宗？」",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_008",
+        "character_id": "char_chenian",
+        "content": "陈念轻声道：「我方才听玄武宗的人说，他们内部有人放话，要在秘境中给天青宗一个'惊喜'。」她顿了顿，「似乎是针对师兄你的。」",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_009",
+        "content": "陈机心中冷笑。来得正好，他正愁没有机会立威。秘境中危机四伏，若是有人主动送上门来，他也不介意多收割一份气运。不过眼下还不是动手的时候，秘境入口处的空间波动越来越剧烈，光柱正在缓缓扩大——开启在即。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0337_010",
+        "prompt": "秘境入口即将开启，面对可能来自韩烈的挑衅，陈机如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0337_010_001",
+            "text": "以退为进",
+            "description": "故意示弱，让韩烈放松警惕，待其进入秘境深处后再出手，让他在最渴望成功的时候品尝失败",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时承受屈辱",
+            "visible_reward": "谋略+15，韩烈进入秘境后暴露弱点",
+            "risk_hint": "需要极度隐忍，可能影响己方士气",
+            "process_label": "陈机决定示敌以弱",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_010_001",
+                  "content": "陈机故意将气息压制到筑基初期，佝偻着背脊，看起来比平时更加废物。韩烈见状果然露出轻蔑笑容，转而去挑衅其他目标。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_010_002",
+            "text": "正面硬刚",
+            "description": "在众人面前与韩烈正面交锋，以绝对实力将其击败，彻底打掉玄武宗的嚣张气焰",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "过早暴露全部实力",
+            "visible_reward": "名望+20，各宗对天青宗刮目相看",
+            "risk_hint": "可能引来韩烈背后势力的报复",
+            "process_label": "陈机决定正面迎战",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_010_002",
+                  "content": "陈机傲然上前一步，周身气势骤然释放。金丹初期的修为气息横扫全场，韩烈瞳孔骤缩——这个废物竟然一直在藏拙？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_010_003",
+            "text": "借刀杀人",
+            "description": "挑动其他宗门与韩烈的矛盾，让他们在秘境中互相消耗，自己坐收渔翁之利",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要时间布局",
+            "visible_reward": "谋略+20，各方势力元气大伤",
+            "risk_hint": "变数较多，可能失控",
+            "process_label": "陈机决定借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_010_003",
+                  "content": "陈机悄然向旁边圣宗的夜清递了个眼神。后者心领神会，片刻后便有人故意在韩烈面前提及玄武宗近日的丑闻。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0337_011",
+        "content": "就在各方势力剑拔弩张之际，天空中的血色裂隙猛然扩大十倍。一股浩瀚的远古气息从光柱中倾泻而下，秘境入口彻底开启。各宗长老同时出手稳固空间通道，无数道身影化作流光冲向秘境入口。陈机感受到一股神秘的力量正在拉扯他的神魂——那是秘境本身在筛选进入者。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_012",
+        "character_id": "char_chenji",
+        "content": "「准备好了吗？」陈机握紧手中的剑柄，回头最后看了一眼苏青瑶和陈念，「进了秘境，一切听我指挥。不要问为什么。」",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_013",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶微微点头，眼中闪过一丝复杂。这个废物师弟越来越让她看不透了，但不知为何，她选择了相信他。「好。」",
+        "emotion": "信任"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_014",
+        "content": "三人踏入光柱的瞬间，天旋地转。无数画面如走马灯般从陈机眼前掠过——那是天机录残页在秘境的感应，似乎在指引他前往某个方向。但与此同时，他的天命值正在飞速流逝。天机录的警示在脑海中炸响：前方第一层试炼为「心魔空间」，会根据进入者的执念幻化出最恐惧的幻象。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_015",
+        "content": "当陈机再次睁开眼时，他发现自己独自站在一片灰蒙蒙的空间中。四周空无一物，只有无尽的迷雾。苏青瑶和陈念不知去向，天机录与墨先生的联系也被彻底切断。他心中一沉——果然，前三层的试炼不会给他任何外力帮助。这里只能靠他自己。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0337_016",
+        "prompt": "独自陷入心魔空间，陈机该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0337_016_001",
+            "text": "激活天机能力",
+            "description": "消耗5点天命值强行窥探未来三时辰，在幻象迷惑中找到正确方向",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命值-5",
+            "visible_reward": "获得清晰的方向指引，避开致命陷阱",
+            "risk_hint": "天命值极其珍贵，每一点都关乎生死",
+            "process_label": "陈机决定冒险使用天机能力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0337_result_016_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机咬牙激活天机录。一道模糊的画面在脑海中浮现——东北方向有微弱的光点，那应该就是出口。但画面中似乎还出现了另一道身影，似乎是苏青瑶被困在某处。",
+                  "emotion": "焦虑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_016_001b",
+                  "content": "他深吸一口气，做出决断——先救苏青瑶，再寻出口。心魔空间的规则他还不清楚，但苏青瑶的安危不容有失。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_016_002",
+            "text": "以力破巧",
+            "description": "凭借自身实力强行撕裂幻象空间，用纯粹的修为冲破心魔空间的束缚",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗大量灵力",
+            "visible_reward": "展现真实实力，震慑暗中窥探者",
+            "risk_hint": "可能引来秘境守护者的注意",
+            "process_label": "陈机决定以力破局",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_016_002",
+                  "content": "陈机周身灵力涌动，施展出天青宗秘传剑诀。一道璀璨剑光划破灰蒙蒙的虚空，幻象空间如同破碎的镜子般开始崩裂。他隐约感知到，有几道目光正在暗中窥探他的真实战力。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_016_003",
+            "text": "以身入局",
+            "description": "主动接受心魔幻象的考验，利用幻境中看到的信息分析秘境的本质和规律",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能陷入更深的幻象",
+            "visible_reward": "获得关键情报，理解心魔空间运行规则",
+            "risk_hint": "可能动摇道心",
+            "process_label": "陈机决定深入虎穴",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_016_003",
+                  "content": "陈机没有抵抗，反而闭上眼睛任由幻象侵蚀。一幅模糊的画面浮现——他看到了自己过去的某个片段，看到了那个被视为废物的少年如何在嘲讽中一步步走到今天。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0337_017",
+        "content": "就在陈机做出选择的同一时刻，苏青瑶和陈念也在各自的心魔空间中挣扎。苏青瑶的幻象是那个她一直无法看透的陈机——他站在高台上俯视众生，而她却只是台下仰望的观众。陈念则看到了一扇紧闭的大门，门后似乎传来熟悉的声音在呼唤她的名字。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_018",
+        "character_id": "char_suqingyao",
+        "content": "「不……这不是真的。」苏青瑶在幻象中挣扎，却发现无论如何都无法靠近那个站在高台上的身影。她忽然意识到什么——真正的陈机，不会让她只能仰望。他会伸出手。",
+        "emotion": "顿悟"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_019",
+        "content": "陈机找到苏青瑶时，她正闭目端坐，周身环绕着淡淡的灵光，似乎在某种顿悟之中。他没有打扰，只是静静守在一旁。片刻后，苏青瑶睁开眼，目光中带着一丝异样的光芒。「我看到了你。」她轻声道，「真正的你。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_020",
+        "content": "陈机心中微动，但面上不动声色。「心魔考验的是执念，你我各有各的关要过。」他转身看向前方逐渐显现的出口光晕，「走吧，真正的试炼还在后面。」三人的身影踏入光芒之中，而他们不知道的是，秘境深处某座古老的祭坛上，一双眼睛正透过层层虚空注视着他们——那是秘境本身的意志在审视这三个不速之客。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_021",
+        "content": "穿过心魔空间后，三人终于来到秘境第一层的真实世界。这里是一片苍茫的古战场遗址，断壁残垣间隐约可见远古修士留下的符文。苏青瑶与陈念对视一眼，都从对方眼中看到了默契——她们方才在幻象中似乎看到了彼此的身影，冥冥中形成了一种奇特的联系。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_022",
+        "character_id": "char_chenian",
+        "content": "「师兄，我方才在幻象中看到了苏师姐。」陈念小声道，「她站在你身后，似乎在替你守护什么。」她顿了顿，「我的幻象里也出现了她。」",
+        "emotion": "困惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_023",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶微微蹙眉，看向陈机。「你呢？你在幻象中看到了什么？」她注意到陈机方才出来时的表情，似乎比她们更加疲惫。",
+        "emotion": "关切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_024",
+        "content": "陈机没有回答，只是将目光投向古战场深处。墨先生说过，第二页天机残页就在秘境某处。而此刻，他隐约感知到那个方向传来一股熟悉的气息——与天机录残页同源，却更加浓郁。那里似乎藏着什么秘密。但他同时感知到，还有另一股力量在逼近——是韩烈带的队伍，他们也闯过了心魔空间。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_025",
+        "character_id": "char_chenji",
+        "content": "「来了。」陈机嘴角微扬，转身面向来路，「看来我们的玄武宗朋友不打算让我们独享这份机缘。」苏青瑶和陈念立刻进入战斗状态，三人背靠背站成一个三角阵型。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_026",
+        "content": "远处，七八道身影从迷雾中走出。为首的正是韩烈，他身后跟着玄武宗的精锐弟子，个个气息浑厚。韩烈看到陈机三人竟然已经先一步到达，眼中闪过一丝惊讶和恼怒。「废物就是废物，连找路都只会抄近道。」他冷笑一声，丝毫不掩饰自己的敌意，「把你们方才得到的机缘交出来，本座可以饶你们不死。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_027",
+        "content": "陈机轻轻一笑，那笑容让韩烈莫名感到一丝不安。「韩师兄，」他慢条斯理地说道，「你方才在心魔空间里看到了什么？」韩烈脸色骤变——那是他最大的秘密。「你……」陈机继续道：「我猜猜，是失败吧？一次又一次的失败？」他向前踏出一步，周身气势开始攀升，「很不巧，我也有类似的幻象。所以——」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_028",
+        "character_id": "char_chenji",
+        "content": "「——我很理解你想要证明自己的心情。」陈机的声音骤然转冷，「但你选错了对象。」话音未落，一道剑光已从苏青瑶手中激射而出，直取韩烈身侧最近那名弟子。苏青瑶与陈机的配合天衣无缝——她负责牵制，陈机主攻，陈念则在侧翼寻找破绽。",
+        "emotion": "杀意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_029",
+        "content": "战斗在一瞬间爆发。玄武宗弟子人数占优，但陈机三人配合得天衣无缝。苏青瑶的剑法凌厉而精准，将对方阵型撕开一道口子；陈念虽然修为最弱，但身法诡异，专攻敌人要害；陈机则稳坐中央，每出一剑必有人倒地。三人的表现完全不像普通弟子应有的实力，尤其是陈机——他展现出的战力远超传闻中的废物形象。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_030",
+        "content": "韩烈终于意识到不对。这个废物陈机根本不是什么筑基期的废物，而是一个深藏不露的高手。但已经晚了——他的手下已折损过半，而他本人也被陈机逼入了死角。「你……你一直在藏拙！」韩烈怒吼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_031",
+        "character_id": "char_chenji",
+        "content": "「藏拙？」陈机轻笑，剑尖抵在韩烈咽喉三寸处，「韩师兄，你错了。我只是……比较擅长让别人以为我是什么。」他的目光冰冷，「现在，告诉我，你方才在幻象里看到了什么？」韩烈瞳孔骤缩，那是深入骨髓的恐惧。他看到了——自己被这个废物一剑穿心的画面。",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_032",
+        "content": "就在此时，战场中央的地面突然震动。一道璀璨的光柱从地底冲天而起，将所有人都震退数步。光柱中隐约可见一座古老的祭坛，祭坛上漂浮着一卷散发着淡金色光芒的古籍——那是……天机录的气息！陈机瞳孔骤缩，第二页残页竟然就这样出现在众人面前。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_033",
+        "content": "所有人的目光都被那卷古籍吸引。陈机感受到天机录残页在体内剧烈震颤，那是同源共鸣的反应。但与此同时，他也感知到一股恐怖的气息正从祭坛深处苏醒——守护残页的存在被惊动了。墨先生的声音在脑海中回响：「第二页……终于找到了。但小心，守护者不会轻易让任何人取走它。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_034",
+        "content": "韩烈趁机退后数步，脸上闪过一丝贪婪。「那是……天机残页！」他显然也感知到了那卷古籍的不凡，眼中迸发出狂热的渴望。玄武宗与天机录的传说有着千丝万缕的联系，若能得到这一页……",
+        "emotion": "贪婪"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_035",
+        "content": "光柱渐渐消散，祭坛上的古籍彻底显露真容。金色光芒中，无数古老的符文在书页间流转，仿佛蕴含着天地间最深的奥秘。陈机的心脏剧烈跳动——他等待这一刻太久了。但守护残页的存在正在苏醒，恐怖的气息如同实质般压来，所有人都不敢轻举妄动。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

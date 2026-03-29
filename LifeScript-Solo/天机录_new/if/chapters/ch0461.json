@@ -1,0 +1,585 @@
+{
+  "id": "天机录_ch0461",
+  "book_id": "天机录",
+  "number": 461,
+  "title": "兄妹联手",
+  "is_paid": true,
+  "next_chapter_hook": "就在三人即将踏出秘境的刹那，陈念的话语令陈机脚步一顿——圣宗背后，竟还有皇朝的身影？那隐藏在云雾之后的庞然大物，正在悄然注视着这片天地。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0461_001",
+        "content": "天命锁钥之力如潮水般从陈念体内涌出，那股力量与陈机体内的天机录残页产生共鸣，竟在兄妹二人之间编织出一道璀璨的血色虹桥。圣宗的追兵尚未逼近，便被这股力量震得人仰马翻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_002",
+        "character_id": "char_chenian",
+        "content": "哥，我这些年……一直在等你来接我。",
+        "emotion": "坚定而温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_003",
+        "content": "陈机望着眼前这张熟悉又陌生的面容，喉头微微滚动。多年的布局、筹谋，在这一刻终于有了最切实的意义。他深吸一口气，压下翻涌的情绪，冷声道：「废话少说，先活着离开这里。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_004",
+        "character_id": "char_chenji",
+        "content": "东北方向三点钟，四个金丹期追兵，正以包围之势逼近。给我争取七息时间。",
+        "emotion": "冷静如冰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_005",
+        "content": "话音未落，陈念周身的锁钥之力骤然凝形，化作九道金色锁链如灵蛇般穿梭于虚空之中。她轻叱一声，那锁链便精准地缠上了最近一名追兵的手腕，将其狠狠摔向岩壁。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_006",
+        "character_id": "char_chenian",
+        "content": "圣宗教的东西，我可没白学。哥，剩下的交给你了！",
+        "emotion": "俏皮中带着狠厉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_007",
+        "content": "陈机嘴角勾起一抹冷冽弧度，天机录残页在掌心浮现。他没有动用那珍贵的天命值，而是凭借多年实战磨砺出的本能，一把漆黑的短刃已悄然滑入掌中。废物？那是给外人看的假象。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0461_choice_001",
+        "prompt": "四名金丹期追兵已逼近至十丈之内，陈机需要在电光火石间做出决断——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "配合突袭",
+            "text": "配合突袭",
+            "description": "与陈念的天命锁钥之力形成配合，一近一远将追兵逐个击破",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗部分气血",
+            "visible_reward": "无伤亡击退追兵，兄妹默契度提升",
+            "risk_hint": "若配合失误可能陷入包围",
+            "process_label": "血债血偿",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_配合突袭_001",
+                  "content": "陈机的短刃如毒蛇吐信般刺向最近那名修士的丹田——这是他多年钻研的穴位死角。同一瞬间，陈念的金色锁链从侧翼包抄，将另一人四肢缠绕。兄妹二人一前一后，配合天衣无缝。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0461_result_配合突袭_002",
+                  "character_id": "char_chenian",
+                  "content": "哥，左边那个要逃！",
+                  "emotion": "急切"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "诱敌深入",
+            "text": "诱敌深入",
+            "description": "故意露出破绽引诱追兵进入预设陷阱，利用地形优势歼敌",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "需消耗天机录一次预见",
+            "visible_reward": "不战而屈人之兵，追兵内讧",
+            "risk_hint": "天机录消耗较大，后续战力可能不足",
+            "process_label": "算无遗策",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_诱敌深入_001",
+                  "content": "陈机眼眸微眯，天机录残页在他瞳孔深处闪烁。三息之后，他已经「看见」了对方的破绽——那名领头的修士实为冒功夺赏的草包，而另外三人早已心生不满。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0461_result_诱敌深入_002",
+                  "character_id": "char_chenji",
+                  "content": "呵，原来不过是一群乌合之众。",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "信任陈念",
+            "text": "信任陈念",
+            "description": "完全放手让陈念发挥天命锁钥之力，自己负责掩护撤退",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "放弃主动进攻权",
+            "visible_reward": "解锁陈念隐藏能力「天命共鸣」",
+            "risk_hint": "无法预判陈念的战斗方式",
+            "process_label": "血脉相连",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_信任陈念_001",
+                  "content": "陈机没有多言，只是微微颔首。这个细微的动作落在陈念眼中，却比千言万语更有分量——哥哥终于愿意相信她了。她眼眶微热，心底那股被囚禁多年的委屈瞬间化作滔天战意。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0461_result_信任陈念_002",
+                  "character_id": "char_chenian",
+                  "content": "好，那我就让哥看看，这五年圣宗教会了我什么！",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_008",
+        "content": "战斗在一片混乱中展开。陈念的金色锁链与陈机的短刃形成完美互补——锁链困敌、刃锋取命。短短数息之间，四名金丹期追兵已倒下了三人，仅剩那名领头的还在负隅顽抗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_009",
+        "character_id": "char_chenji",
+        "content": "圣宗内门弟子的实力，就这？难怪只能来追一个「废物」。",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_010",
+        "content": "那人闻言面色铁青，却不敢恋战，转身便要遁逃。然而陈念早有准备，一道金色锁链如闪电般射出，精准地缠住了他的脚踝。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_011",
+        "character_id": "char_chenian",
+        "content": "哥，这个人怎么处理？",
+        "emotion": "冷静询问"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0461_choice_002",
+        "prompt": "最后一名追兵被制服在地，陈机需要决定如何处置这个漏网之鱼——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "灭口",
+            "text": "杀人灭口",
+            "description": "斩草除根，不留后患",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "背负杀孽，可能沾染因果",
+            "visible_reward": "彻底消除暴露身份的风险",
+            "risk_hint": "圣宗可能追查凶手身份",
+            "process_label": "心狠手辣",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_灭口_001",
+                  "content": "陈机眼神冰冷，短刃毫不犹豫地划过那人咽喉。鲜血喷涌而出，染红了脚下的枯叶。他面无表情地擦拭刀刃，仿佛只是做了一件微不足道的小事。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "留活口",
+            "text": "留活口",
+            "description": "留着打探圣宗情报，搜魂后抹除记忆",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要额外分神看管",
+            "visible_reward": "获得圣宗内部情报，可能策反利用",
+            "risk_hint": "若对方宁死不屈则前功尽弃",
+            "process_label": "深谋远虑",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "财富",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_留活口_001",
+                  "content": "陈机蹲下身，指尖轻点那人眉心。一道精纯的神识侵入对方识海，金丹期修士的防线在他面前脆弱如纸。片刻之后，陈机冷笑一声：「有意思，圣宗还留了后手。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "放走传话",
+            "text": "放走传话",
+            "description": "故意放走此人让他回去报信，借此向圣宗传递某种信息",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露行踪风险",
+            "visible_reward": "圣宗误判形势，可能调走主力",
+            "risk_hint": "对方可能带更多追兵来",
+            "process_label": "虚虚实实",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_放走传话_001",
+                  "content": "陈机拍了拍那人的脸，语气温和得可怕：「回去告诉你们宗主，天命锁钥……我陈家要定了。」他故意露出一个意味深长的笑容，任由那人连滚带爬地逃向远方。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_012",
+        "content": "处理完追兵，秘境出口的传送阵光芒已隐隐可见。陈机刚松一口气，一道熟悉的魔气便从侧方涌来——夜清的身影如鬼魅般闪现，脸上挂着似笑非笑的神情。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_013",
+        "character_id": "char_yeqing",
+        "content": "陈公子，你这废物人设可真是深入人心。方才那一战若传出去，天青宗那些狗眼怕是要碎一地。",
+        "emotion": "调侃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_014",
+        "character_id": "char_chenji",
+        "content": "消息若是走漏，夜圣女怕是也脱不了干系。",
+        "emotion": "淡淡威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_015",
+        "content": "夜清轻笑一声，并不恼怒。她的目光落在陈念身上，眼中闪过一丝讶异：「这位便是天命锁钥的宿主？果然……与寻常女子不同。」陈念微微皱眉，却没有说话，只是下意识地往陈机身侧靠近了半步。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_016",
+        "content": "三人穿过传送阵，眼前的景象骤然变化。秘境之外的夜空中繁星点点，远处天青宗的轮廓若隐若现。陈机回头望了一眼秘境入口，确认没有新的追兵后，才终于长舒一口气。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_017",
+        "character_id": "char_chenian",
+        "content": "哥，我有件事必须告诉你。圣宗……不是这件事的主谋。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0461_choice_003",
+        "prompt": "陈念话语中的深意令陈机眉头微皱——圣宗背后还有势力？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "追问详情",
+            "text": "追问详情",
+            "description": "立刻询问陈念所知道的一切",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗时间，可能暴露行踪",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "附近可能有圣宗眼线",
+            "process_label": "情报为王",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_追问详情_001",
+                  "content": "陈机神色一凛，压低声音道：「说。」陈念环顾四周，确认无人后，才缓缓开口：「圣宗圣女选拔的背后，是大周皇朝的人。他们需要天命锁钥，打开一处上古遗迹。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "暂缓回宗",
+            "text": "暂缓回宗",
+            "description": "先找个安全地点落脚，再详细询问",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "耽误回宗时间，可能引起怀疑",
+            "visible_reward": "获得完整情报，且不暴露行踪",
+            "risk_hint": "天青宗可能派人搜寻",
+            "process_label": "稳中求胜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_暂缓回宗_001",
+                  "content": "陈机果断摇头：「这里不是说话的地方。」他环顾四周，目光落在远处一片隐蔽的山谷：「先去那边。」夜清挑眉，却没有反对，三人身影很快消失在夜色之中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "试探夜清",
+            "text": "试探夜清",
+            "description": "先观察夜清的反应，再决定是否透露给陈念",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能引起夜清不满",
+            "visible_reward": "试探夜清立场，加深三方信任",
+            "risk_hint": "若夜清有异心则暴露情报",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0461_result_试探夜清_001",
+                  "content": "陈机目光微闪，不动声色地看了夜清一眼：「夜圣女似乎并不意外？」夜清迎上他的目光，嘴角勾起一抹意味深长的笑：「陈公子果然谨慎。皇朝的事，我确实知道一些。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_018",
+        "content": "山谷深处，陈机燃起一堆篝火。橘红色的火光映照着三人的面容，夜风拂过，带起陈念额前的碎发。她沉默了许久，终于开口：「哥，皇朝的人已经渗透进三大宗门。他们要的，不只是天命锁钥……」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0461_019",
+        "character_id": "char_chenian",
+        "content": "他们要的，是整个修炼界的控制权。圣宗、玄武宗、天青宗……在他们眼中，都只是棋子。",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0461_020",
+        "content": "陈机闻言，眸光微沉。皇朝势力……这是他布局多年都未曾触及的层面。天机录残页的预见中，从未显示过如此庞大的棋局。他忽然意识到，自己或许从一开始，就被人算计在了更深的层次之中。篝火噼啪作响，三人的影子在岩壁上拉得很长。夜清忽然轻声道：「看来，我们有共同的敌人了。」陈机没有说话，只是望着跳动的火焰，心中涌起一股前所未有的紧迫感。天下棋局，远比他想象的更加复杂。而他与妹妹的重逢，或许正是这盘大棋中，最关键的一步落子。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

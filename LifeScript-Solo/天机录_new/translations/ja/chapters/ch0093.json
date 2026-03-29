@@ -1,0 +1,588 @@
+{
+  "id": "天机录_ch0093",
+  "book_id": "天机录",
+  "number": 93,
+  "title": "闇の中で探りを入れる",
+  "is_paid": true,
+  "next_chapter_hook": "墨先生の声が忽ち低くなる、「お前は知っているか、当年お前の父はなぜあのように天青宗を離れようとしたのか？」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0093_001",
+        "content": "夜風が天青宗裏山を吹き抜け、陈機が記録した玉簡を隠し終えたばかりの時、遠くの長老居所の灯りが突然消えた——張深、もう何かを察知したようだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_002",
+        "content": "彼はすぐに宿舎に戻らず、天機録第一頁が示した方向へ向かった。墨先生の残魂はそこに、超然たる姿で彼を待っている。月明かりの下、山洞の入り口にある禁制の符文が淡い蒼白い光を放ち、眠る巨獣の呼吸のようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_003",
+        "content": "陈기는洞口で立ち止まり、表情を整えた。一人の落ちこぼれ弟子が深夜に師匠に面会を求めるのは，本来疑念を招くはずだった。しかし墨先生は違う——彼は決して来意を問わず、ただ何が欲しいかを聞く。これは優位性であり、同時に危険でもある。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_004",
+        "character_id": "char_chenji",
+        "content": "師匠、弟子がお伺いを立てたいことがあります。",
+        "emotion": "恭敬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_005",
+        "content": "山洞の中から淡泊な声が聞こえてきた、「入れ。」禁制が自動的に解け、陈기는中へ足を踏み入れた。墨先生の姿は石台の上に浮かび、淡い霊光が周囲を纏っている——それは残魂特有の虚幻さで、まるで風で吹き散らされる随时都可能消散する存在のようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_006",
+        "content": "しかし陈기는違うものに気づいた。その霊光の奥に、天機録と似た波動が隐约としている——同源の気配が、墨先生身上でちらちらと見えていた。この発見に彼の心拍が半拍飛び、颜面无表情ではあったが。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_007",
+        "character_id": "char_moxiansheng",
+        "content": "こんなに夜分に来て、功課を教えてもらうためだけではないだろう？",
+        "emotion": "淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_008",
+        "content": "墨先生の声は静か如水だったが、一切を見通す锐さを帯びていた。陈기는眶を伏せて思索の姿を作りながら、内心では急速に衡量していた——どこまで明かし、どこまで問うべきか？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice001",
+        "prompt": "陈기는どの角度から切り込むことを決めたか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c001_a",
+            "text": "父親のことを直接尋ねる",
+            "description": "単刀直入に墨先生に陳玄のことを聞き、彼の反応を観察する",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "父親の足取りの手がかりへの焦りを露呈する",
+            "visible_reward": "重要な情報を得られる可能性がある",
+            "risk_hint": "あまりに急切だと疑念を招く可能性がある",
+            "process_label": "正面询问父亲的下落",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c001_a_001",
+                  "character_id": "char_chenji",
+                  "content": "師匠、弟子にお伺いを立てたいことがあります……关于我们父亲陳玄的事について。",
+                  "emotion": "谨慎"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c001_b",
+            "text": "遠回しに探りを入れる",
+            "description": "功法のことで相談に乗ってもらうふりをして父親話題への墨先生の反応を密かに観察する",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "より多くの時間を要する",
+            "visible_reward": "意図を隠したまま情報を得る",
+            "risk_hint": "欲しいものを得られない可能性がある",
+            "process_label": "迂回试探墨先生的底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c001_b_001",
+                  "character_id": "char_chenji",
+                  "content": "師匠、弟子はこのほど天機録残篇を修炼し、いくつか晦渋で理解しにくい箇所にぶつかり師の御指点を請いたいと存じます。",
+                  "emotion": "恭谦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_009",
+        "content": "墨先生が黙ってしばらく、その周囲の霊光が微かに波动した、まるで湖面に石が投げ入れられたようだった。陈기는その波动を真剣に見つめ、一つ一つの細部を脑海に刻み込んだ。この程度の反応……決して普通ではない。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_010",
+        "character_id": "char_moxiansheng",
+        "content": "天機録か……お前の父も当年同じことを私に聞いた。",
+        "emotion": "回忆"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_011",
+        "content": "この言葉は雷のように陈기의 心脏に落ちた。彼の瞳孔は忽ち縮み、袖の中で指が微かに震えた——悲しみではなく、ようやく手がかりを掴んだのだ。父親の足跡に、ようやく最初の実質的な交差点了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_012",
+        "character_id": "char_chenji",
+        "content": "父は……何聞きましたか？",
+        "emotion": "压抑激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_013",
+        "content": "墨先生の姿が忽ち曖昧になり、声にも虚幻さが増した、「彼は私に、天機録の完全版がどこにあるかを聞いた。」陈기는息を殺して下文を待った。しかし墨先生の言葉は急転換し、「彼はまた一つのことを聞いた——知るべきではないことがあり、聞くと死ぬ。それでも彼は聞いた。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_014",
+        "content": "山洞内の温度が数度下がったように感じた。陈기는一股無形の圧力が墨先生身上から発散されているのを感じた——それは残魂が感情的に波动したときの本能的反応だった。彼は墨先生と天機録の関係は決して単純な守護関係ではないと確信を深めた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice002",
+        "prompt": "陈기는この局面にどう立ち向かうか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c002_a",
+            "text": "直言で追问する",
+            "description": "父親が聞いた死ぬほど知るべきではないことを直接追及する",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "墨先生を怒らせる可能性がある",
+            "visible_reward": "核となる情報を直接得る",
+            "risk_hint": "リスクは最高だが利得も最大",
+            "process_label": "直接逼问墨先生",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -8
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c002_a_001",
+                  "character_id": "char_chenji",
+                  "content": "師匠、父が聞いたのは何ですか？弟子は……知りたいです。",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c002_b",
+            "text": "退いて進む",
+            "description": "怖がるふりをして問題を引っ込め，墨先生の反応を観察する",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "追及を一時的に諦める",
+            "visible_reward": "墨先生が自ら明かすのを引き出せる可能性がある",
+            "risk_hint": "機会を逃す可能性がある",
+            "process_label": "假装退缩引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c002_b_001",
+                  "character_id": "char_chenji",
+                  "content": "父が知るべきではないと言ったのだから……弟子には聞くべきではないのかもしれません。",
+                  "emotion": "退让"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c002_c",
+            "text": "密かに観察する",
+            "description": "表态せず，天機録残頁を用いて墨先生身上的异常な波动を感知する",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天命値を消耗する",
+            "visible_reward": "墨先生と天機録の関連を確認する",
+            "risk_hint": "天命値の消耗にはリスクがある",
+            "process_label": "暗中激活天机录感知",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0093_result_c002_c_001",
+                  "content": "陈기는眶を伏せ、心中で天機録残篇を黙々と运转させた。一股妙な力が識海の奥底から湧き上がり，墨先生の方向へ探りを入れた——天機録と同源のあの波动が、いっそう鮮明になった。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_015",
+        "content": "山洞の中は死寂に包まれた。墨先生の姿は霊光の中で揺らぎ、まるで随时消えゆく絵画のようだった。陈기는相手が自分を审视しているのを感じた——その目光はすべての偽装を見透かし、魂の深部まで見通すかのようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_016",
+        "character_id": "char_moxiansheng",
+        "content": "お前は彼に似ている。",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_017",
+        "content": "この言葉に陈기의 心臓が大きく跳ねた。墨先生が続けた、「同じ眼光、同じ執着。当時私は彼を引き止められなかった，如今は……」と一拍置き、「知ることべきではないことがあり、それでも彼の後も歩もうと決めたのか？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_018",
+        "content": "陈기는墨先生の言葉の中の警告のニュアンスを感じたが，更加在意したのはその言葉の裏にある真相——「引き止められなかった」。つまり墨先生はかつて父親を止めようとした，而父亲最终还是踏上了那条路。一股寒意が脊梁から立ち上った。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice003",
+        "prompt": "陈기는墨先生の警告にどう応じるか？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c003_a",
+            "text": "決意を表明する",
+            "description": "たとえ前が死んでも歩むと堅く示す",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "墨先生の警戒を强める可能性がある",
+            "visible_reward": "決意を示せばより多くの指引を得られる可能性がある",
+            "risk_hint": "余りにも强硬だと逆効果になる可能性がある",
+            "process_label": "坚定表态不惧危险",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c003_a_001",
+                  "character_id": "char_chenji",
+                  "content": "弟子此生最大の心愿は、父を見つけることです。たとえ前路如何，始终无悔です。",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c003_b",
+            "text": "弱さを見せて頼る",
+            "description": "弱势な姿态で師匠に導きを請う",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "软弱に見える",
+            "visible_reward": "墨先生の警戒心を低下させて情報を得る",
+            "risk_hint": "凡庸之辈と見なされる可能性がある",
+            "process_label": "示弱获取同情",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c003_b_001",
+                  "character_id": "char_chenji",
+                  "content": "弟子は愚鈍で、前路の深浅が分かりません。師の御指点を請う、弟子は知るべきか、それとも知るべきではないべきか？",
+                  "emotion": "谦卑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_019",
+        "content": "墨先生が長い間黙り、山洞内の霊光が明滅を繰り返した，像是残魂の内心の葛藤 внешним表现为듯했다。遂に彼は溜息をつき、その声には陈기가从未聴いた温もりが帯びていた、「この子は……お前の父と同じで、头痛させる。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_020",
+        "content": "彼は虚幻な掌を上げ，一道の微光が陈기의眉心に射し込んだ。功法の伝承ではなく、一段の記憶だった——曖昧で、断片的 picture。陈기는見慣れた背中が天青宗山門の前に立っているのを見た，旁边还有一个女子、懐中に赤ん坊を抱いていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_021",
+        "content": "あの赤ん坊は……陈기自身。そしてあの女——彼の母？在記憶の中で、父の声が幽幽と伝わってきた、「ある扉を開けると、もう閉じられない。青瑶、子どもを連れてここから離れろ、できれば遠くに。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_022",
+        "content": "記憶はそこで途切れた。陈기가目を開けると、自分は既に冷汗で全身が濡れているのを見つけた。墨先生の声が再び响いた，这次带着一丝意味深长的、「お前の父は选择了一条不帰路，但也留下了一道保険。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_023",
+        "character_id": "char_moxiansheng",
+        "content": "谁かが暗中でお前を守っている、陈기。思っていたよりも近く、そしてより危険だ。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_024",
+        "content": "この言葉が重锤のように陈기의 心に落ちた。思っていたよりも近い——是谁？三大宗门的人？还是那个从未露面的母亲？或者是……陈기脑海中闪过一个念头，让他后背发凉——凌渊？那个表面庇护他的老掌门？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_025",
+        "content": "墨先生の姿がいっそう淡くなり，像是这次交流耗尽了他太多力量。「今夜之事，不可对任何人提起。」彼の声は次第に遠ざかり、「次回来る時は……お前の妹的消息を持って来い。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_026",
+        "content": "陈기는猛然と顔を上げ た。妹？陳念？彼は決して墨先生面前で陳念のことを言ったことはなく，对方又是如何得知的？除非——墨先生はずっと暗中でお前を観察していて，甚至比他以为的还要深。这些念头在脑海中翻涌，但陈기는面には依然波澜不惊を装った。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_027",
+        "content": "「弟子明白。」陈기는深く一揖し、山洞を後にした。夜風が面を撫で、ようやく后背が冷汗で濡れていることに気づいた。今夜の收获は预期を大幅に超えていた——父の足跡、母の手がかり、神秘的暗中守護者、そして墨先生の那句意味深长的「妹」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_028",
+        "content": "遠くの地平线には既に白みが差していた。陈기는東方の昇り始めた朝阳を見やり，心中で計算を巡らせた。張深はもう何かを察知している，時間は日益紧迫している。そして墨先生の那句话「谁かが暗中でお前を守っている」は，像一根刺扎在心里，让他既期待又不安。那个守護者，究竟是敵还是友？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_029",
+        "character_id": "char_chenji",
+        "content": "（墨先生……你到底知道多少？）",
+        "emotion": "深思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_030",
+        "content": "陈기는拳を握りしめ，朝阳が彼の影を引き伸ばした。一切才刚刚开始。父亲的足迹、母亲的线索、暗中的守護者——这些謎团交织在一起，织成了一张他暂时还看不清全貌の網。そして彼は、既にその中に身を置いていた。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

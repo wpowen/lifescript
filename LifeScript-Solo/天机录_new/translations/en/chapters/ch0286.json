@@ -1,0 +1,519 @@
+{
+  "id": "天机录_ch0286",
+  "book_id": "天机录",
+  "number": 286,
+  "title": "Relic Entrance",
+  "is_paid": true,
+  "next_chapter_hook": "The low call, like ancient temple bells, pierced through layers of stone walls to the depths of the soul. Chen Ji was certain—something in the depths of the relic was waiting for him.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0286_001",
+        "content": "Dusk settled over the vast mountains like a crouching beast. Three hundred miles behind them lay the ruins of the Tianqing Sect. Chen Ji and his two companions finally stood before the legendary ancient relic entrance. The massive stone gate was embedded in the mountain, over ten zhang high, its lintel covered in obscure inscriptions that glowed with a faint blue light despite ten thousand years of wind and rain. Su Qingyao held a sword, her gaze scanning the surroundings warily; Ye Qing narrowed those eerie purple eyes, a playful smile playing on her lips, as if anticipating something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_002",
+        "character_id": "char_suqingyao",
+        "content": "The spiritual energy concentration here... is wrong.",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_003",
+        "character_id": "char_yeqing",
+        "content": "The Holy Sect's ancient texts record that most ancient relics use 'spiritual tides' as locks. Those who enter without the corresponding bloodline or token will be torn apart by spiritual energy. It seems we've chosen the right place.",
+        "emotion": "笃定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_004",
+        "content": "Chen Ji didn't speak, his gaze lingering on the stone gate for a moment. The Tianji Record Fragment in his mind grew slightly warm—a sensation unprecedented. It was as if something beyond the gate was calling to him, calling so eagerly yet so sorrowfully. He inconspicuously withdrew his gaze, turning instead to the puppets standing on both sides of the gate. These puppets stood over a zhang tall, their entire bodies cast from black metal, their surfaces carved with intricate formation rune patterns, and the massive swords in their hands radiated a chilling killing intent.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_005",
+        "character_id": "char_suqingyao",
+        "content": "Ancient Guardian Puppets... It is said they all possess half-step Golden Core combat power, and once activated, they fight to the death. Chen Ji, are you certain you want to enter?",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_006",
+        "content": "As Chen Ji was about to answer, the puppets on both sides of the gate suddenly moved. A dull mechanical sound rang out, and all eighteen puppets turned their heads in unison. In those hollow eye sockets,幽蓝色的魂火—blue soul fires—ignited. They didn't raise their massive swords; instead—they knelt on one knee. The deafening clash of metal against stone echoed through the valley, as eighteen blue soul fires turned simultaneously toward Chen Ji, as if worshipping the master they had waited ten thousand years for.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_007",
+        "character_id": "char_yeqing",
+        "content": "...Interesting.",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_008",
+        "character_id": "char_suqingyao",
+        "content": "What did you do?!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_009",
+        "content": "Su Qingyao's exclamation echoed particularly clearly in the silent valley. Her gaze shifted repeatedly between the kneeling puppets and Chen Ji, and rarely did her usually cold face show such turmoil. She recalled the countless times she had probed Chen Ji in the past—all those times he had evaded with various excuses, those seemingly reasonable yet full of loopholes explanations, now seemed to have answers.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0286_010",
+        "prompt": "Faced with this sudden anomaly, Chen Ji had to make a choice. Should he accept the relic's acknowledgment, or continue to maintain his low profile and disguise?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_bloodline",
+            "text": "Openly acknowledge the bloodline",
+            "description": "Since the relic has already exposed the secret of the bloodline, he might as well go with the flow and confess his connection to this relic to both of them.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Identity exposed",
+            "visible_reward": "Relic acknowledgment deepens",
+            "risk_hint": "Su Qingyao's trust may waver",
+            "process_label": "坦然相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_accept_bloodline_01",
+                  "character_id": "char_chenji",
+                  "content": "I am surnamed Chen. This relic... may have some connection to my family.",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_accept_bloodline_02",
+                  "content": "Chen Ji didn't hide, nor did he show off. He simply stated the fact in the calmest tone possible. But it was precisely this calmness that made Su Qingyao's heart surge with tumultuous waves. She stared intently at Chen Ji's profile, suddenly finding this man she had studied countless times to be so unfamiliar at this moment."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "首次向盟友坦白血脉秘密",
+            "branch_route_id": null
+          },
+          {
+            "id": "hide_identity",
+            "text": "Continue hiding identity",
+            "description": "Although the puppets' reactions were anomalous, they could be explained away with other reasons. Maintain the sense of mystery and don't let anyone fully understand your cards.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Relic acknowledgment may be obstructed",
+            "visible_reward": "Maintain information advantage",
+            "risk_hint": "Su Qingyao's suspicion will deepen",
+            "process_label": "淡然处之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_hide_identity_01",
+                  "character_id": "char_chenji",
+                  "content": "It might be some kind of formation sensing... Who can say for sure about the mechanisms of ancient relics.",
+                  "emotion": "漫不经心"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_hide_identity_02",
+                  "character_id": "char_suqingyao",
+                  "content": "Is that so? Then this formation is quite precise, specifically bowing to you alone.",
+                  "emotion": "质疑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_hide_identity_03",
+                  "content": "There was a hint of mockery in Su Qingyao's tone. She wasn't foolish; on the contrary, as the Inner Disciple Senior Fellow of the Tianqing Sect, her insight was among the best in the entire sect. Every time Chen Ji had prevaricated, she had remembered it."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "divert_attention",
+            "text": "Change the subject",
+            "description": "Don't directly respond to the puppets' reactions; instead, redirect attention to the relic itself, implying this is an opportunity to enter the relic rather than a personal secret.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May miss out on relic acknowledgment",
+            "visible_reward": "Don't expose any information",
+            "risk_hint": "The relic may have follow-up reactions",
+            "process_label": "避重就轻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_divert_01",
+                  "character_id": "char_chenji",
+                  "content": "I'd rather not dwell on why these puppets knelt. What I'm more concerned about is when that gate will open. Look—",
+                  "emotion": "转移"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_divert_02",
+                  "content": "Before she finished speaking, Chen Ji redirected both their attentions to the stone gate. Just then, that gate that had been silent for ten thousand years actually showed signs of movement—blue light seeped from the door seams, flowing slowly along the inscription paths, eventually converging into a clear pattern. It was a soaring Xuanwu bird, its feathers fully displayed, its eyes lifelike, and beneath the Xuanwu bird was an ancient, simple character—\"Chen\"."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0286_011",
+        "content": "The Chen family's bloodline mark... it actually exists.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_012",
+        "character_id": "char_yeqing",
+        "content": "The Holy Sect's secret archives record that during ancient times, there was a Chen collateral branch that used the Xuanwu bird as their clan emblem. Later, that branch seemed to have offended some taboo, and the entire clan was destroyed, with only some bloodlines scattered outside. I never expected this legend to be true.",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_013",
+        "content": "Ye Qing's voice was calm, but a flash of keen light crossed her eyes. The Holy Sect's Saint, who commanded secrets beyond ordinary people's imagination. Her gaze toward Chen Ji carried more scrutiny—what secrets was this seemingly废物 man still hiding? The Xuanwu bird totem on the stone gate grew increasingly clear, the Chen character's light intensifying, and the spiritual energy of the entire valley converged toward this place. The puppets' soul fires burned brighter, yet they maintained their kneeling posture, as if awaiting the completion of some ritual.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_014",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji, how long do you intend to keep deceiving me?",
+        "emotion": "压抑的怒意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_015",
+        "content": "Su Qingyao's voice was soft, yet carried an unprecedented firmness. She walked toward Chen Ji step by step, her pale fingers gripping the sword hilt tightly, her knuckles white from force. This was the first time she had looked at him with such eyes—not scrutiny, not suspicion, but a form of questioning bordering on determination. Chen Ji suddenly realized this woman might be far harder to deceive than he had imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0286_016",
+        "prompt": "Su Qingyao's questioning dropped the atmosphere to freezing point. Chen Ji had to make a choice between confessing and continuing to disguise. This time, he couldn't use any clumsy excuses to muddle through.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "partial_confession",
+            "text": "Reveal partial truth",
+            "description": "Acknowledge having a bloodline connection to the relic, but hide the Tianji Record and more details. Give Su Qingyao an explanation while retaining the core secret.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose some information advantage",
+            "visible_reward": "Su Qingyao's trust rebounds",
+            "risk_hint": "Ye Qing may sense the concealment",
+            "process_label": "有限坦白",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_partial_01",
+                  "character_id": "char_chenji",
+                  "content": "...I really don't know what bloodline flows in me. But since the relic acknowledges me, I'll go in and take a look. As for the rest—I'll figure it out when I do.",
+                  "emotion": "真诚"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_partial_02",
+                  "content": "This statement was half true, half false, yet more believable than any previous explanation. Su Qingyao was silent for a moment before finally releasing the sword hilt. \"Fine, I believe you. But remember—\" Her voice suddenly chilled, \"If you dare lie to me again, I will personally...\" Before she finished, she had already turned toward the stone gate, leaving only a cold back view."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "在遗迹前做出有限坦白",
+            "branch_route_id": null
+          },
+          {
+            "id": "show_strength",
+            "text": "Display absolute strength",
+            "description": "Stop explaining and directly prove your qualification through action. Let your strength speak, so both their doubts crumble without attack.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Expose more trump cards",
+            "visible_reward": "Completely suppress doubts",
+            "risk_hint": "May draw greater attention",
+            "process_label": "强势回应",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_strength_01",
+                  "character_id": "char_chenji",
+                  "content": "Whether you believe me or not is your concern. Whether I can get in is mine.",
+                  "emotion": "淡漠"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_strength_02",
+                  "content": "Chen Ji didn't look at Su Qingyao again, but walked directly toward the stone gate. His pace wasn't fast, yet carried an suffocating pressure. The puppets' soul fires burned brighter as he approached. When he stood before the gate, all eighteen puppets let out a low roar in unison, as if welcoming a king's return. The Xuanwu bird totem on the stone gate suddenly blazed with dazzling light, the Chen character slowly splitting open—the gate, opened."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "invoke_trial",
+            "text": "Proactively request trial",
+            "description": "Since the relic acknowledges the bloodline, it will surely bestow a trial. Why not proactively propose this, proving it's not the bloodline but one's heart that matters.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May face danger",
+            "visible_reward": "Completely gain relic acknowledgment",
+            "risk_hint": "Trial difficulty unknown",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0286_result_trial_01",
+                  "character_id": "char_chenji",
+                  "content": "The bloodline is merely an admission ticket. If this relic truly possesses intelligence, it surely won't acknowledge bloodline over heart. Let me in—if I deserve to stay, and if I don't, the relic will give me the answer.",
+                  "emotion": "坦荡"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0286_result_trial_02",
+                  "content": "The moment the words fell, the Xuanwu bird totem on the stone gate actually responded. It spread its wings as if to fly, and a trace of... relief? flowed from its eyes. Immediately after, an old and majestic voice resounded in the minds of all three: \"Chen bloodline, are you willing to accept the trial of Heavenly Secrets?\" The puppets all raised their heads, and the blue soul fires汇聚成一道光柱—converged into a pillar of light—pointing directly at Chen Ji."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "主动请求遗迹考验",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0286_017",
+        "content": "Faced with that old inquiry, Chen Ji didn't answer immediately. He could feel both Su Qingyao and Ye Qing were waiting for his decision—this was the first time they had watched him so united, waiting for him to reveal the answer. The Tianji Record Fragment in his mind grew slightly warm, as if also awaiting his choice. Chen Ji took a deep breath and was about to speak—",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_018",
+        "content": "Just then, a low call suddenly echoed from deep within the stone gate. That voice was ancient and distant, as if having traversed ten thousand years of time, carrying an indescribable longing. It wasn't like dialogue; it was more like a soft sigh, a person who had waited far, far too long finally encountering a visitor. The puppets' soul fires all trembled simultaneously, the old inquiry voice suddenly vanishing, replaced by another sentence: \"...You have finally come.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_019",
+        "character_id": "char_suqingyao",
+        "content": "This voice... there's someone in the relic?",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_020",
+        "character_id": "char_yeqing",
+        "content": "That's not right. This is... an artifact spirit?",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_021",
+        "content": "Chen Ji's pupils suddenly contracted. That voice... why was it so familiar? The Tianji Record Fragment in his mind was vibrating frantically, as if reunited with long-lost family. He suddenly remembered what Mo Xiansheng had told him—\"The Tianji Record is not ownerless; it has always been waiting for its inheritor to return to the origin.\" Origin... could this be it? The Xuanwu bird totem on the stone gate came completely alive. It soared high, circled around Chen Ji three times, then dove straight into his brow center. In an instant, countless images flooded his consciousness like a tide—ancient Chen family, the truth of their destruction, and... a figure imprisoned in the depths of the relic.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0286_022",
+        "character_id": "char_chenji",
+        "content": "Are you the one calling me?",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0286_023",
+        "content": "Chen Ji's voice was soft, yet carried an unprecedented tremor. That imprisoned figure... that figure... why was its outline so similar to that person in memory? The information torrent from the Tianji Record Fragment hadn't yet subsided. He vaguely saw a stone chamber, a blurry figure, and a sword floating in mid-air, radiating a magnificent sword intent. That sword intent... that was the Chen family's inherited Xuanwu Sword Intent! Chen Ji's breathing suddenly quickened. From the depths of the relic, that old voice sounded again, this time with a tremor: \"Child... you truly came. Come in. Let your father... take a good look at you.\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

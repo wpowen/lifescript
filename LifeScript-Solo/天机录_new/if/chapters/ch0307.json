@@ -1,0 +1,490 @@
+{
+  "id": "天机录_ch0307",
+  "book_id": "天机录",
+  "number": 307,
+  "title": "第三条路",
+  "is_paid": true,
+  "next_chapter_hook": "时空裂隙深处，一双沉寂万古的眼眸缓缓睁开，古老而威严的气息如潮水般涌来，那被囚禁的神秘存在第一次将目光投向了这个擅闯禁地的年轻人。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0307_001",
+        "content": "夜清的指尖带着微凉，却意外地让陈机那颗习惯了冰冷算计的心微微一动。他没有立刻抽回手，而是任由那温度在掌心蔓延，眸中精光闪烁。残缺天机录的预言正在他脑海中反复回响——天命值消耗殆尽的画面太过清晰，每一次回想都如刀割般刺痛。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_002",
+        "character_id": "char_yeqing",
+        "content": "夜清的声音低沉而郑重，\"魔道圣宗的古籍中记载，天命锁钥并非不可分离。万年前曾有一位先贤，以'分魂引'之术将锁钥从天命者身上剥离，让被囚者重获自由。\"她顿了顿，美眸中闪过一丝哀伤，\"但那门秘术的残卷，就藏在眼前这座秘境禁地的最深处。\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_003",
+        "content": "陈机闻言，心中翻涌起惊涛骇浪。分魂引——这个名字他在天机录残页的边角注解中曾匆匆一瞥，彼时只以为是传说，没想到竟真实存在。他下意识握紧了夜清的手，目光如炬：\"禁地危机四伏，金丹境修士踏入便是九死一生。你确定要冒这个险？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_004",
+        "character_id": "char_yeqing",
+        "content": "夜清轻轻一笑，那笑容中带着决绝与温柔交织的复杂情绪：\"我被圣宗当作棋子利用了数百年，若不能挣脱这枷锁，余生不过是更大的囚笼。\"她反握住陈机的手，\"更何况，有你这张算无遗策的底牌在，我何惧之有？\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0307_005",
+        "prompt": "夜清已表明决心，陈机需做出决断——是否信任这位魔道圣女，共同踏入生死未卜的禁地？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0307_005_a",
+            "text": "结盟共入禁地",
+            "description": "既然目标一致，便以诚相待，与夜清结成真正的同盟，共同面对禁地中的未知凶险。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "获得魔道迷雾遮掩天机气息的能力",
+            "risk_hint": "禁地中的时空乱流对金丹境修士极度危险",
+            "process_label": "抉择：结盟",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_005_a_001",
+                  "content": "陈机深吸一口气，缓缓点头。他从怀中取出一枚刻有玄奥纹路的玉佩，郑重地递到夜清手中：\"这是我从天机录残页中参悟出的'天机符'，关键时刻或可保你一命。\"这枚玉佩是他压箱底的底牌之一，从未示人。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_005_a_002",
+                  "character_id": "char_yeqing",
+                  "content": "夜清接过玉佩，指尖触及温润玉质的瞬间，眼眶微微泛红：\"陈机，你……这是你最后的护身之物！\"她想拒绝，却被陈机按住手背。",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁地同盟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清收到天机符，信任大增",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0307_005_b",
+            "text": "保持戒心前行",
+            "description": "虽然决定合作，但保留核心底牌，只以辅助身份跟随夜清探路，确保自身安全。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "夜清可能心生失望",
+            "visible_reward": "保存关键底牌以备不时之需",
+            "risk_hint": "禁地凶险万分，孤身应对可能更加吃力",
+            "process_label": "抉择：戒心",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_005_b_001",
+                  "content": "陈机微微颔首，神情平静：\"我随你走一趟，但丑话说在前头——若有性命之忧，我会优先保全自己。\"这番话既是实话，也是试探。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_005_b_002",
+                  "character_id": "char_yeqing",
+                  "content": "夜清眼中闪过一丝失落，却很快释然一笑：\"人之常情。能随我入禁地，已是意外之喜。\"她的善解人意反而让陈机心中微微一沉——这女子的心性，远比他想象的更加坚韧。",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清理解陈机的谨慎",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_006",
+        "content": "商议既定，二人不再犹豫。夜清从袖中取出一枚漆黑如墨的令牌，轻轻一捏，令牌化作漫天黑雾，将二人笼罩其中。黑雾中，陈机只觉周身压力骤减，天机录残页那种若有若无的窥视感也随之消失。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_007",
+        "character_id": "char_yeqing",
+        "content": "夜清的声音在黑雾中响起，带着几分自嘲：\"这是我圣宗的'魔道迷雾'，能遮掩一切天机推演。原本是用来躲避追杀的手段，没想到今日却能派上这个用场。\"陈机默默点头，心中对这位魔道圣女的评价又高了几分——能在圣宗的控制下活到今日，此女绝不简单。",
+        "emotion": "自嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_008",
+        "content": "穿过层层迷雾，一座巍峨的石门赫然出现在眼前。石门高逾百丈，门上刻满了晦涩难懂的古老符文，隐隐散发着令人心悸的威压。夜清脚步一顿，神色凝重：\"禁地入口到了。传闻石门之后便是时空乱流层，金丹境修士若没有特殊手段护身，恐怕撑不过一炷香的时间。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0307_009",
+        "prompt": "石门就在眼前，夜清转头看向陈机，\"你来定——我们如何进入？\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0307_009_a",
+            "text": "以天机录推演入口",
+            "description": "消耗5点天命值，使用天机录预见接下来半个时辰内的最佳行进路线，最大程度规避时空乱流的冲击。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命值-5",
+            "visible_reward": "安全通过时空乱流层",
+            "risk_hint": "天命值本就珍贵，此举无异于饮鸩止渴",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_009_a_001",
+                  "content": "陈机毫不犹豫地催动天机录残页。金色光纹在他瞳孔中流转，无数画面如走马灯般闪过。他看到了——左侧第三块地砖、七息之后、东北方向三丈……碎片化的预知画面涌入脑海，虽然模糊，却足以指明方向。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_009_a_002",
+                  "character_id": "char_chenji",
+                  "content": "陈机睁开双眼，眼底闪过一丝疲惫，却很快被坚定取代：\"跟紧我，左侧第三块地砖是安全落脚点。\"他率先踏入石门，身形被流光溢彩的时空乱流吞没。",
+                  "emotion": "疲惫"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": "陈机使用天机录推演",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0307_009_b",
+            "text": "依赖魔道迷雾硬闯",
+            "description": "让夜清全力催动魔道迷雾，凭借这件圣宗至宝的威能强行穿越时空乱流层，减少天命值消耗。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "魔道迷雾消耗剧烈",
+            "visible_reward": "保留天命值",
+            "risk_hint": "魔道迷雾遮蔽效果可能减弱，风险更高",
+            "process_label": "迷雾硬闯",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_009_b_001",
+                  "content": "夜清闻言深吸一口气，周身黑雾陡然浓郁了三分。她一把抓住陈机的手腕，娇喝一声：\"走！\"二人同时冲入石门。刹那间，铺天盖地的时空乱流席卷而来，如千万把利刃同时切割。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_009_b_002",
+                  "content": "魔道迷雾剧烈翻涌，却在那毁天灭地的时空乱流中摇摇欲坠。夜清额头青筋暴起，显然已到了极限。千钧一发之际，陈机反手握住她的手腕，体内真元如潮水般涌入黑雾之中，协助稳定屏障。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "二人合力穿越乱流",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_010",
+        "content": "时空乱流的恐怖远超想象。周围的空间时而压缩如弹丸，时而撕裂如深渊，时间流速更是紊乱至极——有时一息仿佛一年，有时百年不过一瞬。陈机只觉五脏六腑都在翻涌，若非天机录残页本能地散发出微光护住他的神识，恐怕早已神魂俱灭。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_011",
+        "character_id": "char_yeqing",
+        "content": "夜清的声音在混乱中断断续续传来：\"再……再坚持片刻！我感应到了……前方有出口！\"她的脸色苍白如纸，嘴角已渗出一丝鲜血，显然魔道迷雾的消耗已到了临界点。",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_012",
+        "content": "就在此时，一道漆黑的空间裂隙毫无预兆地出现在陈机身侧。裂隙中传来一股诡异的吸力，猝不及防下，陈机的半边身子已被卷入其中。千钧一发之际，一只冰凉的手死死扣住了他的手腕。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_013",
+        "character_id": "char_yeqing",
+        "content": "夜清不知何时已扑到他身前，双臂环住他的腰身，拼尽全力向外拽去。黑雾在她身后如薄纸般被撕裂，时空乱流的锋芒切割在她背上，鲜血瞬间染红了她的后背。",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_014",
+        "content": "陈机瞳孔骤缩，心中某根弦被狠狠拨动。他从未想过，这个认识不过数日的魔道女子，会为他做到如此地步。\"放手！\"他厉声道，\"你这样会死！\"然而夜清只是咬牙摇头，鲜血顺着她的下颌滴落在陈机脸上，温热而刺目。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0307_015",
+        "prompt": "生死关头，陈机必须做出选择——是接受夜清的牺牲独自逃生，还是拼死一搏带她同生？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0307_015_a",
+            "text": "绝不独活，共闯生机",
+            "description": "燃烧体内真元激活天机录的全部威能，以天命值为代价强行开辟出一条逃生通道，带夜清一同逃出生天。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "夜清存活，好感度大幅提升",
+            "risk_hint": "天命值本就珍贵，如此消耗无异于自断前路",
+            "process_label": "共闯生机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_015_a_001",
+                  "content": "陈机猛地咬破舌尖，一口精血喷在天机录残页之上。残页瞬间爆发出耀眼的金色光芒，无数玄奥的文字如游鱼般穿梭而出，在他与夜清周身编织成一道璀璨的屏障。时空乱流撞上屏障，发出刺耳的嘶鸣，却被那光芒一一弹开。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_015_a_002",
+                  "character_id": "char_yeqing",
+                  "content": "夜清怔怔地望着眼前这个男子，他的脸庞在金光映照下显得格外坚毅。她忽然明白了什么，泪水夺眶而出：\"你这个傻子……\"陈机没有回答，只是紧紧握住她的手，朝着光芒指引的方向全力奔去。",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命契机"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机以天命值为代价救下夜清",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0307_015_b",
+            "text": "冷静判断，伺机而动",
+            "description": "强压心中焦躁，利用天机录碎片化的预知寻找最近的稳定节点，伺机挣脱裂隙。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "夜清可能重伤",
+            "visible_reward": "保留更多天命值",
+            "risk_hint": "夜清将承受更多伤害",
+            "process_label": "冷静脱困",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_015_b_001",
+                  "content": "陈机深吸一口气，强迫自己冷静下来。越是生死关头，越不能乱了方寸。他闭上双眼，任由天机录残页在脑海中投射出模糊的画面——右侧七尺处，有一个相对稳定的时空节点。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_015_b_002",
+                  "content": "\"向右！\"他低喝一声，猛地扭转身形，借着夜清的拖拽之力朝着那个方向冲去。裂隙的吸力如影随形，关键时刻，陈机一掌拍在夜清后背，将她率先推出裂隙范围。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机冷静分析救出夜清",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_016",
+        "content": "不知过了多久——或许是一瞬，或许是永恒——当陈机再次睁开双眼时，周围的景象已完全不同。时空乱流的呼啸声消失了，取而代之的是一片死寂的幽暗空间。他挣扎着坐起身，发现夜清就躺在他身旁，浑身浴血，却仍有微弱的呼吸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_017",
+        "content": "陈机心中一紧，连忙探查夜清的伤势。时空乱流的余波在她背上留下了无数细小的伤口，所幸并未伤及要害。他从储物袋中取出几枚疗伤丹药，小心翼翼地喂入她口中。做完这一切，他方才松了口气，抬头环顾四周。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_018",
+        "content": "幽暗的空间中，弥漫着一种难以言喻的古老气息。地面是漆黑的岩石，寸草不生；头顶没有天日，只有无尽的黑暗。而就在这黑暗的最深处，陈机看到了一道朦胧的身影。那身影被无数锁链般的黑色光芒囚禁着，周身散发着令人心悸的威压。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_019",
+        "character_id": "char_yeqing",
+        "content": "就在此时，那被囚禁的身影忽然睁开了眼睛。一双古老而威严的眼眸，仿佛看透了万古岁月，带着审视与玩味，直直地望向陈机。那目光如有实质，让他浑身汗毛倒竖，仿佛被天道意志锁定了一般。",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_020",
+        "content": "一个苍老而悠远的声音在陈机脑海中响起，带着跨越万年的疲惫与沧桑：\"又一个……天机录的继承者么？有趣……你身上那道天命锁钥的气息，让本座想起了一些……久远的往事。\"陈机浑身僵硬，指尖不自觉地颤抖——这个人，竟然能感知到陈念的存在？",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

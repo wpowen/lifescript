@@ -1,0 +1,557 @@
+{
+  "id": "天机录_ch0348",
+  "book_id": "天机录",
+  "number": 348,
+  "title": "意外盟友",
+  "is_paid": true,
+  "next_chapter_hook": "夜清的话语如同一把钥匙，打开了陈机心底最隐秘的渴望——然而这枚钥匙的代价，却是他必须踏入更深的棋局。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0348_001",
+        "content": "残月如钩，秘境的山风裹挟着腐朽的灵植气息。陈机独自立于断崖边缘，指尖摩挲着那枚古旧玉简——陈念失踪前留下的唯一线索。玉简上的字迹模糊如风中残烛，却清晰地刻着三个字：「勿寻我。」他将玉简收入袖中，眸中掠过一丝旁人难以察觉的寒光。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_002",
+        "content": "七日之期已至。陈机并不担心夜清会失约——魔道中人虽行事诡谲，却最重承诺。她既说了会来，便绝不会食言。他负手而立，目光投向远处的魔道营地，营中灯火幽幽，偶有诡异黑雾升腾。若被旁人瞧见天青宗杂役弟子深夜独处秘境边缘，定要引发无数猜疑。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0348_003",
+        "character_id": "char_yeqing",
+        "content": "「你倒是准时。」一道清冷的女声自黑雾中传出，旋即一袭黑裙的夜清踏雾而来，周身萦绕的魔气如同活物般蠕动。她面色苍白如纸，唇角却噙着一抹讥诮，「陈机，你可知我若想杀你，方才便是最好的时机？」",
+        "emotion": "冷傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_004",
+        "content": "陈机缓缓转身，脸上浮现出那副惯常的怯懦笑容：「夜圣女说笑了，小的不过是个杂役弟子，哪值得您亲自出手？」他的语气卑微至极，脊背却挺得笔直。夜清眯起眼，审视的目光如同审视猎物：「杂役弟子？我倒想知道，一个杂役弟子如何能拿到天机录残页。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_005",
+        "content": "秘境中的灵雾愈发浓郁，两人之间的气氛凝滞如冰。陈机垂眸，遮住眼底一闪而过的精光——她果然在试探。天机录的存在是他的底牌，绝不能轻易暴露。他故作惶恐地后退一步：「夜圣女这话从何说起？小的哪里懂得什么天机……」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0348_006",
+        "prompt": "面对夜清的试探，陈机选择：",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "ch0348_opt1",
+            "text": "继续装傻",
+            "description": "维持废物人设，让她主动亮出更多底牌",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "无",
+            "visible_reward": "获取更多情报",
+            "risk_hint": "夜清可能失去耐心",
+            "process_label": "继续伪装",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0348_result_ch0348_opt1_001",
+                  "content": "夜清轻嗤一声：「装，继续装。」她抬手，指尖凝聚的魔气骤然炸开，在陈机脚边留下一道深可见骨的裂痕，「七日之前你预见的内容，我可都记得清清楚楚。你若再装，我便将你的'废物'人设，亲手拆给整个天青宗看。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0348_opt2",
+            "text": "半真半假",
+            "description": "承认有残页，但不透露具体能力",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "建立对话基础",
+            "risk_hint": "可能被她套出更多信息",
+            "process_label": "坦诚相待",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0348_result_ch0348_opt2_001",
+                  "content": "陈机脸上的怯懦渐渐收敛，取而代之的是一抹淡然的微笑：「夜圣女果然爽快。不错，我确实持有天机录残页——但它的代价，远比你想象的沉重。」他的目光平静地与夜清对视，「你我合作，首先得建立在平等的基础上。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0348_opt3",
+            "text": "反客为主",
+            "description": "直接点破她被圣宗控制的处境，夺回主导权",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "彻底激怒她的风险",
+            "visible_reward": "彻底掌握对话主动权",
+            "risk_hint": "若判断失误，将失去这个盟友",
+            "process_label": "主动出击",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0348_result_ch0348_opt3_001",
+                  "content": "陈机忽然轻笑出声，那笑声在寂静的夜色中显得格外刺耳：「夜圣女，你我都清楚，你来找我合作，不是因为信任，而是因为圣宗在你体内种下的噬心蛊。」夜清瞳孔骤缩，指尖的魔气剧烈颤动。「你怎么知道……」陈机淡淡道：「我知道的，比你想象的多得多。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0348_007",
+        "character_id": "char_yeqing",
+        "content": "夜清沉默了片刻，周身魔气缓缓收敛。她盯着陈机，目光中多了几分审视与忌惮：「你倒是比我预想的难缠。」她抬手取出一枚漆黑玉简，「这里面记载着魔道主帅——血煞尊者的情报，以及……天道之眼的些许弱点。你若想与我合作，这便是我的诚意。」",
+        "emotion": "认真"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_008",
+        "content": "陈机接过玉简，神识探入其中。刹那间，无数信息如潮水般涌入脑海——血煞尊者，炼虚境巅峰强者，掌控魔道大军三成精锐；而天道之眼，竟是一种……意识体？他的眉头微微皱起。玉简中记载，天道之眼并非实体，而是散布于天地间的某种意志碎片。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0348_009",
+        "character_id": "char_yeqing",
+        "content": "「天道之眼无处不在，却又无迹可寻。」夜清的声音低沉下来，「历代预言者都被它盯上，天机录不过是它布下的棋子之一。我不知道它为何选中你，但我知道——」她顿了顿，眼中闪过一丝复杂的光芒，「它绝不是朋友。」",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0348_010",
+        "prompt": "关于情报共享的合作方式，陈机决定：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0348_opt4",
+            "text": "等价交换",
+            "description": "双方各取所需，情报对等交换",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "需要透露自己的部分情报",
+            "visible_reward": "建立稳定的合作基础",
+            "risk_hint": "可能暴露更多底牌",
+            "process_label": "公平交易",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0348_result_ch0348_opt4_001",
+                  "character_id": "char_yeqing",
+                  "content": "「公平。」夜清点头，「你给我三件天机录预见的内容，我给你三件魔道的核心机密。但有一条——」她的目光锐利如刀，「关于你妹妹陈念的事，你必须亲口告诉我。我手里有她的线索。」",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0348_opt5",
+            "text": "只进不出",
+            "description": "只接受她的情报，拒绝透露自己的信息",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能让夜清不满",
+            "visible_reward": "最大限度保护自身情报",
+            "risk_hint": "夜清可能终止合作",
+            "process_label": "单向索取",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0348_result_ch0348_opt5_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清的面色沉了下来：「陈机，我带着诚意来，你却只想空手套白狼？」她的魔气再次涌动，「我承认你有几分本事，但这世间并非只有你一人能预见未来。你若不愿合作，大可现在就走。」",
+                  "emotion": "不悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0348_opt6",
+            "text": "保留核心",
+            "description": "提供天机录的部分通用能力信息，隐藏关键用法",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要精心筛选透露内容",
+            "visible_reward": "既建立信任，又保住核心机密",
+            "risk_hint": "夜清可能察觉隐瞒",
+            "process_label": "精心算计",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0348_result_ch0348_opt6_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清盯着他看了许久，忽然轻笑：「你倒是谨慎。」她没有追问，只是将那枚黑色玉简往前一推，「罢了，这些情报你先拿着。但记住——合作是双向的，你欠我的，迟早要还。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_011",
+        "content": "陈机将玉简收入袖中，目光落在夜清脸上：「七日之约，你我今日算是正式达成合作。不过……」他话锋一转，声音骤然冷了几分，「夜圣女，你方才说有关于陈念的线索？」他直视着夜清的双眼，「说。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0348_012",
+        "character_id": "char_yeqing",
+        "content": "夜清微微挑眉，似乎没料到他会如此直接。她沉默了片刻，周身魔气忽然剧烈翻涌，紧接着——一枚染血的玉牌从她袖中飞出，稳稳落入陈机掌心。玉牌背面刻着一个符号，那是陈家独有的血脉印记。",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_013",
+        "content": "陈机的指尖微微发颤。玉牌上的血迹已经干涸，但那熟悉的印记却如烙铁般灼烧着他的瞳孔。这是陈念的随身之物——他认得，因为那枚玉牌的边角有一道细小的缺口，是他幼时不小心磕出来的。他深吸一口气：「她在哪？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0348_014",
+        "character_id": "char_yeqing",
+        "content": "「圣宗禁地，玄冥深渊。」夜清一字一顿，「那里封印着上古天道意志的一缕残魂，你妹妹被囚禁在最深处的'天命祭坛'上，作为……活祭品。」她顿了顿，「每逢月圆之夜，圣宗便会抽取她的一缕天命之力。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_015",
+        "content": "陈机握着玉牌的手骤然收紧，骨节咯咯作响。他的脸上看不出任何表情波动，但袖中的左手已攥成拳头，指甲深深嵌入掌心。他太清楚陈念对自己的意义——那是他在这个世界唯一的血缘至亲，是他伪装成废物的唯一软肋。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_016",
+        "content": "夜清静静地看着他，似乎在等待他的反应。片刻后，她继续道：「我可以告诉你进入玄冥深渊的方法，甚至帮你制造脱身的机会。但代价是——」她的目光变得锐利，「你必须帮我解除体内的噬心蛊。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0348_017",
+        "prompt": "面对夜清的交易条件，陈机：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0348_opt7",
+            "text": "立即答应",
+            "description": "妹妹的事不能等，必须尽快行动",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "需要耗费天命值为她解蛊",
+            "visible_reward": "获得夜清的全力支持",
+            "risk_hint": "消耗天命值会削弱预见能力",
+            "process_label": "毫不犹豫",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0348_result_ch0348_opt7_001",
+                  "content": "「成交。」陈机没有片刻犹豫，「噬心蛊的解法，我会想办法。但陈念的事——你若骗我……」他没有说完，但那平淡语气中的寒意却让夜清都微微一怔。「很好。」夜清轻声道，眼底闪过一丝复杂的光芒，「你果然不是寻常人。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0348_opt8",
+            "text": "讨价还价",
+            "description": "先确认她说的是真话，再谈条件",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能耽误时间",
+            "visible_reward": "确保情报真实性",
+            "risk_hint": "夜清可能不满被质疑",
+            "process_label": "谨慎求证",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0348_result_ch0348_opt8_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清的面色微沉：「你不信我？」陈机摇头：「不是不信，是必须确认。」他从袖中取出陈念的玉简，「我需要用天机录验证你说的话——放心，只是'看'一眼，不会消耗太多。」他顿了顿，「这是合作的基础，对吗？」",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0348_opt9",
+            "text": "留有后手",
+            "description": "答应合作，但暗中布置保险",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要更多精力平衡双方关系",
+            "visible_reward": "即使夜清反水也有退路",
+            "risk_hint": "若被发现可能彻底失去盟友",
+            "process_label": "暗藏玄机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0348_result_ch0348_opt9_001",
+                  "content": "「好。」陈机点头，嘴角勾起一抹不易察觉的弧度。他假装思索片刻，实则在袖中悄然激活天机录残页，窥见了接下来两个时辰内夜清可能采取的行动——都是善意。他收回神识，淡淡道：「成交。我会在下次秘境开启前，帮你解决噬心蛊的问题。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_018",
+        "content": "夜清望着他平静的面容，忽然轻笑一声：「陈机，你知道吗？我原本以为你只是个运气好的废物。」她的目光变得意味深长，「现在看来，我错了。你是这乱世中……最危险的棋手。」陈机没有回答，只是将玉简与玉牌一同收入怀中，转身望向远方的天际。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_019",
+        "content": "「下次见面，我会带来玄冥深渊的详细布防图。」夜清的声音从身后传来，「至于噬心蛊……」她顿了顿，「我还能撑三个月。够吗？」陈机没有回头：「够。」话音落下，黑雾涌起，将夜清的身影吞没。秘境中重归寂静，只有山风呜咽，吹动他染血的衣袂。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0348_020",
+        "character_id": "char_chenji",
+        "content": "陈机低头看着掌心的玉牌，指腹轻轻摩挲过那道熟悉的缺口。妹妹，再等等。他将玉牌贴近心口，闭上双眼。哥会来救你的。这一次，不是废物杂役陈机，而是……天机录的传承者。他睁开眼，眸中寒光乍现。天道之眼，你既然敢把我妹妹当成祭品——那咱们就走着瞧。",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_021",
+        "content": "秘境的禁制开始松动，预示着出口即将开启。陈机深吸一口气，将所有情绪收敛入那副怯懦的面具之下。他缓步走向集合点，却在途中忽然停住——袖中的天机录残页竟微微发烫，仿佛在回应他方才提及天道之眼时，那股若有若无的窥视感。他眉头微皱，却面不改色地继续前行。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_022",
+        "content": "陈念，等我。无论玄冥深渊有多凶险，无论要付出什么代价，我都会把你带回来。这是陈机第一次在心底，对那个失踪多年的妹妹许下如此笃定的承诺。夜色渐淡，东方的天际泛起鱼肚白。新的一天即将开始，而他与夜清的交易，也将彻底改变这场乱世的棋局。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_023",
+        "content": "当第一缕晨光刺破云层时，陈机已回到天青宗外门弟子的队伍中。他低着头，弯着腰，活脱脱一副被吓破胆的废物模样。身旁的弟子们投来轻蔑的目光，窃窃私语着秘境中的种种惊险，却无人注意到他袖中，那枚染血玉牌正散发着微弱而坚定的光芒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0348_024",
+        "content": "墨先生的残魂在天机录深处幽幽叹息：「棋局已成，棋子皆动。但陈机啊，你可知自己正一步步踏入怎样的深渊？」陈机当然不知道。他只知道，妹妹在等他，夜清的交易需要兑现，而那个所谓的天道之眼……他抬头望向苍穹，眼底深处闪过一抹冷冽的寒光——他陈机，从不信命。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

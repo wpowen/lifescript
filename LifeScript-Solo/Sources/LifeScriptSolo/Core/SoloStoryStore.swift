@@ -1,5 +1,25 @@
 import Foundation
 import Observation
+import SwiftData
+
+struct SoloWelcomeStage: Equatable {
+    let id: String
+    let title: String
+    let detail: String
+    let progressThreshold: Double
+}
+
+struct SoloWelcomeSnapshot: Equatable {
+    let title: String
+    let author: String
+    let eyebrow: String
+    let headline: String
+    let detail: String
+    let progress: Double
+    let generatedChapterCount: Int
+    let plannedChapterCount: Int
+    let stages: [SoloWelcomeStage]
+}
 
 struct SoloProgressSummary: Equatable {
     let currentChapterTitle: String
@@ -13,7 +33,9 @@ struct SoloProgressSummary: Equatable {
     }
 
     var actionTitle: String {
-        completedChapterCount == 0 ? "开始这一局" : "继续推进"
+        completedChapterCount == 0
+            ? SoloLocalization.localized("开始这一局")
+            : SoloLocalization.localized("继续推进")
     }
 }
 
@@ -27,11 +49,35 @@ final class SoloStoryStore {
         case error(String)
     }
 
+    enum LoadingPhase: Equatable {
+        case idle
+        case openingCodex
+        case unfoldingChapters
+        case chartingRoutes
+        case ready
+
+        var progress: Double {
+            switch self {
+            case .idle:
+                return 0.10
+            case .openingCodex:
+                return 0.28
+            case .unfoldingChapters:
+                return 0.68
+            case .chartingRoutes:
+                return 0.88
+            case .ready:
+                return 1.0
+            }
+        }
+    }
+
     let storyId: String
 
     private let contentLoader: ContentProviding
 
     private(set) var state: LoadState = .idle
+    private(set) var loadingPhase: LoadingPhase = .idle
     private(set) var book: Book?
     private(set) var chapters: [Chapter] = []
     private(set) var walkthrough: BookWalkthrough?
@@ -42,6 +88,8 @@ final class SoloStoryStore {
     ) {
         self.storyId = storyId
         self.contentLoader = contentLoader
+        // 提前启动加载，与首帧渲染并行，避免视图出现后才触发 IO
+        Task { await loadIfNeeded() }
     }
 
     func loadIfNeeded() async {
@@ -53,7 +101,11 @@ final class SoloStoryStore {
         state = .loading
 
         do {
+            loadingPhase = .openingCodex
             let loadedBook = try await contentLoader.loadBook(id: storyId)
+            book = loadedBook
+
+            loadingPhase = .unfoldingChapters
             let loadedChapters = try await contentLoader.loadAllChapters(bookId: storyId)
                 .sorted { lhs, rhs in
                     if lhs.number == rhs.number {
@@ -62,9 +114,11 @@ final class SoloStoryStore {
                     return lhs.number < rhs.number
                 }
 
-            book = loadedBook
             chapters = loadedChapters
+
+            loadingPhase = .chartingRoutes
             walkthrough = try await contentLoader.loadWalkthrough(bookId: storyId)
+            loadingPhase = .ready
             state = .ready
         } catch {
             NSLog("‼️ SoloStoryStore load error: %@", String(describing: error))
@@ -72,8 +126,76 @@ final class SoloStoryStore {
         }
     }
 
+    func reconcilePersistedProgress(in context: ModelContext) async {
+        await StoryContentVersioning.reconcilePersistedProgress(
+            bookId: storyId,
+            contentLoader: contentLoader,
+            modelContext: context
+        )
+    }
+
+    var welcomeSnapshot: SoloWelcomeSnapshot {
+        let branding = SoloStoryConfig.branding
+        let generatedChapterCount = chapters.count
+        let plannedChapterCount = latestChapterTotal
+
+        let headline: String
+        let detail: String
+
+        switch loadingPhase {
+        case .idle:
+            headline = SoloLocalization.localized("命局将启")
+            detail = SoloLocalization.localized("正在唤醒天机录的底稿与人物命盘。")
+        case .openingCodex:
+            headline = SoloLocalization.localized("正在校准命书")
+            detail = SoloLocalization.localized("先把书卷、人物与世界法则接入当前这局，让欢迎页先稳稳亮起来。")
+        case .unfoldingChapters:
+            headline = SoloLocalization.localized("正在展开章节")
+            detail = generatedChapterCount > 0
+                ? SoloLocalization.format("已接入 %d 章当前版本内容，首开不再重复扫整包章节。", generatedChapterCount)
+                : SoloLocalization.localized("正在把当前版本章节接入这一局。")
+        case .chartingRoutes:
+            headline = SoloLocalization.localized("正在描摹命途")
+            detail = SoloLocalization.localized("把阶段、暗线和人物牵引整理成可读的命途图，不让路线信息再压住正文。")
+        case .ready:
+            headline = SoloLocalization.localized("命局已就绪")
+            detail = SoloLocalization.localized("天机台已经稳定，可以正式入局。")
+        }
+
+        return SoloWelcomeSnapshot(
+            title: book?.title ?? branding.storyDisplayName,
+            author: book?.author ?? SoloLocalization.localized("命书工作室"),
+            eyebrow: branding.entryEyebrow,
+            headline: headline,
+            detail: detail,
+            progress: loadingPhase.progress,
+            generatedChapterCount: generatedChapterCount,
+            plannedChapterCount: plannedChapterCount,
+            stages: [
+                SoloWelcomeStage(
+                    id: "codex",
+                    title: SoloLocalization.localized("命书唤醒"),
+                    detail: SoloLocalization.localized("先接入书卷与人物法则。"),
+                    progressThreshold: 0.22
+                ),
+                SoloWelcomeStage(
+                    id: "chapters",
+                    title: SoloLocalization.localized("章节展开"),
+                    detail: SoloLocalization.localized("把当前已生成章节接入本局。"),
+                    progressThreshold: 0.60
+                ),
+                SoloWelcomeStage(
+                    id: "routes",
+                    title: SoloLocalization.localized("命途校准"),
+                    detail: SoloLocalization.localized("整理阶段、人心与暗线。"),
+                    progressThreshold: 0.90
+                ),
+            ]
+        )
+    }
+
     func resumeChapterId(progress: ReadingProgress?) -> String? {
-        if let progress {
+        if let progress, chapters.contains(where: { $0.id == progress.currentChapterId }) {
             return progress.currentChapterId
         }
         return chapters.first?.id
@@ -84,10 +206,10 @@ final class SoloStoryStore {
         let completedChapterIDs = completedChapterIDs(progress: progress)
 
         return SoloProgressSummary(
-            currentChapterTitle: currentChapter?.title ?? "序章未定",
+            currentChapterTitle: currentChapter?.title ?? SoloLocalization.localized("序章未定"),
             currentChapterNumber: currentChapter?.number ?? 1,
             completedChapterCount: completedChapterIDs.count,
-            totalChapterCount: chapters.count
+            totalChapterCount: latestChapterTotal
         )
     }
 
@@ -98,6 +220,9 @@ final class SoloStoryStore {
         let currentGuide = guide(forChapterID: currentChapter?.id) ?? walkthrough?.chapterGuides.first
         let currentStage = stage(for: currentGuide) ?? walkthrough?.stages.first
         let recapGuide = recapGuide(progress: progress)
+        let stats = currentStats(progress: progress)
+        let generatedChapterCount = chapters.count
+        let plannedChapterCount = plannedChapterTotal
         let experienceStats = entryExperienceStats(
             book: book,
             walkthrough: walkthrough,
@@ -107,28 +232,285 @@ final class SoloStoryStore {
         return SoloEntrySnapshot(
             branding: branding,
             progress: progressSummary,
-            currentStageTitle: currentStage?.title ?? "故事已开场",
+            generatedChapterCount: generatedChapterCount,
+            plannedChapterCount: plannedChapterCount,
+            currentStageTitle: currentStage?.title ?? SoloLocalization.localized("故事已开场"),
             currentStageSummary: currentStage?.summary ?? branding.atmosphereLine,
-            currentObjective: currentGuide?.objective ?? "继续推进主线，别让上一章留下的因果冷掉。",
+            currentObjective: currentGuide?.objective ?? SoloLocalization.localized("继续推进主线，别让上一章留下的因果冷掉。"),
             currentObjectiveSummary: currentGuide?.publicSummary ?? branding.continueHint,
             recapSummary: recapGuide?.publicSummary,
             hiddenRouteHint: currentGuide?.hiddenRouteHint,
             visibleRouteTitles: currentGuide?.visibleRoutes.map(\.title) ?? [],
             currentIdentityValue: identityValue(for: progressSummary, stageTitle: currentStage?.title),
             destinyStatusLine: currentGuide?.objective ?? currentStage?.summary ?? branding.continueHint,
+            serialReleaseLine: serialReleaseLine(
+                generatedChapterCount: generatedChapterCount,
+                currentStageTitle: currentStage?.title
+            ),
+            destinyStatus: makeDestinyStatus(for: stats),
             hookLine: currentChapter?.nextChapterHook ?? currentGuide?.hiddenRouteHint ?? branding.landing.hookBody,
-            experienceStats: experienceStats
+            experienceStats: experienceStats,
+            worldStatDeltas: worldStatDeltas(progress: progress),
+            worldCharacters: worldCharacterStatuses(progress: progress)
         )
     }
 
     func routeMapSnapshot(progress: ReadingProgress?) -> SoloRouteMapSnapshot {
         let currentChapter = currentChapter(progress: progress)
         let currentGuide = guide(forChapterID: currentChapter?.id)
+        let stats = currentStats(progress: progress)
 
         return SoloRouteMapSnapshot(
             currentChapterID: currentChapter?.id,
             currentStageID: currentGuide?.stageId,
+            currentStageTitle: stage(for: currentGuide)?.title,
+            currentObjective: currentGuide?.objective,
+            generatedChapterCount: chapters.count,
+            plannedChapterCount: plannedChapterTotal,
+            destinyStatus: makeDestinyStatus(for: stats),
             completedChapterIDs: completedChapterIDs(progress: progress)
+        )
+    }
+
+    func routeMapHubSnapshot(progress: ReadingProgress?) -> SoloRouteMapHubSnapshot {
+        let routeSnapshot = routeMapSnapshot(progress: progress)
+        let relationships = currentRelationships(progress: progress)
+        let darklineSnapshot = darklineBoardSnapshot(progress: progress)
+        let heartSnapshot = humanHeartsSnapshot(progress: progress)
+        let stageTitle = routeSnapshot.currentStageTitle ?? "迷雾初开"
+        let objective = routeSnapshot.currentObjective ?? "继续推进眼前章节，新的征兆会在行动后显形。"
+        let stageLine = "当前命局停在「\(stageTitle)」，你已经走完 \(routeSnapshot.completedChapterIDs.count) 章。"
+        let pressureLine = darklineSnapshot.discoveredSignals.isEmpty
+            ? "暗线仍在潜伏，先稳住当前局面。"
+            : "已有 \(darklineSnapshot.discoveredSignals.count) 条异动露头，别让节奏被暗线牵走。"
+        let destinySummary = "天命值 \(routeSnapshot.destinyStatus.value) · \(routeSnapshot.destinyStatus.thresholdHint)"
+        let stageProgress = "\(routeSnapshot.generatedChapterCount) / \(routeSnapshot.plannedChapterCount) \(SoloStoryConfig.branding.chapterUnitName)"
+
+        return SoloRouteMapHubSnapshot(
+            currentObjective: objective,
+            stageLine: stageLine,
+            pressureLine: pressureLine,
+            destinySummary: destinySummary,
+            destinyStatus: routeSnapshot.destinyStatus,
+            destinyCard: SoloRouteMapHubCard(
+                id: "destiny",
+                title: "命途",
+                subtitle: "看已行之路、眼前棋局与将至征兆",
+                statusLine: "当前阶段：\(stageTitle) · 显形进度 \(stageProgress)",
+                badge: routeSnapshot.currentStageTitle == nil ? "待显形" : "在局中",
+                callToAction: "进入命途推演"
+            ),
+            heartsCard: SoloRouteMapHubCard(
+                id: "hearts",
+                title: "人心",
+                subtitle: "看谁已入局、谁可试探、谁需警惕",
+                statusLine: heartSnapshot.spotlightLine,
+                badge: "\(relationships.count) 人在局",
+                callToAction: "进入人心盘"
+            ),
+            darklineCard: SoloRouteMapHubCard(
+                id: "darkline",
+                title: "暗线",
+                subtitle: "看异动、疑云与未显形缺口",
+                statusLine: darklineSnapshot.boardLine,
+                badge: "\(darklineSnapshot.discoveredSignals.count) 已识别",
+                callToAction: "进入暗线观测"
+            )
+        )
+    }
+
+    func destinyAtlasSnapshot(progress: ReadingProgress?) -> SoloDestinyAtlasSnapshot {
+        let routeSnapshot = routeMapSnapshot(progress: progress)
+        let completedIDs = routeSnapshot.completedChapterIDs
+        let currentStageID = routeSnapshot.currentStageID
+        let stageNodes = (walkthrough?.stages ?? []).map { stage in
+            let completedCount = stage.chapterIds.filter { completedIDs.contains($0) }.count
+            let isCurrent = stage.id == currentStageID
+            let isPassed = completedCount == stage.chapterIds.count && !stage.chapterIds.isEmpty
+            let isUnlocked = isCurrent || completedCount > 0
+            let visibility: SoloDestinyStageNode.Visibility
+            if isPassed {
+                visibility = .passed
+            } else if isCurrent {
+                visibility = .current
+            } else if isUnlocked {
+                visibility = .current
+            } else {
+                visibility = .veiled
+            }
+
+            return SoloDestinyStageNode(
+                id: stage.id,
+                title: isUnlocked ? stage.title : "未显形阶段",
+                summary: isUnlocked ? stage.summary : "你只能感知这段命途存在，仍看不清它的真相。",
+                visibility: visibility,
+                completedChapterCount: completedCount,
+                totalChapterCount: stage.chapterIds.count
+            )
+        }
+
+        let currentStageTitle = routeSnapshot.currentStageTitle ?? "迷雾初开"
+        let currentGuide = guide(forChapterID: routeSnapshot.currentChapterID)
+        let omenLine = currentGuide?.hiddenRouteHint ?? "继续推进当前章节，新的征兆会浮出水面。"
+        let progressLine = "已显形 \(routeSnapshot.generatedChapterCount) / \(routeSnapshot.plannedChapterCount) \(SoloStoryConfig.branding.chapterUnitName)"
+
+        return SoloDestinyAtlasSnapshot(
+            stageNodes: stageNodes,
+            currentStageTitle: currentStageTitle,
+            omenLine: omenLine,
+            pressureLine: routeSnapshot.destinyStatus.detail,
+            progressLine: progressLine
+        )
+    }
+
+    func humanHeartsSnapshot(progress: ReadingProgress?) -> SoloHumanHeartsSnapshot {
+        guard let book else {
+            return SoloHumanHeartsSnapshot(
+                spotlightLine: "局中人物尚未载入。",
+                pressureLine: "暂无可分析人心信号。",
+                rings: []
+            )
+        }
+
+        let relationships = currentRelationships(progress: progress)
+        let relationshipByID = Dictionary(uniqueKeysWithValues: relationships.map { ($0.characterId, $0) })
+
+        var inPlay: [String] = []
+        var testable: [String] = []
+        var dangerous: [String] = []
+        var veiled: [String] = []
+
+        for character in book.characters {
+            guard let relation = relationshipByID[character.id] else {
+                veiled.append(character.id)
+                continue
+            }
+            let vigilance = relation.value(for: .vigilance)
+            let curiosity = relation.value(for: .curiosity)
+            let hasMoved = relation.lastChangeReason != nil
+
+            if relation.hostility >= 50 || vigilance >= 45 {
+                dangerous.append(character.id)
+            } else if relation.trust >= 55 || hasMoved {
+                inPlay.append(character.id)
+            } else if curiosity >= 42 || relation.awe >= 40 {
+                testable.append(character.id)
+            } else {
+                veiled.append(character.id)
+            }
+        }
+
+        let rings: [SoloHeartRing] = [
+            SoloHeartRing(
+                id: "in-play",
+                title: "已入局",
+                subtitle: "这些人会直接反馈你的落子。",
+                characterIDs: inPlay
+            ),
+            SoloHeartRing(
+                id: "testable",
+                title: "可试探",
+                subtitle: "可以先用低成本动作探边界。",
+                characterIDs: testable
+            ),
+            SoloHeartRing(
+                id: "dangerous",
+                title: "需警惕",
+                subtitle: "这批关系已带有明显对抗或防备。",
+                characterIDs: dangerous
+            ),
+            SoloHeartRing(
+                id: "veiled",
+                title: "尚未看透",
+                subtitle: "轮廓已在，但真实立场还未显形。",
+                characterIDs: veiled
+            )
+        ]
+
+        let spotlight = relationships.max(by: { spotlightScore(lhs: $0) < spotlightScore(lhs: $1) })
+        let spotlightLine: String
+        if let spotlight,
+           let character = book.characters.first(where: { $0.id == spotlight.characterId }) {
+            spotlightLine = "\(character.name)目前最容易牵动局势，态度落在「\(spotlight.attitudeLabel)」。"
+        } else {
+            spotlightLine = "人心线索仍浅，继续推进互动后再回看。"
+        }
+
+        let pressureLine = dangerous.isEmpty
+            ? "目前没有明显失控的人心风险。"
+            : "至少 \(dangerous.count) 条关系处在高警惕区，优先止损。"
+
+        return SoloHumanHeartsSnapshot(
+            spotlightLine: spotlightLine,
+            pressureLine: pressureLine,
+            rings: rings
+        )
+    }
+
+    func darklineBoardSnapshot(progress: ReadingProgress?) -> SoloDarklineBoardSnapshot {
+        let routeSnapshot = routeMapSnapshot(progress: progress)
+        let guides = walkthrough?.chapterGuides ?? []
+        let stageByID = Dictionary(uniqueKeysWithValues: (walkthrough?.stages ?? []).map { ($0.id, $0) })
+        let chapterByID = Dictionary(uniqueKeysWithValues: chapters.map { ($0.id, $0) })
+        let completedIDs = completedChapterIDs(progress: progress)
+        let currentStageID = routeSnapshot.currentStageID
+        let currentChapterID = routeSnapshot.currentChapterID
+
+        var discovered: [SoloDarklineSignal] = []
+        var approaching: [SoloDarklineSignal] = []
+        var hiddenSignalCount = 0
+
+        for guide in guides {
+            guard let hint = guide.hiddenRouteHint else { continue }
+            hiddenSignalCount += 1
+
+            let stageTitle = stageByID[guide.stageId]?.title ?? "未知阶段"
+            let chapterTitle = chapterByID[guide.chapterId]?.title ?? "未知章节"
+
+            if completedIDs.contains(guide.chapterId) {
+                discovered.append(
+                    SoloDarklineSignal(
+                        id: guide.chapterId,
+                        title: "已识别异动",
+                        hint: hint,
+                        sourceStageTitle: stageTitle,
+                        sourceChapterTitle: chapterTitle,
+                        state: .discovered
+                    )
+                )
+                continue
+            }
+
+            if guide.chapterId == currentChapterID || guide.stageId == currentStageID {
+                approaching.append(
+                    SoloDarklineSignal(
+                        id: guide.chapterId,
+                        title: "正在逼近",
+                        hint: approachingDarklineHint(stageTitle: stageTitle, chapterTitle: chapterTitle),
+                        sourceStageTitle: stageTitle,
+                        sourceChapterTitle: chapterTitle,
+                        state: .approaching
+                    )
+                )
+            }
+        }
+
+        let sealedCount = max(0, hiddenSignalCount - discovered.count - approaching.count)
+        let boardLine: String
+        if discovered.isEmpty && approaching.isEmpty {
+            boardLine = "暗线仍在水下，你还没有抓住它的尾迹。"
+        } else if discovered.isEmpty {
+            boardLine = "你已经感觉到 \(approaching.count) 股异动逼近，但还不能直接看穿它。"
+        } else {
+            boardLine = "你已识别 \(discovered.count) 条暗线尾迹，眼前还有 \(approaching.count) 股异动正在逼近。"
+        }
+
+        return SoloDarklineBoardSnapshot(
+            discoveredSignals: discovered,
+            approachingSignals: approaching,
+            sealedCount: sealedCount,
+            totalSignalCount: hiddenSignalCount,
+            boardLine: boardLine
         )
     }
 
@@ -143,6 +525,7 @@ final class SoloStoryStore {
         return SoloDossierSnapshot(
             statCards: dossierStatCards(for: book, stats: stats),
             moduleCards: moduleCards,
+            destinyStatus: makeDestinyStatus(for: stats),
             relationshipSpotlight: spotlight
         )
     }
@@ -175,7 +558,7 @@ final class SoloStoryStore {
     }
 
     private func currentChapter(progress: ReadingProgress?) -> Chapter? {
-        let currentChapterID = progress?.currentChapterId ?? chapters.first?.id
+        let currentChapterID = resumeChapterId(progress: progress)
         return chapters.first(where: { $0.id == currentChapterID }) ?? chapters.first
     }
 
@@ -231,7 +614,7 @@ final class SoloStoryStore {
         walkthrough: BookWalkthrough?,
         branding: SoloBranding
     ) -> [SoloEntryExperienceStat] {
-        let totalChapters = book?.totalChapters ?? chapters.count
+        let totalChapters = latestChapterTotal
         let totalRoutes = walkthrough?.chapterGuides.reduce(0) { partialResult, guide in
             partialResult + guide.visibleRoutes.count
         } ?? 0
@@ -246,6 +629,39 @@ final class SoloStoryStore {
             SoloEntryExperienceStat(id: "character-scale", title: "关键人物", valueText: "\(totalCharacters) 人"),
             SoloEntryExperienceStat(id: "interaction-scale", title: "交互密度", valueText: "\(totalInteractions) 次"),
         ]
+    }
+
+    private func worldStatDeltas(progress: ReadingProgress?) -> [SoloWorldStatDelta] {
+        guard let book, progress != nil else { return [] }
+        let current = currentStats(progress: progress)
+        let initial = book.initialStats
+        let diff = current.diff(from: initial)
+        return diff
+            .sorted { abs($0.value) > abs($1.value) }
+            .prefix(3)
+            .map { statType, delta in
+                SoloWorldStatDelta(
+                    name: statType.rawValue,
+                    value: current.value(for: statType),
+                    delta: delta
+                )
+            }
+    }
+
+    private func worldCharacterStatuses(progress: ReadingProgress?) -> [SoloWorldCharacterStatus] {
+        guard let book else { return [] }
+        let relationships = currentRelationships(progress: progress)
+        return relationships
+            .sorted { spotlightScore(lhs: $0) > spotlightScore(lhs: $1) }
+            .prefix(2)
+            .compactMap { relation -> SoloWorldCharacterStatus? in
+                guard let character = book.characters.first(where: { $0.id == relation.characterId }) else { return nil }
+                return SoloWorldCharacterStatus(
+                    characterId: character.id,
+                    name: character.name,
+                    attitudeLabel: relation.attitudeLabel
+                )
+            }
     }
 
     private func mostRecentCompletedChapterID(from completedIDs: Set<String>) -> String? {
@@ -275,7 +691,89 @@ final class SoloStoryStore {
     }
 
     private func spotlightScore(lhs relation: RelationshipState) -> Int {
-        relation.trust + relation.affection + relation.awe - relation.hostility + relation.dependence
+        relation.prominentDimensions
+            .prefix(3)
+            .reduce(0) { partialResult, element in
+                partialResult + abs(element.1)
+            }
+    }
+
+    private func approachingDarklineHint(stageTitle: String, chapterTitle: String) -> String {
+        SoloLocalization.format(
+            "你只能确认这股异动与「%@ / %@」有关，真相仍藏在水面之下。继续推进后，它才会把真正的轮廓露出来。",
+            stageTitle,
+            chapterTitle
+        )
+    }
+
+    private var plannedChapterTotal: Int {
+        latestChapterTotal
+    }
+
+    private var latestChapterTotal: Int {
+        max(book?.totalChapters ?? 0, chapters.count)
+    }
+
+    private func serialReleaseLine(
+        generatedChapterCount: Int,
+        currentStageTitle: String?
+    ) -> String {
+        if generatedChapterCount <= 0 {
+            return SoloLocalization.localized("当前版本内容接入中，马上就能完整进入这一局。")
+        }
+
+        if let currentStageTitle {
+            return SoloLocalization.format(
+                "当前版本内容已就绪，共 %d 章，当前命途从「%@」继续展开。",
+                generatedChapterCount,
+                currentStageTitle
+            )
+        }
+
+        return SoloLocalization.format(
+            "当前版本内容已就绪，共 %d 章，你可以直接进入并完整推进这一局。",
+            generatedChapterCount
+        )
+    }
+
+    private func makeDestinyStatus(for stats: ProtagonistStats) -> SoloDestinyStatus {
+        if stats.destiny <= 15 || (stats.destiny <= 28 && stats.darkness >= 45) {
+            return SoloDestinyStatus(
+                level: .critical,
+                headline: SoloLocalization.localized("命火将熄"),
+                detail: SoloLocalization.localized("天命值已经压到危险区，再硬推一次，反噬几乎会直接贴脸。"),
+                value: stats.destiny,
+                thresholdHint: SoloLocalization.localized("低于 20 时优先止损，谨慎动用天机录")
+            )
+        }
+
+        if stats.destiny <= 35 || stats.darkness >= 60 {
+            return SoloDestinyStatus(
+                level: .strained,
+                headline: SoloLocalization.localized("反噬逼近"),
+                detail: SoloLocalization.localized("还能继续布局，但每次窥天都在加速消耗后手，最好先回收天命再做大动作。"),
+                value: stats.destiny,
+                thresholdHint: SoloLocalization.localized("保持 35 以上更稳，避免连续高风险选择")
+            )
+        }
+
+        if stats.destiny <= 65 {
+            return SoloDestinyStatus(
+                level: .steady,
+                headline: SoloLocalization.localized("命局平衡"),
+                detail: SoloLocalization.localized("局面仍在可控区，适合试探、借势和有限回溯，但还不到可以随意烧牌的时候。"),
+                value: stats.destiny,
+                thresholdHint: SoloLocalization.localized("40-65 适合谨慎落子，优先确认收益")
+            )
+        }
+
+        return SoloDestinyStatus(
+            level: .abundant,
+            headline: SoloLocalization.localized("天命充盈"),
+            detail: SoloLocalization.localized("你手里的天机还够用，既能提前落子，也能承受几次关键试探。"),
+            value: stats.destiny,
+            thresholdHint: SoloLocalization.localized("70 以上适合主动试探，但仍要藏锋")
+        )
     }
 
     private func dossierModules(
@@ -283,6 +781,10 @@ final class SoloStoryStore {
         stats: ProtagonistStats,
         relationships: [RelationshipState]
     ) -> [SoloDossierModuleCard] {
+        if book.id == "天机录" {
+            return tianjiluModules(stats: stats, relationships: relationships)
+        }
+
         switch book.genre {
         case .cultivation:
             return cultivationModules(stats: stats, relationships: relationships)
@@ -298,6 +800,18 @@ final class SoloStoryStore {
     }
 
     private func dossierStatCards(for book: Book, stats: ProtagonistStats) -> [SoloDossierStatCard] {
+        if book.id == "天机录" {
+            return [
+                SoloDossierStatCard(id: "combat", title: "落子", value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: "牌面", value: stats.fame, tint: .royalPlum),
+                SoloDossierStatCard(id: "strategy", title: "机锋", value: stats.strategy, tint: .oracleJade),
+                SoloDossierStatCard(id: "wealth", title: "残页", value: stats.wealth, tint: .sapphireMist),
+                SoloDossierStatCard(id: "charm", title: "人心", value: stats.charm, tint: .oracleJade),
+                SoloDossierStatCard(id: "darkness", title: "心魇", value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: "天命", value: stats.destiny, tint: .emberGold),
+            ]
+        }
+
         switch book.genre {
         case .cultivation:
             return [
@@ -350,6 +864,43 @@ final class SoloStoryStore {
                 SoloDossierStatCard(id: "destiny", title: "势头", value: stats.destiny, tint: .sapphireMist),
             ]
         }
+    }
+
+    private func tianjiluModules(
+        stats: ProtagonistStats,
+        relationships: [RelationshipState]
+    ) -> [SoloDossierModuleCard] {
+        let stableThreads = relationships.filter {
+            $0.trust >= 58 || $0.value(for: .curiosity) >= 55
+        }.count
+        let hostilityPressure =
+            relationships.map(\.hostility).reduce(0, +) +
+            relationships.map { $0.value(for: .vigilance) }.reduce(0, +)
+        let hiddenPull = stats.strategy + stats.destiny + stats.wealth
+
+        return [
+            SoloDossierModuleCard(
+                id: "tianji-buffer",
+                title: "天机余裕",
+                valueText: "\(stats.destiny + stats.strategy)",
+                detailText: "天命越高，你越能提前窥一步；机锋越足，你越能把这一步伪装成顺势而为。",
+                tint: .emberGold
+            ),
+            SoloDossierModuleCard(
+                id: "tianji-threads",
+                title: "关系阈值",
+                valueText: "\(stableThreads) 条可牵引线",
+                detailText: "真正关键的不是绝对好感，而是谁既愿意信你、又还没完全看穿你。",
+                tint: .oracleJade
+            ),
+            SoloDossierModuleCard(
+                id: "tianji-pressure",
+                title: "暗线牵引",
+                valueText: "\(hiddenPull + hostilityPressure)",
+                detailText: "残页、机锋与人心正在一起拖动暗线。你手里的筹码越多，盯着你的人也越多。",
+                tint: .royalPlum
+            )
+        ]
     }
 
     private func cultivationModules(

@@ -1,0 +1,506 @@
+{
+  "id": "天机录_ch0437",
+  "book_id": "天机录",
+  "number": 437,
+  "title": "证据指向铁证",
+  "is_paid": true,
+  "next_chapter_hook": "苏青瑶的质疑让举报者面露慌乱，但更大的阴谋正在酝酿——那神秘人物袖中暗藏的玉简，正在微微发光。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0437_001",
+        "content": "就在陈机准备回应时，一名神秘人物悄然出现在大会现场。那人身着玄青道袍，面容被一顶垂纱斗笠遮住大半，只露出苍白的下颌与一截枯瘦的手腕。他步履沉稳，径直走向审问台方向，每一步都仿佛踏在众人心弦之上。会场顿时安静下来，连方才喧哗议论的杂役弟子都屏住了呼吸。陈机眯起眼睛，指尖不着痕迹地摩挲着袖中那枚残缺的玉片——天机录的气息隐隐躁动，仿佛在警示什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_002",
+        "character_id": "char_lingyuan",
+        "content": "“诸位稍安勿躁。”那神秘人物在审问台前站定，声音沙哑却带着不容置疑的威严，“老夫乃宗务府监察长老座下弟子，奉命彻查近日内门弟子通敌一案。证据——已经找到了。”",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_003",
+        "content": "他从袖中缓缓取出一只玉匣，匣盖揭开，里头整整齐齐码着十余封书信。信笺泛黄，墨迹斑驳，封口处赫然盖着陈机再熟悉不过的私印——那是他三年前亲手雕刻、从未示人的那枚。人群中爆发出一阵哗然，有人惊呼，有人怒骂，更多人将鄙夷的目光投向陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_004",
+        "character_id": "char_lingyuan",
+        "content": "“这些都是陈机与魔道圣宗圣女夜清的往来密信！”监察弟子将书信高高举起，“信中详述天青宗护山大阵的布防漏洞、宗门秘库位置，更有多处提及——天机录残页的下落！人赃并获，铁证如山！”",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_005",
+        "content": "陈机站在原地，面色平静得近乎冷漠。他的目光在那堆书信上停留片刻，嘴角甚至勾起一丝若有若无的弧度——那是猎手看见猎物踏入陷阱时的微笑。他在心中飞速盘算：这些书信仿得极为精妙，连纸张年份、墨色深浅都做旧得天衣无缝。能在短时间内备下如此周全的伪证，对方的来头绝不简单。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_006",
+        "character_id": "char_chenji",
+        "content": "“有趣。”陈机终于开口，声音不高却清晰地传入每个人耳中，“这位师兄办案当真雷厉风行，不知可否告知——这些'铁证'，是何时何地从何人口中搜出的？陈某怎么不记得自己写过这些东西？”",
+        "emotion": "平静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0437_007",
+        "prompt": "陈机表面从容，实则暗中观察着场上每一处细节。围观弟子的反应、长老的脸色、甚至那神秘人的站位——都是他计算中的变量。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0437_007_opt1",
+            "text": "冷眼旁观",
+            "description": "继续保持沉默，让对方充分表演。暴露出的问题越多，破绽就越大。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "承受舆论压力",
+            "visible_reward": "看清幕后黑手布局",
+            "risk_hint": "可能加深众人误会",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_007_opt1_1",
+                  "character_id": "char_lingyuan",
+                  "content": "监察弟子冷笑一声，将书信递给身旁的长老过目：“陈师弟装得倒像那么回事。这书信上的笔迹，宗务府已有专人鉴定，与你平日抄录功法的字迹——九成吻合！你还有何话说？”",
+                  "emotion": "得意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hidden_observer"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_007_opt2",
+            "text": "以退为进",
+            "description": "主动示弱，承认部分'事实'，诱使对方说出更多细节。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暂时背负骂名",
+            "visible_reward": "套出关键信息",
+            "risk_hint": "可能被当场定罪",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_007_opt2_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机轻叹一声，神情落寞：“罢了，事到如今，我也不想狡辩。只是……我有一事不明，这些信中的内容，究竟是谁告诉师兄的？”他眼中精光一闪，“难道监察府已经掌握了比信上更多的东西？”",
+                  "emotion": "颓然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "feigning_defeat"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_007_opt3",
+            "text": "直接反击",
+            "description": "当场拆穿伪造书信的破绽，以攻代守。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分底牌",
+            "visible_reward": "扭转舆论风向",
+            "risk_hint": "对方可能有后手",
+            "process_label": "针锋相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_007_opt3_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机忽然抬步上前，在众人惊讶的目光中，从玉匣里拈起一封书信。他凑近鼻端轻嗅，眉头微皱：“这墨香……是青云坊'墨香斋'的松烟墨吧？此墨三年前因原料断绝早已停产，师兄用这等'铁证'来诬陷我，是否太过仓促了？”",
+                  "emotion": "冷笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_008",
+        "content": "就在双方僵持之际，一道清冷的声音从人群后方传来：“且慢。”众人循声望去，只见苏青瑶一袭白衣，自议事殿侧门款款而出。她眉目如霜，步伐从容，每一步都带着内门首席独有的威仪。监察弟子面色微变，但很快恢复镇定：“苏师姐，此乃宗务府办案，还请不要干涉——”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_009",
+        "character_id": "char_suqingyao",
+        "content": "“宗务府办案？”苏青瑶冷冷打断他，“宗规第七十二条：涉及内门弟子重大案件，须经内门首席与三位长老联合审议，方可定罪。你是哪位长老授权的监察弟子？手中可有盖有掌门印信的公文？”",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_010",
+        "content": "监察弟子面色涨红，额上渗出细汗。他显然没料到内门首席会亲自插手此事，更没想到对方对宗规的熟悉程度竟到了逐条背诵的地步。陈机在一旁静静看着，心中暗暗点头——苏青瑶的反应速度比他预想的还要快。她选择在这个时机介入，绝非偶然。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_011",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶走到审问台前，从玉匣中取出几封书信。她修长的手指拂过信纸表面，忽然顿住：“第一处疑点——这封书信写于去年腊月十五，提及'天机录残页现世'。但据我所知，天机录残页直到今年三月才被陈机在坊市中偶然发现。请问这'预见'之事，是陈机有未卜先知之能，还是有人在刻意编造时间线？”",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_012",
+        "character_id": "char_suqingyao",
+        "content": "她将书信翻过，指向封口处的火漆印：“第二处疑点——陈机的私印我见过。真正的印文边缘有细微磨损，这是长久使用才会形成的痕迹。而这几封信上的印文，边缘锐利清晰，分明是新刻不久。”她抬眸直视监察弟子，“能拿到陈机私印原版的人，怕是屈指可数吧？”",
+        "emotion": "锐利"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0437_013",
+        "prompt": "苏青瑶连提两处疑点，全场哗然。监察弟子额头冒汗，目光不自觉地瞟向人群中的某个方向——那里站着一名面色阴沉的中年修士，正是凌渊的亲传弟子之一。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0437_013_opt1",
+            "text": "配合苏青瑶",
+            "description": "顺着她的话继续深挖，将矛头引向真正的幕后黑手。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露与苏青瑶的默契",
+            "visible_reward": "一击致命",
+            "risk_hint": "可能打草惊蛇",
+            "process_label": "并肩作战",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_013_opt1_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机适时接过话头，声音不大却字字清晰：“苏师姐明察秋毫，陈某佩服。不过还有一事——这松烟墨的货源，青云坊有登记在册。敢问监察师兄，这些书信是在哪家铺子购买的？陈某很想知道，是谁在为这桩'通敌案'买单。”",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机记住了苏青瑶在危难时刻的挺身而出",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_013_opt2",
+            "text": "静观其变",
+            "description": "不急于出手，让苏青瑶独自追击，看对方如何应对。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "错失扩大战果的机会",
+            "visible_reward": "看清更多底牌",
+            "risk_hint": "苏青瑶可能孤军深入",
+            "process_label": "以逸待劳",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0437_result_013_opt2_1",
+                  "content": "陈机后退一步，将舞台让给苏青瑶。他注意到苏青瑶的目光扫过人群，在某处停留了一瞬——那里站着一名面色阴沉的中年修士，正与监察弟子交换着眼色。陈机将这张脸默默记下，心中冷笑：凌渊的人，果然耐不住性子了。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_014",
+        "character_id": "char_suqingyao",
+        "content": "“第三处疑点，也是最重要的一处。”苏青瑶从最后一封书信中抽出一张薄绢，上面赫然写着一段古怪的文字，“这是魔道圣宗的密文，寻常人根本看不懂。但陈机入宗三年，从未离开过天青宗半步，他如何能与夜清进行这般深入的交流？”她将薄绢举起，“除非——有人故意将这些'素材'送到陈机手上，等着他'被通敌'。”",
+        "emotion": "厉声"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_015",
+        "content": "监察弟子的脸色彻底变了。他张了张嘴，却发不出声音。周围的议论声越来越大，有人开始质疑这场所谓的“铁证”是否从一开始就是个圈套。陈机垂眸看着这一幕，心中却在飞速运转——苏青瑶的三处疑点，刀刀见血，每一刀都精准地切在伪造证据的软肋上。但她为何要帮自己？她究竟知道多少？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_016",
+        "character_id": "char_lingyuan",
+        "content": "就在众人以为胜负已定时，一直沉默的凌渊终于开口。他的声音苍老而威严，在议事殿中回荡：“青瑶丫头，你心思缜密，老夫自愧不如。”他缓缓站起身，浑浊的眼珠看向陈机，“不过——老夫倒是好奇，这伪造书信之人究竟是何居心？若不是陈机通敌，那真正的内鬼又藏在哪里？”",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_017",
+        "content": "这番话绵里藏针，明着是在替陈机解围，实则却将矛头引向更深的暗处。陈机心头一凛——凌渊不愧是在宗门浸淫百年的老狐狸，一句话就把水搅得更浑。若继续追查下去，迟早会碰到某些不该碰的东西。苏青瑶似是也意识到了这一点，她与陈机交换了一个意味深长的眼神。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0437_018",
+        "prompt": "凌渊的话让全场陷入诡异的沉默。监察弟子趁乱退到一旁，那神秘人也悄然向后退去。而陈机注意到，那神秘人的袖中，似乎有什么东西正在微微发光……",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0437_018_opt1",
+            "text": "穷寇莫追",
+            "description": "见好就收，不再深究。先保住自身，日后再算总账。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "幕后黑手逃脱",
+            "visible_reward": "保存实力",
+            "risk_hint": "对方可能卷土重来",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_018_opt1_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机微微躬身，声音平静：“凌师叔说得是。此案疑点重重，陈某相信宗务府自会秉公调查。只是陈某有一请求——既然证据存疑，陈某的名誉还请诸位长老还个清白。”他的姿态低得无可挑剔，却没有人注意到他袖中的天机录残页正在微微发烫。",
+                  "emotion": "谦逊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "lingyuan_noticed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_018_opt2",
+            "text": "顺藤摸瓜",
+            "description": "当众追问神秘人的身份，将凌渊的布局暴露在阳光下。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "与凌渊正面交锋",
+            "visible_reward": "揭开冰山一角",
+            "risk_hint": "可能引火烧身",
+            "process_label": "直捣黄龙",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_018_opt2_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机忽然抬眸，直视那正欲退走的神秘人：“这位师兄且慢。”他的声音不疾不徐，“监察府派人查案，本是寻常。但我好奇的是——师兄方才说奉命而来，却连身份都不敢示人。敢问一句，师兄袖中那枚发光的玉简，又是什么东西？”",
+                  "emotion": "锐利"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "shalu_betrays"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_019",
+        "content": "那神秘人身形一僵，似乎没料到自己的小动作会被注意到。他下意识攥紧袖口，却发现那道光芒已经暴露在众目睽睽之下。凌渊的眼神微微闪烁，随即恢复如常。周围的弟子纷纷侧目，窃窃私语声再次响起。苏青瑶向前一步，目光如剑般刺向那神秘人：“这位师兄不妨将袖中之物取出，让大家看看——究竟是什么东西，比那堆伪造的书信更需要藏匿？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_020",
+        "character_id": "char_lingyuan",
+        "content": "“够了。”凌渊忽然拂袖，一股无形的威压笼罩全场，“今日之事，疑点重重，需从长计议。监察府先将此人收押，待老夫亲自审讯。至于陈机——”他的目光落在陈机身上，意味难明，“暂时解除禁足，但不得离开宗门半步。此案未结，你仍是嫌犯。”",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_021",
+        "content": "陈机垂首应是，姿态恭敬得无懈可击。但他的心中却在冷笑：凌渊这一手弃卒保车玩得漂亮，将所有罪责推给一个替死鬼，自己依然稳坐钓鱼台。更重要的是——他今日出手相救的陈机，日后将更加难以脱身。这老狐狸的棋步，每一步都算计得滴水不漏。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_022",
+        "character_id": "char_chenji",
+        "content": "人群渐渐散去。凌渊在离去前深深看了陈机一眼，那目光中的含义让陈机后背微微发凉。而那神秘人被押走时，袖中玉简的光芒终于黯淡下去，但陈机已经看清了上面的纹路——那是与天机录残页同源的气息。这一局，他输了半招。但更大的棋局，才刚刚开始。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_023",
+        "content": "苏青瑶走到陈机身侧，声音压得极低：“今夜子时，藏经阁后山，我有话要问你。”她没有等陈机回答，便转身离去，只留下一缕淡淡的清香。陈机望着她的背影，眸色深沉如墨。今日这一局，若非苏青瑶出手，他纵然能自证清白，也必然元气大伤。她究竟是敌是友？还是……有着更深的目的？天机录残页在袖中轻轻颤动，仿佛在回应着他纷乱的思绪。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

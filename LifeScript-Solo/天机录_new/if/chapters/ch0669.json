@@ -1,0 +1,461 @@
+{
+  "id": "天机录_ch0669",
+  "book_id": "天机录",
+  "number": 669,
+  "title": "命运书写",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈天命的身影开始从核心中挣扎而出的刹那，一道刺目的金光从远方破空而至——那是天青宗的镇宗令箭。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0669_001",
+        "content": "漆黑棋子入手的刹那，陈机感觉自己的天命仿佛被什么东西猛然攥紧。那种感觉像是有一只无形的眼睛正穿透重重虚空，注视着他掌中这枚散发着幽冷光泽的棋子。天青宗方向传来的天命波动如潮水般汹涌，他能清晰地感知到——那是天机录残页在回应，是第四页即将解封的前兆。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_002",
+        "character_id": "char_moxiansheng",
+        "content": "棋子入命，契约已成。陈机，你当真想好了？第四页的知识可不是寻常之物，失去它，你与天机录的契合将出现裂痕。墨先生的声音从残页深处飘来，带着几分罕见的郑重。",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_003",
+        "content": "陈机没有立刻回答。他的意识沉入天机录的内部空间，在那里，第四页的位置正散发着前所未有的光芒——那是一扇门，一扇通往「命运书写者」能力的门。他能感受到门后涌动的力量，那是能够改写既定命运的恐怖权能。代价也很清晰：一旦开启，他将永远失去这一页的知识，而自身的天命值将被削减三分之一。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_004",
+        "character_id": "char_chenji",
+        "content": "三成的天命值，换一次改写命运的机会。陈机在心中快速计算着得失，面上却是一片平静。或者说不换，让我看着陈天命死在眼前，让我的布局功亏一篑？",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_005",
+        "content": "墨先生的残魂在虚空中微微颤动，似乎在叹息。陈念被带走的时候你没有动用这枚棋子，陈玄留下的其他棋局你也没有动用。现在却要为了一个养子破例？陈机的手指轻轻摩挲着棋子表面，唇角勾起一抹淡漠的弧度。他不是棋子，是我的软肋。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0669_choice_01",
+        "prompt": "命运的十字路口：是否以第四页为代价，激活「命运书写者」能力？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0669_c1_accept",
+            "text": "以命换命，激活能力",
+            "description": "牺牲第四页知识和三分之一天命值，获得改写陈天命既定命运的机会。代价沉重，但这是唯一能救人的方法。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "失去第四页知识，天命值-33%",
+            "visible_reward": "获得「命运书写者」能力，可改写一个既定命运节点",
+            "risk_hint": "天命值大幅下降可能导致假死身份暴露，同时会引来天道之眼的注意",
+            "process_label": "命运契约缔结中...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -33
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c1_001",
+                  "content": "陈机将黑色棋子按入眉心。一股撕裂般的剧痛从识海深处炸开，他感觉自己的天命正在被某种力量生生剥离——那是第四页的知识，是天机录中关于命运本质的奥秘，正在化作激活能力的燃料。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c1_002",
+                  "content": "当疼痛达到顶峰时，一切都安静下来。陈机的视野中出现了无数细密的丝线——那是命运之线，每一根都连接着因果，牵动着未来。而在那些丝线的尽头，他看到了陈天命被困的核心，以及一道正在缓慢扩大的裂痕。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "命运书写激活",
+              "第四页已献祭"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机为救陈天命献祭第四页",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0669_c1_refuse",
+            "text": "放弃激活，另寻他法",
+            "description": "不消耗第四页和天命值，但需要另想办法拯救陈天命。保留底牌，但时间紧迫，陈天命的处境每况愈下。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "陈天命命运持续恶化",
+            "visible_reward": "保留第四页知识和完整天命值",
+            "risk_hint": "可能错过最佳救援时机，导致陈天命死亡，布局崩盘",
+            "process_label": "思考其他方案中...",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c2_001",
+                  "content": "陈机的手指悬在半空，最终还是收了回来。他的眉头微微皱起，快速在识海中推演着其他可能。然而无论他如何计算，得到的结论都指向同一个事实——时间不够了。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c2_002",
+                  "content": "就在他犹豫的刹那，命运之线传来的画面让他瞳孔骤缩：陈天命的身体正在以肉眼可见的速度崩解，那是被困核心侵蚀的结果。如果再不行动，最多还有半个时辰。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0669_006",
+        "content": "他看到了。在那些纷繁复杂的命运丝线中，陈天命的生机正在以一种不可逆转的速度流逝。圣宗的秘法正在吞噬他的根基，再拖延下去，就算救出来也只剩一具空壳。陈机的眼神冷了下来，他已经很久没有这种被人牵着鼻子走的感觉了。墨先生说得对，他从不轻易动用底牌。但从不代表不会。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_007",
+        "content": "陈机盘膝而坐，将全部意识沉入天机录的核心空间。那里，一枚散发着幽光的棋子正悬浮在命运长河之上，等待着他的抉择。他伸出手，指尖触碰到棋子的瞬间，一股磅礴的力量涌入他的神魂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_008",
+        "character_id": "char_moxiansheng",
+        "content": "命运书写者，可改写一个既定命运节点，但每改写一次，施术者将承受该命运的反噬。你确定要这样做？墨先生的声音中带着一丝罕见的犹豫。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_009",
+        "character_id": "char_chenji",
+        "content": "陈机没有回答。他的意识化作一柄无形的刻刀，开始在命运长河上书写。笔画很慢，每一笔都像是在他神魂上刻下深深的痕迹。痛楚如潮水般涌来，但他连眉头都没有皱一下——这点痛，比起当初在杂役院被人踩在脚下时，算得了什么？",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_010",
+        "content": "他写的是陈天命的命格。原本被死死困锁在核心中的命格，此刻正被他的意识一点一点地撬动。命运长河开始咆哮，无数因果法则在陈机的操作下扭曲重组。这是一种极其危险的举动，因为任何一点偏差都可能导致不可预知的后果。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0669_choice_02",
+        "prompt": "命运改写的关键抉择：选择改写陈天命命运的具体方式",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0669_c2_full",
+            "text": "完全改写命运",
+            "description": "彻底将陈天命从被困命运中剥离，让他重获自由。代价是天命值直接削减三分之一，假死身份可能出现致命漏洞。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值-33%，假死身份动摇",
+            "visible_reward": "陈天命完全获救，命运轨迹彻底改写",
+            "risk_hint": "天命值骤降会引起天道之眼的警觉，可能触发天青宗的调查",
+            "process_label": "命运改写进行中...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -33
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c2a_001",
+                  "content": "陈机深吸一口气，将全部神魂之力灌注到那柄无形的刻刀之中。笔画如龙蛇飞舞，在命运长河上刻下最后一道痕迹——「解」。字成的那一刻，命运长河仿佛被激怒的巨兽，发出震耳欲聋的咆哮。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c2a_002",
+                  "content": "与此同时，陈机的身体猛然一震。一股来自命运深处的反噬如约而至，他感觉自己的天命正在被某种无形的力量啃噬。天命值在飞速下降，三分之一，只剩三分之二。而更糟糕的是，他的假死身份开始出现波动——在天青宗方向，那股被惊动的天命波动正在急速逼近。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈天命获救",
+              "天命值骤降",
+              "假死身份动摇"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机以三分之一天命值为代价救出陈天命",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0669_c2_partial",
+            "text": "部分改写命运",
+            "description": "只改变陈天命即将死亡的结果，保留他在核心中的一部分联系。代价相对较小，但可能留下隐患。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命值-15%，可能留下隐患",
+            "visible_reward": "陈天命暂时脱离生命危险",
+            "risk_hint": "部分改写可能导致后续需要再次动用能力，且隐患可能在关键时刻爆发",
+            "process_label": "命运微调中...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c2b_001",
+                  "content": "陈机的刻刀在空中微微停顿，随即改变了轨迹。他没有选择彻底斩断，而是轻轻拨动命运之线，让陈天命的命格发生微妙的偏移。至少，不会死。这个念头在他心中闪过，带着一丝无奈。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c2b_002",
+                  "content": "代价小了很多，但陈机知道这只是权宜之计。他能感觉到，陈天命体内的命运枷锁只是被暂时松动，并未彻底解除。下一次危机来临时，恐怕还要再动用能力。不过眼下，也只能先顾燃眉之急了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈天命暂时获救",
+              "天命值下降",
+              "隐患已埋"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0669_011",
+        "content": "改写完成的那一刻，陈机猛地睁开双眼。他的嘴角溢出一丝血迹，但眼神中却闪烁着满足的光芒。他看到命运长河中陈天命的命格正在缓缓移动——正在从那个困锁他的核心中剥离出来。虽然缓慢，却稳定而不可逆转。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_012",
+        "character_id": "char_chenji",
+        "content": "成了。陈机低声说道，语气中带着一丝如释重负。他抬起手，看着自己掌心那道淡淡的黑纹——那是使用命运书写者的印记，也是他与这个能力签订契约的证明。代价已经付出，不可挽回。但他不在乎。",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_013",
+        "content": "与此同时，在遥远的天青宗某处禁地中，陈天命原本被死死困锁的身体突然爆发出一阵强烈的光芒。那困了他数月之久的命运枷锁正在崩解，一道道裂纹在核心表面蔓延。他的意识从混沌中清醒，第一反应是——有人救了他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0669_choice_03",
+        "prompt": "命运改写后的下一步行动",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0669_c3_wait",
+            "text": "暗中观察，静待时机",
+            "description": "陈天命正在挣脱束缚，但此时现身可能暴露行踪。不如暗中观察，等待更好的时机。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "陈天命可能遭遇其他危险",
+            "visible_reward": "保持神秘身份，巩固布局",
+            "risk_hint": "如果陈天命在此期间遭遇其他势力，可能前功尽弃",
+            "process_label": "暗中观察中...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c3a_001",
+                  "content": "陈机收回意识，身形再次隐入暗处。他的呼吸平稳，仿佛刚才那场惊心动魄的命运改写只是一场幻觉。但只有他自己知道，此刻他的天命已经残缺了三分之一。假死身份的根基，正在动摇。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "保持暗中观察"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0669_c3_contact",
+            "text": "主动现身，兄弟重逢",
+            "description": "直接现身接应陈天命，兄弟重逢，但可能暴露自己打破假死身份的风险。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "假死身份暴露风险大增",
+            "visible_reward": "与陈天命重逢，可能获得新的情报",
+            "risk_hint": "天青宗方向的探查可能正好撞破这一幕",
+            "process_label": "现身接触中...",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0669_result_c3b_001",
+                  "content": "陈机犹豫片刻，最终还是迈步走向那道正在崩解的核心。无论如何，陈天命不能落入他人手中。他的身形如鬼魅般穿过层层禁制，出现在核心面前。当陈天命看到那张熟悉的、曾经以为早已死去的人的脸时，整个人都愣住了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "兄弟重逢"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机陈天命兄弟重逢",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0669_014",
+        "content": "兄长！陈天命的声音带着难以置信的颤抖，他挣扎着想要起身，却发现自己的力量几乎被抽空。但他的眼神中满是劫后余生的庆幸和对陈机的感激。没有人知道你是怎么做到的，但——谢谢你。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_015",
+        "character_id": "char_chenji",
+        "content": "陈机摇了摇头，伸手将陈天命扶起。他的动作很轻，眼神却扫向远方——天青宗方向，那股正在逼近的天命波动越来越清晰了。圣宗的人很快就会发现异常。我们得走。他的声音低沉而平静，仿佛一切都在掌控之中。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_016",
+        "content": "然而就在这时，异变突生。陈天命崩解的核心深处，一道漆黑的光芒突然冲天而起——那是圣宗留下的后手，是他们用来追踪陈天命的天命印记。它正在疯狂地释放信号，将这里的异常传递给远在圣宗的掌控者。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_017",
+        "content": "陈机的瞳孔骤然收缩。他刚才改写命运时太过专注，竟然忽略了这一层。圣宗的手段比他想象的还要阴毒——就算陈天命从核心中挣脱，那个印记也会让他成为被追踪的猎物。这才是圣宗真正的目的。他们要的不是困死陈天命，而是利用他找到他们真正想要的东西。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0669_018",
+        "character_id": "char_chenji",
+        "content": "看来圣宗的布局比我想象的更深。陈机低声说道，语气中听不出任何慌乱。他快速在心中推演着下一步的应对方案。印记已经激活，毁掉它只会让信号更加剧烈地爆发。但如果让它继续运作——用天机录的残页遮蔽它！一个念头在他脑海中成型。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_019",
+        "content": "他抬起手，按在陈天命的眉心处。残页的气息顺着他与陈天命的联系流入那道漆黑印记之中，开始以某种微妙的方式扭曲它向外传递的信息。这是天机录的另一项能力——命运遮蔽。代价是额外消耗一部分天命值，但至少能争取到足够的时间。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_020",
+        "content": "远处的天青宗方向，那股剧烈的天命波动终于抵达了某处临界点。镇宗令箭的金光划破长空，那是天青宗正式介入此事的信号。陈机知道，他改写命运时造成的动静太大了，已经引起了足够多的关注。但他不后悔。陈天命的命，比那些潜在的麻烦重要得多。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0669_021",
+        "content": "就在那金光即将锁定这片区域的刹那，陈天命被困核心中的身影突然剧烈挣动了一下——那是命运的既定轨迹被改写后的余波，是陈天命的意识在拼命抓住这难得的机会。他的手指已经探出了核心的裂缝，触碰到了一丝外界的空气。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

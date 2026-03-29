@@ -5,6 +5,7 @@ final class MockContentLoader: ContentProviding {
     var stubbedBook: Book?
     var stubbedChapters: [Chapter] = []
     var stubbedWalkthrough: BookWalkthrough?
+    var stubbedContentVersion: String?
     var shouldThrow = false
 
     func listBooks() async throws -> [Book] {
@@ -37,5 +38,13 @@ final class MockContentLoader: ContentProviding {
         if shouldThrow { throw ContentError.fileNotFound("mock_walkthrough") }
         guard stubbedWalkthrough?.bookId == bookId else { return nil }
         return stubbedWalkthrough
+    }
+
+    func loadContentVersion(bookId: String) async throws -> String? {
+        if shouldThrow { throw ContentError.fileNotFound("mock_manifest") }
+        guard stubbedBook?.id == bookId || stubbedChapters.contains(where: { $0.bookId == bookId }) else {
+            return nil
+        }
+        return stubbedContentVersion
     }
 }

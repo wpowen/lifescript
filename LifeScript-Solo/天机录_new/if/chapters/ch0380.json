@@ -1,0 +1,557 @@
+{
+  "id": "天机录_ch0380",
+  "book_id": "天机录",
+  "number": 380,
+  "title": "禁忌合击",
+  "is_paid": true,
+  "next_chapter_hook": "就在元婴傀儡的尸身轰然倒塌之际，陈机眉心处的天机录猛然绽放出刺目的金光——第四页，那片他从未见过的残页，正在缓缓浮现其上的字迹，却是一个他绝不该看见的名字。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0380_001",
+        "content": "剑光撕裂夜空的那一刹，遗迹深处的符阵亦随之崩裂。碎裂的灵纹如流萤四散，却在半空中猛然汇聚，化作一道冲天的血色光柱——那是守护傀儡被唤醒的信号。陈机瞳孔骤缩，天机录在识海中疯狂震颤，映出的画面令他头皮发麻：一头浑身缠绕着元婴期灵压的傀儡巨兽，正从大地裂缝中缓缓升起，铜铃般的眼珠锁定了他们二人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_002",
+        "character_id": "char_chenji",
+        "content": "跑不掉了。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_003",
+        "content": "陈机的声音平静得可怕，仿佛在说今日天气尚可。他没有回头看夜清，却已从她的气息波动中感知到了同样的惊骇。元婴初期，整整跨越大境界的碾压，放眼整个修仙界，能以筑基修为越级斩杀者不过寥寥数人。而他陈机，从不认为自己会是那寥寥数人之一——至少，单打独斗绝无可能。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_004",
+        "character_id": "char_yeqing",
+        "content": "魔道迷雾需要三息凝聚，陈机，给我争取时间！",
+        "emotion": "急迫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_005",
+        "content": "夜清的金瞳中罕见地浮现出焦灼之色。她双手结印，周身魔气翻涌如潮，却因先前的消耗而显得虚浮不稳。陈机没有应声，身形却已电射而出——他挡在了傀儡兽与夜清之间，手中长剑斜指地面，摆出最基础的守势。筑基对元婴，蚂蚁挡象，何其可笑？傀儡兽显然也是这般想的，它迈开巨足，每一步都让地面震颤，仿佛只需一脚，便能将这只不自量力的蝼蚁碾成齑粉。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_006",
+        "content": "天机录残页在识海中高速翻转，陈机的意识沉入那片混沌的预言空间。三息，他需要在三息之内找到一线生机。画面飞速流转，每一帧都是死亡的倒计时——第一息，傀儡兽的灵压将他双腿压断；第二息，它的利爪贯穿他的胸膛；第三息，夜清独力难支，两人一同葬身于此。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_007",
+        "character_id": "char_chenji",
+        "content": "找到了。",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_008",
+        "content": "陈机嘴角勾起一抹弧度，那弧度在傀儡兽眼中或许只是临死前的痉挛，却让远端的夜清心头一凛。她认得这个表情——每当陈机露出这般笑容时，猎物便已落入了他编织好的网中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0380_009",
+        "prompt": "傀儡兽的灵压如山岳倾轧而来，陈机需要为夜清争取最后两息时间。他选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0380_009_a",
+            "text": "以伤换时间",
+            "description": "故意露出破绽引诱傀儡兽攻击，以自身负伤为代价拖延时间。代价是接下来的合击他将带伤参与，成功率下降。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "气血亏损三成",
+            "visible_reward": "为夜清争取完整三息凝聚时间",
+            "risk_hint": "带伤状态下施展禁忌合击有经脉逆流风险",
+            "process_label": "硬抗攻击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0380_result_009_a_001",
+                  "content": "傀儡兽的利爪撕裂了他的左肩，鲜血迸溅之际，陈机闷哼一声，身形却如风中残烛般死不倒下。他硬生生以血肉之躯扛下了那一击，傀儡兽的攻势竟因此顿了半息——它似乎没料到这个蝼蚁竟有如此韧性。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0380_result_009_a_002",
+                  "character_id": "char_yeqing",
+                  "content": "够了——魔道迷雾，成！",
+                  "emotion": "悲愤"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "左肩重伤"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机为我挡下了致命一击",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0380_009_b",
+            "text": "以言乱其心",
+            "description": "用天机录窥破的傀儡兽弱点进行言语干扰，扰乱其攻击节奏。风险是对方可能不吃心理战，直接暴起杀人。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "无直接代价",
+            "visible_reward": "为夜清争取凝聚时间，保留完整战力",
+            "risk_hint": "若言语干扰失败，将直面元婴傀儡全力一击",
+            "process_label": "言语周旋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0380_result_009_b_001",
+                  "content": "陈机不退反进，竟直面那庞然巨物，嗤笑道：\"千年傀儡，空有一身蛮力。你体内核心的灵纹——是不是已经裂了三道？\"傀儡兽的攻势竟真的滞了一瞬，那铜铃般的眼珠中闪过一丝惊疑。它不曾想到，一个筑基蝼蚁，竟能一眼看穿它运转千年的灵纹布局。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0380_result_009_b_002",
+                  "character_id": "char_yeqing",
+                  "content": "（内心震动）他怎么知道的……莫非连这种东西都能推演？",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 60
+            },
+            "memory_label": "陈机的谋略深不可测",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_010",
+        "content": "魔道迷雾如墨染池，将方圆百丈笼罩在混沌之中。傀儡兽的感知被彻底扰乱，它发出愤怒的咆哮，灵压如潮水般像四面八方扩散，却始终无法锁定那两个蝼蚁的位置。就在此时，夜清的声音在迷雾中响起，清冷中带着决绝：",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_011",
+        "character_id": "char_yeqing",
+        "content": "陈机，我有一招禁忌秘术，可与男子灵力交融，共赴生死——但我需要你完全信任我。",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_012",
+        "content": "禁忌合击。陈机曾在魔道典籍中见过这个名字——那是上古时代魔道圣女与道门天骄联手开创的禁术，需要二人以命交托，灵力完全共振。一旦其中一人心生杂念，另一人便会经脉寸断而亡。他看向迷雾中的夜清，那双金瞳中没有丝毫退缩，只有近乎偏执的坚定。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0380_013",
+        "prompt": "禁忌合击需要绝对的信任与托付。陈机选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0380_013_a",
+            "text": "义无反顾",
+            "description": "毫不犹豫地握住夜清的手，将全部灵力毫无保留地灌注入合击阵法。这是真正的生死与共。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "灵力抽空，事后虚弱三日",
+            "visible_reward": "禁忌合击完美发动，越级斩杀元婴傀儡",
+            "risk_hint": "若夜清中途灵力不稳，将反噬重伤",
+            "process_label": "托付生死",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0380_result_013_a_001",
+                  "content": "陈机的手握住了夜清的手。那只手冰凉而柔软，却在触碰的瞬间迸发出灼热的灵力波动。两股截然不同的力量在接触点交融、碰撞、最终合而为一——道魔合流，阴阳相济，仿佛天地初开时的混沌重现。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁忌合击发动",
+              "生死与共"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "他的手握住了我的手，毫无保留",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0380_013_b",
+            "text": "留有后手",
+            "description": "在灵力交融的同时，暗中保留一缕神识以备不测。降低合击威力，但保住退路。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "合击威力削弱三成，元婴傀儡未必一击毙命",
+            "visible_reward": "保留应变能力，若失败尚可脱身",
+            "risk_hint": "合击不完整可能导致反噬加剧",
+            "process_label": "暗藏心机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0380_result_013_b_001",
+                  "content": "灵力交融的瞬间，陈机暗中留下一丝神识作为退路。两股力量勉强合流，却明显不够纯粹——夜清察觉到了那一丝隔阂，金瞳中闪过一丝复杂的情绪，却没有说破。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0380_result_013_b_002",
+                  "character_id": "char_yeqing",
+                  "content": "（心寒）他在最后一刻，还是没有完全信任我……",
+                  "emotion": "失落"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁忌合击发动（削弱）"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "他没有完全信任我",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_014",
+        "content": "禁忌合击——发动！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_015",
+        "content": "魔道迷雾中骤然绽放出耀眼的金白交织光芒，那是道门清气与魔道煞气前所未有的大融合。陈机只觉自己仿佛置身于一片混沌之中，夜清的气息与他缠绕交错，两人不再是独立的个体，而是化作了一柄旷古绝今的神剑。剑尖所向，正是那元婴傀儡的核心灵纹所在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_016",
+        "content": "傀儡兽感知到了致命威胁，它放弃了迷雾中的搜寻，将全部灵压凝聚于双爪，怒吼着向那金白光芒轰去——那是元婴期强者的全力一击，足以将半个山头夷为平地。然而陈机早已推演到了这一刻，天机录在识海中映出傀儡兽灵纹的每一道裂纹，合击的角度刁钻到分毫不差。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_017",
+        "character_id": "char_yeqing",
+        "content": "就是现在——合击！",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_018",
+        "content": "金白神剑贯穿了傀儡兽的胸膛，精准地刺入那道布满裂纹的核心灵纹。元婴傀儡的动作戛然而止，它那庞大的身躯在半空中僵住，铜铃般的眼珠中满是不甘与难以置信。堂堂元婴初期强者，竟死于两个筑基小辈之手？它的意识在消散前的最后一刻，似乎看见了自己被碾碎的命运——从那一刻起，倒计时归零。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_019",
+        "content": "轰——！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_020",
+        "content": "元婴傀儡的尸身轰然倒塌，掀起漫天尘土。尘埃落定后，陈机与夜清相对而立，两人的手仍紧紧相握，灵力却在缓缓分离。那种生死与共的感觉如此强烈，以至于分开的那一刻，彼此的掌心都残留着对方温度的幻觉。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_021",
+        "character_id": "char_yeqing",
+        "content": "（低声）……我感受到你了。",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_022",
+        "content": "夜清的声音很轻，轻到几乎被夜风吹散。但陈机听懂了——在那灵力交融的三息里，她触碰到了他内心最深处的某些东西。那些他藏得最深的算计、最冰冷的算计、以及……某些他自己都不愿承认的柔软。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0380_023",
+        "prompt": "禁忌合击过后，两人都感受到了对方内心深处的某些东西。陈机选择：",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0380_023_a",
+            "text": "故作轻松化解尴尬",
+            "description": "用一贯的毒舌将话题岔开，不让这种脆弱的时刻延续太久。保持他一贯的伪装。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过深入交流的契机",
+            "visible_reward": "维持废物人设，夜清心中疑惑加深",
+            "risk_hint": "夜清可能更加执着于挖掘他的真实面目",
+            "process_label": "岔开话题",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0380_result_023_a_001",
+                  "character_id": "char_chenji",
+                  "content": "魔道圣女的灵力果然够劲，下次合作记得提前说好分成。",
+                  "emotion": "轻佻"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0380_result_023_a_002",
+                  "content": "陈机松开手，像是什么都没发生过一样，甚至还掸了掸袖口的灰尘。夜清静静看着他，金瞳中闪过一丝连她自己都难以辨认的情绪——是失落，还是更浓烈的好奇？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "他总是这样，用轻佻掩饰一切",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0380_023_b",
+            "text": "坦然相待",
+            "description": "既然已被看穿，便不再遮掩。第一次在夜清面前展露真实的自己——哪怕只是一瞬间。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "真实自我暴露，未来布局难度增加",
+            "visible_reward": "与夜清的关系质变，解锁「共命」前序",
+            "risk_hint": "夜清可能因此更加深入地卷入他的命运",
+            "process_label": "坦诚相对",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0380_result_023_b_001",
+                  "content": "陈机没有松开手，也没有移开视线。他就这样静静地看着夜清，眼神中那层惯常的冷漠与算计如潮水般退去，露出底下某种复杂而深沉的东西——那是棋手独有的孤独，也是布局者不愿示人的疲惫。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0380_result_023_b_002",
+                  "character_id": "char_chenji",
+                  "content": "看到了吗？这就是我。",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命前序解锁"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "他第一次对我展露真实",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_024",
+        "content": "就在这时，陈机眉心处的天机录猛然一震。他低头看向自己的双手——那本残破的古卷正自行翻动，金光流转间，第四页的轮廓正在缓缓显现。他从未见过这一页，天机录的残缺本只有三页，他一直以为那便是全部。然而此刻，第四页正以一种近乎炽烈的姿态破封而出，仿佛有什么东西被斩杀了、被释放了、被唤醒了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_025",
+        "content": "金光越来越盛，夜清下意识地后退一步，却被那光芒笼罩其中。她的瞳孔中倒映出天机录第四页的内容——那是一段她看不懂的文字，却让她浑身发冷。因为那文字她虽不认识，却莫名地感到熟悉，仿佛在很久很久以前，在某个被刻意遗忘的记忆深处，她曾经见过。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0380_026",
+        "character_id": "char_yeqing",
+        "content": "这……这是什么？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_027",
+        "content": "陈机没有回答。他的目光死死盯着第四页上的文字，那上面只写了一句话——不是古文，不是修仙界的通用语，而是他前世的母语、这个世界的隐秘天道：\"天命锁钥已现，枷锁开启倒计时。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_028",
+        "content": "天命锁钥。陈念。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_029",
+        "content": "陈机的手微微颤抖。他布局天下，算无遗策，却从未料到妹妹的存在竟与天机录的完整有着如此直接的联系。枷锁真相初露端倪——而这端倪的背后，是足以颠覆他所有认知的恐怖真相。他的妹妹，究竟是什么人？或者说，究竟是什么东西？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0380_030",
+        "content": "就在此时，百万里之外的魔道大营中，那个沉睡多年的身影终于完全苏醒。金瞳中的天象异变已然消散，取而代之的是某种近乎疯狂的兴奋。\"终于……找到了……\"那声音沙哑而苍老，却蕴含着足以撕裂苍穹的威压，\"天机录的完整之钥，就在那里……\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

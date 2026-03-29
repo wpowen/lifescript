@@ -1,0 +1,426 @@
+{
+  "id": "天机录_ch0996",
+  "book_id": "天机录",
+  "number": 996,
+  "title": "墨师之问",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机准备追问第五页下落之际，天机录第一页忽然剧烈震颤，墨先生的残魂竟第一次露出了惊惧之色——有什么东西，正在循着他们的对话而来。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0996_001",
+        "content": "夜色如墨，山风呜咽。陈机独坐于天青宗后山的断崖之上，衣衫被风灌得猎猎作响，却纹丝不动。仓御天离去时留下的那句话仍在他脑海中回荡——第四条路。\n\n三条路他已走过两条：顺天应命者沦为棋子，逆天改命者粉身碎骨。那么第三条路之外的第四条路，究竟通向何方？\n\n他缓缓闭上眼睛，意识沉入识海深处。那里悬浮着一页泛黄的残卷，天机录第一页正散发着幽幽微光。墨先生的残魂便寄居其上，如同一盏摇曳的孤灯。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_002",
+        "character_id": "char_chenji",
+        "content": "墨先生，弟子有事请教。",
+        "emotion": "恭谨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_003",
+        "content": "天机录第一页上，墨先生的虚影缓缓凝聚。他盘膝而坐，面容苍老而深邃，一双浑浊的眼眸却仿佛能洞穿古今。\n\n\"老朽等你问这句话，已等了三年。\"墨先生的声音苍老而平静，\"你是想问——天机录的真正来历，以及它为何会选择你？\"\n\n陈机心头一震。他确实想问，却从未对任何人提起。墨先生竟一语道破。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_004",
+        "character_id": "char_moxiansheng",
+        "content": "不止如此。\"墨先生抬眼望向虚空某处，\"你想问的是——你所书写的命运，是否也在别人的棋盘之上？",
+        "emotion": "深邃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_005",
+        "content": "陈机瞳孔骤缩。这正是他最恐惧的问题。从获得天机录的第一天起，他便隐隐察觉——自己能看见未来，别人是否也能看见他在看？\n\n每次使用天机录时，那种被窥视的感觉从未消失。只是他一直不敢深想，不敢追问。\n\n墨先生叹了口气：\"你终于敢问了。这很好。问对了问题，才有可能找到答案。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0996_006",
+        "prompt": "陈机深吸一口气，准备向墨先生请教关于命运书写能力的本质——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0996_006a",
+            "text": "直接追问起源",
+            "description": "天机录从何而来？为何会出现在仓御天手中，又为何会传到自己这里？",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗精力整理思绪",
+            "visible_reward": "获得关键信息：关于天机录起源的真相",
+            "risk_hint": "墨先生可能不会直接回答",
+            "process_label": "追问起源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_006a_01",
+                  "content": "陈机沉声道：\"天机录究竟从何而来？仓御天前辈又是如何得到它的？弟子需要一个答案。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "追问起源",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_006b",
+            "text": "质疑自身处境",
+            "description": "自己是否也在被更高存在操控？天机录是机缘还是陷阱？",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能动摇道心",
+            "visible_reward": "看清自己真正的位置",
+            "risk_hint": "真相可能比想象中更残酷",
+            "process_label": "质疑处境",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_006b_01",
+                  "content": "陈机目光一凝：\"我书写命运，却看不见自己的命运。墨先生，我是否也只是他人棋盘上的一枚棋子？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "质疑处境",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_006c",
+            "text": "询问第四条路",
+            "description": "仓御天提到的第四条路是否存在？那是否就是超越棋局的方法？",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露自己已知晓的秘密",
+            "visible_reward": "获得超越棋局的可能性指引",
+            "risk_hint": "墨先生可能不知道答案",
+            "process_label": "询问第四条路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_006c_01",
+                  "content": "陈机脱口而出：\"仓御天前辈提到过第四条路——那条既不顺天也不逆天的路。墨先生，那条路存在吗？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "询问第四条路",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_007",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生沉默片刻，虚影微微颤抖。良久，他才开口，声音中带着一丝陈机从未听过的沉重：\"你可知道，天机录最初并非用来预知未来，而是用来——对抗。\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_008",
+        "content": "对抗？\"陈机眉头紧皱。\n\n墨先生抬眼望向夜空，仿佛能穿透重重云层看见更高处的什么：\"天机录最初的主人，并非人族。它是仓御天从一处上古遗迹中带出来的，彼时它已经有了主人——或者说，有了它自己的意志。\"\n\n\"仓御天用毕生心血驯服了它，并将它从单纯的预言工具改造成了可以书写命运的至宝。但他改造它的初衷，从来都不是为了称霸天下。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_009",
+        "character_id": "char_moxiansheng",
+        "content": "它最初的主人——仓御天前辈的师尊，想要对抗的，是天道本身？\"陈机说出了心中那个不敢确认的猜测，声音微微发颤。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_010",
+        "content": "墨先生缓缓摇头：\"不是天道。天道不过是……更高存在的意志投影。你所对抗的，不是一个虚无缥缈的概念，而是一个有意识、有目的、正在注视着你我的存在。\"\n\n陈机感到一阵彻骨的寒意。天道之眼——他曾在某本古籍中看到过这个名字，当时只以为是先民的愚昧幻想。如今想来，那些\"愚昧\"的传说，或许才是真正的真相。\n\n\"所以，天机录本质上是一个——\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0996_011",
+        "prompt": "陈机正在深入理解天机录的本质——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0996_011a",
+            "text": "武器",
+            "description": "天机录是对抗更高存在的武器，这解释了为何使用它要付出代价——每一点天命值都是与那个存在争夺控制权",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "理解这个真相带来的沉重感",
+            "visible_reward": "从根本上理解了天机录的价值和危险",
+            "risk_hint": "意识到自己正在与什么为敌",
+            "process_label": "领悟武器本质",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_011a_01",
+                  "content": "陈机喃喃道：\"所以天机录不是预言工具，而是武器——与那个注视我们的存在争夺因果控制权的武器。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "领悟武器本质",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_011b",
+            "text": "牢笼",
+            "description": "天机录是更高存在设下的牢笼，让预言者以为自己在书写命运，实则只是在它允许的范围内活动",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能动摇对天机录的信任",
+            "visible_reward": "获得突破牢笼的可能性线索",
+            "risk_hint": "真相可能让人绝望",
+            "process_label": "质疑牢笼假设",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_011b_01",
+                  "content": "陈机目光骤然凌厉：\"或者说——它本身就是一个牢笼？让我们以为自己在书写命运，实则只是在那存在划定的棋盘上移动？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "质疑牢笼假设",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_012",
+        "character_id": "char_moxiansheng",
+        "content": "两者皆是，又皆非。\"墨先生虚影微微叹息，\"天机录的本体，只是一张白纸。它既可以成为武器，也可以成为牢笼，关键在于执笔者。\n\n仓御天让它成为了武器。而你……需要让它成为超越棋局本身的存在。",
+        "emotion": "期许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_013",
+        "content": "陈机眉头紧锁：\"超越棋局？可若连天道之眼都在棋盘之上，我又如何能超越？\"\n\n墨先生沉默片刻，似乎在斟酌该说多少。最终，他缓缓开口：\"你问对了问题。命运书写的本质，不是篡改结果——结果早已注定。真正的本质，是改写因果。\"\n\n\"因果？\"\n\n\"当世之人以为命运是一条从因到果的直线，却不知因果本身也是可以重写的。天机录真正的力量，不在于让你看见未来，而在于——让你改写通向那个未来的所有可能。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0996_014",
+        "prompt": "陈机正在消化这个震撼的信息——",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0996_014a",
+            "text": "请求指点",
+            "description": "请求墨先生传授如何改写因果的具体方法，即使这意味着要付出更多代价",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能消耗更多天命值",
+            "visible_reward": "获得改写因果的关键指引",
+            "risk_hint": "墨先生的答案可能需要付出代价",
+            "process_label": "请求具体方法",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 4
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_014a_01",
+                  "content": "陈机躬身道：\"请墨先生指点——弟子该如何做？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "请求具体方法",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_014b",
+            "text": "继续追问",
+            "description": "追问更多关于天道之眼和更高存在的真相，知己知彼方能百战不殆",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能触碰墨先生不愿提及的秘密",
+            "visible_reward": "了解更多关于敌人的信息",
+            "risk_hint": "墨先生可能因此沉默",
+            "process_label": "追问敌人真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_014b_01",
+                  "content": "陈机目光灼灼：\"那个注视我们的存在——天道之眼，它究竟是什么？它的目的是什么？\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "追问敌人真相",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_015",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的虚影忽然剧烈颤抖了一下，仿佛触碰到了某种禁忌。他的声音变得飘忽不定：\"你问得太多了。有些答案……还不是你该知道的。\"\n\n陈机正要追问，墨先生却忽然话锋一转：\"但有一件事，老朽可以告诉你。天机录共有五页，如今你手中只有三页残卷。\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_016",
+        "content": "五页？\"陈机瞳孔骤缩。他一直以为天机录只有三页残卷，第一页封印着墨先生，第二页记载着功法，第三页是预言能力。至于另外两页——他从未见过。\n\n墨先生点头，声音愈发低沉：\"第一页是根基，封印着老朽的残魂。第二页是功法，记载着运用天机之力的方法。第三页是预言，让你看见未来三时辰。\"\n\n\"那第四页和第五页……\"\n\n\"第四页，\"墨先生的声音忽然变得无比沉重，\"是仓御天留下的最后遗物。上面记载着对抗天道之眼的终极之法——但那一页，藏在一处你绝对想不到的地方。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_017",
+        "content": "陈机心跳骤然加速。仓御天的终极之法——那岂非正是他追寻的\"第四条路\"？\n\n然而墨先生下一句话，却让他如坠冰窟：\"至于第五页……老朽也只知它存在，却从未见过。仓御天临终前只留下一个谜语——'它在你的来处，也在你的归途。'\"\n\n陈机愣住。来处？归途？他的来处是陈家村，那个早已被圣宗毁灭的小村庄。他的归途又是什么？\n\n就在此时，天机录第一页忽然剧烈震颤，墨先生的虚影猛地抬头，脸上竟第一次露出了惊惧之色。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_018",
+        "content": "有人来了。\"墨先生的声音陡然变得急促，\"循着我们的对话而来——陈机，你我之间的联系被察觉了！\n\n陈机霍然睁眼。识海中墨先生的声音戛然而止，天机录第一页的微光也迅速黯淡下去，仿佛从未亮起过。\n\n夜风依旧呜咽，山崖依旧寂静。但陈机知道，有什么东西正在逼近。那种被窥视的感觉，比以往任何时候都要强烈。\n\n他缓缓站起身，目光望向远方的天际线。来处……归途……第五页……\n\n所有的线索都指向同一个方向——陈家村，那个被圣宗抹去的故土。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

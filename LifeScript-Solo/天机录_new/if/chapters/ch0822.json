@@ -1,0 +1,437 @@
+{
+  "id": "天机录_ch0822",
+  "book_id": "天机录",
+  "number": 822,
+  "title": "韩烈的阴影",
+  "is_paid": true,
+  "next_chapter_hook": "当韩烈以为胜券在握之时，陈机却在他看不见的角落微微勾起唇角——一场以退为进的棋局，正在暗中展开。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0822_001",
+        "content": "皇朝使者狼狈离去的余波尚未散尽，天青宗的议事殿内已是一片诡异的寂静。陈机立在角落，面具般的怯懦神情下，那双漆黑眸子正将殿外暗涌的杀意尽数收入眼底。天机录的气息虽已收敛，却似在虚空中留下一道残痕，引来了更危险的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_002",
+        "character_id": "char_hanlie",
+        "content": "天青宗的杂役弟子？呵，本座还以为是什么了不起的人物，竟能让皇朝使者吃瘪。",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_003",
+        "content": "一道霸道至极的气息自殿外碾压而来，如同一头远古巨兽苏醒，带着焚山煮海的威势直逼议事殿。陈机抬眸，只见一道铁塔般的身影踏空而至，浑身缠绕着玄武宗特有的玄黑灵光，周身空气都被那凛冽的杀意扭曲成涟漪。韩烈，玄武宗第一天才，三大宗门年轻一辈的绝对霸主。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_004",
+        "character_id": "char_chenji",
+        "content": "韩……韩师兄？小的小的只是天青宗的杂役，哪里敢让师兄亲自驾临……",
+        "emotion": "惶恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_005",
+        "content": "陈机躬身作揖，姿态卑微到了极点，肩膀微微颤抖，旁人看来分明是吓破了胆的模样。然而在那低垂的面容之下，他嘴角细微的弧度却透出一丝几不可察的冷意。韩烈来得比他预想的快，看来天机录暴露的气息确实惊动了某些不该惊动的人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_006",
+        "character_id": "char_hanlie",
+        "content": "装什么？你那日在试炼秘境的表现，当本座不知道？区区一个杂役，竟能让本座的三转玄甲功无功而返——你身上藏着的秘密，比本座想象的要多得多。",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_007",
+        "content": "韩烈负手而立，居高临下地俯视着陈机，眼中杀意如实质般凝聚。他的声音不大，却清晰地传入在场每一个人耳中，带着不容置疑的威压：\"本座此行，代表三大宗门而来。天机录重现人间，各方势力皆欲得之——而你身上的气息，本座绝不会认错。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0822_choice_001",
+        "prompt": "面对韩烈的逼问与三大宗门的压力，陈机需要做出选择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "隐忍示弱",
+            "text": "继续装弱",
+            "description": "以更卑微的姿态迷惑韩烈，让他低估自己的实力，在暗中积蓄反击的力量。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "承受屈辱",
+            "visible_reward": "隐藏底牌",
+            "risk_hint": "韩烈可能步步紧逼",
+            "process_label": "以屈辱换时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0822_result_隐忍示弱_001",
+                  "content": "陈机扑通一声跪倒在地，浑身筛糠般抖个不停，声音都带上了哭腔：\"师兄明鉴，小的真的什么都不知道啊！那日试炼秘境，小的只是运气好，误打误撞……\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "反击打脸",
+            "text": "言语反击",
+            "description": "用犀利的言辞揭穿韩烈的虚张声势，让他当众丢脸，震慑宵小。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露锋芒",
+            "visible_reward": "大涨气势",
+            "risk_hint": "可能引来更大关注",
+            "process_label": "以言破敌胆",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0822_result_反击打脸_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机缓缓直起身，那怯懦的神情如同被撕下的面具一般瞬间消失，取而代之的是一抹淡漠的讥诮：\"三转玄甲功无功而返？韩师兄的意思是——你输了？\"",
+                  "emotion": "戏谑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_008",
+        "content": "殿内一片哗然。众人难以置信地看着那个方才还瑟瑟发抖的杂役弟子，此刻竟敢以如此轻慢的语气对韩烈说话。韩烈的面色骤然阴沉下来，那双虎目中几乎要喷出实质的怒火，周围的空气都在他的怒意下扭曲变形。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_009",
+        "character_id": "char_hanlie",
+        "content": "好胆！本座倒要看看，你这张嘴能不能撑过三招！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_010",
+        "content": "韩烈一掌拍出，裹挟着足以毁山裂石的恐怖灵压，直取陈机面门。然而就在众人以为那杂役必死无疑之际，一道苍老的声音自殿后传来：\"韩师侄何必跟一个小辈计较？天青宗的地盘，还轮不到外人撒野。\"凌渊，天青宗老掌门，适时现身。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_011",
+        "character_id": "char_hanlie",
+        "content": "凌老儿，你天青宗窝藏天机录传人，莫非想与三大宗门为敌？本座奉劝你想清楚——这背后的存在，可不是你能招惹的。",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_012",
+        "content": "凌渊面色微变，显然被\"背后的存在\"这四个字刺痛了某根神经。陈机将这一切尽收眼底，心中冷笑——果然，连老狐狸都有忌惮的东西。他不动声色地观察着殿内众人的反应，将每一丝细微的表情变化都刻入脑海。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_013",
+        "character_id": "char_lingyuan",
+        "content": "韩师侄言重了。天青宗向来与三大宗门交好，何来为敌之说？只是这小徒确实只是普通杂役，若有冒犯之处，老夫代为赔罪。",
+        "emotion": "虚伪"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0822_choice_002",
+        "prompt": "凌渊出面斡旋，但韩烈显然不会善罢甘休。陈机需要决定下一步行动——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "顺水推舟",
+            "text": "借势脱身",
+            "description": "利用凌渊的庇护暂时脱身，将矛盾引向三大宗门与天青宗的博弈，自己抽身暗处。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时退让",
+            "visible_reward": "保存实力",
+            "risk_hint": "韩烈可能追查到底",
+            "process_label": "暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0822_result_顺水推舟_001",
+                  "content": "陈机适时地再次缩回角落，重新套上那副怯懦的面具，低眉顺眼地不再言语。韩烈见状，嘴角勾起一抹得意的冷笑：\"算你识相。不过——本座给你三日时间，届时若不能给三大宗门一个交代，就别怪本座不客气了。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "火上浇油",
+            "text": "继续刺激",
+            "description": "变本加厉地刺激韩烈，让他失去理智当众出丑，同时暗中引出更高存在的线索。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "树敌更深",
+            "visible_reward": "引蛇出洞",
+            "risk_hint": "可能被当场格杀",
+            "process_label": "置之死地",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0822_result_火上浇油_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机突然轻笑出声，那笑声在寂静的议事殿内显得格外刺耳：\"三日？韩师兄未免太看得起自己了。你背后那位——真的敢露面吗？\"",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_014",
+        "content": "此言一出，殿内气氛骤然凝滞。韩烈的瞳孔猛然收缩，那张狂傲的面孔上闪过一丝不易察觉的慌乱——显然，陈机的话刺中了某处要害。凌渊的眼底也掠过一抹精光，若有所思地看向陈机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_015",
+        "character_id": "char_hanlie",
+        "content": "你……你怎么可能知道！",
+        "emotion": "惊骇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_016",
+        "content": "韩烈失态了。这位号称三大宗门年轻一辈第一人的天才，此刻竟当着满堂宾客的面露出了惊恐之色。殿内顿时窃窃私语起来，原本对陈机不屑一顾的目光中，多了几分意味深长的打量。陈机心中暗忖——看来那条暗线果然存在，而且藏得极深，连韩烈都只是棋子而已。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0822_017",
+        "character_id": "char_lingyuan",
+        "content": "够了！",
+        "emotion": "厉喝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_018",
+        "content": "凌渊骤然开口，灵压如山般倾泻而下，将剑拔弩张的两人强行隔开。他的目光在陈机与韩烈之间来回扫视，最终落在陈机身上，眼中闪过一丝复杂的情绪：\"今日之事，到此为止。三日之后，老夫会亲自带人去皇城给三大宗门一个交代。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0822_choice_003",
+        "prompt": "凌渊强行终结对峙，但陈机心中已有了计较——",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "以退为进",
+            "text": "收网布局",
+            "description": "顺从凌渊的安排，暗中将韩烈作为诱饵，引出其背后更高存在的势力，一网打尽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "三日期限",
+            "visible_reward": "钓出大鱼",
+            "risk_hint": "时间紧迫，变数极多",
+            "process_label": "布下天罗地网",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0822_result_以退为进_001",
+                  "content": "陈机退后一步，重新躬身行礼，那卑微的姿态让韩烈愈发得意。然而就在众人以为这场风波就此平息之际，陈机的声音却在韩烈耳边低低响起：\"三日后，皇城见——届时希望韩师兄背后的那位，也能一起来。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "主动出击",
+            "text": "趁势立威",
+            "description": "在凌渊庇护下公然宣布自己将亲赴皇城，以主人姿态面对三大宗门，震慑宵小。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "树敌无数",
+            "visible_reward": "名震天下",
+            "risk_hint": "成为众矢之的",
+            "process_label": "一鸣惊人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0822_result_主动出击_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机直起腰身，那怯懦尽数褪去，取而代之的是一种睥睨天下的傲然：\"不必三日，今夜陈某便随凌掌门前往皇城——三宗若想讨个说法，本座亲自给他们一个交代！\"",
+                  "emotion": "张狂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_019",
+        "content": "韩烈面色铁青地离开了天青宗，那道铁塔般的身影踏空而去时，灵压余波仍让殿内众人心悸。然而陈机却静静地站在原地，望着那远去的背影，眼底深处掠过一抹计算的寒光。天机录残页在体内微微颤动，似乎在预警着什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0822_020",
+        "content": "三日之期，不过是他布下的第一颗棋子。韩烈背后的势力、天机录暴露引来的觊觎者、以及凌渊那老狐狸的真实目的——所有的一切都将在皇城汇聚成一盘大棋。而他陈机，要的从来不是三日的安宁，而是将所有敌人一网打尽的机会。今夜的风暴，才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

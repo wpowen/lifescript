@@ -1,0 +1,506 @@
+{
+  "id": "天机录_ch0705",
+  "book_id": "天机录",
+  "number": 705,
+  "title": "第三条路",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机决定行动方向之际，天机录第四页骤然显现：「桥梁之道，始于足下——第一步，救出你的引路人」。而苏青瑶被困的位置，竟直指那个他从未敢踏足的禁地——天道废墟。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0705_001",
+        "content": "玄武宗宗主狼狈撤退的余波尚未散去，天青宗的山门便笼罩在一片诡异的寂静之中。陈机独立于主峰之巅，衣袂被山风吹得猎猎作响，手中紧握的传音符篆却滚烫得近乎灼人。墨先生的声音仍在耳畔回荡，每一个字都如同钝刀割肉：「苏青瑶被神秘势力绑架，下落不明。那势力身上残留的气息，与陈念如出一辙。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0705_002",
+        "character_id": "char_moxiansheng",
+        "content": "「少主，此事绝非表面那般简单。」墨先生的残魂自天机录第一页飘出，苍老的面容上罕见地浮现出凝重之色，「老朽推演再三，发现那绑架之人的气息中，掺杂着两种截然不同的道韵——其一，是天道之眼的意志残留；其二……竟是失落已久的天机阁正统传承。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_003",
+        "content": "陈机闭目，将近日所有碎片般的线索在脑海中飞速拼凑。母亲的布局、枷锁的真相、天青的牺牲——这些看似毫无关联的线索，此刻竟如同被一只无形的手拨正，逐渐汇聚成一条清晰的脉络。他猛然睁眼，瞳孔中精光乍现：「我明白了。他们不是要杀苏青瑶，而是要用她做饵。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0705_004",
+        "character_id": "char_chenji",
+        "content": "「钓的不是天青宗，也不是魔道——」陈机嘴角勾起一抹冷冽的弧度，声音却平静得可怕，「是钓我。陈念的气息残留，是为了让天机录产生共鸣；天道之眼的痕迹，是为了让我以为是终极棋局。而真正布下此局的人……」他顿了顿，眼底深处翻涌着滔天怒意，「是想在我踏入陷阱的瞬间，夺取天机录的控制权。」",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_005",
+        "content": "就在此时，天机录本体骤然震颤，一道前所未有的金光自残页深处迸发而出，灼得陈机不得不眯起双眼。那光芒汇聚成文字，缓缓浮现于虚空之上：「二元枷锁，非破非立，乃是桥梁。钥匙开锁，锁灭钥废；桥梁连接，两端皆活。此为第三条路——不司钥匙之职，不为天道之奴，化作天道与人间的唯一枢纽。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0705_006",
+        "character_id": "char_chenji",
+        "content": "陈机凝视着那行金字，呼吸竟不由自主地急促了几分。墨先生说得对——他一直在思考如何打破枷锁、如何对抗天道，却从未想过还有第三条路。钥匙与锁是对立，天道与人亦是对立，而他若能成为连接两者的桥梁……「原来如此。」他低笑出声，那笑声里既有恍然大悟的畅快，又有一丝近乎疯狂的决绝，「这才是母亲留给我真正的遗产。」",
+        "emotion": "激动"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0705_choice_001",
+        "prompt": "天机录显化的瞬间，陈机感到体内天命值剧烈波动。墨先生提出两个方案：一是直接追踪苏青瑶的线索，以最快速度营救；二是先稳固「桥梁之道」的基础，确保后续每一步都万无一失。你会如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "speed_rescue",
+            "text": "极速营救",
+            "description": "苏青瑶危在旦夕，每耽搁一刻她便多一分危险。趁敌人尚未完全准备，立即追踪营救，展现担当。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值-10",
+            "visible_reward": "提前触发关键剧情",
+            "risk_hint": "敌人必有后手，贸然深入可能陷入重围",
+            "process_label": "极速追踪苏青瑶下落",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_speed_001",
+                  "content": "陈机没有丝毫犹豫，身形化作一道流光，朝着墨先生指引的方向疾掠而去。风声在耳畔呼啸，他心中只有一个念头：苏青瑶，等我。这一次，他不再是那个算计一切的棋手，而是一个必须抢在时间前面的营救者。"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_speed_002",
+                  "character_id": "char_chenji",
+                  "content": "「苏青瑶是我在天青宗唯一信任的人。」陈机的声音冰冷而坚定，「若连身边的人都护不住，谈什么第三条路？」墨先生欲言又止，终究只是轻叹一声，任由陈机做出选择。",
+                  "emotion": "决断"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择守护身边人",
+            "branch_route_id": null
+          },
+          {
+            "id": "stable_develop",
+            "text": "稳扎稳打",
+            "description": "磨刀不误砍柴工，先参悟天机录的指引，将「桥梁之道」的基础稳固后再行动，确保每一步都走在敌人算计之外。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "苏青瑶多一分危险",
+            "visible_reward": "解锁「桥梁初窥」状态，谋略+20",
+            "risk_hint": "可能错失最佳救援时机，但后续布局空间更大",
+            "process_label": "参悟桥梁之道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_stable_001",
+                  "content": "陈机强行按捺住心中的焦躁，盘膝坐于山巅之上。天机录残页在神识中缓缓展开，那些晦涩难懂的符文竟在「桥梁」二字的指引下逐渐变得清晰。他能感觉到，自己与这片天地的联系正在以一种前所未有的方式重塑。"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_stable_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "「少主悟性惊人。」墨先生的声音中带着几分欣慰，「『桥梁之道』共有三重境界——连接、承载、超越。少主如今初窥门径，已能感知天道与人间的微妙缝隙。这便是第三条路的基础。」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择稳固根基",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_007",
+        "content": "然而无论选择哪条路，有一个事实都无可回避——苏青瑶被绑架一事，绝非单纯的势力倾轧。陈机在追踪途中，以天机录残页悄然推演，竟发现一个令他脊背发凉的真相：苏青瑶之所以成为目标，根本原因在于她是天青宗唯一一个三次无限接近陈机秘密的人。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0705_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "虚空深处，一道超越性的意志波动骤然传来。那是天道之眼——它第一次如此清晰地显现在陈机的感知之中。「你很聪明，陈机。」那声音没有情感，没有温度，却仿佛能穿透一切虚妄，直抵灵魂深处，「但你越聪明，就越适合成为桥梁。桥梁需要两端——而你的引路人，正是连接你与天道的最佳锚点。」",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_009",
+        "content": "陈机的脸色瞬间阴沉如墨。天道之眼的话如同一盆冰水当头浇下，让他猛然意识到自己一直忽略的盲点：苏青瑶不仅仅是他信任的人，更是天青宗气运所系——而天青，正是当年反对天道、最终陨落的禁忌宗门。她是桥梁的「人端」，而天道之眼要的不是毁掉这座桥，而是要彻底掌控它。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0705_choice_002",
+        "prompt": "面对天道之眼的威胁与暗示，陈机必须做出决定：是顺从其安排、假意合作以换取苏青瑶的安全，还是正面挑衅、撕破脸皮宣示第三条路的独立性？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "pretend_cooperate",
+            "text": "假意周旋",
+            "description": "暂时隐忍不发，以「考虑合作」的态度拖延时间，同时暗中寻找苏青瑶的真实位置和敌人的破绽。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "尊严受损",
+            "visible_reward": "获得关键情报，识破敌人布置",
+            "risk_hint": "可能被天道之眼看穿，反而打草惊蛇",
+            "process_label": "假意与天道之眼周旋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_pretend_001",
+                  "content": "陈机深吸一口气，面上竟浮现出一抹从容的笑意。「天道之眼大人说得有理。」他的声音不卑不亢，「既然桥梁需要两端，那陈某确有必要了解一下，天道这一端的『诚意』究竟几何。」那笑容温和得近乎虚伪，唯有眼底深处，寒芒一闪即逝。"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_pretend_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「有趣的回应。」天道之眼的意志波动中竟带上了几分玩味，「你以为你在算计，殊不知每一步都在我的注视之下。不过……留下你，或许比毁掉你更有价值。」话音未落，一道模糊的画面传入陈机脑海——苏青瑶被困于一片废墟之中，四周环绕着九道血色锁链。",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "open_defiance",
+            "text": "正面宣战",
+            "description": "不伺候了！直接以天机录的力量反驳天道之眼的意志，宣告第三条路的独立地位，绝不做任何人的棋子。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "立即暴露实力",
+            "visible_reward": "震慑敌人，名望大涨",
+            "risk_hint": "可能触发天道之眼的直接抹杀",
+            "process_label": "正面挑战天道之眼",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_defiance_001",
+                  "content": "「桥梁是我的，道路是我的，选择权也是我的。」陈机猛然抬头，天机录在他掌心爆发出刺目的金芒，「你们天道想用我，就拿出足够的筹码来；想灭我，就看看这残页里封存的先贤意志够不够陪葬！」话音落，天地色变，一股磅礴的气势自陈机体内冲天而起。",
+                  "emotion": "霸气"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_defiance_002",
+                  "character_id": "char_chenji",
+                  "content": "「很好。」天道之眼的声音反而平静下来，那平静中蕴含的威压却更令人心悸，「既然你选择了最艰难的路，那就让我看看……你和你那位引路人，能撑到什么时候。」下一瞬，那股意志如潮水般退去，只留下无尽的寒意在陈机心底蔓延。",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_010",
+        "content": "无论陈机如何选择，天道废墟的位置已经清晰地烙印在他的意识之中。那是上古时代天道与人界交战时留下的禁地，传闻连天帝都无法完全掌控其法则紊乱。而现在，苏青瑶就被困在那里——或者说，有人故意将她困在那里，等着他自投罗网。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0705_011",
+        "character_id": "char_moxiansheng",
+        "content": "「少主，天道废墟虽有天帝禁制，但并非无路可进。」墨先生的残魂再次浮现，手中虚虚一点，一幅精密的地形图在陈机面前徐徐展开，「废墟共有九层，外三层是法则紊乱区，中三层是意识侵蚀区，内三层……那里封锁的，是天帝陨落时的部分本源。少主的引路人被困于第六层——意识侵蚀区的核心。」",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_012",
+        "content": "陈机凝视着那幅地图，脑中飞速运转。第六层……那正是意识侵蚀最严重之地，常人在那里待上一炷香便会神志混乱。而苏青瑶能在其中坚持这么久，要么是她修为足够深厚、意志足够坚定，要么……「有人想让她活着等我。」陈机喃喃自语，「因为她的存在，能干扰天机录的预见——就像陈念一样。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0705_013",
+        "character_id": "char_chenji",
+        "content": "一个可怕的猜测在他心中成形：苏青瑶与陈念，或许本就是天道布局中相互关联的两枚棋子。前者是连接陈机与天道的「桥梁锚点」，后者是干扰天机录预见的「命运迷雾」——而现在，这两枚棋子竟然被同一股势力所掌控。「这不是巧合。」陈机眼中精光大盛，「母亲当年布局时，就已经预见到了今天。」",
+        "emotion": "明悟"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0705_choice_003",
+        "prompt": "陈机即将动身前往天道废墟。在最后的准备中，他必须决定携带何种底牌：以备不时之需的天命值储备、能够遮掩气息的魔道迷雾，还是墨先生即将解封的一页知识？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天命值储备",
+            "text": "储备天命值",
+            "description": "天命值是使用天机录的根本。保留足够的天命值储备，以确保在废墟中遭遇意外时有足够的预见能力应对。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗当前天命值",
+            "visible_reward": "后续预见更有把握",
+            "risk_hint": "减少当前可用的底牌数量",
+            "process_label": "凝聚天命值备用",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_tianming_001",
+                  "content": "陈机闭目凝神，引导体内残余的天命之力重新凝聚。墨先生在一旁护法，口中念念有词，一枚闪烁着幽蓝光芒的天命珠渐渐在他掌心成形。这枚珠子蕴含的虽是零散的天命值，却足以在最危急时刻为他续命三息。"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_tianming_002",
+                  "character_id": "char_chenji",
+                  "content": "「三息……够了。」陈机睁开眼，将天命珠贴身收好。苏青瑶，等我。这一次，他不会再让任何人从他手中夺走重要之人。",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "魔道迷雾",
+            "text": "借用魔道迷雾",
+            "description": "联系夜清借用魔道迷雾的遮掩能力，可以在天机录使用时掩盖天机波动，让敌人无法追踪。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "欠下人情",
+            "visible_reward": "天机录使用时气息完全隐匿",
+            "risk_hint": "夜清的条件尚不可知",
+            "process_label": "联系夜清借用魔道迷雾",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_moyan_001",
+                  "content": "一道隐秘的传音穿透虚空，片刻后，夜清的声音带着几分慵懒地响起：「哟，陈大公子终于想起我了？」陈机简要说明了情况，对面沉默了片刻，「魔道迷雾可以借你，但我要你答应我一件事——等你找到陈念，把她带到魔道圣宗来。我想见见，能让你这个冷心冷肺的家伙不顾一切的人，究竟是什么模样。」",
+                  "emotion": "玩味"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_moyan_002",
+                  "character_id": "char_chenji",
+                  "content": "「成交。」陈机毫不犹豫。苏青瑶的事不能拖，至于陈念……等救出人再说。一缕漆黑的雾气自传音符篆中渗出，在陈机身周盘旋片刻后，缓缓融入他的气息之中。自此刻起，他的天机波动将彻底从这个世界上消失——至少，表面上如此。",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "墨先生知识",
+            "text": "解封墨先生知识",
+            "description": "让墨先生提前解封一页知识，获得关于天道废墟的详细情报和可能的捷径，但会消耗墨先生本就微弱的残魂之力。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "墨先生残魂受损",
+            "visible_reward": "获得天道废墟完整情报",
+            "risk_hint": "墨先生状态可能永久下降",
+            "process_label": "请求墨先生解封知识",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0705_result_knowledge_001",
+                  "content": "「墨先生，抱歉了。」陈机的声音低沉而真诚。墨先生沉默片刻，忽然发出一声苍老而释然的笑：「少主不必如此介怀。老朽这一缕残魂，本就是为了这一刻而存在。」说罢，他双手结印，天机录第一页骤然绽放出刺目的白光。下一刻，一股庞大的信息流如决堤之水般涌入陈机的识海。",
+                  "emotion": "释然"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0705_result_knowledge_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "「天道废墟第九层，封印着一缕天帝本源。」墨先生的声音随着信息一同传来，却已虚弱了许多，「若少主能在第七层找到『天帝遗泪』，便能暂时压制废墟的侵蚀之力。此外，第六层并非完全封闭——有一条历代守墓人使用的暗道，可直通第七层。只是……」他顿了顿，「那条暗道，需要用天命值开启。」",
+                  "emotion": "虚弱"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_014",
+        "content": "一切准备就绪，陈机踏上了前往天道废墟的征程。那里是天地间最接近天道本源的地方，也是陈机从未敢涉足的禁地。但现在，为了苏青瑶，为了第三条路，为了那些他必须守护的人——他别无选择。天道废墟的入口悬浮于九天之上，状如一只巨大的眼眸，散发着令人心悸的威压。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_015",
+        "content": "就在陈机即将踏入废墟入口的瞬间，天机录第四页骤然显现，金光凝聚成一行大字：「桥梁之道，始于足下——第一步，救出你的引路人」。那光芒比以往任何一次都要璀璨，仿佛在为他的抉择背书。与此同时，陈机感受到体内某种沉睡已久的力量正在缓缓苏醒——那是「桥梁」的本源在回应他的决心。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0705_016",
+        "content": "「苏青瑶，我来了。」陈机低语一声，踏入废墟入口。刹那间，天旋地转，一股混乱至极的法则之力将他包裹。耳边传来无数嘈杂的低语声，仿佛有数不清的亡魂在向他倾诉着什么。但陈机的心志坚如磐石——他的目标只有一个，那就是第六层那个被困九日的女子。废墟之中，一场关乎第三条路命运的营救行动，正式拉开帷幕。"
+      }
+    }
+  ]
+}

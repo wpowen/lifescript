@@ -1,0 +1,520 @@
+{
+  "id": "天机录_ch0676",
+  "book_id": "天机录",
+  "number": 676,
+  "title": "玄武压境",
+  "is_paid": true,
+  "next_chapter_hook": "就在天青宗上下严阵以待之际，一封加密密报悄然落入陈机手中——玄武宗此次倾巢出动的真正目标，根本不是天青宗，而是千里之外皇都之中的太师府。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0676_001",
+        "content": "天青宗，山门之外。\n\n黑压压的玄武宗大军如乌云盖顶，三千铁甲陈列于护山大阵之外，灵气激荡之间，连天际都被染上了一层肃杀的灰白。战鼓擂动，每一声都似敲在在场每一名天青宗弟子的心头。\n\n「玄武宗韩烈亲率大军至此，特来拜会天青宗诸位同道！」\n\n声浪滚滚，带着不可一世的嚣张，仿佛天青宗已然是待宰的羔羊。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0676_002",
+        "character_id": "char_hanlie",
+        "content": "（韩烈立于玄铁战车之上，周身玄武虚影环绕，声如洪钟）今日我玄武宗三万弟子、十八位长老齐至，不是为了灭门，只是想请天青宗交出一个人——那个废物陈机，听说他在贵宗？",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_003",
+        "content": "杂役弟子房内，陈机正盘膝而坐，指尖轻轻拨弄着一枚古旧的龟壳。\n\n龟壳之上，四十九道纹路微微闪烁，那是他在天下布下的四十九枚棋子。而此刻，其中一枚正在以一种诡异的频率震颤。\n\n不是普通的警示。\n\n而是……被更高存在拨动的痕迹。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0676_004",
+        "character_id": "char_moxiansheng",
+        "content": "（墨先生残魂自天机录第一页浮现，声音飘忽）第四十九枚棋子……有人动了它。小子，你感知到了吗？",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_005",
+        "content": "陈机没有回答。\n\n他闭上眼，眉心处天机录的气息若隐若现。一幅模糊的画面在脑海中闪过——那是一个由无数金色丝线编织而成的巨大眼球，正穿透虚空注视着棋盘上的每一枚棋子。\n\n「天道之眼……」\n\n陈机猛地睁开眼，瞳孔微缩。这是他第一次真正意义上感知到这个恐怖存在的痕迹，而非仅仅是天机录残页上的警告。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_006",
+        "content": "与此同时，天青宗议事大殿内，三位长老面沉如水。\n\n「大阵最多撑三日。」大长老沉声道，声音里难掩疲惫，「玄武宗这次是有备而来，还请动了宗门底蕴的玄铁战阵，我们硬抗是扛不住的。」\n\n「那便议和！」二长老猛然起身，「交出一个杂役弟子而已，陈机那个废物——」\n\n「闭嘴。」大长老冷冷打断，「你当日那般折辱他，今日倒要拱手送出？天下人如何看我天青宗？」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0676_007",
+        "character_id": "char_lingyuan",
+        "content": "（老掌门凌渊缓缓开口，声音平静却带着不容置疑的威严）不必争执。陈机既是我宗弟子，便是我天青宗的人。但……若他能自行化解此局，岂不更好？",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0676_choice_001",
+        "prompt": "玄武宗大军压境，山门告急。你感知到天道之眼的注视正在加强，同时得知玄武宗的真正目标可能另有蹊跷。此刻你当如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0676_opt_001_1",
+            "text": "主动出击，以太子太师身份震慑",
+            "description": "亮明皇朝赐予的太子太师身份，以皇朝法理压制玄武宗的嚣张气焰，让韩烈知道惹的是谁。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "韩烈当众被打脸，天青宗士气大振",
+            "risk_hint": "可能引来更多关注，让局势更加复杂",
+            "process_label": "亮明身份，正面压制",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0676_result_opt_001_1_001",
+                  "content": "陈机踏出杂役房，身形一闪，已然出现在山门之上。他负手而立，目光淡漠地扫过那黑压压的大军，嘴角微微上扬。\n\n「韩烈，你玄武宗好大的阵仗。」他的声音不大，却清晰地传入每个人耳中，「不知道太子殿下知道了，会不会怪罪下来？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "名望",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0676_opt_001_2",
+            "text": "按兵不动，继续布局暗中观察",
+            "description": "让三大长老先去应对，你继续隐于暗处观察局势，等待最佳出手时机。顺便探查天道之眼的异常。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被视为怯懦",
+            "visible_reward": "保持神秘感，获得更多情报",
+            "risk_hint": "天青宗士气可能受损",
+            "process_label": "静观其变，暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0676_result_opt_001_2_001",
+                  "content": "陈机收回目光，重新闭上双眼。天机录残页在脑海中缓缓翻动，那第四十九枚棋子的震颤愈发剧烈。\n\n「有意思……」他低声道，「韩烈只是明面上的棋子，真正的棋手……另有其人。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0676_opt_001_3",
+            "text": "动用天机录，窥探三时辰未来",
+            "description": "消耗5点天命值，启用天机录预见接下来三个时辰的关键走向，找到破局关键。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命值-5",
+            "visible_reward": "获得关键情报，知晓玄武宗真正目的",
+            "risk_hint": "天命值消耗会加速命运的必死反噬",
+            "process_label": "启用天机录，预见未来",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0676_result_opt_001_3_001",
+                  "content": "陈机咬破指尖，一滴鲜血滴落在天机录残页之上。金色的光芒骤然亮起，他的意识被拉入一片混沌的迷雾之中。\n\n画面模糊闪烁——玄武宗的旗帜、皇都的城墙、一道被黑雾笼罩的身影……以及一双正在注视着他的金色眼眸。\n\n「看到了吗，棋子？」一个苍老而威严的声音在他脑海中响起，「你以为你在布局，却不知你亦在局中。」"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "天机录已使用"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0676_008",
+        "character_id": "char_suqingyao",
+        "content": "（苏青瑶悄然出现在陈机身后，声音压得极低）陈机，玄武宗来势汹汹，三长老压不住场子。你……到底有什么打算？",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_009",
+        "content": "陈机转过身，看着这位内门首席弟子眼中的焦急，心中微动。\n\n这个女人，第三次接近真相了。\n\n「苏师姐觉得，我一个废物杂役弟子，能有什么打算？」他笑了笑，语气里带着几分玩味，「不过是等着看戏罢了。」\n\n苏青瑶眉头紧皱：「你当我是瞎子？韩烈指名要你，他玄武宗会为了一个废物倾巢出动？」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0676_choice_002",
+        "prompt": "苏青瑶步步紧逼，这是她第三次无限接近真相。你该如何应对？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0676_opt_002_1",
+            "text": "半真半假，透露部分真相",
+            "description": "告诉她韩烈背后另有主谋，你正在布局应对。适当示弱，换取她的信任与协助。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露更多信息",
+            "visible_reward": "苏青瑶好感度提升，可能成为助力",
+            "risk_hint": "她可能会冲动行事，打乱你的计划",
+            "process_label": "坦诚相告，换取信任",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0676_result_opt_002_1_001",
+                  "character_id": "char_chenji",
+                  "content": "（陈机收敛笑意，压低声音）苏师姐，有些事你知道了反而危险。但我可以告诉你……韩烈只是台前的木偶，真正的棋手藏在更深的地方。",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶获得部分信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0676_opt_002_2",
+            "text": "继续装傻，让她继续猜",
+            "description": "故技重施，用废物人设打消她的疑虑。反正三次都化解了，不差这一次。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错失拉拢机会",
+            "visible_reward": "继续保持神秘，苏青瑶会更加好奇",
+            "risk_hint": "她可能已经起疑，不会轻易被糊弄",
+            "process_label": "以退为进，保持神秘",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0676_result_opt_002_2_001",
+                  "character_id": "char_chenji",
+                  "content": "（陈机无辜地摊手）我能有什么打算？我连筑基都没突破，总不能让我这个废物去跟韩烈单挑吧？苏师姐太看得起我了。",
+                  "emotion": "无辜"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_010",
+        "content": "话音未落，一道急促的破空声打断了二人的对话。\n\n一只灵鸽俯冲而下，落在陈机肩头。他取下鸽腿上绑着的细竹筒，展开其中的纸条，脸色微微一变。\n\n「怎么了？」苏青瑶凑近。\n\n陈机将纸条收入袖中，眸光深沉：「皇都急报。边境出事了。」\n\n但他没说的是——纸条上还有一行只有他能看懂的暗语：「玄武目标非山门，太师府才是囊中物。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_011",
+        "content": "韩烈的声音再次从山门外传来，这次带着赤裸裸的威胁：「天青宗的诸位，我最后再问一遍——陈机，你们交还是不交？」\n\n「不交也无妨。」他嘴角勾起一抹残忍的笑，「那便先灭了天青宗，再慢慢找。我倒要看看，一个废物能躲到什么时候！」\n\n玄武宗大军齐齐鼓噪，灵气波动愈发剧烈，大战一触即发。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0676_choice_003",
+        "prompt": "玄武宗即将发动总攻，天青宗存亡就在眼前。而你已知晓他们的真正目标是太师府，此刻你当如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0676_opt_003_1",
+            "text": "出手救援，护下天青宗",
+            "description": "展现部分实力，正面击退玄武宗先锋，让天青宗上下见识你的手段。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露实力，引来更大关注",
+            "visible_reward": "天青宗上下对你刮目相看，苏青瑶彻底倒向你",
+            "risk_hint": "凌渊可能趁机发难",
+            "process_label": "挺身而出，强势碾压",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0676_result_opt_003_1_001",
+                  "content": "陈机缓步踏出，身形如鬼魅般掠至山门之上。他单手负后，另一只手轻轻一挥——\n\n轰隆！\n\n一道惊天的剑气凭空而生，将玄武宗先锋部队生生逼退百丈。韩烈瞳孔骤缩，满脸不可置信：「这……这怎么可能！」\n\n「废物？」陈机淡淡开口，「你玄武宗的先锋，连废物一剑都接不住？」"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "实力初显"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 40
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0676_opt_003_2",
+            "text": "暗中传音，让凌渊背锅",
+            "description": "你早已知晓玄武宗真正目标。太师府与凌渊有旧怨，借此机会将凌渊推出去当挡箭牌。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗人情",
+            "visible_reward": "凌渊被迫出面，玄武宗矛头转向",
+            "risk_hint": "凌渊可能察觉你的布局",
+            "process_label": "借刀杀人，暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0676_result_opt_003_2_001",
+                  "content": "陈机嘴角微扬，手指在袖中轻弹。一枚无形的传音符穿透虚空，悄然落入凌渊耳中。\n\n「老掌门，玄武宗的真正目标可不是天青宗，而是皇都太师府。您当年与太师府的恩怨……他们可是查得一清二楚。」\n\n凌渊脸色骤变，看向玄武宗大军方向的眼神多了几分阴沉。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0676_opt_003_3",
+            "text": "金蝉脱壳，赶往太师府",
+            "description": "天青宗不过是障眼法，你得抢先一步回到太师府，在敌人动手之前布下天罗地网。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天青宗可能遭受损失",
+            "visible_reward": "保住太师府根基，在敌人老巢反杀",
+            "risk_hint": "可能被当成逃兵",
+            "process_label": "战略转移，釜底抽薪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0676_result_opt_003_3_001",
+                  "content": "陈机目光深邃，在心中快速推演。\n\n「苏师姐，替我转告三位长老——坚守三日，必有转机。」话音落下，他的身形已化作一道残影，消失在夜色之中。\n\n苏青瑶愣在原地，望着他消失的方向喃喃道：「你到底……还藏了多少底牌？」",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶目睹离开",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_012",
+        "content": "就在陈机离开的瞬间，天机录残页上的第四十九道纹路骤然亮起。\n\n那个飘渺的声音再次在他识海中响起——\n\n「有趣的小棋子……你以为逃得掉吗？」\n\n「天道的棋盘上，从来没有真正的旁观者。」\n\n陈机猛然回头，却只看到虚空中一闪而逝的金色光芒。那双无形的眼睛，正在更高处注视着他，将他的每一步棋都看在眼里。\n\n而他，终究只是一枚棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0676_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼的意志如洪钟大吕，震颤着陈机的神魂）你窥探了三时辰的未来又如何？我布局千万年，岂是你一介蝼蚁所能撼动？\n\n去吧，去看看你的太师府……看看你到底能护住什么。",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0676_014",
+        "content": "陈机深吸一口气，压下心底的不安。\n\n天道之眼又如何？布局千万年又如何？\n\n他陈机从来不信命。\n\n「我记下了。」他低声自语，声音里带着几分决绝，「等我将你的棋子一颗颗吃尽，你这个所谓的棋手……也不过是待宰的羔羊。」\n\n身形一闪，他已消失在夜空之中，朝着千里之外的皇都疾驰而去。\n\n身后，天青宗的山门在月色下静默伫立。\n\n一场更大的风暴，正在酝酿。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

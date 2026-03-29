@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch0146",
+  "book_id": "天机录",
+  "number": 146,
+  "title": "\"Secret Pact Reached\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"After Ye Qing left, Chen Ji discovered a fragmentary map within the alliance token—the marked location surprisingly coincided with rumors of the Ancient Forbidden Land.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0146_001",
+        "content": "\"At the instant sword energy tore through the air, a flash of sharp light crossed Chen Ji's eyes. Su Qingyao's strike, though fierce, was not a true killing blow—if she truly intended to take his life, this sword should have pierced his heart from behind, not slash so overtly toward his face. 'Senior Sister, are you attempting murder to silence me?' Chen Ji sidestepped the blade, his tone carrying恰到好处的惊慌, 'This lady and I merely encountered each other by chance—why such extremes?'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_002",
+        "character_id": "char_suqingyao",
+        "content": "\"'A chance encounter?' Su Qingyao sneered, sword tip pointed directly at Ye Qing. 'The Holy Sect's Saintess from the Demonic Path—chance encounter with you? Her demonic aura can be smelled from ten leagues away. Chen Ji, do you take me for a three-year-old?' Her gaze was like a blade. 'Speak—What are you scheming?'\"",
+        "emotion": "怒不可遏"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_003",
+        "character_id": "char_chenji",
+        "content": "\"Chen Ji lowered his eyes, a trace of bitterness spreading across his face. Slowly, he drew a Jade Slip from his sleeve, presenting it with both hands: 'Senior Sister, please examine this—it is a commission slip from the Sect's Quest Hall. Three days ago, someone posted an anonymous bounty, offering three thousand-year spiritLingzhi in exchange for intelligence on the Demonic Path's Saintess. Your junior brother here is dirt poor, and for a moment of greed...' He raised his gaze, eyes full of 'helplessness'. 'Yet I cannot understand why Senior Sister appeared so suddenly, ruining your junior brother's important business.'\"",
+        "emotion": "故作委屈"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_004",
+        "character_id": "char_yeqing",
+        "content": "\"Ye Qing was about to speak when Chen Ji silenced her with a subtle look. Her eyes flickered, instantly understanding his meaning—now was not the time to turn hostile. After a moment, she冷哼一声, fully restraining her demonic aura, cooperating seamlessly: 'Since I've been discovered, this Saintess shall take her leave. As for the 'honorable lord' who posted the bounty...' She glanced meaningfully at Su Qingyao. 'This Saintess looks forward to having a 'pleasant chat' with him.'\"",
+        "emotion": "配合演戏"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0146_005",
+        "prompt": "\"Su Qingyao's sword energy hung suspended in midair, her gaze scrutinizing between Chen Ji and Ye Qing. The situation was delicate—it was time to make a decision—\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0146_005_a",
+            "text": "\"Continue feigning weakness, letting Su Qingyao dominate the situation\"",
+            "description": "\"Play the complete victim, surrendering initiative to Su Qingyao, making her believe she is the director of this play.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Temporarily abandon deeper exchanges with Ye Qing\"",
+            "visible_reward": "\"Su Qingyao's hostility decreased, favor +1\"",
+            "risk_hint": "\"If Su Qingyao grows suspicious and investigates thoroughly, the commission slip's flaws may be exposed\"",
+            "process_label": "以退为进",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_005_a_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji sighed, extending the Jade Slip toward Su Qingyao: 'If Senior Sister disbelieves, you may verify at the Quest Hall. This commission is still posted—three thousand-year spiritLingzhi... Your junior truly was just being greedy.' He苦笑. 'Moreover, with my meager cultivation, if I truly colluded with the Demonic Path, I probably wouldn't even know how I died.'\"",
+                  "emotion": "诚恳而无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0146_005_b",
+            "text": "\"Borrow strength to strike back, redirect the trouble toward Xuanwu Sect\"",
+            "description": "\"Imply that this 'chance encounter' may have shadows of other forces, guiding Su Qingyao's investigation direction.\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"Need to fabricate a plausible explanation on the spot\"",
+            "visible_reward": "\"Su Qingyao's attention was redirected, hostility decreased while gaining investigation leads\"",
+            "risk_hint": "\"If the explanation is not smooth enough, it may arouse greater suspicion from Su Qingyao\"",
+            "process_label": "暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_005_b_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji shifted topics, his expression grave: 'However, what is strange is that this commission was posted exactly around the time when Han Lie, the Young Master of Xuanwu Sect, entered the mountain. Does Senior Sister recall—that three days ago was precisely when Han Lie provoked the Inner Sect?' He lowered his voice. 'Perhaps... someone wishes to use the Demonic Path to destabilize Tianqing, then frame us.'\"",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0146_005_c",
+            "text": "\"Reveal partial truth directly to Su Qingyao\"",
+            "description": "\"Advance by retreating, admitting contact with Ye Qing but claiming it was for sect intelligence gathering. Highest risk, but if successful can greatly increase Su Qingyao's trust.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"If Su Qingyao disbelieves, she may turn hostile on the spot\"",
+            "visible_reward": "\"If successful, Su Qingyao will become a potential intelligence sharer\"",
+            "risk_hint": "\"Su Qingyao is naturally suspicious—losing this gamble means being detained for investigation on the spot\"",
+            "process_label": "险中求信",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_005_c_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji drew a deep breath, as if making an immense decision: 'Senior Sister, this matter is long to tell. But I can tell you—the Saintess is no enemy. She holds key intelligence regarding the Ancient Forbidden Land, and that forbidden land... may be connected to the changes within Tianqing Sect ten years ago.' He met Su Qingyao's eyes directly. 'If you disbelieve, you may report this intelligence to the Sect Master.'\"",
+                  "emotion": "破釜沉舟"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "名望",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "dialogue": {
+        "id": "天机录_ch0146_006",
+        "character_id": "char_suqingyao",
+        "content": "\"Su Qingyao's sword tip trembled slightly. The changes ten years ago—that was the scar Tianqing Sect least wished to mention. She stared fixedly at Chen Ji, a flicker of wavering crossing her gaze: 'You had better be speaking the truth.' She sheathed her sword, voice cold as ice. 'If I discover any uncleandescent collusion between you and the Demonic Path...' Words unfinished, she turned and strode away into the void, leaving only: 'In three days, at the Inner Sect Council Hall.'\"",
+        "emotion": "暂且放过"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0146_007",
+        "content": "\"Ye Qing watched Su Qingyao's figure vanish into the clouds before slowly withdrawing her gaze. She turned to Chen Ji, eyes carrying a hint of scrutiny: 'You certainly have composure. Had it been someone else, they would have been terrified out of their wits by that Inner Disciple Senior Fellow.' She轻笑. 'But that commission slip of yours... is it real?'\"",
+        "emotion": "微带好奇"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0146_008",
+        "prompt": "\"Su Qingyao has departed—the alliance negotiation with Ye Qing officially begins. It is time to reveal your true cards—\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0146_008_a",
+            "text": "\"Reveal the authentic commission slip, demonstrating sincerity for cooperation\"",
+            "description": "\"Draw out the genuine Quest Hall Jade Slip from your sleeve, proving your words truthful. Simultaneously hint this was a 'fishing' operation, laying groundwork for subsequent negotiations.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Expose the fact that you had premeditated this all along\"",
+            "visible_reward": "\"Ye Qing's trust increases significantly—alliance terms can争取更优厚条件\"",
+            "risk_hint": "\"If Ye Qing feels she was schemed against, she may change her mind on the spot\"",
+            "process_label": "以诚动人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_008_a_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji smiled faintly, tossing the Jade Slip toward Ye Qing: 'Examine it carefully. This commission was posted five days ago—precisely after I calculated you would pass through this location today.' His语气云淡风轻. 'The schemes I lay never depend on luck.'\"",
+                  "emotion": "自信从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0146_008_b",
+            "text": "\"Counter-question Ye Qing, probing her true attitude toward the alliance\"",
+            "description": "\"Not rushing to reveal your hand, but instead questioning Ye Qing's true intentions—why would the Holy Sect's Saintess collaborate with a 'waste' from Tianqing Sect?\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"May appear insufficiently candid\"",
+            "visible_reward": "\"Grasp Ye Qing's bottom line and true demands, adding leverage for subsequent negotiation\"",
+            "risk_hint": "\"If Ye Qing feels sincerity is lacking, she may leave directly\"",
+            "process_label": "以问代答",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_008_b_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji stood with hands behind his back, his gaze profound: 'Saintess, your divine powers are mighty—for you to investigate Chen Ji's background would be effortless. But what I wish to know is: with the Holy Sect's strength, why seek cooperation specifically with a servant disciple of Tianqing Sect?' He paused. 'What do you need me to do?'\"",
+                  "emotion": "冷静犀利"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0146_008_c",
+            "text": "\"Reveal a replica of the Tianji Record Fragment, demonstrating foresight ability\"",
+            "description": "\"Use the Tianji Record's foresight as leverage, proving qualification to stand as equal to the Holy Sect's Saintess. Maximum risk, but also maximum reward.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Expose core trump cards\"",
+            "visible_reward": "\"If Ye Qing acknowledges, you will gain equal negotiating standing—alliance terms extremely favorable\"",
+            "risk_hint": "\"If Ye Qing harbors ill intentions, you may invite death\"",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_008_c_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji ceased all pretense, fingers lightly flicking—a talisman emanating faint light appeared in his palm: 'Does the Saintess recognize this object?' Upon the talisman appeared a blurry image—the exact moment Su Qingyao's sword energy struck. He淡淡道, 'Though I lack the Holy Sect's divine arts, there are some things... the Saintess cannot do.'\"",
+                  "emotion": "胸有成竹"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "dialogue": {
+        "id": "天机录_ch0146_009",
+        "character_id": "char_yeqing",
+        "content": "\"Ye Qing received the Jade Slip, her spirit energy probing within. After a moment, a flicker of unusual color crossed her eyes. She raised her gaze toward Chen Ji, her scrutinizing gaze gradually transforming into amusement: 'Interesting. It seems the legendary 'Waste Chen' hides deeper than I imagined.' She收起玉简, her tone turning serious. 'Since you possess such cunning, this Saintess will stop beating around the bush—regarding the alliance, what do you propose?'\"",
+        "emotion": "正色以待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0146_010",
+        "content": "\"Night wind swept across the cliff, dispersing the tense atmosphere of the earlier sword-drawn confrontation. Chen Ji stood with hands behind his back, robes fluttering in the wind, moonlight rendering his profile as warm and polished as jade—though beneath that warmth lay an abyss capable of devouring everything. He paced slowly toward Ye Qing, each step measured, neither hurried nor hesitant. 'I have drafted three alliance terms. Saintess, please listen.'\"",
+        "emotion": "运筹帷幄"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_011",
+        "character_id": "char_chenji",
+        "content": "\"'First, equal distribution of benefits. Whatever is gained from the secret realm, we each take half; intelligence is shared without concealment.' Chen Ji raised one finger. ''Second, mutual crisis protection. When the secret realm opens, if either party faces mortal threat, the other must rescue with full force. Of course—' he shifted topics, 'the price for intervention may be negotiated later.'\"",
+        "emotion": "冷静谈判"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_012",
+        "character_id": "char_chenji",
+        "content": "\"'Third, and most importantly—' Chen Ji raised his eyes, fixing his gaze on Ye Qing's, voice low yet carrying undeniable weight: 'Our cooperation is limited strictly to matters concerning the secret realm. The grievances between the Holy Sect and Tianqing Sect must not be involved. Once the secret realm business concludes, you go your way, I go mine—nothing further between us.' He微微一笑. 'Saintess, do you dare agree?'\"",
+        "emotion": "锋芒毕露"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_013",
+        "character_id": "char_yeqing",
+        "content": "\"Ye Qing listened silently, then suddenly laughed. That smile shed the Saintess's cold demeanor, revealing a trace of genuine admiration: 'Chen Ji, you know what? Before coming, I was thinking—if you truly were a useless pawn, signing this alliance would be pointless.' She drew a jet-black token from her sleeve, tossing it to Chen Ji. 'But now... it seems I have found a treasure.'\"",
+        "emotion": "真心赞许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0146_014",
+        "content": "\"Chen Ji received the token, its surface cold to the touch. The token was entirely ink-black, its front carved with a bizarre rune, the reverse bearing a line of tiny script—in Demonic Path cipher, unreadable to ordinary folk, but Chen Ji had learned it under the guidance of the Tianji Record Fragment. His eyes flickered as he stored the token in his sleeve, simultaneously drawing a green Jade Pendant from his chest: 'This is the credential of a Tianqing Sect Outer Disciple—seeing this pendant equals seeing the person. With this pendant, if the Saintess has urgent business, you may contact me directly.'\"",
+        "emotion": "正式交换"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0146_015",
+        "character_id": "char_yeqing",
+        "content": "\"Ye Qing received the green Jade Pendant, fingertips caressing its warm surface, her expression，似笑非笑. 'A Tianqing Sect Outer Disciple's credential... Are you not afraid I might use this token to infiltrate the sect and harm you?' Upon hearing this, Chen Ji showed no fear—instead, a playful smile appeared: 'If the Saintess wished to deal with me, why infiltrate? The moment that sword energy approached, I already regarded you as someone I could entrust my back to.' He paused. 'Moreover—wouldn't it be cleaner for the Saintess to act against me outside Tianqing Sect?'\"",
+        "emotion": "坦诚相待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0146_016",
+        "content": "\"Ye Qing froze for an instant, then threw her head back and laughed lightly. That laughter echoed through the night wind, carrying an uncommon sense of exhilaration: 'What a Chen Ji—both courage and cunning are top-notch. This Saintess has lived all these years, yet this is the first time someone 'trusts' me so completely.' She收敛笑意, drawing a yellowed silk scroll from her sleeve. 'Since you treat me with sincerity, this Saintess will not hoard resources—this is a partial record of the Holy Sect's inheritance concerning the Ancient Forbidden Land. Consider it a signing gift.'\"",
+        "emotion": "礼尚往来"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0146_017",
+        "content": "\"Chen Ji received the silk scroll, feeling its weight. He unfolded a corner of the scroll—intricate patterns covered it, those patterns seemingly containing some fundamental principle of heaven and earth, making one dizzy with just a glance. He hastily收起帛书, his expression betraying nothing: 'Saintess, this gift is too heavy.' Ye Qing waved her hand: 'You are worth it.' Her gaze deepened. 'Furthermore... this scroll is only half. The other half, they say, lies hidden within your Tianqing Sect's Forbidden Grounds.'\"",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0146_018",
+        "prompt": "\"Alliance formed, tokens exchanged. Before Ye Qing's departure, confirm one final matter—\"",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0146_018_a",
+            "text": "\"Inquire about the specific entrance location of the Forbidden Grounds\"",
+            "description": "\"Since Ye Qing mentioned the Tianqing Sect Forbidden Grounds, take this opportunity to probe for more intelligence, preparing for subsequent scheming.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May appear overly eager, arousing Ye Qing's suspicion\"",
+            "visible_reward": "\"Obtain crucial clues regarding the Forbidden Grounds entrance\"",
+            "risk_hint": "\"Ye Qing may use this as leverage, demanding more conditions\"",
+            "process_label": "深谋远虑",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_018_a_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji reflected for a moment, then spoke: 'Saintess just mentioned the Forbidden Grounds entrance... might you enlighten me?' Ye Qing raised an eyebrow: 'You certainly are greedy.' Yet she did not refuse. 'In three days, at Tianqing Sect Back Mountain, an异象 will occur. If you are有心, perhaps you may catch a glimpse. But the specific location—' she smiled meaningfully, 'even this Saintess does not fully know.'\"",
+                  "emotion": "若有所思"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0146_018_b",
+            "text": "\"Agree on specific communication methods for secret realm coordination\"",
+            "description": "\"Alliance formed—need to establish a long-term communication mechanism. Confirm how both parties will transmit messages and coordinate actions.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Need to reveal part of the communication code to Ye Qing\"",
+            "visible_reward": "\"Establish a stable secret communication channel—actions will be more convenient\"",
+            "risk_hint": "\"If communication codes are leaked, they may be intercepted by third parties\"",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_018_b_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji said: 'Alliance is formed, but how shall we communicate in the future? The Saintess must grant a method.' Ye Qing nodded, drawing a black jade talisman from her sleeve: 'Activating this talisman allows one-way communication with me. However, each talisman can only be used three times—after that, it self-destructs.' She paused. 'As for you—use that green Jade Pendant. This Saintess has her own means to sense it.'\"",
+                  "emotion": "务实高效"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0146_018_c",
+            "text": "\"See her off directly, no further questions\"",
+            "description": "\"Words spoken, business concluded. Stop there, giving the other party no further opportunity to probe. Maintaining mystery also protects oneself.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Miss the opportunity to gain more intelligence\"",
+            "visible_reward": "\"Withdraw completely, avoid unnecessary complications\"",
+            "risk_hint": "\"May appear overly cold, affecting subsequent cooperative rapport\"",
+            "process_label": "见好就收",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0146_result_018_c_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji clasped his hands in farewell: 'Saintess traveled far—Chen Mou's hospitality was lacking, I hope you will understand. Should you have needs in the future, simply inform me through the token.' Ye Qing glanced at him, then suddenly轻笑: 'You are an interesting one. Very well, this Saintess shall take her leave—' She soared into the void, and as she was about to vanish into the night sky, she looked back and dropped a final line: 'When we meet again, I hope you have become strong enough.'\"",
+                  "emotion": "心满意足"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0146_019",
+        "content": "\"Ye Qing's figure dissolved into the night sky, the uniquely cold aura of the Demonic Path fading with her. The cliff returned to silence, only the wind's mournful whisper remaining. Chen Ji stood alone at the cliff's edge, moonlight stretching his shadow long. He drew out the jet-black token, fingertips tracing the rune upon it, a faint smile spreading across his face. Alliance formed, another piece added to the chess game. But this is merely the beginning—Su Qingyao's glance, Sect Master Ling Yuan's undercurrents, the secret realm about to open... every step is a variable, every piece requires meticulous calculation.\"",
+        "emotion": "运筹帷幄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0146_020",
+        "content": "\"Just as Chen Ji prepared to turn and leave, his fingertips suddenly touched upon the line of tiny script on the token's reverse—previously a hasty glance had prevented close examination. Now, with moonlight illuminating it clearly, he discovered it was not ordinary Demonic Path cipher. It was a fragment of a map—rough lines sketching a mountain's outline, with a conspicuous red dot at the mountainside. Chen Ji's pupils contracted sharply: Could this be... a marking of the secret realm entrance? Ye Qing's signing gift was far more than a silk scroll. He tucked the token into his chest, his smile deepening. This game of chess grows ever more interesting.\"",
+        "emotion": "暗藏玄机"
+      }
+    }
+  ]
+}

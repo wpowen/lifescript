@@ -1,0 +1,567 @@
+{
+  "id": "天机录_ch0458",
+  "book_id": "天机录",
+  "number": 458,
+  "title": "身份危机",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机陷入身份认同的深渊时，天机录残页突然泛起诡异的光芒，仿佛要主动揭示某个被尘封已久的真相……",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0458_001",
+        "content": "月色如霜，洒在青石台阶上。夜清的身形僵在原地，那张素来冷艳的面孔此刻血色尽褪。圣宗长老的黑袍在夜风中猎猎作响，周身散发的威压如同实质，将方圆数丈的空气都压得凝滞。陈机站在她身后半步，指尖不着痕迹地摩挲着袖中的残页。他心中飞速盘算——这张牌，本不该在此刻亮出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「圣女殿下，」圣宗长老的声音阴恻恻的，每一个字都像是从冰窖里捞出来的，「老朽奉宗主之命寻您多日，不想竟在此处，与一名正道杂役同行。敢问，这是何故？」",
+        "emotion": "阴冷审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_003",
+        "content": "陈机感觉到夜清的脊背在微微颤抖。她是魔道圣女不假，但此刻的她更像是一只被猎人逼入死角的幼兽。圣宗对她而言从来不是归属，而是囚笼。他想起那日用天机录向她展示的预言——她母亲死亡的真相，惨烈而血腥，正是那幅画面让她义无反顾地选择了与自己合作。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0458_choice_001",
+        "prompt": "面对圣宗长老的逼问，夜清陷入困境。陈机需要做出选择：如何应对这突如其来的危机？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0458_opt_001a",
+            "text": "挺身而出，主动吸引火力",
+            "description": "承认自己才是目标，让夜清脱身。这是将自己从暗处推到明处的危险一步，但可以暂时保住唯一的战略盟友。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "身份彻底暴露，所有布局可能崩塌",
+            "visible_reward": "夜清的魔道迷雾技能可长期掩护天机录气息",
+            "risk_hint": "圣宗长老掌握着关于陈机父亲的秘密",
+            "process_label": "挺身承认",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_001a_001",
+                  "content": "陈机深吸一口气，从夜清身后走出。他的步伐很慢，每一步都像是在丈量命运的刻度。那张平凡到近乎透明的脸上，浮现出一抹淡淡的笑意——是那种将生死置之度外的从容。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_001b",
+            "text": "静观其变，让夜清自己应对",
+            "description": "按兵不动，观察圣宗长老的真正目的。夜清是圣女，应当有自己的脱身手段。利用这段时间判断对方掌握了多少信息。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "夜清可能暴露更多关键信息",
+            "visible_reward": "获取更多关于圣宗意图的情报",
+            "risk_hint": "圣宗长老似乎已经掌握了关键线索",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_001b_001",
+                  "content": "陈机后退一步，将身形隐入树影之中。他的眼眸微微眯起，冷冷地注视着场中的一切。袍袖下的双手却已经悄然结印，随时准备催动天机录的力量。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_001c",
+            "text": "主动揭露部分真相试探",
+            "description": "故意透露自己与天机录的关联，观察圣宗长老的反应。风险极高，但可能获取对方底牌的线索。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能加速圣宗对天机录的追捕",
+            "visible_reward": "试探出圣宗对天机录的了解程度",
+            "risk_hint": "圣宗长老可能知道更多关于天机录的秘密",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_001c_001",
+                  "content": "陈机嘴角勾起一抹玩味的弧度。他知道，有些险必须冒。圣宗长老既然出现在这里，说明对方的棋局已经推进到了关键阶段。与其被动挨打，不如主动搅局。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_004",
+        "character_id": "char_chenji",
+        "content": "「长老何必为难圣女殿下？」陈机的声音从暗处传来，平静得像是在谈论天气，「不过是路上偶遇，她问我借了些盘缠罢了。正道弟子与魔道中人打交道，又不是什么稀奇事。」",
+        "emotion": "伪装平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_005",
+        "content": "圣宗长老的目光如同毒蛇般缓缓转向他。那双浑浊的眼眸里闪过一丝精光，带着审视，也带着某种笃定。陈机感到一阵寒意顺着脊椎攀升——对方的神情分明在说：我等你很久了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「天青宗杂役弟子，陈机。」长老一字一顿地念出这个名字，语气中带着玩味，「你父亲陈玄的遗孤。老朽与他，也算旧识了。」",
+        "emotion": "阴森威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_007",
+        "content": "陈玄。这个名字像一柄钝刀，狠狠剜进陈机的心脏。那是他从未见过面的父亲，一个被天机录选中的男人，一个死在\"天命反噬\"中的悲剧主角。二十年来，陈机无数次在梦中想象过父亲的面容，却从未真正看清过。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0458_choice_002",
+        "prompt": "圣宗长老提到了陈机的父亲陈玄，透露他与天机录前任主人的\"旧识\"关系。陈机的内心掀起惊涛骇浪，但表面必须保持镇定。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0458_opt_002a",
+            "text": "冷声质问父亲之死的真相",
+            "description": "直接追问陈玄死亡的细节，不掩饰自己的愤怒。这是拿刀尖对向自己，但真相的价值值得冒险。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "彻底暴露自己对父亲的执念",
+            "visible_reward": "可能获取关于父亲与天机录的关键信息",
+            "risk_hint": "圣宗长老可能以此为要挟筹码",
+            "process_label": "怒声质问",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_002a_001",
+                  "character_id": "char_chenji",
+                  "content": "「旧识？」陈机的声音骤然冷了下来，那张平凡的面孔上浮现出一丝罕见的戾气，「既是旧识，那你可知他是如何死的？」",
+                  "emotion": "压抑的愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_002b",
+            "text": "故作轻蔑，继续扮演废物人设",
+            "description": "装作对父亲毫无感情的样子，用废物杂役的卑微姿态化解对方的试探。隐藏真实情感是陈机最擅长的事。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错过获取真相的机会",
+            "visible_reward": "继续保持身份隐蔽，争取布局时间",
+            "risk_hint": "圣宗长老可能看穿表演",
+            "process_label": "隐忍伪装",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_002b_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机垂下眼帘，声音里带着一丝自嘲的苦涩：「一个从未谋面的父亲，对我而言不过是个陌生人罢了。长老若想叙旧，恐怕找错人了。」",
+                  "emotion": "伪装的漠然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_002c",
+            "text": "反将一军，揭露长老的真正目的",
+            "description": "点破长老并非为夜清而来，而是专程为了他陈机。打破对方的节奏，掌握对话主动权。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "过早暴露自己洞悉全局",
+            "visible_reward": "打乱圣宗部署，争取谈判筹码",
+            "risk_hint": "可能招致更激烈的压制",
+            "process_label": "反客为主",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_002c_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机忽然笑了，那笑容里带着某种看透一切的冷漠：「长老何必兜圈子？圣女不过是您钓我出来的饵罢了。想拿天机录，直说便是。」",
+                  "emotion": "冰冷的洞悉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "圣宗长老愣了一瞬，随即仰天大笑。那笑声在寂静的夜里显得格外刺耳，像是夜枭的哀鸣。「好，好，好！」他一连说了三个好字，眼中的玩味变成了不加掩饰的贪婪，「果然是陈玄的儿子，这份镇定倒是有几分他的风采。只可惜……」",
+        "emotion": "贪婪狂妄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_009",
+        "content": "他话音一转，威压陡然暴涨：「只可惜你父亲太过愚蠢！天机录选中了他，他却不敢用它来改写命运，最终死在自己的怯懦之上。而你——」他的目光扫过陈机全身，仿佛在审视一件待宰的羔羊，「不过是他留下的又一个失败品罢了。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你父亲临死前将天机录一分为二，」长老的声音低沉而阴森，「一半给了你，另一半……」他故意停顿，目光意味深长地落在夜清身上，「你以为圣女为何会出现在这里？天意，天意啊！」",
+        "emotion": "得意揭示"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_011",
+        "content": "陈机的心猛地一沉。他飞速回忆与夜清相遇的每一个细节——那场看似偶然的邂逅，那个只有她能看懂的预言，还有她眼底那抹挥之不去的哀伤。难道这一切，从一开始就是被人设计好的？他是棋手，还是棋子？二十年的布局，是否不过是另一盘更大棋局的一部分？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0458_choice_003",
+        "prompt": "圣宗长老揭露了一个惊天秘密——天机录被一分为二，夜清身上可能藏着另一半！陈机陷入了前所未有的身份危机。他究竟是被命运捉弄的可怜虫，还是能够绝地翻盘的棋手？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0458_opt_003a",
+            "text": "选择相信夜清，共同对抗圣宗",
+            "description": "无论夜清是否被利用，她已经选择了与自己并肩作战。兄弟阋墙的戏码正是对方想看到的，绝不能中计。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能正中敌人下怀",
+            "visible_reward": "与夜清的羁绊加深，解锁「魔道迷雾」长期掩护",
+            "risk_hint": "夜清身上确实可能藏有另一半天机录",
+            "process_label": "并肩作战",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_003a_001",
+                  "content": "陈机深吸一口气，转头看向夜清。那张苍白的面孔上写满了惶恐与愧疚，却唯独没有背叛的痕迹。他忽然笑了——若连这点识人之明都没有，他早就死了一百次了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清信任突破"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "战火中的抉择",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_003b",
+            "text": "质疑夜清，当场验证天机录",
+            "description": "既然天机录残页在身，不如当场验证。若夜清身上真有另一半，她的存在应当能够干扰预见画面。这是险棋，但也是最直接的验证方式。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗10点天命值，可能暴露天机录位置",
+            "visible_reward": "彻底确认天机录的完整性",
+            "risk_hint": "圣宗长老正在虎视眈眈",
+            "process_label": "验证真伪",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_003b_001",
+                  "content": "陈机没有说话，只是缓缓抬起手。袖中残页隐隐发烫，似乎感应到了某种召唤。他闭上眼，心中默念着那个困扰他二十年的问题——天机录的另一半，究竟在何方？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_003c",
+            "text": "将计就计，顺势套取更多信息",
+            "description": "既然圣宗长老急于揭露真相，那就让他说个够。信息就是力量，哪怕是最危险的真相，也比无知要好。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能陷入对方的语言陷阱",
+            "visible_reward": "获取关于父亲与天机录的完整情报",
+            "risk_hint": "圣宗长老可能正在布置杀局",
+            "process_label": "以彼之道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_003c_001",
+                  "character_id": "char_chenji",
+                  "content": "「既然长老如此好意，」陈机微微侧头，做出一副洗耳恭听的模样，「晚辈倒想听听，父亲究竟留下了什么值得您亲自跑一趟的遗产？」",
+                  "emotion": "虚与委蛇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_012",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你想知道？」长老的笑容愈发诡异，「好，老朽今日心情好，便让你死个明白。二十年前，陈玄预见了天道之眼的降临——那个想要将所有预言者当作棋子的恐怖存在。他想要反抗，却被天机录反噬而死。而你身上这块残页……」",
+        "emotion": "得意揭露"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_013",
+        "content": "长老的话如同惊雷，在陈机脑海中炸开。天道之眼！那个他直到卷八才会意识到的恐怖真相，此刻竟被人轻描淡写地揭开。更让他心惊的是——父亲并非死于天命反噬，而是死于对天机录的反抗？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_014",
+        "content": "就在这时，陈机怀中的天机录残页骤然发烫。那是一种从未有过的剧烈反应，仿佛沉睡的巨兽被某种力量惊醒。残页上的符文开始缓缓流动，散发出幽蓝色的微光，将陈机的半张脸映照得忽明忽暗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "圣宗长老的脸色骤变。他下意识地后退一步，眼中闪过一丝惊惧：「这是……天机录主动响应？不可能！没有完整的传承者，它不应该……」",
+        "emotion": "惊骇恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_016",
+        "content": "陈机感到一股磅礴的信息流涌入脑海。天机录仿佛有了自己的意识，正在向他展示某个被尘封已久的画面——那是一间简陋的草屋，一个与他眉眼相似的男人正伏案疾书。男人的面容苍白如纸，嘴角溢出血丝，眼神却无比坚定。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_017",
+        "content": "「机儿……」一个沙哑的声音在陈机心底响起，带着无尽的疲惫与眷恋，「若你能看到这段记忆，说明天道之眼已经盯上了你。记住，它不是你的敌人，而是……」声音戛然而止，仿佛被某种力量强行截断。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_018",
+        "content": "记忆画面剧烈扭曲，陈机感到脑海中传来撕裂般的剧痛。但就在这电光火石之间，他看清了草屋桌上那本半开的书册——那不是天机录，而是某种完全不同的功法典籍。扉页上写着四个大字：逆天改命。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_019",
+        "character_id": "char_chenji",
+        "content": "陈机猛地睁开眼，瞳孔中残留着幽蓝的光芒。他看向圣宗长老，嘴角勾起一抹意味深长的弧度：「长老，您方才说天机录选中了我父亲，他却不敢用它来改写命运——可我看到的，却是他正在创造一种全新的力量。」",
+        "emotion": "洞悉真相"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_020",
+        "content": "圣宗长老的脸色彻底阴沉下来。他万万没想到，这个被视为废物的杂役弟子，竟能在天机录中看到如此隐秘的记忆。更可怕的是，那本名为《逆天改命》的典籍，他闻所未闻。「你……你究竟是什么怪物？」他的声音第一次带上了颤抖。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

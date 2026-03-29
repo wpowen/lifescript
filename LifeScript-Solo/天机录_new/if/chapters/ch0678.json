@@ -1,0 +1,464 @@
+{
+  "id": "天机录_ch0678",
+  "book_id": "天机录",
+  "number": 678,
+  "title": "命运棋局",
+  "is_paid": true,
+  "next_chapter_hook": "就在那口心头血染红竹简的瞬间，陈机看见了——玄武宗背后，那双从未睁开的眼睛。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0678_001",
+        "content": "城墙夜色深沉，瓦缝间那枚竹简被陈机以两指拈起。竹片温凉，刻痕犹新，陈家旧徽在月光下泛着微青的光泽——这是他三年前埋下的暗桩之一，编号四十七。今夜，它终于完成了使命。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_002",
+        "character_id": "char_moxiansheng",
+        "content": "「四十七号归位，布局完成三成。」残魂的声音从第一页飘出，「但你要想清楚，棋盘越大，反噬越烈。你现在的天命值……」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_003",
+        "content": "陈机将竹简收入袖中，唇角微扬。三年了，苏青瑶的信任、玄武宗的裂隙、魔道圣宗的暗子——所有棋子都在向预定位置移动。而他，只需要再落一子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_004",
+        "character_id": "char_chenji",
+        "content": "「还剩多少？」",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_005",
+        "character_id": "char_moxiansheng",
+        "content": "「一百零三。足够你再启动一次命运棋局，但之后……」残魂的声音顿了顿，「第四十九号棋子已经出现异动，他的自我意识正在觉醒。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_006",
+        "content": "第四十九号。陈机在心中默念这个名字。韩烈，玄武宗第一天骄，蛮力无双却心思单纯——这种人最好操控，也最容易被反噬。他的意识觉醒，意味着棋局开始脱离掌控。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0678_choice_001",
+        "prompt": "第四十九号棋子异动，命运棋局出现反噬前兆——陈机必须做出选择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0678_c1_accelerate",
+            "text": "加速布局，提前引爆",
+            "description": "在韩烈完全觉醒前，以49号棋子为引触发玄武宗内讧，趁乱收割最大利益。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗天命值15点，韩烈可能逃脱",
+            "visible_reward": "玄武宗高层分裂，天青宗压力骤减",
+            "risk_hint": "布局尚未完成，可能被韩烈识破",
+            "process_label": "冒险押注",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0678_result_c1_1",
+                  "content": "陈机闭目，天机录残页在意识深处缓缓展开。四十九枚光点如同星图，其中一颗正在剧烈颤动——那是韩烈的命格。他伸手一弹，将那颗星辰提前引爆。刹那间，玄武宗方向传来一声闷响。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0678_c1_stabilize",
+            "text": "稳住棋盘，压制异动",
+            "description": "消耗天命值稳固韩烈的控制，将觉醒意识重新压制，但会延缓整体布局进度。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值10点，玄武宗攻势延续",
+            "visible_reward": "棋局完整度提升，后续收益翻倍",
+            "risk_hint": "天命值持续消耗，压制失败后果严重",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0678_result_c2_1",
+                  "content": "陈机指尖凝聚出玄奥的符文，一层层叠在韩烈的命格之上。星光渐稳，但第四十九号的光点变得更加躁动——这是一头被激怒的困兽，反扑只是时间问题。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_007",
+        "content": "同一时刻，千里之外的玄武宗演武场。韩烈浑身浴血，手中长戟直指虚空，双目赤红如兽。他的意识深处，有什么东西正在苏醒——一个不属于他的声音在低语：「你本是棋，而非执棋人。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_008",
+        "character_id": "char_hanlie",
+        "content": "「滚出我的脑海！」韩烈怒吼，长戟横扫，将三丈外的石狮劈成粉碎，「管你是什么东西，想操控我韩烈——做梦！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_009",
+        "content": "他的愤怒不无道理。三十七场连胜、玄武宗第一天才、宗主亲口许诺的下一任掌门之位——这样的天之骄子，怎能容忍自己是他人的傀儡？但他不知道的是，正是这些战绩，让陈机选中了他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_010",
+        "content": "而在另一处上古遗迹深处，陈念紧闭的双眼猛然睁开。她感受到了一股熟悉的气息——那是哥哥陈机的气息，夹杂着浓烈的血腥与命运的挣扎。命运的锁钥与命运的执棋者，隔着千里产生了共鸣。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_011",
+        "character_id": "char_chenian",
+        "content": "「哥……」陈念低喃，手指紧紧抓住身下的石台，「你在做什么？为什么要用这么危险的力量……」她的声音被遗迹深处的黑暗吞没，只有那双与陈机如出一辙的眼眸，在黑暗中闪烁微光。",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0678_choice_002",
+        "prompt": "命运共鸣产生了意外效果——陈念的感应让陈机的棋局出现了新的变数。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0678_c2_embrace",
+            "text": "借势而为，扩大共鸣",
+            "description": "陈念的感应让预见更加清晰，顺势引导这股力量，强化对玄武宗的布局。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "陈念可能暴露位置",
+            "visible_reward": "预见精度提升200%，玄武宗破绽尽显",
+            "risk_hint": "圣宗可能循迹而来",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0678_result_c2_embrace_1",
+                  "content": "陈机顺着那股血脉共鸣，将意识延伸至遗迹深处。陈念的身影模糊出现在预言之境——她正被无数锁链束缚，却仍拼命向他伸出手。命运的锁钥与命运的执棋者，首次在棋盘之外相连。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0678_c2_sever",
+            "text": "强行切断，保护陈念",
+            "description": "立即斩断共鸣，不让陈念暴露在危险之中，即便这意味着放弃这次绝佳的预见机会。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "错失最佳布局时机",
+            "visible_reward": "陈念安全得到保障，兄妹羁绊加深",
+            "risk_hint": "布局进度受阻",
+            "process_label": "舍小保大",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "黑化值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0678_result_c2_sever_1",
+                  "content": "陈机狠心斩断那根共鸣之线。剧痛从心口传来，陈念的身影在预言之境中消散前，他看见她眼角滑落一滴泪。「哥，你又这样……」她的声音如同叹息。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_012",
+        "content": "共鸣断裂的瞬间，第四十九号棋子的异动猛然加剧。韩烈仰天长啸，双目彻底化为血红，他的意识冲破了三道封印——陈机的压制出现了缺口。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_013",
+        "character_id": "char_hanlie",
+        "content": "「原来如此！」韩烈的声音变得低沉而危险，「天青宗那个废物……是你对不对？是你一直在背后操控我！」他猛然转身，目光穿透重重阻碍，直直看向天青宗方向，「陈机——我要亲手拧断你的脖子！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_014",
+        "content": "反噬开始了。陈机感觉到胸口仿佛被无形巨手攥紧，一口鲜血冲上喉头。他按住胸口，指缝间渗出点点猩红——这是命运棋局反噬的代价，也是执棋者必须承受的重量。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_015",
+        "character_id": "char_moxiansheng",
+        "content": "「反噬比预想的严重。」残魂的声音带着罕见的凝重，「他的觉醒程度超乎想象，而且……有第三方力量在推波助澜。有人在帮你，也在害你。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_015b",
+        "content": "第三方？陈机抹去嘴角的血迹，意识重新凝聚向预言之境。他要看清楚，到底是谁在搅动这盘棋——是凌渊？是圣宗？还是那个从未露面的天道意志？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0678_choice_003",
+        "prompt": "反噬发作，但更危险的是第三方的介入——陈机必须决定如何应对。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0678_c3_investigate",
+            "text": "强撑预见，追踪幕后",
+            "description": "以天命值为代价，强行启动完整预见，追溯第三方力量的来源。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值-20，重伤代价",
+            "visible_reward": "看清幕后黑手真容，获得关键情报",
+            "risk_hint": "可能看见不该看的东西",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0678_result_c3_inv_1",
+                  "content": "陈机咬紧牙关，天机录残页疯狂翻动。预见之境如潮水般涌入意识——在层层迷雾之后，他看见了一双眼睛。那双眼睛从未睁开，却分明在注视着他。不是凌渊，不是圣宗，是比这一切都要古老、都要庞大的存在。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0678_c3_retreat",
+            "text": "战略撤退，保存实力",
+            "description": "立即切断预见，压制反噬，先稳固当前布局再做打算。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "放弃追踪第三方",
+            "visible_reward": "保存天命值，布局不崩盘",
+            "risk_hint": "第三方威胁持续存在",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0678_result_c3_ret_1",
+                  "content": "陈机强行关闭预见之门。反噬如潮水般退去，但那种被注视的感觉却挥之不去。他知道，棋盘背后有一双眼睛一直在看着——看着他自以为是地布局，却不知自己也是更大的棋局中一枚棋子。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_016",
+        "content": "与此同时，玄武宗议事大殿。大长老与宗主分坐两侧，中间隔着一道肉眼可见的裂痕。韩烈的觉醒宣言刚刚传来，整个宗门都在震动。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_017",
+        "character_id": "char_lingyuan",
+        "content": "大长老捋须冷笑：「宗主，这就是你一手扶持的天才？连被操控了都不知道，如今觉醒后第一件事不是感恩宗门，而是要去找一个废物报仇？呵，天青宗若真有此人在，我倒要重新评估这个对手了。」",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_018",
+        "content": "宗主面色铁青。他辛苦培养的棋子，不仅被人暗中操控，如今更是成了全宗的笑柄。而更让他愤怒的是，大长老这老狐狸分明在借题发挥，想要趁机夺权。玄武宗内部的裂缝，正在韩烈这一闹之下彻底撕开。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_019",
+        "character_id": "char_lingyuan",
+        "content": "「宗主，韩烈之事暂且不论。」大长老话锋一转，「天青宗那边最近动作频频，据说凌渊那老家伙正在秘密接触魔道势力。若此事为真，我们三大宗门的格局恐怕要重新洗牌了。」",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_020",
+        "content": "陈机透过天机录看到这一幕，嘴角勾起一抹冷笑。大长老与宗主的嫌隙，比他预想的还要深——这正是他三年布局的成果之一。但第三方力量的介入，让他第一次感受到了棋局失控的恐惧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_021",
+        "character_id": "char_moxiansheng",
+        "content": "「你看见了什么？」残魂的声音低沉而谨慎，「能让历代执棋者都感到恐惧的存在……」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_022",
+        "content": "陈机没有回答。他只是静静看着预言之境中那双紧闭的眼睛，心中浮现出一个令他脊背发凉的可能——如果天机录本身就是一个更大的棋局呢？如果他所有的布局，都在按照某个更高的意志推进？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_023",
+        "content": "就在这时，胸口再次剧痛。陈机弯下腰，一口心头血喷出，染红了地上的竹简。血液沿着竹片纹路蔓延，竟缓缓显出一行隐藏的文字——那是陈家祖训中从未出现过的句子：「棋子和执棋者，皆在天道眼中。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0678_024",
+        "character_id": "char_chenji",
+        "content": "陈机盯着那行血字，瞳孔骤缩。他的声音很轻，轻得像是说给自己听：「原来如此……我以为我在布局天下，却不知从一开始，我就是被选中的棋子。」他抬起头，眼中的光芒却比任何时候都要锐利，「但那又如何？棋子，也能吃掉执棋者。」",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0678_025",
+        "content": "夜色深沉，天青宗的灯火渐次熄灭。只有城墙之上，一个浑身浴血的少年独立风中，手中竹简血迹斑驳。他的嘴角带着笑，眼底却藏着从未有过的寒意。命运棋局才刚刚开始，而他，已经决定掀翻整张棋盘。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

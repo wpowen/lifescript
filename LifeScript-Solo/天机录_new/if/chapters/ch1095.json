@@ -1,0 +1,557 @@
+{
+  "id": "天机录_ch1095",
+  "book_id": "天机录",
+  "number": 1095,
+  "title": "观测者临朝·终",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机独自登上皇都最高处，天机录最后一页的金色文字缓缓显现——那是二十五日倒计时的开始，也是观测者与他终极对决的序章。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1095_001",
+        "content": "晨曦初破，金銮殿上的硝烟尚未散尽。\n\n陈机站在白玉阶前，望着满目疮痍的皇都，心中却出奇地平静。街道上，百姓们已经开始自发地清理废墟，重建家园。有人在哭，有人在笑，更多的是沉默地搬运着残砖断瓦。\n\n这就是他想要的新秩序吗？观测者的规则，弱肉强食，天道无情。可此刻他看到的，却是劫后余生的人们眼中那抹劫后余生的希望。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_002",
+        "content": "“大人，天青宗韩烈求见。”侍从的声音打断了陈机的思绪。\n\n陈机嘴角微微上扬。韩烈，那个被自己反复压制却越败越强的玄武宗第一天才，终于在这个时候找上门来了。他倒是想看看，这位“宿敌”此番前来，又准备了怎样的说辞。\n\n“让他进来。”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_003",
+        "character_id": "char_hanlie",
+        "content": "韩烈大步流星走入殿中，浑身煞气未消，眼神却出奇地复杂。他单膝跪地，声音沙哑：“观测者，陈机——不，应该称呼你什么？天机录之主？”\n\n陈机居高临下看着这位曾经的宿敌，淡然道：“你想说什么？”\n\n韩烈猛然抬头，眼中闪过屈辱与不甘：“二十五年！我追了你二十五年！每一次，我以为终于能碾压你的时候，你都——你都能绝地翻盘！”",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_004",
+        "content": "韩烈的话如同一记重锤，敲在陈机心间。二十五年的追逐，那个曾经只会用蛮力的少年天才，如今已经成长到能与观测者分庭抗礼的存在。\n\n“你今日来，是想做一个了断？”陈机问。\n\n韩烈摇头，站起身来，眼中竟然浮现出一丝笑意：“不，我来告诉你一件事——凌渊，已经与维度入侵者的残余势力会合。天道守护者联盟，从今日起，正式成为叛军。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_005",
+        "prompt": "韩烈带来的情报至关重要，你该如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_005a",
+            "text": "接受韩烈的结盟提议",
+            "description": "曾经的宿敌如今主动递来橄榄枝，或许这正是化敌为友的时机。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要放弃部分独立性",
+            "visible_reward": "获得玄武宗第一天才的战力支援",
+            "risk_hint": "韩烈的忠诚度存疑，可能在关键时刻反水",
+            "process_label": "握手言和",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "名望",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005a_1",
+                  "content": "韩烈眼中闪过一丝惊讶，随即化作决然。他伸出布满老茧的手掌，与陈机相握。“好！从今日起，我韩烈的拳头，就是你的后盾！”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hanlie_alliance"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "韩烈正式结盟",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_005b",
+            "text": "保持距离，仅接受情报",
+            "description": "宿敌就是宿敌，二十五年的恩怨不是一句话能抹平的。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "失去潜在强援",
+            "visible_reward": "保持战略自主权，不受牵制",
+            "risk_hint": "决战时将独自面对更多敌人",
+            "process_label": "冷淡应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 150
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005b_1",
+                  "content": "陈机淡淡一笑：“情报我收下了。至于结盟——”他顿了顿，“等你在决战中证明自己的诚意再说。”韩烈面色铁青，却还是拱手离去。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_005c",
+            "text": "试探韩烈的真实目的",
+            "description": "宿敌突然示好，背后必有隐情。先摸清底细再说。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能激怒韩烈",
+            "visible_reward": "获取更深层的情报",
+            "risk_hint": "可能错过结盟窗口",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 100
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005c_1",
+                  "content": "陈机眼神微眯：“韩烈，你我争斗二十五年，你何时学会主动递橄榄枝了？说吧，你到底想要什么？”韩烈脸色微变，随即大笑：“果然瞒不过你！我想知道——陈念在哪里。”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_006",
+        "content": "陈念的名字如同一把利刃，直直刺入陈机心底最柔软的地方。他的瞳孔骤然收缩，面色却依然平静：“你问她做什么？”\n\n韩烈深吸一口气，眼中浮现出复杂的情绪：“因为凌渊抓走了她。她是——天命锁钥。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_007",
+        "character_id": "char_chenji",
+        "content": "陈机猛然站起，一股滔天怒意从他身上爆发出来。金銮殿中的空气骤然凝固，地面开始龟裂。\n\n“你再说一遍。”他的声音低沉得可怕。\n\n韩烈毫不退缩：“凌渊与维度入侵者合作，需要一个'锚点'来稳定维度裂缝。陈念——你的妹妹，就是那个锚点。”",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_008",
+        "content": "陈机深吸一口气，强行压下翻涌的情绪。记仇不莽，这是他最大的优点。凌渊，你敢动陈念——这笔账，他记下了。\n\n“二十五年。”陈机突然开口，声音恢复了平静，“你追了我二十五年，从来没赢过。但这一次——”他抬起头，眼中闪过一抹厉芒，“我也不会让你失望。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_009",
+        "content": "韩烈微微一怔，随即露出一个释然的笑容。他转身离去，走到门口时停下脚步：“陈机，你我之间的胜负，就在这最后一战。”\n\n殿门关闭，陈机独自站在空旷的大殿中。墨先生的声音在他脑海中响起：“主人，陈念的确在凌渊手中。你——做好准备了吗？”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_010",
+        "prompt": "陈念被凌渊控制，你需要做出决定。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_010a",
+            "text": "立即营救陈念",
+            "description": "妹妹是他最大的软肋，哪怕布局全盘打乱，也要救她。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "打乱全部战略部署",
+            "visible_reward": "救出陈念，解除心结",
+            "risk_hint": "可能正中凌渊下怀",
+            "process_label": "立即行动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -200
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010a_1",
+                  "content": "陈机猛然起身，眼中闪过决然之色：“备马！我要亲自去——”话音未落，一道熟悉的声音从殿外传来：“且慢！”苏青瑶一身劲装，大步走入。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chenian_rescue"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定营救陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_010b",
+            "text": "按原计划进行决战",
+            "description": "大局为重。救出陈念的前提是先终结这场乱世。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "陈念将承受更多痛苦",
+            "visible_reward": "保持战略优势，为最终胜利奠基",
+            "risk_hint": "可能被凌渊用作要挟筹码",
+            "process_label": "隐忍布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010b_1",
+                  "content": "陈机缓缓坐回椅子，双手紧握成拳。“告诉凌渊，”他的声音冰冷，“二十五年后，我会亲自去接她。届时，我会让他后悔今日的选择。”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "strategic_calm"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择大局为重",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_010c",
+            "text": "双线并行，暗中布局",
+            "description": "既不放弃陈念，也不打乱决战计划。用天机录找到两全之法。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "找到营救与决战的最优解",
+            "risk_hint": "天命值大量消耗可能影响决战",
+            "process_label": "消耗天命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -35
+              },
+              {
+                "stat": "谋略",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010c_1",
+                  "content": "陈机闭目，天机录残页在脑海中展开。一幅模糊的画面浮现——陈念被囚于某处，而那个地方，与决战的战场竟在同一座山脉之中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "dual_line"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": "天机录预见陈念位置",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_011",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶走到陈机面前，递上一封密信：“凌渊的动向，我已经查清了。他盘踞在天机山脉的主峰，那里正是维度裂缝最不稳定的地方。”\n\n她的目光落在陈机脸上，声音罕见地柔和了几分：“无论你做什么决定，我都会站在你身边。”",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_012",
+        "content": "陈机接过密信，目光复杂地看着苏青瑶。这位天青宗内门首席，曾经无数次试图揭开他的真面目，如今却成为了他最坚定的守护者。\n\n共命——那个满好感度解锁的特殊buff，此刻正隐隐散发着温暖的光芒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_013",
+        "character_id": "char_yeqing",
+        "content": "殿外，一道黑色身影飘然而至。夜清，魔道圣女，一袭黑衣裹着玲珑曲线，面上却带着前所未有的凝重。\n\n“观测者，”她的声音清冷，“维度入侵者的残余已经与凌渊彻底合流。他们正在激活天机山脉深处的远古祭坛——那是要将整个皇都吞噬进维度的阴谋。”",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_014",
+        "content": "陈机闭目沉思。所有的线索，在这一刻全部串联起来。龟壳神器指向的天机山脉， benefactor 留下的血脉觉醒方法，命运双生子的羁绊——一切都指向同一个地方。\n\n他猛然睁眼：“传我命令——三日后，朝会公布决战日期。我要让全天下都知道，观测者的新秩序，将以何种姿态降临。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_015",
+        "prompt": "决战日期已定，你需要选择如何面对这最后的二十五天。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_015a",
+            "text": "迎接命运",
+            "description": "以观测者的身份，堂堂正正迎接这场宿命之战。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "承受所有压力",
+            "visible_reward": "名望大增，万民归心",
+            "risk_hint": "可能暴露更多弱点",
+            "process_label": "正面迎敌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 500
+              },
+              {
+                "stat": "魅力",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015a_1",
+                  "content": "苏青瑶和夜清对视一眼，同时拱手：“愿随观测者赴汤蹈火！”陈机看着这两位性格迥异的女子，心中涌起一股暖意。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "embrace_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定正面迎接命运",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_015b",
+            "text": "改写命运",
+            "description": "利用天机录的力量，预见所有变数，将命运掌握在自己手中。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "大量消耗天命值",
+            "visible_reward": "获得关键情报，掌握战场主动权",
+            "risk_hint": "天命值过低可能导致预见失准",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -60
+              },
+              {
+                "stat": "谋略",
+                "delta": 400
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015b_1",
+                  "content": "天机录残页在陈机掌心浮现，金色文字如活物般蠕动。一幅又一幅画面涌入脑海——凌渊的陷阱，维度裂缝的弱点，以及……陈念所在的位置。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rewrite_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 80
+            },
+            "memory_label": "天机录展现关键情报",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_015c",
+            "text": "超越命运",
+            "description": "不走前人老路，开创属于自己——属于观测者的全新道路。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "需要承担未知风险",
+            "visible_reward": "可能获得突破性力量",
+            "risk_hint": "突破常规意味着可能失控",
+            "process_label": "突破极限",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 600
+              },
+              {
+                "stat": "黑化值",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015c_1",
+                  "content": "墨先生的残魂在陈机体内震颤：“好！主人，你终于迈出这一步了！天机录完整版的最后一页，我将提前为你解封！”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "transcend_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录完整版解封",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_016",
+        "content": "三日后，朝会。\n\n金銮殿上，陈机身着观测者的黑金长袍，高坐于龙椅之侧。下方，百官肃立，目光中带着敬畏与期待。\n\n“诸位，”陈机的声音在大殿中回荡，“二十五日后，本座将在天机山脉，与凌渊展开最终决战。此战，关乎天下苍生，关乎新秩序的存亡。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_017",
+        "character_id": "char_chenji",
+        "content": "陈机缓缓站起，黑金长袍在晨风中猎猎作响。他的目光扫过群臣，声音洪亮而坚定：“二十五日后，本座将在天机山脉，与凌渊展开最终决战。此战——关乎天下苍生之存亡！”\n\n话音落下，金銮殿中一片寂静。随即，百官齐声高呼：“观测者万岁！新秩序万岁！”",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_018",
+        "content": "朝会散去，陈机独自登上皇都最高处——摘星楼。这座百丈高塔，是观测者权力的象征，也是整个皇都的至高点。\n\n他站在楼顶，俯瞰着脚下这座劫后余生的都城。街道上，烟火气正在回归；远山处，尚未闭合的维度裂缝如同一道狰狞的伤疤，悬浮在天际。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_019",
+        "content": "风吹过陈机的发梢，带来一丝凉意。他摊开手掌，天机录残页浮现其上。金色文字如活物般蠕动，一行从未见过的句子缓缓显现：\n\n「第1095章 倒计时25日——观测者，你准备好了吗？」\n\n陈机嘴角勾起一抹淡笑：“准备好？从我得到你的那一刻起，我就一直在准备。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_020",
+        "content": "天机录仿佛感应到了他的意志，金色文字骤然变化，化作一行新的预言：\n\n「命运的棋盘已至终局。观测者陈机，你将以何种姿态，书写最后一页？」\n\n陈机仰头望向那道狰狞的维度裂缝，眼中闪过一抹决然。二十五日——他已经等得太久了。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

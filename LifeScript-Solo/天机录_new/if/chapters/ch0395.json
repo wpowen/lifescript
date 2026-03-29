@@ -1,0 +1,392 @@
+{
+  "id": "天机录_ch0395",
+  "book_id": "天机录",
+  "number": 395,
+  "title": "棋局之辩",
+  "is_paid": true,
+  "next_chapter_hook": "夜清那双幽深的眸子直视着他，声音低沉如蛊：「如果……有一个人，能让你跳出这棋盘之外，你敢不敢赌？」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0395_001",
+        "content": "夜色如墨，寒风裹挟着山间的湿气。陈机独坐于断崖之畔，手中那枚玉简已被他攥得指节发白。玉简上的文字如烙铁般烙印在他脑海——「陈氏血脉，世代皆为棋子」。他陈机，这些年的挣扎与筹谋，难道从未逃出过棋盘之外？愤怒如野火般在胸腔中燃烧，烧得他五脏六腑都在颤抖。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_002",
+        "character_id": "char_yeqing",
+        "content": "「你一个人坐在这里，是想跳下去，还是在等什么人？」夜清的声音从黑暗中传来，带着几分戏谑。她款步走近，魔道圣女的气息在夜色中若隐若现，「天机录的气息波动得厉害，发生了什么？」",
+        "emotion": "关切中带着审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_003",
+        "content": "陈机抬起头，眼中的怒火尚未熄灭，却被他强行压下，只余下一片深不见底的寒意。他将玉简递向夜清，声音平静得可怕：「看看这个。」夜清接过玉简，神识探入其中的瞬间，她的瞳孔骤然收缩——那行字，她看得清清楚楚。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0395_004",
+        "prompt": "陈机决定向夜清展示更多天机录中的真相，但他需要决定展示的程度。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0395_004_a",
+            "text": "展示完整预言",
+            "description": "让夜清看到天机录中关于陈氏命运的全部记录，包括那些被刻意隐去的真相。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "消耗夜清的信任筹码",
+            "visible_reward": "获得夜清更深的理解与可能的帮助",
+            "risk_hint": "夜清可能因此知道太多，成为不稳定因素",
+            "process_label": "向夜清展示完整真相",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0395_result_004_a_1",
+                  "content": "陈机深吸一口气，将天机录残页取出，一段光影在二人之间缓缓展开。那是陈氏历代先祖的画面——他们或挣扎，或反抗，或顺从，最终都倒在同一个终点。夜清的呼吸变得急促起来。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "revealed_full_truth"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0395_004_b",
+            "text": "只展示关键片段",
+            "description": "只让夜清看到关于“棋子”的部分，保留其他关键信息作为底牌。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "夜清可能觉得有所保留",
+            "visible_reward": "保持信息优势，不完全暴露底牌",
+            "risk_hint": "夜清可能因此产生疑虑",
+            "process_label": "有选择地展示部分真相",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0395_result_004_b_1",
+                  "content": "陈机微微眯眼，只将玉简中的那段话以神识传递给夜清。光影一闪而过，他及时收住，只给她看了冰山一角。夜清微微皱眉，似有不满。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "partial_reveal"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_005",
+        "character_id": "char_yeqing",
+        "content": "夜清看完，沉默了许久。当她再次开口时，声音里带着一丝陈机从未听过的凝重：「陈氏世代为棋……你知道这意味着什么吗？」她抬起头，那双幽深的眸子里闪烁着复杂的光芒，「意味着操控你们的那只手，比你想象的更大。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_006",
+        "character_id": "char_chenji",
+        "content": "陈机冷笑一声，笑容里满是自嘲：「我还以为自己是执棋之人，原来不过是在别人的棋盘上自以为是。」他的手缓缓握紧，指甲深深嵌入掌心，鲜血顺着指缝渗出，「可笑，可笑至极！」",
+        "emotion": "愤怒与自嘲交织"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_007",
+        "character_id": "char_yeqing",
+        "content": "「可笑？」夜清忽然轻笑出声，那笑容里带着几分说不清道不明的意味，「陈机，你知道魔道主帅是谁吗？」她顿了顿，声音压得极低，「他也是'双生子'之一——和你一样，被命运选中的棋子。」",
+        "emotion": "揭露重大秘密"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0395_008",
+        "prompt": "魔道主帅竟然也是命运的棋子？这个信息太过震撼，陈机需要决定如何应对。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0395_008_a",
+            "text": "追问双生子详情",
+            "description": "深入询问夜清关于“双生子”的信息，试图拼凑更多真相。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露自己的急切",
+            "visible_reward": "获得更多关于命运棋局的线索",
+            "risk_hint": "可能暴露自己的弱点",
+            "process_label": "深入追问命运真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0395_result_008_a_1",
+                  "content": "陈机眼中精光一闪：「双生子？你知道多少？」夜清感受到他话语中的急切，嘴角微微上扬：「急什么，这个秘密……我可以用它来换你一个承诺。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0395_008_b",
+            "text": "保持冷静试探",
+            "description": "按捺住内心震动，以旁观者姿态试探夜清知道多少。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错过深入了解的机会",
+            "visible_reward": "保持谈判主动权，不暴露底牌",
+            "risk_hint": "夜清可能因此不再透露更多",
+            "process_label": "以退为进试探夜清",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0395_result_008_b_1",
+                  "content": "陈机收起怒意，神色反而平静下来。他似笑非笑地看着夜清：「你知道得不少。不过……魔道圣女为何会告诉我这些？」那眼神仿佛在说：我知道你有目的。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_009",
+        "content": "夜清轻笑一声，笑容里带着几分苦涩：「因为我们都是棋子啊。」她伸出手，在月光下那只手白皙如玉，却隐约可见根根青筋，「你以为圣宗控制我只是用毒？不，是用'命'——我的命，早就不是我自己的了。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_010",
+        "character_id": "char_chenji",
+        "content": "陈机沉默了。夜清的话如同一把锋利的刀，剖开了他一直回避的真相。他缓缓站起身，望着远处天青宗的方向，声音沙哑：「我曾以为，只要我足够聪明，足够隐忍，就能跳出这棋局。」他苦笑一声，「原来，从一开始就没有棋盘内外之分。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_011",
+        "content": "「但有一件事你还没想通。」夜清走近他，声音低沉，「既然都是棋子，那为什么偏偏是你拿到了天机录？为什么是我能听懂那段预言？」她的眼睛在月光下闪烁着异样的光芒，「这本身……难道不是一种可能？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0395_012",
+        "prompt": "夜清的话让陈机看到了一丝破局的可能，但这个可能充满未知。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0395_012_a",
+            "text": "接受这个可能",
+            "description": "既然命运给了他们特殊的棋子身份，或许正是为了让他们打破棋局。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能再次被命运愚弄",
+            "visible_reward": "获得破局的理论可能",
+            "risk_hint": "可能是更深的陷阱",
+            "process_label": "接受破局的可能性",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0395_result_012_a_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机转过身，直视夜清的眼睛：「你是说……我们这些棋子，可能本就是棋盘给自己埋的变数？」他的声音带着一丝颤抖，不知是激动还是恐惧，「如果真是这样，那我倒要看看，这棋盘究竟想下什么棋！」",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "accepted_breakthrough_possibility"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0395_012_b",
+            "text": "保持怀疑态度",
+            "description": "这个想法太过乐观，不能轻易相信所谓的“可能性”。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错失真正的破局机会",
+            "visible_reward": "保持理智，不被虚假的希望迷惑",
+            "risk_hint": "可能陷入更深的绝望",
+            "process_label": "质疑这个可能的真实性",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0395_result_012_b_1",
+                  "content": "陈机没有立刻回应，而是陷入深深的沉思。片刻后，他摇了摇头：「这太像陷阱了。命运若真有意志，它为什么要给棋子破局的可能？」他的语气冰冷，「除非……这就是它想要的。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "maintained_suspicion"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_013",
+        "content": "夜清闻言，非但没有生气，反而笑了起来。那笑声在寂静的夜里显得格外清晰，却也带着几分凄凉：「你说得对，陈机。」她的目光变得深邃，「但你有没有想过——如果连怀疑都是被设计好的，那你怀疑或不怀疑，又有什么区别？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_014",
+        "character_id": "char_yeqing",
+        "content": "「所以……」夜清的声音忽然低了下去，带着一丝从未有过的认真，「与其被动地等死，不如主动去撞。哪怕撞得头破血流，至少——」她顿了顿，「至少证明我们还活着。」",
+        "emotion": "坚定中带着期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_015",
+        "content": "陈机沉默了。他看着眼前这个魔道圣女，忽然觉得她和自己竟有几分相似——都是被命运裹挟的棋子，却都不甘于做一枚任人摆布的棋子。夜风拂过，将二人的衣袂吹得猎猎作响。良久，陈机开口：「说吧，你到底想怎么做？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_016",
+        "character_id": "char_yeqing",
+        "content": "夜清的眼中闪过一丝惊喜，随即恢复平静。她深吸一口气，从袖中取出一枚漆黑的令牌，令牌上刻着一个扭曲的符文：「这是我圣宗的禁制核心。如果你能破解它……」她的声音压得极低，「就能切断命运对部分棋子的控制。而你天机录中的墨先生，或许知道剩下的关键。」",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_017",
+        "content": "陈机盯着那枚令牌，瞳孔微缩。这东西的分量他清楚——夜清这是在拿自己的命做筹码。「你就不怕我拿了令牌翻脸不认人？」陈机沉声问道。夜清却笑了，笑容里带着几分释然：「怕啊，但比起继续做棋子……我更想看看，棋盘碎了之后，会是什么样的风景。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_018",
+        "content": "陈机伸出手，指尖触及那枚令牌的瞬间，一股冰凉的气息顺着经脉直冲心脉。他看到了无数光点——那是命运之线，牵连着这天底下无数生灵。而在那些光点之中，有一条线格外耀眼，它连接着两个方向：一个是他，另一个……是一个模糊的身影。那身影的轮廓，像极了他失踪多年的妹妹——陈念。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0395_019",
+        "content": "「陈念……」陈机喃喃自语，声音里带着一丝颤抖。那条线如此脆弱，仿佛随时都会断裂，却又韧性十足地连接着命运的两端。夜清察觉到他的异样，眉头微皱：「你看到了什么？」陈机没有回答，只是紧紧攥住那枚令牌，指节因用力而泛白。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0395_020",
+        "character_id": "char_yeqing",
+        "content": "夜清那双幽深的眸子直视着他，声音低沉如蛊：「如果……有一个人，能让你跳出这棋盘之外，你敢不敢赌？」夜风骤起，吹散了二人之间最后一丝距离。远处的天青宗灯火阑珊，而更远的地方，魔道大军压境的号角已经隐隐传来。陈机握紧令牌，眼中闪烁着复杂的光芒——愤怒、不甘、还有一丝从未熄灭的希望之火。",
+        "emotion": "期待中带着试探"
+      }
+    }
+  ]
+}

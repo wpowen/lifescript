@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch0030",
+  "book_id": "天机录",
+  "number": 30,
+  "title": "Awakening of Heavenly Secrets",
+  "is_paid": false,
+  "next_chapter_hook": "Just as Chen Ji thought he had successfully deceived everyone, a cold gaze pierced through the layers of clouds and fell directly onto his brow center—it was the gaze of the Heavenly Eye.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0030_001",
+        "content": "The aged voice from above the clouds exploded like thunder, and the commotion at the Tianqing Sect Mountain Gate suddenly froze. Everyone looked up to see a white-haired elder stepping through the void, surrounded by pale golden spiritual light, his aura as deep as an abyss and vast as the sea, pressing down so hard that everyone present could barely breathe. Chen Ji stood at the very end of the crowd, gazing at that figure, the corners of his mouth lifting slightly—the old thing has finally come.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_002",
+        "character_id": "char_lingyuan",
+        "content": "This old man is Ling Yuan. Today, I make an exception to take a servant disciple into the sect.",
+        "白发老者俯视全场，目光在陈机身上停留了一瞬，\"此子与老夫有缘。\"": "emotion\": \"威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_003",
+        "content": "An uproar erupted in the crowd. Su Qingyao, the Inner Disciple Senior Fellow, frowned tightly, gazing at that servant disciple standing at the very back who appeared harmless. She always felt there was something indefinable about this person, making her instinctively wary. Chen Ji sensed that scrutinizing gaze, his heart tightening, yet on the surface he wore an expression of being overwhelmed by the unexpected favor, head bowed, not daring to meet anyone's eyes.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_004",
+        "character_id": "char_suqingyao",
+        "content": "\"Elder Ling Yuan,\" Su Qingyao stepped forward, her voice cold and clear, \"for three hundred years you have taken no disciples, yet today you wish to take in a废物? Pardon my frankness, but this matter likely violates the rules.\"",
+        "emotion": "质疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_005",
+        "content": "Ling Yuan smiled faintly, his gaze sweeping over Su Qingyao: \"When this old man acts, what need have I to explain myself to a junior like you?\" The pressure abruptly intensified. Su Qingyao grunted, retreating several steps. Chen Ji kept his head bowed, a cold glint flickering in his eyes—the old thing is bullying her, that's slapping my face. This debt, I've记下了.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice01",
+        "prompt": "Faced with Ling Yuan's dominance and Su Qingyao's questioning, Chen Ji must make a choice—continue to endure, or strike back slightly?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0030_c1_忍",
+            "text": "Swallow this breath",
+            "description": "Continue playing the废物, bow obediently to Ling Yuan's arrangements, expose no edge whatsoever.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be further despised",
+            "visible_reward": "Safely lurk by Ling Yuan's side",
+            "risk_hint": "Su Qingyao may become even more suspicious",
+            "process_label": "陈机选择了隐忍",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c1_忍_1",
+                  "content": "Chen Ji immediately dropped to his knees, voice trembling: \"Disciple, disciple kowtows to thank Elder Ancestor's厚爱...\" His acting was flawless. Even Su Qingyao couldn't help but show a trace of disappointment—a truly useless wretch beyond salvation. Ling Yuan nodded in satisfaction, turned to lead him away.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c1_反击",
+            "text": "Stab him secretly with words",
+            "description": "Retaliate with words, neither exposing strength nor giving Ling Yuan a psychological thorn.",
+            "satisfaction_type": "嘴毒打脸",
+            "visible_cost": "May attract more attention",
+            "visible_reward": "Su Qingyao may look at him with new eyes",
+            "risk_hint": "Ling Yuan may grow suspicious",
+            "process_label": "陈机决定小小反击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0030_result_ch0030_c1_反击_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji raised his head, a flash of brilliance in his eyes, then vanished. He murmured in the direction of Su Qingyao: \"Senior Su is right, disciple truly is a废物... so that's why Elder Ancestor said he's taking废物 into the sect walls.\" Though soft, everyone present heard it clearly.",
+                  "emotion": "狡黠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_006",
+        "content": "In that instant of stunned silence, the fragment in Chen Ji's怀中的残页 suddenly burned scorching hot. An unprecedented power exploded from his chest, flooding into his limbs and meridians. His vision went black, countless fragments of light flooding into his mind—visions of the next three hours. The violent headache came like a tide, nearly toppling him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_007",
+        "content": "【Tianji Record · Fragment Activated】\n【Foresight Ability Unlocked: Three-Hour Precognition】\n【Heavenly Fate Consumption: -5】\n【Warning: First activation, cost doubled】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_008",
+        "content": "Chen Ji endured the agony, searching through those fragmented images for useful information. He saw Ling Yuan leading him into a secret stone chamber, saw bizarre runes carved on the walls, saw the fleeting killing intent in Ling Yuan's eyes when he turned—the old thing,果然没安好心！His foresight was blurry and hurried, but enough to give him an idea of what was coming.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "At that moment, an ice-cold intention pierced through the void and exploded directly in Chen Ji's mind: 「Interesting... another chess piece awakens.」The voice carried no emotion whatsoever, yet it made every hair on Chen Ji's body stand on end, as if an ancient fierce beast was staring at its prey.",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_010",
+        "content": "Chen Ji's face instantly turned ashen, but he bit his tongue hard, using the pain to force himself to stay alert. Mo Xiansheng's remnant soul trembled in the depths of his consciousness: \"Be careful, that's the Heavenly Eye! It's watching you!\" Chen Ji was terrified in his heart, yet dared not show it. He pretended to be physically exhausted, staggering backward a few steps.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_011",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao keenly noticed Chen Ji's异常, stepping forward quickly: \"What's wrong with you? Why does your complexion look so awful?\" Her gaze was sharp as a blade, scanning Chen Ji's face repeatedly, seemingly wanting to find some flaw in his eyes. Chen Ji勉强挤出一个虚弱的笑容: \"Nothing, nothing... perhaps it's just too exciting...\"",
+        "emotion": "关切"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice02",
+        "prompt": "Su Qingyao's questioning put Chen Ji in a dilemma—continue pretending weakness to gain sympathy, or seize the chance to test her attitude?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "ch0030_c2_装弱",
+            "text": "Continue playing weak",
+            "description": "Use Su Qingyao's sympathy,借口身体不适 to first leave Ling Yuan's sight.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the opportunity to learn about Ling Yuan",
+            "visible_reward": "Safely escape, buy time for next move",
+            "risk_hint": "Su Qingyao's suspicion will deepen",
+            "process_label": "陈机决定装弱脱身",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c2_装弱_1",
+                  "content": "Chen Ji顺势supported his forehead, swaying: \"Elder Ancestor... disciple suddenly feels terribly dizzy...\" Ling Yuan frowned slightly, gave him a cold glance, waved his hand: \"Fine, take him away to rest first.\" As Chen Ji was helped away, his peripheral vision caught Su Qingyao's thoughtful expression,心里暗叹: Now she's even more suspicious.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c2_试探",
+            "text": "Seize the chance to test",
+            "description": "Use身体不适as an excuse,请求Su Qingyao to escort him, observing her true attitude toward him.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May be seen through by Su Qingyao",
+            "visible_reward": "Gain opportunity to be alone with Su Qingyao",
+            "risk_hint": "Ling Yuan may be displeased",
+            "process_label": "陈机决定试探苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0030_result_ch0030_c2_试探_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji pretended to stumble, falling toward Su Qingyao: \"Senior Su... could you help disciple...\" Su Qingyao下意识伸手接住他, the distance between them suddenly closing. She lowered her head to look at this seemingly frail servant disciple in her arms, that strange feeling growing stronger—this person's eyes, too clear, too bright to belong to a废物.",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_012",
+        "content": "The headache lessened slightly, yet Chen Ji felt unprecedented weakness—the backlash from the massive Heavenly Fate consumption. He暗暗心惊: Just one foresight consumed ten points of Heavenly Fate, if I use it several more times... Mo Xiansheng's voice echoed in the depths of his consciousness: \"Don't be impatient, the price of the Tianji Record is fair. The more you foresee, the heavier the calamities you court.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_013",
+        "content": "Ling Yuan's voice came from the distance: \"Take him to the Meditation Pavilion to rest.\" Two inner disciples stepped forward, gripping Chen Ji's arms and leading him away from the crowd. As he passed Su Qingyao, Chen Ji suddenly murmured words only she could hear: \"Senior Su, beware Elder Ancestor's stone chamber.\" Su Qingyao's pupils contracted sharply. Before she could question, Chen Ji had already been taken away.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_014",
+        "content": "Night deepened. Chen Ji lay on the bed in the Meditation Pavilion, eyes closed, sorting through those blurry foresight images in his mind. He saw Ling Yuan cultivating some sinister technique in the stone chamber, saw Xuanwu Sect's Han Lie appearing near the Tianqing Sect, and also saw... a young girl figure imprisoned by chains, hazy, like Chen Nian. His heart tightened fiercely.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_015",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's phantom emerged from the fragment, expression grave: \"Boy, you've landed in big trouble. The Heavenly Eye has noticed you. From now on, every step you take will be watched by it.\" Chen Ji's eyes snapped open, voice hoarse: \"So what? If it wants to play chess, I'll play along.\" Mo Xiansheng stared, then suddenly laughed: \"Good, you have guts.\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_016",
+        "content": "A faint footsteps suddenly came from outside the window. Chen Ji immediately concealed his qi, pretending to sleep. The visitor lingered at the door for a moment, seemingly hesitating whether to enter. Chen Ji recognized Su Qingyao's aura from her breathing—she truly hasn't given up investigating. After a moment, the footsteps retreated into the distance. Only then did Chen Ji relax, yet grew even more vigilant: This woman, too sharp.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice03",
+        "prompt": "Faced with Su Qingyao's步步紧逼, Chen Ji needs to make a decision—take the initiative to resolve her suspicions, or continue passive defense waiting for the right moment?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0030_c3_主动",
+            "text": "Proactively approach Su Qingyao",
+            "description": "Tomorrow morning, seek out Su Qingyao proactively, use half-truth rhetoric to dissolve her wariness, possibly even develop her into a secret ally.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Requires精心设计话术",
+            "visible_reward": "Gain a powerful inside agent",
+            "risk_hint": "May backfire",
+            "process_label": "陈机决定主动出击",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c3_主动_1",
+                  "content": "Chen Ji had his plans figured out. Instead of letting Su Qingyao track him like a hunter, better to proactively guide her gaze, making her a piece in his scheme. After all, he needed to oppose Ling Yuan, oppose the Heavenly Eye—having one more smart person around was better than having one less. Of course, all of this had to be built on the premise of not exposing the Tianji Record.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c3_防守",
+            "text": "Continue passive defense",
+            "description": "Maintain the status quo, let Su Qingyao continue suspecting but find no evidence, use time to wear down her patience.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the chance to win her over",
+            "visible_reward": "Maintain the safety of the status quo",
+            "risk_hint": "Su Qingyao's suspicion will continue accumulating",
+            "process_label": "陈机决定继续隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c3_防守_1",
+                  "content": "Chen Ji turned over, deciding to暂时按兵不动. Su Qingyao was clever, but clever people often overthink. As long as he didn't reveal obvious flaws, she would eventually walk into a dead end from over-analysis. Of course, if she really discovered something... Chen Ji's眼神暗了暗, then he wouldn't hesitate to辣手摧花.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_017",
+        "content": "Deep night fell. Suddenly, an uproar came from outside the Meditation Pavilion. Chen Ji listened intently, faintly hearing someone shout \"刺客!\" He sat up abruptly, an ominous premonition surging in his heart—Han Lie! The scene from his foresight was coming true! Xuanwu Sect's talented disciple had actually broken into the Tianqing Sect in the middle of the night.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_018",
+        "content": "Firelight blazed beyond the window, shouts and clamor rising and falling. Through the window crack, Chen Ji saw a domineering figure charging through the crowd unhindered, unstoppable. It was indeed Han Lie, the one he had foreseen—a martial fanatic who crushed everything with pure strength. Han Lie's gaze swept across the Meditation Pavilion, suddenly grinning: \"废物, heard you're Ling Yuan's disciple now? Let老子come test your mettle!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_019",
+        "content": "Chen Ji didn't panic; instead, a playful smile appeared on his face. Han Lie arrived earlier than he foresaw—looks like fate doesn't completely follow the Tianji Record's trajectory. Unhurried, he stood up, pushed open the door, and called out clearly to that mountain-like approaching figure: \"Senior Han, visiting in the dead of night—for what purpose?\" His voice was extraordinarily calm, forming a stark contrast with the chaotic atmosphere around him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_020",
+        "character_id": "char_hanlie",
+        "content": "Han Lie roared with laughter, his massive palm already slapping toward Chen Ji: \"What purpose? Of course to beat you to death!\" That overwhelming spiritual pressure rushed over like mountains and seas, yet Chen Ji stood unmoved. A golden light flashed in his pupils—the Tianji Record activated again. Although he knew Han Lie wouldn't succeed in the next three hours, he couldn't help calculating the optimal dodge timing and counterattack angles.",
+        "emotion": "狂傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_021",
+        "content": "Just as Han Lie's attack was about to land, a blade of sword light slashed across the sky, forcibly deflecting that massive palm. Su Qingyao in white robes stood before Chen Ji, sword slanted toward Han Lie: \"Han Lie, you dare动手 at the Tianqing Sect?\" Her voice was cold as freezing ice, yet the hand gripping the sword trembled slightly—Han Lie's strength far exceeded her imagination. Chen Ji gazed at that slender silhouette, a complex emotion surging in his heart.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_022",
+        "content": "【Heavenly Fate: 85/100】\n【Warning: External threat detected, recommend user assess risk】\n【Tianji Record Fragment Resonance: 12%】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_023",
+        "content": "Chen Ji took a deep breath, making his decision. He gently patted Su Qingyao's shoulder, voice calm: \"Senior Su, thank you. But this is a matter between him and me.\" Su Qingyao spun around sharply, only to see unprecedented confidence and composure in Chen Ji's eyes. In that moment, she finally confirmed her suspicion—this废物, is no ordinary person hidden in a pond.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_024",
+        "content": "Han Lie, seeing this, was far from angry—he excitedly beamed: \"Hahahaha! Finally showing your true colors?\" His spiritual pressure exploded, the Xuanwu Sect's sect-founding technique 《Xuanwu Battle Body》 pushed to its absolute limit. Chen Ji stood with hands behind his back, under that earth-shaking momentum and pressure, his robes billowing violently, yet he never retreated a single step. At this moment, everyone watching realized—this servant disciple, was about to create a miracle.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

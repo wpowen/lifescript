@@ -63,6 +63,21 @@ enum SoloTheme {
                 heroStart: Color(red: 0.45, green: 0.83, blue: 0.72),
                 heroEnd: Color(red: 0.18, green: 0.46, blue: 0.43)
             )
+        case .oracleJade:
+            return SoloPalette(
+                background: Color(red: 0.02, green: 0.06, blue: 0.09),
+                backgroundAlt: Color(red: 0.03, green: 0.11, blue: 0.15),
+                surface: Color(red: 0.06, green: 0.13, blue: 0.17),
+                surfaceRaised: Color(red: 0.10, green: 0.18, blue: 0.23),
+                gold: Color(red: 0.96, green: 0.83, blue: 0.46),
+                crimson: Color(red: 0.86, green: 0.44, blue: 0.30),
+                jade: Color(red: 0.34, green: 0.86, blue: 0.78),
+                ink: Color(red: 0.95, green: 0.98, blue: 0.98),
+                warmInk: Color(red: 0.82, green: 0.94, blue: 0.91),
+                muted: Color.white.opacity(0.68),
+                heroStart: Color(red: 0.30, green: 0.84, blue: 0.78),
+                heroEnd: Color(red: 0.12, green: 0.34, blue: 0.49)
+            )
         case .royalPlum:
             return SoloPalette(
                 background: Color(red: 0.05, green: 0.03, blue: 0.08),
@@ -135,6 +150,8 @@ enum SoloTheme {
             return gold
         case .moonJade:
             return jade
+        case .oracleJade:
+            return jade
         case .royalPlum:
             return crimson
         case .sapphireMist:
@@ -153,7 +170,7 @@ struct SoloBackdrop: View {
         if reduceMotion {
             staticView.ignoresSafeArea()
         } else {
-            TimelineView(.animation(minimumInterval: 0.05)) { tl in
+            TimelineView(.animation(minimumInterval: 0.25)) { tl in
                 let t = tl.date.timeIntervalSinceReferenceDate
                 dynamicView(t: t)
             }
@@ -215,6 +232,7 @@ struct SoloBackdrop: View {
         switch SoloStoryConfig.branding.palettePreset {
         case .ashCrimson:   Color(red: 0.06, green: 0.02, blue: 0.05)
         case .moonJade:     Color(red: 0.02, green: 0.05, blue: 0.07)
+        case .oracleJade:   Color(red: 0.01, green: 0.06, blue: 0.10)
         case .royalPlum:    Color(red: 0.05, green: 0.02, blue: 0.09)
         case .emberGold:    Color(red: 0.07, green: 0.03, blue: 0.03)
         case .sapphireMist: Color(red: 0.02, green: 0.03, blue: 0.09)
@@ -225,6 +243,7 @@ struct SoloBackdrop: View {
         switch SoloStoryConfig.branding.palettePreset {
         case .ashCrimson:   Color(red: 0.12, green: 0.03, blue: 0.06)
         case .moonJade:     Color(red: 0.02, green: 0.08, blue: 0.12)
+        case .oracleJade:   Color(red: 0.01, green: 0.10, blue: 0.16)
         case .royalPlum:    Color(red: 0.10, green: 0.02, blue: 0.16)
         case .emberGold:    Color(red: 0.14, green: 0.05, blue: 0.03)
         case .sapphireMist: Color(red: 0.02, green: 0.05, blue: 0.16)
@@ -234,6 +253,7 @@ struct SoloBackdrop: View {
         switch SoloStoryConfig.branding.palettePreset {
         case .ashCrimson:   Color(red: 0.80, green: 0.30, blue: 0.10)
         case .moonJade:     Color(red: 0.22, green: 0.72, blue: 0.62)
+        case .oracleJade:   Color(red: 0.22, green: 0.80, blue: 0.76)
         case .royalPlum:    Color(red: 0.62, green: 0.20, blue: 0.88)
         case .emberGold:    Color(red: 0.92, green: 0.60, blue: 0.14)
         case .sapphireMist: Color(red: 0.28, green: 0.58, blue: 0.96)
@@ -243,6 +263,7 @@ struct SoloBackdrop: View {
         switch SoloStoryConfig.branding.palettePreset {
         case .ashCrimson:   Color(red: 0.62, green: 0.16, blue: 0.08)
         case .moonJade:     Color(red: 0.12, green: 0.54, blue: 0.50)
+        case .oracleJade:   Color(red: 0.12, green: 0.62, blue: 0.60)
         case .royalPlum:    Color(red: 0.46, green: 0.12, blue: 0.70)
         case .emberGold:    Color(red: 0.84, green: 0.44, blue: 0.06)
         case .sapphireMist: Color(red: 0.18, green: 0.42, blue: 0.84)
@@ -252,6 +273,7 @@ struct SoloBackdrop: View {
         switch SoloStoryConfig.branding.palettePreset {
         case .ashCrimson:   Color(red: 0.58, green: 0.14, blue: 0.06)
         case .moonJade:     Color(red: 0.10, green: 0.44, blue: 0.42)
+        case .oracleJade:   Color(red: 0.10, green: 0.52, blue: 0.54)
         case .royalPlum:    Color(red: 0.40, green: 0.10, blue: 0.64)
         case .emberGold:    Color(red: 0.74, green: 0.36, blue: 0.04)
         case .sapphireMist: Color(red: 0.14, green: 0.34, blue: 0.74)

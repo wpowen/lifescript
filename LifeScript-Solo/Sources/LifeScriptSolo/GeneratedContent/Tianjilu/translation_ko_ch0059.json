@@ -1,0 +1,350 @@
+{
+  "id": "天机录_ch0059",
+  "book_id": "天机录",
+  "number": 59,
+  "title": "废物 반격",
+  "is_paid": true,
+  "next_chapter_hook": "Ling Yuan이 초라하게 패배하여 무릎을 꿇고饶求饶하고, Sect Master의 안색이 음침해졌다——Tianqing Sect의 구도가 이 한 전투로 인해 완전히 다시 쓰여질 것이다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0059_001",
+        "content": "검광이 은하수처럼 뒤집혀懸垂되며, 천지를 파괴할 위세를 품고 Chen Ji의 목으로 직격한다. Ling Yuan의 수염이 곤두서고, 눈에 가득 찬 것은 반드시 성공하려는 흉포함——그는 이 순간을 너무 오래 기다렸다, 오래되어 모든 숨결이 고문처럼 느껴졌다. \"폐물에게는 폐물의 죽음법이 있어야 한다!\" 그의 포효가 주변 관전 제자들의 고막을 울리고, 발아래 청석이 기파에 휘날려 올라가며 아래쪽 검은색 흙이 드러났다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_002",
+        "content": "Chen Ji는 그 자리에 서서 다가오는 검망을 바라보며, 입술 끝이 문득 미소 지었다. 그 미소는 겨울 호수 위를 스치는 잠깐 사라질 한기처럼 희미했지만, Ling Yuan의 마음속에 묘한 불안이 일었다——그 느낌은 마치 사냥꾼이 함정 옆에서 갑자기 맹수의 기운을 풍기는 것 같았다. 다음 순간, Chen Ji가 움직였다."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0059_003",
+        "character_id": "char_chenji",
+        "content": "Ling Yuan 선배님, 이 한 검, 삼 치 빗나갔습니다.",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_004",
+        "content": "말을 마치기도 전에 Chen Ji의身形이 살짝 기울어져, 검봉의 가장 날카로운 부분을 간신히 피했다. 그의 보폭은 기막힐 정도로 이상하여, 마치 미리 검광의 동선을 아는 것처럼, 매 걸음이 Ling Yuan의 공격 틈새를 밟고 있었다. 명백히 생사 대결인데, 그의 동작은 마치 자신의 후원에서 산책하는 것처럼 여유로웠고, 바람에 흩날린 옷소매를 정리할 여유까지 있었다."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0059_choice_01",
+        "prompt": "Ling Yuan이 연달아 일곱 검을 공격했으나 모두 허공에 떨어지고, 얼굴빛이 철청색으로 변했다. Chen Ji는 이미 그의 검로를 꿰뚫어 보았다——이제 어떻게 이 대결을 끝낼 것인가?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0059_01_a",
+            "text": "그의 도를 빌려 그에게 되갚다",
+            "description": "Ling Yuan의 검招를 사용하여 Ling Yuan을 반제하고, 당중에서 그가 몰래 배운 별파의绝학을 폭로하여, 진실을 천하에 밝힌다",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "천명값 10점 소모",
+            "visible_reward": "Ling Yuan의 명예가 땅에 떨어지고 진실이 드러났다",
+            "risk_hint": "과도한 실력을 노출하면 더 큰 주의를 끌 수 있다",
+            "process_label": "以其人之道还治其人之身",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 50
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_01_a_1",
+                  "character_id": "char_chenji",
+                  "content": "Ling Yuan 선배가 다른 파의 검법으로威武揚威하는 것을 좋아한다면, 후배가 도와复习해 드리겠습니다.",
+                  "emotion": "讥讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0059_01_b",
+            "text": "직접 뭉개다",
+            "description": "가장 단순하고 폭력적인 방식으로 Ling Yuan을 정면으로 격파하여, 그에게 절대적인 격차가 무엇인지 알려주다",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "천명값 15점 소모",
+            "visible_reward": "Ling Yuan의 한 수를 폐쇄당하고, 전투력이 붕괴했다",
+            "risk_hint": "천기록의 일부 능력을 노출할 수 있다",
+            "process_label": "一力降十会",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_01_b_1",
+                  "character_id": "char_chenji",
+                  "content": "Ling Yuan 선배님, 너무 느리십니다.",
+                  "emotion": "平淡"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0059_01_c",
+            "text": "심리 뭉개다",
+            "description": "서두르지 않고 말로 Ling Yuan의 심리적 방어를 먼저 무너뜨려, 그가 스스로 붕괴하게 하다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "소모 없음",
+            "visible_reward": "Ling Yuan의 마음가짐이粉碎되어, 전의가 완전히 사라졌다",
+            "risk_hint": "적에게 숨을 쉴 틈을 주면 변수가 생길 수 있다",
+            "process_label": "攻心为上",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_01_c_1",
+                  "character_id": "char_chenji",
+                  "content": "Ling Yuan 선배님, 혹시 천기록이 당신을 선택하지 않은 이유를 아시나요?",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_005",
+        "content": "Ling Yuan의 얼굴빛이 급변했다. 그는 Chen Ji가 지금施展한 검법을 알아봤다——분명 그 것이 삼십 년 전 Xuanwu Sect에서 몰래 배운 \"열석참\"이요, 한 번도 사람 앞에서 드러내지 않은绝学이었다. 어떻게……어떻게 그럴 수 있단 말인가? 냉땀이 등을 타고 흘러내리고, Ling Yuan은 처음으로 뼈를 찌르는 공포를 느꼈다."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0059_006",
+        "character_id": "char_lingyuan",
+        "content": "당신……어떻게 이招를 배웠단 말인가! 이것은 Xuanwu Sect의……",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_007",
+        "content": "Chen Ji는 대답하지 않고, 검세를 돌려 \"열석참\"의 제칠式——역시威力이 가장 강하고 가장 막기 어려운 한 式——을 그대로 Ling Yuan에게 베어갔다. 검망이 공기를 찢는 소리가 날카롭고刺耳하여, 마치 수많은 망자들이 애원하는 것 같았다. Ling Yuan은 허둥지둥 검을 들어 막았지만, 자신이 전혀 이招式 변화의 리듬을 따라잡지 못한다는 것을 알게 되었다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_008",
+        "content": "폭음과 함께 Ling Yuan은 십 보를 밀려나고, 호격이 균열되고 피가 검柄的一半를 적셨다. 주변은 죽음처럼 고요했다. 둘러싸고 있던 Inner Sect 제자들 глаза가 커지면서, 믿을 수 없다는 듯眼前의 모습을 바라보았다——当当한 Tianqing Sect 장로가 종일 Inner Sect 제자에게 자신의 검법으로 패배하다?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_009",
+        "content": "Chen Ji가 천천히 발걸음을 옮기며, 매 걸음이 Ling Yuan의 심장에 밟히는 것처럼 느껴졌다. 그의 눈빛이 담담하여 무서웠고, 분노도 조롱도 없으며, 거의 냉담한 심사만 있었다. \"Ling Yuan 선배님, 삼십 년 전 Xuanwu Sect에서 하신那些 일들, 후배가 기억을 돕여 드릴까요?\" 소리는 높지 않았지만, 모든 사람의 귀에 선명하게 전해졌고, Ling Yuan의 온몸을 떨게 했다."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0059_choice_02",
+        "prompt": "Ling Yuan이 초라하게 뒷걸음질 치는데, 눈에 광기가 스쳤다——그는 마지막 발악을 하려 한다! Chen Ji는 어떻게 대응해야 할까?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0059_02_a",
+            "text": "완전히 폭로하다",
+            "description": "모든 사람의 앞장에서 Ling Yuan이 마도와 결탁하고, 종파를 배반하려는 음모를 말하여, 그가 만겁불복하게 하다",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "천기록의 능력 출처를 노출할 수 있다",
+            "visible_reward": "Ling Yuan의 명성이 완전히 무너지고, 영영 몸을 일으킬 수 없게 된다",
+            "risk_hint": "진실이 너무 경악스러워, 종파 동요를 일으킬 수 있다",
+            "process_label": "揭露真相",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 80
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_02_a_1",
+                  "character_id": "char_chenji",
+                  "content": "Ling Yuan 선배님, Holy Sect이 당신에게 약속한 것은，恐怕实现不了 것입니다.",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0059_02_b",
+            "text": "여지를 남기다",
+            "description": "이기지만 죽이지 않고, Ling Yuan에게 회개할 기회를 주고, 자신에게도 좋은 명성을 남기다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ling Yuan이日后 복수할 수 있다",
+            "visible_reward": "현장 대중들이 Chen Ji에게 감사를 품고 있다",
+            "risk_hint": "호랑이를 놓아주고 귀환하면, 후환이 끊이지 않는다",
+            "process_label": "点到为止",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 40
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0059_result_02_b_1",
+                  "character_id": "char_chenji",
+                  "content": "Ling Yuan 선배님, 당신은 졌습니다. 오늘之事는, 여기까지입니다.",
+                  "emotion": "淡然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_010",
+        "content": "Ling Yuan의 동공이 갑자기 수축되었다. Holy Sect? Chen Ji가 어떻게 Holy Sect의 일을 알까? 그것은 이십 년 동안 묻어둔 비밀이요, 한밤중 꿈에서 돌아올 때 가장 건드리不敢했던 금기였다.彼は 입을 벌렸지만 부정하려 했지만, 자신의 목소리가 무언가에 목이 졸린 것 같다는 것을 알게 되었다. 공포가 조수처럼 그를 삼켰다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_011",
+        "content": "바로 이때, 한 道凌厉한 시선이 군중 속에서 날아왔다. Su Qingyao가 멀지 않은 곳에 서서, 아름다운 눈동자에 복잡한 빛이闪烁되었다. 그녀는 Chen Ji의 등을 죽不死盯着, 마음속에 파도처럼 출렁이는惊叹의 파동을 느꼈다——바로 이 남자, 그녀가 늘 은밀히 조사해 온 사람이，果然 심후불측이었다. 하지만 어느 의미에서는, 그녀의 마음속에 은근히……안도감?이 떠올랐다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_012",
+        "content": "Ling Yuan은 마침내 붕괴했다. 그는 땅에 무릎을 꿇고, 온몸이 떨렸으며, 예전의 위엄이影도形도 없었다. \"저……저 항복합니다……\" 그의 목소리는 갈라지고 겸손하여, 아까那个 자부심으로 가득 찬 장로가 아니었다. 둘러본 대중이 떠들었고, Tianqing Sect의 장로가 Inner Sect 제자에게饶求饶하다? 이 장면은 영원히 모든 사람의 기억에 새겨질 것이다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_013",
+        "content": "Chen Ji가 우월하게 무릎을 꿇은 Ling Yuan을 내려다보며, 표정이 서리처럼 담담했다. \"Ling Yuan 선배님, 아까 폐물에게는 폐물의 죽음법이 있어야 한다고 하셨죠.\" 그의 목소리는 높지 않았지만, 모든 사람의 귀에 명확하게 전해졌고, \"후배는 오히려 폐물은 무섭지 않고, 무서운 것은 명백히 폐물인데偏偏 천纵奇才인 척하는 것입니다.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0059_014",
+        "character_id": "char_lingyuan",
+        "content": "당신……당신은 대체 무슨 인간입니까! 천기록이 어찌 당신 같은 폐물을 선택합니까!",
+        "emotion": "癫狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_015",
+        "content": "Chen Ji는 이 말을 듣고, 입술 끝에 의미심장한 곡선을 그렸다. 그는 천천히 몸을 돌려, 대중들의 경외하는 시선 속에서 경기장 밖으로 걸어 나갔고, 등은 고독하고 여유로웠다. \"천기록이 누구를 선택하는지는 저도 정할 수 없고, 선배님이 정할 수도 없습니다.\" 그의 목소리가 멀어지며, 차마 말할 수 없는 쓸쓸함이 실려 있었다, \"Ling Yuan 선배님, 당신이 진 것은 결코 저한테가 아니라, 천명입니다.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0059_016",
+        "content": "Ling Yuan이 초라하게 패배한 소식이 불과 한 시酉 안에 온 Tianqing Sect에 번개처럼 퍼졌다. 어떤 이는震惊하고, 어떤 이는 의심하며, 더 많은 사람들은 믿을 수 없었다——그 폐물이라고 불리는 Inner Sect 제자가, 当当한 장로를 물리쳤다? 그리고 Sect Master 전secs内, 한 道 음침한 시선이 멀리를 응시하고 있었다——그것이 Ling Yuan의 진정한 버팀목……또는 그가自认为한 버팀목이었다……"
+      }
+    }
+  ]
+}

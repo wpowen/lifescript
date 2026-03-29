@@ -1,0 +1,722 @@
+{
+  "id": "天机录_ch0262",
+  "book_id": "天机录",
+  "number": 262,
+  "title": "Emissary of the Demonic Path",
+  "is_paid": true,
+  "next_chapter_hook": "Ye Qing whispered before leaving: Be careful of the Holy Sect. What they did to your sister is more terrible than you can imagine.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0262_001",
+        "content": "The words on the stone tablet still wriggled in the depths of Chen Ji's pupils. It was not prophecy—it was a script—a chess piece placed by some existence beyond his comprehension on the board of heaven and earth. He wanted to laugh coldly, but found his lips stiff as if frozen for a thousand years. Chapter seven hundred, chapter seven hundred. He hadn't even finished chapter one, yet the ending had already been written. Who held the pen? Heaven, or something above heaven? The night wind swept through the ruins, scattering those eerie words as if they had never existed. Chen Ji took a deep breath, his fingertips tightening around the torn page of the Tianji Record hidden in his sleeve. Mo Xiansheng's silence was more unsettling than any hint."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_002",
+        "character_id": "char_yeqing",
+        "content": "What did you see?",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_003",
+        "content": "A cold feminine voice came from thirty feet away. Chen Ji's body remained still, but his divine sense stretched out like silk threads. After confirming the visitor was alone with a presence as deep as an abyss, he slowly turned around. Under the moonlight, a woman in flowing black纱裙 stood atop a withered tree, a light veil covering her face, her eyes carrying an inexplicable gaze of scrutiny. It was Ye Qing. That holy maiden who walked a tightrope between the Holy Sect of the Demonic Path and the three great sects, that dangerous ally who had chosen to cooperate after Chen Ji glimpsed a corner of her fate through the Tianji Art. Her arrival did not surprise Chen Ji. What surprised him was the timing."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_004",
+        "character_id": "char_chenji",
+        "content": "Coming in person at the third watch, Holy Maiden? Afraid I might run?",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_005",
+        "character_id": "char_yeqing",
+        "content": "Run? Where would you go.",
+        "emotion": "淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_006",
+        "content": "Ye Qing drifted down gracefully, her black纱裙 merging with the night. She ignored Chen Ji's teasing, taking a step forward instead. Those eyes, soaked in moonlight, stared directly at his chest where the Tianji Record Fragment was hidden. What did you see when you used the Tianji Art? I sensed that fluctuation of spiritual energy from thirty miles away. Chen Ji narrowed his eyes. This woman's perceptiveness exceeded his expectations—or rather, she had come specifically for this. The dead branches in the ruins groaned softly in the night wind, as if mourning this ill-timed encounter."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0262_choice_001",
+        "prompt": "Ye Qing asks about what the Tianji Art revealed. How do you respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0262_c1_a",
+            "text": "Pass off the false as true",
+            "description": "Tell her a half-truth, testing her bottom line while protecting core secrets",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Reveal part of the Tianji abilities",
+            "visible_reward": "Gather Ye Qing's true intentions",
+            "risk_hint": "If she sees through the lie, it may shake the foundation of cooperation",
+            "process_label": "真假参半，试探深浅",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_a_1",
+                  "character_id": "char_chenji",
+                  "content": "I saw a number. Seven hundred.",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_a_2",
+                  "character_id": "char_yeqing",
+                  "content": "...Only a number?",
+                  "emotion": "狐疑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_a_3",
+                  "character_id": "char_chenji",
+                  "content": "The Holy Maiden wants details? Nice try. You know the price of the Tianji Art.",
+                  "emotion": "讥诮"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0262_c1_b",
+            "text": "Share part truthfully",
+            "description": "Reveal clues about the demonic commander being connected to the Tianji Record, observing her reaction",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May expose key information",
+            "visible_reward": "Establish a deeper trust foundation",
+            "risk_hint": "If she has ulterior motives, she might be exploited",
+            "process_label": "以诚换诚，步步为营",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_b_1",
+                  "character_id": "char_chenji",
+                  "content": "I saw something I shouldn't have. Your commander... has ties to the Tianji Record.",
+                  "emotion": "低沉"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_b_2",
+                  "character_id": "char_yeqing",
+                  "content": "(Pupils contract sharply) Are you certain?",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "revealed_commander_link"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0262_c1_c",
+            "text": "Seize the initiative",
+            "description": "Don't answer her question, directly propose cooperation terms to take control of the dialogue",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May appear overconfident and arouse suspicion",
+            "visible_reward": "Gain the upper hand in negotiations",
+            "risk_hint": "Ye Qing is not easily fooled, this might backfire",
+            "process_label": "不答反问，抢占先机",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_c_1",
+                  "character_id": "char_chenji",
+                  "content": "The Holy Maiden's late-night visit isn't just to ask what I saw, right? Get to the point.",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c1_c_2",
+                  "character_id": "char_yeqing",
+                  "content": "(Light laugh) As expected, nothing gets past you.",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_007",
+        "content": "Ye Qing's light laugh seemed out of place in the night, but it also diluted some of the tension. She didn't rush to speak, instead stepping back to sit on a broken stone tablet—her posture so leisurely it seemed as if she wasn't negotiating with a tiger in ruins, but enjoying the moon and tea in her own backyard. Chen Ji noticed she had chosen a seat with her back against a complete rock wall, leaving all escape routes to herself. This woman was more cautious than he imagined. Moonlight fell on her veiled face, outlining a hazy silhouette. Chen Ji suddenly remembered the scene when he first used the Tianji Art to glimpse her fate—blood everywhere, she was being sacrificed on the Holy Sect's altar, her eyes even more hollow than now. And now, there was something more in those eyes. Hope, or deeper despair? He couldn't tell."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_008",
+        "character_id": "char_yeqing",
+        "content": "The Holy Sect is making a move.",
+        "emotion": "冷淡"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_009",
+        "content": "Only these words, yet Chen Ji's gaze sharpened instantly. The Holy Sect—the Holy Sect of the Demonic Path, the sect that had kidnapped his sister Chen Nian to use as a 'Heavenly Fate Lock Key', the behind-the-scenes mastermind that was glossed over in the original work but actually ran through the entire book. He had waited for these words for a full half year. On the surface, he was still that muddled waste servant, but secretly he had mapped out seven or eight tenths of the Holy Sect's布局. But the words 'making a move' from someone of Ye Qing's caliber carried entirely different weight. She wouldn't reveal such intelligence without reason. Unless—she needed him."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_010",
+        "character_id": "char_chenji",
+        "content": "Moving toward what?",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_011",
+        "character_id": "char_yeqing",
+        "content": "The Ancient Forbidden Land. People from the three great sects are already on their way. The Holy Sect won't sit idle.",
+        "emotion": "陈述"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_012",
+        "content": "The Ancient Forbidden Land. Chen Ji's heart skipped half a beat. Those four words had appeared hazily in the Tianji Record Fragment, but were blocked by a thick fog—the fog's characteristics were identical to the aura around his sister Chen Nian. Mo Xiansheng had said the Tianji Art's limitations were not only the three-hour time limit, but also certain 'unseeable' existences. And Chen Nian was precisely that variable. Where she existed, prophecy would distort. Was her being taken a coincidence, or someone's deliberate arrangement? Ye Qing seemed unaware of Chen Ji's peculiarity, continuing: The Holy Sect's vanguard will arrive at the Forbidden Land entrance in seven days. I need to know what they'll encounter. Can you do it? She knew the price of the Tianji Art. Every glimpse consumed Chen Ji's precious 'Heavenly Fate Value'. And once Heavenly Fate Value was exhausted, it meant death."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0262_choice_002",
+        "prompt": "Ye Qing asks you to use the Tianji Art to glimpse the Holy Sect vanguard's fate. How do you respond?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0262_c2_a",
+            "text": "Equivalent exchange",
+            "description": "Explicitly demand demonic path resources as exchange, refuse to make a losing deal",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume Heavenly Fate Value",
+            "visible_reward": "Gain demonic intelligence network and resource support",
+            "risk_hint": "May appear too calculating, making Ye Qing hold back",
+            "process_label": "明码标价，互不吃亏",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "财富",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c2_a_1",
+                  "character_id": "char_chenji",
+                  "content": "The Tianji Art isn't free, Holy Maiden. You should know that. How do you plan to settle this account?",
+                  "emotion": "冷漠"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c2_a_2",
+                  "character_id": "char_yeqing",
+                  "content": "What do you want?",
+                  "emotion": "直接"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0262_c2_b",
+            "text": "Generous assistance",
+            "description": "Don't计较 immediate gains, exchange this for Ye Qing's deeper trust and willingness to cooperate",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume Heavenly Fate Value",
+            "visible_reward": "Greatly increase Ye Qing's favorability, unlock deeper intelligence",
+            "risk_hint": "May be seen as weak and easily bullied by Ye Qing",
+            "process_label": "舍小利，图远谋",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c2_b_1",
+                  "character_id": "char_chenji",
+                  "content": "Consider this... a gesture of cooperation sincerity.",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c2_b_2",
+                  "character_id": "char_yeqing",
+                  "content": "(Stunned) You...",
+                  "emotion": "动容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0262_c2_c",
+            "text": "Additional conditions",
+            "description": "Agree to glimpse, but demand Ye Qing reveal everything she knows about 'Heavenly Fate Lock Key'",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consume Heavenly Fate Value",
+            "visible_reward": "Obtain intelligence related to Chen Nian",
+            "risk_hint": "Touch Ye Qing's bottom line, may cause negotiations to break",
+            "process_label": "项庄舞剑，意在沛公",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c2_c_1",
+                  "character_id": "char_chenji",
+                  "content": "I can help you. But I have one condition.",
+                  "emotion": "沉声"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c2_c_2",
+                  "character_id": "char_yeqing",
+                  "content": "Speak.",
+                  "emotion": "警惕"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "asked_about_tianming"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_013",
+        "content": "Chen Ji didn't answer immediately, instead walking slowly toward the stone tablet where Ye Qing sat. Moonlight stretched his shadow long, like some silent probing. One step, two steps, three—he stopped five feet from Ye Qing, a position where he could advance or retreat. Ye Qing looked up at him, her expression beneath the veil indiscernible, but her slightly leaning body revealed a trace of wariness. Waste servant? That废物 from Tianqing Sect who hadn't even achieved Foundation Building? she suddenly said, a hint of playfulness in her tone. I've seen you. Three months ago, at the Three Sects Tournament. You were stepped on by others, not even having the strength to fight back. Chen Ji smiled. That smile was so mild it bordered on harmless, even carrying a hint of self-mockery. The Holy Maiden has an excellent memory."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_014",
+        "character_id": "char_yeqing",
+        "content": "So I'm curious—back then, were you truly a废物, or were you putting on an act?",
+        "emotion": "探究"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_015",
+        "content": "Ye Qing's question went straight to the core, yet Chen Ji didn't dodge. He took another step forward, moonlight falling正好 on his face, illuminating those deep eyes thoroughly. An act? Holy Maiden overestimates me. He shook his head, his tone revealing no emotion whatsoever. I just... know when to be strong, when to be weak. People who stand out too strongly often die the fastest. Ye Qing fell silent for a moment, then suddenly stood up. The distance between her and Chen Ji was now only three feet—so close he could smell the faint fragrance on her. You're very clever, cleverer than anyone I've ever met. This was praise, also a warning. Chen Ji didn't respond. He knew the main event was still to come."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_016",
+        "character_id": "char_yeqing",
+        "content": "I want to make a deal with you.",
+        "emotion": "认真"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_017",
+        "content": "The word 'deal' from the demonic path Holy Maiden carried an unexpectedly solemn weight. Chen Ji slightly nodded, gesturing for her to continue. The demonic path's intelligence network, resources, connections—you need them all. She spoke slowly, deliberately. And you need to know the Holy Sect's movements, what's hidden in the Ancient Forbidden Land, and... the method that can make you stronger. Ye Qing's gaze fell on the spot where the Tianji Record Fragment rested in his chest, her tone as certain as if she had long seen through everything. We cooperate, each taking what they need. Chen Ji didn't immediately agree. His gaze moved from Ye Qing's eyes to her veil, then to the hand that was tightly clenched in her sleeve—that was a sign of tension. A demonic path Holy Maiden, being this frank with a废物 servant—either she was at the end of her rope, or she had ulterior motives. He inclined toward the former."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0262_choice_003",
+        "prompt": "Ye Qing proposes cooperation. How do you respond?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0262_c3_a",
+            "text": "Cautious acceptance",
+            "description": "Agree to cooperate but set boundaries, clearly define mutual rights and obligations",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Partially reveal cooperation intentions",
+            "visible_reward": "Establish initial alliance",
+            "risk_hint": "Ye Qing may still have reservations",
+            "process_label": "步步为营，留有余地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c3_a_1",
+                  "character_id": "char_chenji",
+                  "content": "Cooperation is possible. But I have three conditions.",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c3_a_2",
+                  "character_id": "char_yeqing",
+                  "content": "Speak.",
+                  "emotion": "干脆"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "formal_alliance_yeqing"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0262_c3_b",
+            "text": "Full acceptance",
+            "description": "Show sincerity first, let Ye Qing lower her guard, then plan accordingly",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May appear too eager",
+            "visible_reward": "Ye Qing completely lowers her guard, reveals more secrets",
+            "risk_hint": "May be exploited by Ye Qing",
+            "process_label": "欲擒故纵，后发制人",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c3_b_1",
+                  "character_id": "char_chenji",
+                  "content": "Deal.",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c3_b_2",
+                  "character_id": "char_yeqing",
+                  "content": "(Stunned for a moment) ...You agreed so readily?",
+                  "emotion": "意外"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "deep_cooperation_yeqing"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0262_c3_c",
+            "text": "Continue probing",
+            "description": "Noncommittal, continue to dig into Ye Qing's true purpose and cards",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May miss the cooperation opportunity",
+            "visible_reward": "Gather more intelligence about the demonic commander and Chen Nian",
+            "risk_hint": "Ye Qing may lose patience",
+            "process_label": "深挖细问，不见底牌不出手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c3_c_1",
+                  "character_id": "char_chenji",
+                  "content": "Before discussing the deal, I want to know one thing. Who is your commander?",
+                  "emotion": "意味深长"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0262_result_c3_c_2",
+                  "character_id": "char_yeqing",
+                  "content": "(Expression changes slightly) Why do you ask this?",
+                  "emotion": "警惕"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_018",
+        "content": "Chen Ji's question made Ye Qing fall silent for a long time. The night wind lifted her black skirt, like some inauspicious omen. Finally, she spoke, her tone several degrees lower than before. The commander... is a mystery. No one in the Holy Sect knows his origins. Only that he appeared suddenly three years ago, suppressed the internal strife with one move, and unified the seventy-two branches of the demonic path within a year. Her gaze grew deeper, as if recalling something unpleasant. More strangely, the technique he cultivates—not demonic path techniques, but an ancient inheritance. And it seems to have some connection with the 'Tianji Record' you mentioned. Chen Ji's pupils contracted slightly. Ancient classics, another inheritor of the Tianji Record, or... some manifestation of the Tianji Record itself? His mind raced rapidly, yet his expression remained impassive."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_019",
+        "character_id": "char_yeqing",
+        "content": "I suspect he's also searching for the Tianji Record. Or rather... searching for the person who possesses the Tianji Record.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_020",
+        "content": "This sentence was like a basin of ice water poured over his head. Chen Ji suddenly remembered the words on the stone tablet—Chapter Seven Hundred · Ending. Who wrote the path he hadn't yet walked? Was it this mysterious demonic commander, or an existence even higher? If the commander truly had ties to the Tianji Record, then he was no longer just a chess piece on the board for Chen Ji, but an opponent of equal stature. A terrifying existence who might even know the full 'script'. Ye Qing seemed to sense his unusual state, her voice softening. I tell you this because... you need to know what you're facing. Cooperation is two-way, Chen Ji. She called his name directly for the first time, no honorifics, no probing, just a near-solemn frankness. I help conceal the Tianji Record's aura for you, you help me glimpse the Holy Sect's movements. Each taking what they need, cheating neither. Do you accept this kind of cooperation?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_021",
+        "content": "In the ruins, two figures confronted each other under moonlight. On one side, the demonic path Holy Maiden; on the other, the废物 servant. An absurd combination, yet at this moment they reached some silent understanding. Chen Ji extended his hand first—that hand was slender and steady, showing no hesitation. Deal. His voice was crisp and clear, carrying no superfluous emotions. Ye Qing looked down at that hand, and after a moment also extended her own. Her hand was colder than Chen Ji imagined, her fingertips trembling slightly at the moment of contact, as if some long-absent warmth was reviving. Two hands clasped under the moonlight, sealing a secret alliance that could shake the landscape of the three sects. The deal was struck. Next, it was time to discuss the details. Chen Ji released her hand, his expression returning to its usual nonchalance. But beneath that nonchalance, something was quietly changing—on his chessboard, there was a new piece. And he himself had perhaps become a piece on someone else's chessboard."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_022",
+        "character_id": "char_yeqing",
+        "content": "There's one more thing.",
+        "emotion": "低沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_023",
+        "content": "Ye Qing's voice suddenly became very soft, as if afraid the night wind might eavesdrop. Chen Ji acutely sensed the change in her tone—that was a gravity absent from before. She took a step forward, almost brushing past him. As she passed, a sentence floated into his ear—the Holy Maiden's presence was very close, even closer than he had anticipated. Chen Ji didn't move, only turning his head to await the follow-up. The next moment, Ye Qing had already passed him, her black skirt sweeping an arc in the night wind. She walked several dozen feet, then suddenly stopped, turning to look at him. Moonlight outlined her silhouette like a paper-cut, those eyes glittering with complex light in the darkness."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0262_024",
+        "character_id": "char_yeqing",
+        "content": "Be careful of the Holy Sect.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0262_025",
+        "content": "The words were only half spoken before Ye Qing fell silent. But the meaning in those eyes was clear enough—this wasn't ordinary warning, but some low-voiced counsel. As Chen Ji was about to pursue the question, Ye Qing had already turned away. Her figure faded into the distance under moonlight, like mist dissolving into night. Before vanishing completely, her voice came one last time, lighter than before, lower, yet each word was distinct—What they did to your sister is more terrible than you can imagine. The words fell, the person was gone. Only those words still echoed in the night sky, like some inauspicious prophecy. Chen Ji stood alone in the ruins, his fingertips slowly clenching. Sister. Holy Sect. Heavenly Fate Lock Key. Something more terrible than imagined. He raised his head, his gaze piercing through layers of night sky"
+      }
+    }
+  ]
+}

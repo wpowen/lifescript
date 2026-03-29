@@ -1,0 +1,487 @@
+{
+  "id": "天机录_ch0724",
+  "book_id": "天机录",
+  "number": 724,
+  "title": "天机初感",
+  "is_paid": true,
+  "next_chapter_hook": "天机录本体发出警告：「他不是最终棋手」，暗示天道之眼背后存在更高存在。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0724_001",
+        "content": "来使的话如同一柄淬了毒的软刀，悄无声息地刺入陈机心口最柔软处。万年前的大火，亲手点的——这八个字在他脑海中炸开，激起层层涟漪。\n\n然而陈机面上却波澜不惊，仿佛来使所言不过是一场无聊的玩笑。他缓缓端起茶盏，轻轻吹散热气，那姿态闲适得让来使都有些意外。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_002",
+        "character_id": "char_chenji",
+        "content": "「万年前的大火？」陈机终于开口，声音平静得近乎冷漠，「这位使者，你确定不是在说梦话？本座若真有那本事，何至于在这天青宗当个废物？」\n\n他抬眼，目光如水，深不见底。",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_003",
+        "content": "来使微微眯起眼睛，打量着眼前这个少年。明明只是个杂役弟子，为何目光中竟有几分让人心悸的深沉？他将那枚刻有奇异纹路的徽记重新收入袖中，嘴角的笑意更深了几分。\n\n「陈大人果然非常人，」他站起身，「这枚徽记便赠予大人，总有一日您会想起的。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_004",
+        "content": "待来使的身影彻底消失在夜色中，陈机才缓缓放下茶盏。他的手指在袖中微微发抖——不是因为恐惧，而是因为愤怒。\n\n被命运锁定、被动接受预知的感觉，他已经受够了。\n\n「既然你说我万年前放过火，」他低声呢喃，眼中闪过一丝决然，「那我倒要看看，这命运的锁链究竟是什么东西！」\n\n陈机转身进入密室，盘膝而坐。胸口处，那张残缺的天机录残页隐隐发热。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0724_choice_001",
+        "prompt": "陈机决定主动感应天道规则，但方法有多种。他选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0724_c1_a",
+            "text": "冒险开启天眼",
+            "description": "直接以残缺的天机录强行开启天眼，触碰锁定自身的命运丝线，风险极高但可能获得关键信息。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗10点天命值",
+            "visible_reward": "可能首次主动感应到命运丝线",
+            "risk_hint": "天命值不足时强行开启可能导致神魂受损",
+            "process_label": "开启天眼感应",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c1_a_001",
+                  "content": "陈机深吸一口气，意识沉入识海。他以残缺的天机录残页为核心，尝试强行开启天眼。一股剧烈的疼痛从眉心炸开，他感觉自己仿佛被万针穿脑。\n\n「唔——！」他闷哼一声，额角渗出冷汗，但眼中的光芒却越来越亮。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天眼初开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 15
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c1_b",
+            "text": "稳健引导气息",
+            "description": "先以自身灵力温养天机录残页，等待它自然产生共鸣，虽然慢但安全稳妥。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗3个时辰",
+            "visible_reward": "安全稳定地与天机录建立初步联系",
+            "risk_hint": "耗时较长，可能错失最佳时机",
+            "process_label": "温养感应",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c1_b_001",
+                  "content": "陈机没有急于求成，而是缓缓运转灵力，如同春雨润物般滋养着天机录残页。随着时间推移，那张残页渐渐变得温热起来。\n\n一个时辰后，他感觉到一丝若有若无的联系在识海中成形。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳健感应"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c1_c",
+            "text": "另辟蹊径——追溯徽记",
+            "description": "那枚徽记既然与万年前有关，或许能从中找到突破口，以彼之道还施彼身。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能暴露意图",
+            "visible_reward": "或许能从徽记中获取关键线索",
+            "risk_hint": "徽记中可能藏有追踪术法",
+            "process_label": "追溯徽记来源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c1_c_001",
+                  "content": "陈机从袖中取出那枚徽记，仔细端详。奇异的是，当他灵力流经其上时，竟感受到一丝熟悉的气息——那气息与天机录残页如出一辙。\n\n他的瞳孔猛然收缩。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现徽记秘密"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_005",
+        "content": "天眼缓缓开启，陈机只觉眼前的世界发生了天翻地覆的变化。原本昏暗的密室化作一片混沌虚空，无数细如发丝的光线在虚空中交织缠绕，如同蛛网般密密麻麻。\n\n那些光线——就是命运的丝线。\n\n他顺着其中一条最粗的丝线望去，赫然发现那根线的另一端竟然连接着自己的胸口。而在那丝线之上，密密麻麻刻满了古老的符文，每一个符文都在散发着令人心悸的威压。\n\n「这就是……天道之眼的封印？」陈机喃喃自语，声音中带着一丝颤抖——不是恐惧，而是兴奋。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_006",
+        "content": "就在陈机试图触碰那根命运丝线之际，他胸口的天机录残页猛然一震。\n\n一股磅礴的意识如潮水般涌入他的识海——那意识古老、苍凉，充满了历经万载沧桑的沉重。\n\n「汝终于肯主动唤我了。」\n\n那声音在陈机脑海中回荡，如同洪钟大吕，震得他神魂激荡。他猛然意识到，这——是天机录本体的声音！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你是……」陈机强压下心头的震惊，试图与那道意识交流。\n\n「我是天机录之灵，」那声音平静地回答，「也是你口中的天机录本体。万载以来，你是第一个主动唤醒我的人。」\n\n意识中浮现出一个模糊的身影，那身影被无尽的迷雾笼罩，看不清面容。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0724_choice_002",
+        "prompt": "天机录本体询问陈机的意图，陈机选择：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0724_c2_a",
+            "text": "直接质问命运封印",
+            "description": "要求天机录解释为何自己会被天道之眼锁定，命运丝线上的封印究竟是什么。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能触怒天机录",
+            "visible_reward": "获得关于封印的真相",
+            "risk_hint": "天机录可能不会轻易透露全部真相",
+            "process_label": "质问真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c2_a_001",
+                  "content": "「既然你能感知我的存在，」陈机的声音沉稳而有力，「那我问你——这命运丝线上的封印，究竟是谁布下的？天道之眼，又是什么？」\n\n那模糊身影沉默片刻，发出一声意味深长的叹息：「你终于问到点子上了。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得真相碎片"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c2_b",
+            "text": "询问万年前的大火",
+            "description": "来使说万年前的大火是自己点的，这个疑问必须首先解开。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能获得不愿面对的真相",
+            "visible_reward": "了解万年前的布局",
+            "risk_hint": "真相可能动摇陈机的认知",
+            "process_label": "追溯过往",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c2_b_001",
+                  "content": "「万年前，」陈机的声音微微发紧，「有人说我亲手点燃了一场大火。那是什么意思？」\n\n天机录的本体再次沉默，这一次沉默的时间更长。当它再次开口时，声音中多了几分复杂的情绪：「有些事，不是现在的你能承受的。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "触碰禁忌"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c2_c",
+            "text": "要求解除封印",
+            "description": "不管真相如何，首先要打破被动局面，摆脱天道之眼的控制。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能遭受反噬",
+            "visible_reward": "可能找到解除封印的方法",
+            "risk_hint": "强行解除可能触发更危险的机制",
+            "process_label": "挑战权威",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c2_c_001",
+                  "content": "「我要解除这封印，」陈机的语气斩钉截铁，「不管是谁布下的，我不会再做命运的傀儡。」\n\n天机录的意识猛然一震，那模糊的身影似乎在审视着他。片刻后，它发出一声低沉的笑：「有胆量。但你可知道，这封印一旦解除，你将面对什么？」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "挑衅天道"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_008",
+        "content": "就在此时，陈机感觉到自己的意识被一股无形的力量猛然拉扯。他顺着命运丝线望去，只见丝线的尽头，一只巨大的眼眸正在虚空中缓缓睁开。\n\n那眼眸没有瞳孔，只有无尽的漆黑，却让陈机感觉到一种被彻底看穿的恐惧。\n\n「它发现我了……」陈机心中一凛。\n\n然而就在那天道之眼即将锁定他的瞬间，天机录的本体猛然爆发出一股强大的力量，将陈机的意识拽了回来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「现在还不是时候，」天机录的声音变得急促，「它的目光已经看向了你。若再继续，你将暴露在它的注视之下。」\n\n陈机猛然睁开眼睛，发现自己已经回到了密室之中。天机录残页在他胸口剧烈震动，上面的文字似乎在重新排列组合。\n\n而就在那文字之中，陈机隐约看到了几个新浮现的古字——\n\n「他……不是最终棋手。」",
+        "emotion": "惊疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_010",
+        "content": "陈机死死盯着那几个新浮现的古字，心中翻涌起惊涛骇浪。天道之眼不是最终棋手？那它的背后，还有什么存在？\n\n他深吸一口气，将那枚徽记从袖中取出。奇异的是，此刻那徽记上的纹路竟然在微微发光，仿佛在回应着天机录残页的震动。\n\n「果然有关联……」陈机喃喃自语，眼中闪过一丝了然。\n\n他开始将灵力注入徽记，试图追溯其来源。随着灵力流转，那徽记上的纹路竟然化作一道光幕，在陈机面前缓缓展开——",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0724_choice_003",
+        "prompt": "光幕展开，陈机看到了一段模糊的画面。他决定：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0724_c3_a",
+            "text": "强行追溯画面真相",
+            "description": "不惜消耗更多天命值，也要看清那段画面的全部内容。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗15点天命值",
+            "visible_reward": "看清万年前大火的真相",
+            "risk_hint": "天命值可能降至危险水平",
+            "process_label": "强行追溯",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c3_a_001",
+                  "content": "陈机咬紧牙关，将大量天命值灌注进徽记之中。剧痛再次袭来，但他死死盯着那道光幕，瞳孔中映出越来越清晰的画面——\n\n火光冲天。\n\n一个背影站在火海之中，那背影……与陈机一模一样。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "窥见真相"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c3_b",
+            "text": "稳住心神徐徐查看",
+            "description": "不急于一时，先记住已有的线索，等待更好的时机。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能遗漏细节",
+            "visible_reward": "保存实力，为后续布局留下余地",
+            "risk_hint": "画面可能随时消失",
+            "process_label": "稳中求进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c3_b_001",
+                  "content": "陈机强压下心头的急切，以冷静的意志控制着灵力流速。光幕中的画面虽然模糊，但关键信息却逐渐清晰——\n\n那个背影并非在放火，而是在……保护什么。\n\n火光之中，隐约可见无数符文在空中流转，构成一个巨大的阵法。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现阵法痕迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c3_c",
+            "text": "以天机录共振验证",
+            "description": "用天机录残页与徽记产生共振，双重验证信息的真实性。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能引发不可预知的后果",
+            "visible_reward": "获得最真实的信息",
+            "risk_hint": "共振可能惊动未知存在",
+            "process_label": "双重验证",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c3_c_001",
+                  "content": "陈机将天机录残页贴在徽记之上，两者相触的瞬间，光芒大盛。一股信息流同时涌入他的脑海——\n\n这不是普通的阵法。\n\n这是封印阵。\n\n万年前的那场大火，不是毁灭，而是……封印！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "真相揭露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_011",
+        "content": "陈机的瞳孔猛然收缩。万年前的大火不是毁灭，而是封印？那封印的究竟是什么？\n\n他猛然想起天机录本体浮现的那行字——「他不是最终棋手」。\n\n如果天道之眼不是最终棋手，那么万年前封印的……难道就是它的主人？\n\n「原来如此……」陈机低声呢喃，嘴角浮现出一抹苦涩的笑，「所以我，或者说那个'我'，是在封印某个恐怖的存在。」\n\n而现在，那封印似乎出了问题。天道之眼开始监视他，是不是意味着……封印正在松动？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_012",
+        "content": "就在陈机思绪纷飞之际，天机录残页再次震动。天机录本体的声音在他脑海中响起，这一次带着几分急切：\n\n「你看到了不该看的东西，」那声音说道，「从现在起，你的每一步都会被注视。但这也是机会——当它注视你的时候，也在被其他人注视。」\n\n「谁？」陈机追问。\n\n「比我更古老的存在。」\n\n话音落下，天机录残页上的文字全部暗淡下去，重新陷入沉睡。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_013",
+        "content": "陈机缓缓睁开眼睛，发现窗外已经泛起鱼肚白。他在密室中整整坐了一夜，却丝毫不觉得疲惫——或者说，他根本没有心思在意这些。\n\n天道之眼不是最终棋手。\n\n万年前的大火是封印而非毁灭。\n\n有比天道之眼更古老的存在。\n\n这些信息在他脑海中不断碰撞，激起层层火花。他的嘴角缓缓勾起一抹冷笑：\n\n「有意思。看来这盘棋，比我想象的要大得多。」\n\n他站起身，将那枚徽记收入怀中。既然被人找上门来，那就说明他的存在已经引起了某些存在的注意。与其躲藏，不如主动出击。\n\n「既然你们都把我当棋子，」陈机低声说道，眼中闪过一丝锋芒，「那我就让你们看看，这棋子是如何翻盘的。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_014",
+        "character_id": "char_chenji",
+        "content": "就在此时，密室外传来敲门声。\n\n「陈师兄，苏师姐来了。」门外传来杂役的声音，「她说有要事相商。」\n\n陈机眉头微挑，心中暗自思索。苏青瑶这个时候来找他，是因为昨晚使者的到访，还是另有其事？\n\n他整了整衣襟，推门而出。无论如何，这位内门首席的好感度已经足够高，是时候让她知道一些事情了——当然，只是一些。\n\n毕竟，在这盘棋局中，每一颗棋子都有自己的位置。而他陈机，永远是执棋之人。",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_015",
+        "content": "晨曦洒落，将陈机的身影拉得修长。他的表情一如既往地平静淡然，仿佛昨夜那场惊心动魄的感应从未发生过。\n\n然而在他怀中，那枚徽记与天机录残页同时散发着微弱的热度，如同两颗心脏在同步跳动。\n\n天道之眼在注视着他。\n\n而他，也在注视着天道之眼。\n\n这场博弈，才刚刚开始。\n\n只是让陈机没有想到的是，在那虚空深处，一只没有瞳孔的眼眸正穿透无尽的迷雾，看向他的方向。那眼眸之中，竟浮现出一丝……笑意。\n\n「终于……找到你了。」\n\n那声音在虚空中回荡，苍老而诡异，如同来自亘古的呼唤。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

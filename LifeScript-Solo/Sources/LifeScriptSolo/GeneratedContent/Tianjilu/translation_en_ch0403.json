@@ -1,0 +1,332 @@
+{
+  "id": "天机录_ch0403",
+  "book_id": "天机录",
+  "number": 403,
+  "title": "Destiny's Choice",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ji's consciousness fell completely into darkness, the fourth page of the Tianji Record burst forth with dazzling golden light—a complete version of the Tianji Record was slowly emerging in the Void, while that cold eye watching everything was awaiting the final move of the chess game.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0403_001",
+        "content": "The runes on the altar had blazed to their limit, the blood-red light shooting toward the heavens almost tearing apart the entire night sky. Chen Ji stood at the crossroads, watching the slender figure in the altar's center gradually becoming translucent—it was Chen Nian, his sister he had searched for seven full years."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_002",
+        "content": "Her lips were moving, though too far away to hear any sound, but Chen Ji read the lip movement clearly—don't. He bitterly smiled in his heart, you silly girl, brother searched for so long, how could I possibly abandon you?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_003",
+        "character_id": "char_chenji",
+        "content": "Chen Nian... watch my lips, listen carefully—",
+        "emotion": "悲壮而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_004",
+        "content": "Chen Ji's voice seemed so insignificant amid the clamor of the ritual, but miraculously, Chen Nian on the altar heard him. Her eyes widened suddenly, tears welling in her eyes, and her lips trembled as she responded—don't! Don't do this!"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_005",
+        "content": "The Tianji Record trembled within his mind, the seal on the fourth page loosening to its absolute limit. Mo Xiansheng's remnant soul manifested in the Void, his form more faded than ever before, his aged face filled with complex emotions."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_006",
+        "character_id": "char_moxiansheng",
+        "content": "Are you certain? The price this time is far heavier than you can imagine. Severing the connection to the Heavenly Fate Key requires the price of the Chen Family mark flowing in your bloodline.",
+        "emotion": "警告与无奈"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0403_choice_01",
+        "prompt": "Mo Xiansheng's words struck like thunder, and Chen Ji felt the Tianji Record trembling wildly in his mind. This was the most consequential moment of choice since he had obtained the Tianji Record.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0403_c1_sacrifice",
+            "text": "Severing the connection with blood as the price",
+            "description": "Burn one's own Chen Family bloodline to completely sever Chen Nian's connection to the ritual. The price is never being a member of the Chen Family again.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Losing the Chen Family bloodline mark",
+            "visible_reward": "Chen Nian gains freedom",
+            "risk_hint": "Forever losing the bond with the family",
+            "process_label": "燃烧血脉",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0403_result_01",
+                  "character_id": "char_chenji",
+                  "content": "I am a Chen family member, my blood carries the Chen family mark. Then let it go—burn!",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "blood_sacrifice_done"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "为救陈念燃尽血脉",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0403_c1_delay",
+            "text": "Searching for other methods",
+            "description": "Attempt to use the Tianji Record to find a method that doesn't require sacrificing bloodline, but time may not be enough.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consuming additional Heavenly Fate",
+            "visible_reward": "Possibly preserving the bloodline",
+            "risk_hint": "Heavenly Fate will be severely overdrawn",
+            "process_label": "寻找他法",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0403_result_02",
+                  "content": "The Tianji Record flipped rapidly, countless scenes flashing before Chen Ji's eyes—yet each one pointed to the same conclusion: there was no other method. Time was flying.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_007",
+        "content": "The seal on the fourth page of the Tianji Record shattered with a deafening roar, countless golden runes surged forth like a flood, forming a dazzling cocoon of light around Chen Ji. Those were the shackles of destiny, the prophetic chains the Chen family had borne for generations—and now, they were breaking."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_008",
+        "character_id": "char_chenji",
+        "content": "From now on, you are no longer my sister, you are merely a free woman—Chen Nian.",
+        "emotion": "温柔而悲壮"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_009",
+        "content": "The moment the words fell, the altar erupted with a thunderous roar. Those blood-red threads wrapped around Chen Nian began to unravel one by one, dissolving into scattered specks of light that vanished into the night sky. And Chen Ji's body began a terrifying transformation at this very moment."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0403_choice_02",
+        "prompt": "The bloodline was burning, Chen Ji's body growing translucent, but he did not retreat.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0403_c2_complete",
+            "text": "Sever completely, leave no room for contingencies",
+            "description": "Burn every last drop of bloodline power, ensuring the ritual completely collapses with no possibility of revival.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Losing all bloodline power",
+            "visible_reward": "The ritual can never be restarted",
+            "risk_hint": "The most brutal price",
+            "process_label": "彻底燃尽",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "黑化值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0403_result_03",
+                  "character_id": "char_chenji",
+                  "content": "Since we're doing this, let's do it thoroughly—burn all my bloodline!",
+                  "emotion": "决然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "final_blood_offering"
+            ],
+            "requires_flag": "blood_sacrifice_done",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "燃尽血脉救至亲",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_010",
+        "content": "The fourth page of the Tianji Record slowly unfurled, countless ancient characters flowing forth like water. Chen Ji saw a truth sealed for ten thousand years—Chen family bloodline belonged to the ancient prophetic race, guardians of the Tianji Record's complete inheritance through generations. And the Eye of Heavenly Dao precisely wanted to seize the Chen family's Heavenly Fate power through Chen Nian, this \"Heavenly Fate Key,\" to reshape the order of heaven."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_011",
+        "content": "The complete contents of the fourth page exploded like thunder in the depths of the Tianji Record. The Eye of Heavenly Dao's scheme was far more profound than imagined—it had treated all generations of prophets as mere pieces, and the Tianji Record was merely one of its pieces spread across the mortal world. A ten-thousand-year layout, all for this very moment."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_012",
+        "content": "Chen Nian's body trembled violently, those blood-red threads completely dispersing. Her feet finally touched the altar's stone floor, her translucent skin regaining the color of flesh and blood. She blankly stared at her own hands, then abruptly looked up—her brother stood not far away, but his body had already begun to dissipate."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_013",
+        "character_id": "char_chenian",
+        "content": "Brother! What did you do! Your body... your body is disappearing!",
+        "emotion": "惊恐绝望"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_014",
+        "character_id": "char_chenji",
+        "content": "Silly girl... I told you, I would come find you. Brother just... did what should have been done long ago.",
+        "emotion": "虚弱但温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_015",
+        "content": "Chen Ji felt his body becoming translucent piece by piece, bloodline burning, flesh dissolving, every inch of bone发出龟裂的声响. But his face held no pain, only an unprecedented calm. The Chen family bloodline had bound him for twenty years, and now, he could finally protect the person he wanted to protect in his own way."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_016",
+        "character_id": "char_chenian",
+        "content": "No! I don't want you to save me! Why are you doing this! You're my brother!",
+        "emotion": "泪流满面"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_017",
+        "content": "Chen Ji used his last ounce of strength to raise his hand, gently touching Chen Nian's cheek. That hand had become translucent, the starry sky visible through it, yet he still gently wiped away the tears on her face."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_018",
+        "character_id": "char_chenji",
+        "content": "Silly girl... being your brother is the luckiest thing in my life. Even if I lose the Chen family bloodline, I will always be your brother. This... will never change.",
+        "emotion": "温柔而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_019",
+        "content": "In the final moment before Chen Ji's consciousness was about to dissipate, the Tianji Record suddenly emitted a blinding golden light. The seal on the fourth page completely shattered, and a complete rune formation took shape around Chen Ji—the outline of the complete Tianji Record, slowly emerging from the Void."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_020",
+        "content": "Chen Nian clutched Chen Ji's gradually translucent body in terror, tears flowing unceasingly. She could feel her brother's life force rapidly draining away, like fine sand held in the palm, impossible to retain no matter what. The runes on the altar had completely dimmed, but her heart was more frightened than ever."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0403_021",
+        "character_id": "char_chenian",
+        "content": "Brother! Don't leave me! I finally found you! Please, don't...",
+        "emotion": "撕心裂肺"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_022",
+        "content": "Chen Ji's consciousness drifted in the darkness, Chen Nian's wailing his only concern. He wanted to respond to her, wanted to tell her not to cry, wanted to tell her brother was so happy to see her again—but his lips could no longer move. Before his last thread of consciousness dissipated, he saw his sister's tear-streaked face, the most beautiful scenery he had ever seen in this life."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_023",
+        "content": "The altar collapsed, dust filling the heavens. Chen Nian knelt in the ruins, holding the unconscious Chen Ji in her arms, tears dripping onto his face drop by drop. The Tianji Record floated above the two, golden light blazing brilliantly, the complete contents of the fourth page slowly revealing themselves. And behind that radiance, a massive existence composed of countless eyes was slowly opening from the Void—the Eye of Heavenly Dao, it had finally appeared."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_024",
+        "content": "That cold gaze pierced through the Void, as if the entire heavens and earth held their breath at this moment. Before Chen Ji's consciousness completely dissipated in the darkness, he heard Chen Nian's heart-wrenching cry—\"Brother!\" That wail penetrated the endless darkness, like a blade, brutally piercing into some corner of his soul."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0403_025",
+        "content": "In the last moment before losing consciousness, Chen Ji opened his eyes with his final trace of strength. In his blurred vision, he could only make out Chen Nian's face—that tear-streaked face. He wanted to say \"don't cry,\" wanted to say \"brother succeeded,\" but his lips only slightly trembled, ultimately unable to utter a single word. The sounds of the altar's collapse gradually faded in his ears, and that cold eye was patiently waiting..."
+      }
+    }
+  ]
+}

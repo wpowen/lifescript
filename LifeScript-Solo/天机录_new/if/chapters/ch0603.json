@@ -1,0 +1,488 @@
+{
+  "id": "天机录_ch0603",
+  "book_id": "天机录",
+  "number": 603,
+  "title": "太子急召",
+  "is_paid": true,
+  "next_chapter_hook": "太子面色苍白地看着陈机，声音低沉而沙哑：「父皇病危，诸皇子蠢蠢欲动，太傅需要朕，朕也需要太傅。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0603_001",
+        "content": "玉简上的「阁」字在烛火下泛着幽幽的光泽，陈机将神识探入其中，却发现那七个字仿佛活过来般不断游走——「第七百章，天机阁恭候」。他嘴角勾起一抹冷意，这天机阁的残页主人，倒是好大的架子。墨先生的残魂在第一页微微颤动，似乎想说什么，却又强行忍住。陈机将玉简收入袖中，心底已有了计较。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0603_002",
+        "character_id": "char_suqingyao",
+        "content": "陈机！",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_003",
+        "content": "苏青瑶的身影如惊鸿般掠入屋内，素白的长裙带起一阵清风。她的面色比平日更加苍白，眼中罕见地带着几分焦色。陈机注意到她鬓角有一缕乱发，显然是一路急行而来。「东宫来人了，」她压低声音，「太子殿下急召，命你即刻入宫。」她的目光落在陈机袖口微微鼓起的玉简上，眸中精光一闪，「那是什么？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0603_004",
+        "character_id": "char_chenji",
+        "content": "不过是些寻常见的符箓罢了。",
+        "emotion": "淡然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_005",
+        "content": "陈机漫不经心地答道。他起身整理衣衫，将那张写着「天机阁恭候」的玉简悄然收入储物袋中，动作行云流水，不着痕迹。苏青瑶的眸光微微一凝，却没有追问。她知道这个男人身上藏着太多秘密，每每触及真相的边缘，都会被他轻描淡写地带过。但今日太子的急召，来得太过突然——皇朝内部，怕是要出大事了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0603_choice_01",
+        "prompt": "面对太子的急召，陈机需要决定如何应对这一突发局面。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0603_choice_01_opt_1",
+            "text": "立刻动身，借势入局",
+            "description": "太子急召正是借势入局的良机，以太子太师身份入宫，在政治漩涡中谋取更大话语权。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露行踪，可能被其他势力盯上",
+            "visible_reward": "加深与太子的关系，获得更多政治情报",
+            "risk_hint": "卷入皇位之争的漩涡中心",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0603_result_01_1",
+                  "content": "陈机起身，整理了一下衣冠，对苏青瑶道：「苏姑娘既然来了，不如一同前往。」苏青瑶微微蹙眉，却也没有拒绝。两人并肩走出天青宗大门，陈机注意到街道上的气氛比往日凝重了许多——百姓们行色匆匆，偶有快马疾驰而过，扬起一路烟尘。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "太子急召"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0603_choice_01_opt_2",
+            "text": "稍作准备，暗中布局",
+            "description": "不急于现身，先让苏青瑶打探消息，暗中观察各方动向后再做定夺。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能让太子久等，显得不够恭敬",
+            "visible_reward": "获取更多情报，掌握主动权",
+            "risk_hint": "太子可能心生疑虑",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0603_result_01_2",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶微微点头，眼中闪过一丝赞许。陈机取出一枚传讯玉符，低声说了几句，那玉符化作流光消失不见。片刻后，各方消息如雪片般飞来——边境异动、皇城戒严、皇子府邸灯火通明……陈机将这些信息一一梳理，嘴角浮起一抹冷笑。",
+                  "emotion": "冷峻"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暗中布局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0603_choice_01_opt_3",
+            "text": "动用天机录，预见危机",
+            "description": "消耗5点天命值，窥探三时辰内的未来，提前预知入宫后会遇到的危险与机遇。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命值-5，身体微微虚弱",
+            "visible_reward": "获得关键预见信息，提前做好应对准备",
+            "risk_hint": "天命值珍贵，不可滥用",
+            "process_label": "天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0603_result_01_3",
+                  "content": "陈机悄然将神识探入天机录残页，一道玄奥的力量瞬间将他笼罩。眼前画面一转——他看见太子面色苍白地坐在龙椅上，看见一个模糊的身影在暗处窥视，还看见一把悬在头顶的利剑。他猛地睁开眼，额上已渗出细密冷汗。天机录的力量正在反噬，但收获同样不小——他至少知道了三处暗中的杀机。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "预见未来"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_006",
+        "content": "入宫的路上，陈机将苏青瑶探来的消息一一在脑中梳理。外敌在边境集结，时空裂隙的影响已开始显现——这不是巧合，而是有人在背后推动。至于那股推动的力量，答案呼之欲出：天机阁。苏青瑶在一旁沉默不语，她知道陈机在思考，却不知他心中已有了计较。这个男人的心思深如古井，永远看不到底。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0603_007",
+        "character_id": "char_suqingyao",
+        "content": "陈机，有件事我必须提醒你。",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_008",
+        "content": "苏青瑶的声音打破了沉默。陈机侧目望去，却见她眉头紧锁，目光中带着罕见的凝重。她低声道：「天机阁的势力……比你想象的更深。太子身边，有他们的人。」陈机脚步微顿，眼中闪过一丝寒光。这条情报，价值连城。他看向苏青瑶，目光深邃：「你从何得知？」苏青瑶摇头：「我不能说。但你必须相信我。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_009",
+        "content": "太子太师的衣袍在晨风中轻轻拂动，陈机整理好仪容，从容地步入皇宫的宏伟宫门。沿途的侍卫和宫女投来复杂的目光——有人不屑，有人好奇，有人暗自揣测这位年轻太师的来历。他对这一切视若无睹，眼观鼻，鼻观心，仿佛一切都在他的掌控之中。只有他自己知道，此刻心中正在进行着一场精密的计算——太子需要什么，他能提供什么，而天机阁又在这盘棋局中埋下了怎样的棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0603_choice_02",
+        "prompt": "入宫后面对太子的询问，陈机需要选择应对方式。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0603_choice_02_opt_1",
+            "text": "坦诚相告，争取信任",
+            "description": "将边境异动与天机阁的关联如实相告，展现诚意与能力，加深与太子的信任关系。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露自己掌握的部分情报来源",
+            "visible_reward": "获得太子更深的信任与依赖",
+            "risk_hint": "太子可能追问情报来源",
+            "process_label": "坦诚",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0603_result_02_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机沉吟片刻，决定抛出一部分真相。他躬身道：「殿下，边境异动恐怕只是表象。臣斗胆猜测，真正的心腹大患，是一个名为天机阁的组织。」太子的眼眸微微一缩，显然对这个名字并不陌生。他低声道：「先生果然消息灵通。」",
+                  "emotion": "深沉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0603_choice_02_opt_2",
+            "text": "点到为止，保持神秘",
+            "description": "只透露部分信息，让太子意识到危机存在但不追问细节，保持谋士的神秘感与主动权。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "太子可能觉得他有所保留",
+            "visible_reward": "保持信息差，掌握博弈主动权",
+            "risk_hint": "太子可能心生疑虑",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0603_result_02_2",
+                  "content": "陈机微微躬身，神色淡然：「殿下莫急。边境之事，不过是疥癣之疾。真正的问题，在于陛下身边……有人不安分。」他点到为止，并未多言。太子眼中精光一闪，却没有追问，只是深深看了他一眼。那目光中的含义很明确——他知道陈机在藏拙，但此刻用人之际，只能暂且按下不表。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_010",
+        "content": "踏入东宫正殿的那一刻，陈机立刻感受到了压抑的气氛。殿内光线昏暗，几盏长明灯的火焰似乎都比平日黯淡了几分。太子端坐在上首，面色苍白如纸，眼下的青黑清晰可见。他看到陈机进来，疲惫的眼眸中终于闪过一丝光亮，急切地站起身来相迎。陈机注意到太子的手指在微微颤抖——这位储君，已被逼到了悬崖边缘。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0603_011",
+        "character_id": "char_suqingyao",
+        "content": "殿下，苏青瑶求见。",
+        "emotion": "恭敬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_012",
+        "content": "苏青瑶的声音在殿外响起，太子微微点头示意。陈机心中一动，却面不改色。他知道苏青瑶此来，必有要事相告。片刻后，苏青瑶步入殿中，目光在陈机身上停留了一瞬，随即将一道密折呈上太子。太子展开密折，面色骤变：「玄武宗……天道盟……还有天机阁的人？！」陈机垂眸，心中冷笑——这盘棋，比他想象的还要复杂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0603_choice_03",
+        "prompt": "太子询问应对之策，陈机需要给出建议。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0603_choice_03_opt_1",
+            "text": "以静制动，静观其变",
+            "description": "建议太子按兵不动，让各方势力先互相消耗，在乱局中寻找破局良机。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失先机，被动应对",
+            "visible_reward": "看清各方底牌，避免成为靶子",
+            "risk_hint": "太子可能急于行动",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0603_result_03_1",
+                  "content": "陈机负手而立，语气淡然：「殿下，此刻最忌轻举妄动。敌人想要的，正是我们自乱阵脚。不如以静制动，让他们先露出狐狸尾巴。」太子沉吟良久，终于缓缓点头。他看向陈机的目光中，多了几分复杂的意味——这个看似懦弱的太师，胸中竟有如此城府。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0603_choice_03_opt_2",
+            "text": "主动出击，先发制人",
+            "description": "建议太子先下手为强，在敌人布局完成前打乱他们的计划，展示强硬手腕。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "风险极高，可能打草惊蛇",
+            "visible_reward": "掌握先机，震慑宵小",
+            "risk_hint": "失败将万劫不复",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0603_result_03_2",
+                  "character_id": "char_chenji",
+                  "content": "陈机嘴角微扬，眸中闪过一丝锐利的光芒：「殿下，与其坐以待毙，不如主动出击。臣愿为殿下走一趟边境，亲眼看看那些跳梁小丑的底牌。」太子眼中精光大盛，猛然拍案而起：「好！朕就知道，太傅是朕的子房！」苏青瑶在一旁静静看着陈机，目光中闪过一丝难以察觉的担忧。",
+                  "emotion": "激昂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0603_choice_03_opt_3",
+            "text": "暗度陈仓，布局长远",
+            "description": "表面上建议按兵不动，暗中却要布局更深的棋局，为将来决战积累筹码。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要更多时间与精力",
+            "visible_reward": "为将来决战埋下伏笔",
+            "risk_hint": "可能错过眼前机会",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0603_result_03_3",
+                  "content": "陈机在殿中踱了几步，声音低沉却清晰：「殿下明面上按兵不动，暗中却可布局。臣愿为殿下在朝中埋下几枚棋子，待时机成熟，便可收网。」太子眼中精光一闪，连连点头。他突然发现，这个年轻的太师，竟比他想象的更加深不可测。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_013",
+        "content": "就在这时，陈机忽然感到一阵若有若无的目光落在自己身上。那目光阴冷而深邃，仿佛来自九幽深渊。他不动声色地用神识扫过四周，却什么也没发现。但那种被窥视的感觉，却如影随形。天机阁——他们在看着。苏青瑶似乎也察觉到了什么，她的目光与陈机短暂交汇，其中意味不言自明。两人默契地没有点破，却在心中同时敲响了警钟。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0603_014",
+        "character_id": "char_suqingyao",
+        "content": "陈机，小心了。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_015",
+        "content": "苏青瑶的密语传入陈机耳中，带着一丝罕见的担忧。陈机微微颔首，表示知晓。他抬起头，正对上太子那双满是期待与焦虑的眼睛。这个年轻的储君，如今正站在命运的十字路口上——而他陈机，正是决定他命运的关键人物。殿外忽然传来一阵急促的脚步声，一个小太监跌跌撞撞地冲了进来，扑通一声跪倒在地，声音颤抖：「殿下——陛下——陛下宣殿下即刻入宫见驾！」太子的脸色刷地一下变得惨白。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0603_016",
+        "content": "陈机静静地看着太子仓皇离去的背影，目光深邃如渊。他知道，那枚刻着「阁」字的玉简，恐怕很快就要发挥作用了。天机阁的阴影，已经笼罩在这座皇宫之上。而他这枚棋子，在他们的棋盘上，究竟扮演着怎样的角色？陈机低头看向自己的掌心，那里似乎还残留着玉简的余温。第七百章——这是一个章节的结束，也是一个新的开始。他嘴角勾起一抹冷笑，转身望向殿外阴沉的天空。风云变幻，棋局已开，而他陈机，绝不会甘于做别人手中的棋子。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

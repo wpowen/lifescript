@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch0030",
+  "book_id": "天机录",
+  "number": 30,
+  "title": "天机初醒",
+  "is_paid": false,
+  "next_chapter_hook": "就在陈机以为自己成功瞒过所有人时，一道冰冷的视线穿透了重重云雾，直直落在他的眉心——那是来自天道之眼的注视。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0030_001",
+        "content": "云层之上那道苍老的声音如惊雷炸响，天青宗山门前的喧嚣骤然凝固。众人抬头，只见一位白发老者踏虚空而来，周身萦绕着淡金色的灵光，气势如渊似海，压得在场众人喘不过气来。陈机站在人群最末端，望着那道身影，嘴角微微上扬——老东西，终于来了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_002",
+        "character_id": "char_lingyuan",
+        "content": "老夫凌渊，今日破例收一杂役弟子入墙。",
+        "白发老者俯视全场，目光在陈机身上停留了一瞬，\"此子与老夫有缘。\"": "emotion\": \"威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_003",
+        "content": "人群中爆发出一阵骚动。内门首席苏青瑶眉头紧皱，看向那个站在最后、看起来人畜无害的杂役弟子。她总觉得这个人身上有种说不清道不明的东西，让她本能地感到警惕。陈机感受到那道审视的目光，心中一凛，面上却露出受宠若惊的惶恐神情，低着头不敢与人对视。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_004",
+        "character_id": "char_suqingyao",
+        "content": "凌渊师叔祖，\"苏青瑶上前一步，声音清冷，\"三百年未曾收徒，今日却要收一个废物？恕弟子直言，此事恐怕不合规矩。",
+        "emotion": "质疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_005",
+        "content": "凌渊淡淡一笑，目光扫过苏青瑶：\"老夫行事，何须向你这小辈解释？\"那股威压骤然加重，苏青瑶闷哼一声，连退数步。陈机低着头，眼底闪过一丝冷光——老东西，欺负她就是打我的脸，这笔账我记下了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice01",
+        "prompt": "面对凌渊的强势与苏青瑶的质疑，陈机必须做出选择——是继续隐忍，还是小小反击？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0030_c1_忍",
+            "text": "忍下这口气",
+            "description": "继续扮演废物，低头顺从凌渊的安排，不暴露任何锋芒。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被进一步轻视",
+            "visible_reward": "安全潜伏在凌渊身边",
+            "risk_hint": "苏青瑶可能更加怀疑",
+            "process_label": "陈机选择了隐忍",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c1_忍_1",
+                  "content": "陈机立刻跪倒在地，声音颤抖：\"弟、弟子叩谢师叔祖厚爱……\"他的演技堪称完美，连苏青瑶都忍不住露出一丝失望——果然是个扶不上墙的废物。凌渊满意地点点头，转身欲带他离去。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c1_反击",
+            "text": "暗中刺他一句",
+            "description": "用言语小小反击，既不暴露实力，又能给凌渊心里扎根刺。",
+            "satisfaction_type": "嘴毒打脸",
+            "visible_cost": "可能引起更多关注",
+            "visible_reward": "苏青瑶刮目相看",
+            "risk_hint": "凌渊可能起疑心",
+            "process_label": "陈机决定小小反击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0030_result_ch0030_c1_反击_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机抬起头，眼中闪过一丝精光，旋即收敛。他对着苏青瑶的方向小声道：\"苏师姐说得对，弟子确实是个废物……所以师叔祖才说要收废物入门墙嘛。\"声音虽小，却恰好让在场所有人都听得清清楚楚。",
+                  "emotion": "狡黠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_006",
+        "content": "就在众人愣神的瞬间，陈机怀中的那卷残页猛然发烫。一股前所未有的力量从他胸口炸开，涌入四肢百骸。他眼前骤然一黑，无数光影片刻涌入脑海——那是未来三时辰的景象。剧烈的头痛如潮水般袭来，他几乎站不稳身形。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_007",
+        "content": "【天机录·残页激活】\n【预见能力开启：三时辰预知】\n【天命值消耗：-5】\n【警告：首次激活，代价加倍】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_008",
+        "content": "陈机强忍剧痛，在那些支离破碎的画面中搜寻有用信息。他看见凌渊带他进入一座隐秘的石室，看见石壁上刻满了诡异的符文，看见凌渊转身时眼中一闪而过的杀意——老东西，果然没安好心！他的预见模糊而急促，但足够让他心中有数。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "就在此时，一道冰冷至极的意念穿透虚空，直接在陈机脑海中炸响：「有趣……又一颗棋子醒来了。」那声音不带任何感情，却让陈机浑身汗毛倒竖，仿佛被远古凶兽盯上了猎物。",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_010",
+        "content": "陈机脸色瞬间煞白，但他死死咬住舌尖，用痛感逼自己保持清醒。墨先生的残魂在他意识深处震颤：\"小心，那是天道之眼！它在注视你！\"陈机心中骇然，面上却不敢流露分毫。他装作体力不支的样子，踉跄后退几步。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_011",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶敏锐地察觉到陈机的异常，快步上前：\"你怎么了？脸色这么难看？\"她的目光锐利如刀，在陈机脸上来回梭巡，似乎想从他眼底看出什么破绽。陈机勉强挤出一个虚弱的笑容：\"没、没什么……可能是太激动了……\"",
+        "emotion": "关切"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice02",
+        "prompt": "苏青瑶的追问让陈机陷入两难——是继续装弱博取同情，还是趁机试探她的态度？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "ch0030_c2_装弱",
+            "text": "继续装弱",
+            "description": "利用苏青瑶的同情心，借口身体不适先离开凌渊的视线。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错过了解凌渊的机会",
+            "visible_reward": "安全脱身，为下次行动争取时间",
+            "risk_hint": "苏青瑶的怀疑会加深",
+            "process_label": "陈机决定装弱脱身",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c2_装弱_1",
+                  "content": "陈机顺势扶住额头，摇摇欲坠：\"师叔祖……弟子突然头晕得厉害……\"凌渊眉头微皱，冷冷看了他一眼，挥手道：\"罢了，先带下去休息。\"陈机在被人搀走时，余光瞥见苏青瑶若有所思的神情，心中暗叹：又让她多疑了。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c2_试探",
+            "text": "借机试探",
+            "description": "以身体不适为由，请求苏青瑶护送，借机观察她对自己的真实态度。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能被苏青瑶看穿",
+            "visible_reward": "获得与苏青瑶独处的机会",
+            "risk_hint": "凌渊可能不满",
+            "process_label": "陈机决定试探苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0030_result_ch0030_c2_试探_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机假装踉跄，朝着苏青瑶的方向倒去：\"苏师姐……能否扶弟子一把……\"苏青瑶下意识伸手接住他，两人距离骤然拉近。她低头看着怀中这个看似瘦弱的杂役弟子，心中那种古怪的感觉愈发强烈——这个人的眼睛，太清澈了，清澈得不像个废物。",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_012",
+        "content": "头痛稍减，陈机却感到一阵前所未有的虚弱——那是天命值大量消耗带来的反噬。他暗暗心惊：仅仅一次预见就消耗了十点天命值，若是多用几次……墨先生的声音在意识深处响起：\"莫急，天机录的代价是公平的。你预见得越多，命中的劫数就越重。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_013",
+        "content": "凌渊的声音从远处传来：\"带他去静心阁休息。\"两名内门弟子上前架住陈机的胳膊，将他带离人群。就在经过苏青瑶身边时，陈机忽然低声说了句只有她能听见的话：\"苏师姐，小心师叔祖的石室。\"苏青瑶瞳孔骤缩，正要追问，陈机已被带走了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_014",
+        "content": "夜色渐深，陈机躺在静心阁的床榻上，闭目整理着脑海中那些模糊的预见画面。他看见了凌渊在石室中修炼某种诡异的功法，看见了玄武宗的韩烈出现在天青宗附近，还看见了……一个被锁链囚禁的少女身影，模模糊糊，像是陈念。他的心猛地揪紧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_015",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的虚影从残页中浮现，神色凝重：\"小子，你惹上大麻烦了。天道之眼已经注意到你，从今往后，你的每一步都会被它盯着。\"陈机猛然睁眼，声音沙哑：\"那又如何？它要下棋，我便陪它下。\"墨先生愣了愣，忽然笑了：\"好，有胆气。\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_016",
+        "content": "窗外忽然传来一阵细微的脚步声。陈机立刻收敛气息，假装沉睡。来人在门口停留片刻，似乎在犹豫要不要进来。陈机从气息判断出那是苏青瑶——她果然没有放弃调查。片刻后，脚步声远去，陈机这才松了口气，同时也更加警惕：这个女人，太敏锐了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice03",
+        "prompt": "面对苏青瑶的步步紧逼，陈机需要做出决定——是主动出击化解她的怀疑，还是继续被动防守等待时机？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0030_c3_主动",
+            "text": "主动接近苏青瑶",
+            "description": "明早主动找苏青瑶，用半真半假的话术化解她的戒心，甚至可能将她发展为暗中盟友。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "需要精心设计话术",
+            "visible_reward": "获得一个强力内应",
+            "risk_hint": "可能弄巧成拙",
+            "process_label": "陈机决定主动出击",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c3_主动_1",
+                  "content": "陈机心中有了计较。与其让苏青瑶像猎人一样追踪他，不如主动引导她的视线，让她成为他布局中的一枚棋子。反正他要对抗凌渊、对抗天道之眼，多一个聪明人在身边总比少一个好。当然，这一切都要建立在不暴露天机录的前提下。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c3_防守",
+            "text": "继续被动防守",
+            "description": "保持现状，让苏青瑶继续怀疑但找不到证据，用时间消磨她的耐心。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错过拉拢她的机会",
+            "visible_reward": "保持现状的安全",
+            "risk_hint": "苏青瑶的怀疑会持续积累",
+            "process_label": "陈机决定继续隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c3_防守_1",
+                  "content": "陈机翻了个身，决定暂时按兵不动。苏青瑶是聪明人，但聪明人往往想得太多。只要他不露出明显的破绽，她迟早会因为过度分析而走进死胡同。当然，如果她真的查到什么……陈机的眼神暗了暗，那他也不介意辣手摧花。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_017",
+        "content": "夜深了，静心阁外忽然传来一阵喧哗。陈机侧耳倾听，隐约听见有人在喊\"有刺客\"。他霍然坐起，心中涌起一股不祥的预感——韩烈！那个预见中的场景成真了！玄武宗的天才弟子，竟然连夜闯入了天青宗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_018",
+        "content": "窗外火光冲天，喊杀声此起彼伏。陈机透过窗缝望去，只见一道霸道的身影在人群中横冲直撞，无人能挡。那正是他在预见中看到的韩烈——一个纯粹以力量碾压一切的武痴。韩烈的目光扫过静心阁，忽然咧嘴一笑：\"废物，听说你被凌渊收为弟子了？让老子来试试你的成色！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_019",
+        "content": "陈机没有慌张，反而露出一丝玩味的笑容。韩烈来得比他预见的更早，看来命运并非完全按照天机录的轨迹运行。他不慌不忙地站起身，推开房门，对着那道如山般压来的身影朗声道：\"韩师兄深夜造访，不知有何贵干？\"他的声音平静得出奇，与周围慌乱的氛围形成鲜明对比。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_020",
+        "character_id": "char_hanlie",
+        "content": "韩烈狂笑一声，巨掌已经拍到陈机面前：\"有何贵干？当然是打死你！\"那股排山倒海般的灵力压迫而来，陈机却纹丝不动。他的瞳孔中闪过一丝金光——天机录再次运转。虽然明知接下来的三时辰内韩烈不会得逞，但他还是忍不住计算着最佳的闪避时机与反击角度。",
+        "emotion": "狂傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_021",
+        "content": "就在韩烈的攻击即将落下的瞬间，一道凌厉的剑光横空而至，硬生生将那巨掌荡开。苏青瑶一身白衣立于陈机身前，长剑斜指韩烈：\"韩烈，你敢在天青宗动手？\"她的声音冷若寒冰，但握着剑的手却在微微颤抖——韩烈的实力，远超她的想象。陈机看着那道纤细的背影，心中涌起一股复杂的情绪。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_022",
+        "content": "【天命值：85/100】\n【警告：检测到外部威胁，建议使用者评估风险】\n【天机录残页共鸣度：12%】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_023",
+        "content": "陈机深吸一口气，做出了决定。他轻轻拍了拍苏青瑶的肩膀，声音平静：\"苏师姐，多谢。但这是我和他之间的事。\"苏青瑶猛然回头，却看见陈机眼中那股前所未有的自信与从容。那一刻，她终于确认了自己的怀疑——这个废物，绝非池中之物。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_024",
+        "content": "韩烈见状非但不怒，反而兴奋得双眼放光：\"哈哈哈哈！终于露出真面目了吗？\"他周身灵压暴涨，玄武宗的镇宗功法《玄武战体》催动到了极致。陈机负手而立，在那惊天动地的气势压迫下，他的衣袂猎猎作响，却始终不曾后退半步。这一刻，围观的所有人都意识到——这个杂役弟子，恐怕要创造一个奇迹。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

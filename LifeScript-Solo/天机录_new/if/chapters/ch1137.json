@@ -1,0 +1,403 @@
+{
+  "id": "天机录_ch1137",
+  "book_id": "天机录",
+  "number": 1137,
+  "title": "分离时刻",
+  "is_paid": true,
+  "next_chapter_hook": "陈机望着陈灵消散的方向，握紧了手中的天机录残页。他知道，前方的路虽然孤独，但那份温暖将永远伴随着他。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1137_001",
+        "content": "晨曦初破，山巅之上云雾缭绕。两道身影并肩而立，却在无声中透着即将分离的悲凉。陈机望着眼前的少女，心中五味杂陈。陈灵的身影已经开始变得透明，仿佛随时都会消散在这天地之间。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1137_002",
+        "character_id": "char_chenji",
+        "content": "真的要走了吗？",
+        "emotion": "不舍"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_003",
+        "content": "陈灵微微一笑，那笑容里没有悲伤，只有一种历经沧桑后的平静。她轻轻伸出手，指尖触及陈机的额头，一缕金色的光芒从她体内溢出，缓缓流入陈机的身体。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1137_004",
+        "character_id": "char_chenji",
+        "content": "这是我这些年所有的感悟，如今全部传给你。它们会帮助你在这条路上走得更远。",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_005",
+        "content": "陈机感受到一股温暖而强大的力量涌入体内，那是陈灵千年岁月的沉淀。他闭上眼睛，任由这份力量在体内流淌。刹那间，无数画面在他脑海中闪过——是陈灵孤独时的沉思，是她面对天地时的感悟，是她对生命与命运的深刻理解。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1137_006",
+        "character_id": "char_chenji",
+        "content": "这些感悟...太珍贵了。我...我不知道该说什么。",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_007",
+        "content": "金色的光芒渐渐消散，陈灵的身影越发虚幻。她轻轻退后一步，目光中满是温柔与不舍，却也有着坚定的释然。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1137_008",
+        "prompt": "分离在即，陈机该如何面对这场离别？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1137_008_a",
+            "text": "祝福分离",
+            "description": "陈机决定给予陈灵最真挚的祝福，让她安心离去。两人的羁绊不会因分离而断绝。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "承受离别的痛苦",
+            "visible_reward": "获得陈灵全部感悟传承，战力大幅提升",
+            "risk_hint": "可能会沉浸在伤感中影响判断",
+            "process_label": "选择祝福",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_008_a_001",
+                  "content": "陈机深吸一口气，努力平复心中的波澜，缓缓开口。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "blessed_separation"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1137_008_b",
+            "text": "挽留共存",
+            "description": "陈机想尝试挽留陈灵，寻找让她留下的方法。他不愿轻易放弃这份羁绊。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能会错过最佳分离时机",
+            "visible_reward": "可能发现新的共存方式",
+            "risk_hint": "强行挽留可能导致两败俱伤",
+            "process_label": "尝试挽留",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_008_b_001",
+                  "content": "陈机伸手想要抓住什么，却发现手指穿过了陈灵虚幻的身影。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "tried_keep"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1137_008_c",
+            "text": "约定重逢",
+            "description": "陈机与陈灵立下约定，无论相隔多远，终有一日会再次相见。这份约定将成为两人各自前行的动力。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "需要承担约定的责任",
+            "visible_reward": "获得精神上的寄托与羁绊",
+            "risk_hint": "未来是否能兑现约定尚未可知",
+            "process_label": "许下约定",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_008_c_001",
+                  "content": "陈机的眼神变得坚定起来，仿佛找到了前行的方向。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "promised_reunion"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1137_009",
+        "character_id": "char_chenji",
+        "content": "去吧，去追寻你自己的道路。无论前方有多少艰险，我都会记住我们曾并肩走过的这段时光。",
+        "emotion": "祝福"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_010",
+        "content": "陈灵的身影越发虚幻，仿佛随时都会融入天地之间。然而就在此时，天机录残页突然发出淡淡的光芒，一股奇异的力量从中溢出，缓缓注入陈机的体内。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1137_011",
+        "prompt": "面对突如其来的力量觉醒，陈机该如何应对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1137_011_a",
+            "text": "顺势接纳",
+            "description": "陈机选择顺应这股力量，让它与陈灵的感悟融合，完成最终的蜕变。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "需要承受力量冲击的风险",
+            "visible_reward": "战力提升至破局者中阶，获得完整的独立人格",
+            "risk_hint": "力量融合过程可能会有剧痛",
+            "process_label": "接纳力量",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_011_a_001",
+                  "content": "陈机闭上眼睛，任由那股力量在体内激荡。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1137_011_b",
+            "text": "谨慎引导",
+            "description": "陈机选择谨慎引导这股力量，避免因急躁而走火入魔。稳扎稳打才是王道。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "提升速度较慢",
+            "visible_reward": "基础更加扎实，未来发展潜力更大",
+            "risk_hint": "可能错过最佳突破时机",
+            "process_label": "谨慎引导",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_011_b_001",
+                  "content": "陈机深吸一口气，开始小心翼翼地引导那股力量。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_012",
+        "content": "金色的光芒在陈机体内流转，与陈灵传来的感悟完美融合。他的气息开始发生变化，一股前所未有的力量在体内涌动。那是破局者的气息，是真正的独立与强大。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1137_013",
+        "character_id": "char_chenji",
+        "content": "我感觉到了...前所未有的完整。原来这就是独立的感觉。",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_014",
+        "content": "当光芒散去，陈灵的身影已经淡得几乎看不见了。她转过身，最后看了陈机一眼，眼中满是欣慰与不舍。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1137_015",
+        "prompt": "最后的时刻，陈机想对陈灵说什么？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch1137_015_a",
+            "text": "珍重再见",
+            "description": "陈机郑重地向陈灵道别，许诺会在各自的道路上继续前行。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "获得完整的独立人格，踏上新征程",
+            "risk_hint": "无",
+            "process_label": "道别",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_015_a_001",
+                  "content": "陈机轻轻拱手，向陈灵行最后一礼。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1137_015_b",
+            "text": "我会找到你",
+            "description": "陈机向陈灵承诺，无论她身在何方，他都会找到她。这份执念将成为他前进的动力。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能需要很长时间才能实现",
+            "visible_reward": "获得精神寄托，前路不再迷茫",
+            "risk_hint": "未来充满未知",
+            "process_label": "许诺",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1137_result_015_b_001",
+                  "content": "陈机的眼中燃烧着坚定的光芒。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1137_016",
+        "character_id": "char_chenji",
+        "content": "陈灵，保重。无论天涯海角，我都不会忘记这段岁月。愿你前路无恙，得偿所愿。",
+        "emotion": "不舍"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_017",
+        "content": "陈灵的身影彻底消散，化作漫天的金色光点飘向天际。陈机站在原地，望着那些光点渐渐消失，心中既有离别的伤感，也有对未来的期待。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_018",
+        "content": "就在此时，陈机感受到体内的力量达到了巅峰。那是破局者中阶的气息，是陈灵所有感悟与天机录残页力量融合后的结晶。他睁开眼，眸中精光闪烁，仿佛能够看穿世间一切虚妄。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_019",
+        "content": "分离后的陈机感到一阵前所未有的空缺与完整并存。那份曾经支撑他的羁绊，如今已化作他内心最深处温暖而坚定的力量。他不再是那个需要依附他人的少年，而是真正独立强大的破局者。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1137_020",
+        "content": "晨风吹过，带起陈机的衣角。他转身望向山下，那里是天青宗的方向，是他新的战场。凌渊的威胁还未解除，魔道的野心仍在燃烧，而他，已经准备好了。陈机深吸一口气，迈步向前走去，晨光将他的影子拉得很长，仿佛要延伸到天地的尽头。前路漫漫，但他的眼中，已有了明确的方向。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

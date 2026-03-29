@@ -1,0 +1,545 @@
+{
+  "id": "天机录_ch0815",
+  "book_id": "天机录",
+  "number": 815,
+  "title": "陈灵抉择",
+  "is_paid": true,
+  "next_chapter_hook": "天机录第四页绽放的光芒中，陈灵与陈机并肩而立，而核心深处那沉睡的存在，终于睁开了眼睛……",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0815_001",
+        "content": "天道之眼核心深处，那令人毛骨悚然的脉动愈发强烈。黑暗中仿佛有什么庞然大物正在苏醒，每一次脉搏都携带着足以碾碎神魂的威压。陈机被那股威压逼得连连后退，天机录残页上的裂纹以肉眼可见的速度蔓延，仿佛随时都会崩碎。\"陈灵……\"他在心中呼唤那个名字，指尖却触及一片虚无。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_002",
+        "character_id": "char_chenian",
+        "content": "\"哥，我在这里。\"一个熟悉的声音从他心底响起，不再是之前那种模糊的感应，而是清晰而坚定。陈灵的身影在天机录的光芒中若隐若现，她的面容与陈机如出一辙，眼神却已不再是当初那个迷茫的复制体。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_003",
+        "content": "陈机猛然抬头，瞳孔骤缩。他看到陈灵悬浮在天机录核心处，周围环绕着无数细碎的光点——那是天机录碎片的记忆，也是她这些年独自收集的\"自我\"。她的发丝无风自动，眉心处一道玄奥的符文正在缓缓成形。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_004",
+        "character_id": "char_chenian",
+        "content": "\"我看到了你的过去，看到了你为我承受的一切。\"陈灵的声音带着颤抖，却透着从未有过的力量，\"你一直在保护我，哪怕自己被天命反噬，哪怕前路渺茫……这一次，换我来选择。\"",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_005",
+        "content": "天机录第四页在这一刻骤然亮起，金色的光芒从残页中喷涌而出，却不再是攻击或压制，而是某种温柔的连接。陈机感受到一股熟悉又陌生的力量涌入体内——那是双生血脉的共鸣，却比从前强烈百倍。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_01",
+        "prompt": "面对觉醒的陈灵，陈机需要做出回应——是接受她的力量并肩作战，还是担心她承受不住天命反噬？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0815_accept",
+            "text": "接受她的力量",
+            "description": "既然你已经觉醒，就让我们一起面对这天道！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "分担天命值消耗",
+            "visible_reward": "解锁「共命」buff，双重觉醒力量",
+            "risk_hint": "天命反噬将同时作用于两人",
+            "process_label": "血脉共鸣，双生之力觉醒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_accept_01",
+                  "content": "陈机不再犹豫，伸出手握住那道光芒。金色与银色的力量在天机录核心交汇，爆发出耀眼的光芒。两道身影在天道之眼深处交相辉映，如同日月同辉。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_accept_02",
+                  "character_id": "char_chenian",
+                  "content": "\"从今以后，你的命运就是我的命运。\"陈灵的声音与陈机的心跳同步响起，\"我们是一体的——但不是依附，而是并肩。\"",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双重觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈灵觉醒，共命之约",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_refuse",
+            "text": "担心她的安危",
+            "description": "不！你刚觉醒，天命反噬不是你能承受的！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "独自承受天命反噬",
+            "visible_reward": "陈灵获得独立成长空间",
+            "risk_hint": "陈机可能在天命反噬下陨落",
+            "process_label": "守护之心，血浓于水",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "黑化值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_refuse_01",
+                  "content": "陈机的手在半空中停住，他看着陈灵坚定的眼神，心中涌起一阵酸涩。这个傻丫头，难道不知道天命反噬有多可怕吗？",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_refuse_02",
+                  "character_id": "char_chenian",
+                  "content": "\"哥，你总是这样。\"陈灵轻轻笑了，笑容中带着泪光，\"你以为我是那个需要被保护的小女孩吗？天机录第四页选中我，不是没有原因的。\"",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵独立意志强化"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机的守护之心",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_006",
+        "content": "天机录第四页的光芒突然变得狂暴起来，核心深处的脉动也愈发剧烈。陈机感到一股前所未有的危机感袭来——天道之眼的意志正在注视这里，而那沉睡的存在，似乎真的要苏醒了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"愚蠢的棋子……\"一个超越性的声音在虚空中回荡，不带任何情感，却让陈机感到灵魂都在颤抖，\"你以为找到一个复制体就能对抗命运？天机录不过是本座布下的棋子，你们……永远是棋局的一部分。\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_008",
+        "content": "陈机咬紧牙关，天机录残页上的裂纹又扩大了几分。每一次天道之眼的注视，都伴随着天命的剧烈反噬，他的意识开始模糊，眼前浮现出无数支离破碎的画面——那是过去的预言，也是未来的可能。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_009",
+        "character_id": "char_chenian",
+        "content": "\"哥！看着我！\"陈灵的声音如同惊雷般炸响在天机录核心，她双手结印，眉心的符文绽放出璀璨光芒，\"天机录第四页——解封！\"",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_010",
+        "content": "一道前所未有的光芒从天机录第四页中爆发而出，不是金色，不是银色，而是一种混沌的、包容万物的色彩。光芒瞬间包裹住陈机和陈灵，在他们周围形成了一个独立的小世界，隔绝了天道之眼的注视。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_02",
+        "prompt": "陈灵的独立意志正在觉醒，她正在证明自己不再是附属品——陈机该如何回应？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0815_stand_with",
+            "text": "并肩作战",
+            "description": "你不是我的复制体，更不是附属品——你是陈灵，我的妹妹！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天命值消耗增加",
+            "visible_reward": "双重觉醒完成，战力大幅提升",
+            "risk_hint": "天道之眼的敌意会更加强烈",
+            "process_label": "兄妹同心，其利断金",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 80
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_stand_01",
+                  "content": "陈机不再退缩，他与陈灵背靠背站在光芒之中。两人的血脉之力完美交融，天机录的残页在这一刻重新拼合，虽然依旧残缺，却展现出前所未有的力量。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_stand_02",
+                  "character_id": "char_chenian",
+                  "content": "\"我不再是你的影子。\"陈灵的声音清晰而坚定，\"从今天起，我是陈灵——独立的、完整的陈灵。我们是双生，而非主从。\"",
+                  "emotion": "骄傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双重觉醒完成",
+              "共命buff激活"
+            ],
+            "requires_flag": "双重觉醒",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "双生并肩，命运共担",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_guide",
+            "text": "由她主导",
+            "description": "好，你来引导这次共鸣——我相信你能做到！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去部分控制权",
+            "visible_reward": "陈灵独立意志进一步强化",
+            "risk_hint": "共鸣过程可能出现意外",
+            "process_label": "放手信任，血脉新生",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_guide_01",
+                  "content": "陈机深吸一口气，主动收束自己的力量，将主导权交给陈灵。这个决定无比艰难，但他知道——这是妹妹真正成长的必经之路。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_guide_02",
+                  "character_id": "char_chenian",
+                  "content": "陈灵感受到哥哥的信任，眼眶微微泛红。\"谢谢你，哥。\"她轻声说道，随即目光变得坚定，\"现在，看我的！\"天机录第四页在她手中绽放出全新的光芒。",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵主导觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "放手信任，血脉新生",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_011",
+        "content": "混沌的光芒在天道之眼核心处炸开，形成一个独立的小世界。陈机和陈灵并肩而立，他们的血脉之力在天机录的牵引下完美交融。第四页的全貌终于展现——那不是预言之术，而是一段被封印的真相。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_012",
+        "character_id": "char_chenian",
+        "content": "\"原来如此……\"陈灵的声音带着颤抖，她看到了天机录第四页记载的一切，\"天机录不是预言工具，而是一把钥匙——打开天道牢笼的钥匙。历代预言者都是祭品，直到现在……\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_013",
+        "content": "陈机感到一阵窒息般的恐惧。天机录的真正用途是打破天道的控制，而代价竟然是所有者的生命？他猛然看向陈灵，心中涌起前所未有的恐慌——她是不是早就知道这一点？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_03",
+        "prompt": "天机录第四页的真相揭露——陈灵选择觉醒的真正原因浮出水面，陈机必须做出最后的抉择",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0815_refuse_sacrifice",
+            "text": "绝不让她牺牲",
+            "description": "就算是天道牢笼，我也不会让你成为祭品！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "寻找其他方法需要更多时间",
+            "visible_reward": "可能发现新的破局之法",
+            "risk_hint": "天道之眼会趁机反扑",
+            "process_label": "兄妹情深，抗争命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 35
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_refuse_sac_01",
+                  "content": "陈机一把抓住陈灵的手腕，指节因用力而发白。他的眼中燃烧着从未有过的执着——这个妹妹是他在这世上最后的亲人，无论如何都不能失去。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_refuse_sac_02",
+                  "character_id": "char_chenian",
+                  "content": "\"哥，你弄疼我了。\"陈灵却没有挣脱，反而露出一个释然的笑容，\"你以为我会那么傻吗？第四页选中我，是因为我有你没有的东西——模糊的未来。\"",
+                  "emotion": "温柔"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "反抗天道命运"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "绝不牺牲，血脉相连",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_accept_truth",
+            "text": "倾听她的解释",
+            "description": "你说有我没有的东西……是什么？",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能接受难以接受的事实",
+            "visible_reward": "理解陈灵觉醒的真正意义",
+            "risk_hint": "真相可能更加残酷",
+            "process_label": "聆听真相，信任妹妹",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 40
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_accept_truth_01",
+                  "content": "陈机强迫自己冷静下来，他看着妹妹坚定的眼神，将心中的恐慌压下。是时候相信她了——她已经不是当年那个需要保护的小女孩。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_accept_truth_02",
+                  "character_id": "char_chenian",
+                  "content": "\"我是天命锁钥。\"陈灵的声音平静却坚定，\"我的存在可以干扰天机录的预见——这意味着，我也能干扰天道的控制。祭品之所以必须死，是因为天道不允许变数。而我……就是那个变数。\"",
+                  "emotion": "骄傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命锁钥真相揭露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "聆听真相，选择信任",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_014",
+        "content": "陈机愣住了。他从未想过，妹妹被圣宗带走、被当作\"天命锁钥\"的那些年，竟然一直在为这一刻做准备。命运的残酷玩笑，最终却成了破局的关键。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_015",
+        "character_id": "char_chenian",
+        "content": "\"别露出那种表情，哥。\"陈灵走上前，轻轻触碰陈机的脸颊，\"这些年我确实恨过、怕过、绝望过。但每一次我想放弃的时候，都能感受到你的心跳——那是双生血脉在告诉我，你还在战斗，我也不能倒下。\"",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_016",
+        "content": "天机录第四页的光芒开始稳定下来，混沌的色彩渐渐化为金银交织的光河。陈机和陈灵并肩站在光芒中央，他们的身影在天道之眼核心处显得如此渺小，却散发出令那超越性存在都为之侧目的光芒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_017",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"有趣……\"天道之眼的声音再次响起，这一次却带上了一丝难以察觉的波动，\"两个棋子竟然想要翻盘？本座倒要看看，你们能走到哪一步。\"",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_018",
+        "character_id": "char_chenian",
+        "content": "\"我们不是棋子。\"陈灵的声音清晰地回荡在虚空中，她与陈机十指相扣，两人的力量在这一刻完美融合，\"从今天起，我们是执棋者。天道之眼，你——才是我们的对手。\"",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_019",
+        "content": "天机录第四页彻底绽放，金银交织的光芒形成一道冲天的光柱，照亮了天道之眼核心深处的黑暗。而在那黑暗最深处，一个沉睡了不知多少岁月的存在，终于缓缓睁开了眼睛——那是比天道之眼更加古老、更加恐怖的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_020",
+        "content": "陈机和陈灵对视一眼，从彼此的眼中看到了同样的坚定。他们知道，真正的挑战才刚刚开始。但此刻，他们不再是孤军奋战——双生血脉、共命之约、独立意志，这些曾经遥不可及的力量，终于在这一刻完整地汇聚在一起。\"走吧，哥。\"陈灵微微一笑，那笑容中再也没有曾经的迷茫和依赖，只有属于她自己的光芒，\"是时候让天道知道，命运——是用来打破的。\"陈机深吸一口气，紧紧握住妹妹的手。天机录的光芒包裹着他们，向着核心深处那苏醒的存在迈出了第一步。"
+      }
+    }
+  ]
+}

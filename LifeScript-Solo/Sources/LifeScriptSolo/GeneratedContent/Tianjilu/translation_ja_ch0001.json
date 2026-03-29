@@ -1,0 +1,508 @@
+{
+  "id": "天机录_ch0001",
+  "book_id": "天机录",
+  "number": 1,
+  "title": "無能な捨て子",
+  "is_paid": false,
+  "next_chapter_hook": "まさに諦めかけようとした時、これまで何の反応も示さなかった亀甲が微かに熱を帯び、長い間眠り続けていた何かがゆっくりと目覚めようとしているかのように……",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0001_001",
+        "content": "天青宗、演武場。\n\n朝の霧がまだ晴れ切らないうちから、青石板の上の露が昇り始めた朝日に照らされ、冷たく肌を刺す。やせ細った身影が腰を屈めて地面を拭いている、その動作は機械的で熟練しており、何千回と繰り返してきたかのようだった。\n\n陳吉は袖で額の汗を拭い、遠くの内門高楼に平静な視線を向けた。あの高閣重楼、仙気繚繞の建物は、彼这辈子都无法踏入的地方。\n\n外門雜役弟子——これが彼のこの宗門での全身份である。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_002",
+        "content": "三年前、彼はなお「天才」の名で宗内にて頭角を現していた。十二歳で炼気三層を突破し、長老は「いずれ大成する」と断言した。しかし父が失踪して以来、全てが変わった。\n\n霊根が枯渇し、修为が止まり、かつての天才は転落し、誰にでも虐められる無能となってしまった。修炼資源を剥夺され、功法を收回され、住処さえも内門弟子厢房からこの演武場の隅の物置に追い立てられた。\n\n「三年だ」と陳吉は小声で独り言を言い、唇元に自嘲の弧を浮かべた。「無能には無能の自覚があるべきだ」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_003",
+        "character_id": "char_hanlie",
+        "content": "「おやおや，这不是咱们的'陈大天才'吗？」一道张扬的声音打破清晨の寂寂を破った。\n\n陳吉の动作がが止まり、ゆっくりと腰を起こした。\n\n来た人是正是玄武宗第一天才韓烈、わずか十五歳で既に炼気七層を突破，此刻正负手而立，身后跟着七八个外门弟子，一个个趾高气揚。\n\n韓烈は上から下へと陳吉打量，眼中の軽蔑毫不掩饰：「三年了还卡在炼気二层，我看'废物'二字都侮辱了这个词。干脆改叫'蛀虫'算了，专吃宗门粮食の蛀虫」",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_004",
+        "character_id": "char_chenji",
+        "content": "陳吉は静かに彼を見て、黙ってはいなかった。\n\nその平静近乎空洞的目光让韓烈莫名烦躁。在他的设想中，这个废物应该跪地求饈，或者憤怒反論——无论哪一种，都能让他名正言顺地「教訓」一番。\n\n可这家伙偏偏一副死猪不怕开水烫的模样，仿佛他韓烈根本不存在。\n\n「怎么？哑巴了？」韓烈上前一步，一脚踢翻陳吉身旁の水を桶、污水が彼一身に飛び散った。「本少爺在跟你说话呢、废物！」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0001_005",
+        "prompt": "韓烈の当衆羞辱に面对し、あなたはどうする？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0001_005_A",
+            "text": "低头认错",
+            "description": "腰を曲げて謝り、自分が無能であることを認め、正面から衝突しない",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "名望-2",
+            "visible_reward": "当场冲突を避ける",
+            "risk_hint": "围观者会更加轻视你",
+            "process_label": "隐忍",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_A_1",
+                  "character_id": "char_chenji",
+                  "content": "「是、韩师兄说得对」陳吉は頭を下げ、声音平静得没有一丝波澜、「我就是废物。\n\n彼は腰を曲げて水桶を拾い上げ、何事もなかったかのように地面を拭き続けた。\n\n韓烈は一瞬愣，随即放声大笑：「哈哈哈！听见没有？废物自己承認了！」身后的小弟也跟着哄笑起来。\n\nしかし陳吉の眼底深处，一抹冷光一闪而过——彼は覚えていた。",
+                  "emotion": "隐忍"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_A_2",
+                  "character_id": "char_hanlie",
+                  "content": "「笑え，笑え」韓烈笑得前仰後合，却没注意到陳吉が拖把を握る手指の関節已经泛白。\n\n「总有一天……」陳吉は心底默默说道、「今日之辱，百倍还之」",
+                  "emotion": "暗怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_005_B",
+            "text": "冷眼反撃",
+            "description": "平淡な语气で说出让对方下不来台的话",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激怒对方",
+            "visible_reward": "围观者会重新审视你",
+            "risk_hint": "韓烈可能会动手",
+            "process_label": "毒舌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_B_1",
+                  "character_id": "char_chenji",
+                  "content": "陳吉はゆっくりと腰を起こし、袖で脸上的污水を拭った。\n\n彼は韓烈を見ず、而是望向那些围观的弟子，声音不大，却清晰地传入每个人耳中：「三年了、玄武宗第一天才每日必来此地，只为欺负一个废物？」\n\n彼は顿了顿，微微一笑：「韩师兄，您的時間……真不值钱」",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_005_B_2",
+                  "content": "围观的弟子たち瞬间安静了，随即爆发出一阵压抑の窃笑。\n\n韓烈脸色铁青，双拳紧握，青筋暴起。「你说什么？！」他猛地向前一步，炼気七層の威压倾泻而出。\n\n陳吉却已经重新低下头，继续擦拭地面，仿佛刚才那番话不是自己说的一样。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_005_C",
+            "text": "沈黙以対",
+            "description": "一言不发，用行动表示不屑回应",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "对方可能更过分",
+            "visible_reward": "保存实力",
+            "risk_hint": "会被认为懦弱",
+            "process_label": "沉默",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_C_1",
+                  "character_id": "char_chenji",
+                  "content": "陳吉は没有说话。\n\n彼は默默水桶を拾い上げ、自分の 일을続ける，仿佛韓烈只是一阵聒噪的风。\n\n这份沈黙比任何言语都更具杀伤力。韓烈感觉自己仿佛一拳打在了棉花上，憋闷得难受。",
+                  "emotion": "漠然"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_005_C_2",
+                  "character_id": "char_hanlie",
+                  "content": "「废物就是废物，连反論の胆子都没有！」韓烈恼羞成怒，一脚踢飛陳吉手中的拖把、「给我记住，今天の羞辱只是开始！\n\n说罢，他冷哼一声，转身离去。\n\n陳吉望着他的背影，瞳孔深处一片幽深——棋局已布，静待落子。",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_006",
+        "content": "日が三竿に昇り、演武場渐渐热闘起来。\n\n内門弟子たちが陆续出现，三三两两地在广场上修炼切磋。偶尔有人投来目光，却无一人为陳吉说话。在他们眼中，一个连霊根都枯竭した废物，根本不值得浪费注意力。\n\n「陳吉！」一个管事模样の中年男子走了过来，扔给他一块令牌、「今日の雜役は終わった。明日轮到藏経閣打扫，卯時之前到」\n\n陳吉接过令牌，恭敬地行了一礼：「是」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_007",
+        "content": "管事瞥了他一眼，眼中闪过一丝怜悯，却很快被淡漠取代。\n\n「别怨天尤人」他压低声音说了一句，便转身离去。\n\n陳吉望着他的背影，唇角微微上扬。这位管事は唯一几个对他没有恶意的人，虽然也从未帮过他。\n\n「至少……还有人愿意说这么一句」他低声喃喃，将令牌收入怀中。\n\n怀中，一枚温润の亀甲が彼の胸に貼りつき、隐隐传来一丝不易察觉的温度。",
+        "emotion": "若有所思"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0001_008",
+        "prompt": "雜役仕事を结束后、あなたはどうする？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0001_008_A",
+            "text": "去膳堂吃饭",
+            "description": "虽然只能吃残羹剩饭，但身体是革命の本金",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能再遇韓烈",
+            "visible_reward": "体力维持",
+            "risk_hint": "可能被再次刁难",
+            "process_label": "务实",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_008_A_1",
+                  "content": "陳吉は拖着疲惫的身躯走向膳堂。\n\n一路，不时有弟子投来各种目光——有嘲笑的，有怜悯的，更多的是漠视。陳吉一一受过，神色不变。\n\n膳堂内，外門弟子和雜役弟子挤在角落里，面前的饭菜清湯寡水，勉强果腹。而另一边内門弟子的区域，酒肉飘香，珍饈美饌。\n\n陳吉打了碗稀粥，找了个角落坐下，默默吃着。",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_008_B",
+            "text": "回柴房休息",
+            "description": "体力节省し、父が残した亀甲の法を修炼する",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过一些情報",
+            "visible_reward": "時間があり亀甲を研究できる",
+            "risk_hint": "亀甲の秘密被发现する可能性",
+            "process_label": "暗中蓄势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_008_B_1",
+                  "content": "陳吉は没有去膳堂，而是径直回了柴房。\n\nその演武場隅にある小屋は、一丈四方もなく、粗末な木製ベッドに薄い布団而已。屋内唯一值钱的便是他父亲留下の那枚亀甲。\n\n陳吉は在床上盘膝坐下，将亀甲从怀中取出，放在掌心。淡黄色の亀甲古朴无华，上面的纹路已经模糊不清，看不出任何特别之处。\n\nだが彼は知っていた。この亀甲の中に、父の失踪の真相が隠されていることを。",
+                  "emotion": "沉思"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_008_C",
+            "text": "去藏経閣踩点",
+            "description": "提前去看看藏経閣的环境，寻找可能的机缘",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能被守卫拦下",
+            "visible_reward": "可能发现有用情報",
+            "risk_hint": "外門弟子无权进入",
+            "process_label": "谋定后动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0001_result_008_C_1",
+                  "content": "陳吉在心中盘算片刻，决定提前去藏経閣看看。\n\n作为外門雜役，他每月都有几次进入藏経閣外围打扫的机会。但藏経閣内部，外門弟子无权踏入。\n\n然而，机会往往藏在规则の缝隙之中。\n\n他刻意绕了几条小路，避开人群，来到藏経閣后方の僻静处。远远望去，三層高い閣楼气势恢宏，却有三道禁制层层防护。\n\n陳吉眯起眼睛，将这一切默默记在心里，然后悄然离去。",
+                  "emotion": "沉稳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_009",
+        "content": "夜幕降临，天青宗陷入一片沉寂。\n\n柴房内，陳吉点起一盏豆大の油灯，昏黄的光芒勉强照亮方寸之地。他坐在床边，手中握着那枚亀甲，目光复杂。\n\n三年了。\n\n三年年来，他每日忍受欺辱，做着最脏最累の活，吃着最差の饭菜，住在连柴房都不如的地方。所有人都在等着看他彻底沉沦，等着他变成一个真正的废物。\n\n「父亲……」陳吉低声呢喃，指腹轻轻摩挲着亀甲上の纹路，「您说的那个人，什么时候才会出现？」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_010",
+        "content": "亀甲静静躺在掌心，没有任何反应。\n\n陳吉苦笑。父亲失踪前留下这枚亀甲，说等他「時机到了」自然会明白一切。可三年过去，亀甲依旧是块死物，没有半点神异。\n\n也许，父亲当年の预言只是一厢情愿。也许，他真的已经沦为废物，再无翻身之日。\n\n就在他胡思乱想之际——\n\n亀甲突然微微发烫。\n\n陳吉浑身一震，低头看去，只见亀甲表面浮现出淡淡的光芒，那些原本模糊の纹路，竟隐隐勾勒出某种图案。\n\n「这是……」他瞳孔骤缩。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_011",
+        "character_id": "char_moxiansheng",
+        "content": "「三年了，汝终于肯在深夜呼唤我」\n\n一道苍老而飘渺の声音在陳吉脑海中响起。\n\n陳吉猛然抬头，只见亀甲上方，一道虚幻の人影正缓缓凝聚。那是一个白发苍苍老者，面容模糊，却有一双深邃如渊の眼眸。\n\n「你是……」陳吉强压下心中の震惊。\n\n「老朽墨先生」老者微微一笑、「奉汝父亲之命，在此等候」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0001_012",
+        "prompt": "面对突然出现の墨先生，你会？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0001_012_A",
+            "text": "询问父亲下落",
+            "description": "立刻询问父亲的消息，这是你最想知道的事",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能耽误了解情况",
+            "visible_reward": "得知父亲の线索",
+            "risk_hint": "可能触及伤心事",
+            "process_label": "亲情",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_A_1",
+                  "character_id": "char_chenji",
+                  "content": "「我父亲！」陳吉几乎是脱口而出、「他现在在哪里？他当年为什么要离开？他还好吗？」\n\n一连串的问题倾泻而出，三年来压抑的情感在这一刻决堤。\n\n墨先生沉默片刻，眼中闪过一丝复杂的情绪：「汝父亲……他去了一个很远的地方。那里充满危险，但也藏着天大的机缘」",
+                  "emotion": "急切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_A_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "老者叹了口气：「他是为保护汝，也是为寻找对抗『那个东西』的方法」\n\n「那个东西？」陳吉眉头紧皱。\n\n「现在还不是说的时候」墨先生摇了摇头、「汝只需要知道，汝父亲还活着。但要找到他，汝必须变强」",
+                  "emotion": "怅然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_012_B",
+            "text": "询问亀甲来历",
+            "description": "先弄清楚亀甲的来历和作用",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过父亲的消息",
+            "visible_reward": "了解自己的处境",
+            "risk_hint": "可能承受不住真相",
+            "process_label": "理性",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_B_1",
+                  "character_id": "char_chenji",
+                  "content": "陳吉深吸一口气，强迫自己冷静下来。\n\n「这枚亀甲，究竟是什么？」他举起手中的亀甲、「父亲留下它时只说『時机到了自然会明白』，可三年了，它从未有过任何反应」\n\n墨先生微微一笑：「亀甲は载体，而汝——」他顿了顿，目光深邃、「就是那个『時机』」",
+                  "emotion": "疑惑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_B_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "「汝体内的霊根并未枯竭」墨先生缓缓说道、「而是被一种强大的力量封印了。这种封印，源自于汝血脉中携带の『天機』之脉」\n\n他伸出手指，在亀甲上轻轻一点。\n\n刹那间，陳吉感觉脑海中轰然炸响，无数信息如潮水般涌入——\n\n天機録。\n三时辰先の未来を予見。\n每次使用，消耗天命値五点。",
+                  "emotion": "震撼"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0001_012_C",
+            "text": "质疑对方身份",
+            "description": "保持警惕，先确认对方是不是敌人伪装的",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能得罪盟友",
+            "visible_reward": "确保自身安全",
+            "risk_hint": "可能让墨先生失望",
+            "process_label": "谨慎",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_C_1",
+                  "character_id": "char_chenji",
+                  "content": "陳吉没有立刻相信。\n\n三年来的人心险恶让他养成了本能の警惕。他后退一步，沉声道：「我凭什么相信汝？」\n\n墨先生微微一怔，随即笑了起来：「良い、良い！谨慎些好。若汝轻易相信他人，汝父亲反而要失望了」",
+                  "emotion": "戒备"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0001_result_012_C_2",
+                  "character_id": "char_chenji",
+                  "content": "老者抬起手，虚空中浮现出一段画面——那是三年前の夜晚，一个男人将亀甲交给年幼の陳吉，低声说道：「阿機，父亲要出一趟远门。这枚亀甲，汝要好好保管。等它发热的那一天，就说明時机到了」\n\n陳吉浑身一震。那声音，那背影——正是他的父亲陳玄！\n\n「现在，汝信了吗？」墨先生问道。",
+                  "emotion": "动摇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_013",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的身影开始变得虚幻，显然维持这个形态消耗了他大量力量。\n\n「今夜汝接触到了天機録の入門之法」他郑重地看着陳吉、「但这仅仅是开始。天機録残缺不全，想要补全它，汝需要达成一系列目标。而每完成一个目标，老朽便会解封一页知识」\n\n陳吉点了点头，将这些话一字不落地记在心里。",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0001_014",
+        "character_id": "char_moxiansheng",
+        "content": "「第一卷的目标只有一个」墨先生的声音越来越飘渺、「活过宗门大比」\n\n「宗门大比？」陳吉皱眉。\n\n「没错。三月之后，天青宗将举行三年一度の宗门大比」墨先生眼中闪过一丝意味深长の光、「届时，所有外門弟子都要参加。而汝——」\n\n他没有说完，但意思已经很明白了。\n\n以陳吉目前「炼気二层」の实力，在宗门大比中要么被淘汰，要么……死。",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_015",
+        "content": "墨先生的身影彻底消散，只留下一句话回荡在柴房中：\n\n「记住，天機録的力量并非无穷无尽。天命値は汝がこの世界に存活する根本，一旦耗尽，汝便会……」\n\n声音戛然而止。\n\n陳吉低头看向手中的亀甲。经历了方才の异象，亀甲已经恢复了平静，但他能感觉到，它与自己的联系更深了。\n\n脑海中，隐约浮现出一道残缺の画面——那是某种修炼功法の雏形。\n\n「天機録……」陳吉喃喃自语，眼中闪烁着复杂的光芒。\n\n三年的隐忍，三年の布局，今日终于看到了曙光。",
+        "emotion": "坚毅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_016",
+        "content": "窓の外、夜風が呼呼，吹得破旧的木窓吱呀作响。\n\n陳吉躺在床上，却没有丝毫睡意。他的脑海中不断回放着今夜的信息——天機録、父亲、天命値、宗门大比……\n\n三月。\n\n彼には三个月的时间しかない。\n\n「韓烈、凌渊、还有那些躲在暗處の敵人……」陳吉闭上眼睛，唇角勾起一抹冷笑、「既然汝等想看我死，那我就让汝等看看，什么叫真正的——豚を演じて虎を食う」\n\n柴房外，月色如水。\n\n就在陳吉即将入睡之际，亀甲再次微微发热，仿佛在回应着什么。",
+        "emotion": "冷冽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0001_017",
+        "content": "まさに諦めかけようとした時、これまで何の反応も示さなかった亀甲が微かに熱を帯び、まるで長い間眠り続けていた何かがゆっくりと目覚めようとしているかのように……",
+        "emotion": "悬念"
+      }
+    }
+  ]
+}

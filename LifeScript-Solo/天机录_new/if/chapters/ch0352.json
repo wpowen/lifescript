@@ -1,0 +1,707 @@
+{
+  "id": "天机录_ch0352",
+  "book_id": "天机录",
+  "number": 352,
+  "title": "联盟暗流",
+  "is_paid": true,
+  "next_chapter_hook": "就在叛徒身份即将水落石出之际，一股超越凌渊想象的恐怖气息悄然降临——天道之眼的注视，终于落在了陈机身上。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0352_001",
+        "content": "天青宗议事大殿内，烛火摇曳，将殿中诸人的面容映得忽明忽暗。陈机踏入大殿的瞬间，便感受到了一股异样的气氛——那些原本应该商讨御敌之策的宗门高层，此刻的目光却带着某种说不清道不明的审视。\"废物\"二字几乎要从那些窃窃私语中溢出来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_002",
+        "character_id": "char_hanlie",
+        "content": "陈机？你还有脸回来？",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_003",
+        "content": "韩烈的声音如同炸雷般响起，他大剌剌地站在殿中，玄武宗的标志在身后猎猎作响。这位玄武天才眼中满是不屑，嘴角挂着讥讽的弧度，仿佛在看一只误入虎穴的蝼蚁。陈机面色不变，只是微微垂下眼帘——他记下了韩烈的张狂，也记下了此刻在场每一个人的表情变化。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_004",
+        "character_id": "char_hanlie",
+        "content": "联盟成立至今，你除了躲在后面出些阴损主意，还做过什么？前线的兄弟们在流血，你倒好，消失数日不知所踪——谁知道你是不是去和魔道做什么交易！",
+        "emotion": "挑衅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_005",
+        "content": "话音未落，殿中哗然。有人面露惊疑，有人若有所思，更有人眼中闪过一丝不易察觉的快意。陈机心中冷笑——韩烈这番话看似鲁莽，实则字字诛心，若不能妥善应对，只怕今日便是他权威崩塌之始。但这也正是他想要的——暴风雨，来得更猛烈些吧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_006",
+        "character_id": "char_suqingyao",
+        "content": "韩烈，慎言！",
+        "emotion": "严厉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_007",
+        "content": "苏青瑶清冷的声音划破嘈杂，她站了出来，内门首席的气势骤然绽放。然而韩烈却丝毫不惧，反而笑得更放肆了几分，那笑容里藏着某种笃定，仿佛一切都在他的掌控之中。陈机注意到苏青瑶微微蹙起的眉头——她也察觉到了异常。韩烈背后，有人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0352_choice_01",
+        "prompt": "韩烈步步紧逼，殿中气氛剑拔弩张，陈机必须做出回应——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0352_c1_opt1",
+            "text": "直接反击韩烈的指控",
+            "description": "当众揭露韩烈的底牌，让他自食其言，以碾压之姿重塑权威",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "震慑全场质疑者",
+            "risk_hint": "可能让幕后之人有所警觉",
+            "process_label": "强势反击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c1_opt1_1",
+                  "content": "陈机缓缓抬眸，嘴角勾起一抹淡然的笑意，那笑容让在场所有人都感到一阵莫名的寒意。他没有急着辩解，而是缓步走向韩烈，每一步都仿佛踩在众人的心跳上。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c1_opt1_2",
+                  "content": "韩烈，你要证据？好，我便给你证据。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0352_c1_opt2",
+            "text": "以退为进示弱诱敌",
+            "description": "故意示弱，让韩烈更加嚣张，从而露出更多破绽，引出幕后黑手",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暂时承受屈辱",
+            "visible_reward": "看清所有敌人的嘴脸",
+            "risk_hint": "可能损害在联盟中的威信",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "名望",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c1_opt2_1",
+                  "content": "陈机垂下头，声音低哑：\"韩师兄教训得是，我确实不该擅自离开……\"他的语气里带着恰到好处的颤抖，肩膀微微瑟缩，活脱脱一副被吓破胆的模样。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c1_opt2_2",
+                  "content": "然而就在低头的瞬间，他的余光精准捕捉到了殿中几道不同的目光——有人松了一口气，有人露出不屑，更有人在交换着意味深长的眼神。很好，都记下了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0352_c1_opt3",
+            "text": "暗中动用天机录查看",
+            "description": "消耗天命值，提前预知接下来一个时辰内即将发生的关键事件",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "获得完整信息优势",
+            "risk_hint": "天命值珍贵，不可滥用",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c1_opt3_1",
+                  "content": "陈机默念口诀，天机录残页在识海中微微发烫。三息之后，一幅模糊的画面浮现——韩烈身后，一个隐藏在阴影中的身影正在悄然比划着什么暗号，而那个身影的轮廓……竟是凌渊！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_008",
+        "content": "殿中气氛愈发微妙，韩烈见陈机久久不语，以为他是被自己的气势所慑，正欲进一步施压。却不知陈机心中已如明镜——他已知道接下来韩烈要说什么，也知道那个\"盟友\"会在何时出现。布局之乐，在于洞察先机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_009",
+        "character_id": "char_hanlie",
+        "content": "怎么？无话可说了？废物就是废物！",
+        "emotion": "狂妄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_010",
+        "content": "韩烈的话语愈发刺耳，殿中有人开始附和，有人冷眼旁观。苏青瑶的眉头越皱越紧，她的手已经悄悄按上了剑柄。陈机注意到她眼中那抹担忧，心中微微一暖——这个女子，终究还是选择了站在他这边。但他微微摇头，用眼神制止了她。现在，还不是出手的时候。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_011",
+        "content": "就在韩烈志得意满之际，殿外忽然传来一阵喧哗。一名探子跌跌撞撞冲入殿中，满身是血，神色惊恐。\"报——！魔道圣女夜清率部来袭，已至山门三十里外！\"此言一出，殿中顿时大乱。韩烈脸色微变，却仍强作镇定。陈机却捕捉到了他眼中一闪而过的异色——不是惊讶，而是某种……期待？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_012",
+        "character_id": "char_suqingyao",
+        "content": "夜清此时来犯？时机未免太过巧合了些。",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_013",
+        "content": "苏青瑶的话让殿中众人面面相觑。是啊，联盟刚刚出现裂痕，魔道便如约而至——这其中若说没有关联，只怕三岁孩童都不信。韩烈的表情终于出现了一丝裂痕，尽管他迅速掩饰，但陈机看得分明。陈机缓步上前，声音平静如水：\"韩师兄，你方才说我是内奸。那现在魔道来犯，你认为该如何应对？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0352_choice_02",
+        "prompt": "陈机将问题抛给韩烈，众目睽睽之下，韩烈必须表态——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0352_c2_opt1",
+            "text": "逼韩烈表态迎战",
+            "description": "在众人面前给韩烈扣上\"怯战\"的帽子，让他骑虎难下",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "与韩烈彻底撕破脸",
+            "visible_reward": "剥夺韩烈的道德高地",
+            "risk_hint": "可能激化联盟内部矛盾",
+            "process_label": "以牙还牙",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c2_opt1_1",
+                  "content": "韩烈的脸色瞬间变得极为精彩。他方才还在指责陈机，此刻若说迎战，便是打自己的脸；若说避战，便是不顾联盟存亡。陈机欣赏着他脸上的挣扎，心中古井无波——这一招，他用过很多次了。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c2_opt1_2",
+                  "content": "韩烈咬牙切齿，却不得不挤出一句：\"迎战！自然要迎战！\"殿中有人露出讥讽之色，陈机将这一切都收入眼底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0352_c2_opt2",
+            "text": "提议与夜清秘密会谈",
+            "description": "当众表示愿只身前往，揭穿这是韩烈与凌渊设下的圈套",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "以身犯险",
+            "visible_reward": "揭露真相，反将一军",
+            "risk_hint": "若谈判失败，可能有性命之忧",
+            "process_label": "单刀赴会",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c2_opt2_1",
+                  "content": "陈机淡淡道：\"既然魔道圣女亲至，不如让我去会她一会。\"此言一出，殿中哗然。韩烈眼中闪过一丝慌乱，却很快掩饰过去。陈机看得分明——这正是他想要的反应。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c2_opt2_2",
+                  "content": "苏青瑶猛地站起身：\"你疯了！\"但陈机只是对她微微一笑，那笑容里藏着只有她能懂的深意——放心，我有分寸。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0352_c2_opt3",
+            "text": "下令彻查内鬼",
+            "description": "趁乱揭露已经掌握的情报，强行揪出与凌渊勾结之人",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "打草惊蛇",
+            "visible_reward": "揪出幕后黑手",
+            "risk_hint": "可能让幕后主使逃脱",
+            "process_label": "快刀斩乱麻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c2_opt3_1",
+                  "content": "陈机的声音骤然转冷：\"在迎战之前，我倒想先问问——谁给魔道通的风报的信？\"此言一出，韩烈的脸色瞬间惨白。殿中众人也纷纷变了脸色，互相对视。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c2_opt3_2",
+                  "content": "陈机一字一顿：\"韩师兄，你方才的表演，未免太过刻意了些。\"他转身面向众人，声音平静却带着不容置疑的威严：\"我已查实，联盟之中，确有内奸。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_014",
+        "content": "韩烈面色铁青，正要开口反驳，殿外忽然传来一阵诡异的笑声。那笑声穿透力极强，仿佛能直接钻入人的神魂。紧接着，一道黑色的身影从天而降，落在殿中。来人正是夜清——魔道圣女此刻周身魔气缭绕，一双冷冽的眸子却只盯着陈机，嘴角勾起一抹意味深长的弧度。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_015",
+        "character_id": "char_yeqing",
+        "content": "陈机，我依约而来。你答应我的东西，该兑现了。",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_016",
+        "content": "此言一出，殿中再次哗然。苏青瑶的脸色瞬间变得极为复杂，她看向陈机的目光中既有疑惑又有某种期待。而韩烈则像是抓住了救命稻草，厉声喝道：\"好啊！果然有勾结！陈机，你还有什么话说！\"然而陈机却只是淡淡一笑，那笑容里藏着太多东西，多到韩烈根本看不懂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_017",
+        "character_id": "char_chenji",
+        "content": "夜清，你来得正好。我正有一份大礼要送你。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_018",
+        "content": "陈机从袖中取出一枚玉简，随手抛向夜清。那玉简在空中划过一道弧线，落入夜清手中。夜清接过玉简，神识探入其中，片刻之后，她的面色骤变，那双始终冷漠的眸子里第一次浮现出惊涛骇浪。她猛地抬头，看向陈机的目光中满是难以置信。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_019",
+        "character_id": "char_yeqing",
+        "content": "你……你早就知道这一切？你从一开始就在算计凌渊？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_020",
+        "content": "陈机微微一笑，没有回答她的问题，而是转向韩烈，语气平淡得像是在说一件微不足道的小事：\"韩师兄，你以为凌渊许诺你的那些东西，真的会兑现吗？他连自己的徒弟都能牺牲，又何况是你这个外人？\"韩烈的脸色瞬间变得惨白，他张了张嘴，却一个字都说不出来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_021",
+        "character_id": "char_suqingyao",
+        "content": "所以这一切……都是你设的局？",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_022",
+        "content": "苏青瑶的声音从身后传来，带着一丝颤抖。陈机转过身，第一次正视她的眼睛。他从那双眼眸中看到了太多——震惊、了然、还有一丝若有若无的……释然？仿佛她终于可以放下对他的怀疑了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_022b",
+        "character_id": "char_chenji",
+        "content": "是，也不是。凌渊想利用韩烈，我不过是顺水推舟罢了。",
+        "emotion": "淡然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_023",
+        "content": "陈机顿了顿，目光从苏青瑶身上移开，扫过殿中众人，最后落在夜清身上。夜清此刻正盯着手中那枚玉简，眼中闪烁着复杂的光芒——那是关于她被圣宗利用的真相，关于她真正身世的秘密。这一刻，她终于明白为何当初陈机会用那样的方式说服她合作。这个男人，从一开始就算准了一切。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0352_choice_03",
+        "prompt": "局势已定，但陈机知道凌渊绝不会善罢甘休——他需要做出最终决断——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0352_c3_opt1",
+            "text": "趁势追击凌渊老巢",
+            "description": "联合夜清的力量，主动出击凌渊势力，一劳永逸",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "联盟内部未稳，风险极大",
+            "visible_reward": "彻底瓦解凌渊的阴谋",
+            "risk_hint": "可能中了调虎离山之计",
+            "process_label": "乘胜追击",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c3_opt1_1",
+                  "content": "夜清收好玉简，眼中闪过一抹狠厉：\"凌渊……圣宗欠我的，今日一并算清。\"她看向陈机，第一次露出真正的笑意：\"陈机，你倒是比我想象的更有趣。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c3_opt1_2",
+                  "content": "陈机点了点头，正要开口，殿外忽然传来一阵剧烈的震动。那震动带着某种诡异的韵律，仿佛有什么恐怖的存在正在撕裂空间。苏青瑶的脸色骤变：\"这是……天道法则的波动？！\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0352_c3_opt2",
+            "text": "静观其变稳住阵脚",
+            "description": "先处理联盟内部问题，等凌渊露出更多破绽再出手",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "给敌人喘息之机",
+            "visible_reward": "看清所有敌人的真面目",
+            "risk_hint": "可能错失良机",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c3_opt2_1",
+                  "content": "陈机摇了摇头：\"不急，凌渊既然布下此局，必然还有后手。现在贸然出击，只会中了他的圈套。\"他转向苏青瑶：\"青瑶，麻烦你帮我做一件事——查一查韩烈这些日子都接触过什么人。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c3_opt2_2",
+                  "content": "苏青瑶点头离去，临走前看了他一眼，那眼神中藏着太多未说出口的话。陈机心中微叹——这个女人，终究还是选择了相信他。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0352_c3_opt3",
+            "text": "分化瓦解瓦解凌渊",
+            "description": "利用手中情报，离间凌渊与其他势力，让其成为孤家寡人",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "耗时较长",
+            "visible_reward": "不战而屈人之兵",
+            "risk_hint": "可能暴露自己的情报来源",
+            "process_label": "暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c3_opt3_1",
+                  "content": "陈机看向夜清：\"你在圣宗还有可用之人吗？\"夜清挑眉：\"你想做什么？\"陈机淡淡一笑：\"我要让凌渊知道，他自以为掌控的棋局，其实早就崩盘了。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0352_result_c3_opt3_2",
+                  "content": "夜清沉吟片刻，忽然大笑起来：\"好，陈机，我果然没有看错你。凌渊那老狐狸自以为算无遗策，却不知道他最信任的人里，有三个已经被我策反了。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_024",
+        "content": "就在此时，陈机忽然感到一阵莫名的寒意从脊背升起。那是天机录残页传来的警示——不是来自凌渊，而是来自某种更加高远、更加恐怖的存在。他的识海中，天机录的残页忽然剧烈震颤，一道模糊的纹路缓缓浮现，仿佛有什么东西正在注视着他。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_025",
+        "content": "陈机的瞳孔骤然收缩。那个纹路……他在墨先生偶尔透露的上古典籍中见过类似的图案——那是天道之眼的标志。墨先生曾经说过，天机录只是天道布在世间的棋子之一。而现在，棋子似乎察觉到了执棋之人的存在。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0352_026",
+        "character_id": "char_chenji",
+        "content": "（内心）它……一直在看着我？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_027",
+        "content": "陈机面色如常，心中却已掀起惊涛骇浪。从获得天机录残页的第一天起，他就在布局、在算计、在步步为营地将命运握在自己手中。可现在他忽然意识到——或许从他拿起天机录的那一刻起，他就已经进入了另一个更大的棋局。凌渊是敌人，天道之眼……又是什么？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0352_028",
+        "content": "夜清似乎察觉到了他的异样，微微皱眉：\"陈机？怎么了？\"陈机回过神来，摇了摇头，将那股寒意强压下去。现在不是追究这些的时候——凌渊的阴谋刚刚被挫败，但天道之眼的注视却让他意识到，真正的棋局，或许才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

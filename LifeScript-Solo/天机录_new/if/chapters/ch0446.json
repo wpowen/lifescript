@@ -1,0 +1,642 @@
+{
+  "id": "天机录_ch0446",
+  "book_id": "天机录",
+  "number": 446,
+  "title": "联盟裂痕初现",
+  "is_paid": true,
+  "next_chapter_hook": "陈机在追查叛徒时发现了一条惊人的线索——那个暗中与圣宗勾结的人，竟与多年前那场退婚之辱有着千丝万缕的联系。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0446_001",
+        "content": "血色令符的光芒在天机录内部炸开，陈机感到一阵剧烈的眩晕——那是天道之眼的注视，如同实质般压在他的神识之上。墨先生的残魂剧烈颤抖，话语急促：“它来了，比我预想的更快。小子，现在不是藏拙的时候，你必须——”“我知道了。”陈机打断他，声音低沉而平静，仿佛在谈论今日天气。唯有他自己知道，指尖已经刺破掌心，鲜血滴落在衣袖内侧。他抬起头，看向窗外的天色，天青宗的议事峰上，乌云正缓缓聚拢。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0446_002",
+        "character_id": "char_moxiansheng",
+        "content": "（墨先生）你打算怎么做？直接对抗？还是——",
+        "emotion": "急切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_003",
+        "content": "天青宗议事殿内，气氛压抑得令人窒息。数十位长老分坐两侧，有人面带忧色，有人目光闪烁，更有甚者已经在暗中交换着眼色。陈机站在末席，低眉顺眼，一副废物弟子该有的模样。但他的余光已经捕捉到了至少七道不怀好意的视线——其中三道，来自平日里与圣宗走得极近的长老。“废物也有资格列席？”一个尖锐的声音响起。韩烈大步走入殿中，身后跟着五六位长老，他看向陈机的眼神如同在看一只待宰的羔羊。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0446_004",
+        "character_id": "char_hanlie",
+        "content": "（韩烈冷笑）诸位，天道之眼已经注意到这里，圣宗的怒火即将降临。我认为，我们首先应该表态——将那个废物交出去，换取宗门平安！",
+        "emotion": "嚣张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_005",
+        "content": "此言一出，殿内顿时响起一片窃窃私语。那几位亲圣宗的长老眼中闪过一丝得意，其中一人立刻附和：“韩师兄所言极是！陈机不过是个杂役废物，却招惹了天道之眼这样的存在，留他何用？”更有人阴阳怪气道：“当年他能活着从坠魂渊出来，本就蹊跷得很，说不定早就是圣宗的人了。”陈机依旧低着头，但嘴角微微上扬了一瞬——那些人不知道，他等的就是这个。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0446_006",
+        "character_id": "char_lingyuan",
+        "content": "（凌渊缓缓开口，语气看似公正）诸位，此事还需从长计议。毕竟陈机也是我天青宗弟子……",
+        "emotion": "阴险"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_007",
+        "content": "“从长计议？”韩烈打断凌渊的话，声音更大了几分，“凌掌门，天道之眼可不会给我们时间从长计议！若圣宗使者明日便到，我们拿什么去挡？”他环顾四周，“诸位，我玄武宗已经决定退出这个所谓的联盟。若天青宗执意庇护这个废物，那便自行承担后果！”陈机心中冷笑——这出戏，演得倒是精彩。可惜，他早就看穿了一切。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0446_choice_001",
+        "prompt": "韩烈和亲圣宗势力联手发难，陈机如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "隐忍蛰伏",
+            "text": "隐忍蛰伏",
+            "description": "继续扮演废物，让他们先得意忘形，暗中收集证据，等待时机一网打尽。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暂时失去尊严，被众人羞辱",
+            "visible_reward": "看清所有敌人面目，掌握叛徒证据",
+            "risk_hint": "若被识破伪装，将失去所有退路",
+            "process_label": "忍辱负重，暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_隐忍蛰伏_001",
+                  "content": "陈机缓缓抬起头，脸上露出一丝惶恐，声音颤抖：“韩师兄说得是……我、我不想连累宗门……”他甚至挤出了几滴眼泪。满殿哄笑声中，没有人注意到他低垂的眼帘下，瞳孔深处那抹冰冷的笑意——很好，一个一个，都记下了。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0446_result_隐忍蛰伏_002",
+                  "character_id": "char_lingyuan",
+                  "content": "（凌渊意味深长地看了陈机一眼）既然陈机自己都愿意配合，那便先将他关押，待圣宗使者来了再做定夺。",
+                  "emotion": "虚伪"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "观察到凌渊异常",
+              "确认叛徒名单"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "直接摊牌",
+            "text": "直接摊牌",
+            "description": "不再隐藏，当场揭露韩烈与亲圣宗势力的勾当，以雷霆手段震慑全场。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露部分实力，可能引来更多关注",
+            "visible_reward": "瞬间扭转局势，震慑宵小，展现真正实力",
+            "risk_hint": "过早暴露会引起天道之眼更大的注意",
+            "process_label": "强势反击，当众打脸",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_直接摊牌_001",
+                  "content": "陈机忽然笑了，那笑容温和得令人发寒。“韩师兄，你说我勾结圣宗？”他从袖中取出一枚令牌——那是圣宗内部的信物，上面刻着韩烈的名字，“那这个，你怎么解释？”满殿死寂，韩烈的脸色瞬间煞白。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0446_result_直接摊牌_002",
+                  "character_id": "char_hanlie",
+                  "content": "（韩烈惊恐）这、这是伪造的！你——你怎么可能——",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暴露天机录能力痕迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "分化瓦解",
+            "text": "分化瓦解",
+            "description": "不直接对抗，而是用话术分化亲圣宗势力，让他们内部互相猜疑。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要消耗时间和精力",
+            "visible_reward": "从内部瓦解敌人联盟，削弱其势力",
+            "risk_hint": "若对方中有高手，可能看穿话术",
+            "process_label": "攻心为上，不战而胜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_分化瓦解_001",
+                  "content": "陈机没有反驳韩烈，而是将目光转向那几位亲圣宗长老，声音“诚恳”：“诸位长老，我有一事不明。圣宗使者来时，为何只找你们几位密谈？我虽愚钝，却也想知道——你们究竟许了圣宗什么好处？”话音未落，那几位长老之间已经开始互相警惕地打量。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0446_result_分化瓦解_002",
+                  "character_id": "char_lingyuan",
+                  "content": "（凌渊轻咳一声）陈机，不得信口雌黄！此事……另议。",
+                  "emotion": "心虚"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "播下猜疑种子"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "魅力",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_008",
+        "content": "就在此时，殿外忽然传来一阵骚动。一名弟子连滚带爬地冲进来，脸色惨白：“不好了！圣宗使者……圣宗使者已经到山门外了！他们带着黑压压一片人，说是要——要血洗天青宗！”殿内顿时大乱。韩烈眼中闪过一丝得意，而那些亲圣宗长老却面露惊惧——显然，他们也不知道使者会来得这么快。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0446_009",
+        "character_id": "char_lingyuan",
+        "content": "（凌渊霍然起身，语气严厉）所有人，随我去山门！陈机……你跟在最后，若情况不对，便自行离去吧。",
+        "emotion": "焦躁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_010",
+        "content": "陈机低着头跟在众人身后，心中却在飞速盘算。凌渊的那句话看似好意，实则暗藏杀机——让他落在最后，正是方便“处理”。而他刚才观察到的那些细节——亲圣宗长老与韩烈之间的眼神交流、凌渊若有似无的暗示——一切都在指向一个可怕的事实：联盟内部的叛徒，恐怕不止韩烈一人。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0446_choice_002",
+        "prompt": "前往山门的路上，陈机决定——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "暗中调查",
+            "text": "暗中调查",
+            "description": "趁乱寻找叛徒的证据，可能发现关键线索。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过某些重要对话",
+            "visible_reward": "获得叛徒身份的关键证据",
+            "risk_hint": "若被发现行踪可疑，会引起怀疑",
+            "process_label": "暗中行动，寻找证据",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_暗中调查_001",
+                  "content": "陈机故意落后几步，在转角处停下。他的神识捕捉到两个熟悉的气息正在密谈——是那两位亲圣宗长老。“……凌掌门说了，只要陈机一死，我们就安全了。”陈机瞳孔微缩：凌渊！果然是他！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现凌渊阴谋"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "寻找苏青瑶",
+            "text": "寻找苏青瑶",
+            "description": "联合唯一可能信任的人，共同应对即将到来的危机。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能暴露与苏青瑶的特殊关系",
+            "visible_reward": "获得强力支援，建立攻守同盟",
+            "risk_hint": "苏青瑶可能会追问他的秘密",
+            "process_label": "寻求盟友，共度危机",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_寻找苏青瑶_001",
+                  "content": "陈机拦住正要赶往山门的苏青瑶，压低声音：“苏师姐，我有重要的事告诉你。”苏青瑶冷冷地看着他：“你又想搞什么鬼？”陈机直视她的眼睛：“凌掌门……有问题。”苏青瑶瞳孔微缩，却没有立刻反驳——这个废物，今天的眼神似乎不一样。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "通知夜清",
+            "text": "通知夜清",
+            "description": "动用魔道圣女的特殊能力，为最坏情况做准备。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能暴露与魔道的联系",
+            "visible_reward": "获得魔道迷雾遮掩，关键时刻可脱身",
+            "risk_hint": "夜清的条件可能很苛刻",
+            "process_label": "动用暗棋，确保退路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_通知夜清_001",
+                  "content": "陈机悄然捏碎一枚传讯玉简。片刻后，一道幽冷的声音在他脑海中响起：“陈机？你这个时候联系我……看来情况很糟糕。”陈机沉声道：“我需要你的魔道迷雾。”夜清沉默片刻：“……条件稍后再谈。我会在山门外接应你。”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得魔道迷雾支援"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_011",
+        "content": "山门外，圣宗使者傲然而立，身后是黑压压的一片修士——粗略一数，至少有三千之众。为首的使者看向迎出来的天青宗众人，嘴角挂着玩味的笑容：“天青宗的人倒是齐整。不过……我要找的人，似乎不在前面？”他的目光越过人群，直直地看向最后方的陈机，“陈机，天道之眼让我带句话——它说，你该死了。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0446_012",
+        "character_id": "char_hanlie",
+        "content": "（韩烈立刻跳出来）使者大人！这陈机就在这里！您要杀便杀，与我玄武宗无关啊！",
+        "emotion": "谄媚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_013",
+        "content": "陈机看着韩烈那副嘴脸，心中冷笑——这就是所谓的玄武宗第一天才？呵，连做狗都做得这么积极。他缓缓走出人群，面带微笑：“使者大人远道而来，就为了杀一个小小的杂役弟子？”他的语气平静得诡异，“不过在下有一事不明——天道之眼为何如此急着要我死？莫非……它怕我看到什么？”",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0446_choice_003",
+        "prompt": "面对圣宗使者和天道的威胁，陈机选择——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "以命相搏",
+            "text": "以命相搏",
+            "description": "拼死一战，哪怕身死也要拉几个垫背的。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，可能重伤",
+            "visible_reward": "在绝境中展现真正的实力，让所有人震惊",
+            "risk_hint": "对方人多势众，胜算极低",
+            "process_label": "背水一战，绝境翻盘",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_以命相搏_001",
+                  "content": "陈机忽然动了。他的身法快得不可思议，转瞬之间已经掠至韩烈身前，一掌拍在他的胸口。韩烈甚至来不及反应，整个人便如同断线的风筝般倒飞出去，鲜血狂喷。“韩师兄，”陈机的声音冰冷，“你不是说我是废物吗？再来一次？”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暴露部分实力"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "揭露真相",
+            "text": "揭露真相",
+            "description": "当众揭露凌渊才是真正的幕后黑手，借刀杀人。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "凌渊可能狗急跳墙",
+            "visible_reward": "瞬间扭转局势，让敌人自相残杀",
+            "risk_hint": "需要足够证据，否则会被反咬一口",
+            "process_label": "借力打力，反败为胜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_揭露真相_001",
+                  "content": "陈机转身，面向圣宗使者，微微一笑：“使者大人，您确定要杀的人是我？据我所知，天道之眼真正想除掉的，是我天青宗的凌掌门——毕竟，他才是上一代天机录传承的落选者。”凌渊脸色大变：“你胡说！”陈机从怀中取出那枚刻有凌渊名字的圣宗令牌：“那这个，掌门大人如何解释？”",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "凌渊身份曝光",
+              "全场哗然"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "引蛇出洞",
+            "text": "引蛇出洞",
+            "description": "故意示弱，引诱所有敌人一起出手，再一举反杀。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要承受一定攻击",
+            "visible_reward": "看清所有敌人面目，一网打尽",
+            "risk_hint": "若对手太强，可能玩脱",
+            "process_label": "示弱诱敌，请君入瓮",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 8
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0446_result_引蛇出洞_001",
+                  "content": "陈机“惊恐”地后退几步，踉跄倒地。圣宗使者冷笑：“就这？”他随意挥手，“去，把他杀了。”三四名圣宗弟子冲上前。就在他们接近陈机的瞬间，一道黑色的雾气忽然笼罩全场——夜清的声音在陈机耳边响起：“现在，你可以了。”陈机缓缓站起，脸上的惊恐消失，取而代之的是彻骨的寒意。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "魔道迷雾启动",
+              "反击时机成熟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_014",
+        "content": "就在这千钧一发之际，天空忽然暗了下来。一只巨大的眼眸虚影在云层中缓缓睁开，那正是天道之眼的本体投影！它的目光扫过全场，最终定格在陈机身上。一个古老而威严的声音在所有人脑海中响起：“天机录……终于出现了。”陈机感到体内的天机录残页疯狂震颤，似乎在与那只眼眸遥相呼应。墨先生的声音急促响起：“糟了！它不是来杀你的，它是来收回天机录的！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_015",
+        "content": "圣宗使者的脸色也变了——显然，这不是他们计划的一部分。天道之眼的投影无视了所有人，那巨大的眼眸中流露出一丝贪婪：“交出来。”陈机站在原地，面不改色。他的脑海中飞速闪过无数念头：天机录若被收回，一切都将结束；但若继续持有，天道之眼的追杀只会越来越疯狂。就在此时，他忽然感应到了一丝微弱却熟悉的气息——那是……妹妹陈念的气息！",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_016",
+        "content": "陈机猛然抬头，目光穿过天道之眼的投影，看向远方的虚空。陈念——她一定就在那里！他的双拳紧握，指甲深深嵌入掌心。这一瞬间，他做出了决定：无论付出什么代价，他都要救回妹妹。天道之眼似乎察觉到了什么，那巨大的眼眸微微眯起：“有趣……你竟然在寻找她？那个天命锁钥……原来，你也有软肋。”陈机的眼神彻底冷了下来——这是他最大的禁忌，任何人都不能触碰。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_017",
+        "content": "满场寂静。凌渊、韩烈、圣宗使者——所有人都在等待陈机的选择。而陈机只是缓缓抬起头，看向那只高高在上的天道之眼，嘴角勾起一抹淡淡的弧度。“软肋？”他的声音平静而清晰，“你错了。我没有软肋——只有非做不可的事。”话音未落，天机录残页忽然绽放出耀眼的光芒，一道玄奥的符文在空中成形。天道之眼的投影第一次露出了波动：“你敢——！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0446_018",
+        "character_id": "char_moxiansheng",
+        "content": "（墨先生惊怒）小子！你疯了！使用完整预见会消耗你所有的天命值！你会死的！",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_019",
+        "content": "陈机没有回答墨先生。他的目光穿透天道之眼的投影，看向更远处的虚空——那里，有一个模糊的身影正在注视着他。陈念……他看到妹妹被囚禁在一个黑暗的空间里，周围布满了诡异的符文。她的眼睛紧闭，嘴唇微微颤动，似乎在说着什么。陈机猛然睁大眼睛——那是两个字，清晰无比：哥哥，快跑！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0446_020",
+        "content": "陈机的眼眶微微泛红，但他的声音却冰冷如铁。“跑？”他轻声说道，“我等这一天，已经等了太久。”他抬起头，直视天道之眼的投影，“你想收回天机录？可以。但不是现在——我要先把她带回来。”他的手指在空中划出一道轨迹，天机录的符文疯狂旋转，一个前所未有的阵法正在成形。凌渊、韩烈、圣宗使者——所有人都感到了一股发自灵魂深处的恐惧。这个废物……究竟要做什么？",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

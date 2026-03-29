@@ -10,6 +10,7 @@ Single-story interactive novel app scaffold.
 - current sample targets:
   - `LifeScriptSolo` -> `xianxia_001` / `命书·弃徒`
   - `LifeScriptSoloCultivation` -> `cultivation_full_001` / `残剑问仙`
+  - `LifeScriptSoloTianjilu` -> `天机录` / `天机录`
 
 ## Generate and build
 
@@ -18,6 +19,7 @@ cd LifeScript-Solo
 xcodegen generate
 xcodebuild -project LifeScriptSolo.xcodeproj -scheme LifeScriptSolo -destination 'generic/platform=iOS' build-for-testing CODE_SIGNING_ALLOWED=NO
 xcodebuild -project LifeScriptSolo.xcodeproj -scheme LifeScriptSoloCultivation -destination 'generic/platform=iOS' build CODE_SIGNING_ALLOWED=NO
+xcodebuild -project LifeScriptSolo.xcodeproj -scheme LifeScriptSoloTianjilu -destination 'generic/platform=iOS' build CODE_SIGNING_ALLOWED=NO
 ```
 
 ## SKU configuration

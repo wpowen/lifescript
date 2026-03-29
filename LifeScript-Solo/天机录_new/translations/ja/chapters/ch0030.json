@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch0030",
+  "book_id": "天机录",
+  "number": 30,
+  "title": "天機初醒",
+  "is_paid": false,
+  "next_chapter_hook": "陳機が自分は全員を欺くことに成功したと思っていた時、冷たい視線が重なり合う雲霧を貫き、彼の眉心にまっすぐ落ちた——それは天道之眼からの注視だった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0030_001",
+        "content": "雲層の上で苍老の声が雷鳴のように響き渡り、天青宗Sect Gate前の喧騒が凍りついた。衆人が見上げると、白髪の老人が虚空を踏み而来し、周囲には淡い金色Spiritual Energyが纏わり、气势が渊のように深く海のように広く、その場にいた全員を圧しつけた。陳機は人群の最后に立ち、その影を见つめ，嘴角微微上扬——老东西、ついに来た。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_002",
+        "character_id": "char_lingyuan",
+        "content": "老夫凌渊、今日破例で一 Servant Disciple を壁に迎え入れる。",
+        "白发老者俯视全场，目光在陈机身上停留了一瞬，\"此子与老夫有缘。\"": "emotion\": \"威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_003",
+        "content": "人群中爆发出一阵骚动。内門首席 Su Qingyao は眉を紧め、最後尾に立っている无害そうに見える Servant Disciple を見た。彼女は总觉得この人物身上有种说不清道不明的东西，让她本能地感到警惕。陳機が那道审视的目光を感じ，心中一凛，面には恐れ入ったような惶恐神情を示し，头を下げて人と对视することを避けた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_004",
+        "character_id": "char_suqingyao",
+        "content": "凌渊師叔祖、」Su Qingyao は一歩踏み出し、声が清らかに冷たく、「三百年も弟子を取らなかったのに、今日になって废物を迎え入れるのか？恕弟子直言，此事恐怕不合规矩。」",
+        "emotion": "质疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_005",
+        "content": "凌渊は淡々と笑い、目光が Su Qingyao を扫过した：「老夫の行動に、何を君この小僧に説明する必要があるのか？」その威圧が骤然強まり、Su Qingyao は闷哼一声で、数歩后退した。陳機は头を下げたまま，眼底闪过一丝冷光——老东西、彼女をいじめるのは私の脸に泥を塗る、この借りは必ず返してもらう。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice01",
+        "prompt": "凌渊の强势と Su Qingyao の质疑，面对陈机必须做出选择——是继续忍耐，还是稍微反击？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0030_c1_忍",
+            "text": "この一口气を飲み込む",
+            "description": "引き続き废物を演じ、凌渊の 配置に低头して従い、いかなる锋芒も暴露しない。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "さらに軽視される可能性がある",
+            "visible_reward": "凌渊のそばで安全に潜伏する",
+            "risk_hint": "Su Qingyao の疑念がさらに深まる可能性がある",
+            "process_label": "陈机选择了隐忍",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c1_忍_1",
+                  "content": "陳機はすぐに地面に跪き、声が震えた：「弟子、弟子は師叔祖のご厚意に感謝いたします……」彼の演技は完璧に近く、Su Qingyao さえ失望の色を浮かべた——果然是个扶不上墙の废物。凌渊は満足げに点头し、振り返って彼を連れ去ろうとした。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c1_反击",
+            "text": "暗中刺し文句を言う",
+            "description": "言葉を使って小さく反撃し、実力を暴露せずに、凌渊の心に小さな棘を植える。",
+            "satisfaction_type": "嘴毒打脸",
+            "visible_cost": "さらなる注目を引き起こす可能性がある",
+            "visible_reward": "Su Qingyao の刮目相看",
+            "risk_hint": "凌渊 が疑念を抱く可能性がある",
+            "process_label": "陈机决定小小反击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0030_result_ch0030_c1_反击_1",
+                  "character_id": "char_chenji",
+                  "content": "陳機は头を上げ，眼中闪过一丝精光，旋即収斂した。彼は Su Qingyao に向かって小さく囁いた：「Su师姐是对的、弟子は確かに废物です……だから師叔祖は废物を門墙に迎え入れるとおっしゃったのです。」声が小さいながらも、偶然その场的所有人都听得清清楚楚。",
+                  "emotion": "狡黠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_006",
+        "content": "衆人が愣然としている瞬間、陳機怀中の残页が猛然発烫した。前例のない力が彼の胸元から炸裂し、四肢百骸に流れ込んだ。眼前骤然一黑、無数の光影片刻涌入脑海——それは未来三时辰の光景だった。激しい頭痛が潮のように押し寄せ、彼はほとんど立っていられなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_007",
+        "content": "【天機録・残页活性】\n【预见能力開放：三时辰予測】\n【天命値消費：-5】\n【警告：初活性、代償二倍】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_008",
+        "content": "陳機は激痛を強らぎ、 تلك支离破碎の画面の中で有用な情報を搜寻した。彼は凌渊が彼を秘密の石室に連れて行くのを見た。石壁に诡异な符文が刻まれているのを見た。凌渊が振り返った時の眼中一闪而过の殺意を見た——老东西、案の定良い加減ではない！彼の预见は曖昧で急促だったが、十分に彼的心中有数だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "その時，一道冰冷至极の意念が虚空を貫き、 直接陳機の意識の中で炸裂した：「面白い……また一颗棋子目が覚めた。」その声には感情が一切なく、陳機の全身の汗毛を逆立てた，宛如远古凶獣に獲物を見つめられたようだった。",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_010",
+        "content": "陳機の顔色は瞬時に蒼白になったが、彼は必死に舌先を咬み、痛感で自分を清醒に保った。Mo Xiansheng の残魂が彼の意識の奥で震えている：「小心、あれは天道之眼だ！それがあなたを見ている！」陳機的心中骇然、面上は丝毫も流露する気配がなかった。彼は体力的に立ち不住かないふりをして”、よろめき後退した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_011",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao は鋭く陳機の異常を察知し、素早く前に出た：「どうしたの？そんなに顔色が悪い？」彼女の目光は鋭利な刀のように陳機の顔を来回梭巡し、彼の眼底から何か破绽を見つけ出そうとしている。陳機は何とか虚弱な笑みを絞り出した：「何でもない……多分楽しみすぎたのです……」",
+        "emotion": "关切"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice02",
+        "prompt": "Su Qingyao の追问让陈机陷入两难——是继续装弱博取同情，还是趁机试探她的态度？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "ch0030_c2_装弱",
+            "text": "引き続き弱みを装う",
+            "description": "Su Qingyao の同情心を利用し、身体の不具合を口実にまずは凌渊の視線から離れる。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "凌渊を理解する機会を逃す可能性がある",
+            "visible_reward": "安全に離脱し、次回の行動のために時間を稼ぐ",
+            "risk_hint": "Su Qingyao の疑念がさらに深まる",
+            "process_label": "陈机决定装弱脱身",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c2_装弱_1",
+                  "content": "陳機は勢いよく额に手を当て、よろめき倒了：「師叔祖……弟子は突然目まいがして……」凌渊は眉を小さく皱め、冷たく看了彼一眼し、手を振って：「いいえ、まず連れて行って休ませろ。」陳機が人に搀れられて行く時、Su Qingyao の有所思的表情を余光で発見，心中暗暗嘆息した：また彼女に疑念を持たせた。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c2_试探",
+            "text": "機を捉え试探する",
+            "description": "身体の不舒服を口実に、Su Qingyao に护送してくれるよう頼み、彼女の自分への真实な態度を観察する。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Su Qingyao に見破られる可能性がある",
+            "visible_reward": "Su Qingyao と两人きりになる机会を得る",
+            "risk_hint": "凌渊 が不满を感じる可能性がある",
+            "process_label": "陈机决定试探苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0030_result_ch0030_c2_试探_1",
+                  "character_id": "char_chenji",
+                  "content": "陳機はよろめいたふりをして、Su Qingyao の方向に倒れかかった：「Su师姐……ちょっと扶けてくれませんか……」Su Qingyao は无意識に手を伸ばして彼を受け止め、两人の距離が骤然近くなった。彼女は怀中のこの痩せた Servant Disciple を見下ろ，心中那种古怪的感觉愈发强烈——この人の眼は、あまりに清澈で、废物とは思えなかった。",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_012",
+        "content": "頭痛が少し和らぎ、陳機はある前所未有的虚弱さを感じた——それは天命値の大量消費带来的反噬だった。彼は暗暗心惊：たった一度の预见で十ポイントも天命値を消費したのだから、何度も使えば……Mo Xiansheng の声が意識の奥で響いた：「焦るな、天機録の代償は公平だ。预见すればするほど、命中する劫数も多くなる。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_013",
+        "content": "凌渊 の声が遠くくから聞こえてきた：「彼を静心閣に連れて行って休ませろ。」二人の Inner Sect 弟子が陳機の腕を掴んで人群から連れ出した。Su Qingyao の 옆을 지날 때、陳機は突然彼女の耳边にだけ聞こえる声で囁いた：「Su师姐、師叔祖の石室に気をつけてください。」Su Qingyao の瞳孔は驟に缩み、問い詰めようとしたが、陳機はもう連れ去られていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_014",
+        "content": "夜が深まり、陳機は静心閣の床上に躺卧し、目を閉じて脑海の中で Those 模糊な预见画像を整理していた。凌渊が石室で某种诡异な功法を修炼しているのを見た。玄武宗の Han Lie が天青宗の近くに現れたのを見た。また看到了……鎖で囚われた少女の姿が、曖昧で、陈念 のようだった。彼の心は驟に締め付けられた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_015",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng の虚影が残页から浮かび上がり、表情凝重だった：「小子、大きな麻烦に巻き込まれたな。天道之眼がすでにあなたを注目している、これから先、あなたの每一步はそれに監視される。」陳期は猛然睁开眼、声が嗄れた：「それでどうだ？それが将棋を指すなら、俺も付き合ってやる。」Mo Xiansheng は愣み，忽然笑い出した：「いいぞ、胆力がある。」",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_016",
+        "content": "窓の外から突然一阵细微な足音が伝わってきた。陳期はすぐに気配を収め、假装沉睡した。来人は门口でしばらく停留し、入るかどうかを迷っているようだった。陳期はその気配から Su Qingyao だと判断した——彼女は果然调查を諦めなかった。しばらく後、足音が遠ざかり、陳期はやっと息をついた，同时により警戒した：这个女人，太敏锐了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0030_choice03",
+        "prompt": "Su Qingyao の步步紧逼，面对陈机需要做出决定——是主动出击化解她的怀疑，还是继续被动防守等待时机？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0030_c3_主动",
+            "text": "Su Qingyao に積極的に近づく",
+            "description": "明日の朝、Su Qingyao を積極的に訪ね、半当真半作假の話術で彼女の戒心を化解し，甚至有可能将她发展为暗中盟友。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "精心设计话术が必要",
+            "visible_reward": "強力な内応を得る",
+            "risk_hint": "弄巧成拙の可能性もある",
+            "process_label": "陈机决定主动出击",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c3_主动_1",
+                  "content": "陳期心中有了计较。Su Qingyao に狩人のように追いかけられるより、主动に彼女の視線を導き、彼女を彼の布局の中の駒の一つにした方がよい。どうせ凌渊や天道之眼と対抗するのなら、聪明な人を一人多く持つ方が一人少ないよりいい。当然，这一切都要建立在不暴露天機録的前提下。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0030_c3_防守",
+            "text": "引き続き受動的に防御する",
+            "description": "現状を維持し、Su Qingyao に怀疑を持たせながら証拠が見つからないようにし、時間で彼女の忍耐を消耗させる。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "彼女を味方につける機会を逃す可能性がある",
+            "visible_reward": "現状維持の安全",
+            "risk_hint": "Su Qingyao の疑念が 지속적으로蓄積する",
+            "process_label": "陈机决定继续隐忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0030_result_ch0030_c3_防守_1",
+                  "content": "陳期翻身躺下，决定暂时按兵不动。Su Qingyao は聪明な人だが、聪明な人は往往想得太多。只要他不露出明显的破绽、彼女迟早会因为过度分析而走进死胡同。当然，如果她真的查到什么……陳期の眼神暗了暗、那么他也不介意辣手摧花。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0030_017",
+        "content": "夜が更けて、静心閣の外から突然一阵喧哗が伝わってきた。陳期は耳を傾け、隐约有人在喊「刺客がいる」。彼は霍然座起，心中涌起一股不吉な予感——Han Lie！あの预见の中のシーンが実現した！玄武宗の天才弟子，居然连夜闯入了天青宗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_018",
+        "content": "窓の外では火光冲天、喊杀声此起彼伏。陳期は窓の隙間から望去，只见一道霸道的身影在人群中横冲直撞，没有人能挡住。那正是他在预见中看到的 Han Lie——一个纯粹以力量碾压一切的武痴。Han Lie の目光が静心閣を扫过，忽然咧嘴一笑：「废物，听说你被凌渊收为弟子了？让老子来试试你的成色！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_019",
+        "content": "陳期は慌てなかった，反而露出一丝玩味的笑容。Han Lie は彼の预测より早く来た，看来命运并非完全按照天機録の軌跡运行的。彼は気も緩まずに立ち上がり、房门推开，对着那道如山般压来的身影朗声道：「Han师兄、夜中に雰囲临とは、何の御用ですか？」彼の声は平静そのもので、周囲の慌乱の氛围と鲜明的对比を成していた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0030_020",
+        "character_id": "char_hanlie",
+        "content": "Han Lie は狂笑一声、巨掌はすでに陳期の面に叩きつけられた：「何の御用か？もちろんお前を殺すためだ！」その排山倒海のような灵力压迫が押し寄せる中、陳期は微動だにしなかった。彼の瞳孔に一丝の金光が闪过——天機録が再び作動した。接下来的三时辰Han Lie が成功しないことを知っていたが、それでも彼は最適な躲避タイミングと反击角度を計算せずにはいられなかった。",
+        "emotion": "狂傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_021",
+        "content": "Han Lie の攻撃がまさに落ちようという瞬間，一道凌厉的剑光が空から现れ、硬生生把那巨掌荡开。Su Qingyao は一身的白衣で陳期の前に立ち、长剑はHan Lie を斜めに指した：「Han Lie、天青宗で動くのか？」彼女の声が冷たい氷のように冷徹だったが、剑を握る手は微かに震えていた——Han Lie の実力は、彼女の想象を超えていた。陳期はその纤细な背中を見て，心中涌起一股複雑な情绪。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_022",
+        "content": "【天命値：85/100】\n【警告：外部脅威を感知、使用者にリスク評価を促します】\n【天機録残页共鳴度：12%】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_023",
+        "content": "陳期は深く息を吸い込み、决定を下した。彼はSu Qingyao の肩を軽く叩き，声音平静：「Su师姐、ありがとう。でも、これは彼と私の間のことだ。」Su Qingyao は猛然振り返，却看见陳期眼中那股前所未有的自信と从容。その刻、彼女はついに自分の怀疑を確認した——この废物，绝非池中之物。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0030_024",
+        "content": "Han Lie は这种情况看到反而怒らず，反而兴奋得双眼放光：「哈哈哈哈！终于露出真面目了吗？」彼の周身灵压暴涨し、玄武宗の镇宗功法",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

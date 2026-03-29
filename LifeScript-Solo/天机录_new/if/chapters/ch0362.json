@@ -1,0 +1,600 @@
+{
+  "id": "天机录_ch0362",
+  "book_id": "天机录",
+  "number": 362,
+  "title": "传承者血脉",
+  "is_paid": true,
+  "next_chapter_hook": "当陈机踏入那条符文通道的瞬间，掌心的命运棋子骤然滚烫——仿佛有什么东西，正在通道尽头等待着他。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0362_001",
+        "content": "那来自遗迹最深处的古老召唤愈发清晰，仿佛有什么沉睡万年的存在正在苏醒——而它，似乎认得陈机血脉中流淌的每一缕气息。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_002",
+        "content": "陈机只觉胸口一阵灼热，那枚从未有过动静的血脉印记竟在这一刻自行亮起。淡金色的光芒从他衣襟缝隙中透出，在场众人无不看得分明。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_003",
+        "character_id": "char_hanlie",
+        "content": "「这废物身上……怎会有灵光？」韩烈瞳孔骤缩，玄武宗的弟子们齐齐变了脸色。那道光芒虽微弱，却蕴含着某种让他们灵魂深处都感到颤栗的东西。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_004",
+        "content": "话音未落，遗迹大门上那三道坚不可摧的封印竟同时发出龟裂之声。尘封万载的石门开始缓缓移动，漫天尘埃在灵力波动中席卷而出。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_005",
+        "character_id": "char_hanlie",
+        "content": "「不可能！」韩烈面色铁青，他亲手以玄武秘法轰击过那扇门，纹丝不动。如今一个杂役弟子站在门前，封印便自行瓦解——这简直是当众扇他的耳光。",
+        "emotion": "难以置信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_006",
+        "content": "陈机静静站在原地，感受着血脉中那股熟悉的牵引。墨先生的残魂在识海中剧烈颤动，三百年来从未有过的情绪波动透出天机录第一页——那是期待，是激动。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_007",
+        "character_id": "char_moxiansheng",
+        "content": "「第三页……松动了。」墨先生的声音罕见地带着颤抖，「少主，您的血脉比老奴预想的更为纯粹。这扇门，只认您一人。」",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_008",
+        "content": "石门轰然洞开，一股远古苍茫的气息扑面而来。门后并非众人想象中的宝藏秘境，而是一条向下延伸的符文通道，墙壁上刻满了与陈机掌心命运棋子一模一样的纹路。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_009",
+        "character_id": "char_yeqing",
+        "content": "夜清望着那条通道，美眸中闪过复杂神色。魔道圣女比任何人都清楚这意味着什么——传承者血脉，非上古大能转世不可有。她悄悄攥紧了袖中的手。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_010",
+        "content": "陈机缓步走向门槛，身后留下一串淡金色的足印。每一道脚步声都像敲在韩烈心头，让他脸上的傲慢碎了一地。四周陷入死一般的沉默，所有人都在等他开口。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0362_choice_01",
+        "prompt": "众人目光汇聚于身，面对这突如其来的身份逆转，陈机该如何应对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0362_c1_a",
+            "text": "顺势而为，坦然受之",
+            "description": "既然身份已曝光，不如光明正大进入遗迹，将计就计打破所有阴谋布局",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "完全暴露身份，引来更多势力觊觎",
+            "visible_reward": "名望大涨，所有势力必须重新评估你的价值",
+            "risk_hint": "可能招致玄武宗与天青宗内部的嫉妒与敌意",
+            "process_label": "坦然面对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0362_result_c1_a_1",
+                  "content": "陈机转身，目光平静地扫过在场众人，嘴角微微上扬。这一刻，废柴的外表下透出一股难以言喻的从容气度，让不少人心头一凛。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "传承者身份曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0362_c1_b",
+            "text": "隐藏锋芒，佯装不知",
+            "description": "假装困惑不知发生何事，将一切归于遗迹自身衰朽，借机深入探索同时保留底牌",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过建立威信的最佳时机",
+            "visible_reward": "保留神秘感，让敌人在迷雾中继续犯错",
+            "risk_hint": "夜清已看出端倪，可能被追问",
+            "process_label": "装傻到底",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0362_result_c1_b_1",
+                  "content": "陈机挠了挠头，一脸茫然：「这……这门怎么自己开了？莫非是年久失修？」他的表演堪称完美，连韩烈都不禁狐疑起来——难道真是巧合？"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "隐藏传承者身份"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_011",
+        "character_id": "char_hanlie",
+        "content": "「哼！」韩烈冷哼一声，强压下心头翻涌的嫉恨，「就算门开了又如何？我玄武宗精英齐聚，一个废物能比我们先找到机缘？」他大手一挥，「给我进去！」",
+        "emotion": "强作镇定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_012",
+        "content": "玄武宗弟子们如潮水般涌向门口，却被一道无形的屏障弹了回来。韩烈的脸色瞬间涨红——这遗迹，竟然只许陈机一人通过。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_013",
+        "character_id": "char_hanlie",
+        "content": "「凭什么！」韩烈怒喝出声，双拳紧握，青筋暴起，「我乃玄武宗第一天才！凭什么让一个杂役弟子独占机缘！」他的咆哮在遗迹中回荡，却只换来嘲笑般的寂静。",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_014",
+        "content": "夜清轻笑出声，那笑声在紧张的气氛中格外清晰：「韩公子，您方才不是说废物不配踏入此门吗？现在看来，真正不配进去的人……好像另有其人呢。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_015",
+        "character_id": "char_yeqing",
+        "content": "夜清凑近陈机耳畔，声音压得极低：「陈公子，你的秘密比我想象的有趣得多。里面有什么，我很好奇——不如，我们做个交易？」她的气息拂过耳畔，带着魔道特有的诱惑。",
+        "emotion": "暧昧"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0362_choice_02",
+        "prompt": "面对夜清的示好与暗示，陈机该如何回应？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0362_c2_a",
+            "text": "接受合作，互惠互利",
+            "description": "与魔道圣女结盟，让她以魔道迷雾遮掩气息，共同深入遗迹探索未知区域",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "与魔道势力产生纠葛，可能被正道势力敌视",
+            "visible_reward": "获得魔道迷雾能力加成，降低遗迹探索风险",
+            "risk_hint": "韩烈等人可能借此大做文章",
+            "process_label": "结盟魔道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0362_result_c2_a_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机侧目看向夜清，似笑非笑：「圣女殿下好大的胃口。不过——我喜欢。」",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "魔道结盟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0362_c2_b",
+            "text": "婉言谢绝，保持距离",
+            "description": "礼貌拒绝夜清的提议，独自踏入遗迹，避免与魔道产生任何瓜葛",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "失去强援，遗迹内变数增加",
+            "visible_reward": "保持清白身份，不给敌人攻击把柄",
+            "risk_hint": "可能让夜清感到被轻视",
+            "process_label": "保持中立",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": -5
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0362_result_c2_b_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机微微颔首，语气温和却疏离：「多谢圣女美意，只是在下习惯独来独往。里面有缘再会。」",
+                  "emotion": "礼貌而冷淡"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_016",
+        "content": "就在此时，陈机怀中的天机录残页骤然发烫。他心神一凛，只见第三页原本晦暗的封印上，浮现出几道细微的裂纹——这是三百年来的头一次。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_017",
+        "character_id": "char_moxiansheng",
+        "content": "「少主，封印松动需要契机。」墨先生的声音透出压抑不住的激动，「您的血脉激活了这处传承之地，与天机录产生了共鸣。若能深入遗迹核心，或可彻底解封！」",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_018",
+        "content": "陈机深吸一口气，迈步走向那条符文通道。当他的脚掌踏上通道地面的瞬间，墙壁上的所有纹路齐齐亮起金色光芒，仿佛在迎接阔别万年的主人归来。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_019",
+        "character_id": "char_hanlie",
+        "content": "「陈机！」韩烈的声音在身后响起，压抑着满腔怒火，「你以为进去就赢了？这遗迹里有多少凶险，你一个废物根本不知道！识相的，把进入的方法交出来！」",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_020",
+        "content": "陈机脚步一顿，却没有回头。他的声音平静得可怕：「韩公子，方才你不是说废物不配踏入此门吗？现在门开了，你怎么不自己进去？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0362_choice_03",
+        "prompt": "面对韩烈的威胁与阻挠，陈机如何反击？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0362_c3_a",
+            "text": "嘴毒打脸，当众羞辱",
+            "description": "用最讽刺的语气当众揭韩烈的短，让他颜面尽失",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "彻底激怒韩烈，结下死仇",
+            "visible_reward": "当众打脸，围观者对你的评价将彻底改变",
+            "risk_hint": "韩烈可能不顾一切出手",
+            "process_label": "言语碾压",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0362_result_c3_a_1",
+                  "character_id": "char_chenji",
+                  "content": "陈机转过身，似笑非笑地打量着韩烈涨红的脸：「韩公子莫急，你进不去不是因为我，是因为这遗迹不欢迎连门都打不开的废物。对了，你方才那一掌挺响的，可惜——门连晃都没晃。」",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0362_c3_b",
+            "text": "点到为止，不做纠缠",
+            "description": "轻描淡写回应一句后直接离开，不给韩烈任何发作的机会",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过震慑全场的机会",
+            "visible_reward": "不结仇、不树敌，保持低调人设",
+            "risk_hint": "可能被韩烈认为软弱",
+            "process_label": "不屑一顾",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0362_result_c3_b_1",
+                  "content": "陈机淡淡一笑，头也不回地迈入通道：「韩公子若有兴趣，不妨在门口等着。说不定等在下出来，还能指点你几招开门之法。」",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_021",
+        "content": "陈机踏入符文通道，金光沿着他的脚步逐次亮起。身后，遗迹大门并未关闭，而是化作一层半透明的光幕，将外界的一切阻隔在外。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_022",
+        "character_id": "char_yeqing",
+        "content": "夜清望着陈机消失在光芒中的背影，轻声呢喃：「有意思……这局棋，越来越乱了。」她嘴角勾起一抹意味深长的弧度，转身隐入暗处。",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_023",
+        "content": "符文通道向下延伸，墙壁上的纹路与陈机掌心的命运棋子遥相呼应。他能感受到某种古老的牵引，仿佛血脉深处有什么东西正在苏醒，在呼唤他走向更深处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_024",
+        "character_id": "char_moxiansheng",
+        "content": "「少主，这里是老主人当年留下的传承之地。」墨先生的声音变得郑重，「您手中那枚命运棋子，是开启核心区域的钥匙。只是……前方会有什么，老奴也无法预见。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_025",
+        "content": "通道尽头，一扇刻满上古符文的石门静静矗立。门扉正中，赫然镶嵌着一枚与陈机掌心一模一样的凹槽。当陈机靠近时，那枚命运棋子竟自行飞出掌心，严丝合缝地嵌入其中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_026",
+        "content": "轰隆隆——\n\n石门缓缓开启，一股浩瀚如渊的气息扑面而来。门后并非想象中的宝藏秘境，而是一片虚无的黑暗，唯有正中央悬浮着一座古老的祭台，台上放着一卷泛黄的竹简。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_027",
+        "character_id": "char_chenji",
+        "content": "陈机缓步上前，目光落在那卷竹简之上。当他看清上面刻着的字迹时，瞳孔骤然紧缩——「天机录·补篇」。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_028",
+        "content": "与此同时，他怀中的天机录残页剧烈震颤起来。第三页的封印以肉眼可见的速度崩裂，一道金光冲出书页，与祭台上的竹简遥相呼应。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_029",
+        "character_id": "char_moxiansheng",
+        "content": "「这是……天机录遗失的补篇！」墨先生的声音剧烈颤抖，压抑不住的狂喜透出，「少主，老主人穷尽一生都在寻找此物！有了它，您对天机的掌控将更上一层楼！」",
+        "emotion": "狂喜"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_030",
+        "content": "陈机伸出手，指尖触及竹简的瞬间，一股磅礴的信息流涌入识海。天机录第三页彻底解封，泛出一层温润的金光。而那卷补篇竹简则化作流光，没入天机录之中。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_031",
+        "content": "【叮——天机录第三页解封！】\n【获得被动技能：趋吉避凶（可提前感知方圆十里内的危险来源）】\n【获得主动技能：天机示警（每日一次，可指定目标，预见其未来一个时辰内的关键行动）】\n【天命值-10】",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_032",
+        "content": "陈机闭目消化着涌入的信息，面上不动声色，心中却掀起惊涛骇浪。天机录第三页的解封，不仅带来了实用的技能，更解锁了一段尘封的记忆——关于他身世的真相。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_033",
+        "character_id": "char_moxiansheng",
+        "content": "「少主，您现在应该看到了。」墨先生的声音变得前所未有的凝重，「您的血脉，并非偶然觉醒——您是陈家嫡系后裔，天机录真正选定的传承者。陈玄前辈……是您的先祖。」",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_034",
+        "content": "陈机猛然睁眼，眸中金光一闪即逝。他的身世，竟隐藏着如此惊人的秘密。天机录的真正传承者——这个身份一旦曝光，必将引来天下觊觎。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_035",
+        "content": "与此同时，符文通道深处传来一阵异样的震动。陈机眉头微皱——方才那条被他掌心的命运棋子激活的符文通道，此刻正泛着诡异的红光，仿佛有什么东西正沿着他的足迹追来。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0362_036",
+        "character_id": "char_moxiansheng",
+        "content": "「少主小心！」墨先生语气骤变，「这气息……是禁制守护者！您取走了补篇，惊动了沉睡的守卫！快，从原路返回——」",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_037",
+        "content": "话音未落，通道深处已传来沉重的脚步声。每一记脚步都震得地面微微颤抖，伴随着某种金属摩擦的刺耳声响。陈机眸光一凛，却没有慌乱——新获得的天机示警技能恰好可以派上用场。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0362_038",
+        "content": "当陈机踏出遗迹大门的瞬间，漫天金光收敛于体内。他的表情依旧淡漠如常，仿佛方才不过是做了一场微不足道的梦。然而他掌心的命运棋子，已然少了三道纹路。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

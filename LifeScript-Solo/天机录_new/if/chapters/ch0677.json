@@ -1,0 +1,631 @@
+{
+  "id": "天机录_ch0677",
+  "book_id": "天机录",
+  "number": 677,
+  "title": "皇令如山",
+  "is_paid": true,
+  "next_chapter_hook": "城墙之上，一枚刻着陈家旧徽的竹简静静躺在瓦缝之间——三日后，天青宗密道全图将如约而至。苏青瑶的信任，终于跨越了整整三年的试探与追寻。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0677_001",
+        "content": "子夜，太师府书房内烛火摇曳。陈机将那封加密密报置于烛台之上，火舌舔舐过绢帛边缘，显出一行蝇头小楷：玄武宗真正目标，乃皇都太师府，而非天青宗。他唇角微微上扬，将密报投入炭盆，看着它化为灰烬。玄武宗那群蠢货，自以为布局精妙，殊不知真正的棋盘，早已在他手中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_002",
+        "character_id": "char_chenji",
+        "content": "来人。",
+        "emotion": "冷峻"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_003",
+        "content": "门外的黑衣死士无声无息地现身，单膝跪地。陈机从袖中取出三枚金令，逐一吩咐：其一，命镇北将军韩彪即刻率三千精骑南下，于青州隘口设伏，但遇玄武宗车队，不分缘由，先扣再说。其二，传语太子殿下，今夜奏章已拟好，明日早朝请呈上「边军换防」一折。其三——他顿了顿，眼中闪过一丝狠厉——让二皇子那边的人知道，太师府今晚接待的客人，身份非同小可。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_004",
+        "content": "死士接过金令，身形一闪便没入夜色。陈机负手立于窗前，望着皇城方向的点点灯火，天机录在他怀中微微发热。他知道，每一次改写命运的布局，都在消耗他宝贵的天命值。但这一局，他必须赢。玄武宗的蠢货们想借「讨伐天青」之名行刺他，那便让边军以「护驾」之名，先把他们的退路堵死。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_005",
+        "character_id": "char_chenji",
+        "content": "这天下棋局，终究还是要靠阳谋来破。",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_006",
+        "content": "翌日清晨，皇城金殿之上，百官肃立。太子殿下依计呈上「边军换防」奏折，措辞恳切，理由充分——北狄蠢蠢欲动，边军换防乃防患于未然。二皇子一党的户部尚书眉头紧锁，刚要出列反驳，却见太师府的长随已悄然递上一封密函。他展开一看，面色瞬间苍白如纸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（户部尚书心中惊骇：这太师怎会知道我暗中截留军饷之事？且证据竟如此详尽！）",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_008",
+        "content": "早朝在诡异的沉默中结束。二皇子一党无一人反对，边军换防的旨意顺利通过。当日下午，三千镇北精骑便已拔营南下，朝青州隘口急行军。消息传到玄武宗主营时，韩烈正志得意满地喝着庆功酒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0677_choice01",
+        "prompt": "玄武宗的先锋部队已进入青州地界，陈机需要做出决断：是先下手为强扣押他们，还是放长线钓大鱼等主力上钩？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c1_扣押",
+            "text": "先下手扣押",
+            "description": "立即命镇北军动手扣押玄武宗先锋，打草惊蛇但能立威",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露实力，玄武宗主力可能退兵",
+            "visible_reward": "震慑效果显著，二皇子一党将更加忌惮",
+            "risk_hint": "可能打草惊蛇，让玄武宗主力有所警觉",
+            "process_label": "先发制人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c1_1",
+                  "content": "镇北军的铁骑如乌云压顶般出现在隘口，玄武宗先锋措手不及，百余人瞬间被围。韩烈在主营听闻消息，怒得将酒杯摔得粉碎——这废物太师，竟敢先动手！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "玄武先锋被扣"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c1_放行",
+            "text": "放长线钓大鱼",
+            "description": "让先锋通过，专等玄武宗主力踏入陷阱，一网打尽",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "先锋可能传递消息，需确保主力不知情",
+            "visible_reward": "若成功可一举扭转局势，名震天下",
+            "risk_hint": "若消息走漏，恐功亏一篑",
+            "process_label": "请君入瓮",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c1_2",
+                  "content": "先锋顺利通过隘口，一路畅通无阻地朝皇都进发。韩烈冷笑：果然是废物太师，连边军都不敢动真格。他不知道，死神的请帖早已在前方铺开，只等他自投罗网。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "等待主力"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c1_观望",
+            "text": "静观其变",
+            "description": "先看太子党和二皇子如何反应，借机试探各方底线",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错失最佳出击时机",
+            "visible_reward": "看清局势后出手，胜算更高",
+            "risk_hint": "各方势力可能趁机做局",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c1_3",
+                  "content": "皇城内的局势骤然紧张。太子党和二皇子势力因边军换防一事公开对峙，弹劾太师的奏章如雪片般飞向御前。陈机端坐太师府，对这一切充耳不闻——他等的，正是这个乱局。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "静观其变"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_009",
+        "content": "就在各方势力暗流涌动之际，太师府外的暗巷中，一道纤细的身影静静伫立。苏青瑶一身素色劲装，面覆薄纱，三年来追寻的脚步终于在此刻停驻。她望着那座守卫森严的府邸，眼中闪过复杂的光芒——当年那个废物杂役，如今竟已是一人之下万人之上的太子太师。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_010",
+        "character_id": "char_suqingyao",
+        "content": "（她心中暗忖：三年了，我无数次接近真相，又无数次被他化解。这一次，我不会再给他机会。）",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_011",
+        "content": "然而就在她准备现身之际，却见太师府内走出一名死士，手中捧着一只锦盒。那死士径直走向她藏身的暗巷，单膝跪地，将锦盒高举过顶。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_012",
+        "character_id": "char_chenji",
+        "content": "苏师妹，别来无恙。盒中之物，乃三年前我答应为你查的真相——天青宗灭门案始末。",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_013",
+        "content": "苏青瑶浑身一震。三年前，她曾托陈机暗中调查那桩血案，彼时她并不信他能查出什么。如今真相竟真的被揭开，而揭开之人，正是她一直追查的目标。她缓缓打开锦盒，一卷泛黄的卷宗静静躺在其中，上面赫然写着：凌渊亲笔。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0677_choice02",
+        "prompt": "苏青瑶终于现身，真相也浮出水面。陈机需要决定如何处置这段复杂的关系：是将她拉入棋局，还是继续维持表面的疏离？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "c2_坦诚",
+            "text": "坦诚相邀",
+            "description": "向苏青瑶展示天机录的部分能力，正式邀请她成为盟友",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露天机录存在，可能引来更大危机",
+            "visible_reward": "获得强力盟友，苏青瑶好感度大幅提升",
+            "risk_hint": "天机录气息可能被天道之眼察觉",
+            "process_label": "以诚相待",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0677_result_c2_1",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶接过卷宗，指尖微微颤抖。当她读到「凌渊勾结魔道、借刀杀人」的字句时，眸中寒光乍现。片刻后，她将卷宗收入怀中，抬头直视陈机：你的条件是什么？",
+                  "emotion": "震动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶结盟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶加入阵营",
+            "branch_route_id": null
+          },
+          {
+            "id": "c2_试探",
+            "text": "继续试探",
+            "description": "保持距离，只给出部分信息，试探苏青瑶的真实目的",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错失结盟良机，苏青瑶可能离去",
+            "visible_reward": "保持神秘感，同时看清她的立场",
+            "risk_hint": "苏青瑶可能失去耐心",
+            "process_label": "欲擒故纵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0677_result_c2_2",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶沉默良久，将卷宗收入怀中，却并未离去。她望着陈机，声音清冷：陈机，你究竟是什么人？我查了三年，却连你的衣角都摸不到。",
+                  "emotion": "困惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "保持距离"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c2_驱逐",
+            "text": "冷酷驱逐",
+            "description": "警告苏青瑶不要插手此事，将她强行逐出太师府范围",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去潜在盟友，苏青瑶好感度暴跌",
+            "visible_reward": "保护天机录秘密，减少变数",
+            "risk_hint": "苏青瑶可能成为潜在威胁",
+            "process_label": "划清界限",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0677_result_c2_3",
+                  "character_id": "char_suqingyao",
+                  "content": "苏青瑶被逐出暗巷，站在长街尽头回望太师府。她攥紧拳头，指节泛白。陈机……你以为这样就能甩掉我？三年前你救我的那一次，我便说过，你欠我一个真相。",
+                  "emotion": "不甘"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "驱逐苏青瑶"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_014",
+        "content": "正当皇城风云变色之际，一则惊雷般的消息从北方传来——玄武宗主力三万人马，以「讨伐魔道余孽」为名，已越过青州，直逼皇都！韩烈亲率先锋，气势汹汹，扬言要清君侧、除奸佞。朝野震动，二皇子一党趁机弹劾太师「穷兵黩武」「挑起宗门大战」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼在虚空中微微颤动，仿佛在注视这一切。它感知到了那股熟悉的气息——那个身怀天机录的棋子，终于开始崭露头角了。）",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_016",
+        "content": "然而陈机却笑了。他展开天机录残页，一行未来三时辰的画面浮现——玄武宗主力将在一处名为「落雁坡」的地方遭遇伏击，统兵之人，正是他暗中布下的棋子：太子殿下麾下的暗卫首领。而韩烈，此刻正志得意满地走在最前方，对即将到来的死神一无所知。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_017",
+        "content": "他合上残页，眸中寒光乍现。玄武宗的蠢货们，以为声东击西便能瞒过他。殊不知，他早在一月前便已预见今日——天机录的每一次预见，都在消耗他的天命值。但这一局，他必须赢。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0677_choice03",
+        "prompt": "玄武宗主力已入瓮中，陈机需要决定如何收网：是让太子暗卫直接歼灭，还是故意放走一部分制造更大恐慌以震慑二皇子？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "c3_全歼",
+            "text": "全部歼灭",
+            "description": "命太子暗卫将玄武宗主力全部歼灭于落雁坡，一战定乾坤",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能激化宗门与皇朝的矛盾",
+            "visible_reward": "玄武宗势力大损，韩烈身死，威望达到顶峰",
+            "risk_hint": "可能引发其他宗门联手反弹",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c3_1",
+                  "content": "落雁坡上，太子暗卫如神兵天降。玄武宗主力措手不及，被杀得丢盔弃甲。韩烈身陷重围，战至力竭，最终被生擒活捉。当消息传回皇都时，满朝文武皆惊——那个被称为废物的太师，竟有如此手段！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "玄武宗大败"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c3_放生",
+            "text": "故意放生",
+            "description": "放走部分玄武宗残兵，让他们将恐慌带回宗门，制造更大的震慑效果",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "玄武宗可能卷土重来",
+            "visible_reward": "恐惧比杀戮更有力量，二皇子一党将彻底胆寒",
+            "risk_hint": "放虎归山，后患无穷",
+            "process_label": "以恐惧为刃",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c3_2",
+                  "content": "残阳如血，落雁坡上尸横遍野。太子暗卫故意放开一条生路，数十名残兵逃出生天。他们连滚带爬地往玄武宗方向逃去，逢人便说：太师府的军队是地狱来的恶鬼！恐惧如瘟疫般在玄武宗蔓延。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "恐惧蔓延"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c3_生擒",
+            "text": "活捉韩烈",
+            "description": "网开一面但活捉韩烈，以此要挟玄武宗换取更大利益",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "需要分出兵力看守俘虏",
+            "visible_reward": "手握玄武宗第一天才，可换取无数筹码",
+            "risk_hint": "韩烈可能被人救走",
+            "process_label": "以人质为质",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c3_3",
+                  "content": "韩烈被五花大绑押至太师府时，那张不可一世的脸上写满了屈辱与不甘。陈机居高临下地看着他，淡淡道：韩天才，可还记得当年在演武场上，你是如何羞辱我的？",
+                  "emotion": "冷酷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈被俘"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_018",
+        "content": "韩烈被押入大牢的同一夜，太师府来了一位特殊的客人。苏青瑶没有选择离去，而是在暗处观察了整整一天。当她看到陈机以雷霆手段布下的这一局棋时，心中最后一丝疑虑终于消散。这个男人，远比她想象的更加可怕——也更加值得追随。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_019",
+        "content": "她悄然在城墙之上留下了一枚刻着陈家旧徽的竹简。竹简之内，是她三年来踏遍天下收集的天青宗密道全图——这是她能给陈机的最大诚意，也是她选择信任他的证明。三日后，这份图将出现在太师府的案头。而她，将正式成为陈机棋局中的一枚关键棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_020",
+        "character_id": "char_suqingyao",
+        "content": "（她在心中默默说道：陈机，这一局，我押你赢。）",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_021",
+        "content": "皇城夜深，灯火阑珊。陈机独立窗前，望着天际那轮残月。天机录在怀中微微发烫，似在警告他——每一次改写命运的布局，都在将他推向更深的深渊。但此刻，他眼中只有一片平静。凌渊、玄武宗、二皇子、天道之眼……所有敌人，终将在他的棋局中化为齑粉。而苏青瑶的加入，让这盘棋，变得更加精彩。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_022",
+        "content": "就在此时，一只信鸽落在窗棂之上。陈机取下绑在鸽腿上的细管，展开其中的纸条，上面只有八个字：天机初现，皇令如山。他微微一笑，将纸条化为灰烬。棋局已开，落子无悔。而真正的风暴，才刚刚开始……",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

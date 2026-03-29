@@ -1,0 +1,551 @@
+{
+  "id": "天机录_ch1049",
+  "book_id": "天机录",
+  "number": 1049,
+  "title": "第四种可能",
+  "is_paid": true,
+  "next_chapter_hook": "禁忌秘法与龟壳神器的完整共鸣开始，一个新的可能性在陈机眼前展开——他看见了三条截然不同的命运线，而其中一条的尽头，站着一个他绝未想到的身影。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1049_001",
+        "content": "那道意志冰冷彻骨，仿佛整个天地都在俯视他这只蝼蚁。陈机站在原地没有动，嘴角却勾起一丝笑意。被发现了？有意思。但被发现不等于被看穿——天机录的气息被魔道迷雾层层包裹，那道意志只是锁定了他的位置，而非窥破他的真实身份。这便是夜清的价值。她给的护身符，此刻成了他最大的底气。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_002",
+        "content": "陈机不慌不忙地整理了一下衣袖，仿佛刚才那道令人窒息的注视不过是一阵无关紧要的风。他抬头看向不远处的皇朝使者，对方的脸色已经变了——显然是感受到了那股超越性的压力。\"看来我们得加快进度了。\"陈机平静地说，声音里听不出任何波澜，\"使者大人方才的提议，我考虑好了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_003",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（皇朝使者勉强稳住心神，眼中闪过一丝忌惮）陈公子……你究竟是什么人？那道意志分明是在盯着你！",
+        "emotion": "震惊且恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_004",
+        "content": "陈机歪了歪头，露出一个无害的笑容。\"使者大人不必紧张，那位不过是在例行巡查罢了。它高高在上，视众生如蝼蚁，哪会专门针对我一个小小的人物？\"他顿了顿，话锋一转，\"倒是仓御天那边，使者可想好了应对之策？\"这一招以退为进，瞬间将话题拉回正轨，也巧妙地掩盖了自己身上的异常。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_005",
+        "prompt": "面对皇朝使者的试探，陈机需要表明态度。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "secret_deal",
+            "text": "秘密交易",
+            "description": "私下达成协议，不留任何把柄，但使者可能心存顾虑而有所保留。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无法获得使者的完全信任",
+            "visible_reward": "交易细节不会外泄，安全性更高",
+            "risk_hint": "使者可能暗中留一手",
+            "process_label": "在阴影中握手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_secret_001",
+                  "content": "陈机压低声音，眼中闪过一丝精光：\"我有一个提议，不需要使者大人承担任何风险——只需提供一样东西。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_secret_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（皇朝使者眯起眼睛）陈公子请讲。",
+                  "emotion": "谨慎"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "secret_deal_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "open_negotiate",
+            "text": "公开谈判",
+            "description": "当着所有人的面摊牌，展示实力与诚意，但会让其他势力警觉。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "行踪暴露风险大增",
+            "visible_reward": "使者必须拿出更多筹码以示诚意",
+            "risk_hint": "可能引起仓御天势力警觉",
+            "process_label": "当众立契",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_open_001",
+                  "content": "陈机环顾四周，忽然朗声道：\"既然大家都想对付仓御天，不如把话说得明白些！\"他的声音在寂静中回荡，瞬间吸引了所有人的目光。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_open_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（皇朝使者眼中闪过一丝赞赏）好！痛快！",
+                  "emotion": "欣赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "open_negotiate_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "staged_execute",
+            "text": "分期执行",
+            "description": "分阶段推进计划，逐步建立信任，但需要更长时间才能获得全部利益。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "时间成本高昂",
+            "visible_reward": "每一步都能验证对方诚意，降低被骗风险",
+            "risk_hint": "期间变数可能增多",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_staged_001",
+                  "content": "陈机沉吟片刻，缓缓道：\"此事急不得。不如我们先从小处着手，一步一步来？\"他的声音平静而坚定，给人以十足的信任感。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_staged_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（皇朝使者微微点头）陈公子果然稳重。",
+                  "emotion": "赞许"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "staged_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_006",
+        "content": "皇朝使者的目光在陈机身上停留了片刻，似乎在重新评估这个看似普通的年轻人。\"陈公子的胆识，倒是出乎我的意料。\"他收敛了方才的惊惧，声音恢复了冷静，\"既然如此，我便直说了——皇朝要的，是仓御天的命。作为交换，我们可以提供你们需要的一切资源。\"他顿了顿，语气变得意味深长，\"包括……禁忌秘法。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_007",
+        "character_id": "char_chenji",
+        "content": "（陈机眼中闪过一丝精光，但面上依旧波澜不惊）禁忌秘法……使者大人说的是哪一种？据我所知，这世上的禁忌秘法可不止一部。",
+        "emotion": "谨慎试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_008",
+        "content": "皇朝使者嘴角勾起一抹神秘的笑意，压低声音道：\"自然是能够改写命运的秘法——'天命覆写术'。\"他环顾四周，确认无人偷听，才继续道，\"仓御天之所以能凌驾于众生之上，便是因为他掌握了这种力量的一角。而我们皇朝，恰好拥有完整的传承。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_009",
+        "content": "陈机心中一震，但面上丝毫不显。天命覆写术——这个名字他在墨先生残魂的只言片语中听过，据说是上古时代最禁忌的力量之一。他深吸一口气，按捺住内心的激动，淡淡道：\"这代价，恐怕不便宜吧？\"他太了解这种交易的套路了——越是珍贵的东西，越要装作不在意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（皇朝使者笑了）陈公子果然是聪明人。代价很简单——我们只需要陈公子在关键时刻，站在我们这一边。具体来说……",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_011",
+        "prompt": "使者提出了条件，陈机需要回应。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "demand_detail",
+            "text": "追问细节",
+            "description": "要求使者说清楚所谓的\"关键时刻\"具体指什么，以及\"站在这边\"的具体含义。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "显得过于谨慎，可能让使者起疑",
+            "visible_reward": "摸清对方底牌，避免陷阱",
+            "risk_hint": "可能被使者看穿自己的谨慎",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_detail_001",
+                  "content": "陈机抬起眼皮，目光变得锐利起来：\"'关键时刻'？'站在这边'？使者大人，咱们明人不说暗话，这种含糊其辞的话术，对我没用。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_detail_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（使者微微一怔，随即大笑）好！好一个陈机！我喜欢和聪明人打交道。",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "detailoriented_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "feign_weakness",
+            "text": "装傻充愣",
+            "description": "假装自己只是个普通弟子，看不懂这些高层博弈，让使者放松警惕。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被使者看低，影响后续谈判地位",
+            "visible_reward": "套出更多使者不想说的信息",
+            "risk_hint": "可能被使者轻视",
+            "process_label": "藏拙示弱",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_weakness_001",
+                  "content": "陈机挠了挠头，一脸憨厚：\"使者大人说的这些，我听不太懂啊……不过既然对推翻仓御天有用，我都听您的！\"他眨巴着眼睛，活脱脱一个没见过世面的愣头青。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_weakness_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（使者眼中闪过一丝不易察觉的轻蔑）陈公子果然……淳朴。那我就直说了。",
+                  "emotion": "轻视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "pretend_weak_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "counter_propose",
+            "text": "反提条件",
+            "description": "不按使者的套路走，而是主动提出自己的要求，展示谈判筹码。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能激怒使者，导致谈判破裂",
+            "visible_reward": "掌握谈判主动权，获得更大利益",
+            "risk_hint": "风险与收益并存",
+            "process_label": "反客为主",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_counter_001",
+                  "content": "陈机忽然笑了，打断了使者的话：\"使者大人，在谈条件之前，我也有一个条件。\"他的语气不卑不亢，却带着一种令人无法忽视的压迫感。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_counter_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（使者挑眉）哦？陈公子请讲。",
+                  "emotion": "好奇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "counter_propose_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_012",
+        "content": "就在此时，虚空深处那道意志再次扫过，这次停留的时间更长了。皇朝使者的脸色微变，下意识地后退了一步。陈机却纹丝不动，甚至还有闲心整理了一下衣领。\"使者大人，\"他轻声道，\"您只有一次机会。\"这句话说得云淡风轻，却让使者后背一凉——他忽然意识到，眼前这个年轻人，远比表面上看起来更加深不可测。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_013",
+        "content": "皇朝使者深吸一口气，终于下定决心。\"好！既然陈公子如此爽快，我便不再藏着掖着。\"他从袖中取出一枚古朴的玉简，郑重地放在陈机面前，\"这是天命覆写术的上半部分。完整的传承，需要你完成第一次合作之后才能获得。\"他的目光灼灼地盯着陈机，\"这个条件，陈公子可满意？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_014",
+        "character_id": "char_chenji",
+        "content": "（陈机拿起玉简，神识探入其中，嘴角勾起一抹意味深长的弧度）满意？使者大人，您是不是搞错了什么？",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_015",
+        "content": "使者的脸色一变：\"陈公子这是什么意思？\"陈机将玉简在手中转了转，似笑非笑地看着对方：\"我本来打算帮你们对付仓御天，可现在……你们是想让我空手去和天道之眼最看重的棋子拼命？\"他顿了顿，话锋一转，\"这样吧，我退一步——先把下半部分给我，等事成之后，我再考虑要不要'站在你们这边'。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_016",
+        "content": "皇朝使者的瞳孔骤然收缩。他没想到这个看起来普通的年轻人胃口竟然这么大，更没想到对方敢当面讨价还价。但想到刚才那道超越性的意志，以及自己主子交代的任务，他只能咬牙点头。\"好！陈公子果然不是池中之物。\"他从袖中又取出一枚玉简，\"这是下半部分。不过……\"他意味深长地看着陈机，\"公子最好记住今日的承诺。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_017",
+        "prompt": "面对完整的禁忌秘法，陈机需要做出最终决定。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_all",
+            "text": "全部接受",
+            "description": "接受全部条件，拿走完整秘法，先把好处拿到手再说。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "欠下皇朝人情",
+            "visible_reward": "获得完整禁忌秘法传承",
+            "risk_hint": "可能被皇朝后续纠缠",
+            "process_label": "笑纳厚礼",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_accept_001",
+                  "content": "陈机毫不犹豫地将两枚玉简收入袖中，拱手道：\"使者大人果然爽快。这个情，陈某记下了。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_accept_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（使者的眼中闪过一丝不易察觉的精光）陈公子客气了。希望下次见面，我们已经是朋友。",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "full_secret_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_conditions",
+            "text": "附加条件",
+            "description": "在接受的同时，提出附加保障条款，确保自己不会被动。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能让使者不悦",
+            "visible_reward": "后续行动更加自由",
+            "risk_hint": "使者可能收回部分条件",
+            "process_label": "锦上添花",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_condition_001",
+                  "content": "陈机将玉简收好，话锋一转：\"且慢。我还有一个附加条件——从今往后，皇朝不得以任何理由干涉我的行动。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_condition_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（使者沉吟片刻，最终点头）好，一言为定。",
+                  "emotion": "勉强同意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "附加条件_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_018",
+        "content": "皇朝使者离去后，陈机独自站在原地，将两枚玉简摊在掌心。他深吸一口气，神识探入其中。刹那间，无数玄奥的符文在脑海中炸开，组成一幅震撼人心的画面——天命覆写术的真正秘密，不是\"改写\"命运，而是\"覆盖\"命运！就像在一张写满字的纸上重新铺上一层白纸，原有的文字并未消失，只是被遮盖了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_019",
+        "content": "陈机猛地睁开眼睛，瞳孔中倒映着玉简的光芒。他的呼吸变得急促起来。天命覆写术的终极用法——用自己的意志，直接覆盖天道法则！仓御天所谓的\"天命在我\"，不过是这种力量的皮毛。真正的完整传承，此刻就握在他手中！他闭上眼睛，天机录残页自动浮现，与玉简中的传承产生共鸣。龟壳神器开始微微震颤，仿佛感受到了什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_020",
+        "content": "就在这时，一道清脆的声音从身后传来。\"陈机？\"陈机不用回头也知道是谁——苏青瑶。他迅速收敛气息，将玉简藏入袖中，转身看向那个冷若冰霜的身影。\"苏师姐？这么晚了，怎么还在外面？\"他的语气一如既往地平淡，仿佛什么都没有发生过。但苏青瑶的目光却死死地盯着他的袖口，眼中闪过一丝疑惑。她又一次感觉到了什么不对劲，却又说不出具体是哪里。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_021",
+        "character_id": "char_suqingyao",
+        "content": "（苏青瑶皱眉）你袖子里藏的是什么？",
+        "emotion": "怀疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_022",
+        "content": "陈机眨了眨眼睛，一脸无辜地从袖中掏出一枚普通的疗伤丹。\"这个？白天历练时受的伤还没好利索，趁着夜色敷一敷。\"他将丹药在指尖转了转，似笑非笑地看着苏青瑶，\"苏师姐不会是专程来查我岗的吧？\"这话说得轻描淡写，却暗藏机锋——既解释了袖中之物的来源，又反将一军，暗示苏青瑶对自己的关注有些过头了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_023",
+        "content": "苏青瑶被这话噎了一下，脸上闪过一丝不自然。她确实在跟踪陈机——自从上次发现他身上的异常后，她就一直在暗中观察。但每次她觉得自己接近真相时，线索就会莫名其妙地断掉。这个废物师弟，就像一个解不开的谜题，让她既恼火又……有一点点好奇？\"我只是路过。\"她别过头，声音依旧冷淡，\"别误会。\"陈机看着她的背影，嘴角勾起一抹若有若无的笑意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_024",
+        "content": "待苏青瑶的身影消失在夜色中，陈机才重新取出玉简，继续研读其中的内容。天命覆写术的传承远比他想象的更加深奥——它分为九重境界，第一重是\"覆\"，即覆盖自身的命运线；第二重是\"写\"，可以在他人命运线上添笔；第三重是\"定\"，能够固化某段命运使其无法更改……而修炼到极致，据说可以覆盖天道法则本身。但每一次使用，都会招致命运的反弹——修为越高深，反噬越剧烈。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_025",
+        "content": "陈机合上玉简，抬头望向虚空深处。那道冰冷的意志依然存在，像一把悬在头顶的剑。天道之眼……它到底想做什么？为什么要盯着他？他忽然想起墨先生曾经说过的话：\"天机录只是天道布下的棋子之一。\"如果连天机录都只是棋子，那他这个\"执棋人\"，又算什么？一股寒意从脊背升起，但很快就被他压了下去。怕什么？既然是棋子，那就做一枚有用的棋子。有用的棋子，才有资格和执棋人讨价还价。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_026",
+        "content": "龟壳神器忽然剧烈震颤起来，发出嗡鸣之声。陈机低头看去，只见神器表面浮现出密密麻麻的裂纹——不是损坏，而是正在解封！与此同时，天机录残页上，那道一直模糊不清的墨先生身影，似乎变得清晰了一点点。他心中一动，似乎明白了什么。禁忌秘法与龟壳神器的共鸣，正在加速解封天机录的真相！距离真相大白的那一天，已经不远了。而他，即将拥有改变一切的力量。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

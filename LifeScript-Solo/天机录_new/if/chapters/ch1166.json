@@ -1,0 +1,469 @@
+{
+  "id": "天机录_ch1166",
+  "book_id": "天机录",
+  "number": 1166,
+  "title": "三界共鸣",
+  "is_paid": true,
+  "next_chapter_hook": "三界万物齐声呐喊：请改写我们的命运！",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1166_001",
+        "content": "当魔道主帅说出那句话时，陈机感觉自己万年的布局都成了笑话——原来他一直在寻找的，不只是答案，更是另一半的自己。阴阳之力在体内碰撞，却并非对抗，而是如两条交缠的河流，正缓缓汇入同一片汪洋。他抬起头，望向那片被血色染红的天空，忽然笑了。那笑容里有释然，有苦涩，更多的是一种近乎疯狂的坚定。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_002",
+        "character_id": "char_chenji",
+        "content": "原来如此……万年布局，不过是寻找自己的过程。",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_003",
+        "content": "苏青瑶站在不远处，看着陈机周身那黑白交织的光芒，眼眶微微泛红。她能感受到那力量的浩瀚——那不是某一个人的力量，而是整个三界被命运压制亿万年后，终于找到出口的宣泄口。她攥紧了手中的命运之笔，笔尖微微颤抖，仿佛感应到了什么古老的召唤。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_004",
+        "character_id": "char_suqingyao",
+        "content": "陈机……你打算怎么做？",
+        "emotion": "关切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_005",
+        "content": "夜清站在魔道主帅身侧，魔道迷雾在她周身缭绕，却无法掩盖她眼中的震惊。作为魔道圣女，她见过太多所谓的天才与强者，可从未见过有人能将阴阳之力融合到这种程度——那已经不是单纯的力量叠加，而是一种规则层面的蜕变。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_006",
+        "character_id": "char_yeqing",
+        "content": "这个男人……比我想象的还要疯狂。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_007",
+        "content": "陈机缓缓转身，目光扫过在场的每一个人——魔道主帅、苏青瑶、夜清，还有远处那些观望的各方势力。他的声音不大，却清晰地传入每一个人的耳中：\"三界共鸣，我需要你们的帮助。\"顿了顿，他嘴角勾起一抹熟悉的弧度，那是扮猪吃虎时惯有的笑容，\"当然，也可以选择不帮。不过我建议你们想清楚——错过这次，可就再也没有机会见证历史了。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1166_choice_01",
+        "prompt": "三界共鸣需要巨大的力量支撑，陈机必须决定如何汇聚这股力量。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "独自承担",
+            "text": "独自承担",
+            "description": "陈机决定独自承受共鸣的反噬，以最快的速度完成仪式，但代价是他将承受全部的天命值消耗。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值消耗 50 点",
+            "visible_reward": "共鸣范围最大化，三界所有生命都能感知",
+            "risk_hint": "可能直接耗尽天命值，导致天机录反噬",
+            "process_label": "独自承受阴阳之力的冲击",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_独自承担_001",
+                  "content": "陈机深吸一口气，双手猛然合十。阴阳之力在他体内疯狂涌动，每一寸经脉都在承受着撕裂般的剧痛。天命值如瀑布般倾泻，每一点都带走他的一部分生机——那是寿命、是气运、是他在这一界存在的根基。冷汗从他额角滑落，但他的脊背依然挺直如松。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "共同承担",
+            "text": "共同承担",
+            "description": "陈机邀请苏青瑶和夜清共同承担力量分散的风险，虽然共鸣范围受限，但众人的负担都会大大减轻。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "共鸣范围缩小至九州大陆",
+            "visible_reward": "天命值消耗由三人分担，每人仅消耗 15 点",
+            "risk_hint": "需要绝对信任，一旦有人动摇，共鸣可能失败",
+            "process_label": "以命运之笔为媒介，建立三人的力量链接",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_共同承担_001",
+                  "content": "苏青瑶毫不犹豫地走上前，握住陈机的手。她的掌心温热，命运之笔悬浮在二人之间，笔尖散发出柔和的金光。\"我说过，\"她的声音很轻，却无比坚定，\"你的路，我陪你走到底。\"夜清沉默片刻，最终也伸出手，魔道迷雾与金光交融，在场所有人都感受到了那股温暖的波动。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "共同承担命运的羁绊",
+            "branch_route_id": null
+          },
+          {
+            "id": "分散力量",
+            "text": "分散力量",
+            "description": "陈机将力量分散给在场所有人，虽然每个人的负担最小，但共鸣的效果和影响力都会大打折扣。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "共鸣范围仅限于在场众人",
+            "visible_reward": "几乎无消耗，且在场者都将获得微弱的天命加持",
+            "risk_hint": "影响力不足，可能无法引发三界规则的共振",
+            "process_label": "将阴阳之力碎片化，散入每一个生命之中",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_分散力量_001",
+                  "content": "陈机微微一笑，那笑容里带着几分算计的味道。他张开双臂，阴阳之力化作无数细小的光点，如萤火虫般飘散向在场的每一个人。那些光点钻入他们的眉心，带来一阵清凉的同时，也让每个人感受到了一种奇异的联系——仿佛整个世界都在这一刻被某种无形的纽带串联了起来。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_008",
+        "content": "阴阳之力开始向外扩散，如同一颗石子投入平静的湖面，激起层层涟漪。然而这一次，那涟漪不是消散在空气中，而是直接撞入了三界的规则本身。一瞬间，所有修炼者都停下了手中的动作，抬起头，望向天空——他们不知道发生了什么，但本能告诉他们，有什么东西，正在改变。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_009",
+        "character_id": "char_chenji",
+        "content": "还不够……要引发真正的三界共鸣，需要将规则共振传递到每一个角落。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_010",
+        "content": "陈机的目光落在苏青瑶身上，眼中闪过一丝犹豫。命运书写者的血脉是媒介，但如果启用那股力量，苏青瑶将会暴露在天道之眼的注视之下——那是她隐藏了多年的秘密。他张了张嘴，想要说什么，却被苏青瑶抢先一步。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_011",
+        "character_id": "char_suqingyao",
+        "content": "我明白你要说什么。不用劝我。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1166_choice_02",
+        "prompt": "苏青瑶准备启用命运书写者的力量，但陈机必须做出选择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "阻止她",
+            "text": "阻止她",
+            "description": "陈机不愿让苏青瑶冒险，决定寻找其他方式完成共鸣。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "共鸣进度停滞",
+            "visible_reward": "保护苏青瑶不被天道之眼发现",
+            "risk_hint": "可能错失最佳时机，规则共振自行消散",
+            "process_label": "抓住苏青瑶的手腕，阻止她动用血脉之力",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_阻止她_001",
+                  "content": "陈机一把抓住苏青瑶的手腕，力道大得几乎要留下淤青。他的眼神复杂，声音却异常平静：\"我布局万年，不是为了让你替我承担后果。\"苏青瑶看着他，忽然笑了，那笑容里有心疼，有无奈，更多的是一种\"果然如此\"的了然。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "支持她",
+            "text": "支持她",
+            "description": "陈机选择相信苏青瑶的决定，让她以命运书写者的血脉为媒介，完成最后的共鸣。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "苏青瑶的存在将被天道之眼锁定",
+            "visible_reward": "三界共鸣完成，所有生命同时感知到命运的裂缝",
+            "risk_hint": "天道之眼可能会因此发现苏青瑶，对她采取行动",
+            "process_label": "松开手，向她点头示意\"我相信你\"",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_支持她_001",
+                  "content": "陈机松开手，后退一步。他的眼神平静，却带着一种几乎让人窒息的信任。苏青瑶深吸一口气，咬破指尖，以鲜血为墨，在虚空中书写下一个古老的符文。那符文散发出璀璨的金光，如同一把钥匙，插入了三界规则的锁孔。刹那间，所有人都听到了\"咔嚓\"一声——那是命运枷锁松动的声音。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "生死与共的默契",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_012",
+        "content": "三界的规则开始共振。那不是地震，不是雷鸣，而是一种更加本质的颤动——仿佛整个世界都在这一刻活了过来。在遥远的北冥冰原，一只被困在冰川下万年的上古凶兽睁开了眼睛；在幽冥鬼域，无数游魂停止了无意义的漂泊，齐齐望向同一个方向；在九天之上，仙人停下了修炼，眉头紧锁。他们都感受到了——命运的长城出现了第一道裂缝。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_013",
+        "character_id": "char_chenji",
+        "content": "成了……",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_014",
+        "content": "陈机感受到体内阴阳之力的变化——它们不再是两股对立的力量，而是彻底融为一体，化作一种全新的存在。那感觉就像是盲人第一次看见光明，就像是聋子第一次听见声音。他低头看着自己的双手，掌心中浮现出一道黑白交织的太极图案，缓缓旋转，仿佛蕴含着整个三界的奥秘。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_015",
+        "character_id": "char_yeqing",
+        "content": "这就是……阴阳合一的力量吗？",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1166_choice_03",
+        "prompt": "三界共鸣已经完成，但陈机还需要决定如何处理这份力量。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "保留力量",
+            "text": "保留力量",
+            "description": "陈机将这股力量化为己用，作为未来对抗天道之眼的底牌。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要时刻压制力量的暴走",
+            "visible_reward": "获得【三界共鸣】被动技能，对所有规则类攻击抗性+50%",
+            "risk_hint": "力量过于庞大，可能引来天道之眼的特别注意",
+            "process_label": "将太极图案收入丹田，以阴阳之力淬炼金丹",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_保留力量_001",
+                  "content": "陈机引导那股力量进入丹田，瞬间感受到一股前所未有的充盈感。金丹表面浮现出密密麻麻的道纹，每一道都代表着三界规则的一次认可。他睁开眼，瞳孔中仿佛倒映着整个天地，嘴角勾起一抹淡淡的弧度——扮猪吃虎这么久，今天总算能光明正大地亮一亮獠牙了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三界共鸣_已获得"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "分享力量",
+            "text": "分享力量",
+            "description": "陈机将三界共鸣的力量分散给所有被命运束缚的存在，让每个人都有机会突破枷锁。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "自身获得的增幅有限",
+            "visible_reward": "三界范围内所有生命获得【觉醒】buff，修炼速度+30%，命运抗性+20%",
+            "risk_hint": "力量分散后，单体强度提升不明显",
+            "process_label": "张开双臂，将太极图案化作无数光点洒向三界",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 100
+              },
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_分享力量_001",
+                  "content": "陈机闭上眼睛，双手猛然张开。太极图案化作漫天光雨，穿透云层，掠过山河，洒向三界的每一个角落。那些光点落在凡人身上，他们感到前所未有的轻松；落在修士身上，他们的瓶颈仿佛松动了几分；落在妖魔身上，他们第一次感受到了\"希望\"这种东西。北冥冰川下的凶兽发出一声长啸，冰层崩裂；幽冥鬼域的游魂们手舞足蹈，仿佛重获新生。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三界共鸣_已分享"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "普度众生的抉择",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_016",
+        "content": "就在这一刻，整个三界都安静了。那些光点如流星般划过天际，照亮了无数张仰望的脸。有人热泪盈眶，有人跪地叩谢，有人茫然不知所措——但所有人都有一个共同的感觉：束缚他们多年的某种东西，正在松动。那是命运的枷锁，是天道的桎梏，是自鸿蒙开辟以来就压在所有生命头顶的沉默大山。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_017",
+        "character_id": "char_suqingyao",
+        "content": "他们……都感觉到了。",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_018",
+        "content": "苏青瑶的泪水无声地滑落。作为命运书写者，她比任何人都清楚这一刻的意义——陈机不只是在突破自己的极限，他是在为整个三界劈开一条血路。那些被压迫了亿万年的存在，终于看到了自由的曙光。而这曙光，是她的爱人、她的知己、她愿意为之付出一切的男人所带来的。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_019",
+        "character_id": "char_yeqing",
+        "content": "这个男人……值得我追随。",
+        "emotion": "敬佩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_020",
+        "content": "陈机缓缓睁开眼睛，望向那片重新变得湛蓝的天空。他的脸上没有胜利的喜悦，只有一种淡淡的疲惫，以及……深深的释然。万年布局，百年隐忍，无数次生死一线，终于走到了这一步。他转头看向苏青瑶和夜清，嘴角勾起一抹熟悉的笑容：\"走吧，戏还没唱完呢。\"话音落下，三道身影化作流光，向着天际深处掠去。只留下身后那片沸腾的三界，以及无数正在觉醒的生命。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

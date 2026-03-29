@@ -1,0 +1,567 @@
+{
+  "id": "天机录_ch0634",
+  "book_id": "天机录",
+  "number": 634,
+  "title": "遗迹初现",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机将残碑收入袖中的瞬间，远在千里之外的皇都，一场针对天机阁遗迹的秘密会议正在召开，而太子的下一步棋，已然落在了陈机的棋盘之上。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0634_1",
+        "content": "陈机蹲下身，手指拂去残碑上的尘土。夕阳的余晖将那两个字镀上一层金红，仿佛在召唤他揭开尘封的历史。他深吸一口气，压下心中的悸动，开始仔细辨认碑文下方那些密密麻麻的小字。风从裂隙深处吹来，带着一丝若有若无的檀香，让这荒凉之地平添了几分诡异。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0634_2",
+        "character_id": "char_chenji",
+        "content": "天机阁……戊子年立，逢阙则开，逆天者入。",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_3",
+        "content": "残碑上的文字古老而斑驳，陈机凭借天机录残页中残留的记忆，艰难地解读着每一个字符。\"阙\"即裂隙，\"逆天\"指的是修炼天机录之人。整句话的意思是：天机阁遗迹在裂隙出现时开启，但只有修炼天机录的人才能进入。他抬起头，目光扫过裂隙边缘的地形，心中已有计较。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_4",
+        "content": "继续向下阅读，陈机的眉头渐渐皱紧。碑文最后几行字让他倒吸一口凉气——入阙者需以天命为引，每入一层，耗天命十点。阙有九层，九九归一，方见天机真容。而他如今所剩的天命值，满打满算也不过区区二十三点。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0634_5",
+        "character_id": "char_chenji",
+        "content": "二十三点……连第三层都未必能踏入。",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_6",
+        "content": "陈机站起身，目光幽深地望着那道幽暗的裂隙。碑文上的记载与天机录残页中的暗示渐渐吻合——这座遗迹是天机阁历代传承者陨落后留下的道场，里面藏有修复天机录的关键秘宝。然而代价之高昂，远超他的预期。他攥紧拳头，指节因用力而泛白，脑海中闪过妹妹陈念那张模糊的脸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_7",
+        "content": "就在此时，袖中传音符箓微微发热。陈机眉头一挑，取出符箓，上面浮现出一行金色小字：\"太子殿下有要事相商，请陈公子移步驿馆。\"落款处是一枚朱红色的太子私印。他冷笑一声，将符箓收入袖中。来得倒快，龙脉崩塌这等大事，果然瞒不过那位的眼睛。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0634_choice_1",
+        "prompt": "残碑上的信息已经确认，但进入遗迹的代价远超预期。此时太子派人来联络，询问龙脉与裂隙之事。陈机该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0634_c1_1",
+            "text": "亲自前往驿馆会面太子",
+            "description": "太子既然主动示好，说明龙脉之事还有利用价值。亲自前往既显诚意，也能在谈判中占据主动，探探太子的底牌。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗半天时间，可能暴露行踪",
+            "visible_reward": "获得太子信任，建立合作关系",
+            "risk_hint": "太子城府极深，谈话中稍有不慎便会落入圈套",
+            "process_label": "前往驿馆",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c1_1_1",
+                  "content": "陈机将残碑小心收入储物袋，整理衣衫后向驿馆方向走去。临行前，他在裂隙边缘的一棵古松上留下一个隐蔽的追踪印记——这是他为将来留的后手。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c1_1_2",
+                  "content": "暮色四合时，陈机踏入太子驿馆。太子亲自在正厅等候，笑容满面地迎上来：\"陈公子龙脉一行辛苦了，本宫特备薄酒为公子接风。\"陈机拱手行礼，面上恭敬，心中却在飞速盘算这位储君的真实意图。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "太子会面"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0634_c1_2",
+            "text": "托辞不见，派心腹探听虚实",
+            "description": "此时不宜与太子正面交锋。让心腹以探病为由前往驿馆，自己则继续研究残碑和遗迹入口的情报，暗中观察太子动向。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失与太子建立信任的良机",
+            "visible_reward": "保持低调，收集更多信息",
+            "risk_hint": "太子若察觉被怠慢，可能心生芥蒂",
+            "process_label": "暗中观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c1_2_1",
+                  "content": "陈机取出一枚替身符箓，注入灵力激活。符箓化作他的模样，向驿馆方向飞去。他本人则隐入暗处，继续参悟残碑上的碑文。替身傀儡足以应付一般的问话，而他需要的是时间。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c1_2_2",
+                  "content": "夜深时分，替身傀儡传回讯息：太子对龙脉崩塌一事\"深表关切\"，询问陈机是否需要朝廷援助，并暗示若陈机愿意为朝廷效力，太子可提供进入天机阁遗迹所需的\"特殊材料\"。陈机听罢，冷笑出声——果然，天下没有白吃的午餐。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "太子试探"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0634_c1_3",
+            "text": "提出条件，要求太子先行表态",
+            "description": "不见兔子不撒鹰。通过符箓回复太子，表示愿意见面，但需要太子先拿出诚意——关于天机阁遗迹的情报。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激怒太子，失去朝廷庇护",
+            "visible_reward": "试探太子底牌，争取有利条件",
+            "risk_hint": "太子若拒绝，谈判将陷入僵局",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c1_3_1",
+                  "content": "陈机在符箓上写下数行字：\"遗迹之事，陈某确有几分心得。然此事牵涉重大，非三言两语可尽述。若殿下有诚意，不妨先说说朝廷对此事的看法。\"符箓化作流光飞去，他负手而立，等待回音。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c1_3_2",
+                  "content": "片刻后，太子回讯：\"陈公子果然谨慎。本宫手中确有一份关于天机阁的上古典籍，记载了遗迹的部分结构。若公子有意，可来驿馆一观。\"陈机眯起眼睛——这老狐狸，上来就亮筹码，是试探还是真的求贤若渴？",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "太子谈判"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_8",
+        "content": "无论选择哪条路，陈机都清楚一点：眼前这座遗迹，是他提升实力、寻找妹妹陈念的关键所在。然而天命值所剩无几，贸然进入无异于自寻死路。他必须找到一个稳妥的方案，在不消耗过多天命的情况下，获取遗迹中的机缘。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0634_9",
+        "character_id": "char_chenji",
+        "content": "念儿……等着哥哥。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_10",
+        "content": "陈机再次望向那道幽暗的裂隙，眸中闪过一丝决然。他从储物袋中取出一枚漆黑如墨的阵盘，这是他早年布下的一枚暗子——\"影卫\"。只要激活这枚阵盘，便能在方圆百里内布下监视网络，任何风吹草动都逃不过他的眼睛。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_11",
+        "content": "灵力注入阵盘，阵盘表面浮现出密密麻麻的符文，随即化作一缕黑烟，钻入裂隙周围的岩石与土壤之中。做完这一切，陈机满意地点点头。纵然暂时无法进入遗迹，但这枚棋子足以保证他随时掌握入口的动向，不至于错失良机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0634_choice_2",
+        "prompt": "监视棋子已布下，但遗迹入口的开启似乎需要特定时机。陈机需要决定下一步行动。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0634_c2_1",
+            "text": "返回宗门，从长计议",
+            "description": "眼下情报不足，贸然行动只会暴露破绽。回到天青宗后，可以从墨先生处获取更多关于天机阁的信息，同时暗中积蓄力量。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错失遗迹初开时的不稳定时机",
+            "visible_reward": "获得墨先生的知识解封，掌握更多天机录秘密",
+            "risk_hint": "宗门内部暗流涌动，凌渊老掌门虎视眈眈",
+            "process_label": "返回宗门",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c2_1_1",
+                  "content": "陈机转身踏上归途。夜风拂过衣袍，带来几分凉意。他的步伐看似悠闲，实则神识始终笼罩四周，警惕着可能存在的跟踪者。回到宗门后，一切行动都要更加谨慎——尤其是面对那位笑里藏刀的老掌门。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "返回宗门"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0634_c2_2",
+            "text": "留在遗迹附近，伺机而动",
+            "description": "遗迹初开，必然引来各方觊觎。留在此地既能第一时间掌握情报，也能在混乱中寻找可利用的机会。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露风险大增，可能遭遇强敌",
+            "visible_reward": "率先发现遗迹开启的关键节点",
+            "risk_hint": "魔道与玄武宗的高手可能随时出现",
+            "process_label": "蛰伏守候",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c2_2_1",
+                  "content": "陈机寻了一处隐蔽的山洞，盘膝而坐。他的神识与影卫阵盘相连，方圆百里的动静尽在掌控。夜色深沉，裂隙中偶尔传来一两声低沉的轰鸣，似有什么东西正在苏醒。他睁开眼，目光幽深如渊。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "蛰伏遗迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0634_c2_3",
+            "text": "联络夜清，借魔道之力",
+            "description": "夜清的魔道迷雾能遮掩天机录气息，是探索遗迹的完美助力。与魔道圣女合作，虽有风险，但回报同样可观。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能加深与正道的裂痕",
+            "visible_reward": "获得魔道迷雾遮掩，大幅降低遗迹探索风险",
+            "risk_hint": "夜清背后是圣宗，与她合作无异于与虎谋皮",
+            "process_label": "暗通魔道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c2_3_1",
+                  "content": "陈机取出一枚通体漆黑的传音符，注入灵力。片刻后，符箓那头传来夜清慵懒的声音：\"陈公子深夜传音，莫非是想我了？\"他嘴角微扬，开门见山道：\"天机阁遗迹，需要你的魔道迷雾。\"符箓那头沉默片刻，随即传来一声轻笑：\"有意思，何时何地？\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "魔道合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_12",
+        "content": "就在陈机思索之际，远在皇都的太子殿中，烛火摇曳。太子负手而立，面前跪着一名黑衣人，正低声汇报着什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_13",
+        "content": "太子缓缓转身，眸中闪过一丝精光：\"天机阁遗迹……有意思。看来这位陈公子，比本宫想象的更有价值。传令下去，派人秘密监视裂隙动向，若陈机有任何异动，立刻禀报。\"黑衣人领命而去，消失在夜色之中。太子望着殿外的明月，嘴角勾起一抹意味深长的笑容。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_14",
+        "content": "与此同时，天机录残页深处，墨先生的残魂微微颤动。他感知到了陈机发现遗迹的举动，苍老的面容上浮现出一丝复杂的神色。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0634_15",
+        "character_id": "char_moxiansheng",
+        "content": "天机阁……那孩子终于走到这一步了。",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_16",
+        "content": "墨先生的声音在陈机脑海中响起，带着几分期许与忧虑：\"陈机，你做得不错。但有一件事你必须记住——天机阁的核心，并非寻常机缘。那里的东西，足以让天道之眼都为之侧目。\"陈机闻言，心中一凛，追问道：\"天道之眼？那是什么？\"墨先生沉默片刻，只吐出四个字——\"天机尽头\"。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_17",
+        "content": "夜风呼啸，陈机立于裂隙之畔，手中握着那枚影卫阵盘的子符。远方传来若有若无的灵力波动，似乎有人在试探裂隙的边界。他眯起眼睛，将阵盘收入袖中。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_18",
+        "content": "棋局已布，棋子已落。天机阁遗迹的开启，近在咫尺。而他陈机，必将在这一场乱世棋局中，执子落定，搅动风云。裂隙深处，那道古老而神秘的气息愈发浓烈，仿佛有什么东西正在苏醒，等待着他的到来。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0634_choice_3",
+        "prompt": "墨先生透露了\"天道之眼\"的存在，提及天机阁深处藏有惊世之秘。陈机需要做出最终决定。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0634_c3_1",
+            "text": "暂时离开，提升实力后再来",
+            "description": "眼下实力不足，贸然进入遗迹只会送命。先返回宗门潜心修炼，待天命值恢复、实力精进后，再做打算。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "遗迹机缘可能被他人捷足先登",
+            "visible_reward": "保存实力，避免无谓牺牲",
+            "risk_hint": "时间拖得越久，变数越多",
+            "process_label": "暂避锋芒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c3_1_1",
+                  "content": "陈机深吸一口气，做出了决定。他最后望了一眼那道幽深的裂隙，转身向宗门方向掠去。临行前，他再次检查了一遍影卫阵盘的运作，确认一切正常后才放心离去。墨先生的声音在脑海中回响——天机尽头，究竟藏着怎样的秘密？他期待着答案揭晓的那一天。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暂离遗迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0634_c3_2",
+            "text": "冒险一试，趁夜色进入遗迹",
+            "description": "机会稍纵即逝，遗迹初开时必然防御松懈。趁各方势力还未反应过来，率先闯入第一层，获取关键情报。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，可能身陷险境",
+            "visible_reward": "率先获取遗迹核心情报，占据先机",
+            "risk_hint": "以目前的天命值，最多只能支撑到第三层",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0634_result_c3_2_1",
+                  "content": "陈机眸中闪过一丝决然，抬脚向裂隙走去。既然迟早要踏入其中，不如趁夜色正浓、防御最弱之时。他从储物袋中取出一枚护身符箓激活，又以灵力护住心脉，做好了万全准备。踏入裂隙的瞬间，一股磅礴的灵气扑面而来，几乎将他掀翻。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜探遗迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_19",
+        "content": "裂隙边缘，陈机停下脚步，最后回头望了一眼身后那片被暮色笼罩的山峦。他的目光穿透层层夜幕，似乎在凝视着某个遥远的身影——那是失踪多年的妹妹陈念。影卫阵盘的子符在袖中微微发热，提醒着他一切尽在掌控。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0634_20",
+        "content": "陈机将残碑收入袖中，嘴角浮现一抹淡然的笑意。无论选择哪条路，他都不会让命运主宰自己的棋局。天机阁遗迹、龙脉崩塌、太子的示好、墨先生的警告……这一切都在他的推演之中。下一卷的棋局，即将开启。而他陈机，必将以天地为棋盘，以众生为棋子，书写属于自己的传说。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

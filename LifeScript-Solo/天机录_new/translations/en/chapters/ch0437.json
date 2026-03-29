@@ -1,0 +1,506 @@
+{
+  "id": "天机录_ch0437",
+  "book_id": "天机录",
+  "number": 437,
+  "title": "\"The evidence points to ironclad proof\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"Su Qingyao's questioning made the accuser look flustered, but a larger conspiracy was brewing—the mysterious figure's sleeve held a jade slip that was faintly glowing.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0437_001",
+        "content": "\"Just as Chen Ji was about to respond, a mysterious figure quietly appeared at the assembly. The person wore a dark cyan Taoist robe, their face mostly hidden beneath a veiled bamboo hat, revealing only a pale jaw and a wizened wrist. With steady steps, they walked directly toward the interrogation platform, each step seeming to tread upon the heartstrings of the crowd. The hall fell silent instantly, even the servant disciples who had been clamoring moments ago held their breath. Chen Ji narrowed his eyes, his fingertips subtly stroking the fragmented jade piece hidden in his sleeve—the aura of the Tianji Record stirred faintly, as if warning him of something.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_002",
+        "character_id": "char_lingyuan",
+        "content": "\"'Everyone, please remain calm.' The mysterious figure stopped before the interrogation platform, their voice hoarse yet carrying undeniable authority. 'I am a disciple under the Supervisor of the Sect Affairs Office, ordered to conduct a thorough investigation into the case of the Inner Disciple's collusion with the enemy. The evidence—has been found.'\"",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_003",
+        "content": "\"He slowly drew a jade box from his sleeve. Upon opening the lid, more than a dozen letters were neatly arranged inside. The paper was yellowed, the ink mottled, and the sealed edges bore Chen Ji's private seal—the one he had personally carved three years ago and never shown to anyone. An uproar burst from the crowd; someone gasped, someone cursed, and more cast contemptuous gazes upon Chen Ji.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_004",
+        "character_id": "char_lingyuan",
+        "content": "\"'These are all secret correspondence between Chen Ji and Ye Qing, the Holy Maiden of the Holy Sect on the Demonic Path!' The Supervisor Disciple held the letters high. 'The letters detail the vulnerabilities in the Tianqing Sect's mountain protection formation, the location of the sect's secret vault, and there are multiple mentions—the whereabouts of the Tianji Record Fragment! Caught red-handed, ironclad evidence!'\"",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_005",
+        "content": "\"Chen Ji stood in place, his expression平静得近乎冷漠. His gaze lingered on the pile of letters for a moment, and the corner of his lips even lifted into a faint, knowing smile—the smile of a hunter seeing prey step into a trap. In his heart, he calculated rapidly: these letters were exquisitely forged, with even the paper's age and ink color aged flawlessly. To prepare such thorough false evidence in such a short time, the other party's background was by no means simple.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_006",
+        "character_id": "char_chenji",
+        "content": "\"'Interesting.' Chen Ji finally spoke, his voice not loud but clearly reaching everyone's ears. 'This senior brother handles cases with such efficiency, I wonder—where and when were these \"ironclad evidences\" confiscated from what source? I don't recall writing any of these things?'\"",
+        "emotion": "平静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0437_007",
+        "prompt": "\"Chen Ji's surface was composed, but he was secretly observing every detail on the field. The reactions of the watching disciples, the elders' expressions, even the mysterious person's position—all were variables in his calculations.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0437_007_opt1",
+            "text": "\"Coldly watching\"",
+            "description": "\"Continue to remain silent, letting the other party fully perform. The more exposed the issues, the greater the flaws.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Enduring public opinion pressure\"",
+            "visible_reward": "\"Seeing clearly the schemer's layout\"",
+            "risk_hint": "\"May deepen everyone's misunderstanding\"",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_007_opt1_1",
+                  "character_id": "char_lingyuan",
+                  "content": "\"The Supervisor Disciple sneered coldly and passed the letters to the elder beside him for inspection. 'Chen Shidi's acting is quite convincing. The handwriting on these letters has been professionally examined by the Sect Affairs Office, and it matches nine-tenths with your usual copied cultivation techniques! What else do you have to say?'\"",
+                  "emotion": "得意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hidden_observer"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_007_opt2",
+            "text": "\"Retreating to advance\"",
+            "description": "\"Actively show weakness, admitting some 'facts,' luring the other party to reveal more details.\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"Temporarily bearing the infamy\"",
+            "visible_reward": "\"Extracting key information\"",
+            "risk_hint": "\"May be convicted on the spot\"",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_007_opt2_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji sighed softly, his expression melancholic. 'Very well, since it has come to this, I won't try to argue. It's just... I have one thing I don't understand—who told senior brother about the contents of these letters?' His eyes flickered with sharp light. 'Could it be that the Supervisor Office already knows more than what's written in the letters?'\"",
+                  "emotion": "颓然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "feigning_defeat"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_007_opt3",
+            "text": "\"Direct counterattack\"",
+            "description": "\"Exposing the flaws in the forged letters on the spot, attacking to defend.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Revealing some hidden cards\"",
+            "visible_reward": "\"Reversing the public opinion direction\"",
+            "risk_hint": "\"The other party may have backup plans\"",
+            "process_label": "针锋相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_007_opt3_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji suddenly stepped forward. In the surprised gazes of everyone, he picked up a letter from the jade box. He brought it close to his nose and sniffed, his brow furrowing slightly. 'This ink scent... it's the Pine Smoke Ink from Inksweet Studio in Qingyun Alley, right? This ink was discontinued three years ago due to raw material shortages. Did senior brother think it was too hasty to use such \"ironclad evidence\" to frame me?'\"",
+                  "emotion": "冷笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_008",
+        "content": "\"Just as both sides were at a stalemate, a clear, cold voice came from the rear of the crowd. 'Hold on.' Everyone turned to look and saw Su Qingyao in white garments gracefully emerging from the side door of the Council Hall. Her features were frost-like, her bearing composed, each step carrying the unique authority of the Inner Disciple Senior Fellow. The Supervisor Disciple's expression shifted slightly, but quickly regained composure. 'Su Shimei, this is the Sect Affairs Office handling a case, please do not interfere—'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_009",
+        "character_id": "char_suqingyao",
+        "content": "\"'Sect Affairs Office handling a case?' Su Qingyao coldly cut him off. 'The Seventy-Second Sect Rule: Cases involving major crimes of Inner Disciples must be jointly reviewed by the Inner Disciple Senior Fellow and three elders before a verdict can be rendered. Which elder authorized you as a Supervisor Disciple? Do you have official documents stamped with the Sect Master's seal?'\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_010",
+        "content": "\"The Supervisor Disciple's face flushed red, fine beads of sweat appearing on his forehead. He clearly hadn't expected the Inner Disciple Senior Fellow to personally intervene, nor had he anticipated her familiarity with the sect rules down to quoting them verbatim. Chen Ji watched quietly to the side, nodding secretly in his heart—Su Qingyao's reaction speed was even faster than he had anticipated. Her choice to intervene at this moment was no coincidence.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_011",
+        "character_id": "char_suqingyao",
+        "content": "\"Su Qingyao walked to the interrogation platform and took several letters from the jade box. Her slender fingers brushed across the surface of the letter paper, then suddenly paused. 'The first point of doubt—this letter was written on the fifteenth day of the twelfth month last year, mentioning the 'emergence of the Tianji Record Fragment.' But as far as I know, the Tianji Record Fragment wasn't discovered by Chen Ji in the market until this March. May I ask—was this 'foresight' because Chen Ji has the ability of prescience, or is someone deliberately fabricating the timeline?'\"",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_012",
+        "character_id": "char_suqingyao",
+        "content": "\"She flipped the letter over, pointing to the wax seal on the seal edge. 'The second point of doubt—I've seen Chen Ji's private seal. The genuine seal imprint has fine wear marks on the edges, formed from long-term use. But the seal impressions on these letters have sharp, clear edges, clearly newly carved.' She raised her eyes to stare directly at the Supervisor Disciple. 'The number of people who could have obtained the original of Chen Ji's private seal must be very few, right?'\"",
+        "emotion": "锐利"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0437_013",
+        "prompt": "\"Su Qingyao raised two points of doubt, causing an uproar throughout the hall. The Supervisor Disciple had sweat on his forehead, his gaze unconsciously glancing toward a certain direction in the crowd—where a middle-aged cultivator with a gloomy face stood, one of Ling Yuan's personal disciples.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0437_013_opt1",
+            "text": "\"Cooperating with Su Qingyao\"",
+            "description": "\"Following her lead to dig deeper, pointing the spear toward the real mastermind behind the scenes.\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Exposing the tacit understanding with Su Qingyao\"",
+            "visible_reward": "\"A fatal strike\"",
+            "risk_hint": "\"May alert the enemy\"",
+            "process_label": "并肩作战",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_013_opt1_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji appropriately took over the conversation, his voice not loud but each word clear. 'Su Shimei's keen observation, Chen Wei truly admires. However, there is one more thing—the source of this Pine Smoke Ink has a registered record at Qingyun Alley. May I ask senior brother Supervisor, which shop did you purchase these letters from? I would very much like to know who is paying for this \"collusion case.\"'\"",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机记住了苏青瑶在危难时刻的挺身而出",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_013_opt2",
+            "text": "\"Watching silently and waiting\"",
+            "description": "\"Not rushing to make a move, letting Su Qingyao pursue alone and see how the other party responds.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Missing the opportunity to expand the results\"",
+            "visible_reward": "\"Seeing more hidden cards clearly\"",
+            "risk_hint": "\"Su Qingyao may go deep alone\"",
+            "process_label": "以逸待劳",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0437_result_013_opt2_1",
+                  "content": "\"Chen Ji stepped back, yielding the stage to Su Qingyao. He noticed Su Qingyao's gaze sweep across the crowd, lingering for a moment at a certain spot—a middle-aged cultivator with a gloomy face stood there, exchanging glances with the Supervisor Disciple. Chen Ji silently memorized that face, a cold smile forming in his heart: Ling Yuan's people,，果然耐不住性子了.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_014",
+        "character_id": "char_suqingyao",
+        "content": "\"'The third point of doubt, and the most important one.' Su Qingyao drew out a thin silk from the last letter, on which a passage of strange text was written. 'This is secret script from the Holy Sect on the Demonic Path, completely incomprehensible to ordinary people. But Chen Ji has never left the Tianqing Sect once in the three years since joining the sect. How could he have such deep exchanges with Ye Qing?' She raised the silk. 'Unless—someone deliberately delivered these \"materials\" to Chen Ji, waiting for him to be \"caught colluding.\"'\"",
+        "emotion": "厉声"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_015",
+        "content": "\"The Supervisor Disciple's expression completely changed. He opened his mouth but no sound came out. The surrounding discussions grew louder and louder, with some people beginning to question whether this so-called 'ironclad evidence' was a trap from the very beginning. Chen Ji gazed down at this scene, but in his heart, he was calculating rapidly—Su Qingyao's three points of doubt were razor-sharp, each one cutting precisely at the soft underbelly of the forged evidence. But why was she helping him? How much did she actually know?\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_016",
+        "character_id": "char_lingyuan",
+        "content": "\"Just as everyone thought the outcome was decided, the always-silent Ling Yuan finally spoke. His voice was aged and majestic, echoing in the Council Hall. 'Qingyao child, your meticulous thinking, the old man admires.' He slowly stood up, his turbid eyeballs fixing on Chen Ji. 'However—the old man is quite curious, what exactly is the intention of the person who forged these letters? If it's not Chen Ji colluding with the enemy, then where is the real insider hiding?'\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_017",
+        "content": "\"This speech was honeyed poison wrapped in thorns—on the surface it was clearing Chen Ji's name, but in truth it directed the spear toward an even darker abyss. Chen Ji's heart tightened—Ling Yuan was indeed an old fox who had been immersed in the sect for a hundred years, his single sentence completely muddying the waters. If the investigation continued, they would eventually touch things that shouldn't be touched. Su Qingyao seemed to realize this as well; she exchanged a meaningful glance with Chen Ji.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0437_018",
+        "prompt": "\"Ling Yuan's words plunged the entire hall into an eerie silence. The Supervisor Disciple took advantage of the chaos to retreat to the side, and the mysterious figure also quietly moved backward. But Chen Ji noticed—in the mysterious figure's sleeve, something seemed to be faintly glowing...\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0437_018_opt1",
+            "text": "\"Don't pursue a cornered enemy\"",
+            "description": "\"Know when to stop, don't pursue further. First preserve yourself, settle the total score later.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"The mastermind escapes\"",
+            "visible_reward": "\"Preserving strength\"",
+            "risk_hint": "\"The other party may return in force\"",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_018_opt1_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji slightly bowed, his voice calm. 'Elder Ling speaks wisely. This case is full of doubts, Chen Wei believes the Sect Affairs Office will conduct a fair investigation. It's just that Chen Wei has one request—since the evidence is questionable, I ask the elders to restore my reputation.' His posture was humble to the point of being flawless, but no one noticed that the Tianji Record Fragment in his sleeve was faintly glowing hot.\"",
+                  "emotion": "谦逊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "lingyuan_noticed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0437_018_opt2",
+            "text": "\"Following the vine to find the melon\"",
+            "description": "\"Publicly questioning the mysterious figure's identity, exposing Ling Yuan's scheme in the sunlight.\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "\"Direct confrontation with Ling Yuan\"",
+            "visible_reward": "\"Revealing the tip of the iceberg\"",
+            "risk_hint": "\"May bring trouble upon oneself\"",
+            "process_label": "直捣黄龙",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0437_result_018_opt2_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji suddenly raised his eyes, staring directly at the mysterious figure who was about to retreat. 'Senior brother, please wait.' His voice was unhurried. 'The Supervisor Office sending someone to investigate a case is ordinary. But what I am curious about—senior brother just said you came on orders, yet you dare not reveal your identity. May I ask—what exactly is that glowing jade slip in your sleeve?'\"",
+                  "emotion": "锐利"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "shalu_betrays"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_019",
+        "content": "\"The mysterious figure's body stiffened, seemingly not expecting his small movements to be noticed. He下意识攥紧袖口, yet found that the glow had already been exposed before everyone's eyes. Ling Yuan's eyes flickered slightly, then returned to normal. The surrounding disciples all turned to look, whispered discussions rising again. Su Qingyao stepped forward, her gaze like a sword stabbing toward the mysterious figure. 'Senior brother might as well take out what's in your sleeve for everyone to see—what exactly is it that needs to be hidden more than that pile of forged letters?'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_020",
+        "character_id": "char_lingyuan",
+        "content": "\"'Enough.' Ling Yuan suddenly swept his sleeve, an invisible pressure enveloping the entire venue. 'Today's matter has many doubts and requires further deliberation. The Supervisor Office shall first detain this person for the old man to personally interrogate. As for Chen Ji—' his gaze fell upon Chen Ji, its meaning difficult to decipher, 'temporarily lift the house arrest, but you must not leave the sect by a single step. Until this case is concluded, you remain a suspect.'\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_021",
+        "content": "\"Chen Ji lowered his head in agreement, his posture respectful beyond reproach. But in his heart, he was sneering coldly: Ling Yuan's move of sacrificing the pawn to protect the king was brilliantly executed, pushing all the blame onto a scapegoat while he himself remained firmly in control. More importantly—the Chen Ji he rescued today would become even more difficult to extract himself from later. This old fox's every move was calculated to the last drop.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0437_022",
+        "character_id": "char_chenji",
+        "content": "\"The crowd gradually dispersed. Before leaving, Ling Yuan gave Chen Ji one deep look, and the meaning in that gaze made Chen Ji's back slightly cold. And as the mysterious figure was being taken away, the glow from the jade slip in his sleeve finally dimmed, but Chen Ji had already seen the pattern on it—it was an aura from the same source as the Tianji Record Fragment. This round, he had lost half a move. But the bigger chess game had only just begun.\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0437_023",
+        "content": "\"Su Qingyao walked to Chen Ji's side, her voice extremely low. 'Tonight at the hour of the rat, behind the Scripture Repository at the Rear Mountain, I have something to ask you.' She didn't wait for Chen Ji's response before turning to leave, leaving only a faint fragrance behind. Chen Ji gazed at her departing figure, his eyes deep and dark as ink. Today's situation—if not for Su Qingyao's intervention, even if he could prove his innocence, he would certainly have been greatly weakened. Was she an enemy or an ally? Or... did she have an even deeper purpose? The Tianji Record Fragment in his sleeve trembled faintly, as if responding to his turbulent thoughts.\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

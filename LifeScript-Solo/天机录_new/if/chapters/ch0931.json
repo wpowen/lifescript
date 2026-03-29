@@ -1,0 +1,360 @@
+{
+  "id": "天机录_ch0931",
+  "book_id": "天机录",
+  "number": 931,
+  "title": "三途抉择",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机即将做出决断时，天机剑深处传来一声叹息——那是与陈天命相似的频率。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0931_001",
+        "content": "天机剑内部的空间如同一片无垠的星海，陈机悬浮其中，周身环绕着无数推演的光点。他的眉心紧锁，天命值如流水般消耗，却换不来一丝确定的答案。三条命运的轨迹在他眼前交织，如同三条永不相交的河流，各自通向截然不同的尽头。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_002",
+        "content": "第一条路的光芒最为炽烈，却也最为冰冷。陈机凝视着那道光影中的自己——手持天机剑，刺入天道之眼的本源核心，毁灭一切的瞬间，他的身影也在无尽的反噬中逐渐消散。\"自身湮灭……\"他低声重复，嘴角浮现一抹苦涩的笑意。这条路的结局写满了\"牺牲\"二字，却也是最为简单粗暴的解法。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0931_003",
+        "character_id": "char_chenji",
+        "content": "如果我死了，这天下……青瑶、念儿、还有那些信任我的人……他们的命运又当如何？",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_004",
+        "content": "陈机挥手，光影流转，第二条路的核心画面浮现。与宇宙意志融合，意味着放弃所有人类的情感与记忆，成为永恒存在的的一部分。永生不灭，却再也不是\"陈机\"。他看到那个融合后的存在，高居天道之上，冷漠地俯瞰众生，却连一滴眼泪都不会流下。\"这算是赢了吗？\"他喃喃自问。赢了天道，却输了自己。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0931_005",
+        "character_id": "char_chenji",
+        "content": "没有牵挂的永生……与一块顽石何异？我修行至今，所为的从来不是单纯的活着。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_006",
+        "content": "第三条路的光芒最为黯淡，却也让陈机的目光最为凝重。打破棋局重塑天道——这条路没有任何既定的结局，每一个选择都可能通向完全不同的未来。可能完美，也可能万劫不复。\"未知……\"他的眼中闪过一丝复杂的光芒，\"这才是真正的豪赌。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0931_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（在陈机的感知深处，天道之眼的意志如潮水般涌来）卑微的棋子，你还在犹豫什么？无论你选择哪条路，都不过是在我的棋盘上行走。",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_008",
+        "content": "陈机的眼神骤然凌厉，那被压制已久的锋芒在瞬间绽放。他直视那片虚无，仿佛能够穿透无尽维度看到天道之眼的本体。\"是吗？\"他的声音平静得可怕，\"那你为何要在我推演的时候出言干扰？是怕我想清楚，还是怕我选对路？\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_009",
+        "content": "空间中陷入短暂的沉默，那股意志压迫感悄然退去。陈机冷笑一声，他就知道——天道之眼并非无所不能，否则不会如此忌惮一个尚未完全成长的预言者。他重新将目光投向三条命运之路，开始更深入地推演每一条路的代价与可能。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0931_choice_01",
+        "prompt": "陈机在三条道路之间权衡，每一条都通向不同的结局。你认为他会倾向于哪一条？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "path_self_destruction",
+            "text": "毁灭天道之眼，自身湮灭",
+            "description": "彻底毁灭天道之眼，代价是自身化为虚无。这是最高尚的牺牲，却也是最悲壮的结局。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "失去所有，包括生命与存在本身",
+            "visible_reward": "天道之眼被彻底抹除，世间再无此等存在",
+            "risk_hint": "所有你在乎的人都将失去你，世界将失去唯一的希望",
+            "process_label": "第一条路：毁灭之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -100
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0931_result_path_self_destruction_01",
+                  "content": "陈机凝视着第一条路的终局，那个在光芒中消散的身影让他心中泛起一阵苦涩。他伸手触碰那团光影，指尖传来阵阵刺痛，仿佛在提醒他这个选择的代价。\"如果这就是唯一的办法……\"他的声音低沉而坚定。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "path_merge",
+            "text": "与宇宙意志融合，获得永生",
+            "description": "与宇宙意志合二为一，获得永恒的存在，却失去人类的所有情感与记忆。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去所有人类的情感，不再是\"陈机\"",
+            "visible_reward": "永生不灭，成为超越一切的存在",
+            "risk_hint": "你将不再记得青瑶、念儿，以及所有为之奋斗的理由",
+            "process_label": "第二条路：融合之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0931_result_path_merge_01",
+                  "content": "陈机看着那个与宇宙意志融合后的自己，眼中闪过一丝复杂。那是一个全新的存在，强大却空洞，高居九天之上却再也没有笑过。\"永生……\"他喃喃道，\"可若那永生的存在不再是我，那又有何意义？\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "path_break",
+            "text": "打破棋局重塑天道",
+            "description": "不遵循既定的规则，而是打破整个棋盘重新制定天道法则。道路未知，充满可能。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "前路未知，可能万劫不复",
+            "visible_reward": "打破一切既定，创造全新的世界秩序",
+            "risk_hint": "这是从未有人走过的路，成功与失败都是未知数",
+            "process_label": "第三条路：破局之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0931_result_path_break_01",
+                  "content": "陈机的目光落在第三条路上，那里光芒黯淡却充满张力。\"未知吗……\"他的嘴角微微上扬，露出一丝意味深长的笑容，\"这才是我该走的路。天道之眼自以为掌控一切，却不知我从不打算按他的规则行事。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0931_010",
+        "content": "就在陈机深入推演之际，空间中忽然泛起一阵奇异的波动。一道模糊的身影在星海深处若隐若现，那轮廓……那气息……陈机的心跳骤然加速。那是他苦寻多年的身影——陈念！\"念儿？\"他下意识伸出手去触碰，却只抓到一片虚无。画面一闪即逝，如同昙花一现的幻影。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_011",
+        "content": "陈机的拳头猛然攥紧，指节发出咔嚓的声响。他的妹妹，被圣宗带走作为\"天命锁钥\"的至亲，居然在这种时刻出现于他的推演之中。\"这意味着什么？\"他强迫自己冷静下来，\"念儿能干扰天机录的预见，任何有她的画面都是模糊的……难道说，她已经知道了我在这里？\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0931_012",
+        "character_id": "char_chenji",
+        "content": "不管这三条路通向何方，我都不会抛下你。念儿，等着我……这次，换我来救你。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_013",
+        "content": "就在此时，天机剑空间深处忽然传来一声幽长的叹息。那叹息声古老而深邃，带着一种难以言喻的悲凉，更带着一丝熟悉的频率——与陈天命临终前的气息如出一辙。陈机的瞳孔骤然收缩，他猛然转身，却只看到无尽的虚空与星海。\"谁？！\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_014",
+        "content": "星海之中，一道身影缓缓凝聚。那是一个苍老而威严的男子形象，周身环绕着无数天道法则的碎片，双眼中蕴含着看透世间万物的深邃。他就那样静静地悬浮在陈机面前，仿佛已经等待了很久很久。\"你终于来了……\"那声音苍老而温和，\"我等你很久了，天机录的继承者。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0931_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼的意志忽然剧烈波动）你……你竟然还有残魂留存？！这不可能！我明明已经将你彻底抹杀！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_016",
+        "content": "那苍老的身影微微一笑，那笑容中带着无尽的沧桑与释然。\"你以为抹杀了我的肉身就能斩断我的一切？\"他的声音平静而威严，\"天机录选中的人，从来不是偶然。天道之眼，你布下的棋局再精密，也终究漏算了一件事——人心。\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_017",
+        "content": "陈机的心跳如擂鼓，他看着眼前这个与陈天命气息相近却又更加古老的存在，无数疑问涌上心头。\"你是……\"他的声音有些颤抖，\"天机录的初代主人？还是……\"那苍老的身影摇了摇头，打断了他的话。\"我是谁并不重要，重要的是——\"他的目光深邃而认真，\"你需要知道三条路的真正代价，以及第四条路的存在。\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0931_choice_02",
+        "prompt": "第四条路的存在让陈机看到了新的可能，但每条路都有其本质的区别。陈机会如何理解这些道路？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "understand_destruction",
+            "text": "追问第一条路的真正代价",
+            "description": "彻底毁灭天道之眼看似简单，但真的能消灭它吗？还是只是另一个轮回的开始？",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "看清毁灭之道的真正本质",
+            "risk_hint": "真相往往比想象更加残酷",
+            "process_label": "追问毁灭之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0931_result_understand_destruction_01",
+                  "content": "那苍老身影轻轻叹息：\"毁灭天道之眼看似干脆，实则是最愚蠢的选择。你以为它只是一个个体？不，它早已与这方宇宙的根基融为一体。你毁灭它的那一刻，便是这方宇宙崩塌之时。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "understand_merge",
+            "text": "追问第二条路的真正代价",
+            "description": "与宇宙意志融合看似能获得永生，但融合之后，你还是你吗？",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "看清融合之道的真正本质",
+            "risk_hint": "永生的代价可能比死亡更加可怕",
+            "process_label": "追问融合之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0931_result_understand_merge_01",
+                  "content": "苍老身影的神情变得凝重：\"融合之道看似保全了存在，实则是最深的陷阱。你以为你会与宇宙意志平等融合？不，你只会成为它的一部分，永远被其压制，成为新的'天道之眼'的养分。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "understand_break",
+            "text": "追问第三条路和第四条的真相",
+            "description": "打破棋局看似充满未知，但如果真的存在第四条路，那会是什么？",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗大量天命值",
+            "visible_reward": "看清破局之道的关键，以及第四条路的存在",
+            "risk_hint": "第四条路可能比前三条都更加危险",
+            "process_label": "追问破局之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0931_result_understand_break_01",
+                  "content": "苍老身影的眼中闪过一丝赞赏：\"你问对了问题。破局之道的确可行，但需要一个关键的条件——你需要找到'天命锁钥'，即你的妹妹陈念。她是你打破棋局的唯一钥匙，也是天道之眼最惧怕的存在。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0931_018",
+        "content": "陈机听到\"天命锁钥\"四个字，心中掀起惊涛骇浪。念儿……她不仅仅是被圣宗抓走的亲人，更是这场棋局中最为关键的一枚棋子！\"你是说……\"他的声音有些颤抖，\"念儿被圣宗带走，并非偶然？\"苍老身影点头，目光中带着深深的悲悯。\"从一开始，你妹妹的存在就是为了今天。天道之眼惧怕的不是你，而是能够干扰天机录预见的她。\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0931_019",
+        "character_id": "char_chenji",
+        "content": "所以……从始至终，我以为自己在布局天下，其实不过是在按照天道的剧本来演？念儿被带走，也是这剧本的一部分？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_020",
+        "content": "苍老身影摇头，眼中闪过一丝赞许：\"不，你错了。天道之眼的剧本再精密，也算不到人心。它能算计命运，却算不到你妹妹会选择站在你这边。她在圣宗这些年，一直在等待机会——等待能够与你并肩作战的那一天。\"陈机的眼眶微微泛红，多年来的愧疚与自责在这一刻稍稍释然。念儿……他苦寻多年的妹妹，从来都不是任人摆布的棋子。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0931_021",
+        "content": "（就在陈机即将做出决断时，天机剑深处传来一声叹息——那是与陈天命相似的频率）"
+      }
+    }
+  ]
+}

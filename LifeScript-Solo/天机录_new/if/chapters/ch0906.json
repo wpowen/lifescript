@@ -1,0 +1,479 @@
+{
+  "id": "天机录_ch0906",
+  "book_id": "天机录",
+  "number": 906,
+  "title": "终极抉择的代价",
+  "is_paid": true,
+  "next_chapter_hook": "陈天命的声音在黑暗中回荡，承认他当年正是因为不愿放弃力量，才一步步走到了今天这步田地——而他当年种下的因，如今正在陈机身上结出同样的果。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0906_001",
+        "content": "墨汁在第一页缓缓晕开，勾勒出一个方方正正的字——「舍」。陈天命的残魂微微颤抖，浑浊的双眼死死盯着那个字，仿佛不敢相信自己看到了什么。\"这……这不是真的……\"他的声音嘶哑而破碎，\"当年的我……我找了整整三十年，都没能让这一页显字……凭什么……凭什么你能做到……\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_002",
+        "character_id": "char_chenji",
+        "content": "陈机没有回答。他的目光穿过陈天命的残魂，落在那页正在显现的第二行字上。墨迹如活物般蔓延，一个字一个字地成型：「执棋者之位，可毁天眼核心。代价——舍尽天命，归为凡人。」",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_003",
+        "content": "天机录的光华在这一刻彻底黯淡下去，仿佛完成了它最后的使命。第一页上，墨先生的字迹仍在缓缓浮现，一笔一划都带着某种令人心悸的庄严：「第三卷完。执棋者之位已备。天命锁钥归位。棋局将终。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_004",
+        "character_id": "char_chenian",
+        "content": "陈念的呼吸骤然急促。她看着那些字迹，又看向陈机苍白的脸，忽然明白了什么。\"哥……\"她的声音颤抖着，\"这上面说的是真的吗？摧毁天道之眼的核心……需要你放弃所有力量？\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_005",
+        "content": "陈天命忽然仰天长笑，笑声里满是苦涩与疯狂。\"凡人？哈哈……哈哈哈……原来如此！原来如此！墨先生这老东西从头到尾都在算计！他要的不是让天机录传承下去，而是要让传承彻底断绝！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_006",
+        "character_id": "char_chenji",
+        "content": "陈机缓缓转身，直视陈天命的残魂。\"你错了。\"他的声音平静得可怕，\"墨先生不是在算计断绝传承。他是在给我真正的选择。\"他顿了顿，\"你当年不肯舍，所以被力量反噬。我……我不想重蹈覆辙。\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_007",
+        "content": "天机录第一页上，第三行字终于显现完毕：「然——凡人之力，可护一人否？可敌一军否？可平天下乱否？」每一个字都像是一柄刀，狠狠剜进陈机的心里。他当然知道答案。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_01",
+        "prompt": "墨先生的字迹仿佛读懂了他的犹豫，化作最后的质问浮现在第一页上：「舍，或不舍？汝选其一。」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_sacrifice_power",
+            "text": "舍尽天命，回归凡人",
+            "description": "彻底摧毁天道之眼核心的唯一方法。放弃所有命运书写能力，成为真正的凡人。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "失去天机录、预见能力、所有特殊力量",
+            "visible_reward": "彻底摧毁天道之眼核心，打破命运的枷锁",
+            "risk_hint": "成为凡人后将失去保护所有人的力量",
+            "process_label": "舍",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_sacrifice_power_001",
+                  "content": "陈机伸出手，指尖触上天机录第一页。墨先生的字迹在他触碰的瞬间绽放出刺目的金光，仿佛在迎接一个等待了千年的答案。\"我舍。\"他的声音很轻，却字字清晰。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_keep_power",
+            "text": "保留力量，寻找其他方法",
+            "description": "拒绝成为凡人，试图寻找既不放弃力量又能摧毁天道之眼的方法。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "无法彻底摧毁天道之眼，命运枷锁依然存在",
+            "visible_reward": "保留所有能力，继续作为执棋者存在",
+            "risk_hint": "天道之眼将重生，一切努力付诸东流",
+            "process_label": "不舍",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_keep_power_001",
+                  "content": "陈机的手悬在半空，迟迟没有落下。他的眉头紧锁，眼底闪过一丝不易察觉的挣扎。\"还有其他办法吗？\"他低声问道，声音里带着一丝从未有过的犹疑。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_third_path",
+            "text": "质疑——必有第三条路",
+            "description": "墨先生既然留下了这个选择，就一定留有后手。天机录从未让人绝望过。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能浪费时间，错失最佳时机",
+            "visible_reward": "找到真正可行的方案",
+            "risk_hint": "如果找不到，第三条路可能比前两条更加残酷",
+            "process_label": "寻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_third_path_001",
+                  "content": "陈机收回手，嘴角忽然勾起一丝笑。\"墨先生……如果你是那种让人走投无路的人，我当初就不会选择相信你。\"他重新审视第一页，\"第三行字……问的是'凡人之力可护一人否'，不是'凡人之力可护所有人否'。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_008",
+        "content": "陈天命的残魂猛然一震。\"你……你在说什么？\"他难以置信地看着陈机，\"天机录明明白白写着，舍尽天命归为凡人，你还要找什么第三条路？你以为你是谁，能改写天机录的意志？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_009",
+        "character_id": "char_chenji",
+        "content": "陈机没有理会他，而是将目光投向第一页下方那片尚未显现的空白。\"墨先生，您老还在吧？\"他的语气忽然变得轻松，\"既然第三卷的目标是'棋局将终'，那您总不会只给我一个必死的局。\"",
+        "emotion": "狡黠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_010",
+        "content": "天机录微微震颤。片刻后，空白处缓缓浮现出一个小小的符号——那是一个陈机从未见过的纹路，像是某种古老的印记。陈念凑近一看，瞳孔骤然收缩。\"这是……天命锁钥的本源印记！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_02",
+        "prompt": "陈念的手指颤抖着指向那个印记。\"哥，你还记得吗？当初我被圣宗带走的时候，他们说我体内有某种……可以替代执棋者的东西。\"她抬起头，眼眶微红，\"如果这个印记是真的……也许我能帮上忙。\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_accept_sister",
+            "text": "接受陈念的帮助",
+            "description": "陈念是天命锁钥，她的存在本就能干扰天机录的预见。也许她的力量可以替代陈机的执棋者之位。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陈念可能因此陷入危险",
+            "visible_reward": "陈机保留力量，陈念承担部分代价",
+            "risk_hint": "天命锁钥的代价未知，可能比凡人更惨",
+            "process_label": "共生",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2500
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_accept_sister_001",
+                  "content": "陈机看着陈念，眼底闪过一丝犹豫。他当然知道这意味着什么——让陈念分担执棋者的代价，就等于把她拖入深渊。但陈念的眼神坚定得让他心痛。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_refuse_sister",
+            "text": "拒绝——绝不让妹妹涉险",
+            "description": "陈机绝不可能让陈念为了自己承担任何风险。他宁愿放弃一切，也不愿让妹妹陷入危险。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "必须独自承担所有代价",
+            "visible_reward": "保护陈念的安全",
+            "risk_hint": "独自面对天命反噬，成功率更低",
+            "process_label": "护",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5000
+              },
+              {
+                "stat": "黑化值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_refuse_sister_001",
+                  "content": "陈机的手按在陈念的肩上，力道大得几乎让她吃痛。\"不行。\"他的声音冰冷，\"我找了你十年，不是为了让你替我去死。陈念，听话。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_011",
+        "character_id": "char_chenian",
+        "content": "陈念的眼泪终于落了下来。\"哥，你以为我不知道吗？\"她的声音哽咽，\"圣宗带走我那天，我就知道了……我的存在本身就是你的拖累。如果不是因为我，天机录的预见不会那么模糊，你早就能看透一切了……\"",
+        "emotion": "悲泣"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_012",
+        "content": "陈天命的残魂忽然剧烈颤抖起来。\"不……不要……\"他的声音变得扭曲，\"你们不能这样！陈念是我陈家最后的血脉！你们都死了，陈家就彻底完了！\"他疯狂地挣扎着，\"陈机，你听到没有？我不允许你毁掉陈家！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_013",
+        "character_id": "char_chenji",
+        "content": "陈机冷冷地瞥了陈天命一眼。\"陈家？\"他的语气里带着一丝嘲讽，\"你当年为了力量出卖一切的时候，有想过陈家吗？你被天机录抛弃、被命运反噬的时候，有想过陈家吗？\"他顿了顿，\"现在倒想起自己是陈家人了？\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_014",
+        "content": "天机录上的符文在这一刻忽然亮了起来。墨先生的字迹最后一次浮现，却只有简短的一行：「天命锁钥可承执棋者之位半。然——代价仍需执棋者自担。他人无法替代汝等之痛。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_03",
+        "prompt": "陈念的脸上闪过一丝希望。\"半？墨先生的意思是……我可以分担一半？\"她紧紧握住陈机的手，\"哥，我们一起承担！你不是说过吗？陈家的人，从来不丢下任何一个！\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_share_fate",
+            "text": "与陈念共担天命",
+            "description": "接受天命锁钥的分担，陈机保留一半执棋者之力，代价由两人共同承担。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陈念将永远与陈机的命运绑定",
+            "visible_reward": "陈机保留部分力量，可以继续保护重要的人",
+            "risk_hint": "两人的命运从此相连，一荣俱荣，一损俱损",
+            "process_label": "共命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -4000
+              },
+              {
+                "stat": "魅力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 80
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_share_fate_001",
+                  "content": "陈机沉默了很久。最后，他反手握住了陈念的手。\"好。\"他的声音很轻，却带着某种不容置疑的坚定，\"从今以后，我的命就是你的命。你……不要后悔。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_refuse_share",
+            "text": "坚持独自承担",
+            "description": "陈机的命只能由他自己来扛。他不想让陈念因为自己而永远活在阴影之下。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "必须独自面对全部天命反噬",
+            "visible_reward": "保护陈念的独立，让她拥有自己的人生",
+            "risk_hint": "独自承担可能让他彻底失去一切",
+            "process_label": "独担",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_refuse_share_001",
+                  "content": "陈机轻轻推开陈念的手，摇了摇头。\"小念，我是你哥。\"他的声音很温柔，\"当哥的，就是用来挡在前面的。你要做的，是好好活下去，不是跟我一起死。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_015",
+        "content": "天机录上的光芒渐渐收敛，墨先生的字迹也终于彻底淡去。但在消失前的一瞬，最后一个字浮现在第一页的角落——「三」。陈天命看着那个字，瞳孔骤然放大。\"三……第三次……他还有一次机会……\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_016",
+        "content": "陈机注意到了陈天命的异常。\"第三次？\"他皱眉，\"什么第三次？\"陈天命的残魂忽然诡异地笑了起来，笑声里带着说不清的疯狂与绝望。\"陈机……你以为你是第一个走到这一步的人吗？\"他抬起头，浑浊的双眼直视陈机，\"墨先生的'三'……是你还能做选择的次数。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_017",
+        "character_id": "char_chenji",
+        "content": "陈机的脸色微微一变，但很快恢复了平静。\"三次选择机会，用了两次。\"他低声说道，\"也就是说……还有最后一次。\"他抬起头，直视陈天命的残魂，\"那么，你当年是用完了这三次机会，所以才会变成现在这副模样？\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_018",
+        "content": "陈天命的笑声戛然而止。他的残魂像是被戳中了什么要害，剧烈地颤抖起来。\"我……我当年……\"他的声音变得破碎，\"第一次，我选择了保留力量……第二次，我选择了让你继承……第三次……\"他说不下去了，浑浊的双眼流下两行血泪。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_019",
+        "character_id": "char_chenian",
+        "content": "陈念忽然握紧了陈机的手。\"哥，他的第三次选择……\"她的声音很轻，\"会不会是……他选择了利用你？\"陈天命的残魂没有否认，只是发出一声低沉的呜咽。墨先生的字迹忽然再次浮现——这一次，只有四个字：「汝猜对了。」",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_020",
+        "content": "陈机的脸上看不出任何表情。他只是静静地看着陈天命的残魂，像是在看一个与自己毫无关系的陌生人。\"所以……你被命运反噬，是活该。\"他的声音很平静，\"而我，不会走你的老路。\"他转向天机录，目光坚定，\"第三次选择——我要亲自去看看，天道之眼的真正核心，到底是什么东西。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_021",
+        "content": "天机录猛然一震，第一页上所有的字迹在这一刻全部消散，取而代之的是一道通往未知的门户缓缓开启。陈天命看着那道门，浑浊的双眼闪过一丝惊惧。\"你疯了……那是天道之眼的本源所在……你进去就出不来了……\"陈机没有回头。\"是吗？\"他的声音很轻，\"那你当年，为什么要去那里？\"陈天命的残魂彻底沉默了。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

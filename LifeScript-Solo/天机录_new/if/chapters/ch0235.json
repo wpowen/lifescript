@@ -1,0 +1,610 @@
+{
+  "id": "天机录_ch0235",
+  "book_id": "天机录",
+  "number": 235,
+  "title": "入场资格战",
+  "is_paid": true,
+  "next_chapter_hook": "陈机以黑马之姿闯入决赛，与魔道主帅的交锋一触即发。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0235_001",
+        "content": "晨曦初破，天青宗演武场上已人声鼎沸。巨大的灵石结界笼罩方圆千丈，将整座战场与外界隔绝。观战台上，三大宗门的长老分坐两侧，魔道阵营的黑袍修士亦虎视眈眈。陈机立于参赛弟子的末席，灰袍低眉，看似与世无争——却无人知晓他袖中双手正微微掐诀，将天机录的残页悄然激活。\n\n入场资格战，正式开始。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_002",
+        "character_id": "char_lingyuan",
+        "content": "诸位，本届秘境入场资格战采用「三轮递进制」——第一轮考验战力，第二轮考验智谋，第三轮……由胜者自行选择对手。凌渊端坐主位，苍老的声音回荡全场，目光意味深长地扫过陈机所在的方向。规则由本座亲自拟定，绝无偏颇。",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_003",
+        "content": "陈机垂眸，心中冷笑。凌渊特意强调「绝无偏颇」，恰恰说明这场规则从一开始就是冲着他来的。三轮递进，看似公平，实则每一步都在逼迫他暴露更多底牌——老狐狸，果然按捺不住了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_004",
+        "character_id": "char_hanlie",
+        "content": "哼！一个杂役也敢来凑热闹？玄武宗韩烈大步流星走向场中，目光如刀般剜向陈机。天青宗是没人了吗？派这种废物来丢人现眼！他身后，数名五老残余的弟子窃笑出声，眼中尽是不屑。",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0235_choice_001",
+        "prompt": "韩烈当众羞辱，陈机该如何应对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "碾压反击",
+            "text": "碾压反击",
+            "description": "当场以绝对实力碾压韩烈，让对方连开口的机会都没有。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露部分实力",
+            "visible_reward": "震慑全场，韩烈颜面尽失",
+            "risk_hint": "过早暴露实力可能引来凌渊警觉",
+            "process_label": "以力服人",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_碾压反击_001",
+                  "content": "陈机缓步上前，灰袍无风自动。他甚至没有正眼看韩烈，只是淡淡开口：「韩师兄既然这么急着上场，不如……让我先送你下去休息？」话音未落，一道凌厉剑气横空而出——那是天青宗基础剑法「清风十三式」的第十三式，本不该出现在筑基期弟子手中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "智取嘲讽",
+            "text": "智取嘲讽",
+            "description": "用言语将韩烈激怒，让他失去理智先行出手，以彼之道还施彼身。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要承受韩烈第一波攻击",
+            "visible_reward": "让韩烈自己挖坑自己跳，名正言顺碾压",
+            "risk_hint": "激怒对手可能引发规则外的冲突",
+            "process_label": "以智取胜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_智取嘲讽_001",
+                  "content": "陈机抬起头，眼中闪过一丝戏谑：「韩师兄的战力，天青宗上下谁人不知？只是我有一事不明——上次在青峰峡，师兄是怎么被魔道杂兵缠住半个时辰的？」韩烈面色骤变，双拳紧握。周围响起窃笑声——他败走青峰峡的糗事，竟被当场揭开。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "冷眼无视",
+            "text": "冷眼无视",
+            "description": "彻底无视韩烈的挑衅，以冷漠回应傲慢，让对方有力无处使。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时不被看好，可能被安排对阵种子选手",
+            "visible_reward": "让韩烈怒火攻心，为后续碾压积蓄气势",
+            "risk_hint": "可能被认为软弱，名望受损",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_冷眼无视_001",
+                  "content": "陈机只是淡淡扫了韩烈一眼，便收回目光，望向远山云雾。韩烈的挑衅，仿佛只是蚊虫嗡鸣。「你……！」韩烈拳头攥得咯咯作响，却被凌渊一声冷哼打断：「资格战开始，首轮对阵——周元霸对陈机！」周元霸，五老残余的种子选手，筑基巅峰。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_005",
+        "character_id": "char_hanlie",
+        "content": "周元霸？那可是五老嫡传！韩烈冷笑出声，眼中满是幸灾乐祸。废物，你最好现在就跪下认输，免得等会儿被打成残废！周围哄笑声四起，连部分天青宗弟子都开始窃窃私语——陈机必败的论调，几乎一边倒。",
+        "emotion": "得意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_006",
+        "content": "周元霸身高九尺，浑身肌肉虬结，手持一柄开山巨斧。他每踏一步，地面都微微震颤。「小子，」他嗡声开口，声如闷雷，「念你修行不易，现在认输还来得及。拳脚无眼，本座可不希望天青宗少一个杂役。」语气虽狂，却是五老残余惯有的傲慢——他们从未将陈机放在眼里。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_007",
+        "character_id": "char_yeqing",
+        "content": "观战台一角，夜清端坐黑纱帷幔之后，透过重重禁制望向场中。她的手指轻轻敲击扶手，眸中闪过一丝玩味。那个废物……有意思。她身旁的魔道侍从低声问道：「圣女，是否需要属下去探查此人底细？」夜清摇摇头，红唇微勾：「不必。他若真只是废物，就不会站在这里了。」",
+        "emotion": "审视"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0235_choice_002",
+        "prompt": "首轮对阵种子选手周元霸，陈机选择如何取胜？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "雷霆碾压",
+            "text": "雷霆碾压",
+            "description": "一出手便是杀招，以最短时间、最暴力方式结束战斗，让所有人看清差距。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗5点天命值",
+            "visible_reward": "全场震惊，周元霸三招内落败，凌渊面色骤变",
+            "risk_hint": "天命值珍贵，此战消耗可能影响后续布局",
+            "process_label": "速战速决",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_雷霆碾压_001",
+                  "content": "陈机不再废话。他抬手，指尖凝聚出一道淡青色灵光——那是他从未展露过的「凝元指」。「雕虫小技！」周元霸挥斧劈来，巨斧裹挟罡风。然而下一瞬，所有人瞳孔骤缩：巨斧被两指轻轻夹住，纹丝不动。陈机顺势一弹，周元霸连人带斧倒飞三十丈，口吐鲜血倒地不起。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "智谋反转",
+            "text": "智谋反转",
+            "description": "故意示弱诱敌深入，在周元霸得意忘形时一击反杀，让对方败得心服口服。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能受轻伤",
+            "visible_reward": "智谋震动全场，为后续逆天改命埋下伏笔",
+            "risk_hint": "过度示弱可能让凌渊起疑，增加后续布局难度",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_智谋反转_001",
+                  "content": "战斗甫始，陈机便节节败退，被周元霸逼得狼狈不堪。「哈哈哈！废物就是废物！」周元霸得意忘形，斧势大开大合。就在众人以为胜负已定时，陈机嘴角微扬——他的袖中，一道符篆悄然激活。「不好！」周元霸瞳孔猛缩，却已来不及。他脚下的擂台突然崩塌，整个人坠入陷阱——那竟是陈机事先布下的「困元阵」！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "震慑全场",
+            "text": "震慑全场",
+            "description": "不直接出手，而是以气势压人，让周元霸在威压下自行认输。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露修炼了高阶功法的事实",
+            "visible_reward": "全场骇然，韩烈面色惨白，连夜清都起身注目",
+            "risk_hint": "高阶威压可能引来天道之眼注意",
+            "process_label": "不战而屈人之兵",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_震慑全场_001",
+                  "content": "陈机只是向前迈出一步。一步。恐怖的威压自他身上倾泻而出，如山岳压顶。周元霸面色瞬间惨白，握斧的手剧烈颤抖，双膝竟不由自主地弯曲下去。「这……这是什么修为！」他的声音都在发抖。周围观众骇然失色——这哪是什么废物杂役？分明是深藏不露的绝世高手！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_008",
+        "content": "全场死寂。周元霸瘫软在地，眼中满是不可置信。五老残余的种子选手，在天青宗被视为废物的杂役弟子面前，连一招都走不过？凌渊面色阴沉得能滴出水来，手指不自觉地攥紧了扶手。韩烈则像是被人狠狠扇了一记耳光，脸上的得意凝固成惊骇与屈辱。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_009",
+        "character_id": "char_yeqing",
+        "content": "有意思。夜清起身，黑纱后的眼眸闪烁着危险的光芒。她看向身旁的侍从，低声吩咐：「替我查清此人来历。另外——告诉他，魔道的友谊不是轻易给出的，但他若能闯过第二轮……本圣女，倒愿意给他一个机会。」",
+        "emotion": "欣赏"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_010",
+        "content": "第二轮「智谋考验」随即展开。与常规比试不同，这一轮采用「残局推演」——每组选手将面对同一道阵法残局，破解者胜出。然而，当陈机看到残局图样的瞬间，他眸光微闪——这哪是什么阵法残局？分明是凌渊根据他昨日行踪，刻意设计的死亡陷阱！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_011",
+        "character_id": "char_lingyuan",
+        "content": "凌渊端坐高位，苍老的声音不疾不徐：「此局名为『迷心阵』，专为心怀叵测者设。破解此阵，需破阵者亲自入阵——若心中无愧，自然通行无阻；若心有鬼祟……」他意味深长地停顿，「轻则走火入魔，重则神魂俱灭。」话音落下，全场哗然。这是明晃晃的阳谋！",
+        "emotion": "阴险"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0235_choice_003",
+        "prompt": "凌渊设下阳谋陷阱，陈机如何应对「迷心阵」？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "正面对抗",
+            "text": "正面对抗",
+            "description": "激活天机录，以预见未来的能力看穿阵法所有变化，从容破解。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗10点天命值",
+            "visible_reward": "凌渊精心设计的陷阱成为他的扬名之作，名望暴涨",
+            "risk_hint": "天命值消耗巨大，若魔道主帅此时出手，后果不堪设想",
+            "process_label": "以预知破阵",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_正面对抗_001",
+                  "content": "陈机踏入阵中，刹那间心神被拉入幻境。他「看见」自己被天雷劈中、「看见」自己坠入深渊——那是凌渊预设的死亡之路。然而，当第三息来临，陈机睁眼，眸中金光闪烁。他看到了！这阵法共有七十二种变化，每一种变化他都已了然于胸。「破！」他轻喝一声，手指连点七十二处阵眼，迷心阵轰然崩碎。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借力打力",
+            "text": "借力打力",
+            "description": "不破解阵法，而是引导阵法反噬布阵者，让凌渊自食恶果。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能与凌渊彻底撕破脸",
+            "visible_reward": "凌渊当众出丑，五老残余势力颜面尽失",
+            "risk_hint": "彻底激怒凌渊，后续可能面临更大阴谋",
+            "process_label": "以阵破阵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_借力打力_001",
+                  "content": "陈机没有破解阵法，而是将自身灵力与阵纹共鸣。他「看到」了凌渊藏在阵法中的神识烙印——那老狐狸竟妄想借此窥探他的记忆！陈机冷笑，顺着烙印反向追溯。下一刻，凌渊闷哼一声，额头渗出冷汗。他的神识被阵法反噬，如同被毒蛇咬了一口。「陈机……！」他咬牙切齿，眼中杀意再也掩饰不住。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "请君入瓮",
+            "text": "请君入瓮",
+            "description": "假装被阵法所困，引诱凌渊现身救人时当众揭露他的阴谋。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "需要承受阵法部分侵蚀",
+            "visible_reward": "彻底撕破凌渊伪善面具，五老残余人心离散",
+            "risk_hint": "阵法侵蚀可能留下暗伤",
+            "process_label": "以身为饵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_请君入瓮_001",
+                  "content": "陈机佯装陷入阵法，身形摇晃，嘴角溢出一丝鲜血。「陈机！」凌渊果然中计，亲自出手欲将他摄出阵外——然而就在这一刻，陈机猛然睁眼，手中多出一枚玉简。他当着全场数万人，将玉简激活。凌渊与魔道暗中勾结的证据，以投影方式展露无遗！「你……！」凌渊面色铁青，却已百口莫辩。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_012",
+        "content": "全场哗然。凌渊勾结魔道的铁证如山，哪怕他是天青宗老掌门，此刻也陷入千夫所指。五老残余的弟子们面面相觑，原本坚定的阵营开始动摇。而更远处的魔道阵营中，一道黑袍身影缓缓起身——那是魔道主帅亲自降临！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_013",
+        "character_id": "char_yeqing",
+        "content": "陈机，你很好。夜清竟亲自现身场中，黑纱飘扬，步步生莲。她看向陈机的目光带着审视，也带着一丝难以察觉的欣赏。本圣女给你一个机会——成为魔道的客卿，荣华富贵，予取予求。她伸出手，掌心托着一枚漆黑如墨的令牌。魔道圣令，见此令者，如圣女亲临。",
+        "emotion": "招揽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_014",
+        "content": "夜清的出现让全场气氛降至冰点。天青宗弟子被杀气震慑，连凌渊都暂时按捺住了动手的冲动——魔道圣女的份量，哪怕是老掌门也不敢轻视。然而陈机只是淡淡看了那枚令牌一眼，然后轻轻摇头：「多谢圣女好意。只是……」他嘴角微扬，「陈某虽是不起眼的杂役，却也有一身傲骨。魔道……恕不奉陪。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_015",
+        "character_id": "char_yeqing",
+        "content": "夜清微微一怔，随即放声大笑。那笑声清脆如银铃，却带着三分欣赏、三分玩味、四分危险。有意思。她收回令牌，眸中光芒愈发明亮。本圣女越来越好奇了——你这废物皮下，究竟藏着什么？她的声音压得极低，只有陈机能听见：三日后的秘境，你我再见。届时……希望你别让我失望。",
+        "emotion": "兴趣"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_016",
+        "character_id": "char_hanlie",
+        "content": "陈机！韩烈终于按捺不住，大步冲入场中。废物！都是废物！他指着陈机，双目赤红。什么勾结魔道、什么心怀鬼祟——全是你这小人的诬陷！我韩烈今日就要替天青宗清理门户！他周身灵压暴涨，那是玄武宗不传秘术「玄武真身」，足以碾压同阶！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_017",
+        "content": "韩烈气势汹汹而来，却在距离陈机三尺之处骤然停步——因为他看到了陈机的眼睛。那双眼睛平静如水，深不见底，仿佛在凝视一只自投罗网的蝼蚁。「韩师兄，」陈机轻声开口，声音不疾不徐，「玄武宗的「玄武真身」，需以龟息之法凝聚灵力，需时七息。方才你冲刺用去三息，凝聚真身用去四息——」他微微一笑，「现在，你的气息已断。而我，还没出手。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_018",
+        "content": "话音未落，陈机终于动了。他只是抬起右手食指，轻轻点向韩烈眉心。那一指看似缓慢，却精准无比地避开了所有防御，直指玄武真身的唯一破绽——丹田气海。「不——！」韩烈瞳孔骤缩，想要后退却已来不及。指风破体而入，他周身的玄武虚影轰然崩碎，整个人如断线风筝般倒飞百丈，昏死当场。\n\n全场死寂。\n\n一个照面。仅仅一个照面，玄武宗第一天才便折戟沉沙。陈机收回手指，神色淡漠如常，仿佛只是做了一件微不足道的小事。然而他的目光已越过韩烈、越过凌渊、越过夜清，直视远方——那里，是秘境入口的方向。\n\n决赛，即将开始。而真正的博弈，才刚刚拉开序幕。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

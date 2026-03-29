@@ -1,0 +1,325 @@
+{
+  "id": "天机录_ch0718",
+  "book_id": "天机录",
+  "number": 718,
+  "title": "命运书写者",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机为命运书写者的代价付出十年寿元之时，远在千里之外的凌渊猛然睁眼——他的追杀之路上，出现了从未有过的迷雾。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0718_001",
+        "content": "那枚散发着诡异光芒的契约悬浮在陈机面前，以天命值为墨、以寿元为纸的弑神血契，每一笔都散发着令人心悸的威压。天道之眼的投影静静注视着他，仿佛在看一只即将落入网中的蝼蚁。\"签下它，你便拥有了改写命运的资格。\"那声音不带丝毫情感，\"拒绝它，你的命运便到此为止。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_002",
+        "character_id": "char_chenji",
+        "content": "陈机盯着那枚血契，瞳孔深处却闪烁着与表象截然不同的光芒。改写命运？他在心中冷笑。若连这都不敢签，他如何配得上天机录传承者的名号？手指轻轻触碰血契边缘，一股灼热的痛楚瞬间从指尖蔓延至全身。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_003",
+        "content": "就在血契接触他鲜血的瞬间，识海中传来一声清脆的碎裂声——那是第四页封印崩解的声音。陈机只觉眼前一黑，整个人被拉入了一片浩瀚无垠的星海之中。无数光点在他周围流转，每一颗都代表着一个命运的节点。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_004",
+        "character_id": "char_moxiansheng",
+        "content": "一道虚幻的声音从识海深处传来，带着几分欣慰与警告：\"终于走到这一步了，小子。但你要记住——命运书写者并非无代价的神明。你每改写一个节点，便要承担对应的反噬。这反噬可能是寿元，可能是天命，也可能是你最珍视之人的命运。\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_005",
+        "content": "陈机稳住心神，环顾四周。那些光点渐渐清晰——有代表他自己的金色光点，正在被一道黑色的命运线紧紧缠绕，那是凌渊的追杀；而那道黑线的尽头，正指向一个让他心悸的结局：死亡。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0718_choice_001",
+        "prompt": "面对即将被凌渊追杀的命运，陈机决定如何应对这第一次的命运改写？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "大胆实验",
+            "text": "大胆改写",
+            "description": "直接用命运书写者能力强行切断追杀线，哪怕付出代价也在所不惜",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "未知代价",
+            "visible_reward": "彻底改变命运走向",
+            "risk_hint": "反噬可能极其严重",
+            "process_label": "大胆尝试命运之力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -200
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0718_result_大胆实验_001",
+                  "content": "陈机不再犹豫，神识化作一支由金光凝聚的笔。他毫不犹豫地刺向那条黑色命运线的核心节点——那是凌渊追杀成功的瞬间。光芒炸裂，他感觉自己体内的寿元正在疯狂流逝。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "谨慎验证",
+            "text": "谨慎尝试",
+            "description": "先改写一个微小的节点测试能力，找到限制后再行动",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "较少代价",
+            "visible_reward": "了解能力限制",
+            "risk_hint": "可能错过最佳时机",
+            "process_label": "谨慎验证能力边界",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0718_result_谨慎验证_001",
+                  "content": "陈机深吸一口气，将目光锁定在那条黑线上一个极小的分支——那是追杀路上的一个意外变数。他轻轻落笔，那道分支瞬间消散，但一股莫名的虚弱感立刻袭来。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "寻找限制",
+            "text": "追问限制",
+            "description": "在做决定前，先向墨先生追问命运书写者的具体限制和规则",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错过时机",
+            "visible_reward": "全面了解能力机制",
+            "risk_hint": "可能暴露自己的犹豫",
+            "process_label": "深入了解能力真相",
+            "stat_effects": [],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0718_result_寻找限制_001",
+                  "content": "陈机收回手指，冷声问道：\"这能力的限制是什么？每次改写必须付出等量代价，还是有其他规则？\"墨先生沉默了片刻，似乎在衡量该说多少。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_007",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生的残魂缓缓浮现，虚幻的面容上带着几分复杂：\"规则很简单——命运是守恒的。你改写别人的命运，那份因果便要有人承担。你承担，或者……你爱的人承担。\"他的声音变得低沉，\"这也是为什么天机录的历代传承者，最终都落得悲剧收场。\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_008",
+        "content": "陈机的眼神微微一凝。他想起了失踪的妹妹陈念，想起了那个被圣宗作为「天命锁钥」带走的少女。若他改写命运的反噬落在她身上……一股前所未有的怒火在胸腔中燃烧。但他很快压下情绪，嘴角反而勾起一抹冷笑。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_009",
+        "character_id": "char_chenji",
+        "content": "既然如此——\"陈机的声音冰冷，\"那我就改写一个凌渊的命运节点，看看这反噬究竟有多可怕。他再次凝聚神识之笔，这次不再犹豫，直接刺向那条黑色命运线上最关键的那个节点——追杀成功的瞬间。",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_010",
+        "content": "金光闪烁，陈机感觉自己体内有什么东西正在被抽离。不是天命值，不是寿元，而是更深层的东西——他的命运轨迹正在被强行扭曲。那种感觉就像是有人在他的灵魂上刻下了一道永远无法愈合的伤疤。痛楚、灼热、撕裂，三种感觉同时袭来，让他几乎无法呼吸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0718_choice_002",
+        "prompt": "在改写命运的关键时刻，陈机感受到剧烈的反噬，他该如何调整策略？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "全力承受",
+            "text": "全力承受",
+            "description": "咬牙承受全部反噬，确保改写成功",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "十年寿元",
+            "visible_reward": "彻底改变凌渊追杀命运",
+            "risk_hint": "可能元气大伤",
+            "process_label": "硬抗命运反噬",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -150
+              },
+              {
+                "stat": "战力",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0718_result_全力承受_001",
+                  "content": "陈机咬紧牙关，任由那股撕裂灵魂的痛楚蔓延全身。他的头发在那一瞬间白了几根，脸上的皮肤也出现了细微的皱纹。但那条黑色的命运线——断了。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "转移反噬",
+            "text": "转移反噬",
+            "description": "尝试将部分反噬转移到其他物品或替身之上",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗珍贵材料",
+            "visible_reward": "减少自身伤害",
+            "risk_hint": "可能转移不完全",
+            "process_label": "巧妙规避反噬",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -100
+              },
+              {
+                "stat": "财富",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0718_result_转移反噬_001",
+                  "content": "陈机从储物袋中取出一枚早已准备好的替身符，这是他多年前花费巨资从散修手中购得。将部分反噬导入其中，替身符瞬间化为飞灰，他感受到的压力顿时减轻了大半。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_012",
+        "content": "当金光散去，陈机发现自己重新回到了识海之中。那条曾经紧缠着他的黑色命运线已经支离破碎，但并未完全消失——它正在以一种诡异的方式重组，从追杀变成了……迷惘。凌渊的命运轨迹，从此多了一个永远无法解开的谜团。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "就在这时，天道之眼的声音再次响起，带着一丝难以察觉的赞许：\"很好，你已经证明了资格。从今日起，命运书写者的能力将完全向你开放。但别忘了——你改写的每一个命运，都将在未来某一天，以某种方式回到你身边。\"",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_014",
+        "content": "陈机缓缓睁开眼睛，发现自己依然站在原地，但周围的一切都变了。他能看见空气中流动的命运丝线，能听见天道运转的低语。那枚弑神血契已经消失，取而代之的是一道金色印记，烙印在他的神识深处——那是命运书写者的证明。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_015",
+        "character_id": "char_chenji",
+        "content": "陈机低头看着自己的双手，感受着体内那股前所未有的力量。他的嘴角缓缓上扬，露出一个危险的笑容：\"凌渊，你追杀我的命运已经被我改写了。接下来，就让你好好尝尝……命运被他人操控的滋味吧。\"他的声音冰冷而自信。",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_016",
+        "content": "与此同时，千里之外的天青宗禁地之中。凌渊正在闭目修炼，突然一口鲜血喷出，整个人猛然睁眼。他的眼中充满了不可置信——就在刚才，他发现自己追杀陈机的命运线……断了。不是被阻挡，不是被转移，而是直接……消失了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_017",
+        "character_id": "char_lingyuan",
+        "content": "不可能！\"凌渊的声音带着颤抖，\"天机录的改写之力已经失传万年，怎么可能……\"他猛然起身，周身灵力狂涌，将方圆数丈内的物品尽数震碎。但无论他如何感知，都无法找到那条被改写的命运线的去向。它就像是被什么东西……彻底抹去了。",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_018",
+        "content": "而在识海深处，墨先生的声音再次响起，这次带着几分郑重：\"小子，你已经踏上了这条路，就没有回头的余地了。记住，命运书写者的每一次落笔，都要慎之又慎。今日你改写了凌渊的命运，明日便会有新的因果找上门来。\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0718_019",
+        "content": "陈机点了点头，将墨先生的话牢牢记在心中。他抬起头，望向远方天青宗的方向，眼神中闪烁着危险的光芒。凌渊的追杀暂时被瓦解，但这只是开始。他还有更多的布局要完成——陈念的下落、太虚宗的阴谋、天道之眼的真正目的……一切才刚刚拉开序幕。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0718_020",
+        "character_id": "char_chenji",
+        "content": "他轻声自语，声音里带着几分期待：\"命运书写者……有意思。既然上天给了我改写命运的能力，那我就让这天下，都按我的棋局来走。\"他的笑容里带着疯狂与冷静交织的光芒，那是属于陈机的，真正的面目。",
+        "emotion": "疯狂"
+      }
+    }
+  ]
+}

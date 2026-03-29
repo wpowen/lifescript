@@ -1,0 +1,451 @@
+{
+  "id": "天机录_ch0236",
+  "book_id": "天机录",
+  "number": 236,
+  "title": "Decisive Moment of Fate",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji turned to leave, a blood-red eye tore open in the sky—the projection of the Heavenly Eye, gazing upon this battlefield from a perspective beyond mortal ken.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0236_001",
+        "content": "Sand and dust filled the heavens, the dying sun as red as blood.\n\nChen Ji stood at the center of the Arena Platform, his robes billowing wildly in the fierce wind. Across from him, a black figure slowly approached, each step shattering the blue stone tiles beneath his feet, cracks spreading outward like a spider's web. It was the Demonic Path commander—a being shrouded in black mist, known only by the name 'Night Asura,' whose true face no one had ever seen.\n\n\"A waste from the Tianqing Sect?\" A hoarse laugh echoed from within the black mist. \"What makes you think you have the right to stand before me?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_002",
+        "character_id": "char_chenji",
+        "content": "\"With my will to stand here.\"",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_003",
+        "content": "Chen Ji's voice was not loud, yet it clearly reached every ear present. Murmurs immediately broke out across the viewing galleries—how could this waste of a servant dare respond to the Demonic Path commander with such composure?\n\nHowever, in the next moment, everyone froze.\n\nThe black mist slowly dissipated, revealing the Demonic Path commander's true face. It was a young face, with sword-like brows and star-bright eyes, a well-defined轮廓... bearing a startling seven-point resemblance to the faded portrait in Chen Ji's memory."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_004",
+        "character_id": "char_chenji",
+        "content": "(Pupils contracting sharply) This is...",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_005",
+        "content": "Chen Ji's breath hitched for an instant. Fragments of the Tianji Record Fragment's entries flashed through his mind—Chen Xuan, his master, the previous generation's heir of Tianqing Sect, who mysteriously vanished three hundred years ago. And this face before him was precisely a younger version of Chen Xuan.\n\n\"What?\" The Demonic Path commander's lips curved into a mocking arc. \"Surprised to see this face?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_006",
+        "character_id": "char_chenji",
+        "content": "\"Who are you?\" Chen Ji's voice remained calm, only his clenched fists betraying a hint of his inner turmoil.",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Who am I?\" The Demonic Path commander burst into laughter, laughter tinged with indescribable sorrow. \"I am Chen Xuan—or rather, his failed half!\"",
+        "emotion": "癫狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_008",
+        "content": "These words struck Chen Ji's heart like a thunderbolt.\n\nThree hundred years ago, when the Tianji Record chose its successor, it did not select Chen Xuan, the strongest of his generation, but another person. Chen Xuan consequently fell to the Demonic Path, completely breaking with the Tianji Record, and was ultimately sealed by the combined forces of three major sects. Yet no one knew that what was sealed was only Chen Xuan's physical body—his other half of the soul had parasitized within the Demonic Path commander!\n\n\"Are you Chen Xuan's... brother?\" Chen Ji's voice turned somewhat hoarse.\n\n\"No.\" The Demonic Path commander—Chen Xuan's other half—slowly shook his head. \"I am his shadow, the curse he can never escape.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0236_choice_01",
+        "prompt": "With the truth of his bloodline laid bare, Chen Ji must make a choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0236_opt_01a",
+            "text": "Face the Truth Directly",
+            "description": "Since he is Chen Xuan's other half, he shall be treated with the courtesy owed to a master. Whatever happened in the past, blood ties cannot be severed.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Endure the Psychological Shock",
+            "visible_reward": "Unlock Bloodline Resonance",
+            "risk_hint": "Risk of Being Exploited for Emotional Weakness",
+            "process_label": "以礼相待",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0236_result_opt01a_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Since he is master's other half, he is also Chen Ji's elder.\"",
+                  "emotion": "郑重"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0236_result_opt01a_2",
+                  "content": "Chen Ji performed a formal bow, his posture impeccable. It was the first time he openly acknowledged this blood connection before the public, standing as Chen Xuan's inheritor."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉共鸣"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0236_opt_01b",
+            "text": "Cold Standoff",
+            "description": "Regardless of the truth, this is a battlefield, not a reunion hall. Suppress emotions and face battle with the coldest composure.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Suppress Emotional Fluctuations",
+            "visible_reward": "Battle Mode Fully Activated",
+            "risk_hint": "Risk of Missing Hidden Information",
+            "process_label": "冷眼相对",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0236_result_opt01b_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Xuan is dead. What happened in the past cannot be investigated.\"",
+                  "emotion": "冷漠"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0236_result_opt01b_2",
+                  "content": "Chen Ji's gaze suddenly chilled. He pressed all emotions deep into his heart, his eyes containing only cold battle intent. The surrounding temperature seemed to drop several degrees."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "冷血战意"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_009",
+        "content": "\"Enough!\" The Demonic Path commander suddenly raised his hand, and black demonic energy transformed into thousands of blades, sweeping toward Chen Ji like a tide. \"I need neither your pity nor your acknowledgment!\"\n\nChen Ji sidestepped, several streams of demonic energy grazing past his sleeves, tearing the fabric. His movements flowed like clouds and water—appearing狼狈 yet precisely evading all vital points.\n\n\"When master chose the Tianji Record, it was for all living beings.\" Chen Ji's voice rang out through the storm. \"If you truly are his other half, you should understand the meaning of that choice.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"All living beings?\" The Demonic Path commander grinned savagely. \"Do those ants qualify as all living beings?\"",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_011",
+        "content": "He pressed both palms together, and the demonic energy between heaven and earth frantically gathered, condensing into a massive illusory figure behind him. That phantom was indistinct, yet exuded an suffocating pressure—an existence beyond the Void Refining realm, a domain mortal practitioners could never reach.\n\n\"This power...\" Chen Ji's pupils constricted.\n\n\"Feel it now?\" The Demonic Path commander's voice carried madness. \"This is the power I drew from the seal after three hundred years of imprisonment by the Tianji Record! It should have belonged to Chen Xuan, to the Tianji Record! Now, it belongs to me!\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_012",
+        "character_id": "char_chenji",
+        "content": "\"So that's how it is.\" Chen Ji murmured, a glimmer of understanding flickering in his eyes. \"You are not merely Chen Xuan's other half—you are also a piece on the board set by the Heavenly Eye.\"",
+        "emotion": "洞悉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_013",
+        "content": "At these words, the Demonic Path commander's movements halted for an instant. It was merely a fleeting moment of rigidity, yet it was enough for Chen Ji to confirm his speculation.\n\n\"The Tianji Record chose Chen Xuan to oppose the Heavenly Eye.\" Chen Ji spoke slowly. \"Yet you were sealed for three hundred years and appear today—without the Heavenly Eye's orchestration behind the scenes, I refuse to believe it.\"\n\nUpon the Arena Platform, the winds and clouds changed color. The Demonic Path commander's expression彻底阴沉下来, his eyes flickering with dangerous light.\n\n\"You know too much.\" He spoke softly. \"Therefore—you must die here.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0236_choice_02",
+        "prompt": "The Moment of Bloodline Power Awakening",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0236_opt_02a",
+            "text": "Activate the Tianji Record",
+            "description": "The Tianji Record was his true trump card. Before the Destiny Lock Key, the fragments of the Tianji Record exhibited unprecedented resonance—a frontal collision between two instruments of destiny.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Consume 10 Heavenly Fate points",
+            "visible_reward": "Tianji Record Completeness +15%",
+            "risk_hint": "Massive Heavenly Fate consumption may lead to backlash",
+            "process_label": "天机现世",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0236_result_opt02a_1",
+                  "content": "The golden patterns at Chen Ji's brow center suddenly illuminated, and that long-sealed fragment of the Tianji Record emerged from his Mental Sea, floating before his chest, radiating warm yet mysterious light."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0236_result_opt02a_2",
+                  "character_id": "char_chenji",
+                  "content": "\"The Tianji Record...\" For the first time, the Demonic Path commander's voice carried a tremor. \"It actually chose you!\"",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机显世"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0236_opt_02b",
+            "text": "Bloodline Resonance",
+            "description": "Since the enemy claims to be Chen Xuan's other half, he would suppress him with the bloodline of Chen Xuan's successor. Bloodline Resonance could push Chen Ji's power to its peak in a short time.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Risk of Bloodline Counter-Backlash",
+            "visible_reward": "Bloodline Purity Enhanced",
+            "risk_hint": "Risk of Exposing More Secrets of His Origin",
+            "process_label": "血脉压制",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 20
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0236_result_opt02b_1",
+                  "content": "Chen Ji bit through his tongue and spewed a mouthful of refined blood onto his palm. The blood did not fall to the ground but floated upward, transforming into an enigmatic blood-colored rune."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0236_result_opt02b_2",
+                  "character_id": "char_chenji",
+                  "content": "\"With blood as guide, with soul as covenant—Chen bloodline, heed my command!\"",
+                  "emotion": "激昂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉共鸣"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_014",
+        "content": "At the instant the two forces were about to collide, the world suddenly fell silent.\n\nThe Tianji Record Fragment before Chen Ji's chest and the black power emanating from the Demonic Path commander erupted simultaneously. The two forces met in mid-air, yet did not produce an explosion—they entwined tightly together, like brothers separated for years finally reuniting.\n\n\"This is...\" The Demonic Path commander's eyes widened.\n\nChen Ji also froze. He felt an unprecedented power surging within him—the resonance born from both the Tianji Record and the Destiny Lock Key activating simultaneously—a power beyond conventional understanding.\n\nGolden light intertwined with black mist, forming a brilliant pillar of radiance that shot straight through the clouds. The entire Arena Platform trembled under this force, cracks spreading in all directions from the ground.\n\n\"The Destiny Lock Key... so this is what it means!\" Chen Ji murmured, a glimmer of understanding flashing in his eyes. The Destiny Lock Key was not merely a key—it was the other half of the Tianji Record—the key to unlocking the ultimate prophecy."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0236_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Impossible!\" The Demonic Path commander howled. \"The Destiny Lock Key is mine! I brought it out of the seal!\"",
+        "emotion": "疯狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_016",
+        "content": "\"Is that so?\" Chen Ji's voice was calm and certain. \"Then why did it choose to resonate with me at this moment and place?\"\n\nThe golden light blazed forth, completely suppressing the Demonic Path commander's black mist. Within this radiance, Chen Ji's figure appeared incomparably majestic, while the Demonic Path commander—or rather, Chen Xuan's other half—resembled a beast trapped in a cage, desperate and frenzied.\n\n\"You are merely a piece being used.\" Chen Ji spoke word by word. \"The Heavenly Eye chose you, not to grant you power, but to make you the key to opening the Tianji Record.\"\n\nThese words were like a blade, stabbing viciously into the Demonic Path commander's heart. His body convulsed violently, his expression shifting continuously between rage and fear.\n\n\"No... impossible...\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0236_choice_03",
+        "prompt": "Final Choice",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0236_opt_03a",
+            "text": "Root Out Completely",
+            "description": "Since the enemy has already been manipulated by the Heavenly Eye, he must be utterly destroyed. Otherwise, leaving future troubles is endless.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Bear the Name of Executioner",
+            "visible_reward": "Completely Eliminate the Destiny Lock Key Hidden Danger",
+            "risk_hint": "May Provoke Full-Scale Demonic Path Retaliation",
+            "process_label": "绝杀",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0236_result_opt03a_1",
+                  "character_id": "char_chenji",
+                  "content": "\"It's over.\"",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0236_result_opt03a_2",
+                  "content": "Chen Ji raised his hand, and golden light transformed into an illusory sword, striking directly toward the Demonic Path commander's heart. This strike held no fancy moves, only pure power and speed."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "绝杀"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0236_opt_03b",
+            "text": "Spare His Life",
+            "description": "Though the enemy is a foe, he is also Chen Xuan's other half. Spare his life, perhaps more secrets about the Heavenly Eye can be learned from him.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Risk of Future Counter-Backlash",
+            "visible_reward": "Obtain Clues About the Heavenly Eye",
+            "risk_hint": "Leave a Potential Threat",
+            "process_label": "宽恕",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0236_result_opt03b_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Your life, I shall暂时记下.\"",
+                  "emotion": "淡漠"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0236_result_opt03b_2",
+                  "content": "Chen Ji withdrew his power, and the golden light gradually faded. The Demonic Path commander collapsed to the ground, disbelief filling his eyes. Silence reigned across the viewing galleries—no one had expected this seemingly unwinnable battle to end in such a manner."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "宽恕"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_017",
+        "content": "Chen Ji's sword stopped three inches from the Demonic Path commander's throat.\n\nGolden light收敛, wind and sand gradually subsided. The Arena Platform was a mess of wreckage, cracks everywhere, yet no one else lay fallen.\n\n\"Why?\" The Demonic Path commander—Chen Xuan's other half—lifted his head with difficulty, his voice hoarse. \"Why don't you kill me?\"\n\nChen Ji did not answer. He simply gazed at him quietly. Those eyes were deep as an abyss, as if gazing upon some distant past.\n\n\"You are Chen Xuan's other half.\" After a long silence, Chen Ji finally spoke. \"He chose the Tianji Record, chose all living beings, yet chose to abandon you alone. This regret, I cannot替他弥补. But at least...\"\n\nHe paused, his voice low: \"At least I can let you live, so you can ask him yourself—whether that choice, back then, was worth it.\"\n\nThe Demonic Path commander's body shuddered violently, complex light flickering in his eyes."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_018",
+        "content": "\"Chen Ji!\"\n\nA clear voice rang out from the viewing galleries. Chen Ji turned to see Su Qingyao standing at the forefront of the crowd, her face filled with worry. Her hands clutched her clothes tightly, her knuckles white from the force.\n\n\"I'm fine.\" Chen Ji nodded to her, the corners of his mouth slightly lifting.\n\nCommotion began stirring among the crowd around the Arena Platform. The Demonic Path commander stumbled to his feet. He glanced at Chen Ji, the killing intent in his eyes having receded, replaced by something complex and indefinable.\n\n\"This match, this seat has lost.\" His voice was hoarse. \"But this does not mean the end—the Heavenly Eye will not let you go, Chen Ji.\"\n\nWith that, he turned and vanished into the black mist, leaving only a ruined Arena Platform and countless shocked gazes behind."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0236_019",
+        "content": "Chen Ji stood with hands clasped behind his back, watching that black figure depart.\n\nThe lingering glow of the setting sun bathed him, stretching his shadow long. At this moment, he was no longer the ridiculed waste servant, but the true inheritor of the Tianji Record—a strong one who dared face fate and rewrite destiny.\n\nYet, in the depths of his Mental Sea, that fragment of the Tianji Record was trembling slightly. An unprecedented sense of crisis surged through his heart—the Heavenly Eye had already taken notice of him.\n\nFrom this day forward, he would become the sole target of that eye.\n\n\"Come then.\" Chen Ji murmured softly, a trace of barely perceptible laughter in his voice. \"Let me see just how capable this Heavenly Eye truly is.\"\n\nJust as he turned to leave, a blood-red eye tore open in the sky—the projection of the Heavenly Eye, gazing upon this battlefield from a perspective beyond mortal ken."
+      }
+    }
+  ]
+}

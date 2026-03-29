@@ -1,0 +1,563 @@
+{
+  "id": "天机录_ch0821",
+  "book_id": "天机录",
+  "number": 821,
+  "title": "皇朝使者",
+  "is_paid": true,
+  "next_chapter_hook": "皇朝使者狼狈离开，但陈机知道这只是更大风暴的前奏——天机录的气息已经暴露，更危险的存在正在暗中注视。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0821_001",
+        "content": "天青宗议事大殿，晨雾尚未散尽。一队身着玄金纹袍的使者阵列于殿前，为首之人手持皇令，傲然立于玉阶之下。韩烈站在人群中，目光复杂地看着这一切，他昨日才与陈机有过交锋，此刻却在看这场好戏。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_002",
+        "character_id": "char_hanlie",
+        "content": "（低声自语）这废物到底在打什么主意……",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_003",
+        "content": "陈机缓步自侧殿而出，身着素白弟子服，面容平静得近乎木然。他\"死\"过一次的事已在宗门传开，此刻以\"还魂\"之身现身，落在外人眼中不过是回光返照般的诡异。而那些皇朝使者显然不知其中玄机，只当他是个将死之人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_004",
+        "character_id": "char_chenji",
+        "content": "（微微拱手）使者大人远道而来，陈机有失远迎。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_005",
+        "content": "皇朝使者冷哼一声，玄金令旗高高举起，刺目的金光在大殿中炸开。\"陈机，你不过一介废材，窃据太子太师之位已是欺君罔上！今日奉旨意——交出天机录残页，饶你全尸！\"他的声音如金石相击，满是倨傲。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_006",
+        "character_id": "char_chenji",
+        "content": "（轻笑）饶我全尸？使者大人好大的威风。只是不知这道旨意，是哪位贵人的意思？",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_007",
+        "content": "使者的笑容僵了一瞬，旋即恢复傲慢。\"你一个将死之人，问这些作甚？天机录乃上古禁物，岂是你能染指的！速速交出，尚可保全你陈家最后一点颜面。\"他的目光扫过殿中众人，满是不屑。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_01",
+        "prompt": "面对皇朝使者的威胁，陈机选择：",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c1_打脸",
+            "text": "当场揭底打脸",
+            "description": "直接揭露使者背后与魔道圣宗的隐秘交易，让其当众出丑",
+            "satisfaction_type": "打脸",
+            "visible_cost": "暴露部分情报",
+            "visible_reward": "使者颜面尽失",
+            "risk_hint": "可能引起更高层关注",
+            "process_label": "冷笑一声",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c1_001",
+                  "content": "陈机不紧不慢地整了整衣袖，嘴角噙着一抹意味深长的笑。\"使者大人说的隐秘交易，是指您去年在幽州与魔道圣宗三护法的会面吗？还是您府上那位'特殊客人'至今仍在养伤？\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c1_002",
+                  "character_id": "char_chenji",
+                  "content": "（声音骤然转冷）我若真只是个将死之人，大人何须如此急切？",
+                  "emotion": "凌压"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_智取",
+            "text": "搬出太子太师身份",
+            "description": "以太子太师的官方身份反驳，使者无权在宗门领地执法",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "消耗政治资本",
+            "visible_reward": "使者进退两难",
+            "risk_hint": "后续可能被更高层追究",
+            "process_label": "淡淡开口",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_001",
+                  "content": "陈机负手而立，目光平静地扫过那面玄金令旗。\"太子太师一职，由陛下亲封，使者手持的可是同样的圣旨？若无同等效力，这令旗在天青宗……不过是一块废铁。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c2_002",
+                  "character_id": "char_chenji",
+                  "content": "（微微一笑）大人若想在此执法，不如先与天青宗诸位长老打个招呼？",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_威慑",
+            "text": "展示天机录之力",
+            "description": "小试牛刀展示预见能力，令使者意识到他不是能惹的存在",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "使者彻底胆寒",
+            "risk_hint": "暴露能力可能招来更大觊觎",
+            "process_label": "指尖微动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_001",
+                  "content": "陈机缓缓抬手，指尖亮起一点幽光。\"使者大人三息之后会打喷嚏，五息之后您身后左边第二人会踏空台阶，七息之后……\"他顿了顿，\"您腰间的玉佩会裂开一道缝。\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_002",
+                  "character_id": "char_chenji",
+                  "content": "（收回手）天机录的用处，大人现在明白了吗？",
+                  "emotion": "淡漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_008",
+        "content": "殿中霎时寂静，使者的脸色瞬间惨白。他下意识摸向腰间玉佩，那块价值千金的暖玉上，不知何时已多了一道细细的裂纹。\"你……你这是妖术！\"他的声音发颤，却再无先前底气。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_009",
+        "character_id": "char_hanlie",
+        "content": "（倒吸一口凉气，低声）这废物……他怎么做到的？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_010",
+        "content": "陈机负手而立，目光如古井无波。\"妖术？天机录乃上古至宝，能窥三时辰之天机。使者大人方才问我为何敢窃据此位——现在明白了吗？不是窃据，是我配得上。\"他的声音不高，却字字如刀。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_011",
+        "character_id": "char_chenji",
+        "content": "（缓步上前）至于您背后那位贵人……我劝大人回去转告一声，天机录择主，从来不问出身贵贱。若他执意要夺……我倒想看看，他有几条命可以赌。",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_02",
+        "prompt": "使者狼狈后退，陈机决定：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c2_1_穷追猛打",
+            "text": "趁胜追击逼供",
+            "description": "进一步施压，逼使者交代幕后主使身份",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "彻底得罪皇朝",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "可能引发皇朝报复",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_1_001",
+                  "content": "陈机又近一步，使者连连后退，背脊已被玉阶抵住。\"大人不如说说，是谁让您来趟这浑水的？我陈机记性好，日后好去拜访。\"他的笑意不达眼底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_2_见好就收",
+            "text": "给个台阶下",
+            "description": "放使者离开，但留下意味深长的警告",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过情报",
+            "visible_reward": "在皇朝埋下暗棋",
+            "risk_hint": "对方可能卷土重来",
+            "process_label": "侧身让路",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_2_001",
+                  "content": "陈机忽然后退一步，负手而立。\"罢了，使者大人远道而来，我陈机不是不懂规矩的人。今日之事，就当给大人一个教训。回去告诉您主子——天机录在我手中一日，便一日不是他能觊觎之物。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_012",
+        "content": "使者连滚带爬地退出大殿，玄金令旗都顾不上拿。殿中哄笑声四起，那些原本轻视陈机的弟子们面面相觑，看向他的目光中多了几分说不清道不明的敬畏。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_013",
+        "character_id": "char_hanlie",
+        "content": "（咬牙切齿，低声）扮猪吃虎……又是这套！",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_014",
+        "content": "陈机缓缓转身，目光不经意间扫过韩烈。那一瞬间的对视，韩烈竟感到一股彻骨的寒意——这个\"废物\"的眼神里，分明写满了不屑。不是对使者的不屑，而是对在场所有人的不屑。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_03",
+        "prompt": "韩烈正要上前质问，陈机：",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c3_1_无视离开",
+            "text": "直接无视离开",
+            "description": "像看空气一样从韩烈身边走过，彻底的无视比任何嘲讽都更羞辱",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能激化矛盾",
+            "visible_reward": "韩烈颜面扫地",
+            "risk_hint": "韩烈可能当场发难",
+            "process_label": "转身离去",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_1_001",
+                  "content": "陈机甚至没有多看韩烈一眼，只是整了整衣袖，缓步走向侧殿。他的背影在众人眼中逐渐远去，留下一殿的沉默和韩烈铁青的脸。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_2_嘴毒补刀",
+            "text": "走前嘴毒一句",
+            "description": "临走前轻飘飘一句话，彻底点燃韩烈的怒火",
+            "satisfaction_type": "打脸",
+            "visible_cost": "彻底激怒韩烈",
+            "visible_reward": "精神攻击拉满",
+            "risk_hint": "日后韩烈会更针对",
+            "process_label": "边走边说",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_2_001",
+                  "character_id": "char_chenji",
+                  "content": "（脚步不停）韩师兄，上次切磋承让了。改日得空，再向师兄请教——放心，我不会用天机录。",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_3_意味深长",
+            "text": "留下一句预言",
+            "description": "用天机录的能力给韩烈一个\"善意提醒\"，让他寝食难安",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "再消耗5点天命值",
+            "visible_reward": "韩烈陷入恐惧",
+            "risk_hint": "天命值告急",
+            "process_label": "驻足侧头",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_3_001",
+                  "character_id": "char_chenji",
+                  "content": "（驻足侧头）韩师兄，三日之内不要去后山禁地。若是去了……记得带够疗伤丹。",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_015",
+        "content": "殿外晨雾渐散，阳光洒落天青峰巅。陈机踏出大殿的那一刻，嘴角微微上扬——今日这一局，他赢得漂亮。只是在那笑容深处，眸底深处闪过一丝凝重。天机录的气息，终究是暴露了。那个在暗处注视一切的存在，恐怕已经察觉到了什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_016",
+        "content": "他在心中默默计算：天命值又消耗了十点，如今只剩不足百日之数。下一次动用天机录，必须更加谨慎。而那个所谓的\"皇朝贵人\"，显然只是台前的棋子，真正的博弈，才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_017",
+        "character_id": "char_moxiansheng",
+        "content": "（天机录残页中传来苍老的声音）做得好，但你的时间不多了。皇朝背后站着的，可不止是凡人。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_018",
+        "content": "陈机没有回应，只是抬头望向天际。在那云层之上，仿佛有一只无形的眼睛正注视着他。天道之眼——那个最终的大敌，此刻是否也在暗中注视着他的每一步棋？风吹过天青峰，带走了使者狼狈的脚步声，却带不走弥漫在空气中的那股山雨欲来的压迫感。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_019",
+        "content": "今日一战，他让所有人看到了——陈机，不是废物。只是他们都不知道，这场\"表演\"背后，他已算计好了多少步棋。皇朝使者狼狈离开，但陈机知道这只是更大风暴的前奏——天机录的气息已经暴露，更危险的存在正在暗中注视。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_020",
+        "content": "而在某处看不见的虚空中，一道超越人类理解的存在微微颤动。天道之眼的触角，正悄然伸向这个胆敢挑衅它棋局的蝼蚁。命运的齿轮，已经开始转动。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

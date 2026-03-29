@@ -1,0 +1,201 @@
+{
+  "id": "天机录_ch0101",
+  "book_id": "天机录",
+  "number": 101,
+  "title": "Desperate Counterattack",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ji turned and left, a trace of determination flashed across Zhang Shen's twisted face—the next moment, a sharp sword light slashed through the air.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0101_001",
+        "content": "In the Tianqing Sect Council Hall, above the dome, the Heavenly Eye formed by nine spiritual patterns still gazed down upon all living beings. Within that illusory golden vertical pupil, there was no emotional fluctuation, only cold indifference from above, as if in its eyes, all things in the world were mere ants. Chen Ji stood in the center of the hall, surrounded by a dark mass of people. The mocking smile of that transcendent will still lingered in his mind like a venomous snake coiled in the depths of his consciousness."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0101_002",
+        "character_id": "char_lingyuan",
+        "content": "The Fifth Elder stepped forward, waving his sleeve, his voice like thunder: 'Everyone look! The Heavenly Eye has descended personally—this boy has been marked as a traitor! According to sect rules, he shall suffer the punishment of heavenly thunder consuming his body, his cultivation abolished, and be expelled from the sect!'",
+        "emotion": "阴狠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_003",
+        "content": "The hall erupted in an uproar. Whispers rippled through the crowd, countless gazes stabbed at Chen Ji like knives. Some relished schadenfreude, others shook their heads in lamentation, and more displayed covert satisfaction—this废物般的杂役弟子，终于要完了。The Fifth Elder surveyed his surroundings, noting the absence of dissent, his sinister smile deepening."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0101_004",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan spoke slowly, his aged voice reverberating through the hall: 'Chen Ji, do you know your crime? The Heavenly Eye never appears without reason. Since you have been marked as a traitor, you have become an enemy of heaven. Those who oppose heaven—' he paused, a barely perceptible gleam of satisfaction flickering in his eyes, 'are destined for death.'",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_005",
+        "content": "Chen Ji slowly lifted his gaze, his eyes calm as still water, sweeping across the Fifth Elder before settling on Ling Yuan. He caught the fleeting resentment in the old sect master's eyes, understanding that this seemingly benevolent elder had long sought his removal. The Heavenly Eye's mark merely provided a respectable justification."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0101_choice_001",
+        "prompt": "Under this dual pressure, Chen Ji had to make a choice. Should he activate the Tianji Record's complete foresight, trading his Heavenly Fate Value for a chance to break the situation, or should he endure silently and seek another way?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0101_opt_001",
+            "text": "Activate the Tianji Record's Full Power",
+            "description": "Burn 15 Heavenly Fate points, activate the Tianji Record's complete foresight, and perceive all possibilities within a quarter-hour",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Heavenly Fate -15",
+            "visible_reward": "Foresight of all changes within a quarter-hour",
+            "risk_hint": "Heavenly Fate was already nearly depleted—this move might shake the very foundation",
+            "process_label": "激活天机录",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0101_result_opt001_001",
+                  "character_id": "char_chenji",
+                  "content": "A resolute light flashed in Chen Ji's eyes as he silently recited the incantation. The Tianji Record Fragment on his chest grew warm, a sign that the dormant primordial power was awakening.",
+                  "emotion": "决然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录全开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0101_opt_002",
+            "text": "Endure and Wait for the Right Moment",
+            "description": "Temporarily bow and admit fault, preserve strength, wait for the enemy to reveal weaknesses before counterattacking",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reputation -20",
+            "visible_reward": "Preserve Heavenly Fate, avoid revealing strength",
+            "risk_hint": "May be forced to suffer punishment on the spot, life in grave danger",
+            "process_label": "隐忍蓄势",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0101_result_opt002_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji lowered his eyes, hiding the sharp gleam within. He decided to first show weakness—a wise man doesn't fight a losing battle. As long as the mountain remains, there will be firewood.",
+                  "emotion": "隐忍"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "隐忍模式"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_006",
+        "content": "Just then, a crisp and authoritative voice rang from outside the hall: 'Hold!' Everyone turned to see Su Qingyao, dressed in white, riding a sword through the air. She landed at Chen Ji's side, her gaze cold as ice as it swept over the Fifth Elder and Ling Yuan. Her voice was frigid: 'This matter hasn't been investigated—how can you condemn someone to death based solely on the Heavenly Eye's mark?'",
+        "emotion": "护短"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0101_007",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan narrowed his eyes, his tone neither warm nor cold: 'Little Su, what brings you here? This is sect business. As an Inner Disciple, you have no right to comment.' Su Qingyao did not back down, her voice cold: 'Though Chen Ji is a servant, he is still a disciple of Tianqing Sect. As the Inner Disciple Senior Fellow, I have the duty to protect fellow sect members.'",
+        "emotion": "对抗"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_008",
+        "content": "The Fifth Elder snorted coldly: 'Protect fellow sect members? Little Su, you're not on good terms with this废物—could it be you wish to share his crime?' Chen Ji's heart warmed slightly, but he knew Su Qingyao's appearance would only complicate the situation. He had to break the deadlock in the shortest time possible, or she would be dragged down too. The power of the Tianji Record churned within him, urging him to make a decision."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_009",
+        "content": "The Heavenly Eye's golden vertical pupil suddenly froze, an invisible force pressing down on Chen Ji. That was the warning of heaven's will, as if mocking his struggles. The transcendent mocking laughter rang in his mind once more—'A flea trying to shake a tree, pathetically overestimating oneself.' He clenched his fists until his knuckles turned white. At this moment, he decided to no longer endure."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_010",
+        "content": "The Tianji Record Fragment suddenly burst into dazzling golden light, the sign that the dormant primordial power was being completely awakened. The golden light broke through Chen Ji's fontanelle, shooting straight into the clouds, tearing a crack beside the Heavenly Eye's golden vertical pupil. An unprecedented power exploded from within Chen Ji—that was—foresight."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_011",
+        "content": "Chen Ji felt his vision blur, countless images flickering through his mind like a carousel. Within a quarter-hour, all possible scenarios played out clearly before him—when the Fifth Elder would strike, when Ling Yuan would act, who would scheme in the shadows, even the flow of spiritual energy in the air was visible. He found the key to breaking the deadlock: the Fifth Elder had a communication Jade Slip hidden in his sleeve, contacting external forces."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_012",
+        "content": "Chen Ji took a deep breath, his eyes flashing with sharp light. He猛地 lifted his head, his gaze like a blade, piercing directly at the Fifth Elder. A mocking arc curved at the corner of his mouth as he spoke, his voice not loud but clearly reaching everyone's ears: 'Fifth Elder, the communication Jade Slip in your sleeve—who are you planning to inform? Xuanwu Sect? Or... the Holy Sect of the Demonic Path?'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0101_013",
+        "character_id": "char_lingyuan",
+        "content": "The Fifth Elder's face changed dramatically, instinctively covering his sleeve: 'You... you're making false accusations!' Chen Ji coldly smiled, his finger flicking as a burst of spiritual energy shot out, striking the Jade Slip from the Fifth Elder's sleeve. The Jade Slip exploded in mid-air, countless communication runes scattering everywhere, prominently displaying—'Tianqing Sect has changed, come quickly.'",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_014",
+        "content": "The hall fell into deathly silence. Everyone stared blankly at the shattered Jade Slip and the communication runes scattered across the ground. The Fifth Elder's face turned ashen, his lips trembling, unable to utter a single word. A flash of astonishment crossed Ling Yuan's eyes before being hastily concealed, but Chen Ji saw it clearly—the old sect master had no prior knowledge."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_015",
+        "content": "Chen Ji stood with hands clasped behind his back, his gaze moving from the Fifth Elder to sweep across everyone present, finally settling on Ling Yuan. His voice was calm yet carried undeniable authority: 'Do you all understand now? The Heavenly Eye marked me as a traitor, not because I am truly rebellious—but because someone wished to use heaven's name to eliminate this thorn in their eye.' He paused, his tone shifting: 'As for who that person is... I believe everyone here knows the answer.'",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0101_016",
+        "content": "The atmosphere in the hall turned bizarre. Those who had just been indignant, demanding harsh punishment for Chen Ji, now cowered in silence, not daring to meet his gaze. The Fifth Elder collapsed to the ground, his face ashen. He never imagined that his meticulously planned scheme would be exposed before everyone by a废物弟子. Ling Yuan's expression was unreadable; no one could tell what he was thinking. Only the Heavenly Eye's golden vertical pupil still coldly observed everything, as if mocking the foolishness of them all."
+      }
+    }
+  ]
+}

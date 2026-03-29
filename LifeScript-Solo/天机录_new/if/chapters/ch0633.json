@@ -1,0 +1,379 @@
+{
+  "id": "天机录_ch0633",
+  "book_id": "天机录",
+  "number": 633,
+  "title": "绝境逆袭",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机转身欲离开之际，他的脚步骤然停住——身后裂隙边缘的碎石下，半截残碑露出地表，古朴的刻痕在余晖中隐隐泛光，那两个字清晰可辨：天机。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0633_001",
+        "content": "那道熟悉至极的天命波动如同一把利刃，直直刺入陈机神识深处。刹那间，他的瞳孔骤缩，周身气势不由自主地外泄了半分。三年了，他踏遍中州三十六郡，翻遍上古遗迹，为的就是这道气息的主人。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0633_002",
+        "character_id": "char_lingyuan",
+        "content": "陈机，你的废物人设，演得够久了吧？\n\n凌渊的声音阴恻恻地从裂隙另一端传来。他脚踏虚空，灰白道袍在时空乱流中猎猎作响，一双浑浊的老眼此刻却精光四射，\"三年了，老夫倒要看看，你这'杂役弟子'还藏了多少底牌。\"",
+        "emotion": "阴冷得意"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0633_003",
+        "character_id": "char_hanlie",
+        "content": "凌老何必跟他废话！\n\n韩烈的声音如雷霆炸响，他双臂环抱胸前，浑身气血如龙虎盘踞，炼虚境后期的威压毫不掩饰地倾泻而下，\"上次在玄天秘境外被他那点小聪明阴了一手，今日我要亲手将他的废物之名坐实！\"",
+        "emotion": "暴怒战意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_004",
+        "content": "陈机没有回答。他的神识仍在追踪那道若有若无的波动——来自裂隙深处，夹杂在狂暴的时空乱流之间，却偏偏清晰得让他心脏抽痛。那是天命锁钥特有的气息，是陈念，是他的妹妹。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0633_005",
+        "prompt": "三大势力的包围已成合围之势，陈机被逼入裂隙边缘不足三丈的绝地。凌渊、韩烈各据一方，还有一道隐藏在暗处的魔道气息若隐若现。生死关头，他将如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_chenji_01",
+            "text": "正面硬刚",
+            "description": "既然被逼到这份上，那就让他们见识见识什么叫真正的实力。主角光环启动，让他们知道什么叫碾压爽！",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗龙脉核心能量",
+            "visible_reward": "一战成名，三大势力颜面尽失",
+            "risk_hint": "可能暴露过多底牌，引来更高层次的注视",
+            "process_label": "陈机嘴角勾起一抹冷笑",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0633_result_chenji_01_1",
+                  "content": "陈机缓缓抬起头，那双一向平淡如死水的眸子此刻骤然亮起一道刺目的金芒。他的右手缓缓抬起，掌心处，一枚拳头大小的龙形印记正在苏醒，散发着令人心悸的远古气息。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0633_result_chenji_01_2",
+                  "content": "龙脉核心？！\n\n凌渊的脸色骤变，作为曾经的天机录候选传承人，他太清楚那枚印记意味着什么——那是上古龙族的血脉结晶，是能够稳定时空裂隙的禁忌之物。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "龙脉觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_chenji_02",
+            "text": "智取拖延",
+            "description": "以妹妹的气息为饵，先分化瓦解敌方联盟。毕竟凌渊和韩烈并非铁板一块，各有各的算盘。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗更多时间，可能错过救援妹妹的时机",
+            "visible_reward": "不战而屈人之兵，保存实力",
+            "risk_hint": "敌人可能识破计谋，陷入更被动局面",
+            "process_label": "陈机眼中精光一闪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0633_result_chenji_02_1",
+                  "character_id": "char_chenji",
+                  "content": "凌老，韩兄，二位可知这裂隙通往何处？\n\n陈机的声音不疾不徐，甚至带着几分玩味，\"里面可是封印着上古魔祖残躯的禁地。二位联手对付我这一个小小杂役，莫不是想借此机会进入禁地寻宝？\"",
+                  "emotion": "冷静算计"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 300
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_chenji_03",
+            "text": "共命触发",
+            "description": "感知到苏青瑶也在附近，关键时刻呼唤她的「共命」buff，让两人联手对抗强敌。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "提前暴露与苏青瑶的关系，可能引来更多敌人",
+            "visible_reward": "天青宗内门首席的支援，力量倍增",
+            "risk_hint": "苏青瑶可能因此暴露，被宗门问责",
+            "process_label": "陈机望向远处虚空",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0633_result_chenji_03_1",
+                  "character_id": "char_chenji",
+                  "content": "青瑶，出来吧。\n\n陈机淡淡开口，声音不大却清晰地传入在场每个人耳中。片刻后，一道凌厉的剑意从虚空中斩出，苏青瑶的身影如惊鸿般出现在陈机身侧，素手按剑，冷声道：\"谁敢动他？\"",
+                  "emotion": "决绝护短"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命激活"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "魅力",
+              "min": 200
+            },
+            "memory_label": "苏青瑶已与主角建立共命羁绊",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_006",
+        "content": "陈机没有给凌渊太多思考的时间。他的掌心金芒大盛，那枚沉睡千年的龙脉印记在这一刻彻底苏醒。远古的龙吟声从他体内炸响，震得在场所有人耳膜生疼。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_007",
+        "content": "不可能！\n\n凌渊的脸色剧变，他连退数步，眼中满是不可置信，\"龙脉核心乃是上古禁忌之物，你一个筑基期的小辈怎么可能驾驭得了！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0633_008",
+        "character_id": "char_chenji",
+        "content": "谁告诉你我是筑基期的？\n\n陈机嘴角的笑意愈发冰冷，他的气势在这一刻如火山喷发般暴涨。筑基、金丹、元婴、化神、炼虚——五大境界的壁障在他身上如薄纸般层层崩碎，炼虚境巅峰的威压倾泻而出。",
+        "emotion": "冷笑嘲讽"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0633_009",
+        "character_id": "char_hanlie",
+        "content": "你——！\n\n韩烈瞳孔骤缩，他终于意识到眼前这个\"废物\"的可怕。但为时已晚，陈机的右手已经按在了他胸口，一道龙形真气贯穿而入，将他整个人轰飞出去，砸入远处的岩壁之中。",
+        "emotion": "惊骇震怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_010",
+        "content": "一人之力，压三位炼虚！\n\n这一幕让在场所有人都惊呆了。凌渊口吐鲜血，连连后退，而那隐藏在暗处的魔道高手更是吓得直接遁入虚空逃窜。陈机负手而立，龙脉之力在他周身盘旋，宛如神明降世。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0633_011",
+        "prompt": "凌渊重伤败退，但他临走前眼中闪过一丝诡异的光芒，似乎还有后手。陈机面临一个选择：追击彻底灭口，还是先稳住裂隙封印寻找妹妹的下落？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_chenji_04",
+            "text": "追杀凌渊",
+            "description": "斩草除根，不留后患。这个老狐狸今日不除，日后必成大患。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量天命值，且可能错过妹妹的踪迹",
+            "visible_reward": "消除最大隐患，凌渊彻底陨落",
+            "risk_hint": "凌渊可能有保命底牌，反被算计",
+            "process_label": "陈机眼中杀意凛然",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0633_result_chenji_04_1",
+                  "character_id": "char_chenji",
+                  "content": "凌老，慢走。\n\n陈机抬手，一道龙形剑气破空而去。然而就在剑气即将触及凌渊的瞬间，一道莫名的力量将剑气吞噬殆尽。凌渊回头狞笑：\"陈机，你以为老夫没有准备吗？这裂隙之中，可是有那位大人的气息……\"",
+                  "emotion": "阴狠得意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊脱逃"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_chenji_05",
+            "text": "稳封裂隙",
+            "description": "妹妹的气息从裂隙深处传来，封印随时可能崩溃。先救人，再秋后算账。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "放过凌渊，日后可能反扑",
+            "visible_reward": "有机会深入裂隙寻找陈念，揭开更多真相",
+            "risk_hint": "裂隙深处可能有更大危险",
+            "process_label": "陈机收回目光",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0633_result_chenji_05_1",
+                  "content": "陈机深吸一口气，转身面向那道狂暴的时空裂隙。他的双手结出古老印诀，龙脉之力化作一道金色屏障，缓缓覆盖在裂隙边缘。狂暴的乱流在这道屏障前渐渐平息，露出裂隙深处一片幽深的虚空。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_012",
+        "content": "就在陈机全力稳定裂隙封印的瞬间，他的神识猛然一紧——那双超越天道的眼睛，再次出现在了他的感知之中。那是第49号棋子的意志，是天道之眼对他的又一次注视。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_013",
+        "content": "那是一种无法形容的压迫感，仿佛整个天地都在审视着他。陈机感到自己的命运轨迹在那道目光下无所遁形，天机录的每一页都被翻阅、被记录、被算计。他强忍着神识的剧痛，咬牙坚持。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0633_014",
+        "character_id": "char_moxiansheng",
+        "content": "孩子，它在看。\n\n墨先生残魂的声音在陈机识海中响起，苍老而凝重，\"它一直在看。你以为的天命之争，在它眼中不过是棋盘上的厮杀。但记住——\n\n他的声音忽然低沉下去，\"棋子，也有掀翻棋盘的那一天。\"",
+        "emotion": "神秘警示"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_015",
+        "content": "陈机没有回答。他将这句话深深刻入心底，然后猛然加大输出功率。龙脉之力如决堤的洪水般涌出，在裂隙边缘筑起一道固若金汤的封印。那道注视的目光持续了约莫三个呼吸的时间，最终缓缓退去。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_016",
+        "content": "战斗结束了。\n\n韩烈被轰入岩壁生死不知，凌渊带着重伤遁走，隐藏在暗处的魔道高手早已逃得无影无踪。陈机一人之力，压服三位炼虚境高手的消息，将如同长了翅膀一般传遍整个中州。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_017",
+        "content": "但此刻的陈机无心顾及这些。他的全部注意力都集中在裂隙深处那道若有若无的气息上——那是妹妹陈念的天命波动，是他三年来苦苦追寻的线索。封印暂时稳住了，但裂隙深处依然幽深不可测。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_018",
+        "content": "就在陈机准备深入裂隙之际，他的脚步骤然停住。身后，封印边缘的碎石下，半截被尘土掩埋的石碑露出一角。夕阳的余晖洒落，照亮了那斑驳的表面——两个古朴的大字清晰可辨：天机。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_019",
+        "content": "陈机俯身，轻轻拂去石碑上的尘土。石碑的材质非金非玉，却隐隐散发着与他体内天机录残页相似的气息。他心中一动，指尖凝聚灵力，缓缓探向那块残碑——刹那间，一道久远的信息直接灌入他的识海。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0633_020",
+        "content": "天机录，上古预言至宝，共分九卷九十九页。集齐者，可窥天机、改天命、颠覆轮回。而今所存者，不过十之二三……石碑上的文字到此戛然而止，仿佛在刻意隐藏什么。陈机握着残碑，指节泛白，心中涌起惊涛骇浪。天机录的完整形态，竟然还有这样的秘密？",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

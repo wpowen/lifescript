@@ -1,0 +1,473 @@
+{
+  "id": "天机录_ch1051",
+  "book_id": "天机录",
+  "number": 1051,
+  "title": "三路乱战",
+  "is_paid": true,
+  "next_chapter_hook": "就在三大势力的注意力被吸引开的瞬间，陈机体内沉睡千年的力量骤然觉醒，识海深处传来一声苍老的叹息——那是被封印在血脉深处的远古记忆，正在缓缓苏醒。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1051_001",
+        "content": "天界核心区域，天穹如血。\n\n三道气息如同三柄利刃，将这片亘古沉睡的禁地撕扯得支离破碎。东面是魔道圣宗的战旗，黑雾翻涌间可见数以百计的精英弟子；西面是皇朝使团的金辇，华贵仪仗中隐匿着令人心悸的威压；而正北方，天青宗残存势力的旗帜孤零零地立着，旗下只有寥寥数十人。\n\n陈机站在三方交汇的暴风眼中，白衣猎猎，面沉如水。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "三方小儿，当真以为天界是你们可以染指的游乐场？\n\n一道苍老而威严的声音从虚空中传来，不是任何一方的首领，却让在场所有人同时心头一震。那声音仿佛来自亘古，又仿佛来自每个人的识海深处，带着不容置疑的审判意味。",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_003",
+        "content": "陈机眉心微跳。天机录残页在识海中剧烈震颤，传来一阵前所未有的刺痛——这是天道意志的反噬征兆，比以往任何一次都要强烈。\n\n他环顾四周，快速计算：魔道主帅率三千精英已突破外围禁制；皇朝使者手中的令牌正散发着超越认知的混沌气息；而凌渊那老狐狸，正带着天青宗的人马在外围观望，似在等待渔翁之利。\n\n三方乱战，一触即发。而他陈机，不知何时已成了风暴中心。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_004",
+        "character_id": "char_chenji",
+        "content": "（天机录，启动。）\n\n陈机眼神微凝，毫不犹豫地催动了预见之力。眼前景象瞬间变得清晰——三息之后，魔道主帅将亲率先锋冲击核心祭坛；五息之后，皇朝使者会亮出那枚令牌，届时在场所有人的修为都将被压制三成；七息之后，凌渊会突然发难，从背后偷袭魔道主帅。\n\n每一条预见的代价，都是五点天命值。\n\n但他别无选择。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1051_choice_001",
+        "prompt": "预见已成，陈机必须在三息之内做出决断。魔道主帅的先锋冲击即将到来，而皇朝令牌一旦亮出，在场所有人都将陷入被动。他该如何破局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "死战不退",
+            "text": "死战不退",
+            "description": "正面硬抗魔道先锋冲击，以一己之力拖住最大威胁，为其他人创造破绽。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "消耗大量真元，可能重伤",
+            "visible_reward": "在三大势力面前立威，名望大涨",
+            "risk_hint": "极高风险，若挡不住将万劫不复",
+            "process_label": "陈机催动天机录之力，正面迎敌",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_死战不退_001",
+                  "content": "陈机身形一闪，挡在魔道先锋的必经之路上。他单手结印，天机录残页在掌心浮现，散发着诡异的青铜光芒。\n\n魔道主帅瞳孔微缩——他认出了那光芒的来历。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_死战不退_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "天机录？！你是陈玄的传人？！\n\n魔道主帅的怒吼声震动四野，却也暴露了他内心的震惊与忌惮。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "初显锋芒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "突围",
+            "text": "突围转移",
+            "description": "趁三方混战之际悄然脱身，将自己从风暴中心摘出去，让他们先打。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被追击，陷入更大包围",
+            "visible_reward": "保存实力，在暗处观察全局",
+            "risk_hint": "若被发现临阵脱逃，名望大跌",
+            "process_label": "陈机隐匿气息，准备撤离",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_突围_001",
+                  "content": "陈机身形一晃，整个人如同融入虚空的暗影，正是天机录中记载的隐匿之法。然而，就在他即将消失在众人视野中的瞬间——\n\n一道冰冷的笑声在耳边响起。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_突围_002",
+                  "character_id": "char_lingyuan",
+                  "content": "陈机师侄，这就要走吗？老朽可是一直在此等候多时啊。\n\n凌渊的身影不知何时已挡在陈机退路上，枯瘦的手掌正按在他的肩头。",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借势",
+            "text": "借势打力",
+            "description": "利用预见的先机，巧妙周旋于三方之间，借力打力，让敌人自相残杀。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要精准把控时机，一步错满盘皆输",
+            "visible_reward": "不费一兵一卒，让敌方实力大损",
+            "risk_hint": "若被识破，将成为三方的共同敌人",
+            "process_label": "陈机施展连环计策，挑拨三方",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_借势_001",
+                  "content": "陈机眸光一闪，天机录残页在识海中飞速翻动，无数因果线在他眼前交织成网。他猛然张口，一道凌厉的声音穿透战场——\n\n凌渊！你当年陷害陈玄师兄的证据，本座手中可有全套！\n\n此言一出，凌渊面色剧变，而魔道主帅和皇朝使者同时将目光投向了天青宗的方向。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_借势_002",
+                  "character_id": "char_lingyuan",
+                  "content": "竖子！你在胡说什么！\n\n凌渊怒发冲冠，浑厚的真元瞬间锁定陈机，却也暴露了他内心的慌乱——若无心虚，何必如此震怒？",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "挑拨成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_005",
+        "content": "陈机的挑拨如同一颗石子投入沸腾的油锅。\n\n魔道主帅目光一转，原本指向祭坛的攻势骤然偏移，冷笑道：\"原来天青宗内部还有这等秘辛？凌掌门，你若想独占天界机缘，怕是要先过本座这一关。\"\n\n皇朝使者手中的令牌微微一颤，一道无形的波动扩散开来，他的声音不带丝毫感情：\"本使奉命监察天界，任何试图独霸机缘者——死。\"\n\n三方对峙的格局，瞬间变成了三对一的局面。而那个\"一\"，正是凌渊。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_006",
+        "character_id": "char_lingyuan",
+        "content": "好！好！好！\n\n凌渊连说三个好字，枯瘦的身躯猛然暴涨，一股浩瀚如渊的气息从他体内倾泻而出。他怒视陈机，眼中杀意如实质：\"陈机，你以为凭这种拙劣的离间之计就能动摇老朽？今日，老朽就先清理门户，再与这些外人算账！\"\n\n话音未落，一只遮天巨掌已向陈机压来。",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_007",
+        "content": "陈机瞳孔骤缩。这一掌的威势，远超他的想象——凌渊这老狐狸，隐藏得实在太深了。他的真实战力，恐怕已臻半步大能之境！\n\n天机录再次剧烈震颤，传来警示：此招不可硬接，硬接则必死无疑。\n\n但若不接，他又能退到哪里去？魔道大军在东，皇朝使团在西，凌渊在北——他已被彻底封死了所有退路。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（愚蠢的蝼蚁，竟敢在本座面前玩弄心机。）\n\n那道来自虚空的声音再次响起，带着不屑与玩味：\"让本座看看，你这只从陈玄坟冢里爬出来的虫子，究竟有什么本事。\"\n\n话音落下的瞬间，陈机只觉得识海中一阵剧痛，天机录残页仿佛被某种力量攥住，正在被强行剥离！",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_009",
+        "content": "糟了——！\n\n陈机面色惨白。他忘了，天道之眼一直在监视着天机录的持有者。他刚才那番操作，虽然成功挑拨了凌渊，却也暴露了天机录的存在。\n\n现在，天道之眼亲自下场了。\n\n一道无形的锁链正缠绕在他的识海上，缓缓收紧。剧痛如同万蚁噬心，他的意识开始模糊，眼前的一切都在旋转、扭曲——\n\n就在这时，他体内某个沉睡已久的东西，猛然惊醒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1051_choice_002",
+        "prompt": "天道之眼的威压如同天穹倾覆，陈机感觉自己正在被碾碎。然而，就在这生死存亡的刹那，体内那股沉睡千年的力量骤然觉醒。他该如何应对这突如其来的变故？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "顺势引导",
+            "text": "顺势引导",
+            "description": "尝试引导这股觉醒的力量，将其转化为对抗天道之眼的武器。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能走火入魔，风险极大",
+            "visible_reward": "获得短暂的力量爆发，一举扭转局势",
+            "risk_hint": "力量失控可能反噬己身",
+            "process_label": "陈机闭目凝神，尝试与体内觉醒之力沟通",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_顺势引导_001",
+                  "content": "陈机没有抵抗那股翻涌的力量，反而放开心神，任由它在体内奔涌。刹那间，一道璀璨的金光从他眉心迸发，与天道之眼的威压正面碰撞！\n\n天地间仿佛炸开了一道惊雷。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_顺势引导_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "不可能！这是……上古血脉？！\n\n天道之眼的声音第一次出现了波动，那威严中夹杂着一丝难以置信。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "强行压制",
+            "text": "强行压制",
+            "description": "强行压制觉醒的力量，避免失控，先保住性命再说。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "力量反噬，可能当场吐血重伤",
+            "visible_reward": "保持低调，不引起更多注意",
+            "risk_hint": "压制失败将伤上加伤",
+            "process_label": "陈机全力压制体内觉醒的力量",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -30
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_强行压制_001",
+                  "content": "陈机咬紧牙关，强行将那股觉醒的力量压回丹田深处。金光逐渐黯淡，他的身形晃了晃，一口鲜血险些喷出，却被他硬生生咽了回去。\n\n外表看去，他只是一个被天道之眼威压震慑的普通弟子。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_强行压制_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "（哼，还算识相。既然如此，本座暂且留你一命——直到你将天机录补全为止。）\n\n那道声音渐渐远去，威压也随之消散。但陈机知道，这不过是暴风雨前的宁静。",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "引爆天命",
+            "text": "引爆天命",
+            "description": "以消耗全部天命值为代价，激发天机录的极限能力，在绝境中杀出一条血路。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命值归零，寿元大减，可能当场暴毙",
+            "visible_reward": "天机录短暂完整，获得改写命运的能力",
+            "risk_hint": "九死一生，非必要不可用",
+            "process_label": "陈机孤注一掷，引爆天命值",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -100
+              },
+              {
+                "stat": "战力",
+                "delta": 100
+              },
+              {
+                "stat": "黑化值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_引爆天命_001",
+                  "content": "陈机眼中闪过一丝决绝。天命值疯狂燃烧，化作滚滚真元注入天机录残页。刹那间，那片残破的青铜书页绽放出前所未有的光芒——\n\n天机录，完整了。\n\n虽然只有短短三息。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_引爆天命_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "！！！\n\n天道之眼发出一声震怒的咆哮，整个天界都在这股怒意中颤抖。然而，陈机已经动了。\n\n他看到了命运。\n\n他改变了命运。\n\n凌渊的掌风偏移，魔道主帅的真元逆流，皇朝使者的令牌碎裂——一切都在他的弹指一挥间被重写。",
+                  "emotion": "震撼"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "天机录短暂完整"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_010",
+        "content": "凌渊面色铁青地望着眼前的乱局。\n\n他的攻击被一股莫名的力量偏转，魔道主帅趁势掩杀，皇朝使者的令牌虽碎却激发出更狂暴的混沌之力反噬三方——整个天界核心区域已化作修罗战场。\n\n而造成这一切的罪魁祸首，那个他眼中蝼蚁般的废物弟子，此刻却如同暴风眼中的宁静中心，静静地站在那里。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_011",
+        "character_id": "char_lingyuan",
+        "content": "陈机……你究竟是什么人？！\n\n凌渊的声音嘶哑，眼中满是不可置信。他与陈玄同时代，见证过天机录的辉煌，也见证过它的陨落。可眼前这个年轻人身上的气息，与他记忆中的陈玄既相似又截然不同——更加内敛，更加危险，也更加……让人心悸。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_012",
+        "content": "陈机缓缓抬起头，嘴角勾起一抹淡漠的笑意。\n\n他当然知道自己是什么人。他是陈玄的传人，是天机录的继承者，是被命运选中的棋手——也是即将掀翻整盘棋局的变数。\n\n但此刻，他什么都不能说。\n\n\"凌师叔，\"他的声音平静得可怕，\"陈玄师兄的仇，弟子今日暂且记下。来日方长，咱们……走着瞧。\"\n\n话音未落，他的身形开始消散，如同融入虚空的薄雾。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_013",
+        "content": "想走？！\n\n凌渊暴怒出手，一只真元巨掌撕裂虚空直取陈机。然而，那道身影已彻底消失在天地之间，只留下一串轻飘飘的回音——\n\n\"凌师叔，你的心乱了。\"\n\n\"乱心者，必败。\"\n\n\"弟子今日教您的第一课，望师叔谨记。\"\n\n三句话，字字诛心。凌渊气得浑身发抖，却只能眼睁睁看着那个废物弟子消失在眼前，而他的周围，魔道与皇朝的人马已经将他团团包围……",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_014",
+        "content": "与此同时，天界边缘某处禁地。\n\n陈机靠在冰冷的石壁上，大口大口地喘着粗气。他的脸色苍白如纸，识海中传来阵阵刺痛——天机录的反噬如期而至，而且比以往任何一次都要猛烈。\n\n但他的眼中，却闪烁着异样的光芒。\n\n因为他感觉到了。体内那股沉睡千年的力量，正在缓缓苏醒。那是上古血脉的呼唤，是先祖遗泽的共鸣——\n\n他突破的契机，到了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_015",
+        "content": "就在此时，一道苍老的声音在他识海中响起——那是墨先生，那个一直以残魂形态存在于天机录第一页的神秘守护者。\n\n\"少主，您终于触碰到了那道门槛。\"\n\n墨先生的声音中带着一丝欣慰，也带着一丝忧虑：\"但您也暴露了天机录的存在。从今以后，天道之眼必将加大对您的绞杀力度。\"\n\n\"您的路……将更加艰难。\"\n\n陈机闭目，嘴角的笑意却更深了几分。\n\n艰难？那才有意思。\n\n他倒要看看，这天道之眼，究竟能奈他何。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_016",
+        "content": "天穹之上，一双无形的眼睛正穿透重重虚空，注视着陈机所在的方向。\n\n那是天道之眼。\n\n它没有愤怒，没有焦躁，只有一种亘古不变的冷漠与审视。\n\n又一个棋子，开始展现出它的价值了。\n\n很好。\n\n让它再成长一些。\n\n等到它足够强大之时——便是收割之日。\n\n虚空恢复平静，仿佛什么都不曾发生过。但陈机体内那股沉睡的力量，却在悄然间又苏醒了一分，伴随着天机录散发的诡异光芒，照亮了这片亘古沉睡的禁地……",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

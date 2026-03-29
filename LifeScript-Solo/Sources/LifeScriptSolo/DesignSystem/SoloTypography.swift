@@ -26,15 +26,16 @@ enum SoloTypography {
     static let detail: Font = .subheadline
 
     static func reading(emphasis: TextNode.Emphasis?, prefersLargeType: Bool) -> Font {
+        let base: CGFloat = prefersLargeType ? 19 : 16
         switch emphasis {
         case .dramatic:
-            return posterTitle(size: prefersLargeType ? 32 : 28, weight: .bold)
+            return posterTitle(size: prefersLargeType ? 24 : 20, weight: .bold)
         case .whisper:
-            return prefersLargeType ? .title3.italic() : .body.italic()
+            return .system(size: base - 1).italic()
         case .system:
-            return prefersLargeType ? .body.monospaced() : .footnote.monospaced()
+            return .system(size: base - 3, design: .monospaced)
         case .normal, .none:
-            return prefersLargeType ? .title3 : .body
+            return .system(size: base)
         }
     }
 }

@@ -1,0 +1,524 @@
+{
+  "id": "天机录_ch1038",
+  "book_id": "天机录",
+  "number": 1038,
+  "title": "禁忌秘法",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机的手指即将触及那道裂痕的瞬间，龟壳神器内部突然爆发出璀璨的混沌光芒，与禁忌秘法的黑气形成了诡异的共振——那光芒中蕴含的气息，竟与天机录同源。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1038_001",
+        "content": "使者的声音在空旷的石室中回荡，带着一种超越尘世的悠远。\n\n陈机立于原地，面色如常，唯有眼底深处掠过一丝旁人难以察觉的精光。他没有立刻回答，而是缓缓抬起头，直视那双仿佛能洞穿万古的眼眸。\n\n「前辈的意思是——」他的声音平静得近乎冷漠，「若我接受这禁忌秘法，便能从天道之眼的掌控中挣脱出来？」\n\n「挣脱？」使者轻笑一声，那笑声中蕴含着说不清道不明的意味，「何止是挣脱。你将获得凌驾于棋盘之上的资格。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「不过——」使者的语气陡然一转，「老夫从不平白赠予。你若想得到它，需先证明自己的价值。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_003",
+        "content": "话音未落，使者袖袍一挥。\n\n石室中央的虚空骤然扭曲，一道漆黑如墨的符文从虚空中浮现，在半空中缓缓旋转。那符文散发着令人心悸的气息，仿佛蕴含着某种足以颠覆天地的力量。\n\n陈机瞳孔微缩。他能感受到那符文与体内的天机录残页产生了某种微妙的共鸣——不是排斥，而是呼应。\n\n「这是禁忌秘法的第一重境界——『逆命』。」使者负手而立，「可短暂屏蔽天机录的预知效果，让你的行动不再被那双眼眸实时窥视。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_004",
+        "character_id": "char_chenji",
+        "content": "「屏蔽预知？」陈机眯起眼睛，嘴角勾起一抹淡笑，「听起来倒是不错。但前辈既然说得这般郑重，想必代价也非同小可吧？」",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你倒是聪明。」使者的声音里多了几分赞许，「不错，这禁忌秘法并非无偿。它会消耗你与天道本源之间的绑定时间——换言之，每一次使用，都在缩短你踏入彼岸的寿元。」",
+        "emotion": "坦诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_006",
+        "content": "陈机闻言，面上没有丝毫动容。\n\n他缓步走向那道悬浮的黑色符文，每一步都踩得极稳，仿佛丈量过一般。符文散发的黑气缠绕上他的指尖，带来一阵刺骨的冰凉。\n\n「寿元……」他低声重复这两个字，语气中竟带着几分玩味，「前辈说的代价，恐怕不止这些吧？」\n\n使者目光一闪：「你还想知道什么？」\n\n「使用者会不会被这秘法反噬？会不会被天道本源判定为叛逆者，遭到灭杀？」陈机转过身，直视使者的双眼，「更重要的是——前辈为何要帮我？」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1038_choice_001",
+        "prompt": "陈机直视使者，等待答案。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_deal",
+            "text": "接受交易",
+            "description": "无论代价如何，先获得这禁忌秘法的力量再说。没有实力，一切谋划都是空谈。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗寿元，与天道本源绑定时间缩短",
+            "visible_reward": "获得禁忌秘法，暂时摆脱天机录的实时预知",
+            "risk_hint": "代价未知，可能还有隐藏风险",
+            "process_label": "权衡利弊",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_accept_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「爽快。」使者抚掌而笑，袖袍再次挥动，那黑色符文骤然没入陈机眉心，「这便是『逆命』的全部要义，好好参悟吧。」",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_deeper",
+            "text": "深入谈判",
+            "description": "先搞清楚所有代价和风险，再做决定。任何交易都要掌握全部信息，这是陈机的原则。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错失良机，使者态度改变",
+            "visible_reward": "获取更完整的信息，为后续谋划保留余地",
+            "risk_hint": "使者可能不耐烦，透露的信息有所保留",
+            "process_label": "试探底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_negotiate_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "使者的眼神微微冷了下来：「你倒是不见外。不过也罢，既然你想知道——使用禁忌秘法时，你的修为会被压制三成，且每次使用间隔不得少于七日。」",
+                  "emotion": "不悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "demand_more",
+            "text": "要求更多筹码",
+            "description": "既然这是天大的机缘，岂能轻易松口？必须逼使者拿出更多诚意。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能激怒使者，交易告吹",
+            "visible_reward": "若成功，将获得额外保障和更多信息",
+            "risk_hint": "使者的耐心有限，过分逼迫可能适得其反",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_demand_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "使者沉默了片刻，随即仰天大笑：「好一个贪心的小子！不过……老夫倒真有几件东西，本想留作他用。既然你有此胆气，便一并予你又如何？」",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_007",
+        "content": "就在双方僵持之际，异变突生。\n\n陈机胸口的龟壳神器骤然发出一声清越的嗡鸣，那声音穿透石室，直入云霄。紧接着，一道柔和的银光从龟壳缝隙中透出，与使者召唤出的黑色符文形成了诡异的对峙。\n\n使者的瞳孔猛然一缩：「这是……」\n\n陈机低头看向胸口，面上的冷静终于出现了一丝裂痕。那银光中蕴含的气息，与禁忌秘法的黑气截然相反，却又有某种说不清道不明的联系。\n\n「天机录的气息……」他喃喃道，「为何会与这禁忌秘法产生共鸣？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「有趣，着实有趣！」使者的笑声中多了几分兴奋，「看来老夫小觑你了。你这天机录残页中，竟藏着一缕天道本源的种子！」",
+        "emotion": "狂热"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_009",
+        "content": "陈机心中一凛，但面上依旧不动声色。\n\n他缓缓抬起头，目光在使者与龟壳神器之间来回扫视。银光与黑气在虚空中交织，仿佛两条互相追逐的游鱼，又像两把即将碰撞的利刃。\n\n「前辈的意思是——」他的声音压得极低，「这禁忌秘法，与天道本源有着某种关联？」\n\n「关联？」使者嗤笑一声，「岂止是关联。禁忌秘法本就是从天道本源中剥离出来的力量，是它阴暗面的具象化。你体内的那缕种子若能与之融合……」",
+        "emotion": "期待"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "使者的声音戛然而止，他的目光变得深邃而锐利：「你想知道融合之后会发生什么？」",
+        "emotion": "试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_011",
+        "content": "陈机没有回答，只是静静地看着使者。\n\n石室中的气氛压抑到了极点。银光与黑气仍在纠缠，但陈机却从中感受到了一种奇异的韵律——仿佛某种古老的契约正在被重新书写。\n\n他想起了墨先生曾经说过的话：「天机录的完整形态，远比你想象的更加可怕。」\n\n难道这便是其中一部分的真相？"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1038_choice_002",
+        "prompt": "龟壳神器与禁忌秘法的共鸣越来越强烈，陈机感到体内有什么东西正在苏醒。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "let_go",
+            "text": "顺其自然",
+            "description": "既然无法阻止，不如任由这两股力量交融。或许能借此窥见天机录的真正奥秘。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "失去对局面的控制，可能被力量反噬",
+            "visible_reward": "可能触发隐藏剧情，获得意外收获",
+            "risk_hint": "未知的变数往往最为危险",
+            "process_label": "放手一搏",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_let_001",
+                  "content": "陈机深吸一口气，缓缓放开了对龟壳神器的压制。银光顿时大盛，如同一轮明月在石室中升起，与那漆黑如墨的符文轰然相撞——"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "suppress_force",
+            "text": "强行压制",
+            "description": "在搞清楚真相之前，绝不能任由这两股力量在体内乱窜。稳妥才是生存的第一要义。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错失机缘，使者可能收回秘法",
+            "visible_reward": "保持清醒的头脑，获取更多信息",
+            "risk_hint": "两股力量在体内冲突，可能造成内伤",
+            "process_label": "以守为攻",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_suppress_001",
+                  "content": "陈机低喝一声，体内真气疯狂涌动，试图压制那躁动的银光。然而那两股力量的交融之势已成，他的抵抗不过是螳臂当车——"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "question_origin",
+            "text": "追问来源",
+            "description": "这禁忌秘法究竟从何而来？为何会与天机录产生共鸣？必须搞清楚来龙去脉。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "使者可能不悦，透露的信息真假难辨",
+            "visible_reward": "获取关键情报，为后续布局提供依据",
+            "risk_hint": "知道得越多，可能陷得越深",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_question_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「这秘法……是历代预言者的心血。」使者的声音忽然变得低沉，「每一任预言者陨落前，都会将自己对天道的感悟刻入其中。你体内的种子，便是因此而来。」",
+                  "emotion": "追忆"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_012",
+        "content": "使者话音未落，龟壳神器的光芒陡然一变。\n\n那柔和的银光中竟浮现出一道道玄奥的纹路，与禁忌秘法的黑色符文遥相呼应。两股力量在陈机体内交汇，碰撞出一阵剧烈的震荡。\n\n陈机闷哼一声，单膝跪地。他的额头青筋暴起，冷汗顺着鬓角滑落。体内仿佛有两股截然相反的力量在厮杀，每一寸经脉都在燃烧。\n\n「唔——」他咬紧牙关，指甲深深嵌入掌心，鲜血顺着指缝滴落。疼痛如潮水般涌来，几乎要将他淹没。\n\n然而就在这千钧一发之际，一个熟悉的声音在他脑海中响起——"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_013",
+        "character_id": "char_moxiansheng",
+        "content": "「稳住心神！」墨先生的声音带着前所未有的凝重，「这两股力量本是一体，你若能将其融合，便可窥见天机录的真正形态——『天命之书』！」",
+        "emotion": "急迫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_014",
+        "content": "天命之书。\n\n这四个字如同一道惊雷，在陈机的脑海中炸响。他想起墨先生曾经说过的那个名字——传说中，天机录的完整形态便是如此，能预知过去未来，跳出天道轮回之外。\n\n而现在，这禁忌秘法与天机录残页的共鸣，竟有可能让他触及那个传说中的境界？\n\n陈机的眼神骤然变得锐利如刀。他猛然站起身，任由那两股力量在体内疯狂冲撞，面上却浮现出一抹决绝的笑意。\n\n「既然天道要将我当棋子——」他的声音低沉而冰冷，「那便让这棋盘，彻底翻转过来！」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1038_choice_003",
+        "prompt": "陈机感受到体内的力量已达到临界点，必须立刻做出决断。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "embrace_destiny",
+            "text": "拥抱命运",
+            "description": "既然已经走到这一步，便没有回头的道理。将禁忌秘法彻底融入天机录，赌上一切！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能失去自我，与天道彻底决裂",
+            "visible_reward": "获得『天命之书』的雏形，实力暴涨",
+            "risk_hint": "这是不可逆的选择，一旦开始便无法停止",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_embrace_001",
+                  "content": "陈机仰天长啸，双臂猛然展开。银光与黑气同时暴涨，化作两道洪流涌入他的眉心。一股前所未有的力量在他体内炸开，仿佛天地初开时的混沌——"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁忌秘法初成",
+              "天命之书雏形"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "conditional_merge",
+            "text": "有条件融合",
+            "description": "在融合的同时保留一丝清醒，不让力量彻底吞噬理智。这是陈机给自己留的后路。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "融合效果大打折扣，可能引发后遗症",
+            "visible_reward": "保持自我意识，为日后留下变数",
+            "risk_hint": "两股力量在体内冲突，可能造成永久性损伤",
+            "process_label": "以智取胜",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_conditional_001",
+                  "content": "陈机深吸一口气，以强大的意志力在两股力量之间筑起一道屏障。银光与黑气在屏障两侧疯狂涌动，却始终无法彻底融为一体——"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁忌秘法初成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "reject_merge",
+            "text": "拒绝融合",
+            "description": "这禁忌秘法来历不明，贸然融合太过危险。宁可放弃这次机缘，也不能将命运交到未知手中。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错失千载难逢的机会",
+            "visible_reward": "保持现状不被动摇，保存筹码",
+            "risk_hint": "使者可能不再提供类似机缘",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_reject_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「你确定？」使者的语气中带着几分惊讶，「这等机缘，错过便不再有。」\n\n陈机缓缓站直身子，嘴角勾起一抹淡笑：「晚辈只是想……将这份机缘，留待更合适的时机罢了。」",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_015",
+        "content": "就在陈机的手指即将触及那道裂痕的瞬间——\n\n龟壳神器内部骤然爆发出璀璨的混沌光芒，与禁忌秘法的黑气形成了前所未有的共振。那光芒中蕴含的气息，既非天机录的银白，也非秘法的漆黑，而是一种从未见过的混沌灰。\n\n使者的面色第一次出现了变化：「这是……」\n\n陈机猛然抬头，双眼中倒映着那道混沌光芒。他能感受到，在那光芒深处，有什么东西正在苏醒。那是一道熟悉而又陌生的意志，跨越万古时光而来。\n\n「天机录……完整了？」他喃喃道。\n\n然而下一刻，那道意志传来的信息却让他的瞳孔骤然收缩——"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_016",
+        "character_id": "char_moxiansheng",
+        "content": "「不，主人。」墨先生的声音在脑海中响起，带着一丝颤抖，「这不是天机录的完整，而是……天道之眼的注视。它一直在等待这一刻。」\n\n陈机的血液仿佛在这一刻凝固了。\n\n原来，从始至终——他才是那个被等待的猎物。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_017",
+        "content": "石室中的气氛降至冰点。\n\n使者的身影在混沌光芒中若隐若现，他的面容第一次变得模糊不清，仿佛被某种力量所遮蔽。而那双眼眸——那双本该深邃如渊的眼眸，此刻竟透出一丝诡异的笑意。\n\n陈机缓缓后退一步，面上却已恢复了惯常的平静。\n\n「前辈……」他的声音不带一丝波澜，「您方才说的那些话，哪句是真，哪句是假？」\n\n使者没有回答，只是抬手指向陈机的胸口。那里，龟壳神器正散发着越来越强烈的光芒，仿佛一轮即将吞噬一切的灰色太阳。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_018",
+        "content": "「都是真的。」使者终于开口，声音却变得陌生而遥远，「包括老夫的身份。」\n\n话音落下的瞬间，石室的穹顶骤然崩塌。混沌光芒如潮水般涌出，将一切吞没。陈机只来得及看见使者的嘴角勾起一抹意味深长的弧度，便被那光芒彻底淹没。\n\n在那最后的一刹那，他脑海中闪过的不是恐惧，而是一个念头——\n\n原来从一开始，他便在这盘棋局的最中央。\n\n而现在，棋子终于要与执棋者正面相遇了。"
+      }
+    }
+  ]
+}

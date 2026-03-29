@@ -1,0 +1,545 @@
+{
+  "id": "天机录_ch0226",
+  "book_id": "天机录",
+  "number": 226,
+  "title": "秘境现世",
+  "is_paid": true,
+  "next_chapter_hook": "就在各方势力为秘境名额争执不休之际，陈机在人群边缘捕捉到一道熟悉的身影——夜清悄然出现在秘境入口附近，神色异常，仿佛在等待着什么。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0226_001",
+        "content": "天穹骤然裂开一道金色缝隙，仿佛被无形巨手撕开的画卷。那缝隙之中霞光万道，瑞彩千条，一股亘古苍茫的气息自裂缝深处奔涌而出，席卷了整个天青宗。山门古钟无风自鸣，铜锈簌簌坠落，撞击声沉闷而悠远，回荡在群山之间。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_002",
+        "character_id": "char_hanlie",
+        "content": "这是……秘境入口？",
+        "emotion": "震惊与贪婪交织"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_003",
+        "content": "陈机站在人群最后方的一株古松之下，青色杂役袍在风中微微拂动。他的目光越过层层叠叠的身影，落在那道金色裂缝之上。天机录残页在他怀中微微发烫，仿佛嗅到了某种熟悉的气息。他垂下眼帘，指尖轻轻摩挲着袖口的粗糙布料，心中飞速盘算——秘境的开启，比他预料中早了整整三个月。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（苍茫天穹之上，无数道目光汇聚于那道裂隙。有人在颤抖中狂喜，有人在震惊中算计。命运的齿轮再度转动，而棋盘上的棋子们，尚不知自己只是被摆布的存在。）",
+        "emotion": "冷漠俯视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_005",
+        "content": "金色裂隙缓缓扩张，最终化作一道高约十丈的光门。光门之内，隐约可见一座巍峨宫殿的轮廓，琉璃为瓦，白玉作阶，仙鹤盘旋于云端。这是上古大能留下的遗迹，内部蕴含着足以让任何修士疯狂的机缘——功法、丹药、神兵，乃至突破瓶颈的契机，应有尽有。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0226_choice_01",
+        "prompt": "面对突如其来的秘境现世，陈机需要决定如何应对这一变局",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0226_c1_隐忍观察",
+            "text": "隐忍观察",
+            "description": "保持废物人设，在暗处观察各方势力反应，寻找破绽与机遇",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "无法第一时间获取情报",
+            "visible_reward": "看清各方真实态度",
+            "risk_hint": "可能错过最佳行动时机",
+            "process_label": "静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c1_01",
+                  "content": "陈机微微后退半步，将身形完全隐入古松的阴影之中。他抬眼扫视四周，注意到几名内门弟子的手已经按上了剑柄，而一些长老更是面露狂热之色。他垂下眼帘，嘴角勾起一丝不易察觉的弧度——贪欲之下，人心毕现。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "隐忍观察"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0226_c1_暗中试探",
+            "text": "暗中试探",
+            "description": "悄悄激活天机录，窥探秘境开启后三时辰内的未来走向",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "提前预知秘境名额争夺结果",
+            "risk_hint": "天命值消耗可能带来不可预知的后果",
+            "process_label": "窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c1_02",
+                  "content": "陈机将右手探入怀中，指尖触及那泛黄的残页。天机录在他掌心微微颤动，似乎在渴望释放力量。他犹豫了一瞬——五点天命值，足以让他少预测一次生死危机。但在秘境的诱惑面前，这点风险似乎值得一试。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "窥探天机"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0226_c1_散布消息",
+            "text": "散布消息",
+            "description": "悄悄离开人群，将秘境开启的消息传递给特定势力，搅动局势",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "暴露行踪风险",
+            "visible_reward": "引发势力间更大矛盾",
+            "risk_hint": "可能被人察觉异常",
+            "process_label": "搅动风云",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -1
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c1_03",
+                  "content": "陈机悄然转身，正欲离开古松之下，余光却瞥见一道凌厉的目光正盯着自己。是韩烈——那个自诩天才却屡次在他手中吃瘪的玄武宗弟子。韩烈身旁的几位长老同样面露警惕，显然对天青宗的任何风吹草动都格外上心。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "散布消息"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_006",
+        "content": "就在众人被秘境异象震慑之际，一道苍老而威严的声音自天青宗深处传来：“秘境开启，乃天下大事，非一门一派可以独享。”众人循声望去，只见五道身影踏空而来，为首者正是五老残余势力的首座——周沉舟。他的白发在风中猎猎飞舞，一双浑浊的老眼此刻却精光四射，仿佛要将整个秘境据为己有。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_007",
+        "character_id": "char_lingyuan",
+        "content": "（凌渊的身影在人群边缘若隐若现，他看着周沉舟的嚣张姿态，嘴角勾起一丝意味深长的笑容。这个老东西，终究还是沉不住气了。）",
+        "emotion": "冷笑旁观"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_008",
+        "content": "周沉舟环顾四周，目光在三大宗门的长老身上一一扫过，最后落在那光门之上，声如洪钟：“上古遗迹，理当由天下修士共探。但名额有限，我五老残余愿担起主持之责，确保各宗各派皆有机会入内寻觅机缘。”他的话说得冠冕堂皇，实则暗藏祸心——谁主持名额分配，谁就掌握了这座宝库的钥匙。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_009",
+        "character_id": "char_hanlie",
+        "content": "哼！",
+        "emotion": "冷哼一声"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_010",
+        "content": "玄武宗方向传来一声怒哼。韩烈大步行出人群，玄色劲装上绣着的玄武纹路仿佛活了过来，散发出一股压迫性的气势。他直视周沉舟，丝毫不掩饰眼中的轻蔑：“主持名额分配？就凭你们这几个苟延残喘的老东西？”他向前一步，脚下的青石板龟裂开来，“秘境在天青宗地界开启，天青宗都还没说话，你们五老残余算哪根葱？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0226_choice_02",
+        "prompt": "五老残余势力与玄武宗天才韩烈当众对峙，陈机需要决定如何应对这一局面",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0226_c2_火上浇油",
+            "text": "火上浇油",
+            "description": "暗中施展小手段，让双方矛盾进一步激化，坐收渔翁之利",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗精力",
+            "visible_reward": "各方矛盾加剧，更容易看清真实态度",
+            "risk_hint": "若被察觉，后果严重",
+            "process_label": "暗中搅局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c2_01",
+                  "content": "陈机悄悄从袖中取出一枚符篆，指尖灵力微动。那符篆化作一缕肉眼难辨的青烟，悄然飘向周沉舟身后的几位长老。青烟入体，那几位长老的面色瞬间涨红，看向韩烈的眼神也变得愈发不善。一场原本只是言语交锋的争执，正在朝着不可控的方向发展。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暗中搅局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0226_c2_静观其变",
+            "text": "静观其变",
+            "description": "保持旁观者姿态，冷静记录各方势力的态度与底牌",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过搅局时机",
+            "visible_reward": "获得完整情报",
+            "risk_hint": "可能被视为软弱",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c2_02",
+                  "content": "陈机收回符篆，重新隐入阴影之中。他的目光在人群中穿梭，记下了每一个表情的变化——周沉舟的色厉内荏，韩烈的狂妄自大，以及一些隐藏在人群中的、尚未表态的势力。他们，才是这场博弈中真正的变数。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "静观其变"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0226_c2_主动出击",
+            "text": "主动出击",
+            "description": "以废物身份开口，说出看似无知却直击要害的话，试探各方反应",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露自己",
+            "visible_reward": "引发关注，试探敌人",
+            "risk_hint": "可能引来更多注意",
+            "process_label": "扮猪出声",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c2_03",
+                  "content": "陈机轻咳一声，从古松后踱步而出。他低着头，声音怯懦：“那个……我听说秘境里有上古仙人的传承，谁要是能得到，就能成为天下第一……是真的吗？”他的话音刚落，四周便传来一阵哄笑。周沉舟和韩烈同时皱起眉头，显然没将这个杂役弟子放在眼里。但陈机低垂的眼帘下，眸光却冷如寒星——他看清了双方眼中一闪而过的警惕与算计。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "扮猪出声"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_011",
+        "content": "就在气氛剑拔弩张之际，天青宗深处再度传来一道威严的声音：“秘境名额之事，容后再议。眼下当务之急，是确认秘境入口的稳定。”凌渊踏空而来，白发白须，仙风道骨。他的目光在周沉舟与韩烈之间来回扫视，嘴角噙着一丝若有若无的笑意，“诸位远道而来，不如先入内稍歇，待本座查明秘境规则，再与诸位详谈名额之事。”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_012",
+        "character_id": "char_hanlie",
+        "content": "详谈？你们天青宗想拖时间独吞机缘？",
+        "emotion": "愤怒质问"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_013",
+        "content": "韩烈话音未落，秘境光门骤然一震。一道璀璨的符文自光门之中浮现，缓缓排列成一幅复杂的图纹。凌渊双目微眯，沉声道：“这是……进入规则。”他凝视着那道符文，声音陡然拔高，“秘境开启，每次仅限十人进入，且进入者修为不得超过筑基期！违反规则者，将被秘境法则直接抹杀！”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_014",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼注视着这一幕，如同注视着蝼蚁争斗。它微微震颤，似乎在笑。规则已经定下，而棋子们也将按照它预设的轨迹前行。）",
+        "emotion": "冷漠俯视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_015",
+        "content": "此言一出，人群顿时哗然。筑基期的修为上限，意味着各宗的老一辈强者都被排除在外。名额争夺的焦点，从宗门实力变成了年轻一代弟子的比拼。周沉舟的脸色阴沉下来，他身后的五老残余势力虽人数众多，却大多是垂垂老矣的筑基期修士，真到了秘境之内，恐怕占不到什么便宜。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0226_choice_03",
+        "prompt": "秘境规则的揭晓改变了局势走向，陈机需要决定下一步行动",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0226_c3_深入观察",
+            "text": "深入观察",
+            "description": "继续隐藏实力，观察各方年轻弟子的实力与弱点",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能错过布局时机",
+            "visible_reward": "掌握所有对手情报",
+            "risk_hint": "情报可能过时",
+            "process_label": "情报收集",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c3_01",
+                  "content": "陈机退回到人群边缘，开始默默记录在场所有年轻弟子的气息。韩烈的狂妄、苏青瑶的冷静，以及那些隐藏在暗处、尚未露面的人物——每一个细节都可能成为日后博弈的筹码。他需要一个完整的名单。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "情报收集"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0226_c3_联络盟友",
+            "text": "联络盟友",
+            "description": "悄然离开，寻找夜清，商议秘境内的合作可能",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "离开可能被注意",
+            "visible_reward": "提前与魔道势力达成共识",
+            "risk_hint": "若被发现与魔道勾结，名誉尽毁",
+            "process_label": "暗通消息",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c3_02",
+                  "content": "陈机趁乱离开人群边缘，沿着山道向秘境入口的侧翼移动。他的袖中藏着一枚传音符篆，只要激活，夜清便能在第一时间收到讯息。魔道圣女的「魔道迷雾」是遮掩天机录气息的关键，这一次，他必须争取到这个盟友。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暗通消息"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0226_c3_制造混乱",
+            "text": "制造混乱",
+            "description": "利用废物身份制造一场小骚动，为暗中行动打掩护",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗精力，可能受伤",
+            "visible_reward": "完美掩护真实意图",
+            "risk_hint": "若被识破，信誉受损",
+            "process_label": "声东击西",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              },
+              {
+                "stat": "战力",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0226_result_c3_03",
+                  "content": "陈机故意在人多的地方绊倒，打翻了旁边一位弟子的茶盏。滚烫的茶水溅了一身，那弟子怒不可遏，一把揪住陈机的衣领就要动手。混乱瞬间蔓延开来，几位不相干的弟子也被卷入争执。趁着这股东风，陈机悄然滑出人群，向秘境入口的侧翼摸去。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "声东击西"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_016",
+        "content": "规则已定，各方势力的算盘都要重新打过。三大宗门的长老们面色凝重，开始紧急商议对策；五老残余的周沉舟则阴沉着脸，不知在盘算什么。而年轻一代的弟子们，眼中燃起了熊熊斗志——这是属于他们的战场。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_017",
+        "content": "陈机穿过人群，来到秘境入口的侧翼区域。这里的喧嚣声被群山阻隔，显得格外安静。他的目光在四周扫视，正准备取出传音符篆联系夜清——却骤然僵住。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0226_018",
+        "character_id": "char_yeqing",
+        "content": "（陈机瞳孔骤缩。在秘境入口的阴影深处，一道熟悉的身影静静伫立——黑纱遮面，身段婀娜，周身萦绕着若有若无的黑色雾气。是夜清。但她的气息与往日截然不同，仿佛笼罩着一层看不见的阴霾。她的目光越过层层人群，直直地看向陈机所在的方向，嘴唇微动，似乎在无声地说着什么。）",
+        "emotion": "震惊且警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_019",
+        "content": "夜清的眼眸中闪烁着复杂的光芒——有警告，有焦急，还有一丝难以言喻的恐惧。她的手指向秘境的方位，做了一个极其隐晦的手势。那个手势，陈机曾经在某段预言中见过，却从未深想其含义。直觉告诉他，夜清带来的绝不是好消息——而是某个足以颠覆整个局势的噩耗。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0226_020",
+        "content": "夜清的身影在阴影中一闪而过，仿佛从未来过。只有她方才站立的位置，空气中残留着一丝淡淡的幽香，以及一张不知何时被塞入陈机袖中的纸条。陈机缓缓展开纸条，上面只有八个娟秀的小字：天机有眼，速离此地。他在心中默念着这八个字，天机录残页在怀中猛然一颤，仿佛在回应着某种警告。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "id": "天机录_ch0410",
+  "book_id": "天机录",
+  "number": 410,
+  "title": "营救陈念的契机",
+  "is_paid": true,
+  "next_chapter_hook": "就在陈机准备双线并行的完美计划时，一封来自圣宗的密信彻底打乱了他的部署——陈念的位置，已经被提前转移。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0410_001",
+        "content": "背叛者临死前的遗言如同一根细针，深深扎入陈机的心口。墨先生——那个以残魂之躯守护天机录的存在，那个知晓一切真相却只说该说之事的谜团，竟与幕后黑手有着千丝万缕的联系？这比单纯的敌人更令人脊背发凉，因为他从未怀疑过墨先生的立场。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_002",
+        "character_id": "char_moxiansheng",
+        "content": "（天机录第一页中，墨先生的声音悠悠响起）\"你终于发现了。为师等这一天，已经等了很久。\"那残魂的声音里竟带着一丝释然，仿佛卸下了某种重担。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_003",
+        "content": "陈机强压下心中翻涌的惊涛骇浪，面色如常。他知道墨先生在观察他，也知道此刻的每一分失态都可能成为日后被拿捏的把柄。但他确实需要答案，哪怕这答案可能让他万劫不复。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_004",
+        "character_id": "char_chenji",
+        "content": "\"墨先生，您老在我身边潜伏这么多年，是为了等我发现真相，还是为了等我自己把自己作死？\"陈机的声音听不出喜怒，唯有嘴角微微上扬，勾出一个讽刺的弧度。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_005",
+        "character_id": "char_moxiansheng",
+        "content": "\"都是，也都不是。\"墨先生的声音带着几分唏嘘，\"天机录选中的人，从不是天选之人，而是被天机录选中作为棋盘的人。你我，皆在其中。\"",
+        "emotion": "唏嘘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_006",
+        "content": "就在陈机消化这番话的含义时，门外传来轻轻的叩门声。苏青瑶的声音隔着门板传来，清冷中透着一丝罕见的急切：\"陈机，有消息了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_007",
+        "content": "陈机收敛心神，将墨先生的事暂时压在心底。他太擅长这一点了——将惊涛骇浪藏在平静的湖面之下。苏青瑶推门而入，手中紧握一枚玉简，神色复杂。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_008",
+        "character_id": "char_suqingyao",
+        "content": "\"动用了我家族在圣宗的所有暗桩。\"苏青瑶将玉简递给他，声音里带着一丝疲惫，\"你妹妹被关押的地点，我查到了。圣宗禁地核心区域，天命祭坛之下三层。\"",
+        "emotion": "疲惫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_009",
+        "character_id": "char_chenji",
+        "content": "陈机接过玉简，神识探入。片刻后，他的瞳孔微微收缩——祭坛之下三重禁制，每一重都需要元婴强者才能破解。这意味着他至少需要两位元婴境的助力。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_010",
+        "content": "然而更棘手的是，圣宗禁地的防御阵法会实时监控闯入者的气息。除非有人能以魔道迷雾遮掩，否则任何接近都会触发警报。而这世上，能施展魔道迷雾的人，只有一个。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0410_choice_01",
+        "prompt": "陈机必须在有限的时间内做出抉择——是先救妹妹，还是先获取天机录第四页来增强实力？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "rescue_sister_first",
+            "text": "先救陈念",
+            "description": "妹妹的安危刻不容缓，每多等一刻她就多受一分苦。天机录第四页可以之后再取。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "放弃天机录第四页的最佳获取时机",
+            "visible_reward": "陈念获救，兄妹团聚",
+            "risk_hint": "没有第四页的完整预言能力，营救风险大增",
+            "process_label": "选择亲情优先",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0410_result_rescue_sister_first_01",
+                  "content": "陈机攥紧玉简，眼中闪过一丝决然。妹妹失踪多年，他等得起，但陈念在圣宗的地牢里未必等得起。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0410_result_rescue_sister_first_02",
+                  "character_id": "char_chenji",
+                  "content": "\"苏师姐，帮我联系夜清。\"陈机的声音平静，却带着不容置疑的坚定，\"就说陈某人有一笔买卖要与她谈。\"",
+                  "emotion": "决然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "get_tianjilu_first",
+            "text": "先取第四页",
+            "description": "天机录第四页蕴含的力量至关重要。有了完整的预言能力，营救计划的成功率将大幅提升。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "陈念在圣宗多受苦楚",
+            "visible_reward": "获得完整预言能力，预见营救过程中的所有变数",
+            "risk_hint": "每延迟一日，陈念的危险就增加一分",
+            "process_label": "选择力量优先",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0410_result_get_tianjilu_first_01",
+                  "content": "陈机将玉简收入袖中，眼中闪过一丝痛苦却迅速被理智压下。他闭上眼睛，深吸一口气——为了确保万无一失，他必须先让自己变得更强。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0410_result_get_tianjilu_first_02",
+                  "character_id": "char_chenji",
+                  "content": "\"苏师姐，\"陈机睁开眼，声音沙哑，\"再给我三天时间。三天之后，我一定去救她。\"",
+                  "emotion": "沙哑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_011",
+        "content": "苏青瑶看着陈机眼底一闪而过的挣扎，心中莫名一痛。她从未见过这个永远从容的少年流露出如此神情——原来他也会害怕，也会彷徨。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_012",
+        "character_id": "char_suqingyao",
+        "content": "\"陈机，\"苏青瑶轻声开口，声音里带着一丝从未有过的柔软，\"无论你做什么决定，我都会帮你。这是我欠你的。\"",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_013",
+        "content": "当夜，夜清如约而至。魔道圣女的身影从阴影中浮现，一袭黑裙衬得她肌肤胜雪，眉目间却笼着一层挥之不去的阴郁。她看到陈机时，嘴角微微上扬。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_014",
+        "character_id": "char_yeqing",
+        "content": "\"陈公子，别来无恙。\"夜清的声音如同夜莺低鸣，悦耳却带着几分凉意，\"听闻你有一笔买卖要与我谈？说说看，什么买卖值得你开口。\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_015",
+        "character_id": "char_chenji",
+        "content": "陈机没有废话，直接将陈念被囚禁的地点、三重禁制的破解条件、以及他对营救计划的构想和盘托出。最后他直视夜清的眼睛：\"我需要你的魔道迷雾。\"",
+        "emotion": "直接"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_016",
+        "content": "夜清听完，沉默了片刻。她的手指轻轻敲击着桌面，发出有节奏的声响。终于，她抬起头，眼中闪过一丝狡黠。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_017",
+        "character_id": "char_yeqing",
+        "content": "\"魔道迷雾，我可以给你。\"夜清的声音带着一丝笑意，\"但我有一个条件——圣宗的献祭情报。我要知道他们在谋划什么，你我共享。\"",
+        "emotion": "狡黠"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0410_choice_02",
+        "prompt": "夜清的条件令陈机陷入沉思——共享献祭情报意味着将自己的一部分底牌交给盟友，但若拒绝，营救计划将无从谈起。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_share",
+            "text": "接受条件",
+            "description": "情报可以再探，妹妹不能等。况且与夜清共享情报，也能进一步加深彼此的信任与合作。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "献祭情报对夜清公开",
+            "visible_reward": "获得魔道迷雾，营救计划得以启动",
+            "risk_hint": "夜清可能利用情报在其他方面获利",
+            "process_label": "选择合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0410_result_accept_share_01",
+                  "content": "陈机没有丝毫犹豫。他伸出右手，修长的手指在空中虚握，仿佛在握住某种无形的契约。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0410_result_accept_share_02",
+                  "character_id": "char_chenji",
+                  "content": "\"成交。\"陈机的嘴角勾起一抹淡笑，\"夜圣女的信誉，陈某还是信得过的。毕竟我们是一条绳上的蚂蚱。\"",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "counter_propose",
+            "text": "讨价还价",
+            "description": "夜清的情报网遍布圣宗，她的开价远低于她能提供的价值。陈机决定试探她的底线。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能激怒夜清，谈判破裂",
+            "visible_reward": "以更低代价获得魔道迷雾",
+            "risk_hint": "夜清性格刚烈，若谈崩可能影响后续合作",
+            "process_label": "选择博弈",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0410_result_counter_propose_01",
+                  "content": "陈机轻轻摇头，眼底闪过一丝笑意。商场如战场，谈判桌上的艺术他再熟悉不过。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0410_result_counter_propose_02",
+                  "character_id": "char_chenji",
+                  "content": "\"夜圣女这条件开得有些高了。\"陈机不紧不慢地说，\"献祭情报我可以给，但我还要你圣宗内部的布防图。作为交换，我再告诉你一个关于你身世的秘密——你母亲的真正死因。\"",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_018",
+        "character_id": "char_yeqing",
+        "content": "夜清闻言，瞳孔骤然收缩。陈机提到她母亲的那一刻，她感觉自己仿佛被看穿了一般。这个男人知道的，远比她想象的多。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_019",
+        "content": "片刻后，夜清轻笑出声，笑容里带着几分复杂。她站起身，黑裙在空中划出一道优美的弧线。\"陈机，你真是让人又爱又恨。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_020",
+        "character_id": "char_yeqing",
+        "content": "\"好，我答应你。\"夜清的声音里带着一丝决然，\"但布防图要分批给我，献祭情报也要先给我一半。这是我的底线。\"",
+        "emotion": "决然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_021",
+        "content": "陈机点了点头，伸出手。两只手掌在空中相握，一个是无名小卒的废材杂役，一个是魔道圣宗的绝世圣女。这一握，改变了无数人的命运。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_022",
+        "character_id": "char_chenji",
+        "content": "\"那么，三日后，圣宗禁地见。\"陈机松开手，嘴角勾起一抹淡笑，\"夜圣女，希望你不要让我失望。\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_023",
+        "character_id": "char_yeqing",
+        "content": "夜清转身离去，在跨出门槛的那一刻，她忽然停下脚步，回头看了陈机一眼。\"陈机，我母亲的事……如果你骗我，我会让你后悔来到这个世上。\"",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_024",
+        "content": "陈机没有回答，只是目送她的背影消失在夜色中。直到确认她已经走远，他才缓缓开口，声音轻得像是在自言自语：\"墨先生，您说……我还能相信谁？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_025",
+        "content": "天机录第一页上，墨先生的声音悠悠响起：\"信任这种东西，在修仙界是最奢侈的。但有时候，最危险的路，反而需要有人同行。\"话音落下，陈机忽然感觉到一阵心悸。他猛地转身，只见苏青瑶还站在原地，月光洒在她的脸上，映出一抹复杂的神色。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_026",
+        "content": "夜风拂过，吹动了苏青瑶的发丝。她忽然轻声开口，声音里带着一丝从未有过的脆弱：\"陈机，你有没有想过……如果有一天我站在你的对立面，你会怎么做？\"陈机一愣，随即笑了。他走到苏青瑶面前，伸手轻轻拂去她肩上的落叶。\"苏师姐，你不会的。\"他的声音很轻，却带着绝对的笃定，\"因为你是苏青瑶。\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0410_027",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶怔怔地看着他，月光下少年的面容平静而深邃，仿佛藏着星辰大海。她忽然有些想哭，却又不知道自己在委屈什么。",
+        "emotion": "脆弱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_028",
+        "content": "然而就在这一夜，当陈机以为一切准备就绪时，一封来自圣宗的密信悄无声息地出现在他的桌上。信上只有一行字，却让陈机的脸色瞬间变得惨白——\"陈念已不在原地，有趣的棋子先生。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0410_029",
+        "content": "陈机的手微微颤抖。这是他人生中第二次感受到真正的恐惧——第一次是得知妹妹被带走的消息，这一次是发现敌人早已洞悉他的一切布局。他深吸一口气，将那封信捏成粉末，眼底闪过一丝从未有过的戾气。圣宗……很好。既然你们想玩，那我就陪你们玩到底。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

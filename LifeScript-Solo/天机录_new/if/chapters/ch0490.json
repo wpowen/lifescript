@@ -1,0 +1,540 @@
+{
+  "id": "天机录_ch0490",
+  "book_id": "天机录",
+  "number": 490,
+  "title": "假死布局",
+  "is_paid": true,
+  "next_chapter_hook": "墨先生执棋人的身份究竟意味着什么？天道之眼的棋局又是怎样的阴谋？下一章，真相的一角将被缓缓揭开——而那，可能只是更大风暴的开始。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0490_001",
+        "content": "龙脉深处的轰鸣声如远古巨兽的低吟，震得岩壁上的符文不断闪烁。陈机站在龙首石台之上，衣袍被灵力气浪吹得猎猎作响。他的目光平静如水，却死死盯着夜清消失的那道虚空裂隙——那里残留着魔道特有的幽冷气息，像是冬夜里最后一缕不肯散去的寒霜。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_002",
+        "character_id": "char_chenji",
+        "content": "来了。\n\n陈机轻声呢喃，嘴角勾起一抹极淡的弧度。那道冲天剑意他再熟悉不过——凌厉、凛冽、带着不容置疑的威严。苏青瑶的速度比他预想的还要快上三分，看来龙脉异动的消息已经惊动了整个天青宗。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_003",
+        "content": "三百丈外，一道青色剑光撕裂夜空，如惊鸿掠影般疾驰而来。苏青瑶的身影在月光下显得格外清冷绝美，眉心那点朱砂衬得她愈发拒人于千里之外。然而当她看清龙首石台上的陈机时，那双常年波澜不惊的眸子里，罕见地闪过一丝复杂的神色。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_004",
+        "character_id": "char_suqingyao",
+        "content": "陈机，你在这里做什么？\n\n苏青瑶的声音冷如冰霜，但眼底深处却藏着一丝她自己都没察觉的急切。她的神识如潮水般扫过四周，察觉到残留的魔道气息后，眉头紧紧皱起：\n\n这里有魔道修士的痕迹。你……和谁在一起？",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_005",
+        "character_id": "char_chenji",
+        "content": "师姐既然来了，不如听我说完。\n\n陈机转过身，迎上苏青瑶审视的目光。他的表情依旧是那副人畜无害的模样，语气平静得仿佛在谈论今日天气：\n\n我知道你一直在查我。三年了，师姐调查我的次数不下百次，每一次都差那么一点就能抓到把柄。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_006",
+        "content": "苏青瑶的身形骤然僵住，握剑的手指不自觉地收紧。她从未想过陈机会如此直接地挑明这件事，那双总是低垂着的眼眸此刻竟让她感到一阵陌生的压迫感。月光下，那个曾经被所有人嘲笑的废物弟子，正以一种全新的姿态站在她面前。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_007",
+        "character_id": "char_suqingyao",
+        "content": "你……一直都知道？\n\n苏青瑶的声音微微发颤，这是她极少流露的失态。她咬着银牙，目光如刀：\n\n那你为何还要与我周旋？看我像傻子一样四处查探，很有趣吗？陈机，你到底在图谋什么！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0490_choice_01",
+        "prompt": "苏青瑶已经察觉到异常，陈机必须做出选择——是继续隐瞒，还是展示部分底牌以换取信任？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0490_opt_01a",
+            "text": "坦白天机录存在",
+            "description": "向苏青瑶展示天机录残页的存在，以换取她的信任，将她纳入假死计划",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露核心底牌",
+            "visible_reward": "获得内门首席的支持",
+            "risk_hint": "苏青瑶可能上报宗门，导致计划全盘崩溃",
+            "process_label": "展露底牌换取信任",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt01a_01",
+                  "content": "陈机没有回答她的质问，而是缓缓抬起右手。掌心之上，一张泛黄的古朴书页缓缓浮现，其上流转的纹路如同活物一般蠕动，散发着令人心悸的远古气息。苏青瑶的瞳孔骤然收缩——那气息，她曾在宗门禁地的古籍中见过记载。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_knows_tianji"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶得知天机录存在",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_01b",
+            "text": "只透露假死计划",
+            "description": "隐瞒天机录的具体信息，只向苏青瑶透露自己需要假死布局的原因",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "信任建立较慢",
+            "visible_reward": "保留核心秘密",
+            "risk_hint": "苏青瑶可能不会完全信任计划，执行时出现变数",
+            "process_label": "有限透露换取合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt01b_01",
+                  "content": "我需要死一次。\n\n陈机的声音很轻，却如同一块巨石砸入湖面，激起千层浪花。苏青瑶的表情凝固在脸上，那双素来冷静的眼眸里第一次出现了如此明显的错愕。她张了张嘴，却发现一时竟不知该说什么。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "fake_death_plan_agreed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_01c",
+            "text": "反将一军试探",
+            "description": "不正面回答，反而质问苏青瑶为何如此执着于调查自己，试探她的真实目的",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能激怒苏青瑶",
+            "visible_reward": "了解苏青瑶真实想法",
+            "risk_hint": "苏青瑶可能拂袖而去，拒绝任何合作",
+            "process_label": "反向试探获取情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt01c_01",
+                  "content": "陈机轻轻笑了一声，那笑容里带着几分玩味：\n\n师姐何必这么紧张？倒是我想问一句——你调查我这么久，是因为怀疑我，还是因为……担心我？\n\n苏青瑶的脸色瞬间变得极为精彩，那种被戳中心事又死不承认的窘迫，让这位素来高冷的女修难得露出了一丝少女的娇嗔。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_confused"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机察觉苏青瑶对自己态度复杂",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_008",
+        "content": "不管选择如何，陈机都已经迈出了关键的一步。他深吸一口气，目光扫过身下咆哮的龙脉——那股沉睡万载的力量正在缓缓苏醒，而他，正是唤醒这一切的钥匙。三人必须在这场大幕拉开之前，完成所有的布局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_009",
+        "character_id": "char_yeqing",
+        "content": "就在此时，虚空再次裂开，夜清的身影从中踏出。她的脸上带着一丝意味深长的笑意，看向苏青瑶的目光里满是挑衅：\n\n哟，天青宗的高冷首席也在？看来我们的计划得扩大规模了。",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_010",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶的剑光已经架在了夜清的脖颈上，冷声道：魔道妖女，你怎敢出现在我面前！\n\n夜清却不闪不避，反而将脖颈往剑刃上送了送，笑得愈发灿烂：首席大人这么紧张做什么？我若想对陈机不利，方才就不会把圣宗的情报双手奉上了。",
+        "emotion": "对峙"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0490_choice_02",
+        "prompt": "两位性格迥异的女子剑拔弩张，陈机必须做出决定——如何平衡这看似不可调和的矛盾？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0490_opt_02a",
+            "text": "用计谋压制夜清",
+            "description": "向夜清展示天机录预见的片段，让她明白自己不过是计划中的一枚棋子",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "消耗天命值",
+            "visible_reward": "夜清彻底服从",
+            "risk_hint": "天命值消耗不可逆",
+            "process_label": "以预见能力震慑魔道圣女",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt02a_01",
+                  "content": "陈机没有说话，只是抬起手掌，天机录的纹路在指尖流转。一幅模糊的画面在夜清眼前浮现——那是她最不愿被人知晓的童年记忆，是圣宗将她当作工具培养的黑暗岁月。夜清的笑容瞬间僵住，看向陈机的目光第一次带上了一丝恐惧。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_02b",
+            "text": "用利益说服夜清",
+            "description": "向夜清承诺假死计划成功后，帮助她摆脱圣宗的控制",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "欠下人情债",
+            "visible_reward": "获得稳定盟友",
+            "risk_hint": "夜清可能得寸进尺",
+            "process_label": "以自由为筹码达成合作",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt02b_01",
+                  "content": "我可以帮你离开圣宗。\n\n陈机的声音不大，却精准地击中了夜清内心最柔软的地方。那双妖媚的眼眸里闪过一丝波动，她沉默片刻，终于收起了那副玩世不恭的姿态：\n\n你要我怎么做？",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_02c",
+            "text": "让苏青瑶主导对话",
+            "description": "退居幕后，让两位女子自行协调，观察她们各自的底线",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "失去主导权",
+            "visible_reward": "获取更多信息",
+            "risk_hint": "双方可能谈崩",
+            "process_label": "以退为进坐山观虎斗",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt02c_01",
+                  "content": "陈机后退一步，将舞台交给两位女子。苏青瑶与夜清对视片刻，前者冷哼一声，后者却笑得更灿烂了。让陈机意外的是，两人竟然在短时间内达成了某种默契——或许是因为她们都清楚，眼前这个\"废物\"才是真正的核心。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_011",
+        "content": "三人的目光同时落在陈机身上。龙脉的轰鸣声愈发震耳欲聋，金色的灵光从龙首石台的四角升起，将整片空间映照得如同神迹降临。陈机深吸一口气，开始讲述他构思已久的假死计划——利用龙脉觉醒的力量制造一场惊天动地的\"死亡\"假象，让所有敌人在他\"死后\"放松警惕，从而原形毕露。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_012",
+        "character_id": "char_yeqing",
+        "content": "有意思。\n\n夜清抚掌轻笑，眼底却闪烁着精明的光芒：龙脉觉醒的力量足以让任何人相信你已经灰飞烟灭。不过……你要如何确保我们三人在这场戏里全身而退？",
+        "emotion": "思考"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_013",
+        "character_id": "char_suqingyao",
+        "content": "苏青瑶虽然面色依旧冷淡，但语气已经缓和了许多：你的仇人是谁？假死之后打算做什么？\n\n陈机的嘴角勾起一抹冷笑，目光幽深如渊：\n\n退婚之辱，师姐可还记得？当年萧家悔婚，将我陈机视为耻辱扫地出门。那场婚事的幕后主使，我一直记在心里。现在……是时候让他们付出代价了。",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_014",
+        "content": "就在此时，天机录第一页骤然泛起幽光。墨先生那苍老而威严的身影从书页中缓缓浮现，他悬浮在三人中央，目光深邃得仿佛能洞穿时间长河。苏青瑶和夜清同时露出警惕之色，但陈机却微微躬身：\n\n墨先生，您来了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_015",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生捋了捋虚幻的长须，声音低沉而庄严：\n\n假死之局，以龙脉为引，倒是个好主意。不过……\n\n他的目光落在陈机身上，带着一丝难以言喻的复杂：\n\n你可知道，你所经历的这一切，从你获得天机录的那一刻起，就已经被某个存在注视着了？",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0490_choice_03",
+        "prompt": "墨先生透露了一个惊人的信息——陈机一直被人监视着。面对这个真相，陈机该如何回应？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0490_opt_03a",
+            "text": "追问监视者身份",
+            "description": "直接询问墨先生，试图了解这个\"某个存在\"的真实身份",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能触及禁忌",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "墨先生可能不会完全透露",
+            "process_label": "直面真相追问幕后黑手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt03a_01",
+                  "content": "陈机的眼神骤然锐利起来，声音里带着一丝压抑的怒意：是谁？是谁在暗中操控我的一切？\n\n墨先生沉默了片刻，终于吐出一个让在场所有人都为之色变的词：\n\n天道之眼。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "tianyan_eye_mentioned"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机得知\"天道之眼\"的存在",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_03b",
+            "text": "表面接受暗中调查",
+            "description": "不在墨先生面前表现出太多情绪，但暗中决定追查此事",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过追问时机",
+            "visible_reward": "保留底牌",
+            "risk_hint": "可能永远不知道真相",
+            "process_label": "隐忍不发暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt03b_01",
+                  "content": "陈机的表情没有丝毫变化，只是微微点头：多谢先生提醒。\n\n但他的指尖已经不自觉地攥紧——被人当作棋子摆布的感觉，让他心中燃起了一股从未有过的怒火。他记下了，这个仇，他记下了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_03c",
+            "text": "质问墨先生立场",
+            "description": "既然天机录一直在被人注视，那墨先生又是站在哪一边的？",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能惹怒墨先生",
+            "visible_reward": "了解墨先生真实目的",
+            "risk_hint": "墨先生可能拂袖而去",
+            "process_label": "反客为主质疑执棋人",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt03c_01",
+                  "content": "陈机的目光陡然变得锐利，他直视墨先生的双眼，声音冷得如同寒冰：\n\n先生既然知晓此事，又在其中扮演什么角色？您口口声声说守护天机录，可您……真的是我的盟友吗？\n\n墨先生的表情终于有了变化，那双古井无波的眼眸里，第一次闪过一丝欣慰的光芒。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_016",
+        "character_id": "char_moxiansheng",
+        "content": "好！好！好！\n\n墨先生连说三个好字，虚幻的身影竟微微颤抖起来。他看着陈机的目光里满是欣慰与期待：\n\n你能问出这句话，说明你终于开始有了真正的棋手觉悟。不错，我确实是执棋人——但我所执的棋局，与天道之眼恰恰相反。\n\n我的目的，是打破那笼罩在所有预言者头上的天罗地网！",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_017",
+        "content": "墨先生的话语如同一道惊雷，在龙脉深处炸响。苏青瑶和夜清对视一眼，都从对方眼中看到了震惊——天道之眼，执棋人，打破棋局……这些信息已经远远超出了她们的认知范畴。但陈机的表情却出奇地平静，仿佛一切都在他的预料之中。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_018",
+        "character_id": "char_chenji",
+        "content": "所以先生要我去死。\n\n陈机的声音很轻，却带着一种决绝的意味：假死不仅是为了引出敌人，更是为了让天道之眼以为我已经出局，从而露出更多破绽。对吗？\n\n墨先生抚须而笑，眼中满是赞许：孺子可教。天机录的代价你已经知晓，天命值消耗殆尽之日，便是你真正死亡之时。而假死……是唯一能让你在死局中求得生机的办法。",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_019",
+        "content": "龙脉的轰鸣声在这一刻达到了顶峰，金色的灵光冲天而起，将整片夜空染成璀璨的霞色。在这片光芒之中，陈机缓缓闭上眼睛。他的心中既有期待，也有忐忑——假死布局正式启动，而他必须在死亡的倒计时中，完成所有必须完成的事。\n\n远处，萧家的方向，一道隐秘的传讯符悄然飞向某个未知的所在。陈机虽然看不见，但他知道，那些曾经羞辱过他的人，即将迎来他们最恐惧的时刻。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

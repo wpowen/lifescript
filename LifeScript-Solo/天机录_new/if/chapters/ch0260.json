@@ -1,0 +1,358 @@
+{
+  "id": "天机录_ch0260",
+  "book_id": "天机录",
+  "number": 260,
+  "title": "破阵惊雷",
+  "is_paid": true,
+  "next_chapter_hook": "当灵魂印记被刻入秘境的刹那，陈机感到一股超越人力的意志穿透虚空，如天道之眼般审视着他的每一步棋——那窥探，远比夜清口中的警告更加古老、更加恐怖。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0260_001",
+        "content": "夜清的警告如一根细刺，扎在陈机神魂深处。他面色如常，脚步平稳地率领小队穿行于残阵之间，心中却已翻涌起惊涛骇浪。秘境深处，有东西在注视他？是魔道设下的暗桩，还是比魔道更古老的存在？他的天机录微微发烫，仿佛在回应着某种共鸣。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_002",
+        "content": "穿过最后一道阵纹，豁然开朗。阵法核心乃是一方白玉祭坛，足有十丈方圆，坛上铭刻的阵纹已黯淡大半——显然先前闯入者消耗了大量能量。祭坛正中悬浮着一枚玉简，正是第一层的通关信物。然而此刻，所有人的目光却落在了祭坛边缘的那道身影上。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_003",
+        "character_id": "char_hanlie",
+        "content": "废物，你磨蹭什么？区区一道残阵走了半柱香，比我家灵龟还慢！",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_004",
+        "content": "韩烈的嗤笑声在祭坛间回荡，几名玄武宗弟子跟着哄笑。陈机充耳不闻，目光却不着痕迹地扫过李昊——这位天青宗内门弟子的额头正沁出细密冷汗，右手死死攥着袖口，仿佛在掩饰什么。他的站位也极为微妙，恰好处于祭坛边缘的阴影处，随时可以撤退。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_005",
+        "character_id": "char_chenji",
+        "content": "李师兄方才走得匆忙，想必是在祭坛边缘发现了什么有趣的东西？",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_006",
+        "content": "陈机的声音不轻不重，却如一柄软刀，直直捅入李昊心口。后者身形一僵，干笑道：“陈师弟说笑了，我不过是……在观察阵纹走势。”陈机缓步上前，每一步都踏得极有节奏，嘴角噙着一抹若有若无的笑意：“哦？那李师兄袖中藏着的是什么阵纹，能让师兄如此紧张？”",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_007",
+        "character_id": "char_hanlie",
+        "content": "姓陈的，你少在那阴阳怪气！有本事就拿玉简走人，搁这审什么审？",
+        "emotion": "急躁"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0260_choice_001",
+        "prompt": "韩烈公然为李昊出头，陈机该如何应对这突如其来的挑衅？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "彻底揭露",
+            "text": "当众搜身",
+            "description": "直接掀开李昊的底牌，让其在众人面前无所遁形，铁证如山，不留余地。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "与李昊彻底撕破脸，可能引发更大冲突",
+            "visible_reward": "彻底摧毁李昊信誉，震慑在场所有人",
+            "risk_hint": "若证据被毁，可能反被倒打一耙",
+            "process_label": "揭露李昊",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_彻底揭露_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机眸光骤冷，忽然抬手，一道灵力化作锁链缠向李昊手腕：“既然韩师兄这么护着，不如就让诸位看看，李师兄袖中究竟藏着什么见不得人的东西！”",
+                  "emotion": "冷酷"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_彻底揭露_002",
+                  "content": "李昊惊骇欲逃，却被陈机灵力锁链钳制得动弹不得。他袖口被灵力撕开，一枚漆黑的玉佩滚落祭坛——那玉佩上赫然刻着一道魔纹，与魔道圣宗的标志如出一辙！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "li_hao_exposed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "彻底揭露李昊勾结魔道的证据",
+            "branch_route_id": null
+          },
+          {
+            "id": "留有余地",
+            "text": "以退为进",
+            "description": "表面放过李昊，实则步步紧逼，让他自己露出马脚，杀人不见血。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "给李昊喘息之机，可能错失最佳时机",
+            "visible_reward": "李昊自乱阵脚，暴露更深的阴谋",
+            "risk_hint": "若李昊镇定下来，可能反咬一口",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_留有余地_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机收回手，淡淡一笑：“韩师兄说得是，是我多虑了。李师兄，请。”他侧身让开去路，神态自若得仿佛什么都没发生。",
+                  "emotion": "隐忍"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_留有余地_002",
+                  "content": "李昊如蒙大赦，转身便要离开。然而他转身的瞬间，袖中玉佩不慎滑落，砸在白玉祭坛上发出清脆声响——魔纹在众人注视下熠熠生辉，刺目得无法忽视。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "li_hao_exposed_subtle"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "用计谋让李昊自己露出马脚",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_008",
+        "character_id": "char_hanlie",
+        "content": "这……这是栽赃！姓陈的，是你放进他袖子里的！",
+        "emotion": "惊怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_009",
+        "content": "韩烈的声音都劈了叉，却更显得欲盖弥彰。陈机拾起那枚魔道玉佩，轻轻一抖，玉佩中竟浮现出数道传音符文——记录的正是李昊与魔道接洽的全过程！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_010",
+        "character_id": "char_chenji",
+        "content": "栽赃？韩师兄好大的口气。这传音符文乃是阵中天然生成，专为记录闯阵者行迹所设。韩师兄的意思是，我一个筑基初期的废物，还能篡改这阵中天机不成？",
+        "emotion": "讽刺"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0260_choice_002",
+        "prompt": "证据确凿，五长老亦在旁观，陈机该如何给这场闹剧收尾？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "言语碾压",
+            "text": "痛打落水狗",
+            "description": "不依不饶，当众将李昊、韩烈的丑态分析得体无完肤，让正道弟子们看清这两人的嘴脸。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "言辞过于犀利可能得罪更多中立势力",
+            "visible_reward": "名望大涨，在场弟子对陈机刮目相看",
+            "risk_hint": "树敌过多，可能招致后续报复",
+            "process_label": "言语打击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_言语碾压_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机环顾四周，声音清朗：“诸位师兄师姐，方才李师兄袖中滑落的魔道信物、阵中自然生成的传音符文，这便是天青宗内门弟子的真面目。韩烈师兄不惜颠倒黑白为其辩护，不知是同谋，还是单纯蠢得被人当枪使？”",
+                  "emotion": "凌厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_言语碾压_002",
+                  "content": "此言一出，满场哗然。玄武宗弟子们面面相觑，再无人敢出声附和。韩烈气得浑身发抖，偏偏证据确凿，无从辩驳。五长老从暗处现身，目光在陈机身上停留片刻，微微颔首。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "wu_zhanglao_notice"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "当众羞辱李昊与韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "见好就收",
+            "text": "点到为止",
+            "description": "见五长老已有决断，便不再穷追猛打，留下得饶人处且饶人的好名声，暗中记下韩烈的账。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "未能彻底打压韩烈，可能被视为软弱",
+            "visible_reward": "在长老面前展现气度，埋下更长线的布局",
+            "risk_hint": "韩烈可能认为陈机怕了他",
+            "process_label": "收放自如",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0260_result_见好就收_001",
+                  "character_id": "char_chenji",
+                  "content": "陈机将魔道玉佩收入袖中，对五长老拱手道：“弟子只是就事论事，此物如何处置，全凭长老定夺。”言罢便退至一旁，神态平和得仿佛只是做了一件微不足道的小事。",
+                  "emotion": "淡然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0260_result_见好就收_002",
+                  "content": "五长老深深看了陈机一眼，挥手将瘫软在地的李昊束缚，沉声道：“勾结魔道，罪无可恕。带回宗门再审！”韩烈还想说什么，却被五长老一个眼神瞪了回去。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "wu_zhanglao_notice_gentle"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "在长老面前展现从容气度",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_011",
+        "content": "陈机取了祭坛上的玉简，灵光没入眉心。刹那间，一股浩瀚的意志穿透虚空，扫过他的神魂——那感觉冰冷而悠远，仿佛亘古存在的天道之眼，正透过秘境的记录阵法，审视着他这个刚刚崭露头角的棋子。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0260_012",
+        "character_id": "char_moxiansheng",
+        "content": "（天机录中传来墨先生低沉的叹息）它注意到你了。比我预想的更快……小家伙，你走的那步棋，有人不愿意看到。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_013",
+        "content": "陈机心头一凛，面上却不动声色。秘境核心那股窥探感渐渐消散，但墨先生的话如同一盆冷水，浇灭了他些许得意。他低头看向掌心的玉简——第一层通关，灵魂印记已被秘境记录。从此刻起，他在秘境的每一步，都将被那只天道之眼注视着。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0260_014",
+        "content": "走出祭坛范围，夜色的山风拂面而来，带着秘境特有的清冷。陈机仰头望天，星辰隐于薄雾之后，恰如他此刻的心绪——前路漫漫，暗流涌动。方才的胜利不过是一枚微不足道的棋子，而他真正的对手，从不在明处。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

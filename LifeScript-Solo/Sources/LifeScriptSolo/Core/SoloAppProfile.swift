@@ -9,11 +9,11 @@ struct SoloAppProfile: Equatable, Sendable {
     }
 
     static func resolve(infoDictionary: [String: Any]) -> SoloAppProfile {
-        let appDisplayName = stringValue("CFBundleDisplayName", in: infoDictionary) ?? "灰烬执政官"
+        let appDisplayName = localizedValue("CFBundleDisplayName", in: infoDictionary) ?? "灰烬执政官"
         let palettePreset = SoloPalettePreset(rawValue: stringValue("SoloPalettePreset", in: infoDictionary) ?? "") ?? .ashCrimson
-        let storyDisplayName = stringValue("SoloStoryDisplayName", in: infoDictionary) ?? appDisplayName
-        let dossierTitle = stringValue("SoloDossierTitle", in: infoDictionary) ?? "生存档案"
-        let routeMapTitle = stringValue("SoloRouteMapTitle", in: infoDictionary) ?? "灾变路线"
+        let storyDisplayName = localizedValue("SoloStoryDisplayName", in: infoDictionary) ?? appDisplayName
+        let dossierTitle = localizedValue("SoloDossierTitle", in: infoDictionary) ?? "生存档案"
+        let routeMapTitle = localizedValue("SoloRouteMapTitle", in: infoDictionary) ?? "灾变路线"
         let landing = resolveLandingConfig(
             infoDictionary: infoDictionary,
             palettePreset: palettePreset,
@@ -25,18 +25,18 @@ struct SoloAppProfile: Equatable, Sendable {
         let branding = SoloBranding(
             appDisplayName: appDisplayName,
             storyDisplayName: storyDisplayName,
-            entryEyebrow: stringValue("SoloEntryEyebrow", in: infoDictionary) ?? "末日剧场 · 互动长篇",
-            promise: stringValue("SoloPromise", in: infoDictionary) ?? "你不是在旁观末日。你是在决定谁能活到明天。",
-            continueHint: stringValue("SoloContinueHint", in: infoDictionary) ?? "回到停电后的安全区，让上一夜留下的余波继续扩散。",
-            currentRunTitle: stringValue("SoloCurrentRunTitle", in: infoDictionary) ?? "当前夜线",
-            recapTitle: stringValue("SoloRecapTitle", in: infoDictionary) ?? "上一夜回响",
-            currentStageTitle: stringValue("SoloStageTitle", in: infoDictionary) ?? "当前生存阶段",
-            objectiveTitle: stringValue("SoloObjectiveTitle", in: infoDictionary) ?? "眼下保命目标",
+            entryEyebrow: localizedValue("SoloEntryEyebrow", in: infoDictionary) ?? "末日剧场 · 互动长篇",
+            promise: localizedValue("SoloPromise", in: infoDictionary) ?? "你不是在旁观末日。你是在决定谁能活到明天。",
+            continueHint: localizedValue("SoloContinueHint", in: infoDictionary) ?? "回到停电后的安全区，让上一夜留下的余波继续扩散。",
+            currentRunTitle: localizedValue("SoloCurrentRunTitle", in: infoDictionary) ?? "当前夜线",
+            recapTitle: localizedValue("SoloRecapTitle", in: infoDictionary) ?? "上一夜回响",
+            currentStageTitle: localizedValue("SoloStageTitle", in: infoDictionary) ?? "当前生存阶段",
+            objectiveTitle: localizedValue("SoloObjectiveTitle", in: infoDictionary) ?? "眼下保命目标",
             dossierTitle: dossierTitle,
             routeMapTitle: routeMapTitle,
-            settlementTitle: stringValue("SoloSettlementTitle", in: infoDictionary) ?? "本章余波",
-            chapterUnitName: stringValue("SoloChapterUnitName", in: infoDictionary) ?? "章",
-            atmosphereLine: stringValue("SoloAtmosphereLine", in: infoDictionary) ?? "警报还没停，火光已经把人心照得太清楚。",
+            settlementTitle: localizedValue("SoloSettlementTitle", in: infoDictionary) ?? "本章余波",
+            chapterUnitName: localizedValue("SoloChapterUnitName", in: infoDictionary) ?? "章",
+            atmosphereLine: localizedValue("SoloAtmosphereLine", in: infoDictionary) ?? "警报还没停，火光已经把人心照得太清楚。",
             ornamentSymbol: stringValue("SoloOrnamentSymbol", in: infoDictionary) ?? "bolt.horizontal.circle.fill",
             palettePreset: palettePreset,
             landing: landing
@@ -50,6 +50,11 @@ struct SoloAppProfile: Equatable, Sendable {
 
     private static func stringValue(_ key: String, in infoDictionary: [String: Any]) -> String? {
         infoDictionary[key] as? String
+    }
+
+    private static func localizedValue(_ key: String, in infoDictionary: [String: Any]) -> String? {
+        guard let value = stringValue(key, in: infoDictionary) else { return nil }
+        return SoloLocalization.localized(value)
     }
 
     private static func resolveLandingConfig(
@@ -67,14 +72,14 @@ struct SoloAppProfile: Equatable, Sendable {
         )
 
         return SoloEntryLandingConfig(
-            interactivePrompt: stringValue("SoloEntryInteractivePrompt", in: infoDictionary) ?? defaults.interactivePrompt,
-            primaryActionTitle: stringValue("SoloEntryPrimaryActionTitle", in: infoDictionary) ?? defaults.primaryActionTitle,
-            secondaryActionTitle: stringValue("SoloEntrySecondaryActionTitle", in: infoDictionary) ?? defaults.secondaryActionTitle,
-            identityLabel: stringValue("SoloEntryIdentityLabel", in: infoDictionary) ?? defaults.identityLabel,
-            dossierSubtitle: stringValue("SoloEntryDossierSubtitle", in: infoDictionary) ?? defaults.dossierSubtitle,
-            routeMapSubtitle: stringValue("SoloEntryRouteMapSubtitle", in: infoDictionary) ?? defaults.routeMapSubtitle,
-            hookTitle: stringValue("SoloEntryHookTitle", in: infoDictionary) ?? defaults.hookTitle,
-            hookBody: stringValue("SoloEntryHookBody", in: infoDictionary) ?? defaults.hookBody,
+            interactivePrompt: localizedValue("SoloEntryInteractivePrompt", in: infoDictionary) ?? defaults.interactivePrompt,
+            primaryActionTitle: localizedValue("SoloEntryPrimaryActionTitle", in: infoDictionary) ?? defaults.primaryActionTitle,
+            secondaryActionTitle: localizedValue("SoloEntrySecondaryActionTitle", in: infoDictionary) ?? defaults.secondaryActionTitle,
+            identityLabel: localizedValue("SoloEntryIdentityLabel", in: infoDictionary) ?? defaults.identityLabel,
+            dossierSubtitle: localizedValue("SoloEntryDossierSubtitle", in: infoDictionary) ?? defaults.dossierSubtitle,
+            routeMapSubtitle: localizedValue("SoloEntryRouteMapSubtitle", in: infoDictionary) ?? defaults.routeMapSubtitle,
+            hookTitle: localizedValue("SoloEntryHookTitle", in: infoDictionary) ?? defaults.hookTitle,
+            hookBody: localizedValue("SoloEntryHookBody", in: infoDictionary) ?? defaults.hookBody,
             valueCards: parseValueCards(infoDictionary: infoDictionary, fallback: defaults.valueCards, defaultTint: palettePreset),
             flowSteps: parseFlowSteps(infoDictionary: infoDictionary, fallback: defaults.flowSteps, defaultTint: palettePreset),
             proofCards: parseProofCards(infoDictionary: infoDictionary, fallback: defaults.proofCards, defaultTint: palettePreset)
@@ -192,8 +197,8 @@ struct SoloAppProfile: Equatable, Sendable {
 
             return SoloEntryValueCard(
                 id: (rawCard["id"] as? String) ?? "value-card-\(index)",
-                title: title,
-                detail: detail,
+                title: SoloLocalization.localized(title),
+                detail: SoloLocalization.localized(detail),
                 tint: paletteValue(rawCard["tint"], defaultTint: defaultTint)
             )
         }
@@ -218,8 +223,8 @@ struct SoloAppProfile: Equatable, Sendable {
 
             return SoloEntryFlowStep(
                 id: (rawStep["id"] as? String) ?? "flow-step-\(index)",
-                title: title,
-                detail: detail,
+                title: SoloLocalization.localized(title),
+                detail: SoloLocalization.localized(detail),
                 tint: paletteValue(rawStep["tint"], defaultTint: defaultTint)
             )
         }
@@ -247,8 +252,8 @@ struct SoloAppProfile: Equatable, Sendable {
             return SoloEntryProofCard(
                 id: (rawCard["id"] as? String) ?? "proof-card-\(index)",
                 kind: kind,
-                title: title,
-                detail: detail,
+                title: SoloLocalization.localized(title),
+                detail: SoloLocalization.localized(detail),
                 tint: paletteValue(rawCard["tint"], defaultTint: defaultTint)
             )
         }

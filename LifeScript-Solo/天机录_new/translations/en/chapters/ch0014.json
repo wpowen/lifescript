@@ -1,0 +1,657 @@
+{
+  "id": "天机录_ch0014",
+  "book_id": "天机录",
+  "number": 14,
+  "title": "Setting up a secret scheme",
+  "is_paid": false,
+  "next_chapter_hook": "Just as the three were about to part, Master Mo's remnant soul suddenly trembled, and he softly revealed a heavenly secret even Chen Ji had not foreseen—Chen Nian's location was deep beneath the Tianqing Sect, within the Ancient Forbidden Land that no one had ever set foot in.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0014_001",
+        "content": "Deep into the night, Chen Ji sat alone in a decrepit thatched hut. The fragment of the Tianji Record hovered still above his palm, its azure light flickering. In the Martial Arena earlier, he had used this incomplete record to glimpse a danger three hours ahead—someone had set a deadly trap for Su Qingyao. Fingertips gently brushing the fragment, Chen Ji's eyes shimmered with complex emotions. His Heavenly Fate had decreased by another five points, leaving only a few remaining, yet he felt no regret. For that secret scheme, Su Qingyao, this chess piece, must be preserved.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_002",
+        "character_id": "char_chenji",
+        "content": "Master Mo, I apologize for disturbing you at such a late hour.",
+        "emotion": "恭敬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_003",
+        "content": "A ghostly light gathered in the corner, and Master Mo's form emerged like a wisp of blue smoke, ethereal and unstable. His profound eyes studied Chen Ji, and a meaningful smile curled at the corner of his lips. Within that smile lay both gratification and a penetrating sharpness, as if he had long awaited this midnight visit from the废物 disciple.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_004",
+        "character_id": "char_moxiansheng",
+        "content": "Oh? I thought you would continue pretending to be that废物 much longer. So, what made you hold back those moves in the Martial Arena?",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_005",
+        "content": "Chen Ji's heart stirred slightly, though his expression remained unchanged. He had always known he couldn't deceive this guardian for long, yet he hadn't expected Master Mo to know every detail of the Martial Arena. Master Mo was indeed as profound as the rumors claimed, but that was precisely why Chen Ji had come—with a scheme to lay, he needed someone who truly understood the game of chess.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_006",
+        "character_id": "char_chenji",
+        "content": "Master Mo's eyes are like torches. I dare no longer hide my inadequacies. Tonight I come with a request—I wish to ask Master for a path, how to transform from a chess piece into a chess player.",
+        "emotion": "恳切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_007",
+        "content": "Master Mo's form solidified slightly, and a trace of appreciation flickered in those eyes. He drifted before Chen Ji, his tattered robes stirring without wind, his voice low and profound.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_008",
+        "character_id": "char_moxiansheng",
+        "content": "A chess player? What bold ambitions. However... I have waited a long time to hear these words.",
+        "emotion": "期待"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0014_009",
+        "prompt": "How does Chen Ji respond to Master Mo's expectations and demonstrate his sincerity?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0014_009_a",
+            "text": "Reveal the Tianji Record Fragment",
+            "description": "Directly display the existence of the Tianji Record to prove he deserves to become a chess player",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Exposing the Tianji Record's aura may attract attention from those with ulterior motives",
+            "visible_reward": "Gain Master Mo's deeper trust and guidance",
+            "risk_hint": "If the Tianji Record's aura is leaked, consequences could be dire if detected by Ling Yuan",
+            "process_label": "展示底牌",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_009_a_1",
+                  "content": "Chen Ji took a deep breath, slowly unfurling his palm. Azure light rose from his掌心, and the Tianji Record Fragment revealed its ancient, mysterious patterns. Master Mo's gaze froze instantly, his remnant soul trembling slightly.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_009_a_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "This aura... It is indeed the Tianji Record! I have waited sixty years, and finally, you have arrived!",
+                  "emotion": "激动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0014_009_b",
+            "text": "Use words to test Master Mo's bottom line",
+            "description": "Do not rush to reveal cards; first gauge how much Master Mo knows, then decide how much to disclose",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May appear insufficiently candid and arouse Master Mo's displeasure",
+            "visible_reward": "Understand Master Mo's true stance, avoid exposing too much information",
+            "risk_hint": "Master Mo may consider Chen Ji insincere for withholding key information",
+            "process_label": "言语试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_009_b_1",
+                  "content": "Chen Ji smiled faintly, not eager to reveal his hand. Instead, he clasped his hands and said: \"Your disciple dares to ask first—regarding that Turtle Shell, does Master know its origins?\" At these words, Master Mo's gaze changed visibly.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_009_b_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "Turtle Shell? How did you learn of the Turtle Shell matter?",
+                  "emotion": "警惕"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0014_009_c",
+            "text": "Honestly state your purpose and difficulties",
+            "description": "No tricks, treat with sincerity, explain the true reasons you need help",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose your current weaknesses and difficulties",
+            "visible_reward": "A sincere attitude may move Master Mo and gain unexpected assistance",
+            "risk_hint": "Being too honest may cause Master Mo to undervalue Chen Ji's worth",
+            "process_label": "以诚相待",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_009_c_1",
+                  "content": "Chen Ji dropped all pretense, his expression serious: \"Your disciple indeed has ambitions, but also difficulties I must face. Undercurrents surge within the Tianqing Sect, Ling Yuan harbors great ambitions, and I need a wise teacher who can guide me through confusion.\" Master Mo fell silent for a moment, the outline of his remnant soul softening somewhat.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_009_c_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "Very well. I despise those who play mind games most. Since you show such sincerity, I shall speak directly—Ling Yuan is a hundred times more dangerous than you can imagine.",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0014_010",
+        "content": "Moonlight flowed like water, scattering across the Tianqing Sect Back Mountain. Chen Ji stood upon a piece of blue stone, hands clasped behind his back, awaiting the one he had summoned. The night wind brushed his robes but could not stir the dark light within his eyes. The profound conversation with Master Mo had benefited him greatly, but the next crucial move was—Su Qingyao.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_011",
+        "content": "Footsteps approached, cold as frost. Su Qingyao's figure emerged from the shadows, moonlight outlining her coldly beautiful silhouette. Her gaze as she looked at Chen Ji carried a trace of scrutiny, curiosity, and an expectation she herself had not yet noticed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_012",
+        "character_id": "char_suqingyao",
+        "content": "Summoning me here at night, Chen Ji—you'd better have a sufficient reason.",
+        "emotion": "冷淡"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_013",
+        "content": "Chen Ji turned, his gaze meeting Su Qingyao's calmly. Unlike usual, he did not lower his head to avoid her gaze; instead, he met her scrutinizing gaze openly, even a faint smile tugging at his lips. This smile, falling in Su Qingyao's eyes, made her heart tremble slightly—when did this废物 disciple's gaze become so profound?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_014",
+        "character_id": "char_chenji",
+        "content": "Senior Sister Su followed me to the Back Mountain at night, surely harboring many doubts. Tonight I will not conceal anything; I merely wish to speak some honest words with Senior Sister—regarding Ling Yuan, regarding the future of the Tianqing Sect, and regarding both of us.",
+        "emotion": "从容"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0014_015",
+        "prompt": "How does Chen Ji decide to demonstrate his value to Su Qingyao?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0014_015_a",
+            "text": "Reveal parts of Ling Yuan's conspiracy",
+            "description": "Demonstrate his insight into the sect's internal crisis, proving he is no废物",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose the fact that he possesses an intelligence channel",
+            "visible_reward": "Let Su Qingyao realize Chen Ji's value and establish initial trust",
+            "risk_hint": "Su Qingyao may interrogate the source of intelligence, putting him in a passive position",
+            "process_label": "展露智谋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_015_a_1",
+                  "content": "Chen Ji stood with hands clasped, his voice low and clear: \"During the Sect Competition three days hence, Ling Yuan will set a covert trap targeting Senior Sister in the arena. The purpose is not to defeat you, but to make you lose face before everyone, thereby shaking your position as Inner Disciple Senior Fellow.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_015_a_2",
+                  "character_id": "char_suqingyao",
+                  "content": "What did you say? How dare Ling Yuan!",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0014_015_b",
+            "text": "Demonstrate the ability to foresee the future",
+            "description": "Reveal that he possesses some kind of foresight ability, directly proving his extraordinary nature",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Once the Tianji Record's ability is exposed, it may attract more covetous attention",
+            "visible_reward": "Su Qingyao will develop strong curiosity and reverence toward Chen Ji",
+            "risk_hint": "If this foresight ability is spread abroad, he will become a target for all",
+            "process_label": "展示异能",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_015_b_1",
+                  "content": "Chen Ji said softly: \"When Senior Sister followed me earlier, at the fork in the road, you hesitated for three breaths—the left path leads to my courtyard, the right leads to Master Mo's Forbidden Grounds. You chose left, but what your heart truly desired was the right path.\" Su Qingyao's pupils contracted sharply.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_015_b_2",
+                  "character_id": "char_suqingyao",
+                  "content": "You... How do you know? Who exactly are you?",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0014_015_c",
+            "text": "Retreat to advance, maintain mystery",
+            "description": "Do not fully reveal; only offer Su Qingyao a choice—to believe him or miss the truth",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Su Qingyao may refuse cooperation due to insufficient information",
+            "visible_reward": "Maintain an air of mystery, making Su Qingyao even more curious",
+            "risk_hint": "Being too mysterious may lead Su Qingyao to think Chen Ji is being theatrical",
+            "process_label": "保持神秘",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好奇",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_015_c_1",
+                  "content": "Chen Ji smiled faintly, not directly answering. Instead, he turned to gaze at the distant mountains: \"Senior Sister merely needs to know—I can see things you cannot. If you are willing, during the Sect Competition three days hence, I will stand on Senior Sister's side. Whether to believe is your choice.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_015_c_2",
+                  "character_id": "char_suqingyao",
+                  "content": "...Are you threatening me?",
+                  "emotion": "警惕"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0014_016",
+        "content": "The night wind suddenly rose violently, scattering several clouds. Moonlight poured down, stretching Chen Ji and Su Qingyao's shadows long across the ground. The two stood facing each other, the atmosphere subtle and tense. Su Qingyao's brow furrowed tightly; she had never imagined the day would come when she would face this废物 disciple like this, much less that she would feel a hint of danger emanating from him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_017",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji, you have opened my eyes. But I need more sincerity—how much do you know of Ling Yuan's conspiracy? Tell me everything.",
+        "emotion": "认真"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_018",
+        "content": "Chen Ji's form shifted slightly, his robes fluttering violently in the wind. He did not answer immediately but slowly walked toward Su Qingyao, stopping three feet before her. The distance between them had never been so close—close enough that Su Qingyao could see the fathomless dark light within Chen Ji's eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_019",
+        "character_id": "char_chenji",
+        "content": "Everything? Senior Sister is too greedy. However, I can give you one guarantee—three days from now, I will help Senior Sister break that deadly trap. In exchange, Senior Sister only needs to agree to one thing.",
+        "emotion": "深沉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_020",
+        "character_id": "char_suqingyao",
+        "content": "What is it?",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_021",
+        "character_id": "char_chenji",
+        "content": "No matter when or where, if I fall into peril, Senior Sister merely standing by will suffice.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_022",
+        "content": "Su Qingyao was stunned. This request caught her off guard with its simplicity—so simple it stirred a complex ripple in her heart. She had thought Chen Ji would demand some great favor, yet it was merely such a nearly \"harmless\" promise.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_023",
+        "character_id": "char_suqingyao",
+        "content": "...You certainly play a good game of chess. Very well, I agree. But if you dare deceive me, the consequences will be yours to bear.",
+        "emotion": "无奈"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0014_024",
+        "prompt": "After reaching a preliminary alliance, how does Chen Ji choose to deepen the relationship with Su Qingyao?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0014_024_a",
+            "text": "Tell her about Master Mo's existence",
+            "description": "Reveal that Master Mo is the expert behind him, displaying his backing",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Exposing Master Mo's existence may attract unnecessary attention",
+            "visible_reward": "Su Qingyao will have greater recognition of Chen Ji's background, with trust increasing significantly",
+            "risk_hint": "Master Mo may not wish his identity to be exposed",
+            "process_label": "透露底牌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 12
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_024_a_1",
+                  "content": "Chen Ji said softly: \"Does Senior Sister know of Master Mo? Though merely a remnant soul, he is my true master.\" Su Qingyao's entire body trembled, her gaze toward Chen Ji changing completely.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_024_a_2",
+                  "character_id": "char_suqingyao",
+                  "content": "Master Mo? The one left behind by Chen Xuan? Chen Ji, what exactly are you...",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0014_024_b",
+            "text": "Maintain mystery, leave room for maneuver",
+            "description": "The alliance is already established; no need to reveal all cards in haste, maintain appropriate distance",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Su Qingyao may feel it insufficiently candid, limiting the depth of cooperation",
+            "visible_reward": "Preserve one's sense of mystery and initiative",
+            "risk_hint": "Building trust takes time; may miss the opportunity to deepen the relationship",
+            "process_label": "留有余地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0014_result_024_b_1",
+                  "content": "Chen Ji shook his head slightly: \"Some things, said too early, are not good. Senior Sister only needs to know—I share a common enemy with Senior Sister. That is enough.\" His smile carried a hint of mystery, making Su Qingyao increasingly unable to see through him.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0014_result_024_b_2",
+                  "character_id": "char_suqingyao",
+                  "content": "You are truly someone hard to fathom.",
+                  "emotion": "无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0014_025",
+        "content": "Moonlight faded gradually, and a pale glow emerged in the east. Su Qingyao and Chen Ji stood side by side atop the mountain, the night's long conversation giving her an entirely new understanding of this \"废物\" disciple. Morning wind brushed past their robes, carrying away the night's chill and the final barrier between them.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_026",
+        "content": "Just then, a ghostly light quietly appeared, and Master Mo's form condensed from the void. Su Qingyao frowned slightly but was not surprised—clearly Chen Ji had already informed her. She looked at this legendary remnant soul guardian, her gaze carrying a trace of scrutiny.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_027",
+        "character_id": "char_moxiansheng",
+        "content": "Regarding the Turtle Shell matter, I indeed know its secrets. But now is not the time to speak of it. Chen Ji, you only need to remember one thing—that Turtle Shell is closely connected to your sister's disappearance.",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_028",
+        "content": "Chen Ji's pupils contracted sharply, his knuckles white from clenching. Chen Nian... his sister who had been missing for years, was actually connected to the Turtle Shell? Master Mo's words were like a heavy hammer, striking Chen Ji's heart hard. He had always believed Chen Nian was merely taken by the Holy Sect, never expecting such a profound scheme lay behind it all.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_029",
+        "character_id": "char_chenji",
+        "content": "Master... Is this truly the case?",
+        "emotion": "激动"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0014_030",
+        "character_id": "char_moxiansheng",
+        "content": "I never speak falsely. But remember—the more complete the Tianji Record, the stronger fate's fatal backlash. You are now merely a fragment, and already like this; if you truly gather all of it...",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_031",
+        "content": "Master Mo did not finish his words, but the unsaid meaning made all three present feel a chill. Su Qingyao unconsciously glanced at Chen Ji, her gaze carrying a trace of worry she herself had not noticed. Chen Ji merely gazed quietly at the brightening eastern horizon, deep within his eyes burning a steadfast light.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0014_032",
+        "content": "The three stood atop the mountain, morning light scattering, giving their figures a faint golden outline. In this moment, Chen Ji was no longer alone. Master Mo's guidance, Su Qingyao's assistance—on this great chessboard of the world, he finally had chess pieces of his own. The undercurrents of the Tianqing Sect, the rivalry between the Three Great Sects, the ambitions of the Demonic Path—everything was only beginning, and he was already prepared.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

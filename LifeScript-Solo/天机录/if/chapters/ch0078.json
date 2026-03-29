@@ -1,0 +1,338 @@
+{
+  "id": "天机录_ch0078",
+  "book_id": "天机录",
+  "number": 78,
+  "title": "内门来使",
+  "is_paid": true,
+  "next_chapter_hook": "就在众人散去之际，陈机低头擦拭龟甲，指尖无意间触及那一行符文——他瞳孔骤缩，那是父亲遗物上从未见过的符号，此刻却清清楚楚地刻在龟甲之上。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0078_001",
+        "content": "晨钟第三响尚在山间回荡，杂役院前已黑压压聚满了人。陈机混在队伍末端，手中龟甲的滚烫已渐渐平息，但那股热意仍残留在掌心，像一根细针，不轻不重地扎着。「雾隐山前月，照见旧年人」——苏青瑶的话仍在耳边回响，与龟甲上忽然浮现的符文遥相呼应，仿佛有什么尘封已久的东西正在苏醒。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_002",
+        "content": "一顶青玉小轿自山道徐徐落下，四名内门弟子抬杠，脚步落地无声，稳得像是踩在棉絮之上。轿帘掀开，走出一位身着玄青锦袍的中年男子，面容清瘦，三缕长髯垂至胸口，腰间悬着一枚刻有「观」字符文的玉牌——那是内门执事才有的标识。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0078_003",
+        "character_id": "char_lingyuan",
+        "content": "天青宗外门弟子陈机，何在？",
+        "emotion": "威严而淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_004",
+        "content": "声音不高，却清晰传入每个人耳中。周围弟子纷纷让开一条道，目光复杂地落在陈机身上——有惊诧，有艳羡，更多的是难以置信。那个在杂役院扫了三年地的废物，凭什么被内门长老关注？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0078_005",
+        "character_id": "char_chenji",
+        "content": "弟子在。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_006",
+        "content": "陈机从人群中走出，步履不快不慢，神色恭谨而不卑怯。他微微躬身行礼，姿态挑不出半分错处——却也没有多一分。执事目光在他身上停留片刻，似有若无地扫过他藏在袖中的左手，嘴角勾起一丝意味不明的弧度。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0078_007",
+        "character_id": "char_lingyuan",
+        "content": "奉内门长老令——杂役弟子陈机，于上月宗门大比中表现不俗，经长老会议审议，现正式列入外门观察名册。此令。",
+        "emotion": "宣读"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_008",
+        "content": "话音落下，四周顿时炸开了锅。「观察名册」四个字的分量，在场众人皆心知肚明——那意味着此人的资质已入了长老法眼，随时可能被破格提拔入内门。一个扫地的杂役，竟要飞上枝头了？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0078_choice_01",
+        "prompt": "面对内门使者的「恩赐」，陈机该如何应对？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0078_opt_01a",
+            "text": "谦逊感恩，伏地谢恩",
+            "description": "表现出受宠若惊的模样，五体投地感谢长老厚爱，让所有人看到一个「幸运废物」的典型反应。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被视为谄媚小人",
+            "visible_reward": "彻底打消旁人戒心",
+            "risk_hint": "需压制内心所有情绪，表情管理必须完美",
+            "process_label": "演绎感激涕零",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0078_result_01a_01",
+                  "character_id": "char_chenji",
+                  "content": "弟子……弟子何德何能，得长老垂青！此恩此德，陈机粉身碎骨难报万一！",
+                  "emotion": "激动到声音发颤"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0078_opt_01b",
+            "text": "恭敬有度，不卑不亢",
+            "description": "保持弟子的基本礼数，既不过分谦卑也不显得傲慢，维持一贯的低调人设。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被认为不懂感恩",
+            "visible_reward": "保持真实形象，不引人注目",
+            "risk_hint": "需精准拿捏分寸，既不能太假也不能太真",
+            "process_label": "保持一贯低调",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0078_result_01b_01",
+                  "character_id": "char_chenji",
+                  "content": "弟子叩谢长老厚爱。日后定当勤勉修行，不负宗门栽培。",
+                  "emotion": "恭谨而克制"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_009",
+        "content": "执事将令卷收入袖中，却没有立刻离去。他负手而立，目光在人群中缓缓扫过，最后又落回陈机身上，似笑非笑地开口：「陈机，长老对你颇为好奇。半月后内门论道大会，你需到场——届时，长老会亲自见你。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_010",
+        "content": "亲自见？人群中又是一阵骚动。能在论道大会上被长老单独召见，对外门弟子而言简直是祖坟冒青烟的造化。不少人看陈机的眼神已经从嫉妒变成了赤裸裸的敌意——一个废物，凭什么？",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0078_011",
+        "character_id": "char_lingyuan",
+        "content": "怎么，吓傻了？",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_012",
+        "content": "执事的声音带着居高临下的戏谑。陈机依旧垂着眼帘，睫毛在眼底投下一小片阴影。他的手指在袖中微微收紧——这执事言行举止过于刻意，那种审视的眼神，不像是在看一个被关照的后辈，倒像是在……验货。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_013",
+        "content": "就在这时，一阵山风吹过，卷起执事宽大的袖口。陈机的目光不经意掠过，瞳孔骤然一缩——那袖口内侧，赫然绣着一枚暗红色的符文，形如盘蛇吐信，与他怀中那枚龟甲上昨夜新浮现的纹路，竟有七分相似！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0078_choice_02",
+        "prompt": "发现执事袖口的异常符文，陈机该如何应对？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0078_opt_02a",
+            "text": "按兵不动，暗中记下",
+            "description": "面不改色地谢过执事，将这个细节深埋心底，待回去后再细细查证。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "错过当面试探的机会",
+            "visible_reward": "不暴露任何端倪，保全底牌",
+            "risk_hint": "执事可能从此消失，下次再见不知何日",
+            "process_label": "暗中观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0078_result_02a_01",
+                  "content": "陈机躬身再拜，神色依旧恭顺：「弟子省得，定不辜负长老期望。」他的声音平稳得没有一丝波澜，仿佛方才什么都没看见。执事深深看他一眼，意味深长地点了点头，转身登上轿子，青玉小轿腾空而起，转瞬消失在云雾之中。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0078_opt_02b",
+            "text": "出言试探，旁敲侧击",
+            "description": "装作不经意地提起那枚符文，看执事如何反应，试探其背后的水有多深。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能打草惊蛇，暴露自己的警觉",
+            "visible_reward": "或许能从执事反应中套出更多线索",
+            "risk_hint": "执事城府极深，很可能反将一军",
+            "process_label": "言语试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0078_result_02b_01",
+                  "content": "陈机抬起头，目光清澈而茫然：「弟子斗胆，敢问执事大人方才袖口所绣纹样，倒是与弟子家中一件旧物相似，不知可是某种传承标记？」执事脚步微顿，回头看他，眼底闪过一丝锐利，旋即恢复如常：「你看岔了。少想些有的没的，好好修炼便是。」说罢拂袖而去，步子却比来时快了几分。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_014",
+        "content": "轿子远去，周围弟子渐渐散开，却有不少人在经过陈机身边时故意撞他肩膀，或低声嘀咕几句酸话。陈机一一受着，脚步不停，径直往杂役院方向走去。阳光从云层缝隙洒落，将他的影子拉得细长而孤独。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_015",
+        "content": "回到那间逼仄的小屋，陈机反手关门，靠在墙上缓缓吐出一口浊气。他从怀中取出龟甲，拇指摩挲过昨夜新生的符文——盘蛇吐信，与那执事袖口的标记如出一辙。父亲留给他的遗物上，为何会出现与内门执事相同的印记？那个「观」字符文的执事，究竟是什么来头？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_016",
+        "content": "陈机闭上眼，天机录在意识深处微微震颤。他没有动用那预知未来的异能——每次动用都要消耗五点天命值，不到万不得已，绝不能轻易挥霍。但苏青瑶的谜语、执事的符文、父亲的遗物……这些线索像散落的棋子，隐隐指向同一个他尚未看清的棋局。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_017",
+        "content": "他睁开眼，目光落在窗外那株枯了半边的老槐上。半月后的内门论道大会，看来不得不去了。那个所谓的「长老关注」，究竟是福是祸？他唇角勾起一丝极淡的弧度——无论是什么，他陈机接着便是。棋局既已摆开，哪有棋手怕棋子之理？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_018",
+        "content": "夕阳西斜，将屋内染成昏黄一片。陈机坐在窗前，手指反复描摹龟甲上的符文，脑海中不断回放执事离开时的眼神——那不是看晚辈的慈和，而是猎人发现猎物时的审视。他在心中默默记下：此人城府极深，来意绝非表面的「关照」二字那样简单。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_019",
+        "content": "更让他在意的是那枚盘蛇符文。天机录残页上从未记载过这种标记，但它与龟甲上昨日才显现的纹路如此相似，绝非巧合。父亲失踪前究竟经历了什么？那个谜语中的「旧年人」，与这符文又有什么关联？一个个问号在陈机心底盘桓，像缠绕的蛇信，冷不丁便会咬上一口。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0078_020",
+        "content": "就在他沉思之际，龟甲上的符文忽然泛起一层淡淡的青光，随即归于沉寂。陈机低头看去，那行符文似乎比方才更清晰了几分——仿佛有什么沉睡的东西正在缓缓苏醒。他将龟甲贴近胸口，感受着那微弱而持续的温热，嘴角的弧度又深了几分。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}
