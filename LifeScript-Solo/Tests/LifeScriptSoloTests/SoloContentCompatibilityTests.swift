@@ -37,6 +37,27 @@ final class SoloContentCompatibilityTests: XCTestCase {
         XCTAssertEqual(choice.satisfactionType.iconName, "quote.bubble.fill")
     }
 
+    func test_choiceNodeDecoding_preservesUnexpectedChoiceTypes() throws {
+        let data = """
+        {
+          "id": "choice_node_unknown_type",
+          "prompt": "面对天机录的新线索，你决定？",
+          "choice_type": "质疑",
+          "choices": [
+            {
+              "id": "choice_option_a",
+              "text": "先问清楚"
+            }
+          ]
+        }
+        """.data(using: .utf8)!
+
+        let node = try decoder.decode(ChoiceNode.self, from: data)
+
+        XCTAssertEqual(node.choiceType.rawValue, "质疑")
+        XCTAssertEqual(node.choiceType.displayName, "质疑")
+    }
+
     func test_relationshipState_tracksCustomDimensions() {
         let base = RelationshipState(
             characterId: "char_custom",

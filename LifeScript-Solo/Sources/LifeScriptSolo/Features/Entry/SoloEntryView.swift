@@ -247,7 +247,11 @@ struct SoloEntryView: View {
     }
 
     private var primaryActionTitle: String {
-        snapshot.progress.completedChapterCount == 0
+        if case .volumeGate = readingRoute {
+            return "解锁下一卷"
+        }
+
+        return snapshot.progress.completedChapterCount == 0
             ? snapshot.branding.landing.primaryActionTitle
             : "继续当前事件"
     }

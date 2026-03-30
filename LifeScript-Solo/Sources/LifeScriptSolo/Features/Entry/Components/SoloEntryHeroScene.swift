@@ -18,7 +18,7 @@ struct SoloEntryHeroScene: View {
             // 内容叠层
             contentStack
         }
-        .frame(maxWidth: .infinity, minHeight: isTianjiluVisualEnabled ? 700 : 620)
+        .frame(maxWidth: .infinity, minHeight: isTianjiluVisualEnabled ? 780 : 680)
     }
 
     // MARK: - Content anchored to bottom (Netflix style)
@@ -51,6 +51,9 @@ struct SoloEntryHeroScene: View {
                 .foregroundStyle(SoloTheme.ink.opacity(0.78))
                 .lineSpacing(5)
                 .fixedSize(horizontal: false, vertical: true)
+                .padding(.bottom, 18)
+
+            featureMarquee
                 .padding(.bottom, 18)
 
             // Meta chips row
@@ -115,6 +118,54 @@ struct SoloEntryHeroScene: View {
                 .padding(.bottom, 36)
         }
         .padding(.horizontal, 24)
+    }
+
+    private var featureMarquee: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 12) {
+                ForEach(heroCompactHighlights) { highlight in
+                    featureCard(highlight)
+                }
+            }
+
+            if let wideHighlight = heroWideHighlight {
+                featureCard(wideHighlight)
+            }
+        }
+    }
+
+    private func featureCard(_ highlight: HeroFeatureHighlight) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(highlight.title)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(highlight.tint.opacity(0.90))
+
+            Text(highlight.value)
+                .font(SoloTypography.sceneHeadline(size: highlight.isWide ? 24 : 22))
+                .foregroundStyle(SoloTheme.ink)
+                .fixedSize(horizontal: false, vertical: true)
+
+            Text(highlight.detail)
+                .font(.caption)
+                .foregroundStyle(SoloTheme.warmInk.opacity(0.80))
+                .lineSpacing(4)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(
+            maxWidth: .infinity,
+            minHeight: highlight.isWide ? 94 : 118,
+            alignment: .topLeading
+        )
+        .padding(.horizontal, 14)
+        .padding(.vertical, 14)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(Color.black.opacity(highlight.isWide ? 0.42 : 0.36))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .strokeBorder(highlight.tint.opacity(0.18), lineWidth: 1)
+        )
     }
 
     // MARK: - Portal Entry Button
@@ -224,6 +275,59 @@ struct SoloEntryHeroScene: View {
     private var portalPulse: Double {
         if reduceMotion { return 0.42 }
         return animationsEnabled ? 0.74 : 0.42
+    }
+
+    private var heroCompactHighlights: [HeroFeatureHighlight] {
+        [
+            HeroFeatureHighlight(
+                id: "chapter-scale",
+                title: SoloLocalization.localized("已收录章节"),
+                value: SoloLocalization.format("%d 章", snapshot.plannedChapterCount),
+                detail: SoloLocalization.localized("当前版本完整接入"),
+                tint: SoloTheme.gold,
+                isWide: false
+            ),
+            HeroFeatureHighlight(
+                id: "ending-scale",
+                title: marketedEndingCount == nil
+                    ? SoloLocalization.localized("互动结构")
+                    : SoloLocalization.localized("结局规模"),
+                value: marketedEndingCount.map { SoloLocalization.format("%d 个结局", $0) }
+                    ?? interactionModeLabel,
+                detail: marketedEndingCount == nil
+                    ? SoloLocalization.localized("路线、人物与章节反馈会跟着你的选择偏转")
+                    : SoloLocalization.localized("关键选择会把命途推向不同终局"),
+                tint: SoloTheme.crimson,
+                isWide: false
+            ),
+        ]
+    }
+
+    private var heroWideHighlight: HeroFeatureHighlight? {
+        HeroFeatureHighlight(
+            id: "interactive-fiction",
+            title: SoloLocalization.localized("阅读方式"),
+            value: SoloLocalization.localized("互动式小说"),
+            detail: SoloLocalization.localized("不是翻页旁观，你的选择会改写人物关系、路线反馈与命途走向"),
+            tint: SoloTheme.jade,
+            isWide: true
+        )
+    }
+
+    private var marketedEndingCount: Int? {
+        switch book.id {
+        case "天机录":
+            return 5
+        default:
+            return nil
+        }
+    }
+
+    private var interactionModeLabel: String {
+        if book.interactionTags.contains("多结局") {
+            return SoloLocalization.localized("多结局分支")
+        }
+        return interactionChipText
     }
 
     @ViewBuilder
@@ -475,4 +579,13 @@ struct SoloEntryHeroScene: View {
                 .frame(width: 36, height: 0.8)
         }
     }
+}
+
+private struct HeroFeatureHighlight: Identifiable {
+    let id: String
+    let title: String
+    let value: String
+    let detail: String
+    let tint: Color
+    let isWide: Bool
 }

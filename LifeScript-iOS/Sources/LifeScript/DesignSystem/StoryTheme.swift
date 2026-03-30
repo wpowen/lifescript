@@ -82,13 +82,15 @@ extension SatisfactionType {
 
 extension ChoiceNode.ChoiceType {
     var displayName: String {
-        switch self {
-        case .keyDecision:
-            "关键抉择"
-        case .styleChoice:
-            "爽感风格"
-        case .characterPref:
-            "角色推进"
+        switch rawValue {
+        case Self.keyDecision.rawValue:
+            return SoloLocalization.localized("关键抉择")
+        case Self.styleChoice.rawValue:
+            return SoloLocalization.localized("爽感风格")
+        case Self.characterPref.rawValue:
+            return SoloLocalization.localized("角色推进")
+        default:
+            return SoloLocalization.localized(rawValue)
         }
     }
 }

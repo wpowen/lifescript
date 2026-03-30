@@ -6,6 +6,7 @@ struct SoloRootView: View {
     @AppStorage(SoloLocalization.storageKey) private var appLanguageRawValue = SoloAppLanguage.system.rawValue
     @State private var coordinator = SoloCoordinator()
     @State private var storyStore = SoloStoryStore()
+    @State private var volumeStore = SoloVolumeStore()
     @State private var welcomeComplete = false
     @State private var countdownSeconds: Int = SoloRootView.welcomeDuration
     @Query(sort: \ReadingProgress.lastReadDate, order: .reverse)
@@ -86,6 +87,7 @@ struct SoloRootView: View {
         .task {
             await withTaskGroup(of: Void.self) { group in
                 group.addTask { await storyStore.loadIfNeeded() }
+                group.addTask { await volumeStore.loadIfNeeded() }
                 group.addTask { @MainActor in
                     await runCountdown()
                 }
@@ -121,15 +123,26 @@ struct SoloRootView: View {
         if let book = storyStore.book {
             switch route {
             case .reading(let chapterId):
-                SoloReadingView(
-                    book: book,
-                    chapterId: chapterId,
-                    preloadedChapters: storyStore.chapters,
-                    preloadedWalkthrough: storyStore.walkthrough,
-                    openDossier: { coordinator.open(.dossier) },
-                    openRouteMap: { coordinator.open(.routeMap) },
-                    returnToHome: { coordinator.popToRoot() }
-                )
+                readingView(for: book, chapterId: chapterId)
+
+            case .volumeGate(let chapterId):
+                if let chapter = storyStore.chapters.first(where: { $0.id == chapterId }),
+                   let lockedVolume = chapterAccessState(for: chapterId).volume,
+                   chapterAccessState(for: chapterId).isLocked {
+                    SoloVolumePaywallView(
+                        book: book,
+                        chapter: chapter,
+                        volume: lockedVolume,
+                        volumeStore: volumeStore,
+                        onContinue: {
+                            coordinator.pop()
+                            coordinator.open(.reading(chapterId))
+                        },
+                        onClose: { coordinator.pop() }
+                    )
+                } else {
+                    readingView(for: book, chapterId: chapterId)
+                }
 
             case .dossier:
                 let currentStats = storyStore.currentStats(progress: progress)
@@ -187,6 +200,76 @@ struct SoloRootView: View {
     }
 
     private var currentReadingRoute: SoloRoute? {
-        storyStore.resumeChapterId(progress: progress).map(SoloRoute.reading)
+        guard let resumeChapterId = storyStore.resumeChapterId(progress: progress) else {
+            return nil
+        }
+
+        if let lockedChapterId = pendingLockedChapterId(after: resumeChapterId) {
+            return .volumeGate(lockedChapterId)
+        }
+
+        return routeForChapter(resumeChapterId)
+    }
+
+    @ViewBuilder
+    private func readingView(for book: Book, chapterId: String) -> some View {
+        SoloReadingView(
+            book: book,
+            chapterId: chapterId,
+            preloadedChapters: storyStore.chapters,
+            preloadedWalkthrough: storyStore.walkthrough,
+            chapterAccessState: chapterAccessState(for:),
+            openLockedChapter: { lockedChapterId in
+                coordinator.open(.volumeGate(lockedChapterId))
+            },
+            openDossier: { coordinator.open(.dossier) },
+            openRouteMap: { coordinator.open(.routeMap) },
+            returnToHome: { coordinator.popToRoot() }
+        )
+    }
+
+    private func routeForChapter(_ chapterId: String) -> SoloRoute {
+        let accessState = chapterAccessState(for: chapterId)
+        return accessState.isLocked ? .volumeGate(chapterId) : .reading(chapterId)
+    }
+
+    private func chapterAccessState(for chapterId: String) -> SoloChapterAccessState {
+        guard let chapter = storyStore.chapters.first(where: { $0.id == chapterId }) else {
+            return SoloChapterAccessState(
+                chapterId: chapterId,
+                isLocked: false,
+                volume: nil,
+                primaryActionTitle: "",
+                supportingLine: nil
+            )
+        }
+
+        return volumeStore.chapterAccessState(
+            chapterId: chapter.id,
+            chapterNumber: chapter.number
+        )
+    }
+
+    private func pendingLockedChapterId(after chapterId: String) -> String? {
+        guard let progress,
+              let currentChapter = storyStore.chapters.first(where: { $0.id == chapterId }),
+              progress.currentChapterId == currentChapter.id,
+              progress.currentNodeIndex >= currentChapter.nodes.count,
+              let nextChapter = nextChapter(after: currentChapter.id)
+        else {
+            return nil
+        }
+
+        return chapterAccessState(for: nextChapter.id).isLocked ? nextChapter.id : nil
+    }
+
+    private func nextChapter(after chapterId: String) -> Chapter? {
+        guard let currentIndex = storyStore.chapters.firstIndex(where: { $0.id == chapterId }) else {
+            return nil
+        }
+
+        let nextIndex = storyStore.chapters.index(after: currentIndex)
+        guard nextIndex < storyStore.chapters.endIndex else { return nil }
+        return storyStore.chapters[nextIndex]
     }
 }

@@ -24,6 +24,8 @@ struct SoloReadingView: View {
     @AppStorage("solo.largeReadingType") private var largeReadingType = false
 
     let book: Book
+    let chapterAccessState: (String) -> SoloChapterAccessState
+    let openLockedChapter: (String) -> Void
     let openDossier: () -> Void
     let openRouteMap: () -> Void
     let returnToHome: () -> Void
@@ -33,11 +35,15 @@ struct SoloReadingView: View {
         chapterId: String,
         preloadedChapters: [Chapter] = [],
         preloadedWalkthrough: BookWalkthrough? = nil,
+        chapterAccessState: @escaping (String) -> SoloChapterAccessState,
+        openLockedChapter: @escaping (String) -> Void,
         openDossier: @escaping () -> Void,
         openRouteMap: @escaping () -> Void,
         returnToHome: @escaping () -> Void
     ) {
         self.book = book
+        self.chapterAccessState = chapterAccessState
+        self.openLockedChapter = openLockedChapter
         self.openDossier = openDossier
         self.openRouteMap = openRouteMap
         self.returnToHome = returnToHome
@@ -368,6 +374,32 @@ struct SoloReadingView: View {
                 )
             }
 
+            if let previewSnippet = viewModel.nextChapterPreviewSnippet {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("下一章试读")
+                        .font(SoloTypography.meta)
+                        .foregroundStyle(SoloTheme.gold)
+                    if let previewHeadline = nextChapterPreviewHeadline {
+                        Text(previewHeadline)
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(SoloTheme.ink)
+                    }
+                    Text(previewSnippet)
+                        .font(SoloTypography.detail)
+                        .foregroundStyle(SoloTheme.warmInk)
+                        .lineSpacing(6)
+                }
+                .padding(16)
+                .background(
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.white.opacity(0.05))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .strokeBorder(SoloTheme.gold.opacity(0.18), lineWidth: 1)
+                        )
+                )
+            }
+
             VStack(spacing: 10) {
                 Button(chapterEndSettlementLabel) {
                     showSettlement = true
@@ -395,9 +427,28 @@ struct SoloReadingView: View {
                     .disabled(!viewModel.canRewind)
                 }
 
+                if let lockedState = nextLockedChapterState {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("新卷门槛")
+                            .font(SoloTypography.meta)
+                            .foregroundStyle(SoloTheme.gold)
+                        Text(lockedState.supportingLine ?? "卷一完整免费，后续按卷单独解锁。")
+                            .font(SoloTypography.detail)
+                            .foregroundStyle(SoloTheme.warmInk)
+                            .lineSpacing(5)
+                    }
+                    .padding(16)
+                    .soloPanel(.alert, prominence: 0.18)
+                }
+
                 if viewModel.hasNextChapter {
-                    Button(nextChapterLabel) {
-                        Task { await viewModel.proceedToNextChapter() }
+                    Button(nextChapterButtonTitle) {
+                        if let nextChapterId = viewModel.nextChapterId,
+                           chapterAccessState(nextChapterId).isLocked {
+                            openLockedChapter(nextChapterId)
+                        } else {
+                            Task { await viewModel.proceedToNextChapter() }
+                        }
                     }
                     .buttonStyle(SoloPrimaryActionButtonStyle())
                 } else {
@@ -484,6 +535,31 @@ struct SoloReadingView: View {
         case .businessWar:      return SoloLocalization.localized("进入下一轮")
         case .urbanReversal:    return SoloLocalization.localized("继续翻盘")
         }
+    }
+
+    private var nextChapterButtonTitle: String {
+        guard let nextChapterId = viewModel.nextChapterId else {
+            return nextChapterLabel
+        }
+
+        let accessState = chapterAccessState(nextChapterId)
+        return accessState.isLocked ? accessState.primaryActionTitle : nextChapterLabel
+    }
+
+    private var nextChapterPreviewHeadline: String? {
+        guard let number = viewModel.nextChapterNumber,
+              let title = viewModel.nextChapterTitle else {
+            return nil
+        }
+
+        return "第 \(number) 章 · \(title)"
+    }
+
+    private var nextLockedChapterState: SoloChapterAccessState? {
+        guard let nextChapterId = viewModel.nextChapterId else { return nil }
+
+        let accessState = chapterAccessState(nextChapterId)
+        return accessState.isLocked ? accessState : nil
     }
 
     private var chapterEndSettlementLabel: String {

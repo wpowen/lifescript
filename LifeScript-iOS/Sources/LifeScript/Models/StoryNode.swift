@@ -98,10 +98,28 @@ struct ChoiceNode: Codable, Identifiable, Sendable {
     var timeLimit: TimeInterval?  // Optional countdown in seconds
     var choiceType: ChoiceType
 
-    enum ChoiceType: String, Codable, Sendable {
-        case keyDecision    // 关键抉择
-        case styleChoice    // 风格选择
-        case characterPref  // 角色倾向
+    struct ChoiceType: RawRepresentable, Codable, Sendable, Hashable {
+        let rawValue: String
+
+        init(rawValue: String) {
+            self.rawValue = rawValue
+        }
+
+        init(from decoder: Decoder) throws {
+            let container = try decoder.singleValueContainer()
+            self.init(rawValue: (try? container.decode(String.self)) ?? Self.keyDecision.rawValue)
+        }
+
+        func encode(to encoder: Encoder) throws {
+            var container = encoder.singleValueContainer()
+            try container.encode(rawValue)
+        }
+
+        static let keyDecision = ChoiceType(rawValue: "keyDecision")   // 关键抉择
+        static let styleChoice = ChoiceType(rawValue: "styleChoice")   // 风格选择
+        static let characterPref = ChoiceType(rawValue: "characterPref")  // 角色倾向
+        static let questioning = ChoiceType(rawValue: "质疑")
+        static let retrospection = ChoiceType(rawValue: "追溯")
     }
 }
 

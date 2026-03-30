@@ -414,6 +414,22 @@ final class ReadingViewModel {
         nextChapter != nil
     }
 
+    var nextChapterId: String? {
+        nextChapter?.id
+    }
+
+    var nextChapterNumber: Int? {
+        nextChapter?.number
+    }
+
+    var nextChapterTitle: String? {
+        nextChapter?.title
+    }
+
+    var nextChapterPreviewSnippet: String? {
+        nextChapter?.openingPreviewSnippet
+    }
+
     private var nextChapter: Chapter? {
         guard let currentChapter else { return nil }
         guard let currentIndex = chapterSequence.firstIndex(where: { $0.id == currentChapter.id }) else {
