@@ -3,7 +3,6 @@ import SwiftUI
 struct SoloDarklineBoardView: View {
     let book: Book
     let snapshot: SoloDarklineBoardSnapshot
-    let destinyStatus: SoloDestinyStatus
 
     @AppStorage("solo.reduceMotion") private var reduceMotion = false
 
@@ -24,7 +23,7 @@ struct SoloDarklineBoardView: View {
                 .padding(.bottom, 32)
             }
         }
-        .soloStoryChrome(title: book.id == "天机录" ? "暗线" : "暗流", kicker: "观测")
+        .soloStoryChrome(title: book.id == "天机录" ? SoloLocalization.localized("暗线") : SoloLocalization.localized("暗流"), kicker: SoloLocalization.localized("观测"))
     }
 
     // MARK: - Reveal Gauge
@@ -33,7 +32,7 @@ struct SoloDarklineBoardView: View {
         VStack(alignment: .leading, spacing: 16) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("暗线揭露")
+                    Text(SoloLocalization.localized("暗线揭露"))
                         .font(SoloTypography.posterTitle(size: 28))
                         .foregroundStyle(SoloTheme.ink)
                     Text(snapshot.boardLine)
@@ -51,24 +50,24 @@ struct SoloDarklineBoardView: View {
                 gaugeStat(
                     icon: "waveform.path.ecg",
                     value: "\(snapshot.discoveredSignals.count)",
-                    label: "已浮出",
+                    label: SoloLocalization.localized("已浮出"),
                     tint: SoloTheme.crimson
                 )
                 gaugeStat(
                     icon: "sensor.tag.radiowaves.forward",
                     value: "\(snapshot.approachingSignals.count)",
-                    label: "正逼近",
+                    label: SoloLocalization.localized("正逼近"),
                     tint: SoloTheme.gold
                 )
                 gaugeStat(
                     icon: "lock.shield",
                     value: "\(snapshot.sealedCount)",
-                    label: "深水中",
+                    label: SoloLocalization.localized("深水中"),
                     tint: SoloTheme.muted
                 )
             }
 
-            Text("天命压力：\(destinyStatus.thresholdHint)")
+            Text(SoloLocalization.format("天命压力：%@", snapshot.destinyStatus.thresholdHint))
                 .font(.caption)
                 .foregroundStyle(SoloTheme.muted)
         }
@@ -98,7 +97,7 @@ struct SoloDarklineBoardView: View {
                 Text(snapshot.revealLabel)
                     .font(.caption.weight(.bold).monospacedDigit())
                     .foregroundStyle(SoloTheme.crimson)
-                Text("揭露")
+                Text(SoloLocalization.localized("揭露"))
                     .font(.system(size: 9))
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -160,15 +159,15 @@ struct SoloDarklineBoardView: View {
     private var discoveredSection: some View {
         VStack(alignment: .leading, spacing: 14) {
             HStack {
-                Label("已浮出水面", systemImage: "waveform.path.ecg")
+                Label(SoloLocalization.localized("已浮出水面"), systemImage: "waveform.path.ecg")
                     .font(SoloTypography.sectionTitle())
                     .foregroundStyle(SoloTheme.ink)
                 Spacer()
-                badge(text: "\(snapshot.discoveredSignals.count) 条", tint: SoloTheme.crimson)
+                badge(text: SoloLocalization.format("%d 条", snapshot.discoveredSignals.count), tint: SoloTheme.crimson)
             }
 
             if snapshot.discoveredSignals.isEmpty {
-                emptySlot(text: "你还没有触发任何暗线。继续推进章节、做出关键选择后，暗线尾迹才会浮出水面。")
+                emptySlot(text: SoloLocalization.localized("你还没有触发任何暗线。继续推进章节、做出关键选择后，暗线尾迹才会浮出水面。"))
             } else {
                 ForEach(Array(snapshot.discoveredSignals.enumerated()), id: \.element.id) { index, signal in
                     evidenceCard(signal: signal, index: index + 1)
@@ -186,7 +185,7 @@ struct SoloDarklineBoardView: View {
                     Circle()
                         .fill(SoloTheme.crimson)
                         .frame(width: 8, height: 8)
-                    Text("暗线 #\(index)")
+                    Text(SoloLocalization.format("暗线 #%d", index))
                         .font(.caption.weight(.bold).monospacedDigit())
                         .foregroundStyle(SoloTheme.crimson)
                 }
@@ -219,7 +218,7 @@ struct SoloDarklineBoardView: View {
                     Image(systemName: "mappin.circle.fill")
                         .font(.caption2)
                         .foregroundStyle(SoloTheme.gold.opacity(0.72))
-                    Text("发现于「\(signal.sourceChapterTitle)」")
+                    Text(SoloLocalization.format("发现于「%@」", signal.sourceChapterTitle))
                         .font(.caption2)
                         .foregroundStyle(SoloTheme.muted)
                 }
@@ -250,23 +249,31 @@ struct SoloDarklineBoardView: View {
     private var approachingSection: some View {
         VStack(alignment: .leading, spacing: 14) {
             HStack {
-                Label("水下回声", systemImage: "sensor.tag.radiowaves.forward")
+                Label(SoloLocalization.localized("水下回声"), systemImage: "sensor.tag.radiowaves.forward")
                     .font(SoloTypography.sectionTitle())
                     .foregroundStyle(SoloTheme.ink)
                 Spacer()
-                badge(text: "\(snapshot.approachingSignals.count) 股", tint: SoloTheme.gold)
+                badge(text: SoloLocalization.format("%d 股", snapshot.approachingSignals.count), tint: SoloTheme.gold)
             }
 
-            Text("你已经感觉到这些异动的存在，但还不能直接看穿它。继续推进对应阶段后，它会把真正的面目露出来。")
+            Text(SoloLocalization.localized("你已经感觉到这些异动的存在，但还不能直接看穿它。继续推进对应阶段后，它会把真正的面目露出来。"))
                 .font(SoloTypography.detail)
                 .foregroundStyle(SoloTheme.muted)
                 .lineSpacing(5)
 
             if snapshot.approachingSignals.isEmpty {
-                emptySlot(text: "眼前还没有明确逼近的暗流。当你走到某条暗线的触发区域附近时，这里会出现干扰波纹。")
-            } else {
+                emptySlot(text: SoloLocalization.localized("眼前还没有明确逼近的暗流。当你走到某条暗线的触发区域附近时，这里会出现干扰波纹。"))
+            } else if reduceMotion {
                 ForEach(snapshot.approachingSignals) { signal in
-                    interferenceCard(signal: signal)
+                    interferenceCard(signal: signal, pulse: 0)
+                }
+            } else {
+                TimelineView(.animation(minimumInterval: 0.12)) { timeline in
+                    let t = timeline.date.timeIntervalSinceReferenceDate
+                    let pulse = sin(t * 2.4) * 0.5 + 0.5
+                    ForEach(snapshot.approachingSignals) { signal in
+                        interferenceCard(signal: signal, pulse: pulse)
+                    }
                 }
             }
         }
@@ -274,9 +281,9 @@ struct SoloDarklineBoardView: View {
         .soloPanel(.stage, prominence: 0.12)
     }
 
-    private func interferenceCard(signal: SoloDarklineSignal) -> some View {
+    private func interferenceCard(signal: SoloDarklineSignal, pulse: Double) -> some View {
         HStack(spacing: 14) {
-            interferenceIcon
+            interferenceIcon(pulse: pulse)
 
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
@@ -306,40 +313,17 @@ struct SoloDarklineBoardView: View {
         )
     }
 
-    @ViewBuilder
-    private var interferenceIcon: some View {
-        if reduceMotion {
-            staticInterferenceIcon
-        } else {
-            TimelineView(.animation(minimumInterval: 0.12)) { timeline in
-                let t = timeline.date.timeIntervalSinceReferenceDate
-                let pulse = sin(t * 2.4) * 0.5 + 0.5
-                ZStack {
-                    Circle()
-                        .fill(SoloTheme.gold.opacity(0.08 + pulse * 0.10))
-                        .frame(width: 40, height: 40)
-                    Circle()
-                        .strokeBorder(SoloTheme.gold.opacity(0.30 + pulse * 0.20), lineWidth: 1.5)
-                        .frame(width: 40, height: 40)
-                    Image(systemName: "wave.3.right")
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(SoloTheme.gold.opacity(0.70 + pulse * 0.30))
-                }
-            }
-        }
-    }
-
-    private var staticInterferenceIcon: some View {
+    private func interferenceIcon(pulse: Double) -> some View {
         ZStack {
             Circle()
-                .fill(SoloTheme.gold.opacity(0.12))
+                .fill(SoloTheme.gold.opacity(0.08 + pulse * 0.10))
                 .frame(width: 40, height: 40)
             Circle()
-                .strokeBorder(SoloTheme.gold.opacity(0.40), lineWidth: 1.5)
+                .strokeBorder(SoloTheme.gold.opacity(0.30 + pulse * 0.20), lineWidth: 1.5)
                 .frame(width: 40, height: 40)
             Image(systemName: "wave.3.right")
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(SoloTheme.gold.opacity(0.80))
+                .foregroundStyle(SoloTheme.gold.opacity(0.70 + pulse * 0.30))
         }
     }
 
@@ -348,14 +332,14 @@ struct SoloDarklineBoardView: View {
     private var abyssSection: some View {
         VStack(alignment: .leading, spacing: 14) {
             HStack {
-                Label("深渊", systemImage: "lock.shield")
+                Label(SoloLocalization.localized("深渊"), systemImage: "lock.shield")
                     .font(SoloTypography.sectionTitle())
                     .foregroundStyle(SoloTheme.muted)
                 Spacer()
-                badge(text: "\(snapshot.sealedCount) 处", tint: SoloTheme.muted)
+                badge(text: SoloLocalization.format("%d 处", snapshot.sealedCount), tint: SoloTheme.muted)
             }
 
-            Text("仍有 \(snapshot.sealedCount) 条暗线沉在水底，你既不知道它们是什么，也不知道什么时候会被触发。唯一确定的是——它们存在。")
+            Text(SoloLocalization.format("仍有 %d 条暗线沉在水底，你既不知道它们是什么，也不知道什么时候会被触发。唯一确定的是——它们存在。", snapshot.sealedCount))
                 .font(SoloTypography.detail)
                 .foregroundStyle(SoloTheme.muted)
                 .lineSpacing(5)
@@ -383,7 +367,7 @@ struct SoloDarklineBoardView: View {
             }
 
             if hasMore {
-                Text("还有 \(snapshot.sealedCount - 6) 处暗线仍在更深的水下……")
+                Text(SoloLocalization.format("还有 %d 处暗线仍在更深的水下……", snapshot.sealedCount - 6))
                     .font(.caption)
                     .foregroundStyle(SoloTheme.muted.opacity(0.60))
                     .frame(maxWidth: .infinity)

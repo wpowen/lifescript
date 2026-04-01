@@ -1,0 +1,652 @@
+{
+  "id": "天机录_ch0475",
+  "book_id": "天机录",
+  "number": 475,
+  "title": "契約の調印",
+  "is_paid": true,
+  "next_chapter_hook": "盟約の墨跡も乾かぬうちに、天機録第七頁が突然顯現し、その血の文字は天道之眼の嘲りのように映る——Chen Jiよ、第七の予言者よ、お前の死期は既に書き記されている。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0475_001",
+        "content": "金丹初期の威圧が実体のようにChen Jiの体内から湧き出し、周囲の霊光を乱す。彼は目を細め、体内に満ちる豈かな霊力を感受する——これは運命共鳴の授かり物であり、天機録による彼への補償でもある。殿内の面々は色が異なり、喜ぶ者もいれば忌憚する者もいる。そしてLing Yuanの瞳の奥底には、一瞬の陰険さが過ぎ去る。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_002",
+        "character_id": "char_lingyuan",
+        "content": "Chen Ji師侄の金丹突破をおめでとうございます。このご縁は、まことに天が我らTianqing Sectを眷顧iterals。",
+        "emotion": "虚伪的欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_003",
+        "content": "Ling Yuanの笑みは精巧な仮面のようであり、Chen Jiには分明である——仮面の下には毫不 容赦のない貪欲と計算がある。この老掌门は既にこの\"駒\"の価値を絞り尽くし、不要になればゴミのように捨てる算段をしているのだろう。「ありがとうございます、掌门師匠」Chen Jiは拱手して揖し、態度は恭敬の至りようである。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_004",
+        "character_id": "char_yeqing",
+        "content": "正道の礼儀は行き届いていますよ。だがLing掌门、少々急がねばなりません——天機録共鳴の気配は、既に知るべからざる者どもを驚かせたかもしれません。",
+        "emotion": "冷淡的催促"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_005",
+        "prompt": "盟約調印を前に、Ling Yuanの偽善とHan Lieの敵意が并存し、Chen Jiは盟約を維持しながらこの二人の\"招かぬ客\"を牽制ねばならぬ——対応策略を選択せよ：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiaojin",
+            "text": "Ling Yuanを牽制し、実力を展示す",
+            "description": "金丹初成の威圧はLing Yuanを牽制するには最適だ——この碁盤の主が誰か、利用される駒が誰かを分からせてやる。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "部分的な実力を暴露す",
+            "visible_reward": "Ling Yuanの忌惮が深まり、軽挙妄動できなくなる",
+            "risk_hint": "実力を早期に暴露すれば、より多くの勢力の警戒を招く恐れあり",
+            "process_label": "威压试探",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaojin_001",
+                  "content": "Chen Jiは淡々と微笑み、金丹初成の威圧を潮のようにLing Yuanへ押し寄せる。老掌门の笑みが顔を凍りつかせ、衣袍は無風で揺れ、額には密な汗が浮かぶ。「掌门師匠、お加減悪いのですか？」Chen Jiの声は穏やかで、配慮の意が満ちている。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaojin_002",
+                  "character_id": "char_lingyuan",
+                  "content": "何でも……何でもございません。たださっき霊力消耗が少し大きかっただけです……",
+                  "emotion": "强撑颜面"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊已敲打"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "敲打凌渊",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tiaohan",
+            "text": "Han Lieを無視し、格局を彰顯す",
+            "description": "Han Lieはただの頭シンプルな莽漢に過ぎず、Chen Jiの目はもっと宏大な碁盤に向くべきだ——不屑の気品を演じろ。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Han Lieの敵意を激化させる可能性あり",
+            "visible_reward": "在场の者はChen Jiの気品と格局を見識す",
+            "risk_hint": "Han Lieが当衆難題を吹っかけてくる可能性あり",
+            "process_label": "冷眼相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaohan_001",
+                  "content": "Chen JiはHan Lieを一瞥だにせず、淡々とYe Qingに言う：「Ye聖女、盟約の件が肝要で、某些な跳ねの小物は構う必要はありません」Han Lieの顔は豚のレバーのように脹れ上がり、両拳を握り締め、静脈が暴起する。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaohan_002",
+                  "character_id": "char_hanlie",
+                  "content": "Chen Ji！待っていろ！",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无视韩烈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "无视韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_lianggui",
+            "text": "両者に得罪せず、稳健に推進す",
+            "description": "盟約調印こそ最優先だ、この時期に余計な手を煩わせる必要はない。大事を先に片づけ、私怨は後で精算する。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "立威チャンスを逃がす",
+            "visible_reward": "盟約調印がより順調に運び、各方面が表面上の調和を保てる",
+            "risk_hint": "軟弱に見られ、後続で更多な勢力に軽蔑される恐れあり",
+            "process_label": "息事宁人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_lianggui_001",
+                  "content": "Chen Jiは微かに頗き、穏やかに盟約書案へと歩み寄る。Ling YuanとHan Lieは互いを見交わし、いずれも相手の目に失望を見た——彼らはこの機会に成功してChen Jiの底を探ろうとしたのに、この廃物は何と落ち着いたものだ。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳健推进"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "稳健推进",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_006",
+        "content": "盟約の書帛は千年の古檀で造られた長案に 펼쳐かれ、金粉で書かれた文字は焘火の照耀の下で熠熠と光っている。この協定は正魔两道の千年にわたる対立構造を破るものであり——そして筆を執ったのは、正是Chen Jiである。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_007",
+        "character_id": "char_yeqing",
+        "content": "Chen公子、お始めください。聖宗側は、私が既に周旋済みでございます。ここが調印すれば、協定は即座に発効いたします。",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_008",
+        "content": "Chen Jiは霊毫筆を提げ、筆先が書帛の上に懸かる。この一笔が、未来数十年の天下格局の行く末を決める。彼は深深呼吸し、体内の天機録の気配が隐约と流し、筆先の金粉と微妙な共鳴を生まれる。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_009",
+        "prompt": "落筆の前、Chen Jiは最後の条項を加えることができる——これは彼の私心であり、妹Chen Nianに残す後手でもある。加える条項を選択せよ：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiannian",
+            "text": "Chen Nian保護条項",
+            "description": "Chen Nianの発見と保護を盟約の優先事項とし、調印各方はいずれも彼女を害してはならない——これがChen Jiの最大の軟肋であり、布局の核心である。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "自分の弱点を暴露する",
+            "visible_reward": "Chen Nianの安全は正魔双方の背書を得る",
+            "risk_hint": "有心な者がこれに付け込んで脅迫する",
+            "process_label": "亲笔添加",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiannian_001",
+                  "content": "Chen Jiは筆锋を轉じ、盟約の末尾に小さな文字を加える：「調印各方面はChen Nianの発見を协助し、その人身の安全を確保する義務を有する」Ling Yuanは眉をしかめたが、声を上げて反対はしなかった——この一条は却ってChen Jiへの軽蔑を深めるものとなった。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiannian_002",
+                  "character_id": "char_yeqing",
+                  "content": "（低声で）Chen公子はむしろ念旧ですね。ご安心を、聖宗側は私が見届けます。",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念保护条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保护陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tianji",
+            "text": "天機録共有条項",
+            "description": "各方面に天機録研究成果の共有を求め、大っぴらだが実はChen Jiが情報選擇権を掌握することになる——何をどの程度与えるかは、全部彼の说了算。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "定期的に天機録情報を\"共有\"する必要がある",
+            "visible_reward": "Chen Jiは情報の唯一の出入口となり、すべての情報の流れを掌握する",
+            "risk_hint": "某些な者が天機録を觊觎する恐れあり",
+            "process_label": "巧妙措辞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tianji_001",
+                  "content": "「各方面は天機録研究成果について共有することができる」Chen Jiの筆先は\"共有\"の二字の上で留まり、唇角が微かに持ち上がる。この二文字には大いにテクがある——誰が共有选择性ありとは言った？",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tianji_002",
+                  "character_id": "char_lingyuan",
+                  "content": "共有……見事なる共有。Chen Ji師侄は果然として此道に熟達しておられる。",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录共享条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录条款",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_fengxian",
+            "text": "追加の必要はなく、簡潔を保つ",
+            "description": "盟約は既に十分に完善しており、附加の条項はただ変数を増やすだけだ。信頼は合作の基礎であり、過度の防备は却って了小家氣に見える。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "一条の布局を放棄する",
+            "visible_reward": "磊落で公正に見られ、より多くの信頼を得る",
+            "risk_hint": "後続で誰かが違反しても、制約手段缺乏",
+            "process_label": "干净利落",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "谋略",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_fengxian_001",
+                  "content": "Chen Jiは筆锋を Поједина、書帛の文字は霊力の催動の下でゆっくりと光沢を帯び始める。「結構です、盟約既成、各自诚信に任せます」彼の語気は淡々としており、まるで本当に権謀を憚る磊落な者のように見えるだけだ。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无额外条款"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保持简洁",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_010",
+        "content": "Chen Jiが筆を置いた瞬間、盟約書帛は突然華やかな金光を放つ。文字は生き返ったように書帛上を游走し、一回りした後、それぞれが調印各方面へと飛んでいく——Ling Yuan、Han Lie、Ye Qing、そしてChen Ji自身が各自一份を執る。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_011",
+        "character_id": "char_yeqing",
+        "content": "成った。千年未有の盟約を、今日我々が见证する。",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_012",
+        "content": "この時、Chen Jiの胸元の天機録残頁が猛然と熱を帯び、金丹威圧之上更に浩瀚な気が書頁から湧き出す。殿内の全員が一斉に顔色を変える——この気配はChen Jiのものではなく、神秘的な第七頁から来ている！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_013",
+        "prompt": "天機録第七頁が顯現し、Chen Jiは前所未有的压迫感を感じる——これは天道之眼の死の宣告だ！大衆の前でこの異象に如何に応じるか：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_yanxia",
+            "text": "当场で展示し、危機を機転に化す",
+            "description": "隠すことができぬなら、大っぴらに展示せよ。天道之眼の脅威で盟約を巩固し、正魔双方に彼らの共通の敵がどんなに恐ろしいかを知らしめよ。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "より多くの天機録秘密を暴露する",
+            "visible_reward": "盟約がより稳固し、各方面のChen Jiへの依存が深まる",
+            "risk_hint": "天道之眼の直接の注目を招く恐れあり",
+            "process_label": "坦然展示",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yanxia_001",
+                  "content": "Chen Jiは神色不变のまま、手を伸ばして天機録残頁を取り出し、金光の中の第七頁の文字が清晰地見える：「第七の予言者よ、お前の死期は既に書き記されている」在场の者は一斉に息を飲み、Ling Yuanの脸色は特に印象的である。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_yanxia_002",
+                  "character_id": "char_hanlie",
+                  "content": "これはどういう意味だ？天道之眼が お前を殺そうというのか？",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录第七页已展示"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "化危为机",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_yinhua",
+            "text": "退いて直し、弱さを演じて同情を博す",
+            "description": "天道之眼に脅かされた哀れな姿を演じ、在场の者の保護欲を掻き立てよ——常に死に追われている哀れな蟲を誰が防备するだろうか。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "某些な者に軽蔑される可能性あり",
+            "visible_reward": "より低い姿态でより高い信頼度を得る",
+            "risk_hint": "やりすぎれば偽善に映る",
+            "process_label": "隐忍不发",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yinhua_001",
+                  "content": "Chen Jiは苦しげに微笑み、残頁を懐に仕興う。「诸位お笑いください、Chen某はただ天機録に選ばれた駒に過ぎず、いつでも捨てられるかもしれません」彼の語気には自嘲が滲み、Ling Yuanの眼中では一瞬の殺意が過ぎ去るのをつかみ取った——この老狐は果然として罠にかかった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "示弱成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以退为进",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_xiaorong",
+            "text": "軽く言い置き、一蹴りして過ぎる",
+            "description": "「不过是天機録の少しの小手先で、诸位お笑いください」軽々しく言ってこの天下の秘密を隠し、在场の者が虚実不清にようにする。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "大衆を震慑するチャンスを逃がす恐れあり",
+            "visible_reward": "神秘感を保ち、各方面により深い警戒を抱かせる",
+            "risk_hint": "Ye QingにはChen Jiの偽装を見破られる可能性あり",
+            "process_label": "若无其事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_xiaorong_001",
+                  "content": "「天機録の少しの小手先で、诸位お笑いください」Chen Jiの語気は雲淡風軽で、まるでその血の文字は微かな風でしかないかのようである。天機録残頁の光は静かに收敛し、沉寂に归于く。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_xiaorong_002",
+                  "character_id": "char_yeqing",
+                  "content": "（低声で、Chen Jiにしか聞こえない）Chen公子の上手な演技lify。さてがこの\"小手先\"がまだどのくらい持ちますか、拝見しましょうぞ。",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轻描淡写"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "轻描淡写",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_014",
+        "content": "殿内の空気は数息凝り滞り、その後Ling Yuanが率先して沈黙を破った。彼は髭を撫でながら笑う：「Chen Ji師侄は天機録の加護があり、Ye聖女の大力な相助もあり、誠に天に選ばれし人物でございます。この盟約調印の後、我らTianqing Sect上下は必ず全面的協力いたします」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_015",
+        "character_id": "char_hanlie",
+        "content": "哼！浮かれ来るな、天道之眼が殺そうとする者は，从来没有一个好下场だ！",
+        "emotion": "不甘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_016",
+        "content": "Han Lieは袖を振り捨てて去り、その足音が広い大殿の中に反響する。Ye Qingは意味深げにChen Jiを一瞥し、随即一道の黒煙となって虚空に消散した。Chen Jiはその場に立ち，手指は懐中の天機録残頁を撫で回す——第七頁の血の文字はまだ彼の意識を灼いているかのようである。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_017",
+        "content": "Ling YuanはChen Jiの隣に歩み寄り、肩を叩く。「師侄安心せよ、老夫がいる限り、誰も お前を傷つけることはできない」话音は温和だが、力には暗かに警告が込められている。Chen Jiは身を屈めて礼をする：「ありがとうございます、掌门師匠」——二人は相視して笑い、各々鬼胎を抱く。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_018",
+        "content": "皆が散去した後、Chen Jiは独り殿中に立つ。彼は天機録を取り出し、ゆっくりと顯現する第七頁を見つめる。血の文字の下には、もう一行の金色な小字が浮かび上がる：「死亡カウントダウン：七七四十九日」Chen Jiの口元には冷たい笑みが浮かぶ——天道之眼は恐怖で彼を打ち砕こうというのか？あまりに天 真すぎる。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_019",
+        "content": "四十九日あれば十分だ。Chen Jiは天機録を懐に仕興い、大股で大殿を踏み出す。盟約は已成、正魔两道の格局は完全に書き改められる。そして彼、この元废物雑役弟子は、ようやく天下の碁盤の真正中に立った。天道之眼の死の宣告？不过是別の博弈の幕開けに過ぎない。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

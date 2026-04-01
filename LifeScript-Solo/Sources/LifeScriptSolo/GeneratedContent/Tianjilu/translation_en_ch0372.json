@@ -1,0 +1,373 @@
+{
+  "id": "天机录_ch0372",
+  "book_id": "天机录",
+  "number": 372,
+  "title": "Bloodline Execution",
+  "is_paid": true,
+  "next_chapter_hook": "The fourth page of the Tianji Record unfolds, revealing the final message left by his father: 'The fourth page is the key, but also the final shackle.'",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0372_001",
+        "content": "That voice echoed in his ears like a venomous serpent flicking its tongue, ice-cold and bone-chilling. Chen Ji stood in the center of the ruins, surrounded by hundreds of Spiritual Lights. The Holy Sect's purple-robed cultivators and the imperial dynasty's golden armored warriors formed a double encirclement. He slowly raised his head, the corner of his lips curling into a faint smile. 'Discarded piece?' He silently repeated these two words in his heart, a cold light flickering in the depths of his pupils. 'Then let this discarded piece overturn your chessboard.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "'Overestimating yourself.' That transcendent voice carried a hint of amusement. 'You think a mere broken Tianji Record can change anything? Every seer throughout history has been my chess piece, and you are no exception.'",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_003",
+        "content": "Above the ruins, black clouds pressed down on the sky. The leader of the Holy Sect was precisely that purple-robed Elder who had pursued Su Qingyao that day. Now he held a chain as black as ink in his hand—the 'Heavenly Fate Lock,' a supreme treasure of the Holy Sect designed specifically to restrain those born with great fortune. 'Chen Ji, today marks your death.' He spoke from above, as if already seeing Chen Ji's blood splattering across five steps.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_004",
+        "character_id": "char_hanlie",
+        "content": "'Wait!' A domineering voice rang out from the imperial dynasty's camp. Han Lie stepped through the air, the Xuanwu patterns on his dark battle armor flowing like water. His eyes were like bronze bells as he stared at Chen Ji. 'This kid is mine! Last time he won against me by trickery, today I'll personally twist off his head!'",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_005",
+        "content": "Chen Ji surveyed his surroundings—twelve Golden Core cultivators from the Holy Sect, eighteen elite armored warriors from the imperial dynasty, plus the purple-robed Elder and Han Lie, two Nascent Soul experts. This lineup could crush any Foundation Building cultivator. But his gaze was calm as an ancient well, with cold flames burning in its depths. His left hand slowly rose, and a faint golden pattern on the back of his hand shimmered faintly—it was the mark of the Chen family's bloodline.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0372_006",
+        "prompt": "Faced with the joint encirclement of two great powers, Chen Ji needed to make a decision. Should he strike first, fighting desperately to carve out a bloody path? Or win with wisdom, using their greed for the Tianji Record to set up a counter-kill scheme?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_blood_rage",
+            "text": "Bloodline Awakening, Fighting with Life",
+            "description": "Activate the ruins' prohibition using the Chen family's bloodline, exploding power beyond his realm in the shortest time possible, crushing all enemies with absolute force. Extremely high risk, may drain life potential.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consumes 30 Heavenly Fate points",
+            "visible_reward": "Bloodline Prohibition activated, enemies caught off guard",
+            "risk_hint": "May severely injure foundations, subsequent combat power decreases",
+            "process_label": "催动血脉之力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_blood_rage_001",
+                  "content": "Chen Ji let out a low roar, his left hand slamming against his chest. The faint golden bloodline mark suddenly blazed like a rising sun, instantly dispelling the surrounding gloom. A vast ancient aura burst forth from within him, and the entire ruins trembled under this aura.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_blood_rage_002",
+                  "content": "The purple-robed Elder's expression changed drastically: 'This is... Inheritor's bloodline?! Impossible! The Chen family was already exterminated...' His voice cut off abruptly, because Chen Ji had already moved.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_cunning_scheme",
+            "text": "Feign Weakness to Lure Enemy, Win with Wisdom",
+            "description": "Pretend to be exhausted, lure the enemy into lowering their guard. When Han Lie rushes in recklessly, use the Tianji Record Fragment to activate foresight, precisely interrupt his attack, then use the ruins' power to complete the counter-kill. Steady but time-consuming.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consumes 15 Heavenly Fate points",
+            "visible_reward": "Enemies fall into chaos, combat power preserved intact",
+            "risk_hint": "Requires convincing acting, if exposed will fall into passive situation",
+            "process_label": "布下迷局",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cunning_scheme_001",
+                  "content": "Chen Ji suddenly stumbled backward two steps, clutching his chest as he coughed violently, blood spilling from the corner of his mouth. 'Cough...cough cough...you've won...' His voice was weak, but his eyes secretly observed Han Lie's reaction.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cunning_scheme_002",
+                  "content": "Han Lie predictably took the bait, excitement flashing in his eyes: 'Hahaha! I knew this kid was just a silver-coated tin spear! Watch me take his head!' Ignoring everything, he charged forward, his battle fist straight for Chen Ji's face.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 70
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_007",
+        "content": "No matter which strategy he chose, Chen Ji's next move was already destined. His right hand quietly formed a seal, and a dull rumble echoed from the depths of the ruins, as if some ancient existence was awakening. The runes on the ground began to glow, golden light flowing to weave a massive formation diagram—this was the last legacy left by the Chen family's ancestors, the Bloodline Prohibition.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_008",
+        "character_id": "char_hanlie",
+        "content": "'Not good!' Han Lie finally realized something was wrong, but it was too late. Chen Ji's eyes snapped open, golden light blazing in his pupils. His entire body shot forward like an arrow, meeting Han Lie's fist head-on. Their fists collided with a deafening roar. Han Lie felt as if he had struck a mountain, his tiger's mouth cracking, blood spraying everywhere.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_009",
+        "content": "'Last time you gave me half a move and thought I was trash?' Chen Ji's voice was ice-cold, his five fingers like iron clamps gripping Han Lie's wrist. 'Han Lie, do you know why I've always been hiding my true strength?' A slight smile curved his lips, a smile more terrifying than a demon's in Han Lie's eyes. 'Because your value lies not in killing, but in—letting everyone see that the so-called Xuanwu genius is nothing but a stepping stone.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_010",
+        "character_id": "char_hanlie",
+        "content": "'You—!' Han Lie's eyes bulged with rage, trying to break free but finding his opponent's strength as heavy as a mountain. He had been praised as a genius since childhood—when had he ever endured such humiliation? 'Chen Ji! I will be irreconcilable enemies with you!'",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0372_011",
+        "prompt": "Han Lie was restrained, and the Holy Sect and imperial dynasty forces stirred restlessly. How should the Xuanwu genius be dealt with?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choice_cripple_hanlie",
+            "text": "Cripple His Cultivation, to Warn Others",
+            "description": "Publicly cripple Han Lie's cultivation, reducing him from a genius to a废物. This strike will intimidate all enemies, but also thoroughly offend the Xuanwu Sect.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Become irreconcilably hostile with the Xuanwu Sect",
+            "visible_reward": "Holy Sect and imperial dynasty morale collapses",
+            "risk_hint": "May provoke frenzied retaliation from the Xuanwu Sect",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cripple_hanlie_001",
+                  "content": "Chen Ji didn't speak, merely twisting gently. A crisp 'snap' rang out as Han Lie's right wrist bone shattered comminutely. Immediately after, a domineering force surged along his meridians straight to his dantian, Han Lie's face turning deathly pale in an instant.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cripple_hanlie_002",
+                  "content": "'You...you crippled my cultivation?!' Han Lie's voice was sharp and distorted. The number one genius of the Xuanwu Sect, now like a helpless child. He could feel the spiritual power in his body rapidly dissipating—that kind of despair was more terrifying than death.",
+                  "emotion": "绝望"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_humiliate_hanlie",
+            "text": "Spare His Life, Publicly Humiliate",
+            "description": "Don't kill Han Lie, but make him lose all face. Project his pathetic state to the world, letting him live in humiliation for the rest of his life.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Han Lie may become a permanent avenger",
+            "visible_reward": "Gain enormous fame, attract attention from all sides",
+            "risk_hint": "Han Lie may become an unpredictable variable later",
+            "process_label": "杀人诛心",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_humiliate_hanlie_001",
+                  "content": "Chen Ji released his grip, letting Han Lie collapse to the ground. He took out an Image Pearl from his chest and gently crushed it. In an instant, a curtain of light unfolded in mid-air, clearly displaying the scene of Han Lie rushing forward triumphantly moments ago, only to be effortlessly crushed.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_humiliate_hanlie_002",
+                  "content": "'Everyone, how much do you think this Image Pearl is worth?' Chen Ji smiled as he looked at the purple-robed Elder. 'If I spread it throughout the world, I imagine the Xuanwu Sect would be very interested. Of course, the price is negotiable.'",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_012",
+        "content": "Sweat beaded on the purple-robed Elder's forehead. He had witnessed how Chen Ji had crippled Han Lie with a casual gesture—that composure and ruthlessness shocked him to the core. More terrifying was that the bloodline prohibition within the ruins had fully activated, golden runes weaving into a net, shrouding all enemies. 'Retreat! Quick, retreat!' He screamed hoarsely.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_013",
+        "content": "But Chen Ji would never give them such a chance. He formed seals with both hands, murmuring: 'Rise!' In an instant, countless golden pillars of light burst from the surroundings of the ruins, each pillar containing the will of the ancestors, specifically designed to repel foreign invaders. Where the golden light passed, the Holy Sect disciples' protective spiritual barriers shattered like paper, their screams echoing endlessly. The golden battle armor of the imperial armored warriors also rapidly dimmed under the golden light, losing all defensive capability.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_014",
+        "character_id": "char_tiandaozhiyan",
+        "content": "'You dare!' That transcendent voice finally carried a hint of fury. 'A mere ant dares to defy fate?' Above the heavens, a massive eye slowly opened, its pupil reflecting Chen Ji's figure. That was the gaze of Heaven, the pressure of supreme will.",
+        "emotion": "震怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_015",
+        "content": "Chen Ji raised his head, staring directly at that Eye of Heavenly Way, his eyes devoid of any fear. 'Fate?' He coldly laughed. 'My fate has always been in my own hands.' Before his words even finished, his left hand slammed against the bloodline mark on his chest while his right hand simultaneously grasped the Tianji Record Fragment hanging from his neck. These two powers merged and fused at this moment—the Chen family's bloodline and the Tianji Record produced an unprecedented resonance!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_016",
+        "content": "The Tianji Record suddenly blazed with dazzling golden light, its pages rustling as if some shackle was being broken. The purple-robed Elder's eyes widened, his voice trembling: 'The fourth page... the fourth page is unfolding! That is the core prohibition of the Tianji Record—impossible! No inheritor throughout history could unfold it, so why can he...'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_017",
+        "content": "Golden light pierced through the clouds, colliding violently with the Eye of Heavenly Way's radiance. Between heaven and earth, it was as if a thunderbolt had exploded. Gale winds howled, sand and stones flew everywhere. Chen Ji felt as if he stood in a storm of crashing waves, but his will was firm as bedrock. The bloodline power continuously flooded into the Tianji Record, the two echoing each other, their resonant frequency growing higher and higher.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_018",
+        "character_id": "char_tiandaozhiyan",
+        "content": "'Enough!' The Eye of Heavenly Way let out an angry roar. 'You are playing with fire and will burn yourself! Once the Tianji Record's shackle is undone, fate's backlash will devour everything you are!'",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_019",
+        "content": "Chen Ji didn't hear a word, his bloodline power burning even more fiercely. His vision began to blur, countless scenes flickering before his eyes like a carousel—the fates of every Tianji Record master throughout history, manipulated by Heaven their entire lives, ultimately becoming discarded pieces. But he didn't retreat; instead, he smiled even more brilliantly. 'So that's how it is... Is this your trump card?' He murmured quietly. 'Unfortunately, I never believed in fate.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_020",
+        "content": "'BOOM—' A deafening sound as the fourth page of the Tianji Record completely unfolded! Within the golden light, a line of ancient text appeared, the final message left by Chen Ji's father: 'The fourth page is the key, but also the final shackle. Ji'er, if you see these words, it means you've reached the crossroads of fate. Whether to open the shackle and embrace freedom, or reseal it to protect all living beings—the choice is yours. Remember, no matter what you choose, father will always be proud of you.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_021",
+        "content": "Chen Ji stared at that line of text, his eye sockets slightly reddened. His father had been missing for many years; he never imagined he would converse with his father in such a way. That Eye of Heavenly Way gradually faded within the golden light, its voice becoming distant and ethereal: 'You will regret this... You will surely regret this...' Chen Ji made no reply, simply standing quietly, gazing at the information on the fourth page, his heart surging with unprecedented resolve.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_022",
+        "content": "Among the ruins, the scattered remnants of the Holy Sect and imperial dynasty had long since fled. As Han Lie was carried away, he glanced back at Chen Ji—this gaze held hatred, fear, but more a complex emotion difficult to describe. Chen Ji didn't pursue; he simply stood with hands clasped behind his back, letting the wind ruffle his robes. The surroundings were a mess of ruins, but his posture stood as firm as a pine tree. 'Discarded piece?' He murmured softly, a meaningful smile curling his lips. 'Then let this discarded piece personally send you to your grave.'",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

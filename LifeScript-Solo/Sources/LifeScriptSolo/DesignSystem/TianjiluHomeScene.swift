@@ -5,6 +5,7 @@ struct TianjiluHomeScene: View {
     let animationsEnabled: Bool
 
     @AppStorage("solo.reduceMotion") private var reduceMotion = false
+    @State private var isLive = false
 
     init(
         illustration: SoloArtworkAsset = TianjiluArtworkCatalog.homeHeroMaster,
@@ -16,7 +17,7 @@ struct TianjiluHomeScene: View {
 
     var body: some View {
         GeometryReader { geo in
-            if reduceMotion || !animationsEnabled {
+            if reduceMotion || !animationsEnabled || !isLive {
                 scene(size: geo.size, t: 0)
             } else {
                 TimelineView(.animation(minimumInterval: 0.10)) { timeline in
@@ -25,6 +26,12 @@ struct TianjiluHomeScene: View {
             }
         }
         .clipped()
+        .onAppear {
+            guard !reduceMotion && animationsEnabled else { return }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                isLive = true
+            }
+        }
     }
 
     private func scene(size: CGSize, t: Double) -> some View {

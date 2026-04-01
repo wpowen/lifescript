@@ -22,7 +22,7 @@ struct SoloDossierView: View {
                             .id(entry.id)
                             .transition(.opacity.combined(with: .offset(y: 12)))
                     } else {
-                        Text("暂无可展示角色。")
+                        Text(SoloLocalization.localized("暂无可展示角色。"))
                             .font(SoloTypography.detail)
                             .foregroundStyle(SoloTheme.muted)
                             .padding(18)
@@ -35,7 +35,7 @@ struct SoloDossierView: View {
                 .padding(.bottom, 32)
             }
         }
-        .soloStoryChrome(title: branding.dossierTitle, kicker: "档案")
+        .soloStoryChrome(title: branding.dossierTitle, kicker: SoloLocalization.localized("档案"))
         .safeAreaInset(edge: .top) {
             SoloDestinyStrip(snapshot: snapshot) {
                 showDestinySheet = true
@@ -51,11 +51,11 @@ struct SoloDossierView: View {
                     SoloDestinyIntelPanel(snapshot: snapshot)
                         .padding(20)
                 }
-                .navigationTitle("天机情报")
+                .navigationTitle(SoloLocalization.localized("天机情报"))
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button("完成") { showDestinySheet = false }
+                        Button(SoloLocalization.localized("完成")) { showDestinySheet = false }
                     }
                 }
             }

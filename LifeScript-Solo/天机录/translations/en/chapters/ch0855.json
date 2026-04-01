@@ -1,0 +1,442 @@
+{
+  "id": "天机录_ch0855",
+  "book_id": "天机录",
+  "number": 855,
+  "title": "Three Paths of Destiny",
+  "is_paid": true,
+  "next_chapter_hook": "The final page of the Tianji Record slowly unfurls, bearing only a single line of text: 'Your choice will determine the future of all realms.' Next arc preview: The Final Chapter · The Final Battle.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0855_001",
+        "content": "The light of the Turtle Shell Divine Artifact has yet to fully fade, yet the dazzling golden radiance deep in the heavens grows increasingly intense, as if an invisible giant eye were piercing through the layers of the Void, gazing upon this world. Chen Ji felt a burning sensation at his brow center—the mark housing the remnant soul convulsed violently. Mo Xiansheng's voice carried an unprecedented gravity: 'It has awakened... The Heavenly Eye has finally noticed you.'"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_002",
+        "content": "Chen Ji stands motionless, his spiritual energy in chaos from repeatedly invoking the Tianji Record. His five points of Heavenly Fate slip away like flowing water, exchanged for an unprecedented clarity. He closes his eyes, allowing the threads of destiny to wildly interweave and extend within his mind—three utterly distinct paths are beckoning to him, each leading to a radically different future."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_003",
+        "content": "The First Path: Radiant light, yet bristling with thorns. The Tianji Record reveals that should he choose to ally with the Destiny Twins, fighting the Ultimate Chessmaster with his fractured form, his odds of victory are merely thirty percent. But should he win, the structure of all realms will be fundamentally rewritten—he will become the true Chess Player, not a piece."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0855_004",
+        "character_id": "char_moxiansheng",
+        "content": "The first path is the most perilous, yet it suits your temperament best. Allying with the Destiny Twins means revealing all our secrets—are you bold enough for this?",
+        "emotion": "试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_005",
+        "content": "The Second Path: Solitary and tragic. The Tianji Record shows a figure—Chen Ji himself, drenched in blood, using his own body as a conduit to seal the Ultimate Chessmaster within the Chaotic Void. The ancient chess game ends forever, and he will dissipate eternally into heaven and earth, becoming a nameless hero in future legends."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0855_006",
+        "character_id": "char_moxiansheng",
+        "content": "The path of sacrifice seems simple, yet it is the most agonizing. You have too many attachments—your sister Chen Nian, the promises you have yet to fulfill... Can you truly let go?",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_007",
+        "content": "The Third Path: Obscure and unclear, yet radiating infinite possibilities. The image within the Tianji Record is chaotic and distorted, as if something is gestating and sprouting beyond the chessboard—possibilities that transcend all order, variations even the Heavenly Eye never anticipated."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0855_008",
+        "character_id": "char_moxiansheng",
+        "content": "The third path... To be honest, even I cannot see through it. But if you can truly traverse it, there will be no more chess games in heaven and earth, and you will become the one who establishes the new order. The price—I cannot know.",
+        "emotion": "困惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_009",
+        "content": "Just then, a sharp sword intent pierced through the air, and Su Qingyao's figure swooped down like a startled phoenix. Her face was pale, her eyes slightly reddened—she had clearly traveled through the night without rest. 'Chen Ji, you acted on your own again—' Her words halted abruptly, for she saw the golden light enveloping Chen Ji's body, the异样 that appears only when the Tianji Record operates at full capacity."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0855_010",
+        "character_id": "char_suqingyao",
+        "content": "What... did you see?",
+        "emotion": "惊愕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_011",
+        "content": "Chen Ji slowly opened his eyes, a bitter smile curling at the corner of his lips. He did not answer Su Qingyao's question, but instead raised his gaze toward the golden radiance in the heavens that still watched them, his voice low and calm: 'Three paths, three endings. I once thought destiny was already written, but now it seems... the power of choice truly lies in my hands.'"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0855_choice_001",
+        "prompt": "Three distinct paths of destiny lie before you—alliance, sacrifice, or transcendence. You must make a choice, and this choice will determine the future direction of all realms.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0855_opt_001",
+            "text": "The Path of Destiny's Conspiracy",
+            "description": "Join forces with the Destiny Twins to jointly oppose the Ultimate Chessmaster. Though the odds are low, if successful, you will become the true Chess Player, not a piece.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reveal all secrets of the Tianji Record, bearing the risk of thirty percent odds of failure",
+            "visible_reward": "If victorious: Control the chess game of all realms, become the unrivaled Chess Player",
+            "risk_hint": "Thirty percent odds of victory means seventy percent chance of total defeat, and the trustworthiness of the Destiny Twins remains uncertain",
+            "process_label": "选择联手命运双生子",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_001_001",
+                  "content": "Upon hearing this, Su Qingyao's expression changed drastically. Though she did not know all the secrets of the Tianji Record, she could discern much from Chen Ji's words. 'You wish to ally with the Destiny Twins? Those are beings even ancient powerhouses could not control—' Her voice trembled slightly, 'Chen Ji, have you gone mad?!'"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0855_result_opt_001_002",
+                  "character_id": "char_chenji",
+                  "content": "Mad? Perhaps. But Qingyao, have you ever seen me do something without a plan?",
+                  "emotion": "自信"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_001_003",
+                  "content": "Su Qingyao was stunned. She gazed at this man who never entrusted his destiny to others, and a nameless emotion surged in her heart—worry, trust, or something else entirely, she could no longer distinguish."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "path_alliance"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0855_opt_002",
+            "text": "The Path of Self-Sacrifice",
+            "description": "Use your own body as a conduit to seal the Ultimate Chessmaster within the Chaotic Void. The ancient chess game ends forever, and you will dissipate eternally into heaven and earth.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Lose everything, including life, memories, and all unfulfilled promises",
+            "visible_reward": "The ancient chess game ends, and future generations will forever remember your sacrifice",
+            "risk_hint": "Once chosen, there is no turning back, and your sister Chen Nian will lose her only remaining family forever",
+            "process_label": "选择牺牲自我封印",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_002_001",
+                  "content": "Su Qingyao's eyes instantly reddened. She gripped Chen Ji's sleeve tightly, her knuckles white from the force, her voice carrying an unprecedented tremor: 'You dare! If you die here, I... I will never forgive you!'"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0855_result_opt_002_002",
+                  "character_id": "char_chenji",
+                  "content": "Qingyao... I'm sorry. Some things must be done by someone.",
+                  "emotion": "愧疚"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_002_003",
+                  "content": "Her tears burst forth, yet she stubbornly lifted her chin, refusing to let Chen Ji see her vulnerable appearance. How many years had it been since she had lost composure before anyone? And that person, of all people, was him."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "path_sacrifice"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0855_opt_003",
+            "text": "The Path of Transcending the Chess Game",
+            "description": "Seek possibilities beyond the chess game, creating a new heavenly order. No one knows where this path leads, but you will possess the power to change everything.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Unknown—this path has never been walked by anyone, the price may be beyond what you can bear",
+            "visible_reward": "If successful: Overthrow all order, become the creator of the new Heaven's Way",
+            "risk_hint": "The unknown means the greatest risk; you may lose something more important than life itself",
+            "process_label": "选择超脱棋局",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_003_001",
+                  "content": "The golden radiance in the heavens seemed to sense something, suddenly pulsing violently as if in warning, in threat. Yet Chen Ji threw his head back in wild laughter—that laughter carried an indescribable sense of exhilaration and madness. When had he, Chen Ji, ever feared anyone? Even the Heavenly Eye would not make him bow and concede!"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0855_result_opt_003_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "Excellent! Excellent indeed! To transcend the chess game! This old man has waited for this day for who knows how many tens of thousands of years! Chen Ji, you truly have not disappointed me!",
+                  "emotion": "激动"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_003_003",
+                  "content": "Su Qingyao gazed at Chen Ji's proud back, her heart filled with mixed emotions. She knew that from this moment, this man would completely walk the path of contending with Heaven—and all she could do was follow."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "path_transcend"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "黑化值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_012",
+        "content": "However, just then, a cold and sinister laugh rang out from the Void, striking Chen Ji's eardrums painfully. 'Three paths? Hmph, do you truly believe you have the right to choose?' Ling Yuan's figure slowly materialized from the golden light, the old man's face appearing especially ferocious under the golden glow. 'The Tianji Record is merely a piece I placed on the board, and you—from beginning to end—have been walking on my chessboard!'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0855_013",
+        "character_id": "char_lingyuan",
+        "content": "What does choosing the third path matter? Transcend the chess game? Do you think the Heavenly Eye will let you succeed? How laughable! This old man has waited a thousand years, precisely for this moment—your Tianji Record, everything about you, will become the stepping stones for this old man to break free of his chains!",
+        "emotion": "阴狠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_014",
+        "content": "Su Qingyao's sword light flashed, blocking before Chen Ji, killing intent blazing in her eyes: 'Ling Yuan! How dare you!' Yet Ling Yuan merely raised his hand lightly, and a vast pressure like the ocean sent Su Qingyao flying backward several zhang, blood trickling from the corner of her mouth."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0855_choice_002",
+        "prompt": "Ling Yuan struck during your weakened post-casting state, and Su Qingyao took the lethal blow for you. You must make a choice—protect her, or go all out?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0855_opt_004",
+            "text": "Protect Her No Matter the Cost",
+            "description": "Su Qingyao took the lethal blow for you; you absolutely cannot let her face the consequences alone. Whatever the cost, you must save her first.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose the hidden abilities of the Tianji Record Fragment, possibly attracting more covetous eyes",
+            "visible_reward": "Su Qingyao's trust and reliance on you reach new heights, unlocking the prerequisite for 'Shared Destiny'",
+            "risk_hint": "Exposing your trump card means losing the element of surprise in subsequent battles",
+            "process_label": "选择保护苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_004_001",
+                  "content": "Cold light flashed in Chen Ji's eyes as his figure burst forward, tearing a crack through Ling Yuan's oppressive force. He pulled Su Qingyao into his arms. The Tianji Record Fragment activated automatically at this moment, a layer of pale golden light dome enveloping the two of them, barely blocking Ling Yuan's second strike."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0855_result_opt_004_002",
+                  "character_id": "char_chenji",
+                  "content": "Qingyao, you fool... Who asked you to block that for me?",
+                  "emotion": "心疼"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_004_003",
+                  "content": "A smile appeared on Su Qingyao's pale face. Leaning in Chen Ji's embrace, her breath was faint yet still stubborn: 'Didn't you say... you never fight without certainty? Then I... am also betting that you won't lose.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "protect_suqingyao",
+              "gongming_unlock"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶为陈机挡下致命一击，触发共命前置",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0855_opt_005",
+            "text": "Turn the Tables",
+            "description": "Use Ling Yuan's underestimation, deliberately feign weakness to lure him deeper into the trap. Since he wants to be the Chess Player, let's show him what it means when the mantis stalks the cicada, unaware of the oriole behind.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Endure Ling Yuan's attacks, consuming additional Heavenly Fate for healing",
+            "visible_reward": "Ling Yuan will completely expose his trump cards and arrangements, creating an excellent opportunity for counterattack",
+            "risk_hint": "If the acting is discovered, you may fall into genuine crisis",
+            "process_label": "选择示弱诱敌",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_005_001",
+                  "content": "The moment Chen Ji steadied Su Qingyao, a flash of keen light crossed his eyes, then quickly concealed itself, replaced by a carefully calibrated panic. He stumbled backward two steps, gazing at Ling Yuan in 'terror,' voice trembling: 'Ling... Ling Ancestor, what is the meaning of this?'"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0855_result_opt_005_002",
+                  "character_id": "char_lingyuan",
+                  "content": "Meaning? Hmph, Chen Ji, the humiliation you inflicted on this old man in the Tianji Record back then—today we settle all accounts!",
+                  "emotion": "狂妄"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0855_result_opt_005_003",
+                  "content": "Ling Yuan predictably took the bait, laughing heartily as he fully released his aura. A nearly imperceptible smile curved at the corner of Chen Ji's lips—Noted. When the moment is ripe, this debt, he will collect with interest."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "lingyuan_trapped"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 75
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_015",
+        "content": "Ling Yuan pressed forward step by step, golden light gathering around him into terrifying prohibition formations—clearly prepared long in advance. He looked down at Chen Ji and Su Qingyao, his eyes filled with greedy certainty: 'The Tianji Record Fragment, the clues about the Destiny Twins, and this girl's special constitution... Today, this old man will take you all in one sweep!'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0855_016",
+        "character_id": "char_moxiansheng",
+        "content": "Chen Ji, do not act rashly. Ling Yuan came fully prepared, but what he doesn't know is—you have already seen three paths, while he has only seen the single move he arranged.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_017",
+        "content": "Chen Ji slowly straightened up, shielding Su Qingyao behind him. He gazed at Ling Yuan's smug, satisfied old face, suddenly remembering the humiliation he suffered years ago when he was still a Servant Disciple, being trampled underfoot—the graves of those people must have grass three feet high by now, yes?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_018",
+        "content": "He smiled. That smile was calm, serene, even carrying a hint of warmth, yet it made Ling Yuan inexplicably feel a chill in his heart. 'Ling Ancestor,' Chen Ji's voice was unhurried, 'your scheme spanning a thousand years is indeed exquisite. But you forgot one thing—' He raised his hand, the Tianji Record Fragment manifesting in his palm, 'I can see the future.'"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_019",
+        "content": "Ling Yuan's expression changed drastically. Just as he was about to speak, the golden radiance in the heavens suddenly blazed, and then, a massive golden eye slowly opened within the clouds—The Heavenly Eye had finally fully awakened. Its indifferent gaze fell upon Chen Ji, as if announcing: The final scene of the chess game is about to begin."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0855_020",
+        "content": "Three paths of destiny have been presented, and the gears of fate are spinning rapidly. Chen Ji tightly grips Su Qingyao's cold hand, his heart already decided—regardless of what lies ahead, he, Chen Ji, will never be another's piece. The final page of the Tianji Record slowly unfurls, bearing only a single line of text: 'Your choice will determine the future of all realms.'"
+      }
+    }
+  ]
+}

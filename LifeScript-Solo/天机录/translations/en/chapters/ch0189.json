@@ -1,0 +1,543 @@
+{
+  "id": "天机录_ch0189",
+  "book_id": "天机录",
+  "number": 189,
+  "title": "The father's debt shall be repaid by the son",
+  "is_paid": true,
+  "next_chapter_hook": "Ling Yuan, heavily wounded, tumbled from the clouds, yet a sinister smile curved his lips—\"You think you've won? Ask your dear master—the cost of the Tianji Record has never been borne by the living.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0189_001",
+        "content": "In the great hall, candlelight flickered, casting hundreds of gazes into eerie silhouettes. The moment Chen Ji stepped across the threshold, he seemed to step into the very vortex of Tianqing Sect's fate—on the high platform to the north, Ling Yuan sat in a rosewood chair, his hair and beard white as snow yet his eyes blazing like torches, those murky depths hiding calculations more terrible than any abyss. \"Chen Ji.\" The aged voice reverberated through the hall, commanding without anger, \"You've come at the right time—the remnants of the Five Elders Council, this seat shall purge the sect.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0189_002",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan rose slowly, his robes billowing without wind, his spiritual pressure bearing down like a collapsing mountain, shrouding the entire great hall in suffocating might. \"It is merely that this seat does not understand—\" He gazed down at Chen Ji from above, a playful smile curling at his lips, \"What merit does a servant disciple possess to warrant this seat's personal intervention?\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_003",
+        "content": "Around him, disciples murmured in whispers—some wore expressions of contempt, others watched coldly, while most displayed indifferent detachment. Chen Ji felt those gazes—scrutiny, mockery, pity, each one like a dull blade cutting flesh. Yet his expression remained unchanged, even slightly lowering his eyes, hiding that icy killing intent beneath a docile facade. Mo Xiansheng's voice echoed in his mind, carrying a warning: \"Be careful—Ling Yuan's cultivation has reached half-step Transcendence, while you are merely at Foundation Building middle stage.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0189_004",
+        "character_id": "char_lingyuan",
+        "content": "\"What, scared speechless?\" Ling Yuan's smile deepened as he raised his hand, a massive palm condensed from spiritual energy slowly taking shape. \"Or perhaps you're waiting for someone to rescue you? Su Qingyao? That little girl you've been deceiving? She's in seclusion—she cannot break this局.\" With each word he spoke, the hall's atmosphere grew heavier, and those spineless disciples had already begun quietly backing away, fearful of being caught in the crossfire.",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_005",
+        "content": "Chen Ji finally raised his head, and in those usually gentle eyes flickered a barely perceptible edge. He did not speak, merely slowly drawing from his sleeve an ancient, weathered fragment—the first page of the Tianji Record. The runes on the fragment glowed faintly, an esoteric aura spreading outward, causing Ling Yuan's smile to falter slightly. \"Elder speaks truthfully.\" Chen Ji's voice was unusually calm, \"I indeed wait for someone. Though it is not Senior Sister Su.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0189_choice_001",
+        "prompt": "Ling Yuan had already struck, the spiritual palm descending like a sky-obscuring boulder. At this life-or-death juncture, Chen Ji had to make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_shengsi_yibo",
+            "text": "Desperate Gamble",
+            "description": "Directly activate the ultimate technique of the Tianji Record, the 'Eyes of Breaking the局,' leveraging foresight of three hours for an absolute advantage to face Ling Yuan head-on, even if Heavenly Fate Value plummets is of no concern.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 30 Heavenly Fate Value",
+            "visible_reward": "Obtain the complete foresight ability of the Eyes of Breaking the局, capable of discerning all weaknesses in the opponent's techniques within a short time",
+            "risk_hint": "Heavenly Fate Value will drop to a dangerous zone, potentially triggering unforeseen consequences",
+            "process_label": "破釜沉舟",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_shengsi_yibo_001",
+                  "content": "The Tianji Record fragment suddenly erupted with dazzling golden light, and Chen Ji's pupils transformed into two flowing yin-yang fish. The Eyes of Breaking the局—this was an ultimate technique he had never employed in actual combat. In that instant, all possibilities of the next three hours flooded into his consciousness like a tide.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "破局之眼激活"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_zhiqu",
+            "text": "Strategic Outmaneuvering",
+            "description": "Do not rush to reveal one's trump card; instead, provoke Ling Yuan with words, inducing him to expose weaknesses in his anger, while secretly contacting the experts waiting outside to intervene.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Sustain partial attack damage",
+            "visible_reward": "Ling Yuan exposes weaknesses, external support arrives, forming a pincer attack",
+            "risk_hint": "Need to sustain certain damage, and whether external support arrives in time has variables",
+            "process_label": "以言为刃",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0189_result_choice_zhiqu_001",
+                  "character_id": "char_chenji",
+                  "content": "A subtle smile curved Chen Ji's lips as he revealed an obedient, timid expression: \"Elder Ling speaks truthfully—I am merely a servant disciple, what merit do I possess?\" He paused, shifting his tone: \"However, there is one matter I am unclear about—regarding Uncle Chen Xuan's Tianji Record inheritance, Elder was also a candidate, correct? I wonder how Elder was eliminated from the selection?\"",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_jieshi",
+            "text": "Leverage Momentum",
+            "description": "Loudly expose the truth of Ling Yuan's collusion with the Five Elders Council, dragging all present elders and disciples into the battle, making Ling Yuan a target for all, and overwhelming him through momentum.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May create too many enemies and invite greater troubles",
+            "visible_reward": "Those present turn against him, Ling Yuan trapped in both public opinion and actual encirclement",
+            "risk_hint": "Ling Yuan may resort to desperate measures in the chaos, causing uncontrollable destruction",
+            "process_label": "以势压人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_jieshi_001",
+                  "content": "Chen Ji took a deep breath, his voice suddenly rising, echoing throughout the entire main hall: \"Elders and fellow disciples! Ling Yuan colluded with the Five Elders Council, betrayed sect secrets, and secretly communicated with the Demonic Path—do all of you want to see this evidence?\" He flipped his palm, and several Jade Slips floated out, clearly marked with Ling Yuan's personal seal and correspondence records with the Five Elders Council members.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "证据曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_006",
+        "content": "Regardless of Chen Ji's choice, the atmosphere in the hall had completely solidified. Those disciples who had been watching with cold eyes widened their gazes, staring at the Jade Slips floating in Chen Ji's palm—every entry on them was enough to destroy Ling Yuan's reputation. \"You—\" Ling Yuan's expression cracked for the first time, his composed aura instantly becoming sharp and dangerous, \"Where did you obtain these things?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0189_007",
+        "character_id": "char_chenji",
+        "content": "Chen Ji didn't answer, only turning his gaze toward the elders around the hall. Those old foxes exchanged glances—some shocked, some wary, most silent after weighing the pros and cons. A cold smile formed in Chen Ji's heart—these people had never expressed their stance until victory was already decided. But it didn't matter; this was precisely the effect he wanted. \"Senior Ling Yuan,\" Chen Ji's voice was soft, yet clearly reached everyone's ears, \"A father's debt must be repaid by the son—this is natural justice. You failed to take the Tianji Record from Uncle Chen Xuan back then, and now you want to make up for it from me?\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_008",
+        "content": "Killing intent暴涨 in Ling Yuan's eyes; he no longer concealed anything. Spiritual energy around him surged like a raging sea, making the entire hall's roof vibrate with a humming sound. \"Good, good, good!\" He said three 'goods' in succession, yet his laughter was bone-chillingly cold, \"As expected of Chen Xuan's successor—this mouth of yours is even harder than his worthless book!\" He slammed his palm down, Spiritual energy transforming into a golden rainbow beam, heading directly for Chen Ji's throat, \"Then I shall today eliminate the traitor for heaven's sake, purge the sect!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_009",
+        "content": "Just as the golden rainbow was about to touch Chen Ji, the Tianji Record Fragment blazed with golden light. Chen Ji's eyes had Yin-Yang fish spinning rapidly—the foresight ability of the Breaking Situation Eye allowed him to clearly 'see' this strike's trajectory—not targeting the throat directly, but a feint; the true lethal blow would rise from below the moment he dodged sideways, aimed directly at the Dantian!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0189_choice_002",
+        "prompt": "The Breaking Situation Eye revealed Ling Yuan's true killing move—a Spiritual Blade rising from below, aimed directly at the Dantian. Chen Ji had to react immediately—",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choice_jineng_zudang",
+            "text": "Receive the Spiritual Blade head-on",
+            "description": "Turn the trap against him, deliberately take the Spiritual Blade attack, while using the Tianji Record's power to transfer the damage back to Ling Yuan himself, injuring him with his own attack.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Sustain partial counterattack damage",
+            "visible_reward": "Ling Yuan injured by his own attack, reputation ruined",
+            "risk_hint": "Requires precise control of the Tianji Record's transfer power, extremely high risk",
+            "process_label": "以彼之道",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_jineng_zudang_001",
+                  "content": "Chen Ji didn't dodge; instead, he actively stepped forward to meet that Spiritual Blade. \"Seeking death!\" Ling Yuan sneered, but in the next instant, his expression changed drastically—the Spiritual Blade had clearly struck Chen Ji's Dantian, yet upon contact, it was twisted by a mysterious force, rebounding toward Ling Yuan himself with a violent surge!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "借力打力"
+            ],
+            "requires_flag": "破局之眼激活",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_pochan",
+            "text": "Counter-trap reversal",
+            "description": "Under the Breaking Situation Eye's foresight, preemptively set up a counter-formation along Ling Yuan's Spiritual Blade trajectory, using his own spear against his own shield.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consumes massive amounts of mental energy",
+            "visible_reward": "Ling Yuan trapped in the formation, temporarily losing mobility",
+            "risk_hint": "Requires advance preparation, extremely high demands on timing",
+            "process_label": "预判反击",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_pochan_001",
+                  "content": "The formation disk hidden in Chen Ji's sleeve activated quietly, dozens of formation runes lighting up on the hall floor. Ling Yuan's Spiritual Blade正好撞入阵中, being层层削弱、twisted、分解, ultimately dispersing as harmless spiritual light. \"This—\" Ling Yuan's pupils contracted sharply, \"When did you set up this formation?!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "阵法困敌"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_huji",
+            "text": "Body protection withstand",
+            "description": "Activate the Tianji Record's protective talisman to receive the Spiritual Blade head-on, while using words to expose Ling Yuan's despicable methods before everyone, seizing the moral high ground.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Protective talisman severely depleted",
+            "visible_reward": "Confirm Ling Yuan's treachery in front of everyone, establishing a righteous image",
+            "risk_hint": "May expose more trump cards",
+            "process_label": "光明正大",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0189_result_choice_huji_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji let the Spiritual Blade strike his chest; the Tianji Record's protective golden light erupted, blocking the strike that could have destroyed Foundation Building peak cultivators. He stumbled back several steps, his chest clothing torn, yet no blood was visible. \"Everyone saw it—\" Chen Ji wiped the blood from the corner of his mouth, yet his voice remained steady as bedrock, \"Elder Ling talks about purging traitors, yet uses lowly assassination tricks. Is this our Tianqing Sect's Sect Master?\"",
+                  "emotion": "悲壮"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "道德高地"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_010",
+        "content": "A sudden uproar filled the hall. Those elders who had still been watching could no longer hold back—some began whispering, others wore expressions of contempt. Ling Yuan's face was dark enough to drip water; he never imagined that a half-Step Transcendence realm expert like himself would be repeatedly outmaneuvered by a Foundation Building mid-stage废物. \"Chen Ji!\" He gritted his teeth, \"Do you think this little trick can turn the tides?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0189_011",
+        "character_id": "char_chenji",
+        "content": "Chen Ji slowly straightened his body, the afterglow of the Eye of Breaking the Game still rippling in the depths of his pupils. He looked at Ling Yuan, a faint smile curving his lips, a smile so gentle it sent chills through the air. \"Senior Ling, this junior's little tricks really aren't many.\" He said, each word precise, \"But they're enough.\" As his voice fell, the Tianji Record Fragment in his palm suddenly burst forth with unprecedented light, a pressure beyond the mortal world rising from his body.",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_012",
+        "content": "Ling Yuan's pupils contracted sharply, he felt that pressure—it was the aura only the main body of the Tianji Record possessed, the embodiment of Heavenly Dao Law! \"Impossible!\" He cried out involuntarily, \"How could a fragment—\" Yet Chen Ji didn't give him a chance to finish. The power surging from the Tianji Record transformed into a golden chain, piercing through space, heading directly for Ling Yuan's brow center!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0189_choice_003",
+        "prompt": "The ultimate strike of the Tianji Record had been unleashed, Ling Yuan was locked by the golden chain. In this decisive moment of victory or defeat—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_luwei",
+            "text": "Pressing the advantage",
+            "description": "At all costs activate the full power of the Tianji Record, thoroughly seal Ling Yuan's cultivation, making him unable to rise forever.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Heavenly Fate Value drops to zero, falling into a weakened state",
+            "visible_reward": "Ling Yuan's cultivation is permanently sealed, becoming a waste",
+            "risk_hint": "Heavenly Fate Value dropping to zero may cause the Tianji Record to backlash, with unimaginable consequences",
+            "process_label": "一击必杀",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_luwei_001",
+                  "content": "The golden chain tightened abruptly, piercing into Ling Yuan's brow center. Ling Yuan let out a凄厉 wail, spiritual energy surging wildly around him, yet was devoured one by one by the chains. His cultivation was plummeting visibly— from half-step to God Transformation, falling to Gold Core, Nascent Soul, Foundation Building... until he became an ordinary mortal. \"No—!\" Ling Yuan fell to his knees, his black hair instantly turning to white snow.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "凌渊封印"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_fengcun",
+            "text": "Leaving room for mercy",
+            "description": "Only seal seventy percent of Ling Yuan's cultivation, preserving part of his strength, letting him endure the torment of \"almost being able to take revenge\" for the rest of his life.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ling Yuan still has counterattack strength",
+            "visible_reward": "Demonstrate magnanimity before everyone, while leaving Ling Yuan with eternal psychological trauma",
+            "risk_hint": "Ling Yuan may seek revenge when opportunity arises",
+            "process_label": "心理凌迟",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 40
+              },
+              {
+                "stat": "黑化值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_fengcun_001",
+                  "content": "The golden chain wound tightly inside Ling Yuan, constricting and sealing. Ling Yuan's cultivation fell from half-step God Transformation to Gold Core Early Stage, his entire person appearing to have aged a hundred years. He knelt on the ground, trembling all over, eyes filled with disbelief. \"You... you actually—\" Chen Ji looked down at him, voice calm: \"I told you, a father's debt is repaid by the son. Today was merely interest—the principal... we'll settle later.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊重创"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_xuanhua",
+            "text": "Mysterious and elusive",
+            "description": "Using the power of the Tianji Record to exile Ling Yuan to some unknown space, trapping him forever in his own heart demon illusion, neither dead nor alive.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires extremely high spiritual power to maintain the spatial passage",
+            "visible_reward": "Ling Yuan will spend the rest of his life in an endless cycle of heart demons",
+            "risk_hint": "The spatial passage may be unstable",
+            "process_label": "镜花水月",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -35
+              },
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0189_result_choice_xuanhua_001",
+                  "content": "A mysterious rune surged from the Tianji Record Fragment, tearing open a pitch-black fissure beneath Ling Yuan's feet. \"You—\" Ling Yuan struggled in terror, yet could not resist that suction force, \"Chen Ji! You dare!\" The fissure slowly closed, swallowing him into endless darkness. Silence returned to the great hall, only Chen Ji's voice echoing: \"Senior Ling, reflect well inside.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊放逐"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_013",
+        "content": "In the great hall, a needle's fall could be heard. Where Ling Yuan had vanished, only a scorched mark remained, proving the authenticity of that world-shocking confrontation. Everyone stared at Chen Ji blankly, as if looking at a demon that had walked out of hell. This former废物 servant disciple, in their eyes now appeared both towering and terrifying.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_014",
+        "content": "Chen Ji slowly gathered his power, the afterglow of the Eye of Breaking the Game fading. His complexion turned slightly pale, the massive consumption of Heavenly Fate Value beginning to backlash. But his expression remained unchanged, simply sweeping a cool glance over the various gazes around him—shocked, awed, or fearful. \"Everyone.\" His voice was not loud, yet clearly entered each person's ears, \"Today's matter, the rights and wrongs, will have public judgment. The evidence of Ling Yuan colluding with the Five Elders Council and betraying the Sect, this one will submit to the Sect Council for arbitration.\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0189_015",
+        "character_id": "char_chenji",
+        "content": "He paused, a meaningful smile curving his lips: \"Of course, if anyone wishes to speak up for Senior Ling—\" He looked around, his gaze finally landing on those several elders in the corner of the hall with varying expressions, \"This one is always ready for a match.\" Those elders immediately fell silent, shaking their heads repeatedly. Chen Ji nodded in satisfaction, turning to walk toward the hall exit. His back stretched long in the candlelight, like a revenge seeker emerging from darkness, or like one about to walk into another deeper darkness.",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_016",
+        "content": "Just as Chen Ji was about to step through the hall door, a hoarse voice came from behind—Ling Yuan had been exiled back somehow. He lay on the ground, covered in blood, yet laughed wildly at the sky: \"Hahaha... Chen Ji, do you think you've won?\" He laughed so hard he could barely breathe, his mad eyes making one's flesh creep, \"Do you think the Tianji Record is your fortune? Ask your good master... the price of the Tianji Record was never paid by the living!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0189_017",
+        "content": "Chen Ji's footsteps abruptly stopped. He slowly turned around, looking at that disheveled old man who was still laughing wildly. Mo Xiansheng's voice rang in his mind, carrying an unprecedented gravity: \"He's right.\" Chen Ji's heart sank heavily. The price of the Tianji Record was never borne by the living—then who paid it? His sister, Chen Nian? That missing girl taken by the Holy Sect as the \"Heavenly Fate Lock Key\"? Chen Ji's fists slowly clenched, his knuckles turning white. Ling Yuan's laughter echoed through the grand hall, every word like a venomous snake drilling into Chen Ji's ears.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

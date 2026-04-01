@@ -8,6 +8,28 @@ final class SoloContentCompatibilityTests: XCTestCase {
         return decoder
     }()
 
+    private func makeChoice(
+        id: String,
+        text: String,
+        resultNodes: [StoryNode]? = nil
+    ) throws -> Choice {
+        let payload = """
+        {
+          "id": "\(id)",
+          "text": "\(text)",
+          "satisfaction_type": "策略推进",
+          "result_nodes": \(resultNodes.map(encodeStoryNodes(_:)) ?? "null")
+        }
+        """
+
+        return try decoder.decode(Choice.self, from: Data(payload.utf8))
+    }
+
+    private func encodeStoryNodes(_ nodes: [StoryNode]) -> String {
+        let data = try! JSONEncoder().encode(nodes)
+        return String(decoding: data, as: UTF8.self)
+    }
+
     func test_choiceDecoding_defaultsMissingSatisfactionTypeToGeneric() throws {
         let data = """
         {
@@ -262,5 +284,151 @@ final class SoloContentCompatibilityTests: XCTestCase {
 
         XCTAssertEqual(textNode.id, "bad_emphasis")
         XCTAssertNil(textNode.emphasis)
+    }
+
+    func test_translatedChapterMatchesFallback_requiresMatchingNodeStructure() {
+        let fallback = Chapter(
+            id: "book_ch0001",
+            bookId: "book",
+            number: 1,
+            title: "原文标题",
+            nodes: [
+                .text(TextNode(id: "n1", content: "原文")),
+                .choice(
+                    ChoiceNode(
+                        id: "n2",
+                        prompt: "怎么做？",
+                        choices: [
+                            try! makeChoice(
+                                id: "choice_a",
+                                text: "先稳住",
+                                resultNodes: [
+                                    .dialogue(
+                                        DialogueNode(
+                                            id: "result_1",
+                                            characterId: "char_1",
+                                            content: "别急。",
+                                            emotion: nil
+                                        )
+                                    )
+                                ]
+                            )
+                        ],
+                        timeLimit: nil,
+                        choiceType: .keyDecision
+                    )
+                )
+            ],
+            isPaid: false,
+            nextChapterHook: nil
+        )
+
+        let matchingTranslation = Chapter(
+            id: "book_ch0001",
+            bookId: "book",
+            number: 1,
+            title: "Translated Title",
+            nodes: [
+                .text(TextNode(id: "n1", content: "Translated")),
+                .choice(
+                    ChoiceNode(
+                        id: "n2",
+                        prompt: "What now?",
+                        choices: [
+                            try! makeChoice(
+                                id: "choice_a",
+                                text: "Hold",
+                                resultNodes: [
+                                    .dialogue(
+                                        DialogueNode(
+                                            id: "result_1",
+                                            characterId: "char_1",
+                                            content: "Not yet.",
+                                            emotion: nil
+                                        )
+                                    )
+                                ]
+                            )
+                        ],
+                        timeLimit: nil,
+                        choiceType: .keyDecision
+                    )
+                )
+            ],
+            isPaid: false,
+            nextChapterHook: nil
+        )
+
+        let mismatchedTranslation = Chapter(
+            id: "book_ch0001",
+            bookId: "book",
+            number: 1,
+            title: "Translated Title",
+            nodes: [
+                .text(TextNode(id: "n1", content: "Translated")),
+                .choice(
+                    ChoiceNode(
+                        id: "n2",
+                        prompt: "What now?",
+                        choices: [
+                            try! makeChoice(
+                                id: "choice_b",
+                                text: "Wrong branch"
+                            )
+                        ],
+                        timeLimit: nil,
+                        choiceType: .keyDecision
+                    )
+                )
+            ],
+            isPaid: false,
+            nextChapterHook: nil
+        )
+
+        XCTAssertTrue(translatedChapterMatchesFallback(matchingTranslation, fallback: fallback))
+        XCTAssertFalse(translatedChapterMatchesFallback(mismatchedTranslation, fallback: fallback))
+    }
+
+    func test_translationContainsSuspiciousArtifacts_rejectsAssistantNotes() {
+        let chapter = Chapter(
+            id: "book_ch0002",
+            bookId: "book",
+            number: 2,
+            title: "Translated Title",
+            nodes: [
+                .text(
+                    TextNode(
+                        id: "n1",
+                        content: "[The original text appears to have encoding issues here. Let me provide a natural translation based on context:]"
+                    )
+                )
+            ],
+            isPaid: false,
+            nextChapterHook: nil
+        )
+
+        XCTAssertTrue(translationContainsSuspiciousArtifacts(chapter, language: .en))
+    }
+
+    func test_translationContainsSuspiciousArtifacts_rejectsHighHanRatioInEnglish() {
+        let chapter = Chapter(
+            id: "book_ch0003",
+            bookId: "book",
+            number: 3,
+            title: "English Title",
+            nodes: [
+                .text(
+                    TextNode(
+                        id: "n1",
+                        content: "This paragraph starts in English, but 后半段仍然混入大量中文内容，明显不是可发布的英文翻译。"
+                    )
+                )
+            ],
+            isPaid: false,
+            nextChapterHook: nil
+        )
+
+        XCTAssertTrue(translationContainsSuspiciousArtifacts(chapter, language: .en))
+        XCTAssertFalse(translationContainsSuspiciousArtifacts(chapter, language: .ja))
     }
 }

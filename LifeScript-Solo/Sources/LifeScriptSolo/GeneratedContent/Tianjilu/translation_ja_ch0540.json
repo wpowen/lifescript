@@ -1,0 +1,573 @@
+{
+  "id": "天机录_ch0540",
+  "book_id": "天机录",
+  "number": 540,
+  "title": "暗流涌动",
+  "is_paid": true,
+  "next_chapter_hook": "陳機が龍脈の秘密に触れようとした瞬間、皇城の奥底から惊天動地の波动が伝わってきた——それは天道之眼が凡間に配置したまた一つの傀儡が、静かに両目を開いたのだ。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0540_001",
+        "content": "夜の色は墨のように暗く、陳前は廃墟から拾った黒衣を引き寄せ、皇城禁地外围一棵古槐の上に身を寄せた。風が梢を貫き、细微なさらさらとした音を立て、誰かが低声で呢喃っているかのようだった。彼は既にここでまる三刻紧張の息を殺し、心臓の鼓動さえも意図的に緩めた。遠く聳え立つ宮墙が月光の下で冷たい輝きを放ち、巡回する禁軍の松明の光が時折過ぎ去り、闇の中に束の間の光の痕跡を残した。陳前は軽く口角を上げて微笑んだ——あの松明の位置は、遙か三刻前に天機録で既に完全に推演していたのだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_002",
+        "character_id": "char_moxiansheng",
+        "content": "「お前在这里で天機録を使うつもりか？」墨先生の残魂が天機録の第一頁で微かに震え、声音には几分の憂慮が滲んでいた。「ここは皇城龍脈の汇聚する場所で、天機が乱れている在这里で無理に窺見すれば，只怕……」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_003",
+        "content": "陳前は答えなかった。ただ懐からゆっくりとあの巻かれた天機録を取り出した。羊皮紙は夜色の中で蒼い光を帯び、上の符文は生き物のように游ぎ動いていた。彼は深く息を吸い込み、右手を第三頁に押し当てた——それが现在唯一安定して顕現できるページだった。「天命値を五点消費する。」冷たい声が彼の頭に響いた。陳前は眉を微かに皺めたが、迷いなく意識をその混沌の中に探り入れた。瞬く間に、無数の画面が潮のように彼の脑海に流れ込んできた：皇城の配置、巡回ルート、禁地の入口……そして地下深くにある一つのぼんやりとした身影。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_004",
+        "content": "あの身影は……陳念！陳前の心臓が猛然と縮み、瞳孔が縮まった。たとえぼんやりとした光影であっても、たとえ天機録がこの時明らかに波動を見せていたとしても、彼はすぐにその輪郭を认め取った——それは多年前に失踪した彼の妹、彼のこの世で唯一の血縁だった。彼女は鎖に繋がれ暗い石室に囚われ、全身には怪しげな紫の符文が巡り回り、まるで某种の可怕的力で封印されているようだった。陳前の指が微かに震え、関節は力を込めすぎて白くなっていた。彼的心中ではその位置を黙って記した——皇城東北角、地下三十丈、龍脈交汇之处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_005",
+        "character_id": "char_chenji",
+        "content": "陳前は心中で冷冷と笑った：「見つけた。」彼は皇城の奥底を見上げ、眼底に一抹の覚悟の光が闪烁した、「陳念、お兄ちゃんが迎えに来たぞ。」",
+        "emotion": "决然"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0540_choice_001",
+        "prompt": "陳前が妹の位置を発見した後、一条の侵入ルートを選択する必要がある。以下三条のルートにはそれぞれ利点と欠点がある：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "route_ming",
+            "text": "明脩棧道",
+            "description": "偽造身份令牌を利用し、正門から堂々と禁地外围に入る。彼が廃墟で得た玄武宗弟子の身份を偽装とし、三宗議事に参加する外門弟子を装う。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "身份暴露の可能性あり",
+            "visible_reward": "より多くの禁地内部情報が入手可能",
+            "risk_hint": "一旦身份が識破되면、重重包围に陷入する",
+            "process_label": "伪装潜入",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_ming_001",
+                  "content": "陳前が懐から玄武宗の紋章が刻まれた令牌を取り出し、口元に嘲りの弧を浮かべた。この令牌は三日前に一具体的な遺体から取ったものだ——その遺体は生前に玄武宗の内門弟子であり、今は既に皇城外河底の浮遺体となっていた。彼は月光の下で令牌を返し、上の符文が損傷していないことを確認してから、衣襟を整え、大股で皇城正門へ歩み出した。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_ming_002",
+                  "content": "「止まれ！」門を守る禁軍将领が冷たく喝し，手中長戟を陳前の胸に横たえた，「三宗議事は早くも三日前结束了しており，此时辰を過ぎたら，谁も入城を許さん！」陳前は慌てることなく令牌を递出し，脸上には適切な歉意の表情を浮かべた：「将军，您方はお分かりと思いますが、私は玄武宗外門弟子韓烈の従者でございます、先日一件の魔道余孽の足取りを追って，时をロスしてしまいました。ここでお方便顶戴おりませんでしょうか。」说着，他从袖中摸出一小袋沉甸甸の灵石，不动声色地将其塞入将领手中。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "infiltrated_ming"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "route_an",
+            "text": "暗度陳倉",
+            "description": "正門を捨て、皇城東側の地下水脈から潜入する。この道は玄武宗が河底に設けた探測阵法を贯通する必要があるが、成功すれば直接龍脈交汇处に到達できる。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "大量精力の消耗が必要",
+            "visible_reward": "すべての明面の監視を回避し、核心区域に直行",
+            "risk_hint": "阵法が触发すれば玄武宗上層に知れる",
+            "process_label": "秘密潜入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_an_001",
+                  "content": "陳前は静かに古槐を離れ、皇城東側のある片隅の河岸に迂回した。月光の下で、川の水は不自然な墨緑の色彩を呈し、表面には時折细小な符文が闪烁而过——それが玄武宗の探測阵法だった。彼は懐から事前に用意した破陣符を取り出し、深く息を吸い込み、音もなく水面に滑り込んだ。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_an_002",
+                  "content": "水中の世界は想像以上に怪異だった。各种色の阵法光芒が交织し一张の密不透风の大網を作り上げ、どんな细微な霊力波動も即座に捕捉される。だが陳前は事前に準備していた——彼は水中ではまるで滑りやすい泥鰌のように、各動作が精密に阵法の感知範囲を避けた。それでも、破陣符が第三の阵法と接触した瞬間、远处で耳障りな警報音が鳴り響いた。陳前は舌打ちし、泳ぐ速度加快了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "infiltrated_an"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "route_hong",
+            "text": "紅袖添香",
+            "description": "夜清が提供した魔道秘法を利用し、禁地内の某个侍女の姿に変じて内廷に混入する。これには一定のリスクが伴うが、最も人目を引かない方法でもある。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "夜清に借りを抱える",
+            "visible_reward": "通行無阻の内廷身份を取得",
+            "risk_hint": "秘法には時間制限があり高手に出会えば見破られやすい",
+            "process_label": "借力潜入",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_hong_001",
+                  "content": "陳機が袖から漆黒の玉簡を取り出した——それは三日前、夜清が送り届けた物だった。玉簡の表面は冷たく触れるだけで诡异な霊力波動が手掌に染み込んでくる。彼は玉簡を眉間に当て口に夜清から教えられた呪文を黙って唱えると、淡い紫の光が足元に立ち上りゆっくりと全身を包み始めた。骨は軋み、筋肉は痙攣し、再び目を開けた時、本来の堅毅な顔は清秀で婉約な女の顔に変わっていた。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_hong_002",
+                  "content": "陳機は腰の衣裙に目を落とした——いつの間にか、精巧な侍女服が身にまとわれており、腰には鳳凰を刺繍した腰牌まで添えられていた。彼は軽く口角を上げ、記憶の中の宮廷侍女の所作を真似てゆっくりと歩を進めると，很快便と一隊の夜回りの侍女と擦れ違う。誰も一瞥もしなかった。夜清の秘法は，果然別格だ。彼は心中この人情を刻み込んだ——事が成就した後、この恩は十倍にして返そう。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "infiltrated_hong"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_006",
+        "content": "陳が重なり合う宮阙を抜け、ようやく皇城の東北角に到達した，这里的雰囲気は他処とはまるで異なる——空気が息を詰めるような压迫感充斥，即使是他也感到呼吸が詰まる。地面上には密密麻麻な法陣の紋路が刻まれ、月光の下で幽かな銀色の光を放っている。そして这一切の中心に、一枚の巨大な石門が紧闭し、その前には二人の無表情な黒甲の武者が立っている。彼らの息は深く測り知れず、赫然とした化神期の修为だ！陳機の心中は一凛した——現在の彼の实力では、一人の化神期とも未必に勝てるとは言えず、まして二人では。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_007",
+        "content": "その時、天機録は忽然として激しく震動し始めた。陳機は無意識に意識を羊皮紙の中に探り入れると、、元は空白だった第四頁の上にゆっくりと模糊な符文が浮かび上がっているのが見えた——那是某种古老的文字、彼从未见过，却本能地感到一阵熟悉。与此同时，一股来自地底深处的召唤感再次出现，这一次更加清晰、更加迫切。那召唤声中似乎蕴含着某种难以言喻的吸引力，像是有一样东西在呼唤他，在催促他前往龙脉的最深处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_008",
+        "character_id": "char_moxiansheng",
+        "content": "「これは……」墨先生の残魂は猛然と一震し、声音には珍しく激动的色彩が混じった，「第四頁の顕現条件が触发された！小子、いったい何をした？」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_009",
+        "content": "陳機が答える暇もなく、第四頁缓缓浮现の符文紧紧目で追った。文字は模糊ながら、いくつかの特徴的な言葉が辨认できた——「天命」「代価」「契約」……就在这时，眉心から突然の激痛が走った。陳機が苦しげに唄一声響き、单膝をついて額には冷汗が浮かぶ。天命値——体内の何かが飞速で流出しているのを感じ取った、それは霊力よりも本質的なもの、運命そのものの重さだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0540_choice_002",
+        "prompt": "天機録第四頁の顕現が迫っているが、代償は大量の天命値消費だ。陳機は選択を迫られる：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "continue_4th_page",
+            "text": "強行激活",
+            "description": "不惜代価に第四頁の activation を続け，无论付出多大代价也要获得新的能力。これは妹妹を救出できるかどうか、そして即将到来的乱局で主導権を握れるかどうかに関わっている。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命値が大量に消費され、危険線まで低下する可能性がある",
+            "visible_reward": "天機録第四頁を解脱し、未来を予見する全新能力を獲得する",
+            "risk_hint": "天命値が低すぎると天道之眼の注意を引き起こす",
+            "process_label": "赌上一切",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_continue_001",
+                  "content": "陳期は歯を食いしばり，更多的意識を天機録に灌注した。激痛は潮のように一波一波押し寄せ、魂そのものが引き裂かれるような感覚だった。だが彼は退缩せず、反而双臂を広げて自虐的な姿勢で这一切を受け止めた。血が鼻腔から溢れ、顎を伝って滴り落ちる。視界が揺らぐが、第四頁の符文は越来越清晰になっていく。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_continue_002",
+                  "content": "「够了！」墨先生が厉声で喝た，「小子、このままでは死ぬぞ！」しかし陳期仿佛没有听见，眼中に只有那逐渐成形的符文。终于，当最后一笔落下时，第四頁が完全に顕現した——そこには：「天を窺う者は、天命を薪として運命の火を燃やす。一瞬の予知を得て、一時の寿命を払う。」页面最下方还有一行小字：「解锁条件：天命锁钥。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "page_4_unlocked"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "pause_4th_page",
+            "text": "暂停显现",
+            "description": "关键时刻强行中断显现过程，保留现有的天命值。虽然会失去这次机会，但至少能保住性命，留待日后寻找更安全的解锁方式。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "错过这次显现条件",
+            "visible_reward": "保存实力，不引起天道之眼注意",
+            "risk_hint": "下一次显现条件未知，可能更加危险",
+            "process_label": "稳健为上",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_pause_001",
+                  "content": "陳期猛然收回意識那股狂涌的力量を無理やり截断した。激痛は大半消退したが、虚脱感は 여전히四肢百骸が空洞になったような脱力感があった。第四頁の符文は意識收回の瞬间に再び模糊になったが、あの言葉——「天命鎖钥」——はすでに深く脳裏に刻まれていた。このキーワードが次の行動の鍵になる。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_pause_002",
+                  "content": "「做了一个明智的选择。」墨先生の声が再び响いた，这次带着几分赞许，「第四頁の顕現には极其苛刻な条件が必要で、無謀な activation は逆効果だ。だが、既然你已经看到了关键词，以后就有了方向。记住，天命鎖钥——这四个字，或许比你想象的更加重要。」陳期为黙って頗き将这四个字深深心底。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "page_4_hint"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_010",
+        "content": "就在这时，龙脉深处传来的召唤再次响起，比之前任何一次都要强烈。陳期为不由自主地将目光投向那紧闭的石门，能感觉到在那扇门的背后、三十丈の深さの地下に、何かが等待着它。那东西似乎与天機録有着某种神秘的联系，与他体内残缺的天命之轮产生了共鸣。是一种久违的、来自血脉深处的呼唤。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_011",
+        "content": "陳期为深く息を吸い込み强迫自己冷静下来。现在还不是冲动的时候。石門前の二人の化神期守卫不是他现在能够对付的，而他对禁地内部的構造もほとんど知らない。贸然行動只会打草惊蛇，让妹妹の处境更加危険。彼は更多的情报が必要で、完全な計画が必要だ。そして就在这时，一阵细微な足音が身后传来——那是巡逻の禁軍がこちらに近づいている。。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_012",
+        "content": "「Chen Jiは素早く身を翻して近くの影の中へ滑り込み、呼吸を止めた。十二人の禁軍が一隊となって石門の前を通り過ぎ、松明の光が彼が隠れていた作假山の傍らをかすめ、青苔に覆われたいくつかの太湖石を照らし出した。先頭を歩く小校が不意に足を止め、何かの異変を察知したらしい。Chen Jiの心臓は大きく跳ね上がり、指先は既に袖の中の命を守る符籙に触れていた。空気は凍りついたように張り詰め、風の音さえもこの瞬間、静まり返っていた。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_013",
+        "character_id": "char_chenji",
+        "content": "「空気が最高度に張り詰めた瞬間、Chen Jiの脳裏に不意に一つの考えが閃いた。彼は一人の名前を思い出していた——Su Qingyao。Tianqing Sectの内門首席、何度も彼の素顔を暴こうとしたあの女だ。禁地内部に潜り込むのに、Tianqing Sectの正式弟子以上の便利な身份があるだろうか？更何况、Chen JiがSu Qingyaoを理解している限り、あの女は決して彼が一人で危険を冒すのを見過ごしはしないだろう。」",
+        "emotion": "算计"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0540_choice_003",
+        "prompt": "「Chen Jiは禁地の縁で次の手を布局し、行動戦略の選択を迫られている：」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "strategy_contact_su",
+            "text": "「Su Qingyaoに連絡する」",
+            "description": "「特殊経路を通じてSu Qingyaoに消息を送り、彼女を計画に引き込む。彼女のInner Disciple Senior Fellowという身份を活かし、禁地で堂々と審議に加わることで、Chen Jiがより多くの情報支援を得られるようになる。」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "「Su Qingyaoに一部の足取りを教える」",
+            "visible_reward": "「強力な内部協力者と行動支援を得る」",
+            "risk_hint": "「Su Qingyaoが機を窪って彼の素性を探る可能性がある」",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_contact_su_001",
+                  "content": "「Chen Jiは懐から青い雲紋が施されたJade Pendantを取り出した——これはかつてSu Qingyao在某かの追跡の過程で落とした証拠物件で、彼女の微かな気配がまだ残っていた。彼はJade Pendantを掌中に握り、Tianji Recordの一つの秘法を黙って催動し、暗号化された情報をその中に封じた。三息の後、Jade Pendantは一筋の光となって音もなく夜空に溶け込み、Tianqing Sectへと馳せ参じた。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_contact_su_002",
+                  "content": "「这一切を終え、Chen Jiの口元にかすかな微笑みが浮かんだ。Su Qingyao、あの冰雪聪明な女であれば、必ずやメッセージの中の暗示を理解できるだろう。一旦彼女がチェス盤に引き込めば、自然に彼の意向する方向へと導かれる。这就是他的布局——偶然のように見えて実は必然、求救のように見えて実は掌握在这一步，他从不认为自己是个善人。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_involved"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "strategy_alone",
+            "text": "「一人で行動する」",
+            "description": "「あらゆる外的助力を受けずに、禁地周囲を一人で調査し続ける。彼が長年にわたって蓄積した隠匿手法を用いて、誰も知らない暗道や突破口を発見できるかもしれない。」",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "「進捗が緩やか」",
+            "visible_reward": "「絶対に姿を消し、痕跡を残さない」",
+            "risk_hint": "「重要なタイミングを見逃す可能性がある」",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_alone_001",
+                  "content": "「Chen Jiは視線を切り替え、音もなく後退った。彼は誰にも連絡しないことを選んだ——この要紧な局面では、知る人多增加一分暴露の危険。更重要的是，他从来不属于那种依赖他人的人。 He resembled a deadly serpent lurking in concealment, silently encircling the forbidden territory. With piercing eyes, he meticulously scanned every potential vulnerability. Three hours of patient surveillance later, he finally discovered a hidden water channel in a desolate corner—an ancient, abandoned drainage system from the early imperial city.」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_alone_002",
+                  "content": "「Chen Jiの唇角微微上揚，勾出一抹詼谐的笑意。水渠の走向，竟然與Tianji Record中揭示的龍脈支流驚人地吻合。Chen Ji内心推測，這條廢棄的水渠或許能直通禁地的地下區域。入口處有Formation Rune Pattern守護，但對於在廢墟中生",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "found_secret_passage"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "strategy_yeqing",
+            "text": "「Ye Qingを召喚する」",
+            "description": "「Ye Qingとの秘密の連絡方式を活用し、Demonic Path Holy Sectの支援を求める。Demonic Pathの勢力は皇城にも同样布網しており、別の角度から突破口を開けるかもしれない。」",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "「Demonic Pathの人情を背負う」",
+            "visible_reward": "「Demonic Path暗線の全力配合を得る」",
+            "risk_hint": "「Demonic Pathとの繋がりを深める可能性がある」",
+            "process_label": "借刀杀人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_yeqing_001",
+                  "content": "「Chen Jiは袖から漆黒の蝶形Jade Pendantを取り出し、軽やかに砕いた。砕片から淡い魔気が立ち昇り、空中で見慣れた符文を形成した。三息の後、一つの影が音もなく彼の前に現れた——正是Ye Qing。彼女は今夜、緊身の夜行衣を身にまとい、玲珑な曲線を描き出し、口元に遊び心のある笑みを浮かべていた。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_yeqing_002",
+                  "content": "「「よ、こんなすぐに会いたかったの？」Ye Qingの声には几分のからかいが混じっていた，「说吧，这次你需要私？」Chen Jiは彼女のからかいには構わず、ストレートに口を開いた：「禁地北東角の石門、化神期守衛二名、十分な注意を引くような擾乱を起こしてほしい」Ye Qingは眉を上げ、興味深い様子で彼打量していた：「你还是会使唤人だな。だが……我喜欢」そう言って、彼女は再び闇に溶け込み、銀鈴のような笑い声だけを彼処に残した。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_allied"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_014",
+        "content": "「各方での暗流が渦巻く中、皇城の奥深くで龍脈が再び一震えを伝えた。その神秘的な召唤は以前보다更是强烈，仿佛有什么东西正在地底深处苏醒。Chen Jiは不意に顔を上げた、足元の地面が微かに震えているのが感じ取れた，那是龍脈Spiritual Energyの異常変動だ。的同时，Tianji Recordの上の符文も輝きを増し、第四のページの輪郭が闇の中でぼんやりと浮かび上がり，似乎在呼应着什么。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_015",
+        "content": "「坊主よ、何か感じたか？」Mo Xianshengの声が不意に響き、これまでになく重々しい響きを帯びていた。「あの召喚……通常の竜脈霊潮ではなく、もっと古いものだ。老夫が推測するならば、これは——」言葉が途切れ、まるで何かを恐れるかのように沈黙した。Chen Jiが眉を寄せ、問い詰めようとしたその時、激しい頭痛が突如として襲ってきた。彼の視界に、ぼんやりとした画面がrapidly闪いた：漆黒の巨大な眼球が、無限の虚空の中に浮かび、冷たく彼を見つめていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_016",
+        "content": "天道の眼だ！Chen Jiの瞳孔が縮み、尾椎から天蓋へと走るような凍えるような寒さが全身を駆け巡った。その眼球は一瞬の闪光に過ぎなかったが、彼に残したのは消えない印象だった——凡人 の理解を超えた存在、高く聳え立ち、众生を軽んじる意志。彼はMo Xianshengが言葉を濁した理由をついに理解した。天道の眼……それは天機録の歴代主人さえも小心翼翼として避けてきた存在。そして今、それは彼に注意を向けているようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_017",
+        "character_id": "char_moxiansheng",
+        "content": "「覚えておけ、坊主よ。」Mo Xianshengの声はこれまでになく厳かになった。「今から、お前のすべての行動にいっそう慎重にならねばならん。天道の眼は直接凡間に干涉することはできぬが、その操り人形に影響を与えることができる。Ling Yuan、Han Lie……すら、お前の身边で无害そうに見える者がいても、その眼となりうる。運命の枷を破る方法を見つけるまで、常に警戒を怠ってはならぬ。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_018",
+        "content": "Chen Jiは深く息を吸い込み、胸の中の恐怖を押し殺した。皇城の奥深くへと目を向け、閉じられた石門へと視線を向けた。その目はしだいに堅い決意を帯びた。どれほどの危険が待ち受けようとも、どれほどの代償を支払おうとも、彼はChen Nianを救わねばならぬ。それは彼の妹であり、この世における唯一の肉親だった。彼女のゆえに、彼は天と闘い、地と闘い、その高き天道の眼と闘うことを厭わぬ。たとえ粉砕されようとも、構わぬ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_019",
+        "content": "その時、遥か遠方の空に突如として紫の光が走り——那是魔道秘法の合図だった。Ye Qingが動き出した。紧接着，一阵惊天動地の爆発音が皇城西側から传来し、火光が空へと立ち上り、皇城全体が震え動いた。石門前の二人の守衛が一瞬だけ目を交わし、そのうち一人が低く言った：「ここを守れ、私が様子を見に行く。」言い終わる前に、彼は光一道となって西側へと飛び去った。機会が来た！Chen Jiの口元に冷たい笑みが浮かび、音もなくあの石門へと忍び寄った。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_020",
+        "content": "しかし、Chen Jiが石門に触れようとしたその瞬間、背後から冷たい声が不意に响いた：「ずっと待っていたぞ、Chen Ji。」Chen Jiは猛然と振り返ると、月光の下に立ち、黒い法袍をまとい、面相が影に遮られて看不清是谁的身影がそこにいた。しかしその声……その声は彼の瞳孔を縮ませた——Ling Yuanの声だ！Tianqing Sectの古くからの掌门であり、名前の上での庇護者でありながら、実は最大の敵，竟然早就埋伏在这里等着他！",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

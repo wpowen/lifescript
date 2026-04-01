@@ -7,31 +7,31 @@ struct SoloEntryWorldProofStrip: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             SoloEntrySectionHeader(
-                eyebrow: "世界证据",
-                title: "先看到这部作品如何运转，再决定你要不要把自己押进去",
-                detail: "这里不解释系统，而是直接给你看人物、路线、代价和重玩价值这些证据。"
+                eyebrow: SoloLocalization.localized("世界证据"),
+                title: SoloLocalization.localized("先看到这部作品如何运转，再决定你要不要把自己押进去"),
+                detail: SoloLocalization.localized("这里不解释系统，而是直接给你看人物、路线、代价和重玩价值这些证据。")
             )
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
                     evidenceCard(
-                        title: "风险人物",
+                        title: SoloLocalization.localized("风险人物"),
                         body: riskLine,
-                        footnote: "人物不是摆设，他们会记住你在关键时刻站在哪边。",
+                        footnote: SoloLocalization.localized("人物不是摆设，他们会记住你在关键时刻站在哪边。"),
                         tint: SoloTheme.gold
                     )
 
                     evidenceCard(
-                        title: "公开路线",
+                        title: SoloLocalization.localized("公开路线"),
                         body: routeLine,
-                        footnote: "明线给承诺，暗线给代价，真正危险的变化通常来得更晚。",
+                        footnote: SoloLocalization.localized("明线给承诺，暗线给代价，真正危险的变化通常来得更晚。"),
                         tint: SoloTheme.crimson
                     )
 
                     evidenceCard(
-                        title: "重玩价值",
+                        title: SoloLocalization.localized("重玩价值"),
                         body: replayLine,
-                        footnote: "重开不是重读，而是验证另一种路线会把世界推向哪里。",
+                        footnote: SoloLocalization.localized("重开不是重读，而是验证另一种路线会把世界推向哪里。"),
                         tint: SoloTheme.jade
                     )
                 }
@@ -60,7 +60,7 @@ struct SoloEntryWorldProofStrip: View {
         guard let character = book.characters.first else {
             return SoloLocalization.localized("关键人物还没有完全现身。")
         }
-        return "\(character.name) · \(character.title)"
+        return SoloLocalization.format("%@ · %@", character.name, character.title)
     }
 
     private var routeLine: String {

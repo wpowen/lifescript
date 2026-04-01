@@ -1,0 +1,559 @@
+{
+  "id": "天机录_ch0465",
+  "book_id": "天机录",
+  "number": 465,
+  "title": "A New Game Begins",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji was deploying his strategy, the fifth page of the Tianji Record suddenly burst forth with dazzling golden light—the ancient characters seemed to come alive, constantly reorganizing themselves in the void. Mo Xiansheng's remnant soul showed astonishment for the first time: 'It... it's actually responding to your sister's existence. This is impossible, unless...'",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0465_001",
+        "content": "Ling Yuan's disheveled retreating figure seared like a brand, deeply embedded in Chen Ji's heart. Beneath the moonlight, he stood alone on the massive stone of the Tianqing Sect Back Mountain, his robes fluttering violently in the night wind. Those words about the Great Zhou Dragon Court and Chen Tianming had become an invisible blade, gouging at the softest corner of his heart with each strike.\n\nHe slowly closed his eyes, letting memories surge like a tide—the father he never met, the legendary ancestor who could speak with the heavens, the secret that generations of the Chen family had guarded with their lives.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_002",
+        "content": "'The Great Zhou Dragon Court...' Chen Ji murmured, a complex light flickering in his eyes.\n\nHe was no stranger to the Dragon Court's existence. Quite the opposite—for this chess game today, he had secretly investigated for three full years. The Dragon Court,号称大周皇朝历代天子陨落后灵魂归处, was an existence beyond all sects—even the three supreme sects had to kowtow to its authority.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_003",
+        "character_id": "char_chenji",
+        "content": "'Father, what exactly did you leave me?' Chen Ji whispered, his voice torn to shreds by the mountain wind. 'And... the Chen Tianming that Ling Yuan mentioned, who is he?'\n\nHe opened his eyes, the confusion in his gaze replaced by determination. No matter how many thorns lay ahead, he had to press forward. For revenge, for the truth, and most importantly, for his sister who had been missing for years with no news whatsoever.",
+        "emotion": "决然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_004",
+        "content": "A haunting fragrance drifted over, like a Manjusaka blooming in the dead of night—bewitching and dangerous. Chen Ji's expression remained utterly calm, as if he had long anticipated this visitor's arrival. He still stood with hands clasped behind his back, his gaze fixed on the distant mountain silhouettes in the night.\n\n'The Holy Sect's Saintess of the Demonic Path, visiting my Tianqing Sect Back Mountain in the dead of night—are you not afraid I would raise the alarm and summon the entire mountain's guards?' His tone was placid as water, betraying not a hint of anger or fear.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_005",
+        "character_id": "char_yeqing",
+        "content": "'If you wanted to raise the alarm, you would have done so long ago. Why wait until now?' Ye Qing's voice was like ice water striking stone, cold and clear with a hint of playfulness. 'Besides, with Chen Gongzi's capabilities, even if I summoned the entire mountain's guards, I doubt they could keep you here, no?'\n\nShe stepped forward slowly, standing shoulder to shoulder with Chen Ji, her gaze also directed toward the distant night sky. Moonlight fell upon her profile, outlining a coldly beautiful face—the kind of visage that could topple countless cultivators.",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_006",
+        "content": "'The Saintess is rather frank.' Chen Ji glanced at her, the corner of his mouth slightly raised. 'Since that's the case, I won't hold back either. Saintess Ye, visiting in the dead of night—I presume this isn't a moonlight appreciation call?'\n\nYe Qing turned to face Chen Ji directly, the playfulness in her eyes fading, replaced by a rare gravity: 'I need an ally.'",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0465_007",
+        "prompt": "Ye Qing came straight to the point about forming an alliance, and Chen Ji must decide how to respond—this is a crucial choice concerning future strategic布局.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0465_007_a",
+            "text": "Hear the Conditions First",
+            "description": "No need to reveal one's stance prematurely—listen to what Ye Qing can offer as leverage, then decide the depth of cooperation.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Reveal Some Trump Cards",
+            "visible_reward": "Gain Ye Qing's Trust",
+            "risk_hint": "May Let the Other Party Gauge One's Bottom Line",
+            "process_label": "陈机侧耳倾听",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_a_001",
+                  "character_id": "char_yeqing",
+                  "content": "A flash of appreciation appeared in Ye Qing's eyes: 'Refreshingly direct. I need you to help me break the Holy Sect's forbidden seal.' Her voice lowered slightly. 'In exchange, I can conceal the aura of the Tianji Record for you, so no one can deduce your whereabouts.'",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_basic"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_007_b",
+            "text": "Reject Directly",
+            "description": "People of the Demonic Path cannot be trusted—rashly forming an alliance may bring disaster; better maintain distance.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose Potential Ally",
+            "visible_reward": "Maintain Independent Stance",
+            "risk_hint": "May Anger Ye Qing",
+            "process_label": "陈机神色微冷",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_b_001",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing's smile froze on her face, then transformed into a light laugh: 'Chen Gongzi is indeed cautious. But do you think refusing me means you can stand apart from all this?' Her tone suddenly turned cold. 'I have already sensed the aura of the Tianji Record. Throughout this world, how many countless people covet it?'",
+                  "emotion": "警告"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_007_c",
+            "text": "Propose a Wager",
+            "description": "Demonstrate some of the Tianji Record's abilities, in exchange for Ye Qing showing her sincerity first and proving her worth.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consume Heavenly Fate",
+            "visible_reward": "Obtain More Information",
+            "risk_hint": "May expose the limitations of the Tianji Record",
+            "process_label": "陈机意味深长地笑了",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_yeqing",
+                  "content": "Chen Ji did not speak, merely raising his hand as the Tianji Record Fragment manifested a faint golden light in his palm. He softly stated what would happen an hour later, logically ordered and precisely detailed.\n\nYe Qing's face changed abruptly, his gaze toward Chen Ji surging with great waves: \"You... this is a true Heavenly Secrets Prophecy?\"",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_shown_power"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_008",
+        "content": "Night wind rose suddenly, swirling countless falling leaves. At that moment, a familiar aura approached from the distant Mountain Path—a bone-deep sense of blood connection, an unbreakable familial bond no disguise could conceal.\n\nChen Ji's form froze instantly.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_009",
+        "character_id": "char_chenji",
+        "content": "\"Brother...\"\n\nThat voice was gentle and familiar, like the little girl who always used to follow behind him in his memories. Chen Ji turned sharply, his pupils contracting—under the moonlight, a young woman in plain clothes stood not far away, graceful and elegant, with bright eyes and white teeth, her features remarkably similar to his own.\n\nIt was Chen Nian. His sister who had been missing for years.",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_010",
+        "content": "Chen Ji's breath turned suddenly ragged. His hands trembled slightly—the face he had seen countless times in dreams now appeared truly before him. Three years,整整 three years of searching across countless mountains and rivers, and his sister had actually appeared before him like this.\n\nHowever, years of restraint allowed him to quickly suppress the excitement in his heart, his gaze becoming even deeper: \"Nian'er... why are you here?\"",
+        "emotion": "克制"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0465_011",
+        "prompt": "Reunited as siblings, Chen Ji needed to remain clear-headed amid overwhelming emotions—why was Chen Nian here? Was she safe? This concerned the arrangements to follow.",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0465_011_a",
+            "text": "Confirm safety first",
+            "description": "Suppress emotions and first clarify how Chen Nian escaped from the Holy Sect, whether she was followed.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May appear cold",
+            "visible_reward": "Ensure the sister's safety",
+            "risk_hint": "The sister may misunderstand the brother's concern",
+            "process_label": "陈机快步上前",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_chenian",
+                  "content": "Chen Nian's eyes reddened slightly, yet she did not shed tears. She gently shook her head: \"Don't worry, Brother. The people of the Holy Sect don't know I'm here. It was that Mo Xiansheng who guided me to find you.\" Her voice trembled slightly, \"These three years, I've thought of you every moment...\"",
+                  "emotion": "哽咽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chennian_joined"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_011_b",
+            "text": "Embrace immediately",
+            "description": "Three years of searching finally yielded results—forget about reason for this moment!",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May expose weakness before Ye Qing",
+            "visible_reward": "Deep sibling affection",
+            "risk_hint": "As a strategist, one should not lose composure before an enemy",
+            "process_label": "陈机大步流星",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_b_001",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ji could no longer hold back, striding forward to embrace his sister. His voice turned hoarse: \"It's alright now... Brother is here, from now on no one can hurt you again.\"\n\nChen Nian lay against his shoulder, tears finally streaming down. The fear, loneliness, and longing of three years transformed entirely into scalding hot tears at this moment.",
+                  "emotion": "哭泣"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chennian_joined"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_011_c",
+            "text": "Analyze calmly",
+            "description": "Why would Mo Xiansheng guide Chen Nian here? Does this hold some deeper meaning?",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Miss the tender moment",
+            "visible_reward": "Detect the scheme in advance",
+            "risk_hint": "May make the sister feel estranged",
+            "process_label": "陈机眯起眼睛",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ji's gaze slightly froze: \"Mo Xiansheng guided you here?\" His brow furrowed tightly, \"Did he say anything else?\"\n\nChen Nian wiped her tears, retrieving an ancient jade pendant from her chest: \"He said... to have you give this to the Tianji Record.\"",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chennian_joined",
+              "获得玉佩"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_012",
+        "content": "Chen Ji took the jade pendant, seeing upon it an ancient rune surprisingly similar to the patterns on the Tianji Record Fragment. As he pressed the jade pendant close to the Tianji Record—\n\nBlinding golden light burst forth from the fragment, illuminating the entire night sky!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_013",
+        "content": "The outline of the fifth page of the Tianji Record slowly emerged. Where there had been a blur of emptiness, an ancient line of text was now gradually revealing itself—\n\n\"Heavenly Fate Lock Key, Apex of the Imperial Court.\"\n\nEight large characters, as if written personally by the Heavenly Dao, each one radiating a terrifying pressure.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_014",
+        "character_id": "char_moxiansheng",
+        "content": "Just then, a ethereal voice sounded in Chen Ji's mind—it was Mo Xiansheng's remnant soul.\n\n\"The fifth page... actually manifested at this time.\" There was a rare hint of excitement in Mo Xiansheng's voice. \"Heavenly Fate Lock Key, Apex of the Imperial Court... So that's how it is, so that's how it is! Young master, what your father left you isn't just the Tianji Record, but the lifeblood of the entire Great Zhou Dragon Court!\"",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_015",
+        "content": "Chen Ji's heart rate abruptly quickened. The lifeblood of the Great Zhou Dragon Court? What exactly was his father's identity? What connection did that Chen Tianming have to the Dragon Court?\n\nHe took a deep breath, forcing himself to calm down. Whatever the truth might be, the most urgent matter now was to consolidate the resources at hand, preparing for the coming storm.",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_016",
+        "content": "He turned to look at Ye Qing and Chen Nian, his eyes gleaming with sharp light. The Holy Sect's Saint Maiden, the remnant soul guardian, the Heavenly Fate Lock Key—three beings with no connection whatsoever, now bound together by him, by the Tianji Record, their threads of destiny intertwined.\n\n\"What we're about to do next might shake the entire cultivation world to its foundations.\" His voice was low but resolute. \"Are you willing to enter this game with me?\"",
+        "emotion": "决然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_017",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing spoke first, her eyes blazing with fervor: \"I was already a player in this game. Cooperating with you might give me a chance at survival. Struggling alone would only make me fish on the Holy Sect's chopping block.\"\n\nShe paused, a cold, enchanting smile curling at her lips: \"Besides, I'm always interested in anything that makes the Holy Sect eat humble pie.\"",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0465_018",
+        "character_id": "char_chenian",
+        "content": "Chen Nian gently tugged at her brother's sleeve, her voice soft: \"Brother, Nian is not afraid. Three years, I've finally found you. Whatever you do, Nian will be by your side.\"\n\nHer gaze was gentle yet resolute: \"And... Nian might be able to help. Those Holy Sect people kept calling me a 'Lock Key.' I don't know the specifics, but I can vaguely sense certain things.\"",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0465_019",
+        "prompt": "The strategic alliance was officially established. Chen Ji needed to decide the primary course of action—whether to gather intelligence on the Dragon Court or consolidate existing strength first?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0465_019_a",
+            "text": "Laying Out the Imperial Chess",
+            "description": "Immediately begin collecting intelligence on the Great Zhou Dragon Court, preparing to seize the 'Heavenly Fate Lock Key.'",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consumes significant time and energy",
+            "visible_reward": "Obtain core Dragon Court information",
+            "risk_hint": "May alert the enemy",
+            "process_label": "陈机眼中精光闪烁",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0465_result_a_001",
+                  "content": "Chen Ji said in a deep voice: \"Since the Tianji Record points to the apex of the imperial court, we'll start from the court. Holy Maiden, having been in the Demonic Path for years, do you know of any hidden connections the Dragon Court has?\"\n\nYe Qing contemplated briefly: \"The Dragon Court operates in secret, but every generation of Heavenly Son leaves bloodline descendants in the mortal world. If we can find those descendants, perhaps we can pry open a gap.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "主线_皇朝线开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_019_b",
+            "text": "Consolidating the Rear",
+            "description": "First integrate existing resources, consolidate our foundation within the Tianqing Sect, ensuring the home front doesn't catch fire.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May miss the timing",
+            "visible_reward": "More stable foundation",
+            "risk_hint": "May allow enemies to seize the initiative",
+            "process_label": "陈机负手而立",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 8
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0465_result_b_001",
+                  "content": "Chen Ji nodded slightly: \"No rush. The Dragon Court has been dormant for a thousand years—it can't be toppled in a day or two. The priority now is to stabilize our roots.\"\n\nHe looked at Ye Qing: \"If the Holy Maiden wishes to stay near the Tianqing Sect, she'll need a plausible identity. I can arrange it.\"\n\nYe Qing laughed lightly: \"Young Master Chen is quite thorough.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳固后方"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0465_019_c",
+            "text": "Investigating Ling Yuan",
+            "description": "Ling Yuan knows too many secrets. We must quickly clarify his relationship with Chen Tianming and the Great Zhou Dragon Court.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Higher risk",
+            "visible_reward": "Obtain critical intelligence",
+            "risk_hint": "Ling Yuan's strength is inscrutable",
+            "process_label": "陈机目光冷冽",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0465_result_c_001",
+                  "character_id": "char_chenian",
+                  "content": "A cold glint flashed in Chen Ji's eyes: \"This Ling Yuan cannot be left unchecked. He knows about Chen Tianming and mentioned the Dragon Court—his intentions are despicable.\"\n\nChen Nian's expression subtly changed upon hearing this: \"Brother, Ling Yuan... When I was at the Holy Sect, I heard them mention this name. They called him the Tianqing Sect's 'old遗珠,' seemingly related to some ancient secret.\"",
+                  "emotion": "凝重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊线开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_020",
+        "content": "Night deepens, and the mountain wind howls. Chen Ji stands atop the boulder, his robes fluttering violently in the wind, eyes blazing like torches. Behind him, Ye Qing and Chen Nian flank him on left and right, like two unsheathed gleaming swords.\n\nAt this moment, the bearer of the Tianji Record is finally no longer alone. One is a废物 disciple who roamed the world bearing the name of \"waste;\" one is a rebellious saint from the Holy Sect of the Demonic Path; one is a mysterious girl destined by fate—three souls abandoned by destiny have finally come together in this magnificent era of sweeping currents.",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0465_021",
+        "content": "The golden radiance of the fifth page of the Tianji Record gradually fades, yet those eight characters are seared into Chen Ji's heart like a brand—'Heaven's Mandate Lock-Key, Apex of the Imperial Dynasty.' These mere eight words have unveiled a shocking grand scheme buried for a millennium.\n\nAnd he, Chen Ji, this once-ridiculed废物 who was laughed at by all, shall personally take up the pieces and play this game, stirring up the winds and clouds of this world!\n\nA new round of the game has officially begun.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

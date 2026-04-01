@@ -1,0 +1,722 @@
+{
+  "id": "天机录_ch1005",
+  "book_id": "天机录",
+  "number": 1005,
+  "title": "Prologue of the Finale",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji's words fell, a crack split open in the nine heavens, and an eye凝聚 from pure Heavenly Dao will slowly opened, coldly gazing down at this chessboard of fate it had personally woven. The messenger of the higher existence had finally descended.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1005_001",
+        "content": "Chen Ji stood before the Tianji Record Fragment, his fingertips gently brushing across the yellowed paper, feeling the power of fate flowing within. Chen Ling's voice still echoed in his ears, the unprecedented heaviness pressing down on his heart like a thousand junms. The prophecy on the fragment had indeed changed, yet new and more terrifying threads of fate were slowly emerging from the abyss, like venomous snakes choosing their prey, flicking crimson tongues in the darkness.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1005_002",
+        "character_id": "char_chenji",
+        "content": "'A new prophecy...' Chen Ji murmured, his eyes gleaming with sharp light. The death prophecy in Chapter 700 of the Tianji Record had indeed been rewritten. He had personally strangled that destined ending in its cradle. However, fate had never truly released anyone. It was merely waiting—for a more perfect moment to deliver an even more lethal blow. Mo Xiansheng's remnant soul trembled slightly within the depths of the Tianji Record, as if responding to something.",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1005_003",
+        "content": "Suddenly, the light of the Tianji Record dimmed, followed by an ancient and authoritative voice rising from the depths of the fragment, like a distant ancient bell that made Chen Ji's eardrums ache. It was Cang Yutian's voice, the true master's voice of the Tianji Record, the voice of one who had long fallen yet existed between heaven and earth as a remnant soul guardian. 'Chen Ji, you have touched the forbidden realm of fate. Three paths to the finale have already revealed themselves. Are you willing to hear the details?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1005_004",
+        "character_id": "char_chenji",
+        "content": "'This junior listens respectfully.' Chen Ji lowered his brows and eyes, his posture extremely reverent, yet within those deep eyes burned a flame called ambition. He had waited for this moment far too long. From a worthless servant to a chess player stirring up the winds, from an ant crushed by others to an existence that made the world take notice—every step he took was paving the way for this moment. The complete form of the Tianji Record was finally about to reveal its mysterious veil before him.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1005_005",
+        "content": "'The first path is called 'Breaking the Shackles'.' Cang Yutian's voice descended like from the nine heavens, solemn and majestic. 'To break the shackles of fate, one must use 'letting go' as the key. Abandon all obsessions—including revenge, family, love, and hatred—empty the soul completely, and only then can you escape the causal net woven by the Heavenly Dao, transcending beyond fate. However, at that time, you will no longer be you, merely a rootless duckweed drifting between heaven and earth.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1005_006",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's pupils constricted sharply. Abandon all obsessions? That would mean giving up finding his sister Chen Nian, giving up revenge against the Tianqing Sect, giving up on Su Qingyao... He dared not think further. 'And the second path?' His voice was calm as water, yet his clenched fists exposed the turbulence within. Cang Yutian seemed to sense something, his aged laughter carrying a trace of mockery: 'The second path is called 'Ascending to Heaven'. Replace the Heavenly Dao and become the new chess player. However, the price is—bearing the resentment of all who have been manipulated by the Heavenly Dao throughout history, never to be liberated.'",
+        "emotion": "紧绷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1005_007",
+        "content": "'The resentment of all who have been manipulated by the Heavenly Dao throughout history...' Chen Ji repeated softly, his mind rapidly flashing through those scenes he had glimpsed in the Tianji Record. The wails of countless prophets, the falls of countless geniuses, the覆灭 of countless dynasties. If those resentments gathered into a river, it would be enough to drown the entire Three Realms. Cang Yutian's voice rang out again, carrying a hint of imperceptible heaviness: 'The third path is called 'Mutual Destruction'. Destroy the Heavenly Dao will through mutual annihilation, trading life for life, using the soul as the guide, completely annihilating that will standing above all living beings. However, you will also dissipate with it, leaving not a trace.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1005_choice_001",
+        "prompt": "The three fated endings have been revealed—the 'Breaking the Shackles' of abandoning everything, the 'Ascending to Heaven' of bearing resentment, the 'Mutual Destruction' of trading life for life. However, Chen Ji is not someone resigned to being manipulated by fate. How will he respond to these predetermined choices?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "破枷之路",
+            "text": "Abandon obsessions and pursue transcendence",
+            "description": "If one can escape the shackles of fate, even if one is no longer 'me', what harm? Let go of all obsessions and completely empty the soul.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose all memories and bonds",
+            "visible_reward": "The soul transcends the constraints of the Heavenly Dao",
+            "risk_hint": "May lose the self, becoming rootless duckweed",
+            "process_label": "领悟放下之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1005_result_破枷之路_1",
+                  "content": "Chen Ji slowly closed his eyes and began silently reciting those unforgettable names in his heart. Chen Nian, Su Qingyao, Ye Qing... Each name was like a sharp blade, carving at the softest part of his heart. However, just as he was about to speak the words 'let go', a violent fluctuation suddenly erupted from the depths of the Tianji Record, as if something was awakening.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": "破枷之路",
+            "branch_route_id": null
+          },
+          {
+            "id": "登天之路",
+            "text": "Replace the Heavenly Dao and bear the resentment",
+            "description": "If the Heavenly Dao can be replaced, then let me control the fates of all beings. What does it matter if I bear all the resentment, as long as I can control everything.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Bear the resentment of all souls throughout history, never to be liberated",
+            "visible_reward": "Become the new chess player of the Heavenly Dao",
+            "risk_hint": "The backlash of resentment may cause the mind to collapse",
+            "process_label": "领悟执掌之道",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 30
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1005_result_登天之路_1",
+                  "content": "Chen Ji's eyes blazed with brilliant light, and a mighty ambition surged from within him toward the heavens. If he could replace the Heavenly Dao, no one in this world could threaten him, no one could hurt those he cared about. However, in the next moment, the Tianji Record suddenly emitted a harsh humming, and countless dark shadows poured out from the fragment—those were the remnant souls of all who had been manipulated by the Heavenly Dao throughout history. They let out mournful screams, as if questioning—'Are you worthy?'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 80
+            },
+            "memory_label": "登天之路",
+            "branch_route_id": null
+          },
+          {
+            "id": "同归之路",
+            "text": "Trade lives for mutual destruction",
+            "description": "If my death can bring the Heavenly Dao to its grave, it would be worth it. Since the Heavenly Dao is unkind, let it turn to nothingness with me.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Life and soul completely dissipate",
+            "visible_reward": "Perish together with the Heavenly Dao's will",
+            "risk_hint": "The Heavenly Dao may still have remnants remaining",
+            "process_label": "领悟牺牲之道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "战力",
+                "delta": 40
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1005_result_同归之路_1",
+                  "content": "Chen Ji's voice was soft, yet carried the resolve of one ready to face death. He had already died once before; if his life could be traded for the Heavenly Dao's, wouldn't that be a form of liberation? However, just as he was about to agree, a thought flashed through his mind—what about Chen Nian waiting for him in the Holy Sect? What about Su Qingyao waiting for him in the Tianqing Sect? What would happen to all those people he fought with everything to protect? His footsteps involuntarily faltered.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "同归之路",
+            "branch_route_id": null
+          },
+          {
+            "id": "第四之路",
+            "text": "My fate is my own, I forge a new path",
+            "description": "The Heavenly Dao can be destroyed or not destroyed; the predetermined chess game of fate, I shall overturn it! Neither destroy the Heavenly Dao nor be destroyed by it—I shall walk the fourth possibility!",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "The price of forging a new path remains unknown",
+            "visible_reward": "Completely transcend Heavenly Dao control",
+            "risk_hint": "May incur direct annihilation by the Heavenly Dao's will",
+            "process_label": "开创第四路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1005_result_第四之路_1",
+                  "content": "Chen Ji suddenly opened his eyes, a radiance breaking forth that was unprecedented. Three paths, three fates, three possibilities he couldn't accept. Abandon everything? Then why would he live? Replace the Heavenly Dao? How would that differ from the current one that manipulated the lives of all beings? Trade his life for theirs? Even more absurd—if he died, who would protect those he cared about? \"Cang Yutian,\" Chen Ji's voice abruptly turned cold, \"what if I said—there exists a fourth path?\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "第四条路开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 90
+            },
+            "memory_label": "第四之路",
+            "branch_route_id": "第四之路开启"
+          },
+          {
+            "is_locked": false
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_008",
+              "content": "The Tianji Record shuddered violently, and Cang Yutian's voice carried a rare note of uncertainty. \"A fourth path?\" The ancient voice slightly rose, as if hearing something unbelievable. \"In my ten thousand years of existence, I've never heard of a fourth path. You are quite bold, young one.\" Chen Ji's lips curved slightly, that smile carrying a hint of audacity, a trace of disdain, but more than anything, a confidence bordering on madness.",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_009",
+              "character_id": "char_chenji",
+              "content": "\"You've lived for ten thousand years, yet you've never heard the phrase 'My fate is determined by myself, not Heaven'?\" Chen Ji stood with hands clasped behind his back, his robes stirring without wind. His voice was not loud, yet carried an undeniable force. \"If the Heavenly Dao wants to destroy me, I refuse to be destroyed; if it wants me to destroy it, I won't bother playing its game. This third path leads nowhere, so I won't take it. Beyond the three paths exists a fourth—neither destroying the Heavenly Dao nor being destroyed by it.\"",
+              "emotion": "张狂"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_010",
+              "content": "\"Neither destroy the Heavenly Dao nor be destroyed by it...\" Cang Yutian fell silent for a long while. The light on the fragment flickered unsteadily, as if in intense contemplation. After a long pause, that ancient voice spoke again, this time carrying an unprecedented gravity: \"Boy, do you understand what this means? If the Heavenly Dao is a chess game, you intend to—neither play the game nor be a piece, nor overturn the board, but rather... set up another furnace, establish your own heavens and earth?\"",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_011",
+              "character_id": "char_chenji",
+              "content": "\"Exactly.\" Chen Ji's eyes blazed like torches. \"The Heavenly Dao sets up a chess game, manipulates all beings, merely to sustain its own existence. Then I shall give it another choice—not destruction, nor being destroyed, but... coexistence. You said the Tianji Record is merely one of the pieces the Heavenly Dao has placed in this world. Then I shall make this piece grow into a towering tree, bearing fruit strong enough to stand against the Heavenly Dao.\"",
+              "emotion": "激昂"
+            }
+          },
+          {
+            "choice": {
+              "id": "天机录_ch1005_choice_002",
+              "prompt": "Chen Ji proposed the unprecedented fourth path—coexistence with the Heavenly Dao, neither controlled by it nor destroying it. How can this unprecedented road be traversed?",
+              "choice_type": "keyDecision",
+              "choices": [
+                {
+                  "id": "共生之基",
+                  "text": "Seeking the foundation for coexistence",
+                  "description": "To coexist with the Heavenly Dao, one must first find a foundation that can match it. The complete form of the Tianji Record may be the key.",
+                  "satisfaction_type": "延迟爽",
+                  "visible_cost": "Must gather all fragments of the Tianji Record",
+                  "visible_reward": "Obtain bargaining chips for negotiating with the Heavenly Dao",
+                  "risk_hint": "May encounter attacks from the Heavenly Dao during collection",
+                  "process_label": "探寻共生之基",
+                  "stat_effects": [
+                    {
+                      "stat": "谋略",
+                      "delta": 15
+                    },
+                    {
+                      "stat": "天命值",
+                      "delta": -10
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_moxiansheng",
+                      "dimension": "信任",
+                      "delta": 10
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch1005_result_共生之基_1",
+                        "character_id": "char_moxiansheng",
+                        "content": "Cang Yutian's laughter suddenly rang out, aged yet bold: \"Good! Good! Good! This old one has waited three thousand years for a junior who dares to say 'no' to the Heavenly Dao.\" The laughter stopped abruptly, and Cang Yutian's voice turned icy cold. \"However, do you know that the Heavenly Dao's will will never tolerate any existence challenging its authority? Once this path is taken, there is no turning back. Have you thought this through?\"",
+                        "emotion": "郑重"
+                      }
+                    }
+                  ],
+                  "is_premium": false,
+                  "flags_set": [],
+                  "requires_flag": "第四条路开启",
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "共生之基",
+                  "branch_route_id": null
+                },
+                {
+                  "id": "天命之争",
+                  "text": "Using Heavenly Fate as bargaining chips",
+                  "description": "Every use of the Tianji Record consumes Heavenly Fate. If the consumed Heavenly Fate could be accumulated, perhaps it could form power to resist the Heavenly Dao's will.",
+                  "satisfaction_type": "阴谋爽",
+                  "visible_cost": "Long-term suppression of foresight ability",
+                  "visible_reward": "Accumulate vast Heavenly Fate power",
+                  "risk_hint": "May fall into danger due to insufficient foresight",
+                  "process_label": "积攒天命之力",
+                  "stat_effects": [
+                    {
+                      "stat": "天命值",
+                      "delta": 30
+                    },
+                    {
+                      "stat": "谋略",
+                      "delta": 10
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_chenji",
+                      "dimension": "敬畏",
+                      "delta": 20
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "text": {
+                        "id": "天机录_ch1005_result_天命之争_1",
+                        "content": "A sharp glint flashed in Chen Ji's eyes. Heavenly Fate Value—he had always thought it was merely the price of usage, never imagining it was itself a form of power. Wasn't the Heavenly Dao's will so formidable precisely because it controlled the fate of all living beings? If he could gather the scattered Heavenly Fate Values together... 'Cang Yutian,' his voice dropped to an extremely low whisper, 'if I were to reclaim the Heavenly Fate Value consumed by the Tianji Record, accumulating bit by bit and building towers of sand, could I...'",
+                        "emphasis": "dramatic"
+                      }
+                    }
+                  ],
+                  "is_premium": false,
+                  "flags_set": [],
+                  "requires_flag": "第四条路开启",
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "天命之争",
+                  "branch_route_id": null
+                },
+                {
+                  "id": "众生意志",
+                  "text": "Gather the will of all living beings",
+                  "description": "The reason the Heavenly Dao can stand above all living beings is precisely because they act in disunity. If the will of countless individuals could be gathered into one, it would form a torrent powerful enough to oppose the Heavenly Dao.",
+                  "satisfaction_type": "情感爽",
+                  "visible_cost": "Must win the trust of all beings",
+                  "visible_reward": "Gather磅礴 power to oppose the Heavenly Dao",
+                  "risk_hint": "The will of all beings may be difficult to unify",
+                  "process_label": "凝聚众生意志",
+                  "stat_effects": [
+                    {
+                      "stat": "名望",
+                      "delta": 25
+                    },
+                    {
+                      "stat": "魅力",
+                      "delta": 15
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_suqingyao",
+                      "dimension": "好感",
+                      "delta": 10
+                    },
+                    {
+                      "character_id": "char_yeqing",
+                      "dimension": "信任",
+                      "delta": 10
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch1005_result_众生意志_1",
+                        "character_id": "char_yeqing",
+                        "content": "Just then, a cold female voice rang out from the depths of the Tianji Record—it was Ye Qing's voice, carrying a hint of surprise and admiration: 'Chen Ji, you're insane. Gather the will of all beings? That means you'd drag the entire world into this war against the Heavenly Dao.' Chen Ji turned to face that illusory figure, a meaningful smile curling at his lips: 'Your Holy Eminence, aren't you cooperating with me precisely for this reason? The Heavenly Dao is unkind—why should the common people suffer?'",
+                        "emotion": "深沉"
+                      }
+                    }
+                  ],
+                  "is_premium": true,
+                  "flags_set": [],
+                  "requires_flag": "第四条路开启",
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "众生意志",
+                  "branch_route_id": null
+                }
+              ]
+            },
+            "text": {
+              "id": "天机录_ch1005_012",
+              "content": "Cang Yutian's laughter echoed within the Tianji Record, that ancient voice carrying a trace of warmth: 'Good, good, good! I have lived for ten thousand years, and never have I met a junior so presumptuous. However—' He paused, his voice turning stern, 'although the fourth path exists, it is no easy road. The Heavenly Dao's will will not sit idly by as you rise. It will strike to crush you before your wings are fully formed. If you choose this path, you must race against time and battle destiny.'",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_013",
+              "character_id": "char_chenji",
+              "content": "'This junior understands.' Chen Ji bowed respectfully, his manner still deferential, yet the flames burning in those eyes blazed brighter than ever. 'Since that is the case, this junior dares to ask one more question—when and where will this final chess game be triggered?' Cang Yutian's voice fell silent for a moment, then slowly uttered words, each striking Chen Ji's heart like a heavy hammer: 'Three months from now, the Heavenly Realm, the Palace of Heavenly Dao.届时，三大宗门、魔道圣宗、上古禁地，所有势力都将汇聚一处。'",
+              "emotion": "凝重"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_014",
+              "content": "'Three months...' Chen Ji repeated in a murmur, carving this time firmly into his memory. Three months—neither long nor short. Enough for him to accomplish much, yet also enough for much to slip beyond his control. 'Cang Yutian,' he spoke again, 'what preparations should this junior make during these three months?' That ancient voice sounded once more, carrying a knowing smile: 'Preparations? You already possess the Tianji Record Fragment, the demonic Holy Sect Saint's mist to conceal your aura, and moreover—' The voice paused, 'moreover, there exists one who has been guarding you in the shadows.'",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_015",
+              "character_id": "char_chenji",
+              "content": "'A presence guarding me all along?' Chen Ji's brow furrowed, countless thoughts racing through his mind. Was it Mo Xiansheng? The remnant soul of Chen Ling? Or... He suddenly recalled something, a sharp gleam flickering in his eyes: 'You mean—Old Sect Master Ling Yuan?' The Tianji Record's radiance shuddered abruptly, Cang Yutian's voice growing cryptic and obscure: 'This person's connection to you runs far deeper than you imagine. But the time for revelation has not yet come. You only need to know—before the final chess game opens, all your opponents will appear one by one within these three months.'",
+              "emotion": "警觉"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_016",
+              "content": "Before his words even finished, the Tianji Record erupted with blinding light that burst through Chen Ji's Mental Sea and shot toward the heavens, as if intending to tear apart this world. Chen Ji instinctively raised his hand to shield his eyes, yet through the gaps in his fingers he caught sight of a scene he would never forget—high above the nine heavens, a colossal Eye was slowly opening. That Eye was formed entirely of pure Heavenly Dao will, indifferent and ice-cold, gazing upon all living beings as one might gaze upon ants.",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_017",
+              "content": "'That is...' Chen Ji's pupils contracted sharply, his heart seized as if by an invisible hand. He had seen that Eye before—in the Tianji Record's prophecies, in the memories of countless predecessor diviners. But witnessing it now, the shock far exceeded any prophecy, a hundredfold, a thousandfold. This was no ordinary display of superior might—this was—the Heavenly Dao itself. The Eye of Heavenly Dao, the tangible manifestation of Heavenly Dao's will. It was gazing here, gazing at Chen Ji.",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_018",
+              "character_id": "char_tiandaozhiyan",
+              "content": "A voice of supreme cold indifference emanated from that Eye—it was neither Cang Yutian's age nor Ye Qing's chill, but a voice of existence beyond all emotion: 'Chen Ji.' Only two words, yet they made every hair on Chen Ji's body stand on end, as if some ancient fierce beast had fixed its gaze upon its prey. 'You thought your petty schemes could escape My notice?' The voice was devoid of waves, yet bore an irresistible pressure: 'The fourth path? Interesting. However—' The Eye of Heavenly Dao narrowed slightly, 'do you know what the price is for challenging the Heavenly Dao's will?'",
+              "emotion": "恐惧"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_019",
+              "content": "Chen Ji drew a deep breath, forcing himself to calm. He knew he must not show a trace of timidity at this moment. The Heavenly Dao's will had manifested precisely because he had touched Its taboo. If he retreated now, all previous efforts would come to nothing. 'This junior does not know—may the Heavenly Dao enlighten me.' His voice was terrifyingly composed, his bowing posture impeccable, yet in those deep eyes burned flames fierce enough to scorch the heavens.",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_020",
+              "character_id": "char_tiandaozhiyan",
+              "content": "'The price?' A flicker of something indecipherable passed through the Eye of Heavenly Dao's pupil: 'is everything you hold dear.' The moment those words fell, countless images exploded within Chen Ji's Mental Sea. Chen Nian being dragged to the sacrificial altar by the Holy Sect, her suffering unbearable; Su Qingyao pierced by ten thousand swords, her screams heartrending; Ye Qing burning in demonic flames, her cries of anguish... Each image was like a dagger, cruelly gouging the softest places in his heart. 'You wish to walk the fourth path? Then let Me see—how much can you endure.'",
+              "emotion": "痛苦"
+            }
+          },
+          {
+            "choice": {
+              "id": "天机录_ch1005_choice_003",
+              "prompt": "The Eye of Heavenly Dao used the fates of those Chen Ji treasured most as leverage, displaying terrible illusions before him. At this moment of life and death, how will Chen Ji respond?",
+              "choice_type": "keyDecision",
+              "choices": [
+                {
+                  "id": "直面天道",
+                  "text": "Guard them with my life, never retreat",
+                  "description": "The more the Heavenly Dao threatens, the more I must let it know—touch those I care about, and it becomes a不死不休 struggle with Chen Ji!",
+                  "satisfaction_type": "直接爽",
+                  "visible_cost": "Completely enrage the Heavenly Dao's will",
+                  "visible_reward": "The heart of protection becomes even more resolute",
+                  "risk_hint": "May accelerate the Heavenly Dao's actions against those around him",
+                  "process_label": "直面天道",
+                  "stat_effects": [
+                    {
+                      "stat": "战力",
+                      "delta": 20
+                    },
+                    {
+                      "stat": "黑化值",
+                      "delta": 15
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_tiandaozhiyan",
+                      "dimension": "敌意",
+                      "delta": 30
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch1005_result_直面天道_1",
+                        "character_id": "char_chenji",
+                        "content": "Chen Ji suddenly lifted his head, the flames in his eyes rising rather than falling, fixing his gaze upon that lofty Eye of Heavenly Dao: 'This junior thanks the Heavenly Dao for the reminder. However—' A cold smile slowly curled at his lips, 'the one thing this junior fears least in this life is threats. You wish to harm those I care about? Come then. Chen Ji rose from a废物 menial servant to where I stand today—every single step was taken upon the blade's edge. Think you can make me submit using these hostages?'"
+                      }
+                    }
+                  ],
+                  "is_premium": false,
+                  "flags_set": [],
+                  "requires_flag": null,
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "直面天道",
+                  "branch_route_id": null
+                },
+                {
+                  "id": "隐忍周旋",
+                  "text": "Retreat to advance, secretly lay plans",
+                  "description": "Since the Heavenly Dao has already manifested, it proves the fourth path has indeed touched Its nerves. Now is not the time for direct confrontation—one must overcome the rigid with the yielding, secretly accumulate strength.",
+                  "satisfaction_type": "阴谋爽",
+                  "visible_cost": "\"Temporarily yielding would tarnish one's dignity\"",
+                  "visible_reward": "\"Buy time for the fourth path\"",
+                  "risk_hint": "\"Heavenly Dao might see through the delay tactics\"",
+                  "process_label": "隐忍周旋",
+                  "stat_effects": [
+                    {
+                      "stat": "谋略",
+                      "delta": 15
+                    },
+                    {
+                      "stat": "名望",
+                      "delta": -10
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_tiandaozhiyan",
+                      "dimension": "敌意",
+                      "delta": -10
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch1005_result_隐忍周旋_1",
+                        "character_id": "char_chenji",
+                        "content": "Chen Ji took a deep breath, forcibly suppressing the surging rage in his heart. He slowly knelt down, bowing in an almost humble posture as he said, \"The junior understands. Since it is so, the junior will no longer mention the fourth path.\" Within his downcast eyes flickered a cold gleam, and he thought to himself: Old thing, you want me to bow my head? Fine, today I'll play along with you. Three months is enough for me to spread an inescapable net right under your nose.",
+                        "emotion": "隐忍"
+                      }
+                    }
+                  ],
+                  "is_premium": false,
+                  "flags_set": [],
+                  "requires_flag": null,
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "隐忍周旋",
+                  "branch_route_id": null
+                },
+                {
+                  "id": "揭露真相",
+                  "text": "\"Reveal Heavenly Dao's true purpose\"",
+                  "description": "\"Heavenly Dao taking hostage those one cares about proves He is not unshakeable. If we can expose His true purpose, we might find the key to breaking the deadlock.\"",
+                  "satisfaction_type": "延迟爽",
+                  "visible_cost": "\"Expose the partial truth already grasped\"",
+                  "visible_reward": "\"Shake Heavenly Dao's authority\"",
+                  "risk_hint": "\"May provoke even fiercer retaliation\"",
+                  "process_label": "揭露真相",
+                  "stat_effects": [
+                    {
+                      "stat": "谋略",
+                      "delta": 25
+                    },
+                    {
+                      "stat": "天命值",
+                      "delta": -15
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_moxiansheng",
+                      "dimension": "信任",
+                      "delta": 20
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch1005_result_揭露真相_1",
+                        "character_id": "char_chenji",
+                        "content": "Chen Ji stared directly into the Heavenly Dao's Eye, his eyes blazing with fierce light: \"Heavenly Dao, You repeatedly call me a challenger, yet You fail to realize—You are the one who stole the heavenly fate of all beings, weaving the net of destiny!\" He stepped forward, his aura surging dramatically, \"The Tianji Record is not a chess piece You arranged, but a cage that imprisons You! The prophetic seers of all ages were Your jailers! What You feared was never someone replacing You, but—someone sealing You completely!\"",
+                        "emotion": "揭露"
+                      }
+                    }
+                  ],
+                  "is_premium": true,
+                  "flags_set": [],
+                  "requires_flag": null,
+                  "forbids_flag": null,
+                  "stat_gate": {
+                    "stat": "谋略",
+                    "min": 95
+                  },
+                  "memory_label": "揭露真相",
+                  "branch_route_id": null
+                }
+              ]
+            },
+            "text": {
+              "id": "天机录_ch1005_021",
+              "content": "The pupil of the Heavenly Dao's Eye contracted sharply, and within that formerly indifferent gaze flickered a momentary fluctuation. Chen Ji saw this and sneered in his heart—he had gambled correctly. The reason Heavenly Dao's Will was so wary of anyone mentioning the fourth path was precisely because He was not truly unshakeable. The complete form of the Tianji Record sealed not only the fates of the prophetic seers throughout history, but the very foundation of Heavenly Dao itself. Yet just at this moment, an ancient yet commanding voice rang out from within the Tianji Record—Cang Yutian's tone carried unprecedented tension: \"Silence! Chen Ji, You have spoken too much!\"",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_022",
+              "character_id": "char_chenji",
+              "content": "Just then, a far greater fissure tore open in the Nine Heavens, and a brilliant pillar of light descended from the sky, falling directly upon the Tianji Record Fragment. Within that pillar of light, a figure slowly coalesced—a middle-aged man in white robes, his features handsome and commanding, surrounded by mystical Dao patterns, as if he were the materialized incarnation of Heavenly Dao's Will in the mortal realm. \"A messenger of the higher existence?\" Cang Yutian's voice carried a hint of fear, \"Impossible... How could He arrive so quickly...\"",
+              "emotion": "震惊"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_023",
+              "character_id": "char_chenji",
+              "content": "The white-robed messenger's gaze swept over Chen Ji, those eyes seemingly containing the mysteries of the entire universe, so profound one could lose oneself in them. \"Interesting.\" The messenger spoke, his voice like the great bells of heaven, causing Chen Ji's eardrums to ache. \"Heavenly Dao's Eye personally intervened, yet was driven to this pass by a mere ant. It seems this chess game is far more entertaining than I anticipated.\" He slightly tilted his head, studying Chen Ji, \"Chen Ji, do You know—before You, nine thousand nine hundred and ninety-nine prophetic seers attempted to walk the fourth path?\"",
+              "emotion": "威压"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_024",
+              "content": "\"Nine thousand nine hundred and ninety-nine...\" Chen Ji repeated in a murmur, his pupils constricting sharply. What did this number mean? It meant that before him, countless geniuses, prodigies, and madmen had attempted the same path, yet not one succeeded. What became of them? Chen Ji dared not think, nor wished to. Yet the white-robed messenger seemed to see through his thoughts, a meaningful curve forming at the corner of his lips: \"You wish to know their fates?\" He gently raised his hand, and the countless stars seemed to flow within his fingertips, \"Simple—they all became part of Heavenly Dao, vanishing forever from this world.\"",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_025",
+              "content": "Chen Ji clenched his fists tight, his fingernails digging deep into his palms, blood slowly dripping between his fingers. Nine thousand nine hundred and ninety-nine living souls, nine thousand nine hundred and ninety-nine unwilling spirits, all ultimately turned into nourishment for Heavenly Dao. He should have been terrified, should have retreated, yet what surged through his heart at this moment was an unprecedented fury. \"So what?\" He abruptly raised his head, staring directly at the high-and-mighty white-robed messenger, \"They failed does not mean I will fail. The path they dared not walk, I, Chen Ji, shall walk. The deeds they dared not do, I, Chen Ji, shall do!\"",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_026",
+              "character_id": "char_chenji",
+              "content": "Chen Ji's voice echoed through the void, carrying a resolve like one who would break the cauldrons and sink the boats. The white-robed messenger froze for an instant, then threw his head back in laughter, and within that laughter was genuine admiration: \"Good! Good! Good! Of the nine thousand nine hundred and ninety-nine, all trembled before Heavenly Dao, yet only You dare meet this One's gaze.\" He restrained his smile, his gaze turning sharp as a blade, \"Since You possess such boldness, this One shall grant You an opportunity—the Celestial Chess Game three months hence, this One awaits Your arrival. At that time, this One shall see whether You, the ten-thousandth challenger, can rewrite this ten-thousand-year unchanging outcome.\"",
+              "emotion": "期待"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_027",
+              "content": "With that, the white-robed messenger's form dissolved into countless stars, slowly fading away into the void. The Heavenly Dao's Eye also closed, and the suffocating pressure gradually receded. Yet Chen Ji knew this was merely the calm before the storm. The messenger of the higher existence had arrived, Heavenly Dao's Will had marked him for certain death, and the Celestial Chess Game three months hence would inevitably become a decisive death match affecting the fate of the Three Realms. And he, Chen Ji, must make thorough preparations within these three months.",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_028",
+              "content": "Cang Yutian's voice rang out once more, aged and weary: \"Chen Ji, Your words just now have thoroughly enraged Heavenly Dao's Will and the higher existence. From now on, You shall face unprecedented pursuit and calamities. However—\" He paused, his tone carrying a hint of relief, \"This old one has waited three thousand years, finally encountering someone who dares to say 'no' to Heavenly Dao. In the chess game three months hence, this old one shall expend the very last strand of remnant soul power to aid You. As for the outcome... that shall depend on Your own destiny.\"",
+              "emphasis": "dramatic"
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch1005_029",
+              "character_id": "char_chenji",
+              "content": "\"The junior thanks the senior deeply.\" Chen Ji bowed solemnly, his voice carrying sincere gratitude. Cang Yutian and Mo Xiansheng, these two remnant soul guardians, had been secretly protecting and teaching him all along. Though their identities and origins remained shrouded in mystery, the camaraderie at this moment was genuine. \"Three months...\" Chen Ji turned to gaze into the distance, the fire in his eyes blazing intensely. The Tianqing Sect, the Three Great Sects, the Demonic Path Holy Sect, the Ancient Forbidden Land... all powers would converge at the Celestial Realm in three months. And he, Chen Ji, would inevitably place the pivotal piece that would transform heaven and earth in that epochal chess game.",
+              "emotion": "坚定"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch1005_030",
+              "content": "Just then, a transmission talisman flew through the air and landed in Chen Ji's palm. It was Su Qingyao's urgent message, the handwriting slightly hasty yet revealing urgent anxiety—\"Something happened at the Tianqing Sect. Old Sect Master Ling Yuan broke seclusion early and is searching for those connected to You. I am safe for now, but You must return quickly.\" After reading the talisman, a flash of killing intent crossed Chen Ji's eyes. Ling Yuan... the mastermind hidden for several volumes, could he finally hold back no longer? A cold smile curved his lips as he set foot on the journey home. The three-month countdown begins now.",
+              "emphasis": "dramatic"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

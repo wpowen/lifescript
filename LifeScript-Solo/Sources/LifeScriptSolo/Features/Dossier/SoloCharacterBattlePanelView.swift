@@ -36,7 +36,7 @@ struct SoloCharacterBattlePanelView: View {
                 .padding(.bottom, 32)
             }
         }
-        .soloStoryChrome(title: character.name, kicker: "战局面板")
+        .soloStoryChrome(title: character.name, kicker: SoloLocalization.localized("战局面板"))
     }
 
     private var heroStage: some View {
@@ -48,7 +48,7 @@ struct SoloCharacterBattlePanelView: View {
                     identityBlock
                     HStack(spacing: 8) {
                         statusChip(SoloCharacterCodex.roleLabel(for: character.role), tint: accent)
-                        statusChip(relation?.attitudeLabel ?? "未入局", tint: intel.isInPlay ? accent : SoloTheme.muted)
+                        statusChip(relation?.attitudeLabel ?? SoloLocalization.localized("未入局"), tint: intel.isInPlay ? accent : SoloTheme.muted)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -58,7 +58,7 @@ struct SoloCharacterBattlePanelView: View {
                     Spacer()
                     VStack(alignment: .trailing, spacing: 6) {
                         statusChip(SoloCharacterCodex.roleLabel(for: character.role), tint: accent)
-                        statusChip(relation?.attitudeLabel ?? "未入局", tint: intel.isInPlay ? accent : SoloTheme.muted)
+                        statusChip(relation?.attitudeLabel ?? SoloLocalization.localized("未入局"), tint: intel.isInPlay ? accent : SoloTheme.muted)
                     }
                 }
             }
@@ -69,7 +69,7 @@ struct SoloCharacterBattlePanelView: View {
 
     private var coreMetrics: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("核心战局指标")
+            Text(SoloLocalization.localized("核心战局指标"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(SoloTheme.ink)
 
@@ -80,9 +80,9 @@ struct SoloCharacterBattlePanelView: View {
                 ),
                 spacing: 10
             ) {
-                metricCard(title: "牵引", value: intel.resonance, tint: accent)
-                metricCard(title: "局重", value: intel.influence, tint: SoloTheme.gold)
-                metricCard(title: "危险", value: intel.danger, tint: SoloTheme.crimson)
+                metricCard(title: SoloLocalization.localized("牵引"), value: intel.resonance, tint: accent)
+                metricCard(title: SoloLocalization.localized("局重"), value: intel.influence, tint: SoloTheme.gold)
+                metricCard(title: SoloLocalization.localized("危险"), value: intel.danger, tint: SoloTheme.crimson)
             }
         }
         .padding(20)
@@ -92,7 +92,7 @@ struct SoloCharacterBattlePanelView: View {
     @ViewBuilder
     private var relationSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("关系维度")
+            Text(SoloLocalization.localized("关系维度"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(SoloTheme.ink)
 
@@ -105,7 +105,7 @@ struct SoloCharacterBattlePanelView: View {
                     )
                 }
             } else {
-                Text("该角色尚未完全显形。继续推进主线后再查看，可解锁具体关系维度。")
+                Text(SoloLocalization.localized("该角色尚未完全显形。继续推进主线后再查看，可解锁具体关系维度。"))
                     .font(SoloTypography.detail)
                     .foregroundStyle(SoloTheme.muted)
                     .lineSpacing(4)
@@ -117,12 +117,12 @@ struct SoloCharacterBattlePanelView: View {
 
     private var intelSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("局中情报")
+            Text(SoloLocalization.localized("局中情报"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(SoloTheme.ink)
-            infoRow(title: "人物定位", detail: SoloCharacterCodex.roleLabel(for: character.role))
-            infoRow(title: "当前判断", detail: SoloCharacterCodex.stanceSummary(for: character, relation: relation))
-            infoRow(title: "最近波动", detail: intel.statusLine)
+            infoRow(title: SoloLocalization.localized("人物定位"), detail: SoloCharacterCodex.roleLabel(for: character.role))
+            infoRow(title: SoloLocalization.localized("当前判断"), detail: SoloCharacterCodex.stanceSummary(for: character, relation: relation))
+            infoRow(title: SoloLocalization.localized("最近波动"), detail: intel.statusLine)
         }
         .padding(20)
         .soloPanel(.evidence, prominence: 0.15)
@@ -130,7 +130,7 @@ struct SoloCharacterBattlePanelView: View {
 
     private var actionSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("行动建议")
+            Text(SoloLocalization.localized("行动建议"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(accent)
             Text(SoloCharacterCodex.thresholdHint(for: character, relation: relation))
@@ -138,7 +138,7 @@ struct SoloCharacterBattlePanelView: View {
                 .foregroundStyle(SoloTheme.warmInk)
                 .lineSpacing(4)
             if let destinyStatus {
-                Text("命局联动：\(destinyStatus.headline) · \(destinyStatus.thresholdHint)")
+                Text(SoloLocalization.format("命局联动：%@ · %@", destinyStatus.headline, destinyStatus.thresholdHint))
                     .font(.caption)
                     .foregroundStyle(SoloTheme.muted)
             }

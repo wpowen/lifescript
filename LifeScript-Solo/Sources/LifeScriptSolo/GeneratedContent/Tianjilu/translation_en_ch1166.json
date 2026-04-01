@@ -1,0 +1,469 @@
+{
+  "id": "天机录_ch1166",
+  "book_id": "天机录",
+  "number": 1166,
+  "title": "Three Realms Resonance",
+  "is_paid": true,
+  "next_chapter_hook": "All beings of the Three Realms cry out in unison: Rewrite our destiny!",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1166_001",
+        "content": "When the Demonic Path Commander spoke those words, Chen Ji felt his ten-thousand-year plan had become a joke—he realized what he had been searching for was not just answers, but his other half. Yin and Yang forces collided within his body, yet instead of clashing, they intertwined like two rivers slowly merging into the same vast ocean. He raised his head, gazing at the blood-red sky, and suddenly smiled. That smile held relief, bitterness, but more than anything, a near-mad determination.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_002",
+        "character_id": "char_chenji",
+        "content": "So that's how it is... A ten-thousand-year plan, nothing more than the journey of finding oneself.",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_003",
+        "content": "Su Qingyao stood not far away, watching the black and white intertwined light around Chen Ji, her eyes slightly reddening. She could feel the vastness of that power—it was not the power of one person, but the floodgate finally opening after the entire Three Realms had been suppressed by fate for billions of years. She gripped the Destiny Writing Brush in her hand tightly, its tip trembling faintly, as if sensing some ancient summons.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_004",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji... what do you intend to do?",
+        "emotion": "关切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_005",
+        "content": "Ye Qing stood beside the Demonic Path Commander, demonic mist swirling around her, yet unable to conceal the shock in her eyes. As the Demonic Path Saint, she had seen countless so-called geniuses and strong ones, but never had she witnessed anyone merge Yin and Yang forces to such a degree—that was no longer simple power accumulation, but a transformation at the rule level.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_006",
+        "character_id": "char_yeqing",
+        "content": "This man... is even more insane than I imagined.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_007",
+        "content": "Chen Ji slowly turned around, his gaze sweeping over everyone present—the Demonic Path Commander, Su Qingyao, Ye Qing, and the various forces watching from afar. His voice was not loud, yet it clearly entered each person's ears: \"Three Realms Resonance, I need your help.\" After a pause, the corner of his mouth curved into a familiar arc—that smile he always wore when playing the fool before revealing his true strength, \"Of course, you can choose not to help. But I'd suggest you think carefully—miss this chance, and you'll never get to witness history again.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1166_choice_01",
+        "prompt": "Three Realms Resonance requires enormous power to support, and Chen Ji must decide how to gather this force.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "独自承担",
+            "text": "Bearing Alone",
+            "description": "Chen Ji decides to bear the backlash of resonance alone to complete the ritual at the fastest speed, but the cost is he will endure the full consumption of Heavenly Fate.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Heavenly Fate consumption: 50 points",
+            "visible_reward": "Resonance range maximized, all living beings in the Three Realms can sense it",
+            "risk_hint": "May directly deplete Heavenly Fate, leading to Tianji Record backlash",
+            "process_label": "独自承受阴阳之力的冲击",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_独自承担_001",
+                  "content": "Chen Ji took a deep breath, his hands suddenly pressing together. Yin and Yang forces surged wildly within his body, every inch of meridian enduring tearing agony. Heavenly Fate poured out like a waterfall, each point taking away part of his vitality—that was lifespan, luck, the very foundation of his existence in this realm. Cold sweat dripped from his brow, but his spine remained straight as a pine.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "共同承担",
+            "text": "Sharing the Burden",
+            "description": "Chen Ji invites Su Qingyao and Ye Qing to share the risk of force dispersion, though the resonance range will be limited, everyone's burden will be greatly reduced.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Resonance range shrinks to the Nine Provinces Continent",
+            "visible_reward": "Heavenly Fate consumption split among three people, only 15 points each",
+            "risk_hint": "Requires absolute trust, once anyone wavers, resonance may fail",
+            "process_label": "以命运之笔为媒介，建立三人的力量链接",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_共同承担_001",
+                  "content": "Su Qingyao stepped forward without hesitation, grasping Chen Ji's hand. Her palm was warm, the Destiny Writing Brush floating between them, its tip radiating soft golden light. \"I said before,\" her voice was soft but incomparably firm, \"Your path, I'll walk to the end with you.\" Ye Qing hesitated for a moment, then finally extended her hand as well. Demonic mist and golden light intermingled, and everyone present felt that warm fluctuation.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "共同承担命运的羁绊",
+            "branch_route_id": null
+          },
+          {
+            "id": "分散力量",
+            "text": "Dispersing Power",
+            "description": "Chen Ji disperses power to everyone present, though each person's burden is minimal, the effect and influence of resonance will be greatly reduced.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Resonance range limited only to those present",
+            "visible_reward": "Nearly no consumption, and those present will receive a slight Heavenly Fate blessing",
+            "risk_hint": "Insufficient influence, may fail to trigger the resonance of Three Realms' rules",
+            "process_label": "将阴阳之力碎片化，散入每一个生命之中",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_分散力量_001",
+                  "content": "Chen Ji smiled faintly, that smile carrying a calculating taste. He spread his arms wide. Yin and Yang forces transformed into countless tiny points of light, like fireflies drifting toward every person present. Those light points drilled into their brow centers, bringing a cool sensation while also giving everyone a strange connection—as if the entire world had been linked by some invisible bond at this moment.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_008",
+        "content": "Yin and Yang forces began spreading outward, like a stone cast into a calm lake, rippling outward. But this time, those ripples did not dissipate in the air—instead, they directly struck the rules of the Three Realms themselves. In an instant, all cultivators stopped their movements, raised their heads, gazing at the sky—they did not know what had happened, but instinct told them something was changing.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_009",
+        "character_id": "char_chenji",
+        "content": "Not enough yet... To trigger true Three Realms Resonance, the rule resonance must be transmitted to every corner.",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_010",
+        "content": "Chen Ji's gaze fell on Su Qingyao, a hint of hesitation flickering in his eyes. The bloodline of the Destiny Writer was the medium, but if that power was activated, Su Qingyao would be exposed to the gaze of the Heavenly Dao's Eye—that was a secret she had hidden for years. He opened his mouth, wanting to say something, but Su Qingyao spoke first.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_011",
+        "character_id": "char_suqingyao",
+        "content": "I understand what you're about to say. Don't try to persuade me.",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1166_choice_02",
+        "prompt": "Su Qingyao prepares to activate the power of the Destiny Writer, but Chen Ji must make a choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "阻止她",
+            "text": "Stop Her",
+            "description": "Chen Ji refuses to let Su Qingyao take the risk, deciding to find another way to complete resonance.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Resonance progress stagnates",
+            "visible_reward": "Protect Su Qingyao from being discovered by the Heavenly Dao's Eye",
+            "risk_hint": "May miss the best timing, rule resonance dissipates on its own",
+            "process_label": "抓住苏青瑶的手腕，阻止她动用血脉之力",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_阻止她_001",
+                  "content": "Chen Ji grabbed Su Qingyao's wrist with force strong enough to almost leave bruises. His eyes were complex, yet his voice was unusually calm: \"I spent ten thousand years on this layout, not for you to bear the consequences for me.\" Su Qingyao looked at him, suddenly smiling—that smile held heartache, helplessness, but more than anything, an \"as expected\" understanding.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "支持她",
+            "text": "Support Her",
+            "description": "Chen Ji chooses to trust Su Qingyao's decision, letting her use the Destiny Writer's bloodline as the medium to complete the final resonance.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Su Qingyao's existence will be locked onto by the Heavenly Dao's Eye",
+            "visible_reward": "Three Realms Resonance completed, all living beings simultaneously sense the crack in destiny",
+            "risk_hint": "The Heavenly Dao's Eye may discover Su Qingyao because of this and take action against her",
+            "process_label": "松开手，向她点头示意\"我相信你\"",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_支持她_001",
+                  "content": "Chen Ji released his hand and stepped back. His eyes were calm, yet carried an almost suffocating trust. Su Qingyao took a deep breath, bit her fingertip, and using blood as ink, wrote an ancient rune in the void. That rune radiated brilliant golden light, like a key inserted into the lock of the Three Realms' rules. In that instant, everyone heard a \"click\"—the sound of destiny's shackles loosening.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "生死与共的默契",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_012",
+        "content": "The rules of the Three Realms began to resonate. That was not an earthquake, not thunder, but a more fundamental trembling—as if the entire world had come alive at this moment. In the distant Northern Abyss Ice Plains, an ancient fierce beast trapped under glaciers for ten thousand years opened its eyes; in the Ghost Realm of Shadows, countless wandering souls stopped their meaningless drifting, all gazing in the same direction; above the Nine Heavens, immortals stopped their cultivation, frowns tightly locked. They all felt it—the first crack had appeared in the wall of destiny.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_013",
+        "character_id": "char_chenji",
+        "content": "It worked...",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_014",
+        "content": "Chen Ji felt the change in the Yin and Yang forces within his body—they were no longer two opposing forces, but completely merged into one, transforming into a brand-new existence. That feeling was like a blind person seeing light for the first time, like a deaf person hearing sound for the first time. He lowered his head to look at his own hands, a black and white intertwined Taiji pattern emerging in his palms, slowly rotating, as if containing the mysteries of the entire Three Realms.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_015",
+        "character_id": "char_yeqing",
+        "content": "So this is... the power of Yin and Yang unity?",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1166_choice_03",
+        "prompt": "Three Realms Resonance has been completed, but Chen Ji still needs to decide how to handle this power.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "保留力量",
+            "text": "Retain the Power",
+            "description": "Chen Ji absorbs this power for his own use as a trump card against the Heavenly Dao's Eye in the future.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Needs to constantly suppress the power's rampage at all times",
+            "visible_reward": "Obtains [Three Realms Resonance] passive skill, +50% resistance to all rule-type attacks",
+            "risk_hint": "The power is too immense, may attract special attention from the Heavenly Dao's Eye",
+            "process_label": "将太极图案收入丹田，以阴阳之力淬炼金丹",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_保留力量_001",
+                  "content": "Chen Ji guided that power into his dantian, instantly feeling an unprecedented sense of fullness. Countless dao patterns emerged on the surface of his Golden Core, each representing a recognition of the Three Realms' rules. He opened his eyes, his pupils seemingly reflecting the entire heavens and earth, the corner of his mouth curving into a faint arc—he had been playing the fool for so long, today he could finally show his fangs openly.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三界共鸣_已获得"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "分享力量",
+            "text": "Share the Power",
+            "description": "Chen Ji disperses the power of Three Realms Resonance to all beings bound by destiny, giving everyone the opportunity to break their shackles.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Self-enhancement received is limited",
+            "visible_reward": "All living beings within the Three Realms gain [Awakening] buff, cultivation speed +30%, destiny resistance +20%",
+            "risk_hint": "After power dispersion, individual strength enhancement is not obvious",
+            "process_label": "张开双臂，将太极图案化作无数光点洒向三界",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 100
+              },
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1166_result_分享力量_001",
+                  "content": "Chen Ji closed his eyes, both hands suddenly spreading open. The Taiji pattern transformed into countless light rain, piercing through clouds, gliding over mountains and rivers, falling on every corner of the Three Realms. Those light points landed on mortals, who felt unprecedented ease; on cultivators, whose bottlenecks seemed to loosen; on demons and monsters, who felt \"hope\" for the first time. The fierce beast beneath the Northern Abyss glaciers let out a long howl, ice layers shattering; the wandering souls in the Ghost Realm danced with joy, as if reborn.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三界共鸣_已分享"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "普度众生的抉择",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_016",
+        "content": "At this very moment, the entire Three Realms fell silent. Those light points streaked across the sky like meteors, illuminating countless upturned faces. Some shed tears of joy, some knelt and kowtowed in gratitude, some stood不知所措—but everyone shared one common feeling: something that had bound them for years was loosening. That was destiny's shackles, the Heavenly Dao's chains, the silent mountain that had pressed down on all living beings since the opening of the Primordial Chaos.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_017",
+        "character_id": "char_suqingyao",
+        "content": "They... all felt it.",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_018",
+        "content": "Su Qingyao's tears fell silently. As a Destiny Writer, she understood the significance of this moment better than anyone—Chen Ji was not only breaking his own limits, he was cutting a bloody path through fate for the entire Three Realms. Those beings oppressed for billions of years finally saw the dawn of freedom. And this dawn was brought by the man she loved, her confidant, the one she was willing to give everything for.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1166_019",
+        "character_id": "char_yeqing",
+        "content": "This man... is worth following.",
+        "emotion": "敬佩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1166_020",
+        "content": "Chen Ji slowly opened his eyes, gazing at the sky that had returned to a brilliant blue. There was no joy of victory on his face, only a faint weariness, and... deep relief. Ten thousand years of layout, a hundred years of concealment, countless life-and-death moments—finally reaching this step. He turned to look at Su Qingyao and Ye Qing, the corner of his mouth curving into a familiar smile: \"Let's go, the show isn't over yet.\" As his words fell, three silhouettes transformed into flowing light, darting toward the depths of the heavens. Behind them, they left only a boiling Three Realms and countless lives awakening.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

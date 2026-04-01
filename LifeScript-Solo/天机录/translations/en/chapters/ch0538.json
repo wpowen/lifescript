@@ -1,0 +1,347 @@
+{
+  "id": "天机录_ch0538",
+  "book_id": "天机录",
+  "number": 538,
+  "title": "Strategic Retreat",
+  "is_paid": true,
+  "next_chapter_hook": "When the news of 'Chen Ji is Dead' spread across the Three Great Sects, the reactions of various forces were截然不同—some breathed a sigh of relief in the shadows, others tore apart secret letters in fury, and somewhere in the depths of a distant forbidden land, someone sensed that the gears of destiny were quietly beginning to turn.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0538_001",
+        "content": "Before the morning mist had dissipated, in the small courtyard of the Tianqing Sect Servants' Quarters, Chen Ji held a gold-edged invitation, his expression calm to the point of indifference. The invitation bore four flying dragon and dancing phoenix characters—'Sincere Condolences'—and bore the authentic seal of the Xuanwu Sect. Han Lie personally hosting his funeral rites? This play was getting more interesting by the moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0538_002",
+        "character_id": "char_moxiansheng",
+        "content": "'This is an open stratagem, wanting to verify your life or death under the guise of mourning.' Mister Mo's voice emerged from his sleeve, carrying a hint of gravity. 'Han Lie may be simple-minded, but he's no fool—he must have a backup plan.' Chen Ji casually tossed the invitation into the brazier, a curve forming at the corner of his mouth: 'Precisely because of that, I should thank him—there couldn't be a better 'death date' than this.'",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_003",
+        "content": "The golden nanmu coffin had already been prepared, placed right in the center of the small courtyard. The 'corpse' lying inside the coffin had a face identical to Chen Ji's, even the finest details of the skin texture were perfectly rendered—this was a substitute puppet that Chen Ji had spent three months and three thousand-year spirit fungus from the Wanzhen Pavilion to acquire. The Tianji Record fragment in his sleeve was faintly warm, as if warning him of something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0538_004",
+        "character_id": "char_chenji",
+        "content": "'Mister Mo, help me confirm.' Chen Ji silently thought, 'Where has the Death Enforcer's aura appeared most recently?' Characters appeared on the fragment, outlining a vague trajectory—a cold aura was rapidly approaching from three hundred li away. Chen Ji's pupils contracted: 'It's coming, faster than expected.'",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_005",
+        "content": "The prophetic visions of the Tianji Record unfolded slowly in his mind: in three hours, a black-robed figure would step onto the Servants' Peak, and at that time the Tianqing Sect's protective mountain formation would mysteriously appear a gap, conveniently allowing that figure unobstructed passage. Who was cooperating in the shadows? Chen Ji coldly smiled to himself—it seemed there was more than one old fox.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0538_choice_001",
+        "prompt": "The Death Enforcer is approaching, and the Tianji Record has recorded the complete action trajectory. Before initiating the fake death plan, Chen Ji needs to make a final confirmation—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0538_c1_1",
+            "text": "Activate Complete Tianji Record",
+            "description": "Consume 5 Heavenly Fate points to completely record the Death Enforcer's abilities, techniques, and weakness analysis, leaving precious intelligence for the future decisive battle.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Heavenly Fate -5",
+            "visible_reward": "Obtain Complete 'Death Enforcer File'",
+            "risk_hint": "Heavenly Fate was already scarce, and after this consumption, the remaining amount would be less than 20 points",
+            "process_label": "启动天机录完整记录功能",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0538_result_c1_1_1",
+                  "content": "The Tianji Record fragment suddenly burned hot, the ink characters moved like living things across the surface, the Death Enforcer's figure was recorded frame by frame. Chen Ji endured the dizziness from the Heavenly Fate drain with closed eyes, but in the previous frame he saw something that shocked him—a closed eye embroidered on the chest of that black-robed figure. 'A spy of the Eye of Heavenly Secrets...' He noted this detail in his heart."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0538_c1_2",
+            "text": "Conserve Heavenly Fate",
+            "description": "Only use the Tianji Record to record key information, preserving Heavenly Fate to handle variables after the fake death. Better incomplete intelligence than putting oneself in a desperate situation.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "No consumption",
+            "visible_reward": "Heavenly Fate remains at safe level",
+            "risk_hint": "Intelligence may be incomplete, making it more troublesome to deal with the Death Enforcer in the future",
+            "process_label": "压制天机录记录欲望",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0538_result_c1_2_1",
+                  "content": "Chen Ji forcibly suppressed the Tianji Record's urge to automatically record, only roughly noting the Death Enforcer's silhouette and aura characteristics. Mister Mo's voice rang in his ear: 'You made the right choice. Heavenly Fate is your most precious resource—especially now, when it is still your only bargaining chip in the game with the Eye of Heavenly Secrets.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_006",
+        "content": "At the third quarter of the noon hour, the sky above the Servants' Peak suddenly darkened. Though it was clear skies in all directions, an inexplicable chill permeated from every direction, as if something was注视着这座小小的院落. Chen Ji sat calmly on the cushion beside the coffin, his expression tranquil as ever, only his hands hidden in his sleeves were slightly clenched—he sensed it, that cold aura had already arrived at the mountain's base.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0538_007",
+        "character_id": "char_chenji",
+        "content": "'The plan remains unchanged.' Chen Ji spoke softly, his voice too calm to be parting words. 'The moment he strikes, I will activate the puppet. After the fake death, you immediately retreat according to plan, don't look back.' As the words fell, his right hand had already secretly gripped the jade talisman hidden in his sleeve—the only key to activating the fake death puppet.",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_008",
+        "content": "The courtyard gate was slowly pushed open by an invisible force, no footsteps, no breathing, only a black-robed figure appeared like a specter in the line of sight. Beneath the robe was a face without any expression, eyes tightly closed, but a strange crack at the brow center was slightly trembling—that was a perception-type divine ability, specifically used to investigate the truth of life and death.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_009",
+        "content": "'Tianqing Sect's servant disciple, Chen Ji.' The black-robed figure's voice was hoarse like dead leaves rubbing together. 'Heaven's mandate orders, your allotted fate has ended.' Before the words finished, a strand of pitch-black light condensed at his fingertips, pointing directly at Chen Ji's brow center. The scent of death enveloped everything, yet at this moment Chen Ji revealed a meaningful smile—'You've finally come.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0538_choice_002",
+        "prompt": "The Death Enforcer's attack has reached the brow center. This is the most critical moment of the fake death plan—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0538_c2_1",
+            "text": "Activate the puppet at the final moment",
+            "description": "Wait until the Death Enforcer's attack is about to touch the body before activating the fake death item, maximizing the opponent's certainty that the target is dead, avoiding leaving any loopholes.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Suffer partial attack damage",
+            "visible_reward": "Fake death success rate increased to ninety-nine percent",
+            "risk_hint": "If the timing is slightly off, it may become real death",
+            "process_label": "在攻击触及眉心的刹那激活玉符",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0538_result_c2_1_1",
+                  "content": "The moment pitch-black light touched the brow center, Chen Ji's fingers suddenly crushed the jade talisman. A blinding white light erupted from within him, bearing that fatal strike in his stead. Meanwhile, his true body had quietly hidden within the concealment formation he had arranged long ago. The black-robed figure's attack passed through the white light unimpeded, and in his perception, the life aura named Chen Ji was rapidly dissipating."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0538_c2_2",
+            "text": "Activate half a breath early",
+            "description": "Better to lower the fake death success rate a bit, but ensure one's own safety. After all, the real game is just beginning—dying once means no second chances.",
+            "satisfaction_type": "隐忍",
+            "visible_cost": "Fake death success rate decreased",
+            "visible_reward": "Absolutely safe, no risk of injury",
+            "risk_hint": "If the Death Enforcer detects anomalies, the plan will be completely ruined",
+            "process_label": "感知到攻击临近时立刻激活玉符",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0538_result_c2_2_1",
+                  "content": "Sensing that death energy approaching, Chen Ji did not hesitate and crushed the jade talisman early. The white light enveloped his entire body before the attack landed, the substitute puppet taking his place in the light. The black-robed figure's attack pierced through the puppet, white and black light intertwining, illuminating the entire small courtyard. 'Strange...' The crack at the black-robed figure's brow center slightly trembled, seemingly detecting a hint of anomaly but unable to determine its source."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_010",
+        "content": "Chen Ji in the concealment formation held his breath, observing everything through the gaps in the formation. The black-robed figure slowly walked toward the 'corpse' lying on the ground, reaching out to check Chen Ji's pulse—a moment later, that pale hand withdrew, and a low laugh came from beneath the robe: 'Dead through and through.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_011",
+        "content": "However, just as the black-robed figure was about to turn and leave, he suddenly stopped. That expressionless face slowly turned toward where Chen Ji was hidden, the crack at the brow center suddenly opened—a strand of pitch-black gaze pierced through the void, shooting directly toward the concealment formation's location. Chen Ji's heart sank heavily: this scene was not in the Tianji Record's recording!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_012",
+        "content": "'Interesting.' The black-robed figure's voice echoed in the silent small courtyard. 'Yet within a dead man's aura, there hides a living person's heartbeat.' He raised his hand, pitch-black light condensing once more at his fingertips, pointing directly toward where Chen Ji hid. Chen Ji's fingers had already secretly gripped another jade talisman—the emergency random teleportation talisman. Unless absolutely necessary, he did not want to use this trump card.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0538_choice_003",
+        "prompt": "Crisis moment! The black-robed figure seems to have detected anomalies. Chen Ji must make a choice in an instant—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0538_c3_1",
+            "text": "Continue to hide, wait for the opportune moment",
+            "description": "The random teleportation talisman is only one, using it here would be too wasteful. Trust your own arrangements, continue to hide, wait for the black-robed figure to leave or for new developments.",
+            "satisfaction_type": "隐忍",
+            "visible_cost": "Bear the high risk of being discovered",
+            "visible_reward": "Keep the random teleportation talisman as trump card",
+            "risk_hint": "If the black-robed figure insists on searching, the concealment formation may not hold",
+            "process_label": "压低气息，等待命运裁决",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0538_result_c3_1_1",
+                  "content": "Chen Ji remained motionless, even his heartbeat deliberately suppressed to near cessation. The black-robed figure's gaze lingered on the concealment formation for several breaths, the pitch-black light nearly piercing through the formation's barrier—yet at this moment, the sky suddenly darkened. An overwhelmingly domineering aura descended from the heavens, unmistakably Han Lie's aura! The black-robed figure's gaze was forced to turn away, the crack at his brow center slowly closing: 'Someone from the Xuanwu Sect has arrived? Interesting...'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0538_c3_2",
+            "text": "Activate the random teleportation talisman to retreat",
+            "description": "Take no risks at all, immediately activate the random teleportation talisman to leave. Though wasting a precious trump card, only by surviving can one afford to speak of the future.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Random teleportation talisman -1",
+            "visible_reward": "Absolutely safe retreat",
+            "risk_hint": "Random teleportation talismans are limited in quantity, one less means one less",
+            "process_label": "手指捏碎传送符，身影瞬间消失在原地",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0538_result_c3_2_1",
+                  "content": "Chen Ji did not hesitate, his fingers suddenly发力, the teleportation talisman shattered in his palm. A golden light flashed, and his figure vanished instantly from within the concealment formation. The black-robed figure's attack passed through the empty formation, his brow slightly furrowing: 'Escaped? Interesting... this is the first ant to escape from before me.' He turned to look at the aura approaching from the horizon, coldly laughing, 'Very well, let me first meet this so-called genius of the Xuanwu Sect.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_013",
+        "content": "On a desolate mountain thousands of miles away, Chen Ji tumbled out of the void, his appearance haggard. He knelt on one knee, breathing heavily, cold sweat dripping down his forehead. The Tianji Record fragment in his sleeve was now scorching hot like coals, seemingly transmitting some message to him. Chen Ji forcibly endured the burning pain and unfolded the fragment, a line of ink characters clearly appearing: 'The Eye of Heavenly Secrets has noticed you. The second Death Enforcement has been initiated.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_014",
+        "content": "Chen Ji looked at those words and suddenly laughed. That smile held three parts bitterness, three parts resolve, and four parts an unfathomable depth that others could not see through. 'The first fake death can only deceive ordinary Death Enforcers, but not the Eye of Heavenly Secrets' main body.' He murmured to himself, 'Then let this play become even more realistic.' In the distance, the sounds of commotion came from the direction of Tianqing Sect—Han Lie had arrived, and he was questioning that black-robed figure about the truth of 'Chen Ji's death.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_015",
+        "content": "In the Tianqing Sect's council hall, Han Lie stood in the center of the great hall, clad in dark armor, his momentum aggressive. Before him, the black-robed figure stood like a shadow, deaf to all questioning. 'Who are you? Why did you trespass Tianqing Sect?' Ling Yuan's voice came from the high seat, carrying a hint of suppressed fury. The black-robed figure finally spoke, his voice ice-cold: 'Executing Heaven's mandate is none of your concern.' Han Lie laughed despite his rage: 'Heaven's mandate? Ha! Let's see whose life is harder—yours or my fists!'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0538_016",
+        "content": "At the same moment, on a desolate mountain thousands of miles away, Chen Ji sat cross-legged, the Tianji Record fragment slowly unfolding before him. He was using the Tianji Record to transmit messages to all relevant parties—Su Qingyao received a 'testament letter,' Ye Qing received a coded phrase, and Ling Yuan received a blank letter. A slight smile curved at the corner of Chen Ji's mouth: 'Let the storm rage more violently.' The gaze of the Eye of Heavenly Secrets was like thorns in the back, yet his chess game had only just begun.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

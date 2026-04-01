@@ -1,0 +1,504 @@
+{
+  "id": "天机录_ch0320",
+  "book_id": "天机录",
+  "number": 320,
+  "title": "Awakening of the Ancient One",
+  "is_paid": true,
+  "next_chapter_hook": "At the moment when the pressure of the ancient existence reached its peak, the bloodline dormant in Chen Ji's body for years suddenly boiled—the last legacy left by the Chen family's ancestors, erupting awake at the edge of life and death.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0320_001",
+        "content": "Before Ye Qing's voice from the transmission talisman had even faded, the ground beneath his feet began to shake violently. Chen Ji raised his head sharply, only to see a dark crack split across the sky—not storm clouds, but an aura deeper than darkness itself—the omen of an ancient existence awakening. A suffocating pressure filled the air, as if a beast that had slumbered for ten thousand years was slowly opening its eyes. The spiritual energy within the secret realm surged wildly, and all living creatures felt that primal fear from the depths of their bloodline."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_002",
+        "character_id": "char_yeqing",
+        "content": "Chen Ji, that thing is no ordinary existence! It's a descendant of the ancient beast Taotie, its cultivation at least at the peak of Transformation God stage—even all of us combined wouldn't be enough for it to pick its teeth!",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_003",
+        "content": "A cold smile curled across Chen Ji's lips. Transformation God peak? In the Tianji Record's calculations, he'd witnessed far more terrifying opponents. With one hand forming seals, the Tianji Record fragment blazed to life in his mental sea, golden script flowing like a torrent. Within three breaths, he had to decide—flee while the ancient existence hadn't fully awakened, or risk it all for greater fortune. The pressure intensified, and a uniquely predatory sweetness from the ancient beast began permeating the air—the scent of a hunter."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_004",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji! Where are you? Something appeared in the inner realm—I've never seen anything like it! It's hunting Ye Qing!",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_005",
+        "content": "Su Qingyao's voice came through another transmission talisman, trembling despite her attempts to control it. Chen Ji's pupils constricted—the Tianji Record showed two figures fleeing desperately. Ye Qing was covered in blood, his demonic path fog so thin it was nearly transparent; Su Qingyao's white robes were torn in multiple places, a wound on her shoulder deep enough to see bone. Behind them, a massive beast covered in black scales advanced steadily, each step crushing rocks beneath it."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0320_006",
+        "prompt": "The ancient beast's pressure had enveloped the entire secret realm. Su Qingyao and Ye Qing hung by a thread. Chen Ji had to decide in an instant—preserve himself and wait for the right moment, or risk his life to protect his allies?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0320_choice_sacrifice",
+            "text": "Risk Everything",
+            "description": "Activate all foresight abilities of the Tianji Record, charge into battle with the resolve of certain death, rescuing the two women from the ancient beast's claws. The cost: 50 Heavenly Fate points consumed, possibly falling into prolonged weakness.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 50 Heavenly Fate Points",
+            "visible_reward": "Hero saves beauty, dramatically increasing favorability and trust of the two women",
+            "risk_hint": "Low Heavenly Fate points will trigger fatal backlash",
+            "process_label": "燃烧天命，强行突破",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_sacrifice_01",
+                  "content": "A resolute gleam flashed in Chen Ji's eyes. He pushed the Tianji Record to its limit, golden characters spinning wildly as visions of the next three hours flickered through his mental sea like a carousel—every path where he tried to save them led to the same conclusion: severe injury. Yet simultaneously, he spotted the ancient beast's sole weakness.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "远古凶兽仇恨转移",
+              "天命值危险"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以命相搏救红颜",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0320_choice_escape",
+            "text": "Preserve Oneself",
+            "description": "While the ancient existence hasn't locked onto him, retreat immediately to a safe zone and provide support from the sidelines. Preserve strength for future moves, but the two women will face the ancient beast alone.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose ally trust, reputation declines",
+            "visible_reward": "Preserve full strength, can plan leisurely",
+            "risk_hint": "Su Qingyao and Ye Qing may be severely injured or even killed",
+            "process_label": "战略撤退，伺机而动",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_escape_01",
+                  "content": "Chen Ji's brow furrowed tightly. The Tianji Record calculated that if he acted now, he had at least a seventy percent chance of rescuing them, but the cost would be his own severe injury. But if he didn't act... Su Qingyao's disappointed gaze and Ye Qing's mocking smile tinged with bitterness materialized in his mental sea.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "权衡利弊后撤退",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_007",
+        "content": "At that moment, a world-shaking roar echoed from the depths of the secret realm. The ancient existence's awakening entered its final stage, pressure suddenly multiplying several times over. Distant peaks began to collapse, rivers reversed course, and the world took on an apocalyptic appearance. Su Qingyao's transmission talisman suddenly snapped, her final transmission nothing but a terrified scream. Chen Ji clenched his fists, knuckles white. Mo Xiansheng's voice, in its spectral form, echoed hauntingly in his mental sea: 'The moment of choice has arrived, Heir.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_008",
+        "character_id": "char_moxiansheng",
+        "content": "Young fool, this old one followed Chen Xuan across the world in his time, never once seeing him retreat half a step. What matters an ancient beast? That Chen Xuan slew a Nascent Soul elder while still in Foundation Building! Remember, the Tianji Record chose you not because you're clever enough, but because you possess a streak of madness in your bones!",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_009",
+        "content": "Mo Xiansheng's words struck like thunder, shattering all hesitation in Chen Ji's mind. He drew a deep breath, and the Tianji Record fragment in his mental sea blazed with unprecedented light—the sign of Heavenly Fate being burned. Golden characters spun wildly, sketching a path toward the ancient beast, each character representing a predicted attack, each line of light marking a lethal blind spot. Chen Ji's form blurred, transforming into a stream of light that charged toward the battlefield. Wind howled in his ears, yet his heart was calm."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_010",
+        "character_id": "char_yeqing",
+        "content": "Chen Ji?! Are you mad! What are you doing here!",
+        "emotion": "震惊与感动交织"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_011",
+        "content": "Chen Ji didn't answer. His gaze passed over Ye Qing and Su Qingyao, fixing directly on the ancient beast. The creature resembled a colossal lizard, its entire body covered in black scales, each one etched with ancient runes. Its eyes burned crimson, vertical pupils reflecting Chen Ji's form with contemptuous scrutiny. It was a being on the verge of reaching Great Perfection in Transformation God—a terrifying apex predator in this realm. It opened its maw, revealing rows of jagged fangs, and unleashed a roar that seemed to shatter mountains themselves."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0320_012",
+        "prompt": "The ancient fierce beast had already noticed Chen Ji's presence, a trace of amusement flickering in its blood-red slit pupils. It seemed to be waiting for something—waiting for the prey to show more struggle, then savoring the taste of despair.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0320_choice_mockery",
+            "text": "Mocking Provocation",
+            "description": "Use the most scathing words to enrage the ancient fierce beast, drawing all its hatred to create an escape opportunity for Su Qingyao and Ye Qing. Display Chen Ji's characteristic of bearing grudges without being reckless, with a toxic tongue that slaps faces—a quintessential power fantasy protagonist trait.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Become the sole target of the ancient fierce beast",
+            "visible_reward": "Mockery succeeds, enrages the beast, winning the respect and reverence of the two beauties",
+            "risk_hint": "Provoking the ancient existence may provoke more fierce attacks",
+            "process_label": "口吐芬芳，主动拉仇恨",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0320_result_mockery_01",
+                  "character_id": "char_chenji",
+                  "content": "Is that all? I thought ancient beings would be impressive. Turns out you're just a bigger lizard. What, did sleeping for ten thousand years rot your brain too? Come catch me, you idiot!",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凶兽锁定陈机"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "嘴毒嘲讽远古存在",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0320_choice_tactical",
+            "text": "Tactical Harassment",
+            "description": "Without facing the enemy head-on, utilize the Tianji Record's foresight to dodge and weave around the fierce beast, buying time for Su Qingyao and Ye Qing to recover their combat power before breaking through together. Showcase the strategic protagonist's true colors.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Unable to resolve the threat in one strike",
+            "visible_reward": "Preserve strength, set up the board for subsequent battles",
+            "risk_hint": "The beast may see through the tactics",
+            "process_label": "游走牵制，伺机而动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_tactical_01",
+                  "content": "Chen Ji's eyes narrowed slightly as the Tianji Record operated frantically, taking in every attack trajectory, speed, and habit of the ancient fierce beast. In that split-second lightning flash, he calculated the optimal evasion route, while constantly changing position to ensure the beast's attention remained solely on him.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "智取远古凶兽",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(The ancient fierce beast's throat rumbles with a low sound) Despicable human... how dare you provoke this seat with words? Very well, this seat will crush your bones one inch at a time, letting you watch with your own eyes as you become minced meat.",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_014",
+        "content": "The ancient fierce beast's blood-red vertical pupils contracted sharply. Its massive body transformed into a streak of black lightning, claws tearing through the air and heading directly for Chen Ji's chest. At this moment, the Tianji Record erupted in dazzling golden light. Chen Ji's pupils reflected all the scenes of the next three breaths—all the futures. He saw the trajectory of that claw strike, saw the angle of his evasion, and also saw the stunned expressions of Su Qingyao and Ye Qing behind him. In that critical instant, Chen Ji's body twisted with an unbelievable angle, dodging the fatal blow while counter-striking with a palm slap against the beast's scales."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_015",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji! How—You're just a servant disciple, so why... why do you possess such strength?!",
+        "emotion": "震惊到语无伦次"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_016",
+        "content": "Chen Ji didn't look back. His palm pressed against the beast's scales, but he felt a majestic primordial energy rebound back, numbing his entire arm. The fierce beast let out a thunderous roar of fury, its tail sweeping over with speed beyond imagination. The Tianji Record flashed frantically, warning him he must retreat immediately—but just as he prepared to dodge, a figure in white robes stepped in front of him. Su Qingyao! Her sword unsheathed, blade light like the Milky Way cascading down, forcibly blocking that strike. Yet the tremendous force sent her flying backward, blood spraying from her lips."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_017",
+        "character_id": "char_yeqing",
+        "content": "Su Qingyao! You fool, who asked you to block that?! Chen Ji, run! I'll hold the line with this crazy woman!",
+        "emotion": "焦急且心疼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_018",
+        "content": "Ye Qing's Demonic Path mist surged wildly, shrouding all three of them. Simultaneously, countless Demonic Path talismans rained down like a storm toward the ancient fierce beast. However, the beast simply opened its massive maw and inhaled. All the talismans were devoured, and even the Demonic Path mist was torn open by a massive rift. Chen Ji's Tianji Record quivered intensely at this moment—he saw a fatal weakness. In the instant the beast opened its mouth, there was a faint glimmer at its throat. That was its demon core!"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0320_019",
+        "prompt": "The ancient fierce beast's demon core is exposed in its throat—this is the only weakness! But to strike there, one must get close to the beast's gaping maw, essentially delivering oneself between its fangs.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0320_choice_final_attack",
+            "text": "All-Out Gamble",
+            "description": "Burn the remaining Heavenly Fate Value to activate the Heaven's Eye's strongest state, concentrating all power into one finger to pierce the beast's demon core. This is a life-or-death technique with a success rate of approximately sixty percent.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Exhaust remaining Heavenly Fate Value, falling into extreme weakness",
+            "visible_reward": "Deliver a devastating blow to the ancient fierce beast, the three's bond transcending to a higher level",
+            "risk_hint": "Failure means being directly devoured by the fierce beast",
+            "process_label": "破釜沉舟，孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 35
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0320_result_final_01",
+                  "content": "Chen Ji took a deep breath, a resolute look flickering in his eyes. He said to Su Qingyao and Ye Qing: 'Trust me.' Then his figure transformed into a golden stream of light, rushing directly into the gaping mouth of the ferocious beast.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉觉醒触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以身为饵，直取妖核",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0320_choice_coordinate",
+            "text": "The three working together",
+            "description": "Let Ye Qing use Demonic Path mist to conceal their aura, Su Qingyao feign an attack from the left to draw attention, while he looked for an opportunity from the right. With the three coordinating, the success rate increased to eighty percent, but they couldn't deliver a fatal blow.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Unable to completely eliminate the threat",
+            "visible_reward": "The three's tacit coordination improved, laying the foundation for future bonds",
+            "risk_hint": "The ferocious beast might escape",
+            "process_label": "三人联手，协同作战",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0320_result_coordinate_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji quickly transmitted his voice: 'Ye Qing, how strong an aura can your mist conceal? Senior Sister Su Qingyao, you control from the left, give me three breaths of time.'",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "三人配合击退凶兽",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_020",
+        "character_id": "char_chenji",
+        "content": "The ancient ferocious beast's gaping mouth was right before him, its foul breath wafting over him. Chen Ji's eyes blazed like torches, and the Tianji Record's premonition reached its peak—at this moment he saw the position of the beast's demon core, the less than three inches between his fingertip and that core, and also the trajectory of the beast's fangs descending. Everything was under control! His fingertip erupted with dazzling golden light, thrusting directly toward that mass of ancient-气息的妖核！",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_021",
+        "content": "Just as the golden light was about to touch the demon core, the beast seemed to sense the danger. It let out a thunderous roar, and a layer of pitch-black barrier emerged on the demon core's surface. However, Chen Ji's lips curved into a cold smile—he had been waiting for this moment. The Tianji Record's premonition told him this strike was enough to break the barrier, but the true killing blow was yet to come. His fingertip, upon touching the barrier, abruptly changed direction, sliding past the demon core's surface at an unbelievable angle, and brutally inserted into the weak point connecting the demon core to the beast's throat!"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_022",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The ancient ferocious beast let out a pained roar, its massive body trembling violently. It wanted to close its gaping mouth, but it was already too late—Chen Ji's finger was deeply inserted into its demon core, golden energy spreading like venom across the core's surface. The demon core began to crack, countless ancient runes spilling from the fissures, forming a complex formation diagram in the air. That was...that was a sealing formation!",
+        "emotion": "痛苦与惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_023",
+        "content": "Chen Ji felt a terrifying, majestic power erupt from within the beast—that was the accumulated resentment and demonic power of an ancient existence over ten thousand years. The Tianji Record shook frantically, warning him that if he didn't retreat he would be destroyed both physically and spiritually. Yet he did not retreat. Behind him were Su Qingyao and Ye Qing—if he retreated, the two women would surely die. At this critical moment, the bloodline dormant in Chen Ji's body for years suddenly boiled—the final legacy left by his Chen family ancestors, a memory sealed for a thousand years surged into his Mental Sea like a flood."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_024",
+        "content": "The ancient ferocious beast's demon core shattered completely, a violent energy sweeping through the entire secret realm. Mountain peaks collapsed, the earth cracked, as if the end of the world had arrived. However, at the center of this destructive energy, a layer of pale golden patterns emerged on the surface of Chen Ji's body—that was the mark of Chen family bloodline awakening. Those patterns resonated with the Tianji Record Fragment in his body, golden and pale gold intertwining to form a perfect cycle. The ancient ferocious beast let out its final wail, its massive body falling heavily to the ground, stirring up clouds of dust."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0320_025",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji! Chen Ji! Are you alright?! Wake up!",
+        "emotion": "泣不成声"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0320_026",
+        "content": "Chen Ji slowly opened his eyes, and the first thing he saw was Su Qingyao's tear-streaked face. Her hands tightly gripped his arm, her knuckles white from the force. Ye Qing stood to the side, the Demonic Path mist had already dispersed, her expression complex beyond measure—there was shock,心疼，还有一丝说不清道不明的情愫。秘境的威压已经消散大半，那头远古凶兽的尸体横亘在远处，宣告着这场生死之战落下帷幕。而陈机体内的金色纹路正在缓缓消退，取而代之的是一股前所未有的力量感——那是血脉觉醒带来的蜕变。"
+      }
+    }
+  ]
+}

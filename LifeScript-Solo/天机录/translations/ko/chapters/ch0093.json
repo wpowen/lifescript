@@ -1,0 +1,588 @@
+{
+  "id": "天机录_ch0093",
+  "book_id": "天机录",
+  "number": 93,
+  "title": "암암리에 떠보다",
+  "is_paid": true,
+  "next_chapter_hook": "묵선의 음성이 갑자기 낮아졌다. 「네가 아느냐, 그 해 네 아버지가 왜 천청종을 떠나려 했는지?」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0093_001",
+        "content": "밤바람이 천청종 후산을 휩쓸고, 천기는刚刚藏好记录的玉简，却见远处长老居所的灯火骤然熄灭——张深，似乎已经察觉到了什么。月光下，玉简上的文字闪烁了一下，然后暗淡下去。远处的灯火突然熄灭，像是某种预兆。陈机的心跳加速，他感觉到张深似乎已经察觉到了什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_002",
+        "content": "他没有立刻回住处，而是转向了天기록第一页所指引的方向。墨先生的残魂就在那里，以一种超然姿态等待着他。月光下，山洞口的禁制符文隐隐泛着幽蓝微光，像是沉睡巨兽的呼吸。山洞深处，幽蓝的光芒若隐若现，仿佛在诉说着什么古老的秘密。墨先生的残魂似乎在等待着什么，月光下的山洞充满了神秘的气息。禁制符文的幽蓝微光像是沉睡巨兽的呼吸，预示着即将发生的事情。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_003",
+        "content": "천기는洞口站定，整理了一下表情。一个废物弟子深夜求见师尊，这本该惹人怀疑，但墨先生不同——他从不问来意，只问你想要什么。这是优势，也是危险。深夜求见墨先生，一个被视为废物的弟子，这种行为本应引起怀疑。但墨先生与众不同，他从不问来意，只关心你想要什么。这既是优势，也是潜在的危险。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_004",
+        "character_id": "char_chenji",
+        "content": "사부님, 제자有事请教。",
+        "emotion": "恭敬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_005",
+        "content": "山洞内传来一个淡漠的声音：「进来。」禁制自动散开，陈机踏入其中。墨先生的身影悬浮在石台之上，周身缠绕着淡淡的灵光，那是一个残魂特有的虚渺感——仿佛随时会被风吹散。山洞内传来淡漠的声音，示意进入。禁制自动消散，陈机踏入其中。墨先生的身影悬浮在石台上，周身环绕着淡淡的灵光，呈现出残魂特有的虚幻感，似乎随时会被风吹散。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_006",
+        "content": "但陈机注意到了不一样的东西。那灵光深处，隐约有一丝与天기록相似的波动——像是同源的气息，在墨先生身上若隐若现。这个发现让他心跳漏了半拍，面上却不动声色。陈机察觉到一丝异常。灵光深处隐约闪烁着与天기록相似的波动，仿佛同源的气息在墨先生身上若隐若现。这一发现让他心跳微顿，但表面依然平静如水。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_007",
+        "character_id": "char_moxiansheng",
+        "content": "이렇게 늦게 오다니,功课만 물으러 온 건 아니겠지?",
+        "emotion": "淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_008",
+        "content": "墨先生的声音平静如水，却带着一种洞穿一切的锐利。陈机垂下眼眸，做出思索的模样，实则在飞速权衡——该透露多少？该问多少？墨先生的声音平静如深水，却蕴含着洞穿一切的锐利。陈机垂下眼眸，假装思索，实则在快速权衡应该透露多少、询问多少。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice001",
+        "prompt": "천기는어떤角度에서切入决定了吗？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c001_a",
+            "text": "直接询问父亲",
+            "description": "开门见山地问墨先生关于陈玄的事，观察他的反应",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暴露对父亲下落线索的急切",
+            "visible_reward": "可能获得关键信息",
+            "risk_hint": "过于急切可能引起怀疑",
+            "process_label": "正面询问父亲的下落",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c001_a_001",
+                  "character_id": "char_chenji",
+                  "content": "사부님, 제자想问……关于我父亲陈현的事。",
+                  "emotion": "谨慎"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c001_b",
+            "text": "우회적试探",
+            "description": "假装请教功法，暗中观察墨先生对父亲话题的反应",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "耗费更多时间",
+            "visible_reward": "在不暴露意图的情况下获取信息",
+            "risk_hint": "可能问不出想要的东西",
+            "process_label": "迂回试探墨先生的底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c001_b_001",
+                  "character_id": "char_chenji",
+                  "content": "사부님, 제자近日修炼天기록残篇，遇到几处晦涩难解之处，想请사부님指点。",
+                  "emotion": "恭谦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_009",
+        "content": "墨先生沉默片刻，周身的灵光微微波动，像是湖面被投入了一颗石子。陈机紧盯着那丝波动，将每一个细节都刻入脑海。这种程度的反应……绝非寻常。墨先生沉默片刻，身上的灵光微微波动，如湖面被投入石子。陈机紧紧盯着那一丝波动，将每个细节都刻入脑海。这种程度的反应绝非寻常。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_010",
+        "character_id": "char_moxiansheng",
+        "content": "天기록啊……你父亲当年也问过我同样的问题。",
+        "emotion": "回忆"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_011",
+        "content": "이 말은 천둥처럼 천기(Chen Ji)의 가슴에 쳐박혔다. 그의 동공이 갑자기 수축되고, 손가락이 소매 안에서 미세하게 떨렸다—슬픔 때문이 아니라 마침내 실마리를 잡았기 때문이다. 아버지의 발자국, 마침내 첫 번째 진정한 교차점이 생겼다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_012",
+        "character_id": "char_chenji",
+        "content": "\"아버지……무엇을 물었습니까?\"",
+        "emotion": "压抑激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_013",
+        "content": "모선생(Mo Xiansheng)의 모습이 갑자기 희미해지고, 목소리도几分 허공적이어졌다: 「그가 나에게 천기록(Tianji Record)의 완전한 판본이 어디에 있는지 물었다.」 천기(Chen Ji)는 숨을 멈추고 후속 말을 기다렸다. 그러나 모선생의 말투가 바뀌었다, 「그가 또 한 가지 물었다—알면 안 되는 일이 있다, 물으면 죽는다. 그래도 그는 물었다.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_014",
+        "content": "동굴 안의 온도가 갑자기 몇 도 떨어진 것 같았다. 천기(Chen Ji)는 모선생(Mo Xiansheng)에게서 무형의 압력이 발산되는 것을 느꼈다, 그것은 잔혼이 정서적으로 동요할 때의 본능적 반응이었다. 그는 자신의 판단을 더욱 확신했다—모선생과 천기록(Tianji Record) 사이, 결코 단순한 수호 관계가 아니다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice002",
+        "prompt": "천기(Chen Ji)는 어떻게 이 국면을 대응할 것인가?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c002_a",
+            "text": "직언 추궁",
+            "description": "아버지가 물은 것이 무엇인지 직접 추궁하다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "모선생(Mo Xiansheng)을 화나게 할 수 있다",
+            "visible_reward": "핵심 정보를 직접 획득하다",
+            "risk_hint": "위험이 가장 높지만 이득이 가장 크다",
+            "process_label": "直接逼问墨先生",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": -3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -8
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c002_a_001",
+                  "character_id": "char_chenji",
+                  "content": "사부, 아버지가 물은 것이 무엇입니까? 제자……알고 싶습니다.",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c002_b",
+            "text": "한 발짝 물러서서 진격하다",
+            "description": "무서운 척하며 질문을 번복하고, 모선생(Mo Xiansheng)의 반응을 관찰하다",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "일시적으로 추궁을 포기하다",
+            "visible_reward": "모선생(Mo Xiansheng)이 자발적으로 노출하도록 유도할 수 있다",
+            "risk_hint": "기회를 놓칠 수 있다",
+            "process_label": "假装退缩引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c002_b_001",
+                  "character_id": "char_chenji",
+                  "content": "아버지가 알면 안 되는 일이라고 했으니……제자는 물어서는 안 될 것 같습니다.",
+                  "emotion": "退让"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c002_c",
+            "text": "은밀히 관찰하다",
+            "description": "태도를 취하지 않고, 천기록(Tianji Record) 잔편으로 모선생(Mo Xiansheng)身上的 이상한波动를感知하다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "천명치(Heavenly Fate)를 소모하다",
+            "visible_reward": "모선생(Mo Xiansheng)과 천기록(Tianji Record)의关联을 확인하다",
+            "risk_hint": "천명치(Heavenly Fate) 소모에는 위험이 있다",
+            "process_label": "暗中激活天机录感知",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0093_result_c002_c_001",
+                  "content": "천기(Chen Ji)는 눈을 내리깔고, 마음속으로 천기록(Tianji Record) 잔편을 조용히 운용했다. 한 股玄妙한 힘이 인식해( Mental Sea) 깊은 곳에서 솟아올라, 모선생(Mo Xiansheng)의 방향으로探去했다—천기록(Tianji Record)과同源의波动, 더욱 명확해졌다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_015",
+        "content": "동굴 안은 사흘 같은 적막에 빠졌다. 모선생(Mo Xiansheng)의 모습은 영광 속에서 희미하게 흔들렸다, 마치 언제든 바래날 그림 같은. 천기(Chen Ji)는 상대가 자신을审视하고 있음을 느꼈다, 그目光는 모든 위장을 꿰뚫어볼 수 있을 것 같았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_016",
+        "character_id": "char_moxiansheng",
+        "content": "너는 그와 매우 닮았다.",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_017",
+        "content": "이 말에 Chen Ji의 마음이 흔들렸다. Mo Xiansheng이 계속 말했다: 「같은 눈빛, 같은 집념. 그때 나는 그를 막지 못했고, 이제...」 그는 잠시 멈추었다. 「알면 안 되는 것들이 있다. 너 정말 그의 뒷걸음질을 할 생각이냐?」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_018",
+        "content": "Chen Ji는 Mo Xiansheng의 말 속에 경고의 의미를 느꼈지만, 더 신경 쓰인 것은 ‘막지 못했다’는 말 뒤에 숨겨진 진실이었다. 이는 Mo Xiansheng이 한때 아버지를 말리려고 했다는 것을 의미했다. 그러나 아버지는 결국 그 길로 나아갔다. 차가운 기운이 척추를 타고 올라왔다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0093_choice003",
+        "prompt": "Chen Ji는 어떻게 Mo Xiansheng의 경고에 대응할 것인가?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0093_c003_a",
+            "text": "결심을 밝히다",
+            "description": "앞이 사막이라 해도 갈 것이라 단호히 표시하다",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Mo Xiansheng을 더욱 경계하게 만들 수 있다",
+            "visible_reward": "결심을 보이면 더 많은 지도를 받을 수 있다",
+            "risk_hint": "너무 완고하면 오히려 역효과를 불러일으킬 수 있다",
+            "process_label": "坚定表态不惧危险",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c003_a_001",
+                  "character_id": "char_chenji",
+                  "content": "제자의 이 생에 가장 큰 소원은 아버지를 찾는 것입니다. 앞길이 어떻든, 제자는 후회하지 않겠습니다.",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0093_c003_b",
+            "text": "약세를 보이며 간청하다",
+            "description": "열등한 자세로 스승에게 길을 묻다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "약해 보인다",
+            "visible_reward": "Mo Xiansheng의 경계를 낮추고 정보를 얻다",
+            "risk_hint": "평범한 자로 취급받을 수 있다",
+            "process_label": "示弱获取同情",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0093_result_c003_b_001",
+                  "character_id": "char_chenji",
+                  "content": "제자는 어리석어 앞날의 깊이를 알지 못합니다. 스승의 가르침을 청하오니, 제자는 알아야 하는지 안아야 하는지요?",
+                  "emotion": "谦卑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_019",
+        "content": "Mo Xiansheng이 오래 침묵했다. 동굴 안의 영광이 희미하게 밝아지며 꺼지는 것은 마치 잔혼의 내면 갈등이 드러나는 것 같았다. 마침내 그는 한숨을 쉬었는데, 그 소리에는 Chen Ji가 한 번도 들어보지 못한 온기가 담겨 있었다: 「이 아이는... 아버지와 똑같이 사람을头疼하게 만드는구나.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_020",
+        "content": "그는 허공의 손을 들어，一道微光射入Chen Ji眉心.功法传承ではなく，一段の記憶をChen Jiに注入した。朦胧とした，断断续续の画面だった。Chen Jiは Familiar한後ろ姿が天青宗山門の前に立っているのを見た，旁边にはまだ女子がいて，懐には赤ん坊を抱いていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_021",
+        "content": "그 아이는 Chen Ji 자신이었다. 그리고 그 여인—그의 어머니? 기억 속 화면에서 아버지의 목소리가 희미하게 전해졌다: 「일단 열면 다시는 닫을 수 없는 문들이 있다. Qingyao, 아이를 데리고 여기서 멀리 떠나거라.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_022",
+        "content": "기억이 끊겼다. Chen Ji가 눈을 떴을 때, 이미 온몸에 식은땀이 배어 있었다. Mo Xiansheng의 목소리가 다시 들려왔다, 이번에는 의미심장한 느낌이 담겨 있었다: 「네 아버지는 돌이킬 수 없는 길을 택했지만, 그는 또한 하나의 보험을 남겼다.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_023",
+        "character_id": "char_moxiansheng",
+        "content": "누군가가 너를 보호하고 있다, Chen Ji. 네가 생각하는 것보다 더 가까이 있으며, 또한 더 위험하다.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_024",
+        "content": "이 말은 Chen Ji의 마음에 서ً 때린 휘파람처럼 울렸다. 생각보다 더 가까이—누구인가? 3대 종문的人들? 아니면 한번도 모습을 보인 적 없는 어머니? 혹은... Chen Ji의 뇌리에 한 생각이 스쳤다, 등 뒤가 서늘해졌다—Ling Yuan? 자신을 겉으로 보호해주는 노스승?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_025",
+        "content": "Mo Xiansheng의 모습이 더욱 희미해지기 시작했다. 마치 이번 교류에 힘이 너무 많이 소모된 것처럼. 「오늘 밤의 일은 누구에게도 말하지 마라.」 그의 목소리가 멀어졌다, 「다음에 올 때... 동생의 소식을 가져와라.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_026",
+        "content": "Chen Ji는 뜨게 올렸다. 동생? Chen Nian? 그는 Mo Xiansheng에게 한 번도 Chen Nian의 일을 말한 적이 없었다. 어떻게 그가 아는 것일까?除非—Mo Xiansheng은 그를 몰래 관찰하고 있었고, 그가 생각하는 것보다 더 깊이까지. 이러한 생각들이 뇌리 속에서 뒤섞였지만, 그의 얼굴 위에는 여전히 파도처럼 고요했다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_027",
+        "content": "「제자 이해했습니다.」 Chen Ji는 깊이 허리춤을 꾸벅하고山洞을 돌려 나섰다. 밤바람이 얼굴을 스치자, 뒤가 이미 식은땀에 젖어 있음을 비로소 알았다. 오늘 밤의 수확은 기대를 훨씬 초월했다—아버지의 발자국, 어머니의 실마리, 신비로운 은밀한 수호자, 그리고 Mo Xiansheng의 의미심장한 「동생」.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_028",
+        "content": "멀리 하늘빛이 이미 희미하게 밝아졌다. Chen Ji는 동쪽 해 뜬 곳을 바라보며 마음속으로 계산했다. Zhang Shen은 이미 무언가를 감지했다, 시간은 더욱 다급해졌다. 그리고 Mo Xiansheng의 그 말—「누군가가 은밀히 너를 보호하고 있다」는—가 가슴에 가시처럼 찔려, 그는 기대와 불안이 동시에 밀려왔다. 그 수호자는 적이야, 동료인가?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0093_029",
+        "character_id": "char_chenji",
+        "content": "(모선생……당신은 대체 얼마나 많은 것을 알고 있는가?)",
+        "emotion": "深思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0093_030",
+        "content": "진기가 주먹을 쥐었다. 아침 햇살이 그의 그림자를 길게 늘여놓았다. 모든 것이 이제 막 시작되었다. 아버지의 발자취, 어머니의 실마리, 어둠 속의 수호자——이 수수께끼들이 서로 얽히며 지금의 그에게는 아직 전모를 파악할 수 없는 거대한 그물을 짜냈다. 그리고 그는, 이미 그 속에 빠져 있다.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

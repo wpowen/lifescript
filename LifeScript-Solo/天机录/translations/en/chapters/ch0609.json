@@ -1,0 +1,428 @@
+{
+  "id": "天机录_ch0609",
+  "book_id": "天机录",
+  "number": 609,
+  "title": "Rival Reunion",
+  "is_paid": true,
+  "next_chapter_hook": "Ling Yuan fled in狼狈, and Ye Qing's figure emerged from the shadows, a meaningful smile playing at the corners of her lips: \"You let him go, do you want his fear to spread across the entire jianghu?\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_001",
+        "content": "The night wind cut like a blade across the abandoned forest path. Ling Yuan's figure stepped out from the darkness, like an old wolf finally catching its prey, each step carrying the certainty of a hunter certain of success. Behind him followed five experts from the Tianqing Sect, their Nascent Soul realm aura crushing all life within a hundred zhang. \"Chen Ji, did you think faking your death could fool me?\" Ling Yuan's laughter echoed in the night, \"The prince and the sect have jointly issued a kill order. Where can this rat in the street possibly run to?\" He squinted, examining this former disciple he had personally trampled into the mud, \"What, scared speechless?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_001",
+        "character_id": "char_chenji",
+        "content": "Chen Ji slowly raised his head, a faint smile curling at the corners of his mouth. That smile was terrifyingly calm, as if what Ling Yuan brought was not an existential crisis but a farce he had long foreseen. \"Sect Master Ling,\" his voice was unhurried, \"visiting so late at night, to what do I owe the pleasure? A kill order? Heh, I thought with an elder of your status coming personally, it must be something extraordinary.\" He stood with hands behind his back, his robes fluttering gently in the night wind, \"Turns out you're just running errands for that brute Han Lie.\"",
+        "emotion": "平静中带着轻蔑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_002",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan's expression shifted slightly, then he grinned wickedly: \"Cocky fool!\" He stepped forward, his oppressive aura crushing like a mountain avalanche, \"You think hooking up with the Demonic Path's Saint makes you untouchable? Tonight, I'll show you what true despair feels like!\" He waved his hand, \"Capture him! Dead or alive, either works!\" The five experts behind him struck in unison, spiritual light surging toward Chen Ji like a tide.",
+        "emotion": "恼怒中夹杂着杀意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_002",
+        "content": "Just as the spiritual energy was about to touch Chen Ji, a vast and profound aura erupted from within him. This was no ordinary Nascent Soul realm pressure, but a primordial force mixed with the Dragon Vein Core, like an ancient dragon opening its dormant eyes. The five experts' attacks shattered instantly; they didn't even have time to react before being blasted backward, spitting blood. Ling Yuan's pupils contracted sharply — in that moment, he seemed to see the boy chosen by the Tianji Record thirty years ago.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0609_选择_001",
+        "prompt": "Ling Yuan's face turned ashen, yet he still forced the bearing of a sect master: \"You think this bit of strength can overturn heaven? I've cultivated for three hundred years, so why would I fear a whelp like you!\" His hand had already quietly reached for the communication jade talisman at his waist.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0609_选择_001_选项A",
+            "text": "Absolute Suppression",
+            "description": "Use the Dragon Vein Core's power to thoroughly suppress Ling Yuan, leaving him no chance to beg for mercy",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Consume a small amount of Heavenly Fate",
+            "visible_reward": "Ling Yuan loses face completely on the spot, his prestige crumbles",
+            "risk_hint": "May expose too much strength",
+            "process_label": "以绝对力量碾压",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 150
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0609_result_选择A_001",
+                  "content": "Chen Ji let out a light laugh and flicked his finger. A dragon-shaped true qi burst through the air, precisely striking Ling Yuan's wrist, shattering the communication jade talisman. \"Wanting to call someone?\" He stepped forward slowly, each step pressing down on Ling Yuan's heart, \"Sect Master Ling, you just called me a rat in the street? What are you now?\" His gaze fell on Ling Yuan's trembling fingers, \"The堂堂 Tianqing Sect Master can't even protect a single talisman — if word got out, it would be a laughingstock.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0609_选择_001_选项B",
+            "text": "Expose Evidence",
+            "description": "First display the ironclad evidence of Ling Yuan's collusion with Han Lie, psychologically destroying his arrogance",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires speaking",
+            "visible_reward": "Ling Yuan's mask of hypocrisy is torn away, his psychological defenses collapse",
+            "risk_hint": "Give Ling Yuan breathing room",
+            "process_label": "以证据打脸",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 100
+              },
+              {
+                "stat": "名望",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0609_result_选择B_001",
+                  "content": "Chen Ji didn't move, only taking a jade slip from his sleeve and casually tossing it to Ling Yuan. \"Sect Master Ling might want to take a look at this.\" The jade slip recorded the secret meeting between Ling Yuan and Han Lie three months ago — the two of them in a secret chamber at the Xuanwu Sect, discussing how to divide Tianqing Sect's resources and how to use the prince's hand to eliminate Chen Ji. Ling Yuan's face instantly turned deathly pale; this was his most guarded secret. \"Where... where did you get this!\" His voice began to tremble."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_003",
+        "content": "Ling Yuan's forehead seeped fine beads of cold sweat. The political cunning accumulated over thirty years as sect master showed cracks at this moment. He stared fixedly at the faintly glowing jade slip in Chen Ji's hand, his voice hoarse: \"You've... been pretending all along?\" Chen Ji gave no answer, only returning the jade slip to his sleeve — that casual gesture more devastating than any words. Ling Yuan suddenly realized this废物 disciple he had once trampled at will had long since grown into a true beast.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_003",
+        "character_id": "char_lingyuan",
+        "content": "\"Impossible!\" Ling Yuan howled in denial, \"You're merely a servant disciple, even Foundation Building is difficult for you, how could...\" His words cut off abruptly because he saw the spiritual energy around Chen Ji beginning to condense, and intricate patterns spreading beneath his feet — the sign of the Dragon Vein Core being fully activated. \"How impossible?\" Chen Ji's voice remained calm, \"When Sect Master Ling personally trampled me into the mud back then, did you ever imagine this day would come?\"",
+        "emotion": "压抑的愤怒与冰冷的嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0609_选择_002",
+        "prompt": "The domain formed by the Dragon Vein power had completely enveloped Ling Yuan; he felt his internal spiritual energy being suppressed bit by bit. For the first time in thirty years, he felt the cold chill of death.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0609_选择_002_选项A",
+            "text": "Complete Subjugation",
+            "description": "Display true strength, capture Ling Yuan in one move, establish prestige before all enemies",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume more Heavenly Fate",
+            "visible_reward": "Ling Yuan kneels and begs for mercy on the spot, prestige drops to zero",
+            "risk_hint": "Strength exposure may draw greater attention",
+            "process_label": "一招制敌",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0609_result_选择002A_001",
+                  "content": "Chen Ji raised his hand, and a dragon-shaped sword qi pierced through the air. Ling Yuan didn't even have time to activate his protective spiritual light before this sword qi struck his chest, sending him flying backward like a kite with a broken string, crashing heavily into an ancient pine. \"Cough...\" He struggled to get up with difficulty, only to find all his meridians in excruciating pain — the sword qi had completely sealed his spiritual energy. The堂堂 Tianqing Sect Master couldn't last a single move against Chen Ji."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0609_选择_002_选项B",
+            "text": "Verbal Humiliation",
+            "description": "Before taking action, thoroughly destroy Ling Yuan's psychological defenses with words",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Give Ling Yuan more time to breathe",
+            "visible_reward": "Ling Yuan's spirit collapses, worse than death",
+            "risk_hint": "May change the course of battle",
+            "process_label": "杀人诛心",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 150
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0609_result_选择002B_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji didn't rush to act; instead, he slowly walked toward Ling Yuan on the ground, his boots crunching on fallen leaves. \"Sect Master Ling, you just called me a rat in the street?\" He squatted down, meeting Ling Yuan's eyes, \"So what does that make you now? An old dog trampled under this rat's foot?\" His voice was gentle, yet like blunt knives cutting into Ling Yuan's heart. \"Thirty years ago, you harbored resentment from being rejected by the Tianji Record and gave me no end of trouble. You thought I didn't know?\"",
+                  "emotion": "冰冷中带着畅快"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_004",
+        "content": "Ling Yuan's pupils contracted violently — this was his deepest secret, casually revealed by Chen Ji. \"How... how could you possibly know...\" His voice trembled severely. That night thirty years ago, he had been denied by the supreme will before the Tianji Record; that cold will had passed over him and chosen a废物 child without even a spirit root. In that moment, jealousy and hatred had gnawed at his heart like venomous serpents. He thought he had hidden it well, but he never knew — from beginning to end, he had merely been a jumping clown toyed with in Chen Ji's palm.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_004",
+        "character_id": "char_lingyuan",
+        "content": "\"Did you think I didn't know about all the things you did?\" Chen Ji stood up, looking down at Ling Yuan from above, \"The assassination three years ago — that was you secretly contacting Demonic Path wandering cultivators, wasn't it? Framing me for stealing sect secret manuals two years ago, that was also your doing.\" His voice was terrifyingly calm, \"And last year, proposing to expel me from the sect before the prince and Xuanwu Sect... Sect Master Ling, your 'kind attention' toward me, I haven't dared to forget for a single moment.\"",
+        "emotion": "压抑的愤怒终于释放"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0609_选择_003",
+        "prompt": "Ling Yuan had completely lost his will to resist; he knelt on the ground, his once dignified face now filled with fear and despair. \"Chen Ji... no, Chen Senior!\" He actually used an honorific, \"I'm willing to do anything! Give you the Tianqing Sect Master's position, give you all the wealth I've accumulated over the years, just please spare me!\" His posture was utterly degrading, a world apart from his earlier arrogance.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0609_选择_003_选项A",
+            "text": "Execute on the Spot",
+            "description": "Eliminate the roots to prevent future trouble",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Bear the name of killing one's master",
+            "visible_reward": "Completely eliminate the threat",
+            "risk_hint": "May trigger sect turmoil",
+            "process_label": "一击毙命",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 100
+              },
+              {
+                "stat": "黑化值",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0609_result_选择003A_001",
+                  "content": "Chen Ji raised his hand, and dragon-shaped sword qi condensed once more. Ling Yuan's pupils contracted sharply as he desperately tried to retreat, only to find his entire body already restrained by the Dragon Vein power. \"Chen Ji! You can't kill me! I'm the Tianqing Sect Master! If you kill me, you won't escape either!\" His voice was already带了哭腔. \"Oh?\" Chen Ji smiled faintly, and the sword qi fell. Ling Yuan's voice cut off abruptly; his body collapsed softly to the ground, his eyes holding the final disbelief."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0609_选择_003_选项B",
+            "text": "Release and Let Go",
+            "description": "Don't kill Ling Yuan, instead let him spread his fear",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Leave a potential threat",
+            "visible_reward": "Ling Yuan's fear will become the best deterrence, his reputation spreading throughout the jianghu",
+            "risk_hint": "Ling Yuan may return for revenge",
+            "process_label": "饶其一命",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 300
+              },
+              {
+                "stat": "谋略",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 80
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0609_result_选择003B_001",
+                  "content": "Chen Ji withdrew the sword qi and turned his back to Ling Yuan. \"Scram.\" Only one word, yet heavy as a thousand catties. Ling Yuan froze, then scrambled to flee. \"Wait.\" Chen Ji's voice rang out again; Ling Yuan's entire body stiffened, thinking he was about to die. \"Deliver a message to Han Lie for me — next time we meet, I'll personally take your life.\" His voice was calm as still water, yet carried undeniable killing intent, \"Also, you'd best pray we never meet again. Because next time, I won't be this kind.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_005",
+        "content": "Ling Yuan dared not linger for even a moment, stumbling as he fled into the distance. That once invincible Tianqing Sect Master, his back now utterly wretched. The five experts around him, injured by the Dragon Vein power, also struggled to their feet, wishing they had two more legs to flee from this fear-inspiring youth. Chen Ji didn't glance at them again, only standing with hands behind his back as the night wind stirred his robes. Moonlight bathed him, stretching his shadow long and long.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_006",
+        "content": "Only after those footsteps had completely vanished did Chen Ji slowly exhale a breath of turbid air. His right hand trembled slightly — that was the aftereffect of using the Dragon Vein Core. Heavenly Fate had consumed another fifteen points; now only one hundred twenty remained. Every time he used the Tianji Record's abilities, it was like overdrafting his own life. But tonight, he felt he had done something right — not because he had defeated Ling Yuan, but because he had let that old thing taste fear.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_005",
+        "character_id": "char_yeqing",
+        "content": "\"Interesting.\" A languid voice came from the treetop. Chen Ji looked up to see a black-clothed figure lightly descending nearby. Ye Qing had changed into a night outfit tonight, black纱 covering her face, revealing only a pair of bright eyes. But that smile in those eyes, Chen Ji knew too well. \"You let him go,\" Ye Qing walked closer, \"do you want his fear to spread across the entire jianghu?\" Her tone carried a playful quality, \"This move is much more clever than killing someone. But are you so confident he won't come back to cause trouble?\"",
+        "emotion": "调侃中带着好奇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_007",
+        "content": "Chen Ji turned to face Ye Qing. Under the moonlight, their shadows overlapped. \"He won't dare.\" His voice was calm and certain, \"After today, Ling Yuan will understand one thing — the gap between him and me has grown beyond his imagination. A person once trampled under his foot, now become something he can only look up to... this kind of fear is more terrifying than death.\" The corners of his mouth slightly lifted, \"Moreover, he still has to deliver my message to Han Lie for me. Killing two birds with one stone — why not?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_006",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing lightly clapped, her laughter like silver bells echoing through the night sky. \"Chen Ji ah Chen Ji, you really are an interesting fellow.\" She walked to Chen Ji's side and lowered her voice, \"But don't celebrate too early. Although Ling Yuan lost tonight, there's still Su Qingyao in the Tianqing Sect. She's not as easy to deal with as Ling Yuan.\" Her tone turned serious, \"And I've received news that Han Lie from the Xuanwu Sect has already set off for Tianqing Sect. When he heard you 'came back from the dead,' he flew into a rage and decided to handle it personally.\" She looked at Chen Ji, \"Are you sure you can handle him?\"",
+        "emotion": "关切中带着试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_008",
+        "content": "Chen Ji didn't answer, only raising his gaze toward the distant horizon. That was the direction of Xuanwu Sect, where Han Lie resided. Under the moonlight, a starlight gleam flickered in the depths of his eyes. \"Han Lie?\" he said softly, a meaningful smile appearing at the corners of his mouth, \"A brute who only knows how to speak with his fists is nothing to fear. What I've always cared about was never any genius or strong person.\" He withdrew his gaze and looked at Ye Qing, \"It's those pieces hidden in the shadows, those who don't even want others to know they exist... the chess pieces.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0609_对话_007",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing's smile stiffened slightly. Chen Ji's words reminded her of her own situation — people like them, in the eyes of those true powerhouses, are also nothing but chess pieces, aren't they? The Holy Sect controlling her all these years, wasn't she also struggling to survive on someone else's chessboard? \"Chen Ji,\" her voice suddenly lowered, \"when you talk about those dark chess pieces... do you include us?\" Chen Ji turned to face her, their eyes meeting for a moment, then he lightly shook his head. \"You're different.\" His voice was calm and serious, \"You're my ally, not a chess piece.\"",
+        "emotion": "复杂中带着真诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_009",
+        "content": "Ye Qing froze for a moment, then burst out laughing. \"Your gift of gab could charm someone to death.\" She turned her head away, not letting Chen Ji see her slightly flushed cheeks. But the next moment, her expression turned serious again. \"Alright, enough fooling around. Getting back to business — Han Lie arrives at Tianqing Sect in three days. With his personality, he'll definitely go find Ling Yuan first to ask about tonight's events.\" She looked at Chen Ji, \"So, what are you planning to do then? Continue playing the pig eating the tiger, or...\" She didn't finish, but the anticipation in her eyes spoke volumes.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0609_文本_010",
+        "content": "Chen Ji didn't answer, only raising his gaze to the night sky. Stars flickered on the ink-black canvas above, like countless eyes watching the mortal world. He suddenly remembered what Mo Xiansheng once said — the Tianji Record is a piece placed by the Heavenly Dao, and every generation of prophets are merely pawns crossing the river on this board. How far could he, Chen Ji, go in this great chess game of heaven and earth? The night wind carried news from afar. The bells of Tianqing Sect rang out leisurely, heralding a new day approaching. And Chen Ji knew — the true storm was only beginning.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

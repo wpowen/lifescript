@@ -1,0 +1,503 @@
+{
+  "id": "天机录_ch0084",
+  "book_id": "天机录",
+  "number": 84,
+  "title": "Childhood sweetheart",
+  "is_paid": true,
+  "next_chapter_hook": "Before Su Qingyao could finish speaking, Chen Ji felt a sharp pain in his chest—the warning from the Tianji Record Fragment, as if some indescribable existence was piercing through the layers of mist, watching him.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0084_001",
+        "content": "Moonlight fell like frost over the Bamboo Grove in the Tianqing Sect Back Mountain.\n\nChen Ji stood in the agreed-upon stone pavilion, his posture slightly hunched, just like his usual waste of space demeanor. His gaze, however, was calm like still water, showing no trace of disturbance. The Inner Sect emissary's scrutiny pressed on him like thorns at his back—he was well aware, yet he never turned around.\n\nFootsteps emerged from the depths of the bamboo forest, light yet resolute.\n\nSu Qingyao's silhouette gradually appeared in the moonlight, her azure robe dancing with the wind, her cold pride even more pronounced than in daylight. Her gaze swept over Chen Ji's cowardly demeanor, yet a trace of complexity flickered in her eyes, imperceptible to others.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_002",
+        "character_id": "char_suqingyao",
+        "content": "「You're quite punctual.」\n\nSu Qingyao's voice was cool and clear, though the ending softened slightly. She sat across from Chen Ji, her gaze fixed directly on him, 「The Inner Sect emissary's attention toward you today exceeded the proper scope.」",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_003",
+        "content": "Upon hearing this, Chen Ji's heart stirred slightly, but his face only showed a silly grin as he rubbed his hands together and said, 「I don't quite understand what Senior Sister Su means. That elder only asked about some daily trivialities and gave me a few spirit stones...」\n\nAs he spoke, he pulled out those inferior spirit stones from his sleeve, wearing an expression of being overwhelmed by the unexpected favor.\n\nSu Qingyao watched his performance, a hint of imperceptible derision flickering in her eyes—if this废物 truly knew nothing, then all those moves just now were performed for whom?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_004",
+        "character_id": "char_suqingyao",
+        "content": "「Chen Ji.」\n\nShe suddenly called his full name, her voice carrying a strange force, 「Our two families were originally old friends.」\n\nThese words were like a stone cast into a calm lake, stirring countless ripples in Chen Ji's heart. His gaze finally changed—the mask of silliness beneath seemed touched by something.",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_005",
+        "content": "The wind in the bamboo grove suddenly picked up, ruffling both their robes.\n\nSu Qingyao's gaze shifted toward the distant peaks, her voice dropping lower: 「Your father Chen Xuan and my father Su Hong were sworn brothers. Before we two were even born, we were already betrothed by our families.」\n\nShe turned her head,直视ing Chen Ji's eyes: 「Later, when the Chen family suffered a great calamity, your father disappeared. Your mother brought you here as refugees. And my father... also vanished without a trace on the same night.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_006",
+        "character_id": "char_suqingyao",
+        "content": "「Who exactly are you?」\n\nSu Qingyao's interrogation carried a sharp edge, 「A Servant Disciple, how could you remain composed under the Inner Sect emissary's scrutiny? Those seemingly unintentional moves—were they coincidences, or did you calculate everything in advance?」\n\nHer fingers tapped lightly on the stone table, the rhythm revealing a hint of impatience, 「And... that aura on you is identical to what I smelled in my father's study when I was young.」",
+        "emotion": "追问"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_007",
+        "content": "Chen Ji fell silent for a moment.\n\nUnder the moonlight, that simple, honest face seemed to develop cracks, revealing a completely different expression underneath. He slowly raised his head, his gaze calm as he met Su Qingyao's eyes.\n\n「Does Senior Sister Su want to hear the truth, or a lie?」\n\nHis voice was very soft, yet carried a force that could not be ignored, 「The truth might plunge you into greater danger. The lie... could let you peacefully remain as Inner Sect Senior Fellow.」"
+      },
+      "emphasis": "dramatic"
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_008",
+        "character_id": "char_suqingyao",
+        "content": "「The truth.」\n\nSu Qingyao's answer came without any hesitation, 「I've waited for this day far too long.」\n\nHer voice carried a slight tremor, that layer of cold pride finally showing cracks, 「All these years, I've been investigating my father's disappearance. And all the clues point to the same name—Chen Xuan.」\n\n「And that legendary tome, the Tianji Record.」",
+        "emotion": "激动"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0084_choice_001",
+        "prompt": "Su Qingyao mentioned the Tianji Record, and Chen Ji needed to decide how to respond to this sensitive topic.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0084_choice_001_A",
+            "text": "Half-truth probing",
+            "description": "Admit connection to the Tianji Record but conceal specific details, observing Su Qingyao's reaction to judge her stance.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May miss the opportunity to build trust",
+            "visible_reward": "Gain more intelligence about the Su family",
+            "risk_hint": "Su Qingyao is extremely intelligent and may detect your reservations",
+            "process_label": "你决定先透露部分真相，保留关键底牌",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_001_A_001",
+                  "character_id": "char_chenji",
+                  "content": "「The Tianji Record...」\n\nChen Ji mused for a moment, as if hesitating, then sighed heavily, 「I won't hide it from Senior Sister Su—I do have some connection with that extraordinary tome. It's just that this matter is lengthy and involves extensive entanglements.」\n\nHe paused, his gaze sincere as he looked at Su Qingyao, 「Since Senior Sister shares old ties with my father and has investigated this matter for years, you likely know more than I do. Why don't... we exchange information?」",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0084_choice_001_B",
+            "text": "Complete candor",
+            "description": "Directly reveal to Su Qingyao that he possesses the Tianji Record Fragment and invite her to become a true ally.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose your biggest trump card",
+            "visible_reward": "Gain a powerful ally who may possess crucial intelligence",
+            "risk_hint": "Once news leaks, you will become the target of all",
+            "process_label": "你决定冒险一搏，用真诚换取信任",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_001_B_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji suddenly stood up and walked to where Su Qingyao sat.\n\nMoonlight fell upon him, those originally murky eyes gradually clearing, like cold stars in a deep pool.\n\n「Since Senior Sister Su has been so candid, I shall no longer hide anything.」\n\nHe extended his hand, palm upward, and a page of yellowed fragment slowly materialized—The Tianji Record Fragment rests in my grasp.」",
+                  "emotion": "决断"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "revealed_tianji_to_suqingyao"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "首次向盟友展示天机录",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0084_choice_001_C",
+            "text": "Deflect the topic",
+            "description": "Do not directly address the Tianji Record question, but instead inquire about the specific connection between the Su family and the Tianji Record.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May incur Su Qingyao's displeasure",
+            "visible_reward": "Gain more background information",
+            "risk_hint": "Su Qingyao may think you are evading the question",
+            "process_label": "你决定先收集情报，再决定暴露多少",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_001_C_001",
+                  "character_id": "char_chenji",
+                  "content": "Let's set aside the matter of the Tianji Record for now.\n\nChen Ji sat back down on the stone bench, resuming his languid demeanor. What I want to know more is... what exactly did Uncle Su investigate back then? Why did he vanish on the same night as my father?\n\nHis eyes flickered slightly. Sister, you said all the clues point to my father, but do you have any solid evidence?",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_009",
+        "content": "Su Qingyao stared at the fragment materializing in Chen Ji's palm, a complex emotion flickering across her features.\n\nThe fragment emanated a faint glow, its ancient aura rushing toward her, startlingly similar to the old book in her father's study that she remembered. Her breath quickened slightly as she reached out to touch it, yet forcibly restrained herself.\n\nYou truly... possess the Tianji Record.\n\nHer voice trembled faintly. I thought it was merely a legend."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_010",
+        "character_id": "char_suqingyao",
+        "content": "Legends aren't necessarily false.\n\nSu Qingyao collected her emotions, regaining her composed appearance. I once read about it in an ancient scroll—the Tianji Record consists of nine fragments scattered throughout the world. Each page contains the power to glimpse heavenly secrets, yet also carries immense karmic burden.\n\nShe paused, her gaze turning grave. It is said... that whoever gathers all nine pages will face the gaze of the Eye of Heavenly Dao.\n\nAnd that gaze... no one has ever survived.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_011",
+        "content": "When Chen Ji heard the words \"Eye of Heavenly Dao,\" his pupils contracted slightly.\n\nThis name was not unfamiliar to him. From Mo Xiansheng's words, from the occasional flickers of information within the Tianji Record fragments, he had vaguely pieced together a terrifying outline—it was not some specific person or force, but a transcendent consciousness, a terrifying existence that viewed all seers as mere chess pieces.\n\nAnd now, Su Qingyao actually knew about this as well.\n\nAlarms blared in his heart, yet on his face he only displayed a perfectly measured look of confusion.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_012",
+        "character_id": "char_suqingyao",
+        "content": "Your father back then...\n\nSu Qingyao's voice suddenly dropped, carrying a hint of hesitation. In the testament letter left by my father, it mentioned that Chen Xuan was no ordinary cultivator. He was one of the candidates to inherit the Tianji Record from the previous generation.\n\nHer gaze fell on Chen Ji, seemingly observing his reaction. However, on the night before the inheritance ceremony, he suddenly defected and chose another path.\n\nVanishing with him was the first page of the Tianji Record.",
+        "emotion": "揭秘"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0084_choice_002",
+        "prompt": "Su Qingyao revealed shocking truths about her father, and Chen Ji must make a choice.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0084_choice_002_A",
+            "text": "Press further about the truth of the inheritance",
+            "description": "Ask Su Qingyao, what exactly is the inheritance of the Tianji Record? Why would your father become a candidate?",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reveal your ignorance about your father's past",
+            "visible_reward": "Gain more details about the inheritance",
+            "risk_hint": "May expose that you obtained the Tianji Record quite recently",
+            "process_label": "你选择继续追问传承的细节",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_002_A_001",
+                  "character_id": "char_chenji",
+                  "content": "The inheritance...\n\nChen Ji murmured these two words, his brow furrowing tightly. I never heard my father mention any such thing.\n\nHe raised his head, his gaze carrying a hint of earnestness. Could Sister Su elaborate? What exactly is the inheritance of the Tianji Record? How was my father selected?\n\nThis statement was half-truth, half-deception—he indeed had never heard his father speak of it, but what he truly wanted to know was why Mo Xiansheng had never mentioned any of this.",
+                  "emotion": "求知"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0084_choice_002_B",
+            "text": "Question the authenticity of the information",
+            "description": "Express doubt about Su Qingyao's claims and demand she prove the truth of her words.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May hurt Su Qingyao's feelings",
+            "visible_reward": "See Su Qingyao's bottom line and true intentions",
+            "risk_hint": "May escalate the conflict",
+            "process_label": "你选择质疑她的话，以试探真伪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_002_B_001",
+                  "character_id": "char_chenji",
+                  "content": "All that Sister Su mentioned...\n\nChen Ji suddenly laughed lightly, that smile carrying a sharp edge, completely different from his foolish demeanor just now. Isn't it all a bit too coincidental?\n\nHe stood up, his back to Su Qingyao, his voice calm. My father vanished over twenty years ago, yet Sister just happens to possess related information. And now, you just happen to appear before me, just happen to invite me for a secret discussion...\n\nHe turned around, his gaze sharp as a blade. Was all this coincidence, or was it arranged by someone?",
+                  "emotion": "质疑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_013",
+        "content": "Su Qingyao was stunned by his words, and then a hint of hurt flashed in her eyes.\n\nWho do you think I am?\n\nHer voice turned cold. If I truly wished you harm, why go through all this trouble? With my status, I only need to drop a hint in the sect, and someone would handle it for me.\n\nHer fingers trembled slightly, clearly wounded by Chen Ji's doubt. The reason I came here is because...\n\nShe took a deep breath, seemingly suppressing some emotion. Because I discovered that our fates have long been bound together. And I... no longer wish to wait passively."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_014",
+        "character_id": "char_suqingyao",
+        "content": "Under the moonlight, Su Qingyao's eye sockets were slightly reddened, and that layer of cold pride finally cracked.\n\nI have been investigating my father's disappearance for fifteen whole years.\n\nHer voice dropped, carrying a thread of exhaustion. Over these years, I have seen too many lies and schemes. I thought I had learned how to protect myself... but when I saw that aura within you, I suddenly felt so tired.\n\nShe raised her head, her gaze fixed directly on Chen Ji. I only wish to find someone I can fight shoulder to shoulder with. That's all.",
+        "emotion": "脆弱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_015",
+        "content": "Chen Ji gazed at this woman who had always been proud, seeing vulnerability in her for the first time.\n\nHis heart stirred slightly.\n\nAll these years, he had carried too many secrets alone, fumbling through the darkness by himself. If there could truly be someone to stand beside...\n\nBut reason told him that lowering his guard at this moment would be no different from courting destruction.\n\nHe fell silent for a moment, then slowly spoke: Sister Su, I believe what you said. But...\n\nI have one more question.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0084_choice_003",
+        "prompt": "Chen Ji decided to further test Su Qingyao's sincerity.",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0084_choice_003_A",
+            "text": "Accept her as an ally",
+            "description": "Choose to trust Su Qingyao and establish a preliminary alliance with her.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Need to bear certain risks",
+            "visible_reward": "Gain a powerful ally, unlock subsequent cooperative plot",
+            "risk_hint": "Her information may still be withheld",
+            "process_label": "你决定向前迈出一步",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_003_A_001",
+                  "character_id": "char_chenji",
+                  "content": "「Su Qingyao...」\n\nChen Ji suddenly reached out, gently covering the back of her hand.\n\nThe gesture was warm and natural, carrying a consoling nuance. His gaze softened, and his voice grew lighter: \"These years... you must have had it hard.\"\n\nSu Qingyao's body stiffened slightly, then gradually relaxed. She didn't pull her hand back, just watched him quietly.\n\n\"Since we share a common enemy...\" Chen Ji continued, \"why don't we walk this path together from today onward?\"",
+                  "emotion": "接纳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "allied_with_suqingyao"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与苏青瑶结盟",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0084_choice_003_B",
+            "text": "Maintain distance and observe",
+            "description": "Although acknowledging Su Qingyao, deciding to continue observing and not rushing into an alliance.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the opportunity for deeper cooperation",
+            "visible_reward": "Retain more initiative",
+            "risk_hint": "Su Qingyao might be disappointed",
+            "process_label": "你决定维持现状，继续观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0084_result_003_B_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji slowly withdrew his hand and stepped back.\n\n\"I understand your intentions, Su Qingyao.\" His voice was calm, betraying no emotion, \"But this matter is of great significance. Allow me some time to consider.\"\n\nSu Qingyao's gaze dimmed for a moment, then regained its composure. She nodded: \"Very well.\"\n\nShe rose, tidying her clothes, seemingly restored to her cold and proud demeanor. But Chen Ji noticed her fingers still trembling slightly.\n\n\"Whatever decision you make...\" she said, her back to him, voice low, \"I will never become your enemy.\"",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_016",
+        "character_id": "char_suqingyao",
+        "content": "「One last question.」\n\nSu Qingyao's voice suddenly turned solemn. She turned around, moonlight illuminating her face, making her expression appear especially serious.\n\n「Do you know that the Eye of Heavenly Secrets once gazed upon another person?」\n\nChen Ji's heart sank heavily.\n\n「That person...」 Su Qingyao said slowly, word by word, 「is your father, Chen Xuan.」",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_017",
+        "content": "The words struck like thunder, exploding in Chen Ji's mind.\n\nHe had always believed the Eye of Heavenly Secrets was merely a mythical existence, a terrifying tale passed down by generations of seers. But now Su Qingyao was telling him—his father had been gazed upon by that existence.\n\nWhat did this mean?\n\nThe Tianji Record Fragment suddenly trembled violently, emitting a faint glow. Chen Ji felt a sharp pain in his chest—an sensation he had never experienced before—not from the fragment, but from something deeper within.\n\nAt the same time, a blurry image flashed through his mind: in a chaotic void, a massive eye was slowly opening...",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_018",
+        "content": "「What's wrong with you?」\n\nSu Qingyao's voice pulled him back to reality. Noticing Chen Ji's unusual state, she quickly approached and reached out to support his arm.\n\n「You look terrible...」 Her brow furrowed tightly, 「Could it be because of what I said...」\n\nChen Ji took a deep breath, suppressing the turbulent waves in his heart. He managed a smile and shook his head: 「I'm fine. I just... need time to accept this.」\n\nHis gaze fell on Su Qingyao's face, while his mind raced: Where did she learn all this? His father's testament letter? Or... another source?\n\nRegardless, one thing was already certain—his father's disappearance all those years ago was far from simple on the surface. And he was gradually approaching the truth that had been buried for over twenty years.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_019",
+        "content": "The night wind brushed through the Bamboo Grove, rustling softly.\n\nSu Qingyao watched Chen Ji quietly, as if waiting for his response. Moonlight fell between them, casting a hazy play of light and shadow.\n\nAfter a long while, Chen Ji spoke, his voice low but firm: 「Su Qingyao, thank you for telling me all this.」\n\nHe raised his head, his gaze carrying a seriousness never seen before: 「Regarding the alliance... I need time to consider. But there's one thing I can promise you right now.」\n\n「From now on, no matter what happens, I won't hide anything about the Tianji Record from you.」\n\nThis was the greatest sincerity he could offer.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0084_020",
+        "character_id": "char_suqingyao",
+        "content": "Upon hearing this, a flicker of joy appeared in Su Qingyao's eyes.\n\nWhile this wasn't a formal alliance, it was already the best outcome she could hope for. She believed that someone of Chen Ji's character, having spoken such words, would certainly honor them.\n\n「Good.」\n\nShe nodded, her voice carrying a rare gentleness: 「Then I shall respond to you with the same sincerity—all that is recorded in my father's testament letter, I will tell you in full at our next meeting.」\n\nShe paused, as if hesitating over something, but ultimately spoke it out: 「There's one more thing... I had intended to tell you once our relationship grew closer, but since you've already made your stance...」\n\n「In my father's testament letter, there is a passage recording about you.」",
+        "emotion": "信任"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_021",
+        "content": "Chen Ji's heart rose again.\n\nA passage recording about him? There was actually content about him in his father's testament letter?\n\nHe had never heard his mother mention that his father left any testament letter, let alone that the Su family was preserving such things. What did this mean? How many backup plans had his father left behind in his time? And how many of these backup plans had fallen into others' hands?\n\nSu Qingyao seemed to sense his confusion, speaking gently: 「The specific content, I'll tell you at our next meeting. Tonight has revealed enough—any more might invite unnecessary trouble.」\n\nShe looked up at the sky; the moon had already slanted westward, night more than half gone.\n\n「I should go.」 She stood up, straightening her dress, 「You should return early too. Don't let anyone become suspicious.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_022",
+        "content": "Chen Ji nodded, watching Su Qingyao's figure disappear into the depths of the Bamboo Grove.\n\nHe stood alone in the stone pavilion, the night wind stirring his clothes, bringing a chill. Tonight's harvest far exceeded his expectations—not only had Su Qingyao confirmed their potential for cooperation, but she had also revealed many key pieces of information: the Tianji Record had nine fragments, his father had once been a candidate for inheritance, had been gazed upon by the Eye of Heavenly Secrets, and there was that mysterious testament letter.\n\nBut at the same time, his doubts had not been completely eliminated.\n\nSu Qingyao's words contained both truth and falsehood. What had she deliberately avoided? Were those 'perfectly timed' confessions genuine sincerity, or meticulously designed performance?\n\nAnd what chilled him most was that fleeting image—the massive eye slowly opening.\n\nHe knew that he had been noticed by something far more terrifying.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0084_023",
+        "content": "Just as he was about to leave, a cold and eerie voice suddenly rang out in his mind—\n\n『She speaks the truth.』\n\nIt was Mo Xiansheng's voice.\n\n『Your father was indeed gazed upon by the Eye of Heavenly Secrets. And that existence... has never truly departed.』\n\nChen Ji's footsteps froze.\n\n『Be careful of everyone around you.』 Mo Xiansheng's voice grew weaker and weaker, 『Including those you think you can trust...』\n\nBefore the words finished, they dissipated completely into the void.\n\nChen Ji stood there, motionless for a long time. The night wind swept across his face, bringing a bone-deep chill. He raised his head, gazing at the crescent moon half-obscured by dark clouds, an unprecedented sense of crisis surging in his heart.\n\nThis night, sleep was destined to be impossible.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

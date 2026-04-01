@@ -1,0 +1,427 @@
+{
+  "id": "天机录_ch0338",
+  "book_id": "天机录",
+  "number": 338,
+  "title": "\"Outsmarting the Illusionary Formation\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"On that map fragment, the marking for the seventh level was赫然 connected to a name buried by time——Chen Xuan, the creator of the Tianji Record,竟然有如此直接的关联 with this secret realm.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0338_001",
+        "content": "\"The幽蓝的光雾 surged like a tide, engulfing all three. Chen Ji felt his眼前一花, and his body had already stepped into another realm. All around was endless white fog,看不见天,看不见地,只有脚下蜿蜒的石径通向未知深处. The air carried a faint sandalwood scent, refreshing yet causing莫名的警觉.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_002",
+        "character_id": "char_suqingyao",
+        "content": "\"This is the first layer of the illusionary formation——Spirit Heart Trial.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_003",
+        "content": "\"Su Qingyao scanned her surroundings, her fingertips凝聚出一缕灵力 probing forward, only to vanish like a mud ox entering the sea, stirring层层涟漪后消失无踪. She frowned slightly, whispering: 'This formation uses the spirit heart as its medium;强行破阵只会触发更危险的机关. We must find the formation's eye,破力为巧.' With that, she glanced at Chen Ji, her gaze带着几分审视, 'Chen Shidi, what's your view?'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_004",
+        "character_id": "char_chenian",
+        "content": "\"Wait, this阵纹's trend...\"",
+        "emotion": "专注"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_005",
+        "content": "\"Chen Nian suddenly knelt down, her fingertips lightly touching the stone path beneath. A faint glow spread from her fingers, sketching an intricate阵纹图案 on the blue stone slabs. The pattern flowed like water, yet戛然而止 at some point, revealing一丝不协调的僵硬. 'Here, the阵纹在此处断裂, must have been added later.' She looked up at Chen Ji, her eyes sparkling with兴奋的光芒, 'Brother, this formation has been tampered with!'\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_006",
+        "content": "\"Chen Ji's heart stirred. The aura of the Tianji Record grew clearer in his perception, that呼唤仿佛就在咫尺之遥, yet隔着一层看不见的屏障. He remained composed, his consciousness probing deeply; within his Mental Sea, the fragment glowed faintly, revealing a blurry scene——three stone tablets hidden within the fog, respectively inscribed with the characters '智', '力', and '合'. Behind each tablet lay a path; only the path behind the '智' tablet led to the true formation eye.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_007",
+        "content": "\"The three stone tablets loomed faintly in the mist. The '智' tablet, ancient and sturdy, its body covered with tadpole-like符文; the '力' tablet, bold and domineering, its surface cracks revealing traces of煞气; the '合' tablet appeared most ordinary, yet emanating a soft glow. The illusionary formation's trial was thus straightforward——选择即命运.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0338_choice001",
+        "prompt": "\"Three stone tablets stood before them, the formation's trial descended. Take the path of wisdom to break force with skill, trust brute strength to overwhelm the formation, or let the team each display their strengths?\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "智取",
+            "text": "\"Break the Formation with Wisdom\"",
+            "description": "\"Utilize the Tianji Record to see through the illusion's true nature, locate the formation's true eye, and破局 with cleverness. Lowest risk, but requires消耗Heavenly Fate Value 5 points.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Heavenly Fate Value -5\"",
+            "visible_reward": "\"Perfectly broke the illusionary formation, obtained the map fragment, zero casualties among teammates\"",
+            "risk_hint": "\"Consumed precious Heavenly Fate Value\"",
+            "process_label": "探查阵纹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_智取_001",
+                  "content": "\"Chen Ji closed his eyes, his consciousness沉入识海深处. The符文 on the fragment writhed like living things; a pure divine sense probed into the formation beneath his feet. In an instant, he 'saw' it——the formation's meridians spread like a spider's web, and at the center, a fist-sized point of light pulsed slowly; that was the formation eye.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0338_result_智取_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Brother, I understand! The阵纹 has a turning at the third breath——shift right three cun, yes, right there!\"",
+                  "emotion": "兴奋"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "幻阵_智破"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "强破",
+            "text": "\"Forcefully Break the Formation\"",
+            "description": "\"Overwhelm the illusionary formation with absolute strength; the risk of triggering the formation's counter-thrust is extremely high, but if successful, it can intimidate teammates and showcase absolute strength.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"May trigger机关 traps\"",
+            "visible_reward": "\"Intimidated the entire group; teammates looked on with admiration\"",
+            "risk_hint": "\"High risk: may trigger mechanisms within the formation, causing casualties to one's own side\"",
+            "process_label": "蛮力碾压",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_强破_001",
+                  "content": "\"Su Qingyao's眉心 twitched; she stepped in front of Chen Ji, her fair hand raised to凝聚灵力. 'Don't!' Chen Nian urgently cried, 'This formation's counterattack mechanism is extremely peculiar; forcefully breaking it will cause——' Before she finished, the stone tablet quaked thunderously, and a凌厉的剑气 burst forth from the '力' tablet!\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "幻阵_强破触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "团队配合",
+            "text": "\"Teamwork\"",
+            "description": "\"Exploit each person's strengths: Su Qingyao distracts frontally, Chen Nian analyzes the阵纹, Chen Ji finds the破绽. Three work together, steady and methodical.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Takes longer time\"",
+            "visible_reward": "\"Team chemistry improved; all three gained something\"",
+            "risk_hint": "\"Slow progress, but zero risk\"",
+            "process_label": "分工协作",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 4
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_团队配合_001",
+                  "content": "\"Su Qingyao nodded, her fingertips凝聚三道灵剑虚影, each射向 a tablet's base. Chen Nian closed her eyes, sensing the flow patterns of the阵纹, sometimes gesturing on the ground, sometimes shaking her head in denial. Chen Ji stood still, seemingly idle, yet secretly guiding the two's coordination rhythm with the aura of the Tianji Record.\"",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0338_result_团队配合_002",
+                  "character_id": "char_suqingyao",
+                  "content": "\"So that's it——the three tablets are mutually supporting; the key to breaking it isn't strength, but finding their point of resonance!\"",
+                  "emotion": "恍然大悟"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "幻阵_团队配合"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_008",
+        "content": "\"The illusionary formation shuddered to life, the white fog receded like an ebbing tide, revealing the formation's heart. An ancient stone platform stood before them, upon which lay a幽光闪烁的玉简 and a灵药 of pure crystal. Su Qingyao, quick-eyed and deft, swept the灵药 into her embrace——that was the rare '凝神露', having miraculous effect on breaking through bottlenecks.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_009",
+        "character_id": "char_suqingyao",
+        "content": "\"This株凝神露 is worth at least three thousand spirit stones; Chen Shidi is quite generous.\"",
+        "emotion": "意外"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_010",
+        "content": "\"Chen Ji made no answer, walking straight to the stone platform. His gaze fell upon that玉简; he reached for it, probing with divine sense——a残破的地图 unfolded slowly within his Mental Sea. The secret realm was divided into nine levels, and they were currently only at the first. What made Chen Ji's heart race faster was that marking at the map's end: Level Seven, unmistakably inscribed with the character '陈'.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_011",
+        "content": "\"Chen Nian leaned in for a look; her small face immediately changed color. 'Brother, this '陈' character... resembles our family crest.' Her voice trembled slightly, 'Could this secret realm be related to the year we disappeared?' Chen Ji offered no reply. His fingers unconsciously摩挲 the玉简's edge, his heart surging with惊涛骇浪. Chen Xuan, creator of the Tianji Record——this name echoed ceaselessly in his mind, gradually overlapping with his father's fragments of words before his disappearance.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0338_choice002",
+        "prompt": "\"The map revealed shocking truth, yet that呼唤 continued echoing within the depths of his Mental Sea. How to proceed?\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "立即探索",
+            "text": "\"Strike While the Iron is Hot, Head Directly to Level Seven\"",
+            "description": "\"The clue is right before our eyes; cannot be missed. Immediately lead the team deeper into the secret realm, pursuing the clues left by Chen Xuan.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Insufficient preparation; may encounter unknown dangers\"",
+            "visible_reward": "\"First to接触 core secrets\"",
+            "risk_hint": "\"There may be mechanisms or guardians beyond current strength ahead\"",
+            "process_label": "深入秘境",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -2
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_立即探索_001",
+                  "content": "\"Su Qingyao grabbed Chen Ji's sleeve, her expression rare solemnity. 'Chen Shidi, do you know what you're saying? We almost栽跟头 on the first level's illusion; Level Seven...' She took a deep breath, 'With our current strength, going there would be seeking death.'\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_直取第七层"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "稳扎稳打",
+            "text": "\"Steady Progress, Advance Level by Level\"",
+            "description": "\"Methodically clear mechanisms on each level; on one hand, continue plunder resources to strengthen the team; on the other, gain deeper understanding of the secret realm.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Takes longer time\"",
+            "visible_reward": "\"Team strength steadily improves, accumulating power for final exploration\"",
+            "risk_hint": "\"May suffer long nights and many dreams, other forces may beat us to it\"",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "财富",
+                "delta": 1500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0338_result_稳扎稳打_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"That's more like it.\"",
+                  "emotion": "赞许"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0338_result_稳扎稳打_002",
+                  "content": "\"A flash of赞许 flickered in Su Qingyao's eyes. Chen Ji's composure reassured her somewhat——this shidi, though seemingly废物, was actually terrifyingly meticulous. She produced a玉瓶,倒出一粒丹药 and handed it to Chen Nian: 'This is 培元丹; in the coming days you'll explore with us;研读 that formation thoroughly on the road.'\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "选择_稳扎稳打"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_012",
+        "content": "\"As the group debated, the fragment within Chen Ji's Mental Sea quaked once more. That呼唤 became unprecedentedly clear, as if an invisible hand passed through层层阵纹, gently knocking on his soul. 'Come... come...' The aged, exhausted voice echoed in the depths of consciousness, 'I have waited for you... for so long...'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0338_013",
+        "character_id": "char_moxiansheng",
+        "content": "\"Mo Xiansheng's voice suddenly rang out, carrying a rare gravity: 'Boy, that's not an illusion. It's the remnant will left by the Tianji Record's previous master, deep within Level Seven. He... is waiting for you.'\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_014",
+        "content": "\"Chen Ji's pupils contracted sharply. Previous master? Then doesn't that remnant will have direct connection with Chen Xuan himself? His breath hastened; images of his father on his deathbed flashed through his mind——'Ji'er, remember, the Tianji Record will choose its master... when it fully awakens, all truths will be revealed...' The truth lies within Level Seven.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_015",
+        "content": "\"Chen Nian sensed her brother's unease, reaching out to grasp his palm. The girl's palm was slightly cool, yet conveyed silent support. 'Brother, whatever lies ahead, I'm with you.' She softly said, her eyes gleaming with坚定的光芒. Su Qingyao watched the siblings beside them, an inexplicable emotion welling up within her——this废物 shidi, exactly how many secrets is he hiding?\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_016",
+        "content": "\"Chen Ji took a deep breath, suppressing the turmoil within. He raised his head toward the depths of the secret realm; there, white fog stretched endlessly, seemingly ordinary, yet as if hiding a beast休眠万年. Level Seven, Chen Xuan's ruins, the Tianji Record's secrets——all clues pointed to the same direction. He turned to his two companions, a meaningful curve forming at the corner of his mouth. 'Since we've come, we must go all the way to make it worthwhile.' He paused, a flash of精光 in his eyes, 'But, one must eat a meal bite by bite, walk a road step by step. First, plunder the resources of the earlier levels clean, then we'll go meet this 'old friend'.'\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_017",
+        "content": "\"Su Qingyao couldn't help but laugh lightly: 'What a phrase 'meet the old friend'; Chen Shidi has quite the spirit.' She set aside the solemnity of moments ago, her brows carrying more playfulness, 'Fine, let's see how many jin you have inside that废物 shell.' Chen Nian covered her mouth,偷笑, yet immediately pretended to have heard nothing upon catching the glance her brother threw her way. The three's figures gradually faded into the entrance of Level Two; amidst laughter, a greater adventure quietly commenced.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_018",
+        "content": "\"The moment the three stepped into Level Two, in the distant clouds, a凌厉的目光 pierced through层层 barriers, falling directly onto Chen Ji's back. That gaze carried审视,算计, and a hint of不易察觉的杀意. Ling Yuan's silhouette was faint and hidden above the clouds; he gazed at the direction Chen Ji departed, a阴冷的弧度 curling at the corner of his mouth. 'Interesting... the Tianji Record's new master, truly not simple.' He murmured to himself, his voice scattered by the wind, 'However, the more splendid the game, the more interesting the ending.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0338_019",
+        "content": "\"And on that泛黄的 map fragment, the marking for Level Seven was赫然 connected to a name buried by time——'禁区·陈'. Chen Xuan, the creator of the Tianji Record, a name that had been deliberately erased from the history of the cultivation world, now reemerged in such a manner. Chen Ji's steps paused for an instant, then he stepped into the next level's maze as usual. What he didn't know was that a pair of unseen eyes was piercing through time and space, quietly watching his every step. The chess game of destiny was already laid out, and he——is he a piece, or the Chess Player?\"",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch1151",
+  "book_id": "天机录",
+  "number": 1151,
+  "title": "Night of Oath",
+  "is_paid": true,
+  "next_chapter_hook": "Su Qingyao took up her brush and wrote, the ink seeping into the River of Fate, line after line of oaths transforming into golden inscriptions suspended between heaven and earth—and just as she finished writing the last name, an old yet relieved sigh echoed from deep within the Tianji Record.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1151_001",
+        "content": "Tianqing Sect Back Mountain, the night as dark as ink. Everyone sat around the hastily constructed oath altar, the bonfire casting flickering shadows across each face. The final page of the incomplete Tianji Record in Chen Ji's hands glowed with a faint blue light, like a beast that had been dormant for ages finally opening one eye. Mo Xiansheng's remnant soul spoke solemnly in his Mental Sea: 'The time has come. When the fragments resonate, all oaths will be inscribed into causality by fate—have you made your decision?'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_002",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing rose first, the aura of a Demonic Path Saintess blooming like an ink lotus in the night. She walked slowly to the center of the oath altar, her voice cold yet carrying unprecedented solemnity: 'I, Ye Qing, swear by the name of Demonic Path Observer—hereafter, regardless of Chen Ji's victory, defeat, life or death, I shall record every choice he makes with the third eye. These records shall become... testimony to break the Heavenly Way.'",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_003",
+        "content": "Demonic Path mist swirled around Ye Qing, transforming into countless tiny lights scattering in all directions—the authority of a Heavenly Way Observer. She had completely bound her fate to Chen Ji's trajectory. Ling Yuan squinted; for the first time, the old fox felt a genuine respect for Ye Qing. Han Lie snorted, yet surprisingly did not mock her."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_004",
+        "character_id": "char_chenji",
+        "content": "Chen Ji stood and walked to Ye Qing. He said nothing of gratitude, simply extending his hand to gently touch her palm. That was the resonance point of the Tianji Record Fragment—an unspoken promise.",
+        "emotion": "内敛"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_005",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan's withered fingers tapped the stone table, producing crisp sounds. This old man abandoned by the Tianji Record suddenly laughed, his laughter hollow yet profound: 'This old one has waited three hundred years for this day... Chen Ji, I admit choosing you was a mistake—but now it seems this mistake might create an outcome more magnificent than correctness.'",
+        "emotion": "释然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_006",
+        "character_id": "char_hanlie",
+        "content": "Han Lie abruptly rose, the momentum of Xuanwu Sect's premier genius exploding like a volcano: 'Old thing, what do you mean?' Yet Ling Yuan simply glanced at him calmly: 'I mean, this battle, I support Chen Ji. Han Lie, our old grudge can be settled after the battle—but tonight, I choose to believe in this waste.'",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_007",
+        "content": "Han Lie's eyes blazed with fury, his fists creaking as they clenched. For three years, he had been suppressed by Chen Ji for three entire years. Every time he thought victory was within reach, this waste would always turn the tables with despicable methods. However, at this moment, facing Ling Yuan's world-weary eyes, he suddenly realized—if he continued to cling to personal grievances tonight, on tomorrow's battlefield, he would lose his only chance to possibly defeat Chen Ji."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_008",
+        "prompt": "Your rival has rarely reached a consensus. How will you respond to this weighty trust?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "yeqing_sworn",
+            "text": "Accept with composure",
+            "description": "'Very well, after tonight, old scores are cleared.' One sentence, neither humble nor arrogant, returning the choice to the other.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "None",
+            "visible_reward": "Ling Yuan, Han Lie Trust +10",
+            "risk_hint": "Your composure will make Ling Yuan think more highly of you, but Han Lie may think you're being evasive.",
+            "process_label": "陈机接受了这份信任",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_sworn_001",
+                  "character_id": "char_lingyuan",
+                  "content": "Ling Yuan nodded, a complex light flickering in his withered eyes: 'You're steadier than this old one imagined... Very well, this old one's three-hundred-year obsession ends tonight.'",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊放下执念"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "yeqing_challenge",
+            "text": "Provoke and test",
+            "description": "'Han Lie, are you certain you're not choosing cooperation out of fear?' Your本性嘴毒的本性暴露无遗 was fully exposed.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May provoke Han Lie",
+            "visible_reward": "Arouses Han Lie's fighting spirit; can gain his full cooperation in battle",
+            "risk_hint": "Han Lie's性格暴躁; may fly into a rage on the spot.",
+            "process_label": "陈机用激将法试探韩烈",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_challenge_001",
+                  "character_id": "char_hanlie",
+                  "content": "Han Lie suddenly burst into laughter, the sound shaking the bonfire violently: 'Good! Chen Ji, you really haven't changed—that filthy mouth of yours! Fine, I'll put it plainly today—tomorrow's battle, I'll block three moves for you!'",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈立下军令状"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "yeqing_secret",
+            "text": "Reveal the truth",
+            "description": "'Ling Yuan elder, the Tianji Record chose me because it needs a blade that can destroy itself.' Reveal part of the truth to exchange for deeper trust.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Expose weakness",
+            "visible_reward": "Ling Yuan will share all his insights from three hundred years of cultivation",
+            "risk_hint": "Exposing the fatal flaw of the Tianji Record may trigger a chain reaction.",
+            "process_label": "陈机揭示天机录真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_secret_001",
+                  "character_id": "char_lingyuan",
+                  "content": "Ling Yuan shuddered, and suddenly brilliant light burst from his murky old eyes: \"A self-destructive blade... so that's how it is! Chen Ji, this old man understands now! Rest assured, in tomorrow's battle, this old man will give you everything he has!\"",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊传授绝学"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_009",
+        "content": "The campfire crackled as everyone's gaze gathered on Chen Ji. Mo Xiansheng's remnant soul whispered in the Mental Sea: \"The last page of the Tianji Record is waiting... All oaths will be recorded as anchors to rewrite karma. Have you decided what form your life-and-death pact will take?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_010",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's voice suddenlyOverflowed from Chen Ji's Mental Sea, echoing across the entire oath altar: \"Everyone, the last page of the Tianji Record can record three oaths—the first, the Heavenly Fate Oath, using one's own fortune as collateral; the second, the Bloodline Oath, using bloodline inheritance as pledge; the third, the Reincarnation Oath, using future lifetimes as covenant. Different oaths carry different weights and different powers.\"",
+        "emotion": "苍老"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_011",
+        "prompt": "For the life-and-death pact, which oath form do you choose?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianming_oath",
+            "text": "Heavenly Fate Oath",
+            "description": "Using one's own fortune as collateral—if the oath breaks, fortune scatters—this is the heaviest oath.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "If defeated, fortune returns to zero",
+            "visible_reward": "The oath's power is strongest, capable of shaking heavenly principles and laws of cause and effect",
+            "risk_hint": "Once failed, you will never翻身.",
+            "process_label": "陈机选择天命之誓",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1151_result_tianming_oath_001",
+                  "content": "The last page of the Tianji Record suddenly blazed with dazzling golden light, its radiance making everyone turn away. Ling Yuan murmured: \"Heavenly Fate Oath... has this youth gone mad?\" Han Lie, however, fell into rare silence—for the first time, he realized that what this废物 was gambling was heavier than all his pride combined."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命之誓成立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "xuanyu_oath",
+            "text": "Reincarnation Oath",
+            "description": "Using future lifetimes as covenant—if the oath shatters, future lives will fall into eternal reincarnation—this is the most resolute oath.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Future destiny is locked",
+            "visible_reward": "All allies are bound生死with you—even death will cause reunion in reincarnation",
+            "risk_hint": "Future destiny will forever entangle with these people.",
+            "process_label": "陈机选择轮回之誓",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1151_result_xuanyu_oath_001",
+                  "content": "The last page of the Tianji Record revealed dark inscriptions—that was the mark of reincarnation law. Ye Qing suddenly felt her heart warm—her thread of destiny was intertwined with Chen Ji's, never to be separated. Han Lie murmured: \"This guy... is he serious?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轮回之誓成立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_012",
+        "character_id": "char_chenji",
+        "content": "Chen Ji took a deep breath, his voice calm yet carrying undeniable resolve: \"Tonight I swear here—when the three realms are reborn, we shall gather at this very place at this very moment. If we violate this oath...\" He paused, his gaze sweeping over each person, \"Heavenly fate shatters, reincarnation never ceases.\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_013",
+        "content": "As his words fell, the last page of the Tianji Record burst open, golden and dark blue intertwined light shooting skyward, forming a massive oath totem in the night sky. On each person emerged patterns connected to the oath—those were marks etched by destiny. Ling Yuan closed his eyes, feeling that执着 spanning three hundred years finally had a place to rest."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_014",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing walked slowly to Chen Ji's side, her voice soft yet firm: \"I, Ye Qing, from this day forward serve Chen Ji—not because of prophecy, not because of transaction, but because...\" She paused, \"You are the first to make me believe that changing destiny is worth risking everything.\"",
+        "emotion": "动容"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_015",
+        "character_id": "char_hanlie",
+        "content": "Han Lie laughed wildly toward the sky, his laughter carrying three parts madness and seven parts exhilaration: \"Good! Good one,废物! This老子fought for three years, lost for three years—tonight is when I truly submit to you! Chen Ji, tomorrow's battle—if you die in battle, I'll collect your body; if you don't die, I'll acknowledge you as my big brother!\"",
+        "emotion": "狂放"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_016",
+        "content": "At this moment, the campfire seemed to gain sentience, flames soaring skyward, inscribing everyone's oath upon the night sky. Mo Xiansheng's voice came from the depths of the Mental Sea, carrying a rare warmth: \"Well done... After this night, regardless of the outcome, your fates will all be rewritten.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_017",
+        "prompt": "The oath is established. While everyone is intoxicated by this moment, you choose...",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "speak_chenian",
+            "text": "Mentioning Chen Nian",
+            "description": "「There is one more person... my sister Chen Nian. If I cannot return, I hope you can find her for me.」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Exposing the Weakness",
+            "visible_reward": "Ye Qing and Ling Yuan will regard finding Chen Nian as their own duty",
+            "risk_hint": "Everyone will know that Chen Nian is your greatest weakness.",
+            "process_label": "陈机提及妹妹陈念",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_speak_chenian_001",
+                  "character_id": "char_lingyuan",
+                  "content": "Ling Yuan narrowed his eyes slightly, recalling the little girl who was taken away all those years ago: 'Chen Nian... the Heavenly Fate Lock Key, the work of the Holy Sect. Chen Ji, rest assured, if you fall in battle, I will personally go to the Holy Sect and bring her out.'",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "众人知晓陈念存在"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "silent_witness",
+            "text": "Silent Gaze",
+            "description": "Without saying anything, he quietly gazed at each face illuminated by the campfire—this silence itself was the answer.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "None",
+            "visible_reward": "Mo Xiansheng will additionally unseal a page of knowledge from the Tianji Record",
+            "risk_hint": "Missing the opportunity to let others gain a deeper understanding of you.",
+            "process_label": "陈机选择沉默注视",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_silent_witness_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Mo Xiansheng's voice resonated in the Mental Sea, carrying a hint of approval: 'Good, not speaking is better than speaking... Remember every face tonight, they will be the key to breaking the Heavenly Dao.' Deep within the Mental Sea, a page of long-sealed knowledge slowly unfolded.",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录知识解封"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_018",
+        "character_id": "char_suqingyao",
+        "content": "Just as the echoes of the oath lingered, a cold voice emerged from the shadows: 'What a pleasant gathering, everyone.' Su Qingyao stepped out slowly, holding a pure white jade pen in her hand—the treasure of the Fate Writer. Her gaze swept across the crowd, finally settling on Chen Ji: 'A life-and-death pact... I, Su Qingyao, wish to add my own stroke.'",
+        "emotion": "清冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_019",
+        "content": "The jade pen of the Fate Writer hovered mid-air as Su Qingyao silently chanted incantations. Golden inscriptions flowed from the pen's tip, suspended between heaven and earth. Each name transformed into an anchor point, driven into the river of karma. Chen Ji gazed at those names—Ye Qing, Ling Yuan, Han Lie, Su Qingyao... and himself. The light from the Tianji Record's final page resonated in response, and the oath totem completely took form."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_020",
+        "content": "「This night, I have recorded oaths sufficient to rewrite destiny.」Su Qingyao sheathed her jade pen, her cold eyes revealing a hint of warmth. 「Tomorrow's decisive battle, I will use the pen of destiny to open the way for you—Chen Ji, you must survive, otherwise these oaths will become your greatest shackles.」With these words, she turned and departed, her silhouette vanishing into the night. In the night wind, the bonfire gradually extinguished, yet those golden inscriptions still hung high in the heavens, eternally twinkling like stars."
+      }
+    }
+  ]
+}

@@ -44,12 +44,12 @@ struct SoloRootView: View {
                         Image(systemName: "exclamationmark.triangle.fill")
                             .font(.system(size: 32))
                             .foregroundStyle(SoloTheme.crimson)
-                        Text("故事装载失败")
+                        Text(SoloLocalization.localized("故事装载失败"))
                             .font(.title2.weight(.semibold))
                         Text(message)
                             .foregroundStyle(SoloTheme.muted)
                             .multilineTextAlignment(.center)
-                        Button("重新装载") {
+                        Button(SoloLocalization.localized("重新装载")) {
                             Task { await storyStore.reload() }
                         }
                         .buttonStyle(.borderedProminent)
@@ -65,7 +65,8 @@ struct SoloRootView: View {
                         readingRoute: currentReadingRoute,
                         openDossier: { coordinator.open(.dossier) },
                         openRouteMap: { coordinator.open(.routeMap) },
-                        openSettings: { coordinator.open(.settings) }
+                        openSettings: { coordinator.open(.settings) },
+                        openChapterBrowser: { coordinator.open(.chapterBrowser) }
                     )
                     .transition(.opacity)
                 } else {
@@ -144,6 +145,13 @@ struct SoloRootView: View {
                     readingView(for: book, chapterId: chapterId)
                 }
 
+            case .chapterBrowser:
+                SoloChapterBrowserView(
+                    chapters: storyStore.chapters,
+                    volumeStore: volumeStore,
+                    currentChapterId: storyStore.resumeChapterId(progress: progress)
+                )
+
             case .dossier:
                 let currentStats = storyStore.currentStats(progress: progress)
                 let currentRelationships = storyStore.currentRelationships(progress: progress)
@@ -187,12 +195,11 @@ struct SoloRootView: View {
             case .darklineBoard:
                 SoloDarklineBoardView(
                     book: book,
-                    snapshot: storyStore.darklineBoardSnapshot(progress: progress),
-                    destinyStatus: storyStore.routeMapSnapshot(progress: progress).destinyStatus
+                    snapshot: storyStore.darklineBoardSnapshot(progress: progress)
                 )
 
             case .settings:
-                SoloSettingsView(book: book)
+                SoloSettingsView(book: book, volumeStore: volumeStore)
             }
         } else {
             EmptyView()

@@ -1,0 +1,844 @@
+{
+  "id": "天机录_ch0440",
+  "book_id": "天机录",
+  "number": 440,
+  "title": "Beginning of the Counterattack",
+  "is_paid": true,
+  "next_chapter_hook": "At the very moment the verification was about to begin, that eerie violet light finally fell upon the Council Hall—the messenger of the Holy Sect of the Demonic Path had arrived.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0440_01",
+        "content": "When that streak of violet light tore across the horizon, Chen Ji's heart sank sharply. Yet his expression remained unmoved, even the corner of his lips curving into an amused arc—Saint Zong's movements were faster than he had anticipated, which meant the variables on the chessboard were accelerating.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_02",
+        "content": "However, this farce before him should also come to an end. Chen Ji withdrew his gaze, looking toward the swaggering informant in the hall—Chen Hong, the Outer Disciple Administrator, a contemptible lackey dependent on Han Lie.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_03",
+        "character_id": "char_hanlie",
+        "content": "Scum! The evidence is conclusive—how do you plead? If we do not expel you from the sect today, the rules of Tianqing Sect become a laughingstock!",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_04",
+        "content": "Chen Ji watched Chen Hong's performance in silence, a cold smile forming in his heart. Chen Hong had accused him of colluding with the Demonic Path and stealing cultivation techniques, speaking with such confidence that he had even prepared three copies of 'witness testimony'—such petty tricks required no invocation of the Tianji Record; Chen Ji could already see through seven tenths of it.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_05",
+        "content": "What truly caught his attention was the faint violet glow hidden in Chen Hong's sleeve—that was the Demonic Path's unique spiritual rune disguise technique, identical to the transmission talisman in the sky moments ago. It seemed Saint Zong's reach extended far further than he had imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_06",
+        "character_id": "char_chenji",
+        "content": "Elder Chen, you repeatedly claim the evidence is conclusive—would you kindly present it before all the elders present for everyone to examine?",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_07",
+        "content": "The moment these words fell, the hall fell silent. Everyone knew that according to sect rules, accusations against disciples required public presentation of evidence, and judgment could only be passed after verification. Chen Ji's question struck precisely at Chen Hong's weakness—could his so-called 'evidence' withstand scrutiny?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_08",
+        "character_id": "char_lingyuan",
+        "content": "Elder Chen, since you speak with such certainty, present the evidence. The elders and I shall judge fairly.",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_09",
+        "content": "Chen Hong's expression shifted, his hand unconsciously clenching tighter inside his sleeve. He darted a glance at Han Lie, only to find the latter's brow slightly furrowed—evidently even Han Lie had not expected this 'waste' to dare actively request verification.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0440_choice_01",
+        "prompt": "Chen Ji pressed the advantage, and at the moment everyone's attention was focused, he delivered the crucial strike—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_direct_challenge",
+            "text": "Directly Expose the Fabricated Evidence",
+            "description": "Publicly Point Out the Flaws in Chen Hong's Evidence, Leaving Him No Room for Denial.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose Part of the Hidden Card",
+            "visible_reward": "Chen Hong Left Speechless on the Spot",
+            "risk_hint": "If the Opposing Side Has a Backup Plan, May Fall Into a Passive Situation",
+            "process_label": "以其人之道还治其人之身",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_direct_01",
+                  "content": "Chen Ji strode forward slowly, his gaze sweeping over the Jade Slip in Chen Hong's hand, a meaningful smile curling at his lips.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_direct_02",
+                  "character_id": "char_chenji",
+                  "content": "Elder Chen, the date recorded on this 'testimony' of yours—March fifteenth, correct? What a coincidence, that day I was copying cultivation techniques in the Scripture Repository, and the access records from the Administrator's Hall can verify this. I wonder where Elder Chen found these so-called 'eyewitnesses'?",
+                  "emotion": "冷笑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_direct_03",
+                  "content": "Chen Hong's face paled abruptly, the Jade Slip in his hand nearly slipping to the ground. The elders in the hall began whispering among themselves, their gazes now carrying a scrutinizing edge.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "revealed_time_contradiction"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_call_witness",
+            "text": "Summon the Key Witness",
+            "description": "Bring Forth the Outer Disciple Who Witnessed the Truth in the Secret Realm to Testify, Using Their Spear Against Their Shield.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Prematurely Expose the Cards in Hand",
+            "visible_reward": "All Physical and Human Evidence Present, the Informant Has No Room for Excuses",
+            "risk_hint": "The Witness May Be Eliminated or Threatened by the Opposing Side",
+            "process_label": "以其人之矛攻彼之盾",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_witness_01",
+                  "content": "Rather than rushing to expose the flaws, Chen Ji surveyed the surroundings, his voice clear and resonant.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_witness_02",
+                  "character_id": "char_chenji",
+                  "content": "Since this is a public adjudication, the truth must be brought to light. This disciple dares to request the elders' permission to summon Outer Disciple Zhang Xiaoliu to testify—he witnessed the events of March fifteenth with his own eyes, and knows precisely who these 'witnesses' of Elder Chen's really are.",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_witness_03",
+                  "content": "Upon these words, Chen Hong's expression froze completely. In the crowd behind, a figure slipped away quietly—that was Han Lie's confidant, attempting to send a message.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "summoned_witness"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_imply_cover",
+            "text": "Imply Someone Else Is Behind It",
+            "description": "Do Not Reveal Specific Evidence, But Hint That Chen Hong Is Merely a Pawn Being Used, Stopping at the Appropriate Point.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "The Enemy May Become Alerted",
+            "visible_reward": "Make Han Lie More Wary",
+            "risk_hint": "May Reveal One's Own Intentions",
+            "process_label": "敲山震虎",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_cover_01",
+                  "content": "Chen Ji unhurriedly took two steps, his gaze meaningfully sweeping from Chen Hong to Han Lie.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_cover_02",
+                  "character_id": "char_chenji",
+                  "content": "Elder Chen, the spiritual runes at your sleeve are quite exquisite. I wonder which 'expert' instructed you? That favor weighs far heavier than framing a waste like me.",
+                  "emotion": "玩味"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_cover_03",
+                  "content": "Upon saying this, Chen Hong instinctively covered his sleeve, and Han Lie's expression shifted dramatically. Everyone present knew that Demonic Path spiritual runes excelled at disguise—Chen Ji's words had effectively turned the charge of colluding with the Demonic Path right back around.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hinted_demon_cult"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_10",
+        "content": "Sweat beaded on Chen Hong's forehead—he had never imagined this waste would be so difficult to deal with. In his panic, he blurted out—",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_11",
+        "character_id": "char_hanlie",
+        "content": "How dare you! Chen Ji, do not try to deflect the topic! What does it matter where the witness is? Today we discuss only your crime of treason—do not attempt to confuse the matter!",
+        "emotion": "急切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_12",
+        "content": "Before the words even finished echoing, a low murmur had already risen throughout the hall. Han Lie had spoken far too hastily—rushing to prevent the witness from appearing, wasn't that essentially admitting guilt?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_13",
+        "character_id": "char_chenji",
+        "content": "Oh? Why must Brother Han be so agitated? Whether there is a witness or not can be easily verified. Could it be that Brother Han is also involved, afraid of being implicated?",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_14",
+        "content": "These words landed like a slap across Han Lie's face, leaving his expression ashen. He, the number one prodigy of Xuanwu Sect, when had he ever suffered such humiliation? Yet he could not respond to this—for the more he explained, the more it appeared he was covering something up.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0440_choice_02",
+        "prompt": "Han Lie was left speechless, and Chen Hong's face had turned ashen as death. Just then, the old Sect Master Ling Yuan slowly spoke—",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choice_lingyuan_judge",
+            "text": "Seize the Opportunity to Request the Old Sect Master to Preside",
+            "description": "Since Ling Yuan Has Spoken, Go With the Flow and Request Him to Preside Over the Verification, Using His Authority to Apply Pressure.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Owe Ling Yuan a Favor",
+            "visible_reward": "Ling Yuan Forced to Take a Stance, Cannot Show Favoritism",
+            "risk_hint": "Ling Yuan May Have Other Designs",
+            "process_label": "以势压人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_lingyuan_01",
+                  "content": "Ling Yuan stroked his beard in contemplation, his gaze shifting back and forth between Chen Ji and Chen Hong, his expression unfathomable.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_lingyuan_02",
+                  "character_id": "char_lingyuan",
+                  "content": "Since there is a dispute, verification must be conducted. Chen Hong, present your evidence; Chen Ji, bring forth the witness you mentioned. This old man will preside personally and will show no favoritism to anyone.",
+                  "emotion": "威严"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_lingyuan_03",
+                  "content": "Chen Ji inwardly scoffed. Ling Yuan's words appeared fair on the surface, but in truth they were merely buying time—yet he had anticipated this move. Outer Disciple Zhang Xiaoliu should already be waiting outside the Council Hall.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "lingyuan_becomes_judge"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_force_immediate",
+            "text": "Force the Opposing Side Into Direct Confrontation",
+            "description": "Give Chen Hong No Breathing Room, Directly Demand a Public Confrontation, Leaving the Opponent No Room for Denial.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Create Deeper Enemies",
+            "visible_reward": "Chen Hong Collapses on the Spot",
+            "risk_hint": "May Provoke More Intense Conflict",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_force_01",
+                  "content": "Chen Ji stepped forward, his gaze sharp as a blade, striking directly into Chen Hong's eyes.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_force_02",
+                  "character_id": "char_chenji",
+                  "content": "Since the old sect master has spoken, let us confront publicly. Elder Chen, dare you bring your 'witness' out to face me directly? If they cannot state what they saw me doing in the secret realm that day, I, Chen Ji, will submit to any punishment!",
+                  "emotion": "凌厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_force_03",
+                  "content": "Chen Hong's lips trembled, but not a single word could escape. His 'witness' was entirely fabricated—what witness was there to confront?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "forced_confrontation"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_reveal_secret",
+            "text": "Reveal Part of the Tianji Record's Ability",
+            "description": "Demonstrate a Trace of the Tianji Record's Power Before Everyone, Proving He Indeed 'Foresaw' the Truth.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Expose Part of the Hidden Card",
+            "visible_reward": "Everyone Shocked, the Informant's Credibility Completely Shattered",
+            "risk_hint": "May Draw Even More Cravings and Schemes",
+            "process_label": "半真半假",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_secret_01",
+                  "content": "Chen Ji slowly raised his hand, spiritual energy stirring at his fingertips. Everyone present saw a faint golden light flickering within his sleeve, as though something was stirring within.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_secret_02",
+                  "character_id": "char_chenji",
+                  "content": "All elders here know that although I, Chen Ji, am considered a waste, I am not entirely without talent. Three days ago, I had already foreseen that someone would frame me today—only I did not expect the framer to be so impatient, even forging evidence so clumsily.",
+                  "emotion": "冷笑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_secret_03",
+                  "content": "These words sent a wave of gasps through the hall. Ling Yuan's pupils contracted slightly—he could foresee three days ahead? This was unmistakably the hallmark of ancient divination arts! What secret was this waste truly hiding?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "revealed_partial_prophecy"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_15",
+        "content": "Just as the crowd erupted in discussion, a sudden commotion echoed from outside the hall. A figure was then escorted into the Council Hall by two Law Enforcement Disciples, stumbling as they entered.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_16",
+        "content": "It was a plain-looking young man—Outer Disciple Zhang Xiaoliu. His face bore obvious fear, yet when his gaze swept over Chen Ji, it settled somewhat—he had clearly been instructed on what to do before arriving.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_17",
+        "character_id": "char_chenji",
+        "content": "Zhang Xiaoliu, were you in the secret realm on March fifteenth? What you saw—tell it all.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_18",
+        "content": "Zhang Xiaoliu drew a deep breath, then thudded to his knees on the ground, crying out loudly: 'This disciple was indeed in the secret realm that day! I saw with my own eyes—Elder Chen Hong and a masked figure making a secret transaction! I dared not look too closely and hid, and later heard them mention they intended to frame Senior Brother Chen Ji!'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_19",
+        "content": "Upon these words, the hall erupted completely. Chen Hong's face turned ashen, his legs buckling as he nearly collapsed, and Han Lie's expression darkened to the point of dripping ink.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_20",
+        "character_id": "char_hanlie",
+        "content": "Total nonsense! Would anyone take the words of an Outer Disciple/Servant seriously? Zhang Xiaoliu, do you know what crime awaits those who falsely accuse an elder?",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_21",
+        "content": "Yet Chen Ji spoke unhurriedly, his voice calm and measured, yet every word cut to the heart.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_22",
+        "character_id": "char_chenji",
+        "content": "Why must Brother Han be so agitated? Whether Zhang Xiaoliu's words are true can be easily verified. Elder Chen's spiritual runes at the sleeve, where exactly are those 'witnesses,' and the cultivation technique he accused me of stealing—please specify which volume, which page, which day? My copying records from the Scripture Repository can match each one.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_23",
+        "content": "Chen Ji spoke each word with precision, peeling away Chen Hong's lies layer by layer like silk from a cocoon. Every sentence was a blade, stabbing viciously into Chen Hong's heart. He finally understood what it meant to lift a stone only to drop it on his own foot.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0440_choice_03",
+        "prompt": "Chen Hong collapsed to the ground, his credibility as informant utterly ruined. Just as everyone believed the matter was settled, Chen Ji still had one final strike remaining—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_final_blow",
+            "text": "Press the Advantage and Force the Opponent to Confess",
+            "description": "Give Chen Hong No Breathing Room, Publicly Declare Him a Demonic Path Insider, Solidifying the Charge Completely.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Han Lie May Desperately Lash Out",
+            "visible_reward": "Chen Hong Is Immediately Taken Into Custody, the Conspiracy Exposed",
+            "risk_hint": "May Stir Up Even Deeper Waters",
+            "process_label": "宜将剩勇追穷寇",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_final_01",
+                  "content": "Chen Ji strode forward, gazing down coldly at the collapsed Chen Hong, a cruel smile curling at his lips.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_final_02",
+                  "character_id": "char_chenji",
+                  "content": "Elder Chen, the Demonic Path spiritual runes at your sleeve—every elder present has seen them. You repeatedly accuse me of treason—now, who is the one truly colluding with the Demonic Path? Accusing me of stealing cultivation techniques was merely a cover for your far more shameful dealings!",
+                  "emotion": "凌厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_final_03",
+                  "content": "Before the words even finished, the Law Enforcement Elders had already stepped forward to take custody of the collapsed Chen Hong. Han Lie's expression had turned unimaginably grim.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chengong_defeated"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_mercy",
+            "text": "Stop at the Right Point and Leave Room for Maneuver",
+            "description": "Know When to Stop, Do Not Drive Chen Hong to Desperation, Give Han Lie an Exit and Keep a Path Open for Yourself.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Chen Hong May Rise Again",
+            "visible_reward": "Han Lie Owes a Favor",
+            "risk_hint": "May Be Perceived as Weakness",
+            "process_label": "穷寇莫追",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_mercy_01",
+                  "content": "Chen Ji withdrew his gaze, his expression serene.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_mercy_02",
+                  "character_id": "char_chenji",
+                  "content": "Elder Chen acted in a moment of folly. Considering our shared sect membership, this disciple does not wish to be ruthless. But if there is a next time—hm.",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_mercy_03",
+                  "content": "These words carried hidden barbs within their gentle exterior, appearing magnanimous yet implicitly warning. When the crowd looked at Chen Ji again, their eyes carried a more complicated meaning—this waste, it seemed, was not so simple after all.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "showed_mercy"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_lingyuan_trap",
+            "text": "Turn the Spear Toward Ling Yuan",
+            "description": "Seize the Chaos to Imply Ling Yuan Is Not Untangled from This Case, Drawing the Conflict to the Upper Ranks, Laying Groundwork for a Later Comeback.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Ling Yuan May Turn Hostile on the Spot",
+            "visible_reward": "Disrupt the Enemy's Rhythm",
+            "risk_hint": "Extremely Dangerous, May Draw Fire Upon Oneself",
+            "process_label": "暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_trap_01",
+                  "content": "Chen Ji pivoted his words, his gaze seemingly casual yet sweeping toward Ling Yuan upon the high platform.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0440_result_trap_02",
+                  "character_id": "char_chenji",
+                  "content": "Only this disciple is somewhat curious—Elder Chen is merely a minor Outer Disciple Administrator, where did he gather the audacity to frame an Inner Disciple? Could there be someone behind the scenes giving orders?",
+                  "emotion": "玩味"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0440_result_trap_03",
+                  "content": "Upon saying this, the atmosphere in the hall subtly shifted. Ling Yuan's hand, stroking his beard, paused slightly, and a cold glint flickered in the depths of his eyes—was this waste probing, or did he truly know something?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "provoked_lingyuan"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_24",
+        "content": "Just then, hurried footsteps echoed from outside the hall. A disciple rushed in stumbling, his expression panic-stricken—",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_25",
+        "character_id": "char_hanlie",
+        "content": "Reporting to the Sect Master! A woman has arrived at the Sect Gate, claiming to be a messenger from the Holy Sect of the Demonic Path. She specifically requested to see—Chen Ji!",
+        "emotion": "惊惶"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_26",
+        "content": "Upon hearing these words, a pin could have been heard dropping in the Council Hall. The voices that had been in an uproar moments ago fell deathly silent. Every gaze fell upon Chen Ji in unison—the moment he had just been accused of colluding with the Demonic Path, and now the Demonic Path's messenger had come calling. Coincidence, or…",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_27",
+        "content": "Chen Ji's brow creased slightly, yet his mind had already calculated. That violet transmission talisman must have been Ye Qing's signal—Saint Zong was moving ahead of schedule. He simply had not expected her to act so quickly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_28",
+        "content": "However, this was also fine. The confrontation had already left Chen Hong ruined and Han Lie humiliated. Now that the Demonic Path messenger had come looking for him, it provided an excellent excuse—should he take the initiative, or let the enemy grow more rattled?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_29",
+        "character_id": "char_lingyuan",
+        "content": "Chen Ji, the Demonic Path messenger personally visited and specifically asked for you. This matter恐怕 requires clarification. This old man shall accompany you—do the elders concur?",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_30",
+        "content": "Ling Yuan's move was masterful—ostensibly accompanying, in truth monitoring. Chen Ji understood perfectly, yet his expression betrayed nothing. He merely smiled faintly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0440_31",
+        "character_id": "char_chenji",
+        "content": "Since it is a messenger from the Demonic Path, this disciple must of course meet them. However, before the meeting, this disciple dares to request the elders to wait a moment—there are certain matters to be discussed upon my return.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_32",
+        "content": "His voice was not loud, yet it carried an indescribable certainty. At this moment, no one dared to underestimate this former waste of a disciple—able to turn clouds to rain and storms to calm amidst the machinations of the three great sects and the Demonic Path's covetous eyes, this Chen Ji was no ordinary man stuck in a stagnant pool.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0440_33",
+        "content": "Chen Ji turned and walked toward the hall's exit, his tall silhouette stretching long in the sunlight. No one noticed that within his sleeve, the fragment of the Tianji Record was faintly gleaming with golden light—the deadly game of fate was being rewritten, step by step.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

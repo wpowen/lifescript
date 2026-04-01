@@ -1,0 +1,479 @@
+{
+  "id": "天机录_ch0906",
+  "book_id": "天机录",
+  "number": 906,
+  "title": "终极の選択の代償",
+  "is_paid": true,
+  "next_chapter_hook": "陳天名の声が闇の中に響き渡り、彼が当年、力を手放すことを潔しとしなかったからこそ、今のこの地步走到ったことを認めた——そして彼が当年まいた因は、今は陳機の身に同样的な果を結びつつある。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0906_001",
+        "content": "墨が第一頁にゆっくりと滲み広がり、一つの方正な字を紡ぎ出す——「捨」。陳天名の残魂が微かに震え、濁った両の瞳がその字を凝視し、まるで自分の見たものが信じられないかのように。「これは……これは本当ではない……」彼の声は掠れ切れ棒め、「当年的私は……私は三十年かけたにもかかわらず、この頁に字を現わせなかった……凭什么……凭什么你能做到……」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_002",
+        "character_id": "char_chenji",
+        "content": "陳機の視線は陳天名の残魂を突き抜け、显现し始めた第二行の文字に落ちる。墨蹟は生き物の如く広がり、一字一字が形を成していく：「執棋者の位、これ天眼の核心を毁つ可し。代価——天命を舎尽し、凡人と帰る。」",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_003",
+        "content": "天機録の光が遂に完全に黯淡し、まるで最後の使命を果たした如く。第一頁に、墨先生の字跡が依然としてゆっくりと現れ、一筆一画にある種の人を戦慄させる荘厳を帯びている：「第三卷完。執棋者の位既に備わる。天命鎖钥帰位す。棋局将に終らん。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_004",
+        "character_id": "char_chenian",
+        "content": "陳念の呼吸が俄かに速まる。彼女はあの字蹟を見、陈機の蒼白な顔を見て、突然何かを悟った。「お兄さん……」彼女の震える声、「天道之眼の核心を破壊するには……あなたが全ての力を放棄する必要があるって、本当なの？」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_005",
+        "content": "陳天名は突然天を仰いで長笑し笑い声を上げ、その笑いには苦みと狂気が満ちていた。「凡人？ははは……なるほど！なるほど！墨先生はこの老人は始めから終わりまで算段していたのだ！彼が望んでいたのは天機録の伝承を続けさせることでではなく、伝承を完全に断絶させることであったのだ！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_006",
+        "character_id": "char_chenji",
+        "content": "陳機材はゆっくりと振り返り、陳天名の残魂を真っ直ぐに見つめる。「あなたは違う。」彼の声は平静で怖いほど、「墨先生は伝承を断絶させるために算段していたのではない。彼は私に真の選択を与えているのだ。」彼は一拍置き、「あなたは当年舎拾うことを肯じなかった、だから力は反噬した。私は……我不想重蹈覆辙。」",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_007",
+        "content": "天機録第一頁に、第三行の文字が遂に显现し終わる：「然——凡人の力、一人を守る可きか？一軍を敵う可きか？天下の乱を平らぐ可きか？」一字一字が刃のように、容赦なく陳機の心を抉る。彼はもちろんだろう！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_01",
+        "prompt": "墨先生の字蹟は彼の躊躇を見透かしたように、最後の問いとして第一頁に浮现する：「舎、或いは舎わず？汝其一れを選択せよ。」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_sacrifice_power",
+            "text": "天命を舎尽し、凡人に戻る",
+            "description": "天道之眼の核心を完全に破壊する唯一の方法で全ての運命記述能力を放棄し、真の凡人となる。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天機録、予見能力、全ての手 특수한力を失う",
+            "visible_reward": "天道之眼の核心を完全に破壊し、運命の楔を破る",
+            "risk_hint": "凡人となった後、全ての人を守る力を失う",
+            "process_label": "舍",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_sacrifice_power_001",
+                  "content": "陳機材は手を伸ばし、指先が天機録第一頁に触れる。墨先生の字蹟は彼の触れ合った瞬間に刺すような金の光を放ち、まるで千年待った答えを迎えるように。「私は舎る。」彼の声は軽いが、一字一句明晰である。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_keep_power",
+            "text": "力を保留し、他の方法を探す",
+            "description": "凡人となることを拒み、力を放棄せずに天道之眼を破壊できる方法を見つけようとする。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天道之眼を完全に破壊できず、運命の楔はまだ存在する",
+            "visible_reward": "全ての能力を保留し、引き続き執棋者として存在する",
+            "risk_hint": "天道之眼は重生し、全ての発奋が空しく成る",
+            "process_label": "不舍",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_keep_power_001",
+                  "content": "陳機材の手が空中に宙に浮いたまま、ずっと下ろされない。彼の眉は締められ、眼底に不易察觉な葛藤が過ぎる。「他に方法はないのか？」彼は低声で問い、声音にある種の从未有过的躊躇が帯びている。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_third_path",
+            "text": "疑問——必ず第三条の道がある",
+            "description": "墨先生がこの選択を残したのだから、きっと逃げ道もある。天機録は決して人を絶望させたことはない。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "時間を無駄にし、最良の機会を逃すかもしれない",
+            "visible_reward": "本当に実行可能な方案を見つける",
+            "risk_hint": "見つからなければ、第三条の道は前二条よりさらに残酷かもしれない",
+            "process_label": "寻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_third_path_001",
+                  "content": "陳機材は手を引き上げ、口元に不意に微笑みを浮かべた。「墨先生……如果您是这样的让人天涯无处的人，我当初就不会选择相信您.」彼は第一頁を重新审视し、「第三行の文字……問いかけているのは'凡人の力で一人を守る可きか'、'凡人の力で全ての人間を守る可きか'ではない。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_008",
+        "content": "陳天名の残魂は猛然一震した。「お前は……何を言っている？」彼は难以置信そうに陳機を見つめ、「天機録には明記されている、天命を舎尽せば凡人に戻るのだ、まだ第三条の道を探すのか？お前は自分が何者だと知っている、天機録の意志を書き換えることができるとでも？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_009",
+        "character_id": "char_chenji",
+        "content": "陳機材は彼を構わず、視線を第一頁下のまだ現れていない空白に向ける。「墨先生，您还在吗？」彼の语气忽然变得轻松，「第三卷の目標が'棋局将に終らん'라면, 您總不會只給我一個必死の局吧.」",
+        "emotion": "狡黠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_010",
+        "content": "天機録は微かに震動した。しばらくして、空白處にゆっくりと一つの小さな記号が現れた——それは陳機材从未见过的纹路で、ある種の古い印记のようなものだった。陳念は凑近一看、瞳孔が俄かに縮んだ。「これは……天命鎖钥の本源印记です！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_02",
+        "prompt": "陳念の指が震えながらその印记を指差す。「お兄さん、覚えてる？当年私が聖宗に連れて行かれた時、彼らは私の体内に何か……執棋者を代替できるものがあると言った。」彼女は顔を抬头し、目元が微かに赤く染まる，「この印记が本物なら……多分私が手伝えるかも。」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_accept_sister",
+            "text": "陳念の帮助を受ける",
+            "description": "陳念は天命鎖钥であり、彼女の存在はそもそも天機録の予見を干扰できる。她的力は陳機の執棋者 자리를 대신承受できるかもしれない.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陳念はそのため危険に陷るかもしれない",
+            "visible_reward": "陳機材は力を保留し、陳念が часть代价を承受する",
+            "risk_hint": "天命鎖钥の代価は未知で 凡人に的比 更残酷な結果になる可能性がある",
+            "process_label": "共生",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2500
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_accept_sister_001",
+                  "content": "陳機材は陳念を見つめ、眼底に一丝躊躇が過ぎる。彼はもちろんだろう！陳念に執棋者の代償を分担させることは、彼女を深渊に引きずり込むことに等しい。しかし陳念の目付きの坚定さは彼を心痛させた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_refuse_sister",
+            "text": "拒否——決して妹を險地に陷らせない",
+            "description": "陳機材は決して陳念が自分のために任何のリスクを承受することを許さない。彼は一切を放棄する方がたとえよくとも、妹を危険に陷らせることを絶対に望まない.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "全ての代償を一人で承受する必要がある",
+            "visible_reward": "陳念の安全を守る",
+            "risk_hint": "一人で天命の反噬に立ち向かい、成功率は更低くなる",
+            "process_label": "护",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5000
+              },
+              {
+                "stat": "黑化值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_refuse_sister_001",
+                  "content": "陳機材の手が陳念の肩に置き、その力は彼女を思わず顔をしかめさせるほど大きい。「不行。」彼の声は氷のように冷たい、「私はお前を十年も探したのだ、お前のために死にに行くためではない。陳念、話を聞け。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_011",
+        "character_id": "char_chenian",
+        "content": "陳念の涙が遂に落ちた。「お兄さん，难道你不知道吗？」彼女の声が哽咽し、「聖宗が私を連れて行ったあの日、私は悟ったの……私の存在本身就是你的拖累。如果不是因为我的话，天機録の予見はそれ程ぼんやりしなかった，你早就能看透一切了……」",
+        "emotion": "悲泣"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_012",
+        "content": "陳天名の残魂が突然激しく震え始めた。「いや……しないで……」彼の声が扭曲し始め、「君たちはだめだ！陳念は私の陳家の最後の血筋だ！君たちが皆死んだら、陳家は完全に終わりだ！」彼は狂ったように挣扎し、「陳機材、お前聞こえているのか？私は陳家を毁灭することを許さないぞ！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_013",
+        "character_id": "char_chenji",
+        "content": "陳機材は冷たくも陳天一瞥した。「陳家？」彼の语气にある種の嘲りが带びていた、「お前が当年のために力を売った時、陳家想过没有？お前が天機録に見捨てられ、運命に反噬された時、陳家想过没有？」彼は一拍置き、「今更自分が陳家の者だと想起したのか？」",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_014",
+        "content": "天機録の符文在这一刻忽然亮了起来。墨先生の字蹟が最後に浮现するが，简短な一行のみ：「天命鎖钥は執棋者の位半分を承受可し。然——代価仍需執棋者自担。他人は汝等の痛みを代替出来ず。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_03",
+        "prompt": "陳念的脸上闪过一丝希望。「半分？墨先生的意思是……我可以分担一半？」彼女は陳機材の手を紧紧握りしめ、「お兄さん、一緒に承受しよう！难道你忘了吗？陳家的人，从来不丢下任何一个！」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_share_fate",
+            "text": "陳念と天命，共同承受する",
+            "description": "天命鎖钥の分担を受け入れ、陳機材は執棋者の力の半分を保留し、代償は二人の共同負担となる.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陳念は永遠に陳機材と運命が缚り付けられる",
+            "visible_reward": "陳機材は一部の力を保留し、大切な人を守り続けることができる",
+            "risk_hint": "二人の運命は从此相连し、一方が荣えれば共に荣え、一方が损なえば共に损なう",
+            "process_label": "共命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -4000
+              },
+              {
+                "stat": "魅力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 80
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_share_fate_001",
+                  "content": "陳機材は長い間黙っていた。最后に、彼は振り返って陳念の手を握り返した。「いい。」彼の声は軽いが、ある種の不容置疑な坚定さを帯びている、「从今以后、私の命はお前の命だ。お前……後悔するなよ。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_refuse_share",
+            "text": "一人で承受坚持する",
+            "description": "陳機材の命只能由他自己扛。他不想让妹妹因为自己而永远活在阴影之下.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "全ての天命の反噬を一人で面对する必要がある",
+            "visible_reward": "陳念の独立を保护し、彼女が自分だけの人生を持てるようにする",
+            "risk_hint": "一人で承受하면 он может彻底失去一切",
+            "process_label": "独担",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_refuse_share_001",
+                  "content": "陳機材は軽く陳念の手を押し退け、首を横に振った。「小念、私はお前の兄だ。」彼の声は優しく、「兄，就是用来挡在前面的。你要做的，是好好活下去，不是跟我一起死.」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_015",
+        "content": "天機録の光が徐々に収斂し、墨先生の字蹟遂に完全に消え去った。しかし消える前にの一瞬、最後の字が第一頁の隅に浮现した——「三」。陳天名はあの字を見て、瞳孔が俄かに広がった。「三……第三次……彼还有一次机会……」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_016",
+        "content": "陳機材は陳天名の異常に気づいた。「第三次？」彼は眉を寄せ、「何の第三次？」陳天名の残魂が突然異様に笑い出し、その笑い声には说不清的狂気と絶望が帯びていた。「陳機材……你以为你是第一个走到这一步的人吗？」彼は抬起头，濁った两眼が陳機材を真っ直ぐ見つめ、「墨先生の'三'……是你还能做选择的次数だ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_017",
+        "character_id": "char_chenji",
+        "content": "陳機材の脸色微微一变が、すぐに平静を回復した。「三次選択の機会、二回使った。」彼は低声で言った，「也就是说……还有最后一次。」彼は顔を上げ、陳天名の残魂を真っ直ぐ見つめ、「那么，你当年是用完了这三次机会，所以才会变成现在这副模样？」",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_018",
+        "content": "陳天名の笑い声がぴたりと止んだ。彼の残魂像是被戳中了什么要害、激しく震え始めた。「私は……私は当年……」彼の声が碎け始め、濁った两眼から二筋の血涙が流れた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_019",
+        "character_id": "char_chenian",
+        "content": "陳念は突然陳機材の手を強く握りしめた。「お兄さん、彼の第三次選択……」彼女の声が軽かった、「会不会是……彼があなたを利用することを選んだ？」陳天名の残魂は否定せず、ただ低い唄泣を发出一つ。墨先生の字蹟が突然また浮现した——今回は、たった四文字：「汝猜对了。」",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_020",
+        "content": "陳機材の顔には任何の表情も読み取れない。彼は静かに陳天名の残魂を見つめ、まるで自分と毫无関係の赤の他人でも見るように。「那么……お前が運命に反噬されたのは、自業自得だ。」彼の声は平静で、「しかし私は、お前の古い道を歩まない。」彼は天機録に向き直り、視線が坚定だった、「第三次選択——私は亲自去看看、天道之眼の真の核心は、一体何なのか。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_021",
+        "content": "天機録猛然一震し、第一頁上の全ての字蹟が同時に消散し、代わりに一つの未知へと繋がるポータルがゆっくりと开启した。陳天名はあの门を見て、濁った两眼に一丝の怖れが過ぎる。「お前は瘋了……那是天道之眼的本源所在……你进去就出不来了……」陳機材は振り返らない。「是吗？」彼の声は軽かった、「那你当年，为什么要去那里？」陳天名の残魂は完全に黙り込んだ。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

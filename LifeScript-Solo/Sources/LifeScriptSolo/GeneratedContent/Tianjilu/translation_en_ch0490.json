@@ -1,0 +1,540 @@
+{
+  "id": "天机录_ch0490",
+  "book_id": "天机录",
+  "number": 490,
+  "title": "Faked Death Scheme",
+  "is_paid": true,
+  "next_chapter_hook": "What does Mo Xiansheng's identity as a Chess Player truly mean? What kind of conspiracy is the Heavenly Eye's chess game? In the next chapter, a corner of the truth will slowly be revealed—and that may just be the beginning of an even greater storm.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0490_001",
+        "content": "The rumbling from the depths of the Dragon Vein was like the low growl of an ancient beast, causing the runes on the cavern walls to flicker ceaselessly. Chen Ji stood on the Dragon Head Stone Platform, his robes flapping violently in the spiritual energy gusts. His gaze was calm as still water, yet firmly fixed on the void rift where Ye Qing had vanished—a place still bearing the lingering chill of the Demonic Path, like the last stubborn sliver of frost refusing to melt on a winter night.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_002",
+        "character_id": "char_chenji",
+        "content": "Here they come.\n\nChen Ji murmured softly, a faint curve forming at the corner of his lips. He knew that soaring sword intent too well—sharp, piercing, carrying undeniable authority. Su Qingyao's speed exceeded his expectations by threefold; it seemed the news of the Dragon Vein's upheaval had shaken the entire Tianqing Sect.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_003",
+        "content": "Three hundred zhang away, a green sword light tore through the night sky, racing forward like a startled swan goose. Su Qingyao's figure appeared especially cold and beautiful under the moonlight, the vermillion dot at her brow center making her seem even more aloof. Yet when she clearly saw Chen Ji on the Dragon Head Stone Platform, a rare, complex emotion flickered in those eyes that were normally unshaken.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_004",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji, what are you doing here?\n\nSu Qingyao's voice was cold as frost, but a trace of urgency she herself hadn't noticed hid in the depths of her eyes. Her spiritual sense swept over the surroundings like a tide; after sensing the residual demonic path aura, her brow furrowed tightly:\n\nThere are traces of Demonic Path cultivators here. You... who were you with?",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_005",
+        "character_id": "char_chenji",
+        "content": "Since Senior Sister is here, you might as well hear me out.\n\nChen Ji turned around, meeting Su Qingyao's scrutinizing gaze. His expression remained that harmless appearance as always, his tone calm as if discussing today's weather:\n\nI know you've been investigating me. For three years, Senior Sister has investigated me no fewer than a hundred times. Every time, you came so close to catching me.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_006",
+        "content": "Su Qingyao's body stiffened abruptly, her fingers gripping the sword hilt tightening involuntarily. She had never imagined Chen Ji would be so direct about it. Those eyes, always lowered, now gave her an unfamiliar sense of pressure. Under the moonlight, that disciple once mocked by everyone as waste was standing before her in an entirely new posture.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_007",
+        "character_id": "char_suqingyao",
+        "content": "You... knew all along?\n\nSu Qingyao's voice trembled slightly—this was a loss of composure she rarely displayed. She bit her silver teeth, her gaze sharp as a blade:\n\nThen why did you still engage with me? Was it amusing to watch me scurrying around investigating like a fool? Chen Ji, what exactly are you scheming!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0490_choice_01",
+        "prompt": "Su Qingyao has already sensed something amiss. Chen Ji must make a choice—continue hiding, or reveal some of his trump cards to gain her trust?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0490_opt_01a",
+            "text": "Openly reveal the Tianji Record's existence",
+            "description": "Show Su Qingyao the existence of the Tianji Record Fragment to gain her trust and include her in the faked death plan",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Expose core trump card",
+            "visible_reward": "Gain support from the Inner Disciple Senior Fellow",
+            "risk_hint": "Su Qingyao might report to the sect, causing the entire plan to collapse",
+            "process_label": "展露底牌换取信任",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt01a_01",
+                  "content": "Chen Ji did not answer her accusations. Instead, he slowly raised his right hand. Above his palm, a yellowed, ancient page slowly manifested, the flowing patterns on its surface writhing like living creatures, emitting a terrifying aura of remote antiquity. Su Qingyao's pupils contracted sharply—that aura, she had seen records of in the forbidden archives of the sect.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_knows_tianji"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶得知天机录存在",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_01b",
+            "text": "Only reveal the faked death plan",
+            "description": "Conceal the specifics of the Tianji Record, only telling Su Qingyao the reason he needs to fake his death",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Trust builds slowly",
+            "visible_reward": "Retain core secrets",
+            "risk_hint": "Su Qingyao may not fully trust the plan, creating variables during execution",
+            "process_label": "有限透露换取合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt01b_01",
+                  "content": "I need to die once.\n\nChen Ji's voice was soft, yet it struck like a massive boulder dropped into a lake, stirring a thousand waves. Su Qingyao's expression froze on her face; for the first time, those always-calm eyes showed such obvious astonishment. She opened her mouth, only to find she momentarily had nothing to say.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "fake_death_plan_agreed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_01c",
+            "text": "Counterattack and probe",
+            "description": "Don't answer directly, instead question why Su Qingyao is so persistent in investigating him, probing her true motives",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May provoke Su Qingyao",
+            "visible_reward": "Understand Su Qingyao's true thoughts",
+            "risk_hint": "Su Qingyao may storm off and refuse any cooperation",
+            "process_label": "反向试探获取情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt01c_01",
+                  "content": "Chen Ji let out a light laugh, the smile carrying a hint of playfulness:\n\nWhy so tense, Senior Sister? Perhaps I should be the one asking—after investigating me for so long, was it suspicion, or was it... concern for me?\n\nSu Qingyao's face instantly became extraordinarily interesting. That embarrassment of being touched on a sore point yet refusing to admit it gave this usually cold female cultivator a rare hint of feminine charm.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_confused"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机察觉苏青瑶对自己态度复杂",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_008",
+        "content": "Regardless of the choice, Chen Ji has already taken a crucial step. He took a deep breath, his gaze sweeping over the roaring Dragon Vein below—that power slumbering for ten thousand years is slowly awakening, and he is the key that awakened it all. The three must complete all arrangements before this grand drama unfolds.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_009",
+        "character_id": "char_yeqing",
+        "content": "At that moment, the void split open again, and Ye Qing stepped out. A knowing smile played on her face as she looked at Su Qingyao with provocative eyes:\n\nOh? The aloof Chief Disciple of Tianqing Sect is here too? Looks like our plan needs to scale up.",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_010",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao's sword light was already at Ye Qing's neck as she coldly said: You demonic wretch, how dare you appear before me!\n\nYe Qing did not dodge or evade. Instead, she pressed her neck against the blade, her smile growing more brilliant: Why so tense, Chief Disciple? If I wanted to harm Chen Ji, I wouldn't have handed over the Holy Sect intelligence so readily just now.",
+        "emotion": "对峙"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0490_choice_02",
+        "prompt": "Two women with vastly different temperaments are at daggers drawn. Chen Ji must decide—how to balance this seemingly irreconcilable contradiction?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0490_opt_02a",
+            "text": "Suppress Ye Qing with cunning",
+            "description": "Show Ye Qing fragments envisioned by the Tianji Record, letting her understand she is merely a piece in the plan",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Consume Heavenly Fate",
+            "visible_reward": "Ye Qing thoroughly complies",
+            "risk_hint": "Heavenly Fate consumption is irreversible",
+            "process_label": "以预见能力震慑魔道圣女",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt02a_01",
+                  "content": "Chen Ji did not speak. He only raised his palm, the Tianji Record's patterns flowing at his fingertips. A blurry image materialized before Ye Qing's eyes—it was the childhood memory she most dreaded being seen, the dark years when the Holy Sect raised her as a tool. Ye Qing's smile froze instantly; for the first time, a trace of fear appeared in her eyes when looking at Chen Ji.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_02b",
+            "text": "Persuade Ye Qing with benefits",
+            "description": "Promise Ye Qing that after the faked death plan succeeds, help her escape the Holy Sect's control",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Owe a debt of favor",
+            "visible_reward": "Gain a stable ally",
+            "risk_hint": "Ye Qing may become greedy",
+            "process_label": "以自由为筹码达成合作",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt02b_01",
+                  "content": "I can help you leave the Holy Sect.\n\nChen Ji's voice was soft, yet it precisely struck the softest place in Ye Qing's heart. A flicker of emotion flashed in those alluring eyes. After a moment of silence, she finally put away her nonchalant demeanor:\n\nWhat do you want me to do?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_02c",
+            "text": "Let Su Qingyao lead the dialogue",
+            "description": "Retire to the background, letting the two women negotiate on their own, observing each of their bottom lines",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Lose initiative",
+            "visible_reward": "Obtain more information",
+            "risk_hint": "Both parties may clash",
+            "process_label": "以退为进坐山观虎斗",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt02c_01",
+                  "content": "Chen Ji stepped back, surrendering the stage to the two women. Su Qingyao and Ye Qing exchanged glances. The former coldly snorted; the latter smiled even more brilliantly. To Chen Ji's surprise, the two actually reached some kind of tacit understanding in a short time—perhaps because both understood that this \"waste\" was the true core.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_011",
+        "content": "All three pairs of eyes fell on Chen Ji simultaneously. The Dragon Vein's rumbling grew deafeningly loud. Golden spiritual light rose from the four corners of the Dragon Head Stone Platform, illuminating the entire space as if a divine miracle had descended. Chen Ji took a deep breath and began explaining the faked death plan he had long conceived—using the power of the Dragon Vein's awakening to create a spectacular \"death\" illusion, causing all enemies to relax their vigilance after his \"death,\" thus exposing their true colors.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_012",
+        "character_id": "char_yeqing",
+        "content": "Interesting.\n\nYe Qing clapped her hands lightly, laughter in her eyes, yet sharp cunning also flickered there: The power of the Dragon Vein's awakening is enough to make anyone believe you've been reduced to ashes. However... how do you intend to ensure all three of us escape this performance unscathed?",
+        "emotion": "思考"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_013",
+        "character_id": "char_suqingyao",
+        "content": "Although Su Qingyao's expression remained cold, her tone had softened considerably: Who are your enemies? What do you plan to do after faking your death?\n\nA cold smile curled at the corner of Chen Ji's lips, his gaze deep as an abyss:\n\nThe humiliation of the broken engagement, does Senior Sister remember? Back then, the Xiao Family regretted the match, viewing me, Chen Ji, as a disgrace and casting me out. The mastermind behind that betrothal, I've always kept it in my heart. Now... it's time to make them pay.",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_014",
+        "content": "At that moment, the first page of the Tianji Record suddenly gleamed with a ghostly light. Mo Xiansheng's old yet dignified figure slowly emerged from the page, hovering in the center above the three. Su Qingyao and Ye Qing both showed wariness, but Chen Ji slightly bowed:\n\nMaster Mo, you've come.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_015",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng stroked his illusory long beard, his voice low and solemn:\n\nA faked death scheme using the Dragon Vein as the lure—actually a good idea. However...\n\nHis gaze fell upon Chen Ji, carrying an indescribable complexity:\n\nDo you know that everything you've experienced, from the moment you obtained the Tianji Record, has been observed by a certain presence?",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0490_choice_03",
+        "prompt": "Mo Xiansheng revealed shocking information—Chen Ji has been under surveillance all along. Faced with this truth, how should Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0490_opt_03a",
+            "text": "Inquire about the surveillor's identity",
+            "description": "Directly ask Mo Xiansheng, trying to understand the true identity of this \"certain presence\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May touch upon forbidden knowledge",
+            "visible_reward": "Obtain crucial intelligence",
+            "risk_hint": "Mo Xiansheng may not fully reveal everything",
+            "process_label": "直面真相追问幕后黑手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt03a_01",
+                  "content": "Chen Ji's eyes suddenly turned razor-sharp, his voice carrying a hint of suppressed fury: Who? Who has been manipulating everything about me?\n\nMo Xiansheng fell silent for a moment, then finally uttered a word that made everyone present present change color:\n\nThe Heavenly Eye.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "tianyan_eye_mentioned"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机得知\"天道之眼\"的存在",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_03b",
+            "text": "Superficially accept, investigate covertly",
+            "description": "Don't display too many emotions before Mo Xiansheng, but secretly decide to investigate this matter",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Miss the chance to inquire further",
+            "visible_reward": "Retain trump cards",
+            "risk_hint": "May never learn the truth",
+            "process_label": "隐忍不发暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt03b_01",
+                  "content": "Chen Ji's expression didn't change in the slightest. He merely nodded slightly: Thank you for the warning, Master.\n\nBut his fingertips had already unconsciously clenched tight—the feeling of being maneuvered like a piece on a board ignited a fury within him unlike any he had ever known. He recorded this, this grudge, he recorded it.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0490_opt_03c",
+            "text": "Question Mo Xiansheng's stance",
+            "description": "Since the Tianji Record has been observed all along, which side is Mo Xiansheng actually on?",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May offend Mo Xiansheng",
+            "visible_reward": "Understand Mo Xiansheng's true purpose",
+            "risk_hint": "Mo Xiansheng may leave in anger",
+            "process_label": "反客为主质疑执棋人",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0490_result_opt03c_01",
+                  "content": "Chen Ji's gaze suddenly turned fierce. He stared directly into Mo Xiansheng's eyes, his voice cold as frigid ice:\n\nSince you know of this matter, what role have you played in it? You constantly speak of guarding the Tianji Record, but are you... truly my ally?\n\nMo Xiansheng's expression finally changed. For the first time, a glint of relief flickered in those placid eyes.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_016",
+        "character_id": "char_moxiansheng",
+        "content": "Good! Good! Good!\n\nMo Xiansheng uttered three \"goods\" in succession, his illusory form trembling slightly. He gazed at Chen Ji with eyes full of relief and anticipation:\n\nThe fact that you could ask this proves you're finally developing true Chess Player awareness. Indeed, I am a Chess Player—but the chess game I play is precisely opposite to that of the Heavenly Eye.\n\nMy purpose is to shatter the net that enshrouds all seers!",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_017",
+        "content": "Mo Xiansheng's words were like a thunderclap exploding in the depths of the Dragon Vein. Su Qingyao and Ye Qing exchanged glances, both seeing shock in each other's eyes—Heavenly Eye, Chess Player, shattering the chess game... this information far exceeded their cognitive scope. But Chen Ji's expression was unexpectedly calm, as if everything was within his expectations.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0490_018",
+        "character_id": "char_chenji",
+        "content": "So Master wants me to die.\n\nChen Ji's voice was soft, yet carried a sense of resolve: Faking death isn't just to lure out enemies, but to make the Heavenly Eye believe I've been eliminated, thus exposing more weaknesses. Right?\n\nMo Xiansheng stroked his beard and smiled, his eyes full of praise: A worthy student. You've already learned the price of the Tianji Record. When your Heavenly Fate is completely depleted, that is when you truly die. And faking death... is the only way for you to seek生机 in a Deadly Ground.",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0490_019",
+        "content": "The Dragon Vein's rumbling reached its apex at this moment. Golden spiritual light shot skyward, dyeing the entire night sky into brilliant rosy clouds. Within this radiance, Chen Ji slowly closed his eyes. His heart held both anticipation and anxiety—the faked death scheme officially begins, and he must complete everything that must be done within the countdown to death.\n\nIn the distance, toward the Xiao Family's direction, a secret transmission talisman silently flew toward some unknown location. Though Chen Ji couldn't see it, he knew—those who once humiliated him are about to face their most terrifying moment.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

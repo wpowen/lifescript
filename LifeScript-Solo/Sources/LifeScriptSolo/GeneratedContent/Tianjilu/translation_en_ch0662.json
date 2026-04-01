@@ -1,0 +1,338 @@
+{
+  "id": "天机录_ch0662",
+  "book_id": "天机录",
+  "number": 662,
+  "title": "Old Friends Reunited",
+  "is_paid": true,
+  "next_chapter_hook": "Chen Ji's gaze fell upon Chen Ling's peculiar pupils—within them swirled patterns remarkably similar to the ancient runes on the pages of the Tianji Record.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0662_001",
+        "content": "The light of the temporal rift twisted into an eerie vortex behind him. The moment Chen Ji stepped into the ruins, his footsteps froze. In the depths of the darkness, a slender figure slowly approached, her contours gradually becoming clear in the eerie blue phosphorescent light—it was a face he had repeatedly traced during countless sleepless nights. \"Xiao Nian...\" The name was practically torn from his throat, hoarse after ten years of complete silence. However, when those eyes truly met his gaze, a certain string in Chen Ji's heart suddenly tensed. That gaze was far too calm—too calm for a long-awaited reunion, resembling instead a scrutiny following precise calculation."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0662_002",
+        "character_id": "char_chenian",
+        "content": "\"Brother, you arrived three hours earlier than I anticipated.\" Chen Ling's voice was cold as frost, and the corner of her mouth even curved into a meaningful arc. \"It seems the Tianji Record Fragment has already allowed you to glimpse the edges of the law of time.\" She walked forward slowly, each step landing on the brightest phosphorescent lines, as if she knew the layout of these ruins by heart. \"However, there is something I must tell you now—I am not your true sister.",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_003",
+        "content": "Chen Ji felt his blood surge, his fists unconsciously clenching. The person before him clearly possessed Chen Nian's features, voice, even the old scar on her left wrist from a childhood furnace burn was identical in every detail. But her words just now—\"I am not your true sister\"—were like a sharp blade, precisely cutting open the illusory dream woven by his ten years of obsession. The phantom fire danced eerily behind her, stretching her shadow long and short unpredictably, like some monster ready to devour anyone. Chen Ji took a deep breath, forcing himself to冷静下来. He was the bearer of the Tianji Record—calculating everything without error was his lifeline, and he absolutely could not let emotions cloud his judgment."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0662_004",
+        "character_id": "char_chenian",
+        "content": "\"Chen bloodline... is merely a chosen vessel.\" Chen Ling raised her hand, a sphere of ethereal blue light condensing at her fingertip. Within that glow, the runes that appeared were identical to the text on the Tianji Record. \"The true Fourth Page inheritance does not require bloodline, but a special constitution—'Heavenly Fate Key.' The Holy Sect took me because I am naturally aligned with the Fourth Page's laws—just as you are naturally resonant with the Fragment.\" She put away the light, gazing at Chen Ji with complex eyes. \"We are both chess pieces, brother. Only the chessboard is larger than we imagined."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_005",
+        "content": "Chen Ji felt a bone-deep chill rise from his spine. Master Mo had once let slip a few words, saying the Tianji Record contained nine pages scattered everywhere, and the bearer of the Fourth Page would determine whether the entire Tianji Record could reunite into one piece. He stared at this woman claiming not to be of Chen bloodline, his heart racing with calculations—if what she said was true, then the truth behind the Chen family's extermination was far more profound and unfathomable than what he had uncovered. If the Holy Sect needed Chen Nian's 'Heavenly Fate Key' constitution, that proved once the Fourth Page was gathered, it would trigger some catastrophic upheaval capable of overturning the celestial order."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0662_006",
+        "prompt": "Chen Ling displayed the Fourth Page's aura but did not explain further. Chen Ji needed to make a choice between probing and trusting—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0662_006_a",
+            "text": "Directly laying cards on the table",
+            "description": "Show Chen Ling the Tianji Record Fragment, trading honesty for her further trust. The risk is exposing one's core trump card.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Tianji Record Fragment exposed",
+            "visible_reward": "May obtain key information about the Fourth Page",
+            "risk_hint": "If Chen Ling harbors ill intentions, will fall into a passive position",
+            "process_label": "试探合作诚意",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0662_result_006_a_1",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ji slowly spread open his palm, revealing a page of yellowed, ancient paper—the very first fragment of the Tianji Record. Chen Ling's pupils suddenly contracted, the spiritual energy fluctuation around her visibly chaotic for a moment. \"You... actually preserved the Fragment.\" Her voice cracked for the first time. \"Holy Sect intelligence claimed it was destroyed in the Chen family fire.\" Chen Ji caught her loss of composure, secretly noting in his heart: her obsession with the Fragment far exceeds the ordinary—this information gap is his bargaining chip.",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "残页已展示"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0662_006_b",
+            "text": "The art of retreat to advance, extracting information",
+            "description": "Pretend to believe her account, guiding her to actively reveal more details about the conditions for Chen Tianming's return and the specifics of her control by the Holy Sect.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Appearing to make concessions",
+            "visible_reward": "Extracting more intelligence without exposing oneself",
+            "risk_hint": "May be identified through by Chen Ling's intent",
+            "process_label": "反向试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -2
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0662_result_006_b_1",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ji收敛了眸中的寒意, forcing a bitter smile onto his face. \"Since Xiao Nian... no, since you say so, then everything I've investigated all these years—was it all a joke?\" His tone was low, carrying just the right amount of desolation. Chen Ling was silent for a moment, seemingly reassessing this 'waste' of a brother before her. She stepped closer, her voice dropping to an extreme whisper: \"For Chen Tianming to return, three conditions must be met—the Tianji Record complete, all seven forbidden lands opened, and...\" She paused. \"A willing Heavenly Fate Offeror.\"",
+                  "emotion": "犹疑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "套取关键情报"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_007",
+        "content": "The words 'willing Heavenly Fate Offeror' struck Chen Ji's heart like a heavy hammer. Heavenly Fate Offeror—he understood the meaning of this title better than anyone. Each manifestation of the Tianji Record Fragment's power came at the cost of Heavenly Fate Value, and when that value was exhausted, the bearer would be utterly erased by the heavens. Master Mo had never told him the consequences of gathering all nine pages; now, looking back, perhaps from the very beginning, the Tianji Record's ultimate secret was tightly intertwined with the word 'sacrifice.' Chen Ling's pupils flickered in the phosphorescent light, seemingly waiting for Chen Ji's reaction while deliberately maintaining a certain distance. \"During your time in the Holy Sect,\" Chen Ji lowered his voice, \"what did they do to you?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0662_008",
+        "character_id": "char_chenian",
+        "content": "Upon hearing this, Chen Ling's lips curved into a self-deprecating arc. \"Do to me?\" She slowly rolled up her sleeve, revealing densely packed talismanic markings on her arm—those were some kind of forcibly inscribed restraints, faintly emanating unsettling spiritual energy fluctuations. \"They imprisoned me deep in the Sacred Mountain for a full eight years, subjected to 'Heavenly Fate Extraction' experiments every single day. Because only my constitution can temporarily stitch together the various fragments without damaging the Tianji Record.\" Her voice was平静得近乎残忍. \"Did you think I cooperated with you willingly? Brother, I simply wanted to survive.\"",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_009",
+        "content": "Chen Ji stared fixedly at those shocking talismanic markings, an indescribable fury churning in his chest. The Holy Sect—again, the Holy Sect. From the Chen family's extermination to his fall to becoming a menial servant in the Tianqing Sect, from the Fragment's awakening to entering this ancient ruins—all tragedies seemed to have an invisible hand controlling them from behind. He recalled what Master Mo once said: 'The bearers of the Tianji Record never come to a good end.' Now it seemed this was not alarmist rhetoric. If Chen Tianming was to return, perhaps countless 'Heavenly Fate Offerors' were needed as fuel, and he and Chen Ling were merely two selected pieces in this grand chess game."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0662_010",
+        "character_id": "char_chenian",
+        "content": "\"I can help you.\" Chen Ling suddenly spoke, her tone gaining a hint of earnestness not easily detected. \"The core of the temporal rift lies a hundred zhang ahead—that's where clues to the Tianji Record's Fifth Page are sealed. Only with our combined strength can that door be opened—I hold the Fourth Page's 'Key,' and you...\" She deeply gazed at Chen Ji. \"The aura of the Fragment on you is the only 'Guide' that can activate it.\" She extended her hand, palm upward. \"A cooperation agreement—each of us takes what we need. The moment the Tianji Record becomes whole, all truths will be revealed.\"",
+        "emotion": "期待"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0662_011",
+        "prompt": "Chen Ling extended her hand, awaiting Chen Ji's response. Cooperation meant temporarily binding their fates together, yet the risks it contained were equally unpredictable—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0662_011_a",
+            "text": "Limited Handshake Cooperation",
+            "description": "Agree to cooperate, but keep key trump cards, remain vigilant during action. Can withdraw anytime if needed.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Take on certain risks",
+            "visible_reward": "Obtain clues to the fifth page, advance Tianji Record collection",
+            "risk_hint": "Chen Ling may have hidden motives",
+            "process_label": "有限合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0662_result_011_a_1",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ji stared at her hand for a moment, then slowly raised his own, their fingertips touching. A slightly cool sensation came through, mixed with a familiar yet strange Spiritual Energy fluctuation—the resonance of the Tianji Record's aura. His expression remained unchanged, but in his heart he had already noted: her hand temperature was three degrees lower than normal, a lingering effect from long-term Heavenly Fate extraction. \"Pleasant cooperation,\" he said calmly, \"but I must clarify one thing in advance—if you have any unusual actions, I have plenty of ways to make you regret it.\" Chen Ling gave a light laugh: \"Brother, you really haven't changed.\"",
+                  "emotion": "微妙"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "合作达成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0662_011_b",
+            "text": "Establish rules before showing good faith",
+            "description": "Clearly define mutual rights and obligations before cooperation, sign some kind of contract as constraint. Prudent but may appear less than candid.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reveal cautious character",
+            "visible_reward": "Reduce risk of betrayal",
+            "risk_hint": "May cause Chen Ling's resentment",
+            "process_label": "契约保障",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 6
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0662_result_011_b_1",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ji didn't rush to extend his hand. Instead, he took out a Jade Slip carved with countless runes from his chest. \"This is the 'Heart Oath Contract' left to me by Mo Xiansheng. Each of us holds one copy. If either party betrays, the other will know immediately.\" Chen Ling took the Jade Slip, her expression shifting微妙ly through several changes before finally turning into a sigh: \"You've become so much more complicated than that傻哥哥 who used to protect me back then.\" She bit her fingertip, leaving a drop of blood on the Jade Slip, \"Fine, I sign.\" Chen Ji watched her decisive action, and somewhere tender in his heart ached slightly—the weight of that drop of blood might be heavier than he imagined.",
+                  "emotion": "复杂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "契约签订"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_012",
+        "content": "The two walked side by side deeper into the ruins. The walls on both sides of the passage were covered with obscure inscriptions, phosphorescent fire flowing between the runes like living things, casting the surrounding darkness in flickering light. Chen Ji quietly activated the Tianji Record Fragment, and a faint sense of premonition rose from his heart—this was the Fragment's warning function, meaning something related to the Tianji Record existed ahead. He glanced at Chen Ling without revealing anything, only to find her steps had also become cautious, clearly sensing the abnormality as well. \"Thirty zhang ahead,\" Chen Ling lowered her voice, \"there's the aura of a forbidden formation.\" Chen Ji nodded slightly,灵力 already quietly gathering at his fingertips. Whatever awaited ahead, he had to witness it himself."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0662_013",
+        "character_id": "char_chenian",
+        "content": "Chen Ling suddenly stopped, turning to look at Chen Ji, a complex light flickering in her eyes. \"Brother, there's something I must warn you about in advance—at the core of the spacetime rift, there exists an entity even the Holy Sect dares not touch. It's called the 'Grave Keeper,' a puppet from ancient times that guards the Tianji Record.\" She paused, \"I saw its portrait once in the Holy Sect's secret classics... its eyes have markings exactly like those on the Tianji Record's pages.\" Chen Ji frowned slightly, about to press for details, but saw she had already turned her head back, \"So no matter what happens, absolutely do not look it in the eyes.\"",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_014",
+        "content": "Chen Ji firmly etched these words into his heart. The passage ahead gradually opened up, the air filled with an ancient and oppressive aura, as if countless years of dust had been disturbed. He closed his eyes, injecting a wisp of Spiritual Energy into the Tianji Record Fragment—that familiar three-hour foresight ability flickered briefly in his mind—the Heavenly Fate consumption forced him to immediately withdraw his spiritual sense. But in that brief moment, he glimpsed a hazy image: in the darkness, a giant eye was slowly opening, and within its pupil, mysterious patterns identical to the Tianji Record's runes flowed."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_015",
+        "content": "Chen Ji abruptly opened his eyes, cold sweat already soaking his back. He finally understood why Chen Ling said \"don't look it in the eyes\"—that wasn't merely an eye, but some terrifying existence connected to the source of the Tianji Record itself. If one stared directly at it, perhaps they would be pulled directly into the vortex of destiny, not even the Tianji Record's holder could escape. \"We're almost there.\" Chen Ling's voice pulled his thoughts back to reality. At the end of the passage, a massive stone door stood in the deepest part of the phosphorescent light, its surface carved densely with Tianji Record runes, and right at the door's center, a groove matching his palm Fragment exactly was embedded."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_016",
+        "content": "Chen Ji and Chen Ling exchanged a glance, then looked at the stone door together. The runes on the door were pulsing at an extremely slow frequency, like some ancient heart still beating despite long slumber. The air was filled with a suffocating pressure—that was the oppression of Heavenly Dao laws themselves—as if what was sealed behind this door wasn't some artifact, but the most forbidden secret in all the heavens and myriad realms. \"I'll retrieve the fourth page first.\" As Chen Ling spoke, a page of ancient paper radiating ghostly blue light appeared in her palm. The moment that happened, Chen Ji clearly sensed his Fragment's violent trembling, like either celebration or lamentation. Two things of the same origin, separated by several feet, faced each other from afar, emanating a dazzling radiance."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0662_017",
+        "character_id": "char_chenian",
+        "content": "\"Are you ready?\" Chen Ling's voice tightened slightly, \"Once the two pages unite, the forbidden formations on the door will be completely lifted. Then no matter what we see, there's no turning back for either of us.\" Chen Ji didn't answer, only slowly spread his palm, holding the Tianji Record Fragment. The blue and pale gold lights began to intertwine, entangle, resonate—the entire ruins trembled slightly in this blinding brilliance. The moment the two pages of the Tianji Record completely merged, the stone door thundered open, a violent aura capable of tearing souls rushed toward them—and deepest within that aura, a giant pupil was piercing through the darkness, slowly turning its gaze toward them.",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_018",
+        "content": "Chen Ji almost instinctively turned his head away, avoiding that eye's gaze. But in that critical moment, his peripheral vision caught a fatal detail—the patterns flowing within that giant pupil were... identical to the gaze Chen Ling had just directed at him. He猛然 turned, looking at Chen Ling beside him. In the swaying phosphorescent light, her eyes were radiating the exact same ghostly blue glow as the giant pupil behind the stone door; deep within her pupils, the Tianji Record page's patterns were clearly visible, as if countless ancient runes floated within. At that moment, a chilling thought rose in Chen Ji's heart: What exactly is she? Is she really as simple as a \"Heavenly Fate Key\"?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_019",
+        "content": "Chen Ji pressed down the tumultuous waves in his heart with all his might, his expression betraying nothing. Mo Xiansheng's teachings still echoed in his ears: \"Those who calculate without missing anything do not fight over the得失 of a single city or territory.\" At this moment, his fate with Chen Ling was already bound together; even with countless suspicions, this was not the time to tear apart. He quietly recalled the Fragment into his body, feeling that more restless Spiritual Energy fluctuation than before—the Tianji Record after merging the two pages seemed to have unlocked some new ability he hadn't yet mastered. But the most urgent matter now was that \"Grave Keeper\" still watching them in the darkness. It hadn't attacked, seemingly waiting for something. \"Let's go.\" Chen Ji said quietly, taking the first step across the stone door's threshold. Chen Ling followed closely behind, the peculiar light in her eyes gradually fading, as if that scene had been merely an illusion caused by the phosphorescent fire."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0662_020",
+        "content": "Beyond the stone door was an expanse of imagination-defying vastness. The dome vanished into endless darkness, only countless star-like runes floated slowly through the air, outlining a grand and eerie star map. And at the space's very center, a massive altar stood, above which a scroll emanating soft light floated—that was precisely the Tianji Record's fifth page. Chen Ji and Chen Ling simultaneously held their breath. However, surrounding the altar, densely packed black chains crisscrossed like a spider's web, sealing the entire altar tightly. Those chains were carved with runes identical to those in Chen Ling's pupils, emanating a chilling Heavenly Dao pressure. \"These chains...\" Chen Ling's voice trembled slightly, \"are used to seal the fifth page. There's only one method to undo them—\" She looked at Chen Ji, a flash of determination in her eyes, \"It requires an entire Heavenly Fate value from a Heavenly Fate holder.\""
+      }
+    }
+  ]
+}

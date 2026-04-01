@@ -1,0 +1,557 @@
+{
+  "id": "天机录_ch1095",
+  "book_id": "天机录",
+  "number": 1095,
+  "title": "「観測者臨朝・終」",
+  "is_paid": true,
+  "next_chapter_hook": "「Chen Jiが皇都の最高処に独り登った時、Tianji Recordの最終頁の金色文字が緩やかに現れた——それは二十五日間のカウントダウンの始まりであり、観測者と彼の究極の対決の序章であった。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1095_001",
+        "content": "「夜明けの光が差し、金鸞殿の上の硝煙がまだ散り切らない。\n\nChen Jiは白玉の階段前に立ち、瘡痍滿面の皇都を見下ろしていたが、心他却は不思議なほど平静であった。街道では、民たちが既に自発的に廃墟の片付けを始め、家の再建に取り掛かっていた。泣く者もいれば、笑う者もいたが、もっとも多いのは黙々と壊れbrickと瓦礫を運んでいる者たちであった。\n\nこれが彼が望む新たな秩序なのか？観測者のルール、弱肉強食、天道無情。しかし此刻彼が見ているのは、劫後余生の人々の目に宿る一抹の希望であった。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_002",
+        "content": "「「大人、Tianqing SectのHan Lieがお拜謁，希望能为您带来宝贵的信息和建议。我会深入分析当前局势，提供战略性见解。」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_003",
+        "character_id": "char_hanlie",
+        "content": "「Han Lieが堂々として殿中に入り、全身の殺気がまだ消えていない中、目，却是出乎意料地复杂。一人膝をつき、声が掠れていた：「観測者、Chen Ji——いや、どう呼ぶべきか？Tianji Recordの主？」\n\nChen Jiは高い位置から見下ろし、このかつての宿敵に淡々と問うた：「何を言いたい？」\n\nHan Lieは猛然と顔を上げ、屈辱と悔しさを滲ませた：「二十五年だ！私はお前を追い続けて二十五年！每一次、私がようやくお前を圧倒できたと思った時、お前は——必ずと言っていいほど逆転するんだ！」」",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_004",
+        "content": "「Han Lieの言葉は重鎚のように、Chen Jiの心を打ち砕いた。二十五年にわたる追逐——かつてただの猛進少年天才に過ぎなかった者が、今は観測者と互角に渡り合える存在に成長していた。\n\n「今日来たのは、決着をつけたいのか？」Chen Jiは問うた。\n\nHan Lieは首を振り、立ち上がると、意外にも微笑みを浮かべた：「いや、私はお前に一件事を伝えに来た——Ling Yuanは既に次元の侵略者の残党と合流した。天道守護者同盟は本日より、正式に反軍となる。」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_005",
+        "prompt": "「Han Lieがもたらした情報は極めて重要である。どう応じるべきか？」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_005a",
+            "text": "「Han Lieの同盟提案を受け入れる」",
+            "description": "「かつての宿敵が自発的に橄榄の枝を差し伸べる。これは化敵为友の好機かもしれない。」",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "「一定の独立性を放棄する必要がある」",
+            "visible_reward": "「Xuanwu Sect第一天才の戦闘力支援を得る」",
+            "risk_hint": "「Han Lieの忠誠度は疑わしく、关键时刻に裏切る可能がある」",
+            "process_label": "握手言和",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "名望",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005a_1",
+                  "content": "「Han Lieの目に一瞬の驚きが閃いた後、即日覚悟に変わった。満身の手繭だらけの手を差し出し、Chen Jiと握手を交わした。「よし！本日より、私の拳はお前の後ろ盾となる！」」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hanlie_alliance"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "韩烈正式结盟",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_005b",
+            "text": "「距離を保ち、情報のみを受け取る」",
+            "description": "「宿敵は宿敵、二十五年の恩怨は一言葉では拭えない。」",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "「潜在的な強大な支援者を得る機会を失う」",
+            "visible_reward": "「戦略的自主性を維持し、束縛されない」",
+            "risk_hint": "「決戦時に一人でより多くの敵に立ち向かう必要がある」",
+            "process_label": "冷淡应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 150
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005b_1",
+                  "content": "「Chen Jiは淡々と一笑し：「情報は受け取ろう。至于同盟については——」一拍置いて、「お前が決戦で誠意を示すまで待つ。」Han Lieの表情は真っ青だったが、拱手して立ち去った。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_005c",
+            "text": "「Han Lieの真の目的を探る」",
+            "description": "「宿敵が突然好意を示すには、裏に必ず理由がある。まずは手の内を探るべし。」",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "「Han Lieを激怒させるかもしれない」",
+            "visible_reward": "「より深層の情報 obtain 可能」",
+            "risk_hint": "「同盟のチャンスを逃すかもしれない」",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 100
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005c_1",
+                  "content": "「Chen Jiの目が細められた：「Han Lie、我々はずっと戦い続けて二十五年間、お前が率先して橄榄の枝を差し出すことなどなかったことがあるか？言え、お前到底是什么想要？」Han Lieの表情が一瞬変わり、即日大笑いに変わった：「やはり瞒せないな！私は知りたい——Chen Nianはどこにいる。」」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_006",
+        "content": "「Chen Nianの名前は鋭利な刃のように、Chen Jiの心の最も柔らかい場所を貫いた。彼の瞳孔が急遽収縮し、顔は平静を保ったまま：「彼女に何の用だ？」\n\nHan Lieは深く息を吸い込み、目に複雑な情绪が浮かんだ：「Ling Yuanが彼女を連れ去ったからだ。彼女は——天命の鍵であり。」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_007",
+        "character_id": "char_chenji",
+        "content": "「Chen Jiは猛然と立ち上がり、滔天の怒りが彼の上から爆発した。金鸞殿の中の空気が急速に凝固し、床面に亀裂が入り始めた。\n\n「もう一度言え。」彼の声は低く、恐ろしいほどであった。\n\nHan Lieは微塵も退かなかった：「Ling Yuanは次元の侵略者と協力し、次元の裂け目を安定させるには'錨点'が必要だ。Chen Nian——お前の妹こそ、その錨点だ。」」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_008",
+        "content": "「Chen Jiは深く息を吸い込み、激しく渦巻く情绪を無理に押さえた。恨みを抱きつつも軽率に動かず——これが彼の最大の長所であった。Ling Yuan、Chen Nianに手を出すとは——この借り、彼は覚えていた。\n\n「二十五年だ。」Chen Jiは不意に口を開き、声は平静を取り戻した。「お前は私を二十五年間追い続けたこと、一度も勝ったことはない。だが今度こそ——」彼は顔を上げた、目に烈光が閃いた、「私もお前を失望させない。」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_009",
+        "content": "「Han Lieは一瞬呆了後、たちまち釋然とした笑みを浮かべた。振り返って去り際、戸口で足を止めた：「Chen Ji、我々二人の勝敗は、この最終戦に懸けよう。」\n\n扉が閉まり、Chen Jiは一人で空旷の大殿に立っていた。Mo Xianshengの声が彼の脳裏に響いた：「主人、Chen Nianは本当にLing Yuanの手の中にある。あなた——覚悟はできているか？」」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_010",
+        "prompt": "「Chen NianはLing Yuanにコントロールされており、決断を下す必要がある。」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_010a",
+            "text": "「即座にChen Nianを救出する」",
+            "description": "「妹は彼最大の急所でありたとえ全局面が混乱しても、彼女を救わなければならない。」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "「全局の戦略的配置を扰乱する」",
+            "visible_reward": "「Chen Nianを救い、心の結び目を解く」",
+            "risk_hint": "「Ling Yuanの策略に正好はまるかもしれない」",
+            "process_label": "立即行动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -200
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010a_1",
+                  "content": "「Chen Jiは猛然と立ち上がり、目に覚悟の色が閃いた：「馬を準備しろ！私は自ら——」言いかけた時、聞き覚えのある声が殿外から伝わってきた：「待て！」Su Qingyaoが身を固めにして、大股で入ってきた。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chenian_rescue"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定营救陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_010b",
+            "text": "「原本の計画に従い決戦に向かう」",
+            "description": "「大局を重視。Chen Nianを救出する前に、まずこの乱世を終わらせねばならない。」",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "「Chen Nianはさらなる苦痛を承受することになる」",
+            "visible_reward": "「戦略的優位を維持し、最終的な勝利の基盤を築く」",
+            "risk_hint": "「Ling Yuanに人質として使われるかもしれない」",
+            "process_label": "隐忍布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010b_1",
+                  "content": "「Chen Jiはゆっくりと椅子に座り直し、両手を拳状に握りしめた。「Ling Yuanに伝えろ、」彼の声は冷たく、「二十五日後、私が 직접彼女を迎えに行く。その時、彼に今日の選択を後悔させるぞ。」」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "strategic_calm"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择大局为重",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_010c",
+            "text": "「二並行し、暗中配置する」",
+            "description": "「Chen Nianを見捨てず、決戦計画も乱さない。Tianji Recordで両全之法を見つける。」",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "「大量のHeavenly Fate値を消費する」",
+            "visible_reward": "「救出と決戦の最適解を見つける」",
+            "risk_hint": "「Heavenly Fate値が大幅に低下すれば決戦に影響するかもしれない」",
+            "process_label": "消耗天命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -35
+              },
+              {
+                "stat": "谋略",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010c_1",
+                  "content": "「Chen Jiは目を閉じ、Tianji Recordの残頁が彼の意識の中に広がった。ぼんやりとした光景が浮かぶ——Chen Nianがどこかに幽閉されており、その場所は決戦の戦場と同じ山脈の中にあった。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "dual_line"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": "天机录预见陈念位置",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_011",
+        "character_id": "char_suqingyao",
+        "content": "「Su QingyaoがChen Jiの前に歩み寄り、一通の密書を差し出した：「Ling Yuanの動向は既に查清了。彼が天機山脈の主峰に居座っており、そこは次元の裂け目最为不稳定な场所でございます。」\n\n彼女の視線がChen Jiの顔に落ち、声が珍しく柔らかくなった：「どのような決断を下しても、私はあなたの傍にいる。」」",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_012",
+        "content": "「Chen Jiは密書を受け取り、複雑な目でSu Qingyaoを見つめた。このTianqing Sect内門首席は、かつて何度も彼の正体を暴こうとした人物だが、今は最も揺るぎない守護者となっている。\n\n共命——あの满好感度で解除される特別なバフが、今は微かに温かい光を放っている。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_013",
+        "character_id": "char_yeqing",
+        "content": "「殿外には、一道の黒い影が優雅に漂って届いた。夜清、魔道聖女、一枚の黑衣が玲珑な曲線に巻きつき、顔には前所未有的な凝重さが浮かんでいた。\n\n「観測者、」彼女の声が清冷で、「次元の侵略者の残党は既にLing Yuanと完全に合流した。彼らは天機山脈の奥底にある远古の祭壇をactivatingしている——それは皇都全体を次元に飲み込もうとする陰謀だ。」」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_014",
+        "content": "「Chen Jiは目を閉じ、瞑想する。すべての糸が此刻繋がり始めた。龜甲神器が指し示す天機山脈、 benefactorが残した血脈の目覚め方法、運命的双生子の絆——すべてが同じ場所を指し示していた。\n\n彼は猛然と目を開けた：「命じろ——三日後、朝会を開いて決戦の日程を発表する。天下に知らせよう、観測者の新秩序がいかなる姿で降临するか、と。」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_015",
+        "prompt": "「決戦の日程が決まった。最後の二十五日間をどう向き合うか、選択が必要だ。」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_015a",
+            "text": "「運命を迎える」",
+            "description": "「観測者の身として堂々とこの宿命的戦いに臨む。」",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "「すべての圧力を引き受ける」",
+            "visible_reward": "「名望大いに増し、万民が帰心する」",
+            "risk_hint": "「より多くの弱点を暴露するかもしれない」",
+            "process_label": "正面迎敌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 500
+              },
+              {
+                "stat": "魅力",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015a_1",
+                  "content": "「Su Qingyaoと夜清は目を交わし、同時に拱手した：「観測者に従い、粉骨砕身也在所不惜！」Chen Jiは二人の性格迥なる女性たちを見て、胸に一股の暖意が湧いた。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "embrace_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定正面迎接命运",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_015b",
+            "text": "「運命を書き換える」",
+            "description": "「Tianji Recordの力ですべての変数を予見し、運命を自らの手中にする。」",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "「大量のHeavenly Fate値を消費する」",
+            "visible_reward": "「 ключевая情報を得て、戦場の主導権を掌握する」",
+            "risk_hint": "「Heavenly Fate値が低すぎると予見が不正確になる可能性がある」",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -60
+              },
+              {
+                "stat": "谋略",
+                "delta": 400
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015b_1",
+                  "content": "「Tianji Recordの残頁がChen Jiの掌に浮かび、金色文字が生き物のように蠢いた。次々と光景が頭に流れ込んでいく——Ling Yuanの罠、次元の裂け目の弱点、そして……Chen Nianのいる位置。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rewrite_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 80
+            },
+            "memory_label": "天机录展现关键情报",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_015c",
+            "text": "「運命を超える」",
+            "description": "「先人の古い道を歩まず、観測者만의全新的道を切り開く。」",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "「未知のリスクを引き受ける必要がある」",
+            "visible_reward": "「革新的な力を得るかもしれない」",
+            "risk_hint": "「常道を突き破ることは制御を失う也可能を意味する」",
+            "process_label": "突破极限",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 600
+              },
+              {
+                "stat": "黑化值",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015c_1",
+                  "content": "「Mo Xianshengの残魂がChen Jiの体内で震えている：「良い！主人、ついにこの一歩を踏み出したな！Tianji Record完全版の最終頁，提前为您解封するぞ！」」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "transcend_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录完整版解封",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_016",
+        "content": "「三日後、朝会。\n\n金鸞殿にて、Chen Jiは観測者の黒金長袍をまとい、竜椅の侧に高く座した。下では、百官整然と並び、敬畏と期待の眼差しが向けられている。\n\n「諸卿、」Chen Jiの声が大殿に反響する、「二十五日後、本座は天機山脈にて、Ling Yuanと最終決戦を交える。此の戦，天下の蒼生、、新たな秩序の存亡にがかかっている。」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_017",
+        "character_id": "char_chenji",
+        "content": "「Chen Jiはゆっくりと立ち上がり、黒金長袍が朝の風に烈々と舞う。彼の視線が群臣を払い、声が朗らかで揺るぎない：「二十五日後、本座は天機山脈にて、Ling Yuanと最終決戦を交える。此の戦——天下の蒼生の存亡にかかる！」\n\n言葉が落ち、金鸞殿は一瞬静まり返った。旋即、百官が齐唱した：「観測者万歳！新秩序万歳！」」",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_018",
+        "content": "「朝会が終わり、Chen Jiは独り皇都の最高処に登った——摘星楼。この百丈の高塔は、観測者の権力の象徴であり、皇都の最高地点でもあった。\n\n彼は塔頂に立ち、脚下の劫後余生之都を見下ろした。街道には烟火気が戻りつつあり、遠山處にはまだ閉じていない次元の裂け目が，一道の狰狞な傷痕のように、天涯に浮かんでいた。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_019",
+        "content": "「風がChen Jiの髪先をかすかに通り、一丝の涼しさを運んでくる。彼は掌を広げ、Tianji Recordの残頁がその上に浮かび上がる。金色文字が生き物のように蠢き、今まで見たことのない一文がゆっくりと現れた：\n\n「第千九十五章 二十五日カウントダウン——観測者、覚悟はできているか？」\n\nChen Jiの口元に淡い笑みが浮かんだ：「覚悟が？お前を手に入れた時から、ずっと覚悟決めてきたさ。」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_020",
+        "content": "「Tianji Recordはまるで彼の意志を感じ取ったかのように、金色文字が忽ち変わり、新たな予言となった：\n\n「運命の棋盤は既に最終局面に達した。観測者Chen Ji、あなたはいかなる姿で、最後の頁を書き記すのか？」\n\nChen Jiはあの狰狞な次元の裂け目を仰ぎ見、目に一抹の覚悟が闪いた。二十五日——彼はあまりに長く待っていた。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -241,11 +241,15 @@ actor BundledContentLoader: ContentProviding {
     }
 
     private func localizeChapters(_ chapters: [Chapter], bookId: String) throws -> [Chapter] {
-        guard let language = SoloLocalization.selectedLanguage().resolved.translationFolderName else {
+        let selectedLanguage = SoloLocalization.selectedLanguage().resolved
+        guard let language = selectedLanguage.translationFolderName else {
             return chapters
         }
 
-        let translatedChapterURLs = try translatedChapterURLs(for: language)
+        let translatedChapterURLs = try translatedChapterURLs(
+            for: language,
+            bookId: bookId
+        )
         guard !translatedChapterURLs.isEmpty else {
             return chapters
         }
@@ -255,7 +259,12 @@ actor BundledContentLoader: ContentProviding {
             guard let translationURL = translatedChapterURLs[filename] else {
                 return chapter
             }
-            return try decodeTranslatedChapter(at: translationURL, fallback: chapter, bookId: bookId)
+            return try decodeTranslatedChapter(
+                at: translationURL,
+                fallback: chapter,
+                bookId: bookId,
+                language: selectedLanguage
+            )
         }
     }
 
@@ -331,15 +340,20 @@ actor BundledContentLoader: ContentProviding {
         return try decodePackagedChapters(at: chapterURLs)
     }
 
-    private func translatedChapterURLs(for languageFolder: String) throws -> [String: URL] {
-        if let cached = translatedChapterURLCache[languageFolder] {
+    private func translatedChapterURLs(
+        for languageFolder: String,
+        bookId: String
+    ) throws -> [String: URL] {
+        let cacheKey = "\(bookId)::\(languageFolder)"
+        if let cached = translatedChapterURLCache[cacheKey] {
             return cached
         }
 
         let urls = SoloTranslationCatalog.translatedChapterURLs(
-            language: SoloAppLanguage(rawValue: languageFolder) ?? .zhHans
+            language: SoloAppLanguage(rawValue: languageFolder) ?? .zhHans,
+            bookId: bookId
         )
-        translatedChapterURLCache[languageFolder] = urls
+        translatedChapterURLCache[cacheKey] = urls
         return urls
     }
 
@@ -398,13 +412,25 @@ actor BundledContentLoader: ContentProviding {
         }
     }
 
-    private func decodeTranslatedChapter(at url: URL, fallback: Chapter, bookId: String) throws -> Chapter {
+    private func decodeTranslatedChapter(
+        at url: URL,
+        fallback: Chapter,
+        bookId: String,
+        language: SoloAppLanguage
+    ) throws -> Chapter {
         let data = try Data(contentsOf: url, options: .mappedIfSafe)
         let normalizedData = try normalizeTranslatedChapterData(data)
 
         do {
             let chapter = try decoder.decode(Chapter.self, from: normalizedData)
-            guard chapter.bookId == bookId, chapter.number == fallback.number else {
+            guard translatedChapterMatchesFallback(chapter, fallback: fallback),
+                  chapter.bookId == bookId else {
+                NSLog("‼️ translation mismatch for %@ -> fallback", url.lastPathComponent)
+                return fallback
+            }
+
+            if translationContainsSuspiciousArtifacts(chapter, language: language) {
+                NSLog("‼️ suspicious translation artifacts in %@ -> fallback", url.lastPathComponent)
                 return fallback
             }
             return chapter
@@ -754,6 +780,193 @@ private func normalizeLeafNode(kind: String, payload: [String: Any], path: Strin
     default:
         return []
     }
+}
+
+func translatedChapterMatchesFallback(_ translated: Chapter, fallback: Chapter) -> Bool {
+    guard translated.id == fallback.id,
+          translated.bookId == fallback.bookId,
+          translated.number == fallback.number,
+          translated.nodes.count == fallback.nodes.count else {
+        return false
+    }
+
+    guard translated.nodes.elementsEqual(fallback.nodes, by: translatedStoryNodeMatchesFallback(_:fallback:)) else {
+        return false
+    }
+
+    return true
+}
+
+func translationContainsSuspiciousArtifacts(
+    _ chapter: Chapter,
+    language: SoloAppLanguage
+) -> Bool {
+    let suspiciousMarkers = [
+        "[the original text appears",
+        "let me provide a natural translation",
+        "[based on context:",
+        "encoding issues",
+    ]
+
+    for string in collectChapterStrings(chapter) {
+        let normalized = string.lowercased()
+        if suspiciousMarkers.contains(where: normalized.contains) {
+            return true
+        }
+    }
+
+    // English and Korean builds should not ship chapters that still contain
+    // large blocks of untranslated Han text. If they do, prefer the source
+    // Chinese chapter over a visibly broken mixed-language chapter.
+    switch language {
+    case .en, .ko:
+        let contentStrings = collectChapterNarrativeStrings(chapter)
+        let totalScalarCount = contentStrings.reduce(0) { $0 + $1.unicodeScalars.count }
+        guard totalScalarCount > 0 else { return false }
+
+        let hanScalarCount = contentStrings.reduce(0) { partial, value in
+            partial + value.unicodeScalars.filter {
+                (0x4E00...0x9FFF).contains($0.value)
+            }.count
+        }
+
+        return Double(hanScalarCount) / Double(totalScalarCount) > 0.12
+    default:
+        return false
+    }
+}
+
+private func translatedStoryNodeMatchesFallback(_ translated: StoryNode, fallback: StoryNode) -> Bool {
+    switch (translated, fallback) {
+    case (.text(let lhs), .text(let rhs)):
+        return lhs.id == rhs.id
+    case (.dialogue(let lhs), .dialogue(let rhs)):
+        return lhs.id == rhs.id && lhs.characterId == rhs.characterId
+    case (.notification(let lhs), .notification(let rhs)):
+        return lhs.id == rhs.id
+    case (.choice(let lhs), .choice(let rhs)):
+        return translatedChoiceMatchesFallback(lhs, fallback: rhs)
+    default:
+        return false
+    }
+}
+
+private func translatedChoiceMatchesFallback(_ translated: ChoiceNode, fallback: ChoiceNode) -> Bool {
+    guard translated.id == fallback.id,
+          translated.choices.count == fallback.choices.count else {
+        return false
+    }
+
+    return translated.choices.elementsEqual(fallback.choices, by: translatedChoiceOptionMatchesFallback(_:fallback:))
+}
+
+private func translatedChoiceOptionMatchesFallback(_ translated: Choice, fallback: Choice) -> Bool {
+    guard translated.id == fallback.id else { return false }
+
+    let translatedResultNodes = translated.resultNodes ?? []
+    let fallbackResultNodes = fallback.resultNodes ?? []
+    guard translatedResultNodes.count == fallbackResultNodes.count else { return false }
+
+    return translatedResultNodes.elementsEqual(
+        fallbackResultNodes,
+        by: translatedStoryNodeMatchesFallback(_:fallback:)
+    )
+}
+
+private func collectChapterStrings(_ chapter: Chapter) -> [String] {
+    var result = [chapter.title]
+
+    if let nextChapterHook = chapter.nextChapterHook {
+        result.append(nextChapterHook)
+    }
+
+    for node in chapter.nodes {
+        switch node {
+        case .text(let text):
+            result.append(text.content)
+        case .dialogue(let dialogue):
+            result.append(dialogue.content)
+        case .notification(let notification):
+            result.append(notification.message)
+        case .choice(let choice):
+            result.append(choice.prompt)
+            for option in choice.choices {
+                result.append(option.text)
+                if let description = option.description {
+                    result.append(description)
+                }
+                if let visibleCost = option.visibleCost {
+                    result.append(visibleCost)
+                }
+                if let visibleReward = option.visibleReward {
+                    result.append(visibleReward)
+                }
+                if let riskHint = option.riskHint {
+                    result.append(riskHint)
+                }
+                if let processLabel = option.processLabel {
+                    result.append(processLabel)
+                }
+                if let resultNodes = option.resultNodes {
+                    result.append(contentsOf: collectChapterStrings(
+                        Chapter(
+                            id: chapter.id,
+                            bookId: chapter.bookId,
+                            number: chapter.number,
+                            title: chapter.title,
+                            nodes: resultNodes,
+                            isPaid: chapter.isPaid,
+                            nextChapterHook: nil
+                        )
+                    ))
+                }
+            }
+        }
+    }
+
+    return result
+}
+
+private func collectChapterNarrativeStrings(_ chapter: Chapter) -> [String] {
+    var result = [chapter.title]
+
+    if let nextChapterHook = chapter.nextChapterHook {
+        result.append(nextChapterHook)
+    }
+
+    for node in chapter.nodes {
+        switch node {
+        case .text(let text):
+            result.append(text.content)
+        case .dialogue(let dialogue):
+            result.append(dialogue.content)
+        case .notification(let notification):
+            result.append(notification.message)
+        case .choice(let choice):
+            result.append(choice.prompt)
+            for option in choice.choices {
+                result.append(option.text)
+                if let description = option.description {
+                    result.append(description)
+                }
+                if let resultNodes = option.resultNodes {
+                    result.append(contentsOf: collectChapterNarrativeStrings(
+                        Chapter(
+                            id: chapter.id,
+                            bookId: chapter.bookId,
+                            number: chapter.number,
+                            title: chapter.title,
+                            nodes: resultNodes,
+                            isPaid: chapter.isPaid,
+                            nextChapterHook: nil
+                        )
+                    ))
+                }
+            }
+        }
+    }
+
+    return result
 }
 
 private struct PackagedStoryEntry {

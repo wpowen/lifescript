@@ -1,0 +1,660 @@
+{
+  "id": "天机录_ch0622",
+  "book_id": "天机录",
+  "number": 622,
+  "title": "Crisis Escalates",
+  "is_paid": true,
+  "next_chapter_hook": "The secret edict delivered by the Crown Prince before falling into a coma reveals a corner of the greatest secret of throne succession—which turns out to be a forbidden knowledge even the Eyes of Heavenly Dao fear!",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0622_001",
+        "content": "The ghostly light from the depths of the altar gradually faded. The torn page of the Tianji Record in Chen Ji's hand still retained warmth. His sister Chen Nian's message was carved into his heart—'Brother, don't come find me'—five characters like five steel needles piercing his chest. Mo Xiansheng's remnant soul trembled slightly within the pages, and after a long silence spoke: 'She chose to open the altar in her own way... this is her own path, boy, you cannot stop her.' Chen Ji said nothing, only tucking the torn record into his sleeve, his knuckles white from gripping.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_002",
+        "character_id": "char_moxiansheng",
+        "content": "Boy, this is not the time for grief. Urgent news from the north—the Xuanwu Sect has united with Qingyun Gate, Zixiao Palace, and Xuanming Valley, and just issued a joint declaration outside the imperial city!",
+        "emotion": "紧迫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_003",
+        "content": "Chen Ji's gaze turned sharp and cold. Mo Xiansheng projected a phantom before his eyes—outside the imperial city's gate, elders from the four great sects stood shoulder to shoulder, with Han Lie, the number one genius of the Xuanwu Sect, at the very front, his expression arrogant. The content of the joint declaration appeared clearly: 'The imperial dynasty shelters the traitor Chen Ji of the Tianqing Sect, harboring a demonic path spy, having already lost the heart of the righteous path. Within ten days, hand over Chen Ji, or the four great sects will act on behalf of Heaven, cleansing the门户!' In the phantom, Han Lie's lips curved into a mocking arc, his gaze seeming to pierce through the void directly at Chen Ji: 'Waste, you can hide from the first day, but not the fifteenth.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_004",
+        "character_id": "char_chenji",
+        "content": "(His lips curving slightly upward, yet his eyes held no smile) Act on behalf of Heaven? Han Lie, oh Han Lie, do you really think you're the spokesperson of Heavenly Dao? The four great sects jointly pressing... this is a palace coup.",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_005",
+        "content": "Just then, the Tianji Record suddenly trembled, an urgent message breaking through the air. Chen Ji's expression changed dramatically—something major had happened inside the imperial city! The Crown Prince's palace was attacked by assassins, His Highness struck by three swords, his life hanging by a thread. And the cultivation technique traces left on those assassins were unmistakably the Xuanwu Sect's Xuanwu Battle Qi! Mo Xiansheng's voice rang out low: 'This is a阳谋. The Crown Prince is the dynasty's sole heir, the Xuanwu Sect kills him,就是要逼 the Emperor to either hand you over, or watch the Crown Prince die before his eyes—whichever choice, the dynasty will fall into turmoil.'",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_006",
+        "character_id": "char_chenji",
+        "content": "(Rising abruptly, the Tianji Record in his sleeve glowing) What a brilliant two-birds-with-one-stone move. Kill the Crown Prince and frame me, the dynasty either falls into civil strife or gets annexed by the sect coalition... Han Lie doesn't even realize he's being used as a gun. Mo Xiansheng, I'm going to the imperial city.",
+        "emotion": "冷静而决然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_007",
+        "character_id": "char_moxiansheng",
+        "content": "If you appear now, you're a lamb entering the tiger's den. But... if you don't go, and the Crown Prince dies, your entire layout in the dynasty is ruined. For this game, what do you choose?",
+        "emotion": "试探"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0622_008",
+        "prompt": "The joint declaration from the four great sects hangs like a blade over your head, the Crown Prince's assassination leaves his life hanging by a thread—Chen Ji, how will you break this deadlock?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0622_choice_公开身份",
+            "text": "Reveal Identity, Direct Confrontation",
+            "description": "Appear in the imperial city with your true identity, expose the Xuanwu Sect's conspiracy face-to-face, personally save the Crown Prince. Thoroughly tear apart the waste persona, use strength to slap the faces of the four great sects.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Lose the advantage of disguise, expose all trump cards",
+            "visible_reward": "The Crown Prince is grateful, the dynasty gives full support, but will become a public enemy of the four great sects",
+            "risk_hint": "Make enemies on all sides, if unable to suppress in a short time, self-preservation becomes impossible",
+            "process_label": "正面破局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0622_result_公开身份_01",
+                  "character_id": "char_chenji",
+                  "content": "(Tearing off the disguise, his eyes blazing with fierce light) Fine, since they seek death, I'll grant them their wish! Han Lie, you wanted to see me? I, Chen Ji, will today show you what a true genius looks like!",
+                  "emotion": "霸气"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "身份公开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0622_choice_继续潜伏",
+            "text": "Continue to Lurk, Stir Up Trouble Secretly",
+            "description": "Infiltrate the imperial city without a trace, secretly investigate the truth of the assassination, find evidence of the mastermind. Use internal dynasty forces to counterattack the Xuanwu Sect, reap the benefits as a bystander.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "The Crown Prince may not survive until you uncover the truth",
+            "visible_reward": "Hold the Xuanwu Sect's leverage, can strike a fatal blow",
+            "risk_hint": "Time is tight, if the Crown Prince dies, the dynasty may take out their anger on you",
+            "process_label": "暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0622_result_继续潜伏_01",
+                  "content": "(Suppressing his rage, his gaze deep and profound) No hurry. The more it's like this, the calmer you must be. Han Lie thinks I'll be forced to show myself? Heh... let him enjoy himself for a few more days.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暗中行动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0622_choice_掀桌破局",
+            "text": "Flip the Table to Break the Deadlock, Introduce External Forces",
+            "description": "Contact Ye Qing from the Holy Sect of the Demonic Path, have her spread false evidence of the Xuanwu Sect colluding with the Demonic Path. At the same time, leak the news that someone within the Tianqing Sect is colluding with the enemy, thoroughly muddying these waters, causing all factions to suspicion each other.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be viewed as a traitor by righteous path factions",
+            "visible_reward": "The Four Great Sects Alliance has collapsed, each side left to fend for itself.",
+            "risk_hint": "Inviting wolves into the house may bring even greater troubles.",
+            "process_label": "搅局破局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0622_result_掀桌破局_01",
+                  "character_id": "char_chenji",
+                  "content": "(A cold laugh, fingers tapping lightly on the table) Since they want to play big, I'll play along. It's time for Ye Qing to make a move... This chess game, it's time to flip the board.",
+                  "emotion": "阴沉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "搅局行动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0622_009",
+        "content": "Chen Ji took a deep breath and ultimately chose the third path. He quickly sent a message to Ye Qing, while taking out a concealed talisman—a hidden move he had set up years ago, originally intended as a life-saving charm for the most critical moments. The talisman activated, and he transformed into a wisp of blue smoke, silently infiltrating the imperial city. Ye Qing replied soon after: 'The false evidence is ready. The 'ironclad proof' of Xuanwu Sect's collusion with the Demonic Path will spread across the world tomorrow. As for you, the Crown Prince's situation doesn't look good—I've heard the imperial physicians are at their wit's end.'",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_010",
+        "content": "When Chen Ji rushed to the Crown Prince's chambers, chaos reigned throughout the palace. The bodies of the imperial guard soldiers lay scattered haphazardly, the air thick with a pungent smell of blood. The Crown Prince lay on the couch, his face deathly pale as paper, three deep gashes visible to the bone shocking to the eye. The imperial physicians knelt beside him, their faces filled with despair. The chief physician's voice trembled: 'Your Highness has been struck by Xuanwu Battle Qi. The wounds are being corroded by the battle qi. This old one is powerless...' The Emperor, in his fury, had already executed two guards, but righteous rage solves nothing.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_011",
+        "character_id": "char_chenji",
+        "content": "(Concealed in the shadows, rapidly calculating in his heart) Xuanwu Battle Qi... If not purged, the Crown Prince won't survive the night. But if I act, I'll be completely exposed... Forget it. If the Crown Prince dies, the dynasty will surely fall into chaos. I've been planning for years; I cannot let it be destroyed in one fell swoop.",
+        "emotion": "内心挣扎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_012",
+        "content": "Just as Chen Ji hesitated, a commotion suddenly arose outside the hall. A wild, arrogant laughter drew near—'Hahaha! Emperor, we came with goodwill to pay respects to His Highness the Crown Prince, yet we are refused at the gates? The Four Great Sects are full of sincerity, is this the dynasty's way of treating guests?' Han Lie's voice thundered like the heavens. He actually brought his men to the outer gates of the Crown Prince's chambers! The Imperial Guard Commander's face turned ashen, yet he dared not act rashly—after all, the Four Great Sects united possessed strength sufficient to stand as equals with the dynasty.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_013",
+        "character_id": "char_chenji",
+        "content": "(Cold light flickered in his eyes, a cold smile forming in his heart) Perfect timing. Han Lie, you think I don't know what you're scheming? If the Crown Prince dies, the dynasty falls into chaos, and your Xuanwu Sect can slip in through the cracks... Unfortunately, you've miscalculated one crucial move.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_014",
+        "content": "Chen Ji hesitated no longer. He abruptly abandoned his concealment technique and strode into the Crown Prince's chambers. Everyone inside was startled—this servant disciple from Tianqing Sect, when did he gain the audacity to appear in such a place? The physicians exchanged bewildered glances. The imperial guards instinctively tightened their grips on their sword hilts. The Emperor also frowned slightly, his gaze falling upon Chen Ji, as if examining something. The Crown Prince on the couch suddenly opened his eyes. His murky gaze burst forth with a spark of clarity. With great difficulty, he raised his hand and beckoned to Chen Ji.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_015",
+        "character_id": "char_chenji",
+        "content": "(Approaching, leaning close to the Crown Prince's ear) Your Highness, I am Chen Ji. I can dispel the Xuanwu Battle Qi, but I need your cooperation—no matter what happens, please trust me.",
+        "emotion": "低沉而坚定"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_016",
+        "character_id": "char_chenji",
+        "content": "The Crown Prince's cracked lips trembled slightly. His voice was weak yet carried a hint of relief: 'So it's you... This one knew that the 'servant' who debated the scholars in court was no ordinary fish in a pond...' Summoning his last reserves of strength, he retrieved a scroll of bright yellow silk from beneath his pillow and pressed it into Chen Ji's hand. 'This is... the secret decree the late Emperor entrusted to this one on his deathbed... If anything befalls this one, you... you may use this decree to command the Imperial City's Shadow Guard...' Before he could finish, his hand fell limply. Yet a peaceful smile graced his lips.",
+        "emotion": "悲壮"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0622_017",
+        "prompt": "The Crown Prince's deathbed entrustment of the secret decree, Han Lie lurking outside with predatory intent—Chen Ji, how will you decide?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0622_choice_当场救太子",
+            "text": "Act immediately, save the Crown Prince.",
+            "description": "Use the power of the Tianji Record to expel the Xuanwu Battle Qi and save the Crown Prince. This will completely expose your abilities, but will earn you the utmost trust from both the Crown Prince and the Emperor.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Exposing part of the Tianji Record's abilities, attracting the covetous gazes of multiple forces.",
+            "visible_reward": "The Crown Prince is grateful, granting you command of the Imperial City's Shadow Guard.",
+            "risk_hint": "The Tianji Record's aura may attract even more powerful enemies.",
+            "process_label": "正面对决",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 35
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 40
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0622_result_当场救太子_01",
+                  "content": "Chen Ji hesitated no more. His hands formed seals, and the fragment of the Tianji Record materialized in his palm. Brilliant starlight surged from his fingertips, flowing into the Crown Prince's body. The Xuanwu Battle Qi entrenched in the wounds let out sharp shrieks, thrashing wildly, yet unable to resist the crushing force of that mysterious power—stripped away inch by inch, dissolving. The physicians gaped in astonishment. The Emperor rose abruptly. Even Han Lie's laughter outside the hall ceased abruptly.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录暴露",
+              "太子获救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0622_choice_保留密旨",
+            "text": "Accept the secret decree, postpone action.",
+            "description": "The Crown Prince is already unconscious. Whether he can be saved remains uncertain. Better to keep the secret decree as a trump card for now. Let the physicians continue their efforts while secretly observing how the situation unfolds.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "The Crown Prince may truly not make it.",
+            "visible_reward": "Holding the secret decree, you can mobilize the Shadow Guard at any time.",
+            "risk_hint": "If the Crown Prince dies, the dynasty may fall into civil strife.",
+            "process_label": "隐忍观望",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0622_result_保留密旨_01",
+                  "content": "Chen Ji tucked the secret decree into his sleeve, retreating to the side without changing his expression. His gaze swept over the helpless physicians, a cold smile forming in his heart—what useless wretches. Yet on the surface, he respectfully cupped his hands toward the Emperor: 'This commoner has some knowledge of medical arts and may attempt a treatment, however...' He pivoted, 'Han Lie lurks outside with predatory intent. If this commoner were to save someone now, it might give him an excuse to attack the Imperial City.'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得密旨"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0622_choice_先退韩烈",
+            "text": "First repel Han Lie, then save the Crown Prince.",
+            "description": "Han Lie storming the palace with his men is an outright provocation to the dynasty. Seizing this opportunity to publicly humiliate Han Lie, restore the dynasty's face, and then rescue the Crown Prince—one stroke, two gains.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Need to confront Han Lie directly",
+            "visible_reward": "Can both save the Crown Prince and publicly humiliate Han Lie",
+            "risk_hint": "Han Lie's combat power is astonishing; failure to suppress him means total humiliation",
+            "process_label": "先礼后兵",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0622_result_先退韩烈_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji turned, his gaze sharp as a blade, fixing on the arrogant figure outside the hall. He didn't employ any earth-shattering techniques—merely leisurely straightened his robe and said calmly, \"Lord Han, are you here to visit the patient, or to attend a funeral? If visiting, I suggest you first收起你脸上的杀气 — no wait, he's in a coma, so he can't be frightened awake.\"",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "言语交锋"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0622_018",
+        "content": "Dead silence filled the hall. The imperial physicians stared in disbelief at this audacious Servant Disciple, while the imperial guards wore complicated expressions—this man's audacity was truly extraordinary, daring to publicly mock the number one genius of Xuanwu Sect! The Emperor's eyes flickered slightly, seemingly developing interest in this young man. The Crown Prince on the couch, however, had his brow slightly relaxed, as if sensing something. Han Lie outside the hall was livid, his tightly clenched fists cracking. Several Xuanwu Sect disciples behind him were furious; had Han Lie not stopped them, they would have rushed in to tear Chen Ji apart.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_019",
+        "character_id": "char_hanlie",
+        "content": "(Forcing down the rage, voice gloomy) Chen Ji... you certainly know how to speak. But does a waste of a servant disciple presume to lecture me? When I take your miserable life, let's see if your tongue remains so sharp!",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_020",
+        "content": "Upon hearing this, Chen Ji didn't become angry—instead, he smiled. His smile was gentle, even carrying a hint of benevolence, as if looking at a ignorant child. \"Lord Han, I presume your title as Xuanwu Sect's number one genius wasn't earned through glib talk?\" He shook his head, his tone carrying boundless pity, \"Enough, debating with you would lower my status. Your Majesty,\" he turned to the Emperor and bowed, \"this commoner has a method to save the Crown Prince, though it requires some time and a quiet environment. Since Lord Han cares so deeply about the Crown Prince, perhaps he could wait outside the hall and not disturb my acupuncture.\" This was spoken with云淡风轻 grace, yet placed Han Lie in an untenable position—if he forced his way in, he would disrupt the treatment; if he retreated, he would tacitly acknowledge Chen Ji's abilities.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_021",
+        "character_id": "char_chenji",
+        "content": "(Looking at Han Lie's ashen face, cold smile in heart) This is the drawback of brute force. With an inadequate mind, one can only be led by the nose. Han Lie, Han Lie, you think you're plotting against the dynasty, unaware you're merely a piece in someone else's game—and I am the Chess Player.",
+        "emotion": "冷静而得意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_022",
+        "content": "The Emperor finally spoke. His voice was majestic and steady: \"Han Lie, the joint declaration from your Four Great Sects has been received. The ten-day deadline hasn't even passed, yet you barge into the Crown Prince's chambers—so what's the meaning of this? Could it be... the assassin who struck the Crown Prince truly has connections to Xuanwu Sect?\" Upon these words, Han Lie's expression changed slightly. Though arrogant, he knew this accusation was unbearable. Moreover, his purpose here was to pressure through confrontation, not to撕破脸皮—leastways, not yet.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0622_023",
+        "prompt": "The Emperor publicly questions Han Lie; how should Chen Ji fan the flames?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0622_choice_火上浇油",
+            "text": "Pour oil on the fire, forcing him to take a stance",
+            "description": "Seize the opportunity to kick a man when he's down, publicly exposing the Xuanwu Battle Qi traces on the assassin, leaving Han Lie with no defense.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Completely become enemies with Xuanwu Sect",
+            "visible_reward": "Han Lie loses all face, Xuanwu Sect's reputation damaged",
+            "risk_hint": "Cornered, Han Lie might go rabid",
+            "process_label": "乘胜追击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0622_result_火上浇油_01",
+                  "content": "Chen Ji spoke at the right moment, his voice not loud but clearly reaching everyone's ears: \"Your Majesty's insight is clear; this commoner has already examined the Xuanwu Battle Qi on the assassin. If Lord Han doesn't believe it, the physicians present can verify—the unique aura of Xuanwu Battle Qi cannot be casually forged.\" Upon hearing this, the physicians nodded. Though they didn't understand martial arts, they had indeed smelled a unique aura, identical to the Xuanwu Battle Qi described in legends.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈被质疑"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0622_choice_留有余地",
+            "text": "Leave room for maneuver, know when to stop",
+            "description": "Don't speak in absolutes, give Han Lie a way out. Today's objective is achieved; no need to drive a person to desperation.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Han Lie might escape responsibility",
+            "visible_reward": "Win the favor of those present, display magnanimity",
+            "risk_hint": "Miss an opportunity to severely wound the opponent",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0622_result_留有余地_01",
+                  "content": "Chen Ji slightly bowed, his tone peaceful: \"This commoner dares not speak rashly. Lord Han comes from a prestigious family and would naturally not engage in such despicable acts. It's just those technique traces on the assassins... perhaps some ill-intentioned person deliberately framed them, trying to implicate Xuanwu Sect and provoke conflict between the sect and the dynasty.\" Beautifully spoken, neither directly accusing Han Lie nor hinting at the existence of a conspiracy. The Emperor nodded approvingly, his gaze on Chen Ji growing increasingly favorable.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0622_024",
+        "content": "Han Lie's expression shifted between gloom and uncertainty, finally冷哼一声: \"Consider yourself lucky today. But Chen Ji, don't celebrate too soon—within ten days, let's see how you escape the imperial capital!\" With that, he swept his sleeve and left, Xuanwu Sect disciples following closely behind. Silence descended in the hall. The Emperor looked at Chen Ji, his eyes glittering: \"So you're that Servant Disciple who debated the court officials? I thought you were merely a smooth talker,没想到... you have some real skill. Regarding the Crown Prince's matter, do you truly have confidence?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_025",
+        "character_id": "char_chenji",
+        "content": "(Kneeling on one knee, respectful yet neither servile nor overbearing) Your Majesty, this commoner has seventy percent certainty. However... this commoner presumes to request a royal decree, allowing this commoner to command the imperial guards during the treatment, to prevent any interference.",
+        "emotion": "诚恳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_026",
+        "content": "The Emperor fell silent for a moment, his gaze deep and unfathomable. He stared at Chen Ji for a long while, as if weighing something. Finally, he spoke: \"Very well. I shall appoint you as 'Special Envoy for the Crown Prince's Protection.' During the treatment period, the Imperial Guard shall be at your disposal. If the Crown Prince remains unharmed, I shall not stint in my rewards; if anything befalls the Crown Prince...\" He did not finish, but the threat was self-evident. Chen Ji kowtowed to accept the decree, but in his heart, he was rapidly calculating—the Emperor's trust had come too easily; there must be something amiss here. But saving the Crown Prince took priority; the rest... could wait. Mo Xiansheng's remnant soul trembled slightly in his sleeve, as if wanting to say something, yet forcibly holding back. Chen Ji knew this guardian must have sensed something, but now was not the time for questioning.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_027",
+        "content": "The palace doors closed, and Chen Ji faced the unconscious Crown Prince alone. He took a deep breath and retrieved the Tianji Record Fragment from his sleeve. On its yellowed surface, countless tiny runes flowed, as if recounting some ancient secret. He placed the fragment over the Crown Prince's chest and softly recited cryptic incantations. In an instant, golden light surged from the fragment, flowing into the Crown Prince's body like spring water. The Xuanwu Battle Qi that had been festering in the wounds let out mournful shrieks, yet could not resist the erosion of that mysterious force—being stripped, purified, and dispersed inch by inch. The Crown Prince's furrowed brow gradually relaxed, and his breathing steadied. However, at this moment, Chen Ji felt a intense vertigo—the Tianji Record was frantically抽取他的天命值！五点、十点、十五点……他眼前一阵发黑，却咬牙坚持着。「再撑一会儿……」他在心中默念，「就快了……」墨先生的声音急切地响起：「够了！再抽下去你会死的！」但陈机仿佛没有听见，只是死死盯着太子逐渐红润的面色。十息之后，他终于收回残页，整个人软倒在地，冷汗浸透了衣衫。天命值又少了二十点，他现在只剩不到一半了。但太子——太子得救了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_028",
+        "character_id": "char_chenji",
+        "content": "(Struggling to sit up, he watches the Crown Prince's steady breathing and a bitter smile tugs at his lips.) Worth it. Mo Xiansheng, remember—the clues about Chen Nian, the Imperial Court's schemes, and the truth of the Tianji Record... these are all more important than my life. As long as I can save the people I want to save, what's a few Heavenly Fate points?",
+        "emotion": "疲惫而坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_029",
+        "content": "Outside the Crown Prince's chamber, the Imperial Guard Commander personally led his men in guard duty. The Emperor waited in the side hall, and upon learning the Crown Prince was out of danger, his dragon face beamed with joy. He immediately ordered Chen Ji be rewarded with a thousand taels of gold, ten bottles of elixirs, and more importantly, an Imperial Passage Token—this meant he could freely enter and exit the palace, even having audiences without prior notice. For a time, Chen Ji's name as an 'Outer Disciple/Servant' once again echoed throughout the imperial city. However, alongside his fame came crisis. Ye Qing's message arrived at just the right moment: \"Chen Ji, the false information you asked me to spread has worked. Fissures have appeared within the Xuanwu Sect, and some have begun questioning whether Han Lie's decisions this time were correct. However...\" Her tone grew solemn, \"My informants report that the Tianqing Sect also seems to be making moves. That old fox Ling Yuan has personally emerged from seclusion.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_030",
+        "character_id": "char_moxiansheng",
+        "content": "(Chen Ji's expression suddenly darkened.) Ling Yuan... he finally couldn't sit still any longer. I should have guessed that when the Xuanwu Sect made their move, he wouldn't stay idle. Mo Xiansheng, you said last time he would appear 'in an even more dangerous form'—what does that mean?",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0622_031",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's remnant soul fell silent for a long while before slowly speaking: \"Boy, Ling Yuan and I... and your missing father, share deep ties. The moment he was 'abandoned' by the Tianji Record, a seed of obsession was planted in his heart. Such obsession is enough to drive him to do anything.\" He paused, his voice dropping lower, \"There's one more thing—your sister Chen Nian, the altar she activated has inextricable ties to the Tianji Record. I vaguely sense that what's sleeping within there... is probably far more terrifying than you imagine.\" Chen Ji's fingers gripping the Tianji Record tightened abruptly, and a sense of ill foreboding surged in his heart.",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_032",
+        "content": "The night outside the window was deep and dark, the imperial city's lights scattered like stars in the darkness. The news of the Crown Prince's rescue quickly spread throughout the entire palace. The Emperor personally came to visit, and upon seeing his eldest son awakened, his dragon face beamed with joy. However, in the midst of this celebratory atmosphere, a palace attendant rushed in and knelt before the Emperor: \"Your Majesty, Ling Yuan, the former Sect Master of Tianqing Sect, has sent a personal letter requesting... requesting to personally present it to Your Majesty!\" Chen Ji's eyes suddenly hardened. Ling Yuan's personal letter? That came fast. The Emperor took the envelope, opened it, and his expression slightly changed before passing the letter to Chen Ji. Chen Ji unfolded the paper; on it were merely a few words: \"Chen Ji, the traitor of Tianqing Sect, is actually a spy of the Demonic Path. I humbly request the Imperial Court hand him over to uphold heavenly justice. Furthermore, this poor Daoist has personally traveled to the imperial city and will arrive shortly.\" At the signature was Ling Yuan's bold and powerful name.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0622_033",
+        "content": "After reading the letter, a smile actually curved at the corner of Chen Ji's lips. He folded the paper neatly and respectfully returned it to the Emperor, his tone terrifyingly calm: \"Your Majesty, it seems this 'traitor' hat I'm wearing is becoming more and more firmly stuck. But this commoner wishes to ask Your Majesty a question—if this commoner truly were a spy of the Demonic Path, why wouldn't Elder Ling Yuan come capture me personally, instead of using the Imperial Court's hand?\" Upon hearing this, the Emperor's eyes slightly shifted. Chen Ji continued: \"Because he dares not. The Tianqing Sect is currently divided into two factions—one supports Ling Yuan, and the other... supports this commoner. If Ling Yuan acts within the sect, it would cause internal chaos; if he wants to hand this commoner over to the Imperial Court, he wishes to splash dirty water on Your Majesty's head—making the world believe the Imperial Court colludes with the Demonic Path.\" His voice was not loud, yet every word cut to the heart, \"Your Majesty, do you think... is this commoner correct?\" The Emperor was silent for a moment, then suddenly burst into laughter: \"Excellent! What sharp wit! I was not wrong about you.\" He patted Chen Ji's shoulder, \"If Ling Yuan wishes to come, let him come. This Emperor wishes to see what waves this old fox can stir up on my turf!\" Chen Ji bowed to express gratitude, but in his heart, he was rapidly calculating—Ling Yuan coming in person meant this game of chess was about to enter its hottest phase. And the cards in his hand should be revealed one by one...",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

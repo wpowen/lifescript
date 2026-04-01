@@ -1,0 +1,623 @@
+{
+  "id": "天机录_ch0337",
+  "book_id": "天机录",
+  "number": 337,
+  "title": "비밀경계 개방",
+  "is_paid": true,
+  "next_chapter_hook": "셋이 깊은 곳으로 향하려던 순간, 오직 Chen Ji만이 감지할 수 있는 부름이 비밀경계 깊은 곳에서 전해졌다——그 기운은 Tianji Record 잔편과 똑같아, 그를 잊혀진 금지之地로 인도하는 듯했다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0337_001",
+        "content": "Chen Ji가 숙명적인 예언을 아직 소화하지 못한 상태에서, Tianqing Sect Mountain Gate 밖 하늘에 갑자기 혈색 균열이 생겼다——Hua Shen 경 강자가 온 힘을 다할 때만 나타나는 천지 이상이다. 균열 깊은 곳에는 떠다니는 궁전 군이 희미하게 보이며, 구름 안개 사이로 고대한 서러움의 기운이 새어 나왔다. 전설 속의 고대 비밀경계 입구였다. 모든 사람의 시선이 그 균열에 빨려 들어갔지만, Chen Ji는 더 많은 것을 알아챘다——Mo Xiansheng의 잔혼이 Tianji Record에서 미세하게 떨려 있었고, 그 진동수는 그가 얻은 잔편과 어떤 공명을 일으켰다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_002",
+        "character_id": "char_moxiansheng",
+        "content": "「때가 왔다.」 Mo Xiansheng의 목소리는 노쇠하고 피곤했다, 「비밀경계 안에 제2의 Tianji Record 잔편이 숨겨져 있다. 그러나 기억하라——비밀경계에 들어간 후, 앞 세 층의 시련이 너와 나의 연결을 봉쇄할 것이다. 그 전에, 물어야 할 것을 모두 물어라.」",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_003",
+        "content": "Chen Ji는 깊게 숨을 들이마셨다. 마침내 Mo Xiansheng이 제2의 실마리를 알려주었지만, 준비 시간이 반시진밖에 남지 않았다. 멀리 각 대문파의 수인들이 비밀경계 입구를 향해 모이기 시작했다. 하늘에는 빛나는 빛이 어지럽고, 수많은 비행 법기가 하늘을 가르고 있었다. 그는 선택을 내려야 했다——낮게潜入하여 대열에 섞이는 것, 아니면 혼란 속에서 먼저 기회를 잡는 것?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0337_004",
+        "prompt": "비밀경계의 개방을 앞두고, Chen Ji는 어떻게 행동해야 할까?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0337_004_001",
+            "text": "고조된 데뷔",
+            "description": "Tianqing Sect 핵심 제자 신분으로 정식 등장하여, 각 세력 앞에서 자신의 존재를 확립하고, 잠재적 상대방을 위협한다",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "실력을 드러내어 더 많은 주의를 끈다",
+            "visible_reward": "명망 +15, 비밀경계에서 우선 선택권 획득",
+            "risk_hint": "온갖 표적이 되어 더 많은 도전을 받게 된다",
+            "process_label": "陈机决定高调现身",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_001",
+                  "content": "Chen Ji는 옷을 정리하고, 단단한 발걸이로 종문 집결지로 향했다. 그의 출현이 한阵 소동을 불러일으켰다——패재 제자가 핵심 제자 신분으로 참석하다니? Tianqing Sect의 장老들은 얼굴색이 미묘하게 변했지만, 누구도 말을 가로막지 않았다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_004_002",
+            "text": "어둠 속의 숨어 있기",
+            "description": "신분을 숨기고 일반 제자 대열에 섞여, Tianji Record를 이용하여 각 세력을 은밀히 관찰하고, 이용 가능한破绽과 기회를 찾는다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "초기 자원 다툼을 놓친다",
+            "visible_reward": "책략 +10, 더 많은 정보 우위 획득",
+            "risk_hint": "열쇠 같은 인연을 놓칠 수 있다",
+            "process_label": "陈机决定隐匿行踪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_002",
+                  "content": "Chen Ji는 조용히 군중 뒤로 물러나, 현공을 운용하여 기운을 거두었다. 그는 이내 일반 제자 속에 묻혔고, 아무도 그 눈에 띄지 않는身影이全场 상황을俯視하고 있다는 것을 알아채지 못했다.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_004_003",
+            "text": "위협으로 위엄 세우기",
+            "description": "잠재적 위협자를 능동적으로 도발하여, 절대적 실력으로 억압하는 방식으로 위신을 쌓아, 모든 사람이 가볍게 보지 못하게 한다",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "일부 패를 소모한다",
+            "visible_reward": "전투력 +10, 위엄 대증",
+            "risk_hint": "일부 실력을 드러낼 수 있어, 더 강한 자의 주의를 끌게 된다",
+            "process_label": "陈机决定主动立威",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_003",
+                  "content": "Chen Ji는 입꼬리를 살짝 올리며, 대담하게 장면 중앙의 가장嚣张한 도발자를 향해 걸어갔다. 그 사람은 큰 소리로 Tianqing Sect에 누구도 맞서지 못한다고 놀리고 있었다. 다음 순간 Chen Ji의 검意向이 그이의 미간에 잠겼다——삼 식 만에, 승부가 이미 갈렸다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0337_005",
+        "content": "비밀경계의 입구가高空에 떠 있었고, 혈색 균열은 벌린巨眼처럼 보였다. 중심에는 눈부신 광주가 곧장貫射而下했다. 광주 주위에는 이미 수십 명의 각 문파 정예 제자들이 모여 있었고,个个 기세가不凡했으며, 칼을 빼고 활을 당기는 듯한 긴장된",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_006",
+        "character_id": "char_chenji",
+        "content": "「苏청요师姐, 陈념,稍后进入秘境后跟紧我.」陈Ji压低声音,目光扫过对面Xuanwu Sect的人群,「那个叫Han Lie的,一直盯着我们.」",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_007",
+        "character_id": "char_suqingyao",
+        "content": "苏청요微微蹙眉,顺着陈Ji的目光看去.Han Lie正是Xuanwu Sect第一天才,据说已突破金丹后期,实力深不可测.「他为何针对我们Tianqing Sect?」",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_008",
+        "character_id": "char_chenian",
+        "content": "陈념轻声道:「我方才听Xuanwu Sect的人说,他们内部有人放话,要在秘境中给Tianqing Sect一个'惊喜'.」她顿了顿,「似乎是针对师兄你的.」",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_009",
+        "content": "陈Ji心中冷笑.来得正好,他正愁没有机会立威.秘境中危机四伏,若是有人主动送上门来,他也不介意多收割一份气运.不过眼下还不是动手的时候,秘境入口处的空间波动越来越剧烈,光柱正在缓缓扩大——开启在即.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0337_010",
+        "prompt": "秘境入口即将开启,面对可能来自Han Lie的挑衅,陈Ji如何应对?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0337_010_001",
+            "text": "以退为进",
+            "description": "故意示弱,让Han Lie放松警惕,待其进入秘境深处后再出手,让他在最渴望成功的时候品尝失败",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "暂时承受屈辱",
+            "visible_reward": "谋略+15,Han Lie进入秘境后暴露弱点",
+            "risk_hint": "需要极度隐忍,可能影响己方士气",
+            "process_label": "陈机决定示敌以弱",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_010_001",
+                  "content": "陈Ji故意将气息压制到筑基初期,佝偻着背脊,看起来比平时更加废物.Han Lie见状果然露出轻蔑笑容,转而去挑衅其他目标.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_010_002",
+            "text": "正面硬刚",
+            "description": "在众人面前与Han Lie正面交锋,以绝对实力将其击败,彻底打掉Xuanwu Sect的嚣张气焰",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "过早暴露全部实力",
+            "visible_reward": "名望+20,各宗对Tianqing Sect刮目相看",
+            "risk_hint": "可能引来Han Lie背后势力的报复",
+            "process_label": "陈机决定正面迎战",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_010_002",
+                  "content": "陈Ji傲然上前一步,周身气势骤然释放.金丹初期的修为气息横扫全场,Han Lie瞳孔骤缩——这个废物竟然一直在藏拙?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_010_003",
+            "text": "借刀杀人",
+            "description": "挑动其他宗门与Han Lie的矛盾,让他们在秘境中互相消耗,自己坐收渔翁之利",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要时间布局",
+            "visible_reward": "谋略+20,各方势力元气大伤",
+            "risk_hint": "变数较多,可能失控",
+            "process_label": "陈机决定借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_010_003",
+                  "content": "陈Ji悄然向旁边Holy Sect的Ye Qing递了个眼神.后者心领神会,片刻后便有人故意在Han Lie面前提及Xuanwu Sect近日的丑闻.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0337_011",
+        "content": "就在各方势力剑拔弩张之际,天空中的血色裂隙猛然扩大十倍.一股浩瀚的远古气息从光柱中倾泻而下,秘境入口彻底开启.各宗长老同时出手稳固空间通道,无数道身影化作流光冲向秘境入口.陈Ji感受到一股神秘的力量正在拉扯他的神魂——那是秘境本身在筛选进入者.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_012",
+        "character_id": "char_chenji",
+        "content": "「准备好了吗?」陈Ji握紧手中的剑柄,回头最后看了一眼苏청요和陈념,「进了秘境,一切听我指挥.不要问为什么.」",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_013",
+        "character_id": "char_suqingyao",
+        "content": "苏청요가 살짝 고개를 끄덕이고, 눈에 복잡한 빛이 스쳤다. 이 폐물 제자가 점점 그녀의 눈을 통과하게 되었지만, 어떤 이유에선지 그녀는 그를 믿기로 했다. 「좋아.」",
+        "emotion": "信任"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_014",
+        "content": "세 사람이 광주(光柱)에 발을 들인 순간, 천선이 뒤틀렸다. 수많은 화면이 Chen Ji의 눈앞을 빠르게 스쳐 지나갔다——그것은 Tianji Record Fragment가秘境에서 느낀感应으로, 어쩌면 그를 어떤 방향으로 인도하려는 듯했다. 하지만 그와 동시에, 그의 Heavenly Fate Value가 빠르게 흘러가고 있었다. Tianji Record의 경고가脑海中炸響했다: 앞쪽 첫 번째 시험은「심마공간(心魔空間)」으로, 진입자의 집념에 따라 가장 두려운 환상을 변화시킨다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_015",
+        "content": "Chen Ji가 다시 눈을 떴을 때, 그는 홀로 회백색 공간에 서 있는 것을 발견했다. 사방은 텅 비어 있었고, 끝없는 안개만 있었다. Su Qingyao와 Chen Nian의 행방은 알 수 없었고, Tianji Record와 Mo Xiansheng의 연결도 완전히 끊겼다. 그의 마음이 가라앉았다——과연, 앞쪽 세 층의 시험은 그에게 어떤 외력도 주지 않는다. 여기서는 오직 그 자신만이 가능하다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0337_016",
+        "prompt": "홀로 심마공간에 빠진 Chen Ji는 어떻게 대응해야 할까?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0337_016_001",
+            "text": "천기(天機) 능력 활성화",
+            "description": "5점의 Heavenly Fate Value를 소모하여 강제로 향후 세 시진의 미래를 훔쳐보고, 환각의 미혹 속에서 올바른 방향을 찾는다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Heavenly Fate Value-5",
+            "visible_reward": "명확한 방향 지시를 얻고, 치명적인 함정을 피한다",
+            "risk_hint": "Heavenly Fate Value는 대단히 귀중하며, 한 점 한 점이 생사와 관련된다",
+            "process_label": "陈机决定冒险使用天机能力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0337_result_016_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji이 이를 악물고 Tianji Record를 활성화했다.脑海中一道模糊한画面浮现——东北方向有微弱的光点，那应该就是出口。但画面中似乎还出现了另一道身影，似乎是苏青瑶被困在某处。",
+                  "emotion": "焦虑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_016_001b",
+                  "content": "그는 깊이 숨을 들이쉬고, 결단을 내렸다——먼저 Su Qingyao를 구하고, 그 다음 출구를 찾는다. 심마공간의 규칙은 아직 모르지만, Su Qingyao의 안위는 결코 허락할 수 없다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_016_002",
+            "text": "힘으로 기교를 깨뜨리다",
+            "description": "자신의 실력으로 환상 공간을 강제로 찢어撕开, 순수한 수양으로 심마공간의 속박을 돌파한다",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "대량의灵力 소모",
+            "visible_reward": "진정한 실력을 보여주고,暗中窥探자를震慑",
+            "risk_hint": "秘境 수호자의 주의를引来할 수 있다",
+            "process_label": "陈机决定以力破局",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_016_002",
+                  "content": "Chen Ji의 주변灵力이 밀려올랐다. 천청종 비전 전도 검결施展，一道璀璨剑光划破灰蒙蒙的虚空，幻象空间如同破碎的镜子般开始崩裂。他隐约感知到，有几道目光正在暗中窥探他的真实战力。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0337_016_003",
+            "text": "몸으로局에 들어가다",
+            "description": "주동적으로 심마 환상의 시험을 받아들이고, 환경에서 본 정보를 활용하여秘境의 본질과 규율을 분석한다",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "더 깊은 환각에 빠질 수 있다",
+            "visible_reward": "핵심 정보 획득, 심마공간运行 규칙 이해",
+            "risk_hint": "도심(道心)을动摇시킬 수 있다",
+            "process_label": "陈机决定深入虎穴",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0337_result_016_003",
+                  "content": "Chen Ji는 저항하지 않았고, 오히려 눈을 감고 환각의 침식을任由했다.一幅模糊的画面浮现——他看到了自己过去的某个片段，看到了那个被视为废물의少年如何在嘲讽中一步步走到今天。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0337_017",
+        "content": "Chen Ji이 선택을 내린 같은 순간, Su Qingyao와 Chen Nian도 각자의 심마공간에서 발악하며 분투했다. Su Qingyao의 환상은 바로 그녀가 항상 꿰뚫어볼 수 없었던 Chen Ji였다——그는 높은 단 위에 서서 중생을 내려다보고 있었고, 그녀는 그저 무대에서 올려다보는 관중이었다. Chen Nian은 닫힌 문 하나를 보았고, 문 너머에서 익숙한 목소리가 그녀의 이름을 부르는 듯했다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_018",
+        "character_id": "char_suqingyao",
+        "content": "「아니……이건 진짜가 아니다.」 Su Qingyao가 환상 속에서 발악하며 분투했지만, 그 높은 단 위에 서 있는身影에 어떻게든 다가갈 수 없었다. 그녀는 갑자기 무엇인가를 깨닫았다——진정한 Chen Ji는 그녀에게 올려다보기만 시키지 않는다. 그는 손을 내밀 것이다.」",
+        "emotion": "顿悟"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_019",
+        "content": "천기가 소청요를 찾았을 때, 그녀는 눈을 감고 단정히 앉아 있었고, 주변에는 연한 영광이 감돌고 있었다. 마치 어떤 각성 상태에 있는 듯했다. 그는 방해하지 않고 조용히 곁에서 지켜볼 뿐이었다. 잠시 후, 소청요가 눈을 떴다. 그녀의 눈빛에는 어떤 묘한 빛이 담겨 있었다.「내가 너를 보았다.」 그녀가 가늘게 말했다.「진정한 너를.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_020",
+        "content": "천기 마음이 미세하게 움직였으나, 얼굴에는 태연자약한 표정을 유지했다.「심마 시험은 집념을 시험하는 것이니, 너와 나는 각자의 관문이 있다.」 그는 몸을 돌려 점점 모습을 드러내는 출구의 빛을 바라보았다.「가자, 진정한 시련은 아직 뒤에 있다.」 세 사람의 그림자가 빛 속으로 들어섰다. 그들이 모르는 것은,秘境 깊숙한 곳의 고대 제단 위에서, 한 쌍의 눈이 层층 허공을 통해 그들을 응시하고 있다는 것이다. 그것은秘境 자체의 의지가 이 세 명의 불청객을 심사하는 것이었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_021",
+        "content": "심마 공간을 통과한 후, 세 사람은 마침내秘境 첫 번째 층의 진정한 세계에 도착했다. 여기是一片苍茫한 고대 전장 유적지로, 단벽 잔해 사이로 원래修士가 남긴 문병이 희미하게 보였다. 소청요와 천념이 서로 바라보았다. 둘 다 서로의 눈에서 이해의 끈을 보았다—그들이 아까 환영 속에서 서로의 모습을 본 것 같았고, 불가사의한 연결이 형성되어 있었다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_022",
+        "character_id": "char_chenian",
+        "content": "「사형, 제가 아까 환영 속에서 소사제를 보았습니다.」 천념이 작게 말했다.「그녀가 당신 뒤에 서서 무언가를 지켜주는 듯했습니다.」 그녀는 잠시 멈추었다.「제 환영 속에도 그녀가 나타났습니다.」",
+        "emotion": "困惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_023",
+        "character_id": "char_suqingyao",
+        "content": "소청요가 살짝 눈썹을 찌푸리며, 천기를 바라보았다.「당신은요? 환영 속에서 무엇을 보셨나요?」 그녀는 천기가 아까 나왔을 때의 표정을 눈치챘다. 그들은 그녀보다 더 피곤해 보였다.",
+        "emotion": "关切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_024",
+        "content": "천기는 대답하지 않았다. 다만 고대 전장 깊숙이 시선을 던졌다.墨선생님은 두 번째 페이지的天机残页가秘境 어딘가에 있다고 말했다. 그리고 지금, 그는 저 방향에서 익숙한 기운이 전해지는 것을 희미하게 감지했다—天机录残页와 동원이나, 더욱 농후했다. 거기에는 무언가 비밀이 숨겨져 있는 듯했다. 하지만 동시에 그는 또 다른 힘이 다가오고 있다는 것도 감지했다—韩烈이 이끄는 팀이었다. 그들도 심마 공간을 돌파했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_025",
+        "character_id": "char_chenji",
+        "content": "「왔다.」 천기 입꼬리가 살짝 올라갔다. 돌아서서 오는 길을 향해 말했다.「우리에게 이 기회를 독차지하게 내버려두지 않겠다는 천武侠的朋友们인 모양이다.」 소청요와 천념은 즉시 전투 태세에 들어갔다. 세 사람은 등을 맞대고 삼각 편형을 이루었다.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_026",
+        "content": "먼 곳에서, 일곱여덟 명의身影이 안개 속에서 걸어 나왔다. 앞에 선 것은 바로韩烈이었다. 그 뒤에는武侠宗의 정예 제자들이 따르고 있었고,个个 호흡이充实했다.韩烈이 천기 세 사람이 이미 먼저 도착한 것을 보고, 눈에 놀람과 성년의 빛이 스쳤다.「폐물은 폐물이지, 길 찾는 것도 지름길만 이용한다.」 그는 비웃음을 드러내며, 적의를 숨기지 않았다.「방금 얻은 기회를 내놓아라. 이 몸이 너희를 죽이지 않아도 된다.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_027",
+        "content": "천기는 가볍게 웃었다. 그 미소가韩烈에게 묘한 불안감을 주었다.「韩사형,」 그는 천천히 말했다.「아까 심마 공간에서 무엇을 보셨나요?」韩烈 안색이 갑자기 변했다—그것은 그가 가진 가장 큰 비밀이었다.「너……」 천기가 말을 이었다.「짐작해 보겠습니다. 실패인가요? 한 번，又一次의 실패?」 그는 한 걸음 앞으로 나서며, 주변 기세가 상승하기 시작했다.「たまたま 저도 비슷한 환영을 보았습니다. 그래서—」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_028",
+        "character_id": "char_chenji",
+        "content": "「—당신이 자신의 가치를 증명하고 싶은 심정을 이해합니다.」 천기의 목소리가 차갑게 변했다.「하지만 당신은 잘못된 대상을 선택했습니다.」话音刚落, 소청요의 손에서 검빛이 발사되어, 곧바로韩烈 옆의 제자に向かって쳤다. 소청요와 천기의 협력은 완벽했다—그녀는 제압을 담당하고, 천기는 주공이며, 천념은 측면에서 틈을 찾고 있었다.",
+        "emotion": "杀意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_029",
+        "content": "전투가 순식간에 폭발했다.武侠宗 제자들이 인원이 우세했지만, 천기 세 사람의 협력이 천척만이었다. 소청요의 검법이 날카롭고 정확하여 상대의 전형을 찢어 열었다; 천념은 수련이 가장 약하지만,身形이 괴이하여 적의要害를 공격한다; 천기는 중앙에 단단히 자리 잡고, 한 검을 쓸 때마다 누군가가 쓰러졌다. 세 사람의 수행은 평범한 제자에게 있어야 할 수준이 아니었다. 특히 천기—그가 보여준 전투력은 소문 속의 폐물이라는:image，远远超过.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_030",
+        "content": "韩烈 마침내 잘못됨을 깨달았다. 이 폐물 천기가 바로筑基期的 폐물이 아니라, 深藏不露의 高手였다. 하지만 이미 늦었다— 그의 부하가 절반 이상 죽었고, 그 자신도 천기에게 궁지에 몰렸다.「너……너一直在藏拙!」韩烈이 노했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0337_031",
+        "character_id": "char_chenji",
+        "content": "「藏拙?」 천기가 가볍게 웃었다. 검끝이韩烈 목구멍 3寸 위에 있었다.「韩사형, 당신이 틀렸습니다. 나는 그냥……다른 사람들이 내가 무엇이라고 생각하게 하는 데 뛰어나다는 것입니다.」 그의 눈빛은 싸늘했다.「자, 나에게 말해 주시오. 아까 환영에서 무엇을 보셨나요?」韩烈 동공이 수축되었다. 그것은 뼈에 사무치는 공포였다. 그는 보았다— 자신이 이 폐물에게 검에 찔려 심장이 뚫리는 장면을.",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_032",
+        "content": "바로 이때, 전장 중앙의地面이 갑자기 진동했다.，一道璀璨의 광주가 지하에서 치솟아 올라, 모든 사람들을 수 걸음 뒤로 밀어냈다. 광주 속에 희미하게 고대 제단이 보였다. 제단 위에는 연한 금빛 광채를 발하는 고대 책 한 권이 떠 있었다— 그것은……天机录의 기운이었다! 천기 동공이 수축되었다. 두 번째残页가 이렇게 사람들 앞에 나타났던 것이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_033",
+        "content": "모든 사람의 시선이 그 고대 책에 사로잡혔다. 천기는 天机录残页가 체내에서 격렬하게 진동하는 것을 느꼈다. 그것은 동원 공명反应이었다. 하지만 동시에, 제단 깊은 곳에서恐怖한 기운이 깨어나고 있다는 것도 감지했다—残页를 지키는 존재가 경고되었다.墨선생님의 목소리가 머릿속에 울렸다:「두 번째 페이지……드디어 찾았다. 하지만 조심해라, 수호자는 쉽게 그것을 가져가게 하지 않을 것이다.」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_034",
+        "content": "韩烈이这个机会를 잡고数 걸음 뒤로 물러났다. 얼굴에 탐욕의 빛이 스쳤다.「그것은……天机残页!」 그도 분명히 그 고대 책의 非凡함을 감지했다. 눈에 광狂热한 갈증이 번졌다.武侠宗과 天机录의 전설은千丝万缕의 联系이 있다. 만약 이 한 페이지를手に入れる 수 있다면……",
+        "emotion": "贪婪"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0337_035",
+        "content": "광주가 점점 사라졌다. 제단 위의 고대 책이 완전하게 모습을 드러냈다. 금빛 광채 속에, 수많은 고대 문병이 서적 사이에 흘러 돌았다. 마치天地間 가장 깊은奥秘를 품고 있는 듯했다. 천기의 심장이 격렬하게 뛰었다— 그는 이 순간을 너무 오래 기다렸다. 하지만残页를 지키는 존재가 깨어나고 있었다.恐怖한 기운이 实質처럼 다가와, 모든 사람들이 감히 가볍게 움직이지 못했다.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

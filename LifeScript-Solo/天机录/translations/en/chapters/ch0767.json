@@ -1,0 +1,419 @@
+{
+  "id": "天机录_ch0767",
+  "book_id": "天机录",
+  "number": 767,
+  "title": "Scorn at the Ruins",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji lowered his gaze and accepted the broom with a servile expression, a cold hmph sounded from the distance, and a domineering figure strode through the air—Han Lie, the number one genius of Xuanwu Sect, had arrived at the ruins entrance in person.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0767_001",
+        "content": "Golden light shot up, illuminating half of the imperial capital. The spiritual energy at the ruins entrance was so dense it almost solidified into physical form. Chen Ji stood at the back of the crowd, squinting at the stone gate engraved with the words 'Those who enter this gate shall know what Heavenly Secrets truly mean.' A slight smile curved his lips. Hundreds of cultivators had gathered before the gate, with the three major sects each occupying their own territories. The most insolent of all were those disciples dressed in Xuanwu Sect attire—they had actually set up a checkpoint at the entrance.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_002",
+        "character_id": "char_hanlie",
+        "content": "\"Come on, everyone line up! Want to enter the ruins? Three hundred spirit stones per person, toll fee!\" a Xuanwu Sect disciple with a pointed face and sunken cheeks shouted loudly, stretching out his fat palm. \"Those who pay go left. Those who don't pay... Hmph, then crawl under Grandson's crotch!\"",
+        "emotion": "嚣张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_003",
+        "content": "A stir rippled through the crowd. Some glared with anger, others quietly paid. Chen Ji watched it all silently, the Tianji Record Fragment in his mind growing faintly warm—he had not activated his foresight ability. Such a petty spectacle wasn't worth spending his Heavenly Fate on. What interested him more was observation. Xuanwu Sect's arrogance wasn't without reason. Han Lie was a genius who could exchange blows with the Golden Core stage, and behind them stood the entire Xuanwu Sect.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_004",
+        "character_id": "char_chenji",
+        "content": "\"Oh? Isn't this the废物 of Tianqing Sect, Chen Ji?\" The sharp-faced disciple suddenly noticed that unremarkable face in the crowd, his eyes lighting up. \"Tsk, look who's here? That servant disciple who doesn't even have a spirit root!\"",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_005",
+        "content": "Laughter erupted all around. The sharp-faced disciple was named Zhou Hai, a small leader among Xuanwu Sect's outer disciples, specifically tasked with skimming profits at the ruins' periphery. He strode up to Chen Ji, examining him up and down with utter contempt in his eyes: \"I heard you haven't even broken through Foundation Building? Tsk tsk, has Tianqing Sect run out of people? Sending this废物 into the ruins?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_006",
+        "character_id": "char_chenji",
+        "content": "Chen Ji raised his head, revealing a timid and fawning smile: \"Brother Zhou is absolutely right, this junior truly is untalented. But since the sect has allowed me to come, I hope Brother Zhou might give me some convenience...\" As he spoke, he pulled out a heavy money bag from his怀中. \"Here are five hundred spirit stones, consider it tea money for Brother Zhou.\"",
+        "emotion": "卑微"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0767_choice_001",
+        "prompt": "Chen Ji chose to use wealth as his path forward, but how will Zhou Hai react?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0767_opt_001a",
+            "text": "Zhou Hai accepts the spirit stones and lets him pass",
+            "description": "Zhou Hai's eyes gleamed at the sight of money. After weighing the bag, a mocking smile curled at the corner of his mouth, and he waved his large hand to let Chen Ji through. A废物 delivering gifts to his door—forget it, not taking it would be a waste.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Wealth -50",
+            "visible_reward": "Avoid conflict and preserve strength",
+            "risk_hint": "May be seen as soft prey and bullied further",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_001a_001",
+                  "content": "Zhou Hai weighed the money bag and sneered: \"Oh? This废物 actually knows how to show respect. But five hundred spirit stones? Is this charity for beggars?\" He stuffed the bag into his clothes. \"Want to enter? Fine, but first you need to clean up the entrance for Brother and the others—show some sincerity!\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0767_opt_001b",
+            "text": "Zhou Hai thinks it's not enough, humiliates him publicly",
+            "description": "Zhou Hai didn't even glance at the money bag, knocking it to the ground and sneering: \"This bit of trash? Is Tianqing Sect that poor? How about you call me Grandpa three times in front of everyone, and I'll consider letting you crawl in!\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reputation -20",
+            "visible_reward": "Zhou Hai's evil deed witnessed by the crowd",
+            "risk_hint": "Humiliated on the spot, but the enemy's arrogance arouses public anger",
+            "process_label": "欲擒故纵",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_001b_001",
+                  "content": "The money bag hit the ground, spirit stones scattering everywhere. Zhou Hai stepped on a few with his foot, his gaze contemptuous: \"废物就是废物，连孝敬都舍不得下本钱。叫不叫？不叫就别想进去！\" The surrounding crowd whispered among themselves, some showing visible dissatisfaction but not daring to speak out."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_007",
+        "character_id": "char_chenji",
+        "content": "Chen Ji bent down to pick up the money bag, his movements unhurried, though a cold light flickered in his eyes. He was already keeping score in his heart—Zhou Hai, right? Foundation Building middle stage, the brother-in-law of Xuanwu Sect's outer sect steward, greedy for wealth and lust, a bully who relies on his connections. Once inside the ruins, there would be plenty of opportunities to teach you what karma means.",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_008",
+        "character_id": "char_chenji",
+        "content": "\"Brother Zhou, this... calling Grandpa is a bit...\" Chen Ji showed a troubled expression, his voice growing softer. \"How about I help clean the entrance for Brother Zhou and the others? I'm most familiar with servant work.\" As he spoke, he had already picked up an old broom from the nearby pile of杂物.",
+        "emotion": "示弱"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0767_choice_002",
+        "prompt": "Chen Ji is willing to do servant work to enter. How will Zhou Hai further make things difficult?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0767_opt_002a",
+            "text": "Zhou Hai orders him to sweep while kneeling",
+            "description": "Zhou Hai's eyes rolled, and a cold smile spread across his face: \"Sweep the floor? Fine, but you have to kneel while sweeping! Let everyone here see what kind of trash the Tianqing Sect produces!\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Dignity Shattered",
+            "visible_reward": "Adding Another Crime to the Enemy's Record",
+            "risk_hint": "Humiliated in Public, Yet Everyone Remembered This Debt",
+            "process_label": "忍辱负重",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_002a_001",
+                  "content": "Chen Ji bent his knees and truly knelt down. He swept the floor with his head bowed, movements earnest, while bursts of laughter erupted around him. Zhou Hai clapped his hands and roared with laughter: \"Everyone look—this is a disciple of Tianqing Sect! Oh wait, no—a servant!\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0767_opt_002b",
+            "text": "Zhou Hai Demands a Body Search to Enter",
+            "description": "Zhou Hai narrowed his eyes, and suddenly a wicked thought crossed his mind: \"A servant? Fine, but to enter the ruins, you must be searched. Who knows if you're hiding something valuable? Brothers, search him!\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Risk of Exposing Secrets During Search",
+            "visible_reward": "Enemy Reveals Their Greedy Nature",
+            "risk_hint": "If Searched, Tianji Record Might Be Exposed",
+            "process_label": "以身犯险",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_002b_001",
+                  "content": "Chen Ji's expression slightly changed, but quickly returned to calm. He actively spread his arms: \"Senior Zhou, please proceed as you wish.\" Zhou Hai's two subordinates pounced to search, only finding a few worn-out clothes and a rusted dagger. Just as they were about to give up, Zhou Hai suddenly stared at Chen Ji's chest: \"What's that? Show it to me!\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_009",
+        "content": "At this critical moment, the Jade Pendant at Chen Ji's chest faintly warmed—it was the warning left by Mo Xiansheng. His expression unchanged, he calmly pulled out something wrapped in a piece of ragged cloth: \"Senior Zhou, don't be impatient. This is my family heirloom jade pendant. It's worthless, but has special meaning to me...\" He opened the ragged cloth, revealing a jade pendant of extremely poor quality inside.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_010",
+        "character_id": "char_chenji",
+        "content": "\"Tch, thought it was some treasure.\" Zhou Hai glanced at it with disdain, \"This piece of junk? Not even good enough for a chamber pot! Get lost, you trash!\" He kicked Chen Ji on the buttocks, and Chen Ji stumbled forward a few steps.",
+        "emotion": "隐忍"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_011",
+        "content": "Chen Ji walked into the ruins entrance with his head bowed, his face still bearing a humble smile, but his heart had already turned cold as ice—Family heirloom jade pendant? Indeed, it truly was an heirloom, except what it passed down was the secret of the Tianji Record. When you encounter real danger inside the ruins, you'll discover exactly how much that \"piece of junk\" is worth.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_012",
+        "content": "After entering the ruins, Chen Ji, using the crowd as cover, quietly retreated behind a stone pillar. He quickly scanned his surroundings, taking in the布置 of all forces: the Xuanwu Sect occupied the eastern entrance, with about thirty people; the Tianqing Sect members were scattered on the north side, led by Su Qingyao; the west side held some independent cultivators and smaller sects. And in the shadows of the south, he noticed several faint traces of black energy—Demonic Path spies.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0767_choice_003",
+        "prompt": "Chen Ji Discovers Demonic Path Spies, How Will He Handle This Intel?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0767_opt_003a",
+            "text": "Secretly Inform Su Qingyao",
+            "description": "Chen Ji quietly approached Su Qingyao, speaking in a voice only the two of them could hear: \"Senior Sister Su, there are people from the Demonic Path on the south side.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Exposing Connection with Su Qingyao",
+            "visible_reward": "Gaining Su Qingyao's Trust, Laying Groundwork for Future Developments",
+            "risk_hint": "Su Qingyao Might Become Suspicious: How Would a Waste Discover Demonic Path Traces?",
+            "process_label": "暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0767_result_003a_001",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao's eyes slightly flickered, her gaze sweeping across the southern shadows before withdrawing. She didn't ask how Chen Ji discovered it, only saying calmly: \"Understood.\" When she turned around, she glanced at Chen Ji meaningfully, that look sending a slight chill down Chen Ji's spine—this woman seemed to be getting closer and closer to the truth.",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0767_opt_003b",
+            "text": "Memorize Positions, Do Not Raise Alarm",
+            "description": "Chen Ji silently memorized the positions of the Demonic Path spies, a cold smile forming in his heart: Let them stay hidden for now. When the Xuanwu Sect and Tianqing Sect fight to the death, the Demonic Path will naturally emerge to clean up the aftermath.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Missing the Opportunity for Early Strategic Positioning",
+            "visible_reward": "The Demonic Path forces can be utilized later.",
+            "risk_hint": "If the Demonic Path strikes first, allies may suffer losses.",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0767_result_003b_001",
+                  "content": "Chen Ji quietly stepped back several paces, blending into the crowd. He needed a more concealed position to observe while organizing the intelligence he had gathered. Xuanwu Sect setting up checkpoints and charging fees, Su Qingyao leading a team here, Demonic Path secret agents lurking... This chess game was becoming increasingly interesting."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_013",
+        "content": "Suddenly, a commotion arose at the entrance of the ruins. Chen Ji looked up to see the Xuanwu Sect disciples who had been crowding the entrance quickly dispersing, respectfully making way. Immediately after, an overbearing pressure surged forth like a tide, nearly crushing everyone's breath.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_014",
+        "character_id": "char_hanlie",
+        "content": "\"The ruins were discovered first by Xuanwu Sect! All unrelated people, you have the time of one incense stick to withdraw beyond a hundred zhang from the entrance!\" An overbearing voice descended from the heavens. Everyone looked up to see a young man in black combat attire standing in mid-air, his gaze disdainful as he overlooked the crowd. It was Xuanwu Sect's number one genius—Han Lie!",
+        "emotion": "霸道"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_015",
+        "content": "Chen Ji cowered in the crowd, his face showing perfectly calibrated fear, but his mind was racing at lightning speed. Han Lie, unmatched below the Golden Core stage, supposedly had repelled attacks from three same-level experts all by himself. His appearance meant Xuanwu Sect intended to completely monopolize these ruins. However... this too had been anticipated.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0767_016",
+        "character_id": "char_hanlie",
+        "content": "Zhou Hai scurried forward, bowing and scraping: \"Han Shixiong! You've arrived at the perfect moment. These useless wretches dared to disrespect us just now, especially that废物 Chen Ji from Tianqing Sect—absolutely insufferable!\" As he spoke, he pointed at Chen Ji in the crowd.",
+        "emotion": "谄媚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_017",
+        "content": "Han Lie's gaze swept over Chen Ji, that look like he was examining an ant. He snorted coldly: \"That Tianqing Sect废物? Are you the one who made my shidi search you?\" Chen Ji kept his head lowered, voice trembling: \"Han... Han Shixiong misunderstands, this junior merely came to broaden his horizons, absolutely no intention of offense...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_018",
+        "content": "Han Lie couldn't be bothered to glance at Chen Ji again, waving his hand dismissively: \"Get lost, don't obstruct this young master's sight!\" Having said that, he flew directly toward the deepest part of the ruins, with Zhou Hai and other disciples following closely behind. Chen Ji slowly straightened up, watching Han Lie's disappearing back. The timidity in his eyes gradually faded, replaced by an abyssally cold gleam. Remember this, Han Lie—this name he would remember.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_019",
+        "content": "Su Qingyao had somehow approached Chen Ji's side, whispering: \"You did the right thing just now—Han Lie cannot be confronted by force.\" After a pause, she looked at Chen Ji with complex eyes: \"But I really want to know, how exactly did you discover those Demonic Path secret agents?\" Chen Ji only smiled simplistically: \"Just good luck, Su Shijie.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0767_020",
+        "content": "Deep within the ruins, golden light surged, countless opportunities awaiting those with destiny. And at this moment, Chen Ji was silently following the crowd inward, but in his heart, he had already outlined a massive chess game. Xuanwu Sect wants to monopolize the ruins? Demonic Path secret agents lurk within? Tianqing Sect harbors various intentions? It didn't matter—all within his calculations. What mattered most now was finding what Mo Xiansheng had mentioned—that being the second page fragment of the Tianji Record.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

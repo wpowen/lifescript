@@ -1,0 +1,478 @@
+{
+  "id": "天机录_ch0199",
+  "book_id": "天机录",
+  "number": 199,
+  "title": "Ancient Stele of the Forbidden Grounds",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji was absorbing this earth-shattering secret, a line of faint characters at the base of the ancient stele slowly emerged—the next candidate for Heavenly Eye: Chen Ji.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0199_001",
+        "content": "The moment the golden light exploded within his Mental Sea, Chen Ji felt his spiritual energy freeze. The originally tranquil remnant soul was like an awakened slumbering beast, emanating an aura that made his heart tremble. But the next instant, a hand tightly gripped his wrist—it was Chen Nian. Her eyes slightly red, she bit her lip and pulled him back a step. \"Brother, don't let it draw you in.\" Her voice carried an unprecedented resolve, \"These seals... they will recognize what's in your bloodline.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0199_002",
+        "character_id": "char_chenian",
+        "content": "Chen Nian took a deep breath, pointing to the bronze door ahead that radiated cold light: \"Stay close to me. These three seals, I can only guide you through once.\"",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_003",
+        "content": "The patterns on the bronze door were ancient and eerie, resembling some long-lost formation glyphs. As Chen Nian's fingertips traced across the door and her spiritual energy was injected, the entire door burst open. Behind it lay a narrow corridor, with countless runes carved on the stone walls on both sides, each faintly glowing as if observing the intruders. Chen Ji unconsciously gripped the Tianji Record Fragment, sensing its warmth—guiding and urging him. \"The second seal is there.\" Chen Nian's voice trembled slightly, yet she moved steadily forward. \"Don't look back.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_004",
+        "content": "At the corridor's end stood a barrier like a curtain of water, its surface shimmering with starlight. Chen Nian halted, turning to glance at Chen Ji, her eyes revealing countless unreadable emotions. \"This seal requires your blood,\" she whispered. \"I can't... only the Chen family bloodline can open it.\" After a silent moment, Chen Ji stepped forward. A sharp stone blade sliced his palm, and as blood dripped, the entire corridor quivered—walls blazing with sudden light, like awakened beasts roaring in silence."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0199_005",
+        "character_id": "char_chenian",
+        "content": "\"Brother, do you sense it?\" Chen Nian's voice suddenly softened. \"The Tianji Record is... it's responding to these seals.\" She paused, a flicker of sorrow crossing her gaze. \"After they took me, they also wanted to use my blood to open this place. But I tried... it didn't work. It's not about Chen family blood, it's your blood, the kind passed down by our father...\" She didn't finish, but Chen Ji understood. The Tianji Record had chosen their father, chosen him, not this sister who also carried the Chen bloodline. This might explain why she was treated as a \"key\" rather than an \"inheritor\".",
+        "emotion": "悲伤"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0199_006",
+        "prompt": "The second seal has been opened, and ahead you can faintly see the outline of the third and final seal. Before proceeding, you must make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0199_006_a",
+            "text": "First clarify what Chen Nian experienced over these years",
+            "description": "She was taken away for years, yet still chooses to help you. How much has this girl endured? As her brother, you should know what she's been through.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Consume time, potentially miss the optimal moment",
+            "visible_reward": "Deeply understand Chen Nian's past, sibling bond deepens",
+            "risk_hint": "The aura within the Forbidden Grounds is shifting, delay may bring unpredictable variables",
+            "process_label": "关切地看向陈念",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_006_a_001",
+                  "content": "Chen Ji stopped, turning to look at Chen Nian. The corridor's dim light illuminated her pale face, making her seem both familiar and strange. \"Xiao Nian, these years...\" His voice softened, rare and gentle. \"Brother should have come to find you sooner.\" Chen Nian's eyes instantly reddened, but she defiantly lifted her chin, preventing tears from falling. \"It's not your fault.\" she whispered, \"I know you've been planning, preparing... the chess game our father left behind, you're more suited to be the player than me.\" She paused, \"But brother, there's something you must know—the Holy Sect people said the complete form of the Tianji Record... will devour its holder.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "得知天机录真相碎片"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹深入交流",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0199_006_b",
+            "text": "Proceed immediately to the third seal",
+            "description": "Time is running short, the aura within the Forbidden Grounds grows increasingly unstable. The Tianji Record's call is almost urgent—there lies a truth he must witness with his own eyes.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Miss the opportunity for deep communication with Chen Nian",
+            "visible_reward": "Reach the ancient stele faster, obtain key information",
+            "risk_hint": "Chen Nian's emotions may be overlooked, she might still be hiding crucial information",
+            "process_label": "快步向前",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_006_b_001",
+                  "content": "Chen Ji didn't speak much, just nodded and strode forward. Chen Nian was stunned for a moment, then quickly followed, a trace of melancholy flickering in her eyes. \"Brother has changed.\" she murmured to herself, voice barely audible, \"The you from before... would have asked me first.\" Chen Ji's steps slightly paused, but he didn't look back. Of course he knew she had changed—those years at the Holy Sect, she learned many things she shouldn't have. But he had to remain restrained; in chaotic times, letting emotions rule only leads to more deaths. The third seal was right before his eyes, a light barrier formed from pure spiritual energy, emanating a terrifying pressure."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0199_006_c",
+            "text": "Secretly observe Chen Nian's reaction",
+            "description": "The Tianji Record hints she's hiding something. As a strategist who calculates every detail, you choose to observe first, then decide the next move.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May cause Chen Nian to perceive your distrust",
+            "visible_reward": "May discover the secret Chen Nian is hiding",
+            "risk_hint": "Chen Nian's perceptiveness is unexpected, it may backfire",
+            "process_label": "目光不着痕迹地扫过陈念",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -8
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_006_c_001",
+                  "content": "Chen Ji slowed his pace, seemingly walking casually beside Chen Nian, while secretly observing her every move. To his surprise, Chen Nian's gaze remained fixed on the third seal ahead, her eyes carrying a certain... sense of relief? \"Brother, you're watching me.\" She suddenly spoke, her voice calm as if she weren't questioning at all, \"Are you afraid I'm bait sent by the Holy Sect?\" Chen Ji did not deny. Chen Nian smiled faintly, that smile carrying a touch of bitterness: \"If I were bait, why would I bring you here? What the Holy Sect wants is the Tianji Record itself, not me. They kept me only because I am... a spare piece.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0199_007",
+        "content": "The pressure from the third seal far exceeded imagination. Even though Chen Ji had mentally prepared himself, he couldn't help but feel suffocated. Chen Nian stood beside him, forming a complex hand seal with her hands, softly chanting some ancient incantation. The light curtain began to vibrate violently, and a tiny crack slowly appeared. \"Quick, go in!\" She suddenly pushed Chen Ji, herself stumbling backward due to exhausted spiritual energy. Chen Ji grabbed her wrist in one motion and pulled her into the crack. The next moment, both of them fell into a dark space simultaneously—this was the deepest part of the Forbidden Grounds. Silence pressed in from all sides, except for right in the center, a black ancient monument standing three zhang tall, emanating a desolate and ancient aura. The inscriptions on the monument glowed faintly in the darkness, as if waiting for someone's arrival."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_008",
+        "content": "The Tianji Record Fragment in Chen Ji's arms suddenly jumped, that familiar warm sensation instantly becoming scalding, as if it would burn through his clothes. He subconsciously took out the fragment, and at that moment—the ancient monument shook. Those dense inscriptions began to flow, like living things converging to the center of the monument, forming a striking line of large characters: \"Heaven's way turns in cycles, all beings are chess pieces, the founding lords, all are puppets.\" Chen Ji's pupils constricted sharply. This... what does this mean?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0199_009",
+        "character_id": "char_chenian",
+        "content": "Chen Nian stumbled to steady herself, her gaze falling on the ancient monument, her voice trembling: \"I saw these words the first time I came here... I've never understood them.\" She turned to look at Chen Ji, \"Brother, do you know who the 'founding lords' mentioned here refers to?\" Chen Ji did not answer, but waves were crashing in his heart. The Tianji Record Fragment resonated with the ancient monument, those inscriptions seemed to come alive, echoing ceaselessly in his Mental Sea—the founding lords, all are puppets. Puppets... The successive holders of the Tianji Record, the founding ancestors of the three major sects, those supreme beings revered by the world... all are chess pieces?",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_010",
+        "content": "Just then, the wound on Chen Ji's palm, cut by the stone blade, suddenly burst into intense pain. He looked down to see that the blood seeping from the wound actually carried a faint golden glow—that was the aura of the Tianji Record! He abruptly looked up and found that the text on the ancient monument was changing. New content emerged from the depths of the monument: \"The Tianji Record, the supreme treasure of ancient prophecy, cannot be wielded by anyone except those with heavenly fate. The wielder must use the Heavenly Fate Value as guidance to peer into Heavenly Secrets. However—\" Chen Ji's breath turned sharp and urgent. That 'however' made alarm bells ring in his heart. Yet what followed made him feel as if he had fallen into an ice abyss. \"—however, the Tianji Record is not invincible. Its complete form requires fusion with the wielder's bloodline. On the day of fusion, that is the moment the wielder becomes a puppet of Heaven's Way. Since ancient times, seven wielders have sacrificed themselves through this method, becoming extensions of Heaven's Eye.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0199_011",
+        "prompt": "The monument's content grew increasingly shocking. Chen Ji's Heavenly Fate Value was rapidly depleting due to the resonance between the Tianji Record and the ancient monument. Between truth and survival, you must make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0199_011_a",
+            "text": "Continue interpreting the monument inscriptions, seeking a way to break the situation",
+            "description": "Since we've come this far, there's no reason to turn back. The Tianji Record won't let him die in vain; there must be a way to break free hidden within.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Heavenly Fate Value continues to deplete, body begins showing adverse reactions",
+            "visible_reward": "May discover key information to reverse fate",
+            "risk_hint": "Heavenly Fate Value below 50 points, continued depletion will face unknown consequences",
+            "process_label": "咬牙坚持解读",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_011_a_001",
+                  "content": "Chen Ji forced himself to endure the dizziness surging endlessly through his mind, his eyes locked死死地盯着碑文。那些文字仿佛有了生命，在他眼前不断重组、变幻，隐约间勾勒出一幅模糊的画面——一个熟悉的背影正独自站在这座古碑前，手中握着与此刻他怀中一模一样的天机录残页。那是……父亲？是父亲陈玄！他曾无数次进入此地，而且不止一次！碑文下方，一行小字如游蛇般浮现：\"第七代执掌者陈玄，已于三年前完成献祭，化为天道傀儡。下一任候选者——\"陈机的血液几乎凝固。下一任候选者？他不敢继续往下看，却又无法移开目光。\" Chen Ji endured the mounting dizziness assaulting his mind, his eyes locked onto the monument inscriptions. Those characters seemed alive, constantly reorganizing and shifting before his eyes, vaguely outlining a blurry image—a familiar figure standing alone before this ancient monument, holding a Tianji Record Fragment identical to the one in his arms at this moment. That was... Father? It was Chen Xuan, his father! He had entered this place countless times! And not just once! Below the inscriptions, a line of small text slithered forth like a serpent: \"Seventh generation wielder Chen Xuan completed the sacrifice three years ago, becoming a puppet of Heaven's Way. Next candidate—\" Chen Ji's blood nearly froze. Next candidate? He dared not continue reading, yet could not tear his gaze away."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0199_011_b",
+            "text": "Immediately take Chen Nian and leave this place",
+            "description": "The truth here is too horrifying. Staying any longer will only be consumed by the will of Heaven's Eye. Take your sister and leave first, make plans later.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss key information, possibly forever lose the chance to understand the truth",
+            "visible_reward": "Protect the Heavenly Fate Value and Chen Nian's safety",
+            "risk_hint": "The ancient monument seems unwilling to let them leave easily",
+            "process_label": "拉住陈念的手腕转身",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_011_b_001",
+                  "content": "Chen Ji made a decisive move, grabbing Chen Nian's wrist and rushing toward the direction they came from. However, the moment he turned around, the entire ancient monument suddenly erupted with blinding golden light, an invisible force slamming him violently back. He stumbled back several steps, nearly falling, and a low, ancient voice rang in his ears: \"Since you've come, why rush to leave?\" That voice seemed to come from all directions, yet also directly echoed in his Mental Sea. Chen Nian's face instantly turned deathly pale: \"Brother... this is the will projection of Heaven's Eye! It's discovered us!\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0199_011_c",
+            "text": "Attempt to communicate with the ancient monument using the Tianji Record Fragment",
+            "description": "Since the Tianji Record and the ancient monument share the same origin, perhaps it can be used as a medium to actively dialogue with the will contained within the monument, striving for initiative.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May suffer backlash or fall into a trap",
+            "visible_reward": "May gain unexpected information or power",
+            "risk_hint": "The Tianji Record Fragment may expose its location, attracting more enemies",
+            "process_label": "将残页举向古碑",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_011_c_001",
+                  "content": "Chen Ji made a desperate decision. He violently drew out the Tianji Record Fragment from his arms, holding it aloft toward the ancient monument with both hands. The fragment and monument were less than three feet apart, golden light surging violently between them, forming a dazzling pillar of light. At that moment, a illusory figure slowly emerged from the ancient monument—a middle-aged man in plain white robes, his features bearing seven tenths resemblance to Chen Ji, but his eyes were terrifyingly hollow. \"My son...\" the figure spoke, its voice hoarse and ethereal, \"You've finally come.\" Chen Ji's breath caught in his throat. This was Father Chen Xuan! No, this was a residual soul projection left by his father, not the true puppet of Heaven's Way!"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现父亲残魂投影"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0199_012",
+        "content": "That illusory figure drifted slightly in the golden light, Chen Xuan's features flickering bright and dim in the radiance, as if it might dissipate at any moment. Chen Ji stared fixedly at that familiar face, his heart churned with countless emotions. Three years ago when his father disappeared, he had believed his father had met with some misfortune, never expecting his father to exist in the world in such a manner. What chilled him even more was that phrase on the monument—\"completed the sacrifice\"—did his father actively choose this path? \"You...\" Chen Ji spoke, his voice hoarse, unlike himself, \"Why did you do this?\" Chen Xuan's residual soul projection slowly turned its head, those empty eyes seeming to recover a trace of clarity: \"Because I am the wielder of the Tianji Record, because I saw a future you cannot bear.\" He paused, his voice deepening, \"Chen Ji, you are the next... you must become the next.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0199_013",
+        "character_id": "char_chenian",
+        "content": "Chen Nian abruptly stood in front of Chen Ji, her voice trembling yet firm: \"No! I won't let Brother repeat the same mistake!\" She turned to look at Chen Ji, eyes red-rimmed, \"Brother, did you hear what I said earlier? The complete form of the Tianji Record devours its holder! Father rushed ahead to protect you...\" Her words were interrupted by the voice of Chen Xuan's remnant soul: \"Xiao Nian, stop talking.\" The remnant soul's gaze fell upon Chen Ji, carrying a complex emotion, \"Some things must be chosen by yourself. But before that...\" He raised his hand, pointing to a line of faint characters at the very bottom of the Ancient Tablet, \"You must see that name clearly.\" Chen Ji followed his guidance, his pupils contracting sharply—that line of text was too shocking, freezing his blood. Next candidate for the Eye of Heavenly Secrets: Chen Ji.",
+        "emotion": "绝望"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_014",
+        "content": "Chen Ji stared at that line, momentarily speechless. He had plotted across the world, flawlessly calculating, believing he controlled everything, yet he never imagined he was a chosen piece from the very beginning. The Tianji Record selected him, the Eye of Heavenly Secrets also chose him, and all his efforts seemed so laughable before destiny. \"This is impossible...\" he murmured, \"there must be a way to change...\" Chen Xuan's remnant soul shook his head, voice carrying boundless sorrow: \"I thought the same way back then. So I came to this place, wanting to find a solution. However...\" His form began to fade even more, \"I failed. The will of the Eye of Heavenly Secrets is too strong, it has seeped into every page of the Tianji Record. Every time you use the Tianji Record, you move one step closer to it.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0199_015",
+        "prompt": "Chen Xuan's remnant soul was dissipating, yet the Ancient Tablet's pressure grew stronger. In this final moment, you must make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0199_015_a",
+            "text": "Ask Father to tell him how to escape destiny",
+            "description": "Since Father has walked this path, he must know its weaknesses. Even if there's only a thread of hope, he must grasp it.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Father's remnant soul may dissipate faster as a result",
+            "visible_reward": "May obtain crucial clues to the solution",
+            "risk_hint": "Father's remnant soul has little time remaining",
+            "process_label": "上前一步",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0199_result_015_a_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Chen Xuan's remnant soul smiled faintly, that smile carrying a sense of release: \"There is... a method.\" His form grew increasingly transparent, \"The Tianji Record has nine pages, yet you only have three. The remaining six are scattered everywhere. If before it's complete...\" He suddenly coughed, his illusory form trembling violently, \"If before it's complete, you can find the Heavenly Fate Key and bind your own destiny to it... perhaps you can... deceive Heaven.\" He looked at Chen Nian one last time, \"Xiao Nian... I leave her to you...\" Before the words finished, the remnant soul completely dissipated, turning into scattered starlight that merged into the Ancient Tablet.",
+                  "emotion": "悲壮"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "得知破解线索"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0199_015_b",
+            "text": "Immediately take Chen Nian away, no longer caring about Father's last words",
+            "description": "Father's words are too heavy, staying here will only put Chen Nian in greater danger. Leave first, figure it out later.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Lose the opportunity to obtain crucial information",
+            "visible_reward": "Protect Chen Nian's safety",
+            "risk_hint": "The Ancient Tablet seems unwilling to let them go easily",
+            "process_label": "强行拉起陈念",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0199_result_015_b_001",
+                  "content": "Chen Ji took a deep breath, forcibly suppressing his grief, grabbing Chen Nian's hand and rushing outward. However, the Ancient Tablet seemed to come alive—its inscriptions transformed into countless chains surging toward them. Chen Nian let out a cry, her form flickering as she blocked in front of Chen Ji—those chains instantly wrapped around her, lifting her high into the air. \"Brother! Run!\" she struggled to shout, \"Don't worry about me!\" Chen Ji stopped abruptly, a cold light flashing in his pupils. He slowly turned around, looking at his suspended sister, voice cold as ice: \"Release her.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0199_016",
+        "content": "The Ancient Tablet seemed to sense Chen Ji's killing intent, the chains binding Chen Nian tightened violently, causing her to groan in pain. Chen Ji's hands tightly clenched into fists, knuckles white. At this moment, an unprecedented fury rose in his heart—not toward the Ancient Tablet, but toward himself. He was too weak, too weak to even protect his own sister. The Tianji Record Fragment in his arms trembled violently, as if sensing his emotions. At the same time, that shocking line of text at the bottom of the Ancient Tablet slowly emerged, emanating a cold, ghostly glow: \"Next candidate for the Eye of Heavenly Secrets: Chen Ji.\" At this moment, Chen Ji finally understood his situation. He was no chosen one, from the very beginning he was merely a piece selected by destiny. And now, the chessboard was set, waiting only for him to enter the game. \"Brother...\" Chen Nian's weak voice came, \"Don't worry about me... run...\" Chen Ji did not answer. He simply stood there quietly, gaze sharp as a blade fixed on that line of text, the corner of his mouth slowly curving into a cold smile. A piece? Then let the Eye of Heavenly Secrets see exactly how much havoc this piece can cause."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_017",
+        "content": "Just as the atmosphere dropped to the freezing point, the Tianji Record Fragment suddenly burst forth with brilliant golden light, so intense that the entire Ancient Tablet trembled. The inscriptions on the tablet surged madly, as if combating that golden light. Chen Ji felt the fragment in his arms become scalding hot, and a familiar voice rang out in his Mental Sea—it was Mo Xiansheng! \"Boy, calm down!\" the voice was urgent and stern, \"The will of the Ancient Tablet is testing you, it wants to see if you'll lose your reason due to anger! If you strike now, you'll fall right into its trap!\" Chen Ji jolted awake, cold sweat instantly soaking his back. He took a deep breath, forcing himself to calm down. Indeed, the Eye of Heavenly Secrets never attacks directly—it only guides, leading opponents to walk into their own dead end."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0199_018",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's voice rang out again, this time with a hint of satisfaction: \"It seems you haven't been blinded by anger, good.\" After a pause, he continued, \"Remember, the true power of the Tianji Record doesn't lie in foresight, but in—rewriting destiny. Your father failed because he bore too much alone. And you...\" his voice became meaningful, \"You have something he didn't.\" Chen Ji frowned slightly: \"What thing?\" Mo Xiansheng's laughter echoed in his Mental Sea: \"You have a sister, friends, allies willing to die for you. Most importantly... you have enemies.\" As the words fell, the chains on the Ancient Tablet actually loosened on their own, Chen Nian slowly descending, caught steadily by Chen Ji. Mo Xiansheng's voice faded into the distance, leaving only the final words: \"The Eye of Heavenly Secrets is strongest because it has no weaknesses. But if you can turn all your enemies into pieces... it will have to personally enter the game. Then, the true chess match begins.\"",
+        "emotion": "深沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_019",
+        "content": "Chen Nian lay in Chen Ji's arms, opening her eyes weakly: \"Brother... what was that just now...\" \"Another guardian Father left behind.\" Chen Ji said softly, yet his gaze remained fixed on the Ancient Tablet. At this moment, those chains had completely vanished, the inscriptions on the tablet restored to calm, as if nothing had happened. But Chen Ji knew, everything had changed. He witnessed his father's choice, saw the end of that path with his own eyes. That was not the outcome he wanted. \"Xiao Nian.\" He lowered his head to look at the sister in his arms, voice calm yet firm, \"Let's go back.\" Chen Nian was stunned: \"But... the truth...\" A faint smile curved Chen Ji's lips, that smile carrying a familiar cunning: \"I've already seen the truth. Now, it's time for me to set up the board.\" He turned to look at the Ancient Tablet, eyes glittering with sharp light, \"The Eye of Heavenly Secrets wants me to enter the game? Fine, I'll enter—but this time, the chessboard will be of my own making.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0199_020",
+        "content": "Just as that wisp of remnant soul was about to speak, Chen Ji's Mental Sea suddenly exploded with golden light—the Tianji Record Fragment was trembling violently, as if sensing some familiar aura. Next chapter, the remnant soul awakens, truth and crisis arrive simultaneously.\n\nChen Ji stood before the Ancient Tablet, silent for a long while. The inscriptions on the tablet seemed alive, constantly flowing before his eyes, each line like a shackle, firmly binding his destiny. He slowly closed his eyes, taking a deep breath. When he opened them again, those eyes no longer held the shock and anger from before, replaced by an chilling calm. \"Father...\" he whispered, \"You sacrificed three years to buy me time. Now, it's my turn.\" As his words fell, a line of faint characters at the very bottom of the Ancient Tablet slowly emerged, emanating a cold, ghostly glow—Next candidate for the Eye of Heavenly Secrets: Chen Ji. That light was cold and piercing, as if proclaiming the inviolability of destiny. Yet as Chen Ji stared at that line, the corner of his mouth slowly curved into a cold smile. A candidate? Then let the Eye of Heavenly Secrets see exactly how much havoc this piece can cause."
+      }
+    }
+  ]
+}

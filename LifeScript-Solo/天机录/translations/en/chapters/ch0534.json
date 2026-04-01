@@ -1,0 +1,630 @@
+{
+  "id": "天机录_ch0534",
+  "book_id": "天机录",
+  "number": 534,
+  "title": "Old Enemies and New Grudges",
+  "is_paid": true,
+  "next_chapter_hook": "Ling Yuan's figure dissolved into the night, yet those words pierced Chen Ji's heart like an ice awl—the Death Enforcers were already on their way.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0534_001",
+        "content": "The night wind cut like a blade across Chen Ji's pallid face. He stood at the cliff edge of the Tianqing Sect Back Mountain, his fingers slowly tightening as he tucked the Tianji Record Fragment into his sleeve. Behind him lay an abyss of ten thousand zhang, before him heavy fog—he knew he had reached a delicate turning point. Ye Qing's departure had stolen his last cover, and the Death Enforcer lurking in the shadows could tear him apart at any moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_002",
+        "character_id": "char_lingyuan",
+        "content": "\"Ye Qing left rather neatly.\" The aged voice came from behind, tinged with mockery. \"Unfortunately, she won't be able to protect you for long.\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_003",
+        "content": "Chen Ji didn't turn around. His heartbeat accelerated half a beat in that instant, then returned to calm. Ling Yuan—the nominal protector, actually an old fox with treacherous intentions. His fingers trembled slightly in his sleeve, and the Tianji Record Fragment in his palm emanated waves of warmth, as if warning him of impending danger. \"What brings the Old Sect Master to visit at this late hour?\" His voice was placid as water, betraying no fluctuation.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_004",
+        "character_id": "char_lingyuan",
+        "content": "\"The Death Enforcers have already set out.\" Ling Yuan's form emerged from the darkness, his withered frame like a piece of decayed wood. \"Within three days, they will arrive at the Tianqing Sect.\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_005",
+        "character_id": "char_chenji",
+        "content": "Chen Ji finally turned around, his gaze settling calmly on Ling Yuan's face. \"The Old Sect Master came specifically to tell me this—surely it's not merely to watch me become a laughingstock.\"",
+        "emotion": "试探"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_006",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan let out a low laugh. \"You're more composed than I imagined. Indeed, I've come to propose a transaction.\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0534_choice_001",
+        "prompt": "Ling Yuan proposes a deal, and Chen Ji must determine whether it is a trap or an opportunity.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0534_opt1",
+            "text": "Watch with cold eyes, quietly await developments.",
+            "description": "Don't take initiative prematurely—observe how Ling Yuan plays his cards, then determine the next strategy.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May forfeit the initiative.",
+            "visible_reward": "Discern Ling Yuan's hidden hand.",
+            "risk_hint": "Being overly passive may arouse Ling Yuan's suspicion.",
+            "process_label": "试探凌渊诚意",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_001_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji slightly narrowed his eyes, a faint curve forming at the corner of his lips. \"A transaction? Please, Old Sect Master, speak. I am all ears.\" He didn't rush to commit, instead gently pushing the initiative back.",
+                  "emotion": "沉着"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0534_result_001_2",
+                  "content": "A flash of appreciation crossed Ling Yuan's eyes, then his sinister expression returned. He produced a pitch-black token from his sleeve, carved with a grotesque skull pattern—the mark of the Heaven's Eye Enforcers. \"This is their route of action.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt2",
+            "text": "Speak directly, get to the heart of the matter.",
+            "description": "Directly inquire why Ling Yuan betrays the Heaven's Eye, revealing both sides' cards.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose one's insight.",
+            "visible_reward": "Quickly obtain key intelligence.",
+            "risk_hint": "May startle the prey and alert Ling Yuan to be cautious.",
+            "process_label": "直击要害",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_002_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji stepped forward, his gaze sharp as a blade. \"Why beat around the bush, Old Sect Master? We both know you've long harbored discontent toward the Heaven's Eye. Tonight you come—do you intend to use my hands to accomplish something that defies heaven?\"",
+                  "emotion": "锐利"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_002_2",
+                  "character_id": "char_lingyuan",
+                  "content": "Ling Yuan's expression slightly shifted. After a moment of silence, he actually laughed. \"Excellent, excellent Chen Ji! I knew I didn't misjudge you.\"",
+                  "emotion": "认可"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt3",
+            "text": "Play along duplicitously to extract intelligence.",
+            "description": "Pretend to agree to cooperate, seize the opportunity to extract more information about the Heaven's Eye and Ling Yuan's true intentions.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires expending energy to put on an act",
+            "visible_reward": "May obtain intelligence exceeding expectations",
+            "risk_hint": "If exposed by Ling Yuan, trust will be completely lost",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_003_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji lowered his eyes, putting on a thoughtful expression: \"Old Sect Master's deal, Chen is quite interested in. It's just...\" He paused, \"Chen wants to know, why choose me?\"",
+                  "emotion": "谦逊"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_003_2",
+                  "character_id": "char_lingyuan",
+                  "content": "\"Because you're the same as me.\" Ling Yuan's voice was low and hoarse, \"Both of us have been discarded by the Eye of Heavenly Way.\"",
+                  "emotion": "揭示"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0534_007",
+        "content": "Discarded piece. These two words echoed in the night wind, carrying endless irony. Chen Ji recalled the erased page in the Tianji Record—the inheritance originally belonging to Ling Yuan that inexplicably fell into his hands. He had always thought Ling Yuan was an enemy, that resentful old monster abandoned by the Tianji Record. But at this moment, Ling Yuan's words revealed another possibility.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_008",
+        "character_id": "char_lingyuan",
+        "content": "\"You think why this old man was abandoned by the Tianji Record?\" Ling Yuan's voice carried a hint of bitterness, \"Because I discovered the truth—the Tianji Record is merely a tool used by the Eye of Heavenly Way to control the mortal world, and the so-called prophet is nothing but the most humble piece on its chessboard.\"",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_009",
+        "character_id": "char_chenji",
+        "content": "Chen Ji was shaken in his heart. This was the first time he heard someone so directly speak of the Tianji Record's essence. He thought of Mo Xiansheng's expression of wanting to speak but holding back, of those deliberately hidden truths. Wanting to ask, the words reached his lips but he swallowed them back—he couldn't appear too eager, that would expose his understanding of the Tianji Record far exceeding what a Servant Disciple should possess.",
+        "emotion": "谨慎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_010",
+        "content": "Ling Yuan threw the black token to Chen Ji, who caught it. The token was ice-cold in his hand, the skull pattern on its surface seeming to squirm, carrying a nauseating aura. \"This is the Death Enforcer's movement route.\" Ling Yuan's voice sounded again, \"In three days, they will enter the Tianqing Sect from the east. At that time, the insider will open the east gate of the sect's protective mountain formation.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0534_choice_002",
+        "prompt": "Ling Yuan's intelligence is too detailed. Chen Ji needs to judge whether this is genuine assistance or a deeper conspiracy",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0534_opt4",
+            "text": "Press for the insider's identity",
+            "description": "Directly ask who the insider is to verify the authenticity of Ling Yuan's intelligence.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May touch Ling Yuan's bottom line",
+            "visible_reward": "Obtain core intelligence",
+            "risk_hint": "Ling Yuan may become wary because of this",
+            "process_label": "深挖情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -1
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_004_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Who is the insider?\" Chen Ji's voice was calm, but his eyes revealed an unforgiving sharpness, \"Since the Old Sect Master knows so much, surely you also know this answer.\"",
+                  "emotion": "质问"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_004_2",
+                  "character_id": "char_lingyuan",
+                  "content": "Ling Yuan's smile froze for an instant, then he shook his head: \"This question, this old man cannot answer. Not unwilling, but afraid.\" His voice suddenly dropped, \"Some truths, knowing them brings misfortune instead.\"",
+                  "emotion": "警告"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt5",
+            "text": "Go with the flow, reach an understanding",
+            "description": "No longer press for details, first reach a preliminary cooperation intention with Ling Yuan, preserving room for subsequent operations.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Abandon the opportunity to pursue the truth",
+            "visible_reward": "Gain time for action buffer",
+            "risk_hint": "May fall into a passive situation",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_005_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji was silent for a moment, then put the token into his sleeve: \"Good. The matter in three days, Chen has noted it.\" His tone was indifferent, yet carried an undeniable resolve, \"As for the deal the Old Sect Master mentioned, Chen needs a more suitable time to discuss.\"",
+                  "emotion": "沉稳"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_005_2",
+                  "character_id": "char_lingyuan",
+                  "content": "A complex glint flashed in Ling Yuan's eyes, seeming like admiration, yet also wariness. \"You are more like a chess player than this old man imagined.\" He said softly, \"Since that's the case, this old man will await your response.\"",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt6",
+            "text": "Display the Tianji Record, test the reaction",
+            "description": "Deliberately revealing a corner of the Tianji Record Fragment, observing Ling Yuan's reaction, judging his degree of obsession with the Tianji Record.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Revealing part of his trump cards",
+            "visible_reward": "Seeing through Ling Yuan's true intentions",
+            "risk_hint": "May bring fatal disaster",
+            "process_label": "引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 3
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_006_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji calmly revealed a corner of the Tianji Record Fragment in his sleeve. Ling Yuan's gaze instantly locked onto it, his pupils contracting sharply—that was undisguised greed and obsession. But soon, he looked away, his expression returning to normal.",
+                  "emotion": "警惕"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_006_2",
+                  "character_id": "char_lingyuan",
+                  "content": "\"It seems the old Sect Master's obsession with the Tianji Record runs deeper than I imagined.\" Chen Ji's voice carried a hint of playfulness. \"I wonder if this counts as the 'bargaining chip' the old Sect Master mentioned?\"",
+                  "emotion": "挑衅"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0534_011",
+        "content": "The wind at the Cliff Edge grew stronger, whipping at their robes. Ling Yuan's expression was ambiguous under the moonlight, those turbid old eyes seemingly hiding too many secrets. Chen Ji knew this old man before him was far more dangerous than he appeared—both a potential ally to help him through the current crisis and a potential enemy coveting the Tianji Record.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_012",
+        "content": "\"I'll be going.\" Ling Yuan suddenly spoke, his voice carrying a hint of exhaustion. \"As for what happens three days from now, weigh it yourself. And—\" his figure had already merged into the darkness, yet his final words still came through, \"Among the Death Enforcers, there's one you must be careful of. He's an executioner specializing in hunting prophets, said to have never failed.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_013",
+        "character_id": "char_lingyuan",
+        "content": "\"Old Sect Master.\" Chen Ji suddenly spoke up. \"Why are you helping me?\" This question had been circling in his heart for a long time. Ling Yuan was no saint; every move he made must have deep purpose.",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_014",
+        "character_id": "char_lingyuan",
+        "content": "A low laugh came from the darkness: \"Because like me, you're someone cast aside by fate. And between the cast-aside, we either devour each other or keep each other warm.\" Ling Yuan's voice gradually faded away. \"I only want to know how far another discarded piece on the chessboard can go.\"",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_015",
+        "content": "Chen Ji stood in place, gazing toward where Ling Yuan had disappeared, making no move for a long time. The night wind messed his hair and also dispersed the restlessness in his heart. Ling Yuan's words were like a key, opening a certain tightly shut door in his heart—on this destined lonely path, he was not the only discarded piece.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_016",
+        "content": "But between discarded pieces, companionship is not guaranteed. Chen Ji slowly pulled back his gaze, lowering his head to look at the black token in his palm. The skull pattern glistened with an eerie cold light under the moonlight, as if silently mocking his naivety. Three days, only three days. Yet the pieces in his hand were far from enough to set up a chess formation capable of dealing with this lethal trap.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_017",
+        "content": "The Tianji Record in his sleeve grew slightly warm, as if responding to his anxiety. Chen Ji took a deep breath, forcibly suppressing the impulse to foresee the future—every premonition consumed 5 points of Heavenly Fate Value, and his Heavenly Fate Value was nearly exhausted. This was his greatest trump card, but also his most vulnerable weakness.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0534_choice_003",
+        "prompt": "Faced with Ling Yuan's departing warning and the approaching crisis, Chen Ji needed to make a crucial decision",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0534_opt7",
+            "text": "Using the Tianji Record to foresee three days ahead",
+            "description": "Consuming 5 points of Heavenly Fate Value to foresee the scene when the Death Enforcers arrive.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "5 Heavenly Fate Value",
+            "visible_reward": "Gaining crucial foresight, arranging plans in advance",
+            "risk_hint": "Heavenly Fate Value will be further overdrawn, potentially affecting subsequent abilities",
+            "process_label": "以命换命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_007_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji gritted his teeth, taking out the Tianji Record Fragment from his sleeve. The golden patterns on the fragment glowed faintly in the night, as if responding to his call. \"All or nothing this time.\" he murmured, then activated the fragment, a golden light entering his brow center.",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0534_result_007_2",
+                  "content": "In an instant, countless images flooded into his mind like a flood. He saw the moment the mountain protection formation shattered, saw dark-clothed figures shuttling through the sect like ghosts, and more importantly, saw a figure holding a sickle slowly approaching him—the executioner, wearing a white mask with no facial features.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt8",
+            "text": "Contacting Su Qingyao through the night",
+            "description": "Su Qingyao was the Inner Disciple Senior Fellow, possessing formidable combat power. Though she had been investigating him, perhaps she could become a crucial ally against the crisis.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May expose more secrets",
+            "visible_reward": "Gaining strong support, reducing crisis risk",
+            "risk_hint": "Su Qingyao might seize the opportunity to press for the secrets of the Tianji Record.",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_008_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji tucked away the token and turned toward the Inner Sect. Su Qingyao... that woman who had always tried to uncover his secrets was now the person he needed most. He understood what this meeting meant—she would definitely seize the chance to press for answers, and he would have to give some.",
+                  "emotion": "决断"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0534_result_008_2",
+                  "content": "But he had no choice. The crisis three days away was far more terrifying than he had imagined. Death Executors, insiders, and that executioner who specialized in hunting Seers... each threat alone was enough to end his life. He had to grasp every possible lifeline, even if it meant exposing more of himself.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt9",
+            "text": "Seek out Ye Qing and form a new alliance.",
+            "description": "Though Ye Qing had departed, her Demonic Path mist could conceal the Tianji Record's aura and serve as a key countermeasure against the Heavenly Eye. He would risk chasing her down to negotiate new terms.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Need to pay a higher price.",
+            "visible_reward": "Obtain strategic-level ally support.",
+            "risk_hint": "Ye Qing might propose even harsher conditions.",
+            "process_label": "以利诱之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_009_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji made his decision. Ye Qing's Demonic Path mist was exactly what he needed most—it could mask the Tianji Record's aura, causing those Executors tracking Seers to lose their quarry. His figure flickered as he gave chase toward where Ye Qing had departed.",
+                  "emotion": "果断"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_009_2",
+                  "character_id": "char_chenji",
+                  "content": "\"Ye Saint, please stay your steps.\" Chen Ji's voice echoed through the night wind. \"Chen has a proposal that may benefit us both.\" Ahead, a black silhouette gradually halted, yet did not turn around.",
+                  "emotion": "诚恳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0534_018",
+        "content": "The warning Ling Yuan left behind lingered in the night wind. Chen Ji tightly gripped the black token in his palm, feeling waves of cold emanate from it. Three days, only three days. Death Executors, insiders, and that legendary executioner—each threat alone was enough to damn him utterly. Yet the leverage in his hands was woefully insufficient.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_019",
+        "content": "He raised his head, gazing toward the Inner Sect of Tianqing Sect. Su Qingyao's image flickered through his mind—that cold and formidable woman was the only powerful ally within his reach. Ye Qing's Demonic Path mist was likewise the sanctuary he urgently needed. And the Tianji Record itself... each vision depleted his Heavenly Fate, but he had no more options left.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_020",
+        "content": "Ling Yuan's form dissolved into the night, yet those words pierced Chen Ji's heart like an icy spike—Death Executors, already en route. The three-day countdown, beginning from this very moment.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

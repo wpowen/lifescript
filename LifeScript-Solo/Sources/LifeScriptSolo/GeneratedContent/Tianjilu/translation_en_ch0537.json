@@ -1,0 +1,571 @@
+{
+  "id": "天机录_ch0537",
+  "book_id": "天机录",
+  "number": 537,
+  "title": "Scheming the World",
+  "is_paid": true,
+  "next_chapter_hook": "Just when Chen Ji thought everything was in place, news came from Xuanwu Sect—Han Lie announced he would personally preside over Chen Ji's funeral rites, ostensibly to mourn, but with ulterior motives.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0537_001",
+        "content": "Beneath an unknown cliff at Tianqing Sect Back Mountain. Moonlight like frost fell upon Chen Ji's seemingly calm face. He sat cross-legged, fingers gently caressing the dim Jade Slip in his palm—the projector of the Tianji Record Fragment, now slightly warm. \"The reactions of various forces are faster than I anticipated.\" He murmured silently in his heart, yet a faint smile curved his lips. From the distant Tianqing Sect, the sound of funeral bells drifted faintly—one, two, three—exactly the standard procedure for announcing a disciple's death.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_002",
+        "character_id": "char_chenji",
+        "content": "\"Ye Qing, I need your operatives in the Demonic Path to mobilize.\" Chen Ji's voice was so soft that only the special transmission talisman beneath his fingertips could capture it. He paused, \"Especially regarding Xuanwu Sect—I need them to believe I've become a discarded pawn.\" The other end of the transmission talisman fell silent for a moment, then a cold female voice came through, carrying a hint of playfulness: \"You treat me like your errand runner. But I enjoy working with smart people. Tell me, what kind of 'discarded pawn' image do you need?\"",
+        "emotion": "冷静算计"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_003",
+        "content": "Chen Ji closed his eyes, the Tianji Record Fragment glowing faintly in his mind. A blurry image emerged—three days later, at Xuanwu Sect's victory celebration, Han Lie would publicly declare \"The废物Chen Ji is dead, great news!\" Though the image was hazy, it was enough for him to gauge the other's arrogance. \"I need them to believe I'm a chess piece discarded by Tianqing Sect.\" He slowly opened his eyes. \"The more miserable, the more卑微 it is, the better. Best let Han Lie think his mockery will spread across the world.\" A soft laugh came from the transmission talisman: \"You're going to feed his vanity?\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_004",
+        "character_id": "char_chenji",
+        "content": "\"Not feeding—stuffing.\" Chen Ji's voice was terrifyingly calm. \"Someone like Han Lie, the more pleased he is, the more likely he shows cracks. He thinks I'm under his control, but he doesn't realize—\" He paused, \"I need you to spread a message through the Demonic Path: the Holy Sect is searching for someone with the 'Heavenly Fate Lock Key' bloodline, and that person is connected to me.\" The transmission talisman suddenly went silent. After a moment, Ye Qing's voice carried more gravity: \"You're laying a trap to draw out the snake? But doing this, your sister—\" Chen Ji interrupted her: \"I know. But this is the only chance to draw her out.\"",
+        "emotion": "隐藏的痛苦"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0537_005",
+        "prompt": "While Chen Ji was arranging the fake death scheme, he needed to decide how deeply to reveal his plan to Ye Qing. Which strategy would best ensure Demonic Path cooperation while protecting core secrets?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0537_005_a",
+            "text": "Full disclosure, building deep trust",
+            "description": "Reveal the entire plan to Ye Qing, including arrangements for Su Qingyao, making her a true ally rather than a pawn.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Core secret leak risk increases significantly",
+            "visible_reward": "Demonic Path cooperation greatly improves; Ye Qing may proactively provide additional support",
+            "risk_hint": "If Ye Qing turns against him, the entire plan will collapse",
+            "process_label": "信任交换",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_005_a_001",
+                  "content": "The transmission talisman's other end fell into a long silence. When Ye Qing spoke again, the playfulness in her voice had vanished, replaced by an unusual solemnity: \"Chen Ji, you're the most insane person I've ever met. However—\" she laughed softly, \"I like it. Rest assured, I'll have the entire Demonic Path cooperate seamlessly. But as exchange, you'll owe me a favor in the future.\" Chen Ji didn't hesitate: \"Deal.\" Mo Xiansheng's remnant soul deep within the Tianji Record trembled slightly, seemingly reminding him: dancing with the Demonic Path Saintess is no different than befriending a tiger. But Chen Ji knew this path, he had to walk it."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清深度合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0537_005_b",
+            "text": "Reveal seventy percent, keep the core",
+            "description": "Only tell Ye Qing about surface-level cooperation needs, hiding Su Qingyao's role and the true cost of the Tianji Record.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ye Qing may make mistakes due to insufficient information",
+            "visible_reward": "Core secrets absolutely safe; even if Ye Qing has ulterior motives, she cannot sabotage key arrangements",
+            "risk_hint": "Minor cooperation flaws may occur, but won't affect the overall situation",
+            "process_label": "信息控流",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_005_b_001",
+                  "content": "\"I only tell you what you need to know.\" Chen Ji's tone was as indifferent as ever. \"Spread the news through the Demonic Path, make Xuanwu Sect believe I've become a discarded pawn. Other matters, don't ask.\" A snort of half-laugh, half-contempt came from the transmission talisman: \"You guard closely indeed. Fine, who let me be on the same boat as you now? But Chen Ji—\" Ye Qing's voice suddenly lowered, \"I'll give you a piece of advice: don't calculate yourself too perfectly. Those who scheme meticulously often die from 'accidents'.\" Chen Ji's fingers gripping the transmission talisman tightened slightly. This sentence was like a thorn, precisely stabbing the place he least wanted to face."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清有限合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0537_005_c",
+            "text": "Reverse the situation, probe her cards",
+            "description": "Don't answer directly, but instead ask about Ye Qing's true motives, testing how deep her relationship with the Holy Sect truly is.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May anger Ye Qing, causing cracks in the cooperative relationship",
+            "visible_reward": "If the probe succeeds, can obtain crucial intelligence about the Holy Sect, adding leverage for future arrangements",
+            "risk_hint": "If the probe fails, may lose an important ally",
+            "process_label": "反向试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_005_c_001",
+                  "content": "\"Before I answer, I want to know one thing.\" Chen Ji's voice suddenly became sharper. \"Why are you willing to help me? For the Demonic Path Saintess to personally join hands in a '废物' deception—there's no selfish motive of yours?\" The transmission talisman went completely silent, even the sound of breathing disappeared. After a long while, Ye Qing's voice came, carrying a hint of danger: \"Chen Ji, you're clever, but too clever people often die the earliest.\" Chen Ji didn't retreat: \"I just want to know—are we partners, or tools using each other?\" Ye Qing was silent for a moment, then suddenly laughed: \"Is there a difference?\" This counter-question left Chen Ji momentarily speechless. Indeed, in this chess game, who isn't using whom?"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清关系紧张"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_006",
+        "content": "The transmission talisman's glow gradually faded, and Chen Ji tucked it into his sleeve. Night wind rose from below the cliff, carrying a biting chill. He stood up, his gaze piercing through layers of clouds toward the direction of Tianqing Sect Main Peak in the distance. Where lanterns flickered, a grand \"memorial service\" was being held in his honor. Sect Master Ling Yuan attended personally, various elders gathered together, and sighs of \"condolence\" rose one after another. Chen Ji watched that brightly lit scene, a cold smile curling at his lips: \"Quite the performance.\" He turned and darted toward another direction. There, another chess piece was waiting for him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_007",
+        "character_id": "char_suqingyao",
+        "content": "Deep within the Bamboo Grove, moonlight was sparse. Su Qingyao stood beneath a green bamboo, her face pale, her eyes slightly red—the marks of crying. Before her stood a newly erected grave, the tombstone inscribed with \"Tianqing Sect Servant Disciple Chen Ji's Tomb.\" When Chen Ji silently appeared behind her, her body clearly stiffened, but she didn't turn around. \"You came.\" Her voice was hoarse, carrying suppressed emotion, \"I thought you'd wait until midnight to appear.\" Chen Ji stood three steps behind her, his voice calm: \"Coming early was to see how seriously you were performing.\" Su Qingyao finally turned around, her gaze complex as she looked at him: \"You... do you even have a heart?\"",
+        "emotion": "压抑的愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_008",
+        "content": "Chen Ji didn't answer her accusation. He simply walked to the grave, squatted down, and drew a small jade bottle from his sleeve. Inside was the residue of a \"poison\" he'd prepared in advance—a forbidden drug that could induce a death-like state. \"This will be detected by the elders.\" He buried the jade bottle in the soil before the grave. \"At that time, they'll announce I died from poisoning. The cause of death will be confirmed, all doubts eliminated.\" Su Qingyao watched his movements, then suddenly sneered: \"So you've been playing the废物 all this time in Tianqing Sect, just for this day? Making everyone believe you're a insignificant discarded piece, then—\" She paused, \"shed your shell like a cicada?\" Chen Ji stood up, brushing dirt from his hands: \"You understand quickly, Senior Sister.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_009",
+        "character_id": "char_suqingyao",
+        "content": "\"Don't call me Senior Sister!\" Su Qingyao's voice suddenly rose a few notes. \"You're no servant disciple! From the day you entered Tianqing Sect, you've been acting! You—\" She took a deep breath, seemingly trying to suppress her emotions. \"Who are you?\" Chen Ji turned around,直视着她的眼睛. In those eyes, there was anger, unwillingness, and a trace of... something he couldn't understand. \"I am Chen Ji.\" His voice was soft. \"A chess piece that must die once.\" Su Qingyao stared at him fixedly, suddenly stepping forward until their distance was less than a fist's width: \"You used me. Made me your 'witness' so everyone believes I'm the fool deceived by the废物. Do you know what they're saying about me in the sect now?\"",
+        "emotion": "压抑的愤怒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0537_010",
+        "prompt": "Su Qingyao is on the verge of an emotional outburst, questioning why you used her. How will you respond to her anger and accusations?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0537_010_a",
+            "text": "\"Be honest, reveal part of the truth.\"",
+            "description": "\"Tell her you did use her, but also admit she is the person you least wanted to hurt in your plan.适当展露脆弱，看能否打动她.\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Exposing weaknesses, may give her leverage.\"",
+            "visible_reward": "\"Su Qingyao's favorability increases significantly, unlocking a deeper cooperative relationship.\"",
+            "risk_hint": "\"If she cannot accept the truth, she may completely break down or turn hostile.\"",
+            "process_label": "真诚以对",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_010_a_001",
+                  "content": "Chen Ji沉默了片刻，忽然轻叹一声：\"你说得对，我在利用你。\" Su Qingyao显然没料到他会承认，一时愣在原地。Chen Ji继续说道：\"但你有没有想过——如果我真的只把你当棋子，为什么要把'证物'埋在你能找到的地方？\" He看着她的眼睛，声音低了下去，\"I could have told you nothing, let you become a perfect witness without knowing. But I didn't.\" Su Qingyao的眼神微微一颤。Chen Ji转过身，望着那座假坟：\"Three days later, when everyone mocks '废物 Chen Ji's' death, I need someone to keep something for me.\" He从怀中取出一枚玉简，\"This is more important than my life.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶深度羁绊"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "对苏青瑶展露脆弱",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0537_010_b",
+            "text": "\"Remain cold, continue advancing the plan.\"",
+            "description": "\"Make no explanations,用冷冰冰的逻辑告诉她：in this chess game, pieces don't need to know the chess player's thoughts.\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "\"Su Qingyao may become completely disillusioned and stop cooperating.\"",
+            "visible_reward": "\"Maintain information asymmetry, prevent her from seeing through your true intentions.\"",
+            "risk_hint": "\"If she loses emotional control and makes a scene, may draw unnecessary attention.\"",
+            "process_label": "冷酷以对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_010_b_001",
+                  "content": "\"\"利用？\" Chen Ji的声音忽然冷了下来，\"Su Qingyao, you're overestimating yourself.\" His目光如刀，直直刺入她的眼底，\"In this game, you, me, Ye Qing, even Ling Yuan and Han Lie—all are pieces. The only difference is, I know I'm a piece, while you still think you're the protagonist.\" Su Qingyao的脸色瞬间变得惨白。Chen Ji向前一步，压低声音：\"You want to know the truth? The truth is—三天后，我会'复活'. Then, everyone who mocked me will become stepping stones for me. And you, do you choose to stand on those stones, or be crushed along with them?\" His眼神忽然柔和了几分，却更显危险，\"Senior Sister, I give you a chance. Help me, and help yourself.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶服从安排"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0537_010_c",
+            "text": "\"Retreat to advance, show weakness to gain sympathy.\"",
+            "description": "\"Acknowledge your own weakness and helplessness, portray her as an indispensable guardian in your plan,激发她的保护欲.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"May let her see through your disguise, viewing this as another form of manipulation.\"",
+            "visible_reward": "\"If successful, upgrade Su Qingyao from 'witness' to 'guardian', unlocking deeper bonds.\"",
+            "risk_hint": "\"Su Qingyao is extremely intelligent; if the performance seems too staged, she will see through it.\"",
+            "process_label": "以弱胜强",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 12
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_010_c_001",
+                  "content": "Chen Ji suddenly lowered his head, his shoulders微微颤抖. In this moment, he was no longer the calculating chess master, but像是一个被逼到绝境的普通人. \"Do you think I wanted this? Do you think I wanted everyone to see me as废物? Thought I wanted to turn my 'death' into a play?\" He raised his head, and Su Qingyao saw his eyes actually微微泛红. \"I have no choice, Su Qingyao.\" His voice低沉，\"从获得天机录的那一天起，我就没有选择了。I can only keep walking,走到所有人都看不到的地方...\" He突然苦笑一声，\"Then, at the most critical moment, give everyone a surprise. Will you...help me?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶守护者"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "向苏青瑶展露脆弱",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_011",
+        "content": "Only the wind in the bamboo grove and distant隐约的丧乐 remained. Chen Ji and Su Qingyao对视良久，finally Su Qingyao先移开了目光。She弯腰捡起地上那枚玉简，握在掌心，her voice恢复了平静：\"Tell me, what do you need me to do?\" Chen Ji看着她将玉简收入怀中，心中微微松了口气。The jade slip recorded the rubbing version of the Tianji Record Fragment—also his last escape route. Su Qingyao being willing to keep it meant she had made her choice. \"At the funeral three days later,\" he began, \"you need to 'accidentally' discover this in front of everyone.\" He从袖中取出另一枚更小的玉片，\"Then,替我演一出戏.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_012",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao接过玉片，灵力探入其中，片刻后脸色微变：\"This is... correspondence between Ling Yuan and the Xuanwu Sect? Where did you get this?\" Chen Ji没有回答，only said：\"Three days later, when Han Lie 'condolences' me at the funeral, you need to, in front of everyone, 'carelessly' drop this.\" Su Qingyao的眉头皱得更紧：\"You want them to turn on each other?\" \"Not turn on each other.\" Chen Ji微微一笑，that smile带着几分残忍的快意，\"It's to let the Xuanwu Sect know that Tianqing Sect has been using them as a tool. Han Lie has always wanted to prove he's better than Ling Yuan, right? Then give him a chance.\" Su Qingyao看着他，忽然打了个寒颤。This person...太可怕了.",
+        "emotion": "震惊与恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_013",
+        "content": "The chess game was set. As Chen Ji prepared to leave, he suddenly stopped at the threshold, his back facing Su Qingyao. \"By the way, there's one more thing.\" His voice was soft, yet it made Su Qingyao's heart tighten sharply. \"Someone will try to harm you at the funeral.\" He paused, \"If it really comes to that—\" He turned his head, gazing at her with complex eyes. \"Run. Don't look back, don't hesitate. Surviving is more important than anything else.\" Su Qingyao stared blankly as he vanished into the night, the Jade Slip and jade pieces in her hands feeling as heavy as a thousand pounds. She suddenly realized that hidden within the man's words just now was something far deeper than it appeared on the surface.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0537_014",
+        "prompt": "Chen Ji completed his arrangements for Su Qingyao. Now he needed to decide the final step—how to handle the information warfare against the Imperial Court.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0537_014_a",
+            "text": "Take the initiative, release the 'abandoned piece' signal",
+            "description": "Through special channels, hint to the Imperial Court: Chen Ji is dead, Tianqing Sect will lose its most important piece, and the Imperial Court can take the opportunity to suppress Tianqing Sect.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May cause the Imperial Court to excessively suppress Tianqing Sect, alerting the enemy instead",
+            "visible_reward": "Create a rift between the Imperial Court and Tianqing Sect, creating conditions for the渔翁得利 strategy later",
+            "risk_hint": "If the Imperial Court perceives this as a trap, they might reverse and use this information",
+            "process_label": "借势乱局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_014_a_001",
+                  "content": "Chen Ji returned to his hiding place beneath the Cliff. He took out a golden transmission talisman he had never used before. This was something he had purchased from a destitute noble of the Imperial Court in his early years, theoretically capable of contacting certain special channels within the Imperial Court. \"The废物 has been eliminated, Tianqing Sect is weakened.\" He spoke these words into the transmission talisman, then reduced it to ashes. The information would spread in a way he couldn't trace, eventually reaching where it needed to go. Chen Ji watched the ashes scatter in the wind, calculating silently in his heart: within three days, the Imperial Court would pressure Tianqing Sect; within five days, Ling Yuan would be in a turmoil; in seven days—he smiled faintly—Han Lie would arrive with his 'condolences' as expected. At that time, all the pieces would return to their positions, and he would re-enter from beneath the chessboard."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "皇朝入局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0537_014_b",
+            "text": "Do nothing, let the Imperial Court judge for itself",
+            "description": "Do not proactively release information, let the Imperial Court learn of 'Chen Ji's death' through their own channels, maintaining mystery and avoiding exposing too many trump cards.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "The Imperial Court may make incorrect judgments due to insufficient information, leading to deviations in the plan",
+            "visible_reward": "Maximize protection of core secrets, leaving more room for contingency",
+            "risk_hint": "If the Imperial Court chooses to watch and wait, they may miss the best opportunity to take advantage",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_014_b_001",
+                  "content": "Chen Ji put away the golden transmission talisman, hiding it back in the Hidden Compartment. There was no need to take the initiative. The Imperial Court's intelligence network spread throughout the world; the news of Chen Ji's 'death' would soon reach their ears. Instead of画蛇添足, better to let them analyze and judge for themselves. He leaned against the cold stone wall, closing his eyes. The Tianji Record Fragment appeared in his mind, the scene three days later still blurred—this was Chen Nian's presence interfering with his foresight. But there was one thing he could be certain of: Han Lie would appear, and Ling Yuan... would bare his true fangs. \"Three days.\" He murmured softly, \"Just three more days to wait.\" Suddenly, a subtle sound of footsteps came from above the Cliff. Chen Ji's eyes snapped open, his figure flashing as he vanished into the shadows."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "皇朝观望"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0537_014_c",
+            "text": "Reverse operation, release the 'abandoned piece rising' illusion",
+            "description": "Deliberately let the Imperial Court receive intelligence about 'Chen Ji's fake death', making them think Tianqing Sect is up to something, thereby generating deeper suspicion toward Tianqing Sect.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "If the Imperial Court sees through this as a counter-intelligence scheme, they may demand payment with interest",
+            "visible_reward": "If successful, it will completely muddy the waters, causing all forces to suspect each other",
+            "risk_hint": "The consequences of playing with the Imperial Court's intelligence apparatus are extremely severe; once failed, it's an eternity of doom",
+            "process_label": "浑水摸鱼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0537_result_014_c_001",
+                  "content": "Chen Ji took out another transmission talisman from his bosom—this one he had modified himself, capable of forging anyone's aura. He imitated the terrified voice of an ordinary disciple from Tianqing Sect: \"Something terrible has happened! Chen Ji... Chen Ji isn't dead! He's faking his death! The Sect Master already knows!\" The forged information was sent to the Imperial Court through multiple relays. After completing this, Chen Ji couldn't help but let out a soft laugh. If the Imperial Court believed this message, they would think Tianqing Sect was plotting something, thereby developing suspicion toward Ling Yuan; if the Imperial Court saw through it as a forgery, they would be even more confused—just who was manipulating from behind the scenes? Either outcome was good for him. Mo Xiansheng's remnant soul sighed faintly from within the depths of the Tianji Record: \"You child, your胆子 is even greater than those of the people back then.\" Chen Ji didn't respond, only gazing at the starry sky above, his eyes deep and profound as an abyss."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "皇朝混乱"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_015",
+        "content": "The visitor's footsteps stopped at the Cliff Edge. Chen Ji hid in the shadows, holding his breath. The visitor seemed to be searching for something, their footsteps sometimes near, sometimes far. By the faint moonlight, Chen Ji saw who it was—a Servant Disciple from Tianqing Sect, holding a dim yellow lantern. His heart rate quickened slightly. Had this person come looking for him? Or... just passing by? Just as he prepared to strike, the person suddenly murmured to himself: \"Brother Chen... are you truly dead?\" The lantern's glow wavered, illuminating that young and nervous face—it turned out to be the only 'disciple' he had ever taken in when he first entered the sect, Little Stone.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_016",
+        "character_id": "char_chenji",
+        "content": "Chen Ji had originally wanted to remain hidden, but seeing the panic on Little Stone's face, his heart suddenly softened. This child... was the only person he had truly taught something to. Although it was only some basic techniques, it was enough for an orphan to survive in the sect. \"Little Stone.\" He stepped out from the shadows, his voice calm. Little Stone spun around, nearly dropping the lantern: \"Who's there—B-Brother Chen?!\" His eyes instantly widened, his voice trembling violently, \"Didn't the Sect Master say... said you were dead!\" Chen Ji stepped closer, lowering his voice: \"Do you want the entire sect to know I'm not dead?\" Little Stone was so frightened he covered his mouth, yet the shock and wild joy in his eyes couldn't be hidden. Chen Ji looked at him, sighing softly: \"Help me do one thing.\"",
+        "emotion": "隐藏的温情"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_017",
+        "content": "Little Stone nodded frantically, his eye sockets already reddening. He had been bullied since childhood, and it was Chen Ji who taught him how to survive in the sect. Although Chen Ji had never acknowledged him as a 'disciple', in his heart, Chen Ji was his only family. \"Brother, I'll listen to whatever you say!\" His voice carried a sob, \"As long as Brother needs me, I...\" Chen Ji extended his hand, pressing it onto his shoulder. This was the first time he had taken the initiative to touch this child. \"At the funeral in three days,\" he said softly, \"paste this Talisman Paper on the chair Han Lie sits in.\" He took out a Talisman Paper from his sleeve that appeared ordinary but concealed profound secrets. Little Stone took the talisman, though not understanding what it was, he carefully stored it away. \"Brother, may I ask a question?\" He gathered his courage, \"Why... why are you faking your death?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0537_018",
+        "character_id": "char_chenji",
+        "content": "Chen Ji fell silent for a moment, gazing at the distant lights of Tianqing Sect. \"Because some people,\" he slowly began, \"only dare to show their true faces after I'm 'dead'.\" He turned around, his gaze falling on Little Stone's face. In that instant, the coldness in his eyes vanished, leaving only a brother's tenderness toward his younger sibling. \"Little Stone, remember one thing.\" His voice was very soft, \"No matter what happens in the future, you must survive. Only by surviving do you have the right to witness their downfall.\" Little Stone nodded forcefully, tears finally unable to be held back. Chen Ji patted his head, then turned and vanished into the night. The moonlight shone in the direction he departed, yet it couldn't illuminate his figure—he had already merged into the darkness.",
+        "emotion": "隐藏的温情"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_019",
+        "content": "Returning to his hiding place, Chen Ji leaned against the cold stone wall, closing his eyes. All the pieces had been positioned: Ye Qing was spreading the news in the Demonic Path, Su Qingyao was keeping the key evidence, and Little Stone would lay the final straw at the funeral. The Imperial Court would be thrown into chaos, Xuanwu Sect would be provoked, and Tianqing Sect would fall into internal strife. And he, he only needed to wait—wait for the appearance of that 'Death Executor'. Thinking of this name, Chen Ji's brow slightly furrowed. In the foresight given by the Tianji Record Fragment, there was always a blurry figure. That figure belonged to no known force, yet existed in a strange posture at the funeral three days later. \"Who exactly are you?\" He murmured to himself. The Tianji Record offered no answer. Only that blurry figure lingered in Chen Ji's mind, refusing to dissipate.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0537_020",
+        "content": "Night wind grew cold, the funeral bells of Tianqing Sect rang again—this time the midnight toll. Chen Ji opened his eyes, gazing at the faintly glowing Jade Slip in his palm. Another tiny crack had appeared on the edge of the Tianji Record Fragment. Each time he used his Foresight Ability, he drew one step closer to the \"deadly backlash.\" But all of this... was worth it. \"Three days later,\" he whispered, a faint smile curling at the corner of his lips, \"let us see how this chess game ultimately plays out.\" He rose to his feet and walked to the Cliff Edge, gazing toward the distant, brilliantly lit Tianqing Sect. There, someone was holding his funeral; there, others waited to witness his humiliation; there, still others were sharpening their knives in the shadows. And he only needed to reappear before them at some moment three days later, in a way no one could have imagined. At that time... the true beginning would commence.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

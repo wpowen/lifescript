@@ -1,0 +1,423 @@
+{
+  "id": "天机录_ch0631",
+  "book_id": "天机录",
+  "number": 631,
+  "title": "균열 반동",
+  "is_paid": true,
+  "next_chapter_hook": "네 글자의 먹적이 아직 마르지 않았는데, Chen Ji는 꼬리뼈에서 후경까지 차가움이 스며드는 것을 느꼈다—누군가가 어둠 속에서 그를 엿보고 있었고, 게다가 이 사람은 그가 가진 모든 비밀을 알고 있었다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0631_001",
+        "content": "Tianqing Sect에서 300리 떨어진 바깥쪽, 눈에 띄지 않는 황폐한 마을. 무너진 사당 안에서 Chen Ji는 먼지가 쌓인 가슴푸드 위에 가부좌를 틀고 있었고, 앞에는 결손된 고서가 펼쳐져 있었다. 그의 얼굴은 말라붙었고, 관골에는 회색빛이 스며 있어 보기에 하루살이 흩어진 파문散修와 다름없었다. 3일 전의 가짜 죽음 연극은 모든 사람을 속였다—그녀를 제외하고는.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_002",
+        "content": "Tianji Record 단편 위의 글자가 희미하게 반짝였다. 그것은 Mo Xiansheng의 남은 혼이 아직 완전히 깨어나지 않은 조짐이었다. Chen Ji는 그 은미한符文을 응시하며 손가락 끝으로 서면를 가볍게 쓰다듬었다. 가짜 죽음 이후, 그의 Heavenly Fate 수치는 320점으로 급락했으며, Mo Xiansheng이 경고한临界点까지는 고작 180점의 여유만 남았다.每一 분의消耗는 그의 심장에 칼을 박는 것 같았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0631_003",
+        "character_id": "char_chenji",
+        "content": "Mo Xiansheng, 당신은 참 편하게 주무시네요. 후배는 여기서 머리가 쥐어질 지경입니다.",
+        "emotion": "自嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_004",
+        "content": "고서 깊은 곳에서 늙은 조소음이 들려왔다. Mo Xiansheng의 음성이 실처럼 떠다녔다: \"계집애, 네가 이 늙은이가 네 함부로 놀아나는 걸 보고 싶어서 그랬겠어? 가짜 죽음으로 몸을 빼내는 것은 묘한 계책이지만, 네가 Tianji Record 단편의 기척을 노출했잖아—피 냄새를 맡고 있는 독수리 같은 자들, 이미 움직였어.\"话音가 끝나기도 전에, 사당 밖의 마른가지 위에서 몇 마리의 까마귀가 급히 날아올랐다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_005",
+        "content": "Chen Ji는 눈을 가늘게 뜨고, 신识를そっと伸ば였다. 황폐한 마을外围에는 적어도 세 道의 기척이 어른거렸다—한 道는 Xuanwu Sect 특유의 묵직한 토원력를 띠고 있었고, 한 道는 마도特有的 음험之气를 발하고 있었으며, 또 한 道는… 극도로 은미하여 황조暗卫 특유의 기척이었다. 세 세력이同一 시간에 여기로 손을 뻗었다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0631_006",
+        "prompt": "세 세력이 동시에 다가오자, Chen Ji는 노출되기 전에 선택을 해야 했다: 위험을 감수하고 Su Qingyao에게 먼저 연락할 것인가, 아니면 먼저これらの探子들을 끌어낼 방법을 찾을 것인가?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0631_006a",
+            "text": "Su Qingyao에게 연락하기",
+            "description": "Su Qingyao는 가짜 죽음 진실을 유일하게 알아챈 사람으로, 지금은 그녀만이 내부 정보를 제공할 수 있다. 그러나 그녀에게 연락하는 것은 자신의 위치를 노출하는 것을 의미한다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "추적당하는 위험을 감수하다",
+            "visible_reward": "황조 내부 1차 정보 얻기",
+            "risk_hint": "제3자에게 발각되면 판국은 완전히失控할 것이다",
+            "process_label": "使用隐秘传音符联系苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_006a_1",
+                  "content": "Chen Ji의 손끝에서 희미한 영광이 응결되어 특수한 진동수로 전음 부호에 주입되었다. 삼흉(三息)이 지난 후, 부호가燃尽尽하고, 차가운 여성 목소리가 그의 Mental Sea에 울렸다: \"아직도 감히 연락하는 거야? 밖에서 이미 천재지변이라는 거 모릅니까!\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0631_result_006a_2",
+                  "character_id": "char_suqingyao",
+                  "content": "황조暗卫가 이미 개입했으며, 그들이 네 가짜 죽음의 진상을 조사하고 있다. 더욱 성가신 것은… Ling Yuan 그 늙은 여우도 어둠 속에서 물타기하는 것 같다.",
+                  "emotion": "焦急"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶主动提供皇朝内部情报",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_006b",
+            "text": "迷陣을 펼쳐探子들을 끌어내다",
+            "description": "Tianji Record 단편에 남은 기척을 이용하여多个 가짜 흔적을 배치하고, 세 세력의 주의를 서로 다른 방향으로 유도한다.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Tianji Record 기척을 소모하면, 더 큰 침착심을 불러일으킬 수 있다",
+            "visible_reward": "더 많은 배치 시간을 확보하다",
+            "risk_hint": "Tianji Record 기척이 한번 잠정되면, 후환이 끝없이 될 것이다",
+            "process_label": "布置三重幻影阵法",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_006b_1",
+                  "content": "Chen Ji는 손을结印하고, Tianji Record 단편 위의 한縷 기척을 뽑아내어 세 방향으로 흩어졌다. 그의 입꼬리가 살짝 올라갔다: \"나를 잡겠다? 먼저 진위를 가리는 법부터 배워라.\" 잠시 후, 사당 밖의 세 기척이果然 분화되기 시작했다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_006c",
+            "text": "시기를 기다리며来访자를 관찰하다",
+            "description": "주동적으로 공격하지 않고, 변함 없이 대응하며, 이 세 세력의 목적과 상호 관계를 관찰하고,破绽에서 탈신의 기회를 찾는다.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "최고의 철수 시기를 놓칠 가능성이 있다",
+            "visible_reward": "더 완벽한 정보網图表를 얻다",
+            "risk_hint": "세 세력이 동시에 다가오면, 퇴로가 완전히 봉쇄될 것이다",
+            "process_label": "收敛气息潜伏观察",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_006c_1",
+                  "content": "Chen Ji는 모든 기척을 수렴하고, 하나의 못버리처럼 사당 그늘 속으로 스며들었다. 세 기척이 점점 다가오자, 그는 숨을 멈추고 응축하여 바깥에서 들리는 대화 소리를 들었다—그 Xuanwu Sect 제자居然가 마도之人에게 \"그 폐물\"의的下落을 묻고 있었다. 폐물이라는 두 글자가 귀에 들어오자, Chen Ji의 눈 저뿐에서 차가운 빛이 스쳤다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_007",
+        "content": "사당 밖에서 발소리가 점점 가까워졌다. Chen Ji는破损한 창살 틈새로，透过し, Xuanwu Sect 제식 갑옷을 입은 청년이 사방을 두리번거리는 것을 보았다. Han Lie의 부하—그 당황스러운 얼굴은 허공 너머로도 알아볼 수 있었다. 더 먼 곳에서, 가는黑影가 나무그늘 사이에서 희미하게 나타났다. 마도 Holy Sect의 사람이었다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0631_008"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_009",
+        "content": "Chen Ji의 마음이 가라앉았다. 시공간 균열의 변동… 예상보다 더 빠르고 更猛烈하게 찾아왔다. 천도之眼을 초월하는 그 힘은 도대체 어디서 온 걸까? 바로 이때, 그의 품에 있던 전술 옥함이 뜨거워지기 시작했다—그것은 그와 Ye Qing 사이의 긴급 연락 방식이었다. 마도 성녀, 왜 지금 그에게 연락하는 걸까?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0631_010",
+        "prompt": "Ye Qing의 긴급 연락과 시공간 균열의 이변이 거의 동시에 발생하자, Chen Ji는 제한된 시간 내에 판단을 내려야 했다.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0631_010a",
+            "text": "Ye Qing의 메시지를 우선 확인하다",
+            "description": "마도 Holy Sect의消息는往々 大局에 관한 것으로, Ye Qing이 긴급 연락을动用했으니必有 요직이 있다. 先情報 후 대응.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "세 방향 동향를 관찰할 시기를 놓칠 가능성이 있다",
+            "visible_reward": "마도 관점의 핵심 정보를 획득하다",
+            "risk_hint": "Ye Qing의 정보 진실성은 스스로 판단해야 한다",
+            "process_label": "激活夜清的传讯玉简",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0631_result_010a_1",
+                  "character_id": "char_yeqing",
+                  "content": "Chen Ji, Tianji Record의 기척이 균열 가장자리에서失控되었다! 성sect长老都说，那不是天道之眼的力量——是更古老的东西。它在……它在呼唤你.",
+                  "emotion": "惊惧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清预警：裂隙中有超越天道之眼的存在在呼唤陈机",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_010b",
+            "text": "위험을 감수하고 Tianji Record를 동원하여 예측하다",
+            "description": "10점의 Heavenly Fate를 소모하여, 향후 삼시辰内 세 세력의 동향과 시공간 균열의 further 변화를 예측한다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Heavenly Fate -10, 현재 잔여 310점",
+            "visible_reward": "삼시辰의 완전한 예측 도면을 획득하다",
+            "risk_hint": "Heavenly Fate가 이미 위험 지역에逼近하고 있으니, 사용을 삼가하라!",
+            "process_label": "激活天机录预见能力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_010b_1",
+                  "content": "Tianji Record 단편이 갑자기 눈부신 금빛을 뿜었고, Chen Ji의 눈앞이 흐려졌다.画面이 떠올랐다—시공간 균열이 두 시辰 후에 급격히 확대되어, Xuanwu Sect와 마도之人가 황폐한 마을에서 난투를 벌이고,，而他本人……는 식별할 수 없는黑影에 가로막혀 사당 후山에堵住되었다. 그黑影의 윤곽은 Chen Nian이 실종되기 전의 설명과惊人的相似했다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 200
+            },
+            "memory_label": "预见显示：陈念可能与裂隙异变有关",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_011",
+        "content": "사당 밖의 발소리가 갑자기 멈추었다. 그 Xuanwu Sect 제자가 뭔가를 감지한 듯 사당 방향을 바라보았다. Chen Ji는 즉시 통신을 끊고, 모든 기척을 있을까 말까 한 수준으로 수렴했다. Mo Xiansheng의 목소리가 Mental Sea에 울렸다: \"계집애, 황조暗卫의 그 사람… 떠났어. 그러나 그의 기척은分明히 Tianqing Sect方向으로 향하고 있었다—Ling Yuan 그 늙은 것이, 지루함을 못 참는 것 같다.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0631_012",
+        "character_id": "char_chenji",
+        "content": "Ling Yuan… 늙은 여우. Chen Ji의 눈빛이 미、冷렸고, 가짜 죽음 이후 그가 가장 두려워한 것은 적이 明攻하는 것이 아니라暗箭이었다. 그는 본래 새로운 신분으로潜伏半个月하여风头가 지나간 뒤에 다시打算할 계획이었다. 지금看来, 시간이 사람을 기다려주지 않는다.",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_013",
+        "content": "바로 이때, 가는破空声이 사당破损한 창살을 뚫고 들어왔다. Chen Ji의 동공이 수축되었다—그것은 어떤灵力 변동도 없는 평범한 Flight Knife였고, 칼끝에는 너덜너덜한 종이-stub이 찔러져 있었다. Flight Knife가 나무에 박혔도, 종이-stub은 조금도 움직이지 않았다. 이 控制力… 찾아온 자는philis 않았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0631_014",
+        "prompt": "신비로운 Flight Knife와 종이-stub의 갑작스러운出現으로, Chen Ji는 제3의 세력이 이 판국에 개입했음을 깨달았다.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0631_014a",
+            "text": "종이-stub 내용을 냉정하게 분석하다",
+            "description": "찾아온 자가 모르게 정보를 전달할 수 있었으니, 반드시 所恃가 있다. 먼저 내용을 보고, 再判断.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "상대의 설정한 심리 함정에 빠질 가능성이 있다",
+            "visible_reward": "신비로운 세력의 1차 정보를 획득하다",
+            "risk_hint": "상대는 Chen Ji의 행적을 알고 있는 것 같다",
+            "process_label": "谨慎取下纸笺查看",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_014a_1",
+                  "content": "Chen Ji는 독과咒가 없음을 확인한后才才将纸笺取下。展开一看，四個墨字触目惊心——\"天眼在望\"。字迹古朴苍劲，每一笔都蕴含着说不清道不明的道韵。这四个字的分量，让 Chen Ji后背瞬间被冷汗浸透。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0631_014b",
+            "text": "Flight Knife 출처 추적",
+            "description": "상대가 문안으로 찾아올 수 있었으니, 그들은 Chen Ji의 반격을 두려워하지 않는다는 뜻이다. Flight Knife 출처를 추적하면, 이 신비로운 세력의 실마리를 찾을 수 있을지도 모른다.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "자신의 위치를 노출할 가능성이 있다",
+            "visible_reward": "상대 근거지 정보를 획득하다",
+            "risk_hint": "찾아온 자의 실력은 깊은 데에서 파악할 수 없으며, 정면 대결은 위험이極大하다",
+            "process_label": "循着飞刀轨迹追踪",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0631_result_014b_1",
+                  "content": "Chen Ji는 Flight Knife 궤적을 따라 사당을 빠져나갔다. 그러나方圆백丈 이내에는 잘라진 마른 잎새 몇 片뿐, 그 어떤 이상도 없었다. 찾아온 자는 올 때나 갈 때나 흔적이 없었다. 귀신처럼. Mo Xiansheng의 목소리가 다시 울렸다. 전례 없는凝重度를 띠고 있었다: \"이 기척… Tian Dao之眼과 비슷하면서도 完全하지 않다. 그분이 너를 보고 있다, 처음부터 계속 보고 있었다.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_015",
+        "content": "밤이 깊어지고, 황폐한 마을에는 바람 소리와 벌레 소리만 남았다. Chen Ji는 사당 담장 위에 서 있었고, 손에 든那张 종이-stub은 밤바람에 펄럭였다. \"천안재망\"—이 네 글자는無形의 형구처럼 그를決定의 바둑판에 단단히 박아넣었다. Mo Xiansheng이 말하기를, Tian Dao之眼은 권8에서 비로소 진정으로 나타나는데, 그런데眼下 이 흔적…难道 이미 모든 것이提前된 건가?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_016",
+        "content": "Chen Ji는 갑자기 낮게 웃었다. 그 웃음소리는 적막한 밤에格外 碜人했지만, 또紧接着一股破釜沉舟의 결의가 담겨 있었다. 그는 종이-stub을 품에 넣고, 몸을 돌려 밤색 속으로 사라졌다. Tian Dao之眼이 이미 보고 있으니, 그러면 그는那双 눈으로好好看看하게 해야 한다—一个废物는 어떻게 온 판국을 뒤집어엎는지를.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_017",
+        "content": "사흘 후, Tianqing Sect 산문 밖. 한 얼굴이 평범한 파문 청년이 입종 신청서를 제출했다. 표정은 cinched,，实力은微弱하며, 등록을 맡은 제자는 바로 正眼도 그에게 주지 않았다. 폐물 Chen Ji는 이미 죽었고, 살아남은 것은 Tianqing Sect에서 한 끼의 밥을 구하려 하는 무명의 졸개일 뿐이다. Those暗中 Mencari의 세력들에 대해서는…让他们找去吧. 찾을 수 있는 것은 그들이 영원히 잡지 못할 유령뿐이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0631_018",
+        "content": "네 글자의 먹적이 아직 마르지 않았는데, Chen Ji는 꼬리뼈에서 후경까지 차가움이 스며드는 것을 느꼈다—누군가가 어둠 속에서 그를 엿보고 있었고, 게다가 이 사람은 그가 가진 모든 비밀을 알고 있었다.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

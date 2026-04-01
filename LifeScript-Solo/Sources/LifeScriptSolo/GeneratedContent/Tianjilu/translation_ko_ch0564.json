@@ -1,0 +1,448 @@
+{
+  "id": "天机录_ch0564",
+  "book_id": "天机录",
+  "number": 564,
+  "title": "궁극의 도박",
+  "is_paid": true,
+  "next_chapter_hook": "태자태사가 천기(Chen Ji)의 '시체'가 용맥(龍脈) 폭발로 재가 되어 날아가는 것을 직접 목격하고, 얼굴에 탈得意的 미소를 띠었다——그러나 그 그슬린 껍데기 아래, 진실은 대체 무엇인가?",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0564_001",
+        "content": "태자태사의 발소리가 일곱 번째 층 통로에 울려 퍼지며, 걸음걸이마다 북을 치는 것처럼 메아리쳤다. 천기가 천녀(Chen Nian)의 손을 꽉 잡았다. 손가락 마디가 새하얗게 질렸지만, 단단하기 이를 데 없었다. 금지된 땅 일곱 번째 층의 용맥 핵심이 코앞에 있었고,幽藍한 빛이 천장을 따라 흘러, 천기의 평온한 얼굴을 비추며明暗을 바꿔 놓았다. 그는 알고 있었다, 이것이 그의 인생에서 놓는 마지막 바둑이라는 것을——이기면, 남매는 이번으로 천애고향이 되고; 지면, 만겁 불복.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_002",
+        "character_id": "char_chenji",
+        "content": "念念, listen to me. Dragon Vein core 아래三尺處에封印裂隙이 있는데, 그곳이 네 체내의 열쇠 공명점이다. 거기에「涅槃 위사진」을 배치하겠다——법진이 활성화되는 순간, 즉시 용맥의 힘을 끌어올려 핵심을引爆——기억해, 그것을 파괴하는 것이 아니라 네 혈맥과 완벽히融合시키는 것이다.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_003",
+        "content": "천녀(Chen Nian)의 눈동자가 미세하게 떨렸다, 눈물 자국이 마르지 않은 얼굴에 한층의 공포가 떠올랐다. 그녀는 입을 벌리고 무언가를 말하려 했지만, 천기의 한 눈빛에 제지되었다. 그 눈빛에는 반�迟疑도 없었고, 그녀에게一切를 맡기는 결의만이 있었다. 십이 년, 그녀는 성종(Holy Sect)의 감옥에서 오无数次 형과 재회할 것을 상상했지만, 결코 생각지 못했던 것은, 재회의 대가가 그를 목숨으로 싸우는 것을 지켜보는 것이 될 줄이란 것이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_004",
+        "character_id": "char_chenian",
+        "content": "형... 확실해? 그 법진이 작동하면, Tianji Record조차도 네生死를 점칠 수 없어. 나, 나는... 무서워...",
+        "emotion": "颤抖"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_005",
+        "prompt": "태자태사의 발소리가 점점 가까워지고, 천기는 제한된 시간 내에 배치를 완료해야 한다——그는 어떻게 천녀에게 마지막 신뢰를 전달해야 할까?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0564_005_a",
+            "text": "형의 이름으로 맹세하다",
+            "description": "천기가 천녀의 이마를 자신의 이마에 대고, 피를 맹세로 이 전투 이후 반드시 그녀와相認하겠다고 약속했다.生死와 관계없이, 이 인연은 끊어지지 않을 것이다.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Heavenly Fate值 5점 소모(맹세의 힘)",
+            "visible_reward": "천녀가「혈맥 공명」 상태 획득, 용맥融合 중 반噬로부터 보호",
+            "risk_hint": "본래 귀중한 Heavenly Fate值를 가진 천기에게, 이 조치는 핵심 자원을 소모하게 될 것이다",
+            "process_label": "陈机额头抵住陈念额头，低声起誓",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_005_a_001",
+                  "character_id": "char_chenji",
+                  "content": "나 천기는 피를 맹세하노니, 이 전투 이후 내가 어디에 있든,存亡과 관계없이 반드시 너와相認하겠다. 이 맹세를 어기면, 하늘이 버리라.",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_005_a_002",
+                  "content": "천기의 손끝에서 섞인 피 한 방울이 천녀의 미간에 떨어져, 담금빛 금빛 인도(印記)로 변했다. 그 인도(印記)는 한 번 번쩍이다 사라졌지만, 천녀에게前所未有的 온기흐름을 느끼게 했다——그것은 형의 혈맥의 온도, 십이 년의 그리움의 무게였다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_005_b",
+            "text": "이익 공동체로서 그녀를 납득시키다",
+            "description": "천기가 냉정하게 형세를 분석했다: 오직 그가 위사(假死)로 탈출해야만, 천녀가 명의상堂正하게 용맥의 인정을 받을 수 있고, 두 사람만이 진정으로 바둑판에서 벗어날 수 있다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "감정적 공감稍弱",
+            "visible_reward": "천녀가「이성 각성」 상태 획득, 계획 실행 시 더욱 냉정하고 정확해지다",
+            "risk_hint": "감정적 유대가 부족하면 실행 시 우유부단함이 나타날 수 있다",
+            "process_label": "陈机以谋士的口吻快速分析局势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_005_b_001",
+                  "character_id": "char_chenji",
+                  "content": "念念, 너는 용맥의 열쇠이고, 나는 Tianji Record의 파편이다. 우리는 원래 이 바둑판의 핵심棋子——하지만 내가 죽으면, 너는 더 이상棋子가 아니라 변수가 된다. 변수야말로 판을 깨는 유일한 방법이다.",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_005_b_002",
+                  "content": "천녀의 눈에 조금의 명오(明悟)가 스쳤다. 십이 년의 감금은 그녀에게 인내를 가르쳤지만, 결코 형처럼運命을 손바닥 위에서 놀게 하지 않았다. 그녀는 깊게 숨을 들이쉬고, 힘차게 고개를 끄덕였다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_006",
+        "content": "발소리가 갑자기 빨라졌다. 천기의 소매에서 수십 개의 진기(陣旗)가 날아가, 용맥 핵심 주변에 복잡한 문양을 그렸다. 그것은「涅槃 위사진」의 핵심 진안(陣眼)——Tianji Record 파편의 힘으로 인도를 하여, 사용자의 기운을 완전히 세상에서 지웠다. 그의 입꼬리에 싸늘한 웃음이 어렸다: 태자태사가 그가 죽는 것을 보고 싶어? 그러면 그가 충분히 보게 해주마.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_007",
+        "character_id": "char_chenian",
+        "content": "형, 진기(陣旗)를 묻었어... 나는 용맥 핵심을 느껴, 그것이 나를 부르고 있어.",
+        "emotion": "紧绷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_008",
+        "content": "천기가 번猛然 고개를 들었다. 일곱 번째 층 입구의 돌문이 폭발하며 무너졌고, 온 하늘의尘埃 속, 한 silhouettes이 역광으로 서 있었다. 태자태사는 현흑관포를 입고, 얼굴은 고정불변의 물웅덩이처럼 고요했으며, 입꼬리에만 우월한 오만함을 드러내는 장난스러운 미소가 있었다. 그의 시선이 천기와 천녀를 훑고 용맥 핵심에 머물렀다, 마치 두 마리困獸를 보는 것처럼.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_009",
+        "character_id": "char_hanlie",
+        "content": "천기, 본座는 네가 도망칠 줄 알았다. Tianji의 정통 후계자가 이Deadly Ground에서 죽음을 기다리는 어리석은 일을 하다니?",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_010",
+        "prompt": "태자태사가 모습을 드러내며, Chen Ji의 계획은 더 이상 퇴로가 없다—그는 이 마지막 순간에 어떻게 대응해야 할까?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0564_010_a",
+            "text": "격장법: 군자를 옹 속에 들이다",
+            "description": "Chen Ji가 비웃음을 터뜨리며, 태자태사는 천도 바둑판 위의 졸병에 불과하다고 조롱하며, 그가 왜 여기 있는지조차 모른다고 했다. 상대를 법진 핵심으로 유인하여 Chen Nian에게 기동 시기를 벌어다 주었다.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Chen Ji가早有谋划한 것이 완전히 드러났다",
+            "visible_reward": "태자태사가 격노하여 법진 범위에 진입하고, Chen Nian은 완전한 기동 시기를 얻는다",
+            "risk_hint": "강적을 격노하게 하면 통제할 수 없는 변수가 발생할 수 있다",
+            "process_label": "陈机以嘲讽之态激怒太子太师",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_010_a_001",
+                  "character_id": "char_chenji",
+                  "content": "졸병은 결국 졸병이다. 네가 바둑꾼이라 생각하냐? 아니, 너는 이 바둑이 어떻게 생긴지도 모른다. 이리 와, 진짜 배치란 게 뭔지 가르쳐주지.",
+                  "emotion": "轻蔑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_010_a_002",
+                  "content": "태자태사의 안색이 급변하고, 눈빛에 살기가沸腾한다. 소매를 휘두르자 물만히 압도적인 위압이 산을 무너뜨리듯 밀려오고, 온몸이 검은 빛을 띤 채 Chen Ji를 향해 돌진한다—정확히 법진 핵심 범위 안으로."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "阵法启动就绪"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_010_b",
+            "text": "약한 모습을 보이며: 적을 깊숙이 유인하다",
+            "description": "Chen Ji가 일부러 공포를 가장하며 Chen Nian을 잡고 용맥 핵심 쪽으로 물러나, 맹수의 싸움을 방불케 하는 자세를 취했다. 몰래 Chen Nian에게 열쇠를 조용히 활성화하도록 지시하며 최선의 순간을 기다렸다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Chen Nian이 분심하여 활성화해야 하니, 의도가 노출될 수 있다",
+            "visible_reward": "태자태사가 방심을 하고, Chen Ji가 더 여유로운 기동 시기를 확보한다",
+            "risk_hint": "연기가 발각되면 궁지에 몰릴 것이다",
+            "process_label": "陈机以惊恐之态掩饰真正意图",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_010_b_001",
+                  "character_id": "char_chenji",
+                  "content": "태、태사 대인…… 저는 그저 이地方에 잘못 들어온 것뿐, 올려버릴 뜻 전혀 없습니다! 대인의 은총을 빕니다, 우리 남매에게一条生路를 허락해주소서!",
+                  "emotion": "惊恐"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_010_b_002",
+                  "content": "Chen Ji가 조용히 Chen Nian의 손을 등 뒤로 밀어주고, 손가락으로 그녀의 손바닥에 빠르게符文을 그었다. Chen Nian이 꿰뚫어 보고, 드리운 소매로 미약하게 빛나는 왼손을 가렸다. 태자태사가 눈을 가늘게 뜨며,猎물의 절망을 감상하는 듯했다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "钥匙激活中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_011",
+        "content": "Chen Ji가 천천히 손을 들어올렸다. 손바닥에는古樸한 한 页이 떠올랐다. Tianji Record의 기운이 이 순간 전혀 보존 없이 방출되어, 용맥 핵심과 공명했다. 일곱 번째 층 공간 전체가 비틀리기 시작하고,幽藍한 빛 속에 황금빛 금이 섞여 하늘이 찢어지는 것 같았다. 태자태사의 안색이 미세하게 변했으나, 물러서지 않았다—그냥 미쳐가는 짐승의 발악이라 여겼을 뿐이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_012",
+        "character_id": "char_chenji",
+        "content": "태사 대인, 내가 왜 여기서 이곳을 선택했는지 알고 싶소? 왜냐하면 여기……는 이 方天地에서 천도가 유일하게 주목하지 않는 구석이니까.",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_013",
+        "content": "말이 끝나자, 법진이 일어났다. Chen Ji의 발밑 무늬가轰然 빛나며, 금빛 불꽃이 대지에서喷出하여 그를 온통 삼켜버렸다. 이에 앞서 Chen Nian이 하늘을 향해 맑은 울음을 터뜨리며, 체내 용맥 열쇠가 완전히 깨어나—눈부신 빛 기둥이 그녀의 정수리에서 하늘을 찔러 올려 용맥 핵심을 관통했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_014",
+        "character_id": "char_hanlie",
+        "content": "너—!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_015",
+        "prompt": "용맥 폭발이 임박하고, Chen Ji의 가사阵法이 이미 활성화되었다—이 마지막 순간, 그의 마음에 드는 생각은 무엇인가?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0564_015_a",
+            "text": "Chen Nian에 대한 기대",
+            "description": "Chen Ji가 불꽃 속에서 Chen Nian을 돌아보며, 눈빛으로 마지막 유조를 전해줬다: 살아남아, 강해져라, 그리고 나 대신 이 천도가 대체 무엇인지 좀 봐줘라.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "의식이 가사 상태에서 완전히 잠든다",
+            "visible_reward": "Chen Nian이「형의 유지」영구 BUFF를 획득하고, 전투력 +20%, 천도지안의 감지력이 크게 향상된다",
+            "risk_hint": "가사 기간 동안 완전한 행동 불능 상태",
+            "process_label": "陈机在烈焰中最后望向陈念",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_015_a_001",
+                  "content": "화염이신을之际, 천기가 보는 것은 천념이 용맥의 힘을拼命催动하는身影이다. 그의 마음속으로默念하건대: 념 념, 이제부터 너는 더 이상 아무도의 장기가가 아니다. 너는 네 자신의 장기 두는 사람이다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假死完成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_015_b",
+            "text": "태사에게의 무声嘲讽",
+            "description": "천기는 화염 속에서 입꼬리를 올리며, 구两口型으로 태자태사에게 네 글자를说出하였다: 네가 졌다. 상대방의 경악한目光 속에서, 열반의 불이 모든 것을 삼켜버렸다.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "비꼬는 후수时机를 잃다",
+            "visible_reward": "태자태사가 자기 의심에 빠져들다, 「심마」种子를 심어놓으니, 후속剧情 트리거 점이 해제되었다",
+            "risk_hint": "과도한 도발은 상대방이 분별력 없는 행동을 하도록 만들 수 있다",
+            "process_label": "陈机以口型无声嘲讽太子太师",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_015_b_001",
+                  "content": "천기는 입을 벌리고, 无声으로 네 글자를 그려냈다. 태자태사의 동공이 갑자기 수축되었다—그것은「네가 졌다」였다. 그는 막으려 했으나, 용맥의 힘이 이미 온 공간을 철저히 봉쇄했다. 그는 그身影이 금홍의烈焰 속에서 재가 되어消散하는 것을眼睁睁看着只能.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假死完成",
+              "心魔种子"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_016",
+        "content": "용맥 핵심이 폭발하였다. 공포스러운 시공 틈이 마치 태고의 거대한 짐승이 벌린巨口처럼, 제7층 전체를 삼켜버렸다. 태자태사는 충격파에 수丈이나 밀려났으며, 소매가 모두 찢어지고, 초라하기 그지없었다. 그리고 그의 눈앞에서, 천기의身影은 이미 금홍烈焰 속에서 완전히 사라졌으며, 남은 찌꺼기조차 남기지 않았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_017",
+        "content": "태자태사가 천천히 일어섰으며, 얼굴에 묻은 티끌은 하지만 눈 밑의得意을 감출 수 없었다. 그는 하늘을 올려다보며大笑했고, 그 웃음소리가 무너지는 공간 속에서 울려 퍼졌다: 「천기 전인? 그저 그렇지! 계략을 다 계산했어도, 결국 죽음을 피할 수 없다! 하하하하—」 그의 웃음소리가 갑자기 멈추었다. 그가 본 것은 천념—시공 틈에 삼켜졌어야 할 그 소녀가, 바로 광주 중앙에 서서毫发無損하게 그를 응시하고 있었기 때문이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_018",
+        "content": "천념의 눈동자에는 이미先前의 겁먹음이 남아 있지 않았으며, 나이를 초월한 냉기가 남아 있었다. 그녀의 주변으로 용맥의 기운이 흐르며 핵심과融为一体하여, 마치 이 방천지의 참된 주인 같았다. 태자태사의 가슴이 뛰며, 불길한 예감이 밀려왔다— 그는 무언가를 놓친 것 같았다. 그러나 그가 다시 사방을 둘러싸며 천기가 확실히 죽었음을确认한 뒤, 그 불안함은 다시得意에 씻겨나갔다. 그는 생각했다: 천기는 죽었다, 그의 지위를 위협하던 천재가 마침내 존재하지 않게 되었다. 그리고 그가亲眼见证한「死亡」은,日后邀功의 자금이 될 것이다. 태자태사가 찢어진 옷을 정리하며, 얼굴에 만족스러운 미소를浮か웠다. 그가 모르는 것은, 재가 되어飛散한 그 몸뚱이 아래에서, 진정한 천기가 이미 열반의 거짓 죽음 진을 통해 이 방세계에서逃离했다는 것이다. 그의 승리는, 다만 또 다른 장기국의 시작일 뿐이다.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

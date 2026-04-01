@@ -29,17 +29,20 @@ struct SoloRouteMapView: View {
             }
             .scrollBounceBehavior(.basedOnSize)
         }
-        .soloStoryChrome(title: branding.routeMapTitle, kicker: "总览")
+        .soloStoryChrome(title: branding.routeMapTitle, kicker: SoloLocalization.localized("总览"))
+        .onAppear {
+            SoloArtworkLibrary.preload(TianjiluArtworkCatalog.darklineArtifact.resourceName)
+        }
     }
 
     private var progressStrip: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                Text(book.id == "天机录" ? "命途探索进度" : "探索进度")
+                Text(book.id == "天机录" ? SoloLocalization.localized("命途探索进度") : SoloLocalization.localized("探索进度"))
                     .font(SoloTypography.meta)
                     .foregroundStyle(SoloTheme.gold)
                 Spacer()
-                Text("\(progressSummary.completedChapterCount) / \(progressSummary.totalChapterCount) 已走完")
+                Text(SoloLocalization.format("%d / %d 已走完", progressSummary.completedChapterCount, progressSummary.totalChapterCount))
                     .font(SoloTypography.meta)
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -65,13 +68,13 @@ struct SoloRouteMapView: View {
             .frame(height: 4)
 
             HStack(spacing: 20) {
-                progressPill(value: "\(progressSummary.completedChapterCount)", label: "章已走完", tint: SoloTheme.jade)
-                progressPill(value: "\(hubSnapshot.heartsCard.badge)", label: "人心盘面", tint: SoloTheme.gold)
-                progressPill(value: "\(hubSnapshot.darklineCard.badge)", label: "暗线信号", tint: SoloTheme.crimson)
+                progressPill(value: "\(progressSummary.completedChapterCount)", label: SoloLocalization.localized("章已走完"), tint: SoloTheme.jade)
+                progressPill(value: "\(hubSnapshot.heartsCard.badge)", label: SoloLocalization.localized("人心盘面"), tint: SoloTheme.gold)
+                progressPill(value: "\(hubSnapshot.darklineCard.badge)", label: SoloLocalization.localized("暗线信号"), tint: SoloTheme.crimson)
             }
 
             if routeSnapshot.generatedChapterCount < routeSnapshot.plannedChapterCount {
-                Text("当前版本已收录 \(routeSnapshot.generatedChapterCount) / \(routeSnapshot.plannedChapterCount) \(branding.chapterUnitName)，命途图只展示本次内容包已开放部分。")
+                Text(SoloLocalization.format("当前版本已收录 %d / %d %@，命途图只展示本次内容包已开放部分。", routeSnapshot.generatedChapterCount, routeSnapshot.plannedChapterCount, branding.chapterUnitName))
                     .font(.caption)
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -83,10 +86,10 @@ struct SoloRouteMapView: View {
     private var currentFocusPanel: some View {
         VStack(alignment: .leading, spacing: 12) {
             VStack(alignment: .leading, spacing: 4) {
-                Text(book.id == "天机录" ? "当前命局" : "当前局面")
+                Text(book.id == "天机录" ? SoloLocalization.localized("当前命局") : SoloLocalization.localized("当前局面"))
                     .font(SoloTypography.meta)
                     .foregroundStyle(SoloTheme.gold)
-                Text(routeSnapshot.currentStageTitle ?? "天机未显")
+                Text(routeSnapshot.currentStageTitle ?? SoloLocalization.localized("天机未显"))
                     .font(SoloTypography.sceneHeadline(size: 24))
                     .foregroundStyle(SoloTheme.ink)
             }
@@ -102,7 +105,7 @@ struct SoloRouteMapView: View {
             }
 
             strategicDeck(
-                title: book.id == "天机录" ? "眼前破局点" : "眼前关键点",
+                title: book.id == "天机录" ? SoloLocalization.localized("眼前破局点") : SoloLocalization.localized("眼前关键点"),
                 headline: hubSnapshot.currentObjective,
                 body: hubSnapshot.stageLine,
                 footer: hubSnapshot.pressureLine,
@@ -110,7 +113,7 @@ struct SoloRouteMapView: View {
             )
 
             strategicDeck(
-                title: "天命状态",
+                title: SoloLocalization.localized("天命状态"),
                 headline: hubSnapshot.destinyStatus.headline,
                 body: hubSnapshot.destinyStatus.detail,
                 footer: hubSnapshot.destinySummary,
@@ -124,10 +127,10 @@ struct SoloRouteMapView: View {
     private var navigationDeck: some View {
         return VStack(alignment: .leading, spacing: 14) {
             VStack(alignment: .leading, spacing: 8) {
-                Text("从哪一面入局")
+                Text(SoloLocalization.localized("从哪一面入局"))
                     .font(SoloTypography.sectionTitle(size: 22))
                     .foregroundStyle(SoloTheme.ink)
-                Text("命途看走势，人心看立场，暗线看水下回声。三张入口卡都是可点击的，进入后会切到独立页面。")
+                Text(SoloLocalization.localized("命途看走势，人心看立场，暗线看水下回声。三张入口卡都是可点击的，进入后会切到独立页面。"))
                     .font(SoloTypography.detail)
                     .foregroundStyle(SoloTheme.warmInk)
                     .lineSpacing(5)
@@ -316,8 +319,8 @@ struct SoloRouteMapView: View {
 
         return SoloArtworkAsset(
             resourceName: "solo_route_map_placeholder_\(id)",
-            title: "进入视角",
-            subtitle: "切换到独立叙事页面",
+            title: SoloLocalization.localized("进入视角"),
+            subtitle: SoloLocalization.localized("切换到独立叙事页面"),
             caption: nil
         )
     }

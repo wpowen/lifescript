@@ -1,0 +1,389 @@
+{
+  "id": "天机录_ch0734",
+  "book_id": "天机录",
+  "number": 734,
+  "title": "Twin Choice",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji was wavering in his decision, Ling Yuan's cold voice echoed from beyond the Tianji Record: \"Chen Ji, this old man has been waiting for you for quite some time.\" The twin choice of destiny was abruptly interrupted—and the true test had only just begun.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0734_001",
+        "content": "The fluctuations deep within the Tianji Record surged like hidden currents in the abyss, relentlessly battering Chen Ji's consciousness. This was no ordinary power fluctuation—it was the will of the Heavenly Eye, like an invisible giant eye peering through the river of destiny, quietly observing him. \"It has found me.\" Chen Ji murmured, his fingertips tracing across the cover of the Tianji Record. The symbols on the fragmented page glowed faintly, as if responding to some ancient summoning."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "At that moment, a darkness-as-ink aura seeped out from the depths of the Tianji Record, forming a vague silhouette. The figure bore a striking resemblance to Chen Ji, yet radiated an aura of demonic energy—the Demonic Path Commander. \"Twin of destiny, we meet again.\" The Demonic Path Commander's voice carried a hint of languor, \"Do you realize we were once one?\"",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_003",
+        "content": "Chen Ji's pupils contracted slightly, yet he remained composed. He coldly regarded the figure, a hint of mockery curling at his lips: \"One? Our paths diverge, so how can we be one?\" Yet his mind raced—the twin of destiny, a legendary existence he had only vaguely heard of in Mo Xiansheng's remnant soul, never imagining it would be connected to himself."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The Demonic Path Commander chuckled, his laughter echoing like a reverberation from an abyss: \"In ancient times, before heaven and destiny were separated, we were two souls sharing one essence. One soul controlled the Heavenly Secrets, governing fate and destiny; the other commanded the Demonic Path, ruling over slaughter. Later, the Heavenly Dao forcibly severed us, turning us into bitter, irreconcilable opponents.\" He stepped forward, \"Now the Heavenly Eye descends once more, seeking our total annihilation. Do you truly believe you alone can withstand?\"",
+        "emotion": "诱惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_005",
+        "content": "The first page of the Tianji Record quivered as Mo Xiansheng's remnant soul materialized. His gaze flickered between the Demonic Path Commander and Chen Ji, before finally letting out a deep sigh: \"What he says holds truth. Before the Heavenly Eye's grand design, the Tianji Record and the Demonic Path shared the same origin. That separation... was the Heavenly Dao's first purge against the seers.\" Mo Xiansheng's voice carried the weight of ages, \"You both are pieces abandoned by the heavens after being chosen.\"",
+        "emotion": "无奈"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_006",
+        "character_id": "char_chenji",
+        "content": "Chen Ji fell silent for a moment, then abruptly let out a cold laugh: \"What grand ambitions. So what if it's the Heavenly Eye? Everyone I've encountered along my path assumed I was destined to die.\" He lifted his head, his eyes glinting with a cold light, \"Your so-called 'fusion' is merely asking me to surrender my consciousness and become your sustenance. Tell me, after the fusion, who will dominate—you or me?\"",
+        "emotion": "质疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_007",
+        "content": "The Demonic Path Commander remained unruffled, instead wearing an expression of admiration: \"Indeed, Chen Ji—you've proven yourself worthy of reaching this point. Correct, fusion carries risks—success means we merge into one, transcending the Heavenly Dao; failure means mutual annihilation, with both souls destroyed.\" His form began to blur, \"But are you aware of the consequences of refusal? The Heavenly Eye has already marked you. The next encounter will be your last.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0734_choice_01",
+        "prompt": "The Demonic Path Commander's proposal echoed in his ears, forcing Chen Ji to make a choice—a pivotal decision that would determine the very course of his destiny.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choose_fuse",
+            "text": "Accept Fusion",
+            "description": "Choose to fuse with the Demonic Path Commander, risking everything for the possibility of transcending the Heavenly Dao. Success means merging into one entity; failure means mutual soul annihilation.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Risk of losing independent consciousness; failure leads to eternal damnation",
+            "visible_reward": "Fusion with the Demonic Path Commander's power may break through Heavenly Dao shackles",
+            "risk_hint": "Success rate unknown, and the dominant entity after fusion remains uncertain",
+            "process_label": "接受命运的安排",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0734_result_choose_fuse_01",
+                  "content": "Chen Ji closed his eyes, taking a deep breath. He recalled his missing sister Chen Nian, those who perished by his schemes, and the mission bestowed upon him by the Tianji Record. \"If fusion can shatter this wretched fate...\" His eyes snapped open, blazing with determination, \"I accept.\" The moment the words fell, the Demonic Path Commander's form lunged towards him, two consciousnesses interweaving in an instant—the searing agony of soul-rending pain nearly shattering Chen Ji's awareness.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "命运双生_融合"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "命运双生子抉择_融合",
+            "branch_route_id": null
+          },
+          {
+            "id": "choose_independent",
+            "text": "Maintain Independence",
+            "description": "Refuse fusion with the Demonic Path Commander, continuing to stand alone against the Heavenly Eye. Even if the path leads to death, he will seize control of his own destiny.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Face the Heavenly Eye's pursuit alone, losing a powerful potential ally",
+            "visible_reward": "Preserve independent consciousness and retain all hidden cards",
+            "risk_hint": "The Heavenly Eye's targeting will intensify, the next encounter will be a fight to the death",
+            "process_label": "命运由我",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0734_result_choose_independent_01",
+                  "content": "Chen Ji stepped back sharply, spiritual energy surging around him. Fixing his gaze on the Demonic Path Commander, he spoke each word with precision: \"Chen Ji's fate has never been and will never be determined by others.\" His voice was cold yet resolute, \"Even the Heavenly Eye, even destiny itself—if they want my life, they'll have to show some real skill.\" Raising the Tianji Record in his hand, the fragmented symbols blazed with blinding light, \"Fusion? Perhaps in the next life.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "命运双生_独立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "命运双生子抉择_独立",
+            "branch_route_id": null
+          },
+          {
+            "id": "choose_delay",
+            "text": "Temporary Deferral",
+            "description": "Refrain from making a final decision, first observing how the situation develops. Keep both fusion and independence as potential paths forward.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May provoke the Demonic Path Commander, creating rifts in their relationship",
+            "visible_reward": "Buy precious time to secretly investigate more information",
+            "risk_hint": "The Demonic Path commander might change his attitude, even turning hostile",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0734_result_choose_delay_01",
+                  "content": "Chen Ji fell silent for a long while, the light in his eyes flickering uncertainly. Finally, he spoke slowly: \"Your proposal, I will consider.\" The Demonic Path commander's form slightly froze, clearly dissatisfied with this answer. Chen Ji continued: \"But before that, I need to confirm one thing—after fusion, will you and I still exist?\" Without waiting for an answer, he turned and walked toward the depths of the Tianji Record. \"Three days later, I'll give you my answer.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "命运双生_搁置"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "命运双生子抉择_搁置",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_009",
+        "content": "Just then, the world beyond the Tianji Record suddenly changed color. A massive pressure seeped in from the outside, descending like Heavenly Wrath, irresistible. Chen Ji's expression slightly changed—this pressure, he was all too familiar with. \"Ling Yuan!\" he hissed. The old sect master who had been lurking in the shadows all along, had finally made his move at this moment."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_010",
+        "character_id": "char_lingyuan",
+        "content": "The seal of the Tianji Record was torn apart by brute force, and Ling Yuan's figure appeared beyond the rift. His gaze swept over the Demonic Path commander, then looked at Chen Ji, a cold smile curling his lips: \"Destiny's Twin Sons? Interesting.\" An aura belonging to the peak strong one of the older generation radiated from his body. \"Chen Ji, this old man has waited for this day for a very long time. Back then, the Tianji Record chose you instead of me. Today, let this old man personally end this karmic debt!\"",
+        "emotion": "疯狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_011",
+        "content": "Chen Ji felt an suffocating pressure envelop his entire body. Ling Yuan's strength was far more terrifying than he had previously shown. This old fox had hidden himself too deeply. Yet Chen Ji showed no panic; a hint of playful smile even appeared at the corner of his mouth: \"Ling Sect Master, such great fury. But are you certain now is a good time to make a move?\" His gaze meaningfully fell on the Demonic Path commander. \"Two against one, have you thought this through?\"",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_012",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The Demonic Path commander's form slightly swayed as he let out a low, grim laugh: \"Interesting, it seems our 'brother' doesn't want me to die after all.\" He looked at Ling Yuan, bloodthirsty light flickering in his eyes. \"Old man, are you certain you want to make enemies of us here? Once we three go to war, this entire realm will be destroyed. Are you prepared for that?\"",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0734_choice_02",
+        "prompt": "A three-way standoff had formed. Chen Ji had to make a decision—whether to ally with the Demonic Path commander against Ling Yuan, or seize the chaos to escape alone.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choose_ally_demon",
+            "text": "Ally with the Demonic Path",
+            "description": "Temporarily set aside grievances with the Demonic Path commander, unite to kill this threat Ling Yuan first. The enemy of my enemy is my friend.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Owe a favor to the Demonic Path commander, may become passive later",
+            "visible_reward": "Temporarily eliminate the Ling Yuan threat, preserve oneself",
+            "risk_hint": "The Demonic Path commander's strength is unfathomable, may take advantage of the situation",
+            "process_label": "联合对敌",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 20
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0734_result_choose_ally_demon_01",
+                  "content": "Chen Ji coldly smiled, his form flashing as he stood shoulder to shoulder with the Demonic Path commander. \"Ling Sect Master, our grudge can be settled slowly, but today—\" He raised the Tianji Record in his hand, the runes blazing brightly. \"I'll send you on your way first, together with this 'brother' of mine.\" The Demonic Path commander let out a hearty laugh: \"Satisfying! Chen Ji, you're far more interesting than I imagined!\" Two terrifying auras intertwined, pressing toward Ling Yuan.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "联合魔道对抗凌渊"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "三方对峙_联手魔道",
+            "branch_route_id": null
+          },
+          {
+            "id": "choose_flee",
+            "text": "Escape in the chaos",
+            "description": "Don't participate in the struggle between the two sides, quietly depart while they confront each other. Preserve strength, watch and wait.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May offend both Ling Yuan and the Demonic Path commander",
+            "visible_reward": "Preserve strength, avoid being caught in the chaos",
+            "risk_hint": "Both sides may consider him a traitor",
+            "process_label": "抽身而退",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "魅力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": -15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0734_result_choose_flee_01",
+                  "content": "Chen Ji's eyes flickered as his body quietly retreated. At the moment Ling Yuan and the Demonic Path commander confronted each other, he activated the concealment technique of the Tianji Record, his entire person dissolving into the void and vanishing. Ling Yuan and the Demonic Path commander simultaneously froze, then cold intent appeared in both their gazes. \"Interesting.\" The Demonic Path commander softly said. \"This 'brother' of ours is more cautious than we imagined.\" Ling Yuan冷哼一声：\"跑得了吗？\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "趁乱脱身"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "三方对峙_脱身",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_014",
+        "content": "However, Ling Yuan did not immediately strike. His gaze swept between Chen Ji and the Demonic Path commander, then suddenly burst into laughter: \"Good! Good! Good!\" He said 'good' three times in succession. \"Destiny's Twin Sons, Tianji Record and Demonic Path sharing the same origin—this old man has waited too long for this moment.\" His aura suddenly收敛, yet the killing intent in his eyes intensified. \"But this old man has suddenly changed his mind.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_015",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan's figure suddenly retreated, vanishing into the void. His voice drifted from the distance, carrying a诡异smile: \"Chen Ji, this old man won't kill you. I want to see how far you two destiny-bound twins can go.\" His laughter grew more distant. \"The next time we meet, either you kill the Demonic Path commander and become the true Tianji successor; or the Demonic Path commander devours you, unifying the two lineages. Whichever outcome—\" His voice abruptly cut off. \"This old man looks forward to it.\"",
+        "emotion": "阴险"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_016",
+        "content": "After Ling Yuan departed, the interior of the Tianji Record returned to peace once more. The Demonic Path commander's form slowly solidified. He looked at Chen Ji, his eyes carrying a more complex meaning: \"It seems our 'father' is more patient than we imagined.\" He softly said. \"But what he said isn't wrong either. The two of us, in the end, must determine a victor.\" His form began to dissipate. \"The next time we meet, either fusion, or a battle to the death. You, think about it carefully.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_017",
+        "content": "After the Demonic Path commander's form completely vanished, Chen Ji stood alone in the space of the Tianji Record, silent for a long while. Mo Xiansheng's remnant soul slowly emerged, speaking softly: \"Master, what do you intend to do?\" Chen Ji raised his head, his gaze profound: \"How much of what Ling Yuan said do you believe?\" Mo Xiansheng shook his head: \"What he said was not false, but he also held something back. The existence of destiny's twin sons is true, but the choice between fusion and independence lies not with others, but with what you yourself want.\"",
+        "emotion": "深思"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0734_018",
+        "character_id": "char_chenji",
+        "content": "Chen Ji suddenly smiled, that smile carrying a hint of cold intent: \"They all want to watch my show, want to see me become their chess piece.\" He slowly clenched his fist. \"Unfortunately, this Chen Ji never plays by the rules.\" He turned to gaze into the depths of the Tianji Record, cold light flickering in his eyes. \"Ling Yuan wants to watch us destroy each other? Then I'll do the opposite. The Demonic Path commander wants fusion? Fine, but I have one condition.\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_019",
+        "content": "Just as Chen Ji was lost in thought, the Tianji Record suddenly surged with intense fluctuations. A familiar figure burst in from outside—it was Su Qingyao. Her face was pale, clearly having forced her way in. \"Chen Ji!\" Upon seeing that Chen Ji was unharmed, she visibly relaxed. \"Ling Yuan has emerged from seclusion, and the entire Tianqing Sect is under his control. You must leave immediately!\" Her eyes were filled with anxiety. \"I've already informed Ye Qing—she's waiting for you outside the sect.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0734_020",
+        "content": "Chen Ji gazed at Su Qingyao, warmth swelling in his heart. This woman who had always been investigating him was now risking her life to rescue him. He softly said, \"Senior Su, you shouldn't have come.\" Su Qingyao snorted coldly, \"Enough talk. Ling Yuan has already noticed I'm gone—he'll be on our trail in less than the time it takes to burn a stick of incense.\" She grabbed Chen Ji's arm. \"Are we leaving or not?\" Chen Ji looked at her, then suddenly revealed a meaningful smile. \"Leaving? Of course we're leaving. However, before we go—\" He turned to look toward the depths of the Tianji Record. \"I need to take something with me.\""
+      }
+    }
+  ]
+}

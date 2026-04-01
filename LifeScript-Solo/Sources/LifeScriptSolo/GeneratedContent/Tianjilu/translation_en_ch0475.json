@@ -1,0 +1,652 @@
+{
+  "id": "天机录_ch0475",
+  "book_id": "天机录",
+  "number": 475,
+  "title": "Treaty Signed",
+  "is_paid": true,
+  "next_chapter_hook": "Just as the ink on the alliance had barely dried, the seventh page of the Tianji Record suddenly manifested, that line of blood characters seeming like the mockery of the eye of Heaven—Chen Ji, the Seventh Prophet, your death has already been written.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0475_001",
+        "content": "The pressure of early Golden Core stage burst from Chen Ji's body like substance, causing the surrounding spiritual lights to become chaotic. He narrowed his eyes slightly, feeling the surging spiritual power within his body—this was a gift from the resonance of fate, and also the Tianji Record's compensation to him. The people in the hall had various expressions, some were delighted, some were wary, and in the depths of Ling Yuan's eyes, a trace of sinister intent flickered and disappeared.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_002",
+        "character_id": "char_lingyuan",
+        "content": "Congratulations, Chen Ji nephew, on breaking through to Golden Core. Such fortune is indeed heaven's blessing upon our Tianqing Sect.",
+        "emotion": "虚伪的欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_003",
+        "content": "Ling Yuan's smile was like an exquisite mask. Chen Ji could see clearly—beneath the mask was undisguised greed and calculation. This old sect master must already be calculating how to squeeze every last bit of value from this 'chess piece' before discarding him like refuse. \"Many thanks to the Sect Master master.\" Chen Ji clasped his hands in a bow, his manner respectful beyond reproach.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_004",
+        "character_id": "char_yeqing",
+        "content": "The righteous path's etiquette is indeed thorough. But Sect Master Ling, our time is running short—the resonance of the Tianji Record may have alerted certain people who should not have been alerted.",
+        "emotion": "冷淡的催促"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_005",
+        "prompt": "As the alliance signing approaches, with Ling Yuan's hypocrisy and Han Lie's hostility coexisting, Chen Ji needs to maintain the alliance while cautioning these two 'uninvited guests'—choose your response strategy:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiaojin",
+            "text": "Caution Ling Yuan, Display Strength",
+            "description": "The pressure of Chen Ji's nascent Golden Core is perfect for cautioning Ling Yuan—letting him know who is the master of this chess game and who is merely the chess piece being used.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Reveal Partial Strength",
+            "visible_reward": "Ling Yuan's wariness deepens, not daring to act rashly",
+            "risk_hint": "Prematurely revealing strength may alert more forces",
+            "process_label": "威压试探",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaojin_001",
+                  "content": "Chen Ji smiled calmly, the pressure of his nascent Golden Core surging toward Ling Yuan like a tide. The old sect master's smile froze on his face, his robes rippling without wind, and fine beads of sweat appeared on his forehead. \"Sect Master master, you don't look well?\" Chen Ji's voice was gentle, overflowing with concern.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaojin_002",
+                  "character_id": "char_lingyuan",
+                  "content": "Nothing... nothing at all... merely excessive spiritual energy consumption just now.",
+                  "emotion": "强撑颜面"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊已敲打"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "敲打凌渊",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tiaohan",
+            "text": "Ignore Han Lie, Demonstrate Magnanimity",
+            "description": "Han Lie is merely a simple-minded brute; Chen Ji's gaze should focus on the grander chessboard—displaying a demeanor of disdain.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May provoke Han Lie's hostility",
+            "visible_reward": "Those present witness Chen Ji's bearing and vision",
+            "risk_hint": "Han Lie may make a public outburst",
+            "process_label": "冷眼相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaohan_001",
+                  "content": "Chen Ji didn't even glance at Han Lie, merely saying to Ye Qing indifferently: \"Saint Maiden Ye Qing, the alliance matters are urgent; certain jumping clowns need not be attended to.\" Han Lie's face flushed crimson like pig's liver, his fists clenched tight, veins bulging.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaohan_002",
+                  "character_id": "char_hanlie",
+                  "content": "Chen Ji! You wait for me!",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无视韩烈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "无视韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_lianggui",
+            "text": "Neither Offend, Steady Progress",
+            "description": "The alliance signing is the priority; there's no need to create complications at such a time. Let's handle the major matters first, personal grievances can be settled later.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss the Opportunity to Establish Authority",
+            "visible_reward": "Alliance signing proceeds more smoothly, all parties maintain surface harmony",
+            "risk_hint": "It would appear weak, and subsequently he might be looked down upon by even more forces.",
+            "process_label": "息事宁人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_lianggui_001",
+                  "content": "Chen Ji nodded slightly and walked unhurriedly to the alliance document table. Ling Yuan and Han Lie exchanged a glance, both seeing disappointment in each other's eyes—they had wanted to take this opportunity to probe Chen Ji's bottom line, never expecting this waste to be so composed.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳健推进"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "稳健推进",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_006",
+        "content": "The alliance document spread across a millennium-old sandalwood table, its gold-dusted characters gleaming in the candlelight. This agreement would break the thousand-year confrontation between the righteous and demonic paths—and the one holding the brush was none other than Chen Ji.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_007",
+        "character_id": "char_yeqing",
+        "content": "Chen Gongzi, please. Regarding the Holy Sect, this one has already smoothed things over. As soon as we sign here, the agreement takes effect immediately.",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_008",
+        "content": "Chen Ji lifted the spiritual brush, its tip hovering above the document. This single stroke would determine the direction of the world's pattern for the next few decades. He took a deep breath, the aura of the Tianji Record within him subtly circulating, creating a delicate resonance with the gold dust on the brush's tip.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_009",
+        "prompt": "Before setting brush to paper, Chen Ji could still add one final clause—this was both his private intention and the contingency he prepared for his sister Chen Nian. Choose the clause you wish to add:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiannian",
+            "text": "Protect Chen Nian Clause",
+            "description": "Listing the search for and protection of Chen Nian as a priority matter of the alliance, with no signing party permitted to harm her—this was Chen Ji's greatest vulnerability and the core of his scheme.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose one's own weakness",
+            "visible_reward": "Chen Nian's safety gains endorsement from both righteous and demonic sides",
+            "risk_hint": "Those with ulterior motives may use this as leverage",
+            "process_label": "亲笔添加",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiannian_001",
+                  "content": "Chen Ji's brush turned swiftly, adding a small line at the end of the alliance: 'All signing parties are obligated to assist in searching for Chen Nian and ensuring her personal safety.' Ling Yuan's brow furrowed slightly, but he raised no objection—this clause only deepened his contempt for Chen Ji.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiannian_002",
+                  "character_id": "char_yeqing",
+                  "content": "(Speaking softly) Chen Gongzi is quite sentimental. Rest assured, this one will personally oversee the Holy Sect side.",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念保护条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保护陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tianji",
+            "text": "Tianji Record Sharing Clause",
+            "description": "Requiring all parties to share Tianji Record research results, seemingly generous but actually granting Chen Ji control over information filtering—what to give and how much, all determined by him.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Need to regularly 'share' Tianji Record information",
+            "visible_reward": "Chen Ji becomes the sole outlet for information, controlling all intelligence flow",
+            "risk_hint": "May provoke certain people's covetousness toward the Tianji Record",
+            "process_label": "巧妙措辞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tianji_001",
+                  "content": "'All parties may share Tianji Record research results.' Chen Ji's brush tip paused on the word 'share,' his lips lifting almost imperceptibly. These two characters held profound implications—who said sharing couldn't be selective?",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tianji_002",
+                  "character_id": "char_lingyuan",
+                  "content": "Share... What an elegant 'share.' Chen Ji Shixiong truly understands this art well.",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录共享条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录条款",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_fengxian",
+            "text": "No need to add, keep it concise",
+            "description": "The alliance is already sufficiently comprehensive. Additional clauses would only introduce unnecessary variables. Trust is the foundation of cooperation, and excessive wariness only reveals pettiness.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Abandon a layer of planning",
+            "visible_reward": "Appear open and upright, winning more trust",
+            "risk_hint": "If someone breaches the agreement later, there would be no means of restraint",
+            "process_label": "干净利落",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "谋略",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_fengxian_001",
+                  "content": "Chen Ji withdrew his brush, and the characters on the silk book glowed softly under the impetus of spiritual energy. \"No need. The alliance is sealed. Let each party uphold its integrity.\" His tone was indifferent, as if he truly were a man above such political scheming.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无额外条款"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保持简洁",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_010",
+        "content": "The moment Chen Ji's brush touched down, the alliance scroll suddenly blazed with brilliant golden light. The characters seemed to come alive, circling once across the scroll before each flew to the signing parties—Ling Yuan, Han Lie, Ye Qing, and Chen Ji himself each received one copy.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_011",
+        "character_id": "char_yeqing",
+        "content": "It is done. An alliance unprecedented in a thousand years, witnessed by you and me today.",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_012",
+        "content": "Just then, the Tianji Record Fragment at Chen Ji's chest suddenly burned hot, and a majestic aura, surpassing even the pressure of a Golden Core cultivator, surged forth from the pages. Everyone in the hall changed color simultaneously—this aura did not belong to Chen Ji, but to that mysterious seventh page!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_013",
+        "prompt": "As the seventh page of the Tianji Record manifested, Chen Ji felt an unprecedented pressure—this was a death sentence from the Heavenly Eye! How to respond to this phenomenon before the crowd:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_yanxia",
+            "text": "Display it on the spot, turning crisis into opportunity",
+            "description": "Since concealment is impossible, let's showcase it boldly. Use the threat of the Heavenly Eye to solidify the alliance, making both righteous and demonic sides realize how formidable their common enemy truly is.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose more secrets of the Tianji Record",
+            "visible_reward": "The alliance becomes more stable, with increased dependence on Chen Ji",
+            "risk_hint": "May draw the direct attention of the Heavenly Eye",
+            "process_label": "坦然展示",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yanxia_001",
+                  "content": "Without changing his expression, Chen Ji reached out to take out the Tianji Record Fragment. The seventh page's text was clearly visible in the golden light: \"The seventh prophet, your death has been written.\" Those present gasped, and Ling Yuan's expression was especially interesting.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_yanxia_002",
+                  "character_id": "char_hanlie",
+                  "content": "What does this mean? Does the Heavenly Eye want to kill you?",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录第七页已展示"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "化危为机",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_yinhua",
+            "text": "Retreat to advance, showing weakness to gain sympathy",
+            "description": "Pretend to be a pitiful figure threatened by the Heavenly Eye, stirring up the protective instincts of those present—who would guard against a wretch who might die at any moment?",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be looked down upon by some",
+            "visible_reward": "Lower posture in exchange for higher trust",
+            "risk_hint": "Overdoing it will seem hypocritical",
+            "process_label": "隐忍不发",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yinhua_001",
+                  "content": "Chen Ji gave a bitter smile, tucking the fragment back into his chest. \"Ladies and gentlemen, forgive my display. Chen is merely a chess piece chosen by the Tianji Record, to be discarded at any moment.\" His tone carried self-mockery, but in Ling Yuan's eyes, he caught a fleeting murderous intent—the old fox had taken the bait.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "示弱成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以退为进",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_xiaorong",
+            "text": "Treat it lightly, glossing over",
+            "description": "\"This is merely a minor trick of the Tianji Record, I apologize for the disturbance.\" Using a nonchalant attitude to conceal this earth-shattering secret, leaving those present confused about the true situation.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May miss the chance to intimidate the crowd",
+            "visible_reward": "Maintain an air of mystery, making various factions more wary",
+            "risk_hint": "Ye Qing might see through Chen Ji's disguise",
+            "process_label": "若无其事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_xiaorong_001",
+                  "content": "\"This is merely a minor trick of the Tianji Record, I apologize for the disturbance.\" Chen Ji's tone was placid, as if that line of blood-red text was nothing more than a trivial breeze. The Tianji Record Fragment's light quietly dimmed, returning to silence.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_xiaorong_002",
+                  "character_id": "char_yeqing",
+                  "content": "(In a low voice, only Chen Ji can hear) Master Chen, your performance is impressive. I shall watch to see how long this \"minor trick\" of yours can continue.",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轻描淡写"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "轻描淡写",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_014",
+        "content": "The atmosphere in the hall froze for several breaths before Ling Yuan broke the silence. He stroked his beard and smiled. \"Nephew Chen Ji, with the Tianji Record as your protection and the Night Saint Maiden's full support, you are truly a chosen one. Once this alliance pact is signed, the entire Tianqing Sect will fully cooperate.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_015",
+        "character_id": "char_hanlie",
+        "content": "Hmph! Don't celebrate too early. Those marked for death by the Eye of Heaven's Dao never meet a good end!",
+        "emotion": "不甘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_016",
+        "content": "Han Lie swept his sleeves and left, his footsteps echoing in the empty hall. Ye Qing cast a meaningful glance at Chen Ji before dissolving into a wisp of black smoke that vanished into the void. Chen Ji stood rooted in place, his fingers tracing the Tianji Record Fragment hidden in his chest—the blood characters on the seventh page seemed to still be burning his consciousness.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_017",
+        "content": "Ling Yuan walked to Chen Ji's side and patted his shoulder. \"Nephew, rest assured. As long as this old man lives, no one will be able to harm you.\" His tone was warm, but the force carried a hidden warning. Chen Ji bowed respectfully: \"Thank you, Sect Master Master.\"—The two exchanged glances and smiled, each harboring ulterior motives.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_018",
+        "content": "After everyone dispersed, Chen Ji stood alone in the hall. He took out the Tianji Record and gazed at the seventh page slowly emerging. Beneath the blood characters, another line of golden text appeared: \"Death Countdown: Forty-Nine Days.\" A cold smirk curled at Chen Ji's lips—did the Eye of Heaven think it could crush him with fear? How naive.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_019",
+        "content": "Forty-nine days was enough. Chen Ji tucked the Tianji Record back into his chest and strode out of the hall. The alliance was complete, and the landscape of the righteous and demonic paths would be completely reshaped. And he, this former废物 menial disciple, had finally stepped into the very center of the world's chessboard. The Eye of Heaven's death sentence? Merely the opening move of another chess game.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

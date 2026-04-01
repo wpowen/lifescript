@@ -1,0 +1,600 @@
+{
+  "id": "天机录_ch1020",
+  "book_id": "天机录",
+  "number": 1020,
+  "title": "Three Paths Choice",
+  "is_paid": true,
+  "next_chapter_hook": "At the instant Chen Ji stepped into the crossroads of destiny, the sound of Cang Yutian's chess move echoed through the Void—that was the final chess piece cast by the supreme being imprisoned for eons, for this game of fate.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1020_001",
+        "content": "The gaze of the Cosmic Will pressed down like tangible substance, a might beyond words. Chen Ji felt every inch of his skin, every strand of his divine soul exposed beneath that gaze. The space around him began to distort, the Tianji Record Fragment quivering violently, as if about to shatter at any moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_002",
+        "character_id": "char_chenji",
+        "content": "(A bitter smile curves his lips) Finally decided to look at me properly?",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_003",
+        "content": "Yet in the next moment, three distinctly different fate trajectories unfolded before his eyes—a vista the Tianji Record had never shown. Three paths, three outcomes, all revolving around him, yet leading to utterly different shores. Amid the interweaving light, Chen Ji saw clearly the price and gift of each path.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Ant, you have three breaths of time.\" The voice was no longer mechanical fate pronouncement, but carried a certain scrutinizing tone, \"Choose. I have waited long enough.\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_005",
+        "content": "At Chen Ji's side, Su Qingyao's sword intent suddenly turned sharp. She had somehow positioned herself half a step behind him, her delicate hand gripping the long sword tightly, frost-cold light gleaming in her eyes. She spoke nothing, but her stance was the best annotation—whatever Chen Ji chose, she would stand by his side.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_006",
+        "character_id": "char_yeqing",
+        "content": "(Complex emotions flickering in his eyes) Chen Ji, you know... this path, I've waited a long time for.",
+        "emotion": "期许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_007",
+        "content": "The first path emerged before his eyes: the Path of Breaking Dao. That was the mournful path of abandoning all power, burning the last strength of the Tianji Record, self-destructing together with the Cosmic Will. The price was Chen Ji would completely dissipate into nothingness, his soul ceasing to exist.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_008",
+        "content": "The second path blazed hot like blood: the Path of Heavenly Dao. Devour Cang Yutian's residual will, seize the core authority of the Cosmic Will, become the new Chess Player. This path would grant Chen Ji power over所有万物, yet required devouring the fate of all those he cared about.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_009",
+        "content": "The third path was warm as jade: the Path of Reincarnation. Using oneself as sacrifice, reweaving the threads of destiny, returning everything to the origin—including Chen Nian's return, including those rewritten tragedies. However, the end of this path was Chen Ji disappearing forever in the river of time.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1020_choice_001",
+        "prompt": "Three Paths Choice, the scales of fate have already tilted. Chen Ji, which path do you choose?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "break_heaven",
+            "text": "Breaking Dao—Mutual Destruction",
+            "description": "Burn everything, journey together with the Cosmic Will into Void. This is the only freedom, yet also eternal annihilation.",
+            "satisfaction_type": "牺牲",
+            "visible_cost": "Lose all power and existence",
+            "visible_reward": "The Cosmic Will dissipates, all creation is liberated",
+            "risk_hint": "Chen Ji's consciousness will completely annihilate, with no possibility of rebirth",
+            "process_label": "陈机缓缓抬手，天机录第一页彻底燃烧",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 50
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_break_heaven_01",
+                  "character_id": "char_chenji",
+                  "content": "(His voice terrifyingly calm) Since someone is destined to sacrifice, let it be me.",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_break_heaven_02",
+                  "character_id": "char_suqingyao",
+                  "content": "No! I won't allow you——!",
+                  "emotion": "悲愤"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "become_god",
+            "text": "Heavenly Dao—Take the Place",
+            "description": "Devour everything, become the new Cosmic Sovereign. This is the strongest path, yet requires the price of human nature's extinction.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Devour the fate of all those you care about, including Chen Nian",
+            "visible_reward": "Gain absolute power that overrides all creation",
+            "risk_hint": "After success, Chen Ji will no longer be 'Chen Ji'",
+            "process_label": "陈机眼中金光大盛，天机录全力运转",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 9999
+              },
+              {
+                "stat": "黑化值",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 100
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_become_god_01",
+                  "character_id": "char_chenji",
+                  "content": "(A low laugh) Since this game must be played, I'll swallow the chessboard along with my opponent.",
+                  "emotion": "疯狂"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_become_god_02",
+                  "character_id": "char_yeqing",
+                  "content": "You... are mad!",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "sacrifice",
+            "text": "Reincarnation—Martyrdom of the Body",
+            "description": "Sacrificing life to reshape fate. This is a tender farewell, yet also the cruelest parting.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Forever vanished from the river of time",
+            "visible_reward": "Chen Nian returns, all tragedies rewritten",
+            "risk_hint": "Chen Ji's existence will be erased from all timelines",
+            "process_label": "陈机向苏青瑶和夜清露出最后一个笑容",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 80
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_sacrifice_01",
+                  "character_id": "char_chenji",
+                  "content": "(Gently) Little Nian, this time, brother won't make you wait again.",
+                  "emotion": "温柔"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_sacrifice_02",
+                  "character_id": "char_suqingyao",
+                  "content": "Chen Ji... look into my eyes and tell me this isn't real!",
+                  "emotion": "泣血"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_010",
+        "content": "Just at this moment, an aged yet familiar voice rang in Chen Ji's mind—the residual soul of Mo Xiansheng, delivering the final guidance across the boundary of reality and void. \"Young master, the fourth possibility... lies within your heart.\" Before the words faded, hidden text slowly emerged from the depths of the Tianji Record.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_011",
+        "character_id": "char_moxiansheng",
+        "content": "\"You are the one destined to be the Chess Player, but... you can also choose to overturn the board.\"",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1020_choice_002",
+        "prompt": "Does Chen Ji choose this path no one has ever walked, revealed by Mo Xiansheng's guidance of the hidden fourth road?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "fourth_path",
+            "text": "Breaking the局—Overturning the Board",
+            "description": "Not taking the three predetermined paths, but completely shattering the rules of this game. The complete truth of the Tianji Record is about to be revealed.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Unknown",
+            "visible_reward": "Breaking all chains, creating a brand new universe",
+            "risk_hint": "This is a path no one has ever attempted; the success rate... is zero",
+            "process_label": "陈机忽然笑了，那是看穿一切后的释然",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 200
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_fourth_01",
+                  "character_id": "char_chenji",
+                  "content": "(Rising with laughter) Who decided this game must have a winner and loser?",
+                  "emotion": "癫狂"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_fourth_02",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"What... what are you trying to do?!\" The will of Heaven's Dao revealed terror for the first time.",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "fourth_path_revealed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 500
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "stay_original",
+            "text": "Maintain—Choosing the Predetermined",
+            "description": "Continue choosing among the three known paths, without risking to step into the unknown.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Unable to obtain the possibility of surpassing Heaven's Dao",
+            "visible_reward": "Safely complete one of the three paths",
+            "risk_hint": "Forever bound by established rules",
+            "process_label": "陈机沉默片刻，重新审视前三条路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_stay_01",
+                  "character_id": "char_chenji",
+                  "content": "(Contemplating) Since there is a fourth path... what is the meaning of the first three?",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": "fourth_path_revealed",
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_012",
+        "content": "Chen Ji's divine consciousness shuttled rapidly through the depths of the Tianji Record, the clues left by Mo Xiansheng gradually connecting into a complete thread. The truth of the fourth path was equally astonishing—it required Chen Ji to abandon not just power, but the obsession with the \"self.\" To completely dissipate, yet in that moment of dissipation, brand the true meaning of the Tianji Record into every living being.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_013",
+        "character_id": "char_chenji",
+        "content": "(Whispering softly) So... is this the final answer Chen Xuan left behind?",
+        "emotion": "顿悟"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_014",
+        "content": "In the distant Void, the final thread of consciousness of Cang Yutian suddenly opened its eyes. That being imprisoned for countless ages spoke for the first time in this chess match: 'Interesting... someone has actually reached this point.' His voice was ancient and weary, yet carried undeniable authority. 'Then—it is my turn.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_015",
+        "character_id": "char_chenji",
+        "content": "(Turning sharply) Cang Yutian?! Weren't you already—",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_016",
+        "content": "A presence that spanned through the ages suddenly descended, a sound of placing a piece that transcended time and space. With a soft 'click,' it fell right in the center of the board of destiny. Cang Yutian, with but a fragmented soul, cast the final piece in this eternal chess match—the three paths before Chen Ji were instantly rearranged.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_017",
+        "content": "'Young Master!' Mo Xiansheng's fragmented soul cried out, 'This is... the Great Formation of Time Reversal! Cang Yutian has sent you back to the origin of fate— no, wait, this is... the terminus of fate!' The Tianji Record blazed wildly, and Chen Ji sensed an unprecedented force reshaping everything.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1020_choice_003",
+        "prompt": "Cang Yutian's decisive piece completely altered the chess game, and entirely new three paths appeared before Chen Ji—but this time, he had to make the final choice within three breaths.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_fate",
+            "text": "Follow Fate—Accept the Reshaping",
+            "description": "Accept Cang Yutian's arrangement, letting destiny be rewritten. This is a passive yet safe path.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose the right to autonomous choice",
+            "visible_reward": "Safely pass the final trial",
+            "risk_hint": "Forever become a piece on someone else's chessboard",
+            "process_label": "陈机闭上眼睛，任由那股力量将他包裹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_accept_01",
+                  "character_id": "char_chenji",
+                  "content": "(Closing his eyes) Since the chess player has made their move, I'll simply be an obedient piece.",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "reject_fate",
+            "text": "Defy Fate—Break the Reshaping",
+            "description": "Forcefully break the constraints of the Great Formation of Time Reversal, reshaping destiny with one's own will. This is the sole path to freedom.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Suffer backlash, damaging one's foundation",
+            "visible_reward": "Completely break free from all chess players' control",
+            "risk_hint": "Extremely low success rate, but once successful, it will completely rewrite the rules",
+            "process_label": "陈机猛然睁眼，周身天机录爆发出史无前例的光芒",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -1000
+              },
+              {
+                "stat": "天命值",
+                "delta": -2000
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 100
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_reject_01",
+                  "character_id": "char_chenji",
+                  "content": "(Cold smile) My fate, only I can decide!",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "unify_fate",
+            "text": "Merge Fate—Unify the Three into One",
+            "description": "Merge the power of the three paths into one, creating an unprecedented fourth possibility—becoming a bridge connecting all possibilities.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Endure the pain of simultaneous backlash from three paths",
+            "visible_reward": "Gain entirely new power that transcends all rules",
+            "risk_hint": "Success rate unknown, but once successful, will surpass all existence",
+            "process_label": "陈机伸出双手，左手托起天机录，右手握住命运之线",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3000
+              },
+              {
+                "stat": "天命值",
+                "delta": -3000
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 100
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_unify_01",
+                  "character_id": "char_chenji",
+                  "content": "(Laughing heartily) Who says you can't have both the fish and the bear's paw?",
+                  "emotion": "张扬"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "unified_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_018",
+        "content": "Three breaths vanished in an instant. Chen Ji stood at the center of destiny, surrounded by three distinctly different threads of fate—one leading to nothingness, one to supremacy, one to eternal dissipation. Su Qingyao's tears, Ye Qing's sighs, Chen Nian's blurred figure... the faces of everyone he cared about flashed rapidly before his eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_019",
+        "character_id": "char_suqingyao",
+        "content": "(Tears streaming down her face yet she smiled) Chen Ji... no matter what you choose, I... I will always be here waiting for you.",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_020",
+        "content": "Once again, Cang Yutian's voice rang out, this time with rare solemnity: 'Boy, no matter what you choose... this game of chess, you have walked further than this old man imagined.' Before his words even finished, his remnant soul began to completely dissipate, clearing the final path for Chen Ji. And at this very moment, within the cold gaze of the Cosmic Will, for the first time... a hint of... anticipation?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_021",
+        "content": "Chen Ji took a deep breath. He recalled his insignificance when he first entered the Tianqing Sect, the terror when the Tianji Record first awakened, the heavy price of every glimpse into the future, how he had thwarted Su Qingyao three times as she drew near the truth. He recollected Chen Nian's cries when she was taken away, Mo Xiansheng's earnest teachings, and the complicated yet sincere smile of Ye Qing.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_022",
+        "character_id": "char_chenji",
+        "content": "(Slowly speaking, his voice calm yet resolute) You all want an answer? Then I shall give you one—",
+        "emotion": "决然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_023",
+        "content": "In the instant when Chen Ji was about to make the ultimate choice, the entire cosmos seemed to hold its breath. The light of the Tianji Record reached its peak, the threads of fate trembled violently, and that gaze from the Cosmic Will had never been so... focused. In the next moment, Chen Ji's choice would determine the trigger conditions for all possible outcomes, and the word he was about to speak would become the crucial fulcrum that shifted the entire lever of destiny.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

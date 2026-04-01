@@ -19,6 +19,7 @@ struct OracleArtifactAcquisitionOverlay: View {
                     phase: phase,
                     reduceMotion: reduceMotion
                 )
+                .allowsHitTesting(false)
                 .transition(.opacity)
             }
 
@@ -35,6 +36,7 @@ struct OracleArtifactAcquisitionOverlay: View {
                 .transition(.move(edge: .bottom).combined(with: .opacity))
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear { startAnimationSequence() }
         .onTapGesture { handleTap() }
     }
@@ -44,14 +46,13 @@ struct OracleArtifactAcquisitionOverlay: View {
     private var dimBackground: some View {
         Color.black
             .opacity(phase >= 1 ? 0.6 : 0.0)
-            .ignoresSafeArea()
             .animation(.easeOut(duration: 0.3), value: phase)
     }
 
     // MARK: - Artifact Reveal
 
     private var artifactReveal: some View {
-        let d: CGFloat = 120
+        let d: CGFloat = 160
         return ZStack {
             Circle()
                 .fill(artifact.tint.opacity(0.15))
@@ -177,6 +178,7 @@ private struct OracleAcquisitionBurst: View {
                     value: phase
                 )
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .offset(y: -80)
     }
 
@@ -248,7 +250,7 @@ private struct OracleArtifactDetailCard: View {
                 .fill(Color.white.opacity(0.2))
                 .frame(width: 36, height: 4)
 
-            Text("天机显现")
+            Text(SoloLocalization.localized("天机显现"))
                 .font(.system(size: 12, weight: .medium, design: .serif))
                 .foregroundStyle(SoloTheme.gold.opacity(0.7))
                 .tracking(4)
@@ -289,7 +291,7 @@ private struct OracleArtifactDetailCard: View {
             }
 
             Button(action: onDismiss) {
-                Text("收下")
+                Text(SoloLocalization.localized("收下"))
                     .font(.system(size: 16, weight: .semibold, design: .serif))
                     .foregroundStyle(Color.black)
                     .frame(maxWidth: .infinity)

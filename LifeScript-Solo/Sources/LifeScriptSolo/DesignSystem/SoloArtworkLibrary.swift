@@ -90,6 +90,12 @@ struct SoloArtworkCard: View {
 enum SoloArtworkLibrary {
     private static let cache = NSCache<NSString, UIImage>()
 
+    static func preload(_ resourceName: String) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            _ = image(named: resourceName)
+        }
+    }
+
     static func image(named resourceName: String) -> UIImage? {
         let key = resourceName as NSString
         if let cached = cache.object(forKey: key) {

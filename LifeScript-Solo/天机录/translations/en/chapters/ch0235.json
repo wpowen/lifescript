@@ -1,0 +1,610 @@
+{
+  "id": "天机录_ch0235",
+  "book_id": "天机录",
+  "number": 235,
+  "title": "Entry Qualification Battle",
+  "is_paid": true,
+  "next_chapter_hook": "Chen Ji bursts into the finals as a dark horse, with the confrontation against the Demonic Path commander imminent.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0235_001",
+        "content": "At dawn, the Tianqing Sect Martial Arena buzzes with voices. A massive spirit stone barrier envelops a thousand zhang, isolating the entire battlefield from the outside world. On the observation platforms, elders from the three major sects sit on either side, while the robed cultivators of the Demonic Path eye the scene with predatory intent. Chen Ji stands at the end of the competing disciples, his gray robe lowered, appearing indifferent to worldly affairs—yet no one knows that beneath his sleeves, his hands are subtly forming seals, quietly activating the fragment of the Tianji Record.\n\nThe Entry Qualification Battle officially begins.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_002",
+        "character_id": "char_lingyuan",
+        "content": "Gentlemen, this year's Secret Realm Entry Qualification Battle adopts a \"Three-Round Progressive System\"—the first round tests combat power, the second round tests wisdom, and the third round... allows the victor to choose their opponent. Ling Yuan sits at the main seat, his aged voice reverberating across the arena, his gaze meaningfully sweeping toward where Chen Ji stands. The rules were personally set by this seat, with absolutely no favoritism.",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_003",
+        "content": "Chen Ji lowers his gaze, a cold smile forming in his heart. Ling Yuan's special emphasis on \"no favoritism\" precisely shows that these rules were designed for him from the start. Three-round progression, seemingly fair, but every step forces him to reveal more of his trump cards—the old fox, he finally couldn't hold back.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_004",
+        "character_id": "char_hanlie",
+        "content": "Hmph! A servant dares to join the fun? Han Lie of Xuanwu Sect strides forward, his gaze sharp as a blade cutting toward Chen Ji. Has the Tianqing Sect run out of people? Sending this kind of waste to make a fool of themselves! Behind him, several surviving disciples of the Five Elders snicker, their eyes full of disdain.",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0235_choice_001",
+        "prompt": "Han Lie's public humiliation—how should Chen Ji respond?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "碾压反击",
+            "text": "Crushing Counterattack",
+            "description": "Crush Han Lie with absolute strength on the spot, not even giving him a chance to speak.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Reveal Partial Strength",
+            "visible_reward": "Intimidate the entire arena, Han Lie loses all face",
+            "risk_hint": "Revealing strength too early may alert Ling Yuan",
+            "process_label": "以力服人",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_碾压反击_001",
+                  "content": "Chen Ji steps forward slowly, his gray robe rippling without wind. He doesn't even glance at Han Lie, merely saying faintly: \"Since Brother Han is so eager to take the stage, perhaps... let me send you down to rest first?\" Before the words even finish, a sharp sword energy cuts through the air—that is the thirteenth form of Tianqing Sect's basic sword technique \"Thirteen Styles of Clear Wind,\" which shouldn't appear in a Foundation Building disciple's hands.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "智取嘲讽",
+            "text": "Outsmart Through Mockery",
+            "description": "Use words to infuriate Han Lie, making him act rashly, turning his own tactics against him.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Need to endure Han Lie's first wave of attack",
+            "visible_reward": "Let Han Lie dig his own grave, crush him with full justification",
+            "risk_hint": "Provoking the opponent may trigger conflicts outside the rules",
+            "process_label": "以智取胜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_智取嘲讽_001",
+                  "content": "Chen Ji raises his head, a hint of playfulness flickering in his eyes: \"Brother Han's combat power, who in the entire Tianqing Sect doesn't know? I only have one thing I don't understand—last time at Qingfeng Gorge, how did Brother Han get tangled up by Demonic Path foot soldiers for half an hour?\" Han Lie's expression changes abruptly, his fists clenching tightly. Surrounding laughter rises—the embarrassing story of his defeat at Qingfeng Gorge was exposed on the spot.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "冷眼无视",
+            "text": "Cold-Eyed Indifference",
+            "description": "Completely ignore Han Lie's provocation, respond to arrogance with cold indifference, leaving your opponent with strength nowhere to be exerted.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Temporarily not favored, may be arranged to face a seeded competitor",
+            "visible_reward": "Let Han Lie's anger surge internally, accumulating momentum for subsequent crushing",
+            "risk_hint": "May be deemed weak, reputation damaged",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_冷眼无视_001",
+                  "content": "Chen Ji merely glances at Han Lie coldly, then withdraws his gaze, gazing at the distant mountain clouds. Han Lie's provocation, as if merely the buzzing of mosquitoes. \"You...!\" Han Lie's fists clench with a creaking sound, but Ling Yuan's cold snort interrupts: \"Qualification battle begins! First round matchup—Zhou Yuanba versus Chen Ji!\" Zhou Yuanba, a surviving seeded disciple of the Five Elders, at Foundation Building Peak.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_005",
+        "character_id": "char_hanlie",
+        "content": "\"Zhou Yuanba? That's an orthodox disciple of the Five Elders!\" Han Lie sneers, his eyes full of schadenfreude. Waste, you'd better kneel and concede now, or you'll be beaten into a cripple later! Surrounding laughter erupts, and even some Tianqing Sect disciples begin whispering—the verdict that Chen Ji will surely lose is almost unanimous.",
+        "emotion": "得意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_006",
+        "content": "Zhou Yuanba is nine feet tall, his muscles like twisted steel, wielding a massive mountain-splitting axe. Each step he takes makes the ground tremble slightly. \"Boy,\" he rumbles, his voice like rolling thunder, \"considering you've cultivated with some difficulty, it's still not too late to concede now. Fists and feet have no eyes, and this seat doesn't want the Tianqing Sect to lose a servant.\" Though arrogant in tone, it's the usual disdain of the Five Elders' survivors—they've never regarded Chen Ji with any importance.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_007",
+        "character_id": "char_yeqing",
+        "content": "At a corner of the observation platform, Ye Qing sits behind black纱 veils, gazing at the arena through multiple barriers. Her fingers tap lightly on the armrest, a hint of amusement flickering in her eyes. That waste... interesting. The Demonic Path attendant beside her asks softly: \"Saint, does my subordinate need to investigate this person's background?\" Ye Qing shakes her head, her red lips curving slightly: \"No need. If he were truly just a waste, he wouldn't be standing here.\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0235_choice_002",
+        "prompt": "Facing the seeded competitor Zhou Yuanba in the first round, how does Chen Ji choose to win?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "雷霆碾压",
+            "text": "Thunderous Crushing",
+            "description": "Strike with killing moves from the start, end the battle in the shortest time and most violent way, letting everyone see the gap clearly.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 5 Heavenly Fate points",
+            "visible_reward": "The entire arena is shocked, Zhou Yuanba falls within three moves, Ling Yuan's expression changes abruptly",
+            "risk_hint": "Heavenly Fate points are precious, this battle's consumption may affect subsequent plans",
+            "process_label": "速战速决",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_雷霆碾压_001",
+                  "content": "Chen Ji doesn't waste words. He raises his hand, a pale green spiritual light condensing at his fingertips—that's the \"Ningyuan Finger\" he's never revealed before. \"Insignificant trick!\" Zhou Yuanba swings his axe, the massive weapon裹挟 gusts of wind. However, in the next instant, everyone's pupils contract: the axe is gently pinched between two fingers, not moving an inch. Chen Ji flicks it, and Zhou Yuanba flies backward thirty zhang with both man and axe, spitting blood and falling to the ground.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "智谋反转",
+            "text": "Strategic Reversal",
+            "description": "Deliberately show weakness to lure the enemy deep, strike a counter-kill when Zhou Yuanba is carried away by triumph, making him lose heartily.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May suffer minor injuries",
+            "visible_reward": "Wisdom shocks the entire arena, laying groundwork for subsequent heaven-defying transformation",
+            "risk_hint": "Excessive showing of weakness may arouse Ling Yuan's suspicion, increasing difficulty of subsequent plans",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_智谋反转_001",
+                  "content": "The battle begins, and Chen Ji retreats step by step, being forced into a sorry state by Zhou Yuanba. \"Hahaha! Waste is waste!\" Zhou Yuanba is carried away by triumph, his axe swinging widely. Just as everyone thinks the outcome is decided, Chen Ji's mouth curves slightly—he's activated a talisman hidden in his sleeve. \"Not good!\" Zhou Yuanba's pupils dilate sharply, but it's too late. The arena beneath his feet suddenly collapses, and the entire person falls into a trap—that's the \"Formation of Trapped Yuan\" that Chen Ji had arranged in advance!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "震慑全场",
+            "text": "Intimidate the Entire Arena",
+            "description": "Don't strike directly, but overwhelm with aura, forcing Zhou Yuanba to concede under the pressure.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Expose the fact of cultivating high-level techniques",
+            "visible_reward": "The entire arena is horrified, Han Lie's face turns pale, even Ye Qing rises to watch",
+            "risk_hint": "High-level pressure may attract the attention of Heavenly Eyes",
+            "process_label": "不战而屈人之兵",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_震慑全场_001",
+                  "content": "Chen Ji merely takes one step forward. One step. A terrifying pressure pours forth from him, like a mountain pressing down. Zhou Yuanba's face instantly turns deathly pale, the hand gripping the axe trembles violently, and his knees involuntarily bend. \"This... what kind of cultivation is this!\" His voice shakes. The surrounding spectators are terrified—this is clearly not some waste servant? This is a hidden peerless expert!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_008",
+        "content": "The entire arena falls silent. Zhou Yuanba collapses on the ground, his eyes full of disbelief. The surviving seeded disciple of the Five Elders, not even surviving one move against a servant disciple dismissed as waste in the Tianqing Sect? Ling Yuan's expression is as gloomy as pouring water, his fingers unconsciously gripping the armrest tightly. Han Lie, meanwhile, is like someone who was slapped hard across the face, his former smugness frozen into shock and humiliation.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_009",
+        "character_id": "char_yeqing",
+        "content": "Interesting. Ye Qing rises, her eyes behind the black纱 flickering with dangerous light. She glances at the attendant beside her, giving quiet instructions: \"Find out this person's background for me. Also—tell him, the Demonic Path's friendship isn't easily given, but if he can pass the second round... this Saint is willing to give him a chance.\"",
+        "emotion": "欣赏"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_010",
+        "content": "The second round \"Wisdom Test\" immediately unfolds. Different from conventional contests, this round adopts \"Endgame Deduction\"—each pair of competitors will face the same formation puzzle, with the one who solves it winning. However, when Chen Ji sees the formation diagram, his eyes flash—a trap designed by Ling Yuan based on Chen Ji's whereabouts yesterday!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_011",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan sits at the high seat, his aged voice unhurried: \"This puzzle is called 'Maze Heart Formation,' specifically designed for those with ulterior motives. To break this formation, the breaker must personally enter the formation—if the heart is clear, passage will be unimpeded; if the heart holds sinister intentions...\" He pauses meaningfully, \"mild cases lead to deviation, severe cases result in soul destruction.\" The words fall, causing an uproar. This is a blatant political scheme!",
+        "emotion": "阴险"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0235_choice_003",
+        "prompt": "Ling Yuan sets a political trap—how does Chen Ji respond to the \"Maze Heart Formation\"?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "正面对抗",
+            "text": "Direct Confrontation",
+            "description": "Activate the Tianji Record, use the ability to foresee the future to see through all variations of the formation, break it calmly.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 10 Heavenly Fate points",
+            "visible_reward": "Ling Yuan's meticulously designed trap becomes his own stepping stone, reputation skyrockets",
+            "risk_hint": "Heavenly Fate consumption is massive, if the Demonic Path commander strikes now, consequences are unthinkable",
+            "process_label": "以预知破阵",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_正面对抗_001",
+                  "content": "Chen Ji steps into the formation, and in an instant his mind is pulled into an illusion. He \"sees\" himself struck by heavenly thunder, \"sees\" himself falling into an abyss—that's Ling Yuan's preset death path. However, when the third moment arrives, Chen Ji opens his eyes, golden light flickering in his pupils. He sees it! This formation has seventy-two variations, and he's already memorized every single one. \"Break!\" He shouts lightly, his fingers pointing to seventy-two formation eyes, and the Maze Heart Formation shatters with a thunderous crash.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借力打力",
+            "text": "Redirect Force Against Attacker",
+            "description": "Don't break the formation, instead guide it to rebound on the arranger, making Ling Yuan taste his own medicine.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May completely break with Ling Yuan",
+            "visible_reward": "Ling Yuan is humiliated publicly, the Five Elders' surviving faction loses all face",
+            "risk_hint": "Completely enrages Ling Yuan, subsequent plans may face even greater conspiracies",
+            "process_label": "以阵破阵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_借力打力_001",
+                  "content": "Chen Ji doesn't break the formation; instead, he resonates his spiritual energy with the formation patterns. He \"sees\" Ling Yuan's spiritual imprint hidden within the formation—that old fox actually dared to spy on his memories through this! Chen Ji sneers coldly, tracing the imprint in reverse. In the next moment, Ling Yuan lets out a muffled grunt, cold sweat appearing on his forehead. His spiritual sense was rebounded by the formation, like being bitten by a venomous snake. \"Chen Ji...!\" He grinds his teeth, the killing intent in his eyes no longer concealed.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "请君入瓮",
+            "text": "Lure the Guest to Your Home",
+            "description": "Pretend to be trapped by the formation, lure Ling Yuan into personally rescuing, then publicly expose his conspiracy when he appears.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Need to endure partial erosion from the formation",
+            "visible_reward": "Completely tear apart Ling Yuan's mask of hypocrisy, the Five Elders' surviving faction's hearts scatter",
+            "risk_hint": "Formation erosion may leave hidden injuries",
+            "process_label": "以身为饵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "战力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0235_result_请君入瓮_001",
+                  "content": "Chen Ji pretends to fall into the formation, his body swaying, a thread of blood trickling from the corner of his mouth. \"Chen Ji!\" Ling Yuan falls for the trap as expected, personally intervening to extract him—but at this precise moment, Chen Ji suddenly opens his eyes, a jade slip appearing in his hand. In front of the tens of thousands present, he activates it. The evidence of Ling Yuan's secret collusion with the Demonic Path is displayed in projection for all to see! \"You...!\" Ling Yuan's expression turns livid, but it's already too late to defend himself.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_012",
+        "content": "The entire arena erupts. Ling Yuan's ironclad evidence of Demonic Path collusion is damning, even though he's the old sect master of Tianqing Sect, he's now surrounded by countless accusations. The surviving disciples of the Five Elders look at each other in bewilderment, their originally firm faction beginning to waver. And in the distant Demonic Path camp, a black-robed figure slowly rises—that's the Demonic Path commander personally descending!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_013",
+        "character_id": "char_yeqing",
+        "content": "Chen Ji, you do well. Ye Qing actually appears personally in the arena, black纱 billowing, each step like emerging lotuses. Her gaze toward Chen Ji carries scrutiny, but also a hint of indiscernible appreciation. This Saint gives you an opportunity—become a guest of the Demonic Path, wealth and honor, whatever you desire. She extends her hand, holding a token black as ink. Demonic Path Saint Token, whoever sees this token sees the Saint herself.",
+        "emotion": "招揽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_014",
+        "content": "Ye Qing's appearance drops the arena's atmosphere to freezing point. Tianqing Sect disciples are paralyzed by the killing intent, even Ling Yuan temporarily restrains his impulse to act—the weight of the Demonic Path Saint, even an old sect master wouldn't dare belittle. However Chen Ji merely glances at the token, then gently shakes his head: \"I appreciate the Saint's kindness. But...\" His mouth curves slightly, \"though Chen is an insignificant servant, I too have my pride. The Demonic Path... I cannot accept.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_015",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing pauses slightly, then bursts into laughter. That laughter is clear as silver bells, yet carries three parts appreciation, three parts playfulness, four parts danger. Interesting. She withdraws the token, her eyes growing brighter. This Saint is becoming more and more curious—what exactly is hidden under this waste's skin? Her voice is extremely low, audible only to Chen Ji: On the third day, at the Secret Realm, we'll meet again. At that time... I hope you won't disappoint me.",
+        "emotion": "兴趣"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0235_016",
+        "character_id": "char_hanlie",
+        "content": "Chen Ji! Han Lie finally can't hold back anymore, rushing into the arena with big strides. Waste! All wastes! He points at Chen Ji, his eyes bloodshot. Colluding with the Demonic Path, having sinister intentions—these are all slander from this villain! I, Han Lie, today will cleanse the Tianqing Sect for you! His spiritual pressure surges around him—that's the Xuanwu Sect's secret technique \"True Xuanwu Body,\" sufficient to crush those of the same level!",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_017",
+        "content": "Han Lie storms in aggressively, yet stops abruptly three feet from Chen Ji—because he sees Chen Ji's eyes. Those eyes are calm as still water, fathomless, as if gazing at an ant throwing itself into a web. \"Brother Han,\" Chen Ji speaks softly, his voice unhurried, \"Xuanwu Sect's 'True Xuanwu Body' requires the Turtle Breathing technique to condense spiritual energy, taking seven breaths. Just now you spent three breaths in your charge, and four breaths to condense the body—\" he smiles faintly, \"now your breath has been cut off. And I... haven't even made a move yet.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0235_018",
+        "content": "Before the words finish, Chen Ji finally moves. He merely raises his right index finger, lightly pointing toward Han Lie's brow center. That finger seems slow, yet precisely avoids all defenses, targeting the only flaw in the True Xuanwu Body—the dantian's qi sea. \"No—!\" Han Lie's pupils contract sharply, wanting to retreat but it's already too late. The finger wind pierces his body, the Xuanwu phantom around him shatters with a thunderous crash, and the entire person flies backward a hundred zhang like a broken kite, falling unconscious.\n\nThe entire arena falls silent.\n\nOne exchange. Merely one exchange, and Xuanwu Sect's number one prodigy falls. Chen Ji withdraws his finger, his expression as indifferent as ever, as if he's merely done something insignificant. However his gaze has already passed over Han Lie, over Ling Yuan, over Ye Qing, directly staring at the distance—that's where the Secret Realm entrance lies.\n\nThe finals are about to begin. And the true game has just begun.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

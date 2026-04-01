@@ -1,0 +1,426 @@
+{
+  "id": "天机录_ch0996",
+  "book_id": "天机录",
+  "number": 996,
+  "title": "墨先生の問い",
+  "is_paid": true,
+  "next_chapter_hook": "陳機が第五ページの行方を問い詰めようとした瞬間、天機録第一ページが激しく震え始め，墨先生の残魂が初めて恐れの色を浮かべた——何かが、彼らの対話に沿って近づいてきていた。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0996_001",
+        "content": "夜の色は墨のように濃く，山風が嗚咽する。陳機は独りで天青宗後山の断崖の上に座り，衣を風が吹き上げてペラペラと鳴らすが，微動だにしない。倉御天が立ち去る時に残したあの言葉がなおも彼の脳裏で響き渡る——第四条の道。\n\n三つの道を彼は既に二通り歩んだ：天命に従う者は棋子和なり，天命に逆らう者は粉砕される。では第三条の道之外的第四条の道は，果してどこへ続くのか？\n\n彼はゆっくりと目を閉じ，意識を識海深くに沈める。那里に浮かぶ一頁の黄ばんだ残巻，天機録第一ページは幽幽とした微光を放っている。墨先生の残魂はそこに寄宿しており，揺れる孤灯のようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_002",
+        "character_id": "char_chenji",
+        "content": "墨先生、弟子お伺いがございます。",
+        "emotion": "恭谨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_003",
+        "content": "天機録第一ページの上に，墨先生の虚影がゆっくりと凝聚した。彼は結跏趺坐し，面構えは老いて深遠，一対の濁った瞳は古今を貫くことができるかのようだった。\n\n「老朽が الفقيلこの問いを待つこと，已に三年矣。」墨先生の声は老いて平静，「君の問いは——天機録の真の来历，更にそれが何故お前を選んだか，であろう？」\n\n陳機の心臓は一震した。彼は確かに问了うてみたかったが、誰にも話したことはなかった。墨先生が我一語で見抜いていたとは。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_004",
+        "character_id": "char_moxiansheng",
+        "content": "それだけではない。」墨先生は虚空の某処を見上げた，「お前が問いたいのは——お前が書く運命も，他者の棋盤の上にあるのではないか？",
+        "emotion": "深邃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_005",
+        "content": "陳機の瞳孔は急に縮んだ。これは彼の最も恐れる問いだった。天機録を手に入れた日から、彼は隐隐と察觉していた——自分が未来を見られるなら，他者もお前が見ているのを見られるのでは？\n\n天機録を使うたびに，窥われている这种感觉が決して消えなかった。ただ彼は我一直不敢深想，不敢追问だった。\n\n墨先生は溜息をついた：「ようやく問いを还敢したな。これは良い。正しい問いができたからこそ，答えを見つけることができる。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0996_006",
+        "prompt": "陳기는 깊게 숨을 들이쉬며, 운명을 쓰는 능력의 본질에 대해墨선생에게 가르침을 청할 준비를 했다——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0996_006a",
+            "text": "기원을 직접 추궁하다",
+            "description": "천기록이 어디서 왔는지, 창어천이 어떻게 그것을 손에 넣었는지, 왜 자신을 선택했는지 묻는다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "정력을 소모하여 사유의 실정을 정리하다",
+            "visible_reward": "천기록 기원의 진실에 관한 핵심 정보를 얻다",
+            "risk_hint": "묵선생이 직접 대답하지 않을 수 있다",
+            "process_label": "追问起源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_006a_01",
+                  "content": "陳기가 낮게 말했다：「천기록이 대체 어디서 온 겁니까？창어천 선배는 어떻게 그것을 얻었습니까？제자meister需要一个 답변이다.」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "追问起源",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_006b",
+            "text": "자기 처지에 의문을 제기하다",
+            "description": "자신도 더 높은 존재에게 조종당하고 있는 것일까? 천기록은 기회일까 함정일까?",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "도심을 흔들 수 있다",
+            "visible_reward": "자기 진정한 위치를 깨닫다",
+            "risk_hint": "진실이 상상보다 더 잔인할 수 있다",
+            "process_label": "质疑处境",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_006b_01",
+                  "content": "陳기의 눈빛이 날카롭게 응축되었다：「제가 운명을 씁니다만, 저의 운명은 보이지 않습니다.墨선생님, 저도 다만 타인의 장기판 위의 졸에 불과한 겁니까?」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "质疑处境",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_006c",
+            "text": "第四条 길에 대해 묻다",
+            "description": "창어천이 언급한 네 번째 길이 존재하는가? 그것이 장기 판을 초월하는 방법인가?",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "이미 알고 있는 비밀을 드러내다",
+            "visible_reward": "장기 판을 초월할 가능성에 대한 지침을 얻다",
+            "risk_hint": "墨선생은 답을 모를 수 있다",
+            "process_label": "询问第四条路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_006c_01",
+                  "content": "陳기가脱口而出：「창어천 선배가 네 번째 길에 대해 언급했습니다——하늘에 순응하지도 않고 하늘에 역하지도 않는 그 길.墨선생님, 그 길이 존재합니까?」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "询问第四条路",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_007",
+        "character_id": "char_moxiansheng",
+        "content": "墨선생은 잠시 침묵했다.虚影는 미세하게 떨렸다. 오랫동안, 그가야말로 입을 열었다, 목소리에는陳기가かつて聞いたことのない沉重함이含まれていた：「お前知道か，天機録は元々未来を予見するためではなく——对抗するためだったと。」",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_008",
+        "content": "对抗？」陳기의眉头が緊縮した。\n\n墨선생은 밤공기를 올려다보며, 수重重한雲層을 뚫고 더 높은 곳의 무언가를 볼 수 있는 것처럼 보였다：「天機録の最初の持ち主は，人族ではなかった。それは倉御天が上古の遺跡から持ち出したものであり，当時それは既に持ち主を持っていた——或者说，有了它自己的意志。\n\n「倉御天は畢生の心血を注いでそれを飼いならし，それを純粋な予言道具から運命を书写できる至宝へと改造した。しかし彼がそれを改造した初衷は，到底天下を覇するためではなかった。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_009",
+        "character_id": "char_moxiansheng",
+        "content": "그의 첫 번째 주인——창어천 선배의 스승은, 하늘의 도自有对抗하려고 했던 것입니까?」陳기가心中确认할 수 없는 추측을 말했고, 목소리가 미세하게 떨렸다.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_010",
+        "content": "墨선생은ゆっくりと首を振った：「天道ではない。天道はただ……更高存在的意志投影に過ぎない。お前が对抗するのは،虚无な概念ではなく،意思と目的を持ち،私たちを見守っている存在である。」\n\n陳기는 몸을 꿰뚫는 한기를 느꼈다。天道之眼——彼はかつて某古籍で这个名前を見たことがあった，当時はただ先民の愚昧な幻想だと思っていた。如今想来，那些\"愚昧\"の传说，或许才是真正的真相。\n\n「那么，天机录本质上是一个——」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0996_011",
+        "prompt": "陳기는 天機録の 本質 を 深く 理解 しよう として いた——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0996_011a",
+            "text": "무기",
+            "description": "천기록은 더 높은 존재에 대한 무기이며, 이것이 그 사용에 대가가 수반되는 이유를 설명한다——모든 점의 천명치는 그 존재와 통제권을 다투는 것이다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "이 진실이 가져오는 무거운 감각",
+            "visible_reward": "근본적으로 천기록의 가치와 위험을 이해하다",
+            "risk_hint": "자신이 무엇과 적인지 인식하다",
+            "process_label": "领悟武器本质",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_011a_01",
+                  "content": "陳기는喃喃地说道：「그러므로 천기록은 예언 도구가 아니라 무기이다——우리를 지켜보는 그 존재와 인과 통제권을 다투는 무기이다.」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "领悟武器本质",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_011b",
+            "text": "감옥",
+            "description": "천기록은 더 높은 존재가 설정한 감옥으로서, 예언자들에게 자신이 운명을 쓰는 것이라고 믿게 하지만, 실상은 그것이 허용한 범위 내에서만 활동한다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "천기록에 대한 신뢰를 흔들 수 있다",
+            "visible_reward": "감옥을 돌파할 가능성의 실마리를 얻다",
+            "risk_hint": "진실이 사람을 절망하게 할 수 있다",
+            "process_label": "质疑牢笼假设",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_011b_01",
+                  "content": "陳기의目光骤然凌厉：「或者说——它本身就是一个牢笼？让我们以为自己在书写命运，实则只是在那存在划定的棋盘上移动？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "质疑牢笼假设",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_012",
+        "character_id": "char_moxiansheng",
+        "content": "两者皆是，亦皆非。」墨先生の虚影は微かに吐息をついた，「天機録の本体は，只是一张白纸。它既可以成为武器，也可以成为牢笼，关键在于执笔者。\n\n倉御天将它做成了武器。而你需要让它成为超越棋局本身的存在。",
+        "emotion": "期许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_013",
+        "content": "陳기는眉头紧锁：「超越棋盘？可如果连天道の眼都在棋盘之上，我又如何能超越？」\n\n墨先生は沈黙を保ち，似乎在斟酌该说多少。终于，他缓缓开口：「你问对了问题。運命書の本质，不是篡改结果——结果早已注定。真正的本质，是改写因果。」\n\n「因果？」\n\n「当世之人以为命运是一条从因到果的直线，却不知因果本身也是可以重写的。天機録の真の力は，让你看见未来ではなく——让你改写通向那个未来的所有可能にある。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0996_014",
+        "prompt": "陳기는この震撼的な情報を消化しようとしている——",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0996_014a",
+            "text": "지도를 요청하다",
+            "description": "인과를 다시 쓰는 구체적인 방법을墨先生에게 전수해 줄 것을 요청하며, 그것이 더 많은 대가를 치러야 함을 의미하더라도",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "더 많은 천명치를 소모할 수 있다",
+            "visible_reward": "인과를 다시 쓰는 핵심 지침을 얻다",
+            "risk_hint": "墨先生の回答には代償が必要かもしれない",
+            "process_label": "请求具体方法",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 4
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_014a_01",
+                  "content": "陳기가身躬して言った：「墨先生お願いします——弟子该如何做？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "请求具体方法",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0996_014b",
+            "text": "계속 추궁하다",
+            "description": "하늘의 눈과 더 높은 존재에 대한 더 많은 진실을 추궁하며, 적을 알면 백전백승한다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "墨先生が言及したくない 비밀에 부딪힐 수 있다",
+            "visible_reward": "적에 대한 더 많은 정보를 알아보다",
+            "risk_hint": "墨先生が黙り込む可能性がある",
+            "process_label": "追问敌人真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0996_result_014b_01",
+                  "content": "陳기의目光灼灼：「在我们上方观察我们的那个存在——天道の眼，究竟是什么？它的目的是什么？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "追问敌人真相",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0996_015",
+        "character_id": "char_moxiansheng",
+        "content": "墨先生の虚影忽然剧烈颤抖了一下，仿佛触碰到了某种禁忌。他的声音变得飘忽不定：「你问得太多了。有些答案……还不是你该知道的。」\n\n陳기가問い詰めようとした瞬間，墨先生は突然話を转变えた：「だが老朽は一つだけ告げられる。天機録は五ページあり，如今你手中只有三页残卷。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_016",
+        "content": "五ページ？」陳기의瞳孔이急に縮んだ。彼はこれまで天機録が三枚の断片しかないとばかり思っていた，第一ページには墨先生の残魂が封印され，第二ページには功法が，第三ページには予見 능력이。それ以外の二ページは——見たこともなかった。\n\n墨先生がうなずいた，声音愈发低沉：「第一ページは根基，老朽の残魂が封印されている。第二ページは功法，天機之力运用の法が记载されている。第三ページは予見，未来三時間をlaught见的させる。」\n\n「第四ページと第五ページは……」\n\n「第四ページ，」墨先生の声が突然无限に沉重になった，「是倉御天が最後に残した遗物。その上には天道の眼と对抗する究極の法が记载されている——しかし那一页，藏在あなた絶対想不到的地方。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_017",
+        "content": "陳기의 심장이 뛰었다。倉御天の究極の法——それこそ彼が求めていた「第四条の道」ではないか？\n\nしかし墨先生の次の言葉は，彼を氷窖に落としたようなものだった：「至于第五ページ……老朽も只知道它存在，却从未见过。倉御天が临终前に留下的只有一个谜语——'它在你的来处，也在你的归途。'」\n\n陳기는唖然とした。来处？归途？彼の来处は陳家村，あの既に聖宗に滅ぼされた小さな村である。归途又是何なのか？\n\nその時，天機録第一ページ忽然剧烈震颤，墨先生の虚影猛地抬头，脸上竟第一次露出了惊惧之色。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0996_018",
+        "content": "誰かが来たのだ。」墨先生の声が急に迫切的になった，「我们的对话に沿って近づいてきた——陳機，你我之间的联系被察觉した！\n\n陳기가霍然と目を醒ました。識海の中の墨先生の声は途切れ，天機録第一ページの微光も急速に暗淡下去，仿佛从未亮起过。\n\n夜風依旧嗚咽，山崖依旧寂寞。しかし陳기는知っていた，何かが近づいているのだ。その窺われている感は，以往任何时候都要强烈。\n\n彼はゆっくりと立ち上がり，目光望向远方的天際線。来处……归途……第五ページ……\n\n全ての糸口は同一の方向を指し示している——陳家村，聖宗に抹消された故土。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

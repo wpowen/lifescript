@@ -1,0 +1,472 @@
+{
+  "id": "天机录_ch0958",
+  "book_id": "天机录",
+  "number": 958,
+  "title": "運命の岐路",
+  "is_paid": true,
+  "next_chapter_hook": "陳機があの最も危険な道に踏み入れた時、天機録の奥底で眠っていた墨先生が急に目を開けた——今度の選択は、すべての人々の生死を決めることになる。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0958_001",
+        "content": "天機の境、蒼茫として墨の如し。陳機虚空の上に立ち、足元には流转する星河、头顶には果てしなき混沌。他は己の神識が不思議な方法で伸び広がり、大陸の隅々까지覆盖しているのを感受到いた。無数の運命の糸が目の前で網のように交织し、彼はまさにその網の中心に立ち、蒼生の悲歡离合を俯瞰している。しかし、より远处的未来を見極めんと试みる刹那、冷たい視線が虚空を貫き、直接彼をロックオンした。倉御天の笑みが現実界のどこかに留まっているようだが、真の棋士は既に姿を現した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「面白い。」その声は如何なる方向からも来たのではなく、陳機の意識深部に直接現れ、天道が運営される時に発する低鳴のようだった、「天機録の新しき担い手よ，竟に敢えてここに踏み込むとは知らぬか？この天機の境，本来は牢獄ぞ？」",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_003",
+        "content": "陳機の神識は微かに凝結した。周囲の虚空がゆっくりと収縮しているのを感じ、あの美しい星河が彼を囚らえる牢獄へと变わりつつある。これぞ天道之眼の威能か？僅かに意識の対峙而已で、これほど强烈的压迫感を覚えさせるとは。だが彼は退缩せず、むしろ主动的にその視線に向かい，声音は驚くほど平静だった：「牢獄？先輩は餘りに自分を過大評価了吧。この処が本当に牢獄なら，为何も姿を現して俺と話をしますか？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「はははっ！」天道之眼の声に笑いの色が一層加わったが、その笑いは氷霜より尚更寒い、「良い度胸。天機録が貴女を選んだのも無理はない。しかし、来たからには一つ機会を与えよう——道を選択せよ。自ら局面を打開するか、他者と連合するか、それとも……犠牲を払って局面を打開するか？」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0958_005",
+        "prompt": "天道之眼が投げかけた三つの道筋は、それぞれ截然たる未来に通じている。陳機はこの瞬間、必ず抉择を下さねばならぬ。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "独自破局",
+            "text": "単独突破",
+            "description": "すべての絆を断ち切り、天機録の完全なる力で单独に天道に対抗する。この道が最も危険だが、最も純粋——彼に拖累される者は誰もいない。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "すべての味方の支援を失い、单独で天名の反噬を承受する",
+            "visible_reward": "天機録完全度+30%、『天機独断』パッシブ能力獲得",
+            "risk_hint": "一旦失敗すれば万劫不复、いかなる翻身の可能성도 없다",
+            "process_label": "独行",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_独自破局_001",
+                  "content": "陳機の神識は猛然と縮小し、すべての情的絆在这一刻被他主动斩断した。天機録が震え、哀願するようだが、彼は振り返らない。運命の枷鎖が身上崩解し，新的力量涌入体内——これぞ真の天機之力，人間の情念を完全に除外した絶対的な力だ。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "alone_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 100
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "联合破局",
+            "text": "連合突破",
+            "description": "利用可能なすべての力を統合——蘇青瑶、夜清、甚至命运双生子——天道に対抗足以る連合の網を编织する。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "気運の分潤が必要，且つ連合内部に裏切り者が存在する可能せいがある",
+            "visible_reward": "『運命共同体』スキルを獲得し、味方と天名値を共有消耗する",
+            "risk_hint": "連合の每一个弱点都可能成为致命的破绽",
+            "process_label": "共谋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_联合破局_001",
+                  "content": "陳機の神識は猛然と拡張し、万里の彼方にいる蘇青瑶、夜清、甚至那两个命运双生子と連絡を確立した。一股股温かい流れが体内へ涌入的感觉，那是羁绊的力量，是生而为人的证明。天道之眼说得没错，这条路确实最复杂，但也最……温かい。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "union_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "联合破局路线开启",
+            "branch_route_id": null
+          },
+          {
+            "id": "牺牲破局",
+            "text": "犠牲突破",
+            "description": "自身を祭品とし、天道法則を重塑する。これは運命記載者の究極の使命——一代又一世代预言之者の犠牲で、人間に休息の時間换取する。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "自己の意識を失い，天機録は新たな担い手を選択する",
+            "visible_reward": "天道法則が重塑され，所有人都获得自由意志",
+            "risk_hint": "犠牲者は永遠に天地の間に消える",
+            "process_label": "舍身",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -200
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_牺牲破局_001",
+                  "content": "陳機の神識は燃え始める。己の運命の終点看到了——不是死亡，而是彻底的消散。天道之眼的声音再次响起，这一次带着一丝难以察觉的敬意：「你愿意像历代命运书写者一样，以身殉道？」陳機没有回答，只是露出了一个意味深长的笑容。殉道？決して聖人になるつもりはない。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sacrifice_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_006",
+        "content": "天道の眼の瞳孔が微かに縮まる。それはChen Jiの笑みの中の異常を察知したようだったが、全宇宙を超越する存在として、何も暴く急を迫るではなかった。「どの道を選ぼうと、」その声は低く威厳を放ち、「一つだけ理解せよ――私はあなたの敵ではない。私は秩序の維持者であり、規則そのものである。そしてあなたの持つ天機録は、最初から規則の一部である。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_007",
+        "character_id": "char_chenji",
+        "content": "「規則？」Chen Jiの声には皮肉が交じり、「天が本当に公正な規則であれば、なぜSu Qingyaoを苦しめ、なぜYe Qingを魔道の傀儡とならし、なぜ私の妹を所谓的『天命の鍵』たらしめる？先輩，您口中的规则，不过是您自己制定的枷锁罢了。」",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_008",
+        "content": "天機之境が猛然と震える。Chen Jiの言葉は禁忌に触れたのか、周囲の虚空が激しく歪み、無数の金色の方arly紋が混沌から浮かび、鎖のように彼に襲いかかる。だが、その鎖が彼を縛ろうとする瞬間，一道熟悉の声が天機録の奥底から響く――それはMo Xianshengであった。「Chen Ji、」Mo Xianshengの声は老いて切迫し、「今、真実を告げる時が来た。運命記述者の継承は……你所想象的那样ではない。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_009",
+        "character_id": "char_moxiansheng",
+        "content": "「所谓的命运书写者、」Mo Xianshengの残魂がついに天機之境に現れ、その声には无尽の沧桑が漂う、「決して天道の駒ではなかった。我々は第三の極――天道と万物に独立した存在である。我々の使命は、運命顺应ではなく、衆生が自由に選択する権利を守ることにある。天機録の全ての内容は、解放の方法である。」",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_010",
+        "content": "Chen Jiの瞳孔が猛然と縮まる。Mo Xianshengの言葉は天機録に対する彼の認識を完全に覆した。最初から、天機録は天道の道具ではなく、天道に立ち向かう武器だったのか？では歴代の運命記述者の犠牲とは何か？就在他困惑之际，天道之眼が突然大笑いし、その笑みには皮刺が込められていた：「衆生を守る？笑い事だ！你们的所谓『守护』は、単に必然を遅延させる苦悩に過ぎない。秩序のない宇宙は、永恒の混沌でしかない。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0958_011",
+        "prompt": "Mo Xianshengは運命記述者の真姿を揭示し、天道之眼は秩序と混沌の対立を投げかけた。Chen Jiは天機之境で最終的な立場を示さねばならない。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "质疑墨先生",
+            "text": "Mo Xianshengを質疑する",
+            "description": "Mo Xianshengの話は余りに時宜を得ている。彼は所谓的「第三の極」の真実に更なる証拠を求める必要がある。真実は表面よりもっと複雑な可能性がある。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Mo Xianshengの信頼と指南を失う可能性がある",
+            "visible_reward": "「洞察の眼」スキルを習得し、一切の嘘を見破る確率がある",
+            "risk_hint": "Mo Xianshengが真実を言っていれば、重要な情報を見落とす可能性がある",
+            "process_label": "求真",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0958_result_质疑墨先生_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Jiはすぐに表态しなかった。彼はMo Xianshengを見据え、その目には審査の色が宿った：「先生，您来得太是时候了。恕我直言――您到底是在帮我，还是在利用我完成您未竟の使命？」Mo Xianshengは黙ってしばらく待ち，随即苦笑して言った：「你果然像他。当年Chen Xuanも私に同じ質問を问了。」",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "doubt_mo"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "接受第三极",
+            "text": "第三の極を受け入れる",
+            "description": "Mo Xianshengを信じ、第三の極の守護者となり、天道之眼と真正面から対峯することを選択する。これは運命記述者に应有的の覚悟である。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "正式に天道を敵に回し、天道の全面的压制を承受することになる",
+            "visible_reward": "天機録の隠しスキル「運命織り」をアンロックし、三時間先の予見を三日間に延長できる",
+            "risk_hint": "天道は第三の極の台頭を座視しない",
+            "process_label": "觉醒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_接受第三极_001",
+                  "content": "Chen Jiは深く息を吸い込み、决定を下した。「私は信じると決めた。」彼の声は天機之境に反响し、「您的话并非无懈可击だが因為――我不想成为任何人の駒 싶다。无论是天道，还是所谓的第三の極。」彼の目はMo Xianshengと天道之眼を貫き、「从今以后，我只走自己的路。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "third_pole"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "觉醒为第三极守护者",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_012",
+        "content": "天道之眼の瞳孔が細い線のように缩まる。それは単なる凡人が自分に向かって「我只走自己的路」とは決して言わなかったことを予想しなかった。「大胆！」その声は突然氷のように冷たくなり、「既然你执意要与秩序为敌，那就别怪我……」言い終わる前に、天機之境全体が激しく震动し始めた。二つの身影が虚空から踏み出し、正に運命双生子――Cang YutianとCang Yudiであった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「够了。」Cang Yutianの声は平静で威厳があり、以前那种意味深长笑容的男人とは別人のようだった、「天道之眼，你越界了。天機之境は運命記述者の試練の場所であり、あなたが権威を展示する場所ではない。」Cang Yudiがその後に続き、両手で印を結んだところ，一道金色屏障がChen Jiの前に展開された：「Chen Jiは私たちの候補者であり、彼の選択に干渉する権利はない。」",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_014",
+        "content": "Chen Jiは一瞬呆了。原来Cang Yutianのあの笑みは陰謀家の得意ではなく、战友之间的默契だったのか？彼は運命双生子を見、Mo Xianshengに視線を向け、そして最後には天道之眼に目を留めた。この瞬間、彼は所谓的「棋局」の真の意味を理解した――最初から、彼は一人ではなかった。歴代の運命記述者、運命双生子、そしてMo Xianshengさえも、それぞれのやり方で彼の道を整えていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0958_015",
+        "prompt": "運命双生子出面干预、Chen Jiの足元には多くの支持者が现れた。この关键的时刻、彼は自らの立場を决定する必要がある。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "与命运双生子联手",
+            "text": "運命双生子と手を組む",
+            "description": "運命双生子の支援を受け入れ、天道之眼の压制に共同して対抗する。これは阻力最小の道だが、運命双生子の勢力の制約も受けることになる。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "運命双生子が以前の布局の因果を背負う必要がある",
+            "visible_reward": "「運命双生」bufを獲得し、倉御天・倉御地と一部の能力を共有する",
+            "risk_hint": "運命双生児には各自のAGENDAがあり、必ずしも完全に信用できるわけではない",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 40
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_与命运双生子联手_001",
+                  "content": "Chen Jiは躊躇わず、運命双生児に小さく頷いた：「両先輩がご助力戴けるなら、Chen Jiは感謝に耐えません。」倉御天は賛賞の笑みを浮かべた：「ご遠慮なく。我々はこの日を待ち望むこと久しい。」三者の気勢がこの刻に交汇融合し、竟に天道之眼と分庭抗礼する気勢が微かに現れた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "alliance_with_fate_twins"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与命运双生子结盟",
+            "branch_route_id": null
+          },
+          {
+            "id": "坚持独立",
+            "text": "独立を堅持する",
+            "description": "運命双生子の好意に感謝するが、Chen Jiは一人で天道を立ち向かうことを堅持した。彼は自分が枷鎖を打破する能力があることを証明し、誰の庇護も必要としない。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "一人で天道之眼の全面的圧力を引き受ける",
+            "visible_reward": "天機録完全度が追加で+20%になり、非公開称号「逆天者」を解锁した",
+            "risk_hint": "天道之眼の圧制は以前より数倍強くなる",
+            "process_label": "逆天",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 25
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0958_result_坚持独立_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Jiは首を振り、運命双生児に拱手した：「両先輩のご心意、Chen Jiは心に残しました。だが、これは我が自身の戦いです。」彼の視線は天道之眼を真っ直ぐに見据え、口元には冷淡な笑みが浮かんだ，「この高高在上な天道意志がどこまでなものか、見せて頂こう。」倉御天と倉御地はお互いに視線を交わし、相手眼中から驚きと賛賞看到了。",
+                  "emotion": "坚毅"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "independent_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "独立挑战天道之眼",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_016",
+        "content": "天道之眼は冷哼を発した。その忍耐遂に尽きた。「己の死を望むなら、成就してやろう。」 оно медленно闭上双眼, все 天機之境 开始崩塌。无尽的 混沌之力 从四面八方涌来, 形成一道道 毁灭性 の 漩涡。Chen Ji は 天命値 が狂気の如く流れ去るのを感じた、一秒一瞬が生命を燃やすようだった。しかし彼は后退せず、逆に打ち合って进んだ——天機録 は彼の手中で耀眼的光芒を放ち、それは歴代 命运书写者 が残した最後の遗产であった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_017",
+        "content": "この 千钧一发之际、Chen Ji の 脑海 中に突然 无数の 画面 が闪过した——苏青瑶が天青宗で待つ身影、夜清が魔道聖宗で孤独に挣扎する眼差し、陈念の曖昧で温かい笑顔……这些人，那些人，所有他想保护的人，都在此刻与他的命运交织在一起。彼は悟った。所谓的破局，从来都不是一个人的战斗。深く息を吸い込み、天機録を高々とかざした：「诸位——今こそこの運命の枷鎖を破る時だ！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_018",
+        "content": "天機録は前所未有的光芒を放ち、その光は混沌を穿透し、虚空を穿透し、運命の枷鎖を穿透し、全体修仙界を照耀した。その一刻、无数の人々が同時に頭を上げた——苏青瑶は内門修煉中に猛然と眼を開け、夜清は魔道深处で足を止め、甚至凌渊と韩烈さえもしばし某の方向を見つめた。天道之眼は怒吼を発し、威胁感觉到了那股即将打破秩序的力量。但一切都已经太迟了。Chen Jiの運命抉択は、既に完成した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_019",
+        "content": "光芒は渐く消散し、天機之境は再び安定を取り戻した。Chen Jiは自分が依然として元の場に立っていることを発見したが、周囲的一切都变了。天道之眼は依然として存在していたが、その無法な威圧は既に弱まっている。運命双生子、Mo Xiansheng、甚至那些从虚空中浮现的歴代運命书写者の残影も、彼に小さく頷いていた。Chen Jiは知っている、これはまだ始まりに過ぎないと。天道之眼は決して罢休しない、より大きな风暴正在酝酿。だが此刻、彼はやっと一瞬의 安息을 가질 수 있었다——最も重要な一歩を踏み出したのだから。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_020",
+        "content": "Chen Jiが天機之境から退出し、双眼を再び開いた時、彼は自分が依然として天青宗後山に立っていることを知った。苏青瑶が不远千里处で焦虑そうに立っており，看到他醒来，眼中闪过一丝惊喜。Chen Ji向她露出一个温和的笑容：「青瑶，我回来了。」简単な四文字，却让苏青瑶の眼眶微微泛红。她不知道在天機之境中发生了什么，但她能感觉到——Chen Ji变了。不只是实力上的变化，而是某种更深层的东西。運命の歯車が既に回転を開始し、Chen Jiの时代が 곧到来しようとしていた。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

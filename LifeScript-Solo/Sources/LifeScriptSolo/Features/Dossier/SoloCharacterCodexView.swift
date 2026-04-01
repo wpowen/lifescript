@@ -86,26 +86,26 @@ enum SoloCharacterCodex {
 
     static func stanceSummary(for character: Character, relation: RelationshipState?) -> String {
         guard let relation else {
-            return "这个人还没有真正入局，你只看得见轮廓，看不见立场。"
+            return SoloLocalization.localized("这个人还没有真正入局，你只看得见轮廓，看不见立场。")
         }
 
         let attitude = relation.attitudeLabel
         let dimensions = relation.topDimensions(limit: 2)
         if dimensions.isEmpty {
-            return "\(character.name)已经出现在棋局里，但还没有露出足够稳定的态度。"
+            return SoloLocalization.format("%@已经出现在棋局里，但还没有露出足够稳定的态度。", character.name)
         }
 
         let leading = dimensions[0]
         let trailing = dimensions.count > 1 ? dimensions[1] : nil
         if let trailing {
-            return "\(character.name)当前最明显的是「\(leading.0.rawValue)」与「\(trailing.0.rawValue)」，整体态度落在「\(attitude)」。"
+            return SoloLocalization.format("%@当前最明显的是「%@」与「%@」，整体态度落在「%@」。", character.name, leading.0.rawValue, trailing.0.rawValue, attitude)
         }
-        return "\(character.name)当前最明显的是「\(leading.0.rawValue)」，整体态度落在「\(attitude)」。"
+        return SoloLocalization.format("%@当前最明显的是「%@」，整体态度落在「%@」。", character.name, leading.0.rawValue, attitude)
     }
 
     static func thresholdHint(for character: Character, relation: RelationshipState?) -> String {
         guard let relation else {
-            return "继续推进章节、接住第一次正面互动后，这个人的真正立场才会显形。"
+            return SoloLocalization.localized("继续推进章节、接住第一次正面互动后，这个人的真正立场才会显形。")
         }
 
         let trustGap = max(0, 60 - relation.trust)
@@ -113,15 +113,15 @@ enum SoloCharacterCodex {
         let vigilanceGap = max(0, relation.value(for: .vigilance) - 35)
 
         if trustGap == 0 && curiosityGap == 0 {
-            return "这条线已经可以被主动牵引，适合拿来试探暗线或交换真相。"
+            return SoloLocalization.localized("这条线已经可以被主动牵引，适合拿来试探暗线或交换真相。")
         }
         if vigilanceGap > 0 {
-            return "先压低「警惕」再继续靠近，否则 \(character.name) 会把你的后手看成威胁。"
+            return SoloLocalization.format("先压低「警惕」再继续靠近，否则 %@ 会把你的后手看成威胁。", character.name)
         }
         if trustGap < curiosityGap {
-            return "再补 \(trustGap) 点「信任」，这条线就更容易被稳稳拉住。"
+            return SoloLocalization.format("再补 %d 点「信任」，这条线就更容易被稳稳拉住。", trustGap)
         }
-        return "再补 \(curiosityGap) 点「好奇」，更适合把 \(character.name) 引进你的局。"
+        return SoloLocalization.format("再补 %d 点「好奇」，更适合把 %@ 引进你的局。", curiosityGap, character.name)
     }
 }
 
@@ -271,7 +271,7 @@ struct SoloCharacterRosterCard: View {
                         .foregroundStyle(SoloTheme.ink)
                     Spacer()
                     if relation == nil {
-                        labelChip(text: "未入局", tint: SoloTheme.muted)
+                        labelChip(text: SoloLocalization.localized("未入局"), tint: SoloTheme.muted)
                     }
                 }
 
@@ -288,8 +288,8 @@ struct SoloCharacterRosterCard: View {
 
             if relation != nil {
                 HStack(spacing: 10) {
-                    infoBadge(title: "牵引", value: "\(resonance)", tint: accent)
-                    infoBadge(title: "局重", value: "\(influence)", tint: SoloTheme.gold)
+                    infoBadge(title: SoloLocalization.localized("牵引"), value: "\(resonance)", tint: accent)
+                    infoBadge(title: SoloLocalization.localized("局重"), value: "\(influence)", tint: SoloTheme.gold)
                 }
 
                 VStack(alignment: .leading, spacing: 8) {
@@ -372,7 +372,7 @@ struct SoloCharacterDetailView: View {
                 .padding(.bottom, 32)
             }
         }
-        .soloStoryChrome(title: character.name, kicker: relation == nil ? "未入局" : "角色档案")
+        .soloStoryChrome(title: character.name, kicker: relation == nil ? SoloLocalization.localized("未入局") : SoloLocalization.localized("角色档案"))
     }
 
     private var heroPanel: some View {
@@ -392,7 +392,7 @@ struct SoloCharacterDetailView: View {
                     Spacer()
                     VStack(alignment: .trailing, spacing: 8) {
                         chip(text: SoloCharacterCodex.roleLabel(for: character.role), tint: accent)
-                        chip(text: relation?.attitudeLabel ?? "未入局", tint: relation == nil ? SoloTheme.muted : accent)
+                        chip(text: relation?.attitudeLabel ?? SoloLocalization.localized("未入局"), tint: relation == nil ? SoloTheme.muted : accent)
                     }
                 }
 
@@ -415,14 +415,14 @@ struct SoloCharacterDetailView: View {
 
     private var currentStancePanel: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("当前盘面")
+            Text(SoloLocalization.localized("当前盘面"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(SoloTheme.ink)
 
             VStack(spacing: 10) {
-                statCard(title: "当前态度", value: relation?.attitudeLabel ?? "未入局", detail: SoloCharacterCodex.stanceSummary(for: character, relation: relation), tint: accent)
-                statCard(title: "牵引指数", value: "\(resonance)", detail: "越高说明这条关系越适合被主动推动，用来借势、套话或交换后手。", tint: SoloTheme.gold)
-                statCard(title: "命局权重", value: "\(influence)", detail: "越高说明这个人越可能影响你的主线走向、暗线条件或后续风险。", tint: SoloTheme.crimson)
+                statCard(title: SoloLocalization.localized("当前态度"), value: relation?.attitudeLabel ?? SoloLocalization.localized("未入局"), detail: SoloCharacterCodex.stanceSummary(for: character, relation: relation), tint: accent)
+                statCard(title: SoloLocalization.localized("牵引指数"), value: "\(resonance)", detail: SoloLocalization.localized("越高说明这条关系越适合被主动推动，用来借势、套话或交换后手。"), tint: SoloTheme.gold)
+                statCard(title: SoloLocalization.localized("命局权重"), value: "\(influence)", detail: SoloLocalization.localized("越高说明这个人越可能影响你的主线走向、暗线条件或后续风险。"), tint: SoloTheme.crimson)
             }
         }
         .padding(22)
@@ -433,7 +433,7 @@ struct SoloCharacterDetailView: View {
     private var dimensionPanel: some View {
         if let relation {
             VStack(alignment: .leading, spacing: 14) {
-                Text("具体属性")
+                Text(SoloLocalization.localized("具体属性"))
                     .font(SoloTypography.sectionTitle())
                     .foregroundStyle(SoloTheme.ink)
 
@@ -453,15 +453,15 @@ struct SoloCharacterDetailView: View {
 
     private var lorePanel: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("局中情报")
+            Text(SoloLocalization.localized("局中情报"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(SoloTheme.ink)
 
             VStack(alignment: .leading, spacing: 10) {
-                loreRow(title: "人物定位", detail: "\(character.name)在当前书内被识别为「\(SoloCharacterCodex.roleLabel(for: character.role))」单位。")
-                loreRow(title: "当前判断", detail: SoloCharacterCodex.stanceSummary(for: character, relation: relation))
+                loreRow(title: SoloLocalization.localized("人物定位"), detail: SoloLocalization.format("%@在当前书内被识别为「%@」单位。", character.name, SoloCharacterCodex.roleLabel(for: character.role)))
+                loreRow(title: SoloLocalization.localized("当前判断"), detail: SoloCharacterCodex.stanceSummary(for: character, relation: relation))
                 if let reason = relation?.lastChangeReason {
-                    loreRow(title: "最近波动", detail: reason)
+                    loreRow(title: SoloLocalization.localized("最近波动"), detail: reason)
                 }
             }
         }
@@ -471,7 +471,7 @@ struct SoloCharacterDetailView: View {
 
     private var thresholdPanel: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("下一步建议")
+            Text(SoloLocalization.localized("下一步建议"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(accent)
 
@@ -481,7 +481,7 @@ struct SoloCharacterDetailView: View {
                 .lineSpacing(5)
 
             if let destinyStatus {
-                Text("当前命局：\(destinyStatus.headline)。\(destinyStatus.thresholdHint)")
+                Text(SoloLocalization.format("当前命局：%@。%@", destinyStatus.headline, destinyStatus.thresholdHint))
                     .font(.caption)
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -536,25 +536,25 @@ struct SoloCharacterDetailView: View {
     ) -> String {
         switch dimension {
         case .trust:
-            return value >= 60 ? "已经可以把关键消息先递给你。" : "还在观察你到底值不值得托底。"
+            return value >= 60 ? SoloLocalization.localized("已经可以把关键消息先递给你。") : SoloLocalization.localized("还在观察你到底值不值得托底。")
         case .affection:
-            return value >= 60 ? "情绪会明显偏向你。" : "还没到会为你改立场的时候。"
+            return value >= 60 ? SoloLocalization.localized("情绪会明显偏向你。") : SoloLocalization.localized("还没到会为你改立场的时候。")
         case .hostility:
-            return value >= 60 ? "这条线已经有直接翻脸风险。" : "对抗性仍在积累。"
+            return value >= 60 ? SoloLocalization.localized("这条线已经有直接翻脸风险。") : SoloLocalization.localized("对抗性仍在积累。")
         case .awe:
-            return value >= 60 ? "对你的判断带着明显敬畏。" : "更多是谨慎旁观。"
+            return value >= 60 ? SoloLocalization.localized("对你的判断带着明显敬畏。") : SoloLocalization.localized("更多是谨慎旁观。")
         case .dependence:
-            return value >= 60 ? "一旦你抽手，对方会失衡。" : "还没形成真正绑定。"
+            return value >= 60 ? SoloLocalization.localized("一旦你抽手，对方会失衡。") : SoloLocalization.localized("还没形成真正绑定。")
         case .curiosity:
-            return value >= 55 ? "最适合拿来引入暗线与秘密。" : "还停留在试探阶段。"
+            return value >= 55 ? SoloLocalization.localized("最适合拿来引入暗线与秘密。") : SoloLocalization.localized("还停留在试探阶段。")
         case .vigilance:
-            return value >= 45 ? "你的一举一动都会被放大解读。" : "警报还没彻底拉满。"
+            return value >= 45 ? SoloLocalization.localized("你的一举一动都会被放大解读。") : SoloLocalization.localized("警报还没彻底拉满。")
         case .contempt:
-            return value >= 45 ? "对你存在轻敌窗口，可利用。" : "轻视感正在缓慢形成。"
+            return value >= 45 ? SoloLocalization.localized("对你存在轻敌窗口，可利用。") : SoloLocalization.localized("轻视感正在缓慢形成。")
         case .anger:
-            return value >= 45 ? "情绪已经容易失控，适合引爆。" : "怒意还没彻底点燃。"
+            return value >= 45 ? SoloLocalization.localized("情绪已经容易失控，适合引爆。") : SoloLocalization.localized("怒意还没彻底点燃。")
         default:
-            return "这是当前关系里已经浮出水面的额外维度。"
+            return SoloLocalization.localized("这是当前关系里已经浮出水面的额外维度。")
         }
     }
 }

@@ -119,7 +119,7 @@ struct SoloStoryNodeView: View {
                 HStack(spacing: 7) {
                     Image(systemName: "diamond.fill")
                         .font(.system(size: 7, weight: .bold))
-                    Text("抉择时刻")
+                    Text(SoloLocalization.localized("抉择时刻"))
                         .font(.caption.weight(.bold))
                         .tracking(4)
                 }
@@ -343,12 +343,12 @@ struct SoloStoryNodeView: View {
                     // 选后：灰化结算提示
                     HStack(spacing: 10) {
                         if let cost = choice.visibleCost {
-                            Text("消耗: \(cost)")
+                            Text(SoloLocalization.format("消耗: %@", cost))
                                 .font(.caption2)
                                 .foregroundStyle(SoloTheme.muted.opacity(0.40))
                         }
                         if let reward = choice.visibleReward {
-                            Text("得到: \(reward)")
+                            Text(SoloLocalization.format("得到: %@", reward))
                                 .font(.caption2)
                                 .foregroundStyle(SoloTheme.muted.opacity(0.40))
                         }
@@ -380,7 +380,7 @@ struct SoloStoryNodeView: View {
     }
 
     private func characterName(for id: String) -> String {
-        book.characters.first(where: { $0.id == id })?.name ?? "未知角色"
+        book.characters.first(where: { $0.id == id })?.name ?? SoloLocalization.localized("未知角色")
     }
 
     private func icon(for type: NotificationNode.NotificationType) -> String {

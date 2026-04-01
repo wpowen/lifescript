@@ -19,7 +19,7 @@ struct SoloCharacterFiltersBar: View {
                     Button {
                         selected = filter
                     } label: {
-                        Text(filter.rawValue)
+                        Text(SoloLocalization.localized(filter.rawValue))
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(selected == filter ? SoloTheme.ink : SoloTheme.muted)
                             .padding(.horizontal, 12)

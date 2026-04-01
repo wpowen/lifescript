@@ -18,7 +18,7 @@ struct SoloEntryHeroScene: View {
             // 内容叠层
             contentStack
         }
-        .frame(maxWidth: .infinity, minHeight: isTianjiluVisualEnabled ? 780 : 680)
+        .frame(maxWidth: .infinity, minHeight: isTianjiluVisualEnabled ? 620 : 520)
     }
 
     // MARK: - Content anchored to bottom (Netflix style)
@@ -53,16 +53,8 @@ struct SoloEntryHeroScene: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.bottom, 18)
 
-            featureMarquee
-                .padding(.bottom, 18)
-
-            // Meta chips row
-            HStack(spacing: 8) {
-                cinemaChip(book.genre.displayName, SoloTheme.gold)
-                cinemaChip(serialChipText, SoloTheme.crimson)
-                cinemaChip(interactionChipText, SoloTheme.jade)
-            }
-            .padding(.bottom, 6)
+            featureStatStrip
+                .padding(.bottom, 12)
 
             if isTianjiluVisualEnabled {
                 volumeSpotlight
@@ -74,7 +66,7 @@ struct SoloEntryHeroScene: View {
                 .foregroundStyle(SoloTheme.muted)
                 .padding(.bottom, 8)
 
-            Text("天命值 \(snapshot.destinyStatus.value) · \(snapshot.destinyStatus.headline)")
+            Text(SoloLocalization.format("天命值 %d · %@", snapshot.destinyStatus.value, snapshot.destinyStatus.headline))
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(destinyAccent.opacity(0.88))
                 .padding(.bottom, 22)
@@ -120,52 +112,72 @@ struct SoloEntryHeroScene: View {
         .padding(.horizontal, 24)
     }
 
-    private var featureMarquee: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 12) {
-                ForEach(heroCompactHighlights) { highlight in
-                    featureCard(highlight)
-                }
-            }
+    private var featureStatStrip: some View {
+        HStack(spacing: 0) {
+            statCapsule(
+                icon: "book.pages",
+                value: SoloLocalization.format("%d章", snapshot.plannedChapterCount),
+                label: SoloLocalization.localized("已收录"),
+                tint: SoloTheme.gold
+            )
 
-            if let wideHighlight = heroWideHighlight {
-                featureCard(wideHighlight)
-            }
+            statDivider
+
+            statCapsule(
+                icon: "arrow.triangle.branch",
+                value: marketedEndingCount.map { SoloLocalization.format("%d结局", $0) }
+                    ?? SoloLocalization.localized("多结局"),
+                label: SoloLocalization.localized("结局"),
+                tint: SoloTheme.crimson
+            )
+
+            statDivider
+
+            statCapsule(
+                icon: "hand.tap",
+                value: SoloLocalization.localized("互动式"),
+                label: SoloLocalization.localized("阅读方式"),
+                tint: SoloTheme.jade
+            )
         }
-    }
-
-    private func featureCard(_ highlight: HeroFeatureHighlight) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(highlight.title)
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(highlight.tint.opacity(0.90))
-
-            Text(highlight.value)
-                .font(SoloTypography.sceneHeadline(size: highlight.isWide ? 24 : 22))
-                .foregroundStyle(SoloTheme.ink)
-                .fixedSize(horizontal: false, vertical: true)
-
-            Text(highlight.detail)
-                .font(.caption)
-                .foregroundStyle(SoloTheme.warmInk.opacity(0.80))
-                .lineSpacing(4)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .frame(
-            maxWidth: .infinity,
-            minHeight: highlight.isWide ? 94 : 118,
-            alignment: .topLeading
-        )
-        .padding(.horizontal, 14)
-        .padding(.vertical, 14)
+        .padding(.vertical, 10)
         .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Color.black.opacity(highlight.isWide ? 0.42 : 0.36))
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Color.black.opacity(0.36))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .strokeBorder(highlight.tint.opacity(0.18), lineWidth: 1)
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
         )
+    }
+
+    private func statCapsule(
+        icon: String,
+        value: String,
+        label: String,
+        tint: Color
+    ) -> some View {
+        HStack(spacing: 8) {
+            Image(systemName: icon)
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(tint.opacity(0.85))
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(value)
+                    .font(.subheadline.weight(.bold))
+                    .foregroundStyle(SoloTheme.ink)
+                Text(label)
+                    .font(.caption2.weight(.medium))
+                    .foregroundStyle(SoloTheme.muted)
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private var statDivider: some View {
+        Rectangle()
+            .fill(Color.white.opacity(0.12))
+            .frame(width: 1, height: 20)
     }
 
     // MARK: - Portal Entry Button
@@ -190,7 +202,7 @@ struct SoloEntryHeroScene: View {
     private func portalButtonLabel(pulse: Double) -> some View {
             VStack(alignment: .leading, spacing: 0) {
                 // Eyebrow — ceremony / threshold language
-                Text("点击踏入")
+                Text(SoloLocalization.localized("点击踏入"))
                     .font(.caption2.weight(.bold))
                     .tracking(5)
                     .foregroundStyle(Color.white.opacity(0.32 + pulse * 0.18))
@@ -277,43 +289,6 @@ struct SoloEntryHeroScene: View {
         return animationsEnabled ? 0.74 : 0.42
     }
 
-    private var heroCompactHighlights: [HeroFeatureHighlight] {
-        [
-            HeroFeatureHighlight(
-                id: "chapter-scale",
-                title: SoloLocalization.localized("已收录章节"),
-                value: SoloLocalization.format("%d 章", snapshot.plannedChapterCount),
-                detail: SoloLocalization.localized("当前版本完整接入"),
-                tint: SoloTheme.gold,
-                isWide: false
-            ),
-            HeroFeatureHighlight(
-                id: "ending-scale",
-                title: marketedEndingCount == nil
-                    ? SoloLocalization.localized("互动结构")
-                    : SoloLocalization.localized("结局规模"),
-                value: marketedEndingCount.map { SoloLocalization.format("%d 个结局", $0) }
-                    ?? interactionModeLabel,
-                detail: marketedEndingCount == nil
-                    ? SoloLocalization.localized("路线、人物与章节反馈会跟着你的选择偏转")
-                    : SoloLocalization.localized("关键选择会把命途推向不同终局"),
-                tint: SoloTheme.crimson,
-                isWide: false
-            ),
-        ]
-    }
-
-    private var heroWideHighlight: HeroFeatureHighlight? {
-        HeroFeatureHighlight(
-            id: "interactive-fiction",
-            title: SoloLocalization.localized("阅读方式"),
-            value: SoloLocalization.localized("互动式小说"),
-            detail: SoloLocalization.localized("不是翻页旁观，你的选择会改写人物关系、路线反馈与命途走向"),
-            tint: SoloTheme.jade,
-            isWide: true
-        )
-    }
-
     private var marketedEndingCount: Int? {
         switch book.id {
         case "天机录":
@@ -321,13 +296,6 @@ struct SoloEntryHeroScene: View {
         default:
             return nil
         }
-    }
-
-    private var interactionModeLabel: String {
-        if book.interactionTags.contains("多结局") {
-            return SoloLocalization.localized("多结局分支")
-        }
-        return interactionChipText
     }
 
     @ViewBuilder
@@ -396,7 +364,7 @@ struct SoloEntryHeroScene: View {
             }
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("当前卷面")
+                Text(SoloLocalization.localized("当前卷面"))
                     .font(.caption2.weight(.bold))
                     .tracking(1.4)
                     .foregroundStyle(SoloTheme.gold)
@@ -430,28 +398,6 @@ struct SoloEntryHeroScene: View {
             RoundedRectangle(cornerRadius: 18, style: .continuous)
                 .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
         )
-    }
-
-    private func cinemaChip(_ text: String, _ color: Color) -> some View {
-        Text(text)
-            .font(.caption2.weight(.bold))
-            .tracking(0.5)
-            .foregroundStyle(color)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 5)
-            .background(
-                RoundedRectangle(cornerRadius: 4, style: .continuous)
-                    .fill(color.opacity(0.14))
-            )
-    }
-
-    private var serialChipText: String {
-        guard snapshot.generatedChapterCount > 0 else { return "章节接入中" }
-        return "\(snapshot.generatedChapterCount)\(snapshot.branding.chapterUnitName)内容"
-    }
-
-    private var interactionChipText: String {
-        book.interactionTags.first ?? "多结局"
     }
 
     private var destinyAccent: Color {
@@ -563,7 +509,7 @@ struct SoloEntryHeroScene: View {
                 )
                 .frame(width: 36, height: 0.8)
 
-            Text("谋天改命")
+            Text(SoloLocalization.localized("谋天改命"))
                 .font(.system(size: 10, weight: .medium))
                 .tracking(4)
                 .foregroundStyle(SoloTheme.gold.opacity(0.48 + portalPulse * 0.12))
@@ -579,13 +525,4 @@ struct SoloEntryHeroScene: View {
                 .frame(width: 36, height: 0.8)
         }
     }
-}
-
-private struct HeroFeatureHighlight: Identifiable {
-    let id: String
-    let title: String
-    let value: String
-    let detail: String
-    let tint: Color
-    let isWide: Bool
 }

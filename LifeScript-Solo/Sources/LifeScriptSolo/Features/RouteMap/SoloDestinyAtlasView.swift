@@ -29,7 +29,7 @@ struct SoloDestinyAtlasView: View {
                 }
             }
         }
-        .soloStoryChrome(title: book.id == "天机录" ? "命途" : "世界线", kicker: "推演")
+        .soloStoryChrome(title: book.id == "天机录" ? SoloLocalization.localized("命途") : SoloLocalization.localized("世界线"), kicker: SoloLocalization.localized("推演"))
     }
 
     @ViewBuilder
@@ -71,7 +71,7 @@ struct SoloDestinyAtlasView: View {
                 .lineSpacing(5)
 
             HStack(spacing: 10) {
-                badge(text: "天命值 \(destinyStatus.value)", tint: destinyTint)
+                badge(text: SoloLocalization.format("天命值 %d", destinyStatus.value), tint: destinyTint)
                 badge(text: destinyStatus.thresholdHint, tint: SoloTheme.gold)
             }
         }
@@ -284,7 +284,7 @@ struct SoloDestinyAtlasView: View {
             }
             .frame(height: 4)
 
-            Text("\(node.completedChapterCount) / \(total) 章已触达")
+            Text(SoloLocalization.format("%d / %d 章已触达", node.completedChapterCount, total))
                 .font(.caption2)
                 .foregroundStyle(tint.opacity(0.82))
         }
@@ -294,7 +294,7 @@ struct SoloDestinyAtlasView: View {
 
     private var omenPanel: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("将至征兆")
+            Text(SoloLocalization.localized("将至征兆"))
                 .font(SoloTypography.sectionTitle())
                 .foregroundStyle(SoloTheme.crimson)
             Text(snapshot.omenLine)
@@ -321,17 +321,17 @@ struct SoloDestinyAtlasView: View {
 
     private func stageLabel(for node: SoloDestinyStageNode) -> String {
         switch node.visibility {
-        case .passed:  return "已行之路"
-        case .current: return "眼前棋局"
-        case .veiled:  return "将至征兆"
+        case .passed:  return SoloLocalization.localized("已行之路")
+        case .current: return SoloLocalization.localized("眼前棋局")
+        case .veiled:  return SoloLocalization.localized("将至征兆")
         }
     }
 
     private func statusLabel(for node: SoloDestinyStageNode) -> String {
         switch node.visibility {
-        case .passed:  return "已走完"
-        case .current: return "正在推进"
-        case .veiled:  return "未显形"
+        case .passed:  return SoloLocalization.localized("已走完")
+        case .current: return SoloLocalization.localized("正在推进")
+        case .veiled:  return SoloLocalization.localized("未显形")
         }
     }
 

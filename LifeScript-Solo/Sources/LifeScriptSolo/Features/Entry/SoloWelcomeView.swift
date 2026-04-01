@@ -7,9 +7,14 @@ struct SoloWelcomeView: View {
 
     private let branding = SoloStoryConfig.branding
 
+    @Environment(\.verticalSizeClass) private var verticalSizeClass
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @State private var appear = false
     @State private var pulse = false
     @State private var orbit = false
+
+    private var isCompactHeight: Bool { verticalSizeClass == .compact }
+    private var isRegularWidth: Bool { horizontalSizeClass == .regular }
 
     var body: some View {
         ZStack {
@@ -31,20 +36,21 @@ struct SoloWelcomeView: View {
                 HStack {
                     Spacer()
                     skipButton
-                        .padding(.trailing, 20)
-                        .padding(.top, 12)
+                        .padding(.trailing, isRegularWidth ? 40 : 20)
+                        .padding(.top, isCompactHeight ? 6 : 12)
                 }
 
-                ScrollView(.vertical, showsIndicators: false) {
-                    welcomeHero
-                        .padding(.horizontal, 20)
-                        .padding(.top, 16)
-                        .padding(.bottom, 20)
-                }
+                Spacer()
+
+                welcomeCard
+                    .padding(.horizontal, isRegularWidth ? 60 : 24)
+                    .frame(maxWidth: isRegularWidth ? 520 : .infinity)
+
+                Spacer()
 
                 loadingFooter
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 36)
+                    .padding(.horizontal, isRegularWidth ? 60 : 20)
+                    .padding(.bottom, isCompactHeight ? 16 : 36)
             }
         }
         .onAppear {
@@ -53,6 +59,8 @@ struct SoloWelcomeView: View {
             orbit = true
         }
     }
+
+    // MARK: - Skip Button
 
     private var skipButton: some View {
         Button(action: onSkip) {
@@ -63,7 +71,7 @@ struct SoloWelcomeView: View {
                     .contentTransition(.numericText(countsDown: true))
                     .animation(.easeInOut(duration: 0.3), value: countdownSeconds)
 
-                Text("跳过")
+                Text(SoloLocalization.localized("跳过"))
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(SoloTheme.ink)
             }
@@ -82,77 +90,25 @@ struct SoloWelcomeView: View {
         .animation(.easeOut(duration: 0.5).delay(0.4), value: appear)
     }
 
-    private var welcomeHero: some View {
-        VStack(alignment: .leading, spacing: 22) {
-            HStack(alignment: .top, spacing: 18) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text(snapshot.eyebrow.uppercased())
-                        .font(.caption2.weight(.bold))
-                        .tracking(3.6)
-                        .foregroundStyle(SoloTheme.gold.opacity(0.88))
+    // MARK: - Welcome Card
 
-                    Text(snapshot.title)
-                        .font(SoloTypography.posterTitle(size: 52, weight: .bold))
-                        .foregroundStyle(SoloTheme.ink)
-                        .lineLimit(2)
-                        .minimumScaleFactor(0.7)
-
-                    Text(snapshot.author)
-                        .font(.caption.weight(.medium))
-                        .foregroundStyle(SoloTheme.muted)
+    private var welcomeCard: some View {
+        VStack(spacing: isCompactHeight ? 20 : 28) {
+            if isCompactHeight {
+                // 横屏：水平排列封面与文字
+                HStack(spacing: 20) {
+                    coverOrSigil
+                    titleBlock
                 }
-
-                Spacer(minLength: 16)
-
-                if isTianjiluVisualEnabled {
-                    welcomeVisualColumn
-                } else {
-                    sigilView
-                }
+            } else {
+                // 竖屏：垂直排列，封面居中
+                coverOrSigil
+                titleBlock
             }
 
-            VStack(alignment: .leading, spacing: 10) {
-                Text(snapshot.headline)
-                    .font(SoloTypography.sceneHeadline(size: 24))
-                    .foregroundStyle(SoloTheme.ink)
-
-                Text(snapshot.detail)
-                    .font(SoloTypography.detail)
-                    .foregroundStyle(SoloTheme.muted)
-                    .lineSpacing(6)
-            }
-
-            HStack(spacing: 10) {
-                signalChip(text: chapterStatusLine, tint: SoloTheme.crimson)
-                signalChip(text: "修仙互动长篇", tint: SoloTheme.jade)
-                signalChip(text: "离线阅读体验", tint: SoloTheme.gold)
-            }
-
-            if isTianjiluVisualEnabled {
-                SoloArtworkCard(
-                    asset: TianjiluArtworkCatalog.welcomeArtifact,
-                    height: 164,
-                    contentMode: .fill,
-                    tint: SoloTheme.gold,
-                    cornerRadius: 18
-                )
-            }
-
-            progressDeck
-
-            VStack(alignment: .leading, spacing: 10) {
-                Text("入局阶段")
-                    .font(SoloTypography.meta)
-                    .foregroundStyle(SoloTheme.gold)
-
-                VStack(spacing: 12) {
-                    ForEach(Array(snapshot.stages.enumerated()), id: \.element.id) { index, stage in
-                        stageRow(stage, index: index)
-                    }
-                }
-            }
+            chapterChip
         }
-        .padding(24)
+        .padding(isCompactHeight ? 20 : 28)
         .background(
             RoundedRectangle(cornerRadius: 26, style: .continuous)
                 .fill(Color.black.opacity(0.34))
@@ -167,65 +123,85 @@ struct SoloWelcomeView: View {
         .animation(.easeOut(duration: 0.65), value: appear)
     }
 
-    private var welcomeVisualColumn: some View {
-        VStack(spacing: 12) {
-            ZStack(alignment: .bottomLeading) {
-                SoloBundledArtworkImage(
-                    resourceName: TianjiluArtworkCatalog.welcomeCover.resourceName,
-                    contentMode: .fill
-                )
-                .frame(width: 126, height: 188)
-                .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 22, style: .continuous)
-                        .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
-                )
-
-                LinearGradient(
-                    colors: [
-                        Color.clear,
-                        Color.black.opacity(0.75),
-                    ],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-                .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("当前卷面")
-                        .font(.caption2.weight(.bold))
-                        .tracking(1.2)
-                        .foregroundStyle(SoloTheme.gold)
-                    Text(TianjiluArtworkCatalog.welcomeCover.subtitle)
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(SoloTheme.ink)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                .padding(12)
-            }
-
-            HStack(spacing: 8) {
-                sigilView
-                    .scaleEffect(0.78)
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("天机录残页")
-                        .font(.caption2.weight(.bold))
-                        .foregroundStyle(SoloTheme.gold)
-                    Text("欢迎页先亮起命书与卷面，再退入正文。")
-                        .font(.caption2)
-                        .foregroundStyle(SoloTheme.muted)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-            }
-            .frame(width: 126, alignment: .leading)
+    @ViewBuilder
+    private var coverOrSigil: some View {
+        if isTianjiluVisualEnabled {
+            coverImage
+        } else {
+            sigilView
         }
     }
 
+    private var coverImage: some View {
+        let coverWidth: CGFloat = isCompactHeight ? 88 : 120
+        let coverHeight: CGFloat = isCompactHeight ? 130 : 178
+
+        return SoloBundledArtworkImage(
+            resourceName: TianjiluArtworkCatalog.welcomeCover.resourceName,
+            contentMode: .fill
+        )
+        .frame(width: coverWidth, height: coverHeight)
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.10), lineWidth: 1)
+        )
+        .shadow(color: SoloTheme.gold.opacity(0.20), radius: 16, x: 0, y: 8)
+    }
+
+    private var titleBlock: some View {
+        VStack(spacing: isCompactHeight ? 6 : 10) {
+            Text(snapshot.eyebrow.uppercased())
+                .font(.caption2.weight(.bold))
+                .tracking(3.6)
+                .foregroundStyle(SoloTheme.gold.opacity(0.88))
+
+            Text(snapshot.title)
+                .font(SoloTypography.posterTitle(
+                    size: isCompactHeight ? 36 : (isRegularWidth ? 56 : 46),
+                    weight: .bold
+                ))
+                .foregroundStyle(SoloTheme.ink)
+                .lineLimit(2)
+                .minimumScaleFactor(0.7)
+
+            Text(snapshot.headline)
+                .font(SoloTypography.detail)
+                .foregroundStyle(SoloTheme.muted)
+                .lineSpacing(4)
+                .lineLimit(2)
+
+            Text(snapshot.author)
+                .font(.caption.weight(.medium))
+                .foregroundStyle(SoloTheme.muted.opacity(0.7))
+        }
+        .multilineTextAlignment(isCompactHeight ? .leading : .center)
+        .frame(maxWidth: .infinity, alignment: isCompactHeight ? .leading : .center)
+    }
+
+    private var chapterChip: some View {
+        Text(chapterStatusLine)
+            .font(.caption2.weight(.bold))
+            .tracking(0.4)
+            .foregroundStyle(SoloTheme.crimson)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 7)
+            .background(
+                Capsule(style: .continuous)
+                    .fill(SoloTheme.crimson.opacity(0.12))
+            )
+    }
+
+    // MARK: - Sigil
+
     private var sigilView: some View {
-        ZStack {
+        let outerSize: CGFloat = isCompactHeight ? 72 : 100
+        let innerSize: CGFloat = isCompactHeight ? 60 : 84
+
+        return ZStack {
             Circle()
                 .strokeBorder(SoloTheme.gold.opacity(0.16), lineWidth: 1)
-                .frame(width: 88, height: 88)
+                .frame(width: outerSize, height: outerSize)
                 .scaleEffect(pulse ? 1.05 : 0.94)
                 .animation(.easeInOut(duration: 1.4).repeatForever(autoreverses: true), value: pulse)
 
@@ -238,104 +214,20 @@ struct SoloWelcomeView: View {
                     ),
                     style: StrokeStyle(lineWidth: 3, lineCap: .round)
                 )
-                .frame(width: 76, height: 76)
+                .frame(width: innerSize, height: innerSize)
                 .rotationEffect(.degrees(orbit ? 360 : 0))
                 .animation(.linear(duration: 7).repeatForever(autoreverses: false), value: orbit)
 
             Image(systemName: branding.ornamentSymbol)
-                .font(.title3.weight(.light))
+                .font(isCompactHeight ? .callout.weight(.light) : .title3.weight(.light))
                 .foregroundStyle(SoloTheme.gold.opacity(0.86))
         }
     }
 
-    private var progressDeck: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Text("命局进度")
-                    .font(SoloTypography.meta)
-                    .foregroundStyle(SoloTheme.gold)
-                Spacer()
-                Text("\(Int(snapshot.progress * 100))%")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(SoloTheme.warmInk)
-            }
-
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule(style: .continuous)
-                        .fill(Color.white.opacity(0.08))
-                    Capsule(style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [SoloTheme.crimson, SoloTheme.gold, SoloTheme.jade],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: max(12, geo.size.width * snapshot.progress))
-                }
-            }
-            .frame(height: 6)
-
-            Text(activeStageText)
-                .font(SoloTypography.detail)
-                .foregroundStyle(SoloTheme.warmInk)
-                .lineSpacing(5)
-        }
-        .padding(18)
-        .soloPanel(.hero, prominence: 0.14)
-    }
-
-    private func stageRow(_ stage: SoloWelcomeStage, index: Int) -> some View {
-        let isComplete = snapshot.progress >= stage.progressThreshold
-        let isActive = activeStageIndex == index
-        let tint = isComplete ? SoloTheme.jade : (isActive ? SoloTheme.gold : SoloTheme.muted)
-
-        return HStack(alignment: .top, spacing: 12) {
-            ZStack {
-                Circle()
-                    .fill(tint.opacity(isComplete ? 0.18 : 0.10))
-                    .frame(width: 32, height: 32)
-                Image(systemName: isComplete ? "checkmark" : (isActive ? "sparkles" : "circle"))
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(tint)
-            }
-
-            VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Text(stage.title)
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(isComplete || isActive ? SoloTheme.ink : SoloTheme.muted)
-                    Spacer()
-                    Text(stageStatusLabel(isComplete: isComplete, isActive: isActive))
-                        .font(.caption2.weight(.bold))
-                        .foregroundStyle(tint)
-                }
-
-                Text(stage.detail)
-                    .font(.caption)
-                    .foregroundStyle(SoloTheme.muted)
-                    .lineSpacing(4)
-            }
-        }
-        .padding(14)
-        .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Color.white.opacity(isActive ? 0.07 : 0.03))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .strokeBorder(
-                            isActive ? SoloTheme.gold.opacity(0.20) : Color.white.opacity(0.05),
-                            lineWidth: 1
-                        )
-                )
-        )
-    }
+    // MARK: - Loading Footer
 
     private var loadingFooter: some View {
         VStack(spacing: 12) {
-            countdownBar
-
             HStack(spacing: 7) {
                 ForEach(0..<3, id: \.self) { index in
                     Circle()
@@ -351,8 +243,8 @@ struct SoloWelcomeView: View {
             }
 
             Text(countdownSeconds > 0
-                 ? "命局正在接入，\(countdownSeconds) 秒后自动进入正文。"
-                 : "命局已就绪，即将进入正文。")
+                 ? SoloLocalization.format("命局正在接入，%d 秒后自动进入正文。", countdownSeconds)
+                 : SoloLocalization.localized("命局已就绪，即将进入正文。"))
                 .font(.caption)
                 .foregroundStyle(SoloTheme.muted)
                 .multilineTextAlignment(.center)
@@ -364,71 +256,11 @@ struct SoloWelcomeView: View {
         .animation(.easeOut(duration: 0.55).delay(0.2), value: appear)
     }
 
-    /// 底部倒计时进度条
-    private var countdownBar: some View {
-        GeometryReader { geo in
-            ZStack(alignment: .leading) {
-                Capsule(style: .continuous)
-                    .fill(Color.white.opacity(0.08))
-
-                Capsule(style: .continuous)
-                    .fill(
-                        LinearGradient(
-                            colors: [SoloTheme.gold, SoloTheme.crimson],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .frame(width: max(4, geo.size.width * countdownProgress))
-                    .animation(.linear(duration: 1.0), value: countdownSeconds)
-            }
-        }
-        .frame(height: 4)
-        .padding(.horizontal, 40)
-    }
-
-    private var countdownProgress: CGFloat {
-        let total = 5.0
-        let elapsed = total - Double(countdownSeconds)
-        return CGFloat(min(1.0, max(0.0, elapsed / total)))
-    }
-
-    private func signalChip(text: String, tint: Color) -> some View {
-        Text(text)
-            .font(.caption2.weight(.bold))
-            .tracking(0.4)
-            .foregroundStyle(tint)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 6)
-            .background(
-                Capsule(style: .continuous)
-                    .fill(tint.opacity(0.12))
-            )
-    }
+    // MARK: - Helpers
 
     private var chapterStatusLine: String {
-        guard snapshot.generatedChapterCount > 0 else { return "章节接入中" }
-        return "\(snapshot.generatedChapterCount) 章内容已接入"
-    }
-
-    private var activeStageIndex: Int {
-        snapshot.stages.firstIndex(where: { snapshot.progress < $0.progressThreshold }) ?? max(snapshot.stages.count - 1, 0)
-    }
-
-    private var activeStageText: String {
-        if snapshot.progress >= 1 {
-            return "命局已经就绪，可以直接踏入当前这一局。"
-        }
-        guard snapshot.stages.indices.contains(activeStageIndex) else {
-            return "命局已经就绪，可以开始体验。"
-        }
-        return "当前阶段：\(snapshot.stages[activeStageIndex].title)"
-    }
-
-    private func stageStatusLabel(isComplete: Bool, isActive: Bool) -> String {
-        if isComplete { return "完成" }
-        if isActive { return "进行中" }
-        return "待接入"
+        guard snapshot.generatedChapterCount > 0 else { return SoloLocalization.localized("章节接入中") }
+        return SoloLocalization.format("%d 章内容已接入", snapshot.generatedChapterCount)
     }
 
     private var isTianjiluVisualEnabled: Bool {

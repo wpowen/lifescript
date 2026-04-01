@@ -1,0 +1,652 @@
+{
+  "id": "天机录_ch0475",
+  "book_id": "天机录",
+  "number": 475,
+  "title": "협정 체결",
+  "is_paid": true,
+  "next_chapter_hook": "맹약의 먹물이 아직 마르지 않은 때, 천기록 제7페이지가 갑자기 현현되었으며, 그 혈자는 마치 천도지안이 비웃는 것처럼——천기(陈机), 제7예언자, 네 죽음의 기한은 이미 정해졌다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0475_001",
+        "content": "금단 초기의 위압이 실체처럼 천기 체내에서 솟아올라 주변 영광을 교란시켰다. 그는 눈을 약간 가늘게 뜨며 체내의 물결치는 영력을 느꼈다——이는 운명 공명의 선물이며, 천기록에 대한 보상이기도 했다. 전각 안의 대중들은 각기 다른 표정을 짓고 있었으며, 기뻐하는 자도 있었고, 경계하는 자도 있었으며, 영연(凌渊)의 눈동자 깊은 곳에서는 일순간의 음험이 스쳐 지나갔다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_002",
+        "character_id": "char_lingyuan",
+        "content": "천기 사숙의 금단 돌파를 축하한다. 이러한 기연은 참으로 하늘이 천청종을 보장하는 것이로다.",
+        "emotion": "虚伪的欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_003",
+        "content": "영연의 미소는 정교한 가면과 같았다. 천기는 뚫어지게 보았다——가면 아래는 숨기지 않은 탐욕과 셈갈림이 있다. 이 늙은 문주가 이미 어떻게 이 '바둑돌'의 가치를 마지막 한 방울까지 짜내고, 버림받으면 찌꺼기처럼 내팽개칠 것인지 계산하고 있을 것이다. \"문주 사숙에게 감사드립니다.\" 천기는 예를 갖추어 공손히 꾸벅했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_004",
+        "character_id": "char_yeqing",
+        "content": "정도의 예의倒是完备하다. 그러나 영 문주, 우리의 시간은 많지 않다——천기록 공명의 기운은 이미某些不当惊动之人을惊醒시켰을 것이다.",
+        "emotion": "冷淡的催促"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_005",
+        "prompt": "맹약 체결을 앞두고, 영연의 위선과 한열의 적의가 공존하며, 천기는 맹약을 수호하는 동시에 이 두 '불청객'을 압박해야 한다——응답 전략을 선택하라:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiaojin",
+            "text": "영연 압박, 실력 과시",
+            "description": "금단 초성의 위압이 영연 압박에 딱 좋다——누가 이 바둑판의 주인인지, 누가 이용당하는 바둑돌인지 알게 하라.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "부분 실력 노출",
+            "visible_reward": "영연의 경계심이 더욱 깊어져, 감히 가벼운 움직임도 하지 못한다",
+            "risk_hint": "过早暴露实力可能引起更多势力警觉",
+            "process_label": "威压试探",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaojin_001",
+                  "content": "천기는 담담하게 미소 지으며, 금단 초성의 위압이 조수처럼 영연에게 밀려갔다. 노문주의 미소는 굳어버렸고, 옷자락이 바람 없이 펄럭이며 이마에 잔잔한 땀이 배어 나왔다. \"문주님, 안색이 좋지 않으신 것 같습니다만?\" 천기의 목소리는 온화하며, 배려之意가 넘쳤다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaojin_002",
+                  "character_id": "char_lingyuan",
+                  "content": "무사하다……무사하다, 다만 아까 영력 소모가 너무 컸을 뿐이다.",
+                  "emotion": "强撑颜面"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊已敲打"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "敲打凌渊",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tiaohan",
+            "text": "한열 무시, 기개 과시",
+            "description": "한열은 그저 머리简单的 광부일 뿐, 천기의 눈길은 더욱 거대한 바둑판에 두어야 한다——편见她气度不屑의 기개를 보여라.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能激化韩烈敌意",
+            "visible_reward": "在场众人见识陈机的气度与格局",
+            "risk_hint": "한열이当面发难할 수 있다",
+            "process_label": "冷眼相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiaohan_001",
+                  "content": "천기는 한열을 애초에 보지조차 않았으며, 담담히 연청에게 말했다: \"연성녀, 맹약의 일이 긴요하니, 어떤 곡arious小丑은气度不应计较.\" 한열의 얼굴은 붉은 돼지간처럼 물들었고, 양 주먹을 꽉 쥐며 힘줄이 부풀어 올랐다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiaohan_002",
+                  "character_id": "char_hanlie",
+                  "content": "천기! 기다려라!",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无视韩烈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "无视韩烈",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_lianggui",
+            "text": "양쪽 모두得罪稳健推进",
+            "description": "맹약 체결이 당면 과제이지, 이러한 때에枝外生枝할 필요 없다. 큰 일을 먼저 처리하고, 사怨은 나중에 계산하자.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "错过立威时机",
+            "visible_reward": "盟约签订更加顺利，各方都能保持表面和谐",
+            "risk_hint": "显得软弱，后续可能被更多势力轻视",
+            "process_label": "息事宁人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_lianggui_001",
+                  "content": "천기는 가볍게 끄덕이며, 느긋하게 맹약 서책 앞으로 걸어갔다. 영연과 한열이 서로 바라보며, 서로의 눈에서 실망을 보았다——이 기회에 천기의底线을 떠보려 했는데, 이废物竟如此沉得住气.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳健推进"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "稳健推进",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_006",
+        "content": "맹약 서帛는 천년 고단목으로 만든長案 위에 펼쳐져 있었으며, 금분으로 쓴 문자가 초불 빛 아래 반짝였다. 이 협의는 정마 양도가 천 년 동안 지속해온 대립 구도를 깨뜨릴 것이다——그리고 그を書く筆者는 천기다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_007",
+        "character_id": "char_yeqing",
+        "content": "천기 공자,：请罢. 성종那边, 本座已经斡旋妥当. 只要这边签订, 协议即刻生效.",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_008",
+        "content": "천기는 영毫筆을 들어올렸고, 붓끝은 서帛 위에 떠 있었다. 이一笔将决定未来数十年天下格局의走向. 그는 깊이 숨을 들이쉬며, 체내 천기록의 기운이 은은히 순환하여 붓끝의 금분과 미묘한 공명을 일으켰다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_009",
+        "prompt": "落笔之前, 陈机还可以添加最后一条款——这既是他的私心，也是他为妹妹陈念留下的后手。选择你要添加的条款：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_tiannian",
+            "text": "保护陈念条款",
+            "description": "将寻找并保护陈念列为盟约优先事项，任何签约方不得伤害她——这是陈机最大的软肋，也是他布局的核心。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露自己弱点",
+            "visible_reward": "陈念安全获得正魔双方背书",
+            "risk_hint": "有心人会借此要挟",
+            "process_label": "亲笔添加",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tiannian_001",
+                  "content": "천기는 붓끝을 돌려, 맹약末尾에 작은 글자 한 줄을 덧붙였다: \"가입各方은陈念寻找 및 안전 보장 의무가 있다.\" 영연의 눈썸이 살짝 찡그려졌으나, 반대하지 않았다——이 조항은 오히려 천기에 대한 경멸을 더했다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tiannian_002",
+                  "character_id": "char_yeqing",
+                  "content": "（낮은 목소리로）천기 공자倒是念旧.放心, 성종那边本座亲自盯着.",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念保护条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保护陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_tianji",
+            "text": "천기록 공유 조항",
+            "description": "要求各方共享天机录研究成果，看似大方实则让陈机掌握了信息筛选权——给什么、给多少，全由他说了算。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要定期\"分享\"天机录信息",
+            "visible_reward": "陈机成为信息唯一出口，掌控所有情报流",
+            "risk_hint": "可能引发某些人对天机录的觊觎",
+            "process_label": "巧妙措辞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_tianji_001",
+                  "content": "\"각국은 천기록 연구 성과를 공유할 수 있다.\" 천기의 붓끝이 '공유'二字에 잠시 멈췄고, 입꼬리가 미묘하게 올라갔다. 이 두 글자에는 큰 의미가 있다——누가 말했겠으나, 공유라하여 선택적으로 줄 수 없다고?",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_tianji_002",
+                  "character_id": "char_lingyuan",
+                  "content": "共享……好一个共享. 천기 사숙果然深谙此道.",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录共享条款已添"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录条款",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_fengxian",
+            "text": "无需添加，保持简洁",
+            "description": "盟约已经足够完善，额外的条款只会徒增变数。信任是合作的基础，过度的防备反而显得小家子气。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "放弃一条布局",
+            "visible_reward": "显得光明磊落，赢得更多信任",
+            "risk_hint": "后续若有人违约，缺乏制约手段",
+            "process_label": "干净利落",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "谋略",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_fengxian_001",
+                  "content": "천기는 붓끝을 거두었고, 서帛 위의 문자가 영력의 촉동 아래 서서히 광택을 발했다. \"필요없습니다, 맹약이 성립되면 各凭诚信뿐입니다.\" 그의 말투는 담담하여, 정말로 권모술수를不屑하는磊落之人 같았다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "无额外条款"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "保持简洁",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_010",
+        "content": "천기가落笔한 순간, 맹약 서帛은 갑자기 찬란한 금빛을 발했다. 문자들은 살아난 듯 서帛 위를 한 바퀴 돌며 날아다니더니, 각 가입各方에게 날아가——영연, 한열, 연청, 그리고 천기本人 각자 한 분씩 쥐었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_011",
+        "character_id": "char_yeqing",
+        "content": "되었다. 천 년未曾之盟约, 오늘 너와 내가见证했다.",
+        "emotion": "感慨"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_012",
+        "content": "바로 이때, 천기 가슴의 천기록残页가 발끝하게 발진했으며, 금단 위압을 초월하는 웅대한 기운이 서적에서 쏟아져 나왔다. 전각 안의 모든 사람이 동시에 변색——이 기운은 천기에 속한 것이 아니라, 신비로운 제7페이지에서 온 것이었다!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0475_013",
+        "prompt": "천기록 제7페이지 현현, 천기는 전대未有的压迫감을 느꼈다——이는 천도지안의 사망 선언이다! 대중 앞에서 어떻게 이 이상을 대응할 것인가:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0475_yanxia",
+            "text": "当场展示，化危为机",
+            "description": "既然藏不住，不如大方展示。用天道之眼的威胁来巩固盟约，让正魔双方都意识到他们的共同敌人有多可怕。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "暴露更多天机录秘密",
+            "visible_reward": "盟约更加稳固，各方对陈机依赖加深",
+            "risk_hint": "可能招来天道之眼的直接注视",
+            "process_label": "坦然展示",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yanxia_001",
+                  "content": "천기의 표정은 변함없었다. 그는 천기록残页를 꺼내었으며, 금빛 속의 제7페이지文字이 선명하게 보였다: \"제7예언자, 네 죽음의 기한은 이미 정해졌다.\" 현장의 대중들은 한바탕 식은땀을 흘렸으며, 영연의 안색이 유독 빛났다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_yanxia_002",
+                  "character_id": "char_hanlie",
+                  "content": "이는 무슨 의미인가? 천도지안이 너를 죽이려 하는가?",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录第七页已展示"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "化危为机",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_yinhua",
+            "text": "以退为进，示弱博同情",
+            "description": "装出一副被天道之眼威胁的可怜模样，激发在场之人的保护欲——谁会防备一个随时可能死去的可怜虫呢？",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能被某些人轻视",
+            "visible_reward": "更低的姿态换来更高的信任度",
+            "risk_hint": "装过头会显得虚伪",
+            "process_label": "隐忍不发",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_yinhua_001",
+                  "content": "천기는 쓴웃음을 짓으며, 残页를 품에 넣었다. \"诸位见笑, 陈某不过是天机录选中的一枚棋子，随时都可能被丢弃。\" 그의 말투에는 자조가 있었으나, 영연의 눈에서 스쳐지나간杀意를 포착했다——이 늙은 여우果然上钩했다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "示弱成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "以退为进",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0475_xiaorong",
+            "text": "轻描淡写，一笔带过",
+            "description": "\"不过是天机录的一点小把戏，让诸位见笑了。\"用轻描淡写的态度掩盖这惊天秘密，让在场之人摸不清虚实。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能错过震慑众人的机会",
+            "visible_reward": "保持神秘感，让各方更加忌惮",
+            "risk_hint": "夜清可能看穿陈机的伪装",
+            "process_label": "若无其事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0475_result_xiaorong_001",
+                  "content": "\"不过是 천기록의 작은 장난일 뿐,诸位见笑了.\" 천기의 말투는 담담하여, 그 혈자文字이 대수롭지 않은 바람에 불과하다고 여겼다. 천기록残页의 광채가 은은히 거두어져 고요에 돌아갔다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0475_result_xiaorong_002",
+                  "character_id": "char_yeqing",
+                  "content": "（낮은 목소리로, 천기만 들림）천기 공자好演技. 본座倒是看看, 이 '장난'이 얼마나 오래 갈지.",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轻描淡写"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "轻描淡写",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_014",
+        "content": "전각 내 분위기가 수息凝滞한 후, 영연이 먼저 침묵을 깨뜨렸다. 그는 수염을 쓰다듬으며 웃었다: \"천기 사숙은 천기록의 호호를 입었고, 연성녀의大力相助까지 있으니, 참으로 하늘이 뽑은 인물이다. 이盟约签订之后, 우리 천청종 상하 반드시全力配合하겠습니다.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0475_015",
+        "character_id": "char_hanlie",
+        "content": "哼!别得意太早, 天道之眼要杀的人，从来没有好下场！",
+        "emotion": "不甘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_016",
+        "content": "한열이 옷소매를 접어而去하며, 그 발소리가 광활한 대전에 울렸다. 연청은意味深长地看了 천기一眼,随即化作一道 검은 연기되어 허공 속으로消散했다. 천기는 그 자리에 서서, 손가락으로 품 속의 천기록残页를 문질렀다——제7페이지의 혈자가 여전히 그의 의식을 굽히고 있었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_017",
+        "content": "영연이 천기 옆으로 걸어와 그의 어깨를 톡톡 두드렸다. \"사숙,老夫在一日，便没人能动你放心.\"话音은 온화하나, 그 힘에는 은근한 경고가 실려 있었다. 천기는 꾸벅 예를 올렸다: \"문주 사숙께 감사드립니다.\"——두 사람이 웃으며 마주했고, 각자鬼胎를 품었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_018",
+        "content": "대중이散去한 후, 천기는 홀로 전각中央에 섰다. 그는 천기록을 꺼내어, 천천히 떠오르는 제7페이지를 응시했다. 혈자 아래, 또 하나의金色小字가 떠올랐다: \"사망 카운트다운: 4칠4십구일.\" 천기의 입꼬리가 냉소적으로 올라갔다——천도지안이 공포로 그를 무너뜨리려 한다?未免太天真하다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0475_019",
+        "content": "49일, 충분하다. 천기는 천기록을 품에 넣고,大殿을大步走出去.盟约已成, 정마 양도의格局将被彻底改写. 그리고 그, 이曾经的废物杂役弟子, 마침내天下棋盘의正中央에 섰다. 천도지안의 사망宣告?不过是另一场博弈的开端罢了.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

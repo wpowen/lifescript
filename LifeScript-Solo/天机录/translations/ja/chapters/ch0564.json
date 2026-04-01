@@ -1,0 +1,448 @@
+{
+  "id": "天机录_ch0564",
+  "book_id": "天机录",
+  "number": 564,
+  "title": "究極の賭け",
+  "is_paid": true,
+  "next_chapter_hook": "太子太師は陳機の「遺体」が龍脈の爆発で灰と化すのを眼睁睁と見つめ、得意の笑みを浮かべていた――しかし、その焦げた躯壳の下で、真実は一体何なのだろう？",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0564_001",
+        "content": "太子太師の足音が第七層の通路に反響し、歩を進めるたびに大鼓を叩くように石壁に砂埃を落とし続けた。Chen Jiは陳念の手を握りしめ、指先は白く浮き上がりながらも岩のように安定していた。禁地第七層の龍脈核心はすぐそこまで迫り、水色の光が穹頂に流れ、Chen Jiの平静な面容を明滅させていた。これが彼が生涯で仕組んだ最後の一局の棋――勝てば兄妹は天辺で別れ、負ければ万劫不复となる。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_002",
+        "character_id": "char_chenji",
+        "content": "念念、聞いて。龍脈核心の下三尺のところに封印の裂け目がある。それが体内の鍵 共鳴点だ。私はそこに「涅槃仮死陣」を布置する。陣が活性化した瞬間に、すぐに龍脈の力で核心を引き引爆しろ――覚えろ、破壊するわけではなく、血脈と完全に融合させるのだ。",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_003",
+        "content": "陳念の瞳 微かに震え、涙の跡がまだ乾いていない顔に恐惧の色が浮かんだ。口を開いたが、Chen Jiの一喝で黙らされた。その眼差しには半分の迷いもなく、ただ全てを彼女に託す决死の覚悟だけがあった。十二年、彼女は聖宗の牢獄で何度も兄との再会を夢見ていた。しかし再会の代償竟って、彼が命をかけて戦う姿を見守ることになるとは思わなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_004",
+        "character_id": "char_chenian",
+        "content": "お兄さん……本当にいいの？あの陣が起動したら、天機録でも生死を覗くことはできないの。私は……怖い……",
+        "emotion": "颤抖"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_005",
+        "prompt": "太子太師の足音がますます近づき、Chen Jiは有限の時間内に布置を完成させねばならない――最後の信頼を陳念にどう传达すればいいのだろう？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0564_005_a",
+            "text": "兄の名において誓いを立てる",
+            "description": "Chen Jiは額を陳念の額に押し当て、血を誓い、この戦の後必ず彼女と再会を約束した。生死に関わらず、この絆は断たれない。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天命値を5点消費（誓いの力）",
+            "visible_reward": "陳念は「血脈共鳴」状態を獲得、龍脈融合時の反撃から保護される",
+            "risk_hint": "そもそも貴重な天命値を消費するため、Chen Ji此举将消耗关键资源",
+            "process_label": "陈机额头抵住陈念额头，低声起誓",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_005_a_001",
+                  "character_id": "char_chenji",
+                  "content": "我Chen Ji、血を誓いて、この戦の後、私がどこにいよう、存亡に関わろう、必ず与你を再会する。若し此の誓いに違えば、天道に捨てられる。",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_005_a_002",
+                  "content": "一滴の精血がChen Jiの指先から滲み、陳念の眉心に落ち、淡い金の紋章となった。その紋章は一闪して消えたが、陳念に前所未有的暖流を感じさせた――それは兄の血脈の温度であり、十二年分の思念の重みだった。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_005_b",
+            "text": "利益共同体として彼女を説得する",
+            "description": "Chen Jiは冷静に局势を分析した：彼が仮死して身を隠す以外に、陳念が龍脈の承認を正式に得る方法是なく、二人とも本当に棋局から抜け出せる。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "感情共鳴がやや弱い",
+            "visible_reward": "陳念は「理性覚醒」状態を獲得、計画実行時に更加冷静で正確になる",
+            "risk_hint": "感情絆が欠けると実行時に躌躇が生じる可能性がある",
+            "process_label": "陈机以谋士的口吻快速分析局势",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_005_b_001",
+                  "character_id": "char_chenji",
+                  "content": "念念、お前は龍脈の鍵、私は天機の残頁。我々はそもそもこの棋局の核心の駒だった――でも私が死んだら、お前は駒ではなくなる。変数が、真の局面を破る唯一の方法だ。",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_005_b_002",
+                  "content": "陳念の瞳に一丝の明悟が闪めた。十二年の禁固は彼女に忍耐を教えたが、兄のように運命を掌中で弄ぶことは決して教えなかった。彼女は深く息を吸い込み、力強く頗いた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_006",
+        "content": "足音が急に速まった。Chen Jiの袖から数十枚の陣旗が飛び出し、龍脈核心の周りに複雑な紋路を描いた。それは「涅槃仮死陣」の核心陣眼――天機録残頁の力を導き、使用者の気配を完全に世上から抹消する。彼の口元には冷笑が浮かんだ：太子太師は彼の死を見たい？那就让让他看个够。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_007",
+        "character_id": "char_chenian",
+        "content": "お兄さん、陣旗は埋め終わった……龍脈核心感应到了，它是私にある。",
+        "emotion": "紧绷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_008",
+        "content": "Chen Jiは猛然と顔を上げ た。第七層入口の石門が轟然と爆発し、漫天の塵埃の中から、一つの身影が逆光に立っていた。太子太師は玄黒の官袍をまとい、顔は無表情ながら、口元に浮かぶ玩味ある笑みが上位者の傲慢さを露わにしていた。彼の視線がChen Jiと陳念を扫過し、龍脈核心に落ち、两只の囲われた獣を見るようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_009",
+        "character_id": "char_hanlie",
+        "content": "Chen Jiよ、本座はお前が逃げると思っていた。想不到、天機伝人と称する者が、この絶地に死にに来たとはな？",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_010",
+        "prompt": "太子太師が現れ、Chen Jiの計画にはもう退路がない――この最後の段階で、彼は如何に応酬すべきか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0564_010_a",
+            "text": "挑発法：請君入甕",
+            "description": "Chen Jiは冷笑を漏らし、太子太師を嘲笑した：彼は天道棋盤上の駒に過ぎず、ここに来た理由さえ知らない。相手陣の核心に導き、陳念に起動时机爭取させた。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "完全にChen Jiの予謀を暴露した",
+            "visible_reward": "太子太師は激怒し、陣の範囲に入り、陳念は完全な起動時間を獲得した",
+            "risk_hint": "強敵を激怒させることで制御不能な変数を引发する可能性もある",
+            "process_label": "陈机以嘲讽之态激怒太子太师",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_010_a_001",
+                  "character_id": "char_chenji",
+                  "content": "駒は結局駒だ。お前は棋手だと思うのか？いや、お前にはこの棋がどんなものかさえわからない。过来，让我教教你什么叫真正的布局。",
+                  "emotion": "轻蔑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_010_a_002",
+                  "content": "太子太師の顔 色は一変し、眼中に殺意が渦巻いた。袖を振り、滔天の威圧が山脈が崩れるように押し寄せ、全身が黒芒となってChen Jiに向かって突進した――正に陣の核心範囲に落ちていった。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "阵法启动就绪"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_010_b",
+            "text": "劣勢を装う：敵を深く誘い込む",
+            "description": "Chen Jiはわざと恐怖を見せ、陳念を引いて龍脈核心の後ろに退き、囲われた獣の闘い姿态を見せた。陰で陳念に钥匙を密かに起動させ、最後の时机を待った。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "陳念は注意力分散で键を起動するため、意図が露呈する可能性がある",
+            "visible_reward": "太子太師の警戒が解け、Chen Jiはより从容な起動时机を獲得した",
+            "risk_hint": "演技が見破られれば絶境に陷る",
+            "process_label": "陈机以惊恐之态掩饰真正意图",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0564_result_010_b_001",
+                  "character_id": "char_chenji",
+                  "content": "た、太師大人……私は此地に误って入っただけで、冒涜の意思は決してありません！お願いですから、私と妹に一条の生路を開けください！",
+                  "emotion": "惊恐"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_010_b_002",
+                  "content": "Chen Jiは密かに陳念の手を背後に押しやり、指先で彼女の掌に素早く符文を描いた。陳念は心に通じ，微微に光る左手を袖で隠した。太子太師は目を細め、獲物の绝望を鑑賞しているようだった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "钥匙激活中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_011",
+        "content": "Chen Jiはゆっくりと手を上げ、掌に古びた残頁が浮かんだ。天機録の気配在这一刻毫无保留地释放，与龍脈核心产生共鳴。第七層 전체 空間の歪み始め、水色の光に金の裂け目が混じり、天穹が裂けたようだった。太子太師の顔 色微変したが、后退はしなかった――彼はそれを圍われた獣のあがきだと思っていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_012",
+        "character_id": "char_chenji",
+        "content": "太師大人知りたいですか、なぜ私がここを選んだのか？因为这里……是这方天地唯一不受天道注视的角落。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_013",
+        "content": "言葉が落ち、陣が起きた。Chen Jiの足元の紋路が轟然と輝き、金赤の炎が地底から噴出し、彼整个人を飲み込んだ。同時に、陳念は仰天して清い叫び声を上げ、彼女体内 の龍脈钥匙が完全に覚醒した――一道の輝ける光柱が彼女的天霊蓋から冲天而起、龍脈核心へと直撃した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0564_014",
+        "character_id": "char_hanlie",
+        "content": "お前――！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0564_015",
+        "prompt": "龍脈の爆発が迫り、Chen Jiの仮死陣は既に激活された――この最後の瞬間、彼心中に浮かんだのは何だろう？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0564_015_a",
+            "text": "陳念への期待",
+            "description": "Chen Jiは炎の中で陳念を振り返り、最後の託孤を伝える：生き延びろ、強くなれ、そして私に代わってこの天道究竟が何かを見てみろ。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "意識は仮死の中で完全に眠りに落ちる",
+            "visible_reward": "陳念は「兄の遺志」永続BUFFを獲得し、戦力+20%、天道之眼の感知力が大幅に向上した",
+            "risk_hint": "仮死中は完全に活動能力を失う",
+            "process_label": "陈机在烈焰中最后望向陈念",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_015_a_001",
+                  "content": "烈焰が身を焚く中、Chen Jiが見たのは陳念が必死に龍脈の力を催动する身影だった。彼は心中で黙々と念じた：念念、今日からお前はもう谁的駒でもない。お前は自分だけの執棋者だ。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假死完成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0564_015_b",
+            "text": "太師への無言の嘲笑",
+            "description": "Chen Jiは炎の中で口元を歪め、口形で太子太師に四文字を告げた：お前は負けた。相手の惊恐的目光の中で、涅槃の炎が全てを飲み込んだ。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "嘲笑という後手のタイミングを失った",
+            "visible_reward": "太子太師は自己懐疑に陥り、「心魔」の種が植えられ、後の物語触发点が解除された",
+            "risk_hint": "あまりに挑衅过多れば对方が理性的ではない行動を取る可能性がある",
+            "process_label": "陈机以口型无声嘲讽太子太师",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0564_result_015_b_001",
+                  "content": "Chen Jiは口を開き、無声に四文字を描写した。太子太師の瞳が縮み――それは「負けた」だった。彼は阻止하려としたが、龍脈の力が既に空間全体を完全に封鎖していた。彼は那道身影眼睁睁地看着在金赤の烈焰中灰になるのを見守るしかなかった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假死完成",
+              "心魔种子"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_016",
+        "content": "龍脈核心が炸裂した。恐るべき時空裂隙がまるで太古の巨獣が開いた大口のように、第七層全体を飲み込んだ。太子太師は衝撃波で数丈も吹き飛ばされ、袖は完全に破れ、成り行き風景だった。そして彼の目の前で、Chen Jiの姿は既に金赤の烈焰の中で完全に消散し、わずかな残滓さえ残っていなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_017",
+        "content": "太子太師ゆっくりと立ち上がり、灰まみれだったが眼底の得意を隠しきれなかった。彼は仰天大笑し、崩壊する空間の中に笑い声が反響した：「天機传人？不过如此！机关算尽，终究难逃一死！哈哈哈哈――」彼の笑い声はぴたりと止まった。因为彼看见了陳念――あの本来同样的く時空裂隙に飲み込まれるはずだった少女が、光柱の中央に立ち、毫も損なわずに見つめていたからである。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0564_018",
+        "content": "陳念の瞳には先前の怯懦はもうなく、年龄を超えた冰冷がrive取而代之していた。彼女を取り巻く龍脈の気が流れ、核心と溶け合い、まるでこの天地の真の主人のようだった。太子太師の心头一跳，一股不祥の予感涌上心头――何かを見落としているようだ。しかし改めて四周を確認し、Chen Jiが確かに死んだことを確認した後、その不安はまた得意に洗い流された。彼は思った：Chen Jiは死んだ、私の地位を脅かす天才はとうに存在しない。そして彼の目の当たり見た「死」は、後の論功の資本となるのだ。太子太師は破れた衣袍を整え、満足な笑みを浮かべた。彼が知らないのは、灰になった躯壳の下で、本当のChen Jiは既に涅槃仮死陣によりこの世界から逃げ去っていた。彼の勝利は、ただ别の棋局の始まりに過ぎなかった。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

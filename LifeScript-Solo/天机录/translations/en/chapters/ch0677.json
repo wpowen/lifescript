@@ -1,0 +1,631 @@
+{
+  "id": "天机录_ch0677",
+  "book_id": "天机录",
+  "number": 677,
+  "title": "Imperial orders are like mountains",
+  "is_paid": true,
+  "next_chapter_hook": "On the city wall, a bamboo slip carved with the Chen family's old emblem lay quietly between the tiles—in three days, the complete map of the Tianqing Sect's secret passage would arrive as promised. Su Qingyao's trust had finally bridged three years of trials and pursuit.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0677_001",
+        "content": "At midnight, candlelight flickered in the Grand Tutor's study. Chen Ji placed the encrypted secret report on the candlestick; flames licked the silk's edge, revealing tiny characters: the Xuanwu Sect's true target was the Grand Tutor's residence in the imperial capital, not the Tianqing Sect. A slight smile curved his lips as he tossed the report into the charcoal brazier, watching it turn to ash. Those fools of Xuanwu Sect thought their intricate scheme was flawless, but they never realized the true chessboard had long been in his hands.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_002",
+        "character_id": "char_chenji",
+        "content": "Come in.",
+        "emotion": "冷峻"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_003",
+        "content": "A black-clad assassin materialized silently outside the door, kneeling on one knee. Chen Ji drew three golden tokens from his sleeve, issuing orders one by one: First, order General Han Biao of the Northern Defense to immediately lead three thousand elite cavalry south, setting an ambush at the Qingzhou Pass—upon encountering any Xuanwu Sect convoy, detain them first regardless of circumstances. Second, convey to His Highness the Crown Prince that tonight's memorial has been drafted; tomorrow morning court, please present the 'Border Army Reassignment' memorial. Third—he paused, a ruthless glint flickering in his eyes—let those associated with the Second Prince know that tonight's visitor to the Grand Tutor's residence is of extraordinary status.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_004",
+        "content": "The assassin took the golden tokens and vanished into the night like a shadow. Chen Ji stood with hands clasped behind his back at the window, gazing at the scattered lights toward the imperial city. The Tianji Record in his chest felt faintly warm. He knew that every layout rewriting fate consumed his precious Heavenly Fate. But this game, he had to win. The fools of Xuanwu Sect wanted to assassinate him under the pretense of 'punishing Tianqing'—so he would have the border army seal their retreat routes under the name of 'escorting the emperor.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_005",
+        "character_id": "char_chenji",
+        "content": "In the end, the chess game of this world must be broken by open, righteous schemes.",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_006",
+        "content": "The next morning, in the golden hall of the imperial city, all officials stood solemnly. The Crown Prince presented the 'Border Army Reassignment' memorial as planned, with earnest wording and sufficient reasons—Northern Barbarians were stirring, and border army reassignment was precaution against potential disaster. The Minister of Revenue from the Second Prince's faction furrowed his brows, about to step forward and refute, when the Grand Tutor's attendant had already stealthily handed him a secret letter. Upon unfolding it, his face turned deathly pale.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(The Minister of Revenue was terrified: How does this Grand Tutor know about my secretly embezzling military funds? And the evidence is so detailed!)",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_008",
+        "content": "The morning court concluded in an eerie silence. Not a single person from the Second Prince's faction opposed; the imperial decree for border army reassignment passed smoothly. That afternoon, three thousand Northern Defense elite cavalry broke camp and marched urgently south toward Qingzhou Pass. When news reached the Xuanwu Sect's main camp, Han Lie was drinking celebratory wine in high spirits.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0677_choice01",
+        "prompt": "The Xuanwu Sect's vanguard had entered Qingzhou territory. Chen Ji needed to make a decision: strike first to detain them preemptively, or let them go to catch the bigger fish when the main force takes the bait?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c1_扣押",
+            "text": "Strike first and detain",
+            "description": "Immediately order the Northern Defense Army to detain the Xuanwu Sect vanguard—startling the snake, but establishing prestige",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Reveal strength; the Xuanwu Sect main force may retreat",
+            "visible_reward": "Significant deterrent effect; the Second Prince's faction will become even more wary",
+            "risk_hint": "May startle the snake, alerting the Xuanwu Sect main force",
+            "process_label": "先发制人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c1_1",
+                  "content": "The Northern Defense Army's iron cavalry appeared at the pass like dark clouds pressing down. The Xuanwu Sect vanguard was caught off guard, over a hundred men instantly surrounded. Upon hearing the news at the main camp, Han Lie flew into a rage, shattering his wine cup—the useless Grand Tutor actually dared to strike first!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "玄武先锋被扣"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c1_放行",
+            "text": "Let them go to catch a bigger fish",
+            "description": "Let the vanguard pass through; wait specifically for the Xuanwu Sect main force to step into the trap, eliminating them all at once",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "The vanguard may pass along information; must ensure the main force remains unaware",
+            "visible_reward": "If successful, can completely reverse the situation and gain fame throughout the realm",
+            "risk_hint": "If news leaks, all efforts may come to naught",
+            "process_label": "请君入瓮",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c1_2",
+                  "content": "The vanguard passed smoothly through the pass, proceeding unimpeded toward the imperial capital. Han Lie sneered: As expected of a useless Grand Tutor, even the border army doesn't dare act resolutely. He had no idea that death's invitation had already been laid out ahead, waiting for him to walk into the trap.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "等待主力"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c1_观望",
+            "text": "Quietly observe and wait for changes",
+            "description": "First observe how the Crown Prince's faction and Second Prince's faction react, using this opportunity to probe the bottom lines of all parties",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the best opportunity to strike",
+            "visible_reward": "Striking after seeing the situation clearly gives higher odds of victory",
+            "risk_hint": "Various forces may take the opportunity to set up their schemes",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c1_3",
+                  "content": "The situation in the imperial capital suddenly became tense. The Crown Prince faction and the Second Prince's forces openly confronted each other over the border army reshuffle, with impeachment memorials against the Grand Tutor flying to the emperor like snowflakes. Chen Ji sat calmly in the Grand Tutor's mansion, turning a deaf ear to all of this—what he was waiting for was precisely this chaos.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "静观其变"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_009",
+        "content": "While undercurrents surged among various factions, a slender figure stood quietly in the dark alley outside the Grand Tutor's mansion. Su Qingyao, dressed in plain-colored combat attire with a thin veil over her face, finally stopped her three-year-long search. She gazed at the heavily guarded residence, complex light flickering in her eyes—the废物杂役 from back then had now become the Crown Prince's Grand Tutor, second only to one person under heaven.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_010",
+        "character_id": "char_suqingyao",
+        "content": "(She thought to herself: Three years have passed. I've approached the truth countless times, only to have him deflect me each time. This time, I won't give him another chance.)",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_011",
+        "content": "However, just as she prepared to reveal herself, a death warrior emerged from the Grand Tutor's mansion, carrying a brocade box in his hands. The death warrior walked straight toward the dark alley where she was hiding, knelt on one knee, and raised the box high above his head.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_012",
+        "character_id": "char_chenji",
+        "content": "Junior Sister Su, long time no see. The item in the box is the truth I promised to investigate for you three years ago—the full account of the Tianqing Sect's annihilation.",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_013",
+        "content": "Su Qingyao shuddered throughout her body. Three years ago, she had entrusted Chen Ji to secretly investigate that bloodbath, though she hadn't believed he could uncover anything at the time. Now the truth had indeed been exposed, and the one who had uncovered it was precisely the target she had been pursuing all along. She slowly opened the brocade box, a yellowed scroll resting quietly inside, bearing the unmistakable words: Written by Ling Yuan.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0677_choice02",
+        "prompt": "Su Qingyao finally revealed herself, and the truth surfaced. Chen Ji needed to decide how to handle this complex relationship: to draw her into the chess game, or maintain a superficial distance?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "c2_坦诚",
+            "text": "Sincere Invitation",
+            "description": "Show Su Qingyao part of the Tianji Record's abilities and formally invite her to become an ally",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Exposing the existence of the Tianji Record may bring greater dangers",
+            "visible_reward": "Gain a powerful ally, Su Qingyao's favorability increases significantly",
+            "risk_hint": "The Tianji Record's aura may be detected by the Eyes of Heavenly Dao",
+            "process_label": "以诚相待",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0677_result_c2_1",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao took the scroll, her fingertips trembling slightly. When she read the words 'Ling Yuan colluded with the Demonic Path and used others as a blade,' a cold light suddenly flashed in her eyes. After a moment, she tucked the scroll into her chest, looked up and stared directly at Chen Ji: What are your terms?",
+                  "emotion": "震动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶结盟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶加入阵营",
+            "branch_route_id": null
+          },
+          {
+            "id": "c2_试探",
+            "text": "Continue Testing",
+            "description": "Maintain distance, only provide partial information, to test Su Qingyao's true intentions",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the opportunity to form an alliance, Su Qingyao may leave",
+            "visible_reward": "Maintain an air of mystery while observing her stance",
+            "risk_hint": "Su Qingyao may lose patience",
+            "process_label": "欲擒故纵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0677_result_c2_2",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao remained silent for a long while, tucked the scroll into her chest, but did not leave. She gazed at Chen Ji, her voice cold and clear: Chen Ji, exactly who are you? I've investigated for three years yet can't even grasp the corner of your robe.",
+                  "emotion": "困惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "保持距离"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c2_驱逐",
+            "text": "Ruthless Expulsion",
+            "description": "Warn Su Qingyao not to interfere in this matter and forcibly expel her from the Grand Tutor's mansion grounds",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose a potential ally, Su Qingyao's favorability plummets",
+            "visible_reward": "Protect the secret of the Tianji Record, reduce variables",
+            "risk_hint": "Su Qingyao may become a potential threat",
+            "process_label": "划清界限",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0677_result_c2_3",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao was driven out of the dark alley, standing at the end of the long street, looking back at the Grand Tutor's residence. She clenched her fists, her knuckles turning white. Chen Ji... You think this can get rid of me? Three years ago when you saved me, I told you—you owe me the truth.",
+                  "emotion": "不甘"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "驱逐苏青瑶"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_014",
+        "content": "Just as the capital was in turmoil, thunderous news arrived from the north—the Xuanwu Sect's main force of thirty thousand troops, under the pretext of 'eradicating demonic path remnants,' had crossed Qingzhou and advanced toward the capital! Han Lie personally led the vanguard, bristling with menace, declaring his intention to purge treacherous ministers. The court was shaken, and the Second Prince's faction seized the opportunity to impeach the Grand Tutor for 'waging reckless wars' and 'provoking a sect war.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(The Eye of Heavenly Dao trembles slightly in the Void, as if observing all of this. It sensed that familiar aura—the chess piece bearing the Tianji Record was finally beginning to rise.)",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_016",
+        "content": "Yet Chen Ji smiled. He unfolded the Tianji Record Fragment, and images of the next three hours appeared—one by one. The Xuanwu Sect's main force would be ambushed at a place called Luoyan Slope, and the commanding officer was his secretly placed chess piece: the Shadow Guard Leader serving under the Crown Prince. And Han Lie, at this very moment, was walking proudly at the forefront, completely unaware of the death approaching him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_017",
+        "content": "He closed the fragment, a cold light flickering in his eyes. The fools of the Xuanwu Sect thought their diversion tactics could deceive him. Little did they know, he had foreseen this very day a month ago—every foresight from the Tianji Record consumed his Heavenly Fate. But this game, he had to win.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0677_choice03",
+        "prompt": "The Xuanwu Sect's main force was already in the trap, and Chen Ji needed to decide how to close the net: should he have the Crown Prince's Shadow Guards directly annihilate them, or deliberately let some escape to create greater panic and intimidate the Second Prince?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "c3_全歼",
+            "text": "Annihilate all",
+            "description": "Order the Crown Prince's Shadow Guards to completely annihilate the Xuanwu Sect's main force at Luoyan Slope, deciding the outcome in a single battle",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May intensify contradictions between sects and the dynasty",
+            "visible_reward": "The Xuanwu Sect suffers heavy losses, Han Lie dies, reputation reaches its pinnacle",
+            "risk_hint": "May provoke other sects to unite in retaliation",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c3_1",
+                  "content": "On Luoyan Slope, the Crown Prince's Shadow Guards descended like divine soldiers. The Xuanwu Sect's main force was caught off guard, defeated and scattered. Han Lie was surrounded, fighting to exhaustion, and ultimately captured alive. When news reached the capital, all court officials were stunned—the Grand Tutor deemed worthless actually possessed such means!",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "玄武宗大败"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c3_放生",
+            "text": "Deliberately release survivors",
+            "description": "Release part of the Xuanwu Sect's remnant soldiers, letting them带回恐惧 to the sect, creating greater deterrent effect",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "The Xuanwu Sect may return for revenge",
+            "visible_reward": "Terror is more powerful than killing, the Second Prince's faction will be completely intimidated",
+            "risk_hint": "Releasing a tiger back to the mountains brings endless future troubles",
+            "process_label": "以恐惧为刃",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c3_2",
+                  "content": "The setting sun glowed like blood, corpses littered Luoyan Slope. The Crown Prince's Shadow Guards deliberately opened an escape route, and dozens of remnant soldiers escaped with their lives. They scrambled toward the direction of Xuanwu Sect, telling everyone they met: the army of the Grand Tutor's residence came from hell! Fear spread like a plague through Xuanwu Sect.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "恐惧蔓延"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c3_生擒",
+            "text": "Capture Han Lie alive",
+            "description": "Show mercy but capture Han Lie alive, using him to coerce Xuanwu Sect for greater benefits",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Need to divide forces to guard prisoners",
+            "visible_reward": "Holding the Xuanwu Sect's number one genius, can exchange for countless bargaining chips",
+            "risk_hint": "Han Lie may be rescued by others",
+            "process_label": "以人质为质",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0677_result_c3_3",
+                  "content": "When Han Lie was dragged to the Grand Tutor's Residence bound with ropes, the face that once showed unbridled arrogance was now full of humiliation and resentment. Chen Ji looked down at him from above and said indifferently: 'Han Genius, do you still remember how you humiliated me on the Martial Arena all those years ago?'",
+                  "emotion": "冷酷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈被俘"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_018",
+        "content": "On the same night Han Lie was thrown into the prison, a special visitor arrived at the Grand Tutor's Residence. Su Qingyao did not choose to leave; instead, she had been observing from the shadows for an entire day. When she saw the chess game Chen Ji had laid out with thunderous手段, the last trace of doubt in her heart finally dissipated. This man was far more terrifying than she had imagined—and far more worthy of following.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_019",
+        "content": "She quietly left a bamboo slip engraved with the old Chen Family emblem on the city wall. Inside the bamboo slip was the complete map of Tianqing Sect's secret passages that she had collected over three years of traveling the world—this was the greatest sincerity she could offer Chen Ji, and also proof of her choice to trust him. Three days later, this map would appear on the desk of the Grand Tutor's Residence. And she would formally become a key piece in Chen Ji's chess game.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0677_020",
+        "character_id": "char_suqingyao",
+        "content": "(She silently said in her heart: Chen Ji, this round, I'm betting on you to win.)",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_021",
+        "content": "The imperial capital was deep in night, with scattered lights. Chen Ji stood alone by the window, gazing at the waning moon in the sky. The Tianji Record in his arms was slightly scorching, as if warning him—every layout that rewrites destiny is pushing him toward a deeper abyss. But at this moment, his eyes held only absolute calm. Ling Yuan, Xuanwu Sect, the Second Prince, the Eyes of Heavenly Dao... all enemies would eventually be ground to dust in his chess game. And Su Qingyao's addition made this game even more magnificent.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0677_022",
+        "content": "Just then, a carrier pigeon landed on the windowsill. Chen Ji removed the thin tube tied to the pigeon's leg and unfolded the note inside. It contained only eight characters: 'Heavenly Secrets initially revealed, the imperial decree is like a mountain.' He smiled faintly and reduced the note to ashes. The chess game has begun, and there is no regret in placing pieces. And the true storm has just begun...",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

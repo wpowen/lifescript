@@ -1,0 +1,656 @@
+{
+  "id": "天机录_ch0666",
+  "book_id": "天机录",
+  "number": 666,
+  "title": "天機笑談",
+  "is_paid": true,
+  "next_chapter_hook": "陳機のそれは手中缓缓消散する残魂を見て、口元の笑みが徐々に凍りついていく：「今度こそ、お前を救うのは俺だ。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0666_001",
+        "content": "虚空の中、崩れかけた天機録は淡い光を放ち、Chen Tianmingの姿は風の前の灯のように、倒れかけながらも消えることを拒んでいる。彼は目の前にある己と七分似た顔を見て、ふと笑った。「何そんなところに突っ立っている？」Chen Tianmingは穏やかならぬ口調で言ったが、声音には几分の虚弱が滲んでいる、「お前の父親はまだ完全に死んでないのだから、ちゃんとこちらへ来て見せろ。」陳Jiはゆっくりと歩み寄り、その慣れ親しんだようなそしていつの間にか陌生な身影に視線を落とし、喉が何かで詰まったようになった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_002",
+        "character_id": "陈天命",
+        "content": "「うーん、背が伸びたな」Chen Tianmingは彼を上下から見回すと、急に眉を寄せた、「少し痩せたし、顔も黒くなった——天青宗の食事はこんなに悪いのか？それとも、また霊石を酒と取り替えたのか？」",
+        "emotion": "打趣"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_003",
+        "character_id": "char_chenji",
+        "content": "陳Jiの口角がぴくりと痙攣した、「お父さん、残魂が崩れかけているのに、まだ俺の食事の問題を気にしているんですか？」彼は深々と息を吸い込み、込み上げてくる情绪を押さえ込んだ、「第四頁の天機録のこと、説明してくれませんか？さっきの選択問題——」",
+        "emotion": "无奈"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_004",
+        "character_id": "陈天命",
+        "content": "「焦るな！」Chen Tianmingは手を振って彼を遮った、「残魂はそう簡単には消えない、お前の父親はせめて一刻は保つぞ。」彼の視線は少し柔らかくなった、「十几年压在心底的话、今日ようやく直接言える。」",
+        "emotion": "温和"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0666_choice001",
+        "prompt": "突然の温情の瞬間に、陳Jiは選択を迫られた……",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0666_opt001a",
+            "text": "真摯に応える",
+            "description": "父親が清醒な难得な機会を活かし、天機録のことを明確に問い詰める",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "父子間の温情の瞬間を見逃す",
+            "visible_reward": "重要な情報を手にいれる",
+            "risk_hint": "あまりに打算的に映る可能性がある",
+            "process_label": "陈机选择直奔主题",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001a_1",
+                  "character_id": "char_chenji",
+                  "content": "陳Jiは真摯な表情で言った：「お父さん、天機録第四頁のことを最初から明確にしてください。これはあなたの回来能否回来密切相关——」",
+                  "emotion": "认真"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001a_2",
+                  "character_id": "陈天命",
+                  "content": "Chen Tianmingは溜息をつき、視線には複雑な光が闪烁した：「お前の性格は若い頃の私と瓜二つだ、本当に焦り性だ。よし、よし、まずは私の話を听完させてくれ。」",
+                  "emotion": "无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt001b",
+            "text": "温もりに寄り添う",
+            "description": "难得な父親の清醒を活かし、この来之不易な父子时刻をゆっくりと味わう",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "時間が差し迫っており、質問し终わらない可能性がある",
+            "visible_reward": "父子間の絆が深まる",
+            "risk_hint": "時間を無駄にする恐れがある",
+            "process_label": "陈机决定先叙旧",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001b_1",
+                  "character_id": "char_chenji",
+                  "content": "陳Jiは深く息を吸い込み、ためらうことなく胡坐をかいた：「わかった、でも慢慢聞いてくれ、この一生で父の唠叨を聞く機会は多くないからな。」",
+                  "emotion": "放松"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001b_2",
+                  "character_id": "陈天命",
+                  "content": "Chen Tianmingの目元に涙が浮かんだ：「この不行儀な坊主……よし、今日は思う存分話を聞かせてやる！」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt001c",
+            "text": "皮肉を言って反击する",
+            "description": "父がまだ冗談を言う気力があれば嘴巴毒さで競おう",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "父親を激怒させる可能性がある",
+            "visible_reward": "对话の主導権を握る",
+            "risk_hint": "もっと惨めな目に合うぞ",
+            "process_label": "陈机选择嘴炮反击",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001c_1",
+                  "character_id": "char_chenji",
+                  "content": "陳機が眉を上げる。「食事が粗い？お前が私を天青宗に雑役として放り込んだ時、私の食事のことなんか心配していたか？」",
+                  "emotion": "嘲讽"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001c_2",
+                  "character_id": "陈天命",
+                  "content": "陳天命は一瞬呆了随即哈哈大笑，然后突然大笑起来。「いい息子よ、口も上手くなったな！当年、私が一句话に泣き出した小僧、今も頂嘴している。」",
+                  "emotion": "好笑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_001c_3",
+                  "content": "陳機の顔はわずかに赤くなるが、仍未強がりを装う。「那是沙子迷眼！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_005",
+        "character_id": "陈天命",
+        "content": "「砂が目に入った？」陳天命は前後上下に笑い、残り魂さえ震えている。「あの時はまだ五歳で、中庭で泣きながら『爹は悪者』と一時間も叫び続けた、その声は天井の瓦を震わせた！」",
+        "emotion": "大笑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_006",
+        "character_id": "char_chenji",
+        "content": "陳機の額には青筋が立ち、「爹！您是残魂，不是说书的！能不能讲点正经的？比如天机录第四页到底是什么——」",
+        "emotion": "崩溃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_007",
+        "character_id": "陈天命",
+        "content": "「正经的？」陳天命は真剣な表情で頷き、「正经的就是——第四页天机录，是你娘用命换来的。」",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_008",
+        "content": "空気が凍りついたような瞬間。陳月は現実離れした存在に衝撃を受け、酒に酔った時だけ語られる母親の名前が、意識の奥底に猛然と押し寄せてきた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_009",
+        "character_id": "陈天命",
+        "content": "「君の母親は普通人ではなかった」と陳天命は低く言った。「她是上古预言者一脉最后的血脉。天机录选中了她，也选中了我——但预言者的宿命，是成为天道的棋子。她不甘心，所以……」",
+        "emotion": "沉痛"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_010",
+        "character_id": "char_chenji",
+        "content": "陳月は突然顔を上げ、眼中には精気が闪烁し、计算済み表情を完全に恢复した。「所以她把力量封入第四页，留给我？第四页既是击败天道之眼的关键，也是让您复生的钥匙——因为那是她的心血，蕴含着您当年的气息。」",
+        "emotion": "冷静分析"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_011",
+        "content": "陳天命は満足げに息看着儿子。「你比我想象中还要聪明。不愧是我陳天命的種。」彼は一拍置いてから重大语气で続けた。「但天道之眼不是那么容易对付的。它已经存在了千万年，吞噬过无数预言者。你若想赢，就必须比我走得更远。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0666_choice002",
+        "prompt": "父親が母亲と天の眼について語るのを聞き、陳月の心は激しく揺れていた。しかし彼の表情は平静を保ち、彼は選択した……",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0666_opt002a",
+            "text": "母亲のことを問い詰める",
+            "description": "父親が主动打开了话题なら、母亲のことすべてを清清楚楚地问清楚べきだ",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "父親の残魂の力を消耗してしまう可能性がある",
+            "visible_reward": "自分の出身と真実を明晰する",
+            "risk_hint": "残魂がそのため加速消散する可能性がある",
+            "process_label": "陈机追问母亲下落",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002a_1",
+                  "character_id": "char_chenji",
+                  "content": "陳月は深く息を吸い込み、「爹、娘她……现在在哪里？真的已经——」",
+                  "emotion": "压抑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002a_2",
+                  "character_id": "陈天命",
+                  "content": "陳天命はしばらく沈黙し、声が擦れた。「她的魂魄……在天道之眼的深处。但如果你能击败它，或许……」",
+                  "emotion": "心痛"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_002a_3",
+                  "content": "陳月の両拳は思わず握り締められたが、その目は万年寒氷のように冷たかった。彼は問い詰めず、ただ心にこの可能性を刻みつけた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt002b",
+            "text": "天の眼に注目する",
+            "description": "母亲のことはとりあえず置き眼前、最も大きな敵は天の眼だ",
+            "satisfaction_type": "谋略爽",
+            "visible_cost": "一時的に個人的感情を棚上げする",
+            "visible_reward": "天の眼に対抗する方法を得る",
+            "risk_hint": "母亲の重要な手がかりを見逃す可能性がある",
+            "process_label": "陈机决定先问正事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002b_1",
+                  "character_id": "char_chenji",
+                  "content": "「陳機の胸の中で渦巻く感情を抑え、声は平静さを取り戻した。「天道之眼……今どこにいる？どれほど強い？」",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002b_2",
+                  "character_id": "陈天命",
+                  "content": "「陳天命が頷いた。「良い質問だ。それはどこにでもあり、どこにも痕跡がない。它は衆生の信念を食粮とし、天命を鎖としている。天機録に選ばれた者は皆、その獲物だ。」",
+                  "emotion": "严肃"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_002b_3",
+                  "content": "「陳機の眉は深く曇り、体内で天機録の気配が巡り、父の言葉を裏付けているかのようだった。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt002c",
+            "text": "「ブラックユーモア」",
+            "description": "「まあ空気が重すぎるなら毒舌で和らげよう——これが彼のいつものやり方だ」",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "「无心にも見えるかもしれない」",
+            "visible_reward": "「雰囲気和らげて 更多情报 获取する」",
+            "risk_hint": "「老爹の逆鱗に触れるかも」",
+            "process_label": "陈机开启嘴毒模式",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002c_1",
+                  "character_id": "char_chenji",
+                  "content": "「陳機は一瞬だけ笑った。「つまりChen家の遺伝子には「天道に狙われる」五文字が刻まれているということか？道理で当年あんな目にあったわけだ。」",
+                  "emotion": "嘲讽"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002c_2",
+                  "character_id": "陈天命",
+                  "content": "「陳天命は一瞬呆けた後、笑って叱った。「このガキ！お前之父好歹好歹も一代の天才だったんだ、どういう口の利き方だ？」」",
+                  "emotion": "哭笑不得"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_002c_3",
+                  "content": "「しかしその目尻にはかすかな笑みが宿った、この子は……まさに彼自身の风范がある。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_012",
+        "character_id": "陈天命",
+        "content": "「もういい、もういい、とChen天命は手を振った。残魂の光がさらに薄くなり、「時間が无几了、長话短く说罢。第四頁の天機録を解封するには三つのものが必要だ——お前の天命値、Chen念の血、そして……お前の母が残した遺物。」",
+        "emotion": "急促"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_013",
+        "character_id": "char_chenji",
+        "content": "「Chen念？」陳機の瞳孔が微かに縮んだ。あの曖昧な身影が脳裏に浮かんだ——多年探し続けても始终结果の出なかった妹、「彼女が聖宗の手にある……您是说她には别的意義があるのですか？」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_014",
+        "character_id": "陈天命",
+        "content": "「Chen念は「天命の鍵」だと、陳天命の声は重かった。彼女の血脈は天道之眼の槛を開けることができる——封印するにも、解放するにも。聖宗のあの馬鹿どもは彼女を支配すれば天道を脅せると思ったが사실は……」",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_015",
+        "content": "「事实上 они才是被天道玩弄于股掌之间。陳機が話を引き取った。眼中には光が闪烁していた。「分かりました、父。もう何かありますか？」彼の语气は穏やかだったが、天機録を握る手は微かに震えていた——それは真実近づく激动でもあり、妹の状況を心配する気持ちでもあった。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_016",
+        "character_id": "陈天命",
+        "content": "「陳天命は息子を見て、急に欣慰した笑みを浮かべた。「なくなった。最後の一言——比我当年更能作死，很好。」彼は手を伸ばし、Chen機の肩を拍了拍がろうとしたが、自分の手は彼の体を貫通してしまうのを見つけた。」",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_017",
+        "content": "「陳機は一瞬固まった。父の残魂の手が自分の肩を貫くのを見つめた。その感触は虚无で掴みようがなかったが、鼻の奥が震えた。深く息を吸い込み、必死に那股情绪を抑え戻した。顔にはまたあの遊び呆けた笑みを浮かべた。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0666_choice003",
+        "prompt": "「消散しようとする父の残魂に向かって、陳機は何を言おうか……」",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0666_opt003a",
+            "text": "「荘重に告别」",
+            "description": "「珍しく正经一会，老爹にちゃんとした告别をしよう」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "「老爹に笑われるかもしれない」",
+            "visible_reward": "「一件心事 了却」",
+            "risk_hint": "「残魂がもっと速く消散するかもしれない」",
+            "process_label": "陈机选择郑重告别",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "陈天命",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003a_1",
+                  "character_id": "char_chenji",
+                  "content": "「陳機がゆっくりと跪き、重々しく三度頭を下げた。「父さん、息子が不孝です这些年让您操心しました。安心してください——必ずChen念連れ戻し、母者も連れて戻ります。」」",
+                  "emotion": "郑重"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003a_2",
+                  "character_id": "陈天命",
+                  "content": "「陳天命は怔住了，眼眶微微泛红，却还是忍不住笑骂：「臭小子，搞这套……」他的声音渐渐变轻，残魂的光芒越来越淡，「记住，你是我陳天命的儿子……谁都不能……」」",
+                  "emotion": "哽咽"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003a_3",
+                  "content": "话音刚落、陳天使命の残魂は風の如く消散し、最後の一筋の温かな気が陳機の周囲を繚绕していた。天機録の第一頁に、かすかに一行の小さな文字が浮かび上がった：『息子よ忘れる勿れ、初心を忘れる勿れ。』",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "父亲的嘱托",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt003b",
+            "text": "毒舌で締めくくる",
+            "description": "温情は二人の父子には向かない，既然如此那就用最陈机的方式告别",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "遗憾を残すかもしれない",
+            "visible_reward": "一貫したスタイルを維持する",
+            "risk_hint": "父親が安らかな最期を迎えられなかったかもしれない",
+            "process_label": "陈机选择毒舌告别",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003b_1",
+                  "character_id": "char_chenji",
+                  "content": "陳機が立ち上がり、膝の埃を払った：「够了够了，知道您还有話が残っている。安心しろ、私がいつ失望させたことがある？」彼は一拍置いて、小さく付け加えた、「…父さん，一路走好。」",
+                  "emotion": "掩饰"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003b_2",
+                  "character_id": "陈天命",
+                  "content": "陳天命は哄笑い、その残魂は笑い声の中で徐々に透けていった：「このガキ…言ったことを忘れるな…天上で見てやる…どんな 짓をするか…」",
+                  "emotion": "欣慰"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003b_3",
+                  "content": "话音刚落、その残魂は完全に虚空中から消散した。天機録は軽く震え、第一頁に新たな文字が浮かび上がった――那是陳天命が残した最后一句话。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003b_4",
+                  "content": "天機録の第一頁に、文字がゆっくりと浮かび上がった：『比我当年更能作的，很好。初心を忘れる勿れ，吾儿。』",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "父亲的嘱托",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt003c",
+            "text": "沈黙で応える",
+            "description": "言葉に表せないこともある，沈黙こそが最良の別れだ",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "冷たいように見えるかもしれない",
+            "visible_reward": "心が平穏を得る",
+            "risk_hint": "最後の交流のチャンスを逃すかもしれない",
+            "process_label": "陈机选择沉默",
+            "stat_effects": [],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003c_1",
+                  "content": "陳機は無言のまま、ただ静かに父の姿が一点点消散していくのを見つめていた。彼の表情は可怕しいほど穏やかで，仿佛在看一件与己无关的事。だが天機録を握る手は強く握りしめ、指先が白くなっていた。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003c_2",
+                  "character_id": "陈天命",
+                  "content": "陳天命は息子の表情を見て、ふと溜息をついた：「お前の性は…あの女と同じだ，言いたいことを胸に秘める。」彼の声は愈来愈轻，「いいことだ。男なら，这样才好。」",
+                  "emotion": "理解"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003c_3",
+                  "content": "残魂が完全に消散的瞬间、陳機はようやく静かに口を開いた：「…理解了。」彼の声は軽いが、前所未有的な坚定さを帯びていた。天機録に、陳天命の文字がゆっくりと浮かび上がり、この沈黙に応えているかのようだった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "父亲的嘱托",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_018",
+        "content": "虚空に静寂が戻る。天機録が放つ淡い光芒だけがそこにあった。陳機はゆっくりと立ち上がり、手の中の残頁を見下ろした。父の言葉はまだ耳に響いている：天命の鍵、天道之眼、母亲的遺物……这一切交织在一起，一个庞大で危険な棋譜を描き出していた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_019",
+        "content": "彼は突然笑った。その笑みには幾分の嘲笑、幾分の自嘲が混じり、旁人が理解できない優しさまで添っていた。「比我更能作？」陳手は独り言のように呟き、天機録を懐にしまった、「爹，您真是…期望过高だ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_020",
+        "content": "彼は虚空を振り返り、目の中に鋭い光芒が闪烁した。聖宗、天道之眼、陳念――全てが彼を待っている。そして今、彼はようやく明確な方向を手に入れた。「第四頁……」陳手は拳を握りしめ、「私が 직접解开する。今度は私があなたたちを救う番だ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_021",
+        "content": "天機録は軽く震え、彼の决心に応えているようだった。第一頁に、陳天命の文字が徐々に消え代わり新的な文字が浮かび上がった――那是第四頁への手がかり，也是父亲が残した最後の贈り物だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_022",
+        "content": "陳機はその文字を見つめ、嘴角に见覚えのある弧を浮かべた。「有意思。」彼は低く呟き、目の中の光芒が愈发鋭くなっていた、「爹、娘、陳念――待っていろ。」そう言い放ち、彼は虚空へと足を踏み入れ、その姿は天機録の光芒の中に徐々に溶け込んでいった、次なる運命の試練を待っていた。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

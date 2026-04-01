@@ -1,0 +1,535 @@
+{
+  "id": "天机录_ch0923",
+  "book_id": "天机录",
+  "number": 923,
+  "title": "「天機剣出ず」",
+  "is_paid": true,
+  "next_chapter_hook": "「魔道の主帅の身影が虚空中にて次第に消散し、天地の間に震える狂笑だけを残した——その笑い声に宿る深意は、Chen Jiの眸光を急遽険悪させた。なぜなら、真の運命の戦いが既に静かに序幕を開いたのだから。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0923_001",
+        "content": "「Ling Yuan老者の声が混沌虚空中にて反響し、抵抗できぬ威圧を帯びていた——二道の意志が僵持する中、天道之眼の超越的注視が愈发濃烈となり、次の瞬間には取り返しのつかぬ天罰がくだされるかのごとき様相を呈していた。Chen Jiは虚空の中に立ち、衣袂が乾いた音を立て、その深い淵のような瞳は恐ろしく平静だった。『運命？』と彼は低くこの二字を繰り返し、嘴角には譏りの弧を描いた。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_002",
+        "character_id": "char_lingyuan",
+        "content": "「（Ling Yuanは手を背に立て、周身の 道韻が河のように流れ、天下を支配する从容さで）「然り、お主の持つ天機録は残巻に過ぎぬ。真の完全之道は、老夫百年の布局の中に蔵されておる。Chen Jiよ、お主一人で天を逆らい運命を変えるなどと思い上がっておるのか？笑止千万なり。」」",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_003",
+        "content": "「Chen Ji闻言那张向来平静的面容上终于浮现出一丝波动——却不是恐惧，而是难以遏制的嘲讽。彼はゆっくりと前進し、一歩一歩が虚空に目に見える波紋を広げた。それは彼の内なる天機録本源が共鳴しているためであった。「百年布局？」彼の声は高くはないが、混沌の咆哮を貫いて明瞭であった、「Ling Yuan先生よ、先生が百年布局の依りどころとしたものは、天機録に選ばれし者によって、一剣にて断たれたではありませんか？」」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「（天道之眼の意志は潮のように汹涌し、万物を取り裁く冷厳さを帶び）「Chen Ji、お主の選択は三界の未来を左右する。運命の安排を受け入れるか——それとも灰と化し消えるか。」」",
+        "emotion": "威压"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0923_choice_001",
+        "prompt": "「天道之眼の威圧とLing Yuanの招募に面对し、Chen Jiは必ず決断を下さねばならぬ——彼の返答は、この運命級の対決の行方を決定つけるであろう。」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0923_正面对抗",
+            "text": "「正面対抗」",
+            "description": "「天機剣を以って運命の連線を正面より斬断し、実力にて己の道は如何なる存在の加護をも要らぬことを証明す」",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "「大量の天命値を消費す」",
+            "visible_reward": "「天機剣の完全形態が現れ、三界が共鳴す」",
+            "risk_hint": "「天道之眼の更なる反噬を引き起こす恐れあり」",
+            "process_label": "拔剑问天",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "名望",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_正面对抗_001",
+                  "content": "「Chen Jiは猛然と頭を上げ、その眼から迸る光芒は天道之眼の注視よりもなお熾烈であった。彼はゆっくりと手を挙げると、虚空に突然一振りの通体晶瑩なる古剣が浮かび上がった——それが天機録本源の具現、天機剣である！剣身上に流れる符文と混沌の力が激しく衝突し、虚空全体が震え続けていた。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_以退为进",
+            "text": "「以退为进」",
+            "description": "「偽りにて提案を受け入れて虎穴に深入りし、実のところ暗中布置して破綻を窺い、一撃必殺の機会を待つ」",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "「Ling Yuanの監視に耐えねばならぬ」",
+            "visible_reward": "「Ling Yuan百年布置の鍵となる情報获得す」",
+            "risk_hint": "「もし見破られれば絶境に陥る」",
+            "process_label": "将计就计",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_以退为进_001",
+                  "content": "「Chen Jiの眸光は微かに輝き、面に微かな『苦悶』の色を浮かべた。Ling Yuanは見て，眼中闪过一抹得意，此为此子终于屈服。然而就在彼が手を伸ばしてChen Jiから差し出された天機録残頁を受け取ろうとした瞬間、Chen Jiの低く伏せられた口元は残酷なほど冰冷な弧を描いていた——この老狐は、ついに罠にかかったのだった。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_威慑",
+            "text": "「威嚇」",
+            "description": "「部分的な天機録の力を展示して相手の畏怖を強い，魔道の主帅を暫定的に退却させ，实力を保存して今後の決戦に備える」",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "「部分的底牌を暴露す」",
+            "visible_reward": "「魔道の主帅に畏怖を生じさせ、百年内の軽挙妄動を遏える」",
+            "risk_hint": "「更なる勢力の觊觎を招く恐れあり」",
+            "process_label": "不战屈人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 400
+              },
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "魅力",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_威慑_001",
+                  "content": "「Chen Jiは剣を抜かず、ただ右手を胸元の天機録の紋様にそっと当てた。一瞬、彼の体内から浩瀚海のような気が溢れ出し、その力の純粋さ、古さにおいて、Ling Yuanの瞳孔は急遽縮小した。彼は一歩後退し、声音震えながら言った：「これは……これは完全なる天機之力?!　お主がなぜ……」」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_005",
+        "content": "天機剣の全身から放たれた光が混沌の虚空を撕裂し、元々汹涌としていた闇の力は、この古剣の前ではまるで紙のように脆かった。Chen Jiは剣を握りしめて立ち上がり、剣身上の天機文字が彼の家系と完璧に共鳴し、まるでこの一剣は元々彼の而生のためのものであったかのように。彼はゆっくりとLing Yuanに近づき、どちらの足取りも押し寄せない威勢を帯びていた。「Ling Yuan先達、汝は私が廃物だと申しましたが？」彼の声は平静で、まさに可怕しかった、「ならば今日、この天下に見せてやる、廃物是如何に汝の言う運命を切り裂くかを」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_006",
+        "character_id": "char_lingyuan",
+        "content": "（Ling Yuanの顔色は激変し、周身の道韻は狂おしく渦巻いていたが、その眼の奥底に潜む恐怖を隠しきれなかった）「不可能だ！天機剣は完全な天機録を必要とする、汝のごとき欠片では――」",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_007",
+        "content": "Chen Jiは彼に言い終わる余地を与えた。天機剣が高く掲げられた刹那、全三界がこの天界を超越する力を感知した——無数の隠居中の老怪物が猛然と目を開け、三大宗門の護山大陣が同時に警告の光を放ち、さらにはTianqing Sectの奥深くの禁地里、某か的人在万年の眠りについていた意志さえも微かに動揺した。Chen Jiは剣を振り下ろし、静かに四文字を吐き出した：「天機——剣出」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_008",
+        "content": "剣気は銀河の如く 쏟らぎ、その瞬間を横切るや、Ling Yuanの百年布局凝聚せる運命の糸は完全に断ち切られた。那些缠绕在陈机身上的因果丝线纷纷崩碎，化作点点星光消散于虚空之中。Ling Yuan惨叫一声，口中喷出一口鲜血，他的脸上写满了难以置信——百年の心血が、一人の「廃物」によって一剣で消滅させられた！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道の眼の意志には珍らしく一丝波动闪过，仿佛对这个结果既意外又满意）「興味深い……万載以来、初めて天罰の下で剣を抜く人間よ。Chen Ji、汝は歴代の予言者よりも狂っている」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0923_choice_002",
+        "prompt": "一剑斩断命运连线后，Chen Ji面对天道の眼的注视与受伤的Ling Yuan，需要决定下一步行动。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0923_追击凌渊",
+            "text": "乗勝追击",
+            "description": "Ling Yuanの重傷に乗じて致命的一撃を加え、この潜伏せる脅威を彻底的に消除する",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "大量の天命値を消費し、天道の眼に干预される可能性がある",
+            "visible_reward": "Ling Yuanの百年修为尽废、Tianqing Sectの隐患彻底的に解除された",
+            "risk_hint": "Ling Yuanには保命の切り札がある可能性がある",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_追击_001",
+                  "content": "Chen Jiの瞳は氷のように冷たく、天機剣は再び掲げられた。しかし剣先がLing Yuanに届こうとする瞬間、虚空に忽然と浩瀚如海の威圧が降り注いだ——天道の眼が手を出した！"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_威慑退敌",
+            "text": "威圧退敵",
+            "description": "天機剣の完全形態で压倒的な力を展示し、Ling Yuanと魔道勢力を強制的に撤退させる",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天機剣の真の実力を暴露する",
+            "visible_reward": "Ling Yuanは倉皇として逃げ出し、三界は震撼し、主角の威望は大いに増す",
+            "risk_hint": "更なる強者の觊觎を招く可能性がある",
+            "process_label": "不战屈人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 500
+              },
+              {
+                "stat": "魅力",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 80
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_威慑_001",
+                  "content": "Chen Jiは追撃せず、天機剣を胸前に構え、剣先は遥遥とLing Yuanに向けた。「消えろ」ただ一字だけを言った、その语调は尘埃を一匹追い払うような平淡さであった。Ling Yuanの瞳孔には屈辱と恐怖交织的光芒が闪烁し、最终的には不甘の怒吼となり、その身影は虚空の裂け目の中へ消えた。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_质问天道",
+            "text": "天道を問い質す",
+            "description": "天道の眼に直接問いを発し、その真の目的と天機録の完全なる真実に迫る",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天道の眼を激怒させる可能性がある",
+            "visible_reward": " ключевую информациюを獲得し、最終決戦に伏線を巻く",
+            "risk_hint": "天道の眼は曖昧な回答をする可能性がある",
+            "process_label": "逆天而问",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_质问_001",
+                  "content": "Chen Jiは剣を収めて立ち上がり、虚空那双超越的眼眸を仰いで見上げた。「天道の眼よ、汝は歴代の予言者を駒として使い、天機録はただの駒の一つに過ぎない」彼の声は虚空に反响し、「ならば教えてほしい——汝の究極の棋局，究竟は何なのか？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_010",
+        "content": "Ling Yuanが倉皇として逃げ去った瞬間、虚空の裂け目から怨毒的声音が伝わってきた：「Chen Ji！老夫を覚えろ！今日の恥、必ず百倍にして返すぞ！」しかし言葉も終わるかに分からぬうちに、一道の剣気が虚空を貫き、その裂け目を粉々に粉砕した。Ling Yuanの悲鸣は混沌の中に反响し、しかしその骨髓に染み込んだ恐怖を隠しきれなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_011",
+        "content": "三界は この瞬間、激しい共鳴を巻き起こした。天青宗内で瞑想中の蘇青瑶は猛然と目を開けた。彼女は那股熟悉而又陌生的気息を感知した——それは確かに陳機だったが，却又与往日那个懦弱的杂役弟子截然不同。彼女の心は激しく揺れ、不安と期待が入り混じっている。魔道聖宗の奥底で、夜清の口元には意味深き微笑みが浮かんだ：「彼はついに隠すことをやめたのか？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_012",
+        "character_id": "char_tiandaozhiyan",
+        "content": "（天道之眼の意志は潮のように引いていくが、最後に意味深き声が伝わってきた）「陳機よ、お前は歴代の予言者たちよりも秀逸だ。だが覚えておけ——天機録が 完全であればあるほど、運命の致命的な反撃はより強くなる。吾は天道の果てで、お前の到来を待っている。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_013",
+        "content": "凌渊的身影が虚空で完全に消散，然而就在所有人都以为这场命运级对决已经落幕之际，一道狂放的笑声が突然混沌の奥底から伝わってきた。那笑声震得整个虚空都在颤抖，中に含む力はさっきの天機剣に丝毫不弱于！「陳機！」那笑声戛然而止，变成了充满狂热と興奮的声音，「天道之眼が直接关注的男だとはな！この一剑、本帥は覚えておくぞ！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0923_014",
+        "character_id": "char_chenji",
+        "content": "（陳機は天機剣を握りしめ、眸の中に一抹の冷厉之色が闪过，但没有追击。他知道、真正的命运之战尚未开始，而现在暴露太多底牌只会让后续の棋局更加被动）",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_015",
+        "content": "魔道主帅の声が虚空に響き続け，玩味と期待を込めている：「今日はただの试探に過ぎない。お前の天機剣は確かに強いが、今の修为では何剑放てる？」笑い声が再び响く、「次に会う時は真の運命の戦いだ届时、本帥が教えてやる——お前の言う選択は、吾がお前に 设定した将棋盤の上での挣扎に過ぎない！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_016",
+        "content": "话音刚落那股狂傲的气息も消散。虚空が徐々に平静を取り戻し、混沌の力が退去し、天道之眼の視線もゆっくりと消えていく。しかし陳機知道、これ只是暴風雨前の宁静。他低头看向手中的天機剣、剣身上的符文正在缓缓暗淡，仿佛方才那一剑已经消耗了它大部分的力量。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_017",
+        "content": "陳機はゆっくりと剣を収めた。那张俊逸的面容上浮现出一抹淡淡的疲弊。「试探？」低声重复了一遍魔道主帅的话，嘴角勾起一抹讥诮の弧度、「その'废物'がどれほどの惊喜を挙げられるか、試させてやる。」虚空の奥底を見上げ，眼中精光一闪、「次に会う時、お前に教えてやる——我陳機の道は、自分で歩くものだ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_018",
+        "content": "魔道主帅的身影が完全に消散后，这场惊天動地の運命級対決がようやく闭幕。三界内では无数の修士が 방금那股力量波动に驚骇不已——彼らは何が起きたか分からなかったが，一位の绝世強者がこの一战で出世し、一剑の威で運命の糸を切り、魔道主帅さえも一時的に退却させたことを知っていた！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0923_choice_003",
+        "prompt": "戦闘が終わり、陳機には次の行動决定が必要だ——消耗を回復して休むか、それとも势いに乗って继续的に布局するか？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0923_休整",
+            "text": "休んで回复する",
+            "description": "天青宗に戻って消耗を回復し、蘇青瑶と相談して今後の計画を立て、後方を固める",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "魔道主帅を追撃する好機を逃すかもしれない",
+            "visible_reward": "蘇青瑶との関係が一層深まり、彼女の信頼と支持を得る",
+            "risk_hint": "凌渊が在这个时候反击してくる可能性がある",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 30
+              },
+              {
+                "stat": "魅力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0923_result_休整_001",
+                  "character_id": "char_suqingyao",
+                  "content": "（蘇青瑶的身影が虚空に现れ，眼中闪烁着复杂的光芒——震惊と担忧、そして抑えきれない骄傲が混在している）「陳機……あなたは私を瞒していたのだね。」",
+                  "emotion": "复杂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0923_追击",
+            "text": "乗势追击",
+            "description": "魔道主帅の気配を追踪し、优势扩大して相手に息つく暇を与えない",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "状态は満タンではなく、リスク极大",
+            "visible_reward": "魔道主帅在天青宗の勢力を彻底的に撃溃し、その百年布局を弱体化させる可能性がある",
+            "risk_hint": "敵の陷阱に落ちる可能性がある",
+            "process_label": "宜将剩勇追穷寇",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 200
+              },
+              {
+                "stat": "天命值",
+                "delta": -40
+              },
+              {
+                "stat": "名望",
+                "delta": 300
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0923_result_追击_001",
+                  "content": "陳機眼中寒光一闪，身形が流光となって魔道主帅が消えた方向へ突進。しかし追擊しようとした瞬間、虚空中无数の禁制光芒が骤然と輝いた——那是早已布置好的陷阱！魔道主帅の狂笑声が再び响起：「陳機、お前认为本帥真的会不留后手吗？哈哈哈！」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_019",
+        "content": "出乎所有人意料的是、陳機面对那足以困殺大能者の禁制大陣、面上竟无丝毫惧色。ゆっくりと右手を挙げ、天機剣が再び掌心に凝聚。「雕虫小技。」淡々と口を開き、剣光一闪，那看似牢不可破の禁制大陣が paperのように崩碎。魔道主帅の笑声戛然而止、黙然片刻后才咬牙切齿地吐出一句话：「良い！とても良い！天機剣があと何剑持つか、本帥は見ていてやるぞ！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0923_020",
+        "content": "笑声渐远，魔道主帅の気配が完全に三界から消えた。陳機は虚空に佇み、衣袂飘飘、まるで战神が降臨したよう。然而只有他自己知道、 방금那一剑已经消耗了他近乎三割の天命值、もしこのような戦闘があと数回続けば、天機録の代価は彼受不了。剣を収めて立ち、目光深邃：「次回は……お前に逃げる機会조차与えぬ。」话音落下、天青宗的方向へ飛び去り、三界に永不灭の传说を残した。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

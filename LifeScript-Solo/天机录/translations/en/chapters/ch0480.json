@@ -1,0 +1,578 @@
+{
+  "id": "天机录_ch0480",
+  "book_id": "天机录",
+  "number": 480,
+  "title": "The Destiny Chess Game Begins",
+  "is_paid": true,
+  "next_chapter_hook": "As Chen Ji takes his first step into the Hall of Heavenly Secrets, the voice of the Eye of Heavenly Dao echoes in his mind: Welcome home, my chess piece.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0480_001",
+        "content": "Imperial City, top floor of the Star-Picking Pavilion.\n\nThe jade slip between the Second Prince's fingertips glows with a cold, eerie light. He stares at the intercepted false intelligence, a mocking curve forming on his lips. \"Chen Ji? Interesting.\" He tosses the jade slip casually onto the table, his voice cold as frost. \"I thought this ant was merely a pawn being used by others. I never expected... he actually wants to use my imperial court's hand to kill Ling Yuan of the Tianqing Sect.\"\n\nHe rises and walks to the window, gazing down at the countless lights below. A chill glints in his eyes: \"Since you want to borrow a blade, let me show you what a true blade looks like. Issue orders to the Shadow Guard, activate the 'Heavenly Fate Lock Key' plan, move against Chen Nian ahead of schedule.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_002",
+        "content": "Meanwhile, in a secret cave at the Tianqing Sect Back Mountain.\n\nChen Ji sits cross-legged at the center of the formation's eye, the Tianji Record floating before his brow. On the fragment, the tenth crack is slowly healing. The moment he opens his eyes, two silhouettes are reflected in his pupils—Ye Qing stands on the left, surrounded by demonic aura yet with a grave expression; Su Qingyao stands on the right, her sword already three inches unsheathed.\n\n\"The intelligence is confirmed.\" Ye Qing speaks first, his voice carrying a rare hint of urgency. \"The imperial court has moved, a full twelve hours earlier than you predicted.\"\n\nChen Ji slowly rises, his expression showing no sign of panic. He tucks the Tianji Record into his sleeve, a faint smile on his lips: \"Early? No matter. Since the chess game has been laid out, every move they make falls within my expectations.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0480_003",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao steps forward, her brow furrowed: \"Chen Ji, how many things are you still hiding from me? Why did the imperial court suddenly target Chen Nian? What exactly did that 'false intelligence' say?\"\n\nShe stares into Chen Ji's eyes, words precise: \"This time, you must speak clearly.\"",
+        "emotion": "质疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_004",
+        "content": "Chen Ji turns around, directly facing Su Qingyao's gaze. In those eyes calm as an ancient well, a ripple finally appears—not panic, but a deeply hidden guilt.\n\n\"Three years ago, I used the Tianji Record to glimpse a corner of the future.\" He speaks slowly, his voice low. \"The Second Prince of the imperial court will use Chen Nian to trigger a catastrophe that could destroy the three major sects. The only way to break the situation is to rescue her before she is fully activated.\"\n\nHe pauses, taking a blood-stained jade token from his sleeve: \"This was my sister's personal item. It carries her Heavenly Fate imprint—as long as this exists, I can sense her approximate location.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0480_005",
+        "prompt": "Su Qingyao presses relentlessly, Ye Qing watches coldly. Chen Ji must decide: reveal all the truth, or only disclose partial information to maintain his strategic advantage?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "full_truth",
+            "text": "Reveal Everything",
+            "description": "Tell Su Qingyao the complete truth about the Tianji Record, including the Heavenly Fate consumption and the prophecy on the ninth page, making her a true insider.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Lose Information Asymmetry Advantage",
+            "visible_reward": "Su Qingyao's trust increases significantly, possibly unlocking the early condition for 'Shared Destiny'",
+            "risk_hint": "Su Qingyao might act recklessly due to worry, or be exploited by enemies",
+            "process_label": "选择信任",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_full_truth_001",
+                  "content": "Chen Ji closes his eyes for a moment. When he opens them again, there's more determination in his gaze. He points to his brow center, and the Tianji Record fragment slowly manifests. \"This is the Tianji Record.\" His voice is soft but clear. \"It can glimpse three hours into the future, but each use consumes five points of Heavenly Fate. And I... have not much Heavenly Fate left to squander.\"\n\nSu Qingyao's pupils contract sharply, her sword sheath clicking shut. She stares at the fragment, unable to speak for a long while. \"So you've been spending your life this whole time...\" Her voice trembles. \"You—you—\"\n\n\"Fool?\" Chen Ji finishes her sentence, a self-deprecating smile on his lips. \"Perhaps. But I have no choice.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0480_result_full_truth_002",
+                  "character_id": "char_yeqing",
+                  "content": "The always silent Ye Qing suddenly speaks, his voice carrying a meaningful tone: \"Chen Ji, aren't you afraid she'll leak the secret?\"\n\nChen Ji turns to look at Ye Qing, asking calmly in return: \"Would you?\"\n\nYe Qing freezes for a moment, then bursts into laughter. In the oscillation of demonic energy, the laughter stops abruptly: \"Good. Bold enough. There aren't many people I, Ye Qing, truly respect. You are one of them.\"",
+                  "emotion": "欣赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_truth"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶得知天机录真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "partial_truth",
+            "text": "Half Truth",
+            "description": "Only tell Su Qingyao about the fact that Chen Nian is imprisoned by the imperial court and the rescue plan, hiding the core abilities of the Tianji Record and the ninth page prophecy.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Su Qingyao may continue to be suspicious",
+            "visible_reward": "Maintain information advantage, Su Qingyao will act according to orders",
+            "risk_hint": "Su Qingyao may misjudge at critical moments due to insufficient information",
+            "process_label": "选择隐瞒",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_partial_truth_001",
+                  "content": "Chen Ji's expression unchanged, his tone flat: \"The Second Prince of the imperial court wants to use Chen Nian to activate some kind of ancient forbidden formation. My intelligence indicates he will complete preparations within seventy-two hours.\"\n\nSu Qingyao's brow furrows deeply: \"So that false intelligence of yours...\"\n\n\"Was the bait.\" Chen Ji nods. \"Letting him think I would move against Ling Yuan first, dispersing his attention. But now that he's acting ahead of schedule, it means half of my layout has been seen through.\"\n\nHe pauses, looking at Ye Qing: \"However, this is also within the plan. The more the Second Prince rushes, the bigger his flaws become.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0480_result_partial_truth_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao stares at Chen Ji for a long while before finally looking away. \"Fine.\" She sheathes her sword, her voice cold. \"I won't pursue this for now. But Chen Ji—\"\n\nShe turns and walks toward the cave entrance, leaving words behind her back: \"If you hide things from me again, I'll disable you myself.\"\n\nYe Qing在一旁轻笑：\"Chen Ji, this girlfriend of yours, the temper is really something.\"",
+                  "emotion": "不满"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_doubt"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶保留疑虑",
+            "branch_route_id": null
+          },
+          {
+            "id": "use_deception",
+            "text": "Turn the Tables",
+            "description": "Instead of directly answering Su Qingyao's questions, counter by asking why she is so insistent on probing, thereby shifting the topic and testing her stance.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May provoke Su Qingyao",
+            "visible_reward": "Probe Su Qingyao's true stance, confirm whether she has been infiltrated by enemies",
+            "risk_hint": "Su Qingyao might think Chen Ji is toying with her, trust decreasing",
+            "process_label": "选择试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_use_deception_001",
+                  "content": "Chen Ji suddenly laughed, his smile so gentle it was chilling. \"Senior Sister Su.\" He walked slowly toward Su Qingyao, his voice soft. \"Three times you got close to the truth, three times I resolved it. By rights, you should have given up long ago.\"\nHe stopped one step away from her, his gaze profound: \"But you refuse to. Why?\"\nSu Qingyao's expression slightly changed, instinctively gripping her sword hilt. Chen Ji raised his hand, signaling she shouldn't be nervous: \"Relax, I bear no ill will. I just want to know— are you investigating me as the Inner Sect Senior Fellow of Tianqing Sect, or... something else.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0480_result_use_deception_002",
+                  "character_id": "char_suqingyao",
+                  "content": "The atmosphere in the cave dwelling suddenly froze.\nAfter a long while, Su Qingyao took a deep breath, her voice low: \"Sect Master Ling Yuan... found me three days ago.\"\nChen Ji's pupils slightly contracted, but his expression remained unchanged. Su Qingyao continued: \"He asked me to monitor you, said you had sinister intentions. But I refused.\"\nShe looked up, meeting Chen Ji's gaze directly: \"I'm not here because of him. Chen Ji, I just want to know— are you someone worth trusting?\"",
+                  "emotion": "坦诚"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_reveals_lingyuan"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶被凌渊接触",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_006",
+        "content": "At this moment, Chen Ji felt a sharp pain in his brow center, and the Tianji Record manifested on its own. On the fragment, the ninth crack suddenly glowed, emanating a strange golden light.\n\"What is this...\" Ye Qing's face changed dramatically, \"the Tianji Record manifesting on its own?\"\nChen Ji reached out to touch that page of the fragment, and golden light instantly pulled his consciousness into a chaotic void. In the void, a voice rang out like a great bell—\n[The Ninth Page Manifests: Three-way game, the chess game has begun.]\n[The Chess Player: The Tianji Record Holder.]\n[The Variable: Heavenly Fate Key.]\n[The Final Outcome: Heaven or Fate, who prevails?]\nThe golden light faded, Chen Ji opened his eyes sharply, his face pale as paper. A trickle of blood slid from his nose—this was a sign of rapid consumption of Heavenly Fate."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0480_007",
+        "character_id": "char_chenji",
+        "content": "\"Chen Ji!\" Su Qingyao caught him, \"Are you alright?\"\nChen Ji waved his hand, wiping away the nose blood, his voice hoarse but calm: \"The Tianji Record... has reached ninety percent completion. The price of the ninth page's manifestation is ten years of Heavenly Fate.\"\nHe looked up at Ye Qing and Su Qingyao, his eyes blazing with a certain fervor: \"But it told me one thing—the final outcome of this chess game is finally beginning to emerge.\"",
+        "emotion": "狂热"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0480_008",
+        "prompt": "The ninth page of the Tianji Record manifested, and the three-way game officially began. Ye Qing brought the final ultimatum from the Holy Sect of the Demonic Path— either Chen Ji personally went to the Demonic Path territory to preside over the overall situation, or the cooperation would be voided. The Righteous-Demonic Alliance faced a choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "go_personally",
+            "text": "Go to the Demonic Path in person",
+            "description": "Accept Ye Qing's proposal, personally go to the Holy Sect of the Demonic Path to meet with various factions, demonstrate sincerity and preside over the overall situation, while also taking the opportunity to investigate the internal situation of the Holy Sect.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Leaving Tianqing Sect may expose movements, giving the Imperial Court an opportunity",
+            "visible_reward": "Obtain the highest authorization from both the Righteous and Demonic Paths, become the sole hub of the alliance, Ye Qing's trust greatly increased",
+            "risk_hint": "Ling Yuan may act behind the scenes, the Imperial Court's Second Prince may take the opportunity to strike at Chen Nian",
+            "process_label": "决定亲往",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_go_personally_001",
+                  "content": "\"I'll go.\" Chen Ji didn't hesitate at all, \"Since it's a Righteous-Demonic Alliance, someone has to stand up and be this hub. Ye Qing—\"\nHe looked at the Demon Path Saint Woman, his eyes burning: \"Your Demonic Path fog can conceal the aura of the Tianji Record, right?\"\nYe Qing nodded, a flash of surprise in her eyes: \"You even calculated this?\"\n\"Not calculated.\" Chen Ji's mouth slightly curved upward, \"It's trust.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0480_result_go_personally_002",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao frowned deeply: \"Are you insane? The Holy Sect of the Demonic Path, what kind of place is that? You're just in Foundation Building—\"\n\"That's why I need you.\" Chen Ji interrupted her, his voice calm, \"Su Qingyao, during my absence, the internal affairs of Tianqing Sect are in your hands. If Ling Yuan makes any move, you have full authority to handle it.\"\nSu Qingyao was stunned, then understood. She took a deep breath and nodded firmly: \"Alright. You... come back alive.\"",
+                  "emotion": "担忧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chenji_leaves_天青宗",
+              "alliance_formed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "正魔联盟正式建立",
+            "branch_route_id": null
+          },
+          {
+            "id": "send_representative",
+            "text": "Send someone to attend on my behalf",
+            "description": "Don't personally take the risk, dispatch Ye Qing as the full-authority representative to the Demonic Path, while staying at Tianqing Sect to preside over the plan to rescue Chen Nian.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "The various factions of the Demonic Path may think there's insufficient sincerity, alliance trust discounted",
+            "visible_reward": "Preserve personal safety, focus on the core mission of rescuing his sister",
+            "risk_hint": "Ye Qing alone facing the internal forces of the Demonic Path may be overstretched",
+            "process_label": "决定留守",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_send_representative_001",
+                  "content": "Ye Qing's face slightly darkened: \"Chen Ji, do you know what those old monsters of the Demonic Path value most?\"\n\"Sincerity?\" Chen Ji said lightly.\n\"Strength.\" Ye Qing snorted coldly, \"A Foundation Building waste like you coming personally, they would think our Demonic Path has declined, needing to rely on numbers. If you don't come... they would think we lack sincerity.\"\nChen Ji was silent for a moment, then suddenly laughed: \"So this is your true purpose. A provocation tactic?\"\nA flash of appreciation appeared in Ye Qing's eyes: \"You really are a smart one. Then I'll be direct—this muddy water, you must wade through yourself. Otherwise, even I can't protect you.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清_激将成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清激将陈机",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_009",
+        "content": "At this moment, hurried footsteps came from outside the cave dwelling.\nA Tianqing Sect disciple stumbled in, his face deathly pale: \"Brother Chen! Something terrible happened! Outside the sect gate... a group of black-clad people appeared outside the gate, the leader holding an Imperial Court golden medal, demanding to see you!\"\nChen Ji frowned. The Imperial Court's people? They arrived faster than he anticipated.\nHe stood up, tidying his clothes, his voice calm as water: \"Who is the visitor?\"\n\"He said...\" The disciple swallowed hard, his voice trembling, \"He said he's the special envoy of His Highness, the Second Prince of the Imperial Court, dispatched to give Brother Chen... a grand gift.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0480_010",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's eyes flashed brilliantly. He exchanged a glance with Ye Qing and Su Qingyao, then walked out.\n\"Chen Ji!\" Su Qingyao gripped her sword hilt, \"Be careful, it might be a trap.\"\n\"Relax.\" Chen Ji looked back, a faint smile curving his lips, \"The Second Prince of the Imperial Court wants to give me a gift, let's see—what kind of gift it is.\"\nHis steps were steady, but his back carried a chilling aura.\n[The chess game has begun.]\n[Come on, make your move.]",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0480_011",
+        "prompt": "The \"grand gift\" brought by the Imperial Court's special envoy shocked everyone—it was an elderly man drenched in blood, barely breathing, reportedly rescued from the Imperial Court's death prison, \"Chen Nian's life-saving benefactor.\" This person held the key clue to Chen Nian's whereabouts, but the condition was—Chen Ji must personally escort him to a certain location.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_gift",
+            "text": "Accept the \"grand gift\"",
+            "description": "Accept this so-called benefactor, escort him to the designated location as requested. Whether it's a trap or not, this may be the only clue to getting close to Chen Nian.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May fall into the enemy's trap",
+            "visible_reward": "Obtained crucial clues about Chen Nian, the 48-hour countdown officially begins",
+            "risk_hint": "The other party may have set a deadly trap orchestrated by the Second Prince",
+            "process_label": "接受试探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_accept_gift_001",
+                  "content": "Outside the Sect Gate, Chen Ji stood with hands clasped behind his back, his gaze falling upon the old man being carried in. The elderly man's breath was faint, yet he stared fixedly at Chen Ji, a complex light flickering in his eyes.\n\n\"Chen Ji?\" The old man's voice was hoarse. \"Indeed... you look exactly like your father.\"\n\nChen Ji's pupils constricted. Father? He had never seen his father.\n\n\"Who are you?\" Chen Ji crouched down, his voice low.\n\nWith difficulty, the old man fumbled out a jade pendant from his chest and stuffed it into Chen Ji's hand: \"Chen Nian asked me to deliver this. She's still alive... but only forty-eight hours remain. After forty-eight hours, the Heavenly Fate Lock Key will fully activate, and then—\"\n\nHe erupted into violent coughing, blood staining his lapels: \"Then, no one will be able to save her.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0480_result_accept_gift_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "Chen Ji gripped the jade pendant tightly until his knuckles turned white. The pendant felt warm in his palm, carved with a simple character \"Nian\" - identical to the one his sister kept in his memories.\n\nAt this moment, a cold voice rang in his mind:\n\n【Interesting.】\n\n【You've finally started taking this seriously, my chess piece.】\n\nChen Ji's hairs stood on end. The Eye of Heavenly Secrets - it was actually contacting him unprompted in this situation.\n\n【Don't be afraid.】That voice carried a strange gentleness. 【You and I are of the same origin. The Tianji Record is, after all, part of me.】\n\n【And you... are merely a chess piece I walk the world with.】",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rescue_timer_start",
+              "tiandaozhiyan_contact"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈念只剩48时辰",
+            "branch_route_id": null
+          },
+          {
+            "id": "reject_gift",
+            "text": "Refuse and Expose",
+            "description": "See through this as an enemy's trap, do not accept the so-called \"grand gift,\" and directly expose the old man's true identity—he may be a death warrior sent by the imperial dynasty, carrying lethal curses or tracking techniques.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May lose the only clue about Chen Nian",
+            "visible_reward": "Demonstrate keen insight before everyone, reputation greatly increased, Ye Qing and Su Qingyao become more trusting",
+            "risk_hint": "If the old man is truly related to Chen Nian, might miss this golden opportunity as a result",
+            "process_label": "选择揭穿",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_reject_gift_001",
+                  "content": "Chen Ji did not take the jade pendant; instead, he stepped back, a mocking smile curling at the corner of his mouth.\n\n\"The imperial dynasty's gifts are beneath my acceptance.\" His voice was not loud, yet it clearly reached everyone's ears. \"This 'benefactor' has at least three tracking techniques embedded in his body, and carries poisonous parasitic insects. Does His Highness the Second Prince send this grand gift hoping to annihilate my entire Tianqing Sect?\"\n\nThe old man's expression changed dramatically; he struggled to speak but was pinned in place by Chen Ji's gaze.\n\n\"Take this person away and 'take good care of him.'\" Chen Ji turned to the group of black-clad men, his tone light. \"As for all of you—\"\n\nHe raised his hand, a sharp sword aura breaking through the air and slicing the token in the leading black-clad man's hand in two: \"Go back and tell the Second Prince, I appreciate his kindness. But if he dares to scheme against my Tianqing Sect again...\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0480_result_reject_gift_002",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji stood with hands clasped behind his back, his robes fluttering in the aftershock of the sword aura.\n\nHis voice was terrifyingly calm: \"I wouldn't mind making the entire dynasty perish for him.\"\n\nThe black-clad men's faces turned deathly pale and retreated in defeat. Ye Qing watched in utter shock, only coming to her senses after a long while, whispering: \"Chen Ji, you have quite the nerve... The dynasty is not to be trifled with...\"\n\n\"I know.\" Chen Ji said indifferently, a cold glint flashing in his eyes, \"But there are some bottom lines that must not be crossed.\"",
+                  "emotion": "冷酷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "皇朝交恶",
+              "tiandaozhiyan_contact"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机与皇朝正面交恶",
+            "branch_route_id": null
+          },
+          {
+            "id": "use_tiandao_contact",
+            "text": "Dialogue with the Heavenly Dao",
+            "description": "Seize the opportunity when the Eye of Heavenly Secrets proactively contacts you, tentatively engage in dialogue with this ultimate entity, attempting to gain more information about the truth of the chess game while remaining vigilant to avoid being controlled by it.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May suffer backlash from the Eye of Heavenly Secrets or have one's intentions seen through",
+            "visible_reward": "Gain crucial information about the three-way confrontation, may find a way to break the deadlock",
+            "risk_hint": "The Eye of Heavenly Secrets is unfathomable; dialogue may expose one's weaknesses",
+            "process_label": "决定对话",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_use_tiandao_contact_001",
+                  "content": "Chen Ji ignored the old man and closed his eyes instead, silently reciting in his heart: \"You said I am a chess piece. Then what is a chess piece's value?\"\n\n【Your value?】The Eye of Heavenly Secrets' voice carried a certain playfulness. 【Lies in your ability to bring this dead game back to life. Throughout the ages, Tianji Record holders have either been crushed into dust by fate or gone mad in despair. Only you... have begun to resist.】\n\nChen Ji sneered in his heart: \"So you allow me to resist?\"\n\n【No.】The voice suddenly turned cold. 【I am merely waiting. Waiting until you are strong enough, strong enough to execute the final plan.】\n\n【Chen Nian—the Heavenly Fate Lock Key. Her existence is precisely to seal me.】",
+                  "emotion": "震惊"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0480_result_use_tiandao_contact_002",
+                  "content": "Chen Ji's entire body stiffened.\n\nSeal? Chen Nian's existence is to seal the Eye of Heavenly Secrets?\n\n【Exactly.】That voice carried a hint of mockery. 【You think the Second Prince imprisons her for what? For power? Foolish. He is merely another chess piece I selected, executing the final ritual.】\n\n【And you, Chen Ji—my inheritor—the sole pivot for breaking the deadlock.】\n\n【In three days, the Celestial Mechanism Palace will open. Then, you and I shall formally meet.】\n\n【Welcome home, my chess piece.】\n\nThe voice faded away. Chen Ji abruptly opened his eyes. He looked down at the jade pendant in his hand—it had, at some point, crumbled into powder.\n\nChen Nian... she is not a prisoner, but the key to sealing the Eye of Heavenly Secrets?",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "tiandao_truth_revealed",
+              "rescue_timer_start"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈念真相：天命锁钥",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_012",
+        "content": "It was late at night. In the cave dwelling of the Tianqing Sect Back Mountain, candlelight flickered.\n\nChen Ji sat alone at the center of the formation, before him spread the transcription of the ninth page of the Tianji Record. The runes on it flickered in and out of visibility, recording a chilling prophecy—\n\n【On the day the Heavenly Fate Lock Key awakens, the war between the Heavenly Dao and fate will reach its final chapter.】\n【Among the three chess players, one shall ultimately perish.】\n【And the winner's name was inscribed at the dawn of chaos.】\n\n\"Three parties...\" Chen Ji murmured to himself, \"the Eye of Heavenly Secrets, the Second Prince of the dynasty, my sister and I.\"\n\nHe closed the fragment, his gaze deep as an abyss: \"The chess game has begun. Whether ahead lies an abyss or a straight path—\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0480_013",
+        "character_id": "char_moxiansheng",
+        "content": "An aged voice emerged from the fragment: \"Young man, you've finally reached this point.\"\n\nMo Xiansheng's remnant soul manifested, gazing at Chen Ji with a mix of relief and worry in his eyes: \"The manifestation of the ninth page means the Tianji Record's completeness has exceeded ninety percent. One step further...\"\n\nHe paused, his voice low: \"You will become the Heavenly Dao's opponent entirely. Rather than a chess piece.\"\n\nChen Ji raised his head, his gaze tranquil: \"Mo Xiansheng, I have a question.\"\n\n\"Ask.\"\n\n\"If there is only a line between a chess piece and the one who plays the game—\" A faint smile curved at the corner of his mouth, \"then I would rather be a chess piece first, see this game clearly, and then make my decision.\"\n\nMo Xiansheng fell silent for a long while, then suddenly burst into laughter: \"Good! Excellent! I truly did not misjudge you!\"",
+        "emotion": "欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_014",
+        "content": "Footsteps sounded outside the cave dwelling.\n\nSu Qingyao pushed open the door and entered, a bowl of hot soup in her hands. She glanced at the cross-legged Chen Ji, then at Mo Xiansheng's remnant soul floating in the air, frowning slightly: \"Are you talking to that old ghost again?\"\n\n\"He is my master.\" Chen Ji said calmly.\n\nSu Qingyao set the hot soup before him, her voice softening unusually: \"Regardless, drink the soup first. You haven't slept for three days.\"\n\nChen Ji was stunned for a moment, then took the soup bowl. Through the rising steam, his gaze fell upon Su Qingyao's slightly haggard face, and a warmth suddenly surged in his heart.\n\n\"Su Qingyao.\"\n\n\"Hmm?\"\n\n\"Thank you.\"",
+        "emotion": "感激"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0480_015",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao's face flushed slightly; she turned her head away: \"What are you thanking me for? I just don't want to watch you die here.\"\n\n\"Oh?\" Chen Ji raised an eyebrow, a mischievous smile tugging at his lips, \"Just don't want to watch me die?\"\n\n\"You—!\" Su Qingyao glared at him, though her ears had turned even redder, \"Smooth talker!\"\n\nShe turned to leave but was grabbed by the sleeve by Chen Ji.\n\n\"Su Qingyao.\" Chen Ji's voice suddenly turned serious. \"The road ahead will be very dangerous. I may die.\"\n\nSu Qingyao froze in place, only able to murmur after a long while: \"I know.\"\n\n\"So—\" Chen Ji released his grip and stood up, meeting her gaze. \"While I'm still alive, there are some words... I want to tell you in person.\"",
+        "emotion": "深情"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_016",
+        "content": "Candlelight flickered, the shadows of two people overlapping on the wall.\n\nJust then, Ye Qing's voice suddenly came from outside the cave dwelling, shattering this moment of tranquility: \"Chen Ji! Something's happened!\"\n\nChen Ji frowned and strode out of the cave dwelling. Ye Qing was drenched in blood, her demonic energy chaotic, her expression anxious: \"There's a traitor inside the Holy Sect! Someone leaked information saying you would personally host the Alliance Assembly—\"\n\nShe coughed violently, her voice hoarse: \"The Second Prince has already set an ambush on the road. And... Ling Yuan has made his move. He personally led forces to surround the location where Chen Nian is imprisoned, preparing to eliminate her before the dynasty can!\"\n\nChen Ji's pupils constricted, a terrifying killing intent flashing in his eyes.\n\n\"Ling Yuan...\" he murmured, his voice cold as glacial ice from the Nine Netherworlds, \"You are seeking death.\"",
+        "emotion": "杀意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_017",
+        "content": "Su Qingyao rushed out, saw Ye Qing covered in blood, and her face drastically changed: \"What happened?\"\n\n\"The plan has been disrupted.\" Chen Ji took a deep breath, forcing himself to冷静下来. He closed his eyes; the Tianji Record rapidly circulated within his Mental Sea, deducing countless possibilities.\n\nAfter a moment, he opened his eyes, brilliance of determination shining within: \"Since they want to play, then I'll accompany them to the end.\"\n\nHe turned to look at Ye Qing and Su Qingyao: \"Ye Qing, how badly are you injured?\"\n\n\"I won't die.\" Ye Qing gritted her teeth.\n\n\"Good. Take my token to the Holy Sect of the Demonic Path, summon all elders willing to ally with the righteous faction, and tell them—the Alliance Assembly will proceed as planned, but the location is changed to the ruins of the Celestial Mechanism Palace.\"\n\nHe then looked at Su Qingyao: \"You return to the Tianqing Sect and stall Ling Yuan. You don't need to defeat him, only to hold him off for three hours.\"",
+        "emotion": "决断"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0480_018",
+        "content": "Su Qingyao knit her brows tightly: \"Three hours? You're going to rescue Chen Nian alone?\"\n\n\"Not alone.\" Chen Ji took out a jade talisman from his chest, a faint smile curling at the corner of his mouth. \"I have one more helper.\"\n\nHe activated the jade talisman, and a illusory figure materialized—it was Mo Xiansheng.\n\n\"This old man's remnant soul is all that remains, but protecting you for one journey is still within my means.\" Mo Xiansheng stroked his beard with a smile. \"But I must speak plainly: once we leave this cave dwelling, I can exist for at most half an hour.\"\n\n\"That's enough.\" Chen Ji nodded, his gaze resolute. \"Within three hours, I will bring back Chen Nian.\"\n\nHe glanced at Su Qingyao one final time, his voice gentle: \"Wait for me to return.\"\n\nThen, his figure vanished into the night.\n\nThe ruins of the Celestial Mechanism Palace lie at the junction of the Three Realms.\n\nThere is where the Eye"
+      }
+    }
+  ]
+}

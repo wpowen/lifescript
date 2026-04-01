@@ -1,0 +1,503 @@
+{
+  "id": "天机录_ch0729",
+  "book_id": "天机录",
+  "number": 729,
+  "title": "Fate Writer",
+  "is_paid": true,
+  "next_chapter_hook": "Mo Xiansheng's remnant soul gradually solidified in the light, and in his gaze toward Chen Ji, there was a hint that Chen Ji had never seen before... guilt?",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0729_001",
+        "content": "Amid the rumbling earth, Chen Ji sensed a vast, abyss-like aura awakening from the depths. His fingers still rested on Ye Qing's forehead, and in that moment, the remnant demonic path marks within Ye Qing's body seemed to have met an old acquaintance, letting out mournful trembles.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_002",
+        "character_id": "char_yeqing",
+        "content": "This... impossible! Fluctuation from ten thousand years ago? Chen Ji, retreat quickly, this is not a level you can touch!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_003",
+        "content": "Yet just as Chen Ji was about to withdraw his hand, a illusory figure slowly emerged from within Ye Qing—it was a middle-aged man dressed in plain white robes, his features gaunt, his brow and eyes bearing the tranquility of one who has seen through worldly matters. His form was semi-transparent, clearly nothing more than a wisp of remnant soul.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_004",
+        "character_id": "char_moxiansheng",
+        "content": "Do not be alarmed, little one. I have waited for this day for ten thousand years.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_005",
+        "content": "Chen Ji's pupils contracted sharply. This voice was precisely the voice of the remnant soul from the first page of the Tianji Record—Mo Xiansheng. But this person was clearly one of the compilers of the directory from ten thousand years ago, his identity far more ancient than Chen Ji had known!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_006",
+        "character_id": "char_chenji",
+        "content": "(Mind churning) Mo Xiansheng... so you have been within Ye Qing all along? No, who exactly are you?",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_007",
+        "character_id": "char_moxiansheng",
+        "content": "I am Mo Xiansheng. Ten thousand years ago, I was chosen by the one you call 'Chen Tiangming' to become the guardian remnant soul of the Tianji Record. But before that, I had another identity—the Fate Writer, the failed challenger of the Eye of Heavenly Secrets.",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_008",
+        "content": "Fate Writer? A monstrous wave crashed through Chen Ji's heart. The Eye of Heavenly Secrets—that was the ultimate enemy he had learned of from Mo Xiansheng, an existence that transcended everything. And yet this seemingly harmless remnant soul had once challenged that very existence?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_009",
+        "character_id": "char_moxiansheng",
+        "content": "Ten thousand years ago, the seven of us challenged the Heavenly Will together. I was the sole survivor, yet I could only cling to existence in the form of a remnant soul. When Chen Tiangming found me, my power was nearly exhausted.",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_010",
+        "content": "Mo Xiansheng's illusory form drifted slowly toward Chen Ji, his gaze profound as the cosmic stars. He raised his hand, pointing toward the faintly visible Tianji Record mark on Chen Ji's chest.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_011",
+        "character_id": "char_moxiansheng",
+        "content": "The fate of the fragment in your hands is heavier than you realize. The Tianji Record is not a blessing from the Heavenly Dao, but the crystallization of our seven wills—a prison for the Eye of Heavenly Secrets.",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0729_choice_001",
+        "prompt": "Mo Xiansheng's revelation shocked all hearts. Chen Ji must make a choice:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0729_trust",
+            "text": "Choose to Believe",
+            "description": "Mo Xiansheng controls the unknown truths from ten thousand years ago, continue to inquire about the complete plan of the Tianji Record.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May expose more weaknesses",
+            "visible_reward": "Obtain key information",
+            "risk_hint": "Mo Xiansheng may have ulterior motives",
+            "process_label": "追问真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_trust_001",
+                  "character_id": "char_chenji",
+                  "content": "(Steady gaze) Since you chose Chen Tiangming, why also choose me? I am merely a useless servant.",
+                  "emotion": "试探"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_trust_002",
+                  "content": "Chen Ji's question struck at the core. Deep within the eyes of Mo Xiansheng's remnant soul, an almost imperceptible fluctuation flickered—that was the relief of finally meeting the right person after ten thousand years of waiting.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生信任线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生首次认可",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0729_probe",
+            "text": "Test the Reality",
+            "description": "Do not blindly trust Mo Xiansheng, use the Tianji Record's ability to secretly peer into the truth of his words.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consume 5 Heavenly Fate points",
+            "visible_reward": "See through whether Mo Xiansheng is hiding something",
+            "risk_hint": "Risk of Counter-Backlash",
+            "process_label": "暗中窥探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_probe_001",
+                  "character_id": "char_chenji",
+                  "content": "(Fingers slightly moving) You claim to be a failure, yet you've survived until now. How can I believe you aren't just another piece on Heaven's chessboard?",
+                  "emotion": "冷冽"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_probe_002",
+                  "content": "Mo Xiansheng was momentarily stunned, then gave a bitter smile. He seemed to have noticed Chen Ji secretly activating the Tianji Record, but did not stop him.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "试探墨先生"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0729_trap",
+            "text": "Set Up a Contingency",
+            "description": "Surface cooperation while secretly arranging contingencies, in case Mo Xiansheng suddenly turns hostile.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Distract Attention",
+            "visible_reward": "Gain Safe Retreat Route",
+            "risk_hint": "May Offend Mo Xiansheng",
+            "process_label": "暗布棋子",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": -3
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_trap_001",
+                  "character_id": "char_chenji",
+                  "content": "(Silently activating the talisman in his sleeve) Since you've waited ten thousand years, you must have something important to say. Please speak directly - I, Chen Ji, am all ears.",
+                  "emotion": "沉稳"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_trap_002",
+                  "content": "Mo Xiansheng's gaze fell upon the faintly visible spiritual light at Chen Ji's sleeve, and an unexpected glint of appreciation appeared in his eyes. This youth could maintain vigilance even before the remnant soul of an ancient from ten thousand years ago - truly worthy of inheriting the Tianji Record.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生后手"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_012",
+        "character_id": "char_moxiansheng",
+        "content": "A brilliant question. Chen Tiansheng chose you precisely because you are a 'failure.' The Tianji Record requires those not favored by fate - only such people can carve a bloody path through certain death.",
+        "emotion": "深邃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_013",
+        "content": "Mo Xiansheng's form suddenly drew near, his illusory finger pointing toward Chen Ji's chest. In that instant, Chen Ji felt a torrential flow of information surge into his mind - a fragment of the complete chess game laid out by Chen Tiansheng ten thousand years ago.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_014",
+        "character_id": "char_moxiansheng",
+        "content": "Chen Tiansheng did more than leave behind the Tianji Record. He drew the attention of Heaven's Eye toward himself, trading his own existence to give birth to the Tianji Record. And you, are the final move in this game.",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_015",
+        "content": "Ye Qing listened nearby, her heart pounding with fear. She finally understood the inexplicable sense of incongruity about Chen Ji - it wasn't pretense, but the heavy burden of someone bearing a ten-thousand-year-old destiny.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_015b",
+        "character_id": "char_yeqing",
+        "content": "(Transmitting voice) Chen Ji, what is he saying? I don't understand, but I sense this information alone is enough to crush an ordinary cultivator's mental sea!",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0729_choice_002",
+        "prompt": "Chen Ji was enduring the shock of truths from ten thousand years ago:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0729_continue",
+            "text": "Continue Enduring",
+            "description": "Forcibly receive more information, regardless of damage to the mental sea.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Mental Sea Damaged, Possible Coma",
+            "visible_reward": "Obtain Complete Layout Truth",
+            "risk_hint": "May Collapse on the Spot",
+            "process_label": "强行接收",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0729_result_continue_001",
+                  "content": "Chen Ji clenched his teeth, allowing the torrent of information to wash over his mental sea. Countless images flashed through his consciousness like a carousel - Chen Tiansheng's figure, the oppressive might of Heaven's Eye, and countless details he had forgotten.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "真相接收"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0729_interrupt",
+            "text": "Forcibly Interrupt",
+            "description": "Cut off the information flow, demanding Mo Xiansheng explain the most critical parts first.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May Miss Important Information",
+            "visible_reward": "Maintain the initiative",
+            "risk_hint": "Mo Xiansheng may be dissatisfied",
+            "process_label": "主动掌控",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 10
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0729_result_interrupt_001",
+                  "character_id": "char_chenji",
+                  "content": "(Abruptly severing the connection) Enough. I don't need to know everything, only what I should do.",
+                  "emotion": "冷冽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "主动打断"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_016",
+        "character_id": "char_moxiansheng",
+        "content": "(Softly sighing) You're more cautious than Chen Tianming was back then. He was too impatient, so he could only use himself as bait. But you... might go further.",
+        "emotion": "欣慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_017",
+        "content": "Mo Xiansheng's remnant soul slowly retreated, his gaze toward Chen Ji carrying a complex emotion Chen Ji had never seen before—guilt, expectation, and a trust spanning ten thousand years.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_018",
+        "character_id": "char_moxiansheng",
+        "content": "Since you asked, this old man will tell you the most crucial point: Chen Tianming is still alive. But his return will require a price from you.",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_019",
+        "content": "These words were like a thunderclap exploding in Chen Ji's mind. His father—that legendary existence—was still alive? And what exactly was this so-called price? Ye Qing's breath stopped; she had never seen Chen Ji's expression so out of control.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_020",
+        "content": "Mo Xiansheng's form had already begun to dissipate, clearly the ten-thousand-year remnant soul couldn't sustain much longer. His final gaze toward Chen Ji carried a hint of relief and anticipation.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_021",
+        "character_id": "char_moxiansheng",
+        "content": "The Tianji Record will guide you. As for the price... when you truly find him, you will understand. Remember, little one, ten thousand years ago all seven of us failed, not because we weren't strong enough, but because we were too arrogant. I hope you won't repeat our mistakes.",
+        "emotion": "沧桑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_022",
+        "content": "Mo Xiansheng's remnant soul completely dissipated, leaving only an ancient jade slip suspended in the air, slowly falling into Chen Ji's palm. In that instant, he felt the immense power contained within the jade slip—the final legacy left by Chen Tianming ten thousand years ago.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_023",
+        "character_id": "char_yeqing",
+        "content": "(Urgent) Chen Ji, are you alright? That moment just now, I felt your aura become chaotic to the extreme...",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_024",
+        "content": "Ye Qing hastily supported the unsteady Chen Ji, demonic path mist instinctively wrapping around both of them, concealing this abnormal spiritual fluctuation. The moment her hand touched Chen Ji, she could feel the spiritual energy within him operating in an unprecedented manner.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0729_025",
+        "character_id": "char_chenji",
+        "content": "(Barely standing, voice hoarse) I'm fine... just need time to digest. Ye Qing, remember this night's events, speak of them to no one.",
+        "emotion": "疲惫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_026",
+        "content": "Chen Ji tightly gripped the jade slip in his hand, feeling a warm current slowly flowing into his body, repairing his just-damaged mental sea. His gaze was profound as an abyss, and his heart was already churning—his father was still alive, and this 'price' was likely far heavier than he had imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_027",
+        "content": "The Tianji Record within him trembled slightly, as if sensing the existence of something of the same origin. And Mo Xiansheng's final words still echoed in his mind: the losers of ten thousand years ago, the Eye of Heaven above ten thousand people, and the father who might still be alive... this chess game was a hundred times more complex than he had imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0729_028",
+        "content": "Before the dissipation, Mo Xiansheng's remnant soul cast one final glance at the Tianji Record mark appearing on Chen Ji's chest, murmuring to himself: 'Chen Tianming, your child... has finally reached this point.' Then his form completely turned into scattered light, merging into that ancient jade slip.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

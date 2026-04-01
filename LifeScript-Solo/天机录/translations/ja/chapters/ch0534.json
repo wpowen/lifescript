@@ -1,0 +1,630 @@
+{
+  "id": "天机录_ch0534",
+  "book_id": "天机录",
+  "number": 534,
+  "title": "旧敵新仇",
+  "is_paid": true,
+  "next_chapter_hook": "凌淵の姿は夜色に溶け消えたが、あの言葉は氷の槍のように陳機の心の奥まで刺さった——死の執行者、すでに道上にある。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0534_001",
+        "content": "夜風が刃のように陳機の蒼白な頬を削った。彼は天青宗後山の絶壁に立ち、ゆっくりと指を握り締め、天機録の残頁を袖に収めた。背後には万丈の深淵、前方には重重の迷雾——彼は自分がすでに微妙な臨界点に立っていることを理解していた。夜清の去ったのは最後の偽装を呼び去り、闇に潜む死の執行者はいつ彼を引き裂くとも知れなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_002",
+        "character_id": "char_lingyuan",
+        "content": "「夜清の去り方はあっぱれだこと。」老いた声が背後から響き、いくらかの皮肉を込めていた。「だが、彼女があなたを守れるのも長くはないぞ。」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_003",
+        "content": "陳期は振り返らなかった。彼の心臓は一瞬だけ半拍早く鼓動し、すぐに平静を取り戻した。凌淵——名目上の守護者、実は腹黒い老狐だ。彼の指が袖の中で微かに震え、掌の天機録残頁が熱を帯びていた、まるで彼を待ち受ける危険を警告するように。「老掌门深夜造访，不知有何贵干？」彼の声は淡水のように平淡で、丝毫の波紋もなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_004",
+        "character_id": "char_lingyuan",
+        "content": "「死の執行者はすでに動き出した。」凌淵の姿が闇から現れ、枯れ木のような痩せ細った身形は、「三日以内に、彼らは天青宗に到着する。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_005",
+        "character_id": "char_chenji",
+        "content": "陳期はようやく振り返り、平静な眼差しを凌淵の顔に向けた：「老掌门特意来告诉我这些，想必不只是为了看我的笑话。」",
+        "emotion": "试探"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_006",
+        "character_id": "char_lingyuan",
+        "content": "凌淵は低く笑い声を上げた：「お前は老夫の想像より落ち着き払っているな。よし、老夫はあなたと取引をしに来た。」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0534_choice_001",
+        "prompt": "凌淵が取引を提示、陳期はそれが罠か機会かを判断する必要がある",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0534_opt1",
+            "text": "冷静に傍観し、成り行きを見守る",
+            "description": "積極的に表态せず、先に凌淵の手札を見てから次の戦略を決める。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "主導権を逃す可能性がある",
+            "visible_reward": "凌淵の底牌を見極める",
+            "risk_hint": "受け身過ぎる態度は凌淵の疑惑を招く",
+            "process_label": "试探凌渊诚意",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_001_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は目を微かに細め、嘴角に浮かぬ微笑みを浮かべた：「取引？老掌门請講、陳某洗耳恭聽。」彼は急于表态せず、主導権をそっと押し返した。",
+                  "emotion": "沉着"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0534_result_001_2",
+                  "content": "凌淵の眼に賞賛の色が闪过、すぐに元の陰険な表情に戻った。袖から漆黒の令牌を取り出し、可怕的な骷髅の模様が刻まれている——天道之眼執行者の標章だった。「これが彼らの行動ルートだ。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt2",
+            "text": "単刀直入、核心を突く",
+            "description": "凌淵が天道之眼を裏切った理由を直接問い、双方の底牌を明かす。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "自分の洞察力を暴露する",
+            "visible_reward": "重要な情報を迅速に得る",
+            "risk_hint": "蛇を打つ可能性があり、凌淵に警戒される",
+            "process_label": "直击要害",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_002_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は一歩前に出、その目光は刃のように：「老掌门何必兜圈子？你我都知道，你对天道之眼早有不满。今夜前来，莫不是想借我之手，行那逆天之事？」",
+                  "emotion": "锐利"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_002_2",
+                  "character_id": "char_lingyuan",
+                  "content": "凌淵の顔色は微かに変わり、沈黙片刻の後、笑いだした：「良いな、陳機！老夫は確かに見誤らなかったぞ。」",
+                  "emotion": "认可"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt3",
+            "text": "偽りに応じたうえで、情報を套取する",
+            "description": "合作を偽り承諾し、タイミングを捉えて天道之眼と凌淵の真の目的に関する更多信息を得る。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "演戯にエネルギー消费が必要",
+            "visible_reward": "予想外の情報を得られる可能性がある",
+            "risk_hint": "凌淵に見破られれば、完全に信頼を失う",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_003_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は目を伏せ、熟考的模样を装った：「老掌门的交易，陈某很感兴趣。ただ……」彼は一拍置いて、「陳某は老掌门为何选择我を知りたい。」",
+                  "emotion": "谦逊"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_003_2",
+                  "character_id": "char_lingyuan",
+                  "content": "「因为我和你一样。」凌淵の声が低くかすれていた、「共に天道之眼に切り捨てられた駒だ。」",
+                  "emotion": "揭示"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0534_007",
+        "content": "弃子。この二文字が夜風に響き、无限の皮肉を帯びていた。陳期は天機録の中で抹消された一页を想い出した——本来は凌淵のものだった伝承が、莫名其妙に自分の頭に落ちてきたのだ。彼はこれまで凌淵を仇敵と思っていた、天機録に捨てられたことで恨みを抱く老怪物だと。だが此刻凌淵の言葉は、別の可能性を彼に見せてくれた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_008",
+        "character_id": "char_lingyuan",
+        "content": "「你以为老夫为何会被天機録抛弃？」凌淵の声に苦渋が滲んでいた、「因为我发现了真相——天機録は天道之眼が人間を操るための道具に過ぎず、所谓的予言者もその盤上の最も卑しい駒だ。」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_009",
+        "character_id": "char_chenji",
+        "content": "陳期の心は一震、これは彼が初めて天機録の本質をここまで直に語る声を聞いた。墨先生の言いかけた様子、刻意に隠された真実を想い出した。口を開いて尋ねようとしたが、言葉にできたのは飲み込んだ後半だけ——彼は急切に見せられなかった、それは天機録への理解が雑役弟子たるべき姿を遥かに超えていることを暴露するからだった。",
+        "emotion": "谨慎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_010",
+        "content": "凌淵は漆黒の令牌を陳期に投げ、陳期は手にとって受け止めた。令牌は手に触れると冷たく、Surfaceの骷髅の模様が蠢いているように見え、嘔吐を催す気配がした。「これが死の執行者の行動ルートだ。」凌淵の声が再び响いた、「三日後、彼らは東面から天青宗に突入，届时内応が護山大陣の東門を開ける。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0534_choice_002",
+        "prompt": "凌淵提供の情報があまり詳細過ぎ、陳期はこれが真心からの相助か、それともより深い陰謀かを判断する必要がある",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0534_opt4",
+            "text": "内応の身元を問い詰める",
+            "description": "内応が誰かを直接問い、凌淵の情報の真偽を検証する。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "凌淵のボトムラインに触れる可能性がある",
+            "visible_reward": "核心情報を得られる",
+            "risk_hint": "凌淵が警戒する可能性がある",
+            "process_label": "深挖情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -1
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_004_1",
+                  "character_id": "char_chenji",
+                  "content": "「内応は誰だ？」陳期の声は平静だったが、眼差しには不容拒绝の鋭さが滲んでいた、「老掌门既然知道这么多，想必也知道这个答案。」",
+                  "emotion": "质问"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_004_2",
+                  "character_id": "char_lingyuan",
+                  "content": "凌淵の笑みが一瞬凍りつき、すぐに首を振った：「この質問には老夫は答えられない。答えたくないのではなく不敢だ。」彼の声は突然低くなった、「有些真相、知道了反而是祸。」",
+                  "emotion": "警告"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt5",
+            "text": "調子に乗って、默契に達する",
+            "description": "細部を問い詰めず、まず凌淵と初步的な協力意向を達成し、后续の操作スペースを保留する。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "真実に迫る機会を放棄する",
+            "visible_reward": "行動の缓冲時間を 얻다",
+            "risk_hint": "受け身に陥る可能性がある",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_005_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は片刻沈黙し、令牌を袖に収めた：「好。三日後のことは陳某が覚えておく。」彼の語気は淡然だったが、拒绝できない坚定さが滲んでいた、「老掌门所说的交易については、陳某需要一个更合适的时机再談。」",
+                  "emotion": "沉稳"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_005_2",
+                  "character_id": "char_lingyuan",
+                  "content": "凌淵の眼に複雑な色が闪过、賞賛とも警戒ともつかないものだ。「お前は老夫の想像より棋士らしいな。」彼は低く言った、「ならば、老夫はあなたの返答を待つ。」",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt6",
+            "text": "天機録を展示し、反応を试探する",
+            "description": "意図的に天機録残頁の一角を見せ、凌淵の反応を見て、天機録への執念の深さを判断する。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "一部の底牌を暴露する",
+            "visible_reward": "凌淵の本当の意図を見抜く",
+            "risk_hint": "命取りの災いを招く可能性がある",
+            "process_label": "引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 3
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_006_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は动静なく袖の中の天機録残頁を微かに一角見せた。凌淵の視線は一瞬そこに固定され、瞳孔が激しく収縮した——それは隠し様のない贪婪と執念だった。だがすぐに視線を逸らし、いつもの無表情を取り戻した。",
+                  "emotion": "警惕"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_006_2",
+                  "character_id": "char_lingyuan",
+                  "content": "「老掌门对天機録の執念は、陳某が想像するより深いようだな。」陳期の声には少しの面白さが滲んでいた、「不知这算不算老掌门口中的'取引'筹码？」",
+                  "emotion": "挑衅"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0534_011",
+        "content": "絶壁際の風が越来越大、两人的衣袍をばたつかせた。凌淵の表情は月光の下晦暗として读めず、淘那双浑浊な老眼の中には太多的秘密が隠されているようだった。陳期は知っていた、この老人は表向きより遥かに危険だと——彼は目の前の危機を помочьしてくれるかもしれない同盟者であると同時に、天機録を渇望する潜在的な敵でもあった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_012",
+        "content": "「老夫は行くぞ。」凌淵は突然口を開いた、声には疲労が滲んでいた、「三日後のことは自分で計らえ。それと——」彼の姿はすでに闇に溶けていたが、最後の一言が伝わった、「死の執行者の中に一人は 반드시小心せよ。彼は予言者を狩る処刑者として知られており、聞いたところによると从未失手だ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_013",
+        "character_id": "char_lingyuan",
+        "content": "「老掌门。」陳期は突然口を開いた、「你为什么要帮我？」この質問はずっと彼の心に留まっていた。凌淵は善人ではない、彼の每一招には深い意味があるはずだ。",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0534_014",
+        "character_id": "char_lingyuan",
+        "content": "闇の中から低い笑い声が伝わった：「因为你和我一样，都是被命运抛弃的人。而被抛弃者之间，要么互相吞噬，要么互相取暖。」凌淵の声は次第に遠ざかった、「老夫只是想看看、棋盘上的另一枚弃子，究竟能走多远。」",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_015",
+        "content": "陳期はそこに立ち尽くし、凌淵の消えた方向を見つめていた、長い間動きなかった。夜風が彼の髪を乱れさせ、心の中の躁動も吹き飛ばした。凌淵の話は一把の鍵のように、彼の心の閉ざされた扉を開いた——この注定された孤独な道の上でも、彼だけが切り捨てられた駒ではなかったのだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_016",
+        "content": "だが弃子と弃子の間、必ずしも同行できるわけではない。陳期はゆっくりと視線を戻し、掌の中の黒い令牌低头した。骷髅の模様が月光の下で寒い光を放ち、まるで彼の純粋さをあざ笑っているようだった。三日、ただ三日。そして彼の手の中の駒は、この杀局に立ち向かうための棋陣を布くには遥かに不足していた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_017",
+        "content": "天機録が袖の中で微かに发热し、彼の焦虑に応えているようだった。陳期は深く息を吸い込み、未来を予見したいという衝動を無理に押し殺した——每一次予見は5点の天命値を消費し、彼の天命値はすでに残りが少なかった。これは彼の最大の底牌であり、最も脆弱な弱みでもあった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0534_choice_003",
+        "prompt": "凌淵の去った警告と今後の危機に面对し、陳期は ключевых решенийを下す必要がある",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0534_opt7",
+            "text": "天機録を使って三日後を予見する",
+            "description": "5点の天命値を消費し、死の執行者到来時のシーンを提前予見する。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "5点天命値",
+            "visible_reward": "重要な予見を得て提前布局する",
+            "risk_hint": "天命値はさらに透支され、今後の能力に影響する",
+            "process_label": "以命换命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_007_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は歯を食いしばり、袖から天機録残頁を取り出した。残頁の金色な紋様が夜色の中で微かに光り、彼の召喚に応えているようだった。「これで一勝負だ。」彼は低く言い、すぐに残頁を催動した、一道の金光は彼の眉心へと没した。",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0534_result_007_2",
+                  "content": "瞬間、无数的画像が彼の脑海に洪水ののように流れ込んだ。護山大陣が砕ける瞬間看到了、黑衣の影が幽霊のように宗门の中で穿梭，看到了、さらに手持镰刀の姿がゆっくりと彼に近づいているの看到了——その処刑者の顔には、五官のない白い仮面が着いていた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt8",
+            "text": "即座に蘇青瑶に連絡する",
+            "description": "蘇青瑶は内門首席であり、強力な战力を持つ。彼女はずっと彼を調査しているが，此刻或许是対抗危機の ключевых 同盟者となれる。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "より多くの秘密を暴露する可能性がある",
+            "visible_reward": "強力な支援を得て、危機のリスクを低減する",
+            "risk_hint": "蘇青瑶は天機録の秘密を追及する好機を得る可能性がある",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_008_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は令牌をしまい、内門の方へ歩き出した。蘇青瑶……このずっと彼の秘密を暴こうとする女，此刻こそが彼が最も必要とする人だった。この出会いが何を意味するか分かっていた——彼女は必ず追及して来る，而他もいくつかの答えを出さねばならない。",
+                  "emotion": "决断"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0534_result_008_2",
+                  "content": "だが彼には選擇がなかった。三日後の危機は彼の想像よりさらに恐ろしい。死の執行者、内応、そしてあの予言者を狩る処刑者……每一人で彼の命を取り上げるに十分な脅威だ。彼は가능한一根の救命藁でも見逃さず、たとえそれがより多くの暴露を意味するとしても掴まねばならない。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0534_opt9",
+            "text": "夜清を再 찾아서再同盟する",
+            "description": "夜清は離れたが、彼女の魔道迷雾は天機録の気配を遮掩でき、天道之眼に对抗する ключевых なものだ。危険を冒して追上して再 условия を交渉する。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "より多くの代償を払う必要がある",
+            "visible_reward": "戦略レベルの同盟者の支援を得る",
+            "risk_hint": "夜清はより過酷な条件を 提出する可能性がある",
+            "process_label": "以利诱之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_009_1",
+                  "character_id": "char_chenji",
+                  "content": "陳期は決定を下した。夜清の魔道迷雾は彼が現時点で最も必要とするものだった——それは天機録の気配を遮掩し、予言者を追跡する執行者たちの目標を喪失させられた。彼の身形を闪かせ、夜清が去った方向へ追った。",
+                  "emotion": "果断"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0534_result_009_2",
+                  "character_id": "char_chenji",
+                  "content": "「夜圣女、请留步。」陳期の声が夜風に响いた、「陳某有一个提议，或许对你我都有利。」前方、一つの黒い身影がゆっくりと止まったが、振り返りはしなかった。",
+                  "emotion": "诚恳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0534_018",
+        "content": "凌淵が去った後に残した警告が夜風に响き、陳期は掌の中の黒い令牌を握りしめ、その中から伝わる阵阵の陰冷さを感じていた。三日、ただ三日。死の執行者、内応、そしてあの传说中的処刑者——每一つの脅威も彼を万劫不复に追いやるに十分だった。そして彼の手の中の駒は、極めて少なかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_019",
+        "content": "彼は顔を上げ、天青宗内門の方を見つめた。蘇青瑶の姿が一瞬彼の脑海に闪过——あの high冷で強い女は、彼が現時点で触れることができる唯一の強力な同盟者だった。そして夜清の魔道迷雾同样是他急需の庇護だった。天機録本身……每一次予見は天命値を透支するが、彼はすでにこれ以上の選擇がなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0534_020",
+        "content": "凌淵の姿は夜色に溶け消えたが、あの言葉は氷の槍のように陳機の心の奥まで刺さった——死の執行者、すでに道上にある。三日のカウントダウンは此刻から始まった。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

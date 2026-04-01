@@ -1,0 +1,524 @@
+{
+  "id": "天机录_ch1038",
+  "book_id": "天机录",
+  "number": 1038,
+  "title": "Forbidden Secret Art",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji's fingers were about to touch that crack, a dazzling chaotic light burst forth from within the Turtle Shell Artifact, forming a strange resonance with the black qi of the Forbidden Secret Art—the aura contained within that light was actually from the same source as the Tianji Record.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1038_001",
+        "content": "\"However—\" The Emissary's tone shifted abruptly, \"I never give anything for free. If you wish to obtain it, you must first prove your worth.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "Before the words finished, the Emissary waved his sleeve. The void in the center of the stone chamber twisted suddenly, and a pitch-black rune emerged from the void, slowly rotating in mid-air. That rune emanated a chilling aura, as if containing power enough to overturn heaven and earth.",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_003",
+        "content": "\"This is the first realm of the Forbidden Secret Art—'Niming.'\" The Emissary stood with hands clasped behind his back. \"It can briefly shield the foresight effect of the Tianji Record, allowing your actions to no longer be实时窥视 by those eyes.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_004",
+        "character_id": "char_chenji",
+        "content": "\"Shield foresight?\" Chen Ji narrowed his eyes, a faint smile curling at the corner of his lips. \"That sounds rather good. But since you speak of it so solemnly, the price must be extraordinary, correct?\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"You are clever indeed.\" An added note of approval appeared in the Emissary's voice. \"Yes, this Forbidden Secret Art is not free. It will consume the binding time between you and the Heavenly Dao Primordial—in other words, every use shortens your lifespan to reach the other shore.\"",
+        "emotion": "坦诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_006",
+        "content": "Upon hearing this, Chen Ji's expression remained unmoved. He walked slowly toward that suspended black rune, each step steady and measured as if carefully calculated. The black qi emanating from the rune coiled around his fingertips, bringing an icy chill that pierced to the bone. \"Lifespan...\" he repeated these two words softly, his tone carrying a hint of playfulness. \"The price Senior mentioned surely doesn't end there, does it?\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1038_choice_001",
+        "prompt": "Chen Ji stared directly at the Emissary, awaiting an answer.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_deal",
+            "text": "Accept the deal",
+            "description": "Regardless of the cost, first obtain the power of this Forbidden Secret Art. Without strength, all schemes are empty talk.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume lifespan, shortening the binding time with Heavenly Dao Primordial",
+            "visible_reward": "Obtain the Forbidden Secret Art, temporarily escape the real-time foresight of the Tianji Record",
+            "risk_hint": "The cost is unknown, there may be hidden risks as well",
+            "process_label": "权衡利弊",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_accept_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"Refreshing.\" The Emissary clapped his hands in laughter, waving his sleeve once more as the black rune suddenly merged into Chen Ji's brow center. \"This is the complete essence of 'Niming.' Contemplate it well.\"",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_deeper",
+            "text": "Deepen negotiations",
+            "description": "First clarify all costs and risks, then make a decision. Mastering all information before any transaction—this is Chen Ji's principle.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss a golden opportunity, the Emissary's attitude may change",
+            "visible_reward": "Obtain more complete information, preserving room for subsequent scheming",
+            "risk_hint": "The Emissary may become impatient, the information disclosed may be reserved",
+            "process_label": "试探底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_negotiate_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "The Emissary's gaze cooled slightly: \"You certainly don't stand on ceremony. But very well, since you wish to know—when using the Forbidden Secret Art, your cultivation will be suppressed by thirty percent, and the interval between uses must be no less than seven days.\"",
+                  "emotion": "不悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "demand_more",
+            "text": "Demand more筹码",
+            "description": "Since this is a great heaven-sent opportunity, how could I easily let go? Must force the Emissary to show more sincerity.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May provoke the Emissary, the deal may fall through",
+            "visible_reward": "If successful, will obtain additional safeguards and more information",
+            "risk_hint": "The emissary's patience is limited; excessive pressure may backfire",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_demand_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "The emissary fell silent for a moment, then burst into laughter, looking up at the heavens: 'What a greedy little one! However... this old man does have a few things, originally meant for other purposes. Since you possess such courage, what if I give them all to you?'",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_007",
+        "content": "Just as both sides were locked in a stalemate, a sudden change occurred. The Turtle Shell artifact on Chen Ji's chest emitted a clear, resonant hum that pierced through the stone chamber and rose into the clouds. Immediately after, a soft silver light seeped out from the cracks of the turtle shell, forming a strange confrontation with the black runes summoned by the emissary. The emissary's pupils contracted sharply: 'This is...' Chen Ji lowered his gaze to his chest, and the composure on his face finally showed a hint of a crack. The aura within that silver light was diametrically opposed to the black energy of the forbidden secret technique, yet there seemed to be an inexplicable connection between them. 'The aura of the Tianji Record...' he murmured, 'why would it resonate with this forbidden secret technique?'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "'Interesting, truly interesting!' The emissary's laughter carried an added thrill of excitement. 'It seems this old man has underestimated you. Within this Tianji Record Fragment is concealed a seed of the Heavenly Dao's original essence!'",
+        "emotion": "狂热"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_009",
+        "content": "A chill ran through Chen Ji's heart, but his expression remained unmoved. He slowly raised his head, his gaze sweeping between the emissary and the Turtle Shell artifact. The silver light and black energy intertwined in the void, as if two fish chasing each other, or two blades about to clash. 'Does the senior mean to say—' his voice was extremely low, 'that this forbidden secret technique has some connection to the Heavenly Dao's original essence?' 'Connection?' The emissary sneered. 'It's far more than mere connection. The forbidden secret technique was itself stripped from the Heavenly Dao's original essence, a materialization of its dark side. If that seed within you could fuse with it...'",
+        "emotion": "期待"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The emissary's voice abruptly stopped, his gaze turning deep and sharp: 'Do you wish to know what will happen after the fusion?'",
+        "emotion": "试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_011",
+        "content": "Chen Ji offered no answer, simply gazing quietly at the emissary. The atmosphere in the stone chamber was压抑 to the extreme. The silver light and black energy were still entangling, but Chen Ji sensed an odd rhythm within them—as if some ancient pact was being rewritten. He recalled what Mo Xiansheng had once said: 'The complete form of the Tianji Record is far more terrifying than you can imagine.' Could this be one part of that truth?"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1038_choice_002",
+        "prompt": "The resonance between the Turtle Shell artifact and the forbidden secret technique grew increasingly intense, and Chen Ji felt something within him awakening.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "let_go",
+            "text": "Go with the flow",
+            "description": "Since it cannot be prevented, why not let these two forces intermingle freely? Perhaps借此 could glimpse the true mysteries of the Tianji Record.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Losing control of the situation, possibly being counteracted by the power",
+            "visible_reward": "May trigger hidden plot, gaining unexpected rewards",
+            "risk_hint": "Unknown variables are often the most dangerous",
+            "process_label": "放手一搏",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_let_001",
+                  "content": "Chen Ji took a deep breath and slowly released his suppression of the Turtle Shell artifact. The silver light immediately blazed intensely, like a bright moon rising in the stone chamber, colliding thunderously with those pitch-black runes—"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "suppress_force",
+            "text": "Force suppression",
+            "description": "Before understanding the truth, these two forces must not be allowed to run wild within the body. Stability is the primary principle of survival.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May miss the opportunity, the emissary may retract the secret technique",
+            "visible_reward": "Maintain a clear mind, obtain more information",
+            "risk_hint": "The two forces conflicting within the body may cause internal injuries",
+            "process_label": "以守为攻",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_suppress_001",
+                  "content": "Chen Ji shouted in a low voice, his True Qi surging madly within, attempting to suppress that restless silver light. However, the trend of these two forces merging had already formed; his resistance was like a mantis trying to stop a chariot—"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "question_origin",
+            "text": "Inquire about the source",
+            "description": "Where did this forbidden secret technique originate? Why does it resonate with the Tianji Record? The ins and outs must be clarified.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "The emissary may be displeased, the information revealed may be difficult to verify",
+            "visible_reward": "Obtain key intelligence, providing a basis for subsequent planning",
+            "risk_hint": "The more one knows, the deeper one may become entrapped",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 12
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_question_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"This secret technique... is the painstaking effort of generations of prophets.\" The messenger's voice suddenly grew somber. \"Every prophet, before falling, would carve their insights into the Heavenly Dao into it. The seed within you comes from this.\"",
+                  "emotion": "追忆"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_012",
+        "content": "Before the messenger could finish, the radiance of the Turtle Shell divine artifact suddenly shifted. Within that gentle silver light, intricate patterns emerged, echoing across the void with the black glyphs of the forbidden secret technique. These two forces converged within Chen Ji's body, colliding in violent tremors. Chen Ji let out a muffled grunt, falling to one knee. The veins on his forehead bulged, cold sweat trailing down his temples. Inside him, two opposing powers tore at each other, every inch of his meridians burning. He gritted his teeth, nails carving deep into his palms, blood trickling between his fingers. The pain crashed over him like a tide, threatening to swallow him whole. Yet at this critical moment, a familiar voice echoed in his mind—"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_013",
+        "character_id": "char_moxiansheng",
+        "content": "\"Steady your mind!\" Mo Xiansheng's voice carried unprecedented gravity. \"These two forces were originally one. If you can merge them, you shall glimpse the true form of the Tianji Record—the 'Heavenly Fate Book'!\"",
+        "emotion": "急迫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_014",
+        "content": "Heavenly Fate Book.\n\nThese four characters exploded in Chen Ji's mind like a thunderclap. He recalled the name Mo Xiansheng had once mentioned—that in legend, the complete form of the Tianji Record could foresee past and future, transcending the cycle of Heavenly Dao.\n\nAnd now, could the resonance between this forbidden technique and the Tianji Record Fragment actually allow him to touch that legendary realm?\n\nChen Ji's gaze turned sharply blade-like. He rose abruptly, allowing the two forces to clash wildly within him, yet a resolute smile spread across his face.\n\n\"Since Heaven intends to use me as a chess piece—\" his voice dropped, cold as ice, \"then let this chessboard be completely overturned!\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1038_choice_003",
+        "prompt": "Chen Ji felt the power within him had reached its breaking point. He had to make an immediate decision.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "embrace_destiny",
+            "text": "Embrace Destiny",
+            "description": "Having come this far, there is no turning back. Completely merge the forbidden secret technique with the Tianji Record, wagering everything!",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Risk losing oneself, completely breaking with the Heavenly Dao",
+            "visible_reward": "Gain the embryonic form of the 'Heavenly Fate Book', with strength skyrocketing",
+            "risk_hint": "This is an irreversible choice; once started, it cannot be stopped",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_embrace_001",
+                  "content": "Chen Ji let out a long roar to the heavens, his arms suddenly spreading wide. Silver light and black qi surged simultaneously, transforming into two torrents that rushed into his brow center. An unprecedented power exploded within him, like the primordial chaos of world creation—"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁忌秘法初成",
+              "天命之书雏形"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "conditional_merge",
+            "text": "Conditional Merge",
+            "description": "Retain a sliver of clarity during the merge, preventing the power from completely devouring reason. This was the backup plan Chen Ji left for himself.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Merge effect greatly reduced, possibly causing aftereffects",
+            "visible_reward": "Maintain self-awareness, leaving variables for the future",
+            "risk_hint": "The two forces conflict within the body, possibly causing permanent damage",
+            "process_label": "以智取胜",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1038_result_conditional_001",
+                  "content": "Chen Ji took a deep breath, constructing a barrier between the two forces with his powerful will. Silver light and black qi surged wildly on either side of the barrier, yet could never truly merge—"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁忌秘法初成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "reject_merge",
+            "text": "Refuse the Merge",
+            "description": "This forbidden technique's origins are unknown; merging recklessly is too dangerous. Better to forfeit this opportunity than to hand over destiny to the unknown.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Miss a rare once-in-a-millennium opportunity",
+            "visible_reward": "Maintain the status quo without being swayed, preserving one's chips",
+            "risk_hint": "The messenger may never offer such an opportunity again",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1038_result_reject_001",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"Are you certain?\" The messenger's tone carried a hint of surprise. \"Such an opportunity, once missed, will not come again.\"\n\nChen Ji slowly straightened his body, a faint smile curling his lips: \"The junior merely wishes to... save this opportunity for a more fitting time.\"",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_015",
+        "content": "Just as Chen Ji's fingers were about to touch that crack—\n\nThe Turtle Shell divine artifact suddenly erupted with dazzling chaotic light, forming an unprecedented resonance with the black qi of the forbidden technique. The aura within that light was neither the silver-white of the Tianji Record nor the pitch-black of the technique, but a chaotic gray never before seen.\n\nThe messenger's expression changed for the first time: \"This is...\"\n\nChen Ji sharply raised his head, his dual pupils reflecting that chaotic light. He could sense that within that radiance, something was awakening. It was a will both familiar and foreign, crossing endless ages to arrive.\n\n\"The Tianji Record... is complete?\" he murmured.\n\nYet in the next instant, the information transmitted by that will made his pupils contract sharply—"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1038_016",
+        "character_id": "char_moxiansheng",
+        "content": "\"No, Master.\" Mo Xiansheng's voice rang in his mind, carrying a tremor. \"This is not the Tianji Record being complete, but... the gaze of the Heavenly Dao's Eye. It has been waiting for this moment.\"\n\nChen Ji's blood seemed to freeze in that instant.\n\nIt turned out—from the very beginning—he was the prey being waited for.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_017",
+        "content": "The atmosphere in the stone chamber plummeted to the freezing point.\n\nThe envoy's figure flickered indistinctly within the chaotic light, his features becoming obscured for the first time, as if veiled by some unknown force. Yet those eyes—those eyes that should have been deep as an abyss—now radiated a诡异的 smile.\n\nChen Ji stepped back slowly, his expression already restored to its customary calm.\n\n「Senior...」His voice carried not a trace of波动，「Which of the words you just spoke were true, and which were false?」\n\nThe envoy offered no reply, merely raising a finger to point at Chen Ji's chest. There, the Turtle Shell divine artifact radiated an increasingly intense glow, like a gray sun about to devour everything.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1038_018",
+        "content": "「All of it was true.」The envoy finally spoke, yet his voice had become foreign and distant, 「Including this old man's identity.」\n\nThe moment these words fell, the chamber's ceiling collapsed with a thunderous crash. Chaotic light surged forth like a tide, swallowing everything. Chen Ji only had time to witness the envoy's lips curl into a meaningful arc before being utterly submerged by that radiance.\n\nIn that final instant, what flashed through his mind was not fear, but a single thought—\n\nIt turned out that from the very beginning, he had been at the"
+      }
+    }
+  ]
+}

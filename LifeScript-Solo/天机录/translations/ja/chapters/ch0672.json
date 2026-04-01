@@ -1,0 +1,513 @@
+{
+  "id": "天机录_ch0672",
+  "book_id": "天机录",
+  "number": 672,
+  "title": "陳霊の真の姿",
+  "is_paid": true,
+  "next_chapter_hook": "玄武帝宗の弟子たちがまさに手を加えようとした瞬間、遠くで天地を揺るがすような轟きが伝わってきた——あれは天青宗の山の門にある大陣が無理やり破られた音だった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0672_001",
+        "content": "遺跡の入り口にある影の中で、あの玄鉄令牌が折射した冷たい光が毒蛇の舌のように、陈機の眼底へと突き刺さった。彼の姿は動かなかったが、瞳孔は猛然と縮んだ——皇朝密偵の目印、彼の目は再熟悉不过。三日前の、あの待ち伏せはまさに彼らの仕業だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_002",
+        "character_id": "char_chenian",
+        "content": "そんなに緊張して私を見つめないでもいいですよ、陳機。影の中から、清らかな女の声が響き，紧接着一道纤细的身影が闇から姿を現した——正是陳霊だった。依旧是那副平淡无奇的面容，可此刻在陳機眼中，却如同披着一层看不透的迷雾。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_003",
+        "content": "陳機，缓缓转身，右手，看似随意地垂在身侧，实则已悄然扣住袖中那张天機錄残頁。未来を予見する衝動が心底で湧き起こるが每一次消耗の天命值如同割在心头上的利刃，让他不得不强行按捺。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_004",
+        "character_id": "char_chenian",
+        "content": "你应该有很多疑问吧。陳霊微微一笑，那笑容中带着一丝彼从未见过的深意，比如——我究竟是谁？",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_005",
+        "content": "陳機没有说话，只是静静地看着她。沉默在两人之间流淌，却比任何言语都更具压迫感。终于，陳霊轻轻叹了口气，打破了这份死寂。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_006",
+        "character_id": "char_chenian",
+        "content": "我叫陳霊，这是真的。だが私にはもう一つの身份がある——天機閣第七層、運命監視者。陳霊的声音平静得如同陈述天气，我的任务，是确保每一个获得天機錄的人，不被天機閣彻底控制。",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_007",
+        "content": "这句话如同一记重锤，狠狠地砸在陳機心口。天機閣！那个传说中统御天下所有预言者的神秘组织！以为自己获得天機錄残頁是偶然，是天大的机缘，却没想到从一开始，他就已经被放入了某个更大的棋盘之中。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_008",
+        "character_id": "char_chenian",
+        "content": "你是不是在想，既然我是監視者，为何还要与你合作？陳霊似乎看穿了他的心思，嘴角勾起一抹苦涩的弧度，因为我的任务不是監視你，而是帮助你——帮助你走出自己的路，而不是成为天機閣の駒になること。",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_009",
+        "content": "陳機の眼眸微微眯起，心中思绪如潮水般翻涌。帮助他走出自己的路？这话说得漂亮，可他陳機从来不信无缘无故的好意。更何况，如果他真是被天機閣选中的駒，那眼前这个所谓的「監視者」，又凭什么能背叛天機閣？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0672_choice_001",
+        "prompt": "陳霊的话语中藏着太多疑点，陳機必须做出判断：眼前这个女人，究竟是敵还是友？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0672_choice_001_a",
+            "text": "询问她的真实动机",
+            "description": "继续追问陳霊背叛天機閣的真正原因，试探她话语中的破绽。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能错过获取关键信息的时机",
+            "visible_reward": "获得更多关于天機閣的情报",
+            "risk_hint": "陳霊可能因此产生戒心",
+            "process_label": "审慎试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_001_a_1",
+                  "content": "陳機冷笑一声、道：「帮助我？天機閣的監視者背叛天機閣来帮我？陳霊、你当我三歳小孩吗？」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0672_result_001_a_2",
+                  "character_id": "char_chenian",
+                  "content": "陳霊并没有生气，反而眼中闪过一丝赞许：「你果然比我预想的更谨慎。这很好，说明天機錄没有选错人。」",
+                  "emotion": "赞许"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0672_choice_001_b",
+            "text": "要求她证明诚意",
+            "description": "要求陳霊拿出实际的诚意或证据，来证明她所言非虚。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能显得过于咄咄逼人",
+            "visible_reward": "可能获得实质性的帮助或物品",
+            "risk_hint": "可能引发冲突",
+            "process_label": "强势谈判",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_001_b_1",
+                  "content": "陳機神色不变、淡淡道：「空口白话谁都会说。你若真有诚意，不妨拿出点真东西来。」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0672_result_001_b_2",
+                  "character_id": "char_chenian",
+                  "content": "陳霊沉默片刻，从袖中取出一枚古朴の玉佩：「这是我運命監視者の信物、危急时刻可召唤我一次。这算不算诚意？」",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得陈灵信物"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈灵主动交出信物",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0672_choice_001_c",
+            "text": "保持沉默观察",
+            "description": "不表态，继续观察陳霊的后续动作，以静制动。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能让对方占据主动",
+            "visible_reward": "获得更多观察时间",
+            "risk_hint": "可能错失先机",
+            "process_label": "静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_001_c_1",
+                  "content": "陳機没有说话，只是微微侧头，做出一副愿闻其详的姿态。沉默，有时候比任何言语都更有力量。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0672_result_001_c_2",
+                  "character_id": "char_chenian",
+                  "content": "陳霊似乎对他的反应十分满意：「你比我预想的更有耐心。这很好、执棋者最需要的，就是耐心。」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_010",
+        "content": "执棋者？陳機眉头微皱，这个词第二次从陳霊口中说出。上一次是在他获得天機錄残頁的时候，墨先生也曾用这个词来形容他。这究竟意味着什么？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_011",
+        "character_id": "char_chenian",
+        "content": "天機閣将天下预言者分为三类。陳霊似乎看出了他的疑惑，主动解释道、一是駒，只能被动接受命运的安排；二是棋手，能操控他人命运；而第三种，就是执棋者——能撼动天道本身的存在。",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_012",
+        "content": "陳機的心跳骤然加速。撼动天道？彼の目光不由自主地落在袖中の天機錄残頁上。一直以为天機錄只是一个预言工具，却没想到它背后的意义竟然如此恐怖。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_013",
+        "character_id": "char_chenian",
+        "content": "天機錄共有九卷，你是百年来唯一集齐两卷的人。陳霊的声音低沉下来，这也是天機閣为何如此在意你的原因。但我的任务是确保你走自己的路，而不是成为天機閣的駒。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_013b",
+        "content": "话音未落、遗迹外の方向突然传来一阵喧哗。陳機的神色微变、他敏锐地捕捉到了空气中弥漫する灵力波动——那是玄武帝宗特有の功法气息。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0672_choice_002",
+        "prompt": "玄武帝宗の人来得比预想中更快、陳機必须做出决定：是先解决眼前的危机，还是继续追问陳霊的身份？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0672_choice_002_a",
+            "text": "先解决玄武帝宗威胁",
+            "description": "玄武帝宗来者不善，必须优先处理这个外部威胁，确保自身安全。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能中断与陳霊的对话，错过重要信息",
+            "visible_reward": "消除眼前的威胁，展现实力",
+            "risk_hint": "可能引发宗门间冲突",
+            "process_label": "优先自保",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_002_a_1",
+                  "content": "陳機冷哼一声：「看来有些不知死活の人来了。陳霊，你的话等会再说。」说罢，他的身影已经消失在原地。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0672_choice_002_b",
+            "text": "让陳霊留下协助",
+            "description": "既然陳霊自称是来帮助他的，那就让她证明自己的价值，一起面对玄武帝宗的威胁。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能暴露自己的底牌",
+            "visible_reward": "考验陳霊的诚意，同时获得助力",
+            "risk_hint": "可能陷入两人的围攻",
+            "process_label": "考验盟友",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_002_b_1",
+                  "content": "陳機转头看向陳霊：「你既然说是来帮我的，那就先帮我打发这些不速之客吧。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0672_result_002_b_2",
+                  "character_id": "char_chenian",
+                  "content": "陳霊微微点头，身形一闪，已经出现在遗迹入り口处：「放心，他们进不来的。」",
+                  "emotion": "自信"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈灵主动护卫",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_014",
+        "content": "遗迹外、为首の玄武帝宗弟子冷笑一声，身后跟着十余名内门高手，灵力如同实质般压来。他的目光扫过陳霊，嘴角勾起一抹轻蔑：「天青宗の废物和一个不知名の女人？就凭你们，也敢阻挡我玄武帝宗？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_015",
+        "character_id": "char_chenian",
+        "content": "陳霊轻轻抬手，一道无形の屏障在她与陳機面前展开，将那股压迫感尽数卸去。她的声音平淡得像在说一件微不足道小事：「我劝你们还是回去吧。今天这里的事，不是你们能插手的。」",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_016",
+        "content": "玄武帝宗弟子仿佛听到了什么天大的笑话，放声大笑起来：「哈哈哈哈！一个小丫头也敢口出狂言！我倒要看看，你有什么本事——」话音未落，他的笑声戛然而止。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_017",
+        "content": "因为陳霊的眼眸中，突然闪过一道黄金の光芒。那光芒中蕴含的威压，让在场的每一个人都从灵魂深处感到战栗——那是来自更高维度の压制，是命运本身对凡人の俯瞰。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0672_choice_003",
+        "prompt": "陳霊展现了真正的实力，玄武帝宗弟子们面露惧色。在这个关键时刻，陳機该如何应对？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0672_choice_003_a",
+            "text": "趁势打脸玄武帝宗",
+            "description": "借着陳霊の威压，狠狠羞辱玄武帝宗弟子，展现自己的气势。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能彻底得罪玄武帝宗",
+            "visible_reward": "极大提升名望，让玄武帝宗颜面尽失",
+            "risk_hint": "玄武帝宗可能记恨在心",
+            "process_label": "乘胜追击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_003_a_1",
+                  "content": "陳機缓步走出，嘴角勾起一抹嘲讽の弧度：「哟，这不是玄武帝宗の高徒吗？怎么，刚才不是很威风吗？现在怎么一个个跟见了鬼似的？」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0672_result_003_a_2",
+                  "character_id": "char_chenian",
+                  "content": "玄武帝宗弟子の脸色涨成了猪肝色，却被那股威压压得说不出话来，只能愤恨地瞪着陳機。",
+                  "emotion": "愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0672_choice_003_b",
+            "text": "点到为止放人",
+            "description": "见好就收，警告对方后放他们离去，避免结下死仇。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "玄武帝宗可能认为你怕了",
+            "visible_reward": "避免宗门冲突升级",
+            "risk_hint": "可能被人认为软弱",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0672_result_003_b_1",
+                  "content": "陳機挥了挥手，像赶苍蝇一样：「行了行了，今天就当给你们一个教训。回去告诉你们宗主，天青宗的事，轮不到玄武帝宗来插手。滚吧。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0672_result_003_b_2",
+                  "character_id": "char_chenian",
+                  "content": "玄武帝宗弟子如蒙大赦，连滚带爬地逃离了遗迹。临走前，为首那人回头狠狠地瞪了陳機一眼，眼中满是怨毒。",
+                  "emotion": "怨毒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_018",
+        "content": "待玄武帝宗の人走远，陳霊收起了那股威压，转身看向陳機。她的眼神中多了几分认真：「我的诚意，你应该看到了。现在，你愿意听我说完吗？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0672_019",
+        "character_id": "char_chenian",
+        "content": "陳霊从袖中取出一枚古朴の玉佩，郑重地递到陳機面前：「这是我運命監視者の信物、危急时刻可召唤我一次。从今往后，你我便是同盟。」",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0672_020",
+        "content": "陳機接过玉佩，入手温润，隐隐能感受到其中蕴含の特殊力量。他将玉佩收入袖中，抬头直视陳霊の双眼：「好，我姑且信你。但有一件事你必须告诉我——天道の眼，究竟是什么？」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

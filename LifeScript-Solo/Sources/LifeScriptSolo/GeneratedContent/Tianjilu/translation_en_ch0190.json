@@ -1,0 +1,383 @@
+{
+  "id": "天机录_ch0190",
+  "book_id": "天机录",
+  "number": 190,
+  "title": "The Cleansing Concludes",
+  "is_paid": true,
+  "next_chapter_hook": "Those transferred resources pointed to coordinates that coincided with the ruins of the Tianji Record's former owner—and that place was precisely the forbidden land Chen Ji should never set foot in.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0190_001",
+        "content": "Ling Yuan's figure tumbled down from the clouds like a kite with severed strings, his robes flapping wildly in the fierce wind, yet an eerie smile spread across his aged face, as if he were the true victor of this博弈.\\n\\nChen Ji stood rooted in place, his brow slightly furrowed. 'The price of the Tianji Record has never been borne by the living'—these words pierced into the most hidden corner of his heart like a fine needle. Mo Xiansheng's presence rippled faintly in his Mental Sea, yet he remained uncharacteristically silent.\\n\\n'Chen Shixiong!' The cheers of fellow disciples rang out behind him, pulling him back from contemplation. As the crimson mist gradually dispersed, the remnants of the Five Elders' alliance had been thoroughly routed atop the cloud platform. He had won this battle—at least, on the surface."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_002",
+        "content": "Before the Tianqing Sect's grand hall, corpses lay scattered and blood flowed like rivers. The once formidable Five Elders' faction had collapsed within mere days. Chen Ji stood with hands clasped behind his back, the bloodstains on his white robes not appearing disheveled but instead adding a killing aura to his presence.\\n\\n'Clean the battlefield and tally the casualties.' His voice remained placid as water, yet carried undeniable authority. 'All remaining Five Elders' associates shall be taken to the Sect's Law Enforcement Hall for interrogation.'\\n\\nThe surrounding disciples responded in unison, their gazes now filled with genuine reverence. This man, once mocked by all as a废物 servant, had become the behind-the-scenes chess player who orchestrated this grand cleansing."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0190_003",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao arrived tread through the bloody sunset, her plain white gown adorned with specks of crimson that highlighted her coldly beautiful face. She stopped three feet before Chen Ji, her gaze studying him复杂ly. 'What Ling Yuan said, don't take it to heart. That old fox never missed a chance to plant demonic seeds in your heart before death—his intentions were utterly contemptible.'",
+        "emotion": "关切中带着几分警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_004",
+        "content": "Chen Ji slightly tilted his gaze, a faint smile curving his lips. 'Su Shimei is overthinking. If I couldn't see through such petty tricks, how could I possibly be standing here?'\\n\\nHe paused, his gaze profound. 'As for the 'price' that old thing mentioned... Mo Xiansheng, shouldn't you give me an explanation?'\\n\\nSilence filled his Mental Sea for a moment before Mo Xiansheng's aged voice drifted forth. 'When you should know, you will know. For now, just understand—you are the one the Tianji Record chose, and the price is mine to bear.'\\n\\nChen Ji's heart tightened. The meaning behind those words unsettled him even more than Ling Yuan's curse."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0190_005",
+        "prompt": "Just then, a law enforcement disciple hurried over, his expression panicked. 'Chen Shixiong! During the inventory of spoils, we discovered that the core resources from the Five Elders' secret vault... are all gone!' Chen Ji's eyes chilled—what should be done about this matter?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0190_005_追查",
+            "text": "Personally investigate the resources' whereabouts",
+            "description": "With Chen Ji's cunning and the Tianji Record's abilities, tracking down the mastermind behind the transferred resources would not be difficult.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume time and energy",
+            "visible_reward": "May discover a larger conspiracy",
+            "risk_hint": "Enemies may have set a trap",
+            "process_label": "你决定亲自追查这条线索",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0190_result_追查_001",
+                  "content": "A cold light flashed in Chen Ji's eyes as he spoke deeply: 'Lead the way.' He turned to Su Qingyao. 'Su Shimei, sect affairs shall be temporarily handled by you. I'll go inspect the secret vault.' Su Qingyao nodded slightly, a hint of admiration flickering in her gaze—this was the meticulous Chen Ji she knew."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0190_005_封赏",
+            "text": "First accept the sect's rewards",
+            "description": "Stabilizing hearts and establishing position is the top priority; the matter of resources can be dealt with gradually.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the opportunity to investigate",
+            "visible_reward": "Officially become a core disciple",
+            "risk_hint": "Resources may have been transferred abroad",
+            "process_label": "你决定先稳定局面",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0190_result_封赏_001",
+                  "content": "After pondering briefly, Chen Ji said: 'First, seal this news. We'll await the Sect Master's decision. Right now the cleansing just ended, hearts are unstable—no need to create more trouble.' A hint of surprise flickered in Su Qingyao's eyes—when had this废物 become so considerate of the bigger picture? What she didn't know was that this was precisely the effect Chen Ji desired: to let everyone see his 'steady' side."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0190_006",
+        "content": "Inside the Council Hall, bells and chimes rang in unison. The Sect Master sat at the head, his demeanor dignified and commanding, while the heads of various sect factions and core disciples stood below. Chen Ji stood in the center of the hall, his white robes pristine like snow, his demeanor composed.\\n\\n'Chen Ji.' The Sect Master's voice echoed through the grand hall. 'In this cleansing of the Five Elders' remnants, your contributions are paramount. Entering the tiger's den alone, plotting to execute the rebels—you are a role model for the younger generation.'\\n\\nHe paused, his gaze sweeping across the hall. 'Effective immediately, Chen Ji is promoted to core disciple of Tianqing Sect. He shall receive the character 'Ji' medallion, enjoying elder-level treatment.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0190_007",
+        "character_id": "char_hanlie",
+        "content": "At the hall entrance, Han Lie's figure stood like an iron tower. He had come to observe the ceremony, yet upon hearing these rewards, his face turned green with rage. 'Sect Master! This man is merely a servant-disciple—how does he deserve to skip over countless senior brothers and directly become a core disciple? Xuanwu Sect is the first to refuse to accept this!'",
+        "emotion": "愤怒与不甘交织"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_008",
+        "content": "Chen Ji slowly turned, his gaze falling calmly upon Han Lie. He showed no anger; instead, he revealed an innocent smile. 'Han Shixiong speaks correctly. I am indeed merely a servant-disciple, my cultivation is low, my Combat Power average.'\\n\\nHis voice shifted, clear and bright: 'But I wonder—when we had equal cultivation levels, Han Shixiong, the number one genius of Xuanwu Sect, how was it that you couldn't last three moves against me?'\\n\\nThe hall erupted in commotion. Han Lie's face flushed crimson like pig liver, his fists clenched tight, veins bulging, yet he couldn't utter a single word. This was the shame he least wanted to recall—in that recent sparring match, he had indeed lost, and lost thoroughly."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_009",
+        "content": "The Sect Master冷哼一声: 'Han Lie, how dare you comment on sect affairs? Withdraw!'\\n\\nHan Lie gritted his teeth, his eyes boring into Chen Ji, filled with unwillingness. But faced with the overwhelming trend, he could only turn and leave furiously. Before departing, his voice drifted in from outside the hall: 'Chen Ji, you wait! Someday, I'll make you kneel before me and beg for mercy!'\\n\\nChen Ji smiled faintly, dismissing it. He had heard such words too many times."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0190_010",
+        "prompt": "After the award ceremony concluded, Chen Ji sat alone in his quiet chamber, finally beginning to investigate those vanished resources. However, the direction the clues pointed filled his heart with dread—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0190_010_继续追查",
+            "text": "Follow the clues to the end",
+            "description": "Wherever it leads, the truth must be uncovered. Even if it means touching upon the Tianji Record's secrets.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May trigger dangerous taboos",
+            "visible_reward": "Uncover part of the Tianji Record's truth",
+            "risk_hint": "The former owner's ruins conceal unknown dangers",
+            "process_label": "你决定追查到底",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0190_result_继续追查_001",
+                  "content": "Chen Ji closed his eyes in concentration, the Tianji Record Fragment unfurling slowly within his Mental Sea. After a moment, he opened his eyes, his pupils contracting sharply—the transfer coordinates for those resources coincided exactly with the 'Chen Xuan Ruins' Mo Xiansheng had mentioned before. His fingers trembled slightly: 'Mo Xiansheng, is this a coincidence?' Mo Xiansheng remained silent for a long while before finally sighing: '...You were bound to discover this step eventually.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0190_010_隐忍",
+            "text": "Temporarily hold position",
+            "description": "The timing isn't right; avoid打草惊蛇. First consolidate one's position, investigate discreetly.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "The truth may forever remain buried",
+            "visible_reward": "Gain more time for plotting",
+            "risk_hint": "Enemies may act first",
+            "process_label": "你决定隐忍不发",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0190_result_隐忍_001",
+                  "content": "Chen Ji buried the clues deep in his heart. He knew that once certain truths were revealed, there would be no turning back. Mo Xiansheng's voice echoed in his Mental Sea with a hint of approval: 'Your ability to restrain your curiosity is admirable. The Chen Xuan Ruins... when you're ready, you will know.' Chen Ji responded coldly: 'I hope that by then, you won't have any more 'prices' to hide from me.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0190_011",
+        "content": "The night was as dark as ink. Chen Ji stood before the window, gazing at the stars in the sky, lost in thought. The Five Elders had fallen, but Ling Yuan's words lingered like a thorn in his heart. And those vanished resources, with their pointed coordinates, left him sleepless.\\n\\n'Chen Shixiong.' A soft knock came at the door, followed by Su Qingyao's voice. 'Are you free? There's something I want to discuss with you.'\\n\\nChen Ji collected his thoughts, speaking calmly: 'Come in.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0190_012",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao pushed open the door and entered. Moonlight fell upon her coldly beautiful face, adding a touch of gentleness. She met Chen Ji's eyes directly, getting straight to the point: 'Chen Ji, I won't beat around the bush. Who exactly are you? Where did that Tianji Record Fragment come from?'",
+        "emotion": "审视中带着一丝难以察觉的关心"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_013",
+        "content": "Chen Ji met her gaze, his lips curving slightly upward: 'Su Shimei, you're asking too many questions.'\\n\\nHe didn't evade; instead, he stepped forward until they were close at hand. Su Qingyao instinctively retreated half a step, yet she was transfixed by the unfathomable gloom in his eyes, frozen in place.\\n\\n'Are we enemies or allies?' Chen Ji's voice was low. 'Perhaps this question is more important than what you've asked.'"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0190_014",
+        "prompt": "The atmosphere suddenly tensed. The two locked eyes, complex emotions flickering in Su Qingyao's gaze—too many secrets lay hidden on this man that she couldn't see through. How should she choose?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0190_014_坦诚",
+            "text": "Choose to trust",
+            "description": "Since he's already come this far, perhaps she should stand on his side.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May be used by him",
+            "visible_reward": "Unlock prerequisite conditions for 'Shared Destiny'",
+            "risk_hint": "If he deceives her, it will be utter destruction",
+            "process_label": "你选择相信他",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0190_result_坦诚_001",
+                  "content": "Su Qingyao took a deep breath, avoiding his gaze: 'I won't pry into your secrets. But there's something I want to tell you—I investigated the Five Elders' resource transfer and found a name.' She paused. 'The Holy Sect.' Chen Ji's pupils tightened slightly. The Holy Sect was precisely within Ye Qing's sphere of influence, and also the place where his sister Chen Nian had been taken..."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶选择信任陈机",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0190_014_保持距离",
+            "text": "Choose to observe and wait",
+            "description": "Before the truth is clear, maintaining distance would be prudent.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May miss an ally",
+            "visible_reward": "Keep cards hidden",
+            "risk_hint": "He will be guarded against her",
+            "process_label": "你选择保持距离",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0190_result_保持距离_001",
+                  "content": "Su Qingyao stepped back, resuming her usual cold demeanor: 'Since you don't want to talk, I won't force you. But I hope you understand—the enemies of Tianqing Sect aren't limited to the Five Elders.' She turned to leave, leaving behind meaningful words. 'Some things, once stained, can never be cleansed.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0190_015",
+        "content": "After Su Qingyao departed, Chen Ji sat alone at his desk, a yellowed map spread before him. His finger pointed to a certain marked location—that was precisely the coordinate of the resource transfer.\\n\\n'Chen Xuan Ruins...' he murmured, his brow furrowing with gravity. Mo Xiansheng's voice drifted forth: 'That was the dojo your ancestor left behind, and also where the Tianji Record was first born. The secrets hidden there are enough to overturn the entire cultivation world.'\\n\\nChen Ji's eyes flickered sharply: 'So the Five Elders transferred resources there to unlock what?'\\n\\nMo Xiansheng was silent for a moment. '...A taboo that should never have existed.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0190_016",
+        "character_id": "char_yeqing",
+        "content": "Suddenly, a subtle fluctuation came from outside the window. Ye Qing's figure appeared in the corner of the room like a ghost. She still wore black纱, yet the solemnity between her brows was undeniable. 'Chen Ji, I've received news—the Holy Sect is secretly mobilizing大批 resources, with their target precisely the Chen Xuan Ruins.' She paused. 'And the leader... is my father.'",
+        "emotion": "复杂与警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_017",
+        "content": "Chen Ji abruptly stood up, his eyes blazing with intensity: 'Are you certain?'\\n\\nYe Qing nodded seriously: 'The Holy Sect has begun moving internally. Moreover, from what I know, this operation involves Chen Nian—they need the 'Heavenly Fate Lock Key' to unlock something within the ruins.'\\n\\nThe name Chen Nian struck like a heavy hammer, slamming into Chen Ji's heart. His hands trembled slightly, fingernails digging deep into his palms, blood slowly seeping out. This name was his greatest weakness, the family member he had been searching for.\\n\\n'Chen Nian...' His voice was low and dangerous. 'If they dare touch her, I'll teach them what it means to pay a price.'"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_018",
+        "content": "Ye Qing watched his sudden change in气场, a slight shock in her heart. This seemingly calm man harbored such terrifying obsession beneath the surface. She spoke softly: 'I can help you infiltrate the Holy Sect's interior, but I need time to set things up. Can you... wait?'\\n\\nChen Ji closed his eyes, taking a deep breath, forcibly suppressing the turmoil in his heart. When he opened his eyes again, that madness had been replaced by profound calmness.\\n\\n'Wait?' He sneered. 'I've waited five years. What's a few more days?'\\n\\nHe walked to the window, gazing at the dark night sky in the distance, a cold smile curling his lips. 'Ling Yuan was right—the price of the Tianji Record is never borne by the living. But what he doesn't know is—for my family, I'm willing to pay any price.'\\n\\nThose vanished resources, the pointed ruins, Chen Nian's whereabouts—all the clues converged at this moment. Chen Ji knew he was about to step into a true forbidden zone. And there, waiting for him wasn't merely truth, but danger sufficient to destroy everything."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0190_019",
+        "content": "Night wind howled, ruffling Chen Ji's robes. He turned to face Ye Qing: 'Three days. Give me three days to handle sect affairs, then we move together.'\\n\\nYe Qing nodded, her figure gradually dissolving into the darkness. Before departing, her voice drifted over: 'Chen Ji, be careful of Ling Yuan. Although severely wounded, he may not truly be finished. That old fox... is harder to deal with than we imagined.'\\n\\nChen Ji offered no response, merely gazing at the night sky beyond the window, his gaze deep as an abyss. The great cleansing had ended, but the true storm was just beginning.\\n\\nThose transferred resources, the coordinates they pointed to—the Chen Xuan Ruins—there lay the origin of the Tianji Record and also the answer he had always sought. And now, his sister Chen Nian's safety was tightly connected to that place as well.\\n\\nThree days later, he would enter the forbidden zone, facing the most cruel test of fate. Mo Xiansheng's words echoed in his ears: 'The Chen Xuan Ruins are where the Tianji Record was first born, and also... the source of all karma.'"
+      }
+    }
+  ]
+}

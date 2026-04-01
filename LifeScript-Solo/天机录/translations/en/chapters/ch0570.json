@@ -1,0 +1,470 @@
+{
+  "id": "天机录_ch0570",
+  "book_id": "天机录",
+  "number": 570,
+  "title": "A New Game Begins",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji believed everything was under control, a familiar voice echoed from the depths of the space-time rift—Chen Tianming was calling him.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0570_001",
+        "content": "The morning mist had not yet dispersed. Chen Ji stood with hands clasped behind his back by the window, his gaze piercing through layers of fog, landing on the direction of the Holy Sect. The Crown Prince's Grand Tutor's proposal was like a soft blade—gentle on the surface yet striking straight to the vitals. The corner of his mouth curved slightly, carving a meaning-filled arc—dead men have nothing to fear from the schemes of the living.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_002",
+        "character_id": "char_moxiansheng",
+        "content": "\"Boy, that move of yours is a臭棋.\" Mo Xiansheng's remnant soul manifested from the first page of the Tianji Record, his voice carrying a hint of mockery. \"Your sister is in the heavenly prison, you're outside the abyss, and between you lies the entire dynasty's wolves and tigers. How do you plan to send a dream? Flying on pure thought?\"",
+        "emotion": "揶揄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_003",
+        "content": "Chen Ji turned around. The candlelight danced in his pupils, reflecting an abyss of unfathomable cold. He slowly extended his right hand, and a dim talisman appeared in his palm—one purchased with three drops of refined blood and five points of Heavenly Fate: the '幽冥通灵符.' Mo Xiansheng was right—this was indeed a 臭棋. But sometimes, a bad move can also deliver checkmate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0570_choice_001",
+        "prompt": "The dream-entering technique was extremely dangerous. A single misstep could expose his location. How should Chen Ji choose?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0570_opt_001a",
+            "text": "Enter the Dream Personally",
+            "description": "Using the 幽冥通灵符 as a conduit, Chen Ji personally enters Chen Nian's dream. Extreme risk, but can convey the most complete information.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consume 5 points of Heavenly Fate, endure backlash",
+            "visible_reward": "Establish a mental link with his sister, allowing instructions to be transmitted at any time",
+            "risk_hint": "Heavenly Fate drops to a critical point, possibly triggering a fatal backlash",
+            "process_label": "陈机亲自入梦",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt001a_001",
+                  "content": "The talisman ignited with eerie blue flames. Chen Ji's brow center throbbed faintly, and a surge of boundless chill rose from the soles of his feet. He felt his consciousness like a wisp of smoke, slowly departing from his body, drifting toward the direction of the Holy Sect. Mo Xiansheng's exclamation was thrown behind him—this kid is insane!"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt001a_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Who goes there?!\" Chen Nian jolted awake, only to find everything around her void. A familiar figure was emerging from the mist. \"Ji... Ji-gege?!\" Her voice trembled, her eyes instantly reddening.",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0570_opt_001b",
+            "text": "Borrow a Blade to Deliver the Message",
+            "description": "Use Ye Qing's demonic path mist to conceal his aura, letting her relay information to Chen Nian within the Holy Sect. More covert, but the message could be tampered with.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Owe Ye Qing a favor",
+            "visible_reward": "No Heavenly Fate consumption, maintaining optimal condition for subsequent changes",
+            "risk_hint": "Ye Qing may have other plans",
+            "process_label": "借助魔道力量传递信息",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt001b_001",
+                  "content": "Chen Ji put away the talisman and instead retrieved a black Jade Slip. Demonic path mist coiled around it silently as Ye Qing's voice arose from the void: \"Chen Gongzi misses me so soon?\" Her tone was languid, yet carried a hint of seriousness.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt001b_002",
+                  "character_id": "char_yeqing",
+                  "content": "\"Help me deliver a message to my sister.\" Chen Ji's voice was calm as still water. \"Tell her, her gege is still alive. Also, tell her to cooperate with me in putting on an act.\" Ye Qing fell silent for a moment, then chuckled lowly: \"Interesting. I'll have someone go right away.\"",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_004",
+        "content": "Meanwhile, inside the Crown Prince's Grand Tutor's residence, a secret council was underway. Han Lie sat in the main seat, his eyes flickering with complex brilliance. The strategy of the Crown Prince's Grand Tutor proposing marriage to Chen Nian was his own design. This waste Chen Ji was an eyesore when alive, and now that he's dead, he still has to leap about—he would never allow anyone to lay hands on Chen Nian.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_005",
+        "character_id": "char_hanlie",
+        "content": "\"Young Master, that waste Chen Ji is already dead. Chen Nian is merely a bird in a cage. Why go to such great lengths?\" The trusted strategist spoke cautiously. Han Lie let out a cold hmph, his eyes revealing undisguised killing intent: \"Waste? If he were truly a waste, how could he have sabotaged my grand plans again and again?!\"",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_006",
+        "content": "He abruptly rose, walked to the window, gazing toward the direction of the Holy Sect, murmuring to himself: \"Chen Ji, you think death can free you? Those you care about, I will not spare a single one.\" His voice was like glacial ice. The strategist couldn't help but shiver. This madman—whatever is he planning now?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_007",
+        "content": "Yet what Han Lie did not know was that just as he was triumphantly self-assured, a shocking rumor was quietly spreading among the major powers—Dead man Chen Ji, before his death at the Holy Sect, left behind a curse: Whoever takes Chen Nian shall surely suffer heavenly retribution!",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0570_choice_002",
+        "prompt": "The rumor has begun. How should Chen Ji fan the flames to make this drama of the dead man's curse even more spectacular?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0570_opt_002a",
+            "text": "Add Fuel to the Fire",
+            "description": "Spread more details: the celestial omens that changed that day, the Holy Sect Elder's sudden death, etc., to make the rumor more believable.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume a great deal of energy forging evidence",
+            "visible_reward": "The rumor believability skyrockets, the dynasty begins to split internally",
+            "risk_hint": "Overly deifying it may attract the attention of the Eye of Heavenly Dao",
+            "process_label": "深化诅咒谣言",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt002a_001",
+                  "content": "A cold smile curled on Chen Ji's lips. He drew a Jade Slip from his chest and began weaving an even larger web—Celestial omens changed? Yes! He had days ago set up a formation near the Holy Sect to trigger spiritual energy anomalies. Elder died suddenly? Even more so! He had tampered with that Elder's elixir long in advance.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt002a_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "Mo Xiansheng's remnant soul watched in目瞪口呆: \"Good lad, turns out you laid all these traps beforehand!\" Chen Ji replied calmly: \"The greatest advantage of a dead man is that he can prepare everything in advance.\"",
+                  "emotion": "惊叹"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0570_opt_002b",
+            "text": "Passing Off the False as True",
+            "description": "Make no unnecessary moves, let the rumor ferment naturally. More steady, but the effect is slower.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Patiently Wait",
+            "visible_reward": "Do not expose more trump cards, maintain strategic initiative",
+            "risk_hint": "Han Lie may seize the opportunity to turn the tables first",
+            "process_label": "让谣言自然发酵",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt002b_001",
+                  "content": "Chen Ji withdrew the Jade Slip, standing with hands clasped behind his back. Sometimes the best rumor is one that simply looks true. He only needed to wait—for those with guilty consciences to frighten themselves. The dead are not terrifying; what is terrifying is the guilty hearts of the living.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt002b_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "\"You kid are even more insidious than this old man in his prime.\" Mo Xiansheng sighed emotionally. \"Though... this old man likes it.\" Chen Ji offered no reply, his gaze profound as an abyss—the true hunter always waits for the perfect moment to strike.",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_008",
+        "content": "Three days later, panic had seized the Holy Sect internally. The Elder who had originally supported the marriage alliance suddenly spat blood and collapsed before everyone. Though not life-threatening, every witness saw the terror in his eyes before he fell—a look of having seen something truly terrifying.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_009",
+        "character_id": "char_chenian",
+        "content": "\"This is none of your concern!\" Chen Nian's voice rang out from the inner hall, ice-cold and resolute. \"Tell the Crown Prince's Grand Tutor, Chen Nian will not marry in this lifetime! If he insists on pressing...\" She paused, her voice turning sharply fierce, \"Then let him come ask the dead man's curse if it agrees!\"",
+        "emotion": "强硬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_010",
+        "content": "When news reached the Grand Tutor's residence, Han Lie was embracing a beauty and drinking merrily. Upon hearing the report, the wine cup in his hand shattered suddenly, fragments piercing his palm, blood flowing freely, yet he was oblivious. \"Waste! A bunch of废物!\" He roared, \"Can't even handle a single woman!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_011",
+        "character_id": "char_hanlie",
+        "content": "\"Young Master, calm your anger!\" The strategist hastily knelt. \"Chen Nian relies on her cultivation and the Crown Prince's favor to behave so recklessly. But if His Highness the Crown Prince personally applies pressure...\" Han Lie abruptly cut him off: \"You mean to have the Crown Prince intervene?\" He sneered, \"That废物 of a Crown Prince, what can he do besides be impressive in bed?!\"",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_012",
+        "content": "Just then, a black-clad figure silently appeared in the corner of the hall. He was Han Lie's informant embedded within the Holy Sect, yet now brought unsettling news: \"Young Master, this subordinate discovered traces of demonic path cultivators near the Holy Sect. Moreover...\" He hesitated, \"This subordinate seems to have seen Chen Ji's figure.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0570_choice_003",
+        "prompt": "Han Lie learned that Chen Ji might still be alive. How should he respond?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0570_opt_003a",
+            "text": "Personally Pursue and Kill",
+            "description": "Regardless of whether the news is true or false, personally lead men to pursue and kill Chen Ji. With his strength, crushing Chen Ji would be like crushing an ant.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May fall into a trap",
+            "visible_reward": "The thrill of personally killing Chen Ji",
+            "risk_hint": "Since Chen Ji dares to show himself, he must have backup plans",
+            "process_label": "韩烈决定亲自出手",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt003a_001",
+                  "content": "Han Lie abruptly stood up, a manic light flickering in his eyes: \"He's not dead? Ha ha! Excellent! Excellent indeed!\" He seized his battle halberd and strode outward. \"Pass the order—assemble three thousand Xuanwu Elite Cavalry. This Lord will go meet this废物 who has risen from the dead!\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt003a_002",
+                  "character_id": "char_moxiansheng",
+                  "content": "Mo Xiansheng's voice rang in Chen Ji's mind, tinged with gravity: \"Kid, the people from Xuanwu Sect are moving. Han Lie leads personally, a full three thousand elite cavalry.\" Yet Chen Ji laughed—that smile was gentle enough to charm, yet cold enough to chill: \"Let them come. I'd like to see if his iron cavalry is faster, or my布局 is faster.\"",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0570_opt_003b",
+            "text": "Investigate Secretly",
+            "description": "Though furious, Han Lie, having become Xuanwu Sect's number one genius, was not all brute force. He decided to first send people to secretly investigate and confirm the truth of the news.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May miss the best timing",
+            "visible_reward": "Avoid falling into traps, preserve strength",
+            "risk_hint": "During the investigation, things may change on Chen Nian's end",
+            "process_label": "韩烈决定先调查真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0570_result_opt003b_001",
+                  "content": "Han Lie drew a deep breath, forcibly suppressing the flames of rage in his heart. Though impulsive, he was not foolish. If Chen Ji truly wasn't dead, he must have something to rely on. He turned to the black-clad figure: \"Keep watch on the Holy Sect, keep watch on every suspicious person. Any news, report immediately.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0570_result_opt003b_002",
+                  "character_id": "char_hanlie",
+                  "content": "\"And furthermore...\" A ruthless glint flashed in Han Lie's eyes, \"Go investigate the source of that curse. This Lord wants to see who's playing god and ghost behind the scenes!\" He coldly laughed, \"Dead men are dead men—there will be no翻身 for him!\"",
+                  "emotion": "阴狠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_013",
+        "content": "Meanwhile, turmoil also erupted within the dynasty. The Crown Prince's Grand Tutor's proposal to Chen Nian was meant to be a classic political marriage, yet it was disrupted by a 'dead man's curse,' stirring up winds and rains across the capital. Court officials presented petition after petition, citing 'celestial warnings' to request suspending the matter. Even His Majesty the Emperor had begun to waver.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0570_014",
+        "character_id": "char_chenian",
+        "content": "Within Ye Qing's demonic path mist, Chen Nian's image slowly manifested. She looked at her brother, her eyes full of心疼 and pride: \"Ji-gege, the rumor has taken effect. The Elders of the Holy Sect have already begun to waver. However...\" She hesitated, \"I feel someone is secretly investigating you.\"",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_015",
+        "content": "Chen Ji smiled faintly—that smile was like a spring breeze brushing the face, yet carried a chilling edge: \"Let them investigate. The greatest value of a dead man is to make the living never able to figure him out.\" He looked at his sister, his gaze softening for a moment: \"Xiao Nian, you've done excellently. When this game of chess is finished, gege will take you away from here.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {}
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_017",
+        "content": "His voice carried a hint of anticipation, and also a firm resolve. Anticipation, because he was about to complete yet another布局; resolve, because he knew that no matter how many thorns lay ahead, he would bring his sister out of this quagmire. The dead are not terrifying; what is terrifying is the执念 of the dead. And his执念 was Chen Nian.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_018",
+        "content": "Yet just at this moment, an ancient and majestic voice suddenly thundered in Chen Ji's mind—not Mo Xiansheng's voice, but an existence far more ancient and profound. \"Chen Ji... you have finally reached this step...\" The voice carried a strange delight. \"Come... to the space-time rift... let me see you...\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_019",
+        "content": "Chen Ji's expression changed abruptly. The Eye of Heavenly Dao—that existence transcending all others—had finally noticed him. His Tianji Record grew slightly scalding, as if responding to something. He drew a deep breath, forcibly suppressing the turbulent waves in his heart. Playing the board of the world was one thing; being noticed by a higher-dimensional existence was quite another.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0570_020",
+        "content": "Mo Xiansheng's remnant soul trembled violently. His voice carried unprecedented gravity: \"Kid... it has found you.\" Chen Ji offered no answer, merely gazing silently into the distance. In the depths of his eyes, an unyielding flame burned. So he had been discovered—so what? Chen Ji had never feared any existence in this life. The dead dare to lay schemes, the living dare to overturn heaven—and he, Chen Ji, dares to even be the dead!",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

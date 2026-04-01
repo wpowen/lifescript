@@ -1,0 +1,567 @@
+{
+  "id": "天机录_ch0503",
+  "book_id": "天机录",
+  "number": 503,
+  "title": "The Contest of Dragon Veins",
+  "is_paid": true,
+  "next_chapter_hook": "The eerie fissure on the barrier of the Holy Sect's Forbidden Grounds emanated a blood resonance only he could sense—Chen Nian was right there.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0503_001",
+        "content": "As Su Qingyao opened the gilded secret letter from the imperial capital, her fingers trembled slightly—three days until the Crown Prince's birthday banquet. Yet what truly chilled her was the final line: 'Deep within the imperial capital's forbidden grounds, an ancient dragon vein stirs, shaking the world.' She raised her gaze, instinctively drifting toward the figure sweeping the floor in the corner. Chen Ji's movements remained unhurried, as if the world's tumultuous changes held no concern for him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_002",
+        "content": "Almost simultaneously, three hundred li from the imperial capital at the Tianqing Sect's Back Mountain Forbidden Grounds, an invisible pressure spread from the earth's depths. The swords in the hands of mountain-guarding disciples hummed shrilly, and some with lower cultivation vomited blood from the sheer pressure. Ling Yuan stood before the closed meditation stone chamber, his withered hand slowly clenching—the awakening of the dragon vein had come three years earlier than he had anticipated.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_003",
+        "character_id": "char_moxiansheng",
+        "content": "\"It's here.\" The aged voice of Mo Xiansheng emerged from the first page of the Tianji Record, carrying a subtle weight. \"The Contest of Dragon Veins is fundamentally a redistribution of the world's fortune. If you wish to save her, this is the best opportunity—and also the most dangerous.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_004",
+        "content": "Chen Ji's sweeping finally ceased. He lifted his gaze toward the direction of the imperial capital, a sharp gleam flickering in his eyes. Three years of layout, fifty points of Heavenly Fate invested in hidden pieces—now was the time to reap the harvest. The Holy Sect's barrier fluctuates every thirty years—and the spiritual energy chaos caused by the dragon vein contest is precisely the optimal timing to break through this barrier.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0503_choice_001",
+        "prompt": "The Contest of Dragon Veins has begun, and all forces stir restlessly. Chen Ji must make a choice amid the chaos—whether to seize the dragon vein for greater leverage, or infiltrate the Holy Sect to rescue his sister while the world burns.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0503_c001_01",
+            "text": "Competing for the Dragon Vein",
+            "description": "The fortune power within the dragon vein can accelerate the Tianji Record's restoration—true strength is fundamental. The rescue can wait, but the dragon vein must never fall into others' hands.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss the optimal rescue timing, and Chen Nian may be relocated again",
+            "visible_reward": "Gain the dragon vein's fortune blessing, allowing the Tianji Record to unseal more functions",
+            "risk_hint": "Ling Yuan is also competing for the dragon vein—direct confrontation carries extreme risk",
+            "process_label": "布局龙脉争夺战",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c001_01_01",
+                  "content": "Chen Ji leaned the broom against the wall, a subtle curve forming at the corner of his lips. A废物杂役? Perfect—no one would notice an ant's movements. He turned toward the back mountain, footsteps soundless, like a wisp of blue smoke dissolving into the night.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "龙脉路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c001_02",
+            "text": "Focus on Rescue",
+            "description": "Chen Nian has been imprisoned far too long—the barrier fissure caused by the dragon vein contest is a rare once-in-a-millennium opportunity. Miss it again, and who knows how many more years of waiting.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Abandon the dragon vein contest, and the world's fortune will be completely reshuffled",
+            "visible_reward": "If successfully rescuing Chen Nian, obtain key information about the 'Heavenly Fate Lock Key'",
+            "risk_hint": "The Holy Sect's forbidden grounds are heavily guarded—rushing in means nine deaths, one survival",
+            "process_label": "潜入圣宗禁地",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c001_02_01",
+                  "content": "Chen Ji's eyes darkened. For three years he had countless times seen his sister's blurry figure in dreams—she was his only blood relative in this world. The dragon vein can wait, but Chen Nian... he could not make her wait another moment.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "营救路线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "营救妹妹是陈机最大的执念",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c001_03",
+            "text": "Pursuing Both Lines Simultaneously",
+            "description": "Use hidden operatives to manipulate both lines simultaneously—personally infiltrate the Holy Sect while arranging for Ye Qing to compete for the dragon vein on his behalf.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires consuming more Heavenly Fate Value to maintain information synchronization on both fronts",
+            "visible_reward": "Both opportunities to rescue Chen Nian and to secure the dragon vein's fortune",
+            "risk_hint": "Once either line reveals a flaw, the entire situation may collapse",
+            "process_label": "两线同时布局",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c001_03_01",
+                  "character_id": "char_yeqing",
+                  "content": "\"You certainly trust me.\" Ye Qing's voice drifted from the shadows, carrying a playful tone. \"The Contest of Dragon Veins determines the world's fortune distribution—you'd really let me handle something this major?\"",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双线路线",
+              "夜清参与"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_005",
+        "content": "In the Crown Prince's palace in the imperial capital, lanterns blazed with brilliant light. Crown Prince Xiao Yan burned the secret letter, his eyes gleaming sharply: \"The Dragon Vein awakens—this is a heaven-sent opportunity. Issue the order: on the day of the birthday banquet, the core figures of Xuanwu Sect, Qingyun Pavilion, and Tianqing Sect must all be present—I shall see for myself who is the true master of the Dragon Vein.\" His voice was cold and arrogant, unaware that multiple pairs of eyes in the shadows had already fixed upon this grand banquet.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_006",
+        "content": "In the Grand Council Hall of Tianqing Sect, Ling Yuan sat regally at the main seat. Below stood Han Lie and other core disciples. His withered fingers tapped rhythmically against the armrest as his voice seemed to emerge from the Nine Abysses: \"The Dragon Vein contention concerns our Tianqing Sect's century-long fortune. Does that waste Chen Ji also come to make trouble?\" He sneered coldly, \"Let him go. Wastes have their uses—dying outside saves me the trouble of handling it personally.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_007",
+        "content": "Yet at this moment, Chen Ji had silently departed from Tianqing Sect. He traversed along the mountain path between towering peaks, each step landing precisely on the nodes where worldly energy flowed. The Tianji Record Fragment within his Mental Sea radiated gentle warmth, continuous blurry images emerging—the direction of the imperial capital, Dragon Vein energy churning like a colossal serpent; further away at the Holy Sect's Forbidden Grounds, a subtle fissure slowly expanding as the Dragon Vein trembled.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_008",
+        "character_id": "char_lingyuan",
+        "content": "\"Chen Ji.\" Ling Yuan's aged voice suddenly resounded behind Chen Ji, his withered figure somehow already standing ten zhang away. \"The Dragon Vein contention approaches—where are you going?\" His gaze was as coldly sinister as a venomous snake, as if he had already seen through Chen Ji.",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0503_choice_002",
+        "prompt": "Ling Yuan suddenly appeared, blocking Chen Ji's path. Coincidence, or had he sensed something long ago?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0503_c002_01",
+            "text": "Conceal weakness and endure",
+            "description": "Adopt the waste persona, claim merely going out for fresh air, never reveal the true purpose.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Waste precious time, Ling Yuan may probe further",
+            "visible_reward": "Maintain the disguise, Ling Yuan will temporarily not suspect",
+            "risk_hint": "Ling Yuan's suspicion has already arisen, a simple lie may not deceive him",
+            "process_label": "伪装废物姿态",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c002_01_01",
+                  "character_id": "char_chenji",
+                  "content": "\"Reporting to the Sect Master,\" Chen Ji hastily bowed, his voice carrying traces of fear, \"The disciple has recently made no progress in cultivation, wishes to take a breath of fresh air below the mountain... dares not delay the Sect's great affairs!\" His posture was humble to the extreme, like a withered leaf，随时会被风吹走。",
+                  "emotion": "惶恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c002_02",
+            "text": "Seize the initiative",
+            "description": "Directly question Ling Yuan's presence here, attack while defending, disrupt his rhythm.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose some sharpness, may deepen Ling Yuan's vigilance",
+            "visible_reward": "Control dialogue initiative, force Ling Yuan to reveal flaws",
+            "risk_hint": "Ling Yuan is a calculating old fox, direct confrontation carries great risk",
+            "process_label": "主动出击试探",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c002_02_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji straightened up, his gaze calmly meeting Ling Yuan's. Those eyes held not a trace of cowardice befitting a waste, but were deep as an abyss, as if capable of seeing through human hearts. \"Senior Brother, you come to this place so late at night—for what purpose?\" His voice was not loud, yet clearly penetrated the night wind.",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c002_03",
+            "text": "Secretly activate the Tianji Record",
+            "description": "Consume 5 Heavenly Fate points, peer into Ling Yuan's movements within the next three hours,借此找到脱身之法。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume precious Heavenly Fate points",
+            "visible_reward": "Gain key information, find the perfect escape timing",
+            "risk_hint": "Heavenly Fate is limited, excessive consumption may affect subsequent actions",
+            "process_label": "使用天机录窥探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c002_03_01",
+                  "content": "The Tianji Record Fragment within his Mental Sea slightly vibrated, an enigmatic force surging toward his eyes. Chen Ji's world suddenly became crystal clear—three quarters of an hour later, Ling Yuan would receive an urgent transmission from the imperial capital, forced to return to the Sect. Then, he would have a brief unobstructed window of action.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "已使用天机录"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_009",
+        "content": "Just as the Tianji Record had foreseen, Ling Yuan's brow suddenly creased. A jade slip flew from his sleeve, transforming into a stream of light that vanished into his brow. After a moment, his阴冷笑意凝固了：\"Imperial City urgent summons...\" He glanced at Chen Ji, a trace of impatience flickering in his eyes, \"Very well, you may go. If the Dragon Vein contention requires assistance, this seat will summon you.\" With that, his form dissolved like blue smoke, vanishing into the night's darkness.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_010",
+        "content": "Chen Ji stood in place, watching Ling Yuan depart. His expression remained calm, yet his clenched fists trembled slightly. In that instant, he clearly sensed a familiar fluctuation—it was Chen Nian's aura. The Holy Sect Forbidden Grounds' barrier fissures were more intense than he imagined. The spiritual energy chaos caused by the Dragon Vein contention was tearing apart the cage imprisoning his sister.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_011",
+        "character_id": "char_moxiansheng",
+        "content": "「Did you see that?」 Mo Xiansheng's voice echoed in the Mental Sea, carrying a hint of satisfaction. 「The Dragon Vein Contest is nothing less than a reshuffling of Heavenly Fate. Your sister is imprisoned exactly above a tributary of the Dragon Vein. The rift caused by the Dragon Vein's agitation is precisely the key to breaking the Holy Sect's seal—but also the most dangerous trigger. Once you make a move for her, the gaze of the Eye of Heavenly Secrets will certainly fall upon you.」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0503_choice_003",
+        "prompt": "Chen Nian's location has been locked, but the Holy Sect Forbidden Grounds' defenses and Heavenly Secrets' attention are lethal threats. At this moment, he must make the final decision.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0503_c003_01",
+            "text": "Infiltrate Alone",
+            "description": "Seizing the opportunity when the Holy Sect experts are distracted by the Dragon Vein Contest, infiltrate the forbidden grounds alone to rescue Chen Nian. The risk is highest, but it won't implicate others.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "If failed, face the Holy Sect's wrath alone",
+            "visible_reward": "Successfully rescue Chen Nian, and gain the secret of the 'Heavenly Fate Lock Key'",
+            "risk_hint": "Unknown dangers beyond comprehension may exist deep within the forbidden grounds",
+            "process_label": "独自行动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c003_01_01",
+                  "content": "Chen Ji drew a deep breath, his footsteps turning toward the Holy Sect. His silhouette under the moonlight appeared solitary and resolute. Three years of restraint, three years of scheming—all for this moment. Even if the path ahead leads through dragon's pools and tiger's dens, he would walk it himself.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "独自营救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 25
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c003_02",
+            "text": "Contact Ye Qing",
+            "description": "Utilize Ye Qing's 'Demonic Path Mist' to conceal the Tianji Record's aura, and infiltrate the forbidden grounds together. Her assistance would greatly increase safety.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Owe Ye Qing a favor, and the Demonic Path Mist has a time limit",
+            "visible_reward": "With concealment, the risk of detection by Heavenly Secrets is greatly reduced",
+            "risk_hint": "Whether Ye Qing is willing to take such a huge risk remains unknown",
+            "process_label": "联手行动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0503_result_c003_02_01",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing emerged from the shadows, Demonic Path Mist swirling around her. She gazed at Chen Ji, her lips curving into a meaningful smile: 「For your sister's sake, you're willing to spend quite a lot.」 Her voice suddenly dropped, 「But I like it—the feeling of being needed.」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "联手营救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清与陈机建立了基于共同利益的深度信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0503_c003_03",
+            "text": "Abandon This Opportunity",
+            "description": "The timing is still not mature enough; acting rashly may cost all your chips. Wait for a better opportunity next time.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Chen Nian suffers another day in the forbidden grounds, and the rift may heal on its own",
+            "visible_reward": "Preserve the existing layout, accumulate more strength before acting",
+            "risk_hint": "May need to wait several decades",
+            "process_label": "按兵不动",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0503_result_c003_03_01",
+                  "content": "Chen Ji closed his eyes, his knuckles white from tension. Reason told him this was not the best timing. But that blurred face constantly appearing in his mind was like countless fine needles, piercing his heart. Three years of separation was already long enough... Yet he ultimately turned around, walking back toward where he came from. To live is to have hope.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暂缓营救"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择了理性的道路，但这决定让他内心备受煎熬",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_012",
+        "content": "At the very moment Chen Ji made his choice, deep within the Holy Sect Forbidden Grounds, a faint glow flickered beneath layers of seals. Chen Nian was chained to a cold stone wall, her delicate features grown gaunt, yet her eyes remained bright as stars. She sensed something and abruptly raised her head—that was Big Brother's aura! Faint, but real. Tears fell silently as she gripped her fists tightly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_013",
+        "content": "「The Dragon Vein has awakened.」 An ancient voice reverberated through the void in the depths of the Holy Sect. 「That child has also begun to act. The Wheel of Fate has started turning... In this game, does he have the higher hand, or has Heavenly Secrets long arranged the board?」 In the depths of the void, a pair of invisible eyes slowly opened, gazing indifferently at all in the world—that is the 'Eye of Heavenly Secrets' that stands above all chess players.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_014",
+        "content": "At the same time, above the imperial city, the sky suddenly blazed with a golden pillar of light as Dragon Vein energy surged toward the clouds. The entire world felt this immense power—the Dragon Vein Contest had officially begun. The three major sects, the Holy Sect of the Demonic Path, and even the imperial family's forces would clash in this contest. Chen Ji stood at the center of this storm; every choice he made would affect the world's pattern.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0503_015",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan stood atop Tianqing Sect's highest peak, gazing toward the imperial city. A cold, sinister smile curved his lips: 「The Dragon Vein Contest—all under heaven's fate rests upon it. Does Chen Ji, that废物, think he can remain aloof by hiding in the shadows?」 His withered palm suddenly clenched tightly, 「But he doesn't know—I have waited sixty years for this moment.」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_016",
+        "content": "Chen Ji withdrew his gaze, taking one final look toward the Holy Sect Forbidden Grounds. The rift in the barrier had widened large enough for one person to pass through, but the guards' strength was also rapidly increasing. He drew a deep breath, turned, and vanished into the night. The Crown Prince's birthday banquet was still three days away; the Dragon Vein Contest was merely an open chess piece on the board—the true winning move is always hidden in the dark. In three days, he would appear in the imperial city, as a 'useless servant disciple', witnessing this grand event that would change the world's pattern.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0503_017",
+        "content": "The bizarre rift on the Forbidden Grounds barrier of the Holy Sect was emanating a blood resonance only he could sense—Chen Nian was there. That night, Chen Ji made a decision: no matter what price he had to pay, he would find the path to his sister in the chaos of the Dragon Vein Contest. Even if it meant becoming an enemy of the entire world, he would not hesitate.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

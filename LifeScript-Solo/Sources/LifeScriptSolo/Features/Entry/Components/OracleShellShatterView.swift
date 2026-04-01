@@ -3,10 +3,12 @@ import SwiftUI
 // MARK: - Shell Shatter View
 
 struct OracleShellShatterView: View {
-    let revealProgress: CGFloat
+    let shatterProgress: CGFloat
     let pulsePhase: CGFloat
     let shellFrame: CGRect
     var onShellTap: () -> Void
+
+    private var isShattered: Bool { shatterProgress > 0.01 }
 
     var body: some View {
         GeometryReader { _ in
@@ -15,23 +17,24 @@ struct OracleShellShatterView: View {
 
                 shardExplosion
 
-                OracleShockwaveRing(progress: min(revealProgress / 0.4, 1.0))
+                OracleShockwaveRing(progress: min(shatterProgress / 0.4, 1.0))
                     .position(x: shellFrame.midX, y: shellFrame.midY)
 
-                OracleShockwaveRing(progress: min(max(revealProgress - 0.06, 0) / 0.35, 1.0))
+                OracleShockwaveRing(progress: min(max(shatterProgress - 0.06, 0) / 0.35, 1.0))
                     .scaleEffect(0.82)
                     .opacity(0.65)
                     .position(x: shellFrame.midX, y: shellFrame.midY)
 
-                OracleLightningCracks(pulsePhase: pulsePhase, revealProgress: revealProgress)
+                OracleLightningCracks(pulsePhase: pulsePhase, shatterProgress: shatterProgress)
                     .frame(width: shellFrame.width * 0.86, height: shellFrame.height * 0.84)
                     .position(x: shellFrame.midX, y: shellFrame.midY)
-                    .opacity(max(0.0, 1.0 - revealProgress * 2.8))
+                    .opacity(max(0.0, 1.0 - shatterProgress * 2.8))
             }
         }
         .contentShape(Rectangle())
         .onTapGesture { onShellTap() }
-        .allowsHitTesting(revealProgress < 0.3)
+        .allowsHitTesting(!isShattered)
+        .opacity(shatterProgress > 0.85 ? max(0, 1.0 - (shatterProgress - 0.85) * 6.0) : 1.0)
     }
 
     // MARK: - Intact Shell
@@ -39,16 +42,17 @@ struct OracleShellShatterView: View {
     private var intactShell: some View {
         shellImage
             .frame(width: shellFrame.width, height: shellFrame.height)
+            .clipped()
             .position(x: shellFrame.midX, y: shellFrame.midY)
-            .opacity(max(0.0, 1.0 - revealProgress * 5.0))
-            .scaleEffect(1.0 - min(revealProgress, 0.2) * 0.15)
+            .opacity(max(0.0, 1.0 - shatterProgress * 5.0))
+            .scaleEffect(1.0 - min(shatterProgress, 0.2) * 0.15)
     }
 
     // MARK: - Shard Explosion
 
     private var shardExplosion: some View {
         ForEach(shards) { shard in
-            let rawBurst = (revealProgress - shard.staggerDelay) / max(0.001, 0.42 - shard.staggerDelay * 0.4)
+            let rawBurst = (shatterProgress - shard.staggerDelay) / max(0.001, 0.42 - shard.staggerDelay * 0.4)
             let burst = min(max(rawBurst, 0), 1)
             let curve = sin(Double(burst) * .pi) * shard.curvature
             shardView(for: shard, burst: burst, curve: CGFloat(curve))
@@ -56,11 +60,11 @@ struct OracleShellShatterView: View {
     }
 
     private var shellImage: some View {
-        SoloBundledArtworkImage(resourceName: "tianjilu_oracle_shell_closed", contentMode: .fit)
+        SoloBundledArtworkImage(resourceName: "tianjilu_oracle_shell_closed", contentMode: .fill)
     }
 
     private func shardOpacity(burst: CGFloat, delay: CGFloat) -> CGFloat {
-        let appear = min(max((revealProgress - delay) * 12.0, 0.0), 1.0)
+        let appear = min(max((shatterProgress - delay) * 12.0, 0.0), 1.0)
         let fade = max(0.0, 1.0 - burst * 1.1)
         return appear * fade
     }
@@ -79,6 +83,7 @@ struct OracleShellShatterView: View {
 
         shellImage
             .frame(width: shellFrame.width, height: shellFrame.height)
+            .clipped()
             .mask(shardMask)
             .overlay(shardOutline)
             .position(x: shellFrame.midX, y: shellFrame.midY)
@@ -88,47 +93,56 @@ struct OracleShellShatterView: View {
             .shadow(color: SoloTheme.gold.opacity(glowOpacity), radius: 8, y: 5)
     }
 
-    // MARK: - Shard Definitions
+    // MARK: - Shard Definitions (9 shards for full-bleed coverage)
 
     private var shards: [OracleShellShardSpec] {
         [
             .init(id: 0,
-                  points: [CGPoint(x: 0.22, y: 0.06), CGPoint(x: 0.48, y: 0.14),
-                           CGPoint(x: 0.43, y: 0.34), CGPoint(x: 0.16, y: 0.24)],
-                  travel: CGSize(width: -180, height: -140), rotation: -42,
+                  points: [CGPoint(x: 0.0, y: 0.0), CGPoint(x: 0.36, y: 0.0),
+                           CGPoint(x: 0.30, y: 0.28), CGPoint(x: 0.0, y: 0.22)],
+                  travel: CGSize(width: -252, height: -196), rotation: -42,
                   staggerDelay: 0.02, curvature: 14),
             .init(id: 1,
-                  points: [CGPoint(x: 0.50, y: 0.12), CGPoint(x: 0.78, y: 0.06),
-                           CGPoint(x: 0.86, y: 0.28), CGPoint(x: 0.60, y: 0.34)],
-                  travel: CGSize(width: 196, height: -148), rotation: 46,
-                  staggerDelay: 0.01, curvature: -12),
+                  points: [CGPoint(x: 0.36, y: 0.0), CGPoint(x: 0.68, y: 0.0),
+                           CGPoint(x: 0.60, y: 0.30), CGPoint(x: 0.30, y: 0.28)],
+                  travel: CGSize(width: 20, height: -220), rotation: 12,
+                  staggerDelay: 0.01, curvature: -10),
             .init(id: 2,
-                  points: [CGPoint(x: 0.16, y: 0.26), CGPoint(x: 0.42, y: 0.36),
-                           CGPoint(x: 0.36, y: 0.56), CGPoint(x: 0.10, y: 0.52)],
-                  travel: CGSize(width: -252, height: -22), rotation: -58,
-                  staggerDelay: 0.06, curvature: 18),
+                  points: [CGPoint(x: 0.68, y: 0.0), CGPoint(x: 1.0, y: 0.0),
+                           CGPoint(x: 1.0, y: 0.26), CGPoint(x: 0.60, y: 0.30)],
+                  travel: CGSize(width: 274, height: -207), rotation: 46,
+                  staggerDelay: 0.03, curvature: -12),
             .init(id: 3,
-                  points: [CGPoint(x: 0.44, y: 0.34), CGPoint(x: 0.60, y: 0.34),
-                           CGPoint(x: 0.64, y: 0.60), CGPoint(x: 0.50, y: 0.74),
-                           CGPoint(x: 0.34, y: 0.58)],
-                  travel: CGSize(width: 0, height: 200), rotation: 16,
-                  staggerDelay: 0.0, curvature: -8),
+                  points: [CGPoint(x: 0.0, y: 0.22), CGPoint(x: 0.30, y: 0.28),
+                           CGPoint(x: 0.34, y: 0.58), CGPoint(x: 0.0, y: 0.55)],
+                  travel: CGSize(width: -294, height: -30), rotation: -58,
+                  staggerDelay: 0.06, curvature: 18),
             .init(id: 4,
-                  points: [CGPoint(x: 0.62, y: 0.36), CGPoint(x: 0.88, y: 0.28),
-                           CGPoint(x: 0.92, y: 0.54), CGPoint(x: 0.66, y: 0.60)],
-                  travel: CGSize(width: 268, height: 12), rotation: 62,
-                  staggerDelay: 0.04, curvature: 16),
+                  points: [CGPoint(x: 0.30, y: 0.28), CGPoint(x: 0.60, y: 0.30),
+                           CGPoint(x: 0.64, y: 0.56), CGPoint(x: 0.50, y: 0.68),
+                           CGPoint(x: 0.34, y: 0.58)],
+                  travel: CGSize(width: 0, height: 280), rotation: 16,
+                  staggerDelay: 0.0, curvature: -8),
             .init(id: 5,
-                  points: [CGPoint(x: 0.14, y: 0.56), CGPoint(x: 0.36, y: 0.60),
-                           CGPoint(x: 0.40, y: 0.86), CGPoint(x: 0.20, y: 0.92),
-                           CGPoint(x: 0.08, y: 0.74)],
-                  travel: CGSize(width: -192, height: 224), rotation: -32,
-                  staggerDelay: 0.08, curvature: -20),
+                  points: [CGPoint(x: 0.60, y: 0.30), CGPoint(x: 1.0, y: 0.26),
+                           CGPoint(x: 1.0, y: 0.56), CGPoint(x: 0.64, y: 0.56)],
+                  travel: CGSize(width: 310, height: 17), rotation: 62,
+                  staggerDelay: 0.04, curvature: 16),
             .init(id: 6,
-                  points: [CGPoint(x: 0.60, y: 0.60), CGPoint(x: 0.88, y: 0.56),
-                           CGPoint(x: 0.92, y: 0.76), CGPoint(x: 0.78, y: 0.94),
-                           CGPoint(x: 0.56, y: 0.88)],
-                  travel: CGSize(width: 208, height: 230), rotation: 32,
+                  points: [CGPoint(x: 0.0, y: 0.55), CGPoint(x: 0.34, y: 0.58),
+                           CGPoint(x: 0.38, y: 0.88), CGPoint(x: 0.0, y: 1.0)],
+                  travel: CGSize(width: -269, height: 314), rotation: -32,
+                  staggerDelay: 0.08, curvature: -20),
+            .init(id: 7,
+                  points: [CGPoint(x: 0.34, y: 0.58), CGPoint(x: 0.50, y: 0.68),
+                           CGPoint(x: 0.64, y: 0.56), CGPoint(x: 0.66, y: 0.86),
+                           CGPoint(x: 0.38, y: 0.88)],
+                  travel: CGSize(width: 10, height: 322), rotation: -14,
+                  staggerDelay: 0.05, curvature: 14),
+            .init(id: 8,
+                  points: [CGPoint(x: 0.64, y: 0.56), CGPoint(x: 1.0, y: 0.56),
+                           CGPoint(x: 1.0, y: 1.0), CGPoint(x: 0.66, y: 0.86)],
+                  travel: CGSize(width: 291, height: 322), rotation: 32,
                   staggerDelay: 0.07, curvature: 22),
         ]
     }
@@ -155,11 +169,11 @@ private struct OracleShockwaveRing: View {
                     ),
                     lineWidth: max(0.5, 6 * (1 - progress))
                 )
-                .frame(width: 20 + 360 * progress, height: 20 + 360 * progress)
+                .frame(width: 20 + 500 * progress, height: 20 + 500 * progress)
 
             Circle()
                 .stroke(Color.white.opacity(0.5), lineWidth: max(0.3, 2 * (1 - progress)))
-                .frame(width: 30 + 380 * progress, height: 30 + 380 * progress)
+                .frame(width: 30 + 520 * progress, height: 30 + 520 * progress)
                 .blur(radius: 2)
         }
         .opacity(Double(max(0.0, 1.0 - progress * 1.6)))
@@ -171,7 +185,7 @@ private struct OracleShockwaveRing: View {
 
 private struct OracleLightningCracks: View {
     let pulsePhase: CGFloat
-    let revealProgress: CGFloat
+    let shatterProgress: CGFloat
 
     var body: some View {
         GeometryReader { geo in
@@ -183,7 +197,7 @@ private struct OracleLightningCracks: View {
                     )
 
                 crackPath(in: geo.size)
-                    .trim(from: 0.0, to: min(1.0, 0.18 + revealProgress * 0.82))
+                    .trim(from: 0.0, to: min(1.0, 0.18 + shatterProgress * 0.82))
                     .stroke(
                         LinearGradient(
                             colors: [
@@ -196,7 +210,7 @@ private struct OracleLightningCracks: View {
                             endPoint: .bottomTrailing
                         ),
                         style: StrokeStyle(
-                            lineWidth: 2.6 + revealProgress * 3.5,
+                            lineWidth: 2.6 + shatterProgress * 3.5,
                             lineCap: .round,
                             lineJoin: .round
                         )

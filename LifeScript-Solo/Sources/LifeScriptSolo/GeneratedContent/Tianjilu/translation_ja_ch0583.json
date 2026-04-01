@@ -1,0 +1,453 @@
+{
+  "id": "天机录_ch0583",
+  "book_id": "天机录",
+  "number": 583,
+  "title": "兄妹の密謀",
+  "is_paid": true,
+  "next_chapter_hook": "二人の謀議の最中、紫黒の伝音符が窓を破って飛び込み、夜清の焦燥した声が密室に響き渡った：「Chen Ji！Ling Yuanが魔道の三大護法に包囲され、Qingyun峡谷で生死の危機に瀕している——急げ！」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0583_001",
+        "content": "密室の中、蝋燭の炎が揺らめき、Chen JiとChen Nianの影をぼろぼろの壁に落とし、水墨画の一場面のようだった。Chen Jiは静かに妹の言葉を聞き終え、色鮮やかな表情は変わらなかったが、側に垂らした指先だけがわずかに丸まり、骨節が白く浮き上がった。彼はすぐに口を開かず、窓の外の深い夜の色，缓缓と視線を移した。思索しているようにも見えたし、何かを抑えるているようにも見えた。良久、彼は静かに言った：「天命を書き換える……ずいぶん大きな口を叩くね。」口調はいつもの天気を語るように平坦だったが、彼に familiar な者だけが、その平静な 表象の下で渦巻いている暗流を聞き取れた。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_002",
+        "character_id": "char_chenian",
+        "content": "お兄さん、禁地で見つけた那些，是不是也和这有关？",
+        "emotion": "关切而试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_003",
+        "content": "Chen Jiが振り返ると、蝋燭の光が彼の深邃な眼眸の中で跳ね、暗く曖昧な光と影を映し出した。彼はChen Nianのもとへゆっくりと歩み寄り、彼女の前に立ち、抬手して彼女の鬓の 옆散った髪の流れを軽く撫でた。その動作は普段算计に漏れのない少年とは思えないほど優しくだった。「俺が見たものは、お前が思っているよりもっと多い。」彼の声は低く、彼自身が気づいていない疲労が一筋含まれていた，「でも、いくつかのことを見たからと言って、いいこととは限らない。念念、お前は戻るべきではなかった。」彼は言葉を切り、喉仏微動、何か言葉在他的喉间に哽えていたが、最終的にはほとんど聞こえない吐息となった。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_004",
+        "character_id": "char_chenian",
+        "content": "戻るべきではなかった？お兄さん、一人で这么多年を背負ってきた私，难道就该在暗处苟活？",
+        "emotion": "倔强中带着哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_005",
+        "content": "Chen Nianの眼眶はわずかに赤くなったが、何とか涙を堪えた。彼女は幼い頃に聖宗に連れ去られ、あの暗黒の中で生きてきた日々、彼女を生かす唯一的念头は一つだけだった——お兄さんを見つけ出して、直接彼に伝えること、彼女はまだ生きていて、子供の頃の長い道を糖葫芦を買いに行ってもらう温暖な午後のことを覚えていると。「私は聖宗でこの十几年、每一天都在想你会不会以为我死了。」彼女は顔を上げ，目光炯炯地Chen Jiを真っ直ぐ見つめた，「お兄さん、私は当年的あのあなたに守られる小姑娘ではないわ。」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_006",
+        "prompt": "Chen Nianの主張に対して、Chen Ji该如何回应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0583_006_a",
+            "text": "彼女の決定を優しく受け入れる",
+            "description": "Chen Jiが沈黙を守り、ついに執念放手、妹が成長したことを認め、彼女の選択を尊重することを選択した",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "一人で全局掌控の安心感失去",
+            "visible_reward": "兄妹二人が初めて并肩作战、信任度大幅提升",
+            "risk_hint": "戦闘中妹妹の安危を気に分ける必要がある",
+            "process_label": "接受并肩",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_006_a_result_1",
+                  "character_id": "char_chenji",
+                  "content": "よし。既然念念执意如此……那我便一起。",
+                  "emotion": "释然与温柔"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sibling_battle_partner"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹并肩",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_006_b",
+            "text": "彼女を裏方に退くよう坚持する",
+            "description": "Chen Jiが兄としての威厳を示し、Chen Nianに裏方から情報支援を提供させ、亲自危険するものではありませんよう要求した",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "妹の自尊心を傷つける可能性がある",
+            "visible_reward": "妹の安全を守り、より安全な戦略的位置，掌握する",
+            "risk_hint": "Chen Nianが抵抗情绪，产生，影响后续合作の可能性がある",
+            "process_label": "坚持保护",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_006_b_result_1",
+                  "character_id": "char_chenian",
+                  "content": "お兄さん！君はいつも这样，什么都自己扛……你以为我是累赘吗？",
+                  "emotion": "委屈与愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_backstage"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "理念冲突",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_007",
+        "content": "兄妹二人は相对而立、空気中弥漫着一种微妙の緊張感。窓の外夜風が突然吹き上がり、蝋燭の炎が激しく揺らめき、Chen Nianの顔に明滅不定の光と影を投げかけた。彼女は深く息を吸い込み、懐から缓缓古樸の玉佩を取り出した。その玉佩は通体幽藍で、内部には流光が涌动し、隐约Chen Jiの懐にある残片と似た気を発していた。「お兄さん，这是我这些年聖宗秘術を盗んで凝縮した龍脈の欠片です。」彼女は玉佩を掌に托し，「聖宗の人々は知らない，我已经能够感应到另一块碎片的所在——那是完整天機录の埋蔵处です。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_008",
+        "character_id": "char_chenji",
+        "content": "お前は疯了？龍脈の欠片は你的神魂と繋がっている，一旦取り出すと……」",
+        "emotion": "震惊与担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_009",
+        "content": "Chen Jiの言葉は戛然而止、彼はもちろんな代償が何かを知っていた。龍脈の欠片を取り出す瞬间、神魂が必ず重创を受け、軽ければ修為倒退、重ければ根基尽毁となる。彼の視線はChen Nianの蒼白な面色に落ち、彼女の手にある幽光流転の玉佩に 옮겼다，心中某个角落隐隐作痛。この馬鹿な娘は、这一刻のために、どれだけ暗の中で筹謀していたのか？彼の唇は一条の線に抿まれ、良久してから重い声で言った：「お前が俺に告诉した这些……聖宗は知っているのか？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_010",
+        "character_id": "char_chenian",
+        "content": "暂时不知。但皇帝と聖宗はすでに私の異動を察觉，所以才急着进行那场仪式。お兄さん、皇朝内部は并非铁板一块、三大宗门は虎視眈眈、魔道は蠢蠢欲动……这是我们的机会。",
+        "emotion": "冷静而坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_011",
+        "prompt": "Chen Ji该如何整合这些情報，制定下一步计划？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0583_011_a",
+            "text": "まず天機録を手に入れ、そして皇帝を破る",
+            "description": "陳念の龍脈感知能力を利用し、まず完全な天機録を見つけて実力をつけ、そして皇帝を謀る",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "未知の禁地に冒険して潜入する必要がある",
+            "visible_reward": "完全な天機録を獲得し、実力が飛躍的に向上する",
+            "risk_hint": "禁地には皇帝が仕掛けた罠があるかもしれない",
+            "process_label": "寻觅天机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_011_a_result_1",
+                  "content": "良い、君の言う通りだ。だがその前に、まず傷を养わねばならぬ。龍脈の欠片之事は……後にاقشةしよう。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_heaven_record_first"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "先取天机录",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_011_b",
+            "text": "皇帝の儀式を利用し、釜底抽薪の策に出る",
+            "description": "皇帝の儀式がクライマックスに達した瞬間、儀式を破壊的同时に皇朝と聖宗の勢力を弱体化させる",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "正確なタイミングを捉えなければならず、許容誤差は極めて低い",
+            "visible_reward": "一石二鳥で皇帝を阻止しながら龍脈の力を得ることもできる",
+            "risk_hint": "儀式の現場は必ずや龍潭虎穴となるだろう",
+            "process_label": "破坏仪式",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_011_b_result_1",
+                  "content": "皇帝は天命を書き換えようとしている……哼，让他们见识见识什么叫真正的天命所归。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_sabotage_ritual"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "釜底抽薪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_011_c",
+            "text": "魔道の聖女と連絡を取り、三者間の駆け引きを行う",
+            "description": "夜清を通じて魔道との秘密連合を構築し、借刀殺人の策略で皇朝と聖宗を互相に消耗させる",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "狼を穴に招き入れることになるかもしれず，魔道は未必可信である",
+            "visible_reward": "強力な外援を獲得的同时に、敵の注意力を分散させる",
+            "risk_hint": "魔道勢力が介入した後、局面は失控する可能性もある",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 7
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_011_c_result_1",
+                  "character_id": "char_chenian",
+                  "content": "お兄さん，魔道の人間は信用できるのか？",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_alliance_demon"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "借力打力",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_012",
+        "content": "陳機が手を背にして立ち，燭火がその後ろに痩せ型の輪郭を描いていた。しばらく沉思の後，ようやく淡淡とした笑みを浮かべた。その笑みには久しく失われていた温もりがあった。「大きくなったな、念念」彼は窓の前に歩み寄り，窓を開けた。夜風が遠くの山々からの松涛を連れて密室に流れ込んできた。「这些年我布局天下，看似算无遗策，实则……孤掌难鸣」彼は振り返り，陳念に目を向けた。「この言葉があるからこそ、私は知る。この一局は、まだ終わりの時ではないと」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_013",
+        "character_id": "char_chenian",
+        "content": "お兄さんが言った墨先生のこと……本当に信用できるのか？彼はただの残魂に過ぎないが，天機録の全貌を本当に知っているのか？",
+        "emotion": "谨慎而好奇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_014",
+        "content": "陳機の言葉を聞き，嘴角，微微上扬，却笑得意味深长。「信用？」彼は首を横に振った。「念念、この世において、誰も絶対的に信用できる者はいない。墨先生也罢，凌渊也罢，甚至天道本身……」彼の目は深邃くなり、この小さな密室穿透して、より遥远な虚空看向了。「重要なのは从来不是他们可不可信，而是——我能不能在他们背叛我之前，先一步将他们的价值榨干」彼の语气平静如水，陈念却听得后背微微发凉。これがお彼女の兄，一张温和的面孔の下に、いったいどれほど冷酷な心が隠されているのか？"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_015",
+        "prompt": "陳機と妹が深入りに話し合いの後、彼女に天機録の詳細を明かすべきか？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0583_015_a",
+            "text": "天機録の代償を率直に告げる",
+            "description": "陳念に天機録の使用每が天命値を消費すること、そして運命による必杀の反噬について伝える",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陳念は心配のあまり衝動的な行動に出る可能性がある",
+            "visible_reward": "隔阂消除、兄妹が本当に心を開かれる",
+            "risk_hint": "陳念はChen Jiが天機録を使用するのを阻止しようとしているかもしれない",
+            "process_label": "袒露真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_015_a_result_1",
+                  "character_id": "char_chenian",
+                  "content": "お兄さん！なぜ早く言わなかったの！",
+                  "emotion": "震惊与心疼"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_knows_cost"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "坦白代价",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_015_b",
+            "text": "一部の情報のみを明らかにする",
+            "description": "陳念に天機録の能力を告げるが、天命値消費などの致命的な欠陥には言及しない",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "隠蔽は将来的に信頼危機を引き起こす可能性がある",
+            "visible_reward": "妹を天機録の秘密に縛られないように守る",
+            "risk_hint": "重要な局面で陳念は不知のため判断を誤る可能性がある",
+            "process_label": "有所保留",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_015_b_result_1",
+                  "content": "天機録は強くとも、その限界がある。念念、お前が知るべきは、私がいる限り、誰も（お前を）一指たりとも触れさせないということだ。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_partial_info"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "适度隐瞒",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_016",
+        "content": "夜風が急に険しくなり、密室の蝋燭が突然暗くなった。Chen Jiの眉が微かに曇る。彼は一股の熟悉でありながら奇妙な気配が空を破って来るのを感じた。それは魔道特有の暗紫霊光——Ye Qingの伝音符籙だった。指を軽く上げると、その紫光は掌中に稳定と落ち、符籙が燃える瞬間、Ye Qingのかっ迫り緊張した声が密室に轟いた：「Chen Ji！凌渊が魔道三大護法に包囲され青云峡に捉えられ、生死一线！急いで来い！」符籙が燃え尽き、灰が禿々と落ちる。Chen Jiの瞳が骤然と縮んだ。凌渊……表面彼を庇護し 实は祸心を隠す老掌门が、今まさ命一线？"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_017",
+        "character_id": "char_chenian",
+        "content": "凌渊？お兄さん、彼はあなたが日頃から警戒していた人じゃない？なぜ助けに行くの？",
+        "emotion": "困惑"
+      },
+      "text": {
+        "id": "天机录_ch0583_018",
+        "content": "Chen Jiはすぐには答えなかった。彼は手を背に組み、窓の外を深い眼差しで見つめ、脑海の中で無数の考えが駆け巡っていた。凌渊、天青宗老掌门、彼の宿敵、だがこの碁局において極めて重要な一枚の駒でもある。彼がこうして死ねば、裏の布局、未だ明らかにされていない真相……は全て深淵に沈むだろう上加えて、凌渊が魔道の手で死ぬなら、天青宗と魔道は必ず完全に絶縁し、その時整个修仙界の構造が大きく変動する。彼はゆっくりと振り返り、陳念に言った：「碁局が終わるまで、駒は死ねない。」彼の声は低沉で冷静だった、「念念、さっき私と共に戦おうと言った——今、混乱の中で生き延びる道を如何に見せるか、見てもらおうか。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_019",
+        "character_id": "char_chenian",
+        "content": "お兄さん、どうするか教えて、言う通りに聞く。",
+        "emotion": "坚定而信任"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_020",
+        "content": "Chen Jiは妹の眼中的輝きを見て、胸中に言い表せない感情が湧いた。十数年の別離、骨肉の再開、彼女は文句一つなく彼の傍らに立ち、この混沌乱世へ共に足を踏み入れた。彼は一歩前に出で、手を轻轻と陳念の肩に置き、掌心の温もりが薄い衣料を通じて伝わった。「念念、今夜の言葉を覚えろ。」彼の声は急に柔らかくなり、普段の冷漠さと謀略を脱ぎ捨てた、「何があっても、お兄さんはお前を守る。この度——二人で。」言葉が落ちると、密室の蝋燭が几分も輝いたようだった。陳念の眼眶が微かに赤くなり、彼女は力を込めて頷き、その砲のような約束を心底に深く刻んだ。窓の外は墨のような夜色、遠く隐隐と風雷の音が伝わってくる——青云峡の方角，天下を揺るがすほどの嵐が味は已めている。そしてChen Jiは、新たな征途に踏み出した。"
+      }
+    }
+  ]
+}

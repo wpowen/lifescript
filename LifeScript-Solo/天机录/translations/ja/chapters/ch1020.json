@@ -1,0 +1,600 @@
+{
+  "id": "天机录_ch1020",
+  "book_id": "天机录",
+  "number": 1020,
+  "title": "三つの道の選択",
+  "is_paid": true,
+  "next_chapter_hook": "陳機が運命の十字路に足を踏み入れた瞬間、倉御天の石を置く音が虚空中響き渡った——それは万古を囚われし至强者が、この対局に投じた最後の駒であった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1020_001",
+        "content": "宇宙意志の注視は実体のように押し寄せ、これは言葉を超越する威能である。陳機は何インチの肌も、一縷の神魂もその視線の下で逃げ場がないと感じた。周囲の空間は歪み始め、天機録の残頁は激しく震え、まるでいつでも崩れるかのように震えていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_002",
+        "character_id": "char_chenji",
+        "content": "（口角に苦笑を浮かべ）ようやく正眼で見てもらえたのか？",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_003",
+        "content": "しかし下一刻、三つの截然たる運命の軌跡が彼の眼前で同時に展開された——それは天機録が決して見せたことのない奇観であった。三つの道、三つの結末、全てが彼を中心にしながらも、截然たる彼岸へと繋がっている。光が交錯する中、陳機は一筋一路の代価と贈り物を明確に視た。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「蟻よ、三息の時間をやる。」その声はもはや機械的な運命の宣告ではなく、某种の审视を帯びていた、「選べ。朕は十分に待った。」",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_005",
+        "content": "陳機の身측で、蘇青瑶の剣意は骤然凌厉となった。彼女はいつの間にか既に彼の半歩後ろに立っており、素手には長剣を握りしめ、瞳の中の寒光は霜のようであった。彼女は言葉をなかったが、その姿态自体が最良の注釈となった——陳機が何を選んでも、彼女は彼の傍らに立つ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_006",
+        "character_id": "char_yeqing",
+        "content": "（目に複雑な光を闪かせ）陳機よ、お分かりだろうか……この道を、私はずっと待っていた。",
+        "emotion": "期许"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_007",
+        "content": "第一の道が眼前に出現した：破道之路。それは全ての人力を放棄する悲壮な坦途であり、天機録最後の力を燃やし尽くし、自らを宇宙意志と共に消滅させる。代価は陳機がより完全に消散し、魂不复存在となることであった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_008",
+        "content": "第二の道は血のように炽烈：天道之路。倉御天の残余意志を呑み込み、宇宙意志の核心権能を奪い取り、新しい棋士となる。この道は陳機に万物を超えた力を与えるが、全ての在意する人々の気運を呑み込む必要がある。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_009",
+        "content": "第三の道は玉のように温润：輪回之路。自らを犠牲に、運命の糸を再び織り上げ、全てを原点に戻す——陳念の帰還を含め那些、改竄された悲劇を含む。然しこの道の終点は、陳機がより永遠に時間長河から消滅することである。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1020_choice_001",
+        "prompt": "三つの道の選択、運命のはかりは既に傾いている。陳機よ、お前はどの道を選ぶのか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "break_heaven",
+            "text": "破道——共に消滅",
+            "description": "全てを燃やし尽くすこと、宇宙意志と共に虚無に向かう。これは唯一の自由であり、然も永遠の消滅でもある。",
+            "satisfaction_type": "牺牲",
+            "visible_cost": "全ての力と存在を失う",
+            "visible_reward": "宇宙意志は消散し、万物には解放が与えられる",
+            "risk_hint": "陳機の意識は完全に消滅し、转世の可能性は二度とない",
+            "process_label": "陈机缓缓抬手，天机录第一页彻底燃烧",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 50
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_break_heaven_01",
+                  "character_id": "char_chenji",
+                  "content": "（声は平静で怖いほど）どうせ誰かを犠牲にしなければならないなら、私がやらせてもらおう。",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_break_heaven_02",
+                  "character_id": "char_suqingyao",
+                  "content": "いや！我慢できぬ——！",
+                  "emotion": "悲愤"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "become_god",
+            "text": "天道——取って代わり",
+            "description": "全てを呑み込み、新しい宇宙主宰となる。これは最強の道であり、然も人性消滅の代価がいる。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "全ての在意する人々の気運を呑み込み、陳念を含む",
+            "visible_reward": "万物を超えた絶対的な力を得る",
+            "risk_hint": "成功すれば、陳機がもはやお前のもの「陳機」でなくなる",
+            "process_label": "陈机眼中金光大盛，天机录全力运转",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 9999
+              },
+              {
+                "stat": "黑化值",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 100
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_become_god_01",
+                  "character_id": "char_chenji",
+                  "content": "（低く笑い）この対局どうしてもやらねばならぬなら、盤ごと相手ごと呑み込んでやる。",
+                  "emotion": "疯狂"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_become_god_02",
+                  "character_id": "char_yeqing",
+                  "content": "お前は……気が狂った！",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "sacrifice",
+            "text": "輪回——身を以て道を成正す",
+            "description": "命を犠牲に、運命を重塑する。これは優しい別れであり、然も最も残酷な訣別でもある。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "永遠に時間長河から消滅する",
+            "visible_reward": "陳念が帰り、全ての人災が改められる",
+            "risk_hint": "陳機の存在は全ての時間線から抹消される",
+            "process_label": "陈机向苏青瑶和夜清露出最后一个笑容",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 80
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_sacrifice_01",
+                  "character_id": "char_chenji",
+                  "content": "（優しく）小念よ、今度こそ、兄さんはあんたを待たせない。",
+                  "emotion": "温柔"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_sacrifice_02",
+                  "character_id": "char_suqingyao",
+                  "content": "陳機……私の目を見てくれ，这都是本当だと言え！",
+                  "emotion": "泣血"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_010",
+        "content": "此刻，一道蒼老而熟悉的声音在陳機の脑海中响起——那是墨先生の残魂，跨越虚実界限传来的最后指引。「少主、第四種可能……就在你心中。」话音未落，天機録深处，一行隐藏的文字缓缓浮现。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_011",
+        "character_id": "char_moxiansheng",
+        "content": "「棋士はあなた以外ありませんが、しかし……あなたは代わりに局面を覆すこともできます。」",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1020_choice_002",
+        "prompt": "墨先生の指引は隠された第四の道を明らかにしたが、陳機はこのかつて誰も歩いたことのない道を選ぶのだろうか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "fourth_path",
+            "text": "局面を破る——局面を覆す",
+            "description": "既定の三つの道を進まず、ゲームのルールを完全に打ち破る。天機録の全真相が間もなく明らかにされる。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "未知",
+            "visible_reward": "全ての鞴を打破し、全く新しい宇宙を創造する",
+            "risk_hint": "これはかつて誰も尝试用过ことのない道であり、成功確率は……ゼロである",
+            "process_label": "陈机忽然笑了，那是看穿一切后的释然",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 500
+              },
+              {
+                "stat": "天命值",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 200
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_fourth_01",
+                  "character_id": "char_chenji",
+                  "content": "（大笑しながら立ち上がり）この対局に勝敗を設けねばならぬと誰が言った？",
+                  "emotion": "癫狂"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_fourth_02",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「お前は……何をしようとしているのだ？！」天道の意志は初めて恐怖を見せた。",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "fourth_path_revealed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 500
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "stay_original",
+            "text": "運命に従う——既定の選択",
+            "description": "三つの既知の道の中で選択を続け、未知に踏み出すリスクを負わない。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天道を超越する可能性を得られない",
+            "visible_reward": "三つの道の一つを安全に完了する",
+            "risk_hint": "永遠に既定のルールに縛られる",
+            "process_label": "陈机沉默片刻，重新审视前三条路",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_stay_01",
+                  "character_id": "char_chenji",
+                  "content": "（熟慮する）第四の道があるなら……前三つの意味は何なのか？",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": "fourth_path_revealed",
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_012",
+        "content": "陳機の神識は天機録の奥底を急速に穿梭し，墨先生が残した手がかりは渐渐と完整な脈絡を成しつつある．第四の道の真実は同样に惊人であり——それは陳機が放棄すべきは力だけでなく、「自我」への執着である必要がある．完全に消散しながら、消散の瞬間に天機録の真義を全ての生命に烙印することになる。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_013",
+        "character_id": "char_chenji",
+        "content": "（静かに呟く）つまり……これが陳玄が残した最終答案ということか。",
+        "emotion": "顿悟"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_014",
+        "content": "遠くの虚空中，倉御天の最後の意識が猛然と目を開いた．那是被囚禁万古の存在，第一次在这场对弈中主动开口：「有意思……竟然有人走到了这一步。」彼の声は蒼老で疲弊しているが、しかし不容置疑の威厳を帯びている，「那么——轮到我了。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_015",
+        "character_id": "char_chenji",
+        "content": "（猛然回头）倉御天？！你不是已经被——",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_016",
+        "content": "一道贯穿古今的气息骤然降临，それは時間を超え空間を跨越する着子の音であった．「啪嗒」と轻い音が響き、運命の盤面の真正中に落ちた．倉御天は残魂の躯を以て、この万古の対局に最後の駒を投じた——陳機面前の三つの道は、瞬時に再配置された。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_017",
+        "content": "「少主！」墨先生の残魂が惊呼を発した，「これは……時光回溯大陣！倉御天竟是将你送回了命运的起点——不、違う、これは……運命终点！」天機録が疯了闪烁し、陳機は一種の前所未有的力を感受到いた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1020_choice_003",
+        "prompt": "倉御天の着子は局面を完全に改变し，陳機面前には新たな三つの道が出现した——だが今度こそ、三息以内に最終選択をしなければならない。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_fate",
+            "text": "運命に従う——重塑を受け入れる",
+            "description": "倉御天の</minimax:tool_call>を受け入れ，運命の再記述を認める。これは受動的だが安全な道である。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "自主選択の権利を失う",
+            "visible_reward": "最終試験を安全に通過する",
+            "risk_hint": "永遠に他人の盤面上の駒となる",
+            "process_label": "陈机闭上眼睛，任由那股力量将他包裹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 100
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_accept_01",
+                  "character_id": "char_chenji",
+                  "content": "（目を閉じる）棋手が既に着子したのだから、私は一颗従顺な駒となろう。",
+                  "emotion": "平静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "reject_fate",
+            "text": "運命に逆らう——再塑を打ち破る",
+            "description": "時光回溯大陣の束縛を無理に打ち破り，自らの意志で運命を重塑する。これは唯一の自由の道である。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "反噬を承受し、根基を損傷する",
+            "visible_reward": "全ての棋手の支配から完全に脱却する",
+            "risk_hint": "成功確率は極めて低いが，一旦成功すればルールを完全に書き換える",
+            "process_label": "陈机猛然睁眼，周身天机录爆发出史无前例的光芒",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -1000
+              },
+              {
+                "stat": "天命值",
+                "delta": -2000
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 100
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_reject_01",
+                  "character_id": "char_chenji",
+                  "content": "（冷笑する）私の運命は、私だけが主唱できる！",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "unify_fate",
+            "text": "運命を融合する——三者合一",
+            "description": "三つの道の力を融为一体，前例のない第四の可能性を切り開く——全ての可能性を繋ぐ橋渡しとなる。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "三つの道が同時に反噬する痛苦を承受する",
+            "visible_reward": "全てのルールを超えた全く新しい力を得る",
+            "risk_hint": "成功確率は未知数だが，一旦成功すれば全て存在するものを超越する",
+            "process_label": "陈机伸出双手，左手托起天机录，右手握住命运之线",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3000
+              },
+              {
+                "stat": "天命值",
+                "delta": -3000
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 100
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1020_result_unify_01",
+                  "character_id": "char_chenji",
+                  "content": "（大笑する）魚と熊掌は兼得できぬと誰が言った？",
+                  "emotion": "张扬"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "unified_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_018",
+        "content": "三息はすぐに過ぎ去った。陳機は約束の隙間に立ち，周囲には三つの截然たる運命の糸が绕っている——一つは虚無に導き、一つ至高に導き、一つ永遠の消散に導く。蘇青瑶の涙、夜清の吐息、陳念のぼんやりとした身影……全ての彼の在意する人々の顔が急速に闪过した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_019",
+        "character_id": "char_suqingyao",
+        "content": "（涙を流しながらも笑っている）陳機よ……お前が何を選んでも、私は……私はずっとここで待っている。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_020",
+        "content": "倉御天の声が再び響き，今度は珍しい真摰さを帯びていた：「若いの、お前が何を選んでも……この対局、お前は老夫の想像以上に遠く走到了。」话音未落，他的残魂开始彻底消散，为陳機让出了最後の道路。而此刻，宇宙意志の冷たい視線の中に、初めて……期待？が滲んでいた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_021",
+        "content": "陳機は一息深く吸い込んだ。彼は天青宗に初めて入った時の非力さを想い出し，天機録が初めて覚醒した時の惊恐を想い出し，每次未来を予見した時の重い代價を想い出し，蘇青瑶が三次限りなく真相に近づいたが彼が次々と化解した时刻を想い出した。彼は陳念が連れ去られた時の叫びを想い出し，墨先生の懇切な教えを想い出し，夜清の那抹複雑で真挚な笑みを想い出した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1020_022",
+        "character_id": "char_chenji",
+        "content": "（ゆっくりと口を開き，声が静かで堅い）皆が答えを欲しがっているのか？ならば一つ出してやる——",
+        "emotion": "决然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1020_023",
+        "content": "陳機が最終選択をまさに為さんとする刹那，全ての宇宙は息を潜めた。天機録の光は絶顶に達し，運命の糸は激しく揺れ動き，そして宇宙意志からの那道注視は，",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

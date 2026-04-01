@@ -1,0 +1,380 @@
+{
+  "id": "天机录_ch0473",
+  "book_id": "天机录",
+  "number": 473,
+  "title": "Mo Xiansheng's True Face",
+  "is_paid": true,
+  "next_chapter_hook": "Mo Xiansheng's final words before his dispersal echoed in his ears—Chen Ji, you are the final chess piece in my thousand-year scheme, and the only hope.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0473_001",
+        "content": "The door hinges let out a sharp creak, and the candlelight swayed violently in the draft. Chen Ji's hand had already quietly slipped into his sleeve, fingertips touching the fragment glowing with a ghostly light—the Tianji Record. Yet he did not activate his foresight, for the voice outside the door was too familiar, familiar enough to send a chill down his spine. \"Young Friend Chen, forgive my late-night intrusion.\" The voice was warm and jade-like, indistinguishable from the residual soul hidden on the first page of the Tianji Record. The Imperial Envoy entered, brocade robes and jade belt, eyes smiling, but Chen Ji clearly saw within those pupils an ancient fluctuation beyond mortal comprehension.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_002",
+        "character_id": "char_moxiansheng",
+        "content": "\"No need to be nervous. If I wanted to take your life, you wouldn't even have time to react.\" The Imperial Envoy casually seated himself at the table, sleeves brushing lightly, and the teacup somehow filled itself. He raised his eyes to look at Chen Ji, a complex emotion flickering in his gaze, \"You must have many questions. For instance... why would my residual soul be connected to the Imperial Envoy's aura?\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_003",
+        "content": "Chen Ji slowly withdrew his hand from his sleeve, but showed no signs of relaxation. He stared at the face bearing some resemblance to his own, mind racing—Mo Xiansheng had said he was chosen by the Tianji Record. And the Imperial Envoy's appearance now meant what? It meant from the very beginning, every move he made could have been watched. Rage spread through his chest like wildfire, but his face remained that harmless, cowardly mask. \"Senior's late-night visit surely isn't just to reminisce with me.\"",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_004",
+        "character_id": "char_moxiansheng",
+        "content": "\"Reminisce?\" The Imperial Envoy let out a bitter laugh, tinged with a thousand years of vicissitudes, \"I have waited for this day for twelve hundred years.\" He slowly rose and walked to the window. Moonlight fell upon him, yet reflected a strange double shadow—a residual soul forcibly suppressed within the躯壳. \"Do you know, Chen Ji? The Tianji Record chose you not by chance. Because the blood flowing in you... is mine.\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_005",
+        "content": "The air seemed to freeze. Chen Ji's pupils contracted sharply. Twelve hundred years ago was precisely the era when the Chen family's ancestor founded the Tianji Record. And this Imperial Envoy before him claimed to be his ancestor? The soul fluctuation of Mo Xiansheng, the Imperial Envoy's aura, the Tianji Record's special favor toward the Chen family... all the pieces coalesced into a fact that made his whole body go cold. \"Are you... the First Patriarch of the Chen Family?\" Chen Ji's voice trembled slightly. It was the first time his \"waste\" mask had revealed genuine turmoil.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_006",
+        "character_id": "char_moxiansheng",
+        "content": "\"This name 'Chen Ji' was given by me.\" The Imperial Envoy turned around. Under the moonlight, his face seemed to have aged several years, his eyes filled with nostalgia, \"A thousand years ago, I was the first host of the Tianji Record, just like you are now—foresight the future, scheme across the world. But the Heavenly Eye...\" His voice turned ice-cold, \"It chose me and refined me into its puppet. I struggled for three hundred years before finally choosing to parasitize within the Tianji Record fragments as a residual soul, waiting for the next person capable of breaking its control.\"",
+        "emotion": "悲凉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0473_choice01",
+        "prompt": "Upon learning that Mo Xiansheng was actually a Chen family ancestor, Chen Ji's heart was torn between rage and shock. Facing this truth spanning a millennium, he had to make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0473_c1_confront",
+            "text": "Question the Truth",
+            "description": "Why choose me? Do you know how many people will die along this path?",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume Energy",
+            "visible_reward": "Gain More Truth",
+            "risk_hint": "The truth is often crueler than imagined",
+            "process_label": "追问真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c1_confront_01",
+                  "content": "Chen Ji abruptly raised his head, fury blazing in his eyes threatening to erupt. He stepped forward, closing the distance with the Imperial Envoy, voice low as thunder: \"Twelve hundred years... you've waited twelve hundred years, but do you know how many died in your schemes during those twelve hundred years?\" His hands trembled slightly—not from fear, but from rage suppressed to the extreme.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0473_c1_accept",
+            "text": "Accept Fate",
+            "description": "Since our blood is connected, I shall inherit the ancestor's legacy and battle the Heavenly Eye!",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Bear the Heavy Burden",
+            "visible_reward": "Receive the Ancestor's Inheritance",
+            "risk_hint": "The path of fate is nine deaths out of ten",
+            "process_label": "接纳命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c1_accept_01",
+                  "content": "Chen Ji took a deep breath, forcibly suppressing the raging flames in his chest. He slowly knelt and performed a bow: \"Descendant Chen Ji greets the Ancestor.\" This kneel was both an acknowledgment of his lineage and an acceptance of this thousand-jin burden. Mo Xiansheng's figure trembled slightly in the moonlight, as if something had touched him.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_007",
+        "character_id": "char_moxiansheng",
+        "content": "\"You ask why I chose you?\" Mo Xiansheng's residual soul let out a sigh, \"Because you are the only person in a thousand years who made the Tianji Record feel... fear during its trial.\" He raised his hand, and a ghostly light shot into Chen Ji's brow center. In an instant, countless images flickered past like a carousel—scenes of previous hosts being devoured by the Heavenly Eye, pain, despair, becoming puppets. \"It was afraid, Chen Ji. So afraid it would stop at nothing to eliminate you before you grew stronger.\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_008",
+        "content": "Chen Ji endured those images with closed eyes, each frame bringing searing agony, each a tragic fate. His jaw clenched so hard his teeth ached, his fists tightened until his knuckles turned white. The Heavenly Eye... that self-proclaimed embodiment of Heaven's Will, treating all prophets as chess pieces, manipulating them at will, granting or taking life. Rage like magma surged through his veins, scorching his reason. \"Its weakness...\" He opened his eyes, voice hoarse yet piercingly cold, \"Tell me what its weakness is.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "Just then, a fluctuation beyond sound came from the depths of the Void—the will of the Heavenly Eye. It seemed to sense Mo Xiansheng's betrayal. The air in the entire residence instantly dropped to freezing point. Chen Ji's Tianji Record fragment trembled violently, and an icy, inorganic voice rang in his ears: \"Traitor... you think hiding within bloodlines will save you? Chen whelp, you are merely the next puppet.\" This voice resounded directly within his soul, the pressure crushing like a mountain.",
+        "emotion": "威压"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0473_choice02",
+        "prompt": "The Heavenly Eye's will descended directly. Under its pressure, Chen Ji felt his soul nearly freeze solid—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0473_c2_defy",
+            "text": "Face the Pressure Directly",
+            "description": "My fate is in my own hands, not Heaven's! Even if you are Heaven, what is there to fear!",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Endure the Backlash",
+            "visible_reward": "Awaken the Bloodline Power",
+            "risk_hint": "May severely injure the soul",
+            "process_label": "硬抗威压",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0473_result_ch0473_c2_defy_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji suddenly let out a long roar to the heavens, veins bulging on his forehead. He forcibly endured that crushing pressure, saying word by word: \"Puppet?\" A derisive smile actually curved his lips, \"Do you think I've come this far on someone else's charity?\" His eyes blazed with raging fire—that was the overwhelming battle intent born when pushed to the brink.",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0473_c2_endure",
+            "text": "Conceal and Gather Strength",
+            "description": "While there's life, there's hope. Ancestor, please help me conceal my aura",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Temporarily Feign Weakness",
+            "visible_reward": "Gain Breathing Room",
+            "risk_hint": "May be seen as weak",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c2_endure_01",
+                  "content": "Chen Ji restrained his aura, actively lowering his presence. He shot a glance at Mo Xiansheng, who immediately understood. A thin mist seeped out from the fragment, shrouding Chen Ji's entire body. That will scanned past but failed to lock onto him for the moment. \"Smart of you.\" That icy voice gradually faded, but Chen Ji's hatred burned ever more intensely.",
+                  "emotion": "隐忍"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0473_010",
+        "character_id": "char_moxiansheng",
+        "content": "\"It's gone.\" Mo Xiansheng's residual soul had grown noticeably weaker; the concealment had clearly consumed massive soul power, \"But this is only temporary. The Heavenly Eye is everywhere. As long as you use the Tianji Record, it can track you.\" He gazed at Chen Ji, a trace of guilt appearing in his eyes, \"So before it locks onto you again, you must learn... Fate Resonance.\"",
+        "emotion": "急切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_011",
+        "content": "Fate Resonance? Chen Ji's brow furrowed tightly. Mo Xiansheng didn't explain, but instead transformed into a stream of light that merged into the Tianji Record fragment. In that instant, Chen Ji felt his soul connect with something vast—the scattered wills of countless Chen ancestors, the grievances and defiance of all prophets devoured by the Heavenly Eye across a thousand years. They gathered like a galaxy, surging toward him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_012",
+        "content": "Intense pain pierced through Chen Ji's soul. It was as if he saw himself twelve hundred years ago—that spirited youth, also chosen by the Tianji Record, also ambitious to defy fate. Yet in the end, he lost, defeated by that monster claiming to be Heaven. \"Remember,\" Mo Xiansheng's voice echoed in his ears, \"The key to Fate Resonance is not resistance, but... synchronization. You must become their eyes, their ears, re-illuminating the future obscured by the Heavenly Eye.\"",
+        "emotion": "传承"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0473_choice03",
+        "prompt": "The ancestor's inheritance flooded into Chen Ji's soul like a torrent. He felt his power undergoing a qualitative shift—",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "ch0473_c3_embrace",
+            "text": "Fully Embrace",
+            "description": "I am willing to bear all ancestors' wills and face the Heavenly Eye!",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Soul Tremor",
+            "visible_reward": "Awaken [Fate Resonance]",
+            "risk_hint": "May lose oneself",
+            "process_label": "融合传承",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0473_result_ch0473_c3_01",
+                  "content": "Chen Ji spread his arms wide, allowing those will fragments to surge into his soul. Pain, anger, defiance, hope... a thousand years of accumulated emotions found an outlet in this moment. He felt his perception expanding infinitely, as if he could touch every thread of fate in this heaven and earth. \"So this is... Fate Resonance?\" he murmured, starlight reflected in his pupils.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0473_c3_selective",
+            "text": "Selectively Absorb",
+            "description": "I will only inherit the useful parts, never letting predecessors' wills devour me",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Incomplete Inheritance",
+            "visible_reward": "Maintain Self-Awareness",
+            "risk_hint": "May not fully control the new ability",
+            "process_label": "筛选融合",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0473_result_ch0473_c3_02",
+                  "character_id": "char_moxiansheng",
+                  "content": "Chen Ji abruptly opened his eyes and drew a rune in the void, actively filtering the surging wills. Mo Xiansheng's residual soul slightly frowned: \"You... wish to maintain clarity?\" Chen Ji冷笑: \"I am myself, not anyone's vessel. Inheriting the ancestor's legacy is acceptable, but if I lose myself in the process, what's the point of defying Heaven?\" He absorbed only the purest fragments of fate's laws, keeping those overly intense emotions at bay.",
+                  "emotion": "果决"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_013",
+        "content": "After completing the transmission, Mo Xiansheng's residual soul had grown so faint it was nearly transparent. Gazing at this descendant who possessed both wisdom and resolve, his eyes filled with relief and satisfaction. \"You are stronger than I was.\" His voice was weak but carried a smile, \"Remember, the Heavenly Eye's core weakness is... the resonance wave generated by Fate Resonance.届时, you must find those connected to your fate, and together activate this power to break its monopoly on destiny.\"",
+        "emotion": "告慰"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_014",
+        "content": "Chen Ji quietly watched that residual soul gradually dissipate, his heart a mixture of emotions. Twelve hundred years of waiting, twelve hundred years of scheming... this soul about to vanish had burned away its final traces for this moment. \"Ancestor,\" he spoke, voice somewhat hoarse, \"I will win.\" Mo Xiansheng's form dissolved completely into scattered starlight, leaving only a final parting words echoing in his ears:",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0473_015",
+        "content": "\"Chen Ji, you are the final chess piece in my thousand-year scheme, and the only hope.\" The starlight faded away, and the room returned to silence. Chen Ji stood alone under the moonlight, the Tianji Record fragment clutched tightly in his hand. He could feel the residual aura of his ancestor within it fading away piece by piece, replaced by an unprecedented power—Fate Resonance had awakened. Heavenly Eye, the game between us has just begun. Outside, the night wind suddenly rose, as if concluding this millennium-spanning交接, or perhaps sounding the prelude to the coming storm.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

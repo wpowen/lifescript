@@ -1,0 +1,474 @@
+{
+  "id": "天机录_ch0607",
+  "book_id": "天机录",
+  "number": 607,
+  "title": "첸 니안 등장",
+  "is_paid": true,
+  "next_chapter_hook": "첸 니안이 허공을 가리키며, 육안으로 보이지 않는 그 눈이 응시하고 있다— 그것은 天道의 눈보다 더 무섭다, 왜냐하면 그것은 이 万年의 체스 게임을 엮은 執棋者이기 때문이다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0607_001",
+        "content": "아침 안개가 아직 흩어지지 않은 채, 천기의 손에 들린 그 거북 껍질 자국에는 여전히 으스스한 빛이 감돈다. 그는 밀서를 세 번이나反复 살펴보았고, 모든 글자는 뼈에 새겨진 듯했다. 도시 외곽의 폐사, 무명의 서명, 단 한마디: 「고인이 돌아온다.」 필적이 낯설었으나 마지막 획을 마무리하는 处에, 그가 다시熟悉할 수 없을 정도로淡은 호선이 있었다— 그것은 그가 어릴 적 여동생에게 글씨를 가르치며 일부러 바로잡았던 起筆 습관이었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_002",
+        "character_id": "char_moxiansheng",
+        "content": "「도시 외곽의 폐사, 三面이 바람이 빠지고, 아무런 차단물도 없으니— 이 자리를 정한 게 의미있군.」 잔혼 수호자의 목소리가 첫 장에서 느릿느릿 흘러나오며,几分의 놀림을 담아 「老夫는 그럼 어떤 사람이 천기에게 이런 곳에 오라고敢해낼지 궁금하군.」",
+        "emotion": "好奇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_003",
+        "content": "천기는 대답하지 않았다. 그의 시선은 그 호선에 머물러 있었고, 손끝이 미세하게 떨렸다. 십 년, 그는 그 이름이 오직 기억 속에 존재한다고 생각했다. 첸 니안— 그의 여동생, 성종에게 데려간 여동생. 그는 천하를 배치하고,谋划함에漏울 것이 없었으나, 오직 이 일만이 그의 마음속 가장 깊은 집착이었으며, 천기록이唯一 접근할 수 없는 사각지대였다."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0607_004",
+        "prompt": "이 밀서에杀기가潜んでいる 가능성에直面하여, 천기는 어떻게 대응해야 하는가?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0607_direct",
+            "text": "혼자 약속에赴約",
+            "description": "함정 여부와 관계없이, 그는 반드시 직접 확인해야 한다. 이것은 여동생에 대한 유일한 실마리일 수 있다.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "행적 노출",
+            "visible_reward": "자매 재회 가능성",
+            "risk_hint": "매복 시 고립무원",
+            "process_label": "只身踏入未知",
+            "stat_effects": [],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_direct_001",
+                  "content": "천기는 밀서를 소매에 넣고, 일어설 때 표정은 이미 평정을 되찾았다. 그는 누구에게도 알리지 않았고, 甚至には 곁을 떠나지 않던 단검도 가져가지 않았다. 모 선생의 목소리가 뒤에서 어둡게 울렸다: 「조심하게,老夫는 이렇게 빨리 시중드는 사람을 바꾸고 싶지 않으니.」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_direct_002",
+                  "content": "도시 외곽의 폐사는 그가 상상했던 것보다 더 황폐했다.断壁残垣 사이로 야생 초목이 활활 자라고, 部分的に 묻힌 돌 조각상이 흙 속에 반쯤 파묻혀 있으며, 부처의 머리部分은 이미 어디로 갔는지 알 수 없었다. 천기가 사원으로 발을 디뎠을 때, 아침 바람이 갑자기 멈추고, 새소리조차 사라졌다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_careful",
+            "text": "은밀한 배치",
+            "description": "심복을 파견하여 주위에 매복시키고, 자신이 먼저 길을 탐색한다.異動이 있으면, 즉시 후퇴한다.",
+            "satisfaction_type": "谋略爽",
+            "visible_cost": "신중한 성격 노출",
+            "visible_reward": "한 층의 추가 보장",
+            "risk_hint": "발견 시 소를 놀라게 할 수 있음",
+            "process_label": "谨慎布局后再赴约",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_careful_001",
+                  "content": "천기는 즉각 움직이지 않았다. 그는 어둠 속의 두 명인 심복을 불러 낮게 몇 마디 전했으며. 반나절 후, 이 폐사方圆 삼 리 안에, 이미 세 겹의 은밀한 초소配置가 完成되었다. 그가 비로소 아침 안개 속으로 홀로 발을 디뎠을 때, 그 발걸음은 조급함도, 느긋함도 없었다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_hesitate",
+            "text": "가만히 있음",
+            "description": "이 편지가 너무恰하게 왔으니, 먼저 천기록으로演繹해 본再说.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "천명치 5점 소모",
+            "visible_reward": "약속 결과를 미리 파악함",
+            "risk_hint": "천명치는 귀중하며, 천기록에 그녀는 사각지대이다.",
+            "process_label": "犹豫中消耗天机之力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_hesitate_001",
+                  "content": "그는 눈을 감았다. 천기록의残頁이 의식 속에서 천천히 펼쳐졌다. 그러나 그의 마음이 가라앉았던 것은— 매번 화면이「첸 니안」두 글자에 닿을 때마다, 깊은 연못에 던져진 돌처럼, 물결이 퍼진 후에는 오직 혼돈만이 남았다. 그는 천명치 五 점을 소비하고, 얻은 것은ただ 하나의 희미한 윤곽이었다: 폐사 안에, 누군가가 기다리고 있다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0607_005",
+        "content": "절 안의 빛은 어둡고, 지붕의 구멍으로만 한 줄기 빛기둥이 쏟아져 먼지 덮인 바닥을 비춘다. 빛기둥 가장자리에 한人影이 서 있다. 역광이라 얼굴은 보이지 않지만, 그身形—섬세하면서도 곧은—that is no longer the little girl who used to hide behind him and tug at his clothes asking for candy."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_006",
+        "character_id": "char_chenian",
+        "content": "「형.」\n\n그 목소리는 아주 가벼워서, 마치 무언가를惊醒시킬까 두려워하는 듯했다. 그러나 이 한 마디가 Chen Ji를 그 자리에서 굳어버리게 했다. 그는 수많은 대장면을 목격하고, 세상을震惊시키는 기보를 설계했었다. 그러나 지금 목구는 무언가에堵住된 듯, 한참 동안 말을 꺼내지 못했다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_007",
+        "content": "빛과 그림자가流转하며, 그 사람의面容이 마침내 뚜렷해졌다. Chen Nian은 십 년 전보다 반 키 더 컸고,以前的청년함은 완전히 사라졌다. 눈썸 사이에는영气和…말로 표현할 수 없는 억센 기개가 배어 있었다. 그녀의 왼쪽눈썸 끝에 엷은 흉터가 있는데, 언제 생긴 것인지 알 수 없다.、かつて 울보였던 소녀가, 지금은 똑바로 서서 눈가가 붉어도 한 방울의 눈물도 흘리지 않았다."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_008",
+        "character_id": "char_chenian",
+        "content": "「네가 무슨 생각을 하는지 알아.」 Chen Nian이 한 걸음 앞으로 나서며, 목소리가 메ÿ迫되면서도 억지로 누르며 말했다. 「『크겼지』라고? 나도 그렇게 생각해. 십 년이야, 형, 십 년이.」 그녀의 손가락이 소매를 꼭 쥐고, 관절이 창백해졌다. 「当年的那些人들이 나를 데려갔을 때, 나는 매일 네가 언제 구하러 올지 생각했어. 그 후 나는 기다리지 않기로 했어, 생각했어… 난 강해져야 한다고, 강해져서 스스로 널 찾을 수 있을 정도로.」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_009",
+        "content": "Chen Ji 마침내 발걸음을 옮겼다. 그는 아주 느리게 걸었고, 매 걸음마다 칼날을 밟는 것 같았다. 그는 많은 것을 말하고 싶었다—这些年 살았던 건지, 괴로움은 없었는지, 십 년의 죄책감을 한꺼번에 쏟아내고 싶었다. 그러나 결국 그는 손을 들어 그녀의头顶에 가볍게 올려놓았다. 어릴 적처럼."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_010",
+        "character_id": "char_chenji",
+        "content": "「키가 컸네.」그는 자신의 목소리가 잠겨 있는 것을 느꼈고, 스스로도 알아채지 못한 떨림이 실려 있었다. 「나보다 커.」\n\nChen Nian 마침내 참지 못하고, 눈물이 범람하면서도 웃으며 그의 가슴을 주먹으로 쳤다: 「바보, 나는 아직 다 말 안 했어!」 그 주먹은 힘이 全然 없었지만, Chen Ji의 가슴 어딘가 단단한 벽이 산산조각이 났다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0607_011",
+        "prompt": "재회之后, Chen Ji该如何开口询问真相?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "ch0607_gentle",
+            "text": "온화하게询问",
+            "description": "「这些年… 너는 어떻게過ご过来的?」 그녀의 이야기를 먼저 듣고, 핵심적인 정보를 묻자.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "无",
+            "visible_reward": "형제자매 감정增进",
+            "risk_hint": "可能触发她的痛苦回忆",
+            "process_label": "轻声询问妹妹的经历",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_gentle_001",
+                  "content": "Chen Ji는 그녀를 이끌고 부서진 돌계단에 앉혔다. 어릴 적 마당에서部屋を涼む 것처럼. 그는急着追问那些细节하지 않고, 그냥静かに 들었다. Chen Nian은断断续续하게 말했다—聖宗에게 데려간 후, 그녀는祭祀 의식에서 죽을 뻔했다, 그때까지 그「존재해서는 안 될 사람」이 나타났다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_direct_ask",
+            "text": "直接追问",
+            "description": "「구한 사람은 누구야? 천기각 지파가 뭐지?」 가장 핵심적인 정보를 먼저 파악하자.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能显得冷漠",
+            "visible_reward": "快速获取关键情报",
+            "risk_hint": "可能破坏难得的温情氛围",
+            "process_label": "直截了当地询问核心问题",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_direct_ask_001",
+                  "content": "Chen Ji는 잠시 침묵했다. 그래도 결국 그 문제를 물었다. Chen Nian은 잠시 굳어 있다가,随即苦笑했다: 「여전히 이렇게 하는구나, 형. 하지만 괜찮아,我能理解—너는 지키고 싶은 사람이 너무 많으니까, 그래서 반드시 먼저 위험이 어디 있는지 알아야 해.」 그녀의目光가 깊어졌다. 「나를 구한 사람…凡인이 아니야, 그는 천기각에서 왔어.」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0607_result_direct_ask_002",
+                  "character_id": "char_chenian",
+                  "content": "「천기각?」 Mo Xiansheng의 목소리가 갑자기 Tianji Record 속에서炸开了, 감출 수 없는震惊을 담아. 「불가능해! 천기각은 삼천 년 전에 이미… 너 이 이름을 확신해?」 Chen Ji의 안색은 변하지 않았지만, 마음속에는 이미惊涛骇浪이 일고 있었다—이 늙은 여우를失控하게 할 수 있는 천기각은 결코 평범한 세력이 아니었다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_ability",
+            "text": "能力询问",
+            "description": "「네가 운명 실선을 볼 수 있다고 했지… 이게 무슨 의미야?」 그녀의 능력을 먼저 파악한 후 판단하자.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "无",
+            "visible_reward": "了解 Chen Nian의 능력本質",
+            "risk_hint": "可能让她联想到不好的记忆",
+            "process_label": "试探性地询问她的能力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_ability_001",
+                  "content": "\"천념이 안자의 눈물 자국을 닦아냈다. 표정이 점점 무거워졌다. 「그건 내가 구해진 후에 얻은…… 능력이다.」 그녀가 손을 들어 허공에서 무언가를 그렸다. 「나는每个人身上的丝线를 볼 수 있어. 그 선들은 그들의 운명을 이어주고 있어——사랑과 증오, 감정과恩怨, 삶과 죽음, 福와祸, 모두 그一根线上에 얽혀 있지.」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_ability_002",
+                  "content": "\"그녀가 갑자기 천기에게 다가서며, 그의 몸 어딘가를 바라보더니 표정이 갑자기 변했다: 「오빠, 너에게……」 천기의 마음이 조여졌다: 「나에게怎么了?」 천념의 목소리가 떨리기 시작했다: 「너는 두 개…… 두 개의 다른 눈에게 지켜보고 있어. 하나는 하늘 위에, 그리고 또 하나는…… 더 깊은 곳에.」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "dialogue": {
+        "id": "天机录_ch0607_012",
+        "character_id": "char_chenian",
+        "content": "\"천념이 깊게 숨을 쉬며, 말을 정리하는 것 같았다. 「오빠, 너에게는 두 개의 실이 있어. 하나는 금색이고, 매우 밝고, 매우 두꺼워. 그건 아마…… 천기록의 힘일 거야. 그것은 천도지안과 연결되어 있어, 나는 그 선의 끝을 볼 수 있는데, 거대한 소용돌이다.」 그녀의 목소리가 점점 낮아졌다. 「하지만 또 다른 하나…… 그건 검은색이야. 훨씬 가늘지만, 훨씬 깊어. 그것이 네 발바닥에서 퍼져나가, 계속해서…… 내가 보지 못하는 곳까지 이어지고 있어.」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_013",
+        "character_id": "char_moxiansheng",
+        "content": "\"「검은 실……」 모선생의 목소리가 드물게 몇 순간 침묵하다가, 다시 말할 때一丝의 무거운 느낌이 담겨 있었다. 「이老夫는这么多年를 살면서, 그 색을 본 것은 단 한 사람身上에서뿐이야. 그것은…… 천도보다 더 오래된 존재다.」 그는 잠시 멈추었다. 「천기야, 너의 이 Chess Game는 아마 처음부터 지켜보는 사람이 있었을 거야. 천도가 아니라, 다른 무언가지.」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_014",
+        "content": "\"천기는 말하지 않았다. 그의 표정은 여전히平静하고, 평온得有些可怕. 손가락이 무릎을 가볍게 두드렸다, 한 번, 두 번, 세 번——이것은 그가思考时的 습관이었다. 모선생의 목소리, 천도지안의 응시, 그리고 천념이 말한「더 깊은 곳에 있는 눈」…… 이러한 파편들이 그의 뇌 속에서飞速组合하여, 그로 하여금 등이 오싹해지는可能를 만들어냈다."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0607_015",
+        "character_id": "char_chenian",
+        "content": "\"천념이 갑자기 그의 손목을 움켜쥐었다. 힘이惊人に 만큼 강했다. 그녀의 눈이 허공의某处를 똑바로 바라보며, 동공이骤然收缩했다: 「오빠! 그것이…… 너를 보고 있어!那只 눈, 그것이 내가 그것을 볼 수 있다는 것을 알게 됐어——」 그녀의 목소리가 뚝 끊겼다. 몸이 갑자기 굳어버렸다, 마치 매우恐怖的的东西을 본 것처럼.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0607_016",
+        "prompt": "\"이러한突如其来的异变에 직면하여, 천기는该如何应对해야 할까?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0607_protect",
+            "text": "\"천념을 보호하라",
+            "description": "\"「무서워하지 마, 오빠가 있으니까.」 그녀를 뒤로 당겨「那只 눈」과의 사이에 서라.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"스스로 위험에 노출되다",
+            "visible_reward": "\"여동생의 안전과 신뢰를 보호하다",
+            "risk_hint": "\"상대방의底細를 모르면,吃亏할 수 있다",
+            "process_label": "本能地将妹妹护在身后",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_protect_001",
+                  "content": "\"천기의 동작이思考보다 빨랐다. 그는 천념을 뒤로 확 잡아당겨, 자신이 그녀 앞에 섰다. 그 순간의 一瞬间에, 그는一股 무형의 압력이 머리 위에서 쏟아지는 것을 느꼈다——무언가가 바로 그를审视하고 있는 것처럼——그의 체내의 천기록을, 그가这些年의布局을, 그리고 그가 지금의 선택을 甚至审视하고 있었다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_fight",
+            "text": "\"천기록을 활성화하다",
+            "description": "\"능동적으로 천기록의 힘을 끌어올려,那只「눈」의真面目를 파악하다.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"천명치가 통제 불가능하게 소모될 수 있다",
+            "visible_reward": "\"열쇠인 정보를 얻을 수 있다",
+            "risk_hint": "\"천명치가 심하게流失될 수 있고, 상대방이 그것을察觉할 수 있다",
+            "process_label": "以天机之力对抗神秘注视",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_fight_001",
+                  "content": "\"천기의 눈에 정광이 번쩍였다. 천기록残页가 의식 속에서 격렬하게 진동했다. 그는脑海中의 바늘 찌르는 듯한 고통을 억えながら,那道 응시의 출처를 포착하려 했다. 그러나 바로 그一刻에, 그는 그것을 보았다——그 무한한 어둠 깊숙한 곳에, 한 눈이 천천히 떠오르고 있었다. 그 동공 속에는 온 세상의运行轨迹가 반영되어 있었고, 그 자신은 다만 그 중의微不足道的한 점에 불과했다."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0607_retreat",
+            "text": "\"즉시撤退하다",
+            "description": "\"여기서는 오래 있을 수 없으니, 천념을 데리고 먼저 떠나再说.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"이번 정보 수집 기회를 포기하다",
+            "visible_reward": "\"일시적으로 위험에서 벗어나다",
+            "risk_hint": "\"열쇠 정보를 놓칠 수 있고, 상대방이 추적할 수 있다",
+            "process_label": "果断带妹妹撤离险地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_retreat_001",
+                  "content": "\"「가자!」 천기가 낮게 외쳤다, 천념의 손을 잡고 밖으로 뛰어갔다. 그의 직감이疯狂警报하고 있었다——이 장소에는 더 이상 있을 수 없었다. 그러나 그들이묘문 밖으로冲出瞬间에, 천념이 갑자기 그를 확 잡아당겼다: 「오빠! 그것이…… 그것이 웃었어.」 그녀의 목소리가 떨렸다. 「那只 눈이 웃었어. 그것이 말했어……『겨우 널 찾았다』.」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_retreat_002",
+                  "content": "폐허 밖, 새벽 안개는 어느새 사라졌다. 햇살이 몸에 비치지만, Chen Ji 마음속의 한기를 걷어낼 수 없다. Mo Xiansheng의 목소리가 천천히 울려 퍼졌다, 한 번도 없었던 무거운 느낌을 담아: 「Chen Ji, 네 여동생 말이 맞다. 이棋局는 우리가 생각한 것보다 훨씬 크다. 천도지안은 그냥 棋盘 위의 기물일 뿐…… 그리고 저것이 바로 진정한 執棋者다.」"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0607_result_retreat_003",
+                  "content": "Chen Ji는 폐허 밖에 서서, 그 파손된 부처님 머리를 돌아다보았다. 십 년간의 배치, 그는 자신이 棋를 두는 사람이라고 생각했다. 하지만 지금看来, 그는 다만 棋盘 위 가장 핵심적인 한 개의 子일 뿐——시작부터부터 남에게 계산된 子였다. 그는 가볍게 주먹을 쥐었다, 손가락 마디가 하얗게 질렸다. Chen Nian이 그의 옆에 서서, 조용히 그의 손을 잡았다: 「오빠, 무슨 일이든, 나는 너와 함께 맞서겠어.」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0607_017",
+        "content": "Chen Ji는 대답하지 않았다. 그는 다만 가볍게 여동생의 손을 되握了回去,那双算无遗策的眼睛望着 하늘 어딘가를 바라보았다, 표정이 흐리고 읽기 어려웠다. 잠시 후, 그는 낮게 입을 열었다, 목소리가 평온해서 아무런 감정도 알아챌 수 없었다: 「나는 기억했다.」这三个字从他嘴里说出来,却比任何誓言都要沉重.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0607_018",
+        "content": "Chen Nian이 허공을 가리켰다,那双肉眼不可见的 眼睛正在 注視——它比 천도지안更可怕,因为它是编织这场万年棋局的 執棋者. 「오빠, 저 눈동자가…… 천도지안보다 더 무서워.」 그녀의 목소리는 매우 가벼웠지만, 한 글자 한 글자가 또렷했다, 「저것은 만 년에 걸친 棋局를 짜고 있어. 그리고 우리는, 태어난那一刻부터 이미 棋盘에 놓여졌을지도 몰라.」 새벽 바람이 불어올랐다, 그녀의 귀 옆의 조각 날림 머리카락을 흔들었고, 또한 폐허 속 마지막 온기의 기운도 불어날렸다."
+      }
+    }
+  ]
+}

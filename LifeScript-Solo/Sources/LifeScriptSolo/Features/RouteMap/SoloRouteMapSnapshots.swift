@@ -62,6 +62,7 @@ struct SoloDarklineBoardSnapshot: Sendable, Equatable {
     let sealedCount: Int
     let totalSignalCount: Int
     let boardLine: String
+    let destinyStatus: SoloDestinyStatus
 
     var revealRatio: Double {
         guard totalSignalCount > 0 else { return 0 }

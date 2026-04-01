@@ -34,21 +34,21 @@ struct SoloCharacterSheet: View {
                 .foregroundStyle(SoloTheme.gold)
             HStack(spacing: 8) {
                 chip(SoloCharacterCodex.roleLabel(for: character.role), tint: accent)
-                chip(relation?.attitudeLabel ?? "未入局", tint: relation == nil ? SoloTheme.muted : accent)
+                chip(relation?.attitudeLabel ?? SoloLocalization.localized("未入局"), tint: relation == nil ? SoloTheme.muted : accent)
             }
         }
     }
 
     private var metricsSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("核心指标")
+            Text(SoloLocalization.localized("核心指标"))
                 .font(SoloTypography.sectionTitle(size: 20))
                 .foregroundStyle(SoloTheme.ink)
 
             HStack(spacing: 10) {
-                miniMetric(title: "牵引", value: intel.resonance, tint: accent)
-                miniMetric(title: "局重", value: intel.influence, tint: SoloTheme.gold)
-                miniMetric(title: "危险", value: intel.danger, tint: SoloTheme.crimson)
+                miniMetric(title: SoloLocalization.localized("牵引"), value: intel.resonance, tint: accent)
+                miniMetric(title: SoloLocalization.localized("局重"), value: intel.influence, tint: SoloTheme.gold)
+                miniMetric(title: SoloLocalization.localized("危险"), value: intel.danger, tint: SoloTheme.crimson)
             }
         }
     }
@@ -56,7 +56,7 @@ struct SoloCharacterSheet: View {
     @ViewBuilder
     private var relationSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("关系维度")
+            Text(SoloLocalization.localized("关系维度"))
                 .font(SoloTypography.sectionTitle(size: 20))
                 .foregroundStyle(SoloTheme.ink)
 
@@ -69,7 +69,7 @@ struct SoloCharacterSheet: View {
                     )
                 }
             } else {
-                Text("该角色仍在暗纹区，继续推进章节可解锁具体关系属性。")
+                Text(SoloLocalization.localized("该角色仍在暗纹区，继续推进章节可解锁具体关系属性。"))
                     .font(SoloTypography.detail)
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -78,7 +78,7 @@ struct SoloCharacterSheet: View {
 
     private var intelSection: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("局中情报")
+            Text(SoloLocalization.localized("局中情报"))
                 .font(SoloTypography.sectionTitle(size: 20))
                 .foregroundStyle(SoloTheme.ink)
             Text(intel.statusLine)
@@ -90,14 +90,14 @@ struct SoloCharacterSheet: View {
 
     private var suggestionSection: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("行动建议")
+            Text(SoloLocalization.localized("行动建议"))
                 .font(SoloTypography.sectionTitle(size: 20))
                 .foregroundStyle(accent)
             Text(SoloCharacterCodex.thresholdHint(for: character, relation: relation))
                 .font(SoloTypography.detail)
                 .foregroundStyle(SoloTheme.warmInk)
                 .lineSpacing(4)
-            Text("命局联动：\(destinyStatus.headline) · \(destinyStatus.thresholdHint)")
+            Text(SoloLocalization.format("命局联动：%@ · %@", destinyStatus.headline, destinyStatus.thresholdHint))
                 .font(.caption)
                 .foregroundStyle(SoloTheme.muted)
         }
@@ -155,7 +155,7 @@ struct SoloCharacterSheetSceneView: View {
                     .padding(.bottom, 32)
             }
         }
-        .soloStoryChrome(title: entry.character.name, kicker: "角色面板")
+        .soloStoryChrome(title: entry.character.name, kicker: SoloLocalization.localized("角色面板"))
     }
 }
 

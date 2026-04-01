@@ -18,7 +18,15 @@ struct SoloVolumePlan: Identifiable, Equatable, Sendable {
     }
 
     var shortTitle: String {
-        "第\(index)卷"
+        SoloLocalization.format("第%d卷", index)
+    }
+
+    var localizedTitle: String {
+        SoloLocalization.localized(title)
+    }
+
+    var localizedTeaser: String {
+        SoloLocalization.localized(teaser)
     }
 }
 
@@ -41,7 +49,17 @@ enum SoloVolumeCatalog {
     }
 
     static func volume(for storyId: String, chapterNumber: Int) -> SoloVolumePlan? {
-        plans(for: storyId).first(where: { $0.chapterRange.contains(chapterNumber) })
+        let allPlans = plans(for: storyId)
+        let match = allPlans.first(where: { $0.chapterRange.contains(chapterNumber) })
+        #if DEBUG
+        if match == nil && !allPlans.isEmpty && chapterNumber > 0 {
+            assertionFailure(
+                "Chapter \(chapterNumber) not covered by any volume in '\(storyId)'. "
+                + "Update SoloVolumeCatalog to include this range."
+            )
+        }
+        #endif
+        return match
     }
 
     private static let tianjiluPlans: [SoloVolumePlan] = [

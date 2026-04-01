@@ -1,0 +1,367 @@
+{
+  "id": "天机录_ch0556",
+  "book_id": "天机录",
+  "number": 556,
+  "title": "Chen Nian Crisis",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji was wavering, the Tianji Record in his sleeve suddenly burned hot on its own, the runes on the fragment writhing like living things as a divination slowly emerged—seven characters: 'Phoenix bathed in fire, only through death can one be reborn'—completely disrupting the chess game he had painstakingly crafted.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0556_001",
+        "content": "The night wind cut like a blade. Deep within the dense forest of Tianqing Sect Back Mountain, Chen Ji sat alone on a piece of blue stone, his robes flapping violently in the mountain wind. His fingers unconsciously rubbed the Tianji Record fragment hidden in his sleeve, that thin page now weighing heavier than a thousand catties. The intelligence from the imperial dynasty's secret agents lay open across his knees, the ink still fresh on the sheepskin scroll, detailing the defensive layout and guard rotation schedules of the seventh layer of the Holy Sect's Forbidden Grounds. Chen Nian's name had been circled in red ink three times, each circle like a dull knife twisting in his heart. Three years. He finally knew where his sister was, but this news could not have come at a worse time.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_002",
+        "content": "Beneath Chen Ji's eyes, a storm raged, yet his expression remained as still as dead water. He slowly rolled up the sheepskin scroll, his knuckles turning white from the force. The seventh layer—that was a place even Nascent Soul stage powerhouses spoke of with fear and trembling. The Holy Sect's move clearly intended to use Chen Nian as some kind of trump card, but what was the price of this 'trump card'? Chen Ji dared not think deeper. His breathing became long and oppressive, like a young wolf trapped in an iron cage, claws sharp but bound by chains that left it unable to move.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0556_003",
+        "character_id": "char_chenji",
+        "content": "Seventh layer... you old foxes of the Holy Sect, you'd better pray not a single hair on her head is missing.",
+        "emotion": "阴沉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_004",
+        "content": "At that moment, a cold demonic aura quietly seeped from the forest, condensing into a pitch-black talisman three feet before Chen Ji. The talisman's surface glowed with demonic patterns, emanating the eerie aura unique to the Holy Sect of the Demonic Path. Chen Ji didn't even lift his eyelids; the transmission talisman ignited on its own, and Ye Qing's voice emerged, carrying rare urgency and gravity.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0556_005",
+        "character_id": "char_yeqing",
+        "content": "Chen Ji, the timing for the plan has arrived. Those old fossils in the sect have been stabilized by me and the other elders. You have at most three days. After three days, whatever arrangements you have must align with my activation of the death-feigning formation, otherwise you'll miss this window and the next opportunity will be three years later.",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_006",
+        "content": "Three years later? Chen Ji coldly laughed in his heart. Whether Chen Nian would even be alive three years later was anyone's guess. The ashes of the burned talisman drifted onto the blue stone as he stared at those black powders, his mind racing. The death-feigning plan was the crucial first step in his chess game to dominate the world. Only by feigning death could he escape Tianqing Sect's surveillance and manipulate the winds and clouds in the shadows under a new identity. But Chen Nian... that little girl who had been shouting 'Brother' when the Holy Sect took her away, was now waiting for him to rescue her from the enemy's cage.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_007",
+        "content": "Chen Ji slowly closed his eyes, faint veins pulsing at his brow center. In his heart, he rearranged all the pieces: the death-feigning on Tianqing Sect's side required Ye Qing's cooperation, and hastily changing it would inevitably trigger a chain reaction; the seventh layer of the Holy Sect's Forbidden Grounds had tight security, and even with the Tianji Record's foresight ability, it was nearly impossible to ascertain all variables within three days; and what chilled him most was that the Tianji Record showed only vagueness whenever predictions involved Chen Nian—as if some force was deliberately obscuring her.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0556_008",
+        "character_id": "char_chenji",
+        "content": "Ye Qing, that sentence you said back then, I've never forgotten—some debts must be repaid eventually. But some accounts can no longer be delayed.",
+        "emotion": "低沉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0556_009",
+        "prompt": "The three-day deadline hung like a blade at his throat. Chen Ji had to choose between familial affection and the greater scheme. His next move would determine the fates of countless people.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "rescue_sister",
+            "text": "Rescue Chen Nian Immediately",
+            "description": "Abandon the death-feigning plan and infiltrate the seventh layer of the Holy Sect's Forbidden Grounds alone to rescue his sister. This move might expose all his arrangements, but if he doesn't rescue her, he may lose Chen Nian forever.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Three years of groundwork may be destroyed, the death-feigning plan completely ruined",
+            "visible_reward": "Opportunity to rescue Chen Nian, siblings reunited",
+            "risk_hint": "The seventh layer of the Holy Sect's Forbidden Grounds is extremely dangerous; going alone is nine deaths out of ten",
+            "process_label": "决定营救",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0556_result_rescue_sister_001",
+                  "content": "Chen Ji's eyes snapped open, a flash of sharp light vanishing in an instant. He rose from the blue stone, the dust on his robes scattered by the night wind, as if brushing away any hesitation. The Tianji Record fragment in his sleeve emitted a soft hum, seemingly responding to his resolve. Three days? Enough. He never believed in 'impossible,' only in meticulous planning. If the Holy Sect wanted to use Chen Nian as a piece, he would let them见识见识什么叫棋高一着.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rescue_plan_activated"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机为救妹妹放弃假死计划",
+            "branch_route_id": null
+          },
+          {
+            "id": "fake_death_plan",
+            "text": "Execute Death-Feigning as Planned",
+            "description": "Suppress the impulse of familial affection, strictly execute the death-feigning plan as scheduled, and seek an opportunity to rescue Chen Nian after escaping. The greater scheme takes priority; personal matters must not compromise public duty.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Chen Nian suffering one more day in the Holy Sect will continuously torment his heart with guilt",
+            "visible_reward": "Successful death-feigning will grant greater freedom of action",
+            "risk_hint": "Chen Nian may be transferred or something may change after three days",
+            "process_label": "选择大局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0556_result_fake_death_001",
+                  "content": "Chen's fists slowly clenched and released, his fingernails leaving a faint red mark in his palm. Reason rushed back like a tide. He took a deep breath, forcibly pressing that bone-deep guilt into the deepest corner of his heart. A chess master's worth lies in the whole game; romantic entanglements only disorder one's judgment. He raised his head toward the direction of the Holy Sect, a cold killing intent flickering in his eyes: Wait, Xiao Nian, brother will definitely come to rescue you, but not now.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "fake_death_plan_confirmed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机压制亲情选择大局",
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_yeqing",
+            "text": "Discuss with Ye Qing for Adjustment",
+            "description": "Contact Ye Qing to see if, without exposing the death-feigning plan, he can use demonic path power to secretly rescue Chen Nian. Seek a third path.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May need to disclose partial plan details to Ye Qing, possibly owing a favor",
+            "visible_reward": "Preserve death-feigning plan while increasing rescue success rate",
+            "risk_hint": "Whether Ye Qing is willing to take the risk is unknown",
+            "process_label": "寻求变通",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0556_result_negotiate_001",
+                  "content": "Chen Ji hesitated briefly, his fingertip lightly touching the transmission talisman. A moment later, another stream of demonic energy coalesced. His voice was low and calm: 'Ye Qing, the plan has changed. I need your help. The seventh layer of the Holy Sect's Forbidden Grounds—how confident are you that you can tear open a gap?' He didn't believe there were only binary choices in this world. A chess master's skill was to carve out a path even in the most desperate of circumstances.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "negotiate_with_yeqing"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机尝试与夜清协商",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_010",
+        "content": "The night wind howled past, making the ancient trees in the dense forest's branches wail. Chen Ji stood in place, his robes fluttering, revealing an indescribable loneliness. In his mind, Chen Nian's childhood face kept flashing—the little girl who always followed behind him shouting 'Brother,' now trapped deep within the Holy Sect's cage. Heavenly Fate Value, Tianji Record, death-feigning plan, chess game of the world... all the pieces rapidly rearranged in his mind, yet he still couldn't find a perfect answer.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0556_011",
+        "character_id": "char_chenji",
+        "content": "If I cannot even protect my own sister, what right do I have to speak of dominating the world? But if I disrupt the greater scheme for her alone, what becomes of those who trusted me?",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_012",
+        "content": "He closed his eyes, feeling the faint warmth emanating from the Tianji Record fragment in his sleeve. That single thin page recorded countless secrets of heavenly fate, yet when it involved Chen Nian's destiny, it displayed only chaos. This feeling of being obscured made Chen Ji extremely agitated, but it also made him faintly sense—perhaps Chen Nian's existence itself harbored some secret that even heaven's way feared. Why did the Holy Sect imprison her in the deepest part of the Forbidden Grounds? What exactly is imprisoned there?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_013",
+        "content": "Chen Ji suddenly remembered something Mo Xiansheng once said: 'The completeness of the Tianji Record determines how much truth you can glimpse, and the price is your direct collision with fate.' He looked down at his palm, where the warmth of holding Chen Nian's hand as a child seemed to linger. If depleting the Heavenly Fate Value meant certain death, then before dying, he would at least do one thing he wouldn't regret.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0556_014",
+        "prompt": "It was deep into the night. Chen Ji had to make his final decision before dawn. His choice would affect all subsequent plot developments.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "use_tianjulu",
+            "text": "Consume Heavenly Fate Value for Foresight",
+            "description": "At the cost of precious Heavenly Fate Value, forcefully use the Tianji Record to glimpse Chen Nian's fate trajectory. Even if blurry, even if there is backlash, he must see the path ahead.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Heavenly Fate Value -5, foresight vision may be unclear",
+            "visible_reward": "Obtain crucial intelligence, possibly discover hidden clues",
+            "risk_hint": "Tianji Record's backlash may cause foresight deviation or physical damage",
+            "process_label": "冒险预见",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0556_result_use_tianjulu_001",
+                  "content": "Chen Ji bit his fingertip, a drop of blood falling onto the fragment in his sleeve. The Tianji Record suddenly burst with ethereal blue light, a splitting pain spreading from his brow center to every limb. His vision abruptly changed; countless fragments of light flashed like a carousel—flames, a cage, a blurry young maiden's silhouette, and a pair of eyes so cold they were at the extreme, as if gazing upon ants. That massive eye was merely a single pupil, yet it made Chen Ji's hair stand on end, as if he would be crushed to dust the next instant.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "used_tianjulu_vision"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "seek_mo_xiansheng",
+            "text": "Consult Mo Xiansheng",
+            "description": "Activate Mo Xiansheng's remnant soul within the Tianji Record to inquire about the truth regarding Chen Nian and the Holy Sect's Forbidden Grounds. Mo Xiansheng may know something.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May owe Mo Xiansheng a favor, or be forced to complete certain conditions",
+            "visible_reward": "Obtain crucial information and guidance",
+            "risk_hint": "Mo Xiansheng's answer may be unsettling",
+            "process_label": "求助师尊",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0556_result_seek_mo_001",
+                  "content": "Chen Ji took a deep breath, his consciousness sinking into the Tianji Record fragment. After a moment, an aged and ethereal voice rang in his mind, carrying the vicissitudes of years and endless fatigue: 'Boy, you've finally asked the right question. The seventh layer of the Holy Sect's Forbidden Grounds... what's imprisoned there is never any prisoner, but a key to somewhere. That girl Chen Nian is far more important than you imagine.'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "consulted_mo_xiansheng"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_015",
+        "content": "Mo Xiansheng's voice cut off abruptly, as if some force was deliberately preventing him from revealing more. Chen Ji's eyes snapped open to find his forehead already covered in cold sweat. He looked down at the Tianji Record fragment; on the otherwise calm surface, a line of faintly visible divination had appeared on its own, the characters twisted like serpents, yet radiating a chilling authority. The edges of the fragment began to blacken, as if something was peering at him from the other side.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0556_016",
+        "character_id": "char_chenji",
+        "content": "This... is impossible. The Tianji Record has never displayed divination on its own! Unless—unless something is forcibly intervening!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_017",
+        "content": "Chen Ji's pupils contracted sharply. He suddenly realized that his control over the Tianji Record might never have been complete. On this fragment, there were secrets he hadn't touched, a side he didn't understand at all. That twisted divination seemed to mock his arrogance, mocking him for thinking he could control fate when he didn't know he was already a piece on the chessboard. The Eye of Heaven's Way—that terrifying existence existing only in legends and never proven, was it watching him through the Tianji Record?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_018",
+        "content": "Just as Chen Ji's mind was in turmoil, the divination fully formed, searingly hot as if it would burn through the fragment: 'Phoenix bathed in fire, only through death can one be reborn.' Seven characters seared into the depths of his soul, bringing a violent spell of dizziness. When he came to his senses, his Heavenly Fate Value had unknowingly decreased by another three points. The Tianji Record fragment returned to calm, but those divination words lingered in his heart like a curse—every time he recalled them, he felt like something was stuck in his throat. Chen Nian, the death-feigning plan, the Eye of Heaven's Way... all clues pointed to one chilling possibility: he thought he was playing chess, not knowing he had long been locked onto.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_019",
+        "content": "The night wind grew increasingly biting. Chen Ji stood alone on the blue stone, all was silent around him. He raised his head toward the horizon, where dark clouds veiled the moon,一片漆黑. Within three days, he had to make a choice; and that abruptly appearing divination had muddied all variables into a chaotic mess. Death-feigning might not be death-feigning; rescue might not be rescue—this game of chess was far more complex than he imagined. In the distance, Tianqing Sect Main Peak was ablaze with lights, completely unaware that a storm sufficient to overturn the entire sect's landscape was about to descend in thirty hours.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0556_020",
+        "content": "Chen Ji slowly tucked the Tianji Record fragment back into his sleeve, the panic in his eyes gradually replaced by a cold resolve. Be it heaven's scheme or the Holy Sect's conspiracy, if they dared touch a single hair on Chen Nian's head, he wouldn't mind letting this world见识见识什么叫尸山血海. He turned and walked toward the sect, his steps steady and resolute. The death-feigning plan would continue, but before that, he must do one thing—confirm the true meaning of that divination. Mo Xiansheng owed him an explanation, and that explanation might uncover the most crucial corner of this chess game.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

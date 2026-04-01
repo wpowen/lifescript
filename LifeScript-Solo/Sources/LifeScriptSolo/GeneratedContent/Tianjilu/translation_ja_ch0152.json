@@ -1,0 +1,640 @@
+{
+  "id": "天机录_ch0152",
+  "book_id": "天机录",
+  "number": 152,
+  "title": "先に到着した者",
+  "is_paid": true,
+  "next_chapter_hook": "遺跡の奥深くに父親が残した最初の封印が姿を現し、Chen Jiの血脈が強く共鳴する——そしてその封印に刻まれた紋様は、Chen Lingの首筋の印と瓜二つである。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0152_001",
+        "content": "月光は霜のように、荒廃した山谷に降り注ぐ。禁地の入り口に、古い石の門が静かに佇み、その上には苔痕が厚く、歳月の気配が顔を洗う。Chen Jiは足を止め、夜色を貫く視線を那道熟悉的身影の上に落とす——彼女はChen Lingであり、数年前に失踪した妹，此刻竟先他一步抵达此地。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_002",
+        "character_id": "char_chenian",
+        "content": "兄上、お久しぶりです。",
+        "emotion": "淡然"
+      },
+      "text": {
+        "id": "天机录_ch0152_003",
+        "content": "Chen Lingが振り返り、意味深な笑みを浮かべる。数年前に比べ彼女はすっかり痩せ細り、眉間には锐利な気が宿り、まるで鞘に収まらぬ刃のようである。夜風が髪を揺らし、鬓边的碎髪が舞い上がり、首筋に微かに光を放つ玉墜が姿を現す——その紋様は、Chen Jiの懐にある天機錄欠片と酷似している。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_004",
+        "character_id": "char_chenji",
+        "content": "（内心では動揺しながらも、表情は変わらない）三年ぶりだね、より良い場所を選ぶようになったものだ。この禁地に辿り着ける者はそういるものではない。",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_005",
+        "character_id": "char_chenian",
+        "content": "兄上、お洒落を。您仅有几分運と貴人の加護があったからこそ、ここに辿り着けたのです。",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_006",
+        "content": "貴人？Chen Jiは心の中で冷笑する。天機錄が微かに熱を帯び、懐の欠片から言い难い感覚が伝わる——目の前のChen Lingを覆う曖昧な霧は、彼の予見能力さえも突き通せない。天道之眼の干涉か、それとも別の事情か。指が無意識に欠片の縁をなぞり、表情は相変わらず水面のように穏やかである。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0152_choice_001",
+        "prompt": "Chen JiがChen Lingの突然の出現に対する態度が、これからの相互作用的基調を決定する",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "坦诚试探",
+            "text": "率直に探る",
+            "description": "Chen Ling这些年Directly詢问她这些年Directly詢问她的反応を観察し、聖宗の動向を探る",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "自分の情報需求を露呈する",
+            "visible_reward": "重要な情報を得られる可能性がある",
+            "risk_hint": "Chen Lingが何かを隠している場合、自分の意图を先に明かすと不利になる可能性がある",
+            "process_label": "试探性开口",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_坦诚试探_001",
+                  "character_id": "char_chenji",
+                  "content": "聖宗はあなたをどう取り扱ったのか？この数年で一体どこにいたのか？",
+                  "emotion": "沉声"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_坦诚试探_002",
+                  "character_id": "char_chenian",
+                  "content": "Chen Lingは深い吐息をつき、視線をChen Jiの懐で微かに光る欠片に向ける。兄が問うなら正直に言う——私の知る全ては、名前を開かぬ協力者によるとものだ。彼は此处遗迹が陳家の血筋と密接に関係しており、すべての謎を解くにはここを通らねばならないと告げた。",
+                  "emotion": "认真"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "以退为进",
+            "text": "退いて進む",
+            "description": "知らないふりをして、Chen Lingに自分から更多 информациюを開示させ、彼女の底牌を探る",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "先手を打てば機会を逃す可能性がある",
+            "visible_reward": "自分の意图を明かさずに情報が入る",
+            "risk_hint": "Chen Lingがもっと狡猾であれば、逆に情報を引き出されるリスクがある",
+            "process_label": "故作不解",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_以退为进_001",
+                  "character_id": "char_chenji",
+                  "content": "（わざと驚くように）霊霊？なぜここにいるのか？何か巻き込まれたのか？",
+                  "emotion": "关切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_以退为进_002",
+                  "character_id": "char_chenian",
+                  "content": "Chen Lingの眼底に遊び心が闪过したが、彼女はそれを見逃しはしなかった。兄上、お察しの通り、小妹は聖宗で多年臥薪嘗胆し、今天的この一跳のために他ならない。至于那相助者……彼は、兄上にこの遗迹的开啟息息相关之物があると话していた。",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "冷淡疏离",
+            "text": "冷淡で距離を取る",
+            "description": "距離を保ち、自分が另有目的を持つことを示し、彼女の反応を見る",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "関係はさらに疎遠になる可能性がある",
+            "visible_reward": "陳霊の底線を探る",
+            "risk_hint": "陳霊が重要な情報を掴んでいるなら、そのために言わない可能性がある",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_冷淡疏离_001",
+                  "character_id": "char_chenji",
+                  "content": "たまたま通りかかっただけで、ここに異変があると見ていただけだ。何かあれば勝手にすれば良い。",
+                  "emotion": "淡漠"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_冷淡疏离_002",
+                  "character_id": "char_chenian",
+                  "content": "陳霊はしばらく沈黙し、忽ち軽く笑った。兄は相変わらずこの性分で棺材不着涙を流さず。よし、ならば聞こうか――父の死について、あなたは本当に真相を知りたくないのか？",
+                  "emotion": "锐利"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_007",
+        "content": "父の死。陳機の瞳孔微かに縮み、胸中に驚涛骇浪が巻き起こった。三年前のあの变故、表面上是是一场意外，可他早就在暗中追查——父の死は決して那么简单ではない。そして陳霊此时提起，究竟是巧合，还是她手中握有什么不为人知の线索？"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_008",
+        "character_id": "char_chenian",
+        "content": "兄不必用这种眼神看我。我若要害你，何必等到今日？聖宗将我带走，可不是为了养一个闲人。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_009",
+        "content": "陳霊は緩やかに歩み寄り、月光がその冷淡な輪郭を浮かび上がらせた。その視線は陳機の懐に隠された一角の残頁に落ち，神色复杂であった。天命ロックキー――これが聖宗が彼女につけたレッテルであった。可笑しい的是，真正能解开这道锁の钥匙，或许一直就在她兄长手中。机构的大门上の凹槽，与那残頁の形状如初一辙。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0152_choice_002",
+        "prompt": "陳霊が協働で遗迹を開くことを提案し、陳期は如何に応じるか決断する必要がある",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "有限合作",
+            "text": "限定的な協力",
+            "description": "協力に同意するが条件を設定し、陳霊にまず相助者の更多信息を明かすよう求める",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "天機録の消耗を引き起こす可能性がある",
+            "visible_reward": "全ての底牌を暴露せずに計画を推進する",
+            "risk_hint": "相助者の身元は謎であり、より上位の勢力が絡んでいる可能性がある",
+            "process_label": "设定条件",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_有限合作_001",
+                  "character_id": "char_chenji",
+                  "content": "協力は良い。だが、まずその相助者が誰で、いかなる立场から你我間の関係を見ているか教えて貰おう。",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_有限合作_002",
+                  "character_id": "char_chenian",
+                  "content": "陳霊は彼を見つめ片刻，终于点头した。自ら墨先生と名乗る。故人之託として、私を照らす一二言うと。至于他与兄长的关系……或许、あなたの方が私より分かっているかもしれない。",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "全面戒备",
+            "text": "全面的に警戒する",
+            "description": "如何なる情報も気軽に信じず、天機録で密かに陳霊の本当の意図を覗う",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天命値を5点消費する",
+            "visible_reward": "陳霊の今後三刻間の行動を予測する",
+            "risk_hint": "天命値は限られており、陳霊の予見結果を干扰される可能性がある",
+            "process_label": "暗中窥探",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_全面戒备_001",
+                  "content": "陳期は密かに天機録を催動した。一筋の微光が残頁から溢れ出し、陳霊の眉心に滑り込んだ。その瞬間、彼は見た――三刻鐘後、陳霊は一人で遗迹の深処に足を踏み入れ、而入處の机构には二人の血脈同時激活が必要である。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "转移话题",
+            "text": "話題を逸らす",
+            "description": "相助者の身元に執着せず、遗迹内部の状況を問いかける",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "墨先生の身元を深く探る機会を逃す",
+            "visible_reward": "遗迹関連情報の取得",
+            "risk_hint": "陳霊はあなたの問題回避を察知しているかもしれない",
+            "process_label": "另辟蹊径",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_转移话题_001",
+                  "character_id": "char_chenji",
+                  "content": "墨先生の件はさておき。あなたが私より先に到着したのだから、この遺跡内部有何発見があったのか？",
+                  "emotion": "平静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_转移话题_002",
+                  "character_id": "char_chenian",
+                  "content": "陳霊は小さく鼻を鳴らし、彼の回避を既に知っているようだった。しかし彼女は追及せず、半歩下がって道を空けた。「兄上が知りたいなら、ご自分でご覧ください——機関の封印は、あなたと私にとって関連があるのだから。」",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_010",
+        "content": "墨先生。陳機の心は凍りついた。それは天機録の残頁に記載された残魂の守護者に他ならなかった。彼が陳霊と接触しているとは、この時点で二人の関係を示唆している。思考が頭の中で渦巻いたが、陳機の表情は平静を保った。「墨先生……覚えておいた。」"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_011",
+        "content": "二人は並んで石門の前に立った。近付いて見ると、封印はさらに複雑だった——左半分は翼を広げて飛び立とうとする玄鳥、右半分は 끊어진古剣。玄鳥の紋様は、陳霊の首にかかった玉佩と見事に見分けがつかない相同性を持っていた。そしてあの 끊어진剣の輪郭は、陳機の血脉の深部で共鳴していた。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_012",
+        "character_id": "char_chenian",
+        "content": "父親は既に手配を進めていたようだ。兄の血脉が剣道封印を激活し、私の血脉が玄鳥封印を激活する——二つの封印が同時に解除されない限り、この石門は開かない。",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_013",
+        "content": "陳구는即座には動かなかった。彼は心を込めて計算していた——陳霊の言葉が真実なのか？もしそうなら、彼女は正直に語っていることになる；もし嘘なら、誰に指図されているのか？しかし天機録の予知は、三刻鐘後に陳霊が一人で遗迹深处に足を踏み入れることを告げていた……これは何を意味するのか？彼女は封印を解除した後、彼と別行動を取るつもりなのか、それとも別の企みがあるのか？"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0152_choice_003",
+        "prompt": "陳霊の協力提案に対し、陳그는 결정을 내려야 한다",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "配合激活",
+            "text": "配合激活",
+            "description": "疑虑を一時的に捨て、陳霊と共に封印を激活し、先に遗迹に入る",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "陳霊に策略される可能性がある",
+            "visible_reward": "遗迹に入る資格を得る",
+            "risk_hint": "遗迹内部の状況は不明で、無謀に立ち入るとリスクがある",
+            "process_label": "注入血脉",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_配合激活_001",
+                  "character_id": "char_chenji",
+                  "content": "今回だけは信じよう。だが、この遗迹の中では各自の方法で動く——もし裏切りがあれば、兄妹の情も構わない。",
+                  "emotion": "冷厉"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_配合激活_002",
+                  "content": "陳기는 指先を傷つけ、 끊어진剣の紋様に血を滴らせた。同時に陳霊も玄鳥の口に血を注いだ。二つの血脉が石門の上で交わり、瞬時に眩い金の光が迸った。ゴロゴロと鳴り响く中、千年間封じられていた石門がゆっくりと開き、腐敗と神秘が混ざり合った气息が吹き出した。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "遗迹开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "附加条件",
+            "text": "付帯条件",
+            "description": "協力を同意するが条件をつける：遗迹に入った後、陳霊は必ず彼の后面に従うこと",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "陳霊を怒らせる可能性がある",
+            "visible_reward": "遗迹内で主導権を握る",
+            "risk_hint": "陳霊が拒否すれば、協力関係が崩壊する可能性がある",
+            "process_label": "提出要求",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_附加条件_001",
+                  "character_id": "char_chenji",
+                  "content": "協力は良いが、あなたは私の后面につかねばらならない。この遗迹内部の情况は不明で、あなただけで行動させるのは安心できない。",
+                  "emotion": "强势"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_附加条件_002",
+                  "character_id": "char_chenian",
+                  "content": "陳霊の目に惊讶の光が走り、すぐに興味深げな微笑みに変わった。「兄上はまさに霸道になったわね。まあ、答应してあげる——どうせ、あの助力者も言っていたように、今度の旅はあなたと私、欠かすことはできないのだから。」",
+                  "emotion": "妥协"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_附加条件_003",
+                  "content": "二人は再び血脉を封印に流し込んだ。金の光が烈しく輝き、石門は音もなく開いた。一条の暗い通路が地底へと続いていた。深いところから吹いてくる冷たい風に、某种の古く危険な气息が混ざっていた。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "遗迹开启",
+              "陈灵跟随"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "终止合作",
+            "text": "協力を中止する",
+            "description": "異常を察知し、一時的に撤退を決定、陈霊に一人で機関に向かわせる",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "遗迹に入る機会を逃がす",
+            "visible_reward": "切り札を温存し、状況の発展を見守る",
+            "risk_hint": "陈霊が一人で遗迹内の机缘を得るかもしれない",
+            "process_label": "转身欲走",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_终止合作_001",
+                  "character_id": "char_chenji",
+                  "content": "待ってほしい。この遗迹は……たぶん単なる古器の遺存ではない。もう一度考え直す必要がある。",
+                  "emotion": "迟疑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0152_result_终止合作_002",
+                  "character_id": "char_chenian",
+                  "content": "陈霊の笑みがわずかに凍りついた。兄様は私があなたを傷つけることを恐れているのか？ならば、こう하자、 外で待っていなさい——中にあるものは、私が先に探っておく。",
+                  "emotion": "冷淡"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0152_result_终止合作_003",
+                  "content": "陈霊が言い終わるや否や、自らの指先を噛み破り、鮮血を玄鳥の紋様へと落とした。金色の光が闪烁する中、石門はゆっくりと一道の隙間を開き、彼女は身を捩ってその中へと滑り込んだ。陈機에게는意味深长な振り向きだけを留下一つ残して。兄様、三刻後の後で会いましょう——その時、まだ同じ場所に立っているならだが。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_014",
+        "content": "甬道は暗く深く、松明の光が壁に揺れ動く影を落としていた。陈機と陈霊は並んで歩き、空気は氷のように沈黙していた。四周の石壁には古い符文が刻まれており、その線は古朴で神秘的で、何世紀も前に忘れられた伝説を語っているようだった。陈機は一辺歩きながら、一辺密かに陈霊の挙動を観察していた——彼女の足取りは安定していたが、目光は時折甬道の奥へと漂い、まるで何かを探しているかのようだった。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_015",
+        "content": "突然、前方に一筋の微かな光が現れた。それは一つの石室で、正の中央に祭壇が立ち上がり、その上に蒼い輝きを放つ玉簡が浮かんでいた。玉簡の上には、赫然と二つの文字が刻まれていた——天機。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_016",
+        "character_id": "char_chenian",
+        "content": "「天機録！」陈霊は思わず声を上げて叫び、旋即自分の口を押さえた。眼中的な衝撃は隠しようもなかった。「違う……これは不可能だ。天機録は確かに欠片しかないのに、どうしてここに完全に……」",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_017",
+        "content": "陈機の心は激烈に揺れ動き、懐中の欠片が自ら飛び出し、祭壇上の玉簡へと飞んでいった。两者が交接する刹那、璀璨たる光が俄かに爆発し、石室全体を白昼のように照らし出した。光の中、一つの虚幻な身影がゆっくりと凝聚していく——それは一人の中年男性の顔で、その眉眼之间には陈機との七分の類似があった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0152_017b",
+        "character_id": "char_chenji",
+        "content": "「父上……！」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_018",
+        "content": "その虚影は一言も語らず、ただ深く陈機と陈霊看了一眼だけで、其后点点の星的光芒となって陈機の眉心へと没していった。一つの莫大な情報流が脑海中へと涌入ってきた——それは父が残した第一の封印の記憶で、その中には陈家血脉の真の秘密と、天機録が千年もの间欠けていた真実が隠されていた。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_019",
+        "content": "陈機が两眼を閉じ、信息流が意識の中で汹涌澎湃するままに任せた。彼は見た——父が臨終間近的几那双の光景を、天機録が始めに分割された理由を、そして運命の裏に隠された一双の至る所にある目を。祭壇の上では、玉簡は既に砕け散り、ただ一行の焦熱い文字が脑海中に灼热の烙印のように刻まれていた：吾が子よ、天道の目は、未だ眠っていない。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0152_020",
+        "content": "陈機が再度两眼を開けた時、石室には既に寂静が戻っていた。祭壇は空しく、ただ一筋の青い煙が立ち昇っているだけだった。陈霊は不远处に站ち、複雑な顔色で彼を見つめていた。眼中には警戒があり的同时に、言い难い担忧もあった。陈期は分かっていた、この瞬間から全てが異なった——天機録の秘密は彼の想像以上に怖ろしく、そして「天道の目」と呼ばれる存在は、もはや既に此处へと視線を向けているのかもしれない。遗迹の奥底では、より多くの試練が彼を待っている。父の遺沢は、机缘であると同時に楔でもある。そして彼と陈霊の间のまだ明らかされていない関係も、この瞬間ひそかに何か发生了变化したようだった。"
+      }
+    }
+  ]
+}

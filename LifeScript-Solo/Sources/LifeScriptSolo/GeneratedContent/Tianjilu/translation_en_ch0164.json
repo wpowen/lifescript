@@ -1,0 +1,434 @@
+{
+  "id": "天机录_ch0164",
+  "book_id": "天机录",
+  "number": 164,
+  "title": "Oath of a New Chapter",
+  "is_paid": true,
+  "next_chapter_hook": "At that moment, a mysterious figure who looked almost exactly like Chen Ji appeared outside the sect",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0164_001",
+        "content": "The instant the fifth seal of the Tianji Record cracked open, Chen Ji felt as though his entire meridian system was being pierced by blazing flames. The Chen family secret techniques, dormant for ten thousand years deep within his bloodline, stirred like a coiled dragon awakening, rushing upward along his bone marrow. Wherever it passed, his acupoints boiled like seething water. He knelt on one knee, both hands gripping the blue bricks of the floor until his knuckles turned white. On his palm, an ancestral seal mark that had never before appeared slowly manifested—the \"Tianji Seal,\" which only the legitimate bloodline of the Chen family could display. \"You have finally awakened.\" The remnant soul of Mo Xiansheng drifted out from the pages, a complex gleam flickering in his turbid eyes. \"The catastrophe ten thousand years ago nearly extinguished the Chen family's direct lineage. Do you think the Tianji Record chose you, this waste, for no reason?\" Mo Xiansheng coldly smiled: \"Because only in your body does a wisp of the Chen family's founding ancestor's soul remain.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0164_002",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji!",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_003",
+        "content": "A cyan figure swept into the quiet chamber, and Su Qingyao had already arrived at Chen Ji's side as her garments fluttered. Her face was pale, clearly having rushed here at full speed, fine beads of sweat clinging to her temples. When she saw the resplendent ancestral seal on Chen Ji's palm, her pupils constricted: \"This is... the Chen family's Tianji Seal? You, you truly are not...\" Before she could finish, she suddenly knelt on one knee, standing shoulder to shoulder with Chen Ji, her hands folded before her forehead, performing an ancient salute Chen Ji had never seen. \"Su Qingyao, the twenty-third generation Inner Disciple Senior Fellow of the Tianqing Sect, hereby pledge with this body to follow Chen Ji's side, through life and death.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0164_004",
+        "character_id": "char_chenji",
+        "content": "Senior Sister Su, what are you doing?",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_005",
+        "content": "Su Qingyao slowly raised her head, her usually cold and proud face now filled with determination: \"I have been investigating you for three years, from Outer Disciple/Servant to Inner Sect outcast. Every lethal trap you've miraculously escaped, every scheme you've executed with precision as if you could... foresee the future.\" She paused, her voice trembling slightly: \"I know you're hiding your true strength, and I know you are no ordinary person. But today I take this oath, not for your secrets, but...\" She met Chen Ji's gaze directly: \"Because I want to stand by your side and watch you tear down this rotten heaven with your own hands.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0164_006",
+        "prompt": "Su Qingyao has sworn a life-and-death oath. How should Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0164_006_a",
+            "text": "Accept Openly",
+            "description": "Honestly tell her part of the truth about the Tianji Record, establishing a true alliance of trust",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Reveal part of his trump cards",
+            "visible_reward": "Obtain the \"Life and Death\" bond; Su Qingyao can share the Heavenly Fate consumption",
+            "risk_hint": "Once trust is given, it cannot be taken back",
+            "process_label": "接受誓约",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0164_result_006_a_1",
+                  "content": "Chen Ji was silent for a moment, then suddenly reached out to help Su Qingyao to her feet. His palm was warm, and the moment the ancestral seal touched her forehead, a mysterious contractual power gathered from the heavens and earth. \"Since it is so, let you and I use blood as the medium and life as the thread.\" His voice was low: \"From now on, my enemies are your enemies. My life... is also your life.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0164_result_006_a_2",
+                  "character_id": "char_suqingyao",
+                  "content": "There were tears glistening in Su Qingyao's eyes, yet she stubbornly lifted the corner of her lips: \"These three years... were worth it.\"",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "同生共死_已缔结"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶的誓言",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0164_006_b",
+            "text": "Keep Distance",
+            "description": "Decline her kindness politely, not allowing anyone to truly get close",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss the opportunity to deepen the bond",
+            "visible_reward": "Maintain an air of mystery; Su Qingyao will become more curious and exploratory",
+            "risk_hint": "May hurt a sincere heart",
+            "process_label": "婉拒誓约",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0164_result_006_b_1",
+                  "content": "Chen Ji stepped back, avoiding her touch. He lowered his gaze to the ancestral seal slowly fading from his palm, his tone cold: \"Senior Sister Su, our paths are different. The road I walk has no return.\" He turned his back to Su Qingyao, yet his voice softened slightly: \"Your kindness, I will remember. But by my side... will only increase your danger.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0164_result_006_b_2",
+                  "character_id": "char_suqingyao",
+                  "content": "But Su Qingyao smiled instead, that smile carrying a hint of determination: \"Chen Ji, did you think I would be afraid of danger? For three years I have chased after you; which day wasn't spent in danger?\" She stood up, brushing the dust from her knees: \"I have received your refusal. But my oath... is carved here.\" She pointed to her own heart.",
+                  "emotion": "倔强"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶的倔强",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_007",
+        "content": "Just then, a gentle knock came at the door of the quiet chamber. Chen Nian's voice came through the door, carrying an imperceptible tremor: \"Brother, I... have something I must tell you.\" Chen Ji frowned, exchanged a glance with Su Qingyao, then gestured for her to open the door. The instant Chen Nian stepped into the room, Chen Ji's pupils constricted—the aura surrounding her was identical to the Chen family bloodline that had just awakened moments ago. \"I am a branch of the Chen family.\" Chen Nian lowered her head, her voice choking: \"When Father sent us out of the capital, he instructed me that if we ever encountered the Chen family's direct lineage, we must protect them with our lives. Brother, I have searched for you... for a full ten years.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0164_008",
+        "character_id": "char_chenian",
+        "content": "Back then, when the Holy Sect kidnapped me, it wasn't merely because they wanted a \"Heavenly Fate Lock Key\"... What they truly desired was the dormant Chen family secret technique within my bloodline.",
+        "emotion": "悲伤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_009",
+        "content": "Chen Ji listened in silence, his knuckles unconsciously clenching tight. Chen Nian continued: \"I was studied in the Holy Sect's underground prison for three full years. They exhausted every method trying to activate the secret technique within me, yet always failed. Until...\" She raised her eyes to look at Chen Ji, a moment of understanding flickering in her gaze: \"Until the moment your Tianji Record awakened again, I sensed a bloodline resonance from the depths of that dungeon. At that moment, I knew the direct lineage still lived.\" Chen Nian suddenly knelt on both knees, standing shoulder to shoulder with Su Qingyao: \"Chen Nian of the Chen family branch, hereby pledge to serve the direct lineage as master, through life and death, together facing the tribulation of heaven!\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0164_010",
+        "character_id": "char_chenji",
+        "content": "Chen Ji stared at the two kneeling figures before him, then suddenly let out a low laugh. That laughter carried bitterness, helplessness, but more than anything, a long-suppressed sense of relief. He crouched down, one hand supporting Chen Nian, the other helping Su Qingyao to her feet: 'Get up. Since you insist on jumping onto this wreck of mine, then I'll...' He paused, a rare, genuine smile appearing on his face: 'Take you to see exactly how laughable this Heavenly Dao truly is.'"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_011",
+        "content": "Before the words could finish, the communication jade talisman in Chen Ji's arms suddenly glowed. Ye Qing's voice emerged from the talisman, rarely carrying a trace of gravity: 'Chen Ji, the Demonic Path army has broken through the outer defensive line. The Holy Sect Sect Master personally leads three major Protectors, bringing one hundred thousand demonic cultivators heading toward the Tianqing Sect.' She paused: 'There's one more thing... I saw someone who shouldn't exist in the vanguard. He... looks exactly like you.' Chen Ji's pupils contracted sharply. He下意识 glanced at his palm where the clan emblem mark that had just faded now reappeared, trembling slightly—it was a blood pulse resonance response."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0164_012",
+        "prompt": "Facing the demonic army pressing at the borders and Chen Ji's avatar appearing, how should Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0164_012_a",
+            "text": "Gather the Power of the Oath",
+            "description": "The three merge bloodlines through oath power, attempting to activate the Chen Family Combined Attack Secret Technique",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume a large amount of Heavenly Fate",
+            "visible_reward": "First unlock of 'Chen Family Three Talents Formation,' Combat Power surges",
+            "risk_hint": "May expose the existence of Chen Family Secret Techniques",
+            "process_label": "激活血脉秘术",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 50
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0164_result_012_a_1",
+                  "content": "Chen Ji took a deep breath, extending both hands to grasp Su Qingyao and Chen Nian's wrists. The three bloodline powers, upon contact, merged like rivers converging. An unprecedented force erupted from where the three connected. The ceiling beams of the quiet room creaked ominously, and starlight across the heavens was drawn by this power, pouring in through the window lattices. 'This is...' Mo Xiansheng's remnant soul exclaimed in shock: 'Chen Family Three Talents Combined Attack Technique! Ten thousand years ago, this technique slew an incarnation of the Heavenly Dao!'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈家三才阵_已解锁"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "誓约之力觉醒",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0164_012_b",
+            "text": "First Investigate the Avatar",
+            "description": "Use the Tianji Record to foresee the avatar's truth, know the enemy before making deployments",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consume 10 points of Heavenly Fate",
+            "visible_reward": "Obtain key intelligence: the avatar's weaknesses and origins",
+            "risk_hint": "Overusing the Tianji Record will accelerate Heavenly Fate loss",
+            "process_label": "预见分身真相",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0164_result_012_b_1",
+                  "content": "Chen Ji sat cross-legged, the Tianji Record automatically opening to the fifth layer. The ink markings moved like living creatures, and a blurry image gradually emerged—the avatar stood at the very front of the demonic army, surrounded by death energy utterly opposite to Chen Ji's. However, just as the image was about to become clear, a twisted face suddenly pressed close, its mouth gaping open in silent mockery: 'Found you, little thing.' Chen Ji's eyes snapped open, cold sweat beading on his forehead. Heavenly Dao's Eye... it had left consciousness within the avatar!"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "分身情报_已获取"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录预警",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_013",
+        "content": "The night grew deep, moonlight cold as frost. The three stood before the quiet room's window, gazing at the faint crimson glow on the distant horizon. That was an omen of demonic energy gathering, foreshadowing the coming great battle. Su Qingyao suddenly spoke softly: 'Chen Ji, I've never asked you what you truly want.' Chen Ji didn't answer immediately. He stood with hands clasped behind his back, his robes fluttering in the night wind, yet his gaze fell upon the faint clan emblem on his palm. After a long while, he said quietly: 'I want this world... where no one can ever again decide for others.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0164_014"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_015",
+        "content": "Chen Nian spoke softly: 'Brother, before I only thought of revenge, of escaping the Holy Sect. But now...' She walked to Chen Ji's side, with Su Qingyao on his left and right, like twin stars guarding him: 'I want to stand with you, to personally end this ten-thousand-year chess game.' The night wind suddenly rose, carrying faint battle cries from afar. The demonic army was less than three hundred miles from the Tianqing Sect. Mo Xiansheng's remnant soul floated into view: 'Three, the oath is complete, the bloodlines merged. Now... it's time to show this world how the Chen Family, a thousand years ago, resisted the Heavenly Dao with only their own strength.'"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0164_016",
+        "prompt": "The final battle approaches, Chen Ji needs to make the last deployment arrangements for his allies",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0164_016_a",
+            "text": "Assign Su Qingyao to Guard the Formation",
+            "description": "Have Su Qingyao command the Tianqing Sect's Mountain Protection Formation, ensuring the rear remains secure",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "One less reinforcement on the frontal battlefield",
+            "visible_reward": "Su Qingyao's Affection +15, gains 'Formation Empowerment' status",
+            "risk_hint": "Combat Power slightly insufficient when directly confronting the avatar",
+            "process_label": "托付后方",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0164_result_016_a_1",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao slightly frowned but didn't protest: 'You're always like this, leaving the most dangerous things for yourself.' She took out a jade talisman from her sleeve and pressed it into Chen Ji's palm: 'This is the 'Azure Cloud Sword Qi' I've cultivated for many years. In critical moments, it can block a strike from Heavenly Dao's will.' She raised her eyes, filled with worry but even more trust: 'Come back alive.'",
+                  "emotion": "不舍"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶的剑气",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0164_016_b",
+            "text": "Assign Chen Nian to Infiltrate",
+            "description": "Let Chen Nian use her knowledge of the Holy Sect to infiltrate the enemy rear and find fatal weaknesses",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Chen Nian acting alone carries extremely high risk",
+            "visible_reward": "Obtain internal intelligence from the Holy Sect, unlock the 'Insider' route",
+            "risk_hint": "Chen Nian may fall into the hands of the Holy Sect again",
+            "process_label": "派遣潜伏",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0164_result_016_b_1",
+                  "character_id": "char_chenian",
+                  "content": "A flash of struggle crossed Chen Nian's eyes, then she nodded firmly: \"Don't worry, brother, I'm very familiar with the structure of the Holy Sect's dungeons.\" She took out a broken token from her怀中: \"This is the core fragment of the 'Heavenly Fate Lock' the Holy Sect used to control me. If I can find its main body... perhaps I can dismantle Heavenly Dao's control over the demonic army from within.\"",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈念的使命",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_017",
+        "content": "Just as the three were discussing, a thunderous roar suddenly echoed from outside the Tianqing Sect. The mountain protective formation's light flickered violently, and a massive crack spread from the direction of the Sect Gate. Through that fissure, Chen Ji saw the visitor—a man with almost identical features to his own, standing with hands behind his back in the Void, surrounded by dense death energy and Heavenly Dao laws. The doppelganger's lips curved into a mocking arc, his gaze sweeping past the countless troops before locking precisely onto Chen Ji's direction. He proclaimed loudly: \"I've been waiting for you... for a very long time, my other half.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_018",
+        "content": "Chen Ji's expression slightly darkened, yet he remained composed. He pushed open the window lattice, facing the night wind and staring directly at that face identical to his own. The family emblem mark in his palm剧烈跃动, pulsing with sharp pain—it was his bloodline warning him that the thing before him was by no means benevolent. \"The other half?\" he said coldly, \"You're merely a counterfeit forged by Heavenly Dao. How dare you compare yourself to me?\" The doppelganger did not grow angry but laughed instead, that laughter sharp as metal striking stone: \"Counterfeit? Hahaha... Chen Ji, who do you think you are? You're merely a discarded piece on Heavenly Dao's chessboard, and I... am the result it truly desires!\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0164_019",
+        "character_id": "char_chenji",
+        "content": "\"A discarded piece?\" Chen Ji suddenly smiled, that smile cold and sharp, \"Then let me see how this discarded piece overturns your so-called 'righteous fruit.'\" He turned to look at Su Qingyao and Chen Nian, extending his hand, palm upward, \"The oath is sworn, the bloodlines are fused. From this moment—\" his eyes blazed with brilliant light, \"The Tianqing Sect is our battlefield, and that counterfeit... is the sacrificial offering for our banner!\"",
+        "emotion": "战意昂扬"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0164_020",
+        "content": "The oath echoed through the night sky. Three streams of bloodline power intertwined in the Void, forming a massive formation diagram. The Chen Family Heavenly Secrets Token's light illuminated half the heavens. However, just then, the doppelganger suddenly收起笑意, revealing a诡异的满足: \"Good, the chess pieces have all gathered.\" He raised his hand, and behind him, one hundred thousand demonic cultivators roared in unison, the sound waves crashing like mountain avalanches and sea tsunamis. At the same moment, a terrifying will beyond heaven and earth descended from the Nine Heavens—that was the gaze of the Heavenly Eye. \"This game was destined from the moment you were born.\" The Heavenly Eye's voice thundered like celestial punishment, \"Chen Ji, you can never escape my grasp.\"\n\nYet Chen Ji merely watched that gaze silently, his lips slowly curving into an understanding arc: \"Escape? I've never thought about escaping.\" He murmured softly, and the Tianji Record in his palm suddenly flipped open to its final page, which was blank except for a line of faint, emerging text—\"At the end of Heavenly Secrets, reverse causality.\" A flash of light shone in Chen Ji's eyes: \"Because from the very beginning... I never intended to play by your rules.\""
+      }
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "id": "天机录_ch0519",
+  "book_id": "天机录",
+  "number": 519,
+  "title": "Deal Struck",
+  "is_paid": true,
+  "next_chapter_hook": "The moment Chen Ji stepped into the Imperial City, the Tianji Record shuddered violently—in the blurred vision, Chen Nian's figure appeared within the Forbidden Grounds deep in the Imperial City, and the one guarding her was the person he least expected.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0519_001",
+        "content": "Night wind stirred the dust in the ruins, the eerie glow on the fate card dancing in Chen Ji's pupils. He saw the blurred outline—it was indeed his own face, yet not. The Chen Ji on the card had indistinct features, only a pair of eyes clear beyond compare, and in that gaze there was none of his usual cold calculation, only a chilling dead silence.\n\n\"Is this the ending you saw for me using the Tianji Record?\" Chen Ji's voice was terrifyingly calm.\n\nYe Qing offered no response, merely turning the card over slowly. The back was covered in dense cracks, as if repeatedly crushed by fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_002",
+        "character_id": "char_yeqing",
+        "content": "\"Not an ending, a crossroads.\" Ye Qing tucked the card away, her voice low. \"This card is your destined turning point. Hand it to me, and perhaps you can walk a few steps further; keep it on you...\" She paused, a complex emotion flickering in her eyes. \"It will drain your heavenly fate like a blood-sucking parasite.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_003",
+        "content": "Chen Ji's heart clenched tightly. He looked down at his palm, where the burning pain from using the Tianji Record still lingered. Heavenly Fate—he had less than thirty points remaining. Every glimpse of the future was burning away his lifespan. And this second fate card...\n\nHe didn't ask how Ye Qing knew. Some questions, when asked, only revealed stupidity.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_004",
+        "character_id": "char_chenji",
+        "content": "\"You want to use it against the Eye of Heavenly Will?\" Chen Ji raised his head, his gaze sharp as a blade. \"What makes you think I'd believe the words of a Holy Sect demoness?\"\n\nYe Qing laughed lightly, but her smile held no warmth: \"Because we are the same kind of person, Chen Ji. We are both played like pieces on a board by that thing.\"",
+        "emotion": "戒备"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_005",
+        "content": "From the depths of the ruins came the mournful cry of a night owl, like a funeral bell from hell. Chen Ji's fingers trembled slightly—not from fear, but from fury. He thought of the blurred prophetic visions in the Tianji Record Fragment, of the hollow weakness after each glimpse of the future, of Mo Xiansheng's profound words: 'The Tianji Record is merely one of its many pieces on the board in this world.'\n\nHe had suspected it all along. And now, Ye Qing had personally confirmed his suspicions.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_006",
+        "character_id": "char_yeqing",
+        "content": "\"The Eye of Heavenly Will is not a specific person,\" Ye Qing stepped forward, her haunting fragrance mingling with the scent of blood. \"It is a will, an entity parasitic within the laws of heaven and earth. Every generation of seers—including the Tianji Record's holders—are its chess pieces. And we, the so-called 'geniuses,' are nothing but bait it raises on the chessboard.\"",
+        "emotion": "揭露"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0519_007",
+        "prompt": "Ye Qing's words struck like thunder, and Chen Ji faced a choice—would this fate card be the key to changing his destiny, and was it wise to hand it to a Holy Sect demoness?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0519_007_a",
+            "text": "Hand over the card for intelligence",
+            "description": "Since the fate card devours heavenly fate, better use it to gain leverage against the Eye of Heavenly Will. Ye Qing's words mixed truth and falsehood, but one thing was certain—the enemy's enemy could at least serve as a temporary ally.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose the second fate card",
+            "visible_reward": "Obtain Chen Tianming's precise location + Ye Qing's trust",
+            "risk_hint": "The demonic path cannot be trusted; once the fate card is handed over, it cannot be retrieved",
+            "process_label": "权衡利弊后，陈机做出了决定",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0519_result_007_a_1",
+                  "content": "Chen Ji took a deep breath, retrieving the fate card glowing with eerie light from his chest. The moment the card touched his hand, an icy chill spread from his fingertips to his heart—the card was indeed devouring his heavenly fate.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0519_result_007_a_2",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing reached out to take it, and the instant her fingertips touched the card, her pupils constricted sharply: \"So that's it... This card seals your destined 'second death.'\"",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "命运卡牌已交出"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0519_007_b",
+            "text": "Refuse the deal, seek another way",
+            "description": "There are only two fate cards, each could be a life-saving talisman in a life-or-death moment. The Holy Sect demoness's words sounded reasonable, but who knows if this isn't another trap? Chen Ji never believed in free lunches.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Lose the opportunity to obtain crucial intelligence",
+            "visible_reward": "Keep the trump card intact",
+            "risk_hint": "Ye Qing may turn and leave, making the rescue of Chen Tianming even more difficult",
+            "process_label": "陈机选择了保守策略",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0519_result_007_b_1",
+                  "content": "Chen Ji tucked the fate card back into his chest, his movements unhurried: \"Your story is quite compelling, but why should I believe you?\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0519_result_007_b_2",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing's gaze chilled abruptly: \"Are you testing me?\"",
+                  "emotion": "不悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_008",
+        "content": "Ye Qing fell silent for a moment, then suddenly smiled. Her smile was eerily peculiar in the night air, yet carried an inexplicable sorrow: \"You are indeed as cautious as he was. Don't worry, I won't disappoint you.\"\n\nShe produced a jade slip from her sleeve and tossed it to Chen Ji: \"Chen Tianming is imprisoned in the seventh level of the Imperial City Prison. The guard shift change is at the third quarter of the Zi hour. This is a copy of the Imperial City's defensive layout, sufficient for you to formulate a rescue plan.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_009",
+        "character_id": "char_chenji",
+        "content": "Chen Ji caught the jade slip and probed it with his divine sense. The structural diagram of the Imperial City Prison clearly emerged in his mind, and the marked location of the seventh level made his pupils constrict—that was not an ordinary prison cell, but a formation cage specifically designed to imprison cultivators.\n\n\"Why help me?\" He stared directly at Ye Qing. \"You're getting more than just a card from this deal.\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_010",
+        "content": "Ye Qing turned around, the moonlight carving out her cold side profile. She didn't answer immediately, but slowly rolled up her sleeve—Chen Ji saw on the inside of her wrist a mark nearly identical to the Tianji Record pattern on his palm.\n\n\"Fated twins,\" Ye Qing's voice was light as a wisp of smoke. \"The Eye of Heavenly Will divided the same prophecy into two halves a thousand years ago. One half was given to you, the other... to me.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_011",
+        "character_id": "char_yeqing",
+        "content": "\"Your Tianji Record can foresight three hours ahead, while my 'Demonic Mist' can disrupt heavenly secrets and shield the窥探 of heaven's way.\" Ye Qing lowered her sleeve and turned to meet Chen Ji's eyes directly. \"Both of us alone against the Eye of Heavenly Will is a dead end, but together... perhaps there is still a sliver of hope.\"\n\nShe paused, her voice growing complicated: \"This is also why I need your fate card.\"",
+        "emotion": "坦诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_012",
+        "content": "Chen Ji remained silent for a long while. An indescribable anguish surged in his chest—to think he was not alone as a chess piece, Ye Qing was too. But this brought him no comfort; instead, it made him more keenly aware of fate's cruelty. They were both pitiful creatures toyed with by heaven.\n\nBut even as his heart ached, Chen Ji's gaze remained cold and profound as an abyss: \"You still haven't explained clearly what use this card is to you.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_013",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing's smile vanished, replaced by a resolute solemnity: \"The fate card is your destined 'moment of death.' The reason the Eye of Heavenly Will chose us is because our deaths are the most delicious sacrifice to it. And this card can allow me to... transfer your moment of death to the Eye of Heavenly Will itself.\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_014",
+        "content": "Transfer the moment of death—these five words exploded in Chen Ji's mind like thunder. He finally understood Ye Qing's true purpose, and the meaning of the mark on her wrist. Fated twins were not partners, but each other's substitutes for death.\n\nHis heart felt as if gripped tightly by an invisible hand. Not for himself, but for Ye Qing—she was using her own life to exchange for a chance of mutual destruction.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_015",
+        "character_id": "char_chenji",
+        "content": "\"Are you insane?\" Chen Ji's voice was low, yet carried an imperceptible tremor. \"Trading your life for mutual destruction?\"\n\nYe Qing tilted her head, her smile under the moonlight carrying a hint of manic beauty: \"I was destined to die anyway. Raised as a furnace for the Holy Sect for eighteen years, every day was borrowed. Now being able to do one last thing with my life—isn't that wonderful?\"",
+        "emotion": "自嘲"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0519_016",
+        "prompt": "Ye Qing's words plunged Chen Ji into silence. Her sacrifice moved him, but he had to make a choice—accept this heavy trust, or find a way to stop her?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0519_016_a",
+            "text": "Accept and establish deeper trust",
+            "description": "Ye Qing's sacrifice moved him. Since they were both chess pieces, they might as well work together to overturn the chessboard. Chen Ji decided to accept this heavy trust, and repay it in his own way—he would not let Ye Qing sacrifice herself in vain.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Bear Ye Qing's fate",
+            "visible_reward": "Obtain Ye Qing's absolute trust + Fated Twins bond",
+            "risk_hint": "This bond may become a weakness at critical moments",
+            "process_label": "陈机决定与夜清共进退",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0519_result_016_a_1",
+                  "content": "Chen Ji extended his hand and grasped Ye Qing's cold fingertips: \"If we're going to die, we die together. But I have one condition—don't leave before me until the final moment.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0519_result_016_a_2",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing froze. Under the moonlight, her eyes reddened slightly, but she stubbornly turned away: \"...You really are讨厌.\"",
+                  "emotion": "动容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "命运双生子_羁绊"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0519_016_b",
+            "text": "Stop her and seek another way",
+            "description": "Chen Ji could not accept the logic of trading one person's life for another's. He needed time to think—there must be another way—he would not watch Ye Qing go to her death.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the best timing",
+            "visible_reward": "Maintain flexibility in the plan",
+            "risk_hint": "Ye Qing may think you don't trust her",
+            "process_label": "陈机决定保留反对意见",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0519_result_016_b_1",
+                  "content": "Chen Ji withdrew his hand, his expression complicated: \"Your plan is too risky. I need time to find a better solution.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0519_result_016_b_2",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing's expression stiffened slightly, then returned to calm: \"...Alright. But don't make me wait too long.\"",
+                  "emotion": "失落"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_017",
+        "content": "Night wind swept through the ruins again, dispersing the brief silence between them. Ye Qing took a deep breath, her expression returning to its usual coldness: \"Regarding the rescue plan, I have a suggestion. Chen Tianming is imprisoned in the Imperial City Prison, and your sister Chen Nian... from what I know, she is imprisoned in the Forbidden Grounds deep in the Imperial City. The two locations are not far apart; if the operation is executed properly, both can be resolved in one go.\"\n\nShe paused, taking a token from her chest: \"This is a passage token from my Holy Sect. With this token, you can enter the outer areas of the Imperial City, but entering the Forbidden Grounds will require another solution.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_018",
+        "content": "Chen Ji took the token, the cool metal in his palm sharpening his senses. The Imperial City—a place he had never set foot in, yet the only hope for rescuing his sister. What surged in his chest was not just determination, but an anxiety rooted in his bones.\n\n\"Do you know the guard situation at the Forbidden Grounds?\" Chen Ji asked.\n\nYe Qing shook her head: \"Intelligence about the Forbidden Grounds is even more tightly sealed than the prison. But one thing is certain—the guards there are no ordinary people.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0519_019",
+        "character_id": "char_chenji",
+        "content": "\"Not ordinary people?\" Chen Ji frowned.\n\nYe Qing nodded, a hint of wariness flickering in her eyes: \"It is said they are 'Heavenly Punishers' directly dispatched by the Eye of Heavenly Will. Those people can no longer be considered human—they are puppets through which heavenly will walks the mortal realm.\"\n\nChen Ji's fingers tightened abruptly. Heavenly Punishers—this name he had seen in the fragments of the Tianji Record, the final enemy of every generation of seers.",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_020",
+        "content": "Night deepened, and the conversation in the ruins finally drew to a close. Ye Qing tucked the fate card into her chest, casting Chen Ji one final glance: \"In ten days, the Imperial City. I will wait for you there.\"\n\nShe turned to leave, then suddenly stopped: \"Oh, there is one more thing to remind you.\"\n\nChen Ji looked up: \"What?\"\n\nYe Qing's back in the moonlight appeared especially lonely: \"That Inner Disciple Senior Fellow from the Tianqing Sect... Su Qingyao—she has already grown suspicious of you. When you meet next time, be careful.\"\n\nAs her words fell, her figure vanished into the night like a specter, leaving only a faint, lingering fragrance.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0519_021",
+        "content": "Chen Ji stood motionless for a long time. Night wind whipped his robes, but could not disperse the complex emotions in his heart.\n\nHeavenly fate was draining away drop by drop, every breath like a countdown. He knew he had no retreat—the journey to the Imperial City would either rescue Chen Nian and Chen Tianming, or end in death.\n\nBut he was not afraid. Quite the opposite, his heart was more peaceful than it had ever been. Since they were all chess pieces, he would be the one that overturned the chessboard.\n\nHe took out the Tianji Record Fragment from his chest, and upon it, prophetic words slowly emerged—blurred images revealed the outline of the Imperial City, and in some corner deep within it, a young girl's figure was imprisoned in darkness by chains.\n\nChen Nian... wait for me.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

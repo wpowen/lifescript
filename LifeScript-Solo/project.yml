@@ -391,7 +391,7 @@ targets:
       - name: Compile Tianjilu Content Bundle
         basedOnDependencyAnalysis: false
         inputFiles:
-          - $(SRCROOT)/天机录_new/if/story_package.json
+          - $(SRCROOT)/天机录/if/story_package.json
         outputFiles:
           - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/book_天机录.json
           - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/chapters_天机录.json
@@ -400,18 +400,18 @@ targets:
         script: |
           set -euo pipefail
           python3 "$SRCROOT/Scripts/compile_directory_story_bundle.py" \
-            "$SRCROOT/天机录_new/if" \
+            "$SRCROOT/天机录/if" \
             "$SRCROOT/Sources/LifeScriptSolo/GeneratedContent/Tianjilu"
       - name: Compile Tianjilu Translation Bundle
         basedOnDependencyAnalysis: false
         inputFiles:
-          - $(SRCROOT)/天机录_new/translations/glossary.json
+          - $(SRCROOT)/天机录/translations/glossary.json
         outputFiles:
           - $(SRCROOT)/Sources/LifeScriptSolo/GeneratedContent/Tianjilu/translation_manifest.json
         script: |
           set -euo pipefail
           python3 "$SRCROOT/Scripts/compile_directory_story_translations.py" \
-            "$SRCROOT/天机录_new/translations" \
+            "$SRCROOT/天机录/translations" \
             "$SRCROOT/Sources/LifeScriptSolo/GeneratedContent/Tianjilu"
     info:
       path: Sources/LifeScriptSolo/InfoCultivation.plist
@@ -456,3 +456,17 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
     dependencies:
       - target: LifeScriptSolo
+
+schemes:
+  LifeScriptSoloTianjilu:
+    build:
+      targets:
+        LifeScriptSoloTianjilu: all
+    run:
+      config: Debug
+      storeKitConfiguration: SoloStoreKit.storekit
+    test:
+      config: Debug
+      storeKitConfiguration: SoloStoreKit.storekit
+      targets:
+        - LifeScriptSoloTests

@@ -67,10 +67,10 @@ struct SoloCharacterRosterHubView: View {
 
     private var headerPanel: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("人物战局总览")
+            Text(SoloLocalization.localized("人物战局总览"))
                 .font(SoloTypography.posterTitle(size: 30))
                 .foregroundStyle(SoloTheme.ink)
-            Text("先看谁最重要、谁最危险、谁最适合牵引，再决定进入哪位角色的战局面板。")
+            Text(SoloLocalization.localized("先看谁最重要、谁最危险、谁最适合牵引，再决定进入哪位角色的战局面板。"))
                 .font(SoloTypography.detail)
                 .foregroundStyle(SoloTheme.muted)
                 .lineSpacing(5)

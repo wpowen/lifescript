@@ -1,0 +1,373 @@
+{
+  "id": "天机录_ch0372",
+  "book_id": "天机录",
+  "number": 372,
+  "title": "血脈絶殺",
+  "is_paid": true,
+  "next_chapter_hook": "天機録の第四頁が解かれ、父が残した最後の情報が現れた：「第四頁は鍵であり、そして最後の枷鎖である」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0372_001",
+        "content": "その声は耳元で響き渡り、毒蛇が信を吐くように、冷たく肌を刺すようだった。Chen Jiは廃墟の中央に立ち、全身は数百の霊光に囲まれ、聖宗の紫衣修士と皇朝の黄金鎧士が二重の絞殺局面を形成していた。彼はゆっくりと顔を上げ、口元にかすかな笑みを浮かべた。「切り捨てられた子？」彼は心底でこれらの言葉を繰り返し、瞳孔の奥に冷たい光がきらめいた、「ならばこの切り捨てられた子に、貴様の盤をひっくり返させよう。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「自力の程を知らないものだ。」その超越的な声には多少の余裕が感じられた、「残欠だらけの天機録程度で何が変わると思う？歴代の予言者たちは皆私の駒だ。お前も例外ではない。」",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_003",
+        "content": "廃墟の上空、黒雲が垂れ込める。聖宗の率いる者は蘇青瑶を追跡したあの紫衣長老であり，此刻彼は漆黒の鎖を手中握着していた——これは聖宗の至宝「天命鎖」であり、大気運を持つ者を専ら締め殺すためのものだ。「Chen Ji、今日こそお前の命日だ。」彼は居高临下，仿佛已经看到Chen Ji血溅五步的场景を呈していた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_004",
+        "character_id": "char_hanlie",
+        "content": "「待て！」皇朝陣営から霸道の声が響いた。Han Lieが空を踏んで而来，玄色戦甲には玄武紋様が流れ，双目如銅鈴般地盯着Chen Ji，「この子は俺のものだ！前回彼は奸計で俺を半招勝った，今日俺は 직접的に彼の首を取る！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_005",
+        "content": "Chen Jiは四周を見回した。聖宗の十二名の金丹修士、皇朝の十八名の精锐甲士，加上紫衣長老とHan Lieという二人の元嬰强者。この布陣は足以碾杀任何筑基修士。だが彼の目は平静如古井，深邃却燃着幽冷的火焰。左手缓缓抬起，手背上一道淡金色的紋路若隐若现——那是Chen家血脉の印記。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0372_006",
+        "prompt": "二大势力的联合包围，面对这样的局势，Chen Ji需要一个决定。是先发制人以命相搏，杀出一条血路？还是以智取胜，利用他们对天機録的贪婪布下反杀之局？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_blood_rage",
+            "text": "血脈覚醒、以命相搏",
+            "description": "Chen家血脈で遗迹禁制を催動し，最短時間で境界を超えた戦力を爆発させ，绝对的な力で全敵を粉砕する。リスク极高，可能透支生命潜能。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "30点的天命値を消耗する",
+            "visible_reward": "血脈禁制激活、敵は不意を突かれる",
+            "risk_hint": "根基を重伤する可能性があり，后续战力下降",
+            "process_label": "催动血脉之力",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_blood_rage_001",
+                  "content": "Chen Jiは低く喝一声，左手を猛地按向胸口。淡金色的血脈印記が骤然輝き，如旭日初升，瞬间驱散了周遭の陰り。一股浩瀚の远古気息が彼の体内から喷涌而出，整个废墟都在这股気息下震颤。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_blood_rage_002",
+                  "content": "紫衣長老的面色劇变：「这是……传承者血脈？！不可能！Chen家は既に断絶した……」彼の声戛然而止，因为Chen Ji已经动了。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "战力",
+              "min": 60
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_cunning_scheme",
+            "text": "示弱誘敵、以智取勝",
+            "description": "力竭を装い、敵の警戒を緩めさせる。Han Lieが冒進した時を待ち，天機録残頁で予見を発動し、その攻勢を精確に打断，再び遗迹の力で反殺を完了する。稳健だが時間がかる。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "15点的天命値を消耗する",
+            "visible_reward": "敵は混乱に陥り，戦力は完全に保存される",
+            "risk_hint": "演技が真实否则，则陷入被动",
+            "process_label": "布下迷局",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cunning_scheme_001",
+                  "content": "Chen Ji忽然踉跄后退两步，捂住胸口剧烈咳嗽，鲜血从嘴角溢出。「咳咳……你们赢了……」彼の声は虚弱，眼神却暗中観察着Han Lieの反応。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cunning_scheme_002",
+                  "content": "Han Lie果然中計，眼中闪过狂喜：「色は浅き錫の錆びた銊だ！この俺が彼の首を取ってやる！」彼は不顾一切地冲上前，战拳直取Chen Ji面门。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 70
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_007",
+        "content": "无论选择何种策略，Chen Ji的下一步都已注定。右手悄然结印，废墟深处传来沉闷的轰鸣，仿佛有什么古老的存在正在苏醒。地面上の符文开始亮起，金光流转间编织成一张巨大的陣図——这是Chen家先祖留下的最后遺産，血脈禁制。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_008",
+        "character_id": "char_hanlie",
+        "content": "「不好！」Han Lie终于意识到不对，但为时已晚。Chen Ji猛然睁眼，眸中金光大盛，整个人如離弦の箭迎向Han Lieの拳。拳拳相交，爆发出震耳欲聋の轰鸣。Han Lie感觉自己仿佛打在了一座山上，虎口震裂，鲜血迸溅。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_009",
+        "content": "「前回は半招让你，你便以为我是废物？」Chen Ji的声音冰冷如霜，五指如鉄钳般扣住Han Lieの手腕，「Han Lie，你可知我为何一直藏拙？」彼は微微一笑，那笑容在Han Lie眼中比魔鬼还要可怕，「因为你的价值，不在于杀，而在于——让所有人都看看，所谓的玄武天才，不过是块垫脚石。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_010",
+        "character_id": "char_hanlie",
+        "content": "「你——！」Han Lie睚眦欲裂，想要挣脱却发现对方的力道如山岳般沉重。彼は从小被誉为天才，何曾受过这等屈辱？「Chen Ji！俺とお前は不俱戴天だ！」",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0372_011",
+        "prompt": "Han Lie被制住，圣宗与皇朝势力蠢蠢欲动。此时该如何处置这玄武天才？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choice_cripple_hanlie",
+            "text": "廃其修为，以儆效尤",
+            "description": "当着众人的面废除Han Lie的修为，让他从天才沦为废人。这一击将震慑所有敌人，但也会彻底得罪玄武宗。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "与玄武宗彻底交恶",
+            "visible_reward": "圣宗与皇朝士气崩溃",
+            "risk_hint": "可能招来玄武宗疯狂报复",
+            "process_label": "斩草除根",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cripple_hanlie_001",
+                  "content": "Chen Ji没有说话，只是轻轻一扭。「咔嚓」一声脆响，Han Lie的右手腕骨粉碎性骨折。紧接着，一股霸道的力量顺着经脉直冲其丹田，Han Lie的脸色瞬间惨白如纸。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_cripple_hanlie_002",
+                  "content": "「你……你废了俺の修为？！」Han Lie的声音尖锐得几乎变形，堂堂玄武宗第一天才，此刻却像个无助の孩童。彼は体内的灵力正在飞速消散，那种绝望比死亡更可怕を感受到了いた。",
+                  "emotion": "绝望"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_humiliate_hanlie",
+            "text": "留其性命，当众羞辱",
+            "description": "不杀Han Lie，但让他颜面尽失。将他的狼狈模样投影给天下人看，让他一辈子活在屈辱之中。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Han Lie可能成为永久の复仇者",
+            "visible_reward": "获得巨大名声，引发各方关注",
+            "risk_hint": "Han Lie后期可能成为变数",
+            "process_label": "杀人诛心",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_humiliate_hanlie_001",
+                  "content": "Chen Ji松开手，任由Han Lie瘫倒在地。从怀中取出一枚影像珠，轻轻捏碎。刹那间，一道光幕在半空展开，Han Lie方才不可一世冲上来却被轻易碾压的场景，清晰地呈现在所有人面前。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0372_result_humiliate_hanlie_002",
+                  "content": "「诸位觉得，这影像珠值多少灵石？」Chen Ji笑吟吟地看向紫衣長老，「若将它传遍天下，想必玄武宗会很感兴趣。当然，价格也好商量。」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_012",
+        "content": "紫衣長老の額角渗出冷汗。亲眼目睹Chen Ji如何在举手投足间废掉Han Lie，那份从容与狠辣让他心惊。更可怕的是，废墟中の血脈禁制が完全に激活済み，金色の符文正编织成一张大网，将所有敌人都笼罩其中。「撤！快撤！」彼は声を嗄らせて叫んだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_013",
+        "content": "但Chen Ji岂会给他们机会？双手结印，口中低喝：「起！」刹那间，废墟四周冲出无数金色光柱，每一道光柱都蕴含着先祖の意志，专克外敵入侵。金光所过之处，圣宗弟子の護体霊光如紙糊般破碎，惨叫声此起彼伏。皇朝甲士の黄金戦甲も金光の下，迅速黯淡，失去了所有防護能力。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_014",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你敢！」那超越性の声にようやく怒りの色が混じった，「区区蟻一只が、数を背くか？」天穹之上，一只巨大的眼眸缓缓睁开，瞳孔中倒映着Chen Ji的身影。那是天道の注視，是至高意志の威圧。",
+        "emotion": "震怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_015",
+        "content": "Chen Ji抬头直视那只天道之眼，眼中毫无惧色。「天数？」彼は冷笑一声，「我Chen Jiの命は、从来只握在自己手中。」话音未落，左手猛地按向胸口血脈印記，右手同时握住挂在颈间的天機録残頁。两股力量在这一刻交汇、融合——Chen家血脈と天機録产生了前所未有的共鸣！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_016",
+        "content": "天機録骤然绽放出耀眼的金光，纸页哗哗作响，仿佛有什么枷锁正在被打破。紫衣長老は目を丸くし，声音颤抖：「第四頁……第四頁が解けている！那是天機録の核心禁制——不可能！歴代传承者都无法解开，为何他能……」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_017",
+        "content": "金光冲破云层，与天道之眼的光芒激烈碰撞。天地间仿佛炸开了一道惊雷，狂风大作，飞沙走石。Chen Ji感觉自己置身于惊涛骇浪之中，但彼の意志如磐石般坚定。血脈之力源源不断地涌入天機録，两者相互呼应，共振の頻度越来越高。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0372_018",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「够了！」天道之眼发出愤怒の咆哮，「お前は身を焦がす火遊びをしている！天機録の枷鎖が解ければ、運命の反噬はお前の全てを飲み込むぞ！」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_019",
+        "content": "Chen Jiは耳に入れず，血脈之力燃烧得更加猛烈。眼前开始模糊，无数画面如走馬灯般闪过——那是天機録歴代主人の運命，被天道操控一生，最终成为弃子の悲劇。但他没有退缩，反而笑得更灿烂。「原来如此……这就是你们的底牌吗？」彼は低声で言った，「可惜、我从来不信命。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_020",
+        "content": "「轟——」一声巨响，天機録第四頁彻底揭开！金色的光芒中，一行古老的文字浮现出来，正是Chen Ji父亲留下的最后情報：「第四頁は鍵であり、そして最後の枷鎖。Ji'erよ，如果你能看到这段话，你已经走到了命运的岔路口。是打开枷锁拥抱自由，还是将它重新封印守护苍生——一切，由你决定。记住，无论你选择什么，父亲永远以你为荣。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_021",
+        "content": "Chen Ji望着那行字，眼眶微微泛红。父亲失踪多年，从未想过会以这种方式与父亲对话。那只天道之眼在金光中逐渐消散，它的声音变得飘渺而遥远：「你会后悔的……你一定会后悔的……」Chen Ji没有回答，只是静静地看着第四頁上的情報，心中涌起前所未有的坚定。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0372_022",
+        "content": "廃墟之中，圣宗と皇朝の残兵败将は早已逃之夭夭。Han Lie被人抬走时，回头看了Chen Ji一眼，那眼神中有恨、有惧，但更多的是一种难以言喻の複雑。Chen Ji没有追击，只是負手而立，任由风吹动他的衣袍。四周一片狼藉，但他的身姿却如蒼松般挺抜。「弃子？」他轻声呢喃，嘴角勾起一抹意味深长的笑容，「那就让这弃子，亲手为你送终。」",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

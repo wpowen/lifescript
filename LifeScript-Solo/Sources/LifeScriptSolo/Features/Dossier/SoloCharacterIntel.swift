@@ -65,7 +65,7 @@ struct SoloCharacterIntel: Equatable {
         resonance: Int
     ) -> String {
         guard let relation else {
-            return "\(character.name) 还未完全入局，继续推进章节后才能看清其真实立场。"
+            return SoloLocalization.format("%@ 还未完全入局，继续推进章节后才能看清其真实立场。", character.name)
         }
 
         if let reason = relation.lastChangeReason, !reason.isEmpty {
@@ -73,12 +73,12 @@ struct SoloCharacterIntel: Equatable {
         }
 
         if danger >= 60 {
-            return "\(character.name)当前外显态度为「\(relation.attitudeLabel)」，风险信号已偏高，适合先稳后动。"
+            return SoloLocalization.format("%@当前外显态度为「%@」，风险信号已偏高，适合先稳后动。", character.name, relation.attitudeLabel)
         }
         if resonance >= 60 {
-            return "\(character.name)当前态度为「\(relation.attitudeLabel)」，已进入可牵引区间，适合主动试探。"
+            return SoloLocalization.format("%@当前态度为「%@」，已进入可牵引区间，适合主动试探。", character.name, relation.attitudeLabel)
         }
-        return "\(character.name)当前态度为「\(relation.attitudeLabel)」，仍处于观察与博弈阶段。"
+        return SoloLocalization.format("%@当前态度为「%@」，仍处于观察与博弈阶段。", character.name, relation.attitudeLabel)
     }
 }
 

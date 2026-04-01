@@ -1,0 +1,567 @@
+{
+  "id": "天机录_ch0458",
+  "book_id": "天机录",
+  "number": 458,
+  "title": "Identity Crisis",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji sank into the abyss of identity crisis, the Tianji Record Fragment suddenly emanated an eerie glow, as if it was about to proactively reveal some long-buried truth...",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0458_001",
+        "content": "Moonlight fell like frost on the Blue Stone Steps. Ye Qing's figure froze in place, her usually cold and elegant face now completely drained of color. The Holy Sect Elder's black robe fluttered in the night wind, and the pressure emanating from him was almost tangible, compressing the air for several zhang around into stagnation. Chen Ji stood half a step behind her, his fingertips subtly stroking the fragment hidden in his sleeve. He calculated rapidly in his heart—this card should not have been revealed at this moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Holy Maiden, Your Highness,\" the Holy Sect Elder's voice was chillingly sinister, each word seeming to have been dragged out of an ice cellar. \"I have been searching for Your Highness on the Sect Master's orders for many days. I never expected to find you here, traveling alongside a righteous path menial servant. May I ask, what is the meaning of this?\"",
+        "emotion": "阴冷审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_003",
+        "content": "Chen Ji sensed Ye Qing's spine trembling slightly. She was indeed the Demon Path Holy Maiden, but at this moment she resembled more a young beast cornered by hunters. To her, the Holy Sect had never been a belonging, but a prison. He remembered the prophecy he had shown her using the Tianji Record—that her mother had died a tragic and bloody death, and it was that very vision that made her resolutely choose to cooperate with him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0458_choice_001",
+        "prompt": "Facing the Holy Sect Elder's interrogation, Ye Qing fell into a predicament. Chen Ji needed to make a choice: how to deal with this sudden crisis?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0458_opt_001a",
+            "text": "Step forward proactively and draw the attention away",
+            "description": "Admit that he is the real target and let Ye Qing escape. This was a dangerous move that pushed himself from the shadows into the light, but it could temporarily protect his only strategic ally.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Identity completely exposed, all schemes might collapse",
+            "visible_reward": "Ye Qing's Demon Path Mist technique can conceal the Tianji Record's aura for the long term",
+            "risk_hint": "The Holy Sect Elder holds secrets about Chen Ji's father",
+            "process_label": "挺身承认",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_001a_001",
+                  "content": "Chen Ji took a deep breath and stepped out from behind Ye Qing. His steps were slow, each one seeming to measure the dimensions of fate. On that ordinary, almost transparent face, a faint smile emerged—the composure of someone who had transcended life and death.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_001b",
+            "text": "Watch silently and let Ye Qing handle it herself",
+            "description": "Remain motionless and observe the Holy Sect Elder's true intentions. Ye Qing is the Holy Maiden and should have her own means of escape. Use this time to determine how much information the other party possesses.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Ye Qing might expose more crucial information",
+            "visible_reward": "Obtain more intelligence about the Holy Sect's intentions",
+            "risk_hint": "The Holy Sect Elder seems to have already grasped key clues",
+            "process_label": "冷眼旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_001b_001",
+                  "content": "Chen Ji took a step back, hiding his figure in the shadows of the trees. His eyes narrowed slightly as he coldly watched everything unfolding in the arena. However, beneath his robes, both hands had already quietly formed seals, ready at any moment to activate the power of the Tianji Record.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_001c",
+            "text": "Proactively reveal part of the truth to probe",
+            "description": "Deliberately hint at his connection to the Tianji Record and observe the Holy Sect Elder's reaction. The risk is extremely high, but it might reveal clues about the opponent's trump cards.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Might accelerate the Holy Sect's pursuit of the Tianji Record",
+            "visible_reward": "Probe the extent of the Holy Sect's knowledge about the Tianji Record",
+            "risk_hint": "The Holy Sect Elder might know more secrets about the Tianji Record",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_001c_001",
+                  "content": "A playful arc curled at the corner of Chen Ji's mouth. He knew some risks had to be taken. Since the Holy Sect Elder appeared here, it meant the opponent's chess game had advanced to a critical stage. Rather than passively taking blows, better to proactively stir up trouble.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_004",
+        "character_id": "char_chenji",
+        "content": "\"Why must the Elder make things difficult for Her Highness the Holy Maiden?\" Chen Ji's voice drifted from the shadows, calm as if discussing the weather. \"We merely met on the road, and she asked to borrow some traveling expenses from me. It's nothing unusual for a righteous path disciple to associate with those from the Demon Path.\"",
+        "emotion": "伪装平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_005",
+        "content": "The Holy Sect Elder's gaze turned to him slowly like a venomous snake. A flash of sharpness crossed those turbid eyes, carrying scrutiny and a certain certainty. Chen Ji felt a chill climb up his spine—the other's expression clearly said: I've been waiting for you for a long time.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Chen Ji, Outer Disciple/Servant of Tianqing Sect.\" The Elder pronounced each character of this name deliberately, his tone carrying a playful note. \"Orphan of your father Chen Xuan. The old man knew him as well.\"",
+        "emotion": "阴森威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_007",
+        "content": "Chen Xuan. This name was like a blunt knife, hacking viciously into Chen Ji's heart. That was a father he had never met, a man chosen by the Tianji Record, a tragic protagonist who died in \"Heavenly Fate's Backlash.\" For twenty years, Chen Ji had countless times imagined his father's face in dreams, but never truly seen it.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0458_choice_002",
+        "prompt": "The Holy Sect Elder mentioned Chen Ji's father Chen Xuan, revealing his \"old acquaintance\" relationship with the former master of the Tianji Record. Chen Ji's heart was churning like great waves, but his surface had to remain calm.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0458_opt_002a",
+            "text": "Coldly questioning the truth behind his father's death",
+            "description": "Directly pressing for details about Chen Xuan's death, not concealing his anger. This was pointing a knife at himself, but the value of truth made the risk worthwhile.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Completely exposing his obsession with his father",
+            "visible_reward": "Potentially obtaining crucial information about his father and the Tianji Record",
+            "risk_hint": "The Holy Sect Elder might use this as leverage or a bargaining chip",
+            "process_label": "怒声质问",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_002a_001",
+                  "character_id": "char_chenji",
+                  "content": "\"An 'acquaintance'?\" Chen Ji's voice turned cold as ice, a rare hint of ferocity surfacing on his unremarkable face. \"If you were such an acquaintance, do you know how he died?\"",
+                  "emotion": "压抑的愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_002b",
+            "text": "Pretending contempt, continuing to play the role of a废物 (useless person)",
+            "description": "Pretending to have no feelings toward his father, using the humble posture of a servant disciple to defuse the other's probing. Hiding his true emotions was what Chen Ji did best.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Potentially missing the opportunity to obtain the truth",
+            "visible_reward": "Continuing to maintain his hidden identity, striving for time to set up his plans",
+            "risk_hint": "The Holy Sect Elder might see through his act",
+            "process_label": "隐忍伪装",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_002b_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji lowered his eyes, his voice carrying a bitter self-mockery: \"A father I've never met is merely a stranger to me. If the Elder wishes to reminisce, I'm afraid you've found the wrong person.\"",
+                  "emotion": "伪装的漠然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_002c",
+            "text": "Turning the tables, exposing the Elder's true intentions",
+            "description": "Pointing out that the Elder didn't come for Ye Qing, but specifically for Chen Ji. Breaking the other's rhythm, taking control of the dialogue.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Exposing too early that he sees through the entire situation",
+            "visible_reward": "Disrupting the Holy Sect's plans, striving for negotiating leverage",
+            "risk_hint": "Potentially inviting more intense suppression",
+            "process_label": "反客为主",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_002c_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji suddenly burst into laughter, a cold smile spreading across his face that seemed to pierce through everything. \"Why beat around the bush, Elder? The Holy Woman is merely bait to lure me out. If you want the Tianji Record, just say so directly.\"",
+                  "emotion": "冰冷的洞悉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The Holy Sect Elder was stunned for a moment, then threw his head back in laughter. That laughter rang especially harsh in the silent night, like an owl's mournful cry. \"Good, good, good!\" He repeated the word three times, his playful gaze transforming into undisguised greed. \"Indeed Chen Xuan's son, this composure has somewhat his style. Unfortunately...\"",
+        "emotion": "贪婪狂妄"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_009",
+        "content": "His voice shifted abruptly, and his oppressive aura surged: \"Unfortunately, your father was too foolish! The Tianji Record chose him, yet he dared not use it to reshape his destiny, ultimately dying from his own cowardice. And you—\" His eyes swept over Chen Ji's entire body, as if examining a lamb waiting to be slaughtered, \"Are merely another failure he left behind.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Your father split the Tianji Record into two parts before his death,\" the Elder's voice was low and sinister. \"Half he gave to you, the other half...\" He deliberately paused, his gaze meaningfully falling on Ye Qing. \"Do you understand why the Holy Woman is here? Fate, oh fate!\"",
+        "emotion": "得意揭示"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_011",
+        "content": "Chen Ji's heart sank sharply. He frantically recalled every detail of his encounter with Ye Qing—that seemingly coincidental meeting, the prophecy only she could understand, and that lingering sorrow in her eyes. Was all of this designed from the start? Was he the chess player, or merely a piece? Was his twenty-year layout merely part of a larger game?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0458_choice_003",
+        "prompt": "The Holy Sect Elder revealed a shocking secret—the Tianji Record had been split in two, and Ye Qing might carry the other half! Chen Ji fell into an unprecedented identity crisis. Was he a pitiful creature toyed with by fate, or a chess player capable of a dramatic reversal?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0458_opt_003a",
+            "text": "Choose to trust Ye Qing and fight against the Holy Sect together",
+            "description": "Regardless of whether Ye Qing was being used, she had chosen to fight by his side. The drama of fraternal strife was exactly what the enemy wanted to see—he must not fall into the trap.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Might play directly into the enemy's hands",
+            "visible_reward": "Deepening the bond with Ye Qing, unlocking the \"Demonic Path Mist\" for long-term concealment",
+            "risk_hint": "Ye Qing might indeed harbor the other half of the Tianji Record",
+            "process_label": "并肩作战",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_003a_001",
+                  "content": "Chen Ji took a deep breath and turned to look at Ye Qing. Her pale face was filled with fear and guilt, yet there was not a trace of betrayal. He suddenly smiled—if he lacked such insight into people, he would have died a hundred times long ago.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清信任突破"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "战火中的抉择",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_003b",
+            "text": "Question Ye Qing and verify the Tianji Record on the spot",
+            "description": "Since the Tianji Record fragment is in hand, why not verify it immediately? If Ye Qing truly carries the other half, her presence should disrupt the foresight vision. It's a risky move, but also the most direct verification method.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 10 Heavenly Fate points, may expose the Tianji Record's location",
+            "visible_reward": "Completely confirm the Tianji Record's completeness",
+            "risk_hint": "The Holy Sect Elder is watching intently",
+            "process_label": "验证真伪",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0458_result_003b_001",
+                  "content": "Chen Ji did not speak, only slowly raised his hand. The fragment hidden in his sleeve faintly radiated heat, as if sensing some kind of summoning. He closed his eyes, silently pondering the question that had haunted him for twenty years—where, in all this world, was the other half of the Tianji Record?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0458_opt_003c",
+            "text": "Turn the tables and顺势 extract more information",
+            "description": "Since the Holy Sect Elder is eager to reveal the truth, let him speak his fill. Information is power, and even the most dangerous truth is better than ignorance.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May fall into the opponent's verbal trap",
+            "visible_reward": "Obtain complete intelligence about his father and the Tianji Record",
+            "risk_hint": "The Holy Sect Elder may be setting a lethal trap",
+            "process_label": "以彼之道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0458_result_003c_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Since the Elder is so kind,\" Chen Ji slightly tilted his head, assuming an attentive expression, \"the junior would like to hear what legacy my father left that deserves a personal visit from you.\"",
+                  "emotion": "虚与委蛇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_012",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"You want to know?\" The Elder's smile grew increasingly sinister. \"Fine, the old man is in a good mood today. I'll let you die knowing the truth. Twenty years ago, Chen Xuan foresaw the descent of the Heavenly Eye—that terrifying existence that wants to use all seers as chess pieces. He wanted to resist, but was backlashed by the Tianji Record and died. And that fragment on you...\"",
+        "emotion": "得意揭露"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_013",
+        "content": "The Elder's words were like thunderclaps exploding in Chen Ji's mind. The Heavenly Eye! That terrifying truth he wouldn't realize until Volume Eight was now being casually unveiled. What shocked him even more—was his father not killed by heavenly fate backlash, but by resisting the Tianji Record?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_014",
+        "content": "Just then, the Tianji Record fragment in Chen Ji's embrace suddenly blazed with heat. It was an unprecedented violent reaction, as if a slumbering beast had been awakened by some force. The runes on the fragment began to slowly flow, emanating a ghostly blue glow that illuminated half of Chen Ji's face in alternating light and shadow.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The Holy Sect Elder's expression changed drastically. He instinctively stepped back, fear flickering in his eyes: \"This is... the Tianji Record responding voluntarily? Impossible! Without a complete inheritor, it shouldn't...\"",
+        "emotion": "惊骇恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_016",
+        "content": "Chen Ji felt a mighty stream of information surge into his mind. The Tianji Record seemed to have developed its own consciousness, showing him a picture that had been buried in dust for ages—a simple thatched cottage, a man with features similar to his own bent over a desk writing furiously. The man's face was deathly pale, blood staining his lips, but his gaze burned with unwavering determination.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_017",
+        "content": "\"Ji'er...\" A hoarse voice resounded in Chen Ji's heart, carrying endless fatigue and longing. \"If you can see this memory, it means the Eye of Heavenly Dao has already set its sight on you. Remember, it is not your enemy, but...\" The voice abruptly stopped, as if forcibly severed by some unknown force.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_018",
+        "content": "The memory image twisted violently, and Chen Ji felt a tearing agony in his mind. But in that fleeting instant, he clearly saw the half-open book on the table in the thatched cottage—it was not the Tianji Record, but a cultivation manual of an entirely different kind. Four large characters were written on the title page: Reverse Heaven, Change Fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0458_019",
+        "character_id": "char_chenji",
+        "content": "Chen Ji abruptly opened his eyes, residual azure light lingering in his pupils. He looked at the Holy Sect Elder, a meaningful curve forming at the corner of his lips: \"Elder, you just said the Tianji Record selected my father, yet he didn't dare use it to rewrite fate—but what I saw was him creating an entirely new kind of power.\"",
+        "emotion": "洞悉真相"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0458_020",
+        "content": "The Holy Sect Elder's expression thoroughly darkened. He never expected that this disciple, dismissed as waste, could witness such hidden memories within the Tianji Record. Even more terrifying was that he had never heard of the manual titled 'Reverse Heaven, Change Fate.' \"You... what kind of monster are you?\" For the first time, his voice carried a tremor.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

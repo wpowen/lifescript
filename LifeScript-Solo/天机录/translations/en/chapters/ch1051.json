@@ -1,0 +1,473 @@
+{
+  "id": "天机录_ch1051",
+  "book_id": "天机录",
+  "number": 1051,
+  "title": "Three-Way Chaos",
+  "is_paid": true,
+  "next_chapter_hook": "In the instant when the attention of the three major forces was diverted, the power dormant for a thousand years within Chen Ji's body suddenly awakened. From the depths of his Mental Sea came an ancient sigh—the远古 memories sealed within his bloodline were slowly awakening.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1051_001",
+        "content": "In the core region of the Heavenly Realm, the sky was crimson as blood. Three auras, like three sharp blades, tore this ancient forbidden land to shreds. To the east fluttered the war banners of the Holy Sect of the Demonic Path, with hundreds of elite disciples visible among the swirling black fog; to the west gleamed the golden carriage of the Imperial Court's envoys, their magnificent entourage hiding a chilling pressure; and due north, the lone banner of Tianqing Sect's remnant forces stood erect, with only a handful of men beneath it. Chen Ji stood at the eye of the storm where the three forces converged, his white robes fluttering, his face as still as water.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "Three brats, do you truly believe the Heavenly Realm is a playground you can covet? A stern and majestic voice echoed from the Void, belonging to none of the faction leaders, yet striking terror into the hearts of everyone present. That voice seemed to come from eternity itself, and from the depths of each person's Mental Sea, carrying an undeniable sense of judgment.",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_003",
+        "content": "Chen Ji's Brow Center twitched slightly. The Tianji Record Fragment quivered violently in his Mental Sea, sending an unprecedented sharp pain—this was a sign of Heavenly Dao's backlash, stronger than ever before. He surveyed his surroundings, calculating rapidly: the Demonic Path commander had led three thousand elites to break through the outer formations; the Imperial Court envoy's token was radiating a chaotic aura beyond comprehension; and that old fox Ling Yuan was leading Tianqing Sect's forces at the perimeter, watching and waiting to reap the benefits. Three-way chaos was about to erupt. And he, Chen Ji, had somehow become the eye of the storm.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_004",
+        "character_id": "char_chenji",
+        "content": "(Tianji Record, activate.) Chen Ji's gaze hardened, and he毫不犹豫ly activated his foresight ability. The scene before him instantly became clear—three breaths later, the Demonic Path commander would personally lead the vanguard to assault the core altar; five breaths later, the Imperial Court envoy would reveal that token, suppressing everyone's cultivation by thirty percent; seven breaths later, Ling Yuan would suddenly strike, ambushing the Demonic Path commander from behind. Each vision cost five Heavenly Fate Value. But he had no choice.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1051_choice_001",
+        "prompt": "The vision was complete. Chen Ji had to make a decision within three breaths. The Demonic Path vanguard's assault was imminent, and once the Imperial token was revealed, everyone present would be at a disadvantage. How would he break this deadlock?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "死战不退",
+            "text": "Fight to the Death, Never Retreat",
+            "description": "Resist the Demonic Path vanguard head-on, single-handedly holding back the greatest threat, creating openings for others.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume massive True Qi, possibly suffer severe injuries",
+            "visible_reward": "Establish prestige before the three major forces, reputation soars",
+            "risk_hint": "Extremely high risk; if he cannot withstand, he will fall into utter ruin",
+            "process_label": "陈机催动天机录之力，正面迎敌",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_死战不退_001",
+                  "content": "Chen Ji's figure flashed, blocking the Demonic Path vanguard's path. He formed a seal with one hand, and the Tianji Record Fragment materialized in his palm, emanating a strange bronze light. The Demonic Path commander's pupils constricted—he recognized the origin of that light.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_死战不退_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "Tianji Record?! Are you Chen Xuan's inheritor?! The Demonic Path commander's furious roar shook the surroundings, yet it also revealed his inner shock and apprehension.",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "初显锋芒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "突围",
+            "text": "Break Through and Relocate",
+            "description": "Seize the moment of three-way chaos to quietly slip away, removing himself from the storm's center and letting them fight first.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be pursued, falling into a larger encirclement",
+            "visible_reward": "Preserve strength, observe the overall situation from the shadows",
+            "risk_hint": "If discovered fleeing from battle, reputation suffers a devastating blow",
+            "process_label": "陈机隐匿气息，准备撤离",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_突围_001",
+                  "content": "Chen Ji's form flickered, his entire person dissolving into shadows merging with the Void, precisely the concealment technique recorded in the Tianji Record. However, just as he was about to vanish from everyone's sight— A cold laugh rang out beside his ear.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_突围_002",
+                  "character_id": "char_lingyuan",
+                  "content": "Nephew Chen Ji, leaving so soon? This old man has been waiting here for quite some time. Ling Yuan's figure had somehow blocked Chen Ji's retreat path, his withered hand pressing down on Chen Ji's shoulder.",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借势",
+            "text": "Borrow Force to Strike",
+            "description": "Utilize the foresight advantage, skillfully navigate between the three factions, turning enemies against each other.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires precise timing; one misstep and it's game over",
+            "visible_reward": "Not wasting a single soldier, dealt a heavy blow to the enemy's strength",
+            "risk_hint": "If exposed, becomes the common enemy of all three factions",
+            "process_label": "陈机施展连环计策，挑拨三方",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_借势_001",
+                  "content": "Chen Ji's eyes gleamed, the Tianji Record Fragment flipped rapidly in his Mental Sea, countless threads of cause and effect weaving into a net before his gaze. He suddenly opened his mouth, a sharp voice piercing through the battlefield— Ling Yuan! The evidence of how you framed Brother Chen Xuan back then? This one possesses the complete set! At these words, Ling Yuan's expression changed dramatically, while both the Demonic Path commander and the Imperial Court envoy turned their gazes toward Tianqing Sect.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_借势_002",
+                  "character_id": "char_lingyuan",
+                  "content": "You ungrateful wretch! What nonsense are you spouting?! Ling Yuan's fury blazed, his robust True Qi instantly locking onto Chen Ji, yet also exposing his inner panic—if not guilty, why such violent reaction?",
+                  "emotion": "暴怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "挑拨成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_005",
+        "content": "Chen Ji's provocation was like a stone thrown into a pot of boiling oil. The Demonic Path commander's gaze shifted, his assault originally aimed at the altar suddenly veering aside. He coldly laughed: \"So Tianqing Sect has such secrets within? Sect Master Ling, if you wish to monopolize the opportunities of the Heavenly Realm, you'll first have to get past me.\" The token in the Imperial Court envoy's hand trembled slightly, an invisible wave spreading outward. His voice carried not a trace of emotion: \"This envoy was ordered to supervise the Heavenly Realm. Anyone attempting to monopolize opportunities—dies.\" The three-way standoff instantly transformed into a three-against-one situation. And that \"one\" was precisely Ling Yuan.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_006",
+        "character_id": "char_lingyuan",
+        "content": "Excellent! Excellent! Excellent! Ling Yuan repeated the word three times, his withered form suddenly swelling, a vast and profound aura pouring from within him. He glared at Chen Ji, his killing intent as tangible as reality: \"Chen Ji, do you think this clumsy scheme of sowing discord can shake this old man? Today, this old man will first purge the sect, then settle accounts with these outsiders!\" Before the words even finished, a giant palm descending to cover the heavens was already pressing toward Chen Ji.",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_007",
+        "content": "Chen Ji's pupils constricted sharply. The might of this palm far exceeded his imagination—that old fox Ling Yuan had hidden himself far too deeply. His true Combat Power had probably reached the realm of half a step toward Great Accomplishment! The Tianji Record quivered violently once more, warning: This move cannot be blocked head-on; blocking will mean certain death. But if he didn't block, where could he retreat to? The Demonic Path army was to the east, the Imperial Court delegation to the west, Ling Yuan to the north—he had been completely sealed off from all escape routes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_008",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(Foolish ant, daring to play tricks with schemes in front of this one.) That voice from the Void sounded again, carrying disdain and playful amusement: \"Let this one see, what abilities does this worm crawling out of Chen Xuan's grave possess.\" The moment the words fell, Chen Ji felt excruciating agony in his Mental Sea, as if the Tianji Record Fragment was being gripped by some force and forcibly torn away!",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_009",
+        "content": "This is bad—! Chen Ji's face turned deathly pale. He had forgotten—the Heavenly Dao's Eye had been monitoring the holder of the Tianji Record all along. His earlier maneuvering, though successfully provoking Ling Yuan, had also exposed the existence of the Tianji Record. Now, the Heavenly Dao's Eye was personally intervening. An invisible chain was coiling around his Mental Sea, slowly tightening. Agonizing pain like ten thousand ants gnawing at his heart, his consciousness began to blur, everything before his eyes spinning and distorting— At that moment, something long dormant within him abruptly awakened.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1051_choice_002",
+        "prompt": "The Heavenly Dao's Eye's pressure was like the heavens collapsing. Chen Ji felt himself being crushed. However, in this life-or-death moment, the power dormant for a thousand years within him suddenly awakened. How should he respond to this sudden turn of events?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "顺势引导",
+            "text": "Guide with the Flow",
+            "description": "Attempt to channel this awakening power, transforming it into a weapon against the Heavenly Dao's Eye.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May deviate into demonic cultivation, extremely high risk",
+            "visible_reward": "Gain a brief burst of power, completely turning the tide",
+            "risk_hint": "Power losing control may backfire on the self",
+            "process_label": "陈机闭目凝神，尝试与体内觉醒之力沟通",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_顺势引导_001",
+                  "content": "Chen Ji did not resist that surging power; instead, he opened his mind completely, letting it surge through his body. In an instant, a brilliant golden light burst forth from his Brow Center, colliding head-on with the Heavenly Dao's Eye's pressure! Between heaven and earth, as if a thunderbolt had exploded.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_顺势引导_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "Impossible! This is... Ancient Bloodline?! The Heavenly Dao's Eye's voice quavered for the first time, that authority now mixed with a trace of disbelief.",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "血脉觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "强行压制",
+            "text": "Forceful Suppression",
+            "description": "Forcefully suppress the awakening power to avoid losing control, prioritize survival.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Power backlash, may spit blood and suffer severe injuries on the spot",
+            "visible_reward": "Maintain a low profile, avoid drawing more attention",
+            "risk_hint": "If suppression fails, injuries will compound",
+            "process_label": "陈机全力压制体内觉醒的力量",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -30
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_强行压制_001",
+                  "content": "Chen Ji gritted his teeth, forcibly pressing the awakening power back into the depths of his Dantian. The golden light gradually dimmed, his form swaying, blood threatening to spurt from his mouth, yet he forced it back down. From the outside, he appeared to be merely an ordinary disciple intimidated by the Heavenly Dao's Eye's pressure.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_强行压制_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(Hmph, at least he knows his place. Since that's the case, this one will暂且 spare his life—until he completes the Tianji Record.) That voice gradually faded, and the pressure dissipated with it. But Chen Ji knew this was merely the calm before the storm.",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "引爆天命",
+            "text": "Detonate Heavenly Fate",
+            "description": "Consume all Heavenly Fate Value as the cost, push the Tianji Record to its limit ability, carve a bloody path through this desperate situation.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Heavenly Fate Value drops to zero, lifespan greatly reduced, may die on the spot",
+            "visible_reward": "Tianji Record briefly completes, gains the ability to rewrite fate",
+            "risk_hint": "Nine deaths and one life, do not use unless absolutely necessary",
+            "process_label": "陈机孤注一掷，引爆天命值",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -100
+              },
+              {
+                "stat": "战力",
+                "delta": 100
+              },
+              {
+                "stat": "黑化值",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1051_result_引爆天命_001",
+                  "content": "A resolute gleam flashed in Chen Ji's eyes. Heavenly Fate Value burned furiously, transforming into surging True Qi injected into the Tianji Record Fragment. In that instant, that broken bronze page bloomed with unprecedented light— The Tianji Record was complete. Though only for three breaths.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1051_result_引爆天命_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "!!! The Heavenly Dao's Eye let out a furious roar, the entire Heavenly Realm trembling under this rage. However, Chen Ji had already moved. He saw fate. He changed fate. Ling Yuan's palm wind veered, the Demonic Path commander's True Qi reversed, the Imperial Court envoy's token shattered—all of it was rewritten with a mere snap of his fingers.",
+                  "emotion": "震撼"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "天机录短暂完整"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_010",
+        "content": "Ling Yuan's face was ashen as he gazed upon the chaotic scene. His attack had been deflected by an inexplicable force, the Demonic Path commander took advantage to press the assault, and though the Imperial Court envoy's token shattered, it unleashed an even more violent chaotic force that rebounded on all three sides—the entire core region of the Heavenly Realm had turned into a修罗 battlefield. And the culprit who caused all this, that waste of a disciple he had regarded as an ant, now stood quietly at the center of the storm like a calm eye.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1051_011",
+        "character_id": "char_lingyuan",
+        "content": "Chen Ji... just what kind of person are you?! Ling Yuan's voice was hoarse, his eyes filled with disbelief. He had been of the same era as Chen Xuan, had witnessed the Tianji Record's glory and its fall. Yet the aura emanating from this young man before him was both similar to and utterly different from his memories of Chen Xuan—more restrained, more dangerous, and more... terrifying.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_012",
+        "content": "Chen Ji slowly raised his head, a faint, cold smile curling at his lips. Of course he knew what manner of person he was. He was Chen Xuan's inheritor, the successor of the Tianji Record, a chess player chosen by fate—and the variable about to overturn the entire board. But at this moment, he could say nothing. \"Uncle Ling,\" his voice terrifyingly calm, \"the revenge for Brother Chen Xuan, this disciple will暂时记下. There is a long road ahead... we shall see.\" Before the words even finished, his form began to dissipate, like thin mist dissolving into the Void.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_013",
+        "content": "Think you can escape?! Ling Yuan flew into a rage, a giant palm of True Qi tearing through the Void to seize Chen Ji. Yet that figure had already completely vanished from between heaven and earth, leaving only a string of drifting echoes— \"Uncle Ling, your heart has grown turbulent.\" \"One whose heart is turbulent shall surely lose.\" \"This is the first lesson this disciple teaches Uncle. May Uncle remember it well.\" Three sentences, each word striking at the heart. Ling Yuan trembled with rage, yet could only watch as that waste of a disciple disappeared before his eyes, while all around him, the forces of the Demonic Path and Imperial Court had already encircled him completely...",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_014",
+        "content": "Meanwhile, at a certain forbidden area on the edge of the Heavenly Realm. Chen Ji leaned against a cold stone wall, breathing heavily in ragged gasps. His face was as pale as paper, and waves of pain radiated from his Mental Sea—the Tianji Record's backlash had arrived as expected, and more violently than ever before. Yet in his eyes, an unusual gleam flickered. Because he could sense it. The power dormant for a thousand years within him was slowly awakening. That was the call of the ancient bloodline, the resonance of ancestral blessings— His opportunity to break through had arrived.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_015",
+        "content": "At this moment, an ancient voice rang out in his Mental Sea—it was Mo Xiansheng, that mysterious guardian who had existed as a remnant soul on the first page of the Tianji Record all along. \"Young Master, you have finally touched that threshold.\" Mo Xiansheng's voice carried a hint of relief, and also a trace of worry: \"But you have also exposed the existence of the Tianji Record. From now on, the Heavenly Dao's Eye will surely intensify its efforts to destroy you.\" \"Your path... will become even more arduous.\" Chen Ji closed his eyes, yet his smile grew even deeper. Arduous? That made things more interesting. He wanted to see just what the Heavenly Dao's Eye could possibly do to him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1051_016",
+        "content": "Above the heavens, an invisible eye was piercing through layers of the Void, gazing in the direction where Chen Ji was located. That was the Heavenly Dao's Eye. It held no anger, no impatience, only an eternal, unchanging coldness and scrutiny. Another chess piece was beginning to demonstrate its value. Good. Let it grow a bit more. When it becomes strong enough—that will be the day of harvest. The Void returned to stillness, as if nothing had ever occurred. Yet the dormant power within Chen Ji quietly awakened another",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

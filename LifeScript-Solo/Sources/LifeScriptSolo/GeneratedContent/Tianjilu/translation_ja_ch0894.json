@@ -1,0 +1,440 @@
+{
+  "id": "天机录_ch0894",
+  "book_id": "天机录",
+  "number": 894,
+  "title": "三生の約",
+  "is_paid": true,
+  "next_chapter_hook": "蘇青瑶は上古禁地に閉じ込められ生死不明、陳機が皇都と禁地の間で選択を迫られる中、天道之眼の視線はいつの間にか近づいている。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0894_001",
+        "content": "魔道教団主帅が「三界交汇处」という五文字を発した瞬間、陳機の手のひらにある天命マークが熱を帯び始めた——それは天道之眼が此地を監視している証。その灼けるような痛みは焼き鉄が皮膚を貫くようだった。しかし陳機の表情は相変わらず平静で、瞳孔の奥底に一丝の冷たい殺意が過ぎるだけ。彼はゆっくりと右手を引き寄せ、広い雑役の袍袖が丁度その灼熱の印を隠した。魔道教団主帅——黒袍を纏った中年男は、獲物を値踏みするような目でこの「落ちこぼれ弟子」を打量していた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_002",
+        "character_id": "char_chenji",
+        "content": "三界交汇处……前辈の言うところの魔族妖族人族の三界が此地で再び集まるということですか？",
+        "emotion": "平静试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_003",
+        "content": "魔道教団主帅は冷笑一声、周囲の魔気が潮のように沸騰し、空気が数割重くなった。「小子、お前の小心 полеが老夫の前で无用だ。天機錄の残頁……老夫はぜひともらうぞ。」陳機がこれを聞いて、唇元をわずかに上げ、興味深い笑みを浮かべた。この瞬間、彼はもはやあの気弱な落ちこぼれではなく、天下の棋局を握る対局者だった。夜清は遠くに見て、この光景に心中微微一震——これが本当の陳機だ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_004",
+        "character_id": "char_chenji",
+        "content": "前辈が天機錄を欲しがることは結構です。しかし後輩には条件がございます——三界交汇処が開かれるまで、我々は暫く停戦しましょう。",
+        "emotion": "从容谈判"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_005",
+        "prompt": "魔道教団主帅は陳機を审视している。この「落ちこぼれ」が自分と条件を交渉するとは。如何に応じるだろうか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0894_005_a",
+            "text": "切り札を明かし、天機錄残頁の力を示す",
+            "description": "魔道教団主帅に真の神物の威力を知らしめ、絶対的な実力で敬意を払わせる",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命値5点を消費",
+            "visible_reward": "魔道教団主帅の一時的な畏敬を得る",
+            "risk_hint": "天機錄を暴露すれば更多な觊觎者を引き寄せる可能性がある",
+            "process_label": "展示天机录",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_005_a_1",
+                  "content": "陳機がゆっくりと右手を広げると、掌心の古老な天機錄マークが忽ちに蒼藍色の光を放った。魔道教団主帅の瞳孔が大きく見開かれ、その光に宿る天地の道理は化神境の強者である彼でさえ心が悸えた。「これは……」彼の声は初めて震えを帯びた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_005_b",
+            "text": "退いて取り込み、情報差で交渉優位を得る",
+            "description": "実力を暴露せず，魔道教団主帅の知らない秘密で彼を動かそうとする",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "直接の消耗なし",
+            "visible_reward": "切り札を晒さずして同盟を結ぶ",
+            "risk_hint": "相手の心理を正確に掴む必要がある",
+            "process_label": "信息谈判",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_005_b_1",
+                  "content": "陳光が光を収め、淡淡とした笑みだけを残した。「前辈、天道之眼はもう此地を監視し始めたのをご存じですか？私が死ねば、天機錄は自動的に天道輪廻に戻ります。三界交汇之前に天道と敵対するおつもりですか？」魔道教団主帅の顔は陰鬱な水のように曇り、長い沈黙の後、兇一声で「よし、老夫は答应了。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "temporary_truce_with_demon"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_006",
+        "content": "双方の脆弱な合意が成立した瞬間、空が引き裂かれ、漆黒の裂け目から無数の魔影が湧き出した。夜清の瞳に冷たい光が闪き、周囲の魔道迷雾が忽ち広がり、陳機を後ろに庇った。「陳機、気をつけて！」彼女は低く喝し，手中魔剣は既に抜鞘されていた。しかし敵の來襲は餘りに速く，一道の黒い魔気が毒蛇のように夜清の防御を掻い潜り、陳機の喉へ直刺した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_007",
+        "character_id": "char_yeqing",
+        "content": "死ね！",
+        "emotion": "愤怒护主"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_008",
+        "content": "夜清は身を翻し、陳機の前に立った。魔剣で横切り、その黒い魔気を切り裂いたが、別の魔影が隙を突いて入り込み、一掌を夜清の後背に叩きつけた。血が彼女の唇元から滴り落ちたが、彼女はまだ陳機の前に稳稳と立ち、半歩も引かなかった。陳機はその血痕を見て、胸の奥で从未有过の激動が走る——これが初めて味方の安危に心を揺さぶられた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_009",
+        "character_id": "char_chenji",
+        "content": "夜清！",
+        "emotion": "动容呼唤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_010",
+        "content": "陳機が夜清の肩を掴み支えた，日頃いつも余裕のある淡定な顔には初めて掩饰できない焦りと心痛が浮かんでいた。夜清は彼の懐に凭れ、蒼白い顔に虚弱だが優しい笑みを浮かべた。「あ……あんな目で見ないで。私は魔道圣女よ、そんなに死にゃしない。」彼女の聲は轻いが、否定できない坚定さを帯びていた。陳光がしばらく黙った後，突然口を開き，低く真面目な声で话した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_011",
+        "character_id": "char_chenji",
+        "content": "夜清、実は言っておくべきことがある。天機錄は私の死を予見している——三ヶ月後、私は天道之眼に消される。",
+        "emotion": "坦白真相"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_012",
+        "prompt": "夜清はこの真実を聞いて震惊する。彼女は陳機の告白に如何に答えるだろうか？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0894_012_a",
+            "text": "坚定な態度を表し、運命を打破すると誓う",
+            "description": "夜清は如何なる状況でも陳機の側に立ち，哪怕与天为敵と宣言する",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "なし",
+            "visible_reward": "夜清との絆が深まり、「共命」契約の前段階を得る",
+            "risk_hint": "天道之眼が因此盯上夜清となる可能性がある",
+            "process_label": "誓言相随",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0894_result_012_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "夜清の眼差しは少しも揺るがず、却って一股の断固とした決意を湛えていた。「天道之眼？哼、私が夜清这一生は運命などというものを信じない。」彼女は唇元の血を拭い、声が虚弱だが清脆として響いた、「お前の命之恩がある，如今輪到我來守護你了。 如何なることが起ころうとも、私はお前の側にいる。」",
+                  "emotion": "坚定誓言"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_pledge"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清誓言打破命运",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_012_b",
+            "text": "理性的に分析し，打開之法を探す",
+            "description": "夜清が冷静下来し，天道之眼の予言に如何に対抗するか二人で研究すると提案する",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "時間を消費する",
+            "visible_reward": "夜清の戦略的サポートを得て、「運命研讨」支線をアンロック",
+            "risk_hint": "最佳の行動タイミングを逸する可能性がある",
+            "process_label": "理性应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0894_result_012_b_1",
+                  "character_id": "char_yeqing",
+                  "content": "夜清は深く息を吸い込み、込み上げる情绪を押さえ込んだ。「早まるな，我们需要想办法。」彼女は陳光の眼を凝視し、「天機錄が死を予見できるなら、必ず打開之法も予見している更多信息を告诉我，我们一起找。」",
+                  "emotion": "冷静分析"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "destiny_research"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清提议共同研究命运",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_013",
+        "content": "陳光が夜清の坚定な眼差しを見て，心中に言い难い温もりが湧く。だがその瞬間、彼の眉心突然激しい刺痛が伝わった——それは血脉の繋がりが强行的に激活された信号だ。陳念！彼の妹、聖宗に「天命鎖钥」として連れ去られたあの子が、今血脉を通じて曖昧で切迫した情報を伝えていた：家族危機、蘇青瑶が閉じ込められた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_014",
+        "character_id": "char_chenian",
+        "content": "お兄さん……助けて……禁地……瑶お姉ちゃんが……",
+        "emotion": "血脉呼唤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_015",
+        "content": "陳光が表情大变し、普段は常に策を巡らせたあの顔に从未有有的凝重が浮かんだ。蘇青瑶、あの彼の秘密を暴こうと всегда尝试してきた女性，也是彼が密かに布局していた不可或缺的駒。如今彼女は上古禁地に閉じ込められ、生死未分。そして彼は先程魔道教団主帅と達成した同盟、皇都与禁地の間で選択を迫られている。陳光が目を閉じ、深呼吸し、再び開いた时，眼中已是一片決然。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_016",
+        "prompt": "陳光が選択を迫られる——皇都に残って魔道と周旋するか、それとも禁地へ向かって蘇青瑶を救出するか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0894_016_a",
+            "text": "皇都を捨て，即座に禁地へ向かい蘇青瑶を救出する",
+            "description": "蘇青瑶は彼の重要な味方で友達であり、袖手傍観はできない",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "皇都の布局の優位を失い，魔道に反感を買う可能性がある",
+            "visible_reward": "蘇青瑶好感度大幅上昇，深度な絆がアンロックされる可能性がある",
+            "risk_hint": "魔道教団主帅は彼が約束を破ったと思う可能性がある",
+            "process_label": "营救苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_016_a_1",
+                  "content": "「夜清、私について来い。」陳色に丝毫の迷いもなく、夜清を抱き上げ，一道の流星のように禁地へと飛び立った。後ろで魔道教団主帅が冷哼一声したが、追撃はしなかった——三界交汇处の大計在前で、今この時は急がない。夜清は陳光の懐に凭れ、虚弱だが笑みを浮かべた：「この……ばか。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rescue_mission"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择营救苏青瑶",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_016_b",
+            "text": "人を派遣して救出させ、自分は皇都に残って引き続き布局する",
+            "description": "自身では向かわさず、資源を動かして救出作戦を手配する",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "蘇青瑶を救出できない可能性がある",
+            "visible_reward": "皇都の布局の優位を保ち、策略を示す",
+            "risk_hint": "救出が失敗する可能性がある",
+            "process_label": "委托营救",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_016_b_1",
+                  "content": "陳光が沈吟片刻，迅速做出决定。「夜清，你先回聖宗调集人手。我有更重要的事要留在皇都。」彼は手紙を一封書き、最速で禁地に送るよう命じた。しかし夜清は首を振り出した：「私に行かせて。禁地を知り、救う力もある。」彼女は立ち上がり、傷口はまだ血を滴らしているが、眼差しは極めて坚定だった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "dispatch_rescue"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机委托夜清营救苏青瑶",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_017",
+        "content": "夜清は陳光の親筆手紙を持って去った。傷は癒えていないが，足取りは堅固如鉄。陳光が彼女の後ろ姿を見送り，心中五味雜陳。彼は拳を握りしめ，低く呟いた：「蘇青瑶，给我撑住。」话音刚落，天機錄が再び灼熱になった——那是天道之眼のと呼ばれる存在が、運命の隙間から彼を監視している。陳光が股な壓力が全身を包み、、まるで看不到的眼睛が全てを窺っているようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_018",
+        "content": "彼は深く息を吸い込み，抬头望向天空，眼中闪过一丝嘲讽。天道之眼又如何？陳光が凡人之躯で天機錄を執り天命と闘う覚悟は始めからできている。只是此刻，他更加確信了一件事——无论是蘇青瑶、夜清还是陳念，彼が周围にいる人たちは皆失えない。夜幕降临，皇都の灯が遠くで瞬き、陳光が一人風に立ち、身影は孤独だが挺抜如松。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_019",
+        "content": "遠くで阵阵の轟きが傳わり，那是三界交汇処が開かれようとしている前兆。更に遠い場所では，夜清が彼の委託を携え，那个生死未卜の禁地へと馳せている。陳光が目を閉じ、脑海中浮现出蘇青瑶那高冷而倔强的面容，以及彼女が真相に三次接近しようとした時の執着。「待っていろ。」彼は心中静かに言った，「今度は私がお前達を守る番だ。」掌心の天命マークが激しく跳动，仿佛在回应他的決意。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_020",
+        "content": "同時に，某つ上古禁地の深淵で，蘇青瑶は無数の禁制に 둘러込まれ，绝境の中でも冷静さを保っていた。彼女は陳光の血脉联系を感知し，嘴角に一抹の微かな笑みを浮かべた。「陳光，やっぱりあなたは简单ではない。」彼女の眼差しは奇妙な光を闪烁させた，「今度こそ，あなたの真の選択を見せてもらおう。」禁制の外では，凶獣の嘶きが阵阵传来，生死一线の間，蘇青瑶は極めて平静だった——因为她 knows，那个「落ちこぼれ」が必ず来るからだ。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

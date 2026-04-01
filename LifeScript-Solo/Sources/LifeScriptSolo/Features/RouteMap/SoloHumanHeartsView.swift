@@ -27,7 +27,7 @@ struct SoloHumanHeartsView: View {
                 .padding(.bottom, 32)
             }
         }
-        .soloStoryChrome(title: book.id == "天机录" ? "人心" : "人物", kicker: "观心")
+        .soloStoryChrome(title: book.id == "天机录" ? SoloLocalization.localized("人心") : SoloLocalization.localized("人物"), kicker: SoloLocalization.localized("观心"))
     }
 
     @ViewBuilder
@@ -55,7 +55,7 @@ struct SoloHumanHeartsView: View {
 
     private var headerPanel: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("人心盘")
+            Text(SoloLocalization.localized("人心盘"))
                 .font(SoloTypography.posterTitle(size: 30))
                 .foregroundStyle(SoloTheme.ink)
 
@@ -80,7 +80,7 @@ struct SoloHumanHeartsView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    badge(text: "天命：\(destinyStatus.headline)", tint: destinyTint)
+                    badge(text: SoloLocalization.format("天命：%@", destinyStatus.headline), tint: destinyTint)
                     ForEach(snapshot.rings) { ring in
                         badge(text: "\(ring.title) \(ring.characterIDs.count)", tint: ringTint(for: ring))
                     }
@@ -105,11 +105,11 @@ struct SoloHumanHeartsView: View {
                         .lineSpacing(5)
                 }
                 Spacer()
-                badge(text: "\(ring.characterIDs.count) 人", tint: ringTint(for: ring))
+                badge(text: SoloLocalization.format("%d 人", ring.characterIDs.count), tint: ringTint(for: ring))
             }
 
             if ring.characterIDs.isEmpty {
-                Text("暂无可显示角色。")
+                Text(SoloLocalization.localized("暂无可显示角色。"))
                     .font(SoloTypography.detail)
                     .foregroundStyle(SoloTheme.muted)
             } else {

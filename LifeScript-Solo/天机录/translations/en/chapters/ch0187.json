@@ -1,0 +1,590 @@
+{
+  "id": "天机录_ch0187",
+  "book_id": "天机录",
+  "number": 187,
+  "title": "Unexpected Visitor",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ling's interference ability caused the Tianji Record's images to suddenly blur, a scene emerged that made Chen Ji's whole body stiffen—it was an outcome he had never foreseen.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0187_001",
+        "content": "A crescent moon hung like a hook over the ruins of the Tianqing Sect.\n\nChen Ji knelt before his senior brother's remains, his fingertips brushing the cold jade pendant. The Chen family emblem gleamed faintly in the moonlight, and the line of blood-streaked characters seemed to still carry warmth—'At the end of Heavenly Secrets, Xuanhuang becomes one.' Just as he was about to activate the Tianji Record to divine the next moment's fortune or misfortune, a sharp sword aura suddenly cut through the air.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_002",
+        "character_id": "char_chenian",
+        "content": "'Don't move!'\n\nA cold, clear female voice rang out behind him, and Chen Ji's pupils contracted sharply. He had clearly surveyed the spiritual energy fluctuations within a three-li radius—how had this person appeared? In a flash, he clutched his senior brother's remains and rolled three zhang to the side. When he turned back, a short blade had somehow appeared in his hand.",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_003",
+        "content": "In the moonlight, a slender figure stood atop the rubble.\n\nThe young woman, about seventeen or eighteen years old, wore a green robe that fluttered in the wind. Her features bore a three-point resemblance to Chen Ji, though her eyes held a more piercing sharpness. Her long sword trembled slightly, its tip pointed precisely at the spot where he had just been standing—a spot now replaced by a sword mark three chi deep.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_004",
+        "character_id": "char_chenji",
+        "content": "Chen Ji narrowed his eyes, his voice extremely low: 'Who are you?'\n\nHis mind raced. The Tianji Record had never missed a person at such close range—unless... unless this person possessed some ability to interfere with Heavenly Secrets. He calmly shifted the short blade to his left hand while his right hand subtly formed a seal.",
+        "emotion": "戒备"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_005",
+        "character_id": "char_chenian",
+        "content": "'I am Chen Ling.'\n\nThe woman sheathed her sword with a crisp, decisive motion. She jumped down from the rubble and approached slowly, but her gaze was fixed intently on the jade pendant at Chen Ji's waist: 'That thing in your hand... did you bring it from the Chen family?'\n\nHer voice trembled slightly, and a complex light flickered in those cold, sharp eyes.",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_006",
+        "content": "Chen Ji's heart lurched, but his expression remained unchanged.\n\nChen Ling. This name had never appeared in the Tianqing Sect's records, yet it connected to the Chen family and the jade pendant among his senior brother's effects. He clenched the jade pendant in his palm, his knuckles white from the force: 'You recognize this pendant?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_007",
+        "character_id": "char_chenian",
+        "content": "'More than recognize.'\n\nChen Ling gave a bitter laugh and drew an almost identical jade pendant from her chest. In the moonlight, the Chen family emblems on both pendants resonated across the distance, as if narrating a tale sealed away by time.\n\n'Father gave this to me.' Her voice dropped lower. 'He said, someday, someone would come to him carrying the other one.'",
+        "emotion": "感伤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_008",
+        "content": "Chen Ji's eyes flickered, catching that address.\n\nFather. He had never heard Chen Nian mention a father—wait, Chen Nian? Chen Ling? He abruptly looked up, his gaze sharp as a blade examining this familiar-yet-unfamiliar face: 'You're not Chen Nian.'\n\nA statement, not a question.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_009",
+        "character_id": "char_chenian",
+        "content": "'I am Chen Ling, not Chen Nian.'\n\nShe met his gaze without flinching, her eyes holding a weathered steadiness: 'Chen Nian is your younger sister. And I... was an orphan Father picked up from the roadside fifteen years ago.'\n\nShe paused, her voice somewhat strained: 'Father gave me this name and had me guard the Chen family bloodline in the shadows—including you, including Chen Nian.'",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_010",
+        "content": "Chen Ji rose slowly, sheathing the short blade in his sleeve.\n\nHe stared at Chen Ling, trying to find a flaw in her face. But that expression was open to the point of cruelty—no guilt, no evasion, only a near-obstinate sincerity. The Tianji Record stirred faintly within him, seeking to peer into her secrets, yet it struck an invisible barrier.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0187_choice_011",
+        "prompt": "Can Chen Ling's words be trusted? Chen Ji needs to make a judgment",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "trust_chenling",
+            "text": "Choose to believe her",
+            "description": "Chen Ling's jade pendant and candid attitude indicate she is not an enemy; observe first",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Expose some of his own trump cards",
+            "visible_reward": "Gain an insider who knows Chen family secrets",
+            "risk_hint": "It may be a deeper trap",
+            "process_label": "观察陈灵反应",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0187_result_trust_001",
+                  "content": "Chen Ji put away the short blade, his tone softening: 'Father... is he still alive?'\n\nHe used the term 'Father.' This was a silent concession, also a probe. A flicker of relief crossed Chen Ling's eyes, but it was quickly replaced by worry.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈灵合作",
+            "branch_route_id": null
+          },
+          {
+            "id": "doubt_chenling",
+            "text": "Maintain suspicion",
+            "description": "An unknown woman suddenly appears; Chen Ji decides to continue probing",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss important information",
+            "visible_reward": "See through her true intentions",
+            "risk_hint": "She may possess key intelligence",
+            "process_label": "设下圈套",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0187_result_doubt_001",
+                  "content": "'Words are cheap.' Chen Ji said coldly, his right hand subtly forming a seal.\n\nHe tentatively activated the Tianji Record, attempting to peer into the spiritual energy surrounding Chen Ling. However, at that moment, a strange fluctuation surged from within her, forcibly repelling his foresight ability.\n\nChen Ling frowned: 'Your Tianji Record... was interfered with?'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "confront_chenling",
+            "text": "Direct Interrogation",
+            "description": "Chen Ji didn't want to beat around the bush and directly questioned why she had come",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May anger the other party",
+            "visible_reward": "Quickly obtain answers",
+            "risk_hint": "Miss hidden information",
+            "process_label": "施压审问",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0187_result_confront_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Who exactly sent you?\" Chen Ji's voice turned cold and sharp, the short blade reappearing in his palm.\n\nHe advanced step by step, his imposing presence pressing forward like a mountain. Yet Chen Ling didn't retreat; instead, she met his gaze: \"I'm here to save you. If you die here, who will search for Chen Nian?\"",
+                  "emotion": "强硬"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_012",
+        "content": "Chen Nian.\n\nThis name was like a blunt knife cutting through his heart. Chen Ji's footsteps suddenly halted, the pressing momentum instantly dissipating. He stared fixedly at Chen Ling, a rare panic flickering in his eyes: \"Do you know where Chen Nian is?\"\n\nHis voice trembled slightly in the night wind, and that always-calm face finally showed cracks.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_013",
+        "character_id": "char_chenian",
+        "content": "\"She's been taken by the Holy Sect.\"\n\nChen Ling's voice was soft, yet each word was clear: \"As the 'Heavenly Fate Lock.' Her existence can disrupt the foresight of all prophetic artifacts—including your Tianji Record.\"\n\nShe watched Chen Ji's growing gloom and sighed: \"This is why every time you try to foresee scenes related to her, they're blurred.\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_014",
+        "content": "Chen Ji clenched his fist suddenly.\n\nSo that's how it was. Every \"malfunction\" of the Tianji Record wasn't spiritual artifact deterioration, but interference from Chen Nian's existence. He suddenly recalled those blurred images—every time, they were the parts he most wanted to see clearly. Why? Why had he never considered there might be a connection?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_015",
+        "character_id": "char_chenian",
+        "content": "\"I can help you find her.\"\n\nChen Ling stepped forward, moonlight falling on her face, revealing the complex emotions in those eyes: \"But first, you need to survive. The Holy Sect's people are already watching you—tonight.\"\n\nBefore the words even faded, a grim laugh rang out from the distance: \"Chen family's whelp, hiding here to reminisce, are we?\"",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_016",
+        "content": "A cold light flashed in Chen Ji's eyes.\n\nHe didn't turn around, but instead reached out to shield Chen Ling behind him. That split-second movement was so fast he himself didn't register it—when he realized, Chen Ling was already stunned.\n\n\"Holy Sect people?\" Chen Ji's voice was ice-cold. \"How many?\"\n\nChen Ling softly replied behind him: \"Three. One of them... is at the Heaven-Man Realm.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_017",
+        "content": "Heaven-Man Realm.\n\nChen Ji's pupils slightly contracted. Normally, he could rely on the Tianji Record's foresight to contend with such a powerful being, but with Chen Ling present, his foresight would be greatly diminished. At this moment, he faced a choice—whether to have Chen Ling leave and face it alone, or fight side by side with her.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_018",
+        "character_id": "char_chenian",
+        "content": "\"I'm not leaving.\"\n\nChen Ling seemed to see through his thoughts, her voice resolute: \"My bloodline power can disrupt their perception-type artifacts. Combined with your Tianji Record, we might stand a chance.\"\n\nShe paused, a resolute light flickering in her eyes: \"Besides... I promised Father to protect you.\"",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0187_choice_019",
+        "prompt": "Whether to join forces with Chen Ling against Holy Sect pursuers?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ally_chenling",
+            "text": "Accept the alliance",
+            "description": "Chen Ling's interference abilities combined with the Tianji Record might achieve an upset victory",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose the existence of the Tianji Record",
+            "visible_reward": "Defeat a Heaven-Man Realm expert",
+            "risk_hint": "Coordination errors could be fatal",
+            "process_label": "并肩作战",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0187_result_ally_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Alright.\"\n\nChen Ji turned around, truly looking at this \"sister\" who had fallen from the sky for the first time. Under the moonlight, her silhouette overlapped and separated from the memories of Chen Nian, carrying a strange sense of security.\n\n\"Tell me about your abilities.\"",
+                  "emotion": "信任"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0187_result_ally_002",
+                  "character_id": "char_chenian",
+                  "content": "\"I can release a blood pulse that creates a perception blind spot within a three-zhang radius—including your Tianji Record,\" Chen Ling quickly explained. \"But I can't maintain it long, at most thirty breaths.\"\n\nChen Ji nodded, his eyes gleaming with sharp light: \"That's enough. Thirty breaths is plenty of time for me to set up a lethal trap.\"",
+                  "emotion": "决断"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵联手"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "首次信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "refuse_ally",
+            "text": "Let her leave first",
+            "description": "Heaven-Man Realm is too strong, don't want to put Chen Ling at risk",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Face the Heaven-Man Realm alone",
+            "visible_reward": "Protect Chen Ling's safety",
+            "risk_hint": "May die in battle",
+            "process_label": "护送撤离",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0187_result_refuse_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Leave.\" Chen Ji's voice brooked no argument. He raised his hand and gently pushed her shoulder, yet the force was unusually tender: \"Chen Nian's matter... I've taken note. After I finish handling things here, I'll find you.\" Chen Ling bit her lip but did not insist. She drew a Jade Slip from her bosom and stuffed it into his hand: \"This shows my location. If you're still alive...\"",
+                  "emotion": "不舍"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0187_result_refuse_002",
+                  "content": "\"I'll survive.\" Chen Ji took the Jade Slip, a faint smile curving his lips. That smile held none of his usual dark scheming, but rather a warmth Chen Ling had never witnessed before. \"After all, I still have accounts to settle.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "护送陈灵",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_020",
+        "content": "Just then, three black shadows descended from the heavens. The leader was an elder clad in black robes, dense demonic aura coiling around him. His murky eyes fixed on Chen Ji as if regarding a lamb awaiting slaughter: \"The remnants of the Tianqing Sect, hiding here after all. The Tianji Record... Heh, this old man has been waiting for you for quite some time.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_021",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's heart tensed, yet his expression remained serene. \"The Tianji Record?\" He tilted his head, his tone carrying a hint of playfulness, \"What treasure is Elder referring to? This junior is merely a Servant Disciple—how could someone like me possibly possess such a thing?\" He deliberately revealed the shabby short blade at his waist, presenting a destitute appearance.",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_022",
+        "content": "The black-robed elder冷笑一声：\"装模作样。圣宗的情报从不出错，那废物师兄临死前一定把东西给了你。\" 他向前踏出一步，天人境的威压如山岳般倾轧而下：\"乖乖交出来，老夫可以给你个痛快。否则……\" 他没有说完，但那眼神中的残忍已经说明了一切。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_023",
+        "content": "Chen Ji felt that pressure, his internal organs seemingly gripped by invisible hands. Yet his lips curved instead. The Tianji Record frantically operated within his Mental Sea, attempting to deduce the path to survival—yet the visions blurred like looking through a veil of water. He knew: it was Chen Nian's presence, distant yet interfering with the Tianji Record's foresight.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_024",
+        "content": "Just then, Chen Ling's aura suddenly vanished from his perception. Not departed—but entirely absorbed into darkness, as if she had never existed. The black-robed elder frowned slightly, turning to his two subordinates: \"What's the meaning of this?\" \"Subordinate cannot sense that woman's aura!\" one black-clad man exclaimed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_025",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's eyes flickered. This was Chen Ling's bloodline ability—Perception Blindspot. He did not look back, yet silently counted the time in his heart. Thirty breaths—only thirty breaths. He slowly raised both hands in a surrendering posture: \"Senior, please don't rush. This junior shall show you something.\"",
+        "emotion": "算计"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_026",
+        "character_id": "char_chenji",
+        "content": "\"Oh?\" The black-robed elder's interest was piqued, \"A wise man knows when to surrender. You're quite sensible—\" Before he could finish, cold light flashed from Chen Ji's sleeve as three pitch-black Talisman Papers shot forth! Those were the trump card Mo Xiansheng had given him during the last unsealing—the Beast-Binding Talisman, designed to trap and kill cultivators below the Heavenly Manifestation realm. \"—Too late.\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_027",
+        "content": "The Beast-Binding Talismans exploded mid-air, transforming into three black chains that bound the two black-clad men. Meanwhile, Chen Ji's figure darted forward like a specter, his short blade aimed directly at the black-robed elder's throat. This move had been long premeditated—using himself as bait to invite the enemy's contempt, then striking down his flunkies with thunderous speed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_028",
+        "character_id": "char_chenji",
+        "content": "\"Seeking death!\" The black-robed elder swept his sleeve, a demonic barrier deflecting the short blade. But what Chen Ji had never intended was to harm him— \"Now!\" Chen Ling's voice rang from the darkness. An invisible fluctuation instantly enveloped the entire area, and Chen Ji felt the Tianji Record suddenly clarify, future visions flooding into his mind like a tide.",
+        "emotion": "决胜"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_029",
+        "content": "Tianji Record·Foresight Restart! Golden light flashed in Chen Ji's eyes. Before a Heavenly Manifestation expert, he actually saw all changes within the next three breaths. Every enemy movement, every trace of qi fluctuation—everything under his control. He sidestepped, spun, his short blade tracing an eerie arc—the two black-clad men bound by Beast-Binding Talismans hadn't even time to react before their heads rolled away!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_030",
+        "character_id": "char_chenji",
+        "content": "\"Well done!\" Surprise tinged Chen Ling's voice. Never had she expected this \"waste\" of a brother to possess such means. But the black-robed elder had already recovered, demonic qi erupting as he slapped toward Chen Ji's chest: \"Boy, you have angered this old man!\" That palm carried the might to annihilate worlds—the true power of Heavenly Manifestation finally revealed.",
+        "emotion": "危机"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_031",
+        "content": "Chen Ji's pupils constricted sharply. Too fast. Heavenly Manifestation speed far exceeded his imagination. Even with the Tianji Record's foresight, he could not dodge this palm. Between life and death, he abruptly raised the Jade Pendant in his hand—his senior brother's legacy—before his chest. \"The item Father gave you—are you daring to destroy it!\"",
+        "emotion": "拼命"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_032",
+        "character_id": "char_chenji",
+        "content": "The black-robed elder's palm momentum halted abruptly. The Chen family emblem on that Jade Pendant shimmered beneath the moonlight, emanating an ancient and majestic aura. That was... the aura of Chen family ancestors! \"You...\" The elder's expression finally changed, \"Impossible—the Chen family clearly...\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_033",
+        "content": "Chen Ji seized this fleeting flaw, his short blade thrusting forth like a venomous snake! Yet Heavenly Manifestation was, after all, Heavenly Manifestation. The elder dodged his vital point in that lightning flash, yet Chen Ji's short blade still carved a wound across his shoulder. Blood dripped down. The elder's expression turned grimly terrible: \"Good... very good!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_034",
+        "content": "\"Retreat!\" Chen Ji果断低喝。Chen Ling的干扰能力即将耗尽，The Tianji Record's foresight would soon blur again. Staying here meant only one path—death. He seized Chen Ling's wrist and retreated暴退。黑暗中，两道身影如鬼魅般穿梭，转眼便消失在废墟深处。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_035",
+        "character_id": "char_chenian",
+        "content": "\"Wish to flee?\" The black-robed elder冷哼一声，正要追击，一道凌厉的剑气突然从侧面袭来！他不得不回身格挡，等化解了这道剑气后，那两道身影已经彻底消失了。 \"可恶！\"老者咬牙切齿，\"给我搜！活要见人，死要见尸！\"",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_036",
+        "content": "半刻钟后，废墟边缘的一处山洞中。 Chen Ji靠在石壁上，大口喘息着。方才那一战耗去了他大半气力，更重要的是——天机录的使用让他损失了十五点天命值。 Chen Ling坐在他对面，月光从洞口洒入，照亮她那张与Chen Ji有几分相似的脸。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_037",
+        "character_id": "char_chenian",
+        "content": "\"你受伤了。\" Chen Ling的声音打破了沉默。她从怀中掏出一枚丹药递过去：\"先吃这个，能恢复些气力。\" Chen Ji没有接，只是静静看着她：\"你刚才说……你能干扰天机录的预见。但你出现的时机太巧了。\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_038",
+        "content": "Chen Ling的手僵在半空，丹药的清香在空气中弥漫。 片刻后，她收回手，苦笑一声：\"你还是不信我。\" \"不是不信。\" Chen Ji摇头，\"是想确认——你来这里，除了告诉我陈念的消息，还有别的目的吗？\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_039",
+        "character_id": "char_chenian",
+        "content": "Chen Ling沉默良久。 山洞里只剩下两人的呼吸声和远处偶尔传来的夜鸟啼鸣。 \"有。\"她终于开口，声音很轻，\"父亲临终前让我转告你一句话——天机尽头，玄黄归一。陈念在圣宗等你，但不是现在。\"",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_040",
+        "content": "Chen Ji猛然抬头。 师兄遗物上的血字、父亲临终的遗言——竟是一模一样。这句话到底是什么意思？为何父亲和师兄都知道？为何都要用这种方式告诉他？ 他正想追问，Chen Ling却站起身走向洞口：\"今夜你我都需要休息。明日……我会告诉你更多。\" 她的背影在月光下显得有些落寞。Chen Ji忽然开口：\"Chen Ling。\" 她停下脚步，却没有回头。 \"谢谢。今晚那一击……若没有你，我大概已经死了。\"",
+        "emotion": "真挚"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0187_041",
+        "character_id": "char_chenian",
+        "content": "Chen Ling的肩膀微微一颤。 \"我是陈家的人。\"她的声音有些闷，\"这是应该的。\" 说罢，她的身影消失在洞口的黑暗中。 Chen Ji独自坐在石壁旁，手中握着那枚刻有陈家徽记的玉佩。天机录在识海中微微发光，似乎想要给他展示什么——但画面依然模糊，仿佛隔着一层看不见的屏障。",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_042",
+        "content": "Chen Nian awaits him at the Holy Sect, but not now.\n\nWhat did this sentence mean? Chen Ji closed his eyes, and his mind conjured the youthful face of his younger sister. That little girl who had cried out 'Brother save me' when she was taken away—where was she now?\n\n\"I will find you.\" He murmured softly, his voice carrying an unprecedented resolve. \"Wait for me.\"\n\nOutside the cave, the night was as dark as ink. On the distant horizon, three shadowy figures were approaching in their search.\n\nDeep within Chen Ji's Mental Sea, the Tianji Record Fragment suddenly trembled violently, and a blurry image emerged from within—it was Chen Nian's face, yet distorted in a way that sent chills through his heart. In the vision, she stood upon a massive altar, surrounded by ominous runes, her eyes hollow and lifeless, as if she were no longer among the living.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0187_043",
+        "content": "Chen Ji abruptly opened his eyes, cold sweat beading on his forehead.\n\nThat was the foresight of the Tianji Record—a prophecy he had never seen before, one filled with foreboding. Chen Nian's fate... seemed far more perilous than he had imagined.\n\n\"Chen Nian...\" He clenched his fists tightly, his knuckles turning white from the force. \"Holy Sect, what exactly are you planning?\"\n\nOutside the cave, the night wind howled. Chen Ling's silhouette had already vanished into the darkness, heading somewhere unknown. And the search radius of those three shadowy figures was slowly closing in on this hiding place.\n\nThe crisis was far from over.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

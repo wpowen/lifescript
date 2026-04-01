@@ -1,0 +1,545 @@
+{
+  "id": "天机录_ch0815",
+  "book_id": "天机录",
+  "number": 815,
+  "title": "Chen Ling's Choice",
+  "is_paid": true,
+  "next_chapter_hook": "In the radiance emanating from the fourth page of the Tianji Record, Chen Ling stood shoulder to shoulder with Chen Ji, and in the depths of the core, the slumbering existence finally opened its eyes...",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0815_001",
+        "content": "In the depths of the Heavenly Eye, the hair-raising pulsation grew increasingly intense. In the darkness, it seemed as though some colossal being was awakening, each pulse carrying pressure enough to crush souls. Chen Ji was forced backward step by step by that overwhelming force, the cracks on the Tianji Record fragment spreading visibly, as if it might shatter at any moment. 'Chen Ling...' he called that name in his heart, but his fingertips touched only emptiness.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_002",
+        "character_id": "char_chenian",
+        "content": "\"Brother, I am here.\" A familiar voice rang from the depths of his heart, no longer that vague sensing from before, but clear and resolute. Chen Ling's form appeared hazy within the Tianji Record's light, her features mirroring Chen Ji's yet her gaze was no longer that of the confused replicant from before.",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_003",
+        "content": "Chen Ji abruptly raised his head, his pupils contracting sharply. He witnessed Chen Ling hovering at the core of the Tianji Record, surrounded by countless fragments of light—those were the memories of the Tianji Record's shards, and also the 'self' she had painstakingly gathered during her solitary years. Her hair danced without wind, and between her brows, an enigmatic rune was gradually taking shape.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_004",
+        "character_id": "char_chenian",
+        "content": "\"I have witnessed your past, seen everything you endured for me.\" Chen Ling's voice trembled, yet carried unprecedented strength. 'You have been protecting me all along, even enduring Heavenly Fate's backlash, even when the path ahead seemed impossibly bleak... This time, I will be the one to choose.'",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_005",
+        "content": "The fourth page of the Tianji Record suddenly blazed with golden radiance, its light pouring forth from the fragment, no longer as an attack or suppression, but as some tender connection. Chen Ji felt a familiar yet strange power surge into his body—the resonance of twin bloodlines, amplified a hundredfold beyond anything he had experienced before.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_01",
+        "prompt": "Facing the awakened Chen Ling, Chen Ji must make a choice—to embrace her power and fight side by side, or to worry she cannot withstand Heavenly Fate's backlash?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0815_accept",
+            "text": "Accept Her Power",
+            "description": "\"Since you have awakened, let us face this Heavenly Way together!\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Share the Heavenly Fate Consumption",
+            "visible_reward": "Unlock the 'Shared Life' buff, Dual Awakening Power",
+            "risk_hint": "Heavenly Fate's backlash will affect both simultaneously",
+            "process_label": "血脉共鸣，双生之力觉醒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_accept_01",
+                  "content": "Chen Ji no longer hesitated, extending his hand to grasp that light. Golden and silver powers converged at the core of the Tianji Record, erupting with dazzling brilliance. Two silhouettes mirrored each other in the depths of the Heavenly Eye, resplendent like sun and moon in perfect alignment.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_accept_02",
+                  "character_id": "char_chenian",
+                  "content": "\"From now on, your destiny is my destiny.\" Chen Ling's voice synchronized with Chen Ji's heartbeat. 'We are one—not as dependency, but as equals.'",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双重觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈灵觉醒，共命之约",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_refuse",
+            "text": "Worry About Her Safety",
+            "description": "\"No! You have just awakened, Heavenly Fate's backlash is not something you can withstand!\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Bear Heavenly Fate's Backlash Alone",
+            "visible_reward": "Chen Ling Gains Independent Growth Space",
+            "risk_hint": "Chen Ji May Fall Under Heavenly Fate's Backlash",
+            "process_label": "守护之心，血浓于水",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "黑化值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_refuse_01",
+                  "content": "Chen Ji's hand froze mid-air. Gazing at Chen Ling's unwavering eyes, a wave of bitterness surged in his heart. This foolish girl, did she not understand how terrifying Heavenly Fate's backlash could be?",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_refuse_02",
+                  "character_id": "char_chenian",
+                  "content": "\"Brother, you are always like this.\" Chen Ling smiled gently, her expression carrying both tears and light. 'Do you think I am still that little girl who needs protection? The fourth page of the Tianji Record chose me, and there was a reason for that.'",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵独立意志强化"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机的守护之心",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_006",
+        "content": "The light of the Tianji Record's fourth page suddenly became tumultuous, the pulsation in the core growing increasingly violent. Chen Ji sensed an unprecedented crisis looming—the will of the Heavenly Eye was gazing upon this place, and the slumbering existence seemed truly on the verge of awakening.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Foolish chess pieces...\" A transcendent voice echoed through the void, devoid of any emotion, yet causing Chen Ji's soul to tremble. 'Do you think finding a replicant allows you to defy destiny? The Tianji Record is merely a piece I have placed—you will forever remain part of the chess game.'",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_008",
+        "content": "Chen Ji gritted his teeth, the cracks on the Tianji Record fragment expanding further. Each gaze from the Heavenly Eye brought intense Heavenly Fate backlash, his consciousness beginning to blur, countless fragmented images flickering before his eyes—those were past prophecies and future possibilities.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_009",
+        "character_id": "char_chenian",
+        "content": "\"Brother! Look at me!\" Chen Ling's voice exploded like thunder in the core of the Tianji Record. She formed seals with both hands, the rune between her brows radiating brilliant light. \"Tianji Record Fourth Page—Unseal!\"",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_010",
+        "content": "An unprecedented radiance erupted from the Tianji Record's fourth page, neither golden nor silver, but a chaotic, all-encompassing hue. The light instantly enveloped Chen Ji and Chen Ling, forming an independent micro-world around them, shielding them from the Heavenly Eye's gaze.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_02",
+        "prompt": "Chen Ling's independent will is awakening—she is proving she is no longer an attachment. How should Chen Ji respond?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0815_stand_with",
+            "text": "Fight Shoulder to Shoulder",
+            "description": "\"You are not my replicant, nor an attachment—you are Chen Ling, my sister!\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Heavenly Fate Consumption Increases",
+            "visible_reward": "Dual Awakening Complete, Combat Power Significantly Enhanced",
+            "risk_hint": "The Heavenly Eye's Hostility Will Grow Even Stronger",
+            "process_label": "兄妹同心，其利断金",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 80
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_stand_01",
+                  "content": "Chen Ji no longer retreated. He and Chen Ling stood back to back within the light. Their bloodline powers blended perfectly, the fragmented pages of the Tianji Record reuniting at this moment—still incomplete, yet displaying unprecedented might.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_stand_02",
+                  "character_id": "char_chenian",
+                  "content": "\"I am no longer your shadow.\" Chen Ling's voice rang clear and resolute. 'From today forward, I am Chen Ling—an independent, complete being. We are twins, not master and servant.'",
+                  "emotion": "骄傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双重觉醒完成",
+              "共命buff激活"
+            ],
+            "requires_flag": "双重觉醒",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "双生并肩，命运共担",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_guide",
+            "text": "Let Her Take the Lead",
+            "description": "\"Very well, you guide this resonance—I trust you can do it!\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Lose Partial Control",
+            "visible_reward": "Chen Ling's Independent Will Further Strengthened",
+            "risk_hint": "Resonance Process May Encounter Unexpected Events",
+            "process_label": "放手信任，血脉新生",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_guide_01",
+                  "content": "Chen Ji drew a deep breath, proactively收敛 his power, surrendering leadership to Chen Ling. This decision was immensely difficult, yet he understood—this was the inevitable path for his sister to truly grow.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_guide_02",
+                  "character_id": "char_chenian",
+                  "content": "Chen Ling felt her brother's trust, her eyes slightly reddening. \"Thank you, brother.\" she whispered, then her gaze hardened. \"Now, watch me!\" The Tianji Record's fourth page blazed with entirely new radiance in her hands.",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵主导觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "放手信任，血脉新生",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_011",
+        "content": "Chaotic light exploded at the core of the Heavenly Eye, forming an independent micro-world. Chen Ji and Chen Ling stood shoulder to shoulder, their bloodline powers perfectly merged under the Tianji Record's guidance. The full extent of the fourth page finally revealed itself—not a divination technique, but a segment of sealed truth.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_012",
+        "character_id": "char_chenian",
+        "content": "\"So that's how it is...\" Chen Ling's voice carried a tremor as she witnessed everything recorded on the Tianji Record's fourth page. 'The Tianji Record is not a divination tool, but a key—a key to unlock Heaven's cage. Every generation of seers was a sacrifice, until now...'",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_013",
+        "content": "Chen Ji felt a suffocating fear. The true purpose of the Tianji Record was to break Heaven's control, yet the price was the owner's life? He猛地 looked at Chen Ling, unprecedented terror surging in his heart—had she known this all along?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_03",
+        "prompt": "The truth of the Tianji Record's fourth page revealed—the real reason Chen Ling chose to awaken emerges. Chen Ji must make the final choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0815_refuse_sacrifice",
+            "text": "Never Let Her Sacrifice",
+            "description": "\"Even for Heaven's cage, I will not let you become a sacrifice!\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Finding Other Methods Requires More Time",
+            "visible_reward": "May Discover New Breakthrough Methods",
+            "risk_hint": "The Heavenly Eye Will Seize the Opportunity to Counterattack",
+            "process_label": "兄妹情深，抗争命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 35
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_refuse_sac_01",
+                  "content": "Chen Ji seized Chen Ling's wrist, his knuckles white from the force. His eyes blazed with unprecedented determination—this sister was his last kin in this world, and he would not lose her no matter what.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_refuse_sac_02",
+                  "character_id": "char_chenian",
+                  "content": "\"Brother, you're hurting me.\" Yet Chen Ling did not struggle, instead offering a relieved smile. 'Do you think I would be so foolish? The fourth page chose me because I possess something you don't—an ambiguous future.'",
+                  "emotion": "温柔"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "反抗天道命运"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "绝不牺牲，血脉相连",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_accept_truth",
+            "text": "Listen to Her Explanation",
+            "description": "\"You say you have something I don't... what is it?\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May Accept Difficult-to-Bear Truths",
+            "visible_reward": "Understand the True Significance of Chen Ling's Awakening",
+            "risk_hint": "The Truth May Be Even More Cruel",
+            "process_label": "聆听真相，信任妹妹",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 40
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_accept_truth_01",
+                  "content": "Chen Ji forced himself to calm down. Gazing at his sister's resolute eyes, he suppressed the panic in his heart. It was time to trust her—she was no longer the little girl who needed protection.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_accept_truth_02",
+                  "character_id": "char_chenian",
+                  "content": "\"I am the Heavenly Fate Lock-Key.\" Chen Ling's voice was calm yet firm. 'My existence can interfere with the Tianji Record's foresight—which means, I can also interfere with Heaven's control. The reason sacrifices must die is because Heaven does not permit variables. And I... am that variable.'",
+                  "emotion": "骄傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命锁钥真相揭露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "聆听真相，选择信任",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_014",
+        "content": "Chen Ji was stunned. He had never imagined that during the years when his sister was taken by the Holy Sect and labeled a 'Heavenly Fate Lock-Key,' she had been preparing for this moment all along. Fate's cruel jest ultimately became the key to breaking the deadlock.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_015",
+        "character_id": "char_chenian",
+        "content": "\"Don't make that face, brother.\" Chen Ling stepped forward, gently touching Chen Ji's cheek. 'These years, I did hate, fear, and despair. But every time I wanted to give up, I could feel your heartbeat—that twin bloodline telling me you were still fighting, so I couldn't fall either.'",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_016",
+        "content": "The light of the Tianji Record's fourth page began to stabilize, the chaotic hues gradually transforming into a river of intertwined gold and silver. Chen Ji and Chen Ling stood shoulder to shoulder at the light's center, their forms seeming so insignificant at the Heavenly Eye's core, yet radiating brilliance that made even that transcendent existence take notice.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_017",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Interesting...\" The Heavenly Eye's voice rang again, this time carrying an imperceptible fluctuation. 'Two chess pieces actually want to turn the tables? This one shall see how far you can go.'",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_018",
+        "character_id": "char_chenian",
+        "content": "\"We are not chess pieces.\" Chen Ling's voice clearly echoed through the void. She intertwined her fingers with Chen Ji, their powers perfectly merging at this moment. 'From today forward, we are the Chess Players. Heavenly Eye—you are our opponent.'",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_019",
+        "content": "The Tianji Record's fourth page fully bloomed. Golden and silver intertwined radiance formed a towering pillar of light, illuminating the darkness deep within the Heavenly Eye's core. And in that deepest darkness, an existence that had slumbered for who knows how many ages finally slowly opened its eyes—that was an existence more ancient and terrifying than the Heavenly Eye itself.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_020",
+        "content": "Chen Ji and Chen Ling exchanged a glance, seeing the same resolve in each other's eyes. They knew the true challenge had only just begun. But at this moment, they were no longer fighting alone—twin bloodlines, the Shared Life pact, independent will, these powers once beyond reach finally gathered completely at this moment. \"Let's go, brother.\" Chen Ling smiled faintly, that smile no longer carrying any past confusion or dependence, only her own brilliance. \"It is time to let Heaven know that destiny—is meant to be broken.\" Chen Ji drew a deep breath, gripping his sister's hand tightly. The Tianji Record's radiance enveloped them as they took their first step toward the awakening existence in the core's depths."
+      }
+    }
+  ]
+}

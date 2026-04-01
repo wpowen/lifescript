@@ -1,0 +1,440 @@
+{
+  "id": "天机录_ch0894",
+  "book_id": "天机录",
+  "number": 894,
+  "title": "삼생의 약속",
+  "is_paid": true,
+  "next_chapter_hook": "소청요(苏青瑶)가 고대 금지지(上古禁地)에 갇혀 생사가 오락가락하고, 첸지(陈机)는 황도(皇都)와 금지지 사이에서 선택을 해야 하며, 천도지안(天道之眼)의 응시가 은근히 다가오고 있다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0894_001",
+        "content": "마도(魔道) 사사(主帅)가 '삼계交汇처(三界交汇处)' 다섯 글자를 내뱉는 순간, 첸지(陈机) 장심(掌心)의 천명(天命) 각인이 갑자기 뜨거워졌다—그것은 천도지안(天道之眼)이 이 곳을 응시하고 있다는 신호였다. 그 타오르는 듯한 통증은烙铁(烙铁)처럼 피부를 관통하였으나, 첸지(陈机)의 얼굴 위에는 여전히 파문(波澜)도 없이 고요하였으며, 오직 동공(瞳孔) 깊숙이에만 얼음처럼 차가운 한기가 스쳤다. 그는 천천히 오른손을 거두었으며, 넓은 잡역(杂役) 법의(法衣) 소매가 마침 그 뜨거운 각인을 가렸다. 마도(魔道) 사사(主帅)—검은 법의를 두른 중년 남자가 바로 이 '폐물(废物) 제자'를 사냥감(猎物)을 살피듯이 응시하고 있었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_002",
+        "character_id": "char_chenji",
+        "content": "삼계交汇처……선배의 뜻은, 마족(魔族), 요족(妖族), 인족(人族) 삼계가 이 곳에서 다시 모이겠다는 것입니까?",
+        "emotion": "平静试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_003",
+        "content": "마도(魔道) 사사(主帅)가 냉소(冷笑)를 터뜨리며, 주변의 마기(魔气)가 물결처럼 밀려와 주변 공기를 무겁게 눌렀다. 「계집애(小儿), 네 소소한 생각은老夫(老夫) 앞에서 아무런 쓸모가 없다. 천기록(天机录)의 잔편……老夫(老夫)가 반드시 가지겠다.」첸지(陈机)를 듣고 입꼬리를 살짝 올리며 장난스러운 미소를 드러냈다. 이 순간, 그는 더 이상 그 조용조용한 폐물(废物)이 아니였으며, 천하(天下)의 기국(棋局)을 쥔 기국자(执棋者)였다. 야청(夜清)이 멀지 않은 곳에서 서서 이 모습을 보고, 마음속으로 미동이 일었다—이것이 진정한 첸지(陈机)였다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_004",
+        "character_id": "char_chenji",
+        "content": "선배가 천기록(天机录)을 원한다면, 좋습니다. 그러나 후배에게 하나의 조건이 있습니다—삼계交汇처가 열리기 전까지, 우리는 잠시 정전(停战)합니다.",
+        "emotion": "从容谈判"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_005",
+        "prompt": "마도(魔道) 사사(主帅)가 첸지(陈机)를 살폈다. 이 '폐물'이 자기와 조건을 하겠다고 한다. 그는 어떻게 응답할 것인가?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0894_005_a",
+            "text": "후드卡片(底牌)을 보여주다, 천기록(天机录) 잔편의 힘을 보여주다",
+            "description": "마도(魔道) 사사(主帅)에게 진정한 신물(神物)의 위력을 보여주다, 절대적인 실력으로 존경을 얻다",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "천명치(天命值) 5점을 소모하다",
+            "visible_reward": "마도(魔道) 사사(主帅)의 잠시적 경외를 얻다",
+            "risk_hint": "천기록(天机录)이 노출되어 더 많은 도작자(觊觎者)를 끌어올 수 있다",
+            "process_label": "展示天机录",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_005_a_1",
+                  "content": "첸지(陈机)가 천천히 오른손을 벌렸다, 장심(掌心)의 고대 천기록(天机录) 각인이 갑자기 검푸른 빛을 내며 피어났다. 마도(魔道) 사사(主帅)의 동공이 놀라움에 오그라들었고, 그 빛 속에 담긴 천지(天地)의 이치(至理)에 그는 화신경(化神境) 강자도 심장이 떨렸다. 「이것은......」그의 목소리가 처음으로 떨림을 띠었다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_005_b",
+            "text": "물러서서 나아가다, 정보 차이(信息差)로 협상 우위를 얻다",
+            "description": "실력을 노출하지 않고, 마도(魔道) 사사(主帅)가 모르는 비밀로 그를 감동시키다",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "직접 소모 없음",
+            "visible_reward": "후드卡片(底牌)을 노출하지 않고 동맹을 달성하다",
+            "risk_hint": "상대의 심리(心理)를 정밀하게 파악해야 한다",
+            "process_label": "信息谈判",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_005_b_1",
+                  "content": "첸지(陈机)가 빛을 거두며, 묵묵한 미소만 남겼다. 「선배는 아십니까? 천도지안(天道之眼)이 이미 이 곳을 응시하기 시작했습니까? 내가 죽으면, 천기록(天机录)은 자동으로 천도윤회(天道轮回)로 돌아갑니다. 선배는 삼계交汇처 이전에, 천도(天道)와 적대할 것입니까?」마도(魔道) 사사(主帅)의 안색이 음침한 물처럼 어두워졌고, 한참 후 냉冷哼(冷哼) 한 번：「좋다,老夫(老夫)가 약속한다.」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "temporary_truce_with_demon"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_006",
+        "content": "쌍방이 취약한 합의를达成한 순간의 하늘이 갑자기 찢어지며, 검은 균열(裂缝)에서 수많은 마영(魔影)이 쏟아져 나왔다. 야청(夜清)의 눈동자에 한광(寒光)이 번뜩이며, 주변의 마도(魔道) 미묘(迷雾)가 갑자기 확대되어 첸지(陈机)를 뒤에 가렸다. 「첸지(陈机), 조심하라!」그녀가 낮은 음성으로 외쳤다, 손속의 마검(魔剑)이 이미 검집(剑鞘)에서 나왔다. 그러나 적이 너무 빨리 왔고, 한 줄기의 검은 마기(魔气)가 독사처럼 야청(夜清)의 방어를 피해 곧게 첸지(陈机)의 인후(咽喉)를 찔렀다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_007",
+        "character_id": "char_yeqing",
+        "content": "죽어라!",
+        "emotion": "愤怒护主"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_008",
+        "content": "야청(夜清)의 신형(身形)이 번쩍이며, 첸지(陈机) 앞에 가로막았다. 마검(魔剑)이 가로로 벴아, 그 검은 마기(魔气)를 베어 부쉈으나, 다른 한 마의 마영(魔影)이 이 틈을 타 안으로 들어와 한 움爆(掌拍)를 야청(夜清)의 등 뒤에 때렸다. 그녀의 입꼬리에서 피가 흘러나왔으나, 그녀는 여전히 첸지(陈机) 앞에서 단단히 서서 반 걸음도 물러서지 않았다. 첸지(陈机)는 그 피흔을 보며, 마음속 어딘가가 갑자기 격렬하게 뛰었다—이것은 그가 동맹의 안위를 위해 처음 동요한 것이었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_009",
+        "character_id": "char_chenji",
+        "content": "야청(夜清)!",
+        "emotion": "动容呼唤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_010",
+        "content": "첸지(陈机)가 야청(夜清)의 어깨를 붙잡았다, 평소의、从容淡定(从容淡定)한 용모 위에 처음으로 감출 수 없는 조급함과 마음 아파함이 스며 나왔다. 야청(夜清)은 그의 품에 기대어, 창백한 얼굴 위에 허약하면서도 따뜻한 미소를 떠올렸다. 「그렇게...... 그렇게 날 보지 마세요. 저는 마도(魔道) 성녀(圣女)입니다, 그렇게 쉽게 죽지 않아요.」그녀의 목소리가 가늘었지만, 의심할 여지없는 단호함이 담겨 있었다. 첸지(陈机)는 잠시 침묵하다, 문득 입을 열었다, 목소리가 낮고 진지했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_011",
+        "character_id": "char_chenji",
+        "content": "야청(夜清), 제가 할 말이 있습니다. 천기록(天机录)이 제 죽음을 예시했어요—석 달 후, 저는 천도지안(天道之眼)에 의해 말살될 것입니다.",
+        "emotion": "坦白真相"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_012",
+        "prompt": "Ye Qing은 이 진상에 충격을 받았습니다. 그녀는 Chen Ji의 고백에 어떻게 대응할까요?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0894_012_a",
+            "text": "단호한 표명, 운명을 깨뜨리겠다고 맹세하다",
+            "description": "Ye Qing은 어떤 일이 있어도 Chen Ji 곁에 설 것이라고 표명했으며, 하늘을 적으로 삼더라도 마찬가지다",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "없음",
+            "visible_reward": "Ye Qing과의 유대가 깊어지며, '공명(共命)' 계약의 전제 조건을 얻다",
+            "risk_hint": "천도지안(天道之眼)이 이로 인해 Ye Qing을 노릴 수 있다",
+            "process_label": "誓言相随",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0894_result_012_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing의 눈빛은 조금도 흔들리지 않았으며, 오히려 절대의決意가 배어 있었습니다.「천도지안? 허, 나 Ye Qing은 이 생애 동안 운명 따위를 믿어본 적이 없다.」 그녀는 입가에 묻은 피를 닦아내며, 허약하면서도 울려 퍼지는 목소리로 말했습니다.「네가 내 목숨을 구해줬으니, 이제는 내가 널 지켜야 해. 무슨 일이 있어도 난 네 곁에 서 있을 것이다.」",
+                  "emotion": "坚定誓言"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_pledge"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清誓言打破命运",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_012_b",
+            "text": "이성적 분석,破解之法 찾기",
+            "description": "Ye Qing은 냉정하게 마음을 추스르며, 두 사람 함께 천도지안의 예언에 맞서 어떻게 대응할 것인지 연구하자고 제안했다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "시간 소모",
+            "visible_reward": "Ye Qing의 전략적 지원을 얻으며, '운명研讨' 사이드 퀘스트를 解锁하다",
+            "risk_hint": "최적의 행동 시기를 놓칠 수 있음",
+            "process_label": "理性应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0894_result_012_b_1",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing은 깊이 숨을 들이쉬며, 밀려오는 감정을 억눌렀습니다.「감동에 빠지기엔 이르오, 방법을 찾아야 해.」 그녀는 Chen Ji의 눈을 응시하며 말했습니다.「천기록(天機錄)이 죽음을 예견할 수 있다면, 반드시破解之道도 예견했을 거야. 더 많은 세부 사항을 말해줘, 같이 찾자.」",
+                  "emotion": "冷静分析"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "destiny_research"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清提议共同研究命运",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_013",
+        "content": "Chen Ji는 Ye Qing의 단호한 눈빛을 바라보며 마음속에 말로 형언할 수 없는 따뜻함이 밀려왔습니다. 그러나 바로 그 순간, 그의 미루리(眉心)에 날카로운 찌르듯한 통증이 밀려왔습니다—그것은 혈통 연계가 억지로 활성화된 신호였습니다. Chen Nian! 그의 여동생, 성종(聖宗)에 의해 '천명 자물쇠 열쇠'로 납치된 아이, 지금 혈통을 통해 희미하면서도 급切的인 정보를 전해오고 있었습니다: 가족의 위기, Su Qingyao가 갇혔다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0894_014",
+        "character_id": "char_chenian",
+        "content": "오빠……구해줘……禁地……요 자매가……",
+        "emotion": "血脉呼唤"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_015",
+        "content": "Chen Ji의 안색이 갑자기大变했습니다. 평소의 운책할 완화한 얼굴에는 유례없는 날카로운 긴장이 떠올랐습니다. Su Qingyao, 끊임없이 그의 비밀이 드러내려는女子이자, 그의 은밀한布局에서 빠질 수 없는棋子였습니다. 지금 그녀는 어떤上古禁地에 갇혀生死를 알 수 없는 상황입니다. 그리고刚刚魔道主帅와 달성한동맹—그는 반드시皇都와禁地 사이에서 선택을 내려야 합니다. Chen Ji는 눈을 감고 깊이 숨을 들이쉬었다가, 다시 눈을 떴을 때 눈빛에는 이미 완전한决然이 어려 있었습니다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0894_016",
+        "prompt": "Chen Ji는 반드시 선택을 내려야 합니다—皇都에留下来魔道와 계속 상대할 것인지, 아니면禁地로 가서 Su Qingyao를 구할 것인지?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0894_016_a",
+            "text": "皇都를 버리고, 즉시禁地로 가서 Su Qingyao를 구하다",
+            "description": "Su Qingyao는 그의 중요한 동맹이자 친구이며,坐視できない",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "皇都 배치 우위를 잃고,魔道를 성토할 수 있음",
+            "visible_reward": "Su Qingyao 호감도가 크게 향상되며, 심층 유대 解锁 가능",
+            "risk_hint": "魔道主帅는 그가 약을违约했다고 생각할 수 있음",
+            "process_label": "营救苏青瑶",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_016_a_1",
+                  "content": "「Ye Qing, 나랑 가자.」Chen Ji는 조금도 망설이지 않았으며, Ye Qing을 안아올려 빛의 흐름처럼禁地 방면으로 돌진했습니다. 뒤에서魔道主帅는 싸늘하게冷哼했지만, 쫓아오지는 않았습니다—삼계交汇처의 큰 계획이 임박했기에, 지금 이 순간에急할 필요는 없었습니다. Ye Qing은 Chen Ji의 품에 기대어 쓰러지듯 웃으며 말했습니다:「네가 이……멍청이.」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rescue_mission"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择营救苏青瑶",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0894_016_b",
+            "text": "사람을 보내 구하고, 자신은皇都에 남아 계속布局하다",
+            "description": "직접 가지 않지만, 자원을 동원하여 구출 작전을安排하다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Su Qingyao를 제때 구하지 못할 수도 있다",
+            "visible_reward": "황도 배치의 우세를 유지하고, 기략을 발휘하라",
+            "risk_hint": "구출이 실패할 수도 있다",
+            "process_label": "委托营救",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0894_result_016_b_1",
+                  "content": "Chen Ji는 잠시沉吟하더니 빠르게 결정을 내렸다. 「Ye Qing, 먼저 Holy Sect로 돌아가 인력을 소집하라. 나에게는 황도에 더 중요한 일이 있다.」그는 서한을 짓고 가장 빠른 속도로 Forbidden Grounds로 보내도록命했다. 그러나 Ye Qing은 고개를 저으며 말했다: 「제가 가겠습니다. 저는 Forbidden Grounds를 알고 있고, 그녀를 구할 능력이 있습니다.」그녀는 일어섰고, 상처는 여전히 피를 흘리고 있었지만 눈빛은 놀랍도록 단호했다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "dispatch_rescue"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机委托夜清营救苏青瑶",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_017",
+        "content": "Ye Qing은 Chen Ji의 친서 Letter를 들고 떠났다. 상처는 아직 완치되지 않았지만 걸음은 단단하기 철，移动거린다. Chen Ji는 그녀가 멀어져가는 뒷모습을 바라보며 마음속이 복잡했다. 그는 주먹을 불끈 쥐고 낮은 목소리로 중얼거렸다: 「Su Qingyao, 버텨라.」말을 끝내기도 전에, Tianji Record는 다시 뜨거워졌다—그것은 'Heavenly Celestial Eye'라 불리는 존재가,的命运의 틈을 통해 그를 응시하고 있었기 때문이다. Chen Ji는 온몸을 에워싸는 보이지 않는 압력感觉到了. 마치 보이지 않는 눈이, 그분의 모든 것을窺伺하고 있는 것 같았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_018",
+        "content": "그는 깊이 숨을 들이쉬고 하늘을 올려다보았다. 눈동자에 조소가 스쳤다. Heavenly Celestial Eye라니? 그가 Chen Ji가凡人의 몸으로 Tianji Record를 손에 넣은以上, 이미天과 싸울 준비가 되어 있다. 그저 이 순간, 그는 한 가지 더 확신하게 되었다—Su Qingyao이든, Ye Qing이든, Chen Nian이든, 자신의 곁에 있는 이들은 잃을 수 없다. 밤이 내리고, 황도의 등불이 멀리서 반짝였다. Chen Ji는 홀로 바람 속에 서 있었다.身影은 고독하지만 소나무처럼 곧았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_019",
+        "content": "멀리서 연이은 울림이 들려왔다. 그것은三界交汇处가 곧 열릴 전조였다. 더 먼 곳에서는, Ye Qing이 그의 부탁을 안고 생사가未定한 Forbidden Grounds로 향하고 있었다. Chen Ji는 눈을 감았다.脑海中浮现出Su Qingyao那高冷而倔强的面容，以及她三次无限接近真相时的执着。「等我。」他在心中默默说道，「这一次，换我来守护你们。」掌心的天命印记剧烈跳动，仿佛在回应他的决心。 멀리서 연이은 울림이 들려왔다. 그것은 三계交汇处가 곧 열릴 전조였다. 더 먼 곳에서는 Ye Qing이 그의 부탁을 안고 생사가未定인 Forbidden Grounds로 향하고 있었다. Chen Ji는 눈을 감았다.脑海中浮现出 Su Qingyao那高冷而倔强的面容，以及 그녀가 세 번 진리에 근접했을 때의执着。「기다려.」그것은 그분의 마음속으로 말했다.「이번엔 내가 여러분을 지키겠다.」손바닥의天命표식이 격렬하게 뛰었다. 마치 그분의 결의를回应하는 듯했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0894_020",
+        "content": "동시에, 어느 고대禁地의 깊은 곳에서, Su Qingyao는 수많은 Restrictions에 갇혀 있었지만, 절대 속에서조차 냉정을 유지하고 있었다. 그녀는 Chen Ji의 혈액联系를 감지하고, 입가에 희미한 미소가 떠올랐다. 「Chen Ji, 너는果然단순하지 않다.」그녀의 눈동자에는 기이한 빛이 반짝였다. 「이번엔 보자, 너는究竟어떻게 선택할 것인가.」Restrictions 밖에서는 맹수들의 울음소리가 들려왔다.生死一线之间, Su Qingyao는 유난히 평온했다—그녀가 알고 있었기 때문이다. 저 '폐물'이 반드시 올 것이라는 것을.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

@@ -15,11 +15,20 @@ struct SoloReadingView: View {
         let message: String
     }
 
+    private enum ChapterTransitionPhase {
+        case none
+        case fadingOut
+        case transitioning
+        case fadingIn
+    }
+
     @State private var viewModel: ReadingViewModel
     @Environment(\.modelContext) private var modelContext
     @State private var showSettlement = false
     @State private var showRewindSheet = false
     @State private var activeToasts: [ChoiceToast] = []
+    @State private var toastTasks: [Task<Void, Never>] = []
+    @State private var chapterTransitionPhase: ChapterTransitionPhase = .none
     @AppStorage("solo.reduceMotion") private var reduceMotion = false
     @AppStorage("solo.largeReadingType") private var largeReadingType = false
 
@@ -61,11 +70,13 @@ struct SoloReadingView: View {
 
             switch viewModel.state {
             case .loading:
-                ProgressView("正在翻开章节")
-                    .tint(SoloTheme.gold)
+                if chapterTransitionPhase == .none {
+                    ProgressView(SoloLocalization.localized("正在翻开章节"))
+                        .tint(SoloTheme.gold)
+                }
             case .error(let message):
                 VStack(spacing: 16) {
-                    Text("当前章节载入失败")
+                    Text(SoloLocalization.localized("当前章节载入失败"))
                         .font(.title3.weight(.semibold))
                     Text(message)
                         .foregroundStyle(SoloTheme.muted)
@@ -76,6 +87,8 @@ struct SoloReadingView: View {
                 .padding(.horizontal, 24)
             case .reading, .choosing, .chapterEnd:
                 content
+                    .opacity(chapterTransitionPhase == .fadingOut || chapterTransitionPhase == .transitioning ? 0 : 1)
+                    .offset(y: chapterTransitionPhase == .fadingIn ? 20 : 0)
             }
 
             if !activeToasts.isEmpty {
@@ -86,7 +99,7 @@ struct SoloReadingView: View {
                     .zIndex(2)
             }
         }
-        .soloStoryChrome(title: navigationTitle, kicker: "阅读")
+        .soloStoryChrome(title: navigationTitle, kicker: SoloLocalization.localized("阅读"))
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 SoloChromeIconButton(systemImage: "person.text.rectangle", tint: SoloTheme.jade, action: openDossier)
@@ -130,7 +143,7 @@ struct SoloReadingView: View {
                                     .foregroundStyle(SoloTheme.gold)
                                     .padding(.top, 3)
                                 VStack(alignment: .leading, spacing: 4) {
-                                    Text("当前目标")
+                                    Text(SoloLocalization.localized("当前目标"))
                                         .font(.caption2.weight(.bold))
                                         .tracking(2)
                                         .foregroundStyle(SoloTheme.gold.opacity(0.80))
@@ -167,7 +180,7 @@ struct SoloReadingView: View {
                                         .font(.caption.weight(.bold))
                                         .tracking(1.4)
                                         .foregroundStyle(destinyFieldTint)
-                                    Text("天命值 \(viewModel.stats.destiny) · 心魇 \(viewModel.stats.darkness)。\(destinyFieldDetail)")
+                                    Text(SoloLocalization.format("天命值 %d · 心魇 %d。%@", viewModel.stats.destiny, viewModel.stats.darkness, destinyFieldDetail))
                                         .font(.caption)
                                         .foregroundStyle(SoloTheme.warmInk)
                                         .lineSpacing(4)
@@ -189,7 +202,7 @@ struct SoloReadingView: View {
                         if let chapter = viewModel.currentChapter {
                             // 章节标题 — 电影感大字
                             VStack(alignment: .leading, spacing: 10) {
-                                Text("第 \(chapter.number) 章 · \(book.title)")
+                                Text(SoloLocalization.format("第 %d 章 · %@", chapter.number, book.title))
                                     .font(.caption2.weight(.bold))
                                     .tracking(3)
                                     .foregroundStyle(SoloTheme.gold)
@@ -278,7 +291,7 @@ struct SoloReadingView: View {
                     HStack(spacing: 14) {
                         Image(systemName: "chevron.down")
                             .font(.caption.weight(.bold))
-                        Text("继续推进")
+                        Text(SoloLocalization.localized("继续推进"))
                             .font(.subheadline.weight(.semibold))
                         Spacer()
                     }
@@ -348,7 +361,7 @@ struct SoloReadingView: View {
                 .foregroundStyle(SoloTheme.muted)
                 .lineSpacing(6)
 
-            Text("当前章节已经完整收束。你可以先回看上面的结果，再决定查看此局总结、回溯关键节点，或直接进入下一章。")
+            Text(SoloLocalization.localized("当前章节已经完整收束。你可以先回看上面的结果，再决定查看此局总结、回溯关键节点，或直接进入下一章。"))
                 .font(SoloTypography.detail)
                 .foregroundStyle(SoloTheme.warmInk)
                 .lineSpacing(5)
@@ -376,7 +389,7 @@ struct SoloReadingView: View {
 
             if let previewSnippet = viewModel.nextChapterPreviewSnippet {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("下一章试读")
+                    Text(SoloLocalization.localized("下一章试读"))
                         .font(SoloTypography.meta)
                         .foregroundStyle(SoloTheme.gold)
                     if let previewHeadline = nextChapterPreviewHeadline {
@@ -414,7 +427,7 @@ struct SoloReadingView: View {
                         HStack(spacing: 8) {
                             Image(systemName: "arrow.uturn.backward")
                                 .font(.caption.weight(.semibold))
-                            Text(viewModel.canRewind ? "回溯命运节点" : "回溯命运节点（天命不足）")
+                            Text(viewModel.canRewind ? SoloLocalization.localized("回溯命运节点") : SoloLocalization.localized("回溯命运节点（天命不足）"))
                                 .font(.subheadline.weight(.medium))
                         }
                     }
@@ -429,10 +442,10 @@ struct SoloReadingView: View {
 
                 if let lockedState = nextLockedChapterState {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("新卷门槛")
+                        Text(SoloLocalization.localized("新卷门槛"))
                             .font(SoloTypography.meta)
                             .foregroundStyle(SoloTheme.gold)
-                        Text(lockedState.supportingLine ?? "卷一完整免费，后续按卷单独解锁。")
+                        Text(lockedState.supportingLine ?? SoloLocalization.localized("卷一完整免费，后续按卷单独解锁。"))
                             .font(SoloTypography.detail)
                             .foregroundStyle(SoloTheme.warmInk)
                             .lineSpacing(5)
@@ -447,12 +460,12 @@ struct SoloReadingView: View {
                            chapterAccessState(nextChapterId).isLocked {
                             openLockedChapter(nextChapterId)
                         } else {
-                            Task { await viewModel.proceedToNextChapter() }
+                            transitionToNextChapter()
                         }
                     }
                     .buttonStyle(SoloPrimaryActionButtonStyle())
                 } else {
-                    Button("回到主页") {
+                    Button(SoloLocalization.localized("回到主页")) {
                         returnToHome()
                     }
                     .buttonStyle(SoloPrimaryActionButtonStyle())
@@ -552,7 +565,7 @@ struct SoloReadingView: View {
             return nil
         }
 
-        return "第 \(number) 章 · \(title)"
+        return SoloLocalization.format("第 %d 章 · %@", number, title)
     }
 
     private var nextLockedChapterState: SoloChapterAccessState? {
@@ -588,11 +601,11 @@ struct SoloReadingView: View {
                             Image(systemName: "arrow.uturn.backward")
                                 .font(.caption.weight(.semibold))
                                 .foregroundStyle(SoloTheme.gold)
-                            Text("每次回溯消耗天命值 10 点")
+                            Text(SoloLocalization.localized("每次回溯消耗天命值 10 点"))
                                 .font(.caption)
                                 .foregroundStyle(SoloTheme.muted)
                             Spacer()
-                            Text("天命值：\(viewModel.stats.destiny)")
+                            Text(SoloLocalization.format("天命值：%d", viewModel.stats.destiny))
                                 .font(.caption.weight(.semibold))
                                 .foregroundStyle(SoloTheme.gold)
                         }
@@ -611,11 +624,11 @@ struct SoloReadingView: View {
                     }
                 }
             }
-            .navigationTitle("命运回溯")
+            .navigationTitle(SoloLocalization.localized("命运回溯"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("取消") { showRewindSheet = false }
+                    Button(SoloLocalization.localized("取消")) { showRewindSheet = false }
                         .foregroundStyle(SoloTheme.muted)
                 }
             }
@@ -663,12 +676,16 @@ struct SoloReadingView: View {
     }
 
     private func enqueueChoiceToasts(for choice: Choice) {
+        for task in toastTasks { task.cancel() }
+        toastTasks.removeAll()
+
         let toasts = buildChoiceToasts(for: choice).prefix(4)
 
         for (offset, toast) in toasts.enumerated() {
-            Task {
+            let task = Task {
                 let appearDelay = UInt64(offset) * 180_000_000
                 try? await Task.sleep(nanoseconds: appearDelay)
+                guard !Task.isCancelled else { return }
 
                 await MainActor.run {
                     withAnimation(reduceMotion ? .linear(duration: 0.01) : .spring(response: 0.32, dampingFraction: 0.88)) {
@@ -677,6 +694,7 @@ struct SoloReadingView: View {
                 }
 
                 try? await Task.sleep(nanoseconds: 2_200_000_000)
+                guard !Task.isCancelled else { return }
 
                 await MainActor.run {
                     withAnimation(reduceMotion ? .linear(duration: 0.01) : .easeOut(duration: 0.22)) {
@@ -684,6 +702,7 @@ struct SoloReadingView: View {
                     }
                 }
             }
+            toastTasks.append(task)
         }
     }
 
@@ -752,6 +771,39 @@ struct SoloReadingView: View {
         SoloMotion.reading(reduceMotion: reduceMotion)
     }
 
+    private func transitionToNextChapter() {
+        let transitionAnimation = SoloMotion.chapterTransition(reduceMotion: reduceMotion)
+        let delay: UInt64 = reduceMotion ? 10_000_000 : 400_000_000
+
+        withAnimation(transitionAnimation) {
+            chapterTransitionPhase = .fadingOut
+        }
+
+        Task {
+            try? await Task.sleep(nanoseconds: delay)
+
+            await MainActor.run {
+                chapterTransitionPhase = .transitioning
+            }
+
+            await viewModel.proceedToNextChapter()
+
+            await MainActor.run {
+                withAnimation(transitionAnimation) {
+                    chapterTransitionPhase = .fadingIn
+                }
+            }
+
+            try? await Task.sleep(nanoseconds: delay)
+
+            await MainActor.run {
+                withAnimation(transitionAnimation) {
+                    chapterTransitionPhase = .none
+                }
+            }
+        }
+    }
+
     private var navigationTitle: String {
         viewModel.currentChapter?.title ?? book.title
     }
@@ -776,40 +828,53 @@ struct SoloReadingView: View {
         book.genre == .cultivation || viewModel.stats.destiny <= 45 || viewModel.stats.darkness >= 30
     }
 
-    private var destinyFieldHeadline: String {
+    private enum DestinyLevel {
+        case dying    // 命火将熄
+        case recoil   // 反噬逼近
+        case balanced // 命局平衡
+        case abundant // 天命充盈
+    }
+
+    private var destinyLevel: DestinyLevel {
         if viewModel.stats.destiny <= 15 || (viewModel.stats.destiny <= 28 && viewModel.stats.darkness >= 45) {
-            return SoloLocalization.localized("命火将熄")
+            return .dying
         }
         if viewModel.stats.destiny <= 35 || viewModel.stats.darkness >= 60 {
-            return SoloLocalization.localized("反噬逼近")
+            return .recoil
         }
         if viewModel.stats.destiny <= 65 {
-            return SoloLocalization.localized("命局平衡")
+            return .balanced
         }
-        return SoloLocalization.localized("天命充盈")
+        return .abundant
+    }
+
+    private var destinyFieldHeadline: String {
+        switch destinyLevel {
+        case .dying:     return SoloLocalization.localized("命火将熄")
+        case .recoil:    return SoloLocalization.localized("反噬逼近")
+        case .balanced:  return SoloLocalization.localized("命局平衡")
+        case .abundant:  return SoloLocalization.localized("天命充盈")
+        }
     }
 
     private var destinyFieldDetail: String {
-        switch destinyFieldHeadline {
-        case SoloLocalization.localized("命火将熄"):
+        switch destinyLevel {
+        case .dying:
             return SoloLocalization.localized("再动一次天机录，就可能把后手直接烧穿。")
-        case SoloLocalization.localized("反噬逼近"):
+        case .recoil:
             return SoloLocalization.localized("还能继续落子，但高风险选择最好先确认收益。")
-        case SoloLocalization.localized("命局平衡"):
+        case .balanced:
             return SoloLocalization.localized("局势仍在可控区，适合试探，不适合连烧后手。")
-        default:
+        case .abundant:
             return SoloLocalization.localized("当前还握得住主动，但越顺手越要记得藏锋。")
         }
     }
 
     private var destinyFieldTint: Color {
-        switch destinyFieldHeadline {
-        case SoloLocalization.localized("天命充盈"):
-            return SoloTheme.jade
-        case SoloLocalization.localized("命局平衡"):
-            return SoloTheme.gold
-        default:
-            return SoloTheme.crimson
+        switch destinyLevel {
+        case .abundant:  return SoloTheme.jade
+        case .balanced:  return SoloTheme.gold
+        case .dying, .recoil: return SoloTheme.crimson
         }
     }
 }

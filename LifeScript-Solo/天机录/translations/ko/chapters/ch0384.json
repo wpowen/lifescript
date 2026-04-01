@@ -1,0 +1,427 @@
+{
+  "id": "天机录_ch0384",
+  "book_id": "天机录",
+  "number": 384,
+  "title": "야청의 비밀",
+  "is_paid": true,
+  "next_chapter_hook": "야청이 떠난 후, Chen Ji는 Tianji Record Fragment를 펼쳐보였으나, 천명쇄열의 그림이 예전보다 더욱 흐릿해졌다—Chen Nian의 위치가，移动하는 것 같았다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0384_001",
+        "content": "한밤의 바람이 칼처럼是天青宗 후산 대나무 숲에서, Chen Ji는 두 손을 등 뒤에 모으고 서 있었다. 그의 시선은 무성한 대나무 그늘을 관통하여 멀리 희미하게 보이는 검은纱身影 위에 머물렀다. 방금 Holy Sect 장로의 말이 여전히 귓가에 맴돌았다—\"천명쇄열이 곧成熟한다\". Chen Nian의 이름이 그의 마음속에서 피를 그리는 자국처럼 지나갔으나, 더욱 깊은 한기에 눌려버렸다. 발소리가 가까워지자, 그는 눈에서 번쩍이는杀意를 거두어버리고 익숙한 담담한 가면을 쓰 again."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_002",
+        "character_id": "char_yeqing",
+        "content": "\"당신은 정말 담력이 좋다, 이런 때에 나를 약속하다니.\" 야청의 목소리가 대나무 그늘에서 흘러나왔다, 희미한 마도 미혼을 실어갔으나, 예전보다了几分 날카로움이 줄었다. 그녀는 삼척 다가와 발걸음을 멈추었다, 달빛이 그녀의 긴장된 턱선을 새겼다, \"내가 할 말이 있다. 나에 대해……Holy Sect에 대해.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_003",
+        "content": "Chen Ji의 미간이 미묘하게 움직였다. 야청이 자진해서 Holy Sect를 언급하다니, 이것은 그의 예상之外였다. 이 마도圣女는 원래부터 신비莫測，今日却主动揭开面具一角。그는 추궁하지 않고, 그저 조용히 기다렸다, 대나무 잎이 두 사람 사이의 빈 공간에 우수수 떨어졌고, 바스락거리는 소리로 침묵을 채웠다. 야청은 깊이 숨을 들이쉬었다, 달빛 아래 그녀의 속눈썹이 가늘게 떨렸다, 마침내 어떤 결심을 내린 것 같았다."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_004",
+        "character_id": "char_yeqing",
+        "content": "\"나는 평범한圣女가 아니다.\" 야청은 눈을 들어올리며, 눈에 잠시 스친 허약함을 담았다, \"십오 년 전, 마도 총사휘가 한 폐허에서 굶어 죽을 듯한 고아를 주워갔을 때—그것이 나였다. 그는 나를 입양하고, 가르치며, Holy Sect圣女로 길러주었다.\" 그녀의 목소리가 살짝 갈라졌다, \"그는 나의 은인이요, 그리고……아버지다.\"",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_005",
+        "character_id": "char_chenji",
+        "content": "Chen Ji는 잠시 침묵하다가, 문득 입을 열었다: \"그러니까 날 찾은 것은 제보하러 온 건가?\" 어조가 담담하나,若有若无의 탐색을 담았다. 대나무 잎이 그의 어깨에서 미끄러지자, 그는 손을 들어 털어냈다, 행동이 여유로웠다, \"아니면 말하자면……당신도 무언가를 발견했는가?\"",
+        "emotion": "平静试探"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_01",
+        "prompt": "야청의 말은 국면을 미묘하게 만들었다. Chen Ji는 신뢰와 탐색 사이에서 선택을 내려야 했다—마음을 열고 그녀와 동맹을 맺을 것인가, 아니면 그녀가 이것을 드러내는 진정한 목적을 먼저 볼 것인가?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "c01_trust",
+            "text": "담담하게 대응하여 성의를 보이다",
+            "description": "자신도 Holy Sect를 조사하고 있음을 직접 밝히고, 양측 목표가 일치함을示意하며, 협력의 성의를 보여주다.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "자신의 일부底牌를 노출하다",
+            "visible_reward": "신뢰를 빠르게 구축하고, 관계가 진행되다",
+            "risk_hint": "너무 일찍 의도를 노출할 가능성이 있다",
+            "process_label": "坦诚以对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c01_01",
+                  "character_id": "char_chenji",
+                  "content": "\"당신이 털어놓았으니, 나도 숨기지 않겠다.\" Chen Ji는 두 손을 등 뒤에 모으고 서 있었고, 달빛이 그의 눈동자 속에서 흘렀다, \"Holy Sect近期动作频频, 특히 '천명쇄열'에 대한 배치……당신과 나의 목표가 정말 일치하는 바가 있다면, 서로 취할 것을 취하자.\"",
+                  "emotion": "淡然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_basic"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与夜清初步建立信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "c01_probe",
+            "text": "계속 탐색하며 여지를 남기다",
+            "description": "표명하기를 서두르지 않고, 야청이 자신의 모든底牌를 말할 때까지 기다린 후, 협력 깊이를 결정하다.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "야청이 신뢰받지 못한다고 느낄 가능성이 있다",
+            "visible_reward": "더 많은 정보를 얻고, 함정을 피하다",
+            "risk_hint": "담백한 기회를 놓칠 가능성이 있다",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c01_02",
+                  "character_id": "char_chenji",
+                  "content": "\"재미있군.\" Chen Ji는 담담하게 말했습니다, \"다만 내가表态하기 전에—당신은 총사휘가近年行事诡异하다고 했는데, 구체적으로 무엇을 말하는가?\" 그의 시선이 야청의 얼굴에 머물렀다, 서두르지 않고, \"협력하려면, 내가 누구와 협력하는지 알아야 하지 않는가?\"",
+                  "emotion": "冷静审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_suspicion"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_006",
+        "character_id": "char_yeqing",
+        "content": "야청은 쓴웃음을 지었다: \"삼 년 전부터, 그는 변했다. 예전의 그는 진정한袅雄이었고, 원칙과 포부가 있었다. 그러나 지금……그는 어떤 더 큰 계획을 실행하는 것 같고, Holy Sect 제자들은只是棋子，连我也是.\" 그녀는 소매를 움켜쥐었고, 손가락 마디가 창백해졌다, \"최근 그는 한神秘存在와 빈번히 접촉했는데, 돌아온 후 눈빛이 마치……무언가에 점령된 것처럼 보였다.\"",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_007",
+        "content": "Chen Ji의 눈빛이 미세하게 응축되었다. 神秘存在—천도지안의 파편 투영, 아니면 다른 무언가? 야청의 말은 Mo Xiansheng의曾经的暗示와 꿰맞았고, 그의 심底에 한 줄기 한기를 솟아오르게 했다. 그러나 얼굴 위에서는 여전히 파문을 일으키지 않았고, 그저 조용히 이 farthest 떠는 여자를 바라보았다. 달빛 아래, 그녀의 눈 밑 혈사ocker가 뚫렸고, 분명히 여러 날을 불안에서 보낸 흔적이 보였다."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_008",
+        "character_id": "char_yeqing",
+        "content": "\"나는 조사했어요.\" 야청은 목소리를 낮추었다, \"천명쇄열—그녀는 당신의 친척일 수 있어요, 맞죠?\" 그녀는 Chen Ji의 눈을 똑바로 바라보았다, \"당신이 고전을 훑어볼 때의 표정을 본 적이 있어요, 저런 빛깔……오직 친족이 실종된 지 오래되었을 때만 나타나는 것입니다. Holy Sect가 천명쇄열을 수확하려 하고, 당신이 가만히 앉아있진 않을 거예요.\"",
+        "emotion": "洞察"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_009",
+        "character_id": "char_chenji",
+        "content": "Chen Ji는 대답하지 않았다. 그는 그저 조용히 야청을 바라보았고, 대나무 숲에서 갑자기 바람 소리만 남았다. 이 순간, 그의 마음속에서 빠르게 돌아갔다—그녀가 Chen Nian의 존재를 안다는 것, 이것은 무슨 의미인가? Holy Sect의 배치인가, 아니면 야청 자신의 조사인가? 잠시 후, 그의 입꼬리가 살짝 올라갔다, 그 미소는 눈底에 이르지 않았다: \"당신의 정보網은 정말 발달했군요.\"",
+        "emotion": "深不可测"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_02",
+        "prompt": "야청은 이미 일부底牌를 드러냈고, Chen Ji는 그녀에게 더 많은 진실을 알려줄지 결정해야 했다—Chen Nian에 대해, Tianji Record에 대해, 아니면 신비로움을 유지할 것인가?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c02_share_truth",
+            "text": "陈念의 정체를 드러내, 동맹을 심화하다",
+            "description": "Ye Qing에게 Chen Nian이 자신의 여동생이라고 말하고, 신뢰를 더욱 심화하여 그녀가 진정한 동맹이 되게 하다.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "최대 약점을 노출하다",
+            "visible_reward": "Ye Qing의 완전한 신뢰를 얻고, 더 깊은 협력 관계를 열다",
+            "risk_hint": "약점이 한번 노출되면 결과가 예측하기 어렵다",
+            "process_label": "以诚换诚",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c02_01",
+                  "character_id": "char_chenji",
+                  "content": "「Chen Nian.」 Chen Ji가 이 이름을 내뱉었다. 목소리는 가늘었지만 천钧만 한 무게를 담고 있었다. 「그녀는 내 여동생이야. Holy Sect에 데려간 지 이미 십 년이 지났어.」 그는 Ye Qing을 바라보며, 평소에는 찾아볼 수 없던 허약함을 드러냈다. 「나는 십 년 동안 그녀를 찾아왔다.」",
+                  "emotion": "隐痛"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_knows_chenian"
+            ],
+            "requires_flag": "yeqing_alliance_basic",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清得知陈念身份",
+            "branch_route_id": null
+          },
+          {
+            "id": "c02_keep_secret",
+            "text": "신비로움을 유지하며 협력만 이야기하다",
+            "description": "Chen Nian의 정체를 드러내지 않고 협력 차원에서만 합의하고, 정보 우위를 유지하다.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "협력의 깊이에 한계가 있다",
+            "visible_reward": "정보 격차를 유지하여 향후 더 많은 행동 공간을 확보하다",
+            "risk_hint": "Ye Qing 사이에 거리감이 생길 수 있다",
+            "process_label": "留有后手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c02_02",
+                  "character_id": "char_chenji",
+                  "content": "「너와 나는 각자 각자의 비밀이 있어.」 Chen Ji가 담담하게 말했다. 「하지만 적어도 하나는 확인할 수 있어—Holy Sect은 우리가 공통의 적이라는 것.」 그는 잠시 멈추었다. 「진상이 밝혀지기 전까지 우리의 협력은 여기에 국한된다. 그 이상에 대해서는...」 그는 의미심장하게 그녀를 바라보았다. 「장래를 기약하자.」",
+                  "emotion": "克制"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_shallow"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_010",
+        "content": "Ye Qing은 오랫동안 침묵했다. 대나무 그림자가 그녀의 얼굴 위에서 명멸하며 그녀의 내적 갈등을 반영하는 듯했다. 결국 그녀가 가볍게 고개를 끄덕이며 말했다: 「알겠어. 나는 계속 지휘관의 동향을 감시할 것이며, 어떤 이상이라도 있으면 즉시 너에게 알려줄게.」 그녀가 손을 들어 보였다. 손바닥에는 연한 검은 빛의 문양이 떠올랐다. 「이것은 마도 안개의 표식이라, 잠시 Tianji 기운을 감출 수 있어—바로... 협력의 성의로.」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_011",
+        "character_id": "char_chenji",
+        "content": "Chen Ji가 그 검은 빛의 문양을 받아들었다. 손끝이 닿는 순간, 시원한 느낌이 퍼져나왔다. 그가 Ye Qing을 올려다보며 말했다: 「이것은... 아까워?」 마도 안개는 Ye Qing의 보신神通인데, 지금은 기꺼이 건네주고，这份诚意出乎他意料。 Ye Qing은 얼굴을 돌렸다. 달빛 아래 그녀의 귀 끝이 붉어진 듯했다: 「어차피 네 Tianji Record의 기운은 너무 쉽게 노출되잖아. 누군가 널 지켜보고 있으면 나도 좋을 게 없으니까.」",
+        "emotion": "口是心非"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_03",
+        "prompt": "Ye Qing이 마도 안개를 선물했을 때, Chen Ji는 어떻게这份出乎意料的诚意에 응답해야 할까?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "c03_grateful",
+            "text": "정중하게 받아들여, 감사를 표하다",
+            "description": "진심으로 이 선물을 받아들여, 감사를 표현하고, 두 사람의 관계를 더욱 깊게 하다.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "다소 약한 모습을 보이다",
+            "visible_reward": "Ye Qing의 호감도가 크게 향상되고, 관계가 본질적으로 변화하다",
+            "risk_hint": "상대방이 아첨한다고 느낄 수 있다",
+            "process_label": "真心接纳",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c03_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji는 검은 빛의 문양을 소매에 넣으며, 정중하게 말했다: 「이 정, 나는 기억해 둘게.」 그의 말투에는 평소의 소외감이 줄어들고, 진심 어린 느낌이 더해졌다. Ye Qing은愣了一下,随即别过脸去，嘴角却微微上扬: 「这套别来...记得欠我一顿酒.」",
+                  "emotion": "微赧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c03_casual",
+            "text": "태연자약하게 받아들여, 예의를 돌려주다",
+            "description": "일관된 담담함을 유지하고,顺势收下但不表现太多情绪，以对等姿态回应.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ye Qing이 냉대받았다고 느낄 수 있다",
+            "visible_reward": "신비로움을 유지하고, 우위를 잃지 않다",
+            "risk_hint": "관계가 깊어질 기회를 놓칠 수도 있다",
+            "process_label": "不卑不亢",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c03_02",
+                  "character_id": "char_chenji",
+                  "content": "\"등가 교환일 뿐이다.\" Chen Ji는 그 문양을 소매에 넣으며 평소와 다름없는 표정을 지었다. \"당신에게는 당신의 목적이 있고, 나에게는 나의 필요가 있다. 이 빚은 나중에 갚겠다.\" Ye Qing은 잠시 그를 바라보다가 갑자기 가볍게 웃으며 말했다: \"정말...물 흐르듯 빈틈이 없다.\"",
+                  "emotion": "无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_012",
+        "character_id": "char_yeqing",
+        "content": "\"사령관 쪽은 내가 방법을 찾겠다.\" Ye Qing은 옷깃을 정리하며 어느 정도는 Holy Sect，圣女的 냉傲을 되찾았다. \"그러나 Tianqing Sect 내부에서는 조심해야 한다——소식을 들었는데, Ling Yuan이 최근 은밀히 인력을 움직이고 있어, 뭔가를 찾는 듯하다.\" 그녀는 잠시 멈추고 목소리를 낮추었다. \"그리고 당신의 Su师姐...그녀가 당신에게 의심의 마음을 품은 것 같다.\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_013",
+        "character_id": "char_chenji",
+        "content": "\"Su Qingyao?\" Chen Ji의 눈썹이 살짝 치켜올라가고, 눈底에는 일순间的な 장난기가 스쳤다. 이 Inner Disciple Senior Fellow는 확실히 예리하지만, 그는 이미 준비가 되어 있었다. 그는 대수롭지 않게 웃으며 말했다: \"경고에 감사한다. 그러나 이 Su师姐에 대해서는...나만의 분수가 있다.\" Ye Qing은 그를 한 번 보더니, 뭔가 말하고 싶은 듯했으나 결국 고개를 저으며 말했다: \"당신이라는 사람, 정말 파악이 안 된다.\"",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_014",
+        "content": "밤바람이 점점 불어오며 그녀의 검은 흑사(黑纱)를 흔들었다. 그녀는 몇 걸음 물러서며身形이 밤색 안으로 녹아들기 시작했다. 떠나기 전, 그녀는 갑자기 발걸음을 멈추고 Chen Ji의 등을 등지고 가볍게 말했다: \"다음에 만나면...당신이 나에게 술을 사야 한다.\" 목소리에는 평소의 날카로운 마도(魔道)圣女와는 다른, 희귀한 수줍음이 배어 있었다. Chen Ji는 잠시 멈칫했다가,随即 입꼬리를 살짝 올리며 말했다: \"좋아.\" Ye Qing은 돌아보지 않았으나身形은 잠시 굳었고, 잠시 후 죽음의 숲(竹林) 깊은 곳으로 사라졌다. 한 가닥의 희미한 마도(魔道) 미혹(迷雾) 향기만이 남았다."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_015",
+        "content": "죽음의 숲(竹林)은 다시 고요함에 빠졌다. Chen Ji는 손을 등 뒤에負(负担)하고 서서, Ye Qing이 사라진 방향을 바라보며 표정이 점차 무겁고 응축되었다. 소매 속의 마도(魔道) 미혹(迷雾) 인장이 희미하게 열기를 발하며, 그 안의 Tianji Record 기운과 공명했다. 그는 잔편(残页)을 펼쳐보니, 위의 화면이果然了几分清晰했지만——Chen Nian에 관한 부분은 여전히一片 희미한 물결에 불과했다. 그는 잔편(残页)을 꽉 쥐었고, 손가락 마디가 새하얗게 질렸다. Chen Nian, 조금만 기다려라, 형(兄)이 반드시 너를 찾겠다. 밤색이 짙고 칠흑같아, 멀리 Tianqing Sect의 등불이 아른거렸다. 새로운 Chess Game은 이미 은밀히 펼쳐졌다."
+      }
+    }
+  ]
+}

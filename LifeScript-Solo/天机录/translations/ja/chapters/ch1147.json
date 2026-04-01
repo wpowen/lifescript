@@ -1,0 +1,1611 @@
+{
+  "id": "天机录_ch1147",
+  "book_id": "天机录",
+  "number": 1147,
+  "title": "双子決戦",
+  "is_paid": true,
+  "next_chapter_hook": "陳霊の姿が透け始め、Chen Jiを見つめる眼差しには複雑な感情が満ちていた。不捨と決然、そして深い愛が混ざり合った視線だった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1147_001",
+        "content": "虚空の中で、天道之眼の冷笑がまだ消散しない中、Chen Jiは背後から広がる自分を高鳴らせる程の親しみのある気配を感じた。その気配は彼の血脈と共振し、彼のTianji Recordと共鳴し、彼の体内的すべての真气と絡み合っていた——それは運命的双子の気配であり、この世で最後に直面したくない存在だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_002",
+        "content": "陳霊が現れた。Chen Jiが想像していた、Tianji Recordに依存した曖昧な幻影とは異なり、彼女は完全な形体を持っていた。虚空の中で無風でも揺れる素白のドレスをまとい、Chen Jiと七分類似しながらもより柔和な顔立ちで，眉心部に金の紋様がぼんやりと現れていた，那是天道之眼侵蚀过的痕迹。純粋な金の瞳には瞳孔がなく，仿佛能看穿一切因果。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_003",
+        "character_id": "char_chenian",
+        "content": "兄上、私を待たせすぎました。",
+        "emotion": "平静中带着压抑的悲伤"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_003_result_1",
+            "content": "彼女の声音は穏やかに水を湛えるようだったが、Chen Jiの心臓を締め付けた。彼は思わず半歩後退し、手の中のTianji Record残頁が激しく震え、何かを警告しているようだった。",
+            "emphasis": "dramatic"
+          }
+        },
+        {
+          "text": {
+            "id": "天机录_ch1147_003_result_2",
+            "content": "天道之眼が傍らで低く笑い声を上げた：「双子がついに揃った、この芝居もクライマックスに違いない。Chen Jiよ、君は運命の編集から逃れられるとでも思っているのか？陳霊の存在こそ、君のために用意された最後の枷だ。」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_003_choice_a",
+          "text": "強制融合",
+          "description": "陳霊の力を強制的に呑み込み，以此突破天道之眼の封鎖するが，这意味着抹殺她的獨立意識。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "陳霊の独立した意識は完全に消滅する",
+          "visible_reward": "完全なTianji Recordのすべての力を獲得し、Heavenly Fate値が瞬時に満タンになる",
+          "risk_hint": "初衷に背き、天道之眼の傀儡と変わりがない",
+          "process_label": "融合",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": 100
+            },
+            {
+              "stat": "黑化值",
+              "delta": 30
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": -50
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "forced_fusion"
+          ],
+          "memory_label": "陈机选择了强行融合，陈灵的存在将被抹杀"
+        },
+        {
+          "id": "天机录_ch1147_003_choice_b",
+          "text": "独立を尊重する",
+          "description": "陳霊を独立した存在としての価値を認め、彼女と対等に扱い、共に天道之眼に対抗する。",
+          "satisfaction_type": "延迟爽",
+          "visible_cost": "融合による力の飛躍を失い、戦闘はさらに厳しくなる",
+          "visible_reward": "運命的双子の共鳴力を獲得し、二人の力は重ね合わせ可能だが独立を保つ",
+          "risk_hint": "天道之眼はこれを利用分化させる可能性がある",
+          "process_label": "共存",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": 20
+            },
+            {
+              "stat": "谋略",
+              "delta": 5
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 50
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "mutual_respect"
+          ],
+          "memory_label": "陈机尊重陈灵的存在，两人的羁绊将更加深厚"
+        },
+        {
+          "id": "天机录_ch1147_003_choice_c",
+          "text": "完全な分離",
+          "description": "陳霊をこの因果から押し出し、彼女が運命の絡みから完全に脱却できるようにする，但代价是失去所有共鳴の可能性。",
+          "satisfaction_type": "情感爽",
+          "visible_cost": "双子の共鳴を失い、同時に陳霊は永遠にあなたの存在を感じ取れなくなる",
+          "visible_reward": "天道との最後の糸を完全に断ち切り、真の自由意志を獲得する",
+          "risk_hint": "陳霊は因此彻底消散于天地之间",
+          "process_label": "放手",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": -50
+            },
+            {
+              "stat": "名望",
+              "delta": 10
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "敬畏",
+              "delta": 40
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "complete_separation"
+          ],
+          "memory_label": "陈机选择放手，陈灵将获得解脱但两人再无羁绊"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_004",
+        "content": "Chen JiはTianji Record残頁を強く握り締め、脑海中飞速闪过无数念头。強制融合により天道之眼を瞬時に圧倒する力を得られるが、那样做与被他嗤之以鼻的那些傀儡有什么区别？独立を尊重することが正解だが、この生死の关头において、分離こそが两人が生き延びる唯一の道かもしれない——陳霊が不再与他产生联系，天道之眼便失去理由追杀她。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "どうした？まだ迷っているのか？天道之眼的声音带着嘲弄：「哀れな双子の쌍よ、お前たちはただの駒に過ぎない。どのような選択をしようとも、結末は早已定められている。陳霊は消え、あなたは新たな傀儡となり、そしてTianji Recordは再び私の支配下に返るのだ。」",
+        "emotion": "傲慢"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_005_result_1",
+            "content": "陳霊は小さく首を横に振り、金の双眸で天道之眼を真っ直ぐに見据え、穏やかだが不容置疑の力を帯びた声で言った：「天道之眼よ、違う。私は兄上と異なる、私は観測者によって創造された存在であり、Tianji Recordの付属物ではない。私が彼と同源でありながら独立だからこそ、お前永远看不到的东西——那就是命运之外的可能性——を見ることができるのだ。」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "styleChoice",
+      "choices": [
+        {
+          "id": "天机录_ch1147_005_choice_a",
+          "text": "「天道之眼を冷たく皮肉で返り討ちする」",
+          "description": "「万年挣扎しているのはお前のたわごとを聞くためだと思うな？すまないが、お前がそう言うのもすでに計算済みだ」言葉で最も加点し相手の傲慢を突き破る。",
+          "satisfaction_type": "嘴毒打脸",
+          "visible_cost": "天道之眼を激怒させることで、より激しい攻撃を招く可能性がある",
+          "visible_reward": "相手の気勢を打ち砕き、Chen Lingに决意を見せる",
+          "risk_hint": "相手は前もって攻撃を发动する可能性がある",
+          "process_label": "唇枪舌剑",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 3
+            },
+            {
+              "stat": "名望",
+              "delta": 5
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 20
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "verbal_attack"
+          ],
+          "memory_label": "陈机以言语反击，展现不屈意志"
+        },
+        {
+          "id": "天机录_ch1147_005_choice_b",
+          "text": "沈黙して局势を観察する",
+          "description": "天道之眼の挑発を無視し、全注意力をChen Lingに集中させ、彼女の力の本质を観察する",
+          "satisfaction_type": "扮猪吃虎",
+          "visible_cost": "反撃のチャンスを逃す可能性がある",
+          "visible_reward": "Chen Lingの能力をさらに深く理解し、意思決定の根拠を提供する",
+          "risk_hint": "天道之眼はそれを臆病と誤解する可能性がある",
+          "process_label": "静观其变",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 5
+            },
+            {
+              "stat": "天命值",
+              "delta": -5
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 10
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "silent_observation"
+          ],
+          "memory_label": "陈机选择沉默观察，寻找破局关键"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_006",
+        "content": "Chen JiはChen Lingがあの言葉を口にした瞬间、天道之眼の瞳が微かに縮まることに気づいた——それは億万年未曾有の感情の波动である。観測者の独立存在は、明らかにその予想を超えていた。さらにChen Jiを驚かせたのは、Chen Lingの周囲の空間が微妙な変化を起こしていることだった：三条のほのかに見える光帯が彼女の内側から伸び出し、三个截然不同的方向を向き、各光帯は全て未来の可能性があることを表している。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_007",
+        "content": "第一条の光帯は温かい金光を放ち、Chen Jiと彼女を繋いでいる——那是自由之路、二人保持独立で共に天道の封鎖を突破する；第二条の光帯は暗い墨のように暗く、Chen Lingと天道之眼を繋いでいる——那是取代之路、Chen LingがChen Jiに取って代わり新たな観測者となる；第三条の光帯は不吉な銀白色で、虚空の奥深くを繋いでいる——那是同帰之路、二人が同時に消散し因果ネットワークを完全に崩壊させる。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_008",
+        "character_id": "char_chenian",
+        "content": "「兄者、あなたは見えますか？この三つの道は私が全力を尽くして初めて示せる真相です」Chen Lingの声には一丝の疲労が帯びている：「天道之眼の言った通り、私は確かにあなたのための鞍 но 鞍でも鍵になれる。选择権はあなたの手にあり、私が何を選んでも受け入れます」",
+        "emotion": "决绝中带着不舍"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_008_result_1",
+            "content": "彼女の視線がChen Jiに向けられ、その金の瞳に突然水の幕が寄せられた：「消えたくないです、兄者。この万年、運命の狭間で一人で生きてきた私を唯一支えたのは、あなたと会う日を夢見たことです。しかし私の存在があなたの负担になるなら、私はこうして消散しても構わないとわかっています」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_008_choice_a",
+          "text": "自由之路を選択する",
+          "description": "「没人应该为别人 sacrifice、特に私の血親だ。我们一起打破这天！」とChen Lingと并肩作战する。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "戦闘は極めて艱難になり、重い代償を払う可能性がある",
+          "visible_reward": "Chen Lingと運命共同体を建立し、二人の力は質の変容を生む",
+          "risk_hint": "天道之眼は全力を集中して阻止するだろう",
+          "process_label": "并肩作战",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 80
+            },
+            {
+              "stat": "天命值",
+              "delta": 50
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": 30
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "好感",
+              "delta": 40
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "freedom_path"
+          ],
+          "memory_label": "陈机与陈灵选择共同命运，踏上自由之路"
+        },
+        {
+          "id": "天机录_ch1147_008_choice_b",
+          "text": "同帰之路を選択する",
+          "description": "「不如让你独自承受，不如我们一起解脱。也许这才是打破因果的唯一方法」",
+          "satisfaction_type": "延迟爽",
+          "visible_cost": "二人は天地の間に同時に消散する可能性がある",
+          "visible_reward": "天道之眼の因果ネットワークへの統制を完全に断ち切る",
+          "risk_hint": "これは最も极端な選択であり、結果は予見できない",
+          "process_label": "共赴深渊",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": -30
+            },
+            {
+              "stat": "黑化值",
+              "delta": 15
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 50
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "mutual_destruction_path"
+          ],
+          "memory_label": "陈机选择与陈灵共同面对未知命运"
+        },
+        {
+          "id": "天机录_ch1147_008_choice_c",
+          "text": "取代之路を選択する",
+          "description": "「陳霊、私があなたのために犠牲になることはできない。誰かが傀儡にならなければならないなら、私がなる。あなたは行くのだ。」",
+          "satisfaction_type": "情感爽",
+          "visible_cost": "陳霊は陳機に変わり、新たな観測者となり、すべての記憶を失う",
+          "visible_reward": "陳霊は真の自由意志を獲得し、陳機の最終的な救済が完成する",
+          "risk_hint": "陳機は完全に天道之眼の傀儡となる",
+          "process_label": "自我牺牲",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": -100
+            },
+            {
+              "stat": "名望",
+              "delta": 30
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "敬畏",
+              "delta": 60
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "replacement_path"
+          ],
+          "memory_label": "陈机选择牺牲自己，让陈灵获得解脱"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_009",
+        "content": "その時、天道之眼は突然天地を滅ぼすばかりの威圧を吐き出した。三本の光帯はその圧力に激しく震え，随时崩溃しようとしていた。「够了！」その声は萬雷同時に鳴り響くようだった：「本座にはお前たちの无聊な兄妹の情深的劇を見る時間がない。お前たちが何を選ぼうと、今日必ず決着をつけねばならぬ！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_010",
+        "content": "陳機は山の如き威圧を感じ、体内の真気が運行し始めた。天機録残頁の文字が歪み、曖昧になっていった。彼は歯を食いしばり、心の中で素早く計算した：天道之眼は焦っている、そして恐れている。陳霊が示した可能性、運命の外の可能性などを恐れている。つまり彼がどの道を選ぼうと、成功の機会があるということだ──鍵はそれが反応する前に選択を完了することにある。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「陳機、本座最後にお前たちに機会を与える。」天道之眼の声が突然氷のように冷たくなった：「陳霊と自発的に融合し、真の観測者となれ。そうすれば本座は死不届とする。否则、お前たち二人はこの因果の网络中彻底消散し、輪廻の機会さえなくなる！」",
+        "emotion": "威逼"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_011_result_1",
+            "content": "陳機を聞いて、彼の口元には逆に冷笑が浮かんだ。彼はゆっくりと顔を上げ、あの天穹に横たわる巨大な眼眸を真っ直ぐ見つめた：「万年布局、億万年計算の結果，居然是你恳求我主动就範？天道之眼、お前がこうしてこそ、確かめた──お前は恐れているのだ。」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_011_choice_a",
+          "text": "嘲笑で応じ、自由之道を選ぶ",
+          "description": "「我陳機、何時お前を恐れたことがある？陳霊、我々は自分たちの道を歩くぞ！」率先して攻撃し、無理に自由之道を開いた。",
+          "satisfaction_type": "碾压爽",
+          "visible_cost": "天道之眼に重傷を負わされる可能性がある",
+          "visible_reward": "運命の枷鎖を完全に打ち破る可能性が大きく増える",
+          "risk_hint": "天道之眼の全力反撃に立ち向かうことになる",
+          "process_label": "破局",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 30
+            },
+            {
+              "stat": "谋略",
+              "delta": 10
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 50
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "freedom_chosen"
+          ],
+          "memory_label": "陈机嘲讽天道之眼并选择自由之路"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_012",
+        "content": "陳霊は陳機の言葉を聞き，眼中闪过一丝惊喜。彼女は手を伸ばし，金色の光が掌から湧き上がり，陳機体内的天機録の力与其共鳴した。二つの力が交錯し，一道璀璨的光柱を形成し直に雲を衝いた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_013",
+        "content": "天道之眼は怒号一声，巨大な瞳孔から漆黒の因果の矢を放射し，直に陳機へと向けた。その矢には星辰を滅ぼすほどの力が秘められ，天道之眼の最後の奥義だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_014",
+        "character_id": "char_chenian",
+        "content": "「兄さん，接住我！」陳霊大声で叫び，整个人化作一道流光，没入了陳機体内的天機録之中。二つの力が瞬時に融合し，陳機の周身から前所未有的光芒が爆発的に放たれ、その光の中には観測者の洞察、被観測者の自由、そして運命の外の可能性がある。",
+        "emotion": "激昂"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_014_result_1",
+            "content": "因果の矢があの光に衝突したが，天道之眼が予期したように陳機を滅ぼすことはなかった。光に层层分解され，无数の小さな光点に分かれ、虚空の中に消散した。天道之眼は初めて震惊的神色を露わにした：「これは不可能だ！観測者と被観測者が融合できるはずがない！これは因果の基本法則に反する！」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "styleChoice",
+      "choices": [
+        {
+          "id": "天机录_ch1147_014_choice_a",
+          "text": "攻撃を正面から受け止める",
+          "description": "「規則？因果？お前らはこれが私を縛れると思っているのか？」絶対的な 힘で相手の攻撃を粉砕し、王者の風格を見せる。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "大量の天命値を消費する",
+          "visible_reward": "天道之眼の心理的防線を完全に打ち破る",
+          "risk_hint": "そのため力を透支する可能性がある",
+          "process_label": "正面对决",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 50
+            },
+            {
+              "stat": "天命值",
+              "delta": -30
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "direct_confrontation"
+          ],
+          "memory_label": "陈机选择正面对抗，展现绝对力量"
+        },
+        {
+          "id": "天机录_ch1147_014_choice_b",
+          "text": "身を避けて反撃する",
+          "description": "「お前は一切を計算しても、人が変わることは計算できないのだ。」身を避けることで反撃の機会を作り，对方を不意打ちする。",
+          "satisfaction_type": "扮猪吃虎",
+          "visible_cost": "相手に攻撃の隙間を与える可能性がある",
+          "visible_reward": "反撃効果が倍増し、相手に実質的なダメージを与える",
+          "risk_hint": "正確なタイミングの把握が必要である",
+          "process_label": "后发制人",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 15
+            },
+            {
+              "stat": "战力",
+              "delta": 20
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 20
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "counter_attack"
+          ],
+          "memory_label": "陈机选择闪避反击，以智取胜"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_015",
+        "content": "陳Jiは体内で湧き上がる力を感受到した。それは陳Lingとの融合後に生まれた新たなエネルギーだった。それは単なる天機Recordの力でもなく、陳Lingの観測者の力でもなく、両者が完璧に融合して生まれた第三の可能性——因果を超えた可能性だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_016",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「いや……これは不可能だ！」天Dao之眼の声音に初めて恐怖が滲んだ：「本座は億万年もの歳月をかけて布石し、無数の紀元の盛衰を操ってきた，怎么可能输给区区一个人类？输给一对被本座亲手制造的双生子？」巨大な瞳孔が狂ったように转动し、陳Jiの因果の糸を再びロックオンしようとしたが、その糸は既に全て消えていた。",
+        "emotion": "惊恐"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_016_result_1",
+            "content": "陳Jiは虚空に浮かび、周身には金銀が交织する光が取り巻いていた。彼の声が穏やかだが拒絶できない威厳を帯びていた：「天Dao之眼、君は致命的な過ちを犯した——運命を一成不变の脚本と見なしている。だが脚本であっても、俳優が必要だということを忘れている。そして俳優には意志がある」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_016_choice_a",
+          "text": "勝に乗じて追撃し、完全に破壊する",
+          "description": "「因果を既に打ち破ったのだから、億万年もの陰謀を終わらせるぞ！」最强の一撃を放つ。",
+          "satisfaction_type": "碾压爽",
+          "visible_cost": "全ての力を消耗する可能性がある",
+          "visible_reward": "天Dao之眼を完全に消滅させ、すべての因果を終結させる",
+          "risk_hint": "天Dao之眼は裏の手を持っている可能性がある",
+          "process_label": "终极一击",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 100
+            },
+            {
+              "stat": "天命值",
+              "delta": -50
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 100
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "final_strike"
+          ],
+          "memory_label": "陈机决定发动最终攻击"
+        },
+        {
+          "id": "天机录_ch1147_016_choice_b",
+          "text": "最後の機会を与える",
+          "description": "「天Dao之眼、選択をやる——因果のネットワークから身を引くか、永遠に消えるか。選べ」",
+          "satisfaction_type": "延迟爽",
+          "visible_cost": "相手に息をつく隙を与える可能性がある",
+          "visible_reward": "王者の気位を示し、相手の最後の抵抗意志を瓦解させる",
+          "risk_hint": "相手はこの隙に回復利用来日来るかもしれない",
+          "process_label": "仁至义尽",
+          "stat_effects": [
+            {
+              "stat": "名望",
+              "delta": 30
+            },
+            {
+              "stat": "谋略",
+              "delta": 10
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "last_chance"
+          ],
+          "memory_label": "陈机选择给天道之眼最后机会"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_017",
+        "content": "この時、陳Lingの声が陳Jiの脑海中に響き、わずかな迷いを帯びていた：「兄上、私にはまだあの三つの道を感受到。它们は消えてはおらず、新しい存在の中に溶け込んでいる。这意味着，无论你现在做出什么選択，都有退路——或者说，不再受限于单一的选择」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_018",
+        "content": "陳Jiの心が揺さぶられた。陳Lingの言葉が真実であることが感受到できた——融合後の彼らは確かに複数の可能性保持着，这种多重性本身就是对天Dao之眼最大的威胁，因为它只能算计确定的未来，而他们却拥",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_019",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「陳Ji！」天Dao之眼の声が再び響き、今度は诡异な平静を帯びていた：「勝ったと思ったのか？融合すれば本座の支配から逃げられると思ったのか？言うぞ、お前たちが融合した瞬間、因果のネットワークに新たな痕跡が刻まれている。本座確かに完全にロックオンできないが、本座には……」瞳孔が猛然と縮んだ：「本座は陳Lingをロックオンできる！」",
+        "emotion": "疯狂"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_019_result_1",
+            "content": "陳Jiは瞬間的に天Dao之眼の意図を理解した。融合後の自分をロックオンできないが、陳Lingをロックオンできる——独立した存在として創造された観測者である。陳Lingが存在する限り、彼女を通じて因果を辿り、陳Jiを対抗する方法を見つけられる。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_019_choice_a",
+          "text": "陳Lingを独立させる",
+          "description": "「陳Ling、出て来い。融合は良いが、お前が永遠にロックオンされるわけにはいかない」融合を主动的に解除し、陳Lingを保護する。",
+          "satisfaction_type": "情感爽",
+          "visible_cost": "融合による力の增幅を失う",
+          "visible_reward": "陳Lingは真の独立を獲得し、天Dao之眼は唯一の弱点を失う",
+          "risk_hint": "天Dao之眼はこの機会に乗じて反撃する可能性がある",
+          "process_label": "放手守护",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": -20
+            },
+            {
+              "stat": "名望",
+              "delta": 20
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 50
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "protect_chenling"
+          ],
+          "memory_label": "陈机为保护陈灵选择解除融合"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_020",
+        "content": "陳Lingは陳Jiの意図を感受到し、融合の中で急切に言った：「兄上、やめて！やっとあなたと並肩できたのに、なぜ諦めるの？」彼女の声には理解できないさと焦りが滲んでいた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_021",
+        "character_id": "char_chenji",
+        "content": "陳機が心の中で優しく答えた。「諦めたんじゃない、陳霊。君を真に自由にするためだ」。彼は能動的に融合状態を分解し始め、陳霊の存在をそこから切り離していった。",
+        "emotion": "决绝中带着温柔"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_021_result_1",
+            "content": "陳霊の身体は陳機の体内から次第に分離していった。しかし今度こそ、彼女は曖昧な光影ではなく、完全で独立した生命体となっていた。さらに陳機を驚かせたのは、分離後の陳霊的身上、金色の光が以前よりも耀かしくなっていたこと——それは自由意志の光であり、運命之外的の可能性が彼女の中で芽生えた証だった。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_021_choice_a",
+          "text": "陳霊を戦場から離す",
+          "description": "「陳霊、行け！ここから離れ、天道之眼が 찾지 못하는場所へ行け！」危険から彼女を解き放つ。",
+          "satisfaction_type": "延迟爽",
+          "visible_cost": "陳霊が未知の運命に一人で立ち向かう",
+          "visible_reward": "二人は因果の外で真の自由を手に入れた",
+          "risk_hint": "陳霊が他の危険に見舞われる可能性がある",
+          "process_label": "诀别",
+          "stat_effects": [
+            {
+              "stat": "天命值",
+              "delta": 10
+            },
+            {
+              "stat": "名望",
+              "delta": 15
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 60
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": -40
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "send_away"
+          ],
+          "memory_label": "陈机让陈灵离开，保护她的自由"
+        },
+        {
+          "id": "天机录_ch1147_021_choice_b",
+          "text": "最後まで並んで戦う",
+          "description": "「自由を得たのなら、一緒にすべてを終わらせよう！」陳霊と共に天道之眼に立ち向かう。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "二人の運命再び緊密に結ばれる",
+          "visible_reward": "联手の力は融合状態を大幅に超える",
+          "risk_hint": "天道之眼は陳霊に集中攻撃を仕掛けてくる",
+          "process_label": "并肩",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 60
+            },
+            {
+              "stat": "天命值",
+              "delta": 20
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "好感",
+              "delta": 40
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": 40
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "fight_together"
+          ],
+          "memory_label": "陈机与陈灵并肩作战"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_022",
+        "content": "天道之眼はこれを見て、怒りに咆哮を上げた。「愚か者め！これで逃げられると思ったか？教えてやる、陳霊がこの宇宙に存在する限り、本座は決して追撃を諦めない！今日彼女を逃がせば、いずれ彼女は君たち最大の弱みとなる！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_023",
+        "content": "陳機の冷たい視線が激しく转动する大きな目に向けられた。嘴角に譏りの微笑みを浮かべた。「そうか？ならば来い。だが、その前に一つ言っておく——陳霊是我们的软肋，却不知道她现在是我最大の底气だ。彼女がいる限り、君の因果ネットワークは決して完全にはなり得ない。そして不完全な因果は、君にとってどんな敵よりも恐ろしい」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_024",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「陳霊」陳機が妹に向き直り、声が静かながらも確かなものとなった。「行け。属于自己的未来を探しに行け。天道之眼は君を追えない、なぜなら君は彼が計算できない変数だからだ」。",
+        "emotion": "平静中带着深沉的关爱"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_024_result_1",
+            "content": "陳霊の目元は紅潮していたが、彼女は泣かなかった。深く息を吸い込み、陳機に向かって深く頭を下げた。「兄者、待っていてください。天道之眼を対抗する方法を見つけ、必ずあなたを探しに戻ります」。顔を上げると、黄金色の瞳には涙と希望が交织する光が辉いていた。「この世であなたと认め合えたこと、もう満足です」。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_024_choice_a",
+          "text": "彼女に信物を渡す",
+          "description": "「これを持て」最も貴重な物品を陳霊に渡し、二人の絆の証とする。",
+          "satisfaction_type": "情感爽",
+          "visible_cost": "重要な宝物を失う",
+          "visible_reward": "陳霊が关键时刻に陳機に連絡できる方法を獲得する",
+          "risk_hint": "天道之眼に追跡される可能性がある",
+          "process_label": "信物",
+          "stat_effects": [
+            {
+              "stat": "财富",
+              "delta": -30
+            },
+            {
+              "stat": "名望",
+              "delta": 10
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 50
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "give_token"
+          ],
+          "memory_label": "陈机送给陈灵信物，两人羁绊加深"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_025",
+        "content": "陳機が腰間から天機録残頁を解いた。それは長年にわたる彼の最も大切な依怙だった。彼は残頁を陳霊に差し出した。「持て。虽然你已经独立しているが、天機録に記載された因果律は君仍有参考价值だ。そして……」彼の嘴角がわずかに上扬した。「もし解決できない危険に遭ったら、それを 활성화すれば，我能感应到」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_026",
+        "content": "陳霊は震える两手を受け取り、finally涙が溢れ出た。「兄者、これはあなたにとってあまりに重要です。私は——」陳機が遮った：「君は私よりも重要だ」。たった五文字だったが、その重みは泰山のようだった。陳霊は残頁を胸に紧紧当て、泣きじゃくった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_027",
+        "character_id": "char_tiandaozhiyan",
+        "content": "天道之眼は冷たく这一幕を見つめ，突然刺耳な笑い声を上げた。「なんとも感動的な場面だ。だが、本座はすでに陳霊の因果印をロックした。どこへ逃げても、本座は彼女を見つけられる。陳機、彼女を逃がせば守れると思ったのか？天真だ！」",
+        "emotion": "阴冷"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_027_result_1",
+            "content": "陳機の表情は慌てなかった。彼は天道之眼に向かって转身し、直視した。「ロック？ならばちょうどいい」。彼の目に狡贤な光が闪烁した。「君が彼女をロック的同时、彼女も君をロックしている。陳霊は観測者であり、君の因果ネットワークの入口を見ることができる。今彼女は君の位置を知った——さて、彼女がその位置反抗したい人々にすべて教えるだろうか？」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "styleChoice",
+      "choices": [
+        {
+          "id": "天机录_ch1147_027_choice_a",
+          "text": "計画の詳細を補充する",
+          "description": "「単に伝えるだけではない、彼女自身が案内する。天道の眼よ、お前の命運は尽きた」全面的な布局を示す。",
+          "satisfaction_type": "阴谋爽",
+          "visible_cost": "計画の一部を暴露した",
+          "visible_reward": "天道の眼の心理的防壁を完全に崩壊させた",
+          "risk_hint": "他の勢力の垂涎を招く可能性がある",
+          "process_label": "全局布局",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 20
+            },
+            {
+              "stat": "名望",
+              "delta": 25
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "reveal_plan"
+          ],
+          "memory_label": "陈机透露完整计划，展现算无遗策"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_028",
+        "content": "天道の眼の瞳孔が大きく収縮し、始めてこれまで軽蔑していたこの人間を真正面から見つめた。Chen JiはChen Lingを守っていたのではなく、彼女を囮として使い、すべての敵の視界の中に完全に晒していたのだ。この瞬間、億年の歳月をかけて操ろうとしていた駒が、すでに自分が計り知れない存在に成長していることをようやく悟った。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_029",
+        "character_id": "char_chenian",
+        "content": "「兄上」Chen Lingは涙を拭い、眼中で断固たる光芒が闪烁した。「分かりました。自由のためではなく、それを刺す刃になるため、私は生き延びます」最後にChen Jiを一瞥し、虚空へと踏み出し、金色の身影は因果のネットワークの外へ次第に消散していった。",
+        "emotion": "决然"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_029_result_1",
+            "content": "Chen Jiは妹が消えた方向を見つめ、胸中に複雑な感情が湧き上がった。今日の別れれば、次回の再会はいつのことか分からない。しかし、彼には分かっていた。Chen Lingの離別は終わりではなく、もっと大きな碁盤の始まりなのだと。そして彼はこの碁局の中で、子を打ち子を防ぎ，直至上、天道の支配を完全に覆すまで続けるのだ。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_029_choice_a",
+          "text": "振り返って天道の眼に向かう",
+          "description": "「さて、今度はお前の番だ」天道の眼と最終対決を行う。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "Chen Lingの支援を失い、一人で強敵に立ち向かう",
+          "visible_reward": "天道の眼は完全に激怒し、より多くの破綻を露呈した",
+          "risk_hint": "相手に重傷を負わされる可能性がある",
+          "process_label": "决战",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 40
+            },
+            {
+              "stat": "天命值",
+              "delta": -20
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 50
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "final_battle"
+          ],
+          "memory_label": "陈机送走陈灵后转身面对天道之眼"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_030",
+        "content": "Chen Lingが去った後、虚空の中にChen Jiと天道の眼だけが対峙していた。その巨大な眼眸がゆっくりと转动し、目の前の渺小でありながら危険な人間を吟味していた。「Chen Ji、お前は私が思ったより手ごわかった」その声は以前の傲慢さではなく、几分かの吟味に似た凝重さ带びていた，「だが、これで終わりだと思うのか？教えてやる、Chen Lingの存在は確かに本座の因果ネットワークに亀裂を生じさせたが、その亀裂を修復する時間は本座には十分にある」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_031",
+        "content": "Chen Jiは手を背に組み、周身の声勢は衰えることなく逆に増していた。彼が天道の眼を見つめ、口元に淡い弧を描くと：「修復？勝手にしろ。だが、お前が修復を完成させる前に、お前に教えてやる──運命に束縛されない観測者が、お前には想像できないことを 얼마나できるかを」彼は手を挙げ、Tianji Recordの残頁が掌に浮かび、淡い光芒を发放していた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_032",
+        "content": "「この一戦を、私は長い間待っていた」Chen Jiはゆっくりと口を開き、声音は静かでありながら容赦ない锋芒を帯びていた，「私がTianqing Sectで雑役弟子であった日から、私が最初の欠けたTianji Recordの一頁を手に入れた時から、私はこの日を待っていた──お前が自ら私の前に姿を現すのを待ち、私が機会を得てお前のいわゆる揺るぎない因果法則を自らの手で打ち破るのを待つ、と」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_033",
+        "content": "天道の眼はしばらく黙り、巨大な瞳孔の中で複雑な光芒が闪いた。億年の間、無数の人々がその前で恐怖し、絶望し、土下座して懇願した。しかし、Chen Jiのように、死ぬと分かっている状況でなお这般の従容を保てる者はかつていなかった。それは初めて、自分が亲手で作り出した駒に対して真の重視を抱いた瞬間だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_034",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「Chen Ji、本座は認める、お前は本座を驚かせた」天道の眼の声には珍しい真摰さが带びていた，「だが、お前はChen Ling一人、お前がTianji Recordで学んだほんの少しの未来を覗く能力だけで、本座に対抗できると思うのか？お前は余りにも甘い。本座は数十億年存在し、無数の紀元の更迭を経験し、数多くの天才の崛起と衰退を見守ってきた。お前は、又一つの落ちゆく流れ星に過ぎない」",
+        "emotion": "傲慢中带着警惕"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_034_result_1",
+            "content": "Chen Jiはそれを聞いて、怒るどころか、むしろ笑った。その笑みが天道の眼に一阵の莫名の不安を感じさせた。「流れ星？」彼は穏やかに繰り返すと、首を振った，「いや、天道の眼、お前は間違っている。私は流れ星ではない──私は草原に火をつけるその一点の火星だ。今日より、天道が永遠と呼ぶ因果は、私の炎の中で灰と化すのだ」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_034_choice_a",
+          "text": "攻撃を発動する",
+          "description": "二度と余計なことは言わず、直接Tianji Recordの力で攻撃を発動し、天道の眼の真の実力を試す。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "自分の一部の底牌を暴露する",
+          "visible_reward": "天道の眼の应对方式を试探で突き止める",
+          "risk_hint": "激しい反撃を受ける可能性がある",
+          "process_label": "先发制人",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 30
+            },
+            {
+              "stat": "天命值",
+              "delta": -15
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "initiate_attack"
+          ],
+          "memory_label": "陈机选择主动进攻，试探天道之眼实力"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_035",
+        "content": "言葉は終わるより先もなく、Chen Jiはすでに動いていた。その身が一闪し、瞬時に天道の眼の真上に現れ、手の中のTianji Record残頁が刺すような輝きを放った。無数の因果の糸が残頁から激しく射出され、一枚の巨網のように天道の眼へと覆いかぶさっていった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_036",
+        "content": "那些因果丝线是陈Ji这些年精心编织的底牌之一——他一直在暗中收集因果，编织属于自己的因果之网。原本这是他为对抗Ling Yuan等人准备的后手，如今提前动用，足以说明他对这一战的重视。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_037",
+        "character_id": "char_tiandaozhiyan",
+        "content": "天道之眼冷哼一声，瞳孔中射出一道因果之刃，将那些丝线尽数斩断。「雕虫小技！」它的声音中满是不屑，「你以为本座会怕你这点从残页中剽窃来的皮毛？告诉你，真正的因果之力，不是你这种蝼蚁能够触及的！」",
+        "emotion": "傲慢"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_037_result_1",
+            "content": "陈Ji嘴角的笑意更深了。被斩断的因果丝线并没有消散，而是如同活物般缠绕上天道之眼释放的因果之刃，将其层层包裹。更诡异的是，那些丝线开始反向追溯因果之刃的来源，顺着那条来源逆流而上，直扑天道之眼的本体！",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_037_choice_a",
+          "text": "乗勝追击",
+          "description": "「这只是开始！」加大输出，试图一举突破天道之眼的防御。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "大量の天命値を消耗",
+          "visible_reward": "天道之眼に实质的なダメージを与える可能性がある",
+          "risk_hint": "相手の罠にかかる可能性がある",
+          "process_label": "乘胜",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 40
+            },
+            {
+              "stat": "天命值",
+              "delta": -25
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 20
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "press_attack"
+          ],
+          "memory_label": "陈机选择乘胜追击"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_038",
+        "content": "天道之眼显然没料到陈Ji还有这样的手段。它的瞳孔剧烈收缩，巨大的眼眸周围涌起一圈黑色的因果之力，试图阻挡那些追溯而来的丝线。然而陈Ji的因果之网与众不同——它不是来源于天道，而是来源于陈Ji自己的领悟，是真正属于他自己的因果之力。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_039",
+        "content": "几条丝线成功穿透了天道之眼的防御，刺入了它的因果网络之中。天道之眼发出一声痛苦的嘶吼，那声音不再是之前那般高高在上，而是带上了真正的愤怒与……一丝恐惧？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_040",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「你竟敢……竟敢染指本座的因果本源！」天道之眼的声音变得狰狞，「陈Ji，你知道你在做什么吗？你在触碰这个宇宙最禁忌的领域！因果本源一旦被污染，整个宇宙的运行都会出问题！」",
+        "emotion": "惊恐"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_040_result_1",
+            "content": "陈Ji不为所动，冷声道：「那又如何？你布局亿万年，让无数人为你的因果网络牺牲，可曾想过他们也是这宇宙的一部分？今日，我就要让你尝尝被自己编织的因果反噬的滋味！」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "styleChoice",
+      "choices": [
+        {
+          "id": "天机录_ch1147_040_choice_a",
+          "text": "汚染の度合いを深める",
+          "description": "「反噬？这正是我要的！」进一步污染天道之眼的因果本源，让它彻底陷入混乱。",
+          "satisfaction_type": "碾压爽",
+          "visible_cost": "宇宙の動揺を引き起こす可能性がある",
+          "visible_reward": "天道之眼の因果网络将彻底崩溃",
+          "risk_hint": "制御不能な結果を引き起こす可能性がある",
+          "process_label": "污染",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 50
+            },
+            {
+              "stat": "黑化值",
+              "delta": 20
+            },
+            {
+              "stat": "天命值",
+              "delta": -30
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 40
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "corruption"
+          ],
+          "memory_label": "陈机选择污染因果本源"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_041",
+        "content": "就在此时，天道之眼突然发生了变化。它不再试图阻挡那些丝线，而是主动将自己的因果本源暴露出来，任由陈Ji的丝线侵入。这个举动出乎陈Ji的意料，让他不得不暂时停止进攻，警惕地观察着对方的变化。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_042",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「陈Ji，你以为本座会怕你？」天道之眼的声音突然变得诡异，「你太年轻了，年轻人。本座让你看看，什么才是真正的因果之力——不是污染，不是侵蚀，而是……融合！」话音刚落，天道之眼的因果本源开始疯狂地吞噬陈Ji的丝线，不仅如此，那些丝线中蕴含的因果信息正在被天道之眼快速解析。",
+        "emotion": "疯狂"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_042_result_1",
+            "content": "陈Ji瞳孔微缩。他意识到天道之眼在做什么——它在用他作为样本，解析属于他自己的因果法则。一旦被它完全解析，他所有的底牌都将暴露在它面前。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_042_choice_a",
+          "text": "果断切断联系",
+          "description": "「好算计，但我不会让你得逞！」立刻斩断与天道之眼的因果连接，保留底牌。",
+          "satisfaction_type": "扮猪吃虎",
+          "visible_cost": "错失扩大战果的机会",
+          "visible_reward": "保住自己的因果秘密",
+          "risk_hint": "天道之眼可能趁机反击",
+          "process_label": "止损",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 15
+            },
+            {
+              "stat": "天命值",
+              "delta": -10
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 10
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "cut_connection"
+          ],
+          "memory_label": "陈机选择切断联系，保护自己的秘密"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_043",
+        "content": "陳機に迷いはなかった。一念の差で、天道の眼に繋がる因果の糸は瞬時に崩壊し、虚空に星の光の如く消散した。彼は自らの因果法則が相手に完全に解析されることを拒み、この攻撃の機会を放棄した。彼の这种谨慎，是他能在天青宗 Servant Disciple の位置上活到今天的根本であった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_044",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「ほう？逃げたか？」天道の眼は意味深き笑いを漏らし、「お前が本座の予想以上に時勢を読むことができるとはな。確かに本座が選んだ駒だけのことはある。だが、因果の繋がりを断ったからと言って、本座が手出しできないと思うな。因果のネットワークは一度繋がれば、時空に痕跡を残す。本座はそれを辿れば、お前の巣穴——天青宗を見つけられるぞ」",
+        "emotion": "阴险"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_044_result_1",
+            "content": "陳機の面色が微かに変わった。天青宗は天下に布局する彼の根本であり、もし天道の眼に見つけられれば、后果不堪设想。だが彼はすぐに平静を保ち出した、なぜなら彼は既に这种情况を予見していた——天青宗は既に天道の眼永遠に見つけられない場所に转移되어いた。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_044_choice_a",
+          "text": "对手の情報滞后を嘲る",
+          "description": "「天青宗？まさかまだそこにいると思うか？教えてやる、天下は早くも私の掌握之中だ」布局の深さを示す",
+          "satisfaction_type": "扮猪吃虎",
+          "visible_cost": "自らの支配する勢力範囲を暴露する",
+          "visible_reward": "天道の眼の自信を打击する",
+          "risk_hint": "更多の弱点を暴露する可能性",
+          "process_label": "反讽",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 20
+            },
+            {
+              "stat": "名望",
+              "delta": 15
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 20
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "mock_enemy"
+          ],
+          "memory_label": "陈机嘲讽天道之眼，展现深谋远虑"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_045",
+        "content": "陳機は手を背に組んで立ち、口元に嘲りの弧を浮かべた：「天道の眼、お前は私が天青宗にいると思うか？それは十年前の布局だ。教えてやる、天青宗の山門は私が独立した小世界に移転済みだ。そこ因果の座標は私の手で消去した。お前が見つけられるものなら、私の『機』の字を逆さまにしてやる」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_046",
+        "content": "天道の眼は黙った。独立小世界、因果座標消去——这些手段即使是它也需要大量时间才能做到，而这个蟻のような人間が既にこのような後手を構えていたとは。它开始重新评估眼前这个对手的价值。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_047",
+        "content": "「陳機」天道の眼の声が突然極めて平静になり、「本座は主意を変えた。殺すには惜しい、置いておくには危険。唯一の方法はお前を本座の一部にすること——傀儡ではなく、真の融合だ。お前のすべて、智慧也好、謀略也好、因果法則也好、すべてが本座の一部になる」",
+        "emotion": "贪婪"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_047_result_1",
+            "content": "陳機はこの言葉を聞き、思わず哄笑した：「融合？天道の眼、冗談を言っているのか？お前が私を融合したいなら、私も融合したいものだ！だが私の融合は、お前を完全に吞噬し、私の巅峰登りの足場にすることだ！」彼の眼には野心の光が闪烁，那是比天道の眼更加疯狂的野心。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "keyDecision",
+      "choices": [
+        {
+          "id": "天机录_ch1147_047_choice_a",
+          "text": "取引条件を提出する",
+          "description": "「融合は交渉できるが、主導権は私手中にある。你我提携し、共真正的因果新時代を切り開こう」",
+          "satisfaction_type": "延迟爽",
+          "visible_cost": "弱さを見せたと見做される可能性",
+          "visible_reward": "喘息的余地を得て、天道の眼真の弱点を窺う机会获得",
+          "risk_hint": "相手に乗じられて布局される可能性",
+          "process_label": "谈判",
+          "stat_effects": [
+            {
+              "stat": "谋略",
+              "delta": 10
+            },
+            {
+              "stat": "天命值",
+              "delta": 5
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": -20
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "negotiate"
+          ],
+          "memory_label": "陈机尝试与天道之眼谈判"
+        },
+        {
+          "id": "天机录_ch1147_047_choice_b",
+          "text": "断固拒絶",
+          "description": "「お前に資格があるか？」直接態度を表明し、戦いを続ける",
+          "satisfaction_type": "直接爽",
+          "visible_cost": " Possibly losing negotiation chips.",
+          "visible_reward": "不屈の意志を示し、更强的戦闘状態を激发する可能性",
+          "risk_hint": "戦闘はさらに激しくなる",
+          "process_label": "拒绝",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 25
+            },
+            {
+              "stat": "名望",
+              "delta": 20
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "reject"
+          ],
+          "memory_label": "陈机断然拒绝天道之眼的提议"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_048",
+        "content": "陳機の声が虚空に満ちた瞬間、陳霊の存在が暗闇から姿を現した。彼女は去ることはなかった——战局を隠れた視点から观察していたのだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_049",
+        "character_id": "char_chenian",
+        "content": "「兄长、私が感知しました！」陳霊の声が虚空から传来，带着一丝欣喜、「天道の眼の因果ネットワークは先の交锋で漏洞出现了——その瞳孔の奥にあるのが核心本源所在！もし 우리가 Combined Attack を起こせば、致命的伤害を与えることができます！」",
+        "emotion": "急切"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_049_result_1",
+            "content": "陳機を聞いて、その眼中精光一闪。彼は天道の眼を見つめ、その瞳孔の奥に確かに察觉しにくい波动があるのを見つけた——那是刚才彼の因果の糸が侵入した後遗症。如果陳霊能够感知到，那就意味着她确实拥有观测者の特殊能力，能够看到他都无法察觉的破綻を见分ける Capability.",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_049_choice_a",
+          "text": "「陳霊の提案を受け入れる」",
+          "description": "「よし！我々が联手する！」兄妹は二人して天道の目の弱点を攻撃した。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "再び陳霊との連絡を確立する必要がある、彼女の位置が露呈するかもしれない",
+          "visible_reward": "天道の目に致命傷を与えるかもしれない",
+          "risk_hint": "天道の目は必死に反撃するだろう",
+          "process_label": "联手",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 60
+            },
+            {
+              "stat": "天命值",
+              "delta": -20
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_chenian",
+              "dimension": "信任",
+              "delta": 40
+            },
+            {
+              "stat": "char_chenian",
+              "dimension": "依赖",
+              "delta": 30
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "team_up"
+          ],
+          "memory_label": "陈机与陈灵联手，共同攻击天道之眼弱点"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_050",
+        "content": "「陳霊、出て来い！」陳Jiは大喝一声し、周囲の真気が鼓動し、虚空の中で一道の亀裂を裂いた。陳霊の姿がその中から飛び出し、黄金色の瞳に揺らぎのない光が輝いていた。兄妹は空中で見つめ合い、言葉 없이도心が通じ合っていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_051",
+        "content": "「自惚れるな！」天道の目は怒吼し、瞳孔から世界を滅ぼす因果の力が迸った。しかし陳Jiと陳霊は同時に動いた——陳Jiが正面から制圧攻撃を加える一方、陳霊は光の流のようにとなって、天道の目の瞳孔の奥へと突進した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_052",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「陳霊！」天道の目は恐怖に見舞われた。陳霊の攻撃軌道は完全にその計算を裏切るものだった——彼女は観測者であり、彼女の存在そのものが因果を否定するものだった。彼女の攻撃は因果の線に沿って進むのではなく、因果のネットワークに直接亀裂を穿ち、その亀裂から突き進み、その本源へと達した。",
+        "emotion": "惊恐"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_052_result_1",
+            "content": "陳霊の手のひらが天道の目の瞳孔を貫き、その最深部の因果本源に触れた。瞬時に黄金色の光が接触点から迸り出し、虚空全体を照らし出した。天道の目は耳をつんざく悲鳴を上げ、巨大な体が激しく歪み、無数の因果の糸がその体内から迸り出て、虚空の中で狂気のごとく舞動した。",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "styleChoice",
+      "choices": [
+        {
+          "id": "天机录_ch1147_052_choice_a",
+          "text": "追撃之势に乗じる",
+          "description": "「今だ！」陳霊に協力し、最後の総攻撃を発動して、天道の目の因果本源を完全に破壊する。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "天道の目の臨死反撃承受の危険がある",
+          "visible_reward": "一気に勝利を奠定できるかもしれない",
+          "risk_hint": "天道の目には共に滅びる手段があるかもしれない",
+          "process_label": "总攻",
+          "stat_effects": [
+            {
+              "stat": "战力",
+              "delta": 80
+            },
+            {
+              "stat": "天命值",
+              "delta": -40
+            }
+          ],
+          "relationship_effects": [
+            {
+              "stat": "char_tiandaozhiyan",
+              "dimension": "敌意",
+              "delta": 50
+            }
+          ],
+          "is_premium": false,
+          "flags_set": [
+            "final_attack"
+          ],
+          "memory_label": "陈机配合陈灵发动总攻"
+        }
+      ]
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_053",
+        "content": "陳Jiは少しも迷うことなく，手中にある天機録残頁は前所未有的な光を放った。彼はすべての因果法則をそこに灌注し、眩い光柱へと化し、陳霊の攻撃と同時に天道の目の本源へと轟かせた。兄妹二人の力があの瞬間 완벽하게融合した——観測者の洞察と被観測者の謀略が交织し、因果本身を超えた全く新しい力を形成した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_054",
+        "content": "「いや……こんなことはありえない！」天道の目の悲鳴には绝望が満ちていた，「因果の外にある力……这种 힘はこの世界に存在するべきではない！本座は許さない！許さないのだ！」しかしどのような嘶きを上げても、その力の侵襲を阻止することはできなかった。黄金色と銀色の光が交织し、看不见る刃のように、億万年をかけて張り巡らせた因果のネットワークを少しずつ切り裂いていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1147_055",
+        "content": "因果ネットワークが崩壊し始めた。宇宙の運行を維持している因果の糸が一本ずつ断裂し、点点の星の光となって虚空の中に消散していく。天道の目の瞳孔が激しく震え、巨大な体が瓦解し始め、無数の破片が四方八方へ飛び散った。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1147_056",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「陳Ji……」天道の目の声は弱々しくなり、怨毒に満ちていた，「これで本座を殺せと思ったのか？本座は因果の化身だ、この宇宙に因果がある限り、本座は真に消滅することはない！今日お前が本座に重伤をつけたなら、将来……将来は必ず百倍で返すぞ！」その声は越来越弱くなり、最後には不甘の咆哮一声、巨大な目はついに完全に崩壊し、漫天の星塵となった。",
+        "emotion": "不甘"
+      },
+      "result_nodes": [
+        {
+          "text": {
+            "id": "天机录_ch1147_056_result_1",
+            "content": "陳Jiと陳霊は虚空の中に浮かび、天道の目が崩解する方向を見つめていた。陳霊は静かに言った：「兄上、あれは死んではおらず、重傷を追って逃げ延びただけです。」陳Jiは頷いた：「わかっている。だが今日之後、その因果ネットワークは完全に我々の視野の中に晒されることになる。もう从前那样に背後で全てを操ることはできぬ。」",
+            "emphasis": "dramatic"
+          }
+        }
+      ],
+      "choice_type": "characterPref",
+      "choices": [
+        {
+          "id": "天机录_ch1147_056_choice_a",
+          "text": "敗退する天道の目を追撃する",
+          "description": "「趁它病、要它命！」追撃を続け、相手が息を継ぐ暇を与えない。",
+          "satisfaction_type": "直接爽",
+          "visible_cost": "相手の待ち伏せにかかるかもしれない",
+          "visible_reward": "天道の目の脅威を完全に终结できるかもしれない"
+        }
+      ]
+    }
+  ]
+}

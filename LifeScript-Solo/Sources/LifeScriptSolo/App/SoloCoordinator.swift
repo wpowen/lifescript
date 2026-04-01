@@ -4,6 +4,7 @@ import SwiftUI
 enum SoloRoute: Hashable {
     case reading(String)
     case volumeGate(String)
+    case chapterBrowser
     case dossier
     case routeMap
     case destinyAtlas

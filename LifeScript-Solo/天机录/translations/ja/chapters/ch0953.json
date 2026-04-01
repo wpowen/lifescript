@@ -1,0 +1,733 @@
+{
+  "id": "天机录_ch0953",
+  "book_id": "天机录",
+  "number": 953,
+  "title": "同盟集結",
+  "is_paid": true,
+  "next_chapter_hook": "Mo Xianshengがゆっくりと手を上げ、残魂が完全な人型へと凝聚していく。その顔は、Chen Jiの記憶の中のどこか曖昧な姿と重なっていた――これが彼がまる八年も隠してきた真実だった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0953_001",
+        "content": "亀殻の奥底から伝わる呼び声がまだ耳元に響いている。その声は――Chen Nian、彼の消息を絶った八年の妹だ。運命はこの瞬間、残酷ないたずらを仕掛け、彼が渇望して追い求めてきた答えと天下に布いた棋局が強制的に交錯する。Chen Jiは亀殻の中に立ち、周囲には混沌とした気が満ち、天機図の断片が掌中でかすかに熱を帯び、握ることすら難しいほどだった。Mo Xianshengの声が断片の中からかすかに聞こえてきた：「小子よ、彼女に応じるつもりか？それは我々の全布局を暴露するかもしれない。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_002",
+        "character_id": "char_chenji",
+        "content": "暴露又如何？八年前、我は彼女に約束した。 何があっても、必ず见她を見つける。私が兄として唯一果たせなかった約束だ。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_003",
+        "content": "亀殻の奥底で、封印された祭壇がゆっくりと姿を現す。中央には、無数の鎖に縛られた細い身影がいる，正是Chen Nian。彼女の目は紧闭し，眉間には天機図と似た紋様が輝いている――那是天命の鍵の印だ。Su Qingyaoの姿が闇から現れ、蒼白い顔色で、显然是连夜赶来た。「Chen Ji、あなたは何をしているの？ここで天機図の気配を発信すれば、天青宗全体があなたの真実の身分を知られることになる。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_004",
+        "character_id": "char_suqingyao",
+        "content": "你以为我不知道？Ye Qingの魔道霧最多能遮掩一个时辰，一个时辰后，三大宗门的高手就会全部赶到。",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_005",
+        "character_id": "char_chenji",
+        "content": "那就让他们来。我倒要看看，当我把这些年的布局全部摊开的时候，谁还能坐得住。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_006",
+        "content": "话音刚落，亀殻外传来一阵剧烈の震动。Ye Qing的身影从虚空中踏出，魔道霧如丝如缕地缠绕在亀殻四周，将这里的气息彻底遮掩。她的眼眸中带着一丝惊讶：「Chen Ji，你疯了吗？为了一个Chen Nian，你要和我们魔道Holy Sect彻底撕破脸？」Chen Ji没有回答，只是缓缓走向祭坛，每一步都像是踏在運命の琴弦上。Mo Xianshengの声が再次响起，这次带着前所未有的凝重：",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_007",
+        "character_id": "char_moxiansheng",
+        "content": "小子，在你触碰她之前，我有些事情必须告诉你。关于你自己的身世，关于天機図的真正来历，关于……我为什么要选择你。",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0953_choice_01",
+        "prompt": "Mo Xiansheng终于要揭示真相了，但Chen Nian的情况危急，Chen Ji该如何抉择？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0953_opt_01a",
+            "text": "先にChen Nianを救う",
+            "description": "妹妹の安危は迫切している，真相は後で聞いてよい――だが 이는 Mo Xianshengが自行揭示する最適な機会を逃すことになる。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Mo Xianshengが身世を揭示する機会を逃す",
+            "visible_reward": "Chen Nianの救出に成功，危機を一時的に解除",
+            "risk_hint": "Mo Xianshengは因此收回信任する可能性がある",
+            "process_label": "果断救人",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt01a_01",
+                  "content": "Chen Jiは迷わず、掌中の天機図断片が璀璨の光を放ち、単手でChen Nianの眉間の紋様に当てる。天命値が潮のように流れ出し、鎖が崩れ始める。Chen Nianの目が微かに震える。しかし此时、Mo Xianshengの声が急に冷たく変わる：「好一个先救妹妹。既然如此，我也无话可说――私の身分は、自分でゆっくりと查去吧。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生沉默"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0953_opt_01b",
+            "text": "先にMo Xianshengの揭示を聞く",
+            "description": "Mo Xiansheng既然主动开口，必然是关键信息――但Chen Nian每多被困一刻，危険就多一分。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Chen Nianは当分の間救出不可",
+            "visible_reward": "天機図と自分の身世に関する重要真相を得る",
+            "risk_hint": "可能激怒Ye Qing和Su Qingyao",
+            "process_label": "沉着应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt01b_01",
+                  "content": "Chen JiはChen Nianに伸ばしかけた手を收回し，转身面对天機図断片。Mo Xianshengの残魂がゆっくりと凝聚し、初めて完全な姿で彼の前に現れた――それは历经沧桑ながら依然锐利な老者の顔で、Chen Jiの記憶の中のどこか曖昧な祖先の形象と七分相似していた。「八年前、我があなたを選んだのは、Chen家の正統の血を流れていたからだ――そしてChen家は上一代天機図伝承者の後裔だ。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生揭示身份"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0953_opt_01c",
+            "text": "两者兼顾",
+            "description": "Ye Qingに先に魔道霧でChen Nianの状態を安定させてもらう同时、自分がMo Xianshengの説明を聞く――だが 이는Ye Qingが大量の精力を消耗することになる。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Ye Qingの状态下降，可能影响后续战斗",
+            "visible_reward": "陳念を救出するとともに、墨先生の秘密も手にに入れた",
+            "risk_hint": "夜清は因此而心生不満かもしれない",
+            "process_label": "算计精密",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt01c_01",
+                  "content": "夜清は冷笑して言った。「陳機、本当に打算が立つものだ。」だが彼女は手を挙げ、濃い魔道の霧を陳念を包み、鎖の侵食を一時的に食い止めた。墨先生はこの光景を見て、目の中に讃賞の光を認めた。「良い、とても良い。あなたは年前の陳玄よりも，身边の資源の活用を知っている。」彼は深く息を吸い込み、続けた。「既然如此，我就告诉你一切——其实我不只是天機録の守護者，我还是……」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 70
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_008",
+        "content": "墨先生がその天下的秘密を語ろうとした瞬間、亀殻の外から震天の怒号が伝わってきた——それは玄武宗第一天才韓烈の戦吼だった。苏青瑶は顔を强張らせた：「まずい、ここに見つけた！韓烈は少なくとも三十名の精锐弟子を連れて、亀殻全体を包囲したぞ！」夜清は眉を寄せた：「魔道霧最多でもあと半刻持つか，陈機，到底你还有多少底牌没出？」陳機の答えはなかった。彼は人々を押し退け、祭壇の上の陳念に視線を向け、意味ありげな笑みを浮かべた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_009",
+        "character_id": "char_chenji",
+        "content": "底牌？私は底牌に依赖しない、私はただ——算段する。お前たちは私がなぜここに集合地点を選んだと思う？",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_010",
+        "content": "彼の声が落ちるや否や、亀殻の奥から無数の光が輝きを放った——それは法陣が活性化した光だった。苏青瑶ははっと気づいた，脸色变得极其精彩：「这些法陣……是我天青宗の護山大陣！？いつそれをここに移動させたんだ？」陳線は淡々と答えた：「三年前、廃材雑役として宗门で掃いていた時から始めていた。お前たちは私がただ日時を潰していたと思っていたのか？」墨先生が低く笑った：「良い小家伙，原来你从一开始就在布局这一步。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_011",
+        "character_id": "char_suqingyao",
+        "content": "したがって私に調査させたこれらの「異常」は、実はあなたがわざと私に残した手懸かりだったのか？陳機、あなたは最初から私を算段していたのか？",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_012",
+        "character_id": "char_chenji",
+        "content": "算段？違う、それは信頼という。私は手懸かりをあなたに残した、なぜならあなたの賢さを知っていたからだ、必ず手懸かりに沿って調べてくれる。そしてあなたが調べるほど、あなたはこちらにつく。",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_013",
+        "content": "苏青瑶は当场に固まり、胸怀中雑多な味がした。彼女は自分がずっと陳機を調査していると思っていたのに、自分が彼の棋局的の一つの駒にされていたとは知らなかった——だがこの駒は，最大的敬意されていた駒だった。夜清は突然かすかに笑い出した：「面白い、陳機。やっと聖宗があんたをそんなに恐れている理由が分かった。」亀殻の外で、韓烈の怒号がまた響いた：「陳機！中に潜んでいる廃物共よ、とっとと出て来い！今日让你们知道什么叫絶対的实力碾压！」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_014",
+        "character_id": "char_chenji",
+        "content": "絶対的实力碾压？韓烈，真的是好了傷疤忘了疼是吧。先回の秘境で是谁被我用三級法陣困了三天三夜？",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0953_choice_02",
+        "prompt": "韓烈が亀殻を重兵で包囲したのは正面挑战の关键时刻で、陳前は decisión を下す必要がある。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0953_opt_02a",
+            "text": "正面迎战",
+            "description": "護山大陣を起動し、夜清の魔道霧に合わせ、亀殻内で韓烈と決戦する——リスクは高いが、韓烈の傲慢性を完全に打ち砕ける。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "護山大陣が露呈し、天青宗は陳機の布局を知ることになる",
+            "visible_reward": "韓烈を完全に破り、三大宗門を震撼させる",
+            "risk_hint": "凌淵の注目を招く可能性がある",
+            "process_label": "强势碾压",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 25
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt02a_01",
+                  "content": "陳前は片手を払うと、護山大陣が轟々と起動した。無数の光柱が亀殻四周から天に솟아올라、韓烈と三十名の弟子を全て陣中に閉じ込めた。韓烈の顔色は激変した：「こ、これは何の法陣だ！？不可能だ！私は玄武宗第一天才だ！なぜ廃物に囲まれる！」陳前の声が法陣内から幽かに伝わった：「廃物？韓烈、お前对我的誤解は、自分の実力的自信より深いぞ。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈被困"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0953_opt_02b",
+            "text": "時間かせぎして援軍を待つ",
+            "description": "法陣の防守を利用して、凌淵などの潜伏同盟が到着するまで粘る——より稳妥だが、韓烈に提前突破される可能性がある。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "陳念の状態が恶化する可能性がある",
+            "visible_reward": "全ての秘かに布局した同盟が姿を現し、陣容が震撼的",
+            "risk_hint": "夜清の霧の消耗が加剧する",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt02b_01",
+                  "content": "陳前は韓烈の叫嚣を問題にせず、夜清に转向した：「お前の霧は多久持てる？」夜清は低く答えた：「最多一刻だ。」陳前は頷いた：「それで十分だ。」彼は祭壇に向き直り、陳念身上的鎖を引き続き解いた。その時、亀殻の外から蒼老だが威严のある声が伝わった：「陳前、なぜ無理な抵抗をする？出て来い、面子になった終わりを下してやろう。」それは凌淵——天青宗老掌门、陳前名义上の庇护者だった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0953_opt_02c",
+            "text": "凌淵の本当の顔を暴く",
+            "description": "全員の前で凌淵の real identity と陰謀を暴く——最も震撼的だが、矛盾を完全に激化する。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Su Qingyaoは受け入れられないかもしれない",
+            "visible_reward": "Ling Yuanの偽りを完全に暴き、場にいた全員を震撼させる",
+            "risk_hint": "Ling Yuanは窮余の一策に出るかもしれない",
+            "process_label": "破局一击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 40
+              },
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 80
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt02c_01",
+                  "content": "Chen Jiは突然笑い、その笑顔はSu QingyaoとYe Qingに一抹の冷気を与えさせた。彼はゆっくりと亀甲から出て、Ling Yuanに向き直り、声を張り上げた：「Ling掌门、いらっしゃいましてからちょうどいい。私はちょうど大きな贈り物を差し上げようとしているのですが——您が当年どのようにChen Xuanを暗殺し、いかにして罪を人に被せたかの証拠ですが、ご覧になりますか？」Ling Yuanの顔は瞬く間に曇り、Su Qingyaoは目を見開いて、受け入れられないという表情を浮かべた。Mo Xianshengの声がChen Jiの脳内に響いた：「いい度胸だな、この釜底抽薪の使い方は見事だ」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "名望",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_015",
+        "content": "Ling Yuanの瞳には一瞬殺意が過ぎったが、すぐに慈愛に満ちた笑みで覆われた：「Chen Ji、何のたわごとを言っている？お前が宗門に怨みを持っているのは知っているが、老夫を濡れ衣着色するものではない」Chen Jiは首を振り、懐から玉簡を取り出し、そっと握ると、無数の映像が投射された——それは当年Chen玄が害された時の情景で、Ling Yuanの姿が鮮明に映し出されていた。Han Lieの表情は非常に見ものだったが、彼はLing Yuanの同盟者でありながら、この老掌门にこのような黒い過去があるとは知らなかった",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_016",
+        "character_id": "char_chenji",
+        "content": "Ling掌门，您は私が廃物だと言いますが、この廃物の手の中には您の名声を失墜させるものがある。そう命運の皮肉とは言えないだろうか？",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_017",
+        "content": "その時、祭壇の上のChen Nianは突然目を開けた。彼女の視線は濃霧を突き破り、Chen Jiを真っ直ぐに見つめ、唇がかすかに震えた：「兄さん...来たのが分かった...」Chen Jiの心臓は激しく締め付けられ、八年の別離、八年の поиск、八年の布局——すべてがこの一瞬で報われた。彼はChen Nianのもとへ大步で近づいたが、彼女との距離が三尺のところで止まった——Chen Nianの眉間の天命鎖钥符文が激しく明滅しているのを見たからだ。一股可怕的力量が彼女の体內から湧き出していた。Mo Xianshengの声が急了になった：「まずい！天命鎖钥が起動した！Chen Ji、お前は選択を迫られる——」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0953_choice_03",
+        "prompt": "Chen Nianの体内の天命鎖钥が起動し、これは彼女の命を脅かす危急の状況である",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0953_opt_03a",
+            "text": "天機録で鎖钥を押さえる",
+            "description": "大量の天命値を消費し、天機録の力でChen Nianの体内の鎖钥を強制的に押さえる——代償は大きいが、妹を守れる",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天命値が大幅に低下（-30点）、将来の预见能力に影響を与える可能性がある",
+            "visible_reward": "鎖钥の押さえ込みに成功し、Chen Nianは一時的に危険を脱した",
+            "risk_hint": "Mo Xianshengはこれが天機録の完全な気を暴露すると警告した",
+            "process_label": "以命换命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt03a_01",
+                  "content": "Chen Jiは迷うことなく天機録残頁をChen Nianの眉心に当て、天命値は決堤の洪水のように流れ出した。Chen Nianの眉間の符文は徐々に薄らいでいくのに対し、Chen Jiの顔は肉眼で見えるほど蒼白になっていった。Chen Nianの目から涙が溢れ出した：「兄さん、やめて...もう私のために犠牲にならないで...」Chen Jiは無理に笑みを浮かべた：「ばかやろう、お前は俺の妹だ」Mo Xianshengは一嘆息を発した：「痴儿よ、痴儿よ...」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 40
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0953_opt_03b",
+            "text": "Chen Nianに鎖钥を主动的に制御させる",
+            "description": "Chen Nian、彼女と天命鎖钥の特殊な繋がりを活かしてこの力を主动的に制御するよう導く——リスクは非常に大きいが、予期せぬ収穫を得られるかもしれない",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Chen Nianは失控する可能性がある",
+            "visible_reward": "Chen Nianは特殊能力が目覚め、天道之眼に対抗する关键となる可能性がある",
+            "risk_hint": "成功率は極めて低い",
+            "process_label": "赌上一切",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 40
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt03b_01",
+                  "content": "Chen JiはChen Nianの手を取り、自分の天機録の気を彼女體内に流し込んだ：「小念、聞，给我说、お前は鎖钥の器ではなく、その主人だ。それを制御し、它に従われるな」Chen Nianの涙が頬を伝ったが、彼女は頷いた。眉間から奇妙な光が輝きを放ち、天命鎖钥の符文は新たな 방식으로运转し始めた——それはもはやChen Nianを蝕むことなく、むしろ臣下に降伏していた。Ye Qingは目を見開いた：「これは...怎么可能？」Mo Xianshengは感嘆の声を上げた：「なるほど、なるほど！Chen家の血統こそが、真の鎖钥主宰者だったのだ！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0953_opt_03c",
+            "text": "Ling Yuanに求助する",
+            "description": "Ling Yuanに妥協し、天機録の秘密を用它对她的帮助と交換する——最も屈辱的だが、Chen Nianの命を守れる",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天機録の弱点を暴露する可能性がある",
+            "visible_reward": "Chen Nianを一時的に保全する",
+            "risk_hint": "Ling Yuanは天機録を奪取する好機と捉える可能性がある",
+            "process_label": "隐忍蛰伏",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -20
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -20
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0953_result_opt03c_01",
+                  "content": "「Chen Ji、お前は老夫に妹を助けろと言うのか？良いだろう、Tianji Recordを差し出せば、既往不咎とする。」Chen Jiの拳は握り締められ、爪が掌深く食い込んだ。八年、彼はこれほど屈辱を感じたことはなかった――しかし妹のために、彼はすべてを厭わなかった。その瞬間、Chen Nianの声が彼の脑海に響いた。それは血脈で繋がった心の声だった：「兄さん、やめて。私は死んだ方がましよ。あの人にご低声になってほしくない。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_018",
+        "content": "Chen Nianの言葉は重鎚のようにChen Jiの心に打ち込んだ。妹の揺るぎない目を見つめ、彼は忽然と笑った――それは霾avon的な笑み、ついに同路を見出した者の笑みだった。「良い。」彼は囁くように言った、「こうなれば、一緒に向かい合おう。」彼は振り返り、Ling Yuan、Han Lie、そして虎視眈眈とするすべての敵に向かい、眼の温度はたちまち氷点下に下がった：「天機録が欲しいのか？来い、誰が俺の手から奪い取れるか試して見せろ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_019",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji……お前は自分が何をしているか分かっているのか？Ling Yuan掌门は元嬰期の実力者、Han Lieも金丹の絶頂、お前はFoundation Buildingの廃物……",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_020",
+        "character_id": "char_chenji",
+        "content": "廃物？Su Qingyao、ずっと俺の傍にいたのに、まだ分からないのか？いわゆる廃物キャラは、俺がお前たちに見せる罠に過ぎないのだ。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_021",
+        "content": "言葉が落ちた瞬間、Chen Jiの気息は猛然と暴涨した。Foundation Buildingの偽装は破れた仮面のように层层剥け、その下に隠された測り知れない実力の真の姿が露わになった――それは金丹後期！Han Lieの色が一変した：「だ、だが不可能だ！お前は確かにServant Discipleに過ぎない！なぜそのような修為が……」Ling Yuanの瞳には深い凝重が闪过した：「なるほど、老夫は八年もの間欺かれていたのだ。」Ye Qingはかすかに笑った：「面白い、深掘りしていたものだ。」Su Qingyaoは複雑な目でChen Jiを見つめていた──欺かれた怒りと、「やはりそうだった」という氷解が入り混じっていた。Mo Xianshengの声がChen Jiの脑海に响いた：「小子、彼らに本当のChen家の伝承者を見せてやるのだ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_022",
+        "character_id": "char_moxiansheng",
+        "content": "Liu Family Elderの言葉があれば、老夫もこれ以上隠し通す必要はない。Chen Jiよ、この者どもに本当のTianji Record伝承者を見せてやれ！",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_023",
+        "content": "Mo Xianshengの残魂は天機録残頁から猛然と湧き出した。今度は虚幻な光影ではなく、実体のある人型だった。その顔は老いていても厳かであり，身上から放たれる気息はLing Yuanに劣らないほどだった――それは化神期の威圧だ！Han Lieの顔は完全に変わった：「化神期？！，怎么可能！」Ling Yuanの瞳には惊懼が闪いた：「Chen玄……お前はまだ生きていたのか！」Mo Xianshengは淡々と告げた：「老夫はただの残魂の身であり、長くない。 しかし一つだけ告げておく――Chen Jiは老夫が自ら選んだ伝承者だ。 もし彼に手を出せば、老夫は魂飛魄散しようとも、彼らを引きずり下ろす。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_024",
+        "content": "Chen Nianはゆっくりと立ち上がった。彼女の眉心のHeavenly Fate Key符文はすっかり鎮まり、代わりに淡い黄金色の光が取り凭いていた――それはChen家の血脈が目覚めた証だった。彼女はChen Jiの側に歩み寄り、静かに言った：「兄さん、もう足手まといにはならない。」Chen Jiは彼女の髪に触れ、温かい笑みを浮かべた：「足手まといなんてことはなかった。」彼は周囲を見渡した。Su Qingyao、Ye Qing、Mo Xiansheng、そしてLing Yuanの「援軍」――実は彼が裏で配置した手中に過ぎない者が、今ようやく駆けつけた。この瞬間、Chen Jiの陣営が初めて完全に日光の下に置かれたが、すべての敵に骨の髄まで染み入るような戦慄を与えた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_025",
+        "character_id": "char_yeqing",
+        "content": "Chen Ji，这就是你的全部底牌吗？魔道迷雾、护山大阵、化神期残魂……说实话，比我想象的要强。",
+        "emotion": "欣赏"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_026",
+        "character_id": "char_chenji",
+        "content": "これらはただの前菜だ。Ye Qingよ、正式な盟約を結ぶ気はあるか？利益の交換ではなく、本当の意味で并肩作戦してくれるかだ。",
+        "emotion": "真诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_027",
+        "content": "Ye Qingは一瞬发呆した。彼女はChen Jiの目を見つめた。そこには謀略も试探もなく、純粋な誠実さだけがあった。これは她在以利用と裏切りを常とする修真界で、これほど裏のない信頼を見た初めてだった。彼女の瞳は微微かに潤んだが、すぐにいつもの無表情を取り戻した：「後悔するなよ。」彼女は手を差し出し、Demonic Pathの霧が掌心に契約の雛形として凝縮した。Chen Jiは迷うことなく自らのHeavenly Fate気息を注ぎ込んだ。二人の間に二重的契約が結ばれた――これは命にかけて誓う盟約であり、どちらかが背叛すれば、天道の反噬を受ける。Su Qingyaoはこれを見て、不意に言った：「Chen Ji、私あなたのtesy道歉が必要だった。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_028",
+        "character_id": "char_suqingyao",
+        "content": "ずっと、あなたは私を利用しているのだと思っていた。私を駒だと思っていた。でも今、分かった……あなたは私を守ってくれたの。Chen念を守るように。私を巻き込みたくなかったから、いつも曖昧な手悬かりで私を引っ張っていた，其实是给我留退路。",
+        "emotion": "感动"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_029",
+        "character_id": "char_chenji",
+        "content": "Su Qingyaoよ、お前だけがこの世界に信頼に値すると思った人間だ。利用したいわけじゃない。ただ……どう口にすればいいか分からなかった。",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_030",
+        "content": "Turtle Shellの外では、Ling Yuanの表情は水のように暗い。彼は今日Chen Jiを一挙に拿下できると思っていたのに相手がとっくにすべてを配置していたとは知らなかった。更に彼を不安にしたのはMo Xianshengの存在だった――かつて彼が陷れたChen玄が、残魂の姿で生き延びていたとは。「撒収！」Ling Yuanは歯を食いしばりながら下令した、「今日のことは老夫が覚えておく。Chen Ji、後で会ってやる！」Han Lieは何か言おうとしたが、Ling Yuanに後頭部を叩かれて気絶した。Chen Jiは彼らの撒収する背中を見ながら、唇元に淡い笑みを浮かべた：「Ling Yuan掌门、ゆっくりでいい，下次お会い的时候我给您准备一份更大的惊喜を用意します。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_031",
+        "content": "Turtle Shellの中では、緊張した空気がようやく緩和した。Ye QingのDemonic Pathの霧がゆっくりと消散し、外はもう誰もいない景象が露わになった。Su Qingyaoは壁に背を預け，胸が激しく上下している，显然是累坏了。Chen NianはChen Jiの傍に身を寄せ，脸上带着劫后余生の庆幸。而Mo Xiansheng则再次化为残魂，缩回了天機錄残页之中，只是声音依然清晰：\"小子，这一局你赢了，但真正的决战还在后面。Ling Yuan不会善罢甘休，而天道之眼……它已经注意到你了。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0953_032",
+        "character_id": "char_chenji",
+        "content": "让它注意吧。From the moment I obtained the Tianji Record, I never intended to hide. 命运的棋局？好，那就让我来执棋。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_033",
+        "content": "夜風が亀殻の隙間から吹き込み、淡淡的冷たい气息を帶びていた。Chen Jiは周囲を見渡した。自己が雰囲いた陣営を――Su Qingyao、Inner Sect Senior Fellow，此刻正用复杂的眼神注视着他；Ye Qing、Demonic Pathの聖女，刚刚与他签订了以命相托的契约；Chen念、血脈の肉親、ようやく彼の傍に戻ってきた；Mo Xiansheng、神秘的な師匠、ようやく本当の實力を示した。この瞬間、彼は前所未有の充実感を感じた。力の向上のためではなく、陰謀の成功のためでもなく――因为他不再是一个人了。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0953_034",
+        "content": "Mo Xianshengの声が再び响いた。今度は难得的穏やかな響きを帯びていた：「Chen Ji、よくやった。だが老夫はもう一つ、最後のことを告げねばならぬ――老夫の真の身份について、天機錄の真の起源について、そして这一切の背後にある……天道之眼についてだ。」彼の残魂が再び姿を現し、月光の下で那张苍老的面容格外凝重に見えた：「聞く覚悟はできているか？これはお前のこの世界への認識を完全に覆すかもしれない。」Chen Jiは深く息を吸い、頗いた。Chen念は彼の手を握り、Su QingyaoとYe Qingも 둘러寄せた。すべての人が明かされようとする真実に備えていた。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

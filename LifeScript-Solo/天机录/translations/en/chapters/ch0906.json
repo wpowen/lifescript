@@ -1,0 +1,479 @@
+{
+  "id": "天机录_ch0906",
+  "book_id": "天机录",
+  "number": 906,
+  "title": "The Price of the Ultimate Choice",
+  "is_paid": true,
+  "next_chapter_hook": "Chen Tianming's voice echoed in the darkness as he admitted that back then, it was precisely because he was unwilling to relinquish power that he had walked step by step into today's predicament—and the cause he sowed back then is now bearing the same fruit on Chen Ji.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0906_001",
+        "content": "The ink slowly spread across the first page, outlining a neat, square character—「Give Up」. Chen Tianming's remnant soul trembled slightly, his turbid eyes死死盯着那个字, as if he couldn't believe what he saw. \"This... this can't be true...\" His voice was hoarse and broken, \"Back then, I... I searched整整三十年, yet couldn't make this page reveal its characters... Why... why can you do it...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_002",
+        "character_id": "char_chenji",
+        "content": "Chen Ji did not answer. His gaze passed through Chen Tianming's remnant soul, falling on the second line of text that was appearing on the page. The ink spread like a living creature, forming characters one by one: 「The position of the Chess Player can destroy the core of the Heavenly Eye. The price—give up all Heavenly Fate, and return to being a mortal.」",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_003",
+        "content": "The radiance of the Tianji Record dimmed completely at this moment, as if it had completed its final mission. On the first page, Mo Xiansheng's calligraphy was still slowly appearing, each stroke carrying a terrifying solemnity: 「Volume Three Complete. The position of Chess Player is prepared. The Heavenly Fate Lock Key has returned to its place. The Chess Game shall end.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_004",
+        "character_id": "char_chenian",
+        "content": "Chen Nian's breathing suddenly became rapid. She looked at those characters, then at Chen Ji's pale face, and suddenly understood something. \"Brother...\" Her voice trembled, \"Is it true what it says here? To destroy the core of the Heavenly Eye... you need to give up all your power?\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_005",
+        "content": "Chen Tianming suddenly threw his head back and laughed bitterly, laughter filled with bitterness and madness. \"A mortal? Ha ha... hahaha... So that's it! So that's how it is! That old fogey Mo Xiansheng has been scheming from start to finish! What he wants is not to pass down the Tianji Record, but to completely sever the lineage!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_006",
+        "character_id": "char_chenji",
+        "content": "Chen Ji slowly turned around, staring directly at Chen Tianming's remnant soul. \"You're wrong.\" His voice was terrifyingly calm, \"Mo Xiansheng is not scheming to sever the lineage. He is giving me a real choice.\" He paused, \"You back then wouldn't give up, so you were devoured by power. I... I don't want to follow the same path.\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_007",
+        "content": "On the first page of the Tianji Record, the third line of text finally finished appearing: 「However—can the power of a mortal protect one person? Can it defeat an army? Can it pacify the chaos of the world?」 Each character was like a blade, fiercely carving into Chen Ji's heart. Of course he knew the answer.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_01",
+        "prompt": "Mo Xiansheng's calligraphy seemed to understand his hesitation, transforming into a final question appearing on the first page: 「Give up, or don't give up? Choose one.」",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_sacrifice_power",
+            "text": "Give up all Heavenly Fate, return to being a mortal",
+            "description": "The sole method to completely destroy the core of the Heavenly Eye. Abandon all fate-writing abilities, become a true mortal.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Lose the Tianji Record, foresight ability, and all special powers",
+            "visible_reward": "Completely destroy the core of the Heavenly Eye, break the shackles of fate",
+            "risk_hint": "After becoming a mortal, you will lose the power to protect everyone",
+            "process_label": "舍",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_sacrifice_power_001",
+                  "content": "Chen Ji reached out his hand, fingertips touching the first page of the Tianji Record. Mo Xiansheng's calligraphy burst into dazzling golden light at the moment of his touch, as if welcoming an answer that had waited for a thousand years. \"I give up.\" His voice was soft, but each word was clear.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_keep_power",
+            "text": "Retain power, seek other methods",
+            "description": "Refuse to become a mortal, attempt to find a method that neither abandons power nor fails to destroy the Heavenly Eye.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Cannot completely destroy the Heavenly Eye, the shackles of fate still exist",
+            "visible_reward": "Retain all abilities, continue existing as a Chess Player",
+            "risk_hint": "The Heavenly Eye will be reborn, all efforts rendered futile",
+            "process_label": "不舍",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_keep_power_001",
+                  "content": "Chen Ji's hand hovered in mid-air,迟迟没有落下. His brow was tightly furrowed, a trace of subtle struggle flickering in his eyes. \"Is there another way?\" He asked softly, his voice carrying a hint of unprecedented hesitation.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_third_path",
+            "text": "Question—there must be a third path",
+            "description": "Since Mo Xiansheng left this choice, he must have left a backup plan. The Tianji Record has never left anyone in despair.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Might waste time, miss the best opportunity",
+            "visible_reward": "Find a truly feasible solution",
+            "risk_hint": "If not found, the third path could be even more cruel than the first two",
+            "process_label": "寻",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_third_path_001",
+                  "content": "Chen Ji withdrew his hand, the corner of his mouth suddenly lifting into a smile. \"Mo Xiansheng... if you were the kind of person to leave others with no way out, I wouldn't have chosen to believe in you back then.\" He re-examined the first page, \"The third line of text... asks 'can the power of a mortal protect one person', not 'can the power of a mortal protect everyone'.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_008",
+        "content": "Chen Tianming's remnant soul suddenly shuddered violently. \"You... what are you saying?\" He stared at Chen Ji in disbelief, \"The Tianji Record clearly states, give up all Heavenly Fate and become a mortal. Are you still looking for some third path? Do you think you're someone who can rewrite the will of the Tianji Record?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_009",
+        "character_id": "char_chenji",
+        "content": "Chen Ji paid him no attention, instead casting his gaze to the blank space below the first page that had yet to appear. \"Mo Xiansheng, are you still there?\" His tone suddenly became relaxed, \"Since Volume Three's goal is 'the Chess Game shall end', you certainly wouldn't leave me with a death trap.\"",
+        "emotion": "狡黠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_010",
+        "content": "The Tianji Record trembled slightly. After a moment, a small symbol slowly appeared in the blank space—a pattern Chen Ji had never seen before, like some kind of ancient mark. Chen Nian leaned in for a closer look, her pupils contracting sharply. \"This is... the source mark of the Heavenly Fate Lock Key!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_02",
+        "prompt": "Chen Nian's finger trembled as she pointed at that mark. \"Brother, do you remember? When the Holy Sect took me away, they said I had something inside me... something that could replace the Chess Player.\" She raised her head, her eyes slightly red, \"If this mark is real... maybe I can help.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_accept_sister",
+            "text": "Accept Chen Nian's help",
+            "description": "Chen Nian is the Heavenly Fate Lock Key; her very existence can interfere with the Tianji Record's foresight. Perhaps her power can replace Chen Ji's position as Chess Player.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Chen Nian might fall into danger because of this",
+            "visible_reward": "Chen Ji retains his power while Chen Nian bears part of the cost",
+            "risk_hint": "The cost of the Heavenly Fate Lock Key is unknown; it could be more tragic than becoming a mortal",
+            "process_label": "共生",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2500
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_accept_sister_001",
+                  "content": "Chen Ji looked at Chen Nian, a trace of hesitation flickering in his eyes. Of course he knew what this meant—letting Chen Nian share the Chess Player's cost was equivalent to dragging her into the abyss. But Chen Nian's resolute gaze made his heart ache.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_refuse_sister",
+            "text": "Refuse—absolutely cannot let his sister risk danger",
+            "description": "Chen Ji would never let Chen Nian take any risk for his sake. He would rather give up everything than let his sister fall into danger.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Must bear all costs alone",
+            "visible_reward": "Protect Chen Nian's safety",
+            "risk_hint": "Facing Heavenly Fate's backlash alone, lower chance of success",
+            "process_label": "护",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5000
+              },
+              {
+                "stat": "黑化值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_refuse_sister_001",
+                  "content": "Chen Ji pressed his hand on Chen Nian's shoulder, his grip almost painful. \"No.\" His voice was ice-cold, \"I searched for you for ten years, not for you to die in my place. Chen Nian, listen to me.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_011",
+        "character_id": "char_chenian",
+        "content": "Chen Nian's tears finally fell. \"Brother, you think I don't know?\" Her voice choked, \"The day the Holy Sect took me away, I knew... my existence itself is your burden. If not for me, the Tianji Record's foresight wouldn't be so blurred, you would have seen through everything long ago...\"",
+        "emotion": "悲泣"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_012",
+        "content": "Chen Tianming's remnant soul suddenly began trembling violently. \"No... don't...\" His voice became distorted, \"You can't do this! Chen Nian is the last bloodline of the Chen Family! If you both die, the Chen Family will be completely finished!\" He struggled frantically, \"Chen Ji, do you hear me? I won't allow you to destroy the Chen Family!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_013",
+        "character_id": "char_chenji",
+        "content": "Chen Ji glanced coldly at Chen Tianming. \"The Chen Family?\" His tone carried a hint of mockery, \"When you sold everything for power back then, did you think of the Chen Family? When the Tianji Record abandoned you, when fate turned against you, did you think of the Chen Family?\" He paused, \"Now you suddenly remember being a member of the Chen Family?\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_014",
+        "content": "The runes on the Tianji Record suddenly lit up at this moment. Mo Xiansheng's calligraphy appeared for the last time, but with only a brief line: 「The Heavenly Fate Lock Key can bear half of the Chess Player's position. However—the cost must still be borne by the Chess Player oneself. Others cannot replace your pain.」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0906_choice_03",
+        "prompt": "A flash of hope crossed Chen Nian's face. \"Half? Does that mean... I can share half?\" She tightly gripped Chen Ji's hand, \"Brother, let's bear it together! Didn't you say? The Chen Family never abandons any of its members!\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0906_share_fate",
+            "text": "Share Heavenly Fate with Chen Nian",
+            "description": "Accept the Heavenly Fate Lock Key's分担, Chen Ji retains half the Chess Player's power, the cost shared by both.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Chen Nian will forever be bound to Chen Ji's fate",
+            "visible_reward": "Chen Ji retains partial power, can continue protecting important people",
+            "risk_hint": "The fates of both are thus connected; if one prospers, both prosper; if one perishes, both perish",
+            "process_label": "共命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -4000
+              },
+              {
+                "stat": "魅力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 80
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_share_fate_001",
+                  "content": "Chen Ji was silent for a long time. Finally, he turned his hand and gripped Chen Nian's hand. \"Alright.\" His voice was soft, yet carried an unquestionable firmness, \"From now on, my life is your life. You... don't regret this.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0906_refuse_share",
+            "text": "Persist in bearing it alone",
+            "description": "Chen Ji's fate can only be carried by himself. He doesn't want Chen Nian to live forever in his shadow because of him.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Must face all Heavenly Fate's backlash alone",
+            "visible_reward": "Protect Chen Nian's independence, let her have her own life",
+            "risk_hint": "Bearing it alone might cause him to lose everything",
+            "process_label": "独担",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -9999
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0906_result_refuse_share_001",
+                  "content": "Chen Ji gently pushed away Chen Nian's hand, shaking his head. \"Little Nian, I'm your brother.\" His voice was very gentle, \"Being an older brother means standing in front to shield others. What you should do is live well, not die together with me.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_015",
+        "content": "The light on the Tianji Record gradually收敛, Mo Xiansheng's calligraphy also finally faded completely. But before disappearing, the last character appeared in the corner of the first page—「Three」. Chen Tianming stared at that character, his pupils dilating sharply. \"Three... the third time... he still has one chance...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_016",
+        "content": "Chen Ji noticed Chen Tianming's abnormality. \"Third time?\" He frowned, \"What third time?\" Chen Tianming's remnant soul suddenly laughed诡异地, laughter carrying indescribable madness and despair. \"Chen Ji... did you think you were the first person to reach this point?\" He raised his head, turbid eyes directly staring at Chen Ji, \"Mo Xiansheng's 'three'... is the number of choices you can still make.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_017",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's expression changed slightly, but quickly restored to calm. \"Three choices, used twice.\" He said softly, \"That means... there's one last time.\" He raised his head, staring directly at Chen Tianming's remnant soul, \"So, did you use up these three chances back then, which is why you ended up like this?\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_018",
+        "content": "Chen Tianming's laughter stopped abruptly. His remnant soul trembled violently as if stabbed in some vital point. \"I... back then...\" His voice became fragmented, \"The first time, I chose to retain power... the second time, I chose to let you inherit... the third time...\" He couldn't continue, turbid eyes shedding two streams of bloody tears.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0906_019",
+        "character_id": "char_chenian",
+        "content": "Chen Nian suddenly tightly gripped Chen Ji's hand. \"Brother, his third choice...\" Her voice was soft, \"Could it be... he chose to use you?\" Chen Tianming's remnant soul did not deny, only letting out a low whimper. Mo Xiansheng's calligraphy suddenly appeared again—this time, only four characters: 「You guessed correctly.」",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_020",
+        "content": "No expression could be seen on Chen Ji's face. He simply静静地看着 Chen Tianming's remnant soul, as if looking at a stranger completely unrelated to himself. \"So... you being devoured by fate is deserved.\" His voice was calm, \"And I will not walk your old path.\" He turned to the Tianji Record, his gaze resolute, \"The third choice—I want to personally go see what the true core of the Heavenly Eye actually is.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0906_021",
+        "content": "The Tianji Record shuddered violently, all the characters on the first page dispersing at this moment, replaced by a portal slowly opening toward the unknown. Chen Tianming stared at that door, turbid eyes flickering with terror. \"You've gone mad... that is the source of the Heavenly Eye... once you enter, you won't come out...\" Chen Ji did not look back. \"Is that so?\" His voice was soft, \"Then why did you go there back then?\" Chen Tianming's remnant soul fell completely silent.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

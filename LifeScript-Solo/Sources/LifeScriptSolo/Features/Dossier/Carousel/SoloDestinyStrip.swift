@@ -11,7 +11,7 @@ struct SoloDestinyStrip: View {
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(destinyTint)
 
-                Text("天命 \(snapshot.destinyStatus.value)")
+                Text(SoloLocalization.format("天命 %d", snapshot.destinyStatus.value))
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(destinyTint)
 
@@ -26,7 +26,7 @@ struct SoloDestinyStrip: View {
                 if let spotlight = snapshot.relationshipSpotlight {
                     Text("·")
                         .foregroundStyle(SoloTheme.muted)
-                    Text("关键人 \(spotlight.characterName) · \(spotlight.attitudeLabel)")
+                    Text(SoloLocalization.format("关键人 %@ · %@", spotlight.characterName, spotlight.attitudeLabel))
                         .font(.caption)
                         .foregroundStyle(SoloTheme.warmInk)
                         .lineLimit(1)

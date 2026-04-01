@@ -1,0 +1,505 @@
+{
+  "id": "天机录_ch0675",
+  "book_id": "天机录",
+  "number": 675,
+  "title": "A New Chess Game",
+  "is_paid": true,
+  "next_chapter_hook": "A cold figure stood still on the capital's city wall, the chilly wind stirring her garments. She gazed toward the Grand Tutor's residence, her eyes holding three years of pursuit and restraint—Su Qingyao, she had finally found him.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0675_001",
+        "content": "Night was as dark as ink. The Grand Tutor's carriage stood quietly at the alley's entrance, its vermillion wheels and bronze fittings gleaming with a cold light under the moonlight. The carriage curtains hung low, yet a faint sandalwood fragrance seeped through the gaps, as if silently beckoning. Chen Ji stood three zhang away, his blue robes fluttering in the wind, his gaze deep as an abyss. He was waiting—for the owner of this carriage to offer sufficient stakes, for a reason compelling enough to draw him into this vortex of power. In the distance, the night watch drum sounded—midnight approached. The people from the Grand Tutor's residence had been waiting for quite some time."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_002",
+        "character_id": "char_chenji",
+        "content": "\"Since you extend a sincere invitation, why hide in shadows?\" Chen Ji's voice wasn't loud, yet it carried clearly into the carriage. \"Three summons and four requests—the Grand Tutor certainly commands great prestige.\" The corner of his mouth lifted slightly, that smile carrying a hint of playfulness and scrutiny—was this the bearing a废物 should possess? Absolutely not the bearing of a废物.",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_003",
+        "content": "The carriage curtain lifted, a withered hand extending a jade token. The token was pitch-black, its front carved with a serene black bird, its reverse inscribed with two ancient seal characters—\"Tianji.\" The instant Chen Ji received the token, his fingertips slightly trembled. This token's significance far exceeded his expectations. What did it signify? That the Grand Tutor's residence had already uncovered his secrets, or that they too were probing? Chen Ji tucked the token into his sleeve, his expression utterly unchanged. A true chess master never reveals their depth to their opponent."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0675_004",
+        "prompt": "The stakes the Grand Tutor's residence has laid before you—insider intelligence on the Tianji Pavilion, covert imperial backing, and a position of power capable of shaking the world. How will you commence this game?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0675_004_a",
+            "text": "Advancing Steadily",
+            "description": "Accept cooperation, but only exchange limited intelligence, preserve core trump cards, gradually gain the Grand Tutor's trust and resources",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Requires time to gradually acquire resources",
+            "visible_reward": "Gain access to the Grand Tutor's intelligence network and covert imperial protection",
+            "risk_hint": "Slow progress may cause the Grand Tutor's residence to lose patience",
+            "process_label": "暗中积蓄力量",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_004_a_1",
+                  "content": "Chen Ji slightly nodded, tucking the jade token into his sleeve. Without rushing to show his stance, he calmly said: \"The Grand Tutor's sincerity, I have already noted. However, this matter of cooperation requires further deliberation.\" His tone was composed, yet carried an undeniable steadiness. From within the carriage came a light laugh, that laughter carrying a hint of appreciation—this废物 was far more interesting than the rumors suggested."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "与太师府初步合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0675_004_b",
+            "text": "Full Cooperation",
+            "description": "Accept all conditions from the Grand Tutor's residence, exchange part of the Tianji Record intelligence for maximum resource support, rapidly establish an alliance against the Tianji Pavilion",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose more Tianji Record related abilities, may attract greater danger",
+            "visible_reward": "Immediately gain substantial resource support, including intelligence network, financial resources, and protection from imperial background",
+            "risk_hint": "Exposure risk extremely high, but profits substantial",
+            "process_label": "以情报换资源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "财富",
+                "delta": 8
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_004_b_1",
+                  "content": "Chen Ji held the jade token in his palm, calmly stating: \"Since the Grand Tutor extends such sincerity, I shall not decline.\" His voice was tranquil, as if merely discussing an ordinary transaction. Yet the carriage interior fell silent for a moment before an aged voice came: \"Excellent. You are more pragmatic than I imagined.\" Before the words finished, a stack of yellowed documents was passed through the carriage curtain, their cover bearing four unmistakable characters—\"Tianji Pavilion Chronicles\"."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "与太师府深度合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0675_004_c",
+            "text": "Reversing the Dynamic",
+            "description": "Not satisfied with merely being a collaborator, directly propose conditions—he wants to become one of the chess players in this game, not a chess piece",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May provoke the Grand Tutor's residence, lose this cooperation opportunity",
+            "visible_reward": "If successful, gain equal dialogue rights with the Grand Tutor's residence, even dominate partial chess game trajectory",
+            "risk_hint": "Highest risk, but once successful, profits immeasurable",
+            "process_label": "夺取棋局主动权",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_004_c_1",
+                  "content": "Chen Ji suddenly smiled, that grin appearing particularly dazzling under the moonlight. He stepped forward, gazing into the depths behind the carriage curtain: \"Grand Tutor, do you know why I have not agreed until now?\" Silence filled the carriage. Chen Ji continued: \"Because what I seek is not cooperation, but conspiracy. This game—you and I each hold half, how about it?\" The words fell, and surroundings plunged into deathly stillness. After a moment, the carriage curtain violently lifted, a face covered in wrinkles appearing under the moonlight, those clouded old eyes flashing with sharp light: \"Bold.\""
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_004_c_2",
+                  "content": "Chen Ji did not dodge or avoid, meeting the old man's gaze. The old man suddenly burst into laughter, that laughter echoing through the night sky: \"I have lived for over three hundred years, yet this is the first time I encounter a servant disciple daring to negotiate terms with me. The inheritor of the Tianji Record is indeed extraordinary.\" His tone actually carried a hint of appreciation, \"Very well, I accept your terms. But remember—once the chess game begins, there is no turning back.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "与太师府平起平坐"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_005",
+        "content": "The moment Chen Ji took the scroll, his pupils contracted sharply as he opened to the first page. What was recorded was not the surface structure of the Heavenly Secrets Pavilion, but a list—the whereabouts of every successor of the Tianji Record. Beside each name was a note of the cause and time of death. Chen Ji's gaze swept rapidly across the pages, suddenly stopping at one entry. \"Chen Nian, Year Thirty-Seven of Heavenly Fate, Heavenly Secrets Pavilion detention, suspected Tianji Record Resonant One—\" Year Thirty-Seven of Heavenly Fate was this very year. His sister had been imprisoned by the Heavenly Secrets Pavilion for three full years. What chilled his heart even more were those four characters—\"Resonant One.\" The Heavenly Secrets Pavilion's designation for her was not prisoner, but... tool?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_006",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's knuckles whitened from the pressure, but his voice remained calm: \"How much is this intelligence worth?\" The old man in the carriage seemed to sense the subtle change in his tone but did not point it out, merely saying indifferently: \"A free gift. Consider it... a meeting present.\" Chen Ji closed the scroll, took a deep breath, and suppressed the churning waves in his heart. Three years. He had searched for three years. So Chen Nian had been right under the Heavenly Secrets Pavilion's nose all along. The Heavenly Secrets Pavilion—what a clever move, \"hiding in plain sight.\"",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0675_007",
+        "prompt": "Leads about Chen Nian have surfaced—she's been detained by the Heavenly Secrets Pavilion and defined as a \"Resonant One.\" What does this mean? How will you proceed with your plans?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0675_007_a",
+            "text": "Investigate before acting",
+            "description": "There's no rush. First, use the Grand Tutor's resources to thoroughly investigate the Heavenly Secrets Pavilion's internals and find Chen Nian's specific location and the true meaning of \"Resonant One.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Time is needed, during which Chen Nian may face unknown risks",
+            "visible_reward": "Obtain more detailed intelligence and formulate a more comprehensive rescue plan",
+            "risk_hint": "Delay may alert the Heavenly Secrets Pavilion",
+            "process_label": "谋定而后动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_007_a_1",
+                  "content": "Chen Ji tucked the scroll into his robe, his voice steady: \"Since the Grand Tutor has shown sincerity, Chen shall offer something in return. Within three days, I will deliver intelligence regarding the Heavenly Secrets Pavilion's recent movements.\" The old man in the carriage nodded slightly: \"Very well. The old man awaits.\" The carriage curtain fell, and the carriage slowly drove into the night. Chen Ji stood alone, gazing at where the carriage disappeared, his eyes flickering with complex light. Chen Nian, wait for me. This time, I will definitely find you."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "启动营救陈念计划"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0675_007_b",
+            "text": "Take the initiative",
+            "description": "Time is short. Immediately use the Tianji Record's foresight ability to lock onto Chen Nian's position, regardless of the cost to Heavenly Fate Value",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consuming a large amount of Heavenly Fate Value may intensify the Tianji Record's backlash",
+            "visible_reward": "Immediately obtain Chen Nian's specific location and quickly launch the rescue",
+            "risk_hint": "Heavenly Fate Value consumption would be enormous, and it may expose the existence of the Tianji Record",
+            "process_label": "不惜代价",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_007_b_1",
+                  "content": "Night wind brushed past. Chen Ji closed his eyes, his fingers gently caressing the Tianji Record Fragment in his sleeve. A familiar force surged into his mind from his fingertips, and the world before him began to blur. \"Within three hours... Chen Nian's location...\" he murmured, but in the next moment, a sharp pain exploded from his brow center. In the foresight vision, Chen Nian's figure was blurred and unclear, as if shrouded by a layer of mist. \"Resonant One... interference...\" Chen Ji suddenly opened his eyes, cold sweat beading on his forehead. What had the Heavenly Secrets Pavilion done to Chen Nian? Why couldn't even the Tianji Record see her location clearly?"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "启动营救陈念计划",
+              "天机录受限"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_008",
+        "content": "Chen Ji withdrew the Tianji Record, his expression unchanged, but the hand hidden in his sleeve trembled slightly. \"Resonant One\"—the weight of these three characters was far heavier than he had imagined. If Chen Nian truly could resonate with the Tianji Record, then her significance to the Heavenly Secrets Pavilion was not merely a hostage, but... the key to opening the complete version of the Tianji Record. The Heavenly Secrets Pavilion had imprisoned her for three years but never killed her—this itself explained the situation. They were waiting, waiting for the resonant power within her to fully mature. And now, this critical moment seemed to be approaching."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_009",
+        "character_id": "char_moxiansheng",
+        "content": "At this moment, a hoarse voice rang out in Chen Ji's mind—the whisper of Mo Xiansheng's remnant soul: \"Boy, this old man knows a thing or two about Resonant Ones. But now is not the time to speak of it. You only need to remember one thing—if you let her become a complete resonant body of the Tianji Record, you two will become true sharers of destiny. At that time, life and death together, never to be separated.\" Chen Ji's eyes narrowed slightly. Life and death together... these four characters were both hope and a shackle. There was unfinished meaning in Mo Xiansheng's words, but Chen Ji did not press further. Some answers must be purchased with time.",
+        "emotion": "沉思"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_010",
+        "content": "The night deepened, and the lights of the imperial capital went out one by one. Chen Ji walked slowly on the empty main street, already演算着接下来的棋局 in his heart. The Grand Tutor's residence was one thread, the Heavenly Secrets Pavilion was another, and Chen Nian... was the point that ran through all threads. He needed more chess pieces. The Crown Prince, the internal struggles of the three great sects, the Holy Sect's ambitions—these forces intertwined, forming a vast and complex web. And he, Chen Ji, would become the one holding the net. In the distance, the lights of the Grand Tutor's residence still burned, like a crouching beast awaiting the dawn."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0675_011",
+        "prompt": "A new chess game has been laid out, and the intelligence exchange in three days is merely the beginning. You need to find your position among the various forces while preparing for Chen Nian's rescue. Before formally entering this game of strategy, what would you like to do first?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0675_011_a",
+            "text": "Contact Ye Qing",
+            "description": "Ye Qing, the Saint Maiden of the Holy Sect of the Demonic Path, possesses the \"Demonic Path Mist\" ability, which can conceal the aura of the Tianji Record. If rescuing Chen Nian, she is an indispensable strategic-level ally",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Need to disclose part of the plan to Ye Qing, potentially letting her take the initiative",
+            "visible_reward": "Gain the cover of Demonic Path Mist, greatly reducing the risk of exposure during the rescue operation",
+            "risk_hint": "Ye Qing's intentions are unclear, and cooperation carries uncertainties",
+            "process_label": "借力魔道",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_011_a_1",
+                  "content": "Chen Ji took out a black jade talisman from his sleeve—it was the communication token between him and Ye Qing. The jade talisman warmed slightly in his palm, and a cold voice followed: \"Young Master Chen, contacting me so late at night—is there a new transaction?\" Chen Ji said indifferently: \"I need your Demonic Path Mist. Not once, but three times.\" Silence hung on the communication for a moment, then a light laugh came through: \"Young Master Chen has gotten bolder with his demands. Very well, I agree. But this time's price—I want the jade order of the Heavenly Secrets Pavilion in your sleeve.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得夜清支援承诺"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0675_011_b",
+            "text": "Setting up hidden pawns",
+            "description": "Building an independent intelligence network under the watchful eyes of the Grand Tutor's Mansion and the Tianji Pavilion, ensuring independent information channels during operations",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Requires consuming massive amounts of time and wealth",
+            "visible_reward": "Gaining independent intelligence channels, reducing dependence on any party",
+            "risk_hint": "Long construction period, unable to take effect in the short term",
+            "process_label": "深耕暗网",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "财富",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_011_b_1",
+                  "content": "Chen Ji turned into a quiet alley and gently knocked three times on a blue brick. A moment later, an unremarkable beggar emerged from the shadows, respectfully handing over a stack of papers. Chen Ji glanced at them, the corners of his mouth lifting slightly. The underground world of the imperial capital had always been a place where filth gathered, but also where information flowed most freely. He had long planted a chess piece—the beggar he had once saved from death's line, now the most useful informant in this area. 'Continue watching the movements of the Tianji Pavilion.' Chen Ji stuffed a banknote into the beggar's hand, 'Any unusual activity, inform me immediately.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "建立独立情报网"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0675_011_c",
+            "text": "Cultivating in secret",
+            "description": "Rescuing Chen Nian will inevitably involve fierce battles, taking advantage of these three days to seclude and break through bottlenecks, improving strength is fundamental",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Abandoning the golden time for intelligence gathering and layout",
+            "visible_reward": "Strength improvement, having more choices at critical moments",
+            "risk_hint": "Missing the timing for intelligence gathering may lead to being trapped in a passive situation during the game",
+            "process_label": "厚积薄发",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0675_result_011_c_1",
+                  "content": "Chen Ji returned to the inn he was temporarily staying at, declining all visitors. Over the next three days, he locked himself in the room,全力冲breaking through the final barrier of Foundation Building pinnacle. The Tianji Record Fragment floated before him, emanating a faint glow. Waves of spiritual energy surged into his meridians, converging into a vortex at his dantian. A soft 'crack' sounded, as if something had been shattered. Chen Ji opened his eyes, a brilliant light flashing in his gaze. Foundation Building pinnacle—he had finally stepped into this realm. Though there was still one step away from Golden Core, this was already enough to give him more pieces in the upcoming chess game."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "实力提升至筑基巅峰"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_012",
+        "content": "Three days later, Grand Tutor's Mansion. Chen Ji arrived as promised, and this time he was invited to the main hall rather than the side courtyard. Seated in the main seat was an elderly man with white hair and beard—the current Crown Prince's Grand Tutor, Ji Wujiu. This old man's cultivation was profound and unfathomable; it was said he had already reached the late stage of Nascent Soul, second only to the Emperor himself in the imperial court. His gaze fell upon Chen Ji, as if examining an interesting artifact: 'Three days apart, Brother Chen, your aura seems to have changed?' Chen Ji clasped his hands in a bow, neither servile nor overbearing: 'A minor breakthrough, I hope Your Excellency won't laugh.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_013",
+        "character_id": "char_chenji",
+        "content": "Ji Wujiu nodded slightly, asking no further questions, only clapping his hands. A servant brought forward a jade box. 'This is the recent personnel transfer list of the Tianji Pavilion, along with their hidden locations in the imperial capital.' Ji Wujiu's voice was unhurried, 'In exchange, this old man wishes to know—how much do you understand of the Tianji Record?' Chen Ji's expression remained unchanged, but his heart stirred slightly. The Grand Tutor's Mansion had indeed been probing all along. After a moment of contemplation, he said: 'The Tianji Record is an ancient relic that can foresee the future, but the cost is tremendous.' He paused, 'As for more details... which aspect does Your Excellency wish to know?' A hint of satisfaction flashed in Ji Wujiu's eyes: this young man was truly no ordinary talent.",
+        "emotion": "谨慎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_014",
+        "content": "Ji Wujiu did not press for the specific abilities of the Tianji Record, but shifted topics: 'I hear the Tianji Pavilion is recently preparing a major event, called the 'Tianji Assembly.'届时，三大宗门的核心弟子都会参加，甚至连魔道那边也有人蠢蠢欲动。' His gaze deepened, 'Brother Chen, do you think this is coincidence?' Chen Ji's heart tightened. Tianji Assembly—this name had never appeared in any intelligence report. This meant the Grand Tutor's Mansion's intelligence network was far deeper than he imagined, or... this was deliberately released smoke screen from the Tianji Pavilion. He looked up at Ji Wujiu: 'Does Your Excellency mean the Tianji Assembly is aimed at me?' Ji Wujiu smiled, that smile carrying an indescribable depth: 'Perhaps, it's aimed at both of us.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_015",
+        "character_id": "char_chenji",
+        "content": "Chen Ji fell silent for a moment, then smiled: 'Since Your Excellency has already investigated my identity and is willing to make a pact with the tiger, you must have a complete plan. The junior is all ears.' Ji Wujiu laughed, slapping his palms together: 'Refreshing!' He drew a yellowed scroll from his sleeve, spreading it on the table—it was a defense map of the imperial capital, and in the center of the map, marked a location never heard of before: 'Tianji Palace.' 'This is the true headquarters of the Tianji Pavilion in the imperial capital, hidden within an ancient ruin that hasn't been opened for three hundred years.' Ji Wujiu's voice dropped extremely low, 'The Tianji Assembly will be held there.'",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_016",
+        "content": "Chen Ji's pupils contracted sharply. Ancient ruins, Tianji Palace, Tianji Assembly—these pieces of information connected together, outlining a picture that made his heart tremble. The Tianji Pavilion's preparation of this assembly was by no means simple talent selection. They were setting a game, a game large enough to drag the entire cultivation world into it. And he, Chen Ji, along with the Tianji Record Fragment he carried, might have been a chess piece in this grand scheme from the very beginning. Ji Wujiu seemed to read his thoughts, saying calmly: 'Understood? The Tianji Pavilion doesn't want talented disciples—they want the inheritor of the Tianji Record. You, and the girl they've held captive for three years.' Chen Ji raised his head sharply, his gaze like a blade: 'You know about Chen Nian?' Ji Wujiu smiled faintly, that smile carrying an air of profound mystery: 'This old man knows far more than you imagine.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_017",
+        "character_id": "char_chenji",
+        "content": "Chen Ji took a deep breath, suppressing the stormy waves in his heart. He stared directly into Ji Wujiu's eyes, saying word by word: 'What does Your Excellency want?' Ji Wujiu did not avoid his gaze, saying openly: 'The secret of the complete Tianji Record, this old man can refrain from asking. But I want you to promise one thing—at the Tianji Assembly, if there's an opportunity, retrieve something for this old man.' Chen Ji asked: 'What thing?' Ji Wujiu took an ancient token from the jade box, engraved with an ancient rune: 'This is the key to open the deepest part of the Tianji Palace. The Tianji Pavilion has hidden this item there for several hundred years—it's time for it to see the light of day.'",
+        "emotion": "算计"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_018",
+        "content": "Chen Ji took the token, and the moment it entered his hand, a strange force surged from the token, as if probing his cultivation. He calmly tucked the token into his sleeve, but in his heart was rapidly calculating. This token was no ordinary object—Ji Wujiu was willing to give it to him, indicating he was already prepared to let him enter the deepest part of the Tianji Palace. But why would he do this? What exactly was hidden in the deepest part of the Tianji Palace, worth risking so much? These questions swirled in Chen Ji's mind, but he showed nothing on his face, only saying calmly: 'Deal.' Ji Wujiu nodded with satisfaction: 'Good. Then at the Tianji Assembly, we each take what we need.'"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_019",
+        "content": "When leaving the Grand Tutor's Mansion, it was already deep night. Chen Ji walked alone on the empty long street, the moonlight stretching his shadow很长。他的手中握着两枚令牌——一枚来自太师府，一枚来自某个他还不能说出名字的人。这两枚令牌，是两重保险，也是两重枷锁。他知道自己已经被卷入了更大的棋局，但他不惧。从废柴杂役到执棋者候选，他陈机从来都不是任人摆布的棋子。夜风吹过，带来一丝凉意。忽然，陈机的脚步微微一顿。他抬起头，望向远处的皇都城墙。城墙之上，一道白色的身影静静伫立，在月光下显得格外孤寂。那身影……为何如此熟悉？他的瞳孔骤然收缩——那是苏青瑶。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0675_020",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji and that figure exchanged a gaze across the distance, though he couldn't see her face clearly, he knew she was looking at him. Three years ago on that rainy night, she found him unconscious in the ruins; three years later on this moonlit night, she watched his departing silhouette from the city wall. What had she sensed? Or was she simply following? Chen Ji didn't know. But one thing he was certain—Su Qingyao had become the most unpredictable variable in this chess game. In the distance, Su Qingyao's figure moved slightly, as if wanting to leap down from the wall to pursue, but she forcibly stopped herself. In the end, she simply stood there quietly, watching until his figure disappeared at the end of the long street. Moonlight like water, falling on her shoulders, reflecting a trace of indescribable loneliness.",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0675_021",
+        "content": "Chen Ji withdrew his gaze, quickening his pace and disappearing into the night. He knew Su Qingyao was watching him, but he couldn't look back. Not because he didn't want to, but because he couldn't. With the Tianji Assembly approaching, Chen Nian's life in danger, the Grand Tutor's Mansion watching with predatory intent, the Tianji Pavilion hiding deadly traps—before all this was settled, he couldn't let any emotions become his weakness. Yet in the deepest corner of his heart, a voice whispered softly: Can you really win this game of chess? If you win, what will you lose? If you lose... Chen Ji shook his head, casting these distracting thoughts from his mind. No matter what, he would not lose. Because he had one advantage no other chess player possessed—he could see three hours into the future. At least, before his Heavenly Fate was exhausted, he could see. The night of the imperial capital gradually fell into silence. And on the city wall, Su Qingyao still stood alone in the wind. In her hand she held a broken jade pendant, something that had fallen from Chen Ji's body three years ago. 'Chen Ji...' she murmured, her voice scattered by the night wind, 'Just who... are you?'"
+      }
+    }
+  ]
+}

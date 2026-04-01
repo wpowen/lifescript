@@ -1,0 +1,490 @@
+{
+  "id": "天机录_ch0421",
+  "book_id": "天机录",
+  "number": 421,
+  "title": "Secret Realm Exit",
+  "is_paid": true,
+  "next_chapter_hook": "When Ye Qing proposed to speak with Chen Ji alone, he noticed the faint flickering light of a Demonic Path seal in her sleeve—the means by which the Holy Sect monitored her.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0421_001",
+        "content": "The sky cracked open a golden-red gap, and the light from the secret realm exit poured down, dyeing the entire wasteland in a strange hue alternating between dusk and dawn. The flags of various factions fluttered violently in the wind, cultivators' breaths rose and fell in a cacophony, mingling with suppressed spiritual energy fluctuations. The Xuanwu Sect's battle formation stood at the front, the prodigies of Qingyun Gate on the left, while the Tianqing Sect's group—including the ignored worthless servant Chen Ji—stood quietly in the most insignificant corner.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_002",
+        "character_id": "char_hanlie",
+        "content": "Chen Ji? You worthless waste, didn't you die in the secret realm?",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_003",
+        "content": "Han Lie's sneer drew a few disdainful glances from those around. Chen Ji didn't even lift his eyelids, replying calmly: \"Thanks to Brother Han's blessing, Chen is quite resilient.\" His tone was平静得近乎无聊，仿佛只是在回应一个路人的寒暄。这种淡然反而让韩烈更加恼怒，却又无从发作——出口开启在即，众目睽睽之下动手只会自降身份。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_004",
+        "character_id": "char_yeqing",
+        "content": "A commotion arose from the Demonic Path direction as a black-clothed figure walked out leisurely, surrounded by faint purple-black mist—that was Demonic Path fog, an aura Chen Ji was all too familiar with.",
+        "emotion": "神秘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_005",
+        "content": "Ye Qing. The Saintess of the Holy Sect, the woman who had made a secret pact with Chen Ji in the depths of the secret realm. She gazed into the distance, her eyes lingering on Chen Ji for a moment before her lips curved slightly upward. That smile held no mockery, no probing—only a tacit understanding—a way of saying: \"We both made it out alive. How wonderful.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_006",
+        "content": "Chen Ji lowered his eyes, pressing that fleeting fluctuation deep into his heart. Recalling the events in the secret realm, from the initial probing to the final shoulder-to-shoulder combat, he had to admit—this Holy Sect Saintess was the first collaborator who made him feel \"not exhausted.\" She could read his chess moves, and he could understand her struggles. Two pieces moved by fate, yet they found a strange resonance in this chaotic world.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_007",
+        "character_id": "char_chenji",
+        "content": "\"After exiting, the routine interrogations from both the Orthodox and Demonic Paths...\"",
+        "emotion": "谨慎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_008",
+        "content": "Chen Ji nodded slightly, responding via secret transmission: \"The elders from all factions will set up spiritual detection at the exit. No abnormality will escape notice.\" He paused, \"If you and I appear familiar at this moment, it will only invite unnecessary trouble.\" A flash of understanding flickered in Ye Qing's eyes, but no disappointment. She raised her hand gently, tracing a tiny rune in the void with her fingertip—the prearranged signal meaning \"I understand, but there's more to say.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_009",
+        "content": "The exit's light grew increasingly brilliant, the spiritual vortex slowing, indicating the passage would soon stabilize. Elders from all factions had already soared into the sky, arranging interrogation formations. The air was thick with a mixture of tension and anticipation—some returned with full gains, others empty-handed, and some had settled grudges that demanded revenge. Chen Ji's peripheral vision caught Han Lie staring at him gloomily, as if having suffered some loss in the secret realm. On the other side, Ye Qing was surrounded by several Demonic Path experts, her expression coldly indifferent as always—only when looking at him did that glimmer of human warmth appear in her eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0421_choice_001",
+        "prompt": "The exit is about to open, Ye Qing has hinted she has something to say. How should Chen Ji handle this delicate situation?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "坦诚相对",
+            "text": "Proactively approach and use secret transmission to arrange another meeting at a secret location",
+            "description": "Treat her with sincerity, directly tell Ye Qing a contact method outside the secret realm to continue this special trust.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "The risks of exposing their relationship",
+            "visible_reward": "Establishing a stable secret communication channel with Ye Qing",
+            "risk_hint": "If the Demonic and Orthodox Paths discover their contact, it may trigger alerts",
+            "process_label": "坦诚约定",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0421_result_坦诚相对_001",
+                  "character_id": "char_yeqing",
+                  "content": "\"Three days later, the Withered Bone Ridge.\" Her voice was like an undercurrent beneath ice. \"I will make the Holy Sect believe I have another mission.\"",
+                  "emotion": "期待"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清约定"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与夜清约定三日后枯骨岭密谈",
+            "branch_route_id": null
+          },
+          {
+            "id": "利益权衡",
+            "text": "Keep a distance, safety is paramount",
+            "description": "Temporarily maintain the status quo, wait for the heat to die down before attempting contact, leaving no handle for the other party.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May miss the opportunity to deepen the relationship with Ye Qing",
+            "visible_reward": "Safely passing the interrogation without arousing anyone's suspicion",
+            "risk_hint": "Ye Qing might misunderstand this distance",
+            "process_label": "谨慎观望",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0421_result_利益权衡_001",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing's gaze lingered on him for a moment longer, as if reading his concerns. She did not transmit again, only slightly lifting her chin, making a \"never mind\" lip movement in a way only he could understand.",
+                  "emotion": "理解"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "试探边界",
+            "text": "Use secret transmission to probe Ye Qing's true situation",
+            "description": "Before the agreed meeting, first confirm whether Ye Qing still has freedom of movement, to avoid implicating each other.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May touch upon secrets Ye Qing would rather not mention",
+            "visible_reward": "Understanding Ye Qing's true situation in the Holy Sect to develop a safer contact plan",
+            "risk_hint": "If detected by Holy Sect people, the secret transmission may expose their connection",
+            "process_label": "信息收集",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0421_result_试探边界_001",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing was silent for a moment, her secret transmission carrying a trace of bitterness: \"The Holy Sect's 'grace'... you wouldn't understand, would you? I have their seal placed on me. Any abnormal spiritual fluctuation won't escape their perception.\" Her tone was calm, yet concealed a blade-like resolve. \"But seeing you once is worth taking this risk.\"",
+                  "emotion": "苦涩"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清约定"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "得知夜清身上有圣宗禁制",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_010",
+        "content": "\"Boom—\" The secret realm exit fully opened, spiritual storms sweeping out. Everyone's gaze turned to that golden-red rift—some faces showed wild joy, others wore heavy expressions, and some began quietly moving closer to their own factions. Chen Ji felt Ye Qing's gaze fall upon him again, that gaze holding no probing, no scheming—only a pure question: \"What's your next move?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_011",
+        "character_id": "char_lingyuan",
+        "content": "From the Tianqing Sect direction, an ancient and authoritative voice rang out: \"All disciples, pass through the exit in order and submit to the elders' interrogation. Anyone who conceals gains from the secret realm will be severely punished!\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_012",
+        "content": "Ling Yuan. The old Sect Master of Tianqing Sect, that old fox whose surface benevolence conceals hidden calamity. Chen Ji slightly raised his eyes, meeting that seemingly casual sweep of gaze. The old man's face wore a gentle smile, as if merely an ordinary elder caring for juniors, but Chen Ji read a certain appraisal beneath that smile—like weighing the value of a chess piece. That feeling of being seen through yet unable to resist filled his heart with cold disgust. But he was used to it. Shouldn't a worthless servant fear an elder's authority?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_013",
+        "content": "All factions began passing through the exit in sequence. The Xuanwu Sect's battle formation was neat and uniform; Han Lie walked at the front with head high, receiving the elders' commendation; though the prodigies of Qingyun Gate wore calm faces, their eyes couldn't hide satisfaction; for the Demonic Path, Ye Qing was surrounded by several black-clothed figures, her expression coldly indifferent as she underwent detection, the seal runes faintly glowing in her sleeve. It was Tianqing Sect's turn. Chen Ji lowered his head, mingling with the servant disciples, preparing for that perfunctory interrogation—his worthless persona had never drawn anyone's attention.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0421_choice_002",
+        "prompt": "During the interrogation, an attendant seemed to notice Chen Ji's abnormality and demanded he stay behind for a detailed examination. How should Chen Ji respond?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "示弱求生",
+            "text": "Feign panic and timidity, proactively expose some trivial \"small gains\" to divert attention",
+            "description": "Present weakness in a废物's identity, letting the attendant think he's merely a fool greedy for petty advantages, voluntarily surrendering some insignificant spirit materials in exchange for passage.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Losing a few low-grade spirit grasses",
+            "visible_reward": "Successfully slipping away without arousing anyone's suspicion",
+            "risk_hint": "If the acting is seen through, it may backfire",
+            "process_label": "主动暴露",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": -2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0421_result_示弱求生_001",
+                  "content": "Chen Ji immediately put on a terrified expression, pulling several spirit grasses with dirt still clinging from his embrace. He held them out with both hands: \"R-Rev... reverent attendant, your disciple found these at the edge of the secret realm, did not dare to hide them...\" His voice trembled, his acting flawless. The attendant glanced at those low-grade spirit grasses with disdain, waving his hand: \"Alright, alright, a废物 is a废物, get lost.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "反客为主",
+            "text": "Counterattack by leveraging—implying Ling Yuan's tacit approval",
+            "description": "Invoke the old Sect Master's name, making the attendant hesitant like a rat afraid to break the dishes, voluntarily giving up the detailed examination.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May attract Ling Yuan's attention",
+            "visible_reward": "Getting away without spending any effort, and deterring the attendant",
+            "risk_hint": "If Ling Yuan investigates, flaws may be exposed",
+            "process_label": "借势脱身",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0421_result_反客为主_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji calmly bowed, his tone peaceful yet harboring hidden edge: \"The attendant is discerning. This disciple reported to Elder Ling before entering the secret realm—if any gains were made, they would be submitted to the sect. The elder specially instructed that servant disciples need not be thoroughly examined, to avoid delaying important matters.\" The attendant's expression shifted slightly—who in Tianqing Sect didn't know Elder Ling despised being questioned?",
+                  "emotion": "沉稳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_014",
+        "content": "The interrogation concluded. All factions began withdrawing, the noise gradually fading. Chen Ji mixed into the dispersing servants, his steps neither hurried nor slow, but his spiritual sense was noting Ye Qing's direction—she was being escorted away by the Demonic Path group in the opposite direction, her black cloak fluttering in the wind. As the two were about to disappear from sight, Ye Qing suddenly turned her head and lightly blinked at him. That moment of tacit understanding seemed to bridge the chasm between Orthodoxy and Demonic Path.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_015",
+        "content": "Chen Ji withdrew his gaze, the corner of his mouth lifting slightly. This Holy Sect Saintess was indeed the one who understood him best in these turbulent times. Not Su Qingyao's pressing insight, nor Ling Yuan's smile-hiding-daggers scheming—but \"I understand your game, and I understand your exhaustion.\" This feeling made him, for the first time on his long road of strategy, feel less alone.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_016",
+        "character_id": "char_yeqing",
+        "content": "\"Chen Ji, I want to talk with you alone. Now.\"",
+        "emotion": "期待"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0421_choice_003",
+        "prompt": "Ye Qing suddenly proposed a private conversation, avoiding all eyes and ears—what does this mean?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "冒险赴约",
+            "text": "Go to the meeting—even with risks",
+            "description": "Since Ye Qing could risk being detected by the Holy Sect to propose a meeting, there must be something urgent. At this moment, he chose to trust her.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May expose their relationship",
+            "visible_reward": "Personally hear the important matter Ye Qing has to say",
+            "risk_hint": "The Holy Sect's surveillance is everywhere",
+            "process_label": "赴约",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0421_result_冒险赴约_001",
+                  "content": "Chen Ji did not hesitate, quietly slipping away from the group and heading toward where Ye Qing had indicated. Along the way, he used the Tianji Record Fragment to confirm there was no lethal danger within three hours—a habit he'd developed over years, and the reason he survived to this day. Passing through a grove of dead trees, he saw that black-clothed figure facing away from him, her hood covering most of her face.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清密谈"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定冒险与夜清私下会面",
+            "branch_route_id": null
+          },
+          {
+            "id": "谨慎婉拒",
+            "text": "Decline politely—not the right time yet",
+            "description": "Although wanting to see Ye Qing, at this moment various factions haven't fully departed; acting rashly is too risky. Arranging another day would be more prudent.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May disappoint Ye Qing",
+            "visible_reward": "Ensuring both parties' safety",
+            "risk_hint": "Ye Qing may have something urgent to say",
+            "process_label": "婉拒",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0421_result_谨慎婉拒_001",
+                  "character_id": "char_chenji",
+                  "content": "After a moment of deliberation, Chen Ji replied via secret transmission: \"At this moment there are too many eyes and ears, not suitable for risks. Each of us has our own entanglements; there's no rush.\" Ye Qing's response came quickly, just one word: \"Good.\" But in that moment of silence, Chen Ji heard a hint of loss. He secretly made a note—next time, he would never make her wait.",
+                  "emotion": "遗憾"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_017",
+        "content": "In the dead tree grove, night deepened. Chen Ji walked closer through the fallen leaves, each step carefully收敛着气息. Ye Qing turned around, moonlight filtering through branches and leaves onto her face, outlining features cold and beautiful yet weary. She did not speak, merely gazing at him quietly, that gaze holding too much left unsaid. The Holy Sect's seal, fate's shackles, the chess game of chaotic times—they were pieces, yet both wanted to be the Chess Player. And now, in this corner unknown to all, two lonely souls finally found a moment of peace.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_018",
+        "character_id": "char_yeqing",
+        "content": "\"I thought you would refuse.\"",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0421_019",
+        "content": "Chen Ji stopped three steps away from her side, his gaze falling on the faintly visible seal light in her sleeve. That was the shackle the Holy Sect used to monitor her—any abnormal spiritual fluctuation would trigger the alarm. She said \"wanted to talk alone,\" which meant she had already prepared for discovery—or rather, she simply didn't care about the consequences. At this moment, Chen Ji suddenly felt a pang of heartache. This Holy Sect Saintess, she lived even more exhaustingly than him.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0421_020",
+        "character_id": "char_chenji",
+        "content": "You risked being discovered to call me here, surely not just for old times' sake?",
+        "emotion": "关切"
+      }
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "id": "天机录_ch0384",
+  "book_id": "天机录",
+  "number": 384,
+  "title": "「夜清の秘密」",
+  "is_paid": true,
+  "next_chapter_hook": "夜清が去った後、陳機が天機録の残頁を展開すると、天命の鍵の絵は以往より一層曖昧模糊としていた——陳念の位置は、移动しているようだった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0384_001",
+        "content": "夜風刀の如く、天青宗後山の竹林において、陳구는背手を組んで立っていた。彼の視線は重重的竹影を貫き、遠くのはかなげな黒紗の身影に落ちていた。さっき聖宗の長老の言葉がまだ耳にあった——「天命の鍵はまもなく成熟する」と。陳念の名が彼の心底で血痕を划でいたが、より深い寒意に押しつぶされていた。足音が近づくにつれ、彼は目を殺し一瞬の殺意を消し、いつも通りの淡然とした仮面を被り直した。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_002",
+        "character_id": "char_yeqing",
+        "content": "「あなたは大胆だな、こんな時に私を呼ぶなんて。」夜清の声が竹影の中から漂い、淡淡とした魔道の霧気を伴いながらも往日より数分凌厉さを欠いていた。彼女は三尺近づいて足を止め、月光が彼女の引き結んだ顎の輪郭を描いた。「あなたに話すべきことがあるの。……私自身のこと……聖宗のことについて。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_003",
+        "content": "陳機の眉心が微かに動いた。夜清が自発的に聖宗に言及したことは、彼の予想外だった。この魔道聖女は常に神秘的で測り知れない存在，今日他却主动揭开面具一角。彼は追逐せず、ただ静かに待ち、竹葉が二人の間の空地にサラサラと落ち、沙沙という音が沈黙を埋めた。夜清は深呼吸し、月色の中で彼女の睫毛が微かに震え、ついに某种の決意下定めたかのように見えた。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_004",
+        "character_id": "char_yeqing",
+        "content": "「私は普通の聖女ではない。」夜清は瞳を上げ，眼下に弾く間の脆さを見せた，「十五年前，魔道の主帅が廃墟の中で饿死しかけた孤児を見つけました——それが私です。彼は私を養い，教え，聖宗の聖女に培養しました。」彼女の声が微かに湿った，「彼は私の救命恩人であり，また……私の父親です。」",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_005",
+        "character_id": "char_chenji",
+        "content": "陳機がしばらく黙然とした後，彼は不意に口を開いた：「つまりあなたが私に来たのは、密告するためかい？」語気が平淡でありながら、万一の试探を含んでいた。竹葉が彼の肩から滑り落ち、彼は手を上げて払い除き，动作从容とした，「それとも……あなたも何かを発見したかい？」",
+        "emotion": "平静试探"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_01",
+        "prompt": "夜清の話は ситуацияを微妙なものにした。陳汽は信頼と试探の間で選択する必要がある——直接心を開いて彼女と同盟を結ぶか、それとも彼女のこれらの透露の真の目的を先に見極めてからにするか？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "c01_trust",
+            "text": "坦然と応じ、誠意を示す",
+            "description": "直接的に自分も聖宗を調査していることを表明し、双方の目標が一致することを示し、合作の誠意を見せる。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "自分の部分的な底牌を露出する",
+            "visible_reward": "素早く信頼を確立し、関係が向上する",
+            "risk_hint": "あまりに早く意図を暴露した可能性がある",
+            "process_label": "坦诚以对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c01_01",
+                  "character_id": "char_chenji",
+                  "content": "「既然你坦诚，我也不藏掖。」陈机负手而立，月光在他眼底流转，「圣宗近期动作频频，尤其是对'天命锁钥'的布局……你我目标若真有一致之处，不妨各取所需。」",
+                  "emotion": "淡然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_basic"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与夜清初步建立信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "c01_probe",
+            "text": "继续试探，留有余地",
+            "description": "不急着表态，让夜清先说完她的全部底牌，再决定合作深度。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "可能让夜清感到不被信任",
+            "visible_reward": "获取更多信息，避免陷阱",
+            "risk_hint": "可能错过坦诚时机",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c01_02",
+                  "character_id": "char_chenji",
+                  "content": "「有趣。」陈机淡淡道，「不过在我表态之前——你说主帅近年行事诡异，具体指什么？」他的目光落在夜清脸上，不疾不徐，「既然要合作，总得让我知道我在跟谁合作。」",
+                  "emotion": "冷静审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_suspicion"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_006",
+        "character_id": "char_yeqing",
+        "content": "夜清苦笑一声：「三年前开始，他就变了。以前的他是真正的枭雄，有底线、有抱负。但现在……他似乎在执行某个更大的计划，圣宗弟子只是棋子，连我也是。」她攥紧袖口，指节泛白，「最近他频繁接触一个神秘存在，回来后眼神就像……被什么东西占据了一样。」",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_007",
+        "content": "陈机眸光微凝。神秘存在——天道之眼的碎片投影，还是别的什么？夜清的话与墨先生曾经的暗示不谋而合，让他心底升起一丝寒意。但面上他依旧波澜不惊，只是静静看着眼前这个强撑着镇定的女子。月光下，她眼底的血丝清晰可见，显然已多日未曾安眠。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_008",
+        "character_id": "char_yeqing",
+        "content": "「我查过了。」夜清压低声音，「天命锁钥——她可能是你的亲人，对吗？」她盯着陈机的眼睛，「我看到过你翻阅古籍时的表情，那种神色……只有至亲之人失踪多年才会出现。圣宗要收割天命锁钥，你不会坐视不管。」",
+        "emotion": "洞察"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_009",
+        "character_id": "char_chenji",
+        "content": "陈机没有回答。他只是静静看着夜清，竹林里忽然安静得只剩下风声。这一刻，他心中飞速运转——她知道陈念的存在，这意味着什么？是圣宗的布局，还是夜清自己的调查？片刻后，他嘴角微扬，那笑意却未达眼底：「你的情报网倒是灵通。」",
+        "emotion": "深不可测"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_02",
+        "prompt": "夜清已经亮出部分底牌，陈机需要决定是否让她知道更多真相——关于陈念，关于天机录，还是保持神秘？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c02_share_truth",
+            "text": "透露陈念身份，深化同盟",
+            "description": "告诉夜清陈念是自己的妹妹，进一步深化信任，让她成为真正的盟友。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "暴露最大软肋",
+            "visible_reward": "获得夜清完全信任，解锁更深层合作",
+            "risk_hint": "软肋一旦暴露，后果难料",
+            "process_label": "以诚换诚",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c02_01",
+                  "character_id": "char_chenji",
+                  "content": "「陈念。」陈机吐出这个名字，声音很轻，却重如千钧，「她是我妹妹，被圣宗带走已经十年。」他看向夜清，目光里罕见地露出一丝脆弱，「我找了她十年。」",
+                  "emotion": "隐痛"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_knows_chenian"
+            ],
+            "requires_flag": "yeqing_alliance_basic",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清得知陈念身份",
+            "branch_route_id": null
+          },
+          {
+            "id": "c02_keep_secret",
+            "text": "保持神秘，只谈合作",
+            "description": "不透露陈念身份，只在合作层面达成共识，保持信息优势。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "合作深度有限",
+            "visible_reward": "保持信息差，日后有更多操作空间",
+            "risk_hint": "夜清可能产生隔阂",
+            "process_label": "留有后手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c02_02",
+                  "character_id": "char_chenji",
+                  "content": "「你我各有各的秘密，」陈机淡淡道，「但至少有一点可以确认——圣宗是我们共同的敌人。」他顿了顿，「在真相大白之前，我们的合作仅限于此。至于更多……」他意味深长地看了她一眼，「来日方长。」",
+                  "emotion": "克制"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_shallow"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_010",
+        "content": "夜清沉默良久。竹影在她脸上明灭不定，像是她内心的挣扎。最后，她轻轻点头：「好。我会继续监视主帅的动向，有任何异常第一时间通知你。」她抬起手，掌心浮现一道淡淡的黑色纹路，「这是魔道迷雾的印记，可以暂时遮掩天机气息——就当是……合作的诚意。」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_011",
+        "character_id": "char_chenji",
+        "content": "陈机接过那道黑色纹路，指尖触及的刹那，一股清凉之意蔓延开来。他抬眸看向夜清：「这东西……你舍得？」魔道迷雾是夜清的保命神通，如今却轻易交出，这份诚意出乎他意料。夜清别过脸去，月光下她的耳根似乎有些泛红：「反正你那天机录的气息太容易暴露，有人盯着你对我也没好处。」",
+        "emotion": "口是心非"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_03",
+        "prompt": "夜清送出魔道迷雾，陈机该如何回应这份出乎意料的诚意？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "c03_grateful",
+            "text": "郑重收下，表示感谢",
+            "description": "真诚地接受这份礼物，表达感激，让两人的关系更进一步。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "略显弱势",
+            "visible_reward": "夜清好感大幅提升，关系质变",
+            "risk_hint": "可能让对方觉得你在讨好",
+            "process_label": "真心接纳",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c03_01",
+                  "character_id": "char_chenji",
+                  "content": "陈机将黑色纹路收入袖中，郑重道：「这份情，我记下了。」他的语气少了几分平日的疏离，多了一丝真诚。夜清怔了怔，随即别过脸去，嘴角却微微上扬：「少来这套……记得欠我一顿酒。」",
+                  "emotion": "微赧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c03_casual",
+            "text": "不动声色，礼尚往来",
+            "description": "保持一贯的淡然，顺势收下但不表现太多情绪，以对等姿态回应。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "可能让夜清觉得被冷落",
+            "visible_reward": "保持神秘感，不落下风",
+            "risk_hint": "可能错失关系升温时机",
+            "process_label": "不卑不亢",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c03_02",
+                  "character_id": "char_chenji",
+                  "content": "「等价交换罢了。」陈机将纹路收入袖中，神色如常，「你有你的目的，我有我的需求。这笔账，日后我会还清。」夜清盯着他看了片刻，忽然轻笑出声：「你还真是……滴水不漏。」",
+                  "emotion": "无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_012",
+        "character_id": "char_yeqing",
+        "content": "「主帅那边，我会想办法。」夜清整理了一下衣襟，恢复了几分圣女的冷傲，「但你要小心天青宗内部——我收到消息，凌渊最近在暗中调动人手，似乎在找什么东西。」她顿了顿，压低声音，「还有你那位苏师姐……她似乎对你起了疑心。」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_013",
+        "character_id": "char_chenji",
+        "content": "「苏青瑶？」陈机眉梢微挑，眼底闪过一丝玩味。这位内门首席确实敏锐，但他早有准备。他不置可否地笑了笑：「多谢提醒。不过这位苏师姐……我自有分寸。」夜清看了他一眼，似乎想说什么，最终只是摇了摇头：「你这个人，真是让人看不透。」",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_014",
+        "content": "夜风渐起，吹动她的黑纱。她退后几步，身形开始融入夜色。临行前，她忽然停下脚步，背对着陈机轻声道：「下次见面……你要请我喝酒。」声音里带着一丝罕见的娇羞，与平日凌厉的魔道圣女判若两人。陈机怔了一瞬，随即嘴角微扬：「好。」夜清没有回头，身影却微微一僵，片刻后消失在竹林深处，只留下一缕淡淡的魔道迷雾香气。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_015",
+        "content": "竹林重归寂静。陈机负手而立，望着夜清消失的方向，神色渐渐沉凝。袖中的魔道迷雾印记微微发热，与他体内的天机录气息产生共鸣。他展开残页，上面的画面果然清晰了几分——然而有关陈念的部分，依然是一片模糊的涟漪。他握紧残页，指节泛白。陈念，再等等，哥哥一定会找到你。夜色深沉如墨，远处天青宗的灯火若隐若现。新的棋局，已经悄然铺开。"
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ struct SoloDestinyIntelPanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Label("天机侧情报", systemImage: "eye.trianglebadge.exclamationmark")
+            Label(SoloLocalization.localized("天机侧情报"), systemImage: "eye.trianglebadge.exclamationmark")
                 .font(SoloTypography.meta)
                 .foregroundStyle(SoloTheme.gold)
 
@@ -13,7 +13,7 @@ struct SoloDestinyIntelPanel: View {
                 Text(snapshot.destinyStatus.headline)
                     .font(SoloTypography.sceneHeadline(size: 20))
                     .foregroundStyle(SoloTheme.ink)
-                Text("天命值 \(snapshot.destinyStatus.value)")
+                Text(SoloLocalization.format("天命值 %d", snapshot.destinyStatus.value))
                     .font(.caption)
                     .foregroundStyle(destinyTint)
             }
@@ -27,13 +27,13 @@ struct SoloDestinyIntelPanel: View {
                 Divider()
                     .overlay(Color.white.opacity(0.08))
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("当前关键人物")
+                    Text(SoloLocalization.localized("当前关键人物"))
                         .font(.caption2.weight(.semibold))
                         .foregroundStyle(SoloTheme.warmInk)
-                    Text("\(spotlight.characterName) · \(spotlight.attitudeLabel)")
+                    Text(SoloLocalization.format("%@ · %@", spotlight.characterName, spotlight.attitudeLabel))
                         .font(.caption.weight(.bold))
                         .foregroundStyle(SoloTheme.ink)
-                    Text(spotlight.reason ?? "暂无新的波动记录。")
+                    Text(spotlight.reason ?? SoloLocalization.localized("暂无新的波动记录。"))
                         .font(.caption)
                         .foregroundStyle(SoloTheme.muted)
                         .lineLimit(3)

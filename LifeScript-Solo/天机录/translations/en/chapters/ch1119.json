@@ -1,0 +1,502 @@
+{
+  "id": "天机录_ch1119",
+  "book_id": "天机录",
+  "number": 1119,
+  "title": "Old Enemies, New Alliance",
+  "is_paid": true,
+  "next_chapter_hook": "A temporary alliance forms, yet within Ling Yuan's gaze toward Chen Ji, that undisguised killing intent makes this fragile cooperation，随时可能崩裂。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1119_001",
+        "content": "The sky splits open with a dark purple fissure, as if some invisible giant eye is peering into the mortal realm from the depths of the crack. Ling Yuan, dressed in azure robes, stands atop the clouds, followed by over a dozen elders of the Tianqing Sect. His oppressive aura is like a collapsing mountain, causing the entire valley to tremble. \"Chen Ji!\" Ling Yuan's voice is ice-cold and bone-piercing. \"Let's see how long you can hide without that protective barrier!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_002",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan stands with hands clasped behind his back, his gaze sharp as a hawk's. \"Although the dimensional rift is dangerous, it also breeds peerless opportunities. Do you think this old man doesn't know what you're scheming?\" He sneers coldly. \"Today, this rift belongs to this old man!\"",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_003",
+        "content": "Chen Ji slowly rises from the ruins, brushing the dust from his robes, showing no trace of fear on his face. He looks up at the fissure spanning the horizon, rapidly calculating in his mind—the energy of the dimensional rift is expanding at a visible rate. If not stopped, a hundred miles in all directions will become a hell. Ling Yuan wants to seize the treasures—this is truly consorting with tigers.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_004",
+        "character_id": "char_chenji",
+        "content": "\"Senior, there's something this junior doesn't understand.\" Chen Ji speaks unhurriedly, his voice carrying a hint of playfulness. \"As the esteemed Sect Master of Tianqing Sect, you personally came to this remote place to capture a servant disciple—isn't this reception a bit too grand? Or could it be...\" He deliberately pauses. \"You're actually here to deliver yourself to death?\"",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_005",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan's expression darkens, his spiritual energy erupting around him, and an elder is actually forced back several steps. \"You ignorant child, daring to bark wildly here!\" He raises his hand, about to施展神通. However, just then, a roar comes from the distant horizon—",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_006",
+        "content": "\"All of you, get out of my way!\" A stream of赤金色的流光 breaks through the air, and the one arriving is Han Lie, the first genius of Xuanwu Sect. He is covered in blood, in a wretched state, followed by a group of defeated soldiers. The elite of Xuanwu Sect, at this moment, seems to be fleeing for their lives from something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_007",
+        "character_id": "char_hanlie",
+        "content": "Han Lie sees Chen Ji at a glance, his eyes flashing with complex emotions—fury,不甘, and mostly disbelief. \"It's you!\" he hisses through clenched teeth. \"That废物居然还活着!\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_008",
+        "content": "Chen Ji looks at Han Lie's wretched appearance, the corners of his mouth slightly rising. Good news: Han Lie is also here. Bad news: for something to scare this guy so badly, what's inside the dimensional rift is probably even more棘手 than he anticipated. Ye Qing's figure quietly appears beside Chen Ji, whispering: \"Young master, the aura from the rift is very off.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1119_choice_001",
+        "prompt": "Three forces gather, the threat of the dimensional rift is imminent. Facing his former sworn enemy, Chen Ji needs to make a choice:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianji_ch1119_opt_sincere",
+            "text": "Sincere Cooperation",
+            "description": "Set aside prejudice, honestly inform them of the danger of the dimensional rift, and suggest the three sides join forces to deal with it. After all, the前提 of internal strife is that everyone survives first.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Expose Partial Strength",
+            "visible_reward": "May gain limited trust from Ling Yuan and Han Lie",
+            "risk_hint": "Ling Yuan may seize the opportunity to strike",
+            "process_label": "坦诚相待",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_sincere_001",
+                  "content": "Chen Ji takes a deep breath, putting away his usual laziness, and says seriously: \"Sect Master Ling, Brother Han, what's inside the dimensional rift is not something any single one of us can handle alone.\" He points to the continuously expanding fissure. \"Look at that energy fluctuation—within three days, the entire Azure Cloud Mountain Range will be reduced to powder.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_watchful",
+            "text": "Mutual Vigilance",
+            "description": "Remain vigilant, observe Ling Yuan and Han Lie's movements. Let them test the rift's power first, while he sits back and reaps the benefits.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May miss the best opportunity for cooperation",
+            "visible_reward": "Keep trump cards hidden, observe enemy's weaknesses",
+            "risk_hint": "The rift expanding may get out of control",
+            "process_label": "静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_watchful_001",
+                  "content": "Chen Ji steps back half a pace, adopting an姿态 of being willing to listen. He looks at Ling Yuan and salutes with clasped hands: \"Senior's cultivation is profound, this junior is truly in awe. How should we deal with this rift? Please instruct, senior.\" He internally laughs: Let you go first, let's see what you're capable of. Ling Yuan frowns, seeming to sense something, yet unable to articulate it clearly."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_calculate",
+            "text": "Secret Manipulation",
+            "description": "Seize the opportunity to sow discord between Ling Yuan and Han Lie, let them fight first, so he can profit from the chaos. After all, neither of these two is any good.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May provoke both sides",
+            "visible_reward": "May weaken both forces",
+            "risk_hint": "Once exposed, will face enemies from both front and back",
+            "process_label": "挑拨离间",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_calculate_001",
+                  "content": "Chen Ji glanced subtly, then suddenly laughed softly: \"Brother Han, do you know why Sect Master Ling personally intervened?\" he said leisurely, \"The secret of the Tianji Record is probably even more interesting to certain people than what's in that rift.\" As the words fell, Han Lie's expression suddenly changed, his gaze toward Ling Yuan gaining a new layer of scrutiny."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_009",
+        "content": "Just as the tension reached its peak, the dimensional rift suddenly erupted with dazzling purple light. A massive arm, condensed from pure energy, thrust out from the rift, hundreds of zhang in size, grabbing toward everyone!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_010",
+        "character_id": "char_hanlie",
+        "content": "Without hesitation, Han Lie unleashed the Xuanwu Sect's ultimate technique, 'Xuanjia Breakthrough'. Crimson-gold fist light collided with the giant hand, generating an earth-shaking roar. Yet the massive hand merely paused slightly before continuing to press down, sending Han Lie stumbling back several steps, blood trickling from his mouth. \"Damn it!\" he cursed, \"What the hell is this thing!\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_011",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing frowned deeply, whispering: \"This is no ordinary dimensional creature... it's a Gravekeeper!\" She glanced at Chen Ji, a solemn glint in her eyes, \"Legend says the end of the dimensional rift connects to the Ancient Forbidden Land. And within those forbidden places lie things that should never exist in this world.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_012",
+        "content": "Ling Yuan's face turned ashen, his earlier arrogance completely vanished. He barked: \"All elders, follow this old man to meet the enemy!\" Yet the giant hand's pressure was so terrifying that several weaker elders were forced to their knees. Even Ling Yuan himself felt unprecedented pressure - an existence no human could match.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1119_choice_002",
+        "prompt": "The Gravekeeper's appearance caused the situation to reverse sharply. The three factions had to face the same threat—",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "tianji_ch1119_opt_lead",
+            "text": "To step forward",
+            "description": "Chen Ji decided to reveal some of his strength and unleash the power of the Tianji Record. Though it would consume Heavenly Fate, if he could temporarily suppress the Gravekeeper, there would be a chance to build a genuine alliance.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consuming Heavenly Fate",
+            "visible_reward": "The three factions regarded him with newfound respect",
+            "risk_hint": "Revealing the existence of the Tianji Record",
+            "process_label": "义不容辞",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_lead_001",
+                  "content": "Chen Ji took a deep breath, gritting his teeth. Mo Xiansheng's voice echoed in his mind: \"Boy, are you sure? This is a Gravekeeper...\" Chen Ji didn't answer. A fragment of the Tianji Record materialized in his palm, golden runes flowing, and an aura far beyond his current realm exploded from his body!"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_coordinate",
+            "text": "Command and coordination",
+            "description": "Chen Ji decided not to fight personally, but to coordinate the three factions with his wisdom. Letting them each use their strengths for coordinated combat. Though slower this way, it would preserve strength.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Draining mental energy",
+            "visible_reward": "Demonstrating leadership abilities",
+            "risk_hint": "Risk being seen as a messenger",
+            "process_label": "运筹帷幄",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_coordinate_001",
+                  "content": "Chen Ji surveyed his surroundings, his mind racing. He pointed at Han Lie: \"You take the frontal assault!\" Then looked at Ling Yuan: \"Elder, can your formation trap it momentarily?\" Finally to Ye Qing: \"Use demonic path mist to conceal our presence, so it can't lock onto precise targets!\" All three froze—this waste, when did he gain such boldness?"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_013",
+        "content": "Ye Qing was the first to respond. Her hands formed seals, and a layer of black mist surged around her. The demonic path mist spread like a living thing, throwing the giant hand's attack trajectory into chaos. Han Lie gritted his teeth, snorting: \"This one hates being commanded!\" Yet his feet were already charging forward, Xuanwu divine power erupting at full force.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_014",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan gave Chen Ji a deep, complicated look. He suddenly realized that this so-called waste disciple, in this moment, displayed calm and resolve far beyond his imagination. But without further words, he formed seals with both hands, and a massive binding formation descended from the heavens, firmly locking the giant hand in place.",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_015",
+        "content": "The attacks from all three factions struck the giant hand simultaneously. Cracks finally appeared in the Gravekeeper's arm, but immediately began healing at visible speed. Han Lie roared repeatedly, Ling Yuan's veins bulged on his forehead, and Ye Qing's mist was rapidly depleting. \"Can't hold much longer!\" she gritted out, \"Its recovery speed is too fast!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_016",
+        "content": "Chen Ji watched the scene before him, already calculating in his heart. He suddenly called out loudly: \"Stop attacking the hand! Look at where its arm connects to the rift—that's where the body is!\" He pointed to the edge of that rift, where a writhing mass of darkness squirmed—that was the Gravekeeper's core!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_017",
+        "character_id": "char_hanlie",
+        "content": "Without a word, Han Lie burst forward, his feet launching him like a crimson-golden streak of light straight toward that shadowy mass. Ling Yuan furrowed his brow but didn't intervene; instead, he increased the formation's output, completely immobilizing the giant hand's movements. Ye Qing skillfully withdrew the mist, shifting to assist Han Lie's charge.",
+        "emotion": "配合"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_018",
+        "content": "\"BOOM!\" Han Lie's fist-light struck the shadow's core dead center, and a mournful shriek echoed from the depths of the crevice. The massive hand froze instantly, then shattered piece by piece, dissolving into countless energy fragments. The Grave Keeper had been forced back—at least for now.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_019",
+        "content": "The battle ended, leaving the valley in ruins. The three groups exchanged wary glances, the tension so thick it could be wrung out. Han Lie wiped blood from the corner of his mouth, glaring viciously at Chen Ji: \"You... you useless wretch, when did you become so formidable?\" Chen Ji shrugged, wearing an innocent expression: \"Han Lie过奖了, I just got lucky.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1119_020",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan stepped closer, his gaze sharp as a blade: \"Chen Ji, your earlier command...\" He paused, seemingly choosing his words carefully, \"has a hint of past grandeur.\" Chen Ji's heart tightened—past grandeur? What was he implying? Yet he maintained his cheerful facade: \"Elder谬赞了, this junior feels deeply honored.\"",
+        "emotion": "试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_021",
+        "content": "Ye Qing interjected at the perfect moment, breaking the tense atmosphere: \"Everyone, the Grave Keeper has only temporarily retreated. Given its recovery speed, it will return within two hours at most.\" She looked at the three, \"If you wish to survive and leave this place, you'll need to genuinely consider... the matter of cooperation.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1119_choice_003",
+        "prompt": "Though the Grave Keeper had been repelled, the crisis remained unresolved. Confronted with Ye Qing's proposal, the three factions faced a critical decision—",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "tianji_ch1119_opt_ally",
+            "text": "Establish an Alliance",
+            "description": "Chen Ji proactively proposed that since everyone wanted to survive, they should temporarily shelve their grievances and sign a mutual non-aggression agreement, addressing the crisis first before anything else.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Need to Trust Former Enemies",
+            "visible_reward": "Gain a Breathing Space",
+            "risk_hint": "Ling Yuan May Not Be Trustworthy",
+            "process_label": "握手言和",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_ally_001",
+                  "content": "Chen Ji stepped forward, cupping his hands toward Ling Yuan and Han Lie: \"Both of you are heroes of our era, so I'm sure you understand the current situation. The Grave Keeper is beyond any single faction's capability. Shouldn't we put aside personal grudges and navigate this challenge together?\" Han Lie snorted coldly, turning his face away, yet not voicing any objection. Ling Yuan gazed deeply at Chen Ji, and after a long pause, finally nodded."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "tianji_ch1119_opt_guard",
+            "text": "Maintain Vigilance",
+            "description": "Chen Ji consented to cooperate, yet insisted everyone stay alert. After all, Ling Yuan and Han Lie were former adversaries—there's no telling if they'd seize an opportunity to strike.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Might Affect Coordination",
+            "visible_reward": "Preserve Vigilance",
+            "risk_hint": "Low Cooperation Efficiency",
+            "process_label": "各怀心思",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1119_result_tianji_ch1119_opt_guard_001",
+                  "content": "Chen Ji nodded, but shifted his tone: \"Cooperation is possible, but let me be clear upfront—whoever dares to act behind our backs will face united opposition from the others.\" He turned to Ling Yuan, smiling: \"Elder, with your lofty reputation, you surely wouldn't do such a thing, right?\" Ling Yuan's mouth twitched slightly—was this这小子 probing him?"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_022",
+        "content": "Just as the three factions barely reached a consensus, a silvery laugh rang out from the distance. \"My, my, what brings the three righteous heroes and the demonic path saint together?\" Su Qingyao's silhouette emerged at the valley's edge. She surveyed the devastated battlefield, her lips curving meaningfully: \"Interesting, seems I've missed quite a show.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_023",
+        "content": "Chen Ji spotted Su Qingyao and sighed internally—this was trouble. This woman's intuition was too sharp; she always sensed something amiss. He quickly switched to a startled expression: \"Senior Su! What brings you here? It's dangerous here, leave quickly!\" Su Qingyao glanced at him with a knowing smile, remaining silent, her gaze clearly communicating—do you really think I'll believe you?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_024",
+        "content": "The three factions, coupled with Su Qingyao observing intently, made the scene even more intricate. Ye Qing coughed lightly, attempting to steer the conversation: \"Um... the Grave Keeper could reappear at any moment. Shouldn't we first find a safe place to discuss strategies?\" Ling Yuan agreed, yet his gaze never left Chen Ji. He had a lingering feeling—this废物 disciple might be far more dangerous than he'd imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1119_025",
+        "content": "The group found an abandoned ancient hall deep within the valley to temporarily rest. Han Lie plopped down beside a stone pillar, muttering curses; Ling Yuan stood with hands clasped behind his back, occasionally glancing at Chen Ji; Ye Qing silently set up barriers in a corner; Su Qingyao stood beside Chen Ji, gazing at him with an enigmatic smile. The atmosphere was bizarrely balanced on a knife's edge. Chen Ji苦笑 internally—this lineup was enough for a mahjong game.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

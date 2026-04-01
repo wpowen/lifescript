@@ -1,0 +1,581 @@
+{
+  "id": "天机录_ch0463",
+  "book_id": "天机录",
+  "number": 463,
+  "title": "Alliance Crisis",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji was about to close the net, the mastermind behind the traitor's words turned out to be that dynasty that had controlled the world's fate for thousands of years, seemingly unconnected to the cultivation world—the Great Zhou Dragon Court.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0463_001",
+        "content": "The moment the transmission talisman burned out, the teacup in Chen Ji's hand tilted slightly, scalding tea splashing across the table, yet he seemed unaware. Three years of scheming, an alliance barely formed, a defense line forged through countless efforts—now showing cracks at this moment. He slowly set down the teacup, his fingers unconsciously rubbing the yellowed fragment hidden in his sleeve—the Tianji Record. How much Heavenly Fate Value remained? He dared not contemplate. The traitor's identity must be discovered without alerting anyone. This was his reply to Ye Qing, brief and cold, like a verdict.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_002",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing's voice came through another transmission talisman, carrying rare killing intent: 'Intelligence points to three individuals—the deputy of Han Lie of the Xuanwu Sect, Elder Zhao of the Cultivator Alliance, and... Zhou Cheng, the outer sect overseer of the Tianqing Sect.' She paused, 'Among them, Zhou Cheng's suspicion is greatest—he secretly left the sect three months ago, destination unknown.'",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_003",
+        "content": "Zhou Cheng. Chen Ji silently recited this name, yet the corner of his mouth unconsciously curled into a cold smile. Outer sect overseer, merely a waste at the late Qi Refining stage, not even fit to carry his shoes in the sect. Yet such a person could access the core layout of the alliance? He preferred to believe this was the enemy's smokescreen. But it didn't stop him from adding this person to the list—sometimes, the most insignificant chess piece is precisely the most lethal hidden weapon.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_004",
+        "character_id": "char_suqingyao",
+        "content": "Just then, knocking came at the door. Su Qingyao's cold voice rang out: 'Chen Ji, the Sect Master summons you to the Council Hall immediately.' Her tone was as matter-of-fact as ever, but Chen Ji caught the deeper meaning—she had deliberately stressed 'immediately.' Was she reminding him that this matter related to her investigation? Or pure coincidence? He rose, straightened his coarse cloth clothes of a Servant Disciple, and donned the mask of timidity and mediocrity once more.",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0463_005",
+        "prompt": "Su Qingyao coming personally to deliver the message was itself an unusual signal. How should Chen Ji handle this Council meeting?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0463_005_a",
+            "text": "Go with the flow, follow her",
+            "description": "Use this Council opportunity to secretly observe various factions' reactions, seeking the traitor's weakness.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Expose oneself to more people's attention",
+            "visible_reward": "Obtain firsthand intelligence, judge the connection between the insider and external enemies",
+            "risk_hint": "Might fall right into the enemy's trap",
+            "process_label": "前往议事堂",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0463_result_005_a_001",
+                  "character_id": "char_suqingyao",
+                  "content": "When Su Qingyao saw Chen Ji open the door, a barely perceptible scrutiny flickered in her eyes. She stepped aside to let him pass, saying coolly: 'Zhou Overseer is also at the Council Hall.' These five words were more valuable than any intelligence. Chen Ji walked behind with head bowed, shoulders slightly hunched, looking every bit the cowardly waste who had been scared witless.",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "前往议事堂"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0463_005_b",
+            "text": "Make excuses to delay, secretly arrange",
+            "description": "Let Su Qingyao go first, seize the chance to contact Ye Qing to confirm intelligence details, and set up contingencies.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May arouse Su Qingyao's suspicion",
+            "visible_reward": "Grasp more initiative, avoid alerting the enemy",
+            "risk_hint": "Miss the intelligence-gathering opportunity at the Council Hall",
+            "process_label": "暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -1
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0463_result_005_b_001",
+                  "character_id": "char_suqingyao",
+                  "content": "Su Qingyao's brow furrowed slightly, seemingly displeased, but ultimately didn't press the matter. Before turning to leave, she said coldly: 'Half an incense stick's time, at the Sect Master's hall.' Her figure disappeared at the end of the corridor. Chen Ji immediately crushed a communication jade slip, whispering: 'Ye Qing, I need all of Zhou Cheng's movements from the past half year. Also, have someone watch Han Lie's deputy.'",
+                  "emotion": "冷淡"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "暗中布局"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0463_005_c",
+            "text": "Test Su Qingyao's attitude",
+            "description": "Present weakness as a waste, observe her knowledge of the traitor incident.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May expose attention to the situation",
+            "visible_reward": "Determine if Su Qingyao is enemy, ally, or neutral party",
+            "risk_hint": "If she already has defenses, she might reverse-test",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0463_result_005_c_001",
+                  "character_id": "char_suqingyao",
+                  "content": "Chen Ji hunched his body, voice trembling: 'S-Su... Su Senior Sister, what's happening? Did I do something wrong?' He secretly glanced up, catching a complex expression in Su Qingyao's eyes. She remained silent for a moment, then suddenly lowered her voice: 'The Alliance matter has nothing to do with you. But... be careful of Zhou Cheng.' These words thundered in Chen Ji's heart like a sudden clap. How much did Su Qingyao know? Was she warning him, or warning someone else?",
+                  "emotion": "困惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得苏青瑶暗示"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_006",
+        "content": "Within the Council Chamber, the atmosphere was so heavy it could be wrung dry of water. Tianqing Sect's leader Ling Yuan sat upright at the main seat, his face as still as deep water, while the various peak masters and elders were seated below. In that corner stood a middle-aged man in blue robes, head bowed—the Outer Disciple Overseer Zhou Cheng. Chen Ji entered the hall with the most humble posture imaginable, as if a gust of wind could topple him. He secretly scanned the entire hall, a cold smile forming in his heart—everyone was here. Traitors and investigators alike, every face was catalogued in his memory, awaiting future reckoning.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_007",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan's voice carried authority without anger: \"Today I summoned everyone because the alliance received an urgent report—our movements seem to have been leaked to the Xuanwu Sect by some 'friend.'\" His gaze was like a blade as it swept across each face. \"Three months ago, the intelligence posts the alliance established in the Northern Territory were completely dismantled—seventeen undercover agents, none survived.\" Zhou Cheng's body visibly stiffened. That momentary loss of composure was captured entirely by Chen Ji. So Ye Qing's intelligence was correct. But what concerned him more was Ling Yuan's attitude—just what was this old fox truly after? Hunting for truth, or using the knife to kill?",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_008",
+        "content": "Chen Ji shrunk into the corner, making every effort to become invisible. But his ears caught every thread of information—Elder Zhao appeared normal on the surface, yet kept stealing glances at Zhou Cheng; Han Lie's deputy sat across, eyes darting; Su Qingyao stood at the entrance, expression cold but gaze sharp. Everyone harbors their own schemes—this is what the so-called alliance truly is. Chen Ji suddenly felt like laughing, but he restrained himself. His fingers subtly formed seals within his sleeve, spiritual energy微微 moving, as a colorless, odorless tracking talisman silently activated, landing on Zhou Cheng's clothing hem.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_009",
+        "character_id": "char_yeqing",
+        "content": "Just then, a dark golden transmission jade slip silently flew into the hall, landing in Chen Ji's palm. Ye Qing's voice was audible only to him: \"Found it. Zhou Cheng secretly traveled to Youzhou three months ago to meet a mysterious figure. That person carries imperial dragon qi—not an ordinary spy, but a 'Shadow Guard' from the Great Zhou Dragon Court.\" The Great Zhou Dragon Court. Chen Ji's pupils contracted sharply. This entity, which had existed for thousands of years, superficially maintained a non-interference agreement with the cultivation world, yet never ceased its infiltration of sect powers. If they truly control everything from behind the scenes... the situation was more棘手 than he imagined.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0463_010",
+        "prompt": "Upon learning of the Imperial Dynasty's involvement, Chen Ji must decide his next move.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0463_010_a",
+            "text": "\"Remain stationary, quietly observe and wait for changes.\"",
+            "description": "\"Do not alter the original plan, continue observing Zhou Cheng's connections with various parties, waiting for clearer signals.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May miss the opportunity to strike first.\"",
+            "visible_reward": "\"Strike after seeing the complete picture of the Imperial Dynasty's布局, eliminate them all in one sweep.\"",
+            "risk_hint": "\"The traitor may cause greater losses during this period.\"",
+            "process_label": "隐忍待机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0463_result_010_a_001",
+                  "content": "Chen Ji calmly slipped the jade slip into his sleeve, his expression remaining as cowardly as usual. But within his mind, countless clues were rapidly interweaving. Imperial Dynasty, Xuanwu Sect, Zhou Cheng... were these seemingly scattered pieces controlled by an even greater hand? He dared not easily use the Tianji Record—his Heavenly Fate Value was nearly depleted. But without peering three hours into the future, how could he seize the initiative in this chess game? A dilemma. In three years, this was the first time he felt such profound helplessness.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "决定静观"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0463_010_b",
+            "text": "\"Proactively set a trap, draw out the snake.\"",
+            "description": "\"Deliberately leak a piece of false intelligence to Zhou Cheng, see if he passes it along, thereby confirming his betrayal and following the trail.\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"May alarm the prey.\"",
+            "visible_reward": "\"Seize the initiative, investigate the Imperial Dynasty's complete forces within the alliance.\"",
+            "risk_hint": "\"If Zhou Cheng is merely a chess piece, those behind the scenes will hide even deeper.\"",
+            "process_label": "布局诱敌",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0463_result_010_b_001",
+                  "character_id": "char_yeqing",
+                  "content": "After the meeting adjourned, Chen Ji deliberately fell behind. He hunched his way to Zhou Cheng's side, voice thin as a mosquito's whine: \"M-Mr. Overseer, this disciple just heard the Sect Leader say... in three days there will be a major operation in the Northern Territory, seemingly related to the Xuanwu Sect...\" A flash of sharp light appeared in Zhou Cheng's eyes, yet his face remained impassive: \"Oh? I hadn't heard of this matter.\" He patted Chen Ji's shoulder. \"You, this menial servant, are quite well-informed.\" Chen Ji kept his head bowed, his heart coldly smiling—the fish, has taken the bait.",
+                  "emotion": "冷笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "假情报已放出"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0463_010_c",
+            "text": "\"Risk using the Tianji Record to peer.\"",
+            "description": "\"Activate the Tianji Record to peer three hours into the future, despite the precious cost of Heavenly Fate Value, to obtain crucial intelligence.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Consumes 5 points of Heavenly Fate Value.\"",
+            "visible_reward": "\"Obtain complete foresight, learning the traitor's complete plan and those behind the scenes.\"",
+            "risk_hint": "\"Heavenly Fate Value is scarce to begin with, consumption may affect future arrangements.\"",
+            "process_label": "窥视天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0463_result_010_c_001",
+                  "content": "Returning to his quarters, Chen Ji locked the door and retrieved the Tianji Record Fragment. Pale golden light circulated, and he felt his Heavenly Fate Value draining like flowing water. The image gradually clarified—Zhou Cheng secretly entered the Back Mountain late at night, conversing with a black-robed figure. On that black-robed figure's sleeve was embroidered a dark golden dragon纹徽章. In the next instant, the image shifted to the Council Chamber, where Ling Yuan was in low conversation with an entity whose face couldn't be seen: \"...The holder of the Tianji Record is more difficult to deal with than imagined.\" Chen Ji's eyes snapped open, cold sweat soaking his back. Ling Yuan... he knows his identity?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "窥视到关键情报"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_011",
+        "content": "Night fell, and the Tianqing Sect Back Mountain was silent and still. Chen Ji concealed himself atop an ancient pine, breath restrained, as if merging with the darkness. His gaze firmly fixed on a nearby pavilion—that was Zhou Cheng's daily Tuna Breathing practice location. The tracking talisman's sensation told him Zhou Cheng was there. Time trickled by slowly; after roughly two hours, a black shadow swept from the forest, landing before the pavilion. The newcomer wore black robes, face hidden by a hood, but Chen Ji clearly saw the emblem on their sleeve—dark golden base, five-clawed coiled dragon. The Great Zhou Dragon Court, Shadow Guard.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_012",
+        "character_id": "char_chenji",
+        "content": "Chen Ji held his breath, spiritual energy condensed in his ears, catching every word of their conversation without missing a syllable. \"In three days, the alliance will launch a probing attack against the Xuanwu Sect.\" Zhou Cheng's voice carried sycophancy. \"This is intelligence I overheard from Sect Brother Ling Yuan—absolutely authentic.\" The black-robed figure coldly said: \"Very well. Additionally, I need you to handle one matter—eliminate that worthless menial servant, Chen Ji.\" Chen Ji's eyelid twitched, yet he made no movement. He continued listening, yet his heart was as clear as a mirror—so that was it. The true target, was him.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_013",
+        "content": "A trace of hesitation flickered across Zhou Cheng's face: \"That man is just a废物 at the early Qi Refining stage. Killing him wouldn't be difficult, but he has no presence in the sect. If he suddenly dies, it might arouse suspicion...\" The black-robed figure took out a pitch-black elixir from his sleeve: \"This is the 'Soul-Devouring Elixir'. It's colorless and odorless, taking three days to take effect after ingestion. The death will look exactly like a cultivation deviation. All you need to do is mix this into his food, and no one will ever know.\" Zhou Cheng took the elixir, greed flickering in his eyes: \"Rest assured, Shadow Guard大人, this subordinate will handle it properly.\" Chen Ji silently laughed from the shadows. Good, very good. He had only wanted to find the traitor, but this was an unexpected bonus—Ling Yuan, indeed had colluded with the imperial court.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0463_014",
+        "prompt": "The truth was more complicated than imagined. Chen Ji had to decide how to handle the crisis before him.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0463_014_a",
+            "text": "Turn the tables and counter-kill Zhou Cheng",
+            "description": "Deliberately ingest the poison, use a self-harm strategy to gain Zhou Cheng's trust, then trace the mastermind behind the scenes.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Need to endure part of the Soul-Devouring Elixir's toxicity",
+            "visible_reward": "Infiltrate the enemy's ranks to obtain ironclad evidence of Ling Yuan's treason",
+            "risk_hint": "The Soul-Devouring Elixir's toxicity is unpredictable; miscalculating the dosage could backfire",
+            "process_label": "将计就计",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0463_result_014_a_001",
+                  "content": "Chen Ji silently left the Rear Mountain and returned to his dwelling. He took out the Soul-Devouring Elixir that Zhou Cheng had coveted and sniffed it lightly. With his见识, he could naturally discern the elixir's composition—it was indeed vicious, but not incurable. He retrieved a jade bottle from his storage bag—one of the life-saving trump cards left to him by Mo Xiansheng. \"After tonight, Zhou Cheng, I will make you send yourself to hell with your own hands.\" He murmured, a cold and fierce light flickering in his eyes.",
+                  "emotion": "冷酷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "准备反杀计划"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0463_014_b",
+            "text": "Join forces with Ye Qing and Su Qingyao for a three-way encirclement and kill",
+            "description": "Share tonight's intelligence with Ye Qing while finding a way to involve Su Qingyao, killing Zhou Cheng on the spot during his next meeting with the enemy.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Expose some trump cards and lose Ye Qing's advantage in the shadows",
+            "visible_reward": "Cleanly eliminate Zhou Cheng to deter other potential traitors",
+            "risk_hint": "If Su Qingyao questions the intelligence source, more secrets may be exposed",
+            "process_label": "联手围杀",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 1
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0463_result_014_b_001",
+                  "content": "Two communication jade symbols flew out almost simultaneously. Chen Ji briefly sent the command: \"Rear Mountain pavilion, third quarter of the Hai hour, encircle and kill Zhou Cheng.\" Ye Qing's reply contained only one word: \"Good.\" For Su Qingyao, he weighed his words carefully and said only four characters: \"Zhou Cheng is a ghost.\" After a long silence, Su Qingyao's voice came through: \"I will be there.\" Three brief characters, yet they warmed Chen Ji's heart. This ice-cold woman had ultimately chosen to stand on his side—though she still didn't know his true face.",
+                  "emotion": "微妙"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三方联手"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0463_014_c",
+            "text": "First eliminate the Shadow Guard, set a long-term trap to catch bigger fish",
+            "description": "Tonight only kill the Shadow Guard, temporarily hold back Zhou Cheng and the imperial court's intelligence, and use this to trace the vine and find more imperial spies.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Abandon the best timing to kill Zhou Cheng",
+            "visible_reward": "May uncover the imperial court's complete intelligence network across the entire alliance",
+            "risk_hint": "Zhou Cheng may continue leaking intelligence during this period",
+            "process_label": "放长线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0463_result_014_c_001",
+                  "content": "Chen Ji changed his mind. Zhou Cheng was merely a discarded piece—killing him would be satisfying, but since the imperial court dared to extend its reach into the Tianqing Sect, their scheme was far deeper than imagined. Rather than eradicating the weeds, he might as well keep this chess piece, letting him continue passing \"intelligence\" for himself. But the Shadow Guard was different—he was the direct link between the imperial court and the Great Zhou Dragon Court. Killing him would not only deter the hidden enemies but also yield more clues about the imperial court's plans from his body. At the third quarter of the Hai hour, after Zhou Cheng left, the Shadow Guard sat alone in the pavilion, regulating his breath. He didn't know that death had quietly crept near.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "目标改为暗卫"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_015",
+        "content": "At the third quarter of the Hai hour, the moon hidden behind clouds, inside the Rear Mountain pavilion, the Shadow Guard still sat with eyes closed, regulating his breath. What he didn't know was that three silhouettes had already surrounded him from three directions. Ye Qing's black纱 veil fluttered gently in the night wind, her demonic sword gleaming with a cold light; Su Qingyao's face was frost-like as she drew her longsword, her sword aura chilling; and Chen Ji stood in the shadows, watching this scene with an almost appreciative demeanor. He didn't strike—with his current Combat Power, he wasn't qualified to participate in combat at this level. But this didn't prevent him from savoring the upcoming slaughter. A废物 should behave like a废物. He only needed to stand in a safe place, watch the enemies fall, and silently keep count of this debt.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_016",
+        "character_id": "char_yeqing",
+        "content": "\"Begin.\" Ye Qing's voice was like cold ice. The two characters fell, and the demonic sword transformed into a black flash of lightning, directly aiming for the Shadow Guard's throat. The Shadow Guard reacted extremely quickly, his body暴退 as he retreated, while several concealed weapons flew from his sleeves simultaneously. However, Su Qingyao was faster—her longsword like a swan goose shadow crossing the light, her sword aura sweeping across, knocking away all those concealed weapons. Three breaths later, the Shadow Guard was driven into a corner, already bearing several wounds on his body, blood staining his black robe crimson. \"Demonic path妖女! Tianqing Sect Inner Disciple Senior Fellow!\" The Shadow Guard嘶声吼道, \"You dare to kill me, the Great Zhou Dragon Court will not let you go—\" Before he finished, a silver flash passed, and a hair-thin silver needle shot from the shadows, striking his mute point precisely. The one who struck was none other than Chen Ji. He stepped out from the shadows, wearing his usual timid smile: \"This大人, this servant... this servant just wanted to help.\"",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_017",
+        "content": "The Shadow Guard瞪大双眼, looking at this hunchbacked servant disciple in disbelief. He wanted to say something, but could only produce unclear呜咽. Chen Ji walked forward, unhurriedly rifling through his怀中 and pulling out a token—dark gold, with a five-clawed coiled dragon, precisely the identity token of a Great Zhou Dragon Court Shadow Guard. There was also a secret letter. After Chen Ji glanced at its contents, his expression slightly changed. The letter read: \"Heavenly Secrets Record holder confirmed, codename 'Discarded Chess Piece', early Qi Refining stage, scheduled for elimination within three days. If necessary, all Tianqing Sect chess pieces may be sacrificed.\" He tucked the secret letter into his sleeve, looked up at Ye Qing and Su Qingyao, and smiled: \"Two sisters, it seems we've incurred a formidable enemy.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_018",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao sheathed her sword, her gaze complex as she looked at Chen Ji. That silver needle's force and angle were absolutely not something an early Qi Refining stage disciple could control. She suddenly remembered the seemingly coincidental yet deadly crises over the past three years, those key clues that had appeared out of nowhere when her investigations hit dead ends... \"Chen Ji.\" She spoke, her voice several degrees softer than usual, \"Who exactly are you?\" Chen Ji raised his head, meeting her gaze, his face still wearing that harmless, timid expression: \"Sister Su, this servant is just a servant disciple. Could you be... misunderstanding something?\" He blinked, his expression so innocent one felt like hitting him.",
+        "emotion": "狡黠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_019",
+        "content": "Ye Qing轻笑出声 by the side, that laughter like silver bells, yet carrying an air of understanding: \"Chen公子's acting skills are becoming more refined.\" She didn't expose him, merely whispering a few words into Su Qingyao's ear. The latter's expression changed several times before finally turning into a sigh. She deeply glanced at Chen Ji, didn't pursue the question further, only saying: \"This matter involves the imperial court; I cannot decide alone. But until I figure things out, you'd better... be careful.\" This was both a warning and a promise. Chen Ji slightly nodded, but in his heart he was rapidly calculating—Su Qingyao was getting closer and closer to the truth. He had to accelerate his布局, otherwise when she truly tore off his mask one day, many things would become uncontrollable.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0463_020",
+        "character_id": "char_yeqing",
+        "content": "After disposing of the Shadow Guard's body, Ye Qing leaned close to Chen Ji and lowered her voice: \"The word 'discarded piece' written on the letter in your sleeve is a special designation the dynasty uses for Tianji Record holders. This means they have been monitoring you for a very long time.\" Chen Ji fell silent for a moment, then asked, \"Why would the dynasty target the Tianji Record? What is their real purpose?\" Ye Qing shook her head: \"That question can probably only be answered by the Emperor of the Great Zhou Dragon Court. But one thing is certain—\" She paused, a grave light flickering in her eyes, \"You've been exposed, completely and utterly. From today onward, you can no longer hide in the shadows.\" Chen Ji gazed at the stars barely visible in the night sky and suddenly smiled: \"So what? Whatever could be done in the shadows, I can do in the light. It's just... a different method, that's all.\"",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_021",
+        "content": "After handling tonight's affairs, Chen Ji returned to his quarters alone. He unfolded the secret letter and studied it carefully by candlelight. The letter also mentioned a detail—the dynasty's informants within the Tianqing Sect were not limited to Zhou Cheng alone. There were at least two more 'Sleepers,' their codenames and functions completely unknown. This meant a time bomb could be lurking beside him at any moment. He rubbed his brow, feeling a wave of exhaustion. Tonight's gains were substantial: confirming Zhou Cheng was the traitor, determining the extent of the dynasty's involvement, and unexpectedly obtaining the Shadow Guard's token. But simultaneously, the crisis was swelling rapidly—Su Qingyao's persistent questioning, the dynasty's encircling kill, Ling Yuan's covert dealings... He took a deep breath and tucked the Tianji Record Fragment securely against his body. No matter how many thorns lay ahead, he had to keep walking. This game of chess had just entered its middle phase.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0463_022",
+        "content": "Just as he was about to fall asleep, the Tianji Record Fragment in his sleeve suddenly grew warm. Chen Ji's heart tightened. He quickly took out the fragment and watched as a line of new text slowly appeared on its yellowed surface—\"Heavenly fate wavers, the chess game remains incomplete. To resolve the crisis, seek the 'Key of Heavenly Fate.'\" Key of Heavenly Fate? Chen Nian! His sister, taken away by the Holy Sect years ago, was the key to unraveling all this? He stared at the words, his heart suddenly racing. Mo Xiansheng had never mentioned this. Why would the Tianji Record suddenly reveal this information at this moment? A hint, or a trap? He didn't know. But one thing was crystal clear—finding Chen Nian had to be added to his agenda immediately.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

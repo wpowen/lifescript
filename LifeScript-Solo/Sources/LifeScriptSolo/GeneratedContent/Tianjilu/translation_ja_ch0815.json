@@ -1,0 +1,545 @@
+{
+  "id": "天机录_ch0815",
+  "book_id": "天机录",
+  "number": 815,
+  "title": "陳霊の選択",
+  "is_paid": true,
+  "next_chapter_hook": "天機録第四頁が輝きを放つ中、陳霊とChen Jiが並んで立ち、核心の奥で眠っていた存在がついに目を開けた……",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0815_001",
+        "content": "天道之眼の奥深くで、人の総べるakitai脈動がますます強くなる。暗闇の中で何か巨大なものが蘇りつつあるかのように，每一次の脈搏は魂を碾き砕くほどの威圧を連れていた。Chen Jiはその威圧に押されて後退り続け，天機録の欠片の上に走る亀裂が目に見える速度で広がり，いつでも崩れるかのように見えた。「陳霊……」彼は心の中でその名を呼び，指先は虚無に触れていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_002",
+        "character_id": "char_chenian",
+        "content": "「哥、私はここにいる。」聞き覚えのある声が彼の心の底で響き，これまでの曖昧な感应ではなく，明らかで堅いものだった。陳霊の姿が天機録の光の中でぼんやりと現れ、その顔はChen Jiと見分けがつかないほど似ているが、眼神はもはやあの頃の迷えるコピー体ではなかった。",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_003",
+        "content": "Chen Jiは猛然と顔を上げ，瞳孔が縮んだ。陳霊が天機録の核心に浮かび，周囲には無数の細かい光点が取り巻いていた——それは天機録の欠片の記憶であり，彼女が这些年一人で集めた「自我」でもあった。彼女の髪は風もなく揺れ，眉心には玄奥な符文がゆっくりと形成されつつあった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_004",
+        "character_id": "char_chenian",
+        "content": "「お前の過去看到了，前がために承受したすべてを見た。」陳霊の声は震えながらも，今までにない力を帯びていた，「お前は常に私を守ってくれた，自分が天命の反噬を受けようとも，道がどんなに渺茫でも……今度は私が選択する番だ。」",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_005",
+        "content": "天機録第四頁在这一刻骤然亮起，金色の光が欠片から噴出していたが、攻撃でも压制でもなく，某種の優しい繋がりだった。Chen Jiは熟悉の手却又陌生的力が体内に流れ込むのを感じ取った——双子の血脈の共鳴だったが，从前から百倍も強くなっていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_01",
+        "prompt": "覚醒した陳霊に対して，Chen Jiは回应する必要がある——彼女の力を受け入れて并肩作戦するか、それとも彼女が天命の反噬に耐えられないことを心配するか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0815_accept",
+            "text": "彼女の力を受け入れる",
+            "description": "既然你已经觉醒，就让我们一起面对这天道！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天命値の消費を分担する",
+            "visible_reward": "「共命」buffをアンロック，二重覚醒の力",
+            "risk_hint": "天命の反噬は同時に二人のみに作用する",
+            "process_label": "血脉共鸣，双生之力觉醒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_accept_01",
+                  "content": "Chen Jiは迷うことなく，手を伸ばしてその光に触れた。金色と銀色の力が天機録の核心で交汇し，眼を刺すような光を放った。二つの身影が天道之眼の奥深くで互いに辉き，日月が同時に輝くようだった。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_accept_02",
+                  "character_id": "char_chenian",
+                  "content": "「从今以后，你的命运就是我的命运。」陳霊の声はChen Jiの心拍と同期して響き，「私たちは一体だ——しかし依附ではなく，並肩だ。」",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双重觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈灵觉醒，共命之约",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_refuse",
+            "text": "彼女の安否を心配する",
+            "description": "いや！お前は刚覚醒したばかり，天命の反噬はお前が耐えられるものではない！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "一人で天命の反噬を承受する",
+            "visible_reward": "陳霊は独立した成長空間を得る",
+            "risk_hint": "Chen Jiは天命の反噬の下で陨落する可能性がある",
+            "process_label": "守护之心，血浓于水",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "黑化值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_refuse_01",
+                  "content": "Chen Jiの手は半空で止まった，彼は陳霊の堅い眼神を見つめ，心中には一阵の酸涩が込み上げた。このばかな娘め，天命の反噬がどんなに恐ろしいか知らないのか？",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_refuse_02",
+                  "character_id": "char_chenian",
+                  "content": "「哥、お前はいつもそうだ。」陳霊は優しく笑い，笑いの中に涙光が浮かんでいた，「お前が守る必要がある小女孩だと思っているのか？天機録第四頁が私を選んだのは，理由がないわけではないんだ。」",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵独立意志强化"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机的守护之心",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_006",
+        "content": "天機録第四頁の光が突然狂暴になり，核心の奥の脈動もますます激しくなった。Chen Jiは前所未有的危機感を袭った——天道之眼の意志がここを見つめている，而那眠っていた存在は，本当に覚醒しようとしているようだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「愚かな駒よ……」超次元の声が虚空に響き渡る，情感を全く带びていないが，Chen Jiは魂までもが震えるのを感じた，「コピー体を見つければ運命に対抗できると思うのか？天機録は本座が配置した駒に過ぎず，お前たちは……永遠に棋局の一部だ。」",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_008",
+        "content": "Chen Jiは歯を食いしばり，天機録の欠片の上に走る亀裂はまた数分広がった。毎度の天道之眼の視線は，天命の激しい反噬伴随し、彼の意識は曖昧になり，眼前には無数の断片的な絵が浮かんだ——それは過去の予言であり，未来の可能性でもあった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_009",
+        "character_id": "char_chenian",
+        "content": "\"兄上！私を見て！\"陳霊の声は天機録の核心に雷鳴のように響き、両手は印結び，眉心の紋様が眩い光を放つ，\"天機録第四頁——解放！\"",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_010",
+        "content": "かつてない光が天機録第四頁から爆発するように放たれ，金色でも銀色でもなく，萬物を包容する混沌の色だった。光は瞬く間に陳機と陳霊を包み込み，周囲に独立した小世界を形成し，天道の目の注視を遮断した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_02",
+        "prompt": "陳霊の独立意志が覚醒しつつあり，彼女は自身がもう従属品ではないことを証明しようとしている——陳機はどう応じるべきか？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0815_stand_with",
+            "text": "並んで戦う",
+            "description": "お前は私の複製体でも従属品でもない——陳霊，我的妹妹だ！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天命値消費増加",
+            "visible_reward": "二重覚醒完了，戦闘力大幅に向上",
+            "risk_hint": "天道の目の一層強まる敵意",
+            "process_label": "兄妹同心，其利断金",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 80
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_stand_01",
+                  "content": "陳機材退不再退缩，陳機材と陳霊は背中合わせに光の中に立った。二人の血脈の力が完璧に交融し，天機録の残頁はこの瞬間再合体し，依然として欠片ながらも，前例のない力を示した。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_stand_02",
+                  "character_id": "char_chenian",
+                  "content": "\"私はもうお前の影ではない。\"陳霊の声は明晰で堅固，\"今日より，我是陳霊——独立的で、完全に一人前の陳霊。我々は双子であり、主従ではない。\"",
+                  "emotion": "骄傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "双重觉醒完成",
+              "共命buff激活"
+            ],
+            "requires_flag": "双重觉醒",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "双生并肩，命运共担",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_guide",
+            "text": "彼女が主導する",
+            "description": "よし、お前が今回の共鳴を導け——我能做到ると信じている！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "一部の制御権を失う",
+            "visible_reward": "陳霊の独立意志がさらに強化",
+            "risk_hint": "共鳴過程で予想外の展開が生じる可能性がある",
+            "process_label": "放手信任，血脉新生",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "魅力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_guide_01",
+                  "content": "陳機材は深く息を吸い，自らの力を収束させ，主導権を陳霊に委譲した。この決定は無比に艱難だったが，彼は分かっていた——これが妹が真に成長するための避けられない道だと。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_guide_02",
+                  "character_id": "char_chenian",
+                  "content": "陳霊は兄の信頼を感じ，目元がわずかに潤んだ。\"ありがとう，兄上。\"と彼女はかすかに言い，随即目光变得坚定，\"今，看我的！\"天機録第四頁在她手中绽放出全新的光芒。",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈灵主导觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "放手信任，血脉新生",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_011",
+        "content": "混沌の光が天道之眼の核心で炸裂し，独立した小世界を形成した。陳機材と陳霊は並んで立ち，二人の血脈の力が天機録の引力の下で完璧に交融した。第四頁の全容がようやく現れた——それは予言の術ではなく，一段の封印された真実だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_012",
+        "character_id": "char_chenian",
+        "content": "\"原来如此……\"陳霊的声音带着颤抖，彼女在天機録第四頁に記されたすべてを見て，\"天機録は予言の道具ではなく，一把の鍵——天道の牢獄を開ける鍵だ。歴代の予言者はみな生贄だった，今に至るまで……\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_013",
+        "content": "陳機材感到一阵窒息般的恐怖。天機録の真の用途は天道の支配を破ることで，其の代償竟是所有者の命？彼は猛然看向陳霊，心中涌起前所未有的恐慌——彼女是不是早就知道这一点？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0815_choice_03",
+        "prompt": "天機録第四頁の真実が暴露——陳霊が覚醒を選んだ真の理由が表面化し，陳機材は最後の決断を下さねばならない",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0815_refuse_sacrifice",
+            "text": "決して彼女を犠牲にさせない",
+            "description": "天気の牢獄であっても，彼女を生贄にはさせない！",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "他の方法を探すにはもっと時間が必要だ",
+            "visible_reward": "新たな打開策を発見できる可能性がある",
+            "risk_hint": "天道の眼が機を窺って反撃する",
+            "process_label": "兄妹情深，抗争命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -25
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 35
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_refuse_sac_01",
+                  "content": "陳機がひと言に陳霊の手首を掴み、関節は力が入りすぎて白くなっていた。彼の眼中には从未有过の執念が燃えていた——この妹は彼がこの世で最後の肉親、何としても失うわけにはいかない。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_refuse_sac_02",
+                  "character_id": "char_chenian",
+                  "content": "「哥、痛み疼いちゃったよ。」陳霊は振り払おうとせず、むしろ释然とした笑みを浮かべた。「私がそんなに馬鹿だと思っているの？第四のページが私を選んだのは、私にはないものがあるからです——曖昧な未来。」",
+                  "emotion": "温柔"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "反抗天道命运"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "绝不牺牲，血脉相连",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0815_accept_truth",
+            "text": "彼女の弁解に耳を傾ける",
+            "description": "私にはないものがあるって……何？",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "受け入れがたい事実を受け入れられる",
+            "visible_reward": "陳霊の目覚めの真の意味を理解する",
+            "risk_hint": "真実はもっと残酷かもしれない",
+            "process_label": "聆听真相，信任妹妹",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 40
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0815_result_accept_truth_01",
+                  "content": "陳機材 себя迫使して冷静になり、妹の堅い眼神を見つめ、胸の中の恐怖を抑え込んだ。今度は彼女を信じる時だ——彼女はもうかつてのように保護を必要とする小女孩ではない。",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0815_result_accept_truth_02",
+                  "character_id": "char_chenian",
+                  "content": "「私は天命の鍵。」陳霊の声は静かだが確かで、「私の存在は天機録の予見を干扰できる，这意味着、私也能干扰天道的控制。供物之所以必须死，是因为天道不允许变数。而私……就是那个变数。」",
+                  "emotion": "骄傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命锁钥真相揭露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "聆听真相，选择信任",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_014",
+        "content": "陳機材は息を呑んだ。彼は从未想过、妹が聖宗に連れ去られ、「天命の鍵」として扱われたあの年月が、実は此刻のための準備だったのだ。運命の残酷ないたずらは、ついに局面を破る鍵となった。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_015",
+        "character_id": "char_chenian",
+        "content": "「そんな顔しないで、哥。」陳霊は近づき、陳機材の手のひらで頬に触れた。「この数年、私は確かに恨んだ，怕い，绝望した。でも、私が諦めようと思う時、いつもあなたの鼓動感受到了——それは双生血脉が教えてくれる、あなたは、まだ戦っている、私が倒れるわけにはいかない、と。」",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_016",
+        "content": "天機録第四頁の光が安定し始め、混沌の色が次第に金色と銀色が交织する光河となった。陳機材と陳霊は並んで光の中央に立ち、彼らの身影は天道の眼の奥底でそれほど渺小に見えながらも、超越的な存在さえも注目せしめる光を放っていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_017",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「面白い……」天道の眼の声が再び響いた，今度は难以察觉の波动を帯びて，「二人の駒が覆そうとしているのか？本座は見てやろう，どこまで行けるか。」",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0815_018",
+        "character_id": "char_chenian",
+        "content": "「我々は駒ではない。」陳霊の声は明確に虚空に響き、彼女と陳機材は十指を絡め、二人の力が此刻 완벽하게融合した，「今日から，我々は chess player。天道の眼、あなたこそ——我々の相手だ。」",
+        "emotion": "激昂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_019",
+        "content": "天機録第四頁は完全に咲き誇り、金銀交织の光が冲天の光柱を形成し、天道の眼の奥底の闇を照らし出した。そしてその闇の最深部で、不知多少岁月眠り続けた存在が、ついにゆっくりと目を睁かせた——それは天道の眼よりもっと古く、もっと恐怖の存在だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0815_020",
+        "content": "陳機材と陳霊は目を合わせ、お互いの眼中には同样的な堅さが映っていた。彼らは知っている、本当の挑戦才刚刚开始だと。だが此刻、彼らはもう孤軍奋战ではない——双生血脉、運命を共にする契約、独立した意志、これらのかつて遥かなじみだった力が、ついに此刻完整に一堂に会した。「行こう、哥。」陳霊はかすかに微笑み、その笑みにはもうかつての迷茫と依存はなく、彼女自身の光だけがあった，「天道に運命を——打ち破るものと知らしめる時だ。」陳機材は深く息を吸い込み、妹の手を固く握った。天機録の光が彼らを包み、核心の奥底で目を覚ました存在へと第一歩を踏み出した。"
+      }
+    }
+  ]
+}

@@ -58,6 +58,101 @@
       }
     },
     {
+      "choice": {
+        "id": "天机录_ch0009_007b",
+        "prompt": "剑锋已架在赵虎颈间，场内万众瞩目。你要如何终结这场比试？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0009_007b_A",
+            "text": "碾压羞辱",
+            "description": "灵气爆发，一剑将赵虎轰飞出擂台，让所有嘲笑你的人都闭上嘴！",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "黑化值微增，树敌更深",
+            "visible_reward": "名望大涨，震慑全场",
+            "risk_hint": "韩烈的仇恨会更加深重",
+            "process_label": "碾压",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0009_007b_A_result",
+                  "content": "陈机手腕一抖，一股凌厉的剑气如蛟龙出海，裹挟着摧枯拉朽之势轰在赵虎胸口。赵虎整个人如同断线风筝般飞出擂台，重重砸在十丈外的石壁上，鲜血狂喷。全场死寂。片刻后，议论声如惊涛骇浪般涌来——\"一招？！他就用了一招？！\"陈机收剑而立，目光冷冷扫过韩烈铁青的面孔，嘴角微勾。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0009_007b_B",
+            "text": "点到为止",
+            "description": "收敛锋芒，只用剑气将赵虎逼退认输。既展示实力，又不失风度。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "碾压效果减弱",
+            "visible_reward": "赢得尊重，苏青瑶刮目相看",
+            "risk_hint": "有人可能认为你实力不过如此",
+            "process_label": "收敛",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0009_007b_B_result",
+                  "content": "陈机剑锋微转，一股柔劲将赵虎推退三步，铁剑缓缓入鞘。\"承让。\"他的声音不大，语气平淡，仿佛方才不过是一场微不足道的切磋。赵虎面色惨白，双腿发软，颤抖着跪倒在地——虽未受伤，但那一剑带来的恐惧已深入骨髓。全场哗然。这份不怒自威的从容，比碾压更令人心悸。高台之上，苏青瑶的目光微微一动。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
       "dialogue": {
         "id": "天机录_ch0009_008",
         "character_id": "char_hanlie",
@@ -128,6 +223,97 @@
         "id": "天机录_ch0009_017",
         "content": "就在此时，怀中的龟甲再次剧烈震动起来。陈机面色微变，不动声色地按住胸口。苏青瑶注意到了他的异样，微微皱眉：\"怎么了？\"陈机摇头，勉强挤出一丝笑容：\"无事，只是方才比试消耗过大，有些不适。\"苏青瑶显然不信，却没有追问，只是冷冷道：\"你身上有太多疑点。迟早有一天，我会全部查清。\"说完转身离去。陈机望着她的背影，嘴角勾起一抹意味深长的弧度。",
         "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0009_017b",
+        "prompt": "苏青瑶的目光锐利如剑，她已对你产生了强烈的怀疑。你该如何回应？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0009_017b_A",
+            "text": "故作神秘",
+            "description": "微微一笑，留下一句意味深长的话，让苏青瑶越发好奇却无从追查。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "苏青瑶会更加关注你的一举一动",
+            "visible_reward": "在她心中留下深刻印象",
+            "risk_hint": "她的直觉极强，过度神秘反而会引起警惕",
+            "process_label": "神秘",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好奇",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0009_017b_A_result",
+                  "content": "陈机迎上苏青瑶审视的目光，嘴角勾起一抹意味深长的弧度：\"苏师姐若有闲暇，不妨多查查。或许到那时候……你会发现一些有趣的东西。\"苏青瑶微微蹙眉，目光中的审视变成了几分好奇。这个废物，到底在隐藏什么？她忽然觉得，陈机比她想象中要复杂得多。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0009_017b_B",
+            "text": "主动示弱",
+            "description": "咳嗽几声，装出比试后虚脱的样子，让她以为你只是侥幸取胜。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能让苏青瑶轻视你",
+            "visible_reward": "降低她的警惕心",
+            "risk_hint": "演技需要天衣无缝",
+            "process_label": "示弱",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0009_017b_B_result",
+                  "content": "陈机面色一变，猛地咳了几声，身子微微踉跄，一手扶住墙壁。\"师姐见笑了……方才比试用了些不太正规的法门，后遗症不小。\"他脸色苍白得恰到好处，额头还渗出了细密的汗珠——当然，这一切都是演出来的。苏青瑶皱眉看着他，眼中的怀疑稍减几分，多了一丝不易察觉的担忧：\"你的身体……没事吧？\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
       }
     },
     {

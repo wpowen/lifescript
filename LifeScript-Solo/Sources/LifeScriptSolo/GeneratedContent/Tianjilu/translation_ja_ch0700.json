@@ -1,0 +1,541 @@
+{
+  "id": "天机录_ch0700",
+  "book_id": "天机录",
+  "number": 700,
+  "title": "死期近づく",
+  "is_paid": true,
+  "next_chapter_hook": "天道の目が最終審判を完成させようとする刹那、天機閣からの干渉が運命の脚本を無理やり引き裂いた――その声は冷たく古びていた：「天機録の持有者、まだ陨落の時ではない。」",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0700_001",
+        "content": "天青宗の夜はどこか特に長く到来的。陈機が古びた雑役部屋の窓辺に立ち、自分の指先が肉眼に見えるほど透明になっていくのを見つめていた――那是天機録第七百章の死亡予言の前兆だった。彼の体は某种の目に見えない力により少しずつ侵蝕され、無形の炎に焼かれるが如くだった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_002",
+        "content": "「やはり来た。」陈期低声说道，声音平静得不像是面对死亡的人。彼は手を持ち上げ、月光が己の掌を貫き、地上に淡い光斑を投げかけるのを眺めた。三年前、初めてこの予言を見た時は冗談だと思っていた。一年前、二度目を見た時は布局を開始した。そして今、予言は約束通り到来したが、彼はまだ破局之法を見出していなかった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_003",
+        "character_id": "char_chenji",
+        "content": "天機録にはこう書いてあったはずだ――「運命は违えることがあり、因果は断つことができる、唯独情の字が最も解け難い」。ならば、情であなたの局面を破ろう。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_004",
+        "content": "彼はよろめきながら雑役部屋を出た。一歩一歩が刃先を踏まえるが如くだった。胸口の激痛は予言が加速實現していることを彼に思い出させる。天機録の表示によれば、彼は三時間以内に「心脈寸断」で死ぬことになる――最も屈辱的な死に方で、死後も骨が灰となって飛び散り、まるで存在しなかったかのように消えるという。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_005",
+        "content": "しかし陈期の眼差しは異常なほど澄んでいた。彼は死ぬのを待っているのではなく、計算していた。呼吸之间每一个、无数の可能性が彼の頭の中で急速に运转していた。予言が「心脈寸断」と言うなら、もし彼の心脈がもはや元の心脈でなければどうだろうか？予言が「灰となって飛び散る」と言うなら、もし谁かが彼のこの業力を代わりに引き受けてくれるならどうだろうか？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0700_choice_01",
+        "prompt": "陈期は予言が実現する前に選択を下さなければならない――どのような方法でこの必殺の局面を破るか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0700_choice_01_opt_a",
+            "text": "智で局面を破り、逆向推演",
+            "description": "天機録の抜け穴を利用する――予言は「見えた未来」であって、「唯一の未来」ではない。観測者の身元を変えれば、予言には偏差が生じる。",
+            "satisfaction_type": "智慧",
+            "visible_cost": "天命値を10ポイント消費する",
+            "visible_reward": "30分間の息的つく時間を獲得する",
+            "risk_hint": "天道の目が察觉して予言を加速させる可能性がある",
+            "process_label": "陈机开始逆向推演预言逻辑...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_opt_a_01",
+                  "content": "陈期は目を閉じ、全、精神を天機録の断片に灌注した。彼は主动的に自分の死の瞬間を「視る」的始めた――被动的に待つのではなく、主动的に観測するのである。第一人称の視点でその予言に入る瞬间、奇妙なことが起きた：画面が歪み始めた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "逆向观测启动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_01_opt_b",
+            "text": "情で局面を破り、業力を引渡す",
+            "description": "天青（彼が密かに培養した暗子）に彼の「死亡因果」を主動的に受け入れさせ、絆の力で運命線を攪乱させる。一人を犠牲にし、生機换取する。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天青は三年間の病苦折磨を受けることになる",
+            "visible_reward": "完全に予言の因果鎖を破る",
+            "risk_hint": "天青がそのために死ぬ可能性がある",
+            "process_label": "陈机启动天青体内的封印...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "黑化值",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tianqing",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_opt_b_01",
+                  "content": "陈期は舌先を噛み、精血を導き、天青の体に埋め込んだ远古の封印を起動させた。一筋の赤赤い光が彼の胸口から放射され、夜空を貫き、数里先の目标に届いた。天青の体は突然強張り、それから痛苦に身を縮めた――那是陈期が三年前から準備していた「替死符」であった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "业力转移启动",
+              "天青承受中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_01_opt_c",
+            "text": "命で局面を破り、正面から真っ向から立ち向かう",
+            "description": "すべての計算を放棄し、最も原始的な方法を使う――自身の全天命値を燃やし、運命の長河の中に無理やり裂け目を開ける。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "全50ポイント的天命値を消費する",
+            "visible_reward": "直接的に予言を破り、隠されたストーリーを引き出す可能性がある",
+            "risk_hint": "失敗すれば完全に死亡し、蘇生できなくなる",
+            "process_label": "陈机开始燃烧天命...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "战力",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_opt_c_01",
+                  "content": "陈期は狂ったように笑った。彼は両腕を広げ那股死亡力量が体内で広がるままにした。同時に、彼はコツコツと蓄積してきた天命値を疯狂的に燃やし始めた。天命値の一点一点的燃烧都在对抗着命运的侵蚀，如同在黑暗中点燃火炬。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "天命燃烧中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_006",
+        "content": "陈期が智で局面を破ることを 선택した瞬间、彼は虚空中から一股の冷たい意識が降り注ぐのを感じた。それは天道の目――超越的な存在が何らかの方法で彼を「注視」していた。陈期の心跳が猛然と加速したが、彼は無理やり自分を冷静に保った。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "陈期、汝は敢えて天機を窺うのか？汝はこれらの細工で本单位を騙せると思っているのか？",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_008",
+        "content": "その声は远古の洪鐘のように陈期の意識の中に響き渡った。彼は逆向観測が無形の力によって侵蝕され、画面がますます不安定になっているのを感じた。しかし陈期は慌てなかった――彼が待っていた的就是这一刻。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_009",
+        "character_id": "char_chenji",
+        "content": "天道の目前輩，您终于肯现身了。我等这一天，等了很久。您说的没错，逆向观测确实无法打破预言――但它能引您出来，这就够了。",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_010",
+        "content": "陈期は猛然と目を開け、瞳孔に一幅のがureauな图案が映し出された――那是三年間にわたる様々なルートで搜集した天道の目についての情報表の欠片。彼はこれが一体何であるか分からなかったが、これが无敌ではないことを知っていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0700_choice_02",
+        "prompt": "陈期は天道の目の意識投影を引き出すことに成功した。今彼は次のステップを decisão 下さなければならない――この千载一遇のチャンスをどのように利用するか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0700_choice_02_opt_a",
+            "text": "真相を探る",
+            "description": "この貴重な「对话」の機会を利用し、天道の目の真の目的と弱点を试探する。陈期の毒舌と话术は彼の最大の武器である。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "5分間の時間を消費する",
+            "visible_reward": "天道の目についての重要な情報表を獲得する",
+            "risk_hint": "自分の底牌を暴露する可能性がある",
+            "process_label": "陈机开始套话...",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_02_a_01",
+                  "content": "陈期の口元には讽刺的な笑みが浮かんでいた。声は弱々しくも每一字が明瞭だった：「前輩は每次この方法で他人の運命を決めるのですか？模糊な予言一つで人に生きさせ人に死なせる――您不觉得无聊ですか？」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_02_opt_b",
+            "text": "直接に宣戦する",
+            "description": "もはや伪装せず、天道の目に明確に反抗の意志を宣言する。最も霸气のある方法で、天道に：你杀不了我 и告诉。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天道の目に直接抹殺される可能性がある",
+            "visible_reward": "天下の人々の面前で不滅の威名を立てる",
+            "risk_hint": "現在の実力は天道の目に对抗できない",
+            "process_label": "陈机发出挑战...",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_02_b_01",
+                  "content": "陈期は天を仰いで长く笑い、声には破釜沉舟の悲壮さがあった：「我陈期はただの废物雑役弟子に過ぎないが、それでもこの所谓の運命を信じない！今日您が私を殺せても、将来私は必ずこの所谓の天を踏み潰す！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道宣战"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_02_opt_c",
+            "text": "時間を稼ぐ",
+            "description": "挑発せず真相を探らず、ただ天道の目の注意力を消耗し続ける。即将到来的天機閣の介入のために時間を争取する。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "每分3ポイント的天命値を消費する",
+            "visible_reward": "天機閣の介入の成功を確実にする",
+            "risk_hint": "天機閣が到着する前に天命値が枯渇する可能性がある",
+            "process_label": "陈机开始无意义地循环对话...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -12
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_02_c_01",
+                  "content": "陈期は切り离り简単に漫談を始めた。天青宗の歴史から三大宗派の恩怨まで、上古禁地の伝说から魔道入侵の理由まで。彼の声は弱々しくも確かで、绝望のマラソンを走るかのようだった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "时间拖延中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_011",
+        "content": "しかし此刻、陈期は体内の死亡予兆が猛然と加剧するのを感じた。那股冷たい侵蝕の力が突然狂暴になり、天道の目が彼の意图を察觉したかのようだった。心臓から激痛が爆发し、陈期は片膝をつき、一口から血を吐き出した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_012",
+        "content": "「お前と游ぶのはもうやめだ。」陈期は口元の血を拭い取り、眼中には一丝の狂気が闪烁していた。彼は己の時間が无几ことを知っていた――あと最后一次の機会だけかもしれない。胸口の激痛は日益厳しくなり、彼は己の心脈が一点点断裂しているのを感じ取れた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_013",
+        "content": "この千钧一发之际、陈期は天機録の断片の上の古老な文字を思い出した：「天機は泄らすべからず、命数は犹お违える。唯だ心の执念を抱く者のみ，必死の局面において一线の生機を見出すことができる。」彼はこれまでこれをただの空洞な励ましだと思っていたが、今は何かを分かった気がした。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0700_choice_03",
+        "prompt": "死亡のカウントダウンが始まった。陈期は最後の選択を下さなければならない――如何にこの最後の执念で宿命，破る？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0700_choice_03_opt_a",
+            "text": "执念其一：妹を見つける",
+            "description": "陈念――聖宗に連れ去られた彼の妹は、彼的最大な弱点であり、生き延びるための最大な原動力である。この执念で天機録の隠された機能を起動させる。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "天命値を20ポイント消費する",
+            "visible_reward": "天機録の隠されたストーリー「天命絆」を触发する",
+            "risk_hint": "妹の存在を天道の目に暴露する可能性がある",
+            "process_label": "陈机全力释放对妹妹的执念...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_03_a_01",
+                  "content": "陈期は目を閉じ、心の中で必死にある名前を呼唤した――陈念。那个模糊的、从未清晰过的身影在这一刻变得无比清晰。一股奇异的力量从他的天機録残页中爆发出来，那是「絆」の力。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "羁绊激活",
+              "妹妹线索显现"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_03_opt_b",
+            "text": "执念其二：天に复仇する",
+            "description": "すべての怒りと怨みを力に変え、天道の目に代償を支払わせる。この純粋な恨みは天機録のある禁忌機能を起動させるかもしれない。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "黒化値+30",
+            "visible_reward": "「天敵」の称号を解除し、天道の目に対する抗性を獲得する",
+            "risk_hint": "永远に天道の対立面に陥る可能性がある",
+            "process_label": "陈机释放全部恨意...",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 30
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_03_b_01",
+                  "content": "陈期は猛然と頭を上げ，眼中满是疯狂的杀意。低く可怕的になった声で言った：「お前は何者だ？高高在上な天道？他人の生死を決める判官？いつか、必ずお前を神壇から引きずり下ろす！」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天敌觉醒"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0700_choice_03_opt_c",
+            "text": "执念其三：蒼生を守る",
+            "description": "個人の生死を度外視し，心中只想保护无辜な人達。この大義は某种の超越的な存在の介入を促すかもしれない。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "すべての修为を失う可能性がある",
+            "visible_reward": "「天命逆転」イベントを触发する",
+            "risk_hint": "天道の目が彼を最大の脅威と見なす可能性がある",
+            "process_label": "陈机燃烧生命守护苍生...",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 25
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0700_result_03_c_01",
+                  "content": "陈期は彼のために救われた人达を思い出し，天青宗の无辜な弟子达を思い出 し，天下が即将遭受する劫難を思い出出した。一股の温かい力が彼の心の底から湧き上がった，那是「守護」の力。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命逆转准备"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_014",
+        "content": "陈期は第一条の道を選擇した――妹への执念。那个名字が心に響いたとき，全ての天機録断片が震动した。一筋の温かい金光が断片から昇り，缓缓と陈期の崩壊しつつある体を包んだ。死亡の侵蝕速度骤然减缓。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_015",
+        "content": "「見つけた！」陈期は猛然と目を開け，眼中满是惊喜。那道金光の中に，彼は模糊な画面看到了――陈念が神秘的な地下密室に囚われており，周囲には複雑な陣法が張り巡らされていた。彼女は生きており，そして天青宗の近くにいた！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_016",
+        "content": "しかし天道の目も確かに这一切を察觉していた。那股冷たい意識猛然と強まり，金光は激しく震え始めた。陈期は頭が何かに狠狠挤压られている的感觉を受け，激痛に耐え难い。「諦めろ，陈期。お前は谁も守れない。」天道の目の声が再び響いた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0700_017",
+        "character_id": "char_chenji",
+        "content": "守れない？私は谁も守ろうと思ったことはない。ただ……ある人に元気に生きてほしいだけだ。この小さな愿望すら阻むのか？",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_018",
+        "content": "陈期の声は震えていたが、彼の意志は前所未有的に坚定だった。此刻、空が突然大きな裂け目を龟裂，一道古老而威严的气息が裂け目から降り注いだ。天機閣の介入――天道の目より更に神秘的な存在が这场战争中介入してきた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_019",
+        "content": "「天機録の持有者、まだ陨落の時ではない。」その声は冷たく古びていた，まるで远古の神谕のようだった。陈期は身上的死亡予兆が猛然と止まり，那股侵蝕の力が一股の更に強い力によって無理やり压制されているのを感じた。天道の目の意識发出一声愤怒の咆哮，そして缓缓と引いた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0700_020",
+        "content": "陈期は地に崩れ落ち，大口大口と息をしていた。彼の体は依然として弱々しかったが，死亡の威胁は一時的に解除された。然而他知道，这只是暂时的喘息――天道の",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

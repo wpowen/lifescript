@@ -1,0 +1,406 @@
+{
+  "id": "天机录_ch0829",
+  "book_id": "天机录",
+  "number": 829,
+  "title": "Temple Turmoil",
+  "is_paid": true,
+  "next_chapter_hook": "When the imperial emissary retreated in狼狈, a flicker of sharp light闪过Ling Yuan's deep eyes—his first realization that this废物menial servant might never have been a true废物.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0829_001",
+        "content": "Dawn's first light appeared, and a faint sandalwood fragrance弥漫在Tianqing Sect's Martial Arena. Chen Ji knelt before the Tianji Record Fragment, eyes tightly closed, veins at his brow center pulsing slightly. The newly emerged runes on the fifth page emitted a ghostly blue glow, like a third eye opening in the abyss, seemingly peering into some unspeakable heavenly secrets. \"These runes... why do they feel so similar to my sister's aura?\" Chen Ji thought in shock, his fingertips unconsciously brushing across the mysterious pattern. The Tianji Record trembled slightly, as if responding to his doubts, or perhaps mocking his ignorance.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_002",
+        "content": "Just then, a sudden commotion came from the direction of the sect's main hall. Bells and drums rang in unison, horns blazed—this was the ceremonial format for receiving honored guests. Chen Ji frowned slightly, lifting his head to gaze at the procession slowly approaching in the distance. The leader was a middle-aged man in crimson-purple official robes, followed by over a dozen imperial guards in gleaming armor, carrying a black sandalwood box. The box was carved with menacing dragon patterns, emanating a suffocating pressure. \"The imperial special envoy...\" A subtle cold smile curled at the corner of Chen Ji's mouth, \"How quickly they came.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0829_003",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan sat at the main seat of the great hall, his expression calm as he gazed at the imperial envoy below. \"I wonder what brings Your Majesty's messenger to our humble sect?\" The middle-aged official chuckled, drawing a bright yellow imperial edict from his sleeve, and said in a shrill voice: \"This official has received the emperor's secret decree to thoroughly investigate an old case from thirty years ago at Tianqing Sect.\" He paused, his gaze sweeping across the hall's occupants before landing on Chen Ji, who was trembling in the corner, a sinister smile forming at his lips. \"It is said that a menial disciple of your sect is suspected of colluding with the demonic path, intending to overthrow imperial power. This official has come today precisely for this matter!\"",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_004",
+        "content": "With these words, the hall erupted into chaos. Several inner disciples exchanged bewildered glances; someone couldn't help but whisper: \"Chen Ji? That废物who can't even break through Qi Refining? He collude with the demonic path?\" \"Hush, be quiet, the imperial people aren't easy to deal with.\" In the corner, Chen Ji lowered his head, shoulders trembling slightly, appearing extremely frightened. His fingers dug deeply into his palms as his mind raced: \"An old case from thirty years ago... I hadn't even been born then. This is clearly after the Tianji Record.\" He quietly activated the Tianji Record; the new rune glowed faintly, and a blurry image flashed through his mind—"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0829_005",
+        "prompt": "The imperial envoy pointed at you and demanded loudly that you kneel and confess immediately. Facing this absurd accusation, how should you respond?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0829_005_a",
+            "text": "Tremble and shiver, kneel and beg for mercy",
+            "description": "Continue playing the废物persona,表现得惊恐万分、语无伦次, letting the opponent find no opportunity to strike.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May lose a small amount of reputation",
+            "visible_reward": "Make the opponent relax their guard, revealing more flaws",
+            "risk_hint": "If acting skills are slightly off, may be exposed on the spot",
+            "process_label": "废物就该有废物的样子",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0829_005_a_result_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji thudded to his knees, his whole body trembling like a sieve, voice，带着哭腔: \"P-Please spare me, my lord! This lowly one truly knows nothing! This one can barely recognize characters, so how could one possibly... how could one commit treason and betray the country? Please investigate with clear eyes!\" Saying this, his forehead heavily struck the blue stone floor with dull thuds, soon swelling and turning red.",
+                  "emotion": "恐惧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0829_005_b",
+            "text": "Play dumb and counter with questions",
+            "description": "Respond with various absurd questions, making the opponent realize you're deliberately acting stupid, thus disrupting their rhythm.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May激怒 the opponent",
+            "visible_reward": "Put the opponent in the awkward position of proving their own foolishness",
+            "risk_hint": "Requires extremely high adaptability on the spot",
+            "process_label": "傻得恰到好处",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0829_005_b_result_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji blinked his eyes, face filled with bewilderment: \"Collude with enemies? Betray the country? My lord, these words sound so impressive... This lowly one dares to ask, where is this 'enemy'? How large is this 'country'? Is it bigger than our sect?\" He scratched his head, expression sincere, \"Also, this one sweeps floors and empties night pots every day—so how exactly does one 'collude with enemies'? Could you teach this one?\"",
+                  "emotion": "困惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_006",
+        "content": "The envoy was stunned by these words, his arrogant expression instantly freezing. He never expected that a suspect accused of \"treason and betrayal\" would actually inquire so earnestly about such absurd questions. He took a deep breath, trying to suppress his fury, and said in a low voice: \"This official has no time for your nonsense! Men, take this stubborn fellow away!\" Several soldiers stepped forward, blades drawn, cold light flashing. Just then, the silent Ling Yuan finally spoke: \"Please wait, Your Majesty's messenger. Though Chen Ji is a menial servant, he is nonetheless a disciple of Tianqing Sect. Even if guilty, he should be dealt with according to sect rules. Imperial law... doesn't seem to have jurisdiction over Tianqing Sect, does it?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_007",
+        "content": "Upon hearing this, the envoy's face turned as gloomy as dripping water. He coldly laughed, drawing a token from his bosom and raising it high: \"Does the old sect master have such a big mouth? With this 'As If The Emperor Personally Present' token here, does Tianqing Sect intend to defy the imperial decree?\" The hall's atmosphere suddenly tensed. Ling Yuan narrowed his eyes, his gaze lingering on the token for a moment, then slowly stood up. Just as the two sides were at a standoff, Chen Ji suddenly let out a terrified shriek: \"Ah—!\" Everyone turned to look—Chen Ji had somehow collapsed to the ground, foaming at the mouth, limbs convulsing, presenting the appearance of an epilepsy seizure. \"What... what is this situation?\" The envoy was stunned.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_008",
+        "content": "Chen Ji rolled twice on the ground, then suddenly flipped upright, pointing at the sandalwood box behind the envoy and shouting: \"T-There are ghosts! Something in the box is sucking this lowly one's soul!\" He trembled all over, eyes full of fear, \"This lowly one saw it! Saw so many wronged souls! Old and young, male and female, all of them crying out, all of them crying! They said they were murdered! They were—\" At this point, he suddenly covered his own mouth, as if seeing something terrifying, covering his head with a blanket, not daring to look at anyone.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0829_009",
+        "prompt": "Your \"ghost possession\" performance caused a great sensation. The envoy's face turned livid as he questioned you for pretending to be possessed by spirits. How should you continue this play?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0829_009_a",
+            "text": "Continue acting crazy and playing dumb",
+            "description": "Go even more overboard with the acting, portraying yourself as a frightened idiot, making everyone reluctant to pursue the matter.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be considered truly insane by others",
+            "visible_reward": "The envoy finds himself in a dilemma, not daring to act rashly",
+            "risk_hint": "Overacting the madness might affect one's image later",
+            "process_label": "疯得彻底才安全",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0829_009_a_result_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji clutched his head, letting out a hysterical scream: \"Don't come! Don't come! This lowly one was wrong! This lowly one won't dare anymore!\" He suddenly fell quiet again, eyes empty as he gazed into the void, muttering to himself, \"They said... they said it was that person who caused it all... that person...\" His hand slowly raised, trembling as it pointed toward the envoy's direction, then suddenly rolled his eyes back and fainted dead away once more.",
+                  "emotion": "疯狂"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0829_009_b",
+            "text": "Suddenly \"regain consciousness\" and counterattack",
+            "description": "When the envoy is distracted, suddenly \"regain consciousness\" and point out that the contents of the box are the true evil object, demanding an on-site inspection.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Expose one's own cunning",
+            "visible_reward": "Shift the focus of conflict toward the imperial emissary, taking initiative",
+            "risk_hint": "The envoy may act desperately in desperation",
+            "process_label": "清醒得恰到好处",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0829_009_b_result_1",
+                  "character_id": "char_chenji",
+                  "content": "After a moment, Chen Ji slowly regained consciousness, looking dazedly at the crowd: \"W-What just happened? Why is this lowly one here?\" He rubbed his temples, then suddenly exclaimed, \"That box in the official's hand! Open it quickly! This lowly one clearly saw something inside that shouldn't be there!\" At these words, the hall erupted. The envoy's face changed drastically; instinctively he protected the box behind him and said sharply: \"Complete nonsense! This is a sacred relic dedicated by the Great Yan Dynasty—how could a madman like you presume to touch it!\"",
+                  "emotion": "惊慌"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_010",
+        "content": "Just then, a sudden transformation occurred. The sandalwood box violently trembled, the lid flew open by itself, and a dense column of black energy surged skyward, accompanied by mournful wails. Everyone scrambled backward; only the envoy's face turned deathly pale as he desperately tried to close the box lid. However, that black energy seemed to have a will of its own, transforming into a menacing ghost claw that fiercely gripped the envoy's throat. \"S-Save me—!\" The envoy let out intermittent cries for help. Ling Yuan coldly snorted, waving his sleeve—a surge of magnificent spiritual energy swept out and scattered the black energy.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_011",
+        "content": "After the black energy dispersed, the envoy collapsed to the ground, face ashen, black blood still staining the corner of his mouth. His gaze swept across his surroundings before finally landing on Chen Ji, his eyes filled with fear and malice. But before he could speak, Chen Ji had already screamed again: \"Ghosts! So many ghosts! They were all brought by him! He's a monster!\" Saying this, he scrambled on hands and knees behind Ling Yuan, trembling all over. The surrounding Tianqing Sect disciples also retreated in unison, their gazes toward the envoy filled with vigilance and disgust.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_012",
+        "content": "Ling Yuan looked down coldly at the disheveled envoy: \"Your Majesty's messenger, this one would like to ask—why did this 'sacred relic' suddenly go berserk? Could it be... as my sect's menial servant claimed, there is some unspeakable secret hidden within?\" The envoy opened his mouth, wanting to defend himself, but found his voice hoarse and barely audible. He struggled to stand but slipped, falling flat on his face, his hat tumbling to the side—in a most wretched state.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0829_013",
+        "prompt": "The envoy made a fool of himself, the scene falling into chaos. Should you press the attack, or know when to stop?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0829_013_a",
+            "text": "Press hard and kick someone when they're down",
+            "description": "Continue dealing blows, using even more absurd questions to刺激 the envoy, making him completely lose face.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May arouse Ling Yuan's suspicion",
+            "visible_reward": "The envoy loses all face, imperial dignity is ruined",
+            "risk_hint": "Being too outstanding may bring bigger troubles",
+            "process_label": "趁他病要他命",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0829_013_a_result_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji poked his head out from behind Ling Yuan, asking innocently: \"My lord, that... may I ask, what rank is the official position of 'treason and betrayal'? Is it higher than the sweepers' supervisor? Also, what did those ghosts look like? Were they wearing clothes of your color?\" His voice was clear, echoing through the entire hall. Suppressed laughter immediately arose around him. The envoy trembled with rage; unable to catch his breath, he directly fainted.",
+                  "emotion": "得意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0829_013_b",
+            "text": "Know when to stop and stay out of it",
+            "description": "Quietly retreat to the corner, letting the stage belong to Ling Yuan and the sect's higher-ups, continuing to be invisible yourself.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss the chance to beat a dead dog",
+            "visible_reward": "Maintain a low-key persona, avoid making too many enemies",
+            "risk_hint": "May allow the envoy to escape punishment",
+            "process_label": "低调才能活得久",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0829_013_b_result_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji shrunk his neck, saying softly: \"That... this lowly one suddenly has a stomachache, could this one please be excused?\" Without waiting for Ling Yuan's answer, he had already ducked and scurried out of the hall like a weasel. Behind him came the envoy's furious roars and everyone's discussions, but he walked on without looking back. After turning a corridor, his expression instantly became calm and profound. \"The first move... was quite smooth.\" He murmured to himself, \"Next... let's see how Ling Yuan handles this hot potato.\"",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_014",
+        "content": "In the great hall, Ling Yuan slowly descended from the main seat, approaching the unconscious envoy. He looked down at this disheveled middle-aged man, a glint of amusement flickering in his eyes. \"Take His Majesty's messenger away and tend to him well.\" He paused, his voice suddenly turning icy cold, \"As for the contents of that box... this one will personally investigate. If there truly is something evil within, this one would like to ask—what exactly is the imperial court scheming?\" His gaze casually swept toward the direction where Chen Ji had left, deep in thought.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_015",
+        "content": "Meanwhile, Chen Ji had already returned to his dilapidated small room. He closed the door, sat cross-legged on the bed, and took out the Tianji Record Fragment. The new rune on the fifth page still glowed a ghostly blue, but several shades brighter than before. He stared at the rune, thinking in his heart: \"This rune is related to Niannian... could she be in the imperial capital?\" The Tianji Record trembled slightly, as if responding to his speculation. He closed his eyes, his consciousness sinking into that mysterious rune—",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_016",
+        "content": "In the darkness, a blurry image gradually emerged. It was a gloomy underground palace, surrounded by ghostly green phosphorescent flames. In the center of the scene, a girl in prison clothes was suspended by chains in mid-air; her features bore a seventy percent resemblance to Chen Ji, only much paler and gaunt. \"Niannian...\" Chen Ji's heart ached; just as he wanted to see more clearly, the image suddenly twisted violently, as if some force was preventing him from continuing to spy. He abruptly opened his eyes, his forehead already drenched in cold sweat. On the fifth page of the Tianji Record, that rune had dimmed considerably, seemingly warning him—the price of peering into heavenly secrets was never cheap.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_017",
+        "content": "Chen Ji took a deep breath, tucking the Tianji Record into his chest. He stood up, walked to the window, and gazed toward the brightly lit direction of the great hall. Though the imperial emissary had been driven away, that intensifying sense of crisis from lurking undercurrents grew stronger. \"The contents of that box... are by no means ordinary.\" He murmured to himself, a sharp light flickering in his eyes, \"Something that can create resonance with the Tianji Record... can never be simple. It seems necessary to personally investigate the secret of that box.\" A cold smile curled at his lips, \"Ling Yuan ah Ling Yuan, do you think you're the only one who controls this chess game?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_018",
+        "content": "Night deepened; in a certain dark corner of Tianqing Sect, Chen Ji's figure moved like a specter. He avoided the patrolling disciples, silently approaching the room where the envoy was being held. Beneath the moonlight, his expression was calm and focused, completely different from that trembling废物of daytime. \"The forces behind the imperial court...\" he thought to himself, \"are definitely far more complex than they appear. That box, that underground palace... and Niannian...\" He clenched his fists, knuckles whitening, \"Wait for me, I will definitely find you.\" The Tianji Record in his chest radiated gentle warmth, as if guiding his direction.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_019",
+        "content": "When Chen Ji finally sneaked near the room, he heard voices inside. He held his breath, pressing his ear against the window lattice. \"...The old fool doesn't know what's good for him, actually daring to humiliate His Majesty's messenger in public.\" A sinister voice spoke, \"Rest assured, the master has already made arrangements. Tomorrow that box will be sent to the capital—then... hehe, even if Tianqing Sect had extraordinary abilities, they couldn't escape the master's grasp.\" Chen Ji's brow tightly furrowed, his heart shocked: \"Master? It seems there's an even bigger fish behind all this...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0829_020",
+        "content": "Chen Ji silently retreated into the shadows, his eyes flickering with icy light. Tonight's harvest far exceeded expectations—the imperial emissary was merely a chess piece; the \"master\" behind him was the true adversary. More importantly, that girl suspended by chains—his sister Chen Nian—was currently in danger. He raised his head toward the starry sky, taking a deep breath. \"Niannian, wait a little longer.\" He said softly, his voice gentle yet resolute, \"Brother will come to rescue you very soon.\" The rune on the fifth page of the Tianji Record flickered faintly, as if responding to his vow. The night wind blew past, carrying away his figure, leaving behind only a solitary and resolute silhouette.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

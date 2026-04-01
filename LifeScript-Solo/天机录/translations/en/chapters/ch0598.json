@@ -1,0 +1,732 @@
+{
+  "id": "天机录_ch0598",
+  "book_id": "天机录",
+  "number": 598,
+  "title": "Operation to Rescue Sister",
+  "is_paid": true,
+  "next_chapter_hook": "Chen Nian opened her eyes, her lips trembling slightly, and spoke those words that made Chen Ji feel as if he had fallen into an ice cave — 'Brother, don't trust anyone, including yourself.'",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0598_001",
+        "content": "Deep within the Dragon Vein, a ghostly blue light writhed upon the stone walls like a living creature, and the air was filled with the aura of ancient primordial times. Chen Ji knelt on one knee, his forehead pressed against Chen Nian's icy-cold hand back, his palm gripping the Tianji Record Fragment tightly. That line of golden text burned his consciousness like a branding iron — 'Heavenly Fate: 5 points.' Just five points, enough to exchange for three hours of head start."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_002",
+        "content": "Chen Nian lay peacefully at the center of the altar, surrounded by dozens of golden restraint chains, each inscribed with ancient runes. At her brow center, a jet-black scale was faintly visible — that was the 'Heavenly Fate Lock Key' implanted by the Holy Sect. The moment Chen Ji's fingers touched the chains, a mighty force rebounded violently, hurling his entire body backward."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_003",
+        "character_id": "char_chenji",
+        "content": "(Grinding teeth, low roar) Chen Nian... Brother is here to take you back.",
+        "emotion": "压抑的愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_004",
+        "content": "He stood up again, taking from his chest a jade talisman emanating an eerie purple light. That was Mo Xiansheng's final trump card left for him — the 'Reverse Scale Talisman,' capable of briefly suppressing any restraint for three breaths. Three breaths, enough for him to take his sister, and enough to fully awaken the Dragon Vein's guardian mechanism."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_005",
+        "content": "The moment the jade talisman shattered, purple light spread like a spider's web, corroding those golden chains inch by inch. Chen Ji seized the opportunity to pounce forward, wrapping Chen Nian's frail body in his embrace. Her body was terrifyingly light, as if it could be scattered by the wind at any moment."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_006",
+        "content": "However, just at this moment, the entire Dragon Vein altar shook violently. Above the dome, a pair of massive golden vertical pupils slowly opened — that was the Dragon Vein Guardian that had slumbered for ten thousand years. Its gaze fell upon Chen Ji like a physical weight, carrying the indifference of examining ants."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0598_choice_001",
+        "prompt": "The Dragon Vein Guardian awakens, the three breaths' time passes in an instant, Chen Ji must make a choice — to forcefully break through and escape, or to negotiate with the guardian using the Tianji Record Fragment?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_001_a",
+            "text": "Negotiate with the Tianji Record Fragment",
+            "description": "Display the Tianji Record Fragment, prove his connection to the ancient prophet, and request the guardian to let him pass",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Exposing the Tianji Record's aura may attract stronger covetous pursuers",
+            "visible_reward": "The guardian temporarily lets him pass, buying time for retreat",
+            "risk_hint": "The guardian may recognize the Tianji Record, making the situation more complex",
+            "process_label": "陈机缓缓举起天机录残页",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_001_a_1",
+                  "content": "The Tianji Record Fragment emitted a faint golden glow in Chen Ji's palm, the guardian's vertical pupils slightly narrowed, and it truly paused for a moment. Its deep voice echoed through the altar: 'Tianji Record inheritor... you carry Xuan's aura.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_001_b",
+            "text": "Forcefully Break Through the Restriction",
+            "description": "Ignore the guardian, dash toward the exit at the fastest speed, using Ye Qing's Demonic Path fog to conceal the aura",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Depleting Ye Qing's support ability, may fall into greater danger afterward",
+            "visible_reward": "Fastest retreat speed, leaving no time for pursuers to react",
+            "risk_hint": "May trigger the Dragon Vein's more violent counterattack",
+            "process_label": "陈机不再犹豫，抱紧陈念向出口疾冲",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_001_b_1",
+                  "content": "Chen Ji clutched Chen Nian tightly in his embrace, True Qi erupting beneath his feet, his entire person shooting toward the exit like an arrow released from a bowstring. Behind him, the guardian's roar shook the mountain walls to cracking, countless golden chains like mad serpents dancing wildly, surging toward him."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_001_c",
+            "text": "Call Ye Qing for Immediate Support",
+            "description": "Contact Ye Qing through secret methods, letting her Demonic Path fog completely envelop the altar, concealing all auras",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Prematurely exposing Ye Qing's existence and location",
+            "visible_reward": "Three-way coordination, seamless retreat",
+            "risk_hint": "With Ye Qing's identity exposed, subsequent cooperation becomes even more dangerous.",
+            "process_label": "陈机单手捏碎传讯玉符",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_001_c_1",
+                  "content": "The moment the Jade Pendant shattered, a ghostly violet mist quietly spread from all corners of the altar. Ye Qing's voice rang in Chen Ji's ear: 'I'm in position. Mist rises in three breaths.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_007",
+        "content": "The Demonic Path mist surged like a tide, shrouding the entire altar in an eerie purple fog. The guardian's vertical pupils lost their target in the mist, angry roars echoing between stone walls, yet never managing to lock onto Chen Ji's position."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_008",
+        "character_id": "char_yeqing",
+        "content": "(Ye Qing's voice came through the mist, low and urgent) Go! My mist won't hold much longer—the dragon vein's tremor will attract people from outside.",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_009",
+        "content": "Chen Ji didn't dare delay, clutching Chen Nian as he raced through the mist. Yet just as he was about to burst out of the altar, a sharp sword aura pierced through the fog from outside, aimed directly at his back! It was an attack from a Soul Condensation realm expert, powerful enough to pierce through both him and Chen Nian."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_010",
+        "content": "Chen Ji jerked backward, the sword aura grazing past his shoulder, sending up a spray of blood mist. Looking up, he saw that where the mist had cleared, a majestic figure stood at the exit—silver hair cascading like a waterfall, face as cold as frost, it was precisely Tianqing Sect's former Sect Master Ling Yuan."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_011",
+        "character_id": "char_lingyuan",
+        "content": "(Ling Yuan stood with hands clasped behind his back, his gaze sharp as lightning) Chen Ji, I thought you were merely a dormant ant. Never expected you to dare touch the dragon vein's forbidden seal. Do you think that demonic path witch's mist can block the imperial court's dragnet?",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_012",
+        "content": "Behind Ling Yuan, over a dozen figures filed out, each with profound aura, all experts at the Soul Condensation realm or higher. They swiftly arranged into formation, completely sealing off Chen Ji's retreat. At this moment, Chen Ji finally realized—from the moment he stepped into the dragon vein, he had already fallen into a trap."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_013",
+        "character_id": "char_lingyuan",
+        "content": "(Ling Yuan approached slowly, his tone carrying the leisurely confidence of a cat toying with a mouse) Chen Xuan selected you back then, due to the will of the Tianji Record. But do you know... the Tianji Record itself is also a piece being manipulated?",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0598_choice_002",
+        "prompt": "Ling Yuan revealed a shocking truth, the imperial court's pursuers had already laid a dragnet, Chen Ji found himself in a desperate situation—whether to continue feigning weakness and stall, or reveal all his trump cards and fight with everything?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_002_a",
+            "text": "Continue feigning weakness to ambush the strong.",
+            "description": "Kneel and beg for mercy, displaying the cowardice expected of a废物, make Ling Yuan lower his guard, seek weaknesses to exploit.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Risk humiliation, needing to endure tremendous psychological pressure.",
+            "visible_reward": "Ling Yuan might only send minor guards, creating an opportunity for Ye Qing's rescue.",
+            "risk_hint": "If Ling Yuan becomes suspicious, he might kill on the spot.",
+            "process_label": "陈机双腿一软，跪倒在地",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_002_a_1",
+                  "content": "Chen Ji thudded to his knees, Chen Nian in his arms nearly slipping. His voice quavered: 'O-old Sect Master, spare my life! The disciple just... just wanted to save my sister, I beg your mercy!' That appearance of being greedy for life and afraid of death was no different from usual."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_002_b",
+            "text": "Expose Ling Yuan's true colors.",
+            "description": "Publicly expose Ling Yuan's wolf-like ambitions, causing suspicion among the imperial court pursuers.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Completely break with Ling Yuan, leading to a life-or-death struggle ahead.",
+            "visible_reward": "Might shake the imperial court pursuers' morale, buying time for retreat.",
+            "risk_hint": "Ling Yuan might act desperately and kill on the spot.",
+            "process_label": "陈机缓缓站起，眼神骤变",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_002_b_1",
+                  "content": "Chen Ji slowly stood up, brushed the dust off his knees, a meaningful curve forming at the corner of his mouth: 'The old Sect Master is right, the Tianji Record is indeed a piece. But you seem to have forgotten... so are you.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_002_c",
+            "text": "Use Chen Nian as leverage.",
+            "description": "Exploit the Heavenly Fate Key within Chen Nian, threaten to activate it, making Ling Yuan hesitate like a rat afraid to break the vessels holding his treasures.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Might harm Chen Nian, and expose that he knows the Holy Sect's core secrets.",
+            "visible_reward": "Ling Yuan absolutely did not dare act rashly, buying crucial time for the retreat",
+            "risk_hint": "The dragon soul within Chen Nian might therefore lose control",
+            "process_label": "陈机将手按在陈念眉心",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_002_c_1",
+                  "content": "Chen Ji's hand quietly pressed against the black scale on Chen Nian's brow center. His gaze was cold as the abyss: \"Do you recognize what this is, Old Sect Master? If I shatter it with one palm... do you think the Holy Sect won't come to settle accounts with you?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_014",
+        "content": "Just as both sides reached a stalemate, Chen Nian in Chen Ji's arms suddenly stirred. Her eyelashes trembled faintly, her cracked lips parted slowly, and a weak yet clear cry escaped:"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_015",
+        "character_id": "char_chenian",
+        "content": "(Chen Nian's breath was threadlike, yet carried a thread of clarity) Brother... brother, is that you...",
+        "emotion": "虚弱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_016",
+        "content": "That cry exploded in Chen Ji's heart like thunder. Twelve years, twelve years of searching, scheming, enduring—all found their reward in this moment. His eyes instantly reddened, but he forced the tears back. In this instant, he was not the infallible chess master, but simply a brother who had finally found his sister."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_017",
+        "character_id": "char_lingyuan",
+        "content": "(Ling Yuan's brow creased slightly, a complex glint flickering in his eyes) So that's it... no wonder you dared venture in alone. The inheritor of Chen Xuan's legacy actually has such a weakness of humanity.",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_018",
+        "content": "Ling Yuan raised his hand, and two Condensation Soul realm experts behind him pressed forward simultaneously. Chen Ji retreated step by step with Chen Nian in his arms, yet at this moment he felt the one in his embrace stir again. Chen Nian's eyes snapped open, and within those pupils intersected two beams of anomalous light—one golden, one black—signs of the dragon soul and Heavenly Fate Key clashing violently within her!"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_019",
+        "character_id": "char_chenian",
+        "content": "(Chen Nian's voice shifted between male and female, eerie beyond measure) Go... go quickly... it's about to wake...",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_020",
+        "content": "Almost at the same instant, a幽紫 strand of light shot from the distance, directly striking the imperial dynasty pursuers' formation. Ye Qing's figure appeared like a specter at the edge of the battlefield. Her hands formed seals, and demonic path mist exploded outward from her like ripples, shrouding the entire dragon vein entrance in a purple chaos so thick no hand could be seen before one's eyes."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_021",
+        "character_id": "char_yeqing",
+        "content": "(Ye Qing's voice pierced through the mist, cold and resolute) Chen Ji, I give you thirty breaths. After thirty breaths, I too will suffer backlash. Take her—and go!",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0598_choice_003",
+        "prompt": "Ye Qing used herself as bait to buy thirty breaths, Chen Nian's dragon soul was about to lose control—Chen Ji had to make the final choice between affection and reason",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_003_a",
+            "text": "Listen to Ye Qing and immediately withdraw",
+            "description": "Abandon all hesitation, sprint全力 through the mist, trust Ye Qing's cover",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Ye Qing will face Ling Yuan and the imperial dynasty pursuers alone",
+            "visible_reward": "Successfully take Chen Nian away, giving her a chance to find a cure for the dragon soul",
+            "risk_hint": "Ye Qing may therefore expose her identity, her subsequent situation dangerous",
+            "process_label": "陈机咬牙转身，冲入迷雾",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_003_a_1",
+                  "content": "Chen Ji hesitated no more, his True Qi surging wildly as he charged into the mist with Chen Nian. Behind him came Ling Yuan's furious roar and intense sounds of combat, but he dared not look back. Thirty breaths—he had to escape within these thirty breaths."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_003_b",
+            "text": "Return to aid Ye Qing",
+            "description": "Chen Ji knew Ye Qing couldn't survive thirty breaths, he wanted to go back and share the pressure for her",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Might lose both Ye Qing and Chen Nian simultaneously",
+            "visible_reward": "Advance and retreat together with Ye Qing, not failing a comrade's righteousness",
+            "risk_hint": "Chen Nian's dragon soul might completely lose control in the chaos of battle",
+            "process_label": "陈机猛然停步，转身欲回",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_003_b_1",
+                  "content": "Chen Ji's footsteps suddenly froze. Chen Nian in his arms struggled to grasp his robe: \"Don't... don't go back... she... she told me to go...\" In those heterochromatic pupils flickered a calm and resolve that mirrored Chen Ji's own."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_003_c",
+            "text": "Stay and negotiate with Ling Yuan",
+            "description": "Trading part of the Tianji Record's secrets as a bargaining chip to secure Ling Yuan's temporary passage and Ye Qing's safety",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Expose more trump cards, and possibly allow Ling Yuan to obtain crucial information",
+            "visible_reward": "Protect everyone, buying space for subsequent schemes",
+            "risk_hint": "Ling Yuan might not negotiate at all, and directly attack",
+            "process_label": "陈机深吸一口气，扬声开口",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0598_result_003_c_1",
+                  "content": "Chen Ji's voice echoed through the mist: \"Ling Yuan, the thing you want is with me. Release Ye Qing and Chen Nian, and I'll tell you all the secrets of the Tianji Record—including the identity of the 'hand' behind it.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_022",
+        "content": "In the mist, Chen Ji's footsteps swept across every inch of stone wall like wind. His breathing was rapid and heavy, while Chen Nian in his arms occasionally let out pained whimpers. The dragon soul within her, like a slumbering ferocious beast, was awakening inch by inch. Chen Ji could feel that berserk power seeping through her flesh and bones toward his arm, as if the next moment it would devour him along with everything else."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_023",
+        "content": "\"Fifteen breaths!\" Ye Qing's voice came from the distance, carrying suppressed agony. Chen Ji knew she was maintaining this mist at the cost of burning her own essence blood. Ling Yuan's furious roars and the clash of sword qi drew ever closer—each breath like the ticking of a countdown clock."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_024",
+        "content": "Finally, a dazzling light appeared at the end of the mist—the Dragon Vein exit, the light of freedom. Chen Ji rushed out with all his might, the biting night wind rushing toward him, making it impossible to open his eyes. Yet just as he was about to step into the mountain forest, a figure abruptly blocked his path."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_025",
+        "content": "It was a middle-aged man in imperial robes, surrounded by faint dragon qi. His gaze fell on Chen Nian, his eyes flashing a complex mix of greed and wariness: \"Chen Xuan's successor, truly audacious. But it seems you've forgotten... the Dragon Vein exit was long ago laid with an anti-flight formation by the imperial court.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_026",
+        "character_id": "char_chenji",
+        "content": "(Chen Ji laughed coldly, shielding Chen Nian behind him) Imperial court lackeys? Hmph, quite the gathering. The old sect master, the anti-flight formation, and you... what should I call you?",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_027",
+        "content": "The imperial-robed man stood with hands clasped behind his back, completely unbothered by Chen Ji's mockery: \"I am the Imperial Guardian True cultivator of the Great Zhou Dynasty, ordered to guard this place. Chen Ji, if you know what's good for you, leave that woman behind, and I shall preserve your corpse intact.\" He spoke with such nonchalance, as if Chen Ji was already a dead man walking."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_028",
+        "content": "Under the anti-flight formation's shroud, Chen Ji could not fly. Behind him, Ling Yuan's pursuing forces could emerge at any moment. In his arms, Chen Nian's dragon soul churned restlessly—every breath of delay pushed them closer to the critical point. At this moment, Chen Ji truly found himself in a deadly ground besieged on all sides."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_029",
+        "character_id": "char_chenian",
+        "content": "(Chen Nian suddenly coughed violently, gold-and-black blood spilling from the corners of her mouth) Brother... put me down... please...",
+        "emotion": "哀求"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_030",
+        "content": "Chen Ji lowered his gaze to the face in his arms—five-tenths similar to his own. A tender corner of his heart suddenly spasmed with pain. Twelve years ago, he had failed to protect her; twelve years later, he would never let go, even if it meant mutual destruction. His gaze turned sharply cold, his finger secretly pressing against the Tianji Record Fragment—the final five points of Heavenly Fate."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_031",
+        "content": "The Tianji Record Fragment trembled violently beneath his fingertip, golden characters writhing like living things. Chen Ji felt that familiar power surge through him—with a single thought, he could once again glimpse the next three hours. Yet he also knew the Heavenly Fate points were nearly exhausted; if he consumed another five points, what awaited him would be the total backlash of fate."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_032",
+        "character_id": "char_chenian",
+        "content": "(Chen Nian's eyes suddenly flew wide open, and within those gold-and-black pupils, a flicker of clarity appeared) Brother... don't... you'll suffer the backlash... I can feel it... something is watching us...",
+        "emotion": "惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_033",
+        "content": "\"Something is watching us\"—these words splashed like a basin of cold water over Chen Ji's heart. He suddenly recalled the words of the Demonic Path commander as he departed: \"Beyond the chess game, there lies an even greater game.\" Could that gaze transcending all else be watching his every move through the Heavenly Fate Key within Chen Nian?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_034",
+        "content": "Yet time did not wait. The imperial-robed man had already raised his hand, thunder power coalescing in his palm, ready to strike. Behind him, Ling Yuan's presence drew ever closer through the mist. Chen Nian's pained whimpers grew fainter. At this life-or-death moment, Chen Ji反而彻底冷静下来，那双平日里懦弱卑微的眼眸中，绽放出了令在场所有人都感到心悸的锋芒。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_035",
+        "character_id": "char_chenji",
+        "content": "(Chen Ji's voice was terrifyingly calm) You all think I made it here... on luck?",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_036",
+        "content": "He held Chen Nian in one arm, his other hand slamming against the ground. An intricate formation rune pattern spread outward from him as its center—that was the restriction Mo Xiansheng had sealed within the Tianji Record: \"Dragon Vein Resonance.\" The entire Dragon Vein roared at this moment, the ground cracking into countless fissures, golden dragon qi gushing forth."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_037",
+        "content": "The imperial-robed man's face changed drastically: \"You've lost your mind! Triggering the Dragon Vein Resonance will cause the entire mountain range to collapse!\" Chen Ji laughed instead, that smile carrying a desperate resolve of \"burning the bridges\": \"Collapse? Then perfect—let's all die together.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_038",
+        "content": "Just as everyone was in shock, a shadowy violet figure burst from the mist, directly crashing into Chen Ji's arms—it was Ye Qing. Covered in blood, her aura chaotic, yet at the final moment she thrust a诡异光芒的玉符 into Chen Ji's palm."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_039",
+        "character_id": "char_yeqing",
+        "content": "(Ye Qing's voice was weak but urgent) Holy Sect Void-Crossing Talisman... only one... can tear through any anti-flight formation for three breaths... I... I'll hold them off... run!",
+        "emotion": "燃烧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_040",
+        "content": "Ye Qing gave Chen Ji no chance to refuse. She turned to face the mist-clearing Ling Yuan. Purple Demonic Path mist exploded around her,激烈碰撞with Ling Yuan's golden sword qi. That slender figure wavered under the夹击of the two imperial court experts, yet she refused to retreat a single step."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_041",
+        "character_id": "char_lingyuan",
+        "content": "(Ling Yuan's voice穿透迷雾，带着森然杀意) Demonic path妖女，你还敢现身！今日便让你这圣宗叛逆……粉身碎骨！",
+        "emotion": "暴怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_042",
+        "content": "Chen Ji gripped the Space-Breaking Talisman with white-knuckled desperation. Ye Qing's figure grew increasingly blurry in the mist, her black hair whitening visibly before his eyes—a sign of life-force burning. He knew this was an opportunity she'd purchased with her very existence."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_043",
+        "content": "Without hesitation, Chen Ji flooded the Space-Breaking Talisman with True Qi. The moment the jade talisman shattered, a jet-black fissure tore open in the anti-spatial formation. Though merely a few zhang wide, it radiated a void energy that struck terror into everyone present. Chen Ji clutched Chen Nian and plunged headfirst into the rift."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_044",
+        "content": "The world spun wildly. The void's tearing force threatened to rip apart both his flesh and soul, yet he guarded the child in his arms with desperate determination, letting that force carry them toward an unknown horizon. In a daze, he seemed to hear Ye Qing's final words:"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_045",
+        "character_id": "char_yeqing",
+        "content": "(Ye Qing's voice drifts from the void, weak but carrying a hint of a smile) Chen Ji... remember... you owe me a favor...",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_046",
+        "content": "When Chen Ji opened his eyes again, an unfamiliar starry sky greeted him. He lay in a barren valley, surrounded by deathly silence broken only by the occasional chirp of insects. Chen Nian remained unconscious in his arms, her breathing faint but steady, the agitation within her dragon soul temporarily quelled by the distance from the dragon vein."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_047",
+        "content": "Chen Ji struggled to sit up and surveyed his surroundings. They were at least a hundred li from the dragon vein—the Space-Breaking Talisman had been even more powerful than he'd anticipated. Yet his heart held no relief from having survived. Because Ye Qing was still there, facing Ling Yuan and the Imperial Court's pursuit alone."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_048",
+        "content": "He looked down at Chen Nian in his arms. Under the moonlight, her pallid face bore a striking resemblance to his own. Twelve years. He'd finally found her. Yet this Chen Nian was no longer the little girl who used to tug at his robe, calling 'Brother' day in and day out. Within her was sealed a dragon soul and the Key of Heavenly Fate—a 'key' coveted by the Holy Sect, the Imperial Court, and even the Eye of Heaven's Mandate."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0598_049",
+        "character_id": "char_chenian",
+        "content": "(Chen Nian's eyelashes flutter weakly as her cracked lips part with difficulty) Bro... brother... don't... don't trust anyone... including... including yourself...",
+        "emotion": "虚弱而惊恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_050",
+        "content": "Chen Ji shuddered, staring in disbelief at his sister who had just awakened in his arms. Her eyes remained shut tight, yet the words came through clear and unmistakable—'Don't trust anyone, including yourself.' Was this a warning, or a prophecy? Was it the rambling of a mind in confusion, or was the Key of Heavenly Fate within her transmitting some message from a higher existence?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0598_051",
+        "content": "Chen Ji's pupils contracted sharply. He raised his gaze toward that unfamiliar, ink-black night sky, feeling as if an invisible gaze were piercing through the void, watching his every move. Beyond the chess game, there lay an even greater game. And he, perhaps from the very beginning, had been nothing more than an involuntary piece in that grander scheme of things."
+      }
+    }
+  ]
+}

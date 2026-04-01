@@ -1,0 +1,538 @@
+{
+  "id": "天机录_ch0991",
+  "book_id": "天机录",
+  "number": 991,
+  "title": "執棋者の墓所",
+  "is_paid": true,
+  "next_chapter_hook": "遺跡の奥底で、蒼老かつ聞き覚えのある声が突如として響き渡った。「ようやく来たのか……ずっと待っていたぞ」その声の主は、天機録残頁に記載された初代執棋者と瓜二つであった。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0991_001",
+        "content": "天界の果て、虚空の裂け目が獰悪な傷のように広がり、蒼穹と混沌の間に横たわる。凄まじい罡風が腐敗した霊気を伴い、人の顔肌を切り裂くように痛ませる。陳機が浮遊する砕石の上に立ち、袍の裾を風に引き裂かれながらも、裂け目の奥にぼんやりと映る影を真っ直ぐ見つめていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_002",
+        "content": "その影の輪郭は古拙で、崩壊した破apiditàな宮殿のようであり、軒に掛けられた銅鈴は既に錆びて鉄のかたまりと化しているが、罡風の中で嗚咽のような低い音を立てている。陳機の眉心が微かに曇り、天機録残頁が識海の中で突然一震し、前所未有の灼熱を放つようになった——それはまるで、流浪の子が故郷に帰る如く、渇き地望着いた地に甘雨を迎える如き感覚であった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_003",
+        "character_id": "char_moxiansheng",
+        "content": "「若様、ここは気配が蹊跷である……あの残殿の中に、大道の法理が残っているようだ」墨先生の声が識海の奥底から幽幽と響き、稀に見せる凝重さを帯びている。「一万年前、初代執棋者が命を落とした場所は天界の果てにある。これは偶然ではない」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_004",
+        "content": "陳機は答えず、掌を開くと、その泛黄した残頁が自行浮かび上がる。残頁の縁の亀裂が目に見えて癒えていくが、どこかでぴたりと止まる——まるで何かの封印が触动され、より強い力に無理やり抑え込まれたかのようである。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0991_choice_001",
+        "prompt": "残殿は目前にあり、天機録の反応は愈发激烈である。直接足を踏み入れるか、それとも先に探査するか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "direct_entry",
+            "text": "直接足を踏み入れる",
+            "description": "天機録がここまで渇望しているのだから、ここでの机缘は遅らせることはできない。執棋者の墓所に退却などあるべきか？",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "未知の危険に遭遇する可能性がある",
+            "visible_reward": "執棋者の伝承の手がかりを先に獲得する",
+            "risk_hint": "遗迹内に机关禁制があるかもしれない",
+            "process_label": "踏入遗迹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_direct_entry_001",
+                  "content": "陳機の目が鋭く光り、足を上げて残殿の門を踏み入れた。殿内は一如夜の如く暗く、壁に張り付いた蛍苔だけが蒼い微光を放っている。足下の石レンガが咔嚓と音を立て、何かが机关触动されたようであった。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_direct_entry_002",
+                  "content": "「来たな」一道の蒼老な声が突如として殿内に響き渡ったが、特定の方角からではなく、虚空そのものから滲み出るかのようであった。陳機の足取りが止まり、天機録残頁が激しく震え始めた。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "entered_temple"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "scout_first",
+            "text": "先に探査する",
+            "description": "一万年前の遗迹には必ず凶险がある。无造作に踏み入れるのは下策だ。まず天機録で三時の変を窺い、それから定める。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "天命値を消費して窺う",
+            "visible_reward": "遗迹内部の情况を獲得し、リスクを低下させる",
+            "risk_hint": "天機録の消費は不可逆である",
+            "process_label": "窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_scout_first_001",
+                  "content": "陳機は一息吸い込み、指先で残頁に触れる。天機録は瞬時に眩い金光を放ち、陳機の視野が陡然切り替わった——彼は殿内の景象看见了：崩壊した石柱、散乱した玉簡、そして……祭台の上に胡坐をかいた枯骨。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_scout_first_002",
+                  "content": "その枯骨は既に一万年を経ているものの、周囲には天機録と同一の大道気が渦巻いている。枯骨の掌には「執棋」の二字が刻まれた砕けた令牌を握りしめていた——それは初代執棋者の身份的象徴である。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_005",
+        "content": "殿内は空旷で、正中央の祭台だけが特に目を引く。祭台は青銅で铸られ、四隅には身を縮めた囚人の形象が彫刻されており、その囚人たちは顔を歪め、無限の辛苦に耐えているようであった。台上には陳機の掌にある天機録残頁と同じ紋様が銘刻されている——同源同根、明らかに一体两面である。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_006",
+        "content": "陳機がゆっくりと近づき、目光が祭台の縁の銘文を扫過する。その字迹は古篆で、蒼勁の中に狂気を帯びている：「我は天命を薪として、大道の燭を燃やす。天道が我を捨てても、我は蒼生を捨てず——第一条の路、枷を破る」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_007",
+        "content": "枷を破る？陳機の眉峰が微かに持ち上がる。天機録が識海の中で狂気の如く震え、禁錮を破って祭台の懐に飛び込もうとするかのようである。同時に、彼の胸元に陡然撕裂のような激痛が走る——それは深い血脈の奥で眠っていた刻印が目覚めたのだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_008",
+        "character_id": "char_moxiansheng",
+        "content": "「これは……天命共鳴だ」墨先生の声が陡然高くなり、失態を呈している。「若様、あなたの体内には初代執棋者と同じ血脈が流れているのです！彼は一部の伝承を血脈に刻み、世代を超えて伝えてきたのであり、有縁人が開くのを待っていたのです！」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_009",
+        "content": "Chen Ji grit his teeth, letting the power in his blood surge. The burning sensation in his chest gradually turned warm, like a shackle was coming loose. He could clearly sense it—the Heavenly Seal upon the Tianji Record, the fate pressing down on the chess players throughout the ages.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_010",
+        "content": "Just then, the sky outside the hall suddenly darkened. The originally fierce gusts of wind abruptly stilled, and a vast, cold pressure poured down from the heavens above, like an invisible eye piercing through the void, gazing at everything within the ruined hall.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "The voice contained within that pressure was cold and mechanical, devoid of any emotion: \"Tianji Record Fragment detected entering the tomb... Chess Player bloodline awakened... Initiating elimination protocol.\"",
+        "emotion": "冷漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_012",
+        "content": "Heavenly Secrets Eye! Chen Ji's pupils contracted sharply. This pressure was all too familiar to him—every time the Tianji Record probed the Heavenly Secrets, that prickling sensation of being watched originated from this. He never imagined this transcendent consciousness would manifest directly at this moment!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0991_choice_002",
+        "prompt": "The pressure of the Heavenly Secrets Eye bore down like a collapsing mountain, the inheritance on the altar awaiting acceptance. Should one risk accepting the inheritance, or temporarily evade its edge?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_inheritance",
+            "text": "Risk accepting the inheritance",
+            "description": "Since the Heavenly Secrets Eye has manifested, this is the moment of truth. Retreating only tightens the shackles further. Better to harness the Chess Player's power and confront this Heavenly Will directly!",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Face the Heavenly Secrets Eye's attack head-on",
+            "visible_reward": "Obtain the method to break the shackles from the first Chess Player",
+            "risk_hint": "The Heavenly Secrets Eye's power is unpredictable",
+            "process_label": "血脉共鸣",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_accept_001",
+                  "content": "Chen Ji thrust his palm onto the altar. The ancient bronze patterns instantly blazed with blinding golden light, spreading along his meridians throughout his entire body. In that instant, his dormant bloodline completely boiled over, explosively merging with the Chess Player's inheritance on the altar!",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_accept_002",
+                  "content": "Intense pain struck, and Chen Ji felt himself being reshaped by some ancient force. Deep within his Mental Sea, a sealed memory flooded into his mind—the life of the first Chess Player, how he obtained the Tianji Record, how he was chosen by Heaven, and how he was... abandoned by Heaven.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "first_inheritance_awakened"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "evade_temporarily",
+            "text": "Temporarily evade its edge",
+            "description": "Since the Heavenly Secrets Eye has appeared, confrontation means defeat. Better to retreat one step—preserving oneself means the inheritance can eventually be obtained.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Temporarily abandon the current opportunity",
+            "visible_reward": "Preserve oneself and seek another chance",
+            "risk_hint": "The inheritance may disappear",
+            "process_label": "战略撤退",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_evade_001",
+                  "content": "Chen Ji retreated violently, his toes touching the ground as he prepared to burst out of the hall. However, just then, a golden chain shot from the void, precisely coiling around his ankle. The chain's force was so great it directly dragged him back to the front of the altar!",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_evade_002",
+                  "content": "\"Escape is impossible.\" The cold voice rang out again, \"Once the Chess Player bloodline awakens, you have already fallen onto the chessboard. Do you think the shackles are something you can cast off whenever you wish?\"",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_013",
+        "content": "The golden chain radiated scorching heat, burning Chen Ji's ankle flesh black. Yet his face held not a trace of panic; instead, a cold smirk curled at the corner of his mouth—this expression was utterly unlike his usual timid persona.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_014",
+        "character_id": "char_chenji",
+        "content": "\"Want me to enter the game?\" Chen Ji's voice was low and calm, yet carried an undeniable edge, \"Since it's come to this, I'll enter the game. However—those who enter the game aren't necessarily all pieces.\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_015",
+        "content": "Before his words even finished, the Tianji Record Fragment suddenly bloomed with brilliant radiance. The cracks along the fragment's edges rapidly healed in the golden light, and a line of ancient text appeared: \"The first path has opened, the shackles shall shatter—the cost, Heavenly Fate returns to zero.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_016",
+        "content": "Heavenly Fate returns to zero—these four characters struck like thunder. Chen Ji's pupils contracted sharply; he knew better than anyone what this meant. Heavenly Fate at zero meant a certain death sentence! The Heavenly Secrets Eye's move was clearly using his life as the cost to forcibly terminate the Chess Player's inheritance!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_017",
+        "content": "The air in the hall froze to the extreme. The golden chain pulled taut beneath Chen Ji's feet, and the Heavenly pressure pressed on his shoulders like something substantial. Yet the inheritance's light on the altar burned increasingly fierce, as if urging him to make a choice. Advancing was a deadly trap; retreating was equally a deadly trap.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_018",
+        "content": "Chen Ji stood motionless, his usually timid face now utterly serene and still. His eyes slowly swept across every detail in the hall—collapsed stone pillars, faded murals, inscriptions on the altar—all information rapidly integrated in his mind.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_019",
+        "content": "「第一条の路、枷を破る。」Chen Jiは碑文の文字を低声で繰り返していた，忽然笑い声を漏らし，「なるほど……枷を破る代償は，決して天命ではなく——執念だ。」彼の視線が再び祭壇へと向けられ，「最初のチェスプレイヤーが残したのは罠ではなく，破局の鍵だったのだ。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0991_choice_003",
+        "prompt": "真実を洞察した後，Chen Jiは最後の決断に直面していた：传承を受けて天命の代償を払うか，それとも別の道を歩いて執念で局面を打開するか？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "use_willpower",
+            "text": "執念で局面を打開する",
+            "description": "天が求めるのは天命，私は決して与えない。全執念をTianji Recordに注ぎ，意志で枷を打破する！",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "執念の反噬",
+            "visible_reward": "天道の拘束を振り切り，破枷の方法を得る",
+            "risk_hint": "執念の反噬は神魂を傷つける可能性がある",
+            "process_label": "以意破天",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_willpower_001",
+                  "content": "Chen Jiは静かに目を閉じ，体内で湧き上がる力の神魂への衝撃を許容した。彼の執念は無形の刃のように，金の鎖へと容赦なく突き刺さった——それは妹Chen Nianへの想い，天道への恨み，自由への渇望だ！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_willpower_002",
+                  "content": "金の鎖が執念の刃によって轟然と崩壊した！同時に，祭壇上の传承の光が急上昇し，玄奥な符文が虚無から凝聚し，Chen Jiの額にゆっくりと焼き付けられる——それは最初のチェスプレイヤーの意志传承，真の破枷之法だ！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "first_path_awakened"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "accept_fate",
+            "text": "天名の代償を受ける",
+            "description": "逃げられないなら，賭けよう。天命がゼロになってもいいか？死地より生還を！",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命値がゼロになると，必死がトリガーされる",
+            "visible_reward": "完全にチェスプレイヤーの传承を得る",
+            "risk_hint": "必死の局面，誰も救えない",
+            "process_label": "以命相搏",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_fate_001",
+                  "content": "Chen Jiは猛然と目を開け，両手で祭壇を強く押さえた。天命値は堰を切ったように流れ出し，数値は狂ったように墜落していた——100、50、20、5……しかし，あと少しでゼロになろうとする刹那，温かな光が祭壇の奥から湧き出し，Chen Jiの血脉と激しく溶け合った！",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0991_result_fate_002",
+                  "content": "「いい度胸だ。」蒼老の声が再び響いたが，もはやあの冷たい機械的な音ではなく，一抹の欣慰を帯びていた，「万年の待機，终于到了，敢えて天と対局する狂人。传承を受けろ，最初のチェスプレイヤーの全遺産——如何にして天道を離脱するかの究極の法門を。」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "full_inheritance_awakened"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_020",
+        "content": "传承の光が廃墟殿堂全体を照らし，天道之眼の威圧を無理やり三分押し戻した。Chen Jiは自分の頭に無数の玄奥な情報が加わったのを感じた——それは最初のチェスプレイヤーの畢生の所学，天道に抗争した全経験，そして彼の臨終に残した最後の託宣：「天道を信じるな，駒となるな。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_021",
+        "content": "传承が完成しようとする瞬間，殿堂外の虚空が突然より大きな亀裂で裂けた。一つの巨大な眼眸が亀裂から覗き出し，それは漆黒の深淵のように，暗い瞳孔の中で無数の星辰が砕け散る景象が流転していた。天道之眼の本体——ついに降臨した！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0991_022",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「够了。」とその声はもはや機械的な放送ではなく，一抹の珍しい怒りを帯びていた，「小さな蟻，居然敢竊み取り，本当は属さないものを。」その巨眸がゆっくりと回転し，瞳孔にChen Jiの姿が映し出された，「鎖を挣脱したと思うのか？可笑しい……お前はただ，より精巧な足枷を取り替えただけだ。」",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_023",
+        "content": "Chen Jiはゆっくりと立ち上がった，さっきの传承灌输による眩暈がまだ完全に消えていないが，彼の眼差しは以往よりも明晰だった。彼はあの天を覆う巨眸を見上げ，嘴角に意味深い弧を描いた：「そうか？では，天道の大人に教えていただこう——この足枷，开け方は？」",
+        "emotion": "挑衅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_024",
+        "content": "天道之眼は沈黙した。その漆黒の深淵のような瞳孔が微かに縮み，眼前のこの渺小な存在を重新审视するようだった。しばらくして，冷たい声が再び響いた：「チェスプレイヤー……興味深い。お前のチェスゲームが，真実を亲眼目で証明するその日まで持ちこたえることを願う。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_025",
+        "content": "话音刚落，巨眸は天を覆う威圧と共に消滅した。廃墟殿堂は再び寂静に包まれ，祭壇の上の一行の碑文だけが微かに光を放っていた：「天が私を捨てても，我は決して蒼生を捨てず——第一条の路，已啟。」Chen Jiは掌，低头从天机录残页散发的柔和光芒中感受到希望，表面的裂纹又愈合了一分。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_026",
+        "content": "彼は深く溜息をつき，转身欲离开遗迹。就在此时，一道蒼老而熟悉的声音骤然从祭台深处响起——那声音的主人，竟与天机录残页中记载的第一代执棋者一模一样：「你终于来了……我等你，很久了。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_027",
+        "content": "Chen Jiの足が止まり，猛然と振り返った。祭壇の碑文がゆっくりと消散し，代わりに一道の虚幻な人影が現れた。その人影は顔が模糊不清，周身环绕着与天机录同源的大道气息，静かに祭壇の浮かび，已等待这一刻已等了万年。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_028",
+        "content": "「不必惊讶。」那人影的声音蒼老而疲惫，「我只是传承中的一缕残念。真正的我，早已陨落在万年前的天道审判之下。但在那之前，我将所有真相封存在了这条路上——包括，天道之眼真正的目的。」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_029",
+        "content": "Chen Jiは静かに耳を傾け，表情は変わらないまま，心の中ではすでに波瀾万丈であった。万年前の最初のChess Player——天道と対局した存在が，まさかこのような形で痕跡を残していたとは。彼は分かっていた，あの遗迹に足を踏み入れた瞬間から，すでに万年の歳月を超えたChess Game踏入したことを。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0991_030",
+        "content": "残殿の外では，再び罡風が吹き荒れていた。Chen Jiは最後にあの浮かぶ虚影を見渡し，全ての情報をMental Seaの深くに刻みつけた。最初のChess Playerの遺産，破枷之法への初步的な覗き，天道之眼の脅威——これら全てが彼に警告していた：Chess Gameは既に形になり，手を置いて後悔はないと。そして彼，Chen Jiこそ，この万古のChess Boardの上で，唯一常套手段に囚われぬChess Playerとなるのだ。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

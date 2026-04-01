@@ -1,0 +1,413 @@
+{
+  "id": "天机录_ch0019",
+  "book_id": "天机录",
+  "number": 19,
+  "title": "\"Beauty's Test\"",
+  "is_paid": false,
+  "next_chapter_hook": "After Su Qingyao left, Chen Ji was about to return to his room to rest when he sensed a faint presence at the corner—someone was watching him from the shadows, their gaze cold and familiar.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0019_001",
+        "content": "The night wind cut like a blade. Su Qingyao's footsteps sounded behind him, her voice carrying an unprecedented seriousness: \"Chen Ji, that turtle shell in your sleeve—where did you get it?\" Chen Ji paused slightly but didn't turn around, a faint smile curving his lips. He knew this day would come. The origin of the turtle shell, of course, he could not reveal. It was a fragment he had dug out from the ruins in the Rear Mountain of the sect three days prior, its patterns matching the Tianji Record Fragment exactly. But why had Su Qingyao noticed? What was that pair of eyes truly looking at?"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_002",
+        "content": "Chen Ji turned slowly, his face displaying perfectly calibrated fear. He slightly tightened his sleeve opening and said softly: \"Senior Sister Su, this... this is something I bought at a stall in the market district. It's just a broken trinket, not worth a few spirit stones.\" He deliberately stuffed the turtle shell deeper into his sleeve, his movements flustered but not overly so—this was a performance he had rehearsed countless times. A waste of a disciple should have a waste of a disciple's panic; being too calm would only arouse suspicion. Su Qingyao was dressed in a moon-white gown tonight, her ink-black hair cascading like a waterfall, cold and otherworldly under the moonlight. She watched him quietly, her gaze like water, yet it made him feel an intangible pressure."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0019_003",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao stepped forward, the distance between her and Chen Ji suddenly closing. She carried a faint fragrance, orchid and osmanthus, but it seemed especially crisp in the night wind. \"Chen Ji, you've been a disciple for three years, done menial labor for three years, and your cultivation has been stuck at Qi Refining Third Stage. By rights, such a disciple should have been dismissed from the mountain long ago.\" \"But you weren't.\" She tilted her head slightly, a glimmer of inquiry flickering in her eyes. \"Not only were you not dismissed, you were specially approved by the sect master to remain. What's even stranger—every time there's a sect draw for the Sect Tournament, you always precisely avoid all strong opponents. Is it good luck, or is someone arranging things behind the scenes?\" Chen Ji lowered his eyes, hiding the cold gleam that flashed through them. This Inner Disciple Senior Fellow certainly observes carefully. Mo Xiansheng's voice sounded in his mind: \"This woman has a meticulous mind—do not underestimate her. But she currently only suspects, with no concrete evidence. You can choose to continue hiding, or you can适当展露一些东西，让她误以为自己已经看穿了全部。\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0019_choice_001",
+        "prompt": "Su Qingyao pressed closer, her intent to test no longer disguised. How should you respond?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "ch0019_opt_pig",
+            "text": "Continue feigning ignorance, play the pig to the end",
+            "description": "Cling to the market stall story, appear even more nervous and timid, letting her think she's being paranoid",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May cause Su Qingyao to become even more suspicious",
+            "visible_reward": "Maintain the waste persona, let her lower her guard",
+            "risk_hint": "She may not let it go easily",
+            "process_label": "示弱藏拙",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_pig_001",
+                  "content": "Chen Ji lowered his head, his hands nervously twisting together, his voice barely a whisper: \"Senior Sister, I... I really don't know what's special about that turtle shell. I'm just someone who sweeps floors—what would I know about ancient runes...\" His eyes even slightly reddened, looking every bit a pitiful creature being wronged. Su Qingyao narrowed her eyes, her gaze lingering on his face for a long moment, then suddenly sighed softly: \"Very well, it seems I was overthinking it.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0019_result_ch0019_opt_pig_002",
+                  "character_id": "char_suqingyao",
+                  "content": "\"However—\" she turned the conversation, \"Chen Ji, if you encounter any difficulties in the future, you may come find me.\" Su Qingyao took out a jade talisman from her sleeve and handed it to him. \"This is an Inner Sect communication talisman. If you need anything, use this to contact me.\" Her tone remained cold, but Chen Ji acutely sensed something indescribable added to it. This woman... was rather interesting."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0019_opt_reveal",
+            "text": "Reveal appropriately, resolve suspicion",
+            "description": "Deliberately show a hint of strength, letting her think she's already seen through your bottom line, thereby relaxing her vigilance toward the true secret",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May expose some strength",
+            "visible_reward": "Divert her attention, protect the core secret",
+            "risk_hint": "Requires precise control of the scale",
+            "process_label": "虚实相间",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_reveal_001",
+                  "content": "Chen Ji sighed lightly, the timidity typical of a waste disciple seeming to shed away in an instant. He raised his head, met Su Qingyao's eyes directly, a faint smile playing at the corner of his lips: \"Senior Sister Su truly has eyes like torches.\" Su Qingyao's pupils contracted, instinctively stepping back half a pace—in that instant just now, she had felt an indescribable pressure emanating from this waste disciple. That wasn't the aura a Qi Refining Third Stage should have, but rather... unfathomable depth."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0019_result_ch0019_opt_reveal_002",
+                  "character_id": "char_suqingyao",
+                  "content": "\"To be honest.\" Chen Ji spoke slowly, \"I do have had some encounters, but they're not what Senior Sister imagines. This turtle shell is a family heirloom, with some connection to an ancient great power. I hide my strength simply to avoid trouble—Senior Sister should know, in a sect, disciples who stand out too much often die the fastest.\" He spoke half-truths, yet precisely touching a resonance in Su Qingyao's heart. The position of Inner Disciple Senior Fellow—how could it not be walking on thin ice?"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "known_to_suqingyao_partially"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0019_opt_counter",
+            "text": "Take the initiative, turn the tables",
+            "description": "Don't answer directly, instead point out the purpose of her late-night tailing, making her lose ground in momentum first",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May thoroughly enrage her",
+            "visible_reward": "Seize control of the conversation, making her dare not probe lightly again",
+            "risk_hint": "Requires extremely strong psychological博弈能力",
+            "process_label": "以攻代守",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 3
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_counter_001",
+                  "content": "Chen Ji suddenly smiled, that gentle and harmless smile, yet it sent a chill down Su Qingyao's back. \"Senior Sister Su, instead of cultivating in the Inner Sect late at night, you came to the Outer Disciple servant area to track a little waste—I thought you were investigating something important.\" He changed his tone, his voice as gentle as if asking an old friend, \"I wonder what Senior Sister discovered? Would you like me to help you analyze it?\" Su Qingyao's expression slightly changed—this was the first time a Qi Refining stage disciple had questioned her so reversely. What shocked her even more was that this waste disciple's depth of scheming far exceeded her imagination."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0019_result_ch0019_opt_counter_002",
+                  "character_id": "char_suqingyao",
+                  "content": "\"You...\" Su Qingyao bit her lip, but found herself at a loss for words for a moment. This Chen Ji was a completely different person from the timid servant she remembered. Chen Ji had already restored his harmless appearance, bowing respectfully: \"It's late at night, Senior Sister should return to rest early. As for the Turtle Shell matter, if there's an opportunity in the future, I will give Senior Sister an explanation.\" After saying this, he turned and left, his silhouette stretched long under the moonlight, leaving Su Qingyao with a meaningful suspense."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "caught_suqingyao_off_guard"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 3
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_004",
+        "content": "The night wind stirred fallen leaves as Chen Ji walked alone on the path back to the Servants' Quarters. The moonlight stretched his shadow long, like a silent snake. He didn't look back, yet he clearly sensed that cold gaze still fixed on the spot behind him. Su Qingyao... was more troublesome than he imagined. This woman was meticulous and intelligent, no wonder she sat firmly in her position as Inner Disciple Senior Fellow. If she were an enemy, she would certainly be the most troublesome kind. But she wasn't an enemy—at least not now. A meaningful smile curved Chen Ji's lips. Mo Xiansheng's voice sounded again: \"This girl has exceptional talent and resolute will; she is a promising candidate. If you can recruit her under your banner, you will benefit greatly in the future.\" \"I know,\" Chen Ji responded in his heart, \"but it's still too early now. Her trust in me isn't enough yet.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0019_005",
+        "character_id": "char_chenji",
+        "content": "Returning to the Servants' Quarters, Chen Ji closed the door and took out the Turtle Shell from his sleeve. The shell's surface glowed with a faint blue light, the runes on it flickering in the moonlight as if telling some ancient secret. Mo Xiansheng's figure slowly emerged from the Turtle Shell, a illusory old man with white hair and beard, carrying an immortal air. \"This is the second fragment of the Tianji Record.\" Mo Xiansheng's voice carried a touch of emotion, \"In the past, Ancestor Chen Xuan exhausted his life's efforts to gather the Tianji Record, yet ultimately failed to fulfill his wish. Now the fragments are scattered everywhere, each containing profound mysteries—the fragment in your hand records the method of 'Fate Deduction.'\" \"Fate Deduction?\" Chen Ji frowned slightly, \"But currently I can only foresee three hours ahead, which seems inconsistent with the Tianji Record's capabilities.\" Mo Xiansheng smiled: \"That is because the Tianji Record is not yet complete. As the fragments increase, your abilities will gradually improve. Three months ago, you could only see half an hour; now it is already three hours. When you gather all the fragments, you will achieve true 'Mastery of Heavenly Secrets.'\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_006",
+        "content": "Chen Ji gripped the Turtle Shell tightly, a sharp light flickering in his eyes. The more complete the Tianji Record, the higher the upper limit of his abilities, but simultaneously, the fatal backlash of fate would also grow stronger. Mo Xiansheng had said that the Eye of Heavenly Dao was always watching him, and every use of the Tianji Record's power brought him closer to that terrifying existence. But he had no choice. His father's wrongfulness, his sister's whereabouts, the survival of the Tianqing Sect—all of these required him to change. And the key to changing fate was held in his hand. \"By the way,\" Mo Xiansheng suddenly said, \"regarding that girl Su Qingyao, I have some thoughts.\" Chen Ji looked up at him: \"Please speak, Master.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_007",
+        "content": "Mo Xiansheng stroked his beard thoughtfully: \"This girl's fate is unique; she possesses the 'Tianxuan Reincarnation' configuration, naturally possessing keen intuition toward the Way of Heavenly Secrets. Her ability to detect your abnormality wasn't entirely coincidental—it was her fate at work.\" \"Tianxuan Reincarnation?\" Chen Ji frowned, \"What does this mean?\" \"It means her past life was very likely also a Heavenly Secrets diviner,\" Mo Xiansheng said. \"There may be some invisible karmic connection between her and you. If properly utilized, she could become your support in the future—or even your 'Life-Bond Companion.'\" \"Life-Bond Companion?\" Chen Ji's heart stirred, recalling that special term recorded in the Tianji Record. If Su Qingyao became his Life-Bond Companion, she could share his Heavenly Fate consumption, allowing him to use the Tianji Record's powers without being so restrained. \"It's not that simple,\" Mo Xiansheng seemed to see through his thoughts, \"Life-Bond requires mutual willingness and a special ritual. The karmic line between you and her is still very faint; forcing an alliance would only backfire.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0019_008",
+        "character_id": "char_chenji",
+        "content": "\"So I can only take it slowly,\" Chen Ji said softly. \"Let her come to me willingly, rather than me trying to attach myself to her.\" Mo Xiansheng nodded: \"Well taught. Remember, in this world, the most stable relationship is not one of seeking repayment for favors, but making the other person believe you are their destined羁绊. When she believes you are the one she is fated to meet, everything will fall into place naturally.\" Chen Ji placed the Turtle Shell back in his sleeve, closing his eyes. The fragments of the Tianji Record glowed faintly in his consciousness—it was a wonderful sensation, as if an invisible eye was watching him from the Void. Was that the gaze of the Eye of Heavenly Dao, or the arrangement of fate? He didn't know. But no matter what, he would not become anyone's chess piece. Even Heaven itself would have to play chess against him to the end."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0019_choice_002",
+        "prompt": "It was deep into the night, and there was still servant work to do tomorrow. But before sleep, you still have a little time to utilize...",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch0019_opt_meditate",
+            "text": "Practice cultivation techniques to improve your cultivation",
+            "description": "Seize the quiet night to use the Tianji Record to deduce the optimal cultivation timing, doubling efficiency",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume a small amount of Heavenly Fate",
+            "visible_reward": "Slight improvement in cultivation, accumulating foundation for breaking through to Qi Refining Fourth Stage",
+            "risk_hint": "The Eye of Heavenly Dao may take notice",
+            "process_label": "潜心修行",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_meditate_001",
+                  "content": "Chen Ji sat cross-legged on the simple wooden bed, operating the Tianji Record to deduce the optimal timing for cultivation. The runes on the Turtle Shell flickered slightly, and an image emerged in his mind—the third hour of the Chou period, when Spiritual Energy in the Rear Mountain was most abundant. If cultivated here for one hour, it would equal three days of ordinary cultivation. The opportunity was rare; Chen Ji dared not delay. He rose quietly, slipped out of the Servants' Quarters under the cover of night, and darted toward the Rear Mountain. The moonlight was like water, sprinkling on his shoulders. His movements were light and silent, like a cat prowling at night—movements a waste disciple should absolutely not possess."
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_meditate_002",
+                  "content": "In a cave on the Rear Mountain, Chen Ji sat cross-legged as heavenly Spiritual Energy flowed into his meridians like a trickle. According to the timing deduced by the Tianji Record, this was precisely the peak of the Spiritual Energy tide; each breath was a moment of refinement. He closed his eyes, devoting his entire being to cultivation. Three hours later, Chen Ji opened his eyes, feeling the surging power within his meridians. Though he hadn't yet broken through to Qi Refining Fourth Stage, he was within reach of that threshold. More importantly, his foundation had solidified several times over—the optimal timing deduced by the Tianji Record was indeed well-deserved."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0019_opt_yeqing",
+            "text": "Contact Ye Qing to exchange intelligence",
+            "description": "Use a transmission talisman to contact the Demonic Path Saintess, asking if there are any new developments on her end",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Risk of exposing communication traces",
+            "visible_reward": "Obtain key intelligence from the Demonic Path side",
+            "risk_hint": "Risk of Demonic Path communications being intercepted",
+            "process_label": "暗通款曲",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "黑化值",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_yeqing_001",
+                  "content": "Chen Ji took out a pitch-black transmission talisman, the contact method Ye Qing had left him three days ago. The talisman paper glowed with a mysterious purple light under the moonlight, as if countless tiny insects were writhing within. \"Chen Ji?\" Ye Qing's voice came through the transmission talisman, cold yet with a hint of languor, \"Contacting me this late—is something urgent?\" Chen Ji lowered his voice: \"Has there been any movement on the Demonic Path side recently? I need to know the latest developments regarding the Three Great Sects and the Demonic Path.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0019_result_ch0019_opt_yeqing_002",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing was silent for a moment, her voice growing solemn: \"There are two things. First, the Holy Sect is preparing a full-scale attack on the Tianqing Sect, scheduled for the fifteenth of next month. Second...\" She paused, \"The person you asked me to investigate—Ling Yuan, indeed has connections with the Holy Sect. He seems to be searching for something, and that something is reportedly related to the 'Tianji Record.'\" Chen Ji's pupils contracted slightly. Ling Yuan... that seemingly benevolent old Sect Master had actually been targeting the Tianji Record all along. It seemed his plans would need to be much more cautious than anticipated. \"One more thing,\" Ye Qing's voice suddenly carried a teasing tone, \"Su Qingyao went to find you today? My people reported she stayed at your place for almost half an hour—making good progress, little brother.\" Chen Ji's mouth twitched: \"You have informants around me?\" \"Guess?\" Ye Qing laughed lightly, then severed the communication."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_intelligence_gathered"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch0019_opt_chenxian",
+            "text": "Deduce Heavenly Secrets to find clues about your sister",
+            "description": "Risk using the Tianji Record at full power to deduce, attempting to foresee Chen Nian's whereabouts",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Massive Heavenly Fate consumption",
+            "visible_reward": "Gaining crucial clues about his sister Chen Nian",
+            "risk_hint": "The Heavenly Fate consumption is enormous, and it may attract the attention of the Heavenly Eye",
+            "process_label": "逆天寻亲",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_chenxian_001",
+                  "content": "Chen Ji closed his eyes and sank his consciousness deep into the Tianji Record. In the darkness, he called out a name—Chen Nian. She was his sister who had been missing for years, his only blood relative in this world. The Turtle Shell trembled violently, and the runes flashed madly. However, the image had barely formed before it shattered like a reflection in water, leaving only a blurred silhouette. Chen Nian's face was faintly visible, but her features were unclear; she seemed to be in some dark place, surrounded by countless cages flickering with runes. 'What's happening?' Chen Ji snapped his eyes open, his forehead covered in cold sweat. Mo Xiansheng sighed: 'I told you before, the Heavenly Fate Lock will interfere with the Tianji Record's foresight. The 'lock' she carries will shield all divination related to her—unless you can first unlock that seal.'"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0019_result_ch0019_opt_chenxian_002",
+                  "content": "Chen Ji clenched his fist tightly, his knuckles turning white from the strain. Three years. He had been searching for his sister for three whole years, yet he was always blocked by that invisible barrier. The Heavenly Fate Lock... What on earth was that thing? Why could it seal the Tianji Record's divination? He took a deep breath, forcibly suppressing the restlessness in his heart. Haste makes waste—he must find a way to unlock the Heavenly Fate Lock, otherwise no amount of divination would be nothing more than a waste of Heavenly Fate. Yet the previous divination was not without reward—at the very least, he confirmed one thing: his sister was still alive, trapped in some location with rune formations. As long as she lived, there was hope. 'Wait for me,' Chen Ji murmured softly, 'I will find you.'"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0019_result_ch0019_opt_chenxian_003",
+                  "character_id": "char_moxiansheng",
+                  "content": "Mo Xiansheng suddenly said, 'Regarding the Heavenly Fate Lock, I did encounter some records in the Tianji Record's fragments.' 'What records?' Chen Ji's eyes brightened. Mo Xiansheng deliberated for a moment, then slowly said, 'The Heavenly Fate Lock is no ordinary object. It's one of the keys used during ancient times to seal the 'Heavenly Eye.' It is said that each lock is bound to a person with a special destiny. Once the lock is undone, what was sealed will be exposed to the world.' A chill ran through Chen Ji's heart: 'Are you suggesting my sister carries some kind of mission?' 'Perhaps,' Mo Xiansheng's gaze deepened, 'but it's also possible she was exploited—transforming an innocent person into a vessel for the lock. You should be aware of the Holy Sect's methods.' Chen Ji remained silent, but waves of turmoil churned in his heart. Whatever the truth, he had to rescue Chen Nian."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chenian_clue_obtained"
+            ],
+            "requires_flag": null,
+            "forbids_flag": "chenian_clue_obtained",
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_009",
+        "content": "The night watchman's clappers echoed outside the window, marking the third watch. Chen Ji rubbed his brow, gathering his scattered thoughts. Whatever decision he made tonight, he had to recover his strength before dawn—on the surface, he was still that timid servant disciple. He lay on the bed, eyes closed, but his consciousness continued analyzing everything that happened today. Su Qingyao's probing, Ye Qing's intelligence, his sister's clues... These seemingly separate events were actually all connected to the Tianji Record in his hands. Ling Yuan's covetousness toward the record, the Holy Sect's schemes against the Tianqing Sect, the Heavenly Eye's surveillance... All of this churned beneath the surface, and all he could do was advance carefully through this surging current. Chen Ji suddenly opened his eyes, a sharp glint flickering in his pupils. Someone was watching him."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_010",
+        "content": "That gaze came from outside the window, cold and hidden—if not for his constant vigilance, he would never have detected it. Chen Ji didn't move, merely lengthening his breath as if already sunk in slumber. Mo Xiansheng's voice rang in his mind: 'It's a spiritual sense observation, cultivation at least mid-Foundation Building—not Su Qingyao.' 'I know,' Chen Ji sneered internally. 'Su Qingyao is only early Foundation Building, and her spiritual sense isn't this cold.' Who was this person secretly watching him? Ling Yuan? Han Lie? Or some enemy he hadn't yet detected? Whoever it was, this served as a dangerous warning—his disguise had likely drawn certain people's attention. Chen Ji quietly extended a wisp of spiritual sense beyond his body, like an invisible tendril, probing tentatively toward the direction of that observation. He needed to know who it was before he could make targeted plans. However, just as his spiritual sense was about to reach the hidden person, a familiar chill suddenly surged through his heart—that was the gaze of the Heavenly Eye."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0019_011",
+        "content": "Chen Ji sharply withdrew his spiritual sense, beads of cold sweat breaking out on his forehead. The Heavenly Eye... it had appeared again. Whenever he used the Tianji Record's abilities, that transcendent consciousness would briefly turn its gaze upon him, as if reminding him: every step you take is under its surveillance. Tonight he had used the Tianji Record for divination too many times, finally drawing its observation. 'Looks like I need to be more restrained,' Chen Ji murmured quietly, yet an inexplicable rage burned in his heart. Why? Why must even his search for his sister be monitored? Why must he be destined to be someone else's chess piece? The Tianji Record in his palm warmed slightly, as if responding to his defiance. Chen Ji took a deep breath, suppressing the raging fury within. Now was not the time for confrontation—he had to continue enduring, continue strategizing, until one day... he would completely break free from this shackle. The observation from outside the window had vanished, yet that lingering feeling of being watched remained. Chen Ji knew this night would bring no sleep—but he couldn't let anyone detect any signs. He turned over, burying his face in his pillow, yet the corner of his mouth curved upward in a cold smile in the darkness. Come then, watch all you want. He would show everyone what kind of raging waves a discarded disciple could truly unleash."
+      }
+    }
+  ],
+  "nodes_type": "chapter",
+  "emotional_beat": "期待",
+  "conclusion": "本章通过苏青瑶的试探，展现了陈机扮猪吃虎的本色，同时埋下了凌渊觊觎天机录、妹妹被天命锁钥束缚等多条伏笔。暗中监视者的出现，为下一章的冲突升级做好了铺垫。"
+}

@@ -1,0 +1,551 @@
+{
+  "id": "天机录_ch1049",
+  "book_id": "天机录",
+  "number": 1049,
+  "title": "제4의 가능성",
+  "is_paid": true,
+  "next_chapter_hook": "금기秘法와 거북껵데神器的 완전한 공명이 시작되어, 새로운 가능성이 진장의 눈앞에 펼쳐진다——그는 세 개의截然한 운명선을 보았고, 그 중 하나의 끝에 서 있는身影은 그가 절대 생각하지 못했던人物이었다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1049_001",
+        "content": "그 의지는 얼음처럼 차갑고 뼈를 파고들며, 마치 온 세상이 이 개미 같은 존재를 내려다보는 것 같았다. 진장은 그 자리에 서서 움직이지 않았지만, 입꼬리에는 미소가 떠올랐다. 발각되었다고? 재미있군. 하지만 발각되었다고 해서 꿰뚫어 본 것은 아니다——천기록의 기운은 마도 안개 속에 층층으로 쌓여 있었고,那道 의지는 그저 그의 위치를锁定했을 뿐, 진짜 정체를 꿰뚫어 본 것은 아니다. 그것이 야칭의 가치다. 그녀가 준 부적은 지금 이 순간 그에게 가장 큰 버팀목이 되었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_002",
+        "content": "진장은 태연자약하게 소매를 여미고 있었다. 마치 아까의窒息시키는ような視線이 대수롭지 않은 바람에 불과했던 것처럼. 그는 멀리 있는 황조 사자를 올려다보았고, 상대방의 얼굴빛은 이미 변해 있었다——분명히 그 초월적인 압력을 감지한 것이다. \"进度를 높여야 할 것 같습니다.\" 진장은 태연하게 말했다, 목소리에는 어떤 물결도 없어 보였다, \"사자 대인方才의 제안, 제가 고민해 보았습니다.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_003",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(황조 사자는 마지못해 마음을 추스르며, 눈에 약간의 경계가 스쳤다) 진 공자…… 당신은 대체 무슨 사람입니까?那道 의지는 분명히 당신을 노리고 있었는데!",
+        "emotion": "震惊且恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_004",
+        "content": "진장은 고개를 기울이며 무해한 미소를 지었다. \"사자 대인，不必紧张，那位不过是在例行巡查罢了。它高高在上，视众生如蝼蚁，哪会专门针对我一个小小的人物？\" 그는 잠시 멈추었다가, 화제를 돌렸다, \"倒是仓御天那边，使者可想好了应对之策？\" 이一招以退为进瞬间将话题拉回正轨，也巧妙地掩盖了自己身上的异常.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_005",
+        "prompt": "황조 사자의试探에 대응하기 위해 진장은 자신의 태도를 표명해야 한다.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "secret_deal",
+            "text": "비밀 거래",
+            "description": "私下达成协议，不留任何把柄，但使者可能心存顾虑而有所保留.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "사자의 완전한 신뢰를 얻지 못할 수 있다",
+            "visible_reward": "거래 세부사항이 외부에 유출되지 않아 안전성이 더 높다",
+            "risk_hint": "사자가暗중에手ы留下一手 있을 수 있다",
+            "process_label": "在阴影中握手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_secret_001",
+                  "content": "진장은 목소리를 낮추며, 눈에 야릿한 빛이 스쳤다: \"제가 하나 제안이 있습니다, 사자 대인에게 어떤 위험도 지지 않아도 됩니다——只需要提供一样东西.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_secret_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(황조 사자가 눈을 가늘게 뜨며) 진 공자 말씀하세요.",
+                  "emotion": "谨慎"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "secret_deal_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "open_negotiate",
+            "text": "공개 협상",
+            "description": "当着所有人的面摊牌，展示实力与诚意，但会让其他势力警觉.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "행적 노출 위험이 크게 증가한다",
+            "visible_reward": "사자는诚意를 보이기 위해 더 많은籌码를 꺼내야 한다",
+            "risk_hint": "仓御天 세력의 경계를激怒할 수 있다",
+            "process_label": "当众立契",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_open_001",
+                  "content": "진장은 주위를 둘러보더니, 갑자기 큰 소리로 말했다: \"既然大家都想对付仓御天，不如把话说得明白些!\" 그의 목소리는 적막 속에 울려 퍼지며,瞬時吸引了所有人的目光.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_open_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(황조 사자의 눈에 감탄이 스쳤다) 좋습니다! 시원하군!",
+                  "emotion": "欣赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "open_negotiate_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "staged_execute",
+            "text": "분할 실행",
+            "description": "분阶段推进计划，逐步建立信任，但需要更长时间才能获得全部利益.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "시간 비용이 높다",
+            "visible_reward": "每一步都能验证对方诚意，降低被骗风险",
+            "risk_hint": "이 기간 동안 변수가 증가할 수 있다",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_staged_001",
+                  "content": "진기가 잠시 생각에 잠기더니 천천히 말하였다: \"이 일은 급히 할 수 없다.，不如我们先从小处着手，一步一步来？\" 그의 목소리는 차분하고 단호하여 사람들에게 충분한 신뢰감을 주었다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_staged_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(황조사ZR 대사자가 살짝 고개를 끄덕였다) 진 공자는 역시나 침착하구나.",
+                  "emotion": "赞许"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "staged_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_006",
+        "content": "황조사ZR 대사자의 시선이 진기에게 잠시 머물렀다, 마치 이 평범해 보이는 젊은이를 재평가하는 듯했다. \"진 공자의 담력은 오히려 내 예상을 벗어나더군.\" 그는 아까의 경멸을 거두며 목소리를 다시 차분하게 했다, \"그러므로直言하자면——황조가 원하는 것은 창어천의 목숨이다. 교환으로 우리는 당신들이 필요로 하는 모든 자원을 제공할 수 있다.\" 그는 잠시 멈추고 말투가 의미심장해졌다, \"包括……금기비술.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_007",
+        "character_id": "char_chenji",
+        "content": "(진기眼中的闪过一丝 정광을 했지만, 얼굴은 여전히 파도不惊) 금기비술……대사자가 말한 것은哪一种? 제가 아는 한, 이 세상의 금기비술은 하나만 있는 것이 아니다.",
+        "emotion": "谨慎试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_008",
+        "content": "황조사ZR 대사자嘴角가 묘한 미소를 그렸다, 목소리를 낮추며 말했다: \"역시 운명을 다시 쓸 수 있는 비술——'천명 복사술'이지.\" 그는 사방을 둘러보고 아무도 도청하는 사람이 없음을 확인한后才继续道, \"창어천이 중생 위에 군림할 수 있는 것은 바로 그가 이런 힘의 일각을掌握했기 때문이다. 그러나 우리 황조는 오히려 완전한 전승을 가지고 있다.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_009",
+        "content": "진기 마음속으로 한 번 흔들렸지만, 얼굴에는 조금도 나타나지 않았다. 천명 복사술——이 이름을 그는 명선생의 잔혼의片段에서 들어본 적이 있었는데, 상고 시대 가장 금기시된 힘 중 하나라고 한다. 그는 깊게 숨을 들이쉬고 내면의 흥분을 누르며, 담담하게 말했다: \"이 대가는，恐怕不便宜吧？\" 그는 이런 거래의 패턴을 너무 잘 알고 있었다——越是珍贵的东西，越要装作不在意.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(황조사ZR 대사자가 웃었다) 진 공자는果然聪明人이다. 대가는很简单——우리는 단지 진 공자가关键时刻에 우리 쪽에 서주면 된다. 구체적으로 말하면……",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_011",
+        "prompt": "대사자가 조건을 提出했고, 진기는回应해야 한다.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "demand_detail",
+            "text": "细节를追问하다",
+            "description": "대사자에게 이른바 \"关键时刻\"이 구체적으로 무엇을 의미하는지, 그리고 \"这边에 서다\"의 구체적인 의미를 분명히 말해달라고 요구하다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "너무 많이谨慎하면, 대사자의疑心生질 수 있다",
+            "visible_reward": "상대방의底牌를 파악하고, 함정을 피하다",
+            "risk_hint": "대사자에게自己的谨慎가 발각될 수 있다",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_detail_001",
+                  "content": "진기는 눈꺼풀을 들어올리며, 시선이 날카로워졌다: \"'关键时刻'? '这边에 서다'? 대사자,，咱们明人不说暗话，这种含糊其辞的话术，对我没用.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_detail_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(대사자가 살짝 一怔했다,，随即大笑) 좋다! 좋다, 진기! 나는 똑똑한 사람과 거래하는 것을 좋아한다.",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "detailoriented_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "feign_weakness",
+            "text": "装傻充愣",
+            "description": "자신이 그냥 평범한 제자일 뿐이라고 가장하고, 이런 상층의弈 ничего看不懂, 대사자가警惕를 풀게 하다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "대사자에게轻視될 수 있어,后续谈判지위가 영향을 받을 수 있다",
+            "visible_reward": "대사자가 말하고 싶지 않은 정보를 더 많이套出다",
+            "risk_hint": "대사자에게轻視될 수 있다",
+            "process_label": "藏拙示弱",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_weakness_001",
+                  "content": "진기머리를 긁적이며, 얼굴에 순후한 표정: \"대사자가 말한这些, 나는 잘听不懂……하지만 창어천을 전복하는 데有用하다면, 다 대사자 말씀대로 하겠습니다!\"彼は 눈을 깜빡이며, 세상에 나간 적 없는 어리석은 청년이었다.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_weakness_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(대사자眼中闪过一丝不易察觉的轻蔑) 진 공자는果然……순박하구나. 그럼我就直说了.",
+                  "emotion": "轻视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "pretend_weak_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "counter_propose",
+            "text": "反提条件",
+            "description": "대사자의 패턴에 따르지 않고, 능동적으로 자신의 요구를提出하고, 협상 카드를展示하다.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "使자를 화나게 하여 협상 파탄으로 이어질 수 있다",
+            "visible_reward": "협상 주도권을 장악하고 더 큰 이권을 획득하다",
+            "risk_hint": "위험과 수익이 공존한다",
+            "process_label": "反客为主",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_counter_001",
+                  "content": "천기가 갑자기 웃으며 사자의 말을 끊었다: \"사자 대인, 조건을 이야기하기 전에, 나에게도 하나의 조건이 있다.\" 그의 말투는 불卑不亢했으나, 무시할 수 없는 압박감을 带びていた.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_counter_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(사자 눈썹 치켜올리며) 오? 천 공자 말씀하시오.",
+                  "emotion": "好奇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "counter_propose_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_012",
+        "content": "바로 이 순간, 허공 깊은 곳那道意志가 다시 쓸어 지나갔다. 이번엔 더욱 긴 시간 동안 머물렀다. 황조사자의 안색이 미묘하게 변하며, 본能적으로 한 걸음 뒤로 물러섰다. 천기는 꼿屹不动였을 뿐 아니라, 오히려 여유롭게 옷깃을 정리했다. \"사자 대인,\" 그가 가볍게 말했다, \"당신에게 기회는 단 한 번뿐입니다.\" 이 말은 담담담当했으나, 사자의 등을 서늘하게 만들었다—그는 갑자기 이 젊은이가 겉보기에 훨씬 더 深不可測하다는 것을 깨달았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_013",
+        "content": "황조사자는 깊이 숨을 들이쉬고, 마침내 결심을 내렸다. \"좋습니다! 천 공자가 이렇게 소탈하게 말씀하시니, 저는 더 이상 숨기지 않겠습니다.\" 그는 소매에서古樸한 옥간을 꺼내, 천기 앞에서 엄숙하게 내려놓았다. \"이것은 천명覆写술 상반부입니다. 완전한传承은 당신이 첫 번째 협력完成后才有才有才有才有才获得할 수 있습니다.\" 그의目光灼灼地盯着천기, \"이 조건, 천 공자께서 만족하십니까?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_014",
+        "character_id": "char_chenji",
+        "content": "(천기가 옥간을 집어들고, 신识探入其中, 입꼬리에 의미심장한 호弧度를 그렸다) 만족합니까? 사자 대인, 당신은 뭔가를 잘못 이해하신 것 아닌가요?",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_015",
+        "content": "사자의 안색이一变했다: \"천 공자, 이게 무슨 의미입니까?\" 천기가 옥간을 손에서 돌리며,似笑非笑对方을 바라보았다: \"원래 저는倉御天对付를 도와드리려고 했는데, 지금은... 당신들은 제가天道之眼最看重棋子와 맨몸으로 싸우게 하려는 겁니까?\" 그는 잠시 멈추었다가, 말투를 바꾸어, \"그러면 한 발짝 양보합시다—먼저 하반부를 주세요. 일이 끝난 후에야 '당신들 편에 설지'를 고려하겠습니다.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_016",
+        "content": "황조사자의 동공이骤然收缩되었다. 그는 이렇게 평범해 보이는 젊은이가 식욕이 이렇게 크다니, 상대가 당당하게 흥정할 줄은 몰랐다. 그러나 방금那道超越성意志와 자기의 주인이交付한 임무를 생각하면, 그는 이를 갈며 고개를 끄덕였다. \"좋습니다! 천 공자果然不是池中之物.\" 그는 소매에서 또 하나의 옥간을 꺼냈다, \"이것은 하반부입니다. 그러나...\" 그는 의미심장하게 천기를 바라보며, \"공자께서는 오늘의 약속을 기억하셔야 합니다.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_017",
+        "prompt": "완전한 금기秘法에 직면하여, 천기는 최종 결정을 내려야 한다.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_all",
+            "text": "전부 수용하다",
+            "description": "모든 조건을 수용하고 완전한秘法을 가져가며, 일단 이점을 먼저 챙기다.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "황조의 인심을 끼다",
+            "visible_reward": "완전한 금기秘法传承을 획득하다",
+            "risk_hint": "황조의后续纠缠有可能可能被纠缠",
+            "process_label": "笑纳厚礼",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_accept_001",
+                  "content": "천기가 망설이지 않고 두 개의 옥간을 소매에 넣으며, 공수하며 말했다: \"사자 대인果然爽快. 이 정, 진씨가 기억해 두겠습니다.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_accept_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(사자의 눈에不易察觉한 빛이 스쳤다) 천 공자 과분하십니다. 다음에 뵐 때, 우리는 이미 친구이길 바랍니다.",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "full_secret_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_conditions",
+            "text": "추가 조건",
+            "description": "수용함과 동시에附加保障条項을 提出하여, 자신이 수동적으로 되지 않도록 보장하다.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "사자를 불쾌하게 할 가능성이 있다",
+            "visible_reward": "이후 행동이 더욱 자유롭다",
+            "risk_hint": "사자가 일부 조건을 회수할 가능성이 있다",
+            "process_label": "锦上添花",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_condition_001",
+                  "content": "천기가 옥간을 잘 챙겨 넣고, 말투를 바꾸었다: \"잠깐, 나에게는附加条件이 하나 더 있습니다—지금부터, 황조는 어떤 이유로든 나의 행동을 간섭할 수 없습니다.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_condition_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(사자 잠시 고민하다, 결국 끄덕였다) 좋습니다, 한마디로 약속입니다.",
+                  "emotion": "勉强同意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "附加条件_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_018",
+        "content": "황조사절이 떠난 후, Chen Ji는 홀로 그 자리에 서서 두 개의 Jade Slip을 손바닥에 펼쳤다. 그는 깊이 숨을 들이마시고, 정신인식을 그 안으로 침투시켰다. 찰나의 순간, 무수한 현奥한 부호들이 뇌海中 폭발하듯 터져 나왔다. 천명복사술의 진정한 비밀은 운명을 '개역'하는 것이 아니라 운명을 '복사'하는 것임을 보여주는 충격적인 장면이 전개되었다! 글자로 가득 찬 종이 위에 새 하얀 종이를 덮어씌우듯, 원래의 글자는 사라지지 않았지만 단순히 가려졌을 뿐이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_019",
+        "content": "Chen Ji는 눈을 번뜻이며 눈동자에 Jade Slip의 빛이 비쳤다. 그의 호흡이 가빠졌다. 천명복사술의 궁극적 사용법——자신의 의지로 직접 천도법칙을 복사하는 것! 창어천의 소위 '천명은 나에게 있다'는 말은，不过是这种力量的皮毛。真正的完整传承，此刻就握在他手中！他闭上眼睛，天机录残页自动浮现，与玉简中的传承产生共鸣。龟壳神器开始微微震颤，仿佛感受到了什么。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_020",
+        "content": "바로 그때, 등 뒤에서 맑은 목소리가 들려왔다. \"Chen Ji?\" Chen Ji는 돌아보지 않아도 누굴지 알았다——Su Qingyao. 그는 급히 기운을 거두며 Jade Slip을 소매 속에 숨기고, 냉혹한 미인의 모습을 돌아보며 말했다. \"Su 사매? 이렇게 늦은 시간에, 왜 밖에서 돌아다니는 거야?\" 그의 말투는 여느 때처럼 담담하여, 아무 일도 없었던 것처럼 보였다. 그러나 Su Qingyao의 시선은 그의 소매를 똑바로 노려보며, 의아함이 스쳤다.她又一次感觉到了什么不对劲，却又说不出具体是哪里。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_021",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao가 고개를 기울이며 \"네 소매 속에 숨긴 게 뭐야?\"라고 물었다.",
+        "emotion": "怀疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_022",
+        "content": "Chen Ji는 눈을 깜빡이며, 무해한 표정으로 소매에서 평범한 치료丹药 하나를 꺼냈다. \"이거? 낮에 수련하다 받은 상처가 아직 완전히 나지 않았어서, 밤을 타서 발라보는 거야.\" 그는丹药을 손가락 사이로 돌리며, 비스듬히 Su Qingyao를 바라보며 \"Su 사매가 설마专门来查我岗的吧?\" 이 말은 가볍게 서술했지만, 숨겨진 칼끝이 있었다——소매 속 물건의 출처를 설명하면서도, Su Qingyao对自己的关注有些过头了这一军将得妙。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_023",
+        "content": "Su Qingyao는 이 말에缞了一口, 얼굴에一丝不自然가 스쳤다. 그녀는确实在跟踪陈机——自从上次发现他身上的异常后，她就一直在暗中观察. 但每次她觉得自己接近真相时，线索就会莫名其妙地断掉. 这个废物师弟，就像一个解不开的谜题，让她既恼火又……有一点点好奇？ \"我只是路过.\" 她别过头，声音依旧冷淡， \"别误会.\" 陈机看着她的背影，嘴角勾起一抹若有若无的笑意.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_024",
+        "content": "Su Qingyao의 모습이 밤색 속으로 사라진 후, Chen Ji는야 다시 Jade Slip을 꺼내어 그 속의 내용을 연구했다. 천명복사술의传承远比想象的更深奥——它分为九重境界，第一重是\"覆\"，即覆盖自身的命运线；第二重是\"写\"，可以在他人命运线上添笔；第三重是\"定\"，能够固化某段命运使其无法更改……而修炼到极致，据说可以覆盖天道法则本身。但每一次使用，都会招致命运的反弹——修为越高深，反噬越剧烈.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_025",
+        "content": "Chen Ji는 Jade Slip을 덮고,虚空深处를 올려다보았다.那道冰冷的意志依然存在，像一把悬在头顶的剑. 天道之眼……它到底想做什么？为什么要盯着他？그는 문득墨先生가かつて 말했던 말을 떠올렸다: \"천기록은 단지 천도가 내려놓은 장기 말 중 하나일 뿐이다.\" 如果连天机录都只是棋子，那他这个\"执棋人\"，又算什么？一股寒意从脊背升起，但很快就被他压了下去。怕什么？既然是棋子，那就做一枚有用的棋子。有用的棋子，才有资格和执棋人讨价还价。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_026",
+        "content": "거북갑 신기忽然剧烈震颤起来，发出嗡鸣之声. Chen Ji低头看去，只见神器表面浮现出密密麻麻的裂纹——不是损坏，而是正在解封！与此同时，천기록 잔편上，那道一直模糊不清的墨先生身影，似乎变得清晰了一点点。他心中一动，似乎明白了什么。禁忌秘法와 거북갑 신기의 공명이, 천기록의 진상을 해제解封하고 있다！距离真相大白的那一天，已经不远了。而他，即将拥有改变一切的力量。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

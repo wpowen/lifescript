@@ -1,0 +1,626 @@
+{
+  "id": "天机录_ch0642",
+  "book_id": "天机录",
+  "number": 642,
+  "title": "Destiny's Game",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ji pushed open that dust-laden door, a familiar yet strange aura of a remnant soul rushed toward him—Mo Xiansheng, how much more have you been hiding?",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0642_001",
+        "content": "The Void trembles, that eye floating above chaos, its pupil reflecting Chen Ji's seven hundred chapters of life-and-death trajectory. Cold intent pressed down like substance, yet Chen Ji slowly curved his lips—so what if I'm seen through? Since the chess game is clear, let's change the rules.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_002",
+        "character_id": "char_chenji",
+        "content": "\"You're right, my feigned death was merely a performance you permitted.\" Chen Ji stood with hands behind his back, his voice calm to the point of mockery, \"But I'm curious—does the one who allowed me to act, also happen to be acting?\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_003",
+        "content": "That eye slightly contracted, and invisible ripples seemed to undulate in the depths of chaos. Chen Ji caught this subtle change, cold laughter in his heart—of course, this thing isn't omniscient. It's probing, and also wary.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"You're trying to find my weaknesses.\" That voice rang out again, carrying a certain playfulness, \"Interesting... In seven hundred chapters, the first chess piece to dare speak with me.\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_005",
+        "content": "\"Chess piece?\" Chen Ji let out a light laugh, yet the笑意 didn't reach his eyes, \"Since I'm a chess piece, let me ask—Is the chess player you, or the one behind you?\" The words fell, and the Void suddenly solidified.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "After a moment of silence, that voice spoke again, but now carried something Chen Ji had never heard before—weariness? \"You think I'm the chess player?\" That eye slowly turned, and a blurry chessboard emerged in its pupil, \"I'm merely the third layer.\"",
+        "emotion": "诡谲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_007",
+        "content": "The third layer. Chen Ji's pupils contracted sharply. This sentence revealed too much information—there existed higher beings above the Heavenly Secrets Eye. And this thing... was also at someone's mercy.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0642_008",
+        "prompt": "After Chen Ji realized the Heavenly Secrets Eye wasn't the ultimate Boss, he decided...",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0642_008_a",
+            "text": "Press the advantage and interrogate the higher existence",
+            "description": "Since it's not the strongest, there's no reason to be polite to it. Continue pressing, extract more intelligence.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 10 points of Heavenly Fate",
+            "visible_reward": "Obtain key intelligence fragments",
+            "risk_hint": "May provoke the Heavenly Secrets Eye, leading to broken relations",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_a_1",
+                  "content": "Chen Ji stepped forward, his gaze sharp as a blade: \"Third layer? Then what are the second and first layers? Speak clearly.\" His aura sharpened abruptly, seven hundred chapters of suppressed restraint transformed into sharp edges in this moment.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_008_a_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"You think I'm afraid of you?\" That voice suddenly turned grim, \"I'm merely weighing—whether killing you is worth explaining to that one. But if you take one more step...\"",
+                  "emotion": "威胁"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "逼问天道"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_008_b",
+            "text": "Retreat to advance, display sincerity",
+            "description": "The enemy of my enemy is my friend. Since it's also a chess piece, perhaps it can be recruited as an ally.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Expose some trump cards",
+            "visible_reward": "May gain the Heavenly Secrets Eye's cooperation",
+            "risk_hint": "Exposing strength may attract greater threats",
+            "process_label": "以利诱之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_b_1",
+                  "content": "Chen Ji收敛锋芒，语气转为平和：「你我都是棋子，何必互相为难？你想知道什么，我可以告诉你——作为交换。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_008_b_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "That eye stared at Chen Ji for a long while, and the chessboard in its pupil suddenly stilled. \"Interesting... You want to use the will of Chess Piece #49, to exchange for what?\"",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "试探合作"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_008_c",
+            "text": "Silent observation, waiting for weaknesses",
+            "description": "Do not reveal intentions proactively; let it show more of its cards first. Seven hundred chapters of endurance—he can afford to wait.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "No direct consumption",
+            "visible_reward": "May obtain information voluntarily revealed by the other party",
+            "risk_hint": "May miss the opportunity to press for answers",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_c_1",
+                  "content": "Chen Ji did not answer, simply standing still, his gaze as calm as an abyss. That eye, however, couldn't hold back first: 'Aren't you afraid of me?' The voice carried a hint of confusion.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_008_c_2",
+                  "content": "'What if I'm afraid, what if I'm not?' Chen Ji said coolly, 'The life of seven hundred chapters you gave me—can I ever repay it?' The words seemed weak but actually hid sharp edges—he was reminding the other side that killing him would gain them nothing.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_009",
+        "content": "'The will of the 49th chess piece...' The Heavenly Tribulation Eye's voice suddenly turned strange, 'Where did you learn this phrasing?' Chen Ji's heart stirred—it truly didn't know. This information was exclusive intelligence from Mo Xiansheng.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_010",
+        "content": "Chen Ji didn't answer, simply taking out an ancient fragment from his chest. The first page of the Tianji Record glowed faintly, Mo Xiansheng's residual soul aura subtly emanating. 'Do you recognize this?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "That eye abruptly contracted, a flash of emotion Chen Ji had never witnessed crossing its pupil—fear? 'Impossible... that old codger actually preserved a residual soul?'",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_012",
+        "content": "Old codger. Chen Ji precisely caught that designation. The Heavenly Tribulation Eye calling Mo Xiansheng 'old codger' indicated they existed at the same level. Mo Xiansheng's true identity exceeded his imagination in terror.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0642_013",
+        "prompt": "The Heavenly Tribulation Eye displayed clear agitation at Mo Xiansheng's residual soul manifestation; Chen Ji decided...",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0642_013_a",
+            "text": "Display Mo Xiansheng's residual soul as leverage",
+            "description": "'Since you know him, even better. Tell me the source of the seven-hundred-chapter death prophecy, and I'll let you meet him.'",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Expose Mo Xiansheng's existence",
+            "visible_reward": "Obtain core intelligence about the death prophecy",
+            "risk_hint": "Mo Xiansheng may thus be exposed to greater danger",
+            "process_label": "以物换秘",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_013_a_1",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "'You're negotiating terms with me?' that eye coldly said, 'Do you know who issued the seven-hundred-chapter death prophecy?'",
+                  "emotion": "威胁"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_013_a_2",
+                  "content": "Chen Ji's heart chilled, yet his expression remained unchanged: 'I'm all ears.'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "交易进行中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_013_b",
+            "text": "Feign ignorance, continue extracting information",
+            "description": "Let it speak for itself. Since it knows Mo Xiansheng, it must know more insider details.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "None",
+            "visible_reward": "Don't reveal one's true trump cards",
+            "risk_hint": "May arouse the other party's suspicion",
+            "process_label": "引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_013_b_1",
+                  "content": "'Old codger?' Chen Ji feigned confusion, 'Who are you talking about?' He tucked the fragment back into his sleeve, assuming a defensive posture, 'This is something my master left behind—what concern is it of yours?'",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_013_b_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "'Master?' that eye emitted an enigmatic laugh, 'Chen Xuan's disciple, actually becoming that old codger's inheritor... Interesting, truly fascinating.'",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "隐藏底牌"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_014",
+        "content": "Chen Ji. Chen Xuan. These two names produced a strange resonance in the voice of the Heavenly Secrets Eye. Chen Ji keenly sensed — Chen Xuan, the previous holder of the Tianji Record, shared an unknown connection with the Heavenly Secrets Eye.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_015",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Seven hundred chapters of death prophecy...\" The eye slowly rotated, a blurry image emerging in its pupil. \"That was not my arrangement. Nor was it even that lord's arrangement.\" The voice dropped low. \"Chen Xuan wrote it himself.\"",
+        "emotion": "诡谲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_016",
+        "content": "As if struck by lightning. Chen Ji stood frozen, the mystery of seven hundred chapters shattering in this moment — the source of the death prophecy was actually that ancestor Chen Xuan he had never met? Why would he prophesy the inevitable death of his own descendants?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_017",
+        "content": "\"Why?\" Chen Ji's voice came out hoarse. \"Why would he do this?\" The Heavenly Secrets Eye let out a low laugh: \"Do you think the Tianji Record is something good? It is itself the manifestation of a curse — to foresee the future, one must pay with their life.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0642_018",
+        "prompt": "Learning that the death prophecy was placed by Chen Xuan, Chen Ji faces a critical choice...",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0642_018_a",
+            "text": "Inquire about Chen Xuan's whereabouts and intentions",
+            "description": "Since he set up this game, he must have left a way to break it. Find him, and the curse can be shattered.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consumes a large amount of time",
+            "visible_reward": "May obtain clues to break the curse",
+            "risk_hint": "Chen Xuan may already be dead, or have become an even greater threat",
+            "process_label": "追根溯源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_a_1",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"Where is Chen Xuan?\" Chen Ji pressed. \"Is he still alive?\"",
+                  "emotion": "急切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_a_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"Alive? Dead?\" The eye's laughter echoed in the Void. \"That question, you should ask your master. He knows far more than I do.\"",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "线索指向墨先生"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_018_b",
+            "text": "Question the Heavenly Secrets Eye's stance",
+            "description": "Since we're all chess pieces, let's negotiate terms. It revealed this information for a reason.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May expose one's own weaknesses",
+            "visible_reward": "Reach some kind of agreement with the Heavenly Secrets Eye",
+            "risk_hint": "May be exploited by the other party",
+            "process_label": "以利制衡",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_018_b_1",
+                  "content": "\"What do you want from telling me this?\" Chen Ji collected himself, regaining composure. \"Don't tell me the Heavenly Secrets Eye also does good deeds.\"",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_b_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"I want... freedom.\" For the first time, that eye spoke in such a tone. \"If you can break this chess game, I will tell you everything. Otherwise, we both die trapped here.\"",
+                  "emotion": "诡谲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天道之眼有求于他"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0642_018_c",
+            "text": "Offer the will of the 49th chess piece for a final bargain",
+            "description": "Since it has ulterior motives, use the most core bargaining chip to exchange for the most crucial information.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consumes 20 points of Heavenly Fate",
+            "visible_reward": "Obtain complete curse-breaking intelligence",
+            "risk_hint": "Massive Heavenly Fate consumption may lead to backlash",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0642_result_018_c_1",
+                  "content": "Chen Ji took a deep breath, raising the Tianji Record Fragment high above his head. Mo Xiansheng's remnant soul erupted with violent intensity, transforming into a brilliant radiance. \"I trade the will of the 49th chess piece to exchange for the method to break the curse.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0642_result_018_c_2",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "The Heavenly Eye trembled violently, the chessboard within its pupil suddenly collapsing. \"You've lost your mind... That's your last trump card!\" The voice carried a hint of urgency. \"Fine, I'll tell you—the method to break the curse lies within...\"",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "破咒线索获取"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_019",
+        "content": "Before the words finished, the Void suddenly tore apart. A familiar aura, enough to make Chen Ji's heart stop, surged out from the rift—it was the remnant soul of Mo Xiansheng, yet denser than ever before.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_020",
+        "content": "\"Enough.\" An aged yet commanding voice echoed through the Void. The Tianji Record Fragment trembled violently as Mo Xiansheng's phantom slowly manifested. His features were clearer than Chen Ji had ever seen—a face weathered by countless years, eyes holding ten thousand years of secrets.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_021",
+        "character_id": "char_moxiansheng",
+        "content": "\"You ask too many questions, little whelp.\" Mo Xiansheng's phantom glanced at the Heavenly Eye, then at Chen Ji, a complex emotion flickering in his gaze. \"Some answers cannot be given now.\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_022",
+        "character_id": "char_chenji",
+        "content": "\"Master...\" Chen Ji opened his mouth to speak, but Mo Xiansheng raised a hand to stop him. The Heavenly Eye had remarkably fallen silent, as if waiting for something.",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_023",
+        "content": "\"You want to know the answer?\" Mo Xiansheng finally spoke, his voice aged and weary, yet carrying undeniable authority. \"Go ask your true bloodline. Chen Xuan left behind far more than just the Tianji Record.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_024",
+        "content": "With these words, Mo Xiansheng's phantom slowly dissipated. The Tianji Record Fragment fell back into Chen Ji's palm, still warm. Only the Heavenly Eye remained in the Void, facing Chen Ji. \"You heard it,\" it said. \"Within your bloodline lies something far more terrifying than you can imagine.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_025",
+        "content": "The chaos gradually faded, and Chen Ji found himself still standing at the Cliff Edge of the Tianqing Sect Back Mountain. Moonlight fell, his shadow stretched long. The fragment in his palm glowed faintly warm, Mo Xiansheng's final words echoing repeatedly in his mind—Chen Xuan's bloodline, what Chen Xuan left behind.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_026",
+        "character_id": "char_chenji",
+        "content": "\"My bloodline...\" Chen Ji murmured to himself, a deliberately forgotten name flashing through his mind—Chen Nian. His younger sister, the one taken away by the Holy Sect. If Chen Xuan's bloodline truly held secrets, would she know?",
+        "emotion": "沉重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_027",
+        "content": "Night wind brushed past, carrying a faint trace of demonic energy. Chen Ji's brow furrowed slightly—that was Ye Qing's \"Demonic Path Mist.\" Her appearance at this moment—was it coincidence, or...",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_028",
+        "content": "\"Chen Ji.\" A cold female voice emerged from the shadows. Ye Qing's figure materialized from the mist, her expression grave. \"The Holy Sect has made a move. They... captured someone from Tianqing Sect.\" She paused. \"It's Su Qingyao.\"",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_029",
+        "content": "Chen Ji's gaze instantly chilled. Su Qingyao, the woman who had come infinitely close to the truth three times, yet was turned away by him three times. The Inner Disciple Senior Fellow who had always been investigating him but ultimately chose to protect him. Her presence could disrupt the Tianji Record's foresight—because between her and Chen Ji, fate had long been intertwined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_030",
+        "content": "\"When did this happen?\" Chen Ji's voice was terrifyingly calm, yet his knuckles had turned white. He noted it down, this debt he recorded. When the moment was right, he would collect with interest.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0642_031",
+        "character_id": "char_yeqing",
+        "content": "\"Half an hour ago.\" Ye Qing stepped closer, lowering her voice. \"The Holy Sect people said... they're going to use her to refine some formation. Chen Ji, I know the matters of your Tianqing Sect, but if we don't act soon...\"",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0642_032",
+        "content": "Chen Ji raised his head, moonlight falling upon his face. That typically timid and mediocre visage now displayed a chilling intent that struck fear. \"Lead the way.\" His voice was soft, yet carried undeniable resolve. \"Dare to touch my people... The Holy Sect, it's time to pay the price.\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

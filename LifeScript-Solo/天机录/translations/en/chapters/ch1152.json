@@ -1,0 +1,514 @@
+{
+  "id": "天机录_ch1152",
+  "book_id": "天机录",
+  "number": 1152,
+  "title": "Farewell Between Master and Disciple",
+  "is_paid": true,
+  "next_chapter_hook": "In the instant Mo Xiansheng dissipated, the final page of the Tianji Record slowly unfurled—recorded there was not prophecy, but Chen Ji's own destiny.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1152_001",
+        "content": "Golden inscriptions slowly dissolved in the Void, Su Qingyao's hand holding the brush trembled slightly, the ink seeping into the river of fate leaving echoes yet to fade. In this moment, an aged and relieved sigh echoed from the depths of the Tianji Record, like an ancient chessboard sealed for millennia finally awaiting its mover.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_002",
+        "content": "The Tianji Record mark at Chen Ji's Brow Center suddenly burned with heat, that familiar aura he knew so well was gushing from the depths of the pages, carrying three hundred years of sediment and the resolve of imminent dissipation. He opened his eyes wide, his pupils reflecting a figure solidifying from emptiness—Mo Xiansheng's fragmented soul was slowly stepping out from the first page, each step peeling something away.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_003",
+        "character_id": "char_moxiansheng",
+        "content": "Good disciple, your master has waited for this moment, for far too long.",
+        "emotion": "欣慰与释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_004",
+        "content": "Mo Xiansheng's form was even more blurred than in Chen Ji's memory, like smoke from cooking fires that might be scattered by wind at any moment. His gaze fell upon Chen Ji, with neither kindness nor severity, only a tranquility that comes from seeing through worldly matters. He raised his hand, his withered fingertips pointing to the deepest part of the Tianji Record's seal.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_005",
+        "character_id": "char_moxiansheng",
+        "content": "Seven hundred chapters of death prophecies, have you resented your master?",
+        "emotion": "试探与期许"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1152_006",
+        "prompt": "How does Chen Ji respond to his master's question?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1152_006_a",
+            "text": "Question the Truth of the Prophecy",
+            "description": "Seven hundred chapters all describing his death, what kind of master is this? Even a chess piece deserves the right to know!",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May Anger the Master",
+            "visible_reward": "Gain Partial Truth",
+            "risk_hint": "If the Master is Unwilling to Speak, May Fall into Stalemate",
+            "process_label": "压抑的质问",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_006_a_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Good! Where there is resentment, there is vitality.",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_006_b",
+            "text": "Calmly Accept the Arrangement",
+            "description": "Since the master has arranged things this way, there must be profound meaning. He has never been someone who would harm his own disciple.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Suppress the Turmoil Within",
+            "visible_reward": "The Master Will Explain in Greater Detail",
+            "risk_hint": "May Miss Some Critical Information",
+            "process_label": "隐忍的信任",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_006_b_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "You are more mature than your master imagined.",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_006_c",
+            "text": "Silence Awaiting the Revelation",
+            "description": "Rather than speculate, better to wait for the master to speak voluntarily. He has arranged a three-hundred-year game, surely he has words to say.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Internal Torment",
+            "visible_reward": "Receive Information Completely",
+            "risk_hint": "May Appear Overly Passive",
+            "process_label": "冷静的旁观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_006_c_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Enough, disciple. Listen to your master tell a story.",
+                  "emotion": "感慨"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_007",
+        "content": "Mo Xiansheng stood with hands behind his back, his shattered soul flickering with a faint aura in the Void. His voice was ancient and distant, as if emanating from eternity: 'Every prophecy page in the Tianji Record requires Heavenly Fate to sustain it. And the first page I gave you is precisely the most special one—it prophesies not your life, but your death.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_008",
+        "content": "Chen Ji's pupils contracted slightly, the seven hundred chapters of death prophecies flashing through his mind like a carousel—every near-death moment, every desperate crisis, every instant where he'd barely survived through sheer determination. He raised his head sharply: 'Master, are you saying... all those seven hundred chapters were laying the groundwork for today?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_009",
+        "character_id": "char_moxiansheng",
+        "content": "Correct. Only a prophecy ending in death can activate the deepest seal within the Tianji Record. Disciple, the Heavenly Fate consumption you thought was happening was merely me paving the way for you.",
+        "emotion": "慈爱"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_010",
+        "content": "Mo Xiansheng raised his hand, his withered fingertip pointing toward the deepest part of the Tianji Record. In that instant, the entire space began to tremble, countless golden lines spreading from beneath Chen Ji's feet, interweaving like the warp and woof of a chessboard. He felt it—a seal he'd never touched before, dissolving along with Mo Xiansheng's life force.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_011",
+        "content": "'Master!' Chen Ji finally lost composure, stepping forward only to be blocked by an invisible barrier. Mo Xiansheng turned back, the cracks in his fragmented soul spreading visibly, each fissure taking away a portion of his aura. 'Do not stop me.' The old man shook his head, his tone terrifyingly calm, 'Three hundred years ago, I faced the same choice—whether to use my fragmented soul to guard the seal, or let you die before the prophecy comes true.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1152_012",
+        "prompt": "How should Chen Ji choose?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1152_012_a",
+            "text": "Forcefully break through the barrier to stop him",
+            "description": "He planned meticulously, there's no way he can't find a method to stop his master! Even if it costs all his Heavenly Fate!",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May suffer serious injury or death",
+            "visible_reward": "May save the master",
+            "risk_hint": "If failed, the master's sacrifice would be in vain",
+            "process_label": "孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "战力",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_012_a_001",
+                  "content": "The barrier trembled violently but remained unmoved. Chen Ji's palms bled profusely from the impacts, yet that seal was as merciless and unfeeling as Heaven's Dao."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_012_b",
+            "text": "Accept the inheritance with tears",
+            "description": "The master has been arranging this game for three hundred years, he cannot become the variable that destroys everything. Endure it, he must endure it.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "The pain of losing the master",
+            "visible_reward": "Obtain the complete Tianji Record",
+            "risk_hint": "May leave a permanent scar on the heart",
+            "process_label": "痛苦的接受",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_012_b_001",
+                  "content": "Chen Ji knelt on both knees, his forehead striking the ground heavily, blood flowing down his brow bone. 'Disciple... accepts the order.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_012_c",
+            "text": "Question whether there's another way",
+            "description": "He refuses to believe there's only this one path in the world! The master must have methods he hasn't revealed!",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May waste time",
+            "visible_reward": "May obtain crucial information",
+            "risk_hint": "If there's no method, it will be even more despairing",
+            "process_label": "最后的挣扎",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1152_result_012_c_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Silly child, if I had another way, why would I have waited three hundred years?",
+                  "emotion": "苦涩的笑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_013",
+        "content": "At the moment the seal completely shattered, the Tianji Record burst forth with unprecedented radiance. It was not golden, but a grayish-white of primordial chaos, like the silence before Pangu opened the heavens. Mo Xiansheng's soul body began to fragment from the edges, turning into scattered starlight that merged into that light.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1152_014",
+        "character_id": "char_moxiansheng",
+        "content": "From this day forward, you shall be the sole master of the Tianji Record. Remember, the true power of the Record of Heavenly Fate Unity lies not in foresight of the future, but in—rewriting destiny.",
+        "emotion": "最后的教诲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_015",
+        "content": "Chen Ji watched his master's figure grow increasingly faint, his throat choked with unspoken words. That voice that had accompanied him since the first chapter, that presence that had awakened him countless times at crucial moments, that person whose true face he had never seen yet knew so intimately—was dissolving before his eyes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_016",
+        "content": "\"Master!\" Chen Ji's voice was hoarse beyond recognition. He wanted to reach out and grasp, but his fingertips only passed through ethereal specks of light. Mo Xiansheng's outline had become almost invisible, leaving only a pair of gentle eyes still gazing at him. \"This disciple has waited three hundred years for this day.\" The old man's lips curved slightly upward, revealing a relieved smile, \"See for me... the collapse of Heaven's Way.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1152_017",
+        "prompt": "How did Chen Ji bid farewell to his master?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1152_017_a",
+            "text": "Three solemn kowtows",
+            "description": "The master's kindness is like mountains, he has no way to repay, only this kneel, to console the master's spirit in the heavens.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "None",
+            "visible_reward": "Receive the master's final blessing",
+            "risk_hint": "May appear overly formal",
+            "process_label": "传统的告别",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_017_a_001",
+                  "content": "Three dull thuds, the sound of Chen Ji's forehead striking the ground echoed through the empty space. Each kowtow was a vow, each kowtow was a promise."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_017_b",
+            "text": "Establish an ultimate vow",
+            "description": "The collapse of Heaven's Way—this was the master's final wish, and also the mission he must accomplish in this lifetime.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "None",
+            "visible_reward": "Unlock hidden achievement",
+            "risk_hint": "The vow is too heavy, may affect subsequent decisions",
+            "process_label": "誓言的力量",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_017_b_001",
+                  "content": "Chen Ji slowly rose, his eyes bloodshot yet clear as a mirror. \"Disciple Chen Ji, today I make a vow—the collapse of Heaven's Way, or I shall never rest.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1152_017_c",
+            "text": "Silently watch the dissolution",
+            "description": "Some farewells need no words, the heart's intent is already conveyed in silence. The master will understand.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "None",
+            "visible_reward": "Acquire the master's complete memories",
+            "risk_hint": "May appear overly cold",
+            "process_label": "无言的默契",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1152_result_017_c_001",
+                  "content": "Chen Ji stood motionless in place, only those eyes always following the direction where the light specks dissipated, until the last trace of radiance merged into the depths of the Tianji Record."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_018",
+        "content": "The light gradually gathered, and the seal deep within the Tianji Record finally vanished completely. Replacing it was a new page radiating the color of chaos—no prophetic words on it, only three archaic characters: Record of Heavenly Fate Unity. A flood of information poured into Chen Ji's mind, the entirety of Mo Xiansheng's three centuries of accumulated knowledge, memories, and unfulfilled wishes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_019",
+        "content": "He finally understood. The master chose him not because of exceptional talent, but precisely because he was ordinary enough—to be selected by the Tianji Record, ordinary enough to bear three centuries of planning. From the very beginning, he was the most important piece on the master's chessboard, and the only one capable of overturning the entire game.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1152_020",
+        "content": "Chen Ji closed his eyes, letting the tears fall silently. In his embrace, the weight of the Tianji Record seemed unchanged, yet he knew that the voice which had always guarded him would never sound again. \"Master, your disciple will not disappoint you.\" He murmured softly, his voice as light as if afraid to disturb anyone's peaceful slumber, \"The collapse of the Heavenly Way you wished to witness, your disciple will witness for you. The Eye of Heavenly Law you wished to destroy, your disciple will destroy for you.\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "id": "天机录_ch0525",
+  "book_id": "天机录",
+  "number": 525,
+  "title": "局面打破の始まり",
+  "is_paid": true,
+  "next_chapter_hook": "龍脈の奥底から天道之眼の怒号が響き渡る——陳機の真の目的を察知したのだ",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0525_001",
+        "content": "亀殻の残片が掌の中で微かに熱を帯び、あの曖昧な映像が脳裏から離れない。陳念が血色の祭壇に囚われた姿、そして彼を震撼させた名前——「天命ロック」。天機録の残頁が震える中、古めかしい文字が浮かび上がる：『この局を解くには、皇城禁地に入れ』。陳機が目を開けると、瞳には精光が一閃した。三年の布局、今日ようやく網を収める時が来た。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_002",
+        "content": "天青宗後山の密室、陳手は背を组んで立っている。目の前には三枚の玉簡が浮かび上がり、それぞれ天青・玄武・聖宗の刻印が刻まれている。「夜清、そっちは準備できているか？」彼は淡々と口を開いた。玉簡からは魔道聖女の冷たい声が伝わってくる：「聖宗の守備は三割引き離已将軍、皇城東側の禁制入口は通行可能。だが一つ……」夜清は言葉を切った、「龍脈祭壇の周囲には『天羅地網陣』が布置されている，凌淵が自ら布いたそうだ」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_003",
+        "character_id": "char_yeqing",
+        "content": "凌淵？あの老狐……陳手は冷笑一声、「あの程度の陣形で私を窮地に追い込めるとでも思っているのか？」指先を軽く弾くと、玉簡に複雑な地形図が浮かび上がる、「お前の聖女に言给我、もう一つ最後の仕事をしてほしい——韓烈を禁地西側に誘導しろ」。夜清はしばらく黙った後：「あなたは蛮力で蛮力に向かうつもりですか？」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_004",
+        "content": "蛮力に向かうのではなく、蛮力をもっと硬い壁に突き当てるのだ。陳手の口元には嘲りの弧線が浮かぶ。韓烈のあの蛮人は最も挑発に弱い、少し挑発すれば彼は一切構わず 돌진してくる。而して凌淵が布置した陣形は、まさにこうした莽漢を圍殺するためのものだ。三大宗門第一の天才が自社の陣形で倒れたら、さすがに面白い場面になるだろう。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0525_005",
+        "prompt": "救出作戦が発動しようとしており、陳手は突入方式を選択する必要がある。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0525_005_a",
+            "text": "陽動による奇襲",
+            "description": "夜清に混乱を引き起こして守備兵を引きつけさせ、陳手が少数精鋭を率いて地下通路から核心区域に潜り込む",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "夜清の勢力への好感度を消耗する",
+            "visible_reward": "発見リスクを低下させる",
+            "risk_hint": "夜清が露見した場合、作戦は完全に失敗する",
+            "process_label": "暗度陈仓",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_005_a_1",
+                  "content": "夜清の声が玉簡から伝わってきた，微微な気づかいの気配が混じっている：「わかった。三炷香の後、東側に『事故』が起こる，届时守備兵は全員引き寄せられる」。陳手は小さくうなずいた——夜清の言葉の重みを感じ取れた——それは彼女が自ら危険を冒すことを意味していた。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_005_b",
+            "text": "正面からの強攻",
+            "description": "絶対的な実力で守備兵を粉砕し、陳手の新たな姿を展示し、本当の廃物を見讓所有人见识真正的废材",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "全ての底力士を暴露する",
+            "visible_reward": "全场を震撼させ，为后续布局争取时间",
+            "risk_hint": "凌淵本体を惊动させる可能性がある",
+            "process_label": "一力降十会",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_005_b_1",
+                  "content": "陳手は玉簡を仕舞い，深く息を吸い込んだ。三年間、天青宗で狂ったふりをして冷たい目を受け続けた，今日全ての人間に見せてやる——何が本当の「豚を演じて虎を食う」なのか。彼は手を上げると，天機録第四頁が袖の中でかすかに光った，それは昨夜ようやく解除した禁術：「天機変」！",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_005_c",
+            "text": "他人利用の計",
+            "description": "韓烈の陳手への怨みを 利用し，让韩烈打头阵消耗阵法威力，陈机坐收渔翁之利",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "韓烈が事前に警觉する可能性がある",
+            "visible_reward": "一兵一卒も使わずに禁制を突破する",
+            "risk_hint": "韓烈が死んだ場合、玄武宗全体を激怒させ全面开战を引き起こす可能性がある",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_005_c_1",
+                  "content": "陳手は韓烈の特徴が刻まれた伝訊玉簡を取り出し，天機録で偽の的情报を推演した：『皇城禁地で天青宗の秘宝発見、韓烈は既に夜通しで赶往』。玄武宗のあの天才が最も先に手を打たれるのを嫌う，この『情報』は彼から理智を失わせ、陷阱に 돌진させるのに十分だ。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0525_006",
+        "content": "皇城禁地の外，夜色は漆黒の如し。陳手は夜行衣をまとい，背後には七名の精锐死士が従っていた——これは彼が三年間に密かに養成した力だ。遠くで騒ぎが聞こえる，夜清が動き出した。守備兵たちは潮のように東側に殺到し，西側禁制入口の巡回が瞬時に稀疏になった。「行動だ」。陳手は淡々と一个字を放つと，身影は幽霊のように禁地奥深くへ舞い込んだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_007",
+        "content": "禁地の通路は暗く湿っぽく，雨侧の石壁には晦渋な符文が刻まれている。陳手の足は止まらない，天機録は識海の中で急速に运转し，每一条分岐路・每一处禁制を全て標記していく。しかし核心区域に抵达しようとする瞬間，一道凌厉的剑光が暗闇から袭来した！",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_008",
+        "character_id": "char_lingyuan",
+        "content": "「陳手，老朽は已久くお前を待っていた」。蒼老な声が通路に反響する。凌淵の姿が暗闇から浮かび上がり，周身には恐怖の威圧が渦巻いている。彼の顔には意味深長の笑みが浮かんでいる，「お前の小細工が老朽を騙せるとでも思っているのか？夜清が守備を引き離すタイミング，丁度老朽の交代の空白时段に当たる——巧合だと思うか？」",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_009",
+        "content": "陳手の足が一瞬止まったが，彼は全く慌乱しなかった。凌淵を見上げると，口元には逆に笑みが浮かぶ：「凌前辈既然早就知道，为何不直接阻止？非要等我进入禁地才现身？」彼は言葉を切り，眼底には精光が闪过した，「难道……この禁地に何かあり，凌前辈は私がそれをトリガーする姿を 직접見た不得不吗？」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_010",
+        "content": "凌淵の瞳孔は微かに缩み，あの蒼老な面に気づきの色を帯びた。陳手の言葉が彼の最も心配していたこと——天機録の真の能力は，特定条件を満た했을 때初めて显现するかもしれない。そして彼が布置的一切不过是将陈机引向那个「条件」的棋子。老狐狸と更に老いた狐狸，この瞬間目光が交差し，各々に心思を怀中している。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0525_011",
+        "prompt": "凌淵が姿を現して道をblockingし，陳手は選択を迫られる。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0525_011_a",
+            "text": "底力士を明かす",
+            "description": "凌淵と陳天命が囚われている关联を直接問い质し，逼迫して破锭を露呈させる",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "陳天命関連の情報を暴露する",
+            "visible_reward": "凌淵の心境を動揺させる可能性がある",
+            "risk_hint": "凌淵が窮余の一撃に出る可能性がある",
+            "process_label": "针锋相对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0525_result_011_a_1",
+                  "character_id": "char_chenji",
+                  "content": "陳手は背を組んで立ち，目光は凌淵を直視する，「陳天命——この名前，凌前辈はそうでもないだろう？三十年前に天機録に選ばれ，また見捨てられた那个人……今は禁地深處に閉じ込められている。凌前辈，あなたが苦心して私をここに導くのは，到底私を殺したいのか，それとも私の手を使って，彼を釈放したいのか？」",
+                  "emotion": "冷厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_011_b",
+            "text": "退いて前に進む",
+            "description": "わざと 及ばないふりをして退き，实は凌淵を追撃させて，彼を予定の陷阱に導く",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天機録の天命値を消耗する",
+            "visible_reward": "凌淵の真の実力を暴露させる",
+            "risk_hint": "凌淵が偽装を見破れば，处境が危険になる",
+            "process_label": "诱敌深入",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_011_b_1",
+                  "content": "陳手は故意に破锭を見せて，身形よろめいて后退した。凌淵は果然追撃してきて，掌風が凌厉だ。しかし彼が某一禁制範囲に足を踏み入れた瞬間，四周の符文が忽ち大いに亮了！陳手が方才「逼退」された位置は，丁度 Whole formationの陣眼だった——彼は最初から計略を更なる計略で返していたのだ。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0525_012",
+        "content": "通路の奥深くから轰鸣が传来し，Whole 禁地が震动し始めた。陳手と凌淵は同時に面色一变——それは核心祭壇の方向だ。陳手の瞳孔が縮み，天機録が疯狂的に警报を鳴らした：陳念の気が急速消散している！間に合わない！彼はもう躊躇せず，天機録第四頁が忽ち展開され，天を改变的ほどの力が彼の内側から湧き出した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_013",
+        "character_id": "char_moxiansheng",
+        "content": "「痴儿，ようやくこの一招を使う気になったな」。墨先生の残魂の声が識海に響き，幾分の欣慰と忧虑が混じっている，「天機変は天命値を燃やす，每一息都是寿命の流失。だが此刻……或许没有更好的選択だ」。陳手は答えなかった，身影は既に一道の流星となって，祭壇に向かって突進した。",
+        "emotion": "紧迫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_014",
+        "content": "禁地核心，血色の祭壇。陳念は鉄鎖に鎖されて祭台中央に固定され，周身には怪しい血色の光が缭绕している。彼女の两眼は紧闭，面色は蒼白な纸のようでありながら，依然として強情に唇を噛んでいる。彼女の周囲では，四名の黒袍祭祀が念念の词を唱え，祭壇の上の陣形は既に極限まで运转している——「天命ロック」の献祭が，完成しようとしている。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_015",
+        "content": "「止まれ！」陳手は怒吼しながら天から降り立ち，天機変の恐怖の威圧は瞬時に四周の黒袍祭祀を粉砕した。那些平日里作威作福の祭祀たちは，此刻彼の前では脆い如同蟻蛸。然而就在这时，一道熟悉的身影が陳念の前に立ち塞がった——那是陳天命，彼の父だ！陳天命の身上には陳念と同じ血色の鎖が缠绕，眼神には 已充满决絶だ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0525_016",
+        "character_id": "char_chenji",
+        "content": "「機儿……来这里は你应该ない」。陳天命の声が擦れ且つ疲弊し，彼は苦笑して陳手を見上げた，「天命ロックには二つの血脈が必要だ……私が自主的に囚われるのは，聖宗に只有一个だと信じ込ませるためだ。念念は……私の最後の底线だ」。陳手は全身が震え，彼は父を穴埋め見るように見つめ，唇が動いたが，一文字も出てこなかった。三年間の疑問・怨恨・思念が，この瞬間全て沈黙となった。",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_017",
+        "content": "陳念が意識混迷の中で呟いた：「哥……哥哥……」その微かな呼唤は陳手の心臓に如同大锤で打击を与えた。彼は深く息を吸い込み，翻り狂う情绪を強く抑え，手を上げると，天機録第四頁が完全に咲いた。一道の璀璨な光がWhole 祭壇を包み，あの血色の鎖が寸寸崩碎し始めた。「言っただろう」，陳手の声は冷たい如同寒氷，「私が陳家の者を侵犯する者は，血債血償を受ける」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0525_018",
+        "prompt": "陳天命と陳念が同時に鎖に束缚され，陳手は選択を迫られる。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0525_018_a",
+            "text": "まず陳念を救助する",
+            "description": "陳念は年幼で且つ「天命ロック」の核心であり，她的危機を優先的に解除する必要がある",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陳天命は引き続き痛苦承受する",
+            "visible_reward": "陳念の安全を確保する",
+            "risk_hint": "陳天命は救援到着まで撑不到可能性がある",
+            "process_label": "兄妹情深",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_018_a_1",
+                  "content": "陳手は全部の力を天機録に注ぎ込み，精密に陳念の身上的鎖を断った。小さな娘の体は柔らかく彼の胸に倒れ込み，閉じられていた两眼がようやく震えながら開き，涙が流れ出した：「哥……真的是你……」陳手は彼女を固く抱きしめ，声は嗄れていた：「对不起，哥哥来晚了」。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_018_b",
+            "text": "まず陳天命を救助する",
+            "description": "陳天命は既に多年囚われており，体力は既に限界に達しており，彼の束缚を優先的に解除する必要がある",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "陳念が影響を受ける可能性がある",
+            "visible_reward": "三年分の心結を解く",
+            "risk_hint": "強引に陣形を破ると陳念が被害を受ける可能性がある",
+            "process_label": "父子重逢",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "黑化值",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0525_result_018_b_1",
+                  "character_id": "char_chenji",
+                  "content": "陳手は父に向き，那张一向平静的脸上终于出现了裂痕：「爹……这三年間，您受苦了」。陳天命は老涙纵横しながらも，なお笑みを强行して浮かべた：「傻孩子，你来得正好。快……先救念念……我还能撑住……」言葉が終わる前に，彼の身上的鎖が猛然 引紧了，鮮血が飛び散った。",
+                  "emotion": "悲痛"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0525_018_c",
+            "text": "同時に破除する",
+            "description": "天機変を中心に，祭壇olong本身的陣形反噬を駆使し，一度に全ての鎖を破除する",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "全天命値を消耗する",
+            "visible_reward": "一度に二名を救助する",
+            "risk_hint": "龍脈暴走を引き起こす可能性がある",
+            "process_label": "一力担当",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "名望",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0525_result_018_c_1",
+                  "content": "陳手は双掌で印を結び，天機録第四頁と祭壇陣形が共鸣した。璀璨な金光がWhole 祭壇を飲み込み，すべての血色の鎖が同一瞬間ずに崩碎して漫天の光点となった！陳天命と陳念が同時に脱困し，陳念は陳手の懐に飛び込んで泣いた，而し陳天命はよろめきながら立ち上がり，、既に成人した息子を複雑な目で眺めた。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0525_019",
+        "content": "就在这时，祭壇奥深くから一声耳朵を聾する咆哮が传来した。一条的全身金色的巨龍の虚影が地底から冲出，那是龍脈之霊！その两眼は赤く充血，死死地盯着陳手：「汝は献祭を破壊した……天道之眼は汝を見逃さないぞ！」言葉が終わる前に，禁地が剧烈的震动し始めた，各方勢力の気が同時に流れ込んできた——龍脈争奪戦，正式に勃発した！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0525_020",
+        "content": "陳手は片手で父を支え，もう片手で妹を抱きしめ，四周を見渡した。凌淵の姿は既に消えていた，取り替えpiesは各方向から杀到してくる高手たち——玄武宗・聖宗，さらに他の隠世勢力の探子さえいた。彼の口元には嘲りの弧線が浮かぶ：「龍脈を奪いたい？」彼は低声で",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,563 @@
+{
+  "id": "天机录_ch0821",
+  "book_id": "天机录",
+  "number": 821,
+  "title": "Imperial Envoys",
+  "is_paid": true,
+  "next_chapter_hook": "The Imperial Envoys left in狼狈, but Chen Ji knew this was only the prelude to a greater storm—the aura of the Tianji Record had already been exposed, and more dangerous existences were watching from the shadows.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0821_001",
+        "content": "In the Tianqing Sect Council Hall, the morning mist had yet to disperse. A team of envoys in dark gold embroidered robes stood in formation before the hall, the leader holding an Imperial Decree aloft, proudly standing beneath the jade steps. Han Lie stood in the crowd, his gaze complex as he watched it all—only yesterday had he crossed blades with Chen Ji, yet now he was watching this spectacle.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_002",
+        "character_id": "char_hanlie",
+        "content": "(Murmuring to himself) What is this废物 planning...",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_003",
+        "content": "Chen Ji slowly walked out from the side hall, dressed in plain white disciple robes, his expression so calm as to appear wooden. His \"death\" had already spread throughout the sect. Now appearing as this \"resurrected\" form, outsiders saw only a bizarre near-death phenomenon. Those Imperial Envoys clearly didn't understand the intricacies—they thought him merely a dying man.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_004",
+        "character_id": "char_chenji",
+        "content": "(Slightly cupping his hands) Envoys, you've traveled far. Chen Ji failed to welcome you properly.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_005",
+        "content": "The Imperial Envoy coldly snorted, raising the dark gold banner high. Dazzling golden light exploded through the hall. \"Chen Ji, you're nothing but a废物, and occupying the position of Grand Tutor to the Crown Prince is an insult to the throne! By imperial decree today—hand over the Tianji Record Fragment, and we'll grant you a whole corpse!\" His voice rang like metal striking stone, filled with arrogance.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_006",
+        "character_id": "char_chenji",
+        "content": "(Softly laughing) Grant me a whole corpse? What grand authority you hold, Envoy. I only wonder—whose decree is this, precisely?",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_007",
+        "content": "The Envoy's smile froze for an instant, then regained its arrogance. \"What need have you, a dying man, to ask such questions? The Tianji Record is an ancient forbidden artifact—how dare you covet it! Hand it over quickly, and we may yet preserve what little face your Chen family has left.\" His gaze swept across everyone in the hall, full of disdain.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_01",
+        "prompt": "Faced with the Imperial Envoy's threats, Chen Ji chooses:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c1_打脸",
+            "text": "Expose and humiliate on the spot",
+            "description": "Directly reveal the secret dealings between the envoy and the Holy Sect of the Demonic Path, humiliating him publicly",
+            "satisfaction_type": "打脸",
+            "visible_cost": "Expose partial intelligence",
+            "visible_reward": "The envoy loses all face",
+            "risk_hint": "May attract attention from higher powers",
+            "process_label": "冷笑一声",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c1_001",
+                  "content": "Chen Ji leisurely straightened his sleeves, a meaningful smile playing at the corner of his mouth. \"The secret dealings you speak of, Envoy—were they your meeting with the Third Protector of the Holy Sect in Youzhou last year? Or is that 'special guest' at your residence still recovering from injuries?\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c1_002",
+                  "character_id": "char_chenji",
+                  "content": "(Voice suddenly turning ice-cold) If I truly were merely a dying man, why would you be so urgent, Envoy?",
+                  "emotion": "凌压"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_智取",
+            "text": "Invoke the Grand Tutor identity",
+            "description": "Use the official Grand Tutor to the Crown Prince status to refute—the envoy has no authority to enforce law within sect territory",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consume political capital",
+            "visible_reward": "The envoy is caught between a rock and a hard place",
+            "risk_hint": "May be investigated by higher authorities later",
+            "process_label": "淡淡开口",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_001",
+                  "content": "Chen Ji stood with hands behind his back, his gaze calmly sweeping over that dark gold banner. \"The position of Grand Tutor to the Crown Prince was personally bestowed by His Majesty. Does the Envoy hold the same imperial decree? Without equivalent authority, this banner in the Tianqing Sect... is nothing but scrap iron.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c2_002",
+                  "character_id": "char_chenji",
+                  "content": "(Slight smile) If you wish to enforce law here, perhaps you should first greet the elders of Tianqing Sect?",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_威慑",
+            "text": "Demonstrate the Tianji Record's power",
+            "description": "Display a minor use of foresight ability, making the envoy realize he's not someone to provoke",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Consume 5 points of Heavenly Fate",
+            "visible_reward": "The envoy is thoroughly terrified",
+            "risk_hint": "Exposing abilities may invite greater coveting",
+            "process_label": "指尖微动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_001",
+                  "content": "Chen Ji slowly raised his hand, a point of dim light glowing at his fingertip. \"In three breaths, the Envoy will sneeze. In five breaths, the second person on your left behind you will miss a step. In seven breaths...\" He paused, \"a crack will appear in the Jade Pendant at your waist.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_002",
+                  "character_id": "char_chenji",
+                  "content": "(Withdrawing his hand) Now you understand the use of the Tianji Record, Envoy?",
+                  "emotion": "淡漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_008",
+        "content": "Silence fell over the hall. The envoy's face instantly turned deathly pale. He instinctively touched the Jade Pendant at his waist—that precious warm jade worth a thousand gold—had somehow already developed a thin crack. \"You... this is witchcraft!\" His voice trembled, yet he no longer had any of his earlier confidence.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_009",
+        "character_id": "char_hanlie",
+        "content": "(Inhaling sharply, murmuring) This废物... how did he do that?",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_010",
+        "content": "Chen Ji stood with hands behind his back, his gaze like an ancient well—unfathomable. \"Witchcraft? The Tianji Record is an ancient supreme treasure, capable of窥见 three hours of heavenly secrets. You asked why I dare occupy this position—now do you understand? Not daring to covet it—I am worthy of it.\" His voice was not loud, yet every word cut like a blade.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_011",
+        "character_id": "char_chenji",
+        "content": "(Stepping forward slowly) As for the noble behind you... I suggest you go back and relay a message. The Tianji Record chooses its master never asking of birth or status. If he insists on taking it... I'd like to see how many lives he has to gamble with.",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_02",
+        "prompt": "The envoy retreated in狼狈, Chen Ji decides:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c2_1_穷追猛打",
+            "text": "Press the advantage and interrogate",
+            "description": "Apply further pressure to force the envoy to reveal the identity of the mastermind",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Thoroughly offend the imperial court",
+            "visible_reward": "Gain critical intelligence",
+            "risk_hint": "May provoke imperial court retaliation",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_1_001",
+                  "content": "Chen Ji stepped closer again. The envoy retreated continuously until his back pressed against the jade steps. \"Why don't you tell me, who sent you to wade into this muddy water? Chen Ji has a good memory—I'll make sure to pay them a visit someday.\" His smile didn't reach his eyes.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_2_见好就收",
+            "text": "Give him an escape route",
+            "description": "Let the envoy leave, but leave a meaningful warning behind",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May miss out on intelligence",
+            "visible_reward": "Plant a hidden chess piece in the imperial court",
+            "risk_hint": "The other party may return",
+            "process_label": "侧身让路",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_2_001",
+                  "content": "Chen Ji suddenly stepped back, standing with hands behind his back. \"Enough. The Envoy has traveled far. Chen Ji is not one to ignore proper etiquette. Today's matter—we'll consider it a lesson for you. Go back and tell your master—while the Tianji Record remains in my hands for one more day, it remains something he cannot covet.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_012",
+        "content": "The envoy scrambled out of the hall, not even bothering to take the dark gold banner. Laughter erupted throughout. Those disciples who had previously looked down on Chen Ji exchanged glances, their gazes now carrying a说不清道不明的 reverence.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_013",
+        "character_id": "char_hanlie",
+        "content": "(Grinding his teeth, murmuring) Playing dumb to eat the tiger... always this trick!",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_014",
+        "content": "Chen Ji slowly turned around, his gaze casually sweeping over Han Lie. In that moment of eye contact, Han Lie felt a bone-deep chill—this \"废物's\" eyes were clearly filled with disdain. Not disdain for the envoy, but for everyone present.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_03",
+        "prompt": "Just as Han Lie was about to step forward and confront him, Chen Ji:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c3_1_无视离开",
+            "text": "Directly ignore and leave",
+            "description": "Walk past Han Lie like he's looking at air—total ignorance is more humiliating than any mockery",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May escalate the conflict",
+            "visible_reward": "Han Lie loses all face",
+            "risk_hint": "Han Lie may cause a scene on the spot",
+            "process_label": "转身离去",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_1_001",
+                  "content": "Chen Ji didn't even glance at Han Lie again. He simply straightened his sleeves and slowly walked toward the side hall. His retreating figure gradually faded from everyone's view, leaving behind a hall of silence and Han Lie's ashen face.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_2_嘴毒补刀",
+            "text": "Make a cutting remark before leaving",
+            "description": "Drop a casual sentence before leaving, completely igniting Han Lie's fury",
+            "satisfaction_type": "打脸",
+            "visible_cost": "Thoroughly enrage Han Lie",
+            "visible_reward": "Maximum psychological attack",
+            "risk_hint": "Han Lie will target him even more later",
+            "process_label": "边走边说",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_2_001",
+                  "character_id": "char_chenji",
+                  "content": "(Not slowing his pace) Senior Han, I accepted your guidance during our last sparring. When time permits, I'll seek your instruction again—don't worry, I won't use the Tianji Record.",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_3_意味深长",
+            "text": "Leave a prophecy",
+            "description": "Use the Tianji Record's ability to give Han Lie a \"friendly reminder,\" leaving him sleepless",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume another 5 points of Heavenly Fate",
+            "visible_reward": "Han Lie falls into fear",
+            "risk_hint": "Heavenly Fate value critically low",
+            "process_label": "驻足侧头",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_3_001",
+                  "character_id": "char_chenji",
+                  "content": "(Stopping and turning his head) Senior Han, within three days, don't go to the Rear Mountain Forbidden Grounds. If you do... remember to bring enough healing elixirs.",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_015",
+        "content": "Outside the hall, the morning mist gradually cleared. Sunlight fell upon the peak of Tianqing. The moment Chen Ji stepped out of the hall, the corner of his mouth lifted slightly—today's game, he had won beautifully. Yet within that smile, a trace of solemnity flickered in his eyes. The aura of the Tianji Record had, after all, been exposed. That existence watching from the shadows had probably already sensed something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_016",
+        "content": "He mentally calculated: another ten points of Heavenly Fate consumed, leaving less than a hundred days remaining. The next time he used the Tianji Record, he would have to be even more cautious. And that so-called \"imperial noble\" was clearly merely a chess piece on stage—the real game was just beginning.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_017",
+        "character_id": "char_moxiansheng",
+        "content": "(An elderly voice echoed from the Tianji Record Fragment) Well done, but your time is running out. Behind the imperial court stands more than just mortals.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_018",
+        "content": "Chen Ji didn't respond. He only looked up at the horizon. In the clouds above, as if an无形 eye was watching him. The Heavenly Dao's Eye—the ultimate great enemy—was it also secretly observing every move he made? The wind blew across Tianqing Peak, carrying away the envoy's狼狈 footsteps, but it could not dispel the mounting pressure permeating the air.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_019",
+        "content": "Today's battle, he had shown everyone—Chen Ji is not a废物. Only they didn't know how many moves he had already calculated behind this \"performance.\" The Imperial Envoys left in狼狈, but Chen Ji knew this was only the prelude to a greater storm—the aura of the Tianji Record had already been exposed, and more dangerous existences were watching from the shadows.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_020",
+        "content": "And somewhere in the invisible Void, an existence beyond human comprehension shuddered slightly. The tendrils of the Heavenly Dao's Eye were quietly reaching toward this ant who dared challenge its chess game. The gears of fate had begun to turn.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

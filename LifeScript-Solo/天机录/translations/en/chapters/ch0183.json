@@ -1,0 +1,346 @@
+{
+  "id": "天机录_ch0183",
+  "book_id": "天机录",
+  "number": 183,
+  "title": "Turmoil in the Outer Court",
+  "is_paid": true,
+  "next_chapter_hook": "Just as jubilant cheers resounded through the great hall, a withered, iron-like figure slowly emerged from the shadows at the entrance—the leader of the Five Elders had finally appeared.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0183_001",
+        "content": "As the voice still echoed in his mind, Chen Ji had already gathered his focus. Not the time—the secrets of the Tianji Record could be explored another day. The play before him was just beginning. He stepped into the Tianqing Sect Council Hall, facing five faces with varied expressions, and countless eyes from elders and disciples—some curious, others disdainful. The Third Elder sat at the end, a faint cold smile playing on his lips, as if watching an antelope about to fall into a trap."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_002",
+        "content": "\"Wretch, you actually dared to come?\" Han Lie, seated on the right of the main seat, launched the first attack. His tiger-like eyes stared at Chen Ji, full of disdain and mockery. The proud number one genius of the Xuanwu Sect, who had been forced into a draw by a servant disciple during the sect competition, had become a laughingstock across the three major sects. This was his lifelong humiliation. Today, he had specially come to the Tianqing Sect to witness this wretch being punished by the Five Elders."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0183_003",
+        "character_id": "char_chenji",
+        "content": "\"Han-shixiong, you've come to Tianqing Sect today. Are you here as a guest, or to make a spectacle of us?\" Chen Ji walked unhurriedly to the center of the hall, his voice as calm as if inquiring about the weather. \"If it's the latter, I must remind shixiong—guests should follow the host's lead. There's no rule that guests can domineer.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_004",
+        "content": "Han Lie's face darkened. Just as he was about to lose his temper, Elder Zhao, one of the Five Elders, waved his hand to interrupt: \"Chen Ji, you violated sect rules and trespassed the scripture library. We've summoned you here today to confess your crimes publicly. If you admit your mistakes, the Five Elders may show leniency given this is your first offense.\" His tone was居高临下, as if he had already done Chen Ji a tremendous favor."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0183_005",
+        "character_id": "char_moxiansheng",
+        "content": "(The Tianji Record Fragment warmed slightly, and Mo Xiansheng's voice rang in his mind: \"The time has come. Be careful—the transmission talisman in the Third Elder's sleeve. He's contacting outside help.\")"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0183_006",
+        "character_id": "char_chenji",
+        "content": "\"Confess?\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_007",
+        "content": "The Third Elder's expression shifted slightly. His fingers unconsciously moved toward his sleeve. Chen Ji observed all this, a cold smile forming in his heart—the evidence had been prepared long ago. Today was merely the moment to close the net. He took out a Recording Stone from his chest and gently tossed it into the air. As spiritual light flickered, a scene slowly unfolded."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0183_008",
+        "character_id": "char_chenji",
+        "content": "\"Everyone, please observe—\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_009",
+        "content": "The hall fell deathly silent. Then, like a pot exploding, discussions erupted everywhere. \"A demonic path token!\" \"The Third Elder actually...\" \"This is a capital offense of treason!\" The Third Elder's face turned ashen. He abruptly stood up: \"Ridiculous nonsense! This Recording Stone was clearly forged by you!\" Though his voice was stern, the panic in his eyes had already betrayed him."
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0183_choice_01",
+        "prompt": "The Third Elder, like a cornered dog, denied everything publicly. How could he be completely discredited?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0183_01_A",
+            "text": "Pull out the second Recording Stone",
+            "description": "Press the attack relentlessly, let evidence flood in like a tide, completely shatter his psychological defenses",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume a precious Recording Stone",
+            "visible_reward": "The Third Elder collapsed on the spot, all the elders' expressions changed dramatically",
+            "risk_hint": "All evidence has been revealed; if complications arise later, there will be no cards left to play",
+            "process_label": "出示铁证",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0183_result_01_A_01",
+                  "content": "Chen Ji remained unruffled and produced another Recording Stone: \"The first one might be forged, but this second one records the scene of you, Third Elder, personally handing over the layout diagram of the Tianqing Sect's protective mountain formation to someone from the demonic path. Is that transmission talisman in your sleeve waiting for people outside to come to your aid?\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0183_result_01_A_02",
+                  "character_id": "char_chenji",
+                  "content": "No sooner had the words fallen than commotion arose at the hall entrance—two Law Enforcement disciples押着 a blood-soaked figure走了进来, a black-clad individual clutching a demonic path token identical to the one in the Recording Stone. \"Reporting to the Sect Master, this person was intercepted at the sect's outer perimeter. He is the demonic path spy that the Third Elder was supposed to receive!\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三长老落网"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0183_01_B",
+            "text": "Press him step by step with words",
+            "description": "Don't reveal all your cards, induce him to expose more flaws himself",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Need more time to maneuver",
+            "visible_reward": "Let the Third Elder expose more crimes in his panic; drag Han Lie down with him",
+            "risk_hint": "Give the opponent breathing room; may suffer counterattack",
+            "process_label": "引蛇出洞",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0183_result_01_B_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji laughed lightly: \"The Third Elder says forgery? Then may I ask—are the demonic runes in this Recording Stone easily replicable? Also, that jade talisman in your sleeve that you keep touching without letting go—is it waiting for a response from people outside?\" The Third Elder instinctively glanced down at his sleeve, his face instantly turning deathly pale. The entire hall erupted in an uproar."
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0183_result_01_B_02",
+                  "content": "What's more, Chen Ji turned the conversation: \"By the way, the Third Elder seems quite close with Han-shixiong? I wonder how that spirit wine Han-shixiong gifted you last month tasted?\" Han Lie's face changed dramatically. That wine was one of the evidence of his private dealings with the Third Elder. How did this wretch know everything!"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "三长老落网",
+              "韩烈被牵连"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_010",
+        "content": "The Third Elder's face was ashen. His legs went soft and he collapsed into the elder's chair. He never imagined that everything he had meticulously planned would be completely exposed by a wretch of a disciple. \"Strip his cultivation! Expel him from the sect!\" A young disciple shouted, immediately triggering a chorus of agreement. The once high-and-mighty elder had become a street rat that everyone wanted to hit."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0183_011",
+        "character_id": "char_chenji",
+        "content": "After dealing with the Third Elder, Chen Ji turned his gaze to the ashen-faced Han Lie, his voice still gentle: \"Han-shixiong, just now you said this wretch 'actually dared to come.' Now, do you think I dare?\" Han Lie clenched his fists, veins bulging, yet he had nothing to refute—ironclad evidence lay before him. Despite his countless grievances, he was speechless at this moment."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_012",
+        "content": "(Mo Xiansheng's voice rang again, carrying a hint of satisfaction: \"Well done. However, the leader of the Five Elders is still in seclusion, and he will surely sense what happened. Be careful—this person and the Third Elder are not on the same side, but since you moved against his people today, he won't let this go.\")"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0183_choice_02",
+        "prompt": "After Han Lie was publicly humiliated, he fell silent. Next, should he be given the final humiliation, or should one know when to stop?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0183_02_A",
+            "text": "Demand a public apology from him",
+            "description": "Press the advantage and utterly crush him, while establishing one's own reputation",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Completely offend the Xuanwu Sect",
+            "visible_reward": "Han Lie was forced to lower his head; reputation soars; all disciples present are won over",
+            "risk_hint": "Going too far may invite revenge from the Xuanwu Sect",
+            "process_label": "乘胜追击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0183_result_02_A_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji surveyed his surroundings, his voice ringing out: \"Since the Third Elder has already been brought to justice, shouldn't there be some accountability for Han-shixiong's earlier insults toward this 'wretch'?\" He paused slightly. \"Why not offer an apology here, in front of all the heroes of the world?\" The hall fell completely silent, every gaze fixed on Han Lie."
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0183_result_02_A_02",
+                  "content": "Han Lie's face shifted between green and white. Forcing him to apologize publicly to a wretch was worse than killing him. But today, with ironclad evidence, if he didn't go through with this, how could he establish himself in the cultivation world ever again? After grinding his teeth for a long while, he finally挤出几个字 from between his teeth: \"...I apologize.\" The words were barely audible, yet enough for everyone present to hear."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0183_result_02_A_03",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji nodded with satisfaction: \"Han-shixiong is indeed straightforward. If there's a chance someday, Chen will host a banquet and treat shixiong to drinks.\" The words were spoken lightly, yet they made Han Lie's chest tighten, nearly making him vomit blood on the spot—the humiliation was obvious, yet there was not a single flaw for anyone to grasp."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈道歉"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0183_02_B",
+            "text": "Know when to stop, turn and leave",
+            "description": "Today's goal has been achieved; don't push things too far, leave room for both sides",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Miss the opportunity to completely suppress Han Lie",
+            "visible_reward": "Witnesses see his composure and restraint, holding him in even higher regard",
+            "risk_hint": "Han Lie may bear today's humiliation in his heart and seek revenge in the future",
+            "process_label": "见好就收",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 12
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0183_result_02_B_01",
+                  "content": "Chen Ji smiled faintly and cupped his hands: \"I thank the Five Elders for upholding justice today. I'll take my leave now.\" With that, he turned and walked away, his bearing从容不迫. Han Lie's pent-up fury felt like punching cotton, leaving him suffocated and almost internally injured. The onlookers secretly admired—this youth remained unmoved whether honored or insulted, his actions flawless; he would surely become an extraordinary figure someday."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_013",
+        "content": "The hall buzzed with exhilaration. Young disciples whispered among themselves, eyes filled with admiration and excitement. The wretch everyone had mocked had today publicly toppled an elder and forced a genius from the Xuanwu Sect to bow his head—this was a story only found in legends! Someone had already begun whispering: \"Chen-shixiong... no, Chen-da-shixiong!\" This title spread like wildfire."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_014",
+        "content": "However, just at this moment—the light at the hall entrance dimmed for an instant. A withered, iron-like figure slowly emerged from the shadows, his face aged yet his gaze sharp as an eagle's, surrounded by a suffocating pressure that stole one's breath. Ling Yuan, the leader of the Five Elders, had finally appeared. His gaze swept over the collapsed Third Elder, then landed on Chen Ji, a meaningful smile curling at the corner of his lips. \"Interesting.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0183_015",
+        "content": "Chen Ji's heart tightened. He could sense Ling Yuan's gaze—not anger, but the composure of a predator surveying its prey. Mo Xiansheng's words echoed in his ears: \"He's here. Be careful with this one. He knows far more than you imagine.\" Ling Yuan stepped into the hall, his pace unhurried, each step seeming to tread on Chen Ji's heartstrings. \"Chen Ji...\" The old man's hoarse voice echoed through the hall. \"You've done well. Very well.\" These simple words sent a chill down Chen Ji's spine, instantly soaking his back in cold sweat."
+      }
+    }
+  ]
+}

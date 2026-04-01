@@ -1,0 +1,551 @@
+{
+  "id": "天机录_ch1049",
+  "book_id": "天机录",
+  "number": 1049,
+  "title": "The Fourth Possibility",
+  "is_paid": true,
+  "next_chapter_hook": "The complete resonance between the forbidden secret technique and the Turtle Shell artifact began, and a new possibility unfolded before Chen Ji's eyes—he saw three distinctly different threads of fate, and at the end of one of them stood a figure he never could have imagined.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1049_001",
+        "content": "That will was ice-cold and bone-piercing, as if the entire heavens and earth were gazing down upon him, this insignificant ant. Chen Ji stood motionless, yet a smile curled at the corner of his lips. Discovered? Interesting. But being discovered didn't mean being seen through—the Tianji Record's aura was wrapped in layers of Demonic Path mist, that will had merely locked onto his position, not penetrated his true identity. This was Ye Qing's worth. The protective talisman she gave him had become his greatest confidence.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_002",
+        "content": "Chen Ji calmly straightened his sleeves, as if that suffocating gaze had been merely an insignificant gust of wind. He raised his eyes to look at the Imperial Court envoy nearby—whose expression had already changed, clearly having sensed that transcendent pressure. \"It seems we'll have to accelerate our progress.\" Chen Ji said calmly, his voice betraying no fluctuation. \"I've considered the proposal Your Excellency just made.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_003",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(The Imperial Court envoy barely stabilized his composure, a flicker of wariness in his eyes) Young Master Chen... exactly who are you? That will was clearly staring at you!",
+        "emotion": "震惊且恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_004",
+        "content": "Chen Ji tilted his head, putting on an innocuous smile. \"Your Excellency need not be nervous, that presence was merely conducting a routine inspection. It stands above all, viewing all beings as ants—why would it specifically target someone as insignificant as me?\" He paused, then shifted topics skillfully, \"As for Cang Yutian's side, have Your Excellency thought of a countermeasure?\" This move of retreating to advance instantly redirected the conversation and cleverly concealed his own anomalies.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_005",
+        "prompt": "Facing the Imperial Court envoy's probing, Chen Ji needed to state his position.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "secret_deal",
+            "text": "Secret Transaction",
+            "description": "Reaching a private agreement without leaving any evidence, but the envoy may hold back due to lingering concerns.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Unable to obtain the envoy's complete trust",
+            "visible_reward": "Transaction details will not leak, higher security",
+            "risk_hint": "The envoy may secretly hold something back",
+            "process_label": "在阴影中握手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_secret_001",
+                  "content": "Chen Ji lowered his voice, a sharp glint flickering in his eyes: \"I have a proposal—no risk required for Your Excellency. You only need to provide one thing.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_secret_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(The Imperial Court envoy narrowed his eyes) Young Master Chen, please speak.",
+                  "emotion": "谨慎"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "secret_deal_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "open_negotiate",
+            "text": "Open Negotiation",
+            "description": "Laying all cards on the table before everyone, displaying strength and sincerity, but this will alert other forces.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Greatly increased risk of exposure",
+            "visible_reward": "The envoy must offer more筹码 to demonstrate sincerity",
+            "risk_hint": "May alert Cang Yutian's forces",
+            "process_label": "当众立契",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_open_001",
+                  "content": "Chen Ji surveyed his surroundings, then suddenly declared loudly: \"Since everyone here wishes to deal with Cang Yutian, why not speak more clearly!\" His voice echoed through the silence, instantly drawing everyone's attention.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_open_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(A flicker of appreciation flashed in the Imperial Court envoy's eyes) Good! Refreshingly direct!",
+                  "emotion": "欣赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "open_negotiate_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "staged_execute",
+            "text": "Phased Execution",
+            "description": "Advancing the plan in stages, building trust gradually, but requires more time to obtain all benefits.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "High time cost",
+            "visible_reward": "Each step verifies the other party's sincerity, reducing the risk of being deceived",
+            "risk_hint": "During this period, variables may increase.",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_staged_001",
+                  "content": "Chen Ji meditated for a moment, then slowly said: 'This matter cannot be rushed. Why don't we start from small things, step by step?' His voice was calm and firm, giving people a sense of complete trust.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_staged_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(The Imperial Court emissary nodded slightly) Young master Chen is indeed steady.",
+                  "emotion": "赞许"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "staged_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_006",
+        "content": "The Imperial Court emissary's gaze lingered on Chen Ji for a moment, as if re-evaluating this seemingly ordinary young man. 'Young master Chen's courage exceeds my expectations.' He concealed his earlier fear, his voice returning to calmness, 'Since that's the case, I'll speak directly—the Imperial Court wants Cang Yutian's life. As an exchange, we can provide everything you need.' He paused, his tone becoming meaningful, 'Including... forbidden secret techniques.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_007",
+        "character_id": "char_chenji",
+        "content": "(A glint flashed in Chen Ji's eyes, but his expression remained unchanged) Forbidden secret techniques... Which one is the emissary referring to? From what I know, there are more than one kind of forbidden secret techniques in this world.",
+        "emotion": "谨慎试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_008",
+        "content": "The Imperial Court emissary's lips curved into a mysterious smile as he lowered his voice: 'Of course, it's a technique that can rewrite fate—the 'Heavenly Fate Overwrite Art'.' He glanced around, confirming no one was eavesdropping, before continuing, 'Cang Yutian can rise above all beings because he has grasped a corner of this power. And our Imperial Court happens to possess the complete inheritance.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_009",
+        "content": "Chen Ji was inwardly shaken, but showed nothing on his face. Heavenly Fate Overwrite Art—he had heard this name in fragments from Mo Xiansheng's remnant soul, and it was said to be one of the most forbidden powers of ancient times. He took a deep breath, suppressing his inner excitement, and said calmly, 'This price, I imagine, won't be cheap?' He knew too well the套路 of such deals—the more precious something is, the more one must appear uninterested.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "(The Imperial Court emissary smiled) Young master Chen is indeed a clever person. The price is simple—we only need Young master Chen to stand with us at a critical moment. Specifically...",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_011",
+        "prompt": "The emissary proposed the terms, and Chen Ji needs to respond.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "demand_detail",
+            "text": "Press for details",
+            "description": "Demand that the emissary clarify exactly what the so-called 'critical moment' means, and what exactly 'standing on this side' entails.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Seem overly cautious, which may arouse the emissary's suspicion",
+            "visible_reward": "Probe the other party's cards to avoid traps",
+            "risk_hint": "Risk being seen through by the emissary regarding one's caution",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_detail_001",
+                  "content": "Chen Ji lifted his eyelids, his gaze becoming sharp: 'Critical moment'? 'Standing on this side'? Emissary, we're both straightforward people—no vague rhetoric will work on me.'",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_detail_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(The emissary was slightly startled, then burst into laughter) Excellent! Well said, Chen Ji! I enjoy dealing with clever people.",
+                  "emotion": "赞赏"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "detailoriented_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "feign_weakness",
+            "text": "Play the fool",
+            "description": "Pretend to be just an ordinary disciple, unable to understand these high-level power plays, causing the emissary to lower his guard.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Risk being looked down upon by the emissary, affecting negotiating position later",
+            "visible_reward": "Extract more information the emissary doesn't want to disclose",
+            "risk_hint": "Risk being despised by the emissary",
+            "process_label": "藏拙示弱",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_weakness_001",
+                  "content": "Chen Ji scratched his head, wearing a simple, honest expression: 'Emissary, I don't quite understand what you're saying... But if it's useful for overthrowing Cang Yutian, I'll follow your lead!' He blinked his eyes, looking exactly like an inexperienced country bumpkin.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_weakness_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(A barely perceptible disdain flickered in the emissary's eyes) Young master Chen is indeed... earnest. Then I'll speak directly.",
+                  "emotion": "轻视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "pretend_weak_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "counter_propose",
+            "text": "Counter-propose conditions",
+            "description": "Don't follow the emissary's script, but proactively present your own demands, showcasing negotiating leverage.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May provoke the emissary, leading to the breakdown of negotiations",
+            "visible_reward": "Grasp the initiative in negotiations and gain greater benefits",
+            "risk_hint": "Risks and benefits coexist",
+            "process_label": "反客为主",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_counter_001",
+                  "content": "Chen Ji suddenly smiled, interrupting the emissary: \"Emissary, before discussing terms, I have a condition as well.\" His tone was neither servile nor overbearing, yet carried an undeniable pressure.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_counter_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(The emissary raised an eyebrow) Oh? Chen-gongzi, please speak.",
+                  "emotion": "好奇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "counter_propose_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_012",
+        "content": "At that moment, the will from the depths of the void swept across once more, lingering longer this time. The Imperial Court's emissary's expression shifted subtly, instinctively stepping back. Chen Ji remained utterly still, even taking the liberty to straighten his collar. \"Emissary,\" he murmured softly, \"you have only one chance.\" Spoken with casual nonchalance, yet it sent a chill down the emissary's spine—he suddenly realized this young man was far more unfathomable than he appeared.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_013",
+        "content": "The Imperial Court's emissary took a deep breath and finally made his decision. \"Very well! Since Chen-gongzi is so straightforward, I shall hold nothing back.\" He drew an ancient, simple jade slip from his sleeve and reverently placed it before Chen Ji. \"This is the upper portion of the Heavenly Fate Overwriting Technique. The complete lineage will only be granted after you fulfill your first cooperation.\" His burning gaze fixed intently on Chen Ji. \"Is this condition satisfactory, Chen-gongzi?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_014",
+        "character_id": "char_chenji",
+        "content": "(Chen Ji picked up the jade slip, his divine sense probing within, a meaningful arc curving at the corner of his lips) Satisfactory? Emissary, have you perhaps misunderstood something?",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_015",
+        "content": "The emissary's expression shifted: \"What does Chen-gongzi mean by that?\" Chen Ji turned the jade slip in his hand, regarding his counterpart with an enigmatic half-smile: \"I originally intended to help you deal with Cang Yutian, but now... You want me to fight empty-handed against the most favored chess piece of the Eye of Heavenly Providence?\" He paused, shifting gears: \"Very well, I'll make a concession—give me the lower portion first. After the deed is done, I'll reconsider whether to 'stand on your side.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_016",
+        "content": "The Imperial Court's emissary's pupils contracted sharply. He hadn't expected this seemingly ordinary young man to have such an appetite, nor had he anticipated the audacity to bargain openly. But recalling that transcendent will from the void and his master's orders, he could only grit his teeth and nod. \"Very well! Chen-gongzi is indeed no ordinary talent.\" He drew another jade slip from his sleeve. \"This is the lower portion. However...\" He gazed meaningfully at Chen Ji. \"The young master should remember today's promise.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1049_017",
+        "prompt": "Faced with the complete forbidden secret technique, Chen Ji needed to make his final decision.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_all",
+            "text": "Accept everything",
+            "description": "Accept all conditions, take the complete secret technique, and secure the benefits first.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Owe a favor to the Imperial Court",
+            "visible_reward": "Obtain the complete forbidden secret technique lineage",
+            "risk_hint": "May be subsequently entangled by the Imperial Court",
+            "process_label": "笑纳厚礼",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_accept_001",
+                  "content": "Chen Ji did not hesitate to store both jade slips in his sleeve and clasped his hands: \"The emissary is indeed straightforward. This favor, Chen will remember.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_accept_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(A faint, barely perceptible gleam flashed in the emissary's eyes) Chen-gongzi is too kind. I hope that when we meet again, we will already be friends.",
+                  "emotion": "满意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "full_secret_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_conditions",
+            "text": "Additional conditions",
+            "description": "Accept while proposing additional safeguard clauses to ensure one is not placed at a disadvantage.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May displease the emissary",
+            "visible_reward": "Greater freedom in subsequent actions",
+            "risk_hint": "The emissary may retract some conditions",
+            "process_label": "锦上添花",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1049_result_condition_001",
+                  "content": "Chen Ji secured the jade slips and shifted his tone: \"Wait. I have one more condition—from this day forward, the Imperial Court shall not interfere with my actions for any reason.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1049_result_condition_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "(The emissary deliberated briefly, then nodded) Very well, a promise is a promise.",
+                  "emotion": "勉强同意"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "附加条件_1049"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1049_018",
+        "content": "After the imperial envoys departed, Chen Ji stood alone, spreading the two Jade Slips across his palms. He took a deep breath, his spiritual sense probing within. In an instant, countless mysterious runes exploded in his mind, forming a breathtaking vision—the true secret of the Heavenly Fate Overwriting Art was not \"rewriting\" fate, but \"covering\" it! Like laying a fresh sheet of white paper over one already filled with writing, the original text did not disappear—it was simply concealed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_019",
+        "content": "Chen Ji snapped his eyes open, his pupils reflecting the glow of the Jade Slips. His breathing quickened. The ultimate usage of the Heavenly Fate Overwriting Art—to directly cover Heavenly Dao laws with one's own will! Cang Yutian's so-called \"Heavenly Fate is Mine\" was merely the surface layer of this power! The true, complete inheritance was now in his hands! He closed his eyes, and the Tianji Record Fragment automatically manifested, resonating with the inheritance within the Jade Slips. The Turtle Shell Divine Artifact began to vibrate faintly, as if sensing something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_020",
+        "content": "Just then, a crisp voice came from behind. \"Chen Ji?\" Chen Ji did not need to turn around to know who it was—Su Qingyao. He quickly concealed his aura, hiding the Jade Slip in his sleeve, and turned to face that ice-cold figure. \"Senior Sister Su? It's so late, why are you still outside?\" His tone was as calm as ever, as if nothing had happened. But Su Qingyao's gaze was fixed死死地盯着 his sleeve, her eyes flickering with a hint of confusion. Once again, she felt something was off, yet could not pinpoint exactly what.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1049_021",
+        "character_id": "char_suqingyao",
+        "content": "(Su Qingyao frowned) What's hidden in your sleeve?",
+        "emotion": "怀疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_022",
+        "content": "Chen Ji blinked innocently, pulling out a common Healing Elixir from his sleeve. \"This? The injuries from today's training haven't fully healed yet. I'm taking advantage of the night to apply some medicine.\" He twirled the elixir between his fingers, looking at Su Qingyao with a slight smile, \"Senior Sister Su wouldn't have come specifically to inspect my post, would you?\" His words were casual yet carried a subtle edge—explaining the item in his sleeve while also turning the tables, implying that Su Qingyao's attention toward him was perhaps excessive.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_023",
+        "content": "Su Qingyao was caught off guard by these words, a hint of awkwardness crossing her face. She had indeed been following Chen Ji—ever since discovering the abnormalities about him last time, she had been secretly observing. But each time she felt she was close to the truth, the clues would mysteriously vanish. This waste of a junior brother was like an unsolvable puzzle, leaving her both frustrated and... just a little curious? \"I was just passing by.\" She turned away, her voice still cold, \"Don't misunderstand.\" Chen Ji watched her retreating figure, a faint smile playing at the corner of his mouth.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_024",
+        "content": "Only after Su Qingyao's silhouette vanished into the night did Chen Ji retrieve the Jade Slip, continuing to study its contents. The Heavenly Fate Overwriting Art was far more profound than he had imagined—it was divided into nine realms of mastery. The first realm was \"Cover,\" covering one's own fate lines; the second realm was \"Write,\" allowing one to add strokes to others' fate lines; the third realm was \"Fix,\" capable of solidifying certain fate segments to render them immutable... At its pinnacle, it was said one could cover Heavenly Dao laws themselves. But every use would court fate's backlash—the greater the cultivation, the fiercer the retribution.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_025",
+        "content": "Chen Ji closed the Jade Slip, lifting his gaze toward the depths of the Void. That icy will still lingered, suspended like a sword above his head. The Eye of Heavenly Dao—what was its purpose? Why was it watching him? He suddenly recalled what Mo Xiansheng had once said: \"The Tianji Record is merely one chess piece heaven has placed.\" If even the Tianji Record was merely a piece, then what was he, the supposed \"Chess Player\"? A chill clawed up his spine, but he quickly suppressed it. What was there to fear? Since he was a piece, he would become a useful one. Only useful pieces earned the right to negotiate with the Chess Player.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1049_026",
+        "content": "The Turtle Shell Divine Artifact suddenly quivered violently, emitting a resonant hum. Chen Ji glanced down to see countless fine cracks emerging across its surface—not damage, but an unsealing! Meanwhile, on the Tianji Record Fragment, that perpetually hazy silhouette of Mo Xiansheng appeared marginally clearer. A realization struck him. The resonance between forbidden secret arts and the Turtle Shell Divine Artifact was accelerating the Tianji Record's unveiling! The day of truth drew near. And he would soon possess the power to transform everything.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

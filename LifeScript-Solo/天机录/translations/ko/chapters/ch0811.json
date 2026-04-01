@@ -1,0 +1,424 @@
+{
+  "id": "天机录_ch0811",
+  "book_id": "天机录",
+  "number": 811,
+  "title": "쌍생공명",
+  "is_paid": true,
+  "next_chapter_hook": "천기가 천도지안 핵심에 발을 디뎁 순간, 만 년 전 기사의 비명感受到的是来自万年前棋局的悲鸣——那是一个被天道意志抛弃之人的无声呐喊。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0811_001",
+        "content": "어둠침침한 허공 속에서两道意识如同交织的丝线，彼此缠绕、共鸣。陈机只觉得脑海中轰然炸开一道白光，那是一种前所未有的感觉——他看见了另一个人的记忆，如同亲历。万年前的苍茫大地，一个年轻的修士跪在祭坛前，眼睁睁看着自己的天命被天道之眼生生剥离。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「당신이 마침내 보았습니다.」那道声音从共鸣中传来，带着万年的沧桑与悲凉，「나는这一天，已经等了很久.」",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_003",
+        "content": "천기가猛然睁开双眼，发现自己仍站在原地，但眼前的景象已经完全改变。魔道主帅的身影与他重叠在一起，两人的心跳、呼吸乃至于灵魂的脉动都完全同步。그는 자신의 손바닥을 내려다보며，那里浮现出一枚古老的符文——正是通往天道之眼核心的钥匙。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_004",
+        "character_id": "char_yeqing",
+        "content": "「이 목소리……당신인가요, 마도 사주?」천기의声音有些干涩，「만 년 전의 당신，究竟经历了什么？」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_005",
+        "content": "공명의画面再次涌来。천기看见那个年轻修士被绑在祭坛上，天道之眼의意志降临在他身上，将他千年修行的天命一寸寸剥离。他说不出话，只能无声地哀嚎。而天道之眼告诉他：\"당신은 첫 번째 제물이 될 것이며, 천기를 엿보는 자는 반드시 하늘의 벌을 받는다.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「可笑吗?」魔道主帅的声音带着自嘲，「천도意志亲口说的第一句话，竟是谎言。它不是要惩罚窥视天机者，而是要将所有窥视者变成它的棋子。万年前的我，被剥离天命后没有死，反而被它控制，成为它在人间의第一枚棋子.」",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0811_choice_001",
+        "prompt": "공명传递的信息让천기明白了一切。천도지안并非不可战胜，但它选择在万年前将魔道主帅变成棋子而非杀死，是因为他身上有某种特殊的东西。现在，这枚钥匙就在他手中，他需要做出选择。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0811_opt_001a",
+            "text": "열쇠를 받아들이다, 핵심으로 들어가다",
+            "description": "既然已经走到这一步，就没有回头的道理。进入天道之眼核心，直面万年前的真相。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "30점 천명값 소모",
+            "visible_reward": "천도지안 핵심 진입 자격 획득",
+            "risk_hint": "핵심 处可能有未知危险",
+            "process_label": "天命值-30",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_001a_001",
+                  "content": "천기가深吸一口气，将手掌按在符文之上。그 순간，그의 천명如同决堤的江水般涌出，但同时，一股前所未有的力量也涌入他的体内。열쇠와 그의 영혼은 완전히融合，一条通往天道之眼核心的通道在他面前缓缓开启。"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_001a_002",
+                  "character_id": "char_chenji",
+                  "content": "「만 년 전 당신이 도망치지 못했다면, 오늘은 내가这一切를终结한다.」천기의声音平静而坚定。",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "进入核心"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0811_opt_001b",
+            "text": "먼저 대가를 명확히 하자",
+            "description": "天下没有免费的午餐，天道之眼核心的代价必然不小。先弄清楚再说，免得稀里糊涂送了命。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "없음",
+            "visible_reward": "더 많은 정보 획득",
+            "risk_hint": "최적의 타이밍 놓칠 수 있음",
+            "process_label": "谋略+1",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_001b_001",
+                  "content": "천기는没有急着接受，而是抬头看向虚空中那道与己共鸣的身影：「핵심에 진입한 후，我会面临什么？天道之眼会做出什么反应？」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_001b_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "「它会试图再次将你变成棋子.」魔道主帅的声音沉重，「但你与我不同。你有天机录护体，有我万年的怨念相助。只要你能在它的意志侵蚀下保持清醒，就能反向将它封印.」",
+                  "emotion": "期待"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_007",
+        "content": "공명의画面再次闪烁。천기看见了更多——万年前的那场浩劫并非天道之眼一人之作，还有无数被它操控的棋子。魔道主帅只是其中之一。而现在，这些棋子中唯一还保留着自我意识的，只剩下他与魔道主帅两人。운명의 사슬，终于要在此刻断裂。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_008",
+        "character_id": "char_chenji",
+        "content": "「所以你选择与我共鸣，是因为我身上有天机录？」천기가忽然明白了什么，「천기록本就是天道之眼的克星，而你需要一个能承载你意志的人.」",
+        "emotion": "恍然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_009",
+        "content": "虚空中传来一声长叹，那是一种万年等待终于看到希望的释然。魔道主帅没有否认，但也没有完全承认：「我选择你，是因为你与万年前的我不同。你不会为了力量而疯狂，你会利用力量达到目的后全身而退。这一点，天道之眼永远学不会.」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0811_choice_002",
+        "prompt": "쌍생공명이已经完成，천기获得了通往天道之眼核心的钥匙。现在他需要决定如何面对即将到来的挑战。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0811_opt_002a",
+            "text": "즉시 핵심으로 진입",
+            "description": "时间不等人，天道之眼可能已经察觉到了共鸣。趁它还没反应过来，先发制人。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "20점 천명값 소모",
+            "visible_reward": "선수 우위 획득",
+            "risk_hint": "준비가 충분하지 않을 수 있음",
+            "process_label": "天命值-20",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_002a_001",
+                  "content": "천기는不再犹豫，催动符文打开了通往核心的通道。一股巨大的吸力将他卷入其中，周围的景象飞速变换。下一秒，他已经站在了一个巨大的眼球面前——那正是天道之眼의本体。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "先手优势"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0811_opt_002b",
+            "text": "준비를 갖춰야 진입",
+            "description": "召集魔道势力作为后援，同时调整状态。这是一场万年前就开始的棋局，不能仓促行事。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "점복을 위해 천명값 10점 소비",
+            "visible_reward": "더 많은 정보 지원 획득",
+            "risk_hint": "奇袭 기회를 놓칠 수 있음",
+            "process_label": "天命值-10",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_002b_001",
+                  "content": "천기는将共鸣的范围扩大，将魔道圣女夜清也纳入了感知之中。通过双生共鸣，他向夜清传递了即将发生的一切，并下达了指令：「당신의 능력 범위 내에서，尽可能干扰天道之眼在人间的布局。这边由我来.」"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_002b_002",
+                  "character_id": "char_yeqing",
+                  "content": "「당신 미쳤어요!」夜清的声音从共鸣中传来，带着难以置信的震惊，「당신은一个人去对付天道之眼？」",
+                  "emotion": "担忧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "后援就位"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_010",
+        "content": "无论选择如何，通道终究会开启。천기看着手掌中越来越亮的符文，心中反而平静下来。万年前魔道主帅未能完成的事，今日将由他来完成。不是因为命运，而是因为——他从来不相信命运。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「有意思.」一道苍老而威严的声音忽然响起，那是天道之眼의意志终于察觉到了入侵者，「一只蝼蚁，也敢来撼动本座？万年前的悲剧，你也想重演吗？」",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_012",
+        "content": "천기의嘴角微微上扬，那是一种看透一切后的从容。万年前天道之眼或许是不可战胜的，但万年后的今天，它犯了一个致命的错误——它将天기록散落人间，让无数人研究它、触碰它、最终找到克制它的方法。",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0811_choice_003",
+        "prompt": "천도지안已经现出了本体，一场决定命运的对话即将展开。这是最后的抉择——천기必须表明自己的态度和策略。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0811_opt_003a",
+            "text": "직접 선전포고",
+            "description": "不需要废话，直接告诉天道之眼他的目的：不是来当棋子，而是来终结这盘棋的。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "없음",
+            "visible_reward": "기세 억압",
+            "risk_hint": "천도지안 격노시킬 수 있음",
+            "process_label": "魅力+3",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_003a_001",
+                  "character_id": "char_chenji",
+                  "content": "「万年前的悲剧？」천기가轻笑出声，「那不是悲剧，是你的杰作。不过，今天我来这里，不是为了重演悲剧，而是为了让你知道——당신의 소위 운명 바둑이기는，从一开始就是个笑话.」",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "气势压制"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0811_opt_003b",
+            "text": "以退为进",
+            "description": "先假装示弱，让天道之眼放松警惕，再寻找破绽。这是一场智力的较量，不是蛮力的对抗。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "5점 천명값 소모",
+            "visible_reward": "정보 우위 획득",
+            "risk_hint": "나약하게 보일 수 있음",
+            "process_label": "谋略+2",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_003b_001",
+                  "character_id": "char_chenji",
+                  "content": "「선배님 말씀에 동의합니다.」천기가微微低头，语气谦卑，「후배는，只是好奇，想看看这传说中的天道之眼究竟是何等模样。若有冒犯，还请见谅.」",
+                  "emotion": "谦卑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_003b_002",
+                  "content": "천도지안의意志中传来一丝满意，但同时，魔道主帅的声音在他脑海中响起：「做得好，它已经放松了警惕。당신이 그 눈동자 우측 하단의 균열을 보았나요？那是我万年前留下的伤口，也是它唯一的弱点.」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "情报优势"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_013",
+        "content": "无论选择哪种策略，운명의齿轮已经转动。천기가踏入天道之眼核心的瞬间，感受到的是来自万年前棋局的悲鸣。那是一个被天道意志抛弃之人的无声呐喊，也是无数被命运玩弄者的最终质问。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_014",
+        "character_id": "char_chenji",
+        "content": "「당신이 들었나요?」천기의声音在核心中回荡，「这是万年前那个人的悲鸣，也是所有被你玩弄之人的悲鸣。今日，我要让这悲鸣变成终结의号角.」",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_015",
+        "content": "핵심 공간开始剧烈震动，天道之眼의意志不再是轻蔑，而是第一次流露出了真正的情绪——恐惧。万年来第一次，它感受到了来自棋子的威胁。而천기，已经握住了那枚能将它彻底封印的钥匙。운명의转折点，就在眼前。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_016",
+        "content": "천기가踏入天道之眼核心的瞬间，感受到的是来自万年前棋局的悲鸣——那是一个被天道意志抛弃之人的无声呐喊。而在这悲鸣之中，他听见了另一个声音，一个熟悉得让他心脏骤然紧缩的声音：「형？」"
+      }
+    }
+  ]
+}

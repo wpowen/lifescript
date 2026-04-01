@@ -1,0 +1,501 @@
+{
+  "id": "天机录_ch0654",
+  "book_id": "天机录",
+  "number": 654,
+  "title": "Qingyao's Interrogation",
+  "is_paid": true,
+  "next_chapter_hook": "Su Qingyao's words exploded like thunder, and Chen Ji finally realized — the chess game he had meticulously crafted had long been silently guarded by someone in the shadows.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0654_001",
+        "content": "Night inked black, cold wind carrying the sigh of pine waves across the cliff. Chen Ji stood at the cliff's edge, his blue Daoist robe rustling in the wind, the faint glow from the fragment in his sleeve deliberately concealed. Rapid footsteps came from behind — he didn't need to turn to know who it was. That scent, as clear as cold spring water, was all too familiar. \"Chen Ji.\" Su Qingyao's voice came from behind, carrying suppressed trembling, \"How long do you intend to run?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_002",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao blocked his path, moonlight highlighting her cold, resolute profile. Her eyes were slightly reddened, yet she fought back tears. \"Three months! You faked death for three months, the entire sect held a memorial service for you, but I—\" Her voice choked, \"You good-for-nothing, what on earth are you plotting!\"",
+        "emotion": "愤怒与心疼交织"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_003",
+        "content": "Chen Ji lowered his gaze, a carefully crafted expression of bitterness and helplessness spreading across his face. He had mastered this performance perfectly — weak, humble, completely lost. This mask had become his second skin, worn so long he nearly forgot his true self. \"Su senior sister, I...\" He carefully chose his words, injecting deliberate panic into his voice, \"I only want... to live quietly.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_004",
+        "character_id": "char_suqingyao",
+        "content": "\"Quiet?\" Su Qingyao sneered, her smile as cold as winter frost, \"Three months ago, on the Debate Platform, you were struck and fell off the cliff in front of the elders of three major sects — was that also for quietness?\" She stepped closer, her voice biting, \"Chen Ji, your eyes have changed. You think I can't see it?\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_005",
+        "content": "Chen Ji's heart tightened imperceptibly, but his expression remained unmoved. He knew Su Qingyao was the only person in the entire Tianqing Sect who might see through him — that keen intuition and relentless investigation hung over him like a sharpened sword suspended above his head. But at this moment, he had to continue the act. \"Senior sister is overthinking,\" he retreated half a step, adopting a helpless posture, \"I only... survived a great ordeal, and some things have become clearer to me.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0654_006",
+        "prompt": "Su Qingyao's interrogation pressed forward relentlessly. How would Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "坦诚相告",
+            "text": "Reveal partial truth",
+            "description": "Reveal that he obtained some fortuitous opportunity but conceal the existence of the Tianji Record. Attempt to appease her with half-truths.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Risk exposing more information",
+            "visible_reward": "Su Qingyao's trust slightly increased",
+            "risk_hint": "She may continue to dig deeper",
+            "process_label": "陈机犹豫着开口",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0654_result_坦诚相告_001",
+                  "content": "Chen Ji fell silent for a moment, then sighed. \"Su senior sister, to be honest... after falling from the cliff, I accidentally obtained a fortuitous opportunity.\" He raised his right hand, a wisp of pale spiritual light condensing at his fingertips — a beginner's technique he had comprehended from the fragment last night. \"That's precisely why I had to fake death and escape, to avoid drawing greater trouble.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "坚持隐瞒",
+            "text": "Continue playing dumb",
+            "description": "Persist in the useless personae, displaying cowardice and confusion. Let Su Qingyao believe he was merely traumatized and needs time to recover.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May hurt her feelings",
+            "visible_reward": "Keep the secret, maintain the layout",
+            "risk_hint": "She will continue to investigate",
+            "process_label": "陈机故作无辜地摇头",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0654_result_坚持隐瞒_001",
+                  "content": "Chen Ji stepped back, his expression of confusion almost flawless. \"Fortuitous opportunity? What fortuitous opportunity... I simply broke my leg and recuperated at the bottom of the cliff.\" He forced a bitter smile. \"Su senior sister, I'm already a废物, what could possibly be worth investigating?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "反客为主",
+            "text": "Deflect the topic",
+            "description": "Don't answer her question, instead inquire about her situation. Imply she shouldn't be here, shifting the focus away from himself.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May provoke her anger",
+            "visible_reward": "Take control of the conversation",
+            "risk_hint": "May provoke an argument",
+            "process_label": "陈机眼神微闪",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0654_result_反客为主_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji did not answer her accusation. Instead, he frowned and said, \"Senior Sister Su, you come here at midnight. If the sect elders find out...\" He paused, giving her a meaningful look. \"The Inner Disciple Senior Fellow meeting privately with a废物杂役—it's not a good rumor to spread.\"",
+                  "emotion": "冷漠中带着关切"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_007",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao seemed to have heard the most ridiculous joke. She stepped forward abruptly, almost face to face with Chen Ji. \"What a way to say it's not a good rumor.\" Her voice trembled, and her eyes finally reddened. \"Chen Ji, why do you think I came here at midnight? Do you have any idea how I've spent these three months?\"",
+        "emotion": "压抑的情绪即将崩溃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_008",
+        "content": "Under the moonlight, Chen Ji could clearly see the tear stains at the corners of Su Qingyao's eyes. At that moment, his fingers holding the fragment tightened slightly. Mo Xiansheng's voice echoed in his mind: \"This woman's fate is deeply entangled with yours. If you continue to hide the truth, it will become a heart demon.\" He closed his eyes, then slowly opened them again. Beneath the mask, his heart finally wavered. \"Senior Sister Su, you...\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_009",
+        "character_id": "char_suqingyao",
+        "content": "\"Do you know?\" Su Qingyao interrupted him, her voice hoarse. \"On the day of the Arena Platform, after you fell off the Cliff, I was the first to rush down.\" She took a broken Jade Pendant from her sleeve, inscribed with the Tianqing Sect emblem. \"I searched the cliff bottom for three days and three nights, and only found this.\"",
+        "emotion": "心痛与不甘"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_010",
+        "content": "Chen Ji recognized that Jade Pendant—it was the identity token he received upon entering the sect, always hanging from his waist, never removed. Watching Su Qingyao's trembling fingers and the broken jade, his throat tightened. So she really had searched for him. That proud Inner Disciple Senior Fellow, searching the cliff bottom for three days and three nights, just to find the remains of a废物杂役. \"Senior Sister...\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_011",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao gripped the Jade Pendant tightly in her palm, her knuckles white. \"I thought you were dead. During those three days, I investigated everything about your life.\" She raised her head, eyes bloodshot. \"Records from the Servants' Quarters, herb garden schedules, testimonies from disciples your age... Chen Ji, you never fell off the cliff! You've been acting from the very start!\"",
+        "emotion": "揭穿真相的愤怒与心痛"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_012",
+        "content": "A night wind rose suddenly, and Chen Ji fell silent. Looking at Su Qingyao's red-rimmed eyes, he suddenly realized—she hadn't caught up to him just today. She had discovered the truth long ago, but had held back until tonight to explode. How much had she endured these three months? What had been her feelings each time the sect held a funeral for him?"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0654_013",
+        "prompt": "Su Qingyao has exposed part of the truth. How should Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "彻底坦白",
+            "text": "Admit everything",
+            "description": "Tell Su Qingyao he was indeed acting, but hide the specific details of the Tianji Record. Try to make her understand his situation and difficulties.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "She may not be able to accept it",
+            "visible_reward": "Resolve the knot in her heart, gain a true ally",
+            "risk_hint": "Her reaction is unpredictable",
+            "process_label": "陈机终于卸下伪装",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0654_result_彻底坦白_001",
+                  "content": "Chen Ji let out a long sigh, and the mask of timidity finally cracked. \"Senior Sister is right. From the beginning, it was all a play.\" His gaze deepened with complexity. \"But I had no choice—if I didn't perform this play, I would be the one to die.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶得知真相"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "部分承认",
+            "text": "Admit to acting, but hide the reason",
+            "description": "Admit the fact of faking death, but give Su Qingyao no clues about the Tianji Record. Use vague explanations to dodge her questions.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "She may feel deceived",
+            "visible_reward": "Keep the core secret",
+            "risk_hint": "She may be disappointed",
+            "process_label": "陈机欲言又止",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0654_result_部分承认_001",
+                  "character_id": "char_chenji",
+                  "content": "After a long silence, Chen Ji finally nodded. \"Yes, I indeed did not die.\" His voice was low. \"But there are some things I cannot tell you. It's not about distrust, but... knowing would not be beneficial for you.\"",
+                  "emotion": "真诚却带着隐瞒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_014",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao stared at him blankly, then suddenly smiled, a bitter smile impossible to describe. \"Chen Ji, do you know how I've spent these three months?\" Her voice was soft, like a falling leaf. \"During the day, I had to pretend to cultivate and attend meetings as if nothing happened. At night, I secretly left the sect to continue searching for you at the cliff's base. I even... even begged Ye Qing.\"",
+        "emotion": "揭露她默默守护的真相"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_015",
+        "content": "Chen Ji's pupils constricted suddenly. Ye Qing—the Demonic Path Saint, the mortal enemy of the entire Tianqing Sect. Su Qingyao had actually begged that person for his sake? His chest felt like something had struck it hard, and the mask of cold calculation finally cracked genuinely. \"You...\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_016",
+        "character_id": "char_suqingyao",
+        "content": "\"Yes, I went to find her.\" Su Qingyao's tears finally fell. \"I told her, if Chen Ji was still alive, please tell me. She looked at me for a long time, then told me one thing—\" She took a deep breath. \"She said: 'He's still alive, but you cannot find him, because he's looking for something. Before he finds that thing, you two should not meet.'\"",
+        "emotion": "泪流满面却依然倔强"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_017",
+        "content": "Chen Ji closed his eyes. The matter of the Tianji Record—Ye Qing had actually revealed it to Su Qingyao. What was that Demonic Path Saint scheming? More importantly—Su Qingyao had actually忍住 not looking for him, an entire three months. She went to the cliff's base every night, clearly knowing he was alive, yet forcibly suppressing her anxiety. \"Senior Sister, you...\" His voice was somewhat hoarse. \"Why didn't you come ask me directly?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_018",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao raised her hand to wipe away tears, the corners of her lips curving into a stubborn arc. \"Because Ye Qing said, you weren't ready to see me yet.\" She stared directly into Chen Ji's eyes. \"I don't know what scheme you're weaving, but I believe you have your reasons. Chen Ji, I only have one question—\" Her voice suddenly turned cold. \"Have you ever truly regarded me as someone worth trusting?\"",
+        "emotion": "质问中带着期盼"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0654_019",
+        "prompt": "Su Qingyao's accusation struck at the heart—how should Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "坦诚接纳",
+            "text": "Acknowledge her importance",
+            "description": "Tell Su Qingyao that she is one of the people he trusts most. Not telling her the specific plan, but promising not to hide things from her anymore.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Reveal the soft side of his heart",
+            "visible_reward": "A qualitative change in the relationship with Su Qingyao",
+            "risk_hint": "She might use this against him",
+            "process_label": "陈机的心防彻底崩塌",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0654_result_坦诚接纳_001",
+                  "content": "Chen Ji looked at Su Qingyao's reddened eyes, then suddenly reached out and gently brushed away the tears on her face. 'Su Qingyao, you are the one in this world...' He paused, his voice carrying a warmth he'd never shown before, 'The only one who makes me feel that living is not just about revenge.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "苏青瑶解锁共命前兆"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "她是我最不想牵连的人，也是我必须保护的人",
+            "branch_route_id": null
+          },
+          {
+            "id": "理性分析",
+            "text": "Explain his difficult circumstances",
+            "description": "Not answering her question directly, but instead analyzing the danger of the current situation. Tell her that hiding the truth is to protect her, not a lack of trust.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Might appear cold",
+            "visible_reward": "Let her understand his situation",
+            "risk_hint": "Might hurt her",
+            "process_label": "陈机收敛情绪",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0654_result_理性分析_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji withdrew his hand, his expression cooling once more. 'Senior Su, you ask why I don't treat you as someone I trust—' He turned to gaze at the abyss below the cliff. 'Precisely because I consider you the most trusted person, I cannot let you be drawn into this vortex. Ling Yuan's former Sect Master, Ye Qing, Han Lie of Xuanwu Sect... the forces behind these names, any one of them could destroy an Inner Disciple Senior Fellow.'",
+                  "emotion": "冷酷中带着无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "冷漠拒绝",
+            "text": "Push her away",
+            "description": "Tell Su Qingyao that she shouldn't appear in his plans. Push her away with cold words, keeping her far from this 'waste' of a person.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Might lose her forever",
+            "visible_reward": "Completely sever her attachments",
+            "risk_hint": "Might cause an irreparable rift",
+            "process_label": "陈机面色一沉",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": -10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0654_result_冷漠拒绝_001",
+                  "content": "Chen Ji fell silent for a moment, then let out a cold laugh. 'Senior Su, you're overthinking this.' He turned his back to her. 'I'm a waste. You're an Inner Disciple Senior Fellow. We shouldn't have any connection to begin with. Tonight—let's pretend it never happened.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_020",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao froze. She stared at Chen Ji's back, then suddenly burst into laughter toward the sky. 'Pretend it never happened!' Her laughter carried infinite desolation. 'Chen Ji, do you think I came here for nothing? Do you think I begged Ye Qing for nothing?' She lunged forward, grabbing Chen Ji by the collar. 'I'm not afraid of danger! What I'm afraid of is—you never intended to let me stand beside you!'",
+        "emotion": "彻底崩溃的质问"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_021",
+        "content": "Chen Ji lowered his head to look at Su Qingyao, who was inches away. He watched the tears trembling in her eyes, her lips quivering with rage. In that moment, the fortress he had so carefully constructed within his heart finally crumbled. He raised his hand, gently covering hers that clutched his collar. 'Su Qingyao,' his voice was soft, soft enough that it seemed he feared breaking something precious, 'are you truly... not afraid?'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0654_022",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao gave no answer. She only tightly gripped his hand, pressing her forehead against his chest. Her tears soaked through his blue daoist robe. The warm sensation left Chen Ji frozen in place. After a long while, her muffled voice came: 'I'm afraid. But I'm more afraid that... you'll carry everything alone, and in the end, there's no one even to collect your body.'",
+        "emotion": "最真挚的告白"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_023",
+        "content": "Moonlight spilled down, stretching their silhouettes long. Chen Ji closed his eyes, letting Su Qingyao lean against his chest. In this moment, there was no scheming, no plotting—only a girl's three months of worry and unwavering loyalty. Mo Xiansheng's sigh drifted from the fragment: 'Foolish child, foolish child... Must the holder of the Tianji Record be destined to die alone?'"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0654_024",
+        "content": "After an unknown time, Chen Ji gently patted Su Qingyao's shoulder. 'Senior Sister, tonight...' He paused, his voice carrying a warmth he'd never shown before, 'Thank you for coming to find me.' He lifted her chin and wiped away the tears on her face. 'The road ahead, I'll let you know. But now—' His gaze越过她的肩头，看越过她的肩头，看越过她的肩头，看向她身后天青宗的方向，'We should go back. Before dawn, no one can discover you're not in the Sect.'"
+      }
+    }
+  ]
+}

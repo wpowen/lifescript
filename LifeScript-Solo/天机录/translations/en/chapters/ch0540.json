@@ -1,0 +1,573 @@
+{
+  "id": "天机录_ch0540",
+  "book_id": "天机录",
+  "number": 540,
+  "title": "Undercurrents Surging",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji was about to uncover the secrets of the Dragon's Vein, a shocking fluctuation erupted from the depths of the imperial palace—a puppet of the Heavenly Eye had opened its eyes once more in the mortal realm.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0540_001",
+        "content": "Night wrapped the world in ink. Chen Ji tightened the black robe he'd salvaged from the ruins, crouching atop an ancient locust tree at the edge of the forbidden palace grounds. The wind whispered through the branches, carrying a faint rustling sound like whispered murmurs. He had been perched here for three full hours, breath held, even deliberately slowing his heartbeat. In the distance, the towering palace walls gleamed with cold, biting radiance under the moonlight. Occasionally, the flickering torchlight of patrolling guards swept past, cutting transient streaks of light through the darkness. Chen Ji gently curled his lips—a knowing smile. Those torch positions, he had deduced with absolute clarity three hours ago using the Tianji Record.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_002",
+        "character_id": "char_moxiansheng",
+        "content": "\"Boy, are you certain you wish to use the Tianji Record here?\" Mo Xiansheng's remnant soul quivered slightly on the first page of the Tianji Record, his voice threaded with worry. \"This place converges the Dragon's Vein of the imperial palace. The Heavenly Secrets are in chaos here. If you forcibly peer into them...\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_003",
+        "content": "Chen Ji offered no reply. He slowly drew the incomplete Tianji Record from his chest. The sheepskin surface emitted a ghostly blue glow in the night, the runes upon it moving like living creatures. He took a deep breath and pressed his right hand onto the third page—the only page currently stable enough to manifest. \"Heavenly Fate Value: minus five.\" A cold voice rang in his mind. Chen Ji's brow furrowed slightly, yet without hesitation, he probed his consciousness into that swirling chaos. In an instant, countless visions flooded his mind like a tide: the palace's layout, patrol routes, the entrance to the forbidden grounds... and a vague silhouette deep within the earth.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_004",
+        "content": "That silhouette... was Chen Nian! Chen Ji's heart contracted violently, his pupils dilating. Even through the blurred image, even as the Tianji Record clearly fluctuated at this moment, he instantly recognized that outline—his missing sister, his sole blood relative in this world. She was imprisoned by chains in a dark stone chamber, surrounded by eerie purple runes, as if sealed by some terrifying power. Chen Ji's fingers trembled faintly, his knuckles whitening from tension. He silently memorized the location in his heart—northeast corner of the imperial palace, thirty zhang below ground, where the Dragon's Veins converged.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_005",
+        "character_id": "char_chenji",
+        "content": "A cold smile flickered in Chen Ji's heart: \"Found you.\" He lifted his gaze toward the depths of the imperial palace, a resolute gleam flashing in his eyes. \"Chen Nian, big brother has come for you.\"",
+        "emotion": "决然"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0540_choice_001",
+        "prompt": "After discovering his sister's location, Chen Ji needed to choose an infiltration route. Each of the following three paths had its advantages and disadvantages:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "route_ming",
+            "text": "\"Bright Path Deception\"",
+            "description": "Use a forged identity token to enter the forbidden grounds' perimeter through the main gate under broad daylight. Using his Xuanwu Sect disciple identity obtained from the ruins as cover, pretending to be an outer disciple attending the Three Sects' council.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Risk of identity exposure",
+            "visible_reward": "Can gather more intelligence about the forbidden grounds' interior",
+            "risk_hint": "Once exposed, will be surrounded by overwhelming forces",
+            "process_label": "伪装潜入",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_ming_001",
+                  "content": "Chen Ji drew a token bearing the Xuanwu Sect emblem from his chest, a mocking arc curving his lips. This token was something he'd taken from a corpse three days prior—the deceased had been an inner disciple of the Xuanwu Sect, now just a floating corpse at the bottom of the river outside the palace. He flipped the token in the moonlight, confirming the runes were undamaged, then straightened his clothes and strode toward the palace's main gate.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_ming_002",
+                  "content": "\"Halt!\" The gate-guarding commander coldly barked, his halberd thrust horizontally across Chen Ji's chest. \"The Three Sects' council ended three days ago. After this hour, no one is permitted entry!\" Chen Ji remained unruffled, presenting the token. A perfectly measured apologetic expression materialized on his face: \"Your Excellency, please understand—I am merely an attendant of Han Lie, an outer disciple of the Xuanwu Sect. Two days ago I was pursuing the trail of a demonic path remnant, which caused the delay. I humbly request your kind consideration.\" As he spoke, he produced a small, weighty pouch of spirit stones from his sleeve, subtly pressing it into the commander's palm.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "infiltrated_ming"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "route_an",
+            "text": "\"Secret Passage Through Darkness\"",
+            "description": "Abandon the main gate, infiltrate through the underground water channels on the eastern side of the palace. This route requires passing through the detection formations the Xuanwu Sect laid at the riverbed, but once successful, one can reach the Dragon's Vein convergence directly.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consumes substantial energy breaking through formations",
+            "visible_reward": "Bypasses all visible surveillance, strikes the core area directly",
+            "risk_hint": "Formation trigger will alert Xuanwu Sect senior leadership",
+            "process_label": "秘密潜入",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_an_001",
+                  "content": "Chen Ji silently descended from the ancient locust tree, circling to a secluded riverbank on the eastern side of the palace. Under the moonlight, the river displayed an unnatural ink-green hue, with tiny runes occasionally flickering across its surface—the Xuanwu Sect's detection formations. He produced a pre-prepared formation-breaking talisman from his chest, took a deep breath, and slipped soundlessly into the water.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_an_002",
+                  "content": "The underwater world was more bizarre than imagined. Formations of various colors intertwined into an impenetrable net; any trace of spiritual fluctuation would be instantly captured. But Chen Ji was prepared—he moved through the water like a slippery loach, every motion precisely evading the formations' perception range. Nevertheless, when the formation-breaking talisman contacted the third formation, a shrill alarm still rang out in the distance. Chen Ji cursed inwardly, accelerating his swimming speed.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "infiltrated_an"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "route_hong",
+            "text": "\"Red Sleeve's Perfume\"",
+            "description": "Using the demonic path secret method provided by Ye Qing, transform into the likeness of a maid serving within the forbidden grounds to infiltrate the inner court. This requires taking certain risks, but is also the most inconspicuous method.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Being indebted to Ye Qing",
+            "visible_reward": "Obtain an Inner Court identity that grants unrestricted passage",
+            "risk_hint": "The secret technique has a time limit and can easily be exposed by experts",
+            "process_label": "借力潜入",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_hong_001",
+                  "content": "Chen Ji took out a jet-black jade slip from his sleeve—that was something Ye Qing had sent three days ago. The jade slip's surface was ice-cold, and upon touching it, a bizarre spiritual energy fluctuation penetrated his palm. He pressed the jade slip against his brow center, silently chanting the spell Ye Qing had taught him, and saw a layer of pale purple light rise from his feet, slowly wrapping around his entire body. Bones cracked, muscles spasmed, and when he opened his eyes again, his originally resolute face had transformed into an elegant woman's countenance.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_route_hong_002",
+                  "content": "Chen Ji lowered his head to examine the dress he wore—when had this exquisite maid's attire materialized on him? Even a phoenix-embroidered waist token hung at his waist. He lightly curved his lips, emulating the palace maids' graceful movements from memory, quickly passing by a patrol of maids. No one glanced at him twice. Ye Qing's secret technique was indeed extraordinary. He silently noted this debt of gratitude in his heart—when the matter was settled, he would repay this kindness tenfold.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "infiltrated_hong"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_006",
+        "content": "Chen Ji traversed the palace complex, arriving at the northeastern corner of the imperial city. The atmosphere here differed entirely from elsewhere—an oppressive feeling pervaded the air, making even his breathing grow heavy. The ground was etched with dense formation rune patterns, glowing with a cold silver light under the moonlight. At the center of it all stood a massive stone door, firmly shut, with two expressionless black-armored warriors stationed before it. Their profound auras revealed Transformed God stage cultivation! Chen Ji's heart tensed—he couldn't defeat a single Transformed God expert at his current level, let alone two.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_007",
+        "content": "Suddenly, the Tianji Record violently trembled. Chen Ji instinctively probed his consciousness into the sheepskin scroll, where on the previously blank fourth page, a row of hazy runes slowly emerged—ancient script he had never encountered, yet instinctively felt familiar with. Simultaneously, a summoning sensation from deep beneath the earth resonated again, clearer and more urgent than before. This beckoning contained an inexplicable allure, as if something was calling to him, urging him toward the deepest part of the Dragon's Vein.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_008",
+        "character_id": "char_moxiansheng",
+        "content": "「This is...」 Mo Xiansheng's fragmented soul shuddered violently, his voice carrying rare excitement. 「The conditions for the fourth page's manifestation have been triggered! What have you done, boy?」",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_009",
+        "content": "Chen Ji didn't answer, his gaze fixed on the slowly forming runes on the Tianji Record. Though the text on the fourth page remained blurry, he could faintly make out several key terms: 「Heavenly Fate,」 「Price,」 「Contract」... At that moment, intense pain suddenly erupted from his brow center. Chen Ji groaned, falling to one knee, cold sweat beading on his forehead. Heavenly Fate Value—he distinctly felt something fundamental flowing rapidly from within him, something more essential than spiritual energy, the weight of fate itself.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0540_choice_002",
+        "prompt": "The fourth page of the Tianji Record was about to manifest, but the cost was massive Heavenly Fate Value consumption. Chen Ji needed to make a choice:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "continue_4th_page",
+            "text": "Force Activation",
+            "description": "Unleash the fourth page's power regardless of any cost to obtain new abilities. This concerned whether he could rescue his sister and gain the initiative in the coming turmoil.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Massive Heavenly Fate Value consumption, possibly dropping to dangerous levels",
+            "visible_reward": "Unlock the fourth page of the Tianji Record, gaining a new ability to foresee the future",
+            "risk_hint": "Low Heavenly Fate Value will attract the attention of the Heavenly Dao's Eye",
+            "process_label": "赌上一切",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_continue_001",
+                  "content": "Chen Ji clenched his teeth tightly, pouring more consciousness into the Tianji Record. Agonizing pain crashed over him in waves, his very soul feeling torn apart. Yet he didn't retreat; instead, he spread his arms wide, enduring everything in an almost self-destructive posture. Blood trickled from his nose, dripping to the ground. His vision blurred, but the runes on the fourth page grew increasingly distinct.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_continue_002",
+                  "content": "「Enough!」 Mo Xiansheng shouted sternly. 「Boy, you'll die at this rate!」 But Chen Ji seemed not to hear; his eyes held only those gradually materializing runes. Finally, as the final stroke fell, the fourth page fully revealed—reading: 「Those who peer into heaven must use Heavenly Fate as fuel, burning the flames of destiny. Gain one instant of foresight, pay one moment of lifespan.」 At the page's bottom, a line of smaller text read: 「Unlock Condition: Heavenly Fate Lock Key.」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "page_4_unlocked"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "pause_4th_page",
+            "text": "Pause Manifestation",
+            "description": "Forcefully interrupt the manifestation process at a critical moment, preserving the current Heavenly Fate Value. While this would forfeit this opportunity, it would at least preserve his life, allowing him to seek a safer unlocking method later.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Miss this manifestation condition",
+            "visible_reward": "Preserve strength, avoid attracting the Heavenly Dao's Eye's attention",
+            "risk_hint": "Next manifestation condition unknown, potentially more dangerous",
+            "process_label": "稳健为上",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_pause_001",
+                  "content": "Chen Ji abruptly recalled his consciousness, forcibly cutting off the surging power. The agony immediately receded significantly, yet he still felt utterly drained, his limbs and bones hollow with weakness. The runes on the fourth page blurred again the moment he withdrew his consciousness, but that word—「Heavenly Fate Lock Key」—had already carved itself deeply into his mind. He understood this keyword would be crucial for his next move.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_pause_002",
+                  "content": "「You made a wise choice.」 Mo Xiansheng's voice sounded again, this time carrying a note of approval. 「The fourth page's manifestation requires extremely stringent conditions; reckless activation would only backfire. However, since you've already seen the keyword, you now have direction. Remember, Heavenly Fate Lock Key—these four characters may be more significant than you imagine.」 Chen Ji silently nodded, inscribing these four characters deep in his heart.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "page_4_hint"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_010",
+        "content": "At that moment, the summoning from the Dragon's Vein's depths resonated again, stronger than ever before. Chen Ji couldn't help but turn his gaze toward that sealed stone door; he could sense behind it, buried thirty zhang deep in the earth, something awaited him. This thing seemed mystically connected to the Tianji Record, resonating with the incomplete wheel of fate within him. It was a long-lost call, originating from the depths of his bloodline.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_011",
+        "content": "Chen Ji took a deep breath, forcing himself to calm down. He knew this wasn't the time for rashness. The two Transformed God guardians before the stone door were beyond his current capabilities, and he knew little of the Forbidden Grounds' interior layout. Reckless action would only disturb the snakes and further endanger his sister's situation. He needed more intelligence, a foolproof plan. Just then, soft footsteps approached from behind—patrolling imperial guards closing in.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_012",
+        "content": "Chen Ji swiftly slipped into the shadows, holding his breath. A squad of twelve imperial guards passed by the stone gate, the torchlight sweeping past the rockery where he hid, illuminating several moss-covered Lake Tai stones. The leading officer suddenly stopped, as if sensing something amiss. Chen Ji's heart clenched, his fingers already stealthily touching the life-saving talisman in his sleeve. The air seemed to freeze, even the wind stilling in this moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_013",
+        "character_id": "char_chenji",
+        "content": "Just as the tension reached its breaking point, a thought suddenly flashed through Chen Ji's mind. He thought of a name—Su Qingyao. The Inner Disciple Senior Fellow of the Tianqing Sect, the woman who had repeatedly tried to expose his true identity. If he wanted to infiltrate the forbidden grounds, what identity could be more convenient than an official disciple of the Tianqing Sect? Moreover, based on his understanding of Su Qingyao, that woman would never sit idly by and watch him take risks alone.",
+        "emotion": "算计"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0540_choice_003",
+        "prompt": "Chen Ji sets up a chess game at the edge of the forbidden grounds, needing to choose an action strategy:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "strategy_contact_su",
+            "text": "Contact Su Qingyao",
+            "description": "Use a special channel to pass a message to Su Qingyao, drawing her into the plan. With her status as Inner Disciple Senior Fellow, she can legitimately enter the forbidden grounds for discussions, and he can take this opportunity to gain more intelligence support.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Reveal partial traces to Su Qingyao",
+            "visible_reward": "Gain a powerful insider and action support",
+            "risk_hint": "Su Qingyao might take the opportunity to investigate his true identity",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_contact_su_001",
+                  "content": "Chen Ji took out a jade pendant carved with azure cloud patterns from his怀— it was evidence Su Qingyao had left behind during a previous investigation, still carrying a trace of her aura. He held the jade pendant in his palm, silently activating a secret technique from the Tianji Record, sealing an encrypted message within. Three breaths later, the jade pendant transformed into a stream of light, silently piercing through the night sky, racing toward the Tianqing Sect.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_contact_su_002",
+                  "content": "After completing all this, a slight smile curved at the corner of Chen Ji's mouth. Su Qingyao, that brilliant woman, would surely understand the implications within the message. And once she stepped into this chess game, she would naturally be led by him toward the direction he desired. This was his layout—seemingly accidental, yet inevitable; seemingly seeking help, yet actually maintaining control. In this aspect, he never considered himself a good person.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_involved"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "strategy_alone",
+            "text": "Act alone",
+            "description": "Continue investigating the surroundings of the forbidden grounds alone, without relying on any external force. With his years of accumulated concealment techniques, he might find some unknown hidden passages or weaknesses.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Slow progress",
+            "visible_reward": "Maintain absolute concealment, leave no evidence",
+            "risk_hint": "Might miss important timing",
+            "process_label": "稳扎稳打",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_alone_001",
+                  "content": "Chen Ji withdrew his gaze and quietly retreated. He did not choose to contact anyone—at this critical moment, one more person knowing meant one more risk of exposure. Besides, he had never been accustomed to relying on others. He was like a venomous snake lurking in the shadows, silently circling the edge of the forbidden grounds, using those sharp eyes to捕捉 every possible weakness. Three hours later, he discovered a hidden water channel in a remote corner— it seemed to be an early drainage system of the imperial city, abandoned for many years.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_alone_002",
+                  "content": "A smile curved at the corner of Chen Ji's mouth. The direction of this water channel coincided exactly with the dragon vein tributary shown in the Tianji Record. If he wasn't mistaken, this water channel might directly lead to the underground area of the forbidden grounds. Although the entrance was sealed by formations, for a废物 who had survived in ruins for years, cracking such a decayed formation was no difficult task.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "found_secret_passage"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "strategy_yeqing",
+            "text": "Summon Ye Qing",
+            "description": "Use the secret contact method between Ye Qing and himself, requesting support from the Holy Sect of the Demonic Path. Demonic forces also have hidden agents in the imperial city, perhaps able to break through from another direction.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Owe a favor to the Demonic Path",
+            "visible_reward": "Gain full cooperation from Demonic Path hidden agents",
+            "risk_hint": "May deepen entanglements with the Demonic Path",
+            "process_label": "借刀杀人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_yeqing_001",
+                  "content": "Chen Ji took out a jet-black butterfly jade pendant from his sleeve and gently crushed it. A faint demonic energy rose from the fragments, forming a bizarre rune in the air. Three breaths later, a figure silently appeared before him—it was Ye Qing. She was dressed in tight nighttime attire tonight, outlining her graceful curves, a playful smile hanging at the corner of her mouth.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0540_result_yeqing_002",
+                  "content": "\"Oh, missing me already?\" Ye Qing's voice carried a hint of teasing, \"Go ahead, what do you need me to do this time?\" Chen Ji ignored her teasing and directly said: \"The stone gate at the northeast corner of the forbidden grounds, two guards at the Nascent Soul stage, I need you to create enough commotion to attract their attention.\" Ye Qing raised an eyebrow, looking at him with interest: \"You do know how to use people. Though... I like it.\" With that, her figure merged into the darkness again, leaving only a string of silver bell-like laughter.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_allied"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_014",
+        "content": "Just as undercurrents surged in all directions, a tremor again emanated from the dragon vein in the depths of the imperial city. That mysterious summons was more intense than any before, as if something was awakening in the depths of the earth. Chen Ji abruptly looked up, able to feel the ground beneath his feet vibrating slightly—that was an abnormal fluctuation of dragon vein spiritual energy. At the same time, the runes on the Tianji Record also lit up, the outline of the fourth page appearing faintly in the darkness, seemingly responding to something.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_015",
+        "content": "\"Kid, do you feel it?\" Mo Xiansheng's voice suddenly rang out, carrying an unprecedented solemnity. \"That summoning... it's not an ordinary dragon vein spiritual tide, but something far more ancient. If this old man hasn't guessed wrong, this should be—\" His voice stopped abruptly, as if afraid of something. Chen Ji furrowed his brows, about to press for answers, when suddenly a violent headache struck. In his vision, a blurry image suddenly flashed—that was a massive eyeball, pitch-black like ink, suspended in the endless void, coldly staring at him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_016",
+        "content": "\"The Eye of Heavenly Dao!\" Chen Ji's pupils contracted sharply, a bone-deep chill shooting from his tailbone to the crown of his head. Though that eyeball had only flashed by, it left an indelible impression—the kind of existence that transcended mortal comprehension, a will lofty and indifferent to all creation. Only then did he understand why Mo Xiansheng had stopped mid-sentence. The Eye of Heavenly Dao... it was an existence that even the successive masters of the Tianji Record had carefully avoided. And now, it seemed to have noticed him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0540_017",
+        "character_id": "char_moxiansheng",
+        "content": "\"Remember, kid.\" Mo Xiansheng's voice became unprecendently grave. \"From now on, you must be even more cautious in every action. Though the Eye of Heavenly Dao cannot directly interfere in the mortal realm, it can influence the chess pieces under its control. Ling Yuan, Han Lie... even every seemingly harmless person around you could become its eyes. Until you find a way to break the shackles of fate, you must remain vigilant at all times.\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_018",
+        "content": "Chen Ji took a deep breath, suppressing the fear in his heart. He looked toward the depths of the imperial city, toward that tightly shut stone door, and his gaze gradually became resolute. No matter how many dangers lay ahead, no matter what price he had to pay, he had to rescue Chen Nian. She was his sister, his only blood relative in this world. For her sake, he was willing to fight against heaven, against earth, against that lofty Eye of Heavenly Dao. Even if it meant being crushed to dust, he would have no regrets.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_019",
+        "content": "Just then, a purple light suddenly gleamed in the distant sky—that was the signal of the Demonic Path secret technique. Ye Qing had made his move. Immediately, a deafening explosion rang out from the western side of the imperial city, flames shooting into the sky, shocking the entire imperial city. The two guards before the stone door exchanged glances, and one said in a low voice: \"You guard here, I'll go check.\" With that, he transformed into a streak of light and raced toward the west. The opportunity had arrived! A cold smile curled on Chen Ji's lips as he moved silently toward the stone door.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0540_020",
+        "content": "However, just as Chen Ji was about to reach the stone door, a cold voice suddenly sounded from behind him: \"I've been waiting for you for a long time, Chen Ji.\" Chen Ji whirled around to see a figure in black robes standing beneath the moonlight, his features obscured by shadows, impossible to make out. But that voice... that voice made his pupils contract sharply—it was Ling Yuan's voice! The old sect master of Tianqing Sect, his nominal protector, his greatest enemy in reality, had actually been waiting for him here all along!",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "id": "天机录_ch1050",
+  "book_id": "天机录",
+  "number": 1050,
+  "title": "천기각의 소집",
+  "is_paid": true,
+  "next_chapter_hook": "천기록 완전판이 전례 없는 빛을 발산하며, 첸지의 운명 전환점이 다가옴을 예고한다——다음 장에서, 그는 일곱백 회 사망 예언을 깨뜨리는 길에 공식적으로 발을 디뎌게 될 것이다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1050_001",
+        "content": "금빛이 아직散去되지 않은 채, 첸지는 잔破한 거북 껍데기 신기를 한 손으로 짚으며, 이마의 모서리에서 땀이 배어 나온다. 세 개의 운명선 잔향이 여전히 그의 정신의 바다에서 얽히며 감缠绕하며, 마치 세 마리의 사람을 잡아먹으려는 독사처럼, 언제든 치명적인 일격을 가할 수 있다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_002",
+        "content": "가장 왼쪽那条 선은 목탄지와 시체 산, 피의 바다로 이어지며, 한lie의 피범범한 모습이 희미하게 보인다; 중앙那条은 혼돈의 안개로, 아무것도看不清하다; 가장 오른쪽那条 선의 끝——첸지의 손가락이 살짝 긴장한다——그에게 상상하지 못했던身影이 서 있다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_003",
+        "character_id": "char_chenji",
+        "content": "녠아이……",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_004",
+        "content": "그것은 실종된 지 오래된 누이동생 첸녠이다. 그런데 왜 그녀가 그 운명선의 끝에 나타나는 걸까? 왜 유독 이 선일까? 첸지는 깊이 숨을 들이쉬고, 스스로를 충격에서 분리하도록 강요한다. 어쨌든, 천계의 배치을 멈출 수 없으며, 인간계의 졸도们也该落子了.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_001",
+        "prompt": "운명의 바둑판이 이미 펼쳐졌고, 첸지는 다음首要 행동을 결정해야 한다.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_001_opt_a",
+            "text": "즉시 苏청 Yao에게 연락",
+            "description": "내문 수석이 핵심 노드 배치를 완료했으며, 그녀의 진행 상황을 확인하고 최종 명령을 전달해야 한다.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "천명값 2점 소모",
+            "visible_reward": "苏청 Yao 최신 정보 획득, 천청 종 내부 세력망 통합",
+            "risk_hint": "장시간 연락은 위치 노출 위험이 있을 수 있음",
+            "process_label": "联络盟友",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_a_001",
+                  "content": "첸지가 소매에서 초록빛 전음 부적一枚을 꺼내, 손가락 끝의 영력으로 가볍게 자극한다. 잠시 후, 苏청 Yao의 청량한 목소리가 부적 속에서 울린다: \"네가 마침내 나에게 연락하네. 외문 저那些 눈들은 이미 정리했으나,lingyuan那边……좀不对劲하다.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶情报整合",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_b",
+            "text": "먼저 야청에게 연락하여 마도 동향 확인",
+            "description": "마도 성종의圣女는 천기록 기식을 가리는 핵심 능력을 보유하고 있으며, 그녀의 배치는全局成败事关全局成败.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "마도와 결탁 노출 위험",
+            "visible_reward": "마도 미스트 엄호 획득, 천기록 기식 완전 숨김 가능",
+            "risk_hint": "此事一旦败露，将成为正道公敌",
+            "process_label": "魔道布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_b_001",
+                  "content": "첸지는 검은 마정石一枚으로 바꾸어, 낮게 신비로운 주문을 옮는다. 잠시 후, 야청의 나른한 웃음소리가 전해진다: \"첸 공자, 이렇게 빨리 나를 생각하네? 안심해, 마도 미스트는 이미 삼천 리에 깔려 있어, 천도지 눈이 직접 와도 네 그 찢어지다 남은 책 페이지 냄새를 맡지 못할 걸.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "魔道迷雾就绪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_c",
+            "text": "독자적으로 세 번째 운명선 추연",
+            "description": "그 끝에 첸녠이 서 있는 운명선이 가장怪异하여, 그 안의 모든 디테일을 봐야 한다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "대량 천명값 소모, 반噬에 빠질 수 있음",
+            "visible_reward": "첸녠의 위치와 핵심 정보 파악",
+            "risk_hint": "천명값 급락은 예지 능력 일시 상실로 이어질 수 있음",
+            "process_label": "窥探命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_c_001",
+                  "content": "첸지는 이를 악물고 천기록을 추동하며, 찢어지다 남은 페이지 위의 부호가 미친듯이 회전한다. 격통이 닥쳐오자, 그가 본다——검은 안개에 둘러싸인 고탑一座, 첸녠이 사슬에 묶여 탑頂에 고정되어, 눈빛에 빛이 없다. 그리고 그녀 뒤에,lingyuan의 굽은身影이 서 있다. \"찾았다……\" 첸지 입가에 피가 번지나, 눈빛에는 싸늘한 살意가 스쳐간다. \"늙은 것, 그녀 머리카락一根도 움직이면.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": "陈念位置确认",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_005",
+        "content": "전음 부적에서 미세한 잡음이 전해지고, 첸지 눈썹이 살짝 찡그려진다——苏청 Yao의 말투는 평온하나, 그녀가 누르는焦灼함을 알아들을 수 있다. 천청 종 내부的风暴는 그의 예상보다 빨리 왔다. lingyuan 저 늙은 여우, 보아하니 이미 손을 대기 시작했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_006",
+        "character_id": "char_suqingyao",
+        "content": "첸지, 오해하지 마. lingyuan은……그가 후산 금지에 금제一道를 배치했어, 나는 들어갈 수 없어. 하지만 그 안에서 무언가가 깨나오고 있다는 것을 느낌 받을 수 있어.",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_007",
+        "content": "첸지는 눈을 감고 심사숙고한다. 천청 종 후산 금지지는 대대로 문주들이 금기 물건을 봉인한 곳이다. lingyuan이 거기에 금제를 배치한다면,，无非是想掩盖什么——或者，释放什么. 어느 쪽이든 가능성은 상황이 그의 통제 불능 방향으로 미끄러지고 있음을 의미한다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_002",
+        "prompt": "삼로 배치近乎完成했으나, lingyuan의 동작이 리듬을 흐뜨린다. 첸지는 결단을 내려야 한다.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_002_opt_a",
+            "text": "苏청 Yao로 하여금 금제를 강제 돌파하게 함",
+            "description": "내문 수석의 실력은 대부분의 금제를撼动하기 충분하며, 강제 돌입이라면 lingyuan의 카드를 볼 수 있을지도 모른다.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "苏청 Yao가 노출되어, lingyuan의 직접적 표적이 될 수 있음",
+            "visible_reward": "lingyuan 비밀의 핵심 정보 획득",
+            "risk_hint": "실패할 경우, 苏청 Yao가 위험 상황에 빠질 것임",
+            "process_label": "强攻禁制",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_a_001",
+                  "content": "苏청 Yao는 잠시 침묵하다, 싸늘하게 말한다: \"날 무시하는 거야?\"话音刚落, 검光이 치솟는다. 그러나 금제 반噬의 힘이 기대를 크게 웃돌아, 그녀闷哼一声, 수 보退 당한다. \"이 금제……보통의 금제가 아니야, 고대 봉인술이야! 첸지, 저 늙은 것이 대체 뭘 꾸미는 거야?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "上古封印术发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_b",
+            "text": "야청의 마도 힘을 동원하여 옆에서策応",
+            "description": "마도 비법을借助하면, 금제의破綻을 찾을 수 있을지도 모르며, 同時에 苏청 Yao의 신원을 노출하지 않을 수 있다.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "마도가 천청 종에 개입하면,事后可能引发正道追查",
+            "visible_reward": "금제를 우회하여 내부 정보 직접 획득",
+            "risk_hint": "마도와 결탁 사실이 발견되면, 모든 노력이 수포로 돌아감",
+            "process_label": "魔道策应",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_b_001",
+                  "content": "야청의 목소리가 다시 울리며, 이번에는几分 침중함이 加했다: \"재미있어, 이 금제에 내 혈맥 응호가 연결되어 있잖아……첸 공자, 당신의 lingyuan 늙은 선배는 우리가 생각하는 것보다 더 불안분하네. 익숙한 맛이 느껴져——성종 기운이야.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "圣宗气息发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_c",
+            "text": "일시적으로 움직이지 않고,静観其变",
+            "description": "lingyuan이越是动作频繁,心虚함을 더욱 보여준다. 차라리 장단에 편을 들어, 그로 하여금 스스로破綻을 드러내게 하자.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "先机를 놓칠 수 있음",
+            "visible_reward": "lingyuan의 모든 카드를 보고一击必杀",
+            "risk_hint": "lingyuan이 먼저下手为强하면, 受動적 지위로 빠질 것임",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_c_001",
+                  "content": "첸지가 담담하게 말한다: \"急이지 마.\" 그는 하늘을 올려다보며, 찢어지다 남은 페이지 위의 부호가 천천히 회전하고 있다. \"늙은 여우가 조금 더 뛰어두게 하자. 그가越是慌할수록,破綻이 많아지는 거야.\"话音刚落, 거북 껍데기 신기가 갑자기 격렬히震动하며, 힘 있고阴冷한 목소리가 그 안에서 전해진다: \"첸지……네가 잘 숨기고 있다고 생각하냐?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "凌渊主动现身",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_008",
+        "content": "lingyuan의 목소리는 얼음물 한 그릇을 뒤집어쓴 것처럼 차갑다. 첸지의 동공이骤然 수축된다——그는 꿈에도 생각지 못했다, 저 늙은 여우가 이미 신识을 거북 껍데기 신기 안까지 뻗었다는 것을. 이것이 의미하는 바는? 상대방의 배치가 그의 상상을 훨씬越えて, 더 깊고, 더 일찍 시작되었음을 의미한다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_009",
+        "character_id": "char_lingyuan",
+        "content": "흐흥, 놀라냐? 당년 내가 네 스승手中에서 천기록 후보자 자격을 받았을 때,迟早会有这一天을 알았다. 유감이야, 그가 너这个废物를 선택했지, 그러나 잘못 골랐어.",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_010",
+        "content": "첸지는 천천히 몸을 세우며,脸上的懦弱与怯懦在这一刻 완벽히 사라진다. 그는 고개를 들고, 입가에 담담한 미소을 그린다. 그것은 진정한, 바둑을 두는 자의 미소이다——냉혹하고 정확하며, 불필요한 감정의 일割도 없다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_011",
+        "character_id": "char_chenji",
+        "content": "lingyuan 선배님, 오래되셨으면서 이렇게 천기록을 좋아하시는데, 당시에 왜 그냥 강제로 빼앗지 않으셨죠?今日에 이르기까지 후산 금지지에서 이처럼 见不得人的勾当을 해야 했는지?",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_003",
+        "prompt": "lingyuan의 조롱이 날카로우나, 첸지는 진정한 교전이 막 시작되었음을 안다.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_003_opt_a",
+            "text": "직접 맞받아 反唇相讥, 그의底细를 폭로",
+            "description": "lingyuan의 옛丑事를 드러내어, 기세에서 먼저 유리지다.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "lingyuan을 격노시켜提前发难하게 할 수 있음",
+            "visible_reward": "상대방 기세를打压하고,暗中窥探者을震慑",
+            "risk_hint": "lingyuan은城府가 깊어, 쉽게 격동하지 않음",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_a_001",
+                  "character_id": "char_chenji",
+                  "content": "아, 깜빡했네요. 선배님은 당년에 천기록에게 직접拒绝당한 분이었죠. 죽은 물건에게 차버림당한 맛이 썩 쾌적하지 않으시죠? 그래서 이렇게 날 싫어하시는 건가요? 제가 구하여 얻지 못한 것을 계승했으니까요?",
+                  "emotion": "傲慢"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_b",
+            "text": "냉소와 비꼼으로,步步为营套话",
+            "description": "정면으로 교전하지 않고,话术로 상대방을 유인하여 더 많은 정보를泄露하게 함.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "极高的语言技巧 필요",
+            "visible_reward": "lingyuan의 진짜 목적에 대한 핵심 단서 획득",
+            "risk_hint": "만약に見破당하면,打草惊蛇될 것임",
+            "process_label": "套取情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              },
+              {
+                "stat": "天命值",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_b_001",
+                  "character_id": "char_chenji",
+                  "content": "선배님은 후산에 이렇게 큰架势를 꾸미시는데, 저 후배와 오래된 お喋り라도 하시려는 건가요? 고대 봉인술, 성종 기운…… 훌륭하네요, 이건 자체门户를 세우시는 건가요, 아니면 자기까지 팔아넘기시는 건가요?",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_c",
+            "text": "底牌를 공개하여 상대방震慑",
+            "description": "lingyuan에게 직접告知하여, 그의 누이동생 첸녠이 상대방 손에 있다는 것을 알려, 상대방 반응을 탐색한다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "첸녠에 대한 집착이 노출되어, 상대방에게 利用될 수 있음",
+            "visible_reward": "lingyuan의 첸녠에 대한 진짜 태도를 파악",
+            "risk_hint": "만약 lingyuan이 이를 要挟하면, 受動적 지위로 빠질 것임",
+            "process_label": "以命相胁",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_c_001",
+                  "character_id": "char_chenji",
+                  "content": "맞아, 선배님. 제가 무책임한 누이동생……제가 잘 부탁드렸는데, 어떻게 지내시나요? 고탑 정수리, 바람수确实 좋죠?",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_012",
+        "content": "거북 껍데기 속 목소리가 갑자기 끊긴다. 찰나의 침묵이 모든 말보다更多的 것을 말해준다. 첸지는 그 미세한 惊讶을 포착한다——lingyuan은 그가 이미 첸녠의 소재지를 알게 될 줄 몰랐던 것이다. 이것은,接下来的博弈에서 상대방이 가진 가장 큰 패가, 더 이상 비밀이 아님을 의미한다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_013",
+        "character_id": "char_lingyuan",
+        "content": "네…어떻게 알았어!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_014",
+        "content": "첸지가 가볍게 웃음을 터뜨린다, 그 웃음소리가清冷하고 여유롭며, 고요한 허공 속에 메아리친다. 그는 손을 들어, 찢어지다 남은 페이지 위의 부호가骤然 밝아지며, 허망한 화면이 그 안에서 투사된다——바로 검은 안개에 둘러싸인 고탑이며, 정수리에는 홍의少女이 묶여 있다, 바로 첸녠이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_015",
+        "character_id": "char_chenji",
+        "content": "선배님, 자신만 배치를 한다고 생각하셨죠? 이 바둑, 저는 7년을 두고 있었습니다. 선배님의 每一步, 저는 모두 지켜보고 있었답니다.",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_016",
+        "content": "말투가 끝나자, 거북 껍데기 속的气運이陡然 어두워진다. 잠시 후, lingyuan의 목소리가 다시 울린다, 이번에는 그 가짜 친절함을 잃고,赤裸裸한杀意를 띤다: \"좋아, 좋아, 좋아! 진짜로 陈玄의 제자구나. 네가 이렇게 동생을 보고 싶다면 老夫가 成全해 주지——7일 후, 천기각이 열리면, 네가 오지 않으면, 그녀가替你去死!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_017",
+        "content": "통신이 갑자기 끊긴다. 첸지가 거북 껍데기 신기를 쥐고, 손가락 끝이 힘에也太白로 변한다. 그의 얼굴에는 분노도, 경악도 없다, 只剩下 끈 깊은 평온뿐이다. 7년이였다, 그는 7년을 기다렸고, 마침내 lingyuan이 스스로 뛰어 나오는 것을 기다렸다. 7일 후, 천기각——그곳은 모든 것을 결정할 전장이 될 것이다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_018",
+        "character_id": "char_chenji",
+        "content": "녠아이, 조금만 기다려. 7일……아니, 3일 안에, 반드시 데리러 올게.",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_019",
+        "content": "천기록 찢어지다 남은 페이지 위의 부호가 미친듯이 회전하기 시작하며, 금빛 광채가 첸지의 모습을 完全히 감싸안는다. 먼 하늘 끝에서, 세 방향에서 세 개의 다른 색 光柱가 모여오고 있다——苏청 Yao, 야청, 그리고 그가暗中 배치한 마지막 한 개의 졸이다. 삼로 귀일,天下大乱의 서막이 닥치려 하며, 첸지는 이 폭풍의 중심에 서서, 그가 직접 짜낸 바둑판을 내려다보고 있다. 천기각의 소집이 이미 발송되었고, 이번에는 그는 더 이상 남에게 희생당하는废物가 아니다——그는 바둑을 두는 자이다.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

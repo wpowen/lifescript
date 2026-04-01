@@ -1,0 +1,581 @@
+{
+  "id": "天机录_ch0075",
+  "book_id": "天机录",
+  "number": 75,
+  "title": "One Remarkable Feat that Stuns the World",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ji thought everything had settled, a pitch-black crack suddenly tore open in the Nine Heavens. An eye covered in countless stars slowly opened from the depths of the crack, gazing down at this world with absolute indifference—and at Chen Ji, who had just reached the summit.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0075_001",
+        "content": "The three-day deadline passed in an instant. When the first rays of dawn pierced through the horizon, the skies above the Tianqing Sect Martial Arena were already filled with a dense crowd. Elders from the three major sects, Inner Disciples, Outer Disciples, and even some reclusive seniors who had not emerged for years—all had gathered at the news. Today was the Sect Competition finals of the Tianqing Sect, held once every decade. More precisely—it was the decisive battle between Chen Ji and the predetermined fate of the entire Tianqing Sect.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_002",
+        "character_id": "char_chenji",
+        "content": "(His palm slightly tightening, feeling the warmth of the formation core gifted by Su Qingyao) At the center of the Martial Arena, twelve dragon-carved pillars formed a formation, and the runes on their surfaces were lighting up visibly. Chen Ji stood in the shadows of the entrance passage, his gaze piercing through the crowd to precisely lock onto the figures on the high platform—Han Lie, grandson of the Grand Elder, stood with arms crossed, a disdainful smirk playing at the corners of his mouth; the Fifth Elder stood at the far end of the Elder seats, his turbid old eyes flickering with a hint of unnoticeable malevolence; while the old Sect Master of Tianqing Sect, Ling Yuan, wore an expression of serene indifference, as if today's match was merely a trivial pastime.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_003",
+        "content": "The waste is on stage! Someone shouted this first, followed immediately by bursts of laughter erupting from all sides of the Martial Arena. Everyone was pointing and mocking—the waste actually dared to enter the finals? I bet he won't even survive the first round! I heard the Fifth Elder specially set up a lethal formation. This time he's definitely dead! Chen Ji acted as if he heard nothing, walking slowly toward the center of the arena. His pace was unhurried, and there was even a faint smile on his face.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_004",
+        "character_id": "char_hanlie",
+        "content": "Waste. Han Lie's voice, amplified by spiritual energy, echoed throughout the entire arena. He stepped forward, his aura surging toward Chen Ji like a violent tide. Today, I will teach you what it means to know the heights of heaven and the depths of the earth. With every word he spoke, the marble ground beneath his feet cracked further. The pressure from the Xuanwu Sect's number one genius was unleashed without any restraint, causing the surrounding disciples to retreat repeatedly. Yet Chen Ji acted as if he felt no pressure at all, even going so far as to yawn.",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_005",
+        "character_id": "char_chenji",
+        "content": "(Speaking calmly) Why so nervous, Senior Han? He tilted his head, his tone full of nonchalance. It's just a match, why make it seem like a life-and-death battle? The entire arena erupted in an uproar. Has this kid gone mad? How dare he speak to Han Lie like that! He's definitely dead, truly dead...",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0075_choice_01",
+        "prompt": "The finals officially begin. Faced with Han Lie's full-powered strike, you choose:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "正面碾压",
+            "text": "Overwhelming Force",
+            "description": "Without dodging or evading, crush Han Lie's attack with absolute strength, letting everyone witness the true power of the 'waste'",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Reveal Partial Strength",
+            "visible_reward": "The entire arena is shocked, the villains lose all face",
+            "risk_hint": "May alert higher powers",
+            "process_label": "一力破十会",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_正面碾压_001",
+                  "content": "Chen Ji moved. He didn't dodge, used no flashy techniques—simply threw out a single fist. BOOM—! The fist wind collided with Han Lie's killing blow in mid-air, erupting into a deafening roar. Dust scattered everywhere, rocks flew in all directions. When the dust settled, everyone witnessed a scene they would never forget—Han Lie, on his knees, hands supporting him on the ground, veins bulging on his forehead, blood trickling from the corner of his mouth. And Chen Ji, withdrawing his fist, his expression calm, as if he had just done something utterly insignificant.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_韩烈惨败"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "扮猪吃虎",
+            "text": "Feigning Weakness to Eat the Tiger",
+            "description": "Deliberately appear weak, letting Han Lie think he's dominating, then deliver a fatal strike at the most critical moment to maximize the humiliation",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Must endure some damage to deceive the opponent",
+            "visible_reward": "Humiliation effect doubled, Han Lie's psychology collapses",
+            "risk_hint": "May backfire if not controlled properly",
+            "process_label": "欲擒故纵",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_扮猪吃虎_001",
+                  "content": "Han Lie's attacks poured down like a violent storm, Chen Ji retreated step by step, seemingly only able to defend. The entire arena erupted in mocking laughter again—See, I told you he couldn't hold on! Truly the true colors of a waste! Han Lie coldly smiled: Is that all? However, just as his final strike was about to land—A flicker of amusement flashed in Chen Ji's eyes. Enough. He said softly, extending two fingers to gently pinch Han Lie's full-powered strike.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_扮猪吃虎"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借力打力",
+            "text": "Redirecting Force",
+            "description": "Use Han Lie's own power to rebound on him, making him lose face in front of everyone while exposing the Fifth Elder's lethal formation trap",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires precise calculation of force and timing",
+            "visible_reward": "Kill two birds with one stone: Defeat Han Lie + Expose the conspiracy",
+            "risk_hint": "Requires more complex execution",
+            "process_label": "四两拨千斤",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_借力打力_001",
+                  "content": "Chen Ji sidestepped, using Han Lie's fierce attack to his advantage with a gentle deflection. The violent force was redirected toward an entirely different direction—straight toward Elder Five at the end of the Elder seats! Elder Five's face changed dramatically, hastily raising his guard to block. At that moment, Chen Ji's voice leisurely rang out: Elder Five, shouldn't you be taking down this killing formation? The entire arena was stunned. Killing formation? What killing formation? Elder Five's face instantly turned ashen.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_杀阵曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_006",
+        "content": "Right at this moment, the twelve carved dragon pillars surrounding the Martial Arena suddenly illuminated! Blinding golden light shot upward, intertwining mid-air into an impenetrable net. A chilling aura surged from all directions, carrying suffocating killing intent. As expected, it was activated. Chen Ji's lips curved slightly—he had already foreseen this scene three days prior using the Tianji Record. Elder Five, this is your handiwork, isn't it? His voice was soft, yet it clearly reached everyone's ears.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_007",
+        "character_id": "char_lingyuan",
+        "content": "(Seated high on the platform, gaze deep as an abyss)\n\nThe entire arena erupted in uproar.\n\nElder Five's face flushed crimson as he shouted sternly: Complete nonsense! This is the Sect Competition's protective sect formation—how dare you slander it!\n\nYet just then, a cold voice rang out from within the formation—\n\nElder Five, this formation... is by no means a protective sect formation.\n\nSu Qingyao strode through the air, her elegant hand raised gently. A radiant blue formation's eye bloomed in her palm, presenting a stark contrast to the golden killing formation.\n\nThis is the 'Soul-Locking Death Formation' specifically designed to target Chen Ji—three days ago, I retrieved the true formation's core from your secret chamber.",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_008",
+        "content": "Evidence was irrefutable, proof was overwhelming.\n\nElder Five's face turned deathly pale, his body involuntarily recoiling.\n\nImpossible... how could you possibly...\n\nHe murmured, his eyes filled with disbelief.\n\nWhen he had set this killing formation, he believed it was done in absolute secrecy. He had meticulously destroyed all evidence of colluding with external enemies and harming fellow disciples.\n\nYet he never imagined—\n\nChen Ji not only knew everything in advance but had also prepared a counter-strategy.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_009",
+        "character_id": "char_chenji",
+        "content": "Elder Five, there's something else I forgot to tell you.\n\nChen Ji's voice remained serene, yet sent Elder Five into an icy abyss.\n\nThree days ago, the three assassins you sent to intercept me... their 'Soul-Devouring Powder' was personally refined by me.\n\nWhich means—\n\nHe paused, a mocking curve forming at the corner of his lips.\n\nThe poison you gave them cannot kill anyone. It will only cause them to become completely paralyzed within half an hour, completely at others' mercy.\n\nRight now, they are waiting in the sect's Law Enforcement Hall, ready to 'testify' to your crimes.",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0075_choice_02",
+        "prompt": "Elder Five's conspiracy is exposed. Faced with this traitor who betrayed the sect, you choose:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "留有余地",
+            "text": "Leave Room for Mercy",
+            "description": "Only partially expose the evidence, handing over the punishment authority to the sect. Avoid making too many enemies and preserve room for negotiation in the future.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Elder Five may escape severe punishment.",
+            "visible_reward": "Those present grow even more wary of your calculated schemes.",
+            "risk_hint": "Leaving Hidden Dangers",
+            "process_label": "网开一面",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_留有余地_001",
+                  "content": "While the entire arena was shocked, they secretly admired Chen Ji's magnanimity.\n\nThis废物... no, this person, his thoughts are actually so profound!\n\nElder Five collapsed to the ground, trembling all over.\n\nLing Yuan, the former Sect Master, slowly rose from his seat, his gaze complex as he looked at Chen Ji—appreciation and wariness coexisting in those eyes.\n\nChen Ji, my nephew's grandson, this matter... will be thoroughly investigated.\n\nHe said heavily, his tone revealing nothing of his true emotions.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_五长老留一线"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "斩草除根",
+            "text": "Eradicate the Roots",
+            "description": "Expose all evidence of Elder Five's collusion with external enemies before the entire sect, utterly cutting off his retreat.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May offend the forces behind Elder Five.",
+            "visible_reward": "Establish your prestige across the arena—no one will dare to underestimate you again.",
+            "risk_hint": "Creating Too Many Enemies",
+            "process_label": "赶尽杀绝",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 40
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_斩草除根_001",
+                  "content": "Chen Ji didn't speak, simply retrieving a jade slip from his sleeve and gently crushing it.\n\nLight and shadows materialized—the scene of Elder Five secretly negotiating with a masked figure!\n\nThe aura emanating from that black-clothed figure was unmistakably... the aura of a Holy Sect from the Demonic Path!\n\nColluding with the Demonic Path!\n\nThis is a capital offense!\n\nElder Five's face turned deathly pale, his legs buckling as he collapsed to the ground.\n\nChen Ji looked down at him imperiously, his voice cold as ice:\n\nThose who betray the sect, die.\n\nToday, I will not kill you.\n\nBut from this moment onward, you are no longer an elder of the Tianqing Sect, but... a criminal of the Tianqing Sect.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_五长老落败"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "嘲讽羞辱",
+            "text": "Mockery and Humiliation",
+            "description": "Not only expose the crimes, but verbally crush Elder Five's psychological defenses, utterly humiliating him.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May appear somewhat merciless.",
+            "visible_reward": "Maximally destroy his dignity.",
+            "risk_hint": "May leave room for criticism.",
+            "process_label": "言语诛心",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "魅力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_嘲讽羞辱_001",
+                  "content": "Chen Ji chuckled lightly, his voice lingering悠悠回荡在演武场上空。\n\n五长老，三年前收我为杂役弟子时曾言：废物就该有废物的觉悟，安分守己，或许还能苟延残喘。\n\n今日，他一字一顿地重复这句话，笑意愈发冰冷——叛徒就该有叛徒的下场，安分伏法，或许还能留个全尸。\n\n五长老浑身剧烈颤抖，不知是愤怒还是恐惧。\n\n全场鸦雀无声，所有人都被这一幕震撼。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_五长老受辱"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_010",
+        "content": "Just as everyone believed the competition had ended—\n\nThe sky suddenly changed dramatically!\n\nThe originally clear sky instantly darkened, a thick layer of dark clouds surging from all directions, shrouding the entire Martial Arena in an ominous gloom.\n\nGale winds howled, sand and stones flew everywhere.\n\nThe watching crowd cried out in alarm; those with lower cultivation were even forced backward by this overwhelming pressure.\n\nLing Yuan, the former Sect Master's face shifted drastically as he rose abruptly:\n\nThis is...",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_011",
+        "character_id": "char_suqingyao",
+        "content": "(Flies forward to block in front of Chen Ji, expression grave)\n\nSu Qingyao's pupils constricted sharply.\n\nThe formation eye she took from her embrace was trembling violently, its ghostly blue light flickering intermittently, as if in fear of something.\n\nChen Ji, be careful...\n\nHer voice carried a rare tremor.\n\nThis aura... I've never seen anything so terrifying...\n\nChen Ji did not answer.\n\nHe simply raised his head quietly, gazing toward the churning dark clouds—\n\nFor he knew, within those clouds, eyes were fixed upon him.",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0075_choice_03",
+        "prompt": "The sky undergoes a strange transformation, the gaze of the Heavenly Dao's Eye is about to manifest—your choice:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "直面注视",
+            "text": "Confront the gaze directly",
+            "description": "Fearlessly meet those eyes in a stare, declaring your unyielding determination through your aura",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May suffer backlash",
+            "visible_reward": "Willpower increases, those present hold deeper reverence for you",
+            "risk_hint": "Facing the Heavenly Dao's Eye directly carries unknown risks",
+            "process_label": "傲骨铮铮",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_直面注视_001",
+                  "content": "Chen Ji walked forward step by step against that suffocating pressure.\n\nHis spine stood straight and resolute, his eyes showing no hint of retreat.\n\nJust look then.\n\nHe said softly, the corner of his lips even curving into a faint arc.\n\nWant to see Chen Ji's fate?\n\nThen look your fill.\n\nAs his voice fell, from that crack, an eye slowly revealed itself—\n\nIt was an eye woven from stars and chaos, without pupil, without emotion—only endless coldness and a downward gaze.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_天道注视"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "静观其变",
+            "text": "Observe quietly and wait",
+            "description": "Remain calm, wait for the situation to develop, while secretly operating the Tianji Record, attempting to capture that fleeting connection",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss the opportunity for taking initiative",
+            "visible_reward": "May obtain key information about the Heavenly Dao's Eye",
+            "risk_hint": "Passive waiting may lead to a passive position",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_静观其变_001",
+                  "content": "Chen Ji did not move.\n\nHe simply stood still, allowing that pressure to envelop his entire body.\n\nMeanwhile, he secretly operated the Tianji Record Fragment—\n\nThe Tianji Record warmed slightly, and a blurry image flashed through his mind:\n\nIt was an eye.\n\nAn eye that had been watching the mortal world since ancient times.\n\nIt was neither the eye of any person nor the eye of any being—\n\nIt was the eye of \"Heaven's Way\" itself.\n\nChen Ji's pupils constricted sharply.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_天机感应"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "护住苏青瑶",
+            "text": "Protect Su Qingyao",
+            "description": "Disregarding personal safety, pull Su Qingyao into your embrace, using your body to shield her from that despair-inducing pressure",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Endure greater pressure yourself",
+            "visible_reward": "The relationship with Su Qingyao undergoes a qualitative change, unlocking a hidden storyline",
+            "risk_hint": "May cause internal injuries",
+            "process_label": "舍身护人",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "魅力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0075_result_护住苏青瑶_001",
+                  "content": "Chen Ji moved.\n\nHe pulled Su Qingyao into his embrace in one swift motion, his wide robe completely enveloping her body.\n\nSu Qingyao was frozen stiff, about to struggle, when Chen Ji's low voice came from above her head:\n\nDon't move.\n\nHer body instantly quieted.\n\nFor she felt it—Chen Ji's body was trembling slightly.\n\nIt wasn't fear.\n\nIt was the stubbornness of forcing himself not to collapse.\n\nChen Ji...\n\nHer eyes, suddenly, grew moist.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "flag_共命契机"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶_共命契机",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_012",
+        "content": "Just then, the crack in the sky tore open completely!\n\nThat eye manifested fully—\n\nIt was composed of endless nebulae and chaos, spanning over a hundred zhang in diameter. Its \"eye white\" was a churning galaxy, its \"pupil\" a bottomless vortex, as if capable of devouring all creation.\n\nThe moment it gazed upon Chen Ji—\n\nThe entire Tianqing Sect trembled.\n\nAll disciples knelt simultaneously, trembling violently, not daring to lift their heads.\n\nOnly Chen Ji still stood firm in place.\n\nHis gaze locked with that eye, like two chess players silently confronting each other on the chessboard of fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_013",
+        "content": "(Low murmur in the heart: So this is how it is...)\n\nChen Ji finally understood.\n\nFrom the moment he transmigrated to this world, he had been watched by these eyes.\n\nThe Tianji Record Fragment, the waste physique, all opportunities and crises—\n\nThey were all part of this chess game.\n\nHe thought he was playing chess, unaware—\n\nHe himself was merely a chess piece.\n\nJust as his thoughts churned, that eye slowly blinked.\n\nThen, a cold voice rang directly in his mind—\n\n\"Interesting.\"\n\n\"This one... has remembered you.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_014",
+        "character_id": "char_lingyuan",
+        "content": "(Sits upright on the high platform, face as still as deep water)\n\nLing Yuan the old Sect Master's body trembled slightly.\n\nHe recognized that eye.\n\nDecades ago, when he was a young disciple, he had seen its image in a broken ancient book—\n\nThe Heavenly Dao's Eye.\n\nThe legendary materialized form of Heavenly Dao's will.\n\nEvery time it appeared, it meant the world's pattern was about to undergo a great change.\n\nAnd this time...\n\nIts gaze had actually locked onto an outer disciple.\n\nA complex light flickered in Ling Yuan's eyes—wariness, fear, and a hint of... wild joy?",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_015",
+        "content": "The Heavenly Dao's Eye gazed at Chen Ji for a full three breaths of time.\n\nIn those three breaths, Chen Ji felt his very soul exposed—\n\nAll his secrets, all his schemes, all his disguises were laid bare before those cold, indifferent eyes.\n\nYet Chen Ji did not retreat.\n\nHe even curved his lips, revealing a faint smile.\n\nWant to see me?\n\nThen look.\n\nSomeday—\n\nHis gaze suddenly turned sharp.\n\nI will knock you off the chessboard, and see then—\n\nwho gazes upon whom.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_016",
+        "content": "As if hearing his words, that Heavenly Dao's Eye blinked once more.\n\nThen, it slowly closed and vanished into the nine heavens.\n\nThe sky restored to clearness, as if nothing had happened.\n\nBut everyone knew—\n\nEverything had changed.\n\nChen Ji stood in the center of the Martial Arena, bathed in the restored sunlight. Behind him lay the fallen Fifth Elder, the stunned Han Lie, and the entire crowd kneeling.\n\nFrom this moment—\n\nThe name \"waste\" was utterly shattered.\n\nTianqing Sect's number one outer disciple, Chen Ji.\n\nTruly deserved.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0075_017",
+        "character_id": "char_suqingyao",
+        "content": "(Walking up to Chen Ji, voice lowered extremely)\n\nSu Qingyao looked at the man before her, her eyes filled with complex emotions.\n\nShe still couldn't see through him.\n\nBut one thing she could be certain of—\n\nThis man was by no means some nobody.\n\nShe gently grasped his hand and slipped something into his palm.\n\nThis is...?\n\nChen Ji lowered his gaze—a smooth, warm Jade Pendant, with a small character \"青\" carved upon it.\n\nSu Qingyao turned her face away, the tips of her ears flushed red:\n\nIt's nothing... just... thank you for protecting me just now.\n\nNext time, let me protect you.",
+        "emotion": "羞涩"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0075_018",
+        "content": "(A faint smile curving at the corner of his lips)\n\nVery well.\n\nChen Ji did not refuse, tucking the Jade Pendant into his chest.\n\nJust then, an aged voice descended from the high platform—\n\nChen Ji, my nephew.\n\nElder Ling Yuan rose slowly, his gaze deep and profound as it fell upon him.\n\nToday's matter, I shall investigate to the very end. But before that—\n\nHe paused, his tone carrying an added layer of profound meaning.\n\nWould you be willing to follow me to the Back Mountain for a private word?\n\nThe entire arena erupted in whispers.\n\nThe Elder himself had summoned an Outer Disciple?\n\nChen Ji's expression remained unchanged, yet wariness surged within his heart.\n\nHe knew—the real game... was only just beginning.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,563 @@
+{
+  "id": "天机录_ch0821",
+  "book_id": "天机录",
+  "number": 821,
+  "title": "황조 사절",
+  "is_paid": true,
+  "next_chapter_hook": "황조 사절이 초라하게 떠났지만, 천기는 이것이 더 큰 폭풍의 전주곡임을 알고 있었다—천기록의 기운이 이미 드러났고, 더 위험한 존재가 어둠 속에서 지켜보고 있었다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0821_001",
+        "content": "천청종 의사大殿에 새벽 안개가 아직散去되지 않은 가운데, 흑금 문양이 새겨진 로브를 입은 사절단이 전殿 앞에 진을 셌다. 이를 이끄는 자는 황令을 들고 옥계 아래에 당당히 서 있었다. 한렬은 군중 속에 서서 복잡한 눈빛으로这一切을 바라보았다. 그는昨日 천기와 충돌한 바 있었고, 지금 이一幕을 구경하고 있었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_002",
+        "character_id": "char_hanlie",
+        "content": "（낮게 중얼거림）이廃物는 대체 무슨 속셈인지...",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_003",
+        "content": "천기가 측면 전殿에서 천천히 걸어 나왔다. 하얀 제자복을 입고, 표정이 태연할 정도로 고요했다. 그가 '死'었던 사실은 이미 종문에서 알려졌고, 지금 '환혼'한 몸으로出现的 것은外人들의 눈에는 回光返照 같은 기이함으로 보였다. 그리고 황조 사절들은 그 안에 있는玄機를 모르고, 그가 죽어가 는 사람이라고만 여겼다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_004",
+        "character_id": "char_chenji",
+        "content": "（살짝拱手）사절 대인이 먼 곳에서 오셨기에, 천기가 환영을 제대로 못한 점 양해바랍니다.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_005",
+        "content": "황조 사절이冷哼一声을 보냈고, 흑금令旗를 높이 들어 올렸다. 눈부신金光이 대전에서 터져 나왔다. \"천기야, 너는 불과 한 명의 폐물이면서 태자태사의 자리에 앉아 있으니 이는 황금을 기만한 것이니라! 오늘奉旨하여—천기록 잔페이지를 내놓으라, 너의 온전한 시체를 봐주겠다!\" 그의 음성은 금석이 부딪치는 듯하고, 오만함으로 가득 차 있었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_006",
+        "character_id": "char_chenji",
+        "content": "（가볍게 웃으며）온전한 시체를 봐준다고? 사절 대인의 위엄이 대단하시오. 그런데 이칙지는 대체 어느 귀인의意思인가?",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_007",
+        "content": "사절의 웃음이 순간 굳었다가, 이내 오만함을 되찾았다. \"네가 죽어가 는 사람에게 이것을 물을 것인가? 천기록은上古 금물이라, 네가 어찌 탐할 수 있겠는가! 빨리 내놓으면, 네 진씨 가문의 마지막 체면까지 지켜주겠다.\" 그의 시선이 전殿 중众人을 훑었고, 경멸이 가득했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_01",
+        "prompt": "황조 사절의 협박에 맞서, 천기는 선택한다:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c1_打脸",
+            "text": "その場で暴露して顔を打つ",
+            "description": "후에 사절 뒤의 마도 성종과의 은밀한 거래를 직접 폭로하여, 그로 하여금 당황하게 하다",
+            "satisfaction_type": "打脸",
+            "visible_cost": "部分적인 정보 노출",
+            "visible_reward": "사절의 얼굴이 떨어지다",
+            "risk_hint": "더 높은 층의 관심을 끌 수 있다",
+            "process_label": "冷笑一声",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c1_001",
+                  "content": "천기가 태연자약하게 소매를 여미며, 입가에 의미심장한 미소를 띠었다. \"사절 대인이 말씀하시는 은밀한 거래란, 작년에 유주에서 마도 성종 삼호법과 만난 일을 말합니까? 아니면 사절 대인 댁에 계신 '특별한 손님'이 아직도 상처를 치료하고 계신 겁니까?\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c1_002",
+                  "character_id": "char_chenji",
+                  "content": "（목소리가 갑자기 차갑게 변하며）내가 정말 죽어가 는 사람이라면, 대인이라 도대체 왜 이렇게急切 하는 겁니까?",
+                  "emotion": "凌压"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_智取",
+            "text": "태자태사 신분을 내세우다",
+            "description": "태자태사의 공식 신분으로 반박하여, 사절은 종문 영지에서 집행할 권한이 없음을 밝히다",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "정치 자본 소모",
+            "visible_reward": "사절이进退两难",
+            "risk_hint": "후에 더 높은 층으로부터 추궁받을 수 있다",
+            "process_label": "淡淡开口",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_001",
+                  "content": "천기가 등을 지고 서서, 태연한 눈빛으로 그 흑금令旗를 훑었다. \"태자태사의 직위는 폐하께서 친히 봉하신 것이오. 사절 대인이 들고 계신 것은 같은칙지인가? 같은 효력이 없다면, 이令旗는 천청종에서... 불과一块 철괴에 불과하다.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c2_002",
+                  "character_id": "char_chenji",
+                  "content": "（미소 짓으며）대인이 여기서 집행하시겠다면, 먼저 천청종诸位 장로에게 인사를 하는 게 어떻습니까?",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_威慑",
+            "text": "천기록의 힘을 보여주다",
+            "description": "조금 시험삼아 예지 능력을 보여주어, 사절이 그를 건드릴 존재가 아님을 깨닫게 하다",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "천명치 5점 소모",
+            "visible_reward": "사절이完全に恐れ을 먹다",
+            "risk_hint": "능력을 노출하면 더 큰 습격품을 끌어올 수 있다",
+            "process_label": "指尖微动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_001",
+                  "content": "천기가 천천히 손을 들어 올렸다. 손끝에서 은은한 빛이 떠올랐다. \"사절 대인, 삼息 뒤에 재채기를 할 것이오. 오息 뒤에 대인 뒤 왼쪽 두 번째 사람이 계단을 헛딛을 것이오. 칠息 뒤에...\" 그는 잠시 멈추었다. \"대인의 허리춤에 걸린 옥패에 금이 갈 것이오.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_002",
+                  "character_id": "char_chenji",
+                  "content": "（손을 거두며）천기록의 용도가 대인은 现在明白했나요?",
+                  "emotion": "淡漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_008",
+        "content": "대전에 순간 정적이 깔렸다. 사절의 안색이 순식간에 창백해졌다. 그는 무의식적으로 허리춤의 옥패를 만졌다. 천금의 가치가 있는 따뜻한 옥 위에 어느새 가는 금이 하나 생겨 있었다. \"네... 이것은 요술이야!\" 그의 목소리가 떨렸지만, 이전의 자신감은 완전히 사라졌다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_009",
+        "character_id": "char_hanlie",
+        "content": "（깜짝 놀라며, 낮게）이 폐물... 대체 어떻게 한 거지?",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_010",
+        "content": "천기가 등을 지고 서서, 눈빛이 고개의 우물밟처럼 파문 없었다. \"요술? 천기록은上古至宝로서, 삼시각천기의 예지를 할 수 있소. 사절 대인이 아까 내가 어찌 이 자리에 앉을 용기를 내었는지 물었으니—지금明白했는가? 도벽이 아니라, 내가 어울리는 자리라서가오.\" 그의 음성은 높지 않았지만, 한 글자 한 글자가 칼과 같았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_011",
+        "character_id": "char_chenji",
+        "content": "（천천히 앞으로 걸으며）그렇다면 대인 뒤에 계신那位 귀인에 대해서는... 제가 건의하건데,回去传告一声하소서. 천기록은 주인을 선택할 때 출신의 귀천을 묻지 않소이다. 그가 반드시 노리신다면... 제가 그가 몇 条命을 걸 수 있는지 보고 싶소이다.",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_02",
+        "prompt": "사절이 초조하게 뒤로 물러섰다. 천기는 결정한다:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c2_1_穷追猛打",
+            "text": "승세를 타고 추궁하다",
+            "description": "더 큰 압박을 가하여, 사절로 하여금 배후 주모자의 정체를吐露하게 하다",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "황조와 완전히 사이가 틀어지다",
+            "visible_reward": "핵심적인 정보를 얻다",
+            "risk_hint": "황조의 보복을 촉발할 수 있다",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_1_001",
+                  "content": "천기가 또 한 걸음 다가갔다. 사절은连连后退하고, 등뼈가 옥계에 닿았다. \"대인은 차라리 누가 이 진흙밭에 발을 들이게 했는지 말씀하시는 게 어떻습니까? 제 기억력이 좋으니, 나중에 찾아뵙기라도 하렵니다.\" 그의 웃음은 눈까지 닿지 않았다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_2_见好就收",
+            "text": "台阶를 주다",
+            "description": "사절을 떠나보내되, 의미심장한 경고만 남겨두다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "정보를 놓칠 가능성이 있다",
+            "visible_reward": "황조에暗棋子를 심다",
+            "risk_hint": "상대가 되돌아올 수 있다",
+            "process_label": "侧身让路",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_2_001",
+                  "content": "천기가 갑자기 한 걸음 뒤로 물러서며, 등을 지고 섰다. \"됐소, 사절 대인이 멀리서 오셨으니 제가 천기라고 해서 예의도 모르는 인간은 아니오. 오늘之事는, 대인에게 한 번 교훈을 주는 것으로 하오. 돌아가主君에게 전하시오—천기록이 내 손에 있는 한, 하루는 그가 노릴 수 있는 물건이 아니오.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_012",
+        "content": "사절이 재를리며 대전을 빠져나갔다. 흑금令旗조차 챙길 틈이 없었다. 전殿에서 웃음소리가 터져 나왔고, 애초에 천기를軽視했던 제자들끼리 얼굴을 맞대며, 그를 바라보는 눈빛에 묘하게 설명할 수 없는 경외심이 더해졌다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_013",
+        "character_id": "char_hanlie",
+        "content": "（이를 갈며, 낮게）멸종을 가장하여 호랑이를 잡는다니... 또 이 手口이야!",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_014",
+        "content": "천기가 천천히 몸을 돌렸다. 시선이 문득 한렬을 스쳤다. 그 순간의对视에서, 한렬은 본받지 못할 한기—이 '폐물'의 눈빛에는 경멸이 명백히 적혔 있음을 느꼈다. 사절에 대한 경멸이 아니라,当场所有人에 대한 경멸이었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_03",
+        "prompt": "한렬이 다가와 질문하려 할 때, 천기는:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c3_1_无视离开",
+            "text": "직접 무시하고 떠나다",
+            "description": "빈 공간을 보듯 한렬 옆을 지나가다. 완전한 무시는 어떤 조롱보다 더羞辱적이다.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "갈등을 촉발할 수 있다",
+            "visible_reward": "한렬의 얼굴이 땅에 떨어지다",
+            "risk_hint": "한렬이 그 자리에서 문제를 일으킬 수 있다",
+            "process_label": "转身离去",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_1_001",
+                  "content": "천기는 한렬을 한 번도 쳐다보지 않았다. 다만 소매를 여미며, 천천히 측면 전殿으로 걸어갔다. 그의 뒷모습이众人의 시야에서 점점 멀어졌다. 남겨진 것은 一殿의 침묵과 한렬의铁青한 얼굴이었다.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_2_嘴毒补刀",
+            "text": "떠나기 전에 입에 독을 한 바르기",
+            "description": "떠나기 전 가볍게 한마디하여, 한렬의 분노를 완전히 자극하다",
+            "satisfaction_type": "打脸",
+            "visible_cost": "한렬을 완전히激怒시키다",
+            "visible_reward": "정신적 공격이 극에 달하다",
+            "risk_hint": "향후 한렬이 더 노골적으로针对할 것이다",
+            "process_label": "边走边说",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_2_001",
+                  "character_id": "char_chenji",
+                  "content": "（발걸음을 멈추지 않으며）한师兄,上次 가라앉던ことを 감사드리오.改日 시간 내어 또师兄에게请教하겠소—안심하세요, 천기록은 쓰지 않겠소이다.",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_3_意味深长",
+            "text": "예언을 하나 남겨두다",
+            "description": "천기록의 능력으로 한렬에게 '선의의忠告'를 건네어, 그가 잠도 못 자게 하다",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "또 5점의 천명치를 소모하다",
+            "visible_reward": "한렬이 공포에 빠지다",
+            "risk_hint": "천명치가 바닥을 치다",
+            "process_label": "驻足侧头",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_3_001",
+                  "character_id": "char_chenji",
+                  "content": "（멈춰 서서 고개를 돌리며）한师兄, 삼日之内 후산 금지에 가지 마소. 만일 간다면... 치료丹을 충분히 챙기세요.",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_015",
+        "content": "전문 밖의 새벽 안개가 점점 흩어졌다. 양광이 천청봉 꼭대기에 내려앉았다. 천기가 대전을 나서던 그 순간, 입꼬리가 살짝 올라갔다—오늘의 이 한 판, 그가漂亮하게 이겼다. 그러나 그 미소 깊숙한 곳, 눈동자 깊은 곳에는 한줄기凝重함이 스쳤다. 천기록의 기운은 결국 드러났다. 어둠 속에서 모든 것을 지켜보는 그 존재는, 이미 무언가를 감지했을지도 모른다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_016",
+        "content": "그는 마음속으로 계산했다: 천명치가 또 열 점 소모되었고, 이제 부족 백일의 수자 밖에 남지 않았다. 다음에 천기록을 쓸 때는 더욱 신중해야 한다. 그리고 이른바 '황조 귀인'은 분명 무대의 앞면 장단에 불과하며, 진정한 승부는 이제 막 시작되었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_017",
+        "character_id": "char_moxiansheng",
+        "content": "（천기록 잔페이지에서苍老한 음성이 전해졌다）잘했소. 그러나 네 시간이 많지 않구나. 황조 뒤에 서 있는 것은 mortals만이 아니오.",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_018",
+        "content": "천기는 응하지 않았다. 다만 하늘을 올려다보았다. 그 구름 위에서, 무형의 눈이 그를 응시하고 있는 것처럼 느껴졌다.天道之眼—궁극의 적은, 지금 이 순간 어둠 속에서 그의 모든 수를 응시하고 있는 것은 아닐까? 바람이 천청봉을 스치며, 사절의 궁색했던 발소리를 데려갔다. 그러나 공기에 가득한山雨가 올 것 같은 압박감은 사라지지 않았다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_019",
+        "content": "오늘의 전투로, 그는 모든 사람에게 보여주었다—천기는 폐물이 아니라고. 다만 그들은 모른다. 이 '연기' 배후에, 그가 이미 몇 수의 장기을 놓았는지. 황조 사절이 궁색하게 떠났지만, 천기는 이것이 더 큰 폭풍의 전주곡임을 알고 있었다—천기록의 기운이 이미 드러났고, 더 위험한 존재가 어둠 속에서 지켜보고 있었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_020",
+        "content": "보이지 않는 허공 어딘가에서, 인간의 이해를 초월하는 존재가 미세하게 떨렸다.天道之眼의 촉수는, 이 체면할 수 없이 그를 향해 조용히 뻗어가고 있었다.운명의 톱니바퀴는, 이미 회전하기 시작했다.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

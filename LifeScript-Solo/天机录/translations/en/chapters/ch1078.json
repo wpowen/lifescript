@@ -1,0 +1,380 @@
+{
+  "id": "天机录_ch1078",
+  "book_id": "天机录",
+  "number": 1078,
+  "title": "\"Prologue of the New World\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"Just as Chen Ji was about to step into the new era, a familiar figure emerged slowly from the radiance of the Axis of Destiny—a silhouette bearing the沧桑 of ten thousand years. It was Chen Nian, who had been missing for ages, come to offer her elder brother a final farewell...\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1078_001",
+        "content": "\"The projection of the Axis of Destiny stretched across the heavens, its flowing patterns identical to the Tianji Record Fragment in Chen Ji's hand, as if their encounter had been fated since time immemorial. He gazed upon this breathtaking wonder, his fingertips trembling slightly—not from fear, but because some long-buried memory was stirring awake. Mo Xiansheng's remnant soul churned violently within the depths of the Tianji Record, as if glimpsing a truth never meant to be seen. 'So that's how it is...' Chen Ji murmured, a knowing smile curving his lips. 'Hidden quite deeply, haven't you.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1078_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Within the projection, a towering figure slowly took form. Cang Yutian abandoned his demeanor as the Eternal Chessmaster, revealing his true face for the first time—a visage that transcended mortal comprehension, eyes like the interweaving radiance of sun and moon, surrounded by countless shadows of rising and falling civilizations. 'Chen Ji,' his voice carried not the lofty judgment of before, but a long-absent solemnity, 'you have traveled further than I anticipated. Beyond the Celestial Realm, I represent the lineage of 'Guardians of Civilization.' We have awaited this day for three epochs.'\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_003",
+        "content": "\"Chen Ji said nothing, merely watching his former adversary in silence. He knew Cang Yutian too well—every gesture of goodwill from that man concealed a price, every moment of candor might be a deeper scheme. Yet at this instant, the patterns on the Axis of Destiny were resonating with the Tianji Record, a communion beyond language. 'Guardians of Civilization?' Chen Ji finally spoke, his voice cold and detached. 'Sounds admirable. But I want to know—what is it you protect? Order, or civilization itself?'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1078_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Cang Yutian's lips curved in a faint smile, carrying a sincerity Chen Ji had never witnessed before. 'You've struck the core question.' He gestured, and countless fragments of realms materialized upon the Axis of Destiny—flourishing civilizations, extinct races, wars that never ceased. 'The Eye of Heavenly Mandate is not a singular consciousness; it is the accumulated 'Will of Order' across countless epochs. And we—the Guardians of Civilization—are the counterbalancing force it has deployed throughout the mortal realm. Too much order suffocates civilization; too little plunges it into chaos. The Tianji Record you hold was itself a product of this balance.'\"",
+        "emotion": "坦诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_005",
+        "content": "\"The radiance at the heart of the Celestial Realm suddenly shifted, and countless law runes gushed forth from the void, weaving before Chen Ji into an immense web. Each rune represented a governing law—time, space, cause and effect, reincarnation... And now, they awaited being redefined. 'This is the framework of the new world.' Cang Yutian's voice echoed through the vast Celestial Realm. 'You have three choices—become an Observer, recording all without interference; become a Guide, steering history at critical moments; or... become a Co-Ruler, sharing dominion over this new era's power with me.'\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1078_006",
+        "prompt": "\"The rules of the new world shall be defined by you. What identity will you adopt to enter this new era?\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choice_observe",
+            "text": "\"Become the Observer\"",
+            "description": "\"Record the myriad aspects of the world from a spectator's stance, never intervening in any conflict proactively. This is the safest identity, but also the most solitary choice.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Relinquish intervention rights\"",
+            "visible_reward": "\"Obtain the title 'Transcendent One,' immune to all laws\"",
+            "risk_hint": "\"You will be unable to protect those you care about directly\"",
+            "process_label": "陈机选择以旁观者身份审视新世界",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1078_result_observe_001",
+                  "content": "\"Chen Ji gazed upon that web of laws, then suddenly laughed. 'Observer? Interesting.' He strode toward the center of the luminous web but did not reach out to touch it. 'But I have one condition—among my subjects of observation, I include you.' Cang Yutian paused momentarily, then burst into laughter: 'Excellent! In ten thousand years, you are the first to dare place me within observation's scope. For that courage alone, you are worthy of this Observer's seat!'\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "新世界身份_观察者"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_guide",
+            "text": "\"Become the Guide\"",
+            "description": "\"Steer the course of history at critical junctures, subtly influencing the progression of civilization. This is the role Chen Ji mastered—a chess player concealed in the shadows.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Remain forever behind the scenes\"",
+            "visible_reward": "\"Obtain 'Fate Weaver' permissions, capable of existing across multiple timelines simultaneously\"",
+            "risk_hint": "\"Your existence shall be forgotten by the world\"",
+            "process_label": "陈机选择以引导者身份暗中布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1078_result_guide_001",
+                  "content": "\"'Guide...' A sharp glint flickered in the depths of Chen Ji's eyes. This identity was as if tailor-made for him. He need not become a hero upon the stage; he only needed to gently pluck destiny's threads at crucial moments. 'I favor this role.' He raised his hand, and the Tianji Record Fragment glowed faintly in his palm. 'But I have my own chess game to play—you manage the macro, I manage the micro. How about we don't meddle in each other's affairs?' Cang Yutian studied him for a long moment, then slowly nodded: 'Indeed, the most suitable partner.'\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "新世界身份_引导者"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_cogovern",
+            "text": "\"Become the Co-Ruler\"",
+            "description": "\"Stand as equal to Cang Yutian, sharing dominion over the new world's power. This is the boldest choice, and it means directly confronting the remnant will of the Eye of Heavenly Mandate.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Final severance from the Eye of Heavenly Mandate\"",
+            "visible_reward": "\"Obtain 'World Sovereign' permissions, capable of rewriting fundamental laws\"",
+            "risk_hint": "\"The Eye of Heavenly Mandate will seek your utter annihilation throughout the new world\"",
+            "process_label": "陈机选择以共治者身份挑战至高权柄",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1078_result_cogovern_001",
+                  "content": "\"Chen Ji met Cang Yutian's gaze directly, the sun-and-moon radiance reflected as twin sparks of light in his eyes. 'Co-ruler?' His voice was terrifyingly calm. 'You mean, standing as your equal?' Cang Yutian said nothing, merely offering a slight nod. In the next instant, Chen Ji laughed—a laugh carrying mockery, madness, and a resolve to burn every bridge behind him. 'Very well! If Heaven's Mandate insists on treating me as a chess piece, then I shall overturn this entire board!' He raised his hand, and the Tianji Record and Axis of Destiny erupted with world-shaking radiance. The two forces converged in the air, resonated, and ultimately fused as one.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "新世界身份_共治者",
+              "与天道之眼决裂"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "谋略",
+              "min": 80
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1078_007",
+        "content": "\"Just as the law web was about to solidify, a crack suddenly split open in the depths of the Celestial Realm's core. Ten thousand rays of rosy clouds poured forth from the fissure, enveloping a familiar silhouette—Su Qingyao, tearing through space in a manner transcending all convention. Her garments fluttered wildly, her eyes faintly reddened, yet she maintained her usual cold and proud bearing. 'Chen Ji...' Her voice trembled slightly. 'The ten-thousand-year promise—I have come.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1078_008",
+        "character_id": "char_suqingyao",
+        "content": "\"Chen Ji turned, and at the sight of that face unchanged across ten millennia, a certain frozen fortress in his heart shattered violently. He remembered the stunning first encounter at Tianqing Sect, her relentless questioning, her resolute sacrifice to shield him in the final battle... 'How did you get in?' His voice was somewhat hoarse. 'The Celestial Gate wasn't supposed to—' Su Qingyao cut him off, offering him a tender smile he had never witnessed before: 'Have you forgotten what I am now?' She raised her hand, and a radiance resonating with the Tianji Record bloomed from her brow center. 'I am your 'Life-Bound Companion.' Where you are, there am I.'\"",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_009",
+        "content": "\"Chen Ji stared at her, momentarily at a loss for words. Ten thousand years, countless brushes with life and death—he had believed himself long accustomed to solitude. But now, she stood before him, bearing ten thousand years of waiting and vigil. 'Fool.' He finally spoke, his voice carrying an irrepressible tremor. 'Do you have any idea how dangerous this is? The Eye of Heavenly Mandate still watches with hungry eyes—your barging in like this—' Before he could finish, Su Qingyao stepped forward, pressing her hand over his mouth: 'I waited ten thousand years, not to receive a lecture.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1078_010",
+        "character_id": "char_suqingyao",
+        "content": "\"Cang Yutian watched this scene in silence, a complex emotion flickering in his eyes. He cleared his throat lightly, breaking the rare tenderness: 'Ahem... the two of you, the new world's framework requires one final confirmation.' Su Qingyao withdrew her hand, resuming her cold and proud posture as Inner Disciple Senior Fellow, but Chen Ji caught the faint flush at her ears. 'Speak.' Her voice remained cold. Cang Yutian gestured toward the law web: 'The new world requires two pillars to sustain it—'Observation' and 'Guidance.' The two of you happen to be ideally suited to each.'\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_011",
+        "content": "\"Chen Ji and Su Qingyao exchanged a glance, and ten thousand years of unspoken understanding passed between them without need for words. 'I'll take Observation.' Su Qingyao spoke first, her voice cold yet resolute. 'Record all good and evil in the world, preserving evidence for future judgment.' Chen Ji smiled faintly: 'Then I'll take Guidance.' He raised his hand, and the Tianji Record Fragment slowly revolved in his palm. 'Steer history at critical moments; ignite sparks at destiny's crossroads.' Two beams of light rose from their bodies and merged into the law web. The雏形 of the new world had truly taken shape at last.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1078_012",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"'Excellent.' Cang Yutian's form began to fade gradually. 'The new world shall officially commence in forty-nine days. Before then, you still have time for final preparations.' His voice grew ethereal. 'By the way, the 'Eye of Heavenly Mandate' will not take this lying down. Its remaining forces within the Celestial Realm have already begun to stir. Moreover...' His gaze fell upon Chen Ji with profound meaning. 'Your sister, Chen Nian. Her connection to the birth of the new world is immense. Find her, before everything begins.'\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_013",
+        "content": "\"Chen Ji's pupils contracted sharply. Chen Nian—that sister who had vanished for years, taken by the Holy Sect to serve as the 'Heavenly Fate Lock Key.' He had divined her location countless times, yet every attempt yielded only blurred imagery. The Tianji Record's prophecies concerning her were always filled with unparseable chaos. 'Do you know where she is?' His voice was low, carrying a dangerous edge. Cang Yutian shook his head: 'I do not. But I know that when the new world opens, she will certainly appear.'\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1078_014",
+        "prompt": "\"The new world's opening approaches. How will you utilize these final forty-nine days?\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "choice_prepare",
+            "text": "\"Search for Chen Nian\"",
+            "description": "\"Deploy the full power of the Tianji Record to deduce Chen Nian's location. She is the key to the new world, and your sole vulnerability.\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Consume a large amount of Heavenly Fate\"",
+            "visible_reward": "\"May locate Chen Nian ahead of time, gaining her 'Heavenly Fate Lock Key' ability\"",
+            "risk_hint": "\"Overusing the Tianji Record may attract the Eye of Heavenly Mandate's attention\"",
+            "process_label": "陈机决定在最后时刻到来前找到妹妹",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1078_result_prepare_001",
+                  "content": "\"Chen Ji closed his eyes, and the Tianji Record Fragment unfurled slowly in his palm. Countless visions flooded his mind like a tide—past, present, future, interweaving into an immense and intricate web. His brow furrowed tighter, fine beads of sweat forming on his forehead. Finally, he opened his eyes, a spark of delight flashing within: 'Found her.' Su Qingyao asked urgently: 'Where?' Chen Ji pointed toward that luminous realm deep within the Celestial Realm: 'Right there. She has been waiting for us all along.'\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现陈念位置"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_guard",
+            "text": "\"Fortify the Defenses\"",
+            "description": "\"Together with Su Qingyao, reinforce the Celestial Realm's defensive fortifications, ensuring the new world's opening is not disrupted by the Eye of Heavenly Mandate's remnant forces.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Consume a large amount of energy\"",
+            "visible_reward": "\"Celestial Realm defenses significantly enhanced, obtaining the 'Twin Guardians' skill\"",
+            "risk_hint": "\"May miss the optimal timing for finding Chen Nian\"",
+            "process_label": "陈机选择巩固防御，为新世界做万全准备",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1078_result_guard_001",
+                  "content": "\"Chen Ji and Su Qingyao stood side by side, two forces circulating between them in a perfect cycle. The 'Life-Bound' bond made their coordination seamless. The Celestial Realm's barriers grew ever more solid under their reinforcement, faintly emanating a radiance sufficient to deter all invaders. 'Thus, even if the Eye of Heavenly Mandate launches a full assault, it shall not set foot here by even half a step.' Su Qingyao's voice was cold. Chen Ji nodded, yet his gaze turned toward that distant luminous realm—perhaps harboring his greatest regret of ten thousand years, or perhaps the greatest variable in the new world.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天界防御完成"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "choice_reconnect",
+            "text": "\"Accompany Qingyao\"",
+            "description": "\"Ten thousand years of separation mean countless words unspoken. Before everything changes, he wishes to spend rare, peaceful moments with her.\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Sacrifice a portion of preparation time\"",
+            "visible_reward": "\"Bond with Su Qingyao reaches new heights, unlocking the 'One Heart' passive effect\"",
+            "risk_hint": "\"May be inadequately prepared when the new world opens\"",
+            "process_label": "陈机选择珍惜当下，与苏青瑶共度最后的宁静",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1078_result_reconnect_001",
+                  "content": "\"Chen Ji did something that even Su Qingyao found unexpected—he extended his hand and grasped hers. 'Not so fast.' His voice was soft. 'After ten thousand years apart, I have far too much I wish to say to you.' Su Qingyao's body visibly stiffened for an instant, then quickly relaxed. She did not pull away; instead, her fingers tightened slightly. '...Alright.' Her voice remained cold, yet Chen Ji distinctly felt her hand trembling. The two stood shoulder to shoulder atop the Celestial Realm's clouds, watching the new world's雏形 slowly take form in the distance. Ten thousand years of沧海桑田 transformed in this moment into silent companionship.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "与苏青瑶羁绊加深"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与苏青瑶的万年重逢",
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch1078_015",
+        "content": "\"Just then, a peculiar fluctuation arose from the depths of that luminous realm. Chen Ji and Su Qingyao turned simultaneously, to witness a slender figure slowly emerging from the light. It was a young girl, bearing a sevenfold resemblance to Chen Ji, yet appearing more youthful and spirited. Her eyes shone bright as stars, yet tears welled the moment they fell upon Chen Ji. 'Brother...' Her voice carried a sob, yet she strained to maintain a smile. 'I waited for you... so, so long.'\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1078_016",
+        "character_id": "char_chenian",
+        "content": "\"Chen Ji's form stiffened slightly. Ten thousand years had passed—the little girl who once chased after him calling 'Brother, brother'—she had grown into a young woman capable of standing alone. Yet her eyes remained clear, still carrying that familiar dependence and affection. 'Niannian...' His voice was somewhat hoarse, and his outstretched hand paused mid-air—he did not know how to face this sister whose entire life had been upended because of him. Chen Nian, however, threw herself into his arms without hesitation, her tears soaking his garments: 'Brother, see you in the new world... as equals.'\"",
+        "emotion": "感动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_017",
+        "content": "\"The rigidity in Chen Ji's body finally softened. He raised his hand and gently stroked Chen Nian's hair, just as he had when they were children. 'Silly girl...' His voice carried a faint, barely perceptible tremor. 'Brother owes you an apology. Making you bear so much alone.' Chen Nian shook her head, lifting her tear-streaked face, yet smiling: 'Brother is wrong. Without those experiences, I would not be who I am today. And now—' She stepped back, her tears gradually fading, replaced by an unprecedented resolve. 'I can stand beside you now. Not as a weakling to be protected, but as a warrior fighting shoulder to shoulder with you.'\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_018",
+        "content": "\"Su Qingyao watched this reunion of siblings in silence, her own eyes slightly moist. She thought of her own ten-thousand-year separation from Chen Ji, those solitary nights of waiting, and suddenly the scene before her seemed extraordinarily precious. Chen Nian seemed to sense her gaze, turning her head with a mischievous smile: 'Sister-in-law, from now on, please take good care of my brother.' Su Qingyao's face flushed crimson: 'You—you're talking nonsense—' Chen Ji and Chen Nian laughed in unison, their voices echoing across the heights of the Celestial Realm, dispersing the gloom that had accumulated for ten thousand years. The dawn of the new world had truly arrived at this moment.\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_019",
+        "content": "\"In the midst of this warm atmosphere, the projection of the Axis of Destiny suddenly shuddered violently. Cang Yutian's voice rang out from the void, carrying a rare gravity: 'Chen Ji, the remnant will of the Eye of Heavenly Mandate is gathering toward this location. They have sensed the birth of the new world and are assembling their final forces.' Chen Ji's expression instantly chilled, yet he did not panic—he had witnessed far too many such moments. 'How many?' he asked. 'Enough to annihilate three major sect forces.' Cang Yutian's voice paused briefly. 'Moreover, there is one presence among them you know quite well... Ling Yuan.'\""
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1078_020",
+        "content": "\"Chen Ji's gaze sharpened abruptly. Ling Yuan—that former Sect Master of Tianqing Sect, that inheritor candidate whom the Tianji Record had overlooked, that hidden BIG BOSS running through the entire narrative. Ten thousand years of scheming, countless clashes—he had believed he had long since factored this threat into his grand design. Yet now, at this critical juncture when the new world was about to be born, he had reappeared. 'Interesting.' Chen Ji murmured, a dangerous smile curving his lips. 'Old friend, since you insist on coming to meet your doom, I shall grant you that wish.' He turned to look at Su Qingyao and Chen Nian. 'The first battle of the new world—we shall use him as the sacrificial offering.'\""
+      }
+    }
+  ]
+}

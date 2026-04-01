@@ -1,0 +1,463 @@
+{
+  "id": "天机录_ch0571",
+  "book_id": "天机录",
+  "number": 571,
+  "title": "The Dead Return",
+  "is_paid": true,
+  "next_chapter_hook": "When the jade pendant inscribed with the Chen family's bloodline mark was placed in Chen Ji's palm, he realized—the board for this game was far older than he had imagined.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0571_001",
+        "content": "In the depths of the dark mountain cave, Chen Ji sat cross-legged on a blue stone, with dust scattered three feet around him, clearly having remained motionless for many days. The cost of feigning death far exceeded expectations—the self-directed 'fall' had deceived not only the Tianqing Sect's investigation but also the heavens' perception, yet it caused his Heavenly Fate to plummet to a dangerous threshold. The Tianji Record Fragment glowed faintly in his mental sea, resembling a dying candle flame, on the verge of extinction. Chen Ji closed his eyes in meditation, gathering all his spiritual sense deep into his dantian, attempting to recover his depleted energy in the most conservative posture. 'Three more days,' he calculated silently, 'just three more days, and I can use the Tianji Record to deduce the world's trends once more.' However, the moment he entered meditation, a faint fragrance drifted into his nostrils—delicate osmanthus, carrying a trace of old familiarity.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_002",
+        "character_id": "char_chenian",
+        "content": "'Three years apart, and brother's vigilance has indeed dulled.' The cold female voice echoed in the darkness, carrying an indescribable complexity, 'If I had truly come for your life, you would already be a corpse.'",
+        "emotion": "戏谑中带着试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_003",
+        "content": "Chen Ji's eyelashes trembled violently. The familiar voice, ingrained in his bones, struck like thunder, forcibly pulling him from meditation. He did not open his eyes immediately but sent his spiritual sense outward first—the visitor was alone, cultivation unfathomable, yet completely devoid of murderous intent. At the mountain cave's entrance, a slender figure stood in the dim light, the backlit silhouette outlining delicate shoulders and a slim back. Chen Ji slowly opened his eyes, his pupils gradually contracting as they adapted to the darkness, finally clearly seeing that face—a visage bearing seven-tenths resemblance to his own, gazing at him with an expression he could not interpret. 'Chen Nian?' His voice was hoarse, as if pulled from a dried-up well, 'Or yet another substitute?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_004",
+        "character_id": "char_chenian",
+        "content": "'Substitute?' The woman scoffed lightly, walking closer step by step, each footstep landing precisely on Chen Ji's taut nerves, 'When brother sent me to the Holy Sect for \"protection\" back then, he never asked if I wanted to be some Heavenly Fate Lock Key. Now, not even recognizing your own sister?' She stopped three feet before him, looking down at this withered man, 'Rest assured, if I were from the Holy Sect, no amount of hiding would help—they simply don't know you're still alive.'",
+        "emotion": "讥讽中藏着委屈"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_005",
+        "content": "Chen Ji braced against the blue stone to stand, his form swaying before stabilizing. His gaze swept across Chen Nian's face, attempting to find any flaws in those eyes identical to his own. Memories surged like a tide—ten years ago on that rainy night, he had stuffed the eight-year-old Chen Nian into a Holy Sect escort carriage. At that time, he thought it was protection, a strategic move, never once asking if that little girl was willing. 'How did you find me here?' he finally asked, his voice recovering its usual composure, 'The Tianji Record's concealment has even deceived the old sect master's divinations.'",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_006",
+        "character_id": "char_chenian",
+        "content": "'The Tianji Record?' Chen Nian's lips curved slightly upward, that smile carrying an indefinable meaning, 'Brother is indeed still brother, attributing everything to the Tianji Record. You think I spent three years searching for you through some heavenly divination?' She drew a jade pendant from her sleeve, entirely black save for a dark golden fragment embedded in its center, glowing faintly in the darkness, 'The Chen family's ancestral寻亲符 requires both parties' bloodlines to activate simultaneously. As long as we're both alive, even if you hid in the Nine Netherworlds, I could locate you.'",
+        "emotion": "得意中隐含深意"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_007",
+        "content": "Chen Ji's pupils constricted sharply. 寻亲符—the legacy left by their father, the last family head before the Chen family's destruction. He had always believed that item was destroyed on the night of the family's annihilation, never expecting Chen Nian to have preserved it to this day. More importantly, the activation conditions for the寻亲符 were extremely stringent, requiring both parties to think of each other at the same moment with the same intention—this meant Chen Nian had never given up searching for him over these three years. 'What are you here for?' He lowered his eyes, pressing that fleeting emotion back into his heart, 'Don't tell me this is just a reunion. The Holy Sect's 'Heavenly Fate Lock Key' isn't something you can simply walk away from.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0571_choice_001",
+        "prompt": "Chen Nian's words were filled with doubts—she escaped from the Holy Sect? Why now? Chen Ji needed to make a choice between probing and trusting.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0571_c1_001",
+            "text": "Directly question her true purpose",
+            "description": "Be straightforward without beating around the bush—Chen Ji has never been an emotional person; he needs to confirm whether the person before him is trustworthy.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May provoke the other party and miss the opportunity to obtain key information",
+            "visible_reward": "Quickly filter information and eliminate possible traps",
+            "risk_hint": "If she truly intends to help, a cold and harsh attitude may damage the sibling relationship",
+            "process_label": "试探她的底线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0571_result_c1_001_001",
+                  "content": "Chen Ji stepped forward, shortening the distance between himself and Chen Nian to less than two feet. He stared directly into her eyes—those irises identical to his own reflected his own image, along with some emotion he could not identify. 'Three years,' his voice was soft yet carried undeniable pressure, 'The Holy Sect has at least three Jindan-stage Law Enforcement Elders rotating day and night to guard the Heavenly Fate Lock Key. How did you escape? If you ran, why didn't they pursue and kill you? If they released you—' He paused, his tone suddenly turning cold, 'What do they want you to do?'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0571_c1_002",
+            "text": "Retreat to advance, express trust",
+            "description": "First放下戒备，释放善意—若她真是陈念，这份信任会成为拉近关系的契机；若不是，她的反应会暴露破绽。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May expose one's own weakened state",
+            "visible_reward": "Establish a foundation of trust to obtain more key information",
+            "risk_hint": "If the visitor harbors ill intentions, one may fall directly into their trap",
+            "process_label": "先交心，后交底",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              },
+              {
+                "stat": "天命值",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0571_result_c1_002_001",
+                  "content": "Chen Ji stepped back half a pace, leaning against the blue stone again. His posture appeared relaxed, but in reality it concealed the weakness from standing moments ago—the backlash from feigning death had not yet fully subsided, and every large movement was draining his remaining energy. But he chose to take this gamble. 'Three years,' his voice suddenly softened, carrying a weariness even he found unfamiliar, 'Xiao Nian, these three years... you've suffered.' He looked into her eyes, 'I don't know how you escaped, nor do I know what the outside world has become. But since you could find this place, it shows you're stronger than I imagined. Whatever you're here for—sit down and let's talk.'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "chenji_showed_vulnerability",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_008",
+        "content": "The silence in the mountain cave stretched for several breaths, the air filled with a subtle tension. Chen Nian stared at Chen Ji for a long while, her gaze seeming to want to pierce through his entire being. Finally, she sighed lightly and sat down on the ground, maintaining precisely a three-foot distance from him—both the boundary of trust and the bottom line of distrust. 'We're both from the Chen family,' her voice lowered, 'Some things, even without my saying, you should have guessed. From the beginning, the Holy Sect never intended to cultivate me as a 'Lock Key.' What they needed was—' She paused, a bitter smile appearing at the corner of her mouth, 'A vessel.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_009",
+        "character_id": "char_chenian",
+        "content": "'The Heavenly Eye needs a shell capable of carrying its fragmentary spirit, and the Chen family bloodline is the most perfect medium.' Chen Nian's voice was terrifyingly calm, as if discussing something completely unrelated to herself, 'All these years, they've implanted a forbidden restriction within me. It activates once every month. That kind of pain... brother, you should be able to imagine.' She raised her head, her gaze colliding with Chen Ji's, 'Three months ago, I finally found a method to break the restriction—the price being, the Holy Sect would immediately sense my escape. So I didn't go find you, because I knew you were still in the middle of your layout and could not yet expose yourself.'",
+        "emotion": "压抑的痛苦"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_010",
+        "content": "Chen Ji's knuckles unconsciously tightened. The Heavenly Eye—that terrifying existence he wouldn't realize until volume eight,竟然早在十年前就将触手伸向了陈家。 He had always thought Chen Nian being taken by the Holy Sect was a misstep in chess, a scheme by the enemy, never expecting that behind all this lay the layout of that 'eye.' And his act of personally sending his sister into the tiger's mouth had, in a sense, become 'conforming to heavenly fate.' 'So you've come to me,' he took a deep breath, pressing the surging emotions back into his chest, 'Not just for a reunion. The Holy Sect won't let you go, and the Heavenly Eye even less so. You need a sanctuary—or rather, a chip that can oppose them.'",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0571_choice_002",
+        "prompt": "The amount of information Chen Nian revealed was immense. Chen Ji needed to decide how to advance this conversation.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0571_c2_001",
+            "text": "Pressing about what Chen Nian meant by 'bargaining chip'",
+            "description": "Getting straight to the core—since Chen Nian had risked coming to find him, she must have a clear purpose. Rather than waiting passively, it was better to take the initiative and find out her hidden cards.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Might appear overly eager and lose the initiative",
+            "visible_reward": "Quickly obtain key intelligence and clarify the points of mutual interest",
+            "risk_hint": "If she has other intentions, this might expose your urgent needs",
+            "process_label": "亮出底牌的时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敬畏",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0571_result_c2_001_001",
+                  "character_id": "char_chenian",
+                  "content": "Upon hearing this, a flash of approval crossed Chen Nian's eyes. She took out a yellowed letter from her bosom, on which a complex formation diagram was drawn using the Chen family's secret method. \"This is the internal structure of 'Tianxue Pavilion'—the place where the Holy Sect imprisoned me.\" She handed the letter to Chen Ji. \"More importantly, I spent ten years there, and in those ten years, I saw far too many things I shouldn't have. For example—\" her voice dropped to an extremely low whisper, \"evidence of Ling Yuan's secret dealings with the Holy Sect.\"",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0571_c2_002",
+            "text": "Proposing an exchange condition: first help her deal with the Holy Sect's pursuit",
+            "description": "Stating his position—cooperation is possible, but it must be built on equality. Chen Ji wouldn't make a losing deal, even if the other party was his own sister.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Might delay obtaining intelligence",
+            "visible_reward": "Establishing dominance in the cooperative relationship to ensure one's own safety",
+            "risk_hint": "If she has other urgent matters, this might create discord",
+            "process_label": "确保自身利益",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0571_result_c2_002_001",
+                  "character_id": "char_chenian",
+                  "content": "\"Cooperation is possible.\" Chen Ji's tone was flat, yet carried an unmistakable air of non-negotiation. \"But before that, you need to resolve one issue—how did you track me here? Since the Holy Sect could detect your escape at the first moment, they wouldn't have failed to leave a failsafe on you.\" His gaze fell on the sachet at Chen Nian's waist. \"That osmanthus fragrance doesn't seem like ordinary incense. If I guess correctly, what's hidden inside is the Holy Sect's tracking restriction, right?\"",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_011",
+        "content": "Chen Nian's expression froze for an instant, then turned into a light laugh. That laughter echoed in the empty mountain hollow, carrying a hint of self-mockery and relief. \"Brother is still the same brother.\" She untied the sachet from her waist and casually tossed it to Chen Ji. \"You're right—this is the 'Guiding Bee' the Holy Sect placed on me. I searched for you for three years, spending the first two in passive flight, until three months ago—\" her gaze turned sharp. \"I discovered that as long as I approached areas with intense Heavenly Fate fluctuations, the Guiding Bee would temporarily lose its effect. So I guessed—you must have encountered something major that caused your Heavenly Fate to plummet. And an opportunity that could put Chen Ji in a desperate situation? Those are few and far between across the entire cultivation world.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_012",
+        "character_id": "char_chenian",
+        "content": "\"So you weren't looking for me,\" Chen Ji took the sachet, his fingertips gently stroking the embroidery, sensing the dormant restriction force within. \"You were looking for my 'weakness'.\" He raised his head, meeting Chen Nian's gaze. \"A weakness large enough to shield the Holy Sect's pursuers and confirm that I was still alive. Little Nian, you're more ruthless than I imagined.\"",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_013",
+        "content": "\"Same goes for you.\" A cold smile appeared on Chen Nian's face. \"When you sent me to the Holy Sect back then, wasn't it with exactly that same expression of having calculated everything? I was only eight years old then, knowing nothing. I only knew that the place Brother said was safe. Later I understood—\" her voice suddenly turned cold. \"You knew from the very beginning what the Holy Sect would do to me. You were merely calculating how to minimize the damage, how to maximize the value of the 'discarded piece'. Brother, people of the Chen family have always been this cold-blooded, haven't they?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0571_choice_003",
+        "prompt": "Chen Nian's words were like a blade, stabbing directly into the scar deep within Chen Ji's heart. This was the first time in ten years that they had faced this rift directly.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0571_c3_001",
+            "text": "Admitting to the calculations of the past, but without regret",
+            "description": "Facing it with frankness—there's no word for 'regret' in Chen Ji's dictionary. Everything he did back then was the optimal choice under those conditions. Denial is meaningless; better to face it directly.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Might completely escalate the sibling conflict",
+            "visible_reward": "Establishing a foundation for equal dialogue, making the other party drop the moral blackmail",
+            "risk_hint": "Chen Nian might completely turn dark",
+            "process_label": "冷血但正确",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0571_result_c3_001_001",
+                  "content": "Chen Ji offered no defense, nor did he show any trace of guilt. He simply listened quietly to Chen Nian's accusation, then nodded. \"You're right.\" His voice was calm to the point of being icy. \"I calculated against you back then, sent you to the Holy Sect, because that was the only way to at least save your life. If I hadn't done that, with the Chen family's remnants' strength at the time, we couldn't possibly protect an eight-year-old child. The Holy Sect would come to take you, Ling Yuan would come to silence you, and the Eyes of Heavenly Dao would erase all pieces that might threaten the arrangement in the first instant.\" He stared straight into her eyes. \"I kept you alive—that was everything I could do. As for whether you hate me or not—that's your choice.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0571_c3_002",
+            "text": "Revealing his true feelings: he too suffered through those years",
+            "description": "Dropping the mask—over these ten years, Chen Ji had never told anyone that every night he dreamed of that rainy night, dreamed of the look in Chen Nian's eyes as she was dragged onto the carriage. Sometimes, calculation and emotion aren't contradictory.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Exposing one's soft interior might lead to being taken advantage of",
+            "visible_reward": "To repair the cracks accumulated over ten years and truly build trust",
+            "risk_hint": "If Chen Nian doesn't appreciate this, the display of weakness will be meaningless",
+            "process_label": "以真心换真心",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0571_result_c3_002_001",
+                  "content": "Chen Ji's Adam's apple bobbed slightly—that subtle movement he only made when suppressing emotions. After a long while, he finally spoke, his voice carrying a hoarseness that even surprised himself. \"Do you know what I've dreamed about every night for the past ten years?\" He lowered his head, staring at his own hands. \"It wasn't the tragic scene of the Chen family's destruction, nor my parents' dying gazes. It was that rainy night—the look you gave me when you glanced back as you were dragged onto the carriage.\" His voice trembled slightly. \"You hate me, I accept that. But Xiaonian, I've never regretted saving you, never for a single moment forgotten your existence. These ten years, every chess piece I've placed was, half of them, for the day I could pull you out of that hell.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "chenji_bared_his_soul",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_014",
+        "content": "Silence descended upon the mountain hollow once more. Chen Nian's expression shifted between light and shadow, like a painting repeatedly retouched. Finally, she sighed softly—that sigh carried too many indescribable emotions. \"Forget it.\" Her voice returned to its previous composure, yet with a subtle softness that was hard to detect. \"The past cannot be debated for right or wrong. We are both Chen family people, sharing the same blood, both inheriting the Chen family's 'cold-bloodedness.'\" She stood up, walked to Chen Ji, and handed the寻亲符 back into his hand. \"Take this back. From now on, what you want to do and what I want to do can become one.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_015",
+        "character_id": "char_chenian",
+        "content": "\"The Heavenly Eye isn't merely calculating you and me,\" Chen Nian's voice lowered, carrying a sense of resolve. \"It's calculating all Heavenly Fate bearers in the cultivation world. The Tianji Record, the Sons of Destiny, even those so-called 'protagonists'—in their eyes, all are replaceable chess pieces. Brother, the reason you survived until now is because the Tianji Record chose you; and the Tianji Record chose you because it needs a blade to oppose the Heavenly Eye.\" She paused. \"But blades have lifespans. Once you're used up, they'll simply replace you.\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_016",
+        "content": "Chen Ji held the寻亲符, his fingertips feeling the faint warmth radiating from the jade. This was the last relic their father left them, the sole proof that the Chen bloodline continued to this day. The wind outside the mountain hollow mournfully whistled through the crevices, like whispers of ancient departed souls. \"So you came,\" he finally spoke, his voice regaining its usual composure. \"Not just to tell me these things. You need an ally who can oppose the Heavenly Eye, and I happen to meet all the conditions. But that's not the real reason you came here—\" He raised his head, meeting Chen Nian's gaze. \"Tell me, Xiaonian. What exactly do you want me to help you with?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_017",
+        "character_id": "char_chenian",
+        "content": "A deeply meaningful arc curved at the corner of Chen Nian's lips—that expression she only showed when a scheme succeeded. \"Simple.\" She drew a jade slip from her sleeve, inscribed with a rune Chen Ji recognized instantly—it was the unique mark found on Tianji Record Fragments. \"In three months, the Tian枢 Pavilion will hold a 'Sacrificial Heaven Ceremony.' At that time, all imprisoned Heavenly Fate Keys will be brought to the altar to be sacrificed to the Heavenly Eye.\" Her voice was terrifyingly calm. \"Including me, and the Heavenly Fate bearers from seven other families. If Brother wants to save me, he must—\" She stuffed the jade slip into Chen Ji's hand. \"Destroy this ceremony.\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_018",
+        "content": "Chen Ji lowered his head, gazing at the jade slip in his hand. The incomplete Tianji Record within his Mental Sea suddenly violently trembled. That wasn't a warning—it was some long-lost resonance—as if something dormant for ages had been awakened by the news Chen Nian brought. He closed his eyes, probing the jade slip with his divine sense, and a massive formation diagram unfolded in his mind: the layout of Tian枢 Pavilion, the distribution of guards, the location of the altar, and—a core secret chamber hidden at the deepest point. Inside was sealed something that could overturn the entire cultivation world's order. \"This isn't something you could have planned alone.\" Chen Ji opened his eyes, his gaze burning as he stared at Chen Nian. \"The information in this jade slip is too detailed, so detailed it seems like someone deliberately leaked it to you. Xiaonian, who is helping you behind the scenes?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_019",
+        "character_id": "char_chenian",
+        "content": "Chen Nian fell silent for a moment, seemingly weighing how to answer. After a brief pause, she softly said: \"Does Brother still remember Mo Xiansheng?\" Her voice carried a complex emotion. \"That existence that guards the Tianji Record in a residual soul form—he told me.\" She paused. \"But he didn't help me unconditionally—he had me deliver a message to you: 'The chess game has reached mid-game, once a piece falls, there is no regret. If you still want to win, stop leaving your fate to the heavens to calculate.'\" Her gaze collided with Chen Ji's. \"Brother, the Tianji Record is indeed your reliance, but it's also the shackles the Heavenly Eye left on you. If you want to break this dead chess game, you must find something more fundamental than the Tianji Record—\" She pointed to that core secret chamber within the jade slip. \"Such as, the Heavenly Eye's original 'source code.'\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_020",
+        "content": "The wind outside the mountain hollow suddenly picked up, as if something was approaching. Chen Nian's expression shifted slightly; she rose quickly. \"Time is running out.\" She took another jade pendant from her bosom and stuffed it into Chen Ji's hand. \"This is a fragment of the Tian枢 Pavilion pass. This is all I could obtain. In three months, if you come, I'll wait for you at the altar; if you don't come—\" A bitter smile curved her lips. \"Then I'll just pretend I never had a brother like you.\" She turned and walked toward the cave entrance, her steps resolute.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0571_021",
+        "character_id": "char_chenian",
+        "content": "\"Wait.\" Chen Ji's voice rang out behind her, carrying an urgency that even surprised himself. Chen Nian stopped but didn't look back. \"I have one last question.\" Chen Ji stared at her back. \"The Heavenly Eye's original 'source code'—how does Mo Xiansheng know of its existence? Who exactly is he?\" Chen Nian's shoulders and back stiffened for an instant; after a moment, she laughed softly. \"This question,\" her voice drifted back faintly, \"you might as well ask him personally. After all—\" She finally turned her head, her gaze carrying a profound meaning. \"He is your most 'faithful' guardian, isn't he, Brother?\" The words fell; her figure vanished like a wisp of blue smoke in the wind at the cave entrance, leaving only a faint osmanthus fragrance lingering in the mountain hollow.",
+        "emotion": "戏谑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0571_022",
+        "content": "Chen Ji stood alone, the jade pendant carrying Chen Nian's body heat clutched in his hand. The寻亲符 glowed quietly beside him, like a faint yet stubborn spark. He closed his eyes, sinking his divine sense into the depths of his Mental Sea. The Tianji Record Fragment was trembling softly, as if responding to some long-unanswered summons. And above the fragment, Mo Xiansheng's vague silhouette seemed several degrees more solidified than before. \"Mid-game moves, no regrets...\" Chen Ji murmured to himself, when his lip corner suddenly arched into a cold smile. \"Very well, then let me see who ends up calculating whom in this chess game's final phase.\" He opened his eyes, his pupils reflecting the gradually brightening sky light outside the mountain hollow. Deep within that radiance, the gears of destiny had already begun to turn, and his true chess game was just beginning.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

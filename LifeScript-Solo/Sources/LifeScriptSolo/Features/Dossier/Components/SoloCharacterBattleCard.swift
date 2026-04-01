@@ -24,13 +24,13 @@ struct SoloCharacterBattleCard: View {
                         .lineLimit(1)
                 }
                 Spacer()
-                chip(text: intel.recommendedTag.rawValue, tint: chipTint)
+                chip(text: SoloLocalization.localized(intel.recommendedTag.rawValue), tint: chipTint)
             }
 
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 72), spacing: 8)], spacing: 8) {
-                metric(title: "牵引", value: intel.resonance, tint: accent)
-                metric(title: "局重", value: intel.influence, tint: SoloTheme.gold)
-                metric(title: "危险", value: intel.danger, tint: SoloTheme.crimson)
+                metric(title: SoloLocalization.localized("牵引"), value: intel.resonance, tint: accent)
+                metric(title: SoloLocalization.localized("局重"), value: intel.influence, tint: SoloTheme.gold)
+                metric(title: SoloLocalization.localized("危险"), value: intel.danger, tint: SoloTheme.crimson)
             }
 
             Text(intel.statusLine)

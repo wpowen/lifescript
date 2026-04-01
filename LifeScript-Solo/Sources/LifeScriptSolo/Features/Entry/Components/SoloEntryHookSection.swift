@@ -10,7 +10,7 @@ struct SoloEntryHookSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             SoloEntrySectionHeader(
-                eyebrow: "再往前一步",
+                eyebrow: SoloLocalization.localized("再往前一步"),
                 title: snapshot.branding.landing.hookTitle,
                 detail: snapshot.branding.landing.hookBody
             )
@@ -41,7 +41,7 @@ struct SoloEntryHookSection: View {
                     .buttonStyle(SoloPrimaryActionButtonStyle())
                 } else {
                     HStack {
-                        Text("章节装载中")
+                        Text(SoloLocalization.localized("章节装载中"))
                             .font(SoloTypography.label)
                         Spacer()
                         Image(systemName: "hourglass")

@@ -1,0 +1,487 @@
+{
+  "id": "天机录_ch0724",
+  "book_id": "天机录",
+  "number": 724,
+  "title": "天機初感",
+  "is_paid": true,
+  "next_chapter_hook": "天機録本体が警告を発する：「彼は最終の棋士ではない」、天道の目の背後にさらに高位の存在が存在することを示唆している。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0724_001",
+        "content": "使者の言葉は毒を浸した柔らかい刃のように、音もなく陳機の心の最も柔らかい場所を刺し込んだ。万年前の大火、自分が手をつけた——この八字が彼の脳裏で炸裂し、幾層もの波紋を巻き起こした。\n\nしかしながら陳機の顔は波瀾不动で、まるで使者の言葉など無聊な冗談に過ぎないかのように。彼は穏やかに茶盏を取り上げ、熱気を吹き払うように傾けた。その余裕のある佇まいに使者も予想外の色を見せた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_002",
+        "character_id": "char_chenji",
+        "content": "「万年前のあの大火を？」陳機がようやく口を開いた。声は平静そのもの、冷淡ささえ感じられた。「使者よ、夢でもない限りそのようなことは言わないだろう？もし私がそのような能力を持っていたなら、天青宗でこれほど無用の者に甘んじることはなかった」\n\n彼は目を上げ、その視線は水のようで底知れない深さを持っていた。",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_003",
+        "content": "使者は僅かに目を細め眼前のこの少年を打量した。単なる雑役弟子に過ぎないはずなのに、なぜその眼差しには人を戦慄かせる深淵のようなものが宿っているのか。彼は袖からあの奇妙な紋様を施した記章を再びしまい込み、嘴角の笑みが更深まった。\n\n「陳様は果然常人離れしておりますね」と彼は立ち上がりながら言った。「この記章は大人に贈呈つかわしましょう、必ずや思い出す日が来るでしょう」",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_004",
+        "content": "使者の身影が完全に夜の闇に消えてから、陳차는ようやく茶盏を下ろした。彼の指先は袖の中で微かに震えていた——恐怖ではなく、怒りのためである。\n\n運命に縛られ、受動的に予知を受け入れる这种感觉，他已经受够了。\n\n「既然你说我万年前放过火，」他低声呢喃，眼中闪过一丝决然，「那我倒要看看，这命运的锁链究竟是什么东西！」\n\n陳機转身进入密室，盘膝而坐。胸元で、那张残缺的天機録残頁隐隐发热。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0724_choice_001",
+        "prompt": "陳機の決意：天の規則を能動的に感知する、方法は複数存在する。彼は選択する：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0724_c1_a",
+            "text": "冒険的に天眼を開く",
+            "description": "欠損した天機録を直接使い無理に天眼を開き自分に絡みつく運命の糸に触れる。高リスクだが重要な情報を獲得できる可能性がある。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命値10点を消費する",
+            "visible_reward": "初めて能動的に運命の糸を感知できる可能性がある",
+            "risk_hint": "天命値が不足する状态下で無理に開くと神魂が損傷を受ける可能性がある",
+            "process_label": "开启天眼感应",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c1_a_001",
+                  "content": "陳機は一深吸気し、意識を識海に沈めた。彼は欠損した天機録残頁を核とし、無理に天眼を開こうとした。眉間から激烈な疼痛が炸裂し、まるで万本の針が脳を貫くような感覚に襲われた。\n\n「唔——！」彼は闷哼一声、额角渗出冷汗，但眼中的光芒却越来越亮。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天眼初开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 15
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c1_b",
+            "text": "穩健的に気を導く",
+            "description": "まず自身の霊力で天機録残頁を温め其自然発生的な共鳴を待つ。遅いながらも安全で確実である。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "3刻時間を消費する",
+            "visible_reward": "安全で安定的に天機録と初步的な 联系 を確立する",
+            "risk_hint": "時間が長くかかり最適なタイミイングを見逃す可能性がある",
+            "process_label": "温养感应",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c1_b_001",
+                  "content": "陳機は急切roducing求らず、ゆっくりと霊力を運用し春の雨が物を潤すように天機録残頁を養った。時が過ぎるに伴い、その残頁は次第に温かみを帯びてきた。\n\n一つの刻時間後、彼は一筋の確信できない 联系 が識海に形作られたのを感じた。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "稳健感应"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c1_c",
+            "text": "型破り——記章を辿る",
+            "description": "あの記章は万年前に関わるものなら、多分そこから突破口を見出せるかもしれない。相手の術を逆用する。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "意図が露呈する可能性がある",
+            "visible_reward": "記章から重要な手がかりを得られるかもしれない",
+            "risk_hint": "記章には追踪術法が隠されている可能性がある",
+            "process_label": "追溯徽记来源",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c1_c_001",
+                  "content": "陳子は袖からあの記章を取り出し、詳細に観察した。奇妙なことに、彼の霊力がその上を流れると、一縷の懐かしい気配を感じた——その気配は天機録残頁と全く同じものであった。\n\n彼の瞳孔が猛然と縮んだ。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现徽记秘密"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_005",
+        "content": "天眼がゆっくりと開き、Chen Jiは目の前の世界が天変地異の変化を遂げたと感じた。もとは昏暗だった密室は混沌とした虚空と化し、数え切れないほどの粟毛发のような細い光が虚空の中で絡み合い、蜘蛛の巣のように密密麻麻と交錯している。\n\nあの光線――それが運命の糸だ。\n\n彼はその中最も太い糸に沿って望去ると、赫然その糸の向こう端がまさしく自分の胸元に繋がっていることを発見した。そしてあの糸の上には、密密麻麻と古代の符文が刻まれており、一つ一つの符文が人を戦慄させる威圧を放っている。\n\n「これが……天道の眼の封印か？」Chen Jiは喃々と自语し、声音には一丝の震えが混じっている――恐れではなく、兴奋だった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_006",
+        "content": "Chen Jiがあの運命の糸に触れんととする、まさにその時、彼の胸元の天機録の欠片が猛然と一震えた。\n\n一股磅礴たる意識が潮水のように彼の意識の海へと流れ込んでくる――その意識は古く、蒼凉で、历经万載の滄桑を積んだ重さを满满と湛えている。\n\n「汝、ようやく能くして我を主动に唤んだな」\n\nその声がChen Jiの脑海に回荡し、洪鐘大呂のように響き渡り、彼の神魂を激荡させた。彼は猛然と思い至った、これは天機録の本体声音に他ならない！",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「汝は……」Chen Jiは心頭の衝撃を抑え下げ、あの意識との交信を試みる。\n\n「我は天機録の霊、」その声は平静に答えた、「汝の口にする天機録の本体なり。万載以来、汝は第一个に能动的に我を唤醒した者なり」\n\n意識の中に一つの曖昧な身影が浮かび上がり、その身影は無尽の迷雾に罩まれ、顔容は見えない。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0724_choice_002",
+        "prompt": "天機録の本体はChen Jiの意図を問い、Chen Jiは選択する：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0724_c2_a",
+            "text": "直接に運命封印を問責す",
+            "description": "天機録に対し、何故自分が天道の眼にロックされたのか、運命の糸上の封印は究竟何ぞやを要求する。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "天機録を激怒させる可能性あり",
+            "visible_reward": "封印の真相を獲得す",
+            "risk_hint": "天機録は轻易に全真相を明かさない可能性あり",
+            "process_label": "质问真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c2_a_001",
+                  "content": "「然らずんば能く汝は我が存在を感知するのなら、」Chen Jiの声は沉稳で力強く、「那我问你――この運命の糸上の封印は、终究誰が布いたものか？天道の眼とは、何ぞや？」\n\nあの曖昧な身影は片刻沈黙し、意味深き嘆息を発した：「汝、ようやく核心に迫ったな」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "获得真相碎片"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c2_b",
+            "text": "万年前の大火を問う",
+            "description": "来使は万年前の大火は自分の点火だと称した、この疑問はまず解かねばならぬ。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "面对きたくない真相を獲得する可能性あり",
+            "visible_reward": "万年前の布局を知る",
+            "risk_hint": "真相はChen Jiの認識を揺るがす可能性あり",
+            "process_label": "追溯过往",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c2_b_001",
+                  "content": "「万年前、」Chen Jiの声は微微と緊り、「有人は我が自ら一场の大火に点火したと称す。それは如何なる意味か？」\n\n天機録の本体は再び沈黙し、今度こそ沈黙の時間は更长くなる。其れ再び口を啟いた時、声音には幾分の複雑な情緒が帯びていた：「有些事、今の汝には耐えられぬものなり」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "触碰禁忌"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c2_c",
+            "text": "封印の解除を要求す",
+            "description": "真相如何に関わらず、まず被动な局面を打ち破り、天道の眼の支配から脱却す。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "反噬を被る可能性あり",
+            "visible_reward": "封印解除の方法を発見する可能性あり",
+            "risk_hint": "無理な解除はより危険な Mechanism を触发する可能性あり",
+            "process_label": "挑战权威",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c2_c_001",
+                  "content": "「我は此の封印を解除せん、」Chen Jiの語気は断然而として、「誰が布いたものにせよ、我は再び運命の人形とならぬ」\n\n天機録の意識は猛然と一震え、あの曖昧な身影は彼を审视ているように見えた。片刻後、低低沉とした笑いが発せられた：「大胆よ。だが知らぬか、此の封印一旦解除せば、汝は何に面对するかと」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "挑衅天道"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_008",
+        "content": "まさにこの時、Chen Jiは自分の意識が無形なる力に拽り寄せられるのを感じた。彼は運命の糸に沿って望去ると、糸の尽头、一つの巨大な眼眸が虚空の中でゆっくりと睁开するのが見えた。\n\nあの眼眸には瞳孔はなく、ただ无尽的漆黑のみ、されどChen Jiに彻底的に見通される恐怖を感じさせた。\n\n「 оноが我を發現した……」Chen Ji心中一凛。\n\nされどまさにその天道の眼が彼のロックせんとする瞬間、天機録の本体猛然と一股の強大な力を迸らせ、Chen Jiの意識を引き戻した。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_009",
+        "character_id": "char_tiandaozhiyan",
+        "content": "「今はまだ時ぞ至らず、」天機録の声音は急促となった、「 его的目光すでに汝をに向けたり。もしただちに続けるなら、汝は егоの視線の下に立ち晒すこととなるぞ」\n\nChen Jiは猛然と目を開け、自分がすでに密室に戻っているのを見つけた。天機録の欠片が彼の胸元で烈しく震动し、上方の文字は重新排列組合しているようだった。\n\nそしてまさにその文字の中に、Chen Jiは曖昧に数개의新たな古代の字が浮かび上がるのを見た――\n\n「 оно……は最終の棋士にあらず」",
+        "emotion": "惊疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_010",
+        "content": "Chen Jiはその数個の浮かび上がる古代の字を凝視し、心中は惊涛骇浪が翻滾していた。天道の眼は最終の棋士にあらず？ならばその背後には、まだ何の存在があるのだ？\n\n彼は深呼吸し、あの紋章を袖から取り出した。奇妙なことに、此刻あの紋章上の紋路は微微と光を放ち、まるで天機録の欠片の震动に応えるかのごとくだった。\n\n「やはり関連がある……」Chen Jiは喃々と自语し、眼中には一丝の了然が闪烁した。\n\n彼は灵力を紋章に注入し始め、その来源を追溯しようとする。霊力の流転に伴い、あの紋章上の紋路は一道の光幕と化し、Chen Jiの目の前でゆっくりと展開し始めた――",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0724_choice_003",
+        "prompt": "光幕が広がり、Chen Jiはぼんやりとした映像を見た。彼の決意：",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0724_c3_a",
+            "text": "無理やりに映像の真相を辿る",
+            "description": "より多くのHeavenly Fateを消費しても、あの映像のすべてを見届けようとする。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Heavenly Fateを15ポイント消費",
+            "visible_reward": "一万年前の大火の真相を見抜く",
+            "risk_hint": "Heavenly Fateは危険なレベルまで低下する可能性がある",
+            "process_label": "强行追溯",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c3_a_001",
+                  "content": "Chen Jiは歯を食いしばり、大量のHeavenly Fateを徽記に灌注した。激しい痛みが再び襲いかかるが、彼は那道光幕を死に地盯着、瞳孔に映る映像はますます鮮明になっていく——\n\n火光冲天。\n\n一つの背影が火海の中に立っている、その背影は……Chen Jiと瓜二つだった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "窥见真相"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c3_b",
+            "text": "心を落ち着かせてゆっくりと調べる",
+            "description": "急がず、まずは既に握った手がかりを覚え、より良い機会を待つ。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "細部を見落とす可能性がある",
+            "visible_reward": "実力を温存し、後の布局に余地を残す",
+            "risk_hint": "映像はいつでも消える可能性がある",
+            "process_label": "稳中求进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c3_b_001",
+                  "content": "Chen Jiは必死に心頭の焦りを抑え、冷静な意志でSpiritual Energyの流れ速さを制御した。光幕の中の映像はぼんやりとしているが、重要な情報は徐々に明確になっていく——\n\nあの背影は放火しているのでなく……何かを守っていたのだ。\n\n火光の中に、無数の符文が空中を流れ、巨大なFormationを構成しているのが隐约に見える。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "发现阵法痕迹"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0724_c3_c",
+            "text": "天機録で共振検証を行う",
+            "description": "天機録残頁と徽記を共振させ、二重に情報の真偽を検証する。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "予期せぬ結果を招く可能性がある",
+            "visible_reward": "最も真実の情報得られる",
+            "risk_hint": "共振は未知の存在を驚かせる可能性がある",
+            "process_label": "双重验证",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0724_result_c3_c_001",
+                  "content": "Chen Jiは天機録残頁を徽記に当てた、両者が触れた瞬間、光芒が大いに盛り上がった。一股の情報流が同時に彼の脑海に流れ込んだ——\n\nこれは普通のFormationではない。\n\nこれは封印Formation。\n\n一万年前のあの大火は、破滅ではなく……封印だった！",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "真相揭露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_011",
+        "content": "Chen Jiの瞳孔猛然と収縮した。一万年前の大火は破滅ではなく封印だった？では封印されたのは一体何？\n\n彼は天機録本体に現れたあの文字を咄嗟に思い出した——「彼は最終のChess Playerではない」。\n\n天道之眼が最終のChess Playerでなければ、一万年前の封印は……その主を封印したのか？\n\n「なるほど……」Chen Jiは低く呟き、口元に苦い笑みが浮かぶ、「つまり私、あるいはあの‘私’は、ある恐るべき存在を封印しているのだ」。\n\nそして今、その封印に問題が生じているらしい。天道之眼が彼を監視し始めた，是不是意味着……封印正在松动？",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_012",
+        "content": "Chen Jiの思考が飛び交う中、天機録残頁が再び振動した。天機録の声音が彼の頭に響く、今度は幾分の切迫さを込めて：\n\n「見るべきではないものを見た」と、その声は言った、「今から、あなたの每一步は見られることになる。しかし这也是机会——当他注视你的时候，也在被其他人注视。」\n\n「誰？」Chen Jiは追问した。\n\n「私より古い存在」。\n\n言葉が落ちると、天機録残頁の文字はすべて暗淡了下去，重新陷入沉睡。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_013",
+        "content": "Chen Jiはゆっくりと目を開け、窓の外は既に白み始めていた。彼は密室で丸一晚座り込んでいたが、少しも疲れていると感じなかった——或者说、他根本没有心思在意这些。\n\n天道之眼不是最终棋手。\n\n万年前的大火是封印而非毁灭。\n\n有比天道之眼更古老的存在。\n\nこれらの情報が彼の脑海の中で絶えず碰撞し、层层の火花を上げた。彼の口元にゆっくりと冷笑が浮かぶ：\n\n「面白い。このChess Gameは、私が想像していたよりも遥かに大きかったようだ」。\n\n彼は立ち上がり、あの徽記を懐にしまった。 поиске既然被人找上门来，那就说明他的存在已经引起了某些存在的注意。むしろ隠れる不如主动出击。\n\n「あなたがたが私を棋子看待한다면」Chen Jiは低く言った，眼中闪过一丝锋芒，「この棋子是如何に翻盤するか見せてやる」。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0724_014",
+        "character_id": "char_chenji",
+        "content": "その時、密室外でノック音が伝わってきた。\n\n「Chen师兄、苏师姐来了。」ドアの外から雜役の声が伝わった，「她说有要事相商。」\n\nChen Jiは眉を微かに上げ，心中暗自思索した。苏青瑶这个时候来找他，是因为昨晚使者の到訪，还是另有其事？\n\n彼は衣を整え、ドアを開けた。无论如何，这位内门首席的好感度已经足够高，是时候让她知道一些事情了——当然，只是一些。\n\n毕竟，在这盘棋局中，每一颗棋子都有自己的位置。而他Chen Ji，永远是执棋之人。",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0724_015",
+        "content": "朝陽が降り注ぎ、Chen Jiの姿を引き伸ばす。彼の表情は例のごとく穏やかで淡としていた，仿佛昨夜那场惊心动魄的感应从未发生过。\n\nしかし彼の懐の中では、あの質記と天機録残頁が同時に微かな熱を帯び、二つの心臓のように同期して鼓動している。\n\n天道之眼は彼を見つめている。\n\nそして彼も、天道之眼を見つめている。\n\nこの博弈才刚刚开始。\n\nただChen Jiが予想しなかったのは、虚空の奥深くで、一つの瞳孔のない眼眸が無限の霧を突き破り、彼の方を見ていることだ。その眼眸の中に，居然浮现出一丝……笑い。\n\n「ようやく……あなたを見つけた」。\n\nその声が虚空に響き渡り、古く诡异で、まるで亘古からの呼び声のように響いた。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

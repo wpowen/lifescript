@@ -1,0 +1,530 @@
+{
+  "id": "天机录_ch0314",
+  "book_id": "天机录",
+  "number": 314,
+  "title": "Alliance Fracture",
+  "is_paid": true,
+  "next_chapter_hook": "When the warm Jade Pendant fell into his palm, Chen Ji suddenly realized—he had accepted not just Ye Qing's token, but her complete trust entrusted with her life. The Demonic Path's kill order might arrive tonight.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0314_001",
+        "content": "When those runes slowly manifested in the Void, Chen Ji knew the final door to his sister had opened for him—but should he walk that path alone, or bring along those who might stab him in the back?\n\nHe stood on the cliff at the edge of the exploration team's camp, the night wind filling his robes, making the solitary lantern flicker uncertainly. Behind him were dying campfire embers and sleeping companions; before him lay endless darkness and the unknown. He suddenly felt that these runes were a jest from heaven—clearly offering hope, yet simultaneously burdening him with the weight of choice."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_002",
+        "character_id": "char_yeqing",
+        "content": "\"You plan to go alone?\"",
+        "emotion": "平静中带着一丝试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_003",
+        "content": "The voice came from behind, carrying Ye Qing's unique coldness. Chen Ji didn't turn around—he could sense that gaze examining his back through the night. This woman always appeared silently like this, like a nocturnal owl lying in wait.\n\n\"What are you following me for?\" His voice was light. \"The Demonic Path Saint and a Tianqing Sect waste walking together—hardly a good rumor.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_004",
+        "character_id": "char_yeqing",
+        "content": "\"You think I came to watch the show?\" Ye Qing walked to his side, also gazing into that darkness. \"Chen Ji, I'm not here for the entertainment. The Holy Sect's business... you should know some of it.\"",
+        "emotion": "罕见的郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_005",
+        "content": "Chen Ji glanced sideways. Ye Qing's face appeared especially pale under the moonlight, those eyes always carrying estrangement now held complex emotions he had never seen before. He suddenly realized this woman hadn't come to him tonight by coincidence.\n\n\"Speak.\" He turned to face her. \"What do you mean by 'should know'?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_006",
+        "character_id": "char_yeqing",
+        "content": "\"The Holy Sect is moving against you.\" Ye Qing's voice was soft yet clear. \"Not just because you offended the Xuanwu Sect, but because... they sensed the aura of the Tianji Record. You think why the Demonic Path commander attacked so massively at this moment? He came to harvest.\"",
+        "emotion": "压抑的焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_007",
+        "content": "The night wind rose suddenly, scattering Ye Qing's long hair. She didn't bother with it, only staring tightly at Chen Ji's eyes, as if trying to see his true thoughts from those deep pupils.\n\n\"Chen Ji, you think I'm your chess piece and you're my tool, right?\" She suddenly smiled, that smile carrying indescribable bitterness. \"But have you considered why I'm telling you this at this moment?\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0314_choice_01",
+        "prompt": "Ye Qing's words left Chen Ji in momentary silence. He suddenly discovered that this woman's gaze tonight was different from all previous times—devoid of scheming, devoid of testing, containing only a vulnerability he had never seen before...",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0314_c1_opt1",
+            "text": "Directly ask her purpose",
+            "description": "\"Since you've chosen to tell me this, you've already made a decision. What do you want?\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May expose more thoughts",
+            "visible_reward": "Break through Ye Qing's defenses",
+            "risk_hint": "She might be testing",
+            "process_label": "坦诚以对",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0314_result_c1_opt1_001",
+                  "character_id": "char_yeqing",
+                  "content": "\"You're indeed clever.\" Ye Qing said softly. \"I want to survive. Not as the Holy Sect's chess piece, but as myself. Is that reason enough?\"",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清袒露心声",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0314_c1_opt2",
+            "text": "Use silence to pressure her",
+            "description": "Chen Ji didn't speak, only watching her quietly, waiting for her to continue.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May seem cold",
+            "visible_reward": "See through her cards",
+            "risk_hint": "She might retreat",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0314_result_c1_opt2_001",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing was silent for a moment, then suddenly laughed self-deprecatingly: \"You're waiting for me to beg? Fine, I admit—tonight I came to beg you.\"",
+                  "emotion": "无奈"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0314_result_c1_opt2_002",
+                  "content": "After saying this, she seemed to have shed some mask entirely. Under the moonlight, she was no longer the high-and-mighty Demonic Path Saint, just an ordinary woman toyed with by fate.\n\nChen Ji's heart stirred slightly. This was the first time he saw Ye Qing so... authentic.\n\n\"The Holy Sect needs a scapegoat.\" Her voice was soft. \"The person they selected is you. But if you die, the next one will be me.\"",
+                  "is_premium": false,
+                  "flags_set": [],
+                  "requires_flag": null,
+                  "forbids_flag": null,
+                  "stat_gate": null,
+                  "memory_label": "夜清的危机",
+                  "branch_route_id": null
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_008",
+        "content": "The night wind suddenly stopped, and even the insects seemed to fall silent at this moment. Chen Ji looked at Ye Qing, suddenly noticing her fingers trembling slightly. This decisive Demonic Path Saint actually appeared like a helpless child at this moment.\n\n\"I've noted it.\" He suddenly spoke, voice light. \"The Holy Sect's business—I've noted it.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_009",
+        "character_id": "char_yeqing",
+        "content": "\"...Aren't you going to ask why I'm telling you this?\" Ye Qing looked at him with some surprise.",
+        "emotion": "意外"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0314_010",
+        "content": "\"No need to ask.\" Chen Ji turned back, gazing at the darkness again. \"Coming to find me at a time like this means either genuine desire for cooperation, or wanting me as a scapegoat to take the knife for you. Either way, I have to accept it.\"\n\nHe paused, his voice suddenly softening: \"But I hope it's the former.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0314_011",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing stared at his back, her eyes suddenly heating. She thought of her past—during those years in the Holy Sect, she learned not to trust anyone, learned to treat everyone as a chess piece. But this man she had schemed against, threatened, even hunted... at this moment he gave her a sense of security she had never experienced.\n\n\"Chen Ji.\" She suddenly spoke, voice carrying unprecedented softness. \"I want to tell you some things. About me. About the Holy Sect. Everything.\"",
+        "emotion": "下定决心的坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0314_choice_02",
+        "prompt": "Ye Qing's words caused the atmosphere to congeal slightly. She said she would tell him \"everything\"? Why would this woman who had always wrapped herself tightly suddenly open up tonight?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0314_c2_opt1",
+            "text": "\"I'm listening.\"",
+            "description": "Chen Ji didn't turn around, only speaking calmly, as if this were merely an ordinary conversation.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Take on more secrets",
+            "visible_reward": "Gain Ye Qing's complete trust",
+            "risk_hint": "May be dragged deeper into conspiracy",
+            "process_label": "坦然接受",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0314_result_c2_opt1_001",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing walked to his side, standing shoulder to shoulder with him. She began to speak—entered the Holy Sect at eight, killed for the first time at ten, became Saint at fifteen, discovered she was merely a puppet at eighteen...",
+                  "emotion": "平静叙述"
+                }
+              },
+              {
+                "text": "\"Speak, but I won't guarantee I'll help.\"",
+                "id": "天机录_ch0314_c2_opt2",
+                "description": "Chen Ji turned his head, looking at her seriously. \"I can listen, but the final decision-making power is mine.\"",
+                "satisfaction_type": "延迟爽",
+                "visible_cost": "May seem overly rational",
+                "visible_reward": "Maintain initiative",
+                "risk_hint": "May hurt her trust",
+                "process_label": "理性对待",
+                "stat_effects": [
+                  {
+                    "stat": "谋略",
+                    "delta": 2
+                  }
+                ],
+                "relationship_effects": [
+                  {
+                    "character_id": "char_yeqing",
+                    "dimension": "信任",
+                    "delta": 3
+                  },
+                  {
+                    "character_id": "char_yeqing",
+                    "dimension": "敬畏",
+                    "delta": 5
+                  }
+                ],
+                "result_nodes": [
+                  {
+                    "dialogue": {
+                      "id": "天机录_ch0314_result_c2_opt2_001",
+                      "character_id": "char_yeqing",
+                      "content": "Ye Qing's smile held some bitterness: \"You're really... fair. Fine, I accept.\"",
+                      "emotion": "理解"
+                    }
+                  },
+                  {
+                    "text": {
+                      "id": "天机录_ch0314_result_c2_opt2_002",
+                      "content": "She took a deep breath and began recounting her past. Chen Ji listened quietly, occasionally inserting brief questions. He discovered this woman's experiences were more complex than he imagined—every step she took in the Holy Sect was walking on eggshells, one misstep meant annihilation.\n\n\"Finished?\" Chen Ji asked.\n\n\"Finished.\" Ye Qing met his eyes. \"Now you should understand why I came to find you.\"",
+                      "is_premium": false,
+                      "flags_set": [],
+                      "requires_flag": null,
+                      "forbids_flag": null,
+                      "stat_gate": null,
+                      "memory_label": null,
+                      "branch_route_id": null
+                    }
+                  }
+                ],
+                "is_premium": false,
+                "flags_set": [],
+                "requires_flag": null,
+                "forbids_flag": null,
+                "stat_gate": null,
+                "memory_label": null,
+                "branch_route_id": null
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "天机录_ch0314_012",
+              "content": "The starry sky was very still, as if the entire world was holding its breath listening. After Ye Qing finished speaking, both fell into silence.\n\nChen Ji didn't answer immediately. He thought of those vague premonitions in the Tianji Record—there were fragments involving Ye Qing, but each time they seemed veiled in mist. He had always thought it was due to insufficient cultivation, but now considering, perhaps this woman's fate was too deeply intertwined with his.\n\n\"Ye Qing.\" He suddenly spoke, voice slightly gentler than usual. \"You said you want to survive, but have you thought about what you'll do after surviving?\""
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0314_013",
+              "character_id": "char_yeqing",
+              "content": "\"I...\" Ye Qing froze. She had never thought about this question. During these years in the Holy Sect, she only thought about how to survive today, never dared to think about tomorrow. Now that Chen Ji asked so directly, she suddenly found herself speechless.\n\n\"I don't know.\" She finally said, voice carrying a hint of confusion. \"I've never thought about 'after'.\"",
+              "emotion": "迷茫"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0314_014",
+              "content": "Chen Ji turned to face her. The night wind lifted his robes' hem but couldn't disperse the calm in his eyes.\n\n\"Then let me tell you.\" He said, voice light yet carrying an undeniable force. \"Survive, then watch the Holy Sect's destruction. Watch the forces you built personally stop being anyone's chess piece. Watch those who once trampled on you kneel before you begging for mercy.\""
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0314_015",
+              "character_id": "char_yeqing",
+              "content": "Ye Qing stared at him, her eyes suddenly moistening. She had never imagined someone would speak to her like this one day—not an order, not exploitation, but a promise. A promise belonging to \"after.\"\n\n\"Chen Ji...\" Her voice grew somewhat choked. \"Why would you...\"",
+              "emotion": "感动到说不出话"
+            }
+          },
+          {
+            "text": {
+              "id": "天机录_ch0314_016",
+              "content": "\"Because I think the same way.\" Chen Ji interrupted her, the corners of his mouth slightly lifting, revealing an extremely faint smile. \"Your enemies and my enemies are half overlapping. Rather than fighting separately... let's walk this road together.\"\n\nHe paused, adding: \"Of course, if you want to ditch me someday, I won't stop you.\""
+            }
+          },
+          {
+            "dialogue": {
+              "id": "天机录_ch0314_017",
+              "character_id": "char_yeqing",
+              "content": "Ye Qing suddenly laughed—a genuine, unguarded laugh from the heart. This smile made her look much younger, losing the Saint's halo but gaining more worldly warmth.\n\n\"Chen Ji, you really are...\" She shook her head. \"How does a cooperation talk sound like a marriage proposal?\"",
+              "emotion": "难得的打趣"
+            }
+          },
+          {
+            "choice": {
+              "id": "天机录_ch0314_choice_03",
+              "prompt": "Ye Qing's rare teasing eased the atmosphere considerably. But Chen Ji knew this was merely the calm before the storm. The Holy Sect's kill order wouldn't be cancelled because of their night's long conversation, and what they were about to face might be far more dangerous than imagined.",
+              "choice_type": "styleChoice",
+              "choices": [
+                {
+                  "id": "天机录_ch0314_c3_opt1",
+                  "text": "\"Then consider it a marriage proposal.\"",
+                  "description": "Respond to jest with jest,顺势确认盟友关系。",
+                  "satisfaction_type": "情感爽",
+                  "visible_cost": "可能被当真",
+                  "visible_reward": "关系彻底确定",
+                  "risk_hint": "未来可能尴尬",
+                  "process_label": "以诚换诚",
+                  "stat_effects": [
+                    {
+                      "stat": "魅力",
+                      "delta": 3
+                    }
+                  ],
+                  "relationship_effects": [
+                    {
+                      "character_id": "char_yeqing",
+                      "dimension": "好感",
+                      "delta": 10
+                    },
+                    {
+                      "character_id": "char_yeqing",
+                      "dimension": "依赖",
+                      "delta": 5
+                    }
+                  ],
+                  "result_nodes": [
+                    {
+                      "dialogue": {
+                        "id": "天机录_ch0314_result_c3_opt1_001",
+                        "character_id": "char_yeqing",
+                        "content": "Ye Qing's face flushed slightly, but quickly regained composure: \"Fine, I accept. But Chen Ji, let me be clear—I hold grudges. Whoever betrays me, I'll repay them a hundredfold.\"",
+                        "emotion": "认真"
+                      }
+                    },
+                    {
+                      "text": {
+                        "id": "天机录_ch0314_result_c3_opt1_002",
+                        "content": "\"Exactly my intention.\" Chen Ji nodded. \"I'm also someone who repays every slight.\""
+                      },
+                      "is_premium": false,
+                      "flags_set": [],
+                      "requires_flag": null,
+                      "forbids_flag": null,
+                      "stat_gate": null,
+                      "memory_label": "盟友之约",
+                      "branch_route_id": null
+                    },
+                    {
+                      "id": "天机录_ch0314_c3_opt2",
+                      "text": "\"Joking aside, let's discuss real business.\"",
+                      "description": "保持距离，将话题拉回实际合作。",
+                      "satisfaction_type": "扮猪吃虎",
+                      "visible_cost": "错失深化关系的机会",
+                      "visible_reward": "保持清醒判断",
+                      "risk_hint": "可能显得过于冷漠",
+                      "process_label": "保持理性",
+                      "stat_effects": [
+                        {
+                          "stat": "谋略",
+                          "delta": 2
+                        }
+                      ],
+                      "relationship_effects": [
+                        {
+                          "character_id": "char_yeqing",
+                          "dimension": "信任",
+                          "delta": 5
+                        },
+                        {
+                          "character_id": "char_yeqing",
+                          "dimension": "敬畏",
+                          "delta": 3
+                        }
+                      ],
+                      "result_nodes": [
+                        {
+                          "dialogue": {
+                            "id": "天机录_ch0314_result_c3_opt2_001",
+                            "character_id": "char_yeqing",
+                            "content": "Ye Qing's expression stiffened slightly, but quickly returned to normal: \"Fine, real business. Of the Holy Sect's three armies, I only know the movement of one.\"",
+                            "emotion": "收敛情绪"
+                          }
+                        },
+                        {
+                          "text": {
+                            "id": "天机录_ch0314_result_c3_opt2_002",
+                            "content": "Her gaze turned serious, as if that woman who could joke just moments ago had been an illusion.\n\n\"The central army is led by the Holy Son personally, targeting the Tianqing Sect Main Peak. I'm responsible for the eastern route, in charge of cutting off Tianqing Sect's retreat.\" She looked at Chen Ji. \"Your sister Chen Nian... is with the central army.\""
+                          },
+                          "is_premium": false,
+                          "flags_set": [],
+                          "requires_flag": null,
+                          "forbids_flag": null,
+                          "stat_gate": null,
+                          "memory_label": "战略情报",
+                          "branch_route_id": null
+                        },
+                        {
+                          "id": "天机录_ch0314_c3_opt3",
+                          "text": "\"When all this is over, I'll treat you to drinks.\"",
+                          "description": "用一个简单的承诺约定未来。",
+                          "satisfaction_type": "延迟爽",
+                          "visible_cost": "模糊了关系定义",
+                          "visible_reward": "留下情感伏笔",
+                          "risk_hint": "可能被当成敷衍",
+                          "process_label": "含蓄承诺",
+                          "stat_effects": [
+                            {
+                              "stat": "魅力",
+                              "delta": 1
+                            }
+                          ],
+                          "relationship_effects": [
+                            {
+                              "character_id": "char_yeqing",
+                              "dimension": "好感",
+                              "delta": 6
+                            },
+                            {
+                              "character_id": "char_yeqing",
+                              "dimension": "信任",
+                              "delta": 7
+                            }
+                          ],
+                          "result_nodes": [
+                            {
+                              "dialogue": {
+                                "id": "天机录_ch0314_result_c3_opt3_001",
+                                "character_id": "char_yeqing",
+                                "content": "Ye Qing愣了一下，随即笑了：\"好，一言为定。不过陈机，我可不是随便就能打发的人。\"",
+                                "emotion": "期待"
+                              }
+                            },
+                            {
+                              "text": {
+                                "id": "天机录_ch0314_result_c3_opt3_002",
+                                "content": "她说完，忽然伸手解下腰间的一枚玉佩，塞入陈机掌心。那玉佩温热，残留着她的体温。\n\n\"这是魔道主帅的信物。\"她说，声音很轻，\"拿着它，或许对你有用。\"",
+                                "is_premium": false,
+                                "flags_set": [],
+                                "requires_flag": null,
+                                "forbids_flag": null,
+                                "stat_gate": null,
+                                "memory_label": "玉佩信物",
+                                "branch_route_id": null
+                              }
+                            }
+                          ],
+                          "is_premium": false,
+                          "flags_set": [],
+                          "requires_flag": null,
+                          "forbids_flag": null,
+                          "stat_gate": null,
+                          "memory_label": null,
+                          "branch_route_id": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": {
+                    "id": "天机录_ch0314_017",
+                    "content": "那玉佩入手温润，陈机能感觉到上面残留的气息——那是夜清常年贴身佩戴之物，是她身为魔道圣女最珍贵的信物之一。此刻她将它交给自己，等于是将性命交到了他手中。\n\n\"你确定？\"他没有立刻收下，而是看着夜清的眼睛，\"这东西在你身上，或许比我拿着更有用。\""
+                  }
+                },
+                {
+                  "dialogue": {
+                    "id": "天机录_ch0314_018",
+                    "character_id": "char_yeqing",
+                    "content": "\"正因为有用，我才给你。\"夜清的声音很平静，\"我要回东路军了，带着它反而危险。但如果你拿着，至少在关键时刻能调动一部分人。\"\n\n她顿了顿，补充道：\"而且，这是我欠你的。你救过我一次——虽然你自己可能不记得了。\"",
+                    "emotion": "郑重"
+                  }
+                },
+                {
+                  "text": {
+                    "id": "天机录_ch0314_019",
+                    "content": "陈机一怔。救过她？他搜索记忆，却没有找到相关的片段。天机录的预见从未有过这一段，是被刻意抹去了，还是......\"\n\n\"三个月前，枯骨崖。\"夜清看出了他的疑惑，轻声道，\"你用天机录救下的那个人，是我的替身。圣宗一直想除掉我，那次差点成功。\"\n\n她没有再多说，只是看着陈机，眼中有着复杂的情绪。\n\n\"所以现在，我们两清了。\"她转过身，\"接下来是新的账——陈机，我等着和你一起算。\""
+                  }
+                },
+                {
+                  "text": {
+                    "id": "天机录_ch0314_020",
+                    "content": "夜风再次吹起，带走了夜清离去的身影。陈机站在原地，掌心里那枚玉佩还带着她的余温。他忽然发现，这个一直被他当作棋子的女人，或许比他想象的更复杂。\n\n而这一夜，一枚玉佩、一个承诺、一段纠葛的过往，都成了他们之间新的羁绊。\n\n圣宗的追杀令，或许今夜就会到来。但此刻，陈机心中想的却是另一件事——三个月前的枯骨崖，他究竟做了什么？为何天机录没有任何记录？\n\n答案，或许就藏在那枚玉佩的深处。\n\n而天机录的第一页，墨先生留下的那道裂痕，今夜似乎又深了几分。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

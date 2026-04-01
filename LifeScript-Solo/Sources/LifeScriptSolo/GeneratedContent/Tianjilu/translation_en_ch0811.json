@@ -1,0 +1,424 @@
+{
+  "id": "天机录_ch0811",
+  "book_id": "天机录",
+  "number": 811,
+  "title": "Twin Resonance",
+  "is_paid": true,
+  "next_chapter_hook": "The moment Chen Ji stepped into the core of the Heavenly Eye, he felt the wail of a chess game from ten thousand years ago—the silent scream of one abandoned by the Heavenly Will.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0811_001",
+        "content": "In the dark void, two consciousnesses intertwined like silk threads, coiling and resonating. Chen Ji felt a white light explode in his mind—an unprecedented sensation. He saw another's memories as if living them. Ten thousand years ago, on the vast earth, a young cultivator knelt before an altar, watching helplessly as the Heavenly Eye tore away his Heavenly Fate strand by strand."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"You finally saw it.\" The voice came through the resonance, carrying ten thousand years of vicissitudes and desolation. \"I have waited for this day for a very long time.\"",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_003",
+        "content": "Chen Ji abruptly opened his eyes, finding himself still standing in place, but the scene before him had completely changed. The figure of the Demonic Path Commander overlapped with his own—their heartbeats, breathing, and even soul pulses perfectly synchronized. He looked down at his palm, where an ancient rune had appeared—the key to the core of the Heavenly Eye."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_004",
+        "character_id": "char_yeqing",
+        "content": "\"This voice... is it you, Demonic Path Commander?\" Chen Ji's voice was somewhat hoarse. \"What did you experience ten thousand years ago?\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_005",
+        "content": "The resonance's visions rushed in once more. Chen Ji saw that young cultivator bound to the altar, the Heavenly Eye's will descending upon him, stripping away his thousand-year cultivated Heavenly Fate inch by inch. He could not speak, only screaming silently. And the Heavenly Eye told him: \"You shall become the first sacrifice, letting future generations understand that those who pry into heavenly secrets shall be punished by heaven.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_006",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Is it ridiculous?\" The Demonic Path Commander's voice carried self-mockery. \"The first words spoken by the Heavenly Will were lies. It does not punish those who pry into heavenly secrets—it turns all seers into its chess pieces. Ten thousand years ago, after I was stripped of my Heavenly Fate, I did not die. Instead, it controlled me, making me its first chess piece in the mortal realm.\"",
+        "emotion": "苦涩"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0811_choice_001",
+        "prompt": "The information transmitted through the resonance made Chen Ji understand everything. The Heavenly Eye was not invincible, but it had chosen to turn the Demonic Path Commander into a chess piece rather than kill him ten thousand years ago because there was something special about him. Now, this key was in his hand, and he needed to make a choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0811_opt_001a",
+            "text": "Accept the key and enter the core",
+            "description": "Since he had already come this far, there was no reason to turn back. Enter the core of the Heavenly Eye and confront the truth of ten thousand years ago.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 30 Heavenly Fate points",
+            "visible_reward": "Gain qualification to enter the core of the Heavenly Eye",
+            "risk_hint": "There may be unknown dangers in the core",
+            "process_label": "天命值-30",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_001a_001",
+                  "content": "Chen Ji took a deep breath and pressed his palm against the rune. In that instant, he felt his Heavenly Fate surge like a river breaking its dam, but at the same time, an unprecedented power also flooded into his body. The key fused completely with his soul, and a passage to the core of the Heavenly Eye slowly opened before him."
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_001a_002",
+                  "character_id": "char_chenji",
+                  "content": "\"Since you could not escape ten thousand years ago, let me end all of this today.\" Chen Ji's voice was calm and firm.",
+                  "emotion": "决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "进入核心"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0811_opt_001b",
+            "text": "First ask about the price clearly",
+            "description": "There is no free lunch in the world—the price for entering the core of the Heavenly Eye must be significant. Clarify it first, so as not to die in confusion.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "None",
+            "visible_reward": "Obtain more information",
+            "risk_hint": "May miss the best timing",
+            "process_label": "谋略+1",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_001b_001",
+                  "content": "Chen Ji did not rush to accept. Instead, he looked up at the figure resonating with him in the void: \"After I enter the core, what will I face? What reaction will the Heavenly Eye have?\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_001b_002",
+                  "character_id": "char_tiandaozhiyan",
+                  "content": "\"It will try to make you a chess piece once more.\" The Demonic Path Commander's voice was heavy. \"But you are different from me. You have the Tianji Record protecting you, and you have my ten thousand years of resentment to assist you. As long as you can maintain clarity under its will's erosion, you can seal it in reverse.\"",
+                  "emotion": "期待"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_007",
+        "content": "The resonance's visions flashed again. Chen Ji saw more—the catastrophe ten thousand years ago was not the work of the Heavenly Eye alone. There were countless chess pieces it controlled. The Demonic Path Commander was just one of them. And now, among all these chess pieces, only two still retained self-awareness: him and the Demonic Path Commander. The chains of fate were finally about to break."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_008",
+        "character_id": "char_chenji",
+        "content": "\"So you chose to resonate with me because I possess the Tianji Record?\" Chen Ji suddenly understood. \"The Tianji Record is the natural nemesis of the Heavenly Eye, and you needed someone capable of carrying your will.\"",
+        "emotion": "恍然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_009",
+        "content": "A long sigh echoed from the void—that of ten thousand years of waiting finally seeing hope. The Demonic Path Commander did not deny it, but neither did he fully admit it: \"I chose you because you are different from me ten thousand years ago. You will not go mad for power. You will use power to achieve your goals and then withdraw unscathed. This is something the Heavenly Eye will never learn.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0811_choice_002",
+        "prompt": "The Twin Resonance was complete, and Chen Ji had obtained the key to the core of the Heavenly Eye. Now he needed to decide how to face the upcoming challenge.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0811_opt_002a",
+            "text": "Enter the core immediately",
+            "description": "Time waits for no one—the Heavenly Eye may have already sensed the resonance. Strike first before it can react.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume 20 Heavenly Fate points",
+            "visible_reward": "Gain first-move advantage",
+            "risk_hint": "Preparation may be insufficient",
+            "process_label": "天命值-20",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_002a_001",
+                  "content": "Chen Ji hesitated no more. He activated the rune and opened the passage to the core. A tremendous suction pulled him in, the surrounding scenery shifting rapidly. The next second, he stood before a massive eyeball—that was the本体 of the Heavenly Eye.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "先手优势"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0811_opt_002b",
+            "text": "Prepare thoroughly before entering",
+            "description": "Gather the Demonic Path forces as backup while adjusting your state. This is a chess game that began ten thousand years ago—you cannot act rashly.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consume 10 Heavenly Fate points for divination",
+            "visible_reward": "Obtain more intelligence support",
+            "risk_hint": "May miss the opportunity for a surprise attack",
+            "process_label": "天命值-10",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_002b_001",
+                  "content": "Chen Ji expanded the range of resonance, bringing the Demonic Saint Ye Qing into his perception as well. Through the Twin Resonance, he transmitted everything about to happen to Ye Qing and gave orders: \"Within your capabilities, disrupt the Heavenly Eye's earthly arrangements as much as possible. I'll handle things here.\""
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_002b_002",
+                  "character_id": "char_yeqing",
+                  "content": "\"Are you insane!\" Ye Qing's voice came through the resonance, carrying unimaginable shock. \"You plan to face the Heavenly Eye alone?\"",
+                  "emotion": "担忧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "后援就位"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_010",
+        "content": "Regardless of the choice, the passage would eventually open. Chen Ji looked at the increasingly bright rune in his palm, and his heart instead calmed. What the Demonic Path Commander failed to complete ten thousand years ago would be accomplished by him today. Not because of fate, but because—he never believed in fate."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_011",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Interesting.\" A voice, ancient and authoritative, suddenly sounded. It was the Heavenly Eye's will finally detecting the intruder. \"An ant dares to shake this seat? Do you wish to replay the tragedy of ten thousand years ago?\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_012",
+        "content": "A faint smile curved Chen Ji's lips—that of one who had seen through everything. Perhaps the Heavenly Eye was invincible ten thousand years ago, but ten thousand years later, it made a fatal mistake—it scattered the Tianji Record across the mortal realm, letting countless people study it, touch it, and ultimately find methods to counteract it.",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0811_choice_003",
+        "prompt": "The Heavenly Eye had revealed its true form, and a fate-deciding dialogue was about to unfold. This was the final choice—Chen Ji had to declare his attitude and strategy.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0811_opt_003a",
+            "text": "Declare war directly",
+            "description": "No need for idle talk—directly tell the Heavenly Eye his purpose: not to become a chess piece, but to end this game of chess.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "None",
+            "visible_reward": "Suppress with momentum",
+            "risk_hint": "May激怒 the Heavenly Eye",
+            "process_label": "魅力+3",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_003a_001",
+                  "character_id": "char_chenji",
+                  "content": "\"The tragedy of ten thousand years ago?\" Chen Ji laughed lightly. \"That was not a tragedy—that was your masterpiece. However, I came here today not to replay a tragedy, but to let you know—your so-called fate chess game has been a joke from the very beginning.\"",
+                  "emotion": "嘲讽"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "气势压制"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0811_opt_003b",
+            "text": "Retreat to advance",
+            "description": "First pretend to be weak, let the Heavenly Eye lower its guard, then seek weaknesses. This is a battle of wits, not of brute force.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consume 5 Heavenly Fate points",
+            "visible_reward": "Gain intelligence advantage",
+            "risk_hint": "May be seen as weak",
+            "process_label": "谋略+2",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0811_result_003b_001",
+                  "character_id": "char_chenji",
+                  "content": "\"The senior speaks truly.\" Chen Ji slightly lowered his head, his tone humble. \"This junior is merely curious and wished to see what manner of being the legendary Heavenly Eye truly is. If there was any offense, please forgive me.\"",
+                  "emotion": "谦卑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0811_result_003b_002",
+                  "content": "A trace of satisfaction came from the Heavenly Eye's will, but simultaneously, the Demonic Path Commander's voice rang in Chen Ji's mind: \"Well done. It has lowered its guard. Do you see that crack in the lower right of its eyeball? That was the wound I left ten thousand years ago, and it is its only weakness.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "情报优势"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_013",
+        "content": "Regardless of the strategy chosen, the齿轮 of fate had begun to turn. The moment Chen Ji stepped into the core of the Heavenly Eye, he felt the wail of a chess game from ten thousand years ago. That was the silent scream of one abandoned by the Heavenly Will, and also the ultimate question from all those whose fate had been toyed with.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0811_014",
+        "character_id": "char_chenji",
+        "content": "\"Did you hear it?\" Chen Ji's voice echoed in the core. \"This is the lament of that person from ten thousand years ago, and also the lament of all those toyed by you. Today, I will turn this lament into the final horn of judgment.\"",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_015",
+        "content": "The core space began to violently tremble. The Heavenly Eye's will no longer carried contempt, but for the first time, showed a genuine emotion—fear. For the first time in ten thousand years, it felt a threat from a chess piece. And Chen Ji had already grasped the key that could completely seal it. The turning point of fate was right before his eyes."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0811_016",
+        "content": "The moment Chen Ji stepped into the core of the Heavenly Eye, he felt the wail of a chess game from ten thousand years ago—that was the silent scream of one abandoned by the Heavenly Will. And within this wail, he heard another voice, a voice so familiar it made his heart suddenly tighten: \"Brother?\""
+      }
+    }
+  ]
+}

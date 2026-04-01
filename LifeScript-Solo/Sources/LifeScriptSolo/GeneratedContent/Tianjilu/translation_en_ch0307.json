@@ -1,0 +1,490 @@
+{
+  "id": "天机录_ch0307",
+  "book_id": "天机录",
+  "number": 307,
+  "title": "The Third Path",
+  "is_paid": true,
+  "next_chapter_hook": "In the depths of the spatiotemporal rift, a pair of eyes dormant for countless ages slowly opened. An ancient and majestic aura surged forth like a tide. For the first time, the mysterious imprisoned existence cast its gaze upon the young man who had dared to intrude upon this forbidden land.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0307_001",
+        "content": "Ye Qing's fingertips carried a slight chill, yet they unexpectedly stirred the heart of Chen Ji, accustomed to cold calculations. He did not immediately pull back his hand, allowing that warmth to spread through his palm. Faint light flickered in his eyes—the prophecy of the incomplete Tianji Record repeated endlessly in his mind. The vision of his Heavenly Fate Value being exhausted was too vivid; each recollection felt like a blade cutting through his soul.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_002",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing's voice was low and solemn. \"In the ancient texts of the Holy Sect of the Demonic Path, it is recorded that the Heavenly Fate Lock is not inseparable. Ten thousand years ago, a sage used the art of 'Soul Dividing Guidance' to detach the lock from the one bound by fate, granting the imprisoned freedom.\" She paused, a trace of sorrow flickering in her beautiful eyes. \"But the remaining scroll of that secret technique lies in the deepest part of this secret realm's forbidden grounds.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_003",
+        "content": "Upon hearing this, Chen Ji's heart surged with tumultuous waves. Soul Dividing Guidance—he had glimpsed this name in the marginal notes of the Tianji Record Fragment, thinking it merely a legend at the time, never expecting it to truly exist. He unconsciously tightened his grip on Ye Qing's hand, his gaze blazing: \"The forbidden grounds are fraught with dangers. A Golden Core realm cultivator entering would face near-certain death. Are you certain you want to take this risk?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_004",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing smiled gently, that smile carrying a complex blend of resolve and tenderness: \"I was used as a chess piece by the Holy Sect for hundreds of years. If I cannot break free from these shackles, the rest of my life would merely be a greater prison.\" She gripped his hand in return. \"Besides, with your card that leaves nothing to chance, what do I have to fear?\"",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0307_005",
+        "prompt": "Ye Qing has declared her resolve. Chen Ji must make a decision—whether to trust this Demon Path Saintess and venture together into the perilous forbidden grounds where life and death are uncertain.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0307_005_a",
+            "text": "Form Alliance and Enter Forbidden Grounds Together",
+            "description": "Since our goals align, we shall treat each other with sincerity, forming a true alliance with Ye Qing to face the unknown dangers within the forbidden grounds.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reveal Partial Hidden Cards",
+            "visible_reward": "Obtain the ability to conceal heavenly secrets aura through Demon Path Mist",
+            "risk_hint": "The spatiotemporal chaos within the forbidden grounds is extremely dangerous for Golden Core realm cultivators",
+            "process_label": "抉择：结盟",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_005_a_001",
+                  "content": "Chen Ji took a deep breath and slowly nodded. He drew from his chest a jade pendant carved with mysterious patterns and solemnly placed it in Ye Qing's hand: \"This is the 'Tianji Talisman' I deduced from the Tianji Record Fragment. It may protect your life in critical moments.\" This jade pendant was one of his trump cards, never shown to anyone.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_005_a_002",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing took the jade pendant. The moment her fingertips touched the warm jade, her eyes slightly reddened: \"Chen Ji, you... this is your last protective talisman!\" She wanted to refuse, but Chen Ji pressed down on the back of her hand.",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "禁地同盟"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清收到天机符，信任大增",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0307_005_b",
+            "text": "Proceed with Vigilance",
+            "description": "Although we have decided to cooperate, I will retain my core hidden cards, following Ye Qing in an auxiliary role to explore the path, ensuring my own safety.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ye Qing May Feel Disappointed",
+            "visible_reward": "Preserve key hidden cards for emergencies",
+            "risk_hint": "The forbidden grounds are extremely dangerous; facing them alone may be even more exhausting",
+            "process_label": "抉择：戒心",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_005_b_001",
+                  "content": "Chen Ji slightly nodded, his expression calm: \"I will go with you, but let me be clear—if there is danger to my life, I will prioritize self-preservation.\" These words were both honest and a test.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_005_b_002",
+                  "character_id": "char_yeqing",
+                  "content": "A flicker of disappointment passed through Ye Qing's eyes, but she quickly smiled with acceptance: \"That's human nature. That you're willing to enter the forbidden grounds with me is already an unexpected joy.\" Her understanding instead made a slight heaviness settle in Chen Ji's heart—this woman's disposition was far more resilient than he had imagined.",
+                  "emotion": "释然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清理解陈机的谨慎",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_006",
+        "content": "With the discussion settled, the two hesitated no longer. Ye Qing drew a jet-black token from her sleeve and lightly crushed it. The token transformed into overwhelming black mist, enveloping both of them. Within the mist, Chen Ji felt the surrounding pressure suddenly lessen, and that faint, probing sensation from the Tianji Record Fragment also vanished.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_007",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing's voice emerged from within the black mist, carrying a hint of self-mockery: \"This is our Holy Sect's 'Demon Path Mist,' capable of concealing all heavenly secrets and divination. Originally meant for evading pursuit, I never expected it would serve this purpose today.\" Chen Ji silently nodded, his evaluation of this Demon Path Saintess rising further—to have survived under the Holy Sect's control until today, this woman was absolutely no simple person.",
+        "emotion": "自嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_008",
+        "content": "Passing through layers of mist, a majestic stone gate suddenly appeared before them. The gate stood over a hundred zhang high, covered in obscure and ancient runes that faintly emanated a chilling, oppressive might. Ye Qing's footsteps halted, her expression grave: \"We've reached the entrance to the forbidden grounds. Legend says beyond the stone gate lies the spatiotemporal chaos layer. Without special protective measures, a Golden Core cultivator probably couldn't survive even a quarter hour.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0307_009",
+        "prompt": "The stone gate stands before them. Ye Qing turns to Chen Ji: \"You decide—how do we enter?\"",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0307_009_a",
+            "text": "Use Tianji Record to Deduce the Entrance",
+            "description": "Consume 5 Heavenly Fate Value. Use the Tianji Record to foresee the optimal path for the next half hour, maximizing avoidance of spatiotemporal chaos impacts.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Heavenly Fate Value -5",
+            "visible_reward": "Safely Pass Through Spatiotemporal Chaos Layer",
+            "risk_hint": "Heavenly Fate Value is precious to begin with; this move is like drinking poison to quench thirst",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_009_a_001",
+                  "content": "Chen Ji毫不犹豫地催动天机录残页。Without hesitation, Chen Ji urged the Tianji Record Fragment. Golden light patterns swirled in his pupils as countless images flickered past like a carousel. He saw—the third paving stone on the left, after seven breaths, three zhang northeast... Fragmented prophetic visions flooded his mind. Though blurry, they were enough to point the way.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_009_a_002",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji opened his eyes, a trace of exhaustion flickering in their depths, quickly replaced by determination: \"Follow closely. The third paving stone on the left is the safe landing point.\" He stepped through the stone gate first, his form swallowed by the shimmering spatiotemporal chaos.",
+                  "emotion": "疲惫"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": "陈机使用天机录推演",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0307_009_b",
+            "text": "Rely on Demon Path Mist to Force Through",
+            "description": "Have Ye Qing fully urge the Demon Path Mist, using this Holy Sect treasure's power to forcefully穿越时空乱流层, reducing Heavenly Fate Value consumption.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Demon Path Mist Consumption is Severe",
+            "visible_reward": "Preserve Heavenly Fate Value",
+            "risk_hint": "Demon Path Mist's concealment effect may weaken, higher risk",
+            "process_label": "迷雾硬闯",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              },
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_009_b_001",
+                  "content": "Upon hearing this, Ye Qing深吸一口气，周身黑雾陡然浓郁了三分。Took a deep breath, the black mist around her suddenly intensified by threefold. She grabbed Chen Ji's wrist, shouting: \"Go!\" The two simultaneously rushed through the stone gate. In an instant, overwhelming spatiotemporal chaos swept over them like ten thousand blades cutting simultaneously.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_009_b_002",
+                  "content": "The Demon Path Mist churned violently, yet tottered within that apocalyptic spatiotemporal chaos. Ye Qing's temples bulged with green veins, clearly at her limit. At the critical moment, Chen Ji反手握住她的手腕，体内真元如潮水般涌入黑雾之中，协助稳定屏障。turned to grip her wrist, True Qi from within him surging into the black mist like a tide, helping stabilize the barrier.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "二人合力穿越乱流",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_010",
+        "content": "The terror of spatiotemporal chaos far exceeded imagination. The surrounding space compressed like a pellet, then tore like an abyss. Time flowed in utter chaos—sometimes one breath felt like a year, sometimes a hundred years passed in an instant. Chen Ji felt his internal organs churning. Had the Tianji Record Fragment not instinctively emitted a protective glow around his divine sense, he would have been destroyed body and soul.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_011",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing's voice断断续续传来，\"再……再坚持片刻！我感应到了……前方有出口！\" came in fragments: \"J-just... hold on a bit longer! I sense... there's an exit ahead!\" Her face was pale as paper, blood already seeping from the corner of her mouth. Clearly, the consumption of the Demon Path Mist had reached its critical point.",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_012",
+        "content": "At this moment, a jet-black spatial rift appeared unexpectedly beside Chen Ji. A诡异吸力 emanated from within the rift. Caught off guard, half of Chen Ji's body had already been pulled in. At the critical moment,一只冰凉的手死死扣住了他的手腕。an ice-cold hand gripped his wrist tightly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_013",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing had somehow flung herself before Chen Ji, her arms around his waist,拼命向外拽去。pulling with all her might outward. The black mist behind her tore like thin paper under the edge of spatiotemporal chaos. Blood instantly dyed her back crimson.",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_014",
+        "content": "Chen Ji's pupils contracted sharply.某根弦被狠狠拨动。Something in his heart was deeply moved. He had never imagined this Demon Path woman he'd known for only days would do so much for him. \"Let go!\" he barked. \"You'll die like this!\" Yet Ye Qing merely clenched her teeth and shook her head, blood dripping from her jaw onto Chen Ji's face—warm yet piercing to the eye.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0307_015",
+        "prompt": "At this life-and-death moment, Chen Ji must choose—accept Ye Qing's sacrifice and escape alone, or risk everything to bring her through together?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0307_015_a",
+            "text": "Never Die Alone, Break Through Together",
+            "description": "Burn the True Qi within to activate the full power of the Tianji Record, paying with Heavenly Fate Value to forcefully carve a逃生通道, escaping with Ye Qing.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Consume Large Amount of Heavenly Fate Value",
+            "visible_reward": "Ye Qing Survives, Affection Greatly Increases",
+            "risk_hint": "Heavenly Fate Value is precious; such consumption is like cutting off one's own future",
+            "process_label": "共闯生机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_015_a_001",
+                  "content": "Chen Ji bit his tongue hard, spraying a mouthful of精血 on the Tianji Record Fragment. The fragment instantly blazed with dazzling golden light. Countless mysterious文字如游鱼般穿梭而出，编织成一道璀璨的屏障。characters swam out like fish, weaving a magnificent barrier around Chen Ji and Ye Qing. The spatiotemporal chaos struck the barrier,发出刺耳的嘶鸣，却被那光芒一一弹开。letting out a piercing shriek, yet being repelled one by one by that radiance.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0307_result_015_a_002",
+                  "character_id": "char_yeqing",
+                  "content": "Ye Qing stared怔怔地望着眼前这个男子。at this man before her. His face appeared especially resolute under the golden light. Suddenly she understood something, and tears burst forth: \"You fool...\" Chen Ji made no reply, merely gripping her hand tightly, running with all his might toward where the light guided.",
+                  "emotion": "感动"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "共命契机"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机以天命值为代价救下夜清",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0307_015_b",
+            "text": "Stay Calm, Bide Your Time",
+            "description": "Suppress inner anxiety, use the Tianji Record's fragmented divination to find the nearest stable node, biding time to break free from the rift.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Ye Qing May Be Seriously Injured",
+            "visible_reward": "Preserve More Heavenly Fate Value",
+            "risk_hint": "Ye Qing Will Suffer More Damage",
+            "process_label": "冷静脱困",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_015_b_001",
+                  "content": "Chen Ji took a deep breath强迫自己冷静下来。forcing himself to stay calm. The more critical the moment, the more one must not lose composure. He closed his eyes, allowing the Tianji Record Fragment to project模糊的画面 into his mind—the right side, seven chi away, there was a relatively stable spatiotemporal node.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0307_result_015_b_002",
+                  "content": "\"Right!\" he低喝一声，猛地扭转身形，借着夜清的拖拽之力朝着那个方向冲去。cried out low, sharply twisting his body, leveraging Ye Qing's pull to dash toward that direction. The rift's suction pursued relentlessly. At the critical moment, Chen Ji一掌拍在夜清后背，将她率先推出裂隙范围。slapped Ye Qing's back, pushing her out of the rift's range first.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机冷静分析救出夜清",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_016",
+        "content": "How long passed—perhaps an instant, perhaps eternity—when Chen Ji opened his eyes again, the surroundings had completely changed. The howling of spatiotemporal chaos had vanished, replaced by a dead, dark space. He struggled to sit up and found Ye Qing lying beside him,浑身浴血，却仍有微弱的呼吸。drenched in blood, yet still breathing faintly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_017",
+        "content": "Chen Ji's heart tightened. He quickly examined Ye Qing's injuries. The aftershocks of spatiotemporal chaos had left countless tiny wounds on her back,幸未伤及要害。but fortunately, no vital points were injured. He took several疗伤丹药 from his storage bag and carefully fed them into her mouth. Having done this, he finally relaxed slightly and looked around.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_018",
+        "content": "In this幽暗的空间, an indescribably ancient aura pervaded. The ground was漆黑的岩石, barren; above there was no sun, only endless darkness. And deep within this darkness, Chen Ji saw a hazy silhouette. That figure was imprisoned by countless锁链般的黑色光芒, radiating a chilling, oppressive might.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0307_019",
+        "character_id": "char_yeqing",
+        "content": "At this moment, that imprisoned figure suddenly opened its eyes. A pair of ancient and majestic eyes, as if having seen through countless ages,带着审视与玩味，直直地望向陈机。carrying scrutiny and playfulness, stared directly at Chen Ji. That gaze was tangible, making all his hair stand on end,仿佛被天道意志锁定了一般。as if locked onto by the will of Heaven itself.",
+        "emotion": "惊惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0307_020",
+        "content": "An苍老而悠远的声音在陈机脑海中响起，带着跨越万年的疲惫与沧桑。Old and distant voice rang in Chen Ji's mind, carrying the exhaustion and vicissitudes spanning ten thousand years: \"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

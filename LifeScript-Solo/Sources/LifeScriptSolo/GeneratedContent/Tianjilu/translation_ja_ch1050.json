@@ -1,0 +1,579 @@
+{
+  "id": "天机录_ch1050",
+  "book_id": "天机录",
+  "number": 1050,
+  "title": "天機閣の召喚",
+  "is_paid": true,
+  "next_chapter_hook": "天機録完全版が前所未有の光を放ち、Chen Jiの運命の転換点が到来することを予兆していた——次の章において、彼は正式に700章にわたる死亡予言を破る道を歩み始める。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1050_001",
+        "content": "禁忌秘法の黄金色の光が未だ散去せず、Chen Jiは片手でその壊れた亀甲神器をつき、額の端には密な汗の雫が滲んでいた。3本の運命の線の残像はなお彼の識海の中で絡み合い、3匹の人を選択して噬む毒蛇のように、いつでも致命の一撃を加える可能性がある。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_002",
+        "content": "最も左側の線は、焦土と屍山血海へと続いており、Han Lieの血に染まった身影が隐约可见。 中央の線は、混沌とした霧に覆われ、何も看不清い。 しかし最も右側の線の尽头——Chen Jiの指が微かに緊まる——には、彼が決して予想しなかった身影が立っていた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_003",
+        "character_id": "char_chenji",
+        "content": "念儿……",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_004",
+        "content": "それは多年失踪していた妹のChen Nianだった。 しかしなぜ彼女があの運命の線の尽头に現れるのか？ なぜ偏偏この一本なのか？ Chen Jiは深く息を吸い、震惊の中から强迫的に自分を切り離した。 如何なるに関わらず、天界の布局は止められず、人間界の駒も配置すべき時が来た。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_001",
+        "prompt": "運命の棋盤はすでに展開され、Chen Jiは次の主要な行動を決定する必要がある。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_001_opt_a",
+            "text": "即座にSu Qingyaoに連絡する",
+            "description": "内門首席は重要なノードの配置を完了しており、彼女の進捗を確認し最終指示を伝達する必要がある。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Heavenly Fate値を2点消費する",
+            "visible_reward": "Su Qingyaoの最新情報획득、天青宗内部の勢力網を統合する",
+            "risk_hint": "長時間の連絡は居場所を発表する可能性がある",
+            "process_label": "联络盟友",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_a_001",
+                  "content": "Chen Jiは袖から翠緑色の伝音符を取り出し、指先で霊力を軽く激励した。 片刻後、Su Qingyaoの清冷な声が符籙の中に響いた：「ようやく連絡してきたのね。外門の那些見張りはもう片付けたけど、Ling Yuanの方面は……少し変よ。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶情报整合",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_b",
+            "text": "まずYe Qingに連絡して魔道の動きを確認する",
+            "description": "魔道聖教の聖女は天機録の気配を隠す重要な能力掌握了おり、彼女の配置は全局の成敗に関わる。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "魔道と結託するリスクを发表する",
+            "visible_reward": "魔道の霧の掩護を獲得し、天機録の気配を完全に隠すことができる",
+            "risk_hint": "この事が発覚すれば、正道の公敵となる",
+            "process_label": "魔道布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_b_001",
+                  "content": "Chen Jiは漆黒の魔晶石に切り替え、低く古怪な呪語を唱えた。 片刻後、Ye Qingの怠惰な笑い声が伝わってきた：「Chen公子这么快就想我了？大丈夫，魔道迷雾は3000里に布下してある。天道之眼が亲自来ても、あの破れた書頁の匂いは嗅ぎ出せないわよ。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "魔道迷雾就绪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_c",
+            "text": "第三条の運命線を一人で推演する",
+            "description": "その尽头にChen Nianが立っている運命線が最も不気味であり、その中のあらゆる細部を見清必要がある。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "大量のHeavenly Fate値を消費し、反撃に巻き込まれる可能性がある",
+            "visible_reward": "Chen Nianの位置と主要情報を窺見する",
+            "risk_hint": "Heavenly Fate値が激減すると予知能力が一時的に失效する可能性がある",
+            "process_label": "窥探命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_c_001",
+                  "content": "Chen Jiは歯を食いしばって天機録を催動し、欠頁上の符文が狂ったように回転した。 激痛が袭来し、彼は見た——黒い霧に覆われた古塔、Chen Nianが鎖で塔頂に縛られ、双眸は無神だった。 そして彼女の後ろには、Ling Yuanの佝僂とした身影が立っていた。「見つけた……」Chen Jiの口角から血の雫が滴り、眼中には烈しい殺意が闪烁した。「老後供、彼女の一本の汗毛也不敢动手。」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": "陈念位置确认",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_005",
+        "content": "伝音符の中に微かな雑音が传来し、Chen Jiの眉根が微かに曇った——Su Qingyaoの语气は平静だったが、彼はその压抑された焦燥を感じ取れた。 天青宗内部の风暴は、彼の予想より早く来ていた。 Ling Yuanあの老狐は、もう待ちきれないようだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_006",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji、誤解しないで。 Ling Yuanは……彼は後山禁地に一道の禁制を布下了、私は入れない。 でも 느껴える、あの中に何かが覚醒しつつあるのを。",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_007",
+        "content": "Chen Jiは目を閉じて沉思した。 天青宗後山禁地、それは歴代掌门が禁忌の物を封印した所在である。 Ling Yuanがそこで禁制を布下するなら、，无非是想掩盖什么——或者、释放什么。无论哪种可能，都意味着局势正在滑向他无法掌控的方向。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_002",
+        "prompt": "三路の布局は既に完成に近づいているが、Ling Yuanの動きがリズムを乱した。 Chen Jiは決断を下す必要がある。",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_002_opt_a",
+            "text": "Su Qingyaoに禁制を無理に突破させる",
+            "description": "内門首席の实力は足以撼动大部分禁制、强行闯入或许能看清Ling Yuan的底牌。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Su Qingyaoが发表され、Ling Yuanの直接的な標的となる可能性がある",
+            "visible_reward": "Ling Yuanの秘密の主要情報を獲得する",
+            "risk_hint": "もし失敗すれば、Su Qingyaoは危険な状況に陥る",
+            "process_label": "强攻禁制",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_a_001",
+                  "content": "Su Qingyaoは片刻黙然とした後、冷たく言った：「你以为我是什么人？」話が終わると、剣光が暴涨した。 しかし禁制反撃の力は予想外に強く、彼女は闷哼一声、数歩撃退された。「この禁制は……普通の禁制ではない、古代封印術だ！ Chen Ji、あの老後供は一体何を企んでいるの？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "上古封印术发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_b",
+            "text": "Ye Qingの魔道力を動員して側面から策応する",
+            "description": "魔道秘法に頼れば、禁制の欠点を見つけ出せるかもしれない、同時にSu Qingyaoの身分を发表しないですむ。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "魔道が天青宗に介入すれば、事後に正道の追及を引き起こす可能性がある",
+            "visible_reward": "禁制を迂回して内部情報を直接獲得する",
+            "risk_hint": "もし魔道と結託が発覚すれば、これまでの成果が水泡に帰する",
+            "process_label": "魔道策应",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_b_001",
+                  "content": "Ye Qingの声は再び响いた，这次多了几分凝重：\"有意思，这禁制连着我的血脉印记……Chen公子，你那位Ling Yuan老前辈，怕是比我们想象的更不安分。我闻到了一股熟悉的味道——聖宗的气息。\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "圣宗气息发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_c",
+            "text": "一時的に動かず、様子を見て変化を待つ",
+            "description": "Ling Yuanすれば動作が频繁になればなるほど、内心の心虚を示している。 ，不如将计就计，让他自露马脚。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "先手を失う可能性がある",
+            "visible_reward": "Ling Yuanのすべての底を知った後に一击必殺する",
+            "risk_hint": "もしLing Yuanが先に手を打てば、受動的な立場に陥る",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_c_001",
+                  "content": "Chen Jiは淡淡と言った：「焦らない。」彼は空を見上げ、欠頁上の符文がゆっくりと回転している。「老狐にもう少し跳ね回らせろ。すればするほど、欠点が 많이 나온다。」话音未落、亀甲神器が突然激しく震动し、蒼老で陰冷な声がそこから伝わった：「Chen Ji……你以为你藏得很好吗？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "凌渊主动现身",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_008",
+        "content": "Ling Yuanの声は氷水を頭から浴びせたようにだった。 Chen Jiの瞳孔が骤然收缩——あの老狐がすでに神識を亀甲神器に延伸していたことを思いつかなかった。 これは何を意味するのか？ 相手の布局は、彼の想像より更深、より早かったことを意味する。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_009",
+        "character_id": "char_lingyuan",
+        "content": "呵呵、惊喜吗？当年我从你师父手中接过天機録候选人の資格时，就知道迟早会有这一天。可惜啊，他选了你这个废物，却选错了。",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_010",
+        "content": "Chen Jiはゆっくりと身体を直し、脸上的懦弱と怯懦在这一刻褪去得干干净净。 他抬起头，嘴角勾起一抹淡漠的笑意。 那是他真正拥有的、属于棋手的笑容——冷酷、精准，不带一丝多余的情感。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_011",
+        "character_id": "char_chenji",
+        "content": "Ling Yuan先輩，您老人家既然这么喜欢天機録，当初为何不直接抢？ 偏要等到今日，在後山禁地里搞这些见不得人的勾当？",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_003",
+        "prompt": "Ling Yuanの嘲讽刺耳至极，但Chen Ji知道，真正的交锋才刚刚开始。",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_003_opt_a",
+            "text": "直接反唇相讥，揭穿他的底细",
+            "description": "把Ling Yuan当年的丑事翻出来，让他在气势上先输一阵。",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "可能激怒Ling Yuan提前发难",
+            "visible_reward": "打击对方气焰，震慑暗中窥探者",
+            "risk_hint": "Ling Yuan城府极深，不会轻易动怒",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_a_001",
+                  "character_id": "char_chenji",
+                  "content": "哦，我忘了。先輩当年可是被天機録亲口拒绝的人。 被一本死物嫌弃的滋味不好受吧？ 所以您才这么恨我？ 恨我继承了您求而不得的东西？",
+                  "emotion": "傲慢"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_b",
+            "text": "冷嘲热讽，步步为营套话",
+            "description": "不正面交锋，而是用话术引诱对方透露更多信息。",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "需要极高的语言技巧",
+            "visible_reward": "获取Ling Yuan真实目的的关键线索",
+            "risk_hint": "若被识破，将打草惊蛇",
+            "process_label": "套取情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              },
+              {
+                "stat": "天命值",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_b_001",
+                  "character_id": "char_chenji",
+                  "content": "先輩が後山这么大的阵仗摆，不会只是想跟晚辈叙叙旧吧？ 上古封印术、聖宗的气息……啧啧，您这是打算自立门户，还是打算把自己也卖了？",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_c",
+            "text": "亮出底牌震慑对方",
+            "description": "直接告知Ling Yuan，他的妹妹Chen Nian就在对方手中，以此试探对方反应。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "暴露自己对Chen Nian的在意，可能被对方利用",
+            "visible_reward": "看清Ling Yuan对Chen Nian的真实态度",
+            "risk_hint": "若Ling Yuan以此要挟，将陷入被动",
+            "process_label": "以命相胁",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_c_001",
+                  "character_id": "char_chenji",
+                  "content": "对了，先輩。 我那不成器的妹妹……您替我照顾得如何了？ 古塔顶层，风水不错吧？",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_012",
+        "content": "亀甲神器の中の声が戛然と止んだ。 一瞬の沈黙は、どんな言葉よりも多くを物語っていた。 Chen Jiは捕捉した——Ling Yuanが彼がすでにChen Nianの居場所を見つけたことを予想していなかったこと。 これは、今後の駆け引きにおいて、相手の最大の駒がもう秘密ではないことを意味する。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_013",
+        "character_id": "char_lingyuan",
+        "content": "你……你怎么会知道！",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_014",
+        "content": "Chen Jiは轻轻地笑い声を上げた、その笑い声は清冷で从容、从寂静的虚空中回荡した。 彼は手を上げ、欠頁上の符文が骤然明るく輝き、その中から虚幻な映像が投射された——正是那座被黑霧笼罩的古塔、塔頂に縛られた紅衣の少女、正是Chen Nian。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_015",
+        "character_id": "char_chenji",
+        "content": "先輩，您以为只有您会布局吗？ 这盘棋，我下了七年。 您的每一步，我都在看着。",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_016",
+        "content": "话音落下，亀甲神器中の气息陡然阴沉下去。 片刻後、Ling Yuanの声が再び响いた，这次少了那层偽装的慈祥，多了几分赤裸裸的殺意：\"好，好，好！不愧是Chen Xuanの徒弟。既然你这么想见你妹妹，那老夫就成全你——七日后，天機閣开启，届时你若不来，她就替你去死！\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_017",
+        "content": "通讯戛然中断。 Chen Jiは亀甲神器を握りしめ、指節が力に 맞아白くなった。 彼の脸上没有愤怒，没有惊慌，只有一片深不见底的平静。 七年了，他等了七年，终于等到Ling Yuan自己跳出来。 七日后、天機閣——那将是决定一切的战场。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_018",
+        "character_id": "char_chenji",
+        "content": "念儿，再等等哥哥。 七日……不、三日以内に、必ず迎えに行くから。",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_019",
+        "content": "天機録欠頁上の符文が疯狂に回転し始め、黄金色の光がChen Ji的身影を完全に包み込んだ。 遠くの地平線上には、3本の違う色の光柱が3つの方向から汇聚しつつあった——那是Su Qingyao、Ye Qing、そして彼が闇の中で布いた最後の駒。 三路帰一、天下大乱の序幕がまさに拉开しようとしている。 そしてChen Jiは、この风暴の中心に立ち、彼が亲手に織り上げた棋局を見下ろしている。 天機閣の召喚はすでに発せられ，这一次，他不再是那个任人宰割の废物——他是执棋之人。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "id": "天机录_ch0241",
+  "book_id": "天机录",
+  "number": 241,
+  "title": "비경 개방 · 입장 의식",
+  "is_paid": true,
+  "next_chapter_hook": "천기(Chen Ji)가 대중 앞에서 마도의 음모를 폭로하고, 자객 3인조는 오히려 학살당하여, 정도 각파가 떠들썩해졌다——그리고 이 모든 것은 그가 바둑판 위에 놓은 첫 수에 불과했다.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0241_001",
+        "content": "천광이 밝아오고, 고대의 제단 위에서 아홉 개의 황금빛 기둥이 하늘로 치솟아 온 세상을 현흑의 색으로 물들였다. 상고비경 '천기각(天機閣)' 개방 의식이正式开始。各 문파 장로들이 공중을 나는 듯 다가오고, 천청종(天青宗), 현무종(玄武宗), 백호종(白虎宗)의 기치가 구름 위에서 펄럭이며, 수십 명의 핵심 제자들이 양편으로 나란히 섰다. 분위기는 극도로 장엄하고 엄숙했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_002",
+        "content": "천기(Chen Ji)는 핵심 제자 줄에 서 있었고, 한 몸의 청색 도포가 바람에 가볍게 흔들렸다. 얼굴은 물처럼 고요했다. 그러나 주변의 시선은 고요하지 않았다——조소, 질투, 의심 등 다양한 감정이 뒤섞여 있었다. '이 폐물(廢物)이凭什么 서 있단 말인가?' 천청종 내문 제자들이 소곤소곤 얘기했다. 목소리는 낮았지만, 천기의 귀로 분명히 전해졌다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_003",
+        "character_id": "char_chenji",
+        "content": "(표정은 미소, 마음속은 냉소) 폐물? 재미있군. 조금 있으면 누구才是 진정한 폐물인지 보여주지.",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_004",
+        "content": "천기록(天机录) 잔편이 갑자기 미열하게 달아올랐다. 익숙한 자극감이 미간(眉心)에서 퍼져나갔다. 묵선생(Mo Xiansheng)의 남아있는 혼의 목소리가 뇌해에 울렸다: 「왔군. 북서쪽, 3인, 암살 목표——현무종 대장로(大長老).」천기의 눈동자가 미세하게 수축되었지만, 얼굴은 태연자약한 채 사방을 바라보았다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_005",
+        "character_id": "char_moxiansheng",
+        "content": "「신중하게 행동하라. 이 3인은 마도 성종(魔道聖宗)의 사시(死士)들로, 기운을 숨기는 데 뛰어났네.」묵선생의 목소리에一丝凝重的気配가 감돌았다. 「네가 직접 나서면, 아마 너무 많이 노출될 것이다.」",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_006",
+        "content": "천기는 마음속으로 빠르게 판단했다. 마도 사시 3인, 현무종 대장로 암살——이 장면은 자신이 조롱당하는 것보다 훨씬 재미있었다. 천기록의 장면이 다시 떠올랐다: 세 개의 검은 그림자가 군중 속에서 폭발하듯 일어났고, 독침(毒針)이 허공을 갈랐다. 대장로는 그 자리에서 쓰러졌고, 피가 세 치나 튀었다. 그리고 그를目击者로서 각 문파의追及을 받게 될 것이다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0241_007",
+        "prompt": "자객이 곧 움직이려 한다, 시간이 촉박하다! 천기는 반드시 선택을 내려야 한다:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "直接对抗",
+            "text": "직접 나서서 차단한다",
+            "description": "번개와 같은 기세로 독침을 그 자리에서 막아내고, 대중 앞에서 실력을 드러내어 온장을震慑하지만, 각 문파의 관심과 조사를 불러올 것이다.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "부분적 실력 노출",
+            "visible_reward": "현무종 대장로의 호감 획득",
+            "risk_hint": "영연(凌淵) 오리지널 사장(老掌門)의 주의를引来할 가능성",
+            "process_label": "拦截刺客",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_直接对抗_001",
+                  "content": "천기의身形이 흔들리며, 군중이 아직 반응하지 못한 사이에 이미 반공중으로 치달았다. 소매를 휘두르자, 세 줄기 한기(寒芒)를 모두 떨어뜨렸다. 세 명의 사시는 비명조차 지르지 못하고一股柔勁에 수丈이나 밀려났다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_直接对抗_002",
+                  "character_id": "char_chenji",
+                  "content": "(약간拱手하며, 사과의 빛을 띠고) 대장로님께 놀라셨습니다. 이几位……아마阁下께不太礼貌한 것 같습니다.",
+                  "emotion": "温和"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借势",
+            "text": "세를 활용해全场을引爆한다",
+            "description": "자객의 암살을 유도하여 성공하게 하고, 이를 기회로 현무종과 마도 성종을 원수 사귀로 만들고,渔翁의 이익을 취하지만, 대장로가 사망할 수 있다.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "현무종 대장로가 사망할 가능성",
+            "visible_reward": "마도와 정도가 완전히 반목하고, 각 문파 연맹이瓦解",
+            "risk_hint": "만약 의도가 발각되면,后果不堪设想",
+            "process_label": "引导刺杀",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_借势_001",
+                  "content": "천기의 입꼬리가 살짝 올라갔다. 의도적으로 한 발 물러서서 통로를 열어주었다. 세 명의 사시가 기뻐하며,绝佳한 암살 각도를 찾았다고 생각하고, 모두 폭발하듯 일어났다——",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_借势_002",
+                  "character_id": "char_chenji",
+                  "content": "(마음속으로默念하며) 가라, 현무종이 마도의 위력을 알게 하라. 이 빚은 나중에 계산하겠다.",
+                  "emotion": "冷漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "隐忍",
+            "text": "참耐하며 은밀히 배치한다",
+            "description": "가만히 있으며, 자객이 성공한 후에 비로소 폭로하고, '目击证人' 신분으로介入하여 폐물 인격을 유지하면서 동시에局势를掌控한다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "대장로 부상",
+            "visible_reward": "目击자 신분으로 각 문파의 신뢰 획득",
+            "risk_hint": "만약 대장로가 부상까지하여 치료되지 않으면, 공범으로 의심받을 수 있음",
+            "process_label": "静待时机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0241_result_隐忍_001",
+                  "content": "천기는 눈꺼풀을 떨군 채, 기운을最低까지 억누르고, 완벽하게吓傻了的 폐물 제자로 분장했다. 세 개의 검은 그림자가 폭발하듯 일어났고, 독침이 허공을 갈랐다——현무종 대장로가闷哼을 흘리며 어깨에 피를 물들였다.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_隐忍_002",
+                  "character_id": "char_chenji",
+                  "content": "(목소리를 낮추며惊呼) 자객이 있다! 마도의 사람이다!",
+                  "emotion": "惊恐"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_008",
+        "content": "바로 이때, 차갑고 어두운 음성이 천기의 뇌해에 울렸다. 묵선생의蒼老함과는 전혀 달랐다——그것은 야청(夜淸), 마도 성종 성녀(聖女)의 목소리였다: 「천기, 나는 네 배치(布局)를 봤다. 자객은 우리 사람이지만, 네가 정말로 그들을成功하게 둘 생각은 아니겠지?」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_009",
+        "character_id": "char_yeqing",
+        "content": "「재미있군.」야청의 목소리에几分玩味가 실려 있었다. 「네가 검을 빌려 사람을 죽이려는지, 아니면 영웅구미(英雄救美)를 하려는지? 말해봐, 내가 한 수 도와줄 수 있다——물론, 대가로 너는 나에게 인질을 지게 된다.」",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_010",
+        "content": "천기의眸光가 미세하게 반짝였다. 이 마도 성녀，果然不简单. 그는 빠르게思索했다——야청의 '마도 미혹(魔道迷霧)'은 천기록의 기운을 가릴 수 있다. 만약 그녀의 협력을 얻을 수 있다면, 이번 배치는 더욱 완벽해질 것이다. 하지만 그녀와 협력하는 것은 호랑이와 매제 노름하는 것과 같다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0241_011",
+        "prompt": "야청이 협력 제안을 했다, 천기는 어떻게 응해야 할까?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "接受合作",
+            "text": "협력 수용",
+            "description": "야청과 손을 잡고, 그녀의 마도 미혹으로 자신의 행동을 숨기며,，初步 신뢰 관계를 구축한다.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "인질 부담",
+            "visible_reward": "마도 미혹으로 천기록 기운 숨김 획득",
+            "risk_hint": "야청의 마음은 깊고, 인질은 갚기 어렵다",
+            "process_label": "建立合作",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_接受合作_001",
+                  "character_id": "char_chenji",
+                  "content": "(传音하며) 좋다, 나는 약속한다. 하지만 기억해라, 네 미혹은 다만 내 기운을 숨기는 데만 쓸 수 있다. 암살의 일——让他们去.",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_接受合作_002",
+                  "character_id": "char_yeqing",
+                  "content": "「거래 성립.」야청의 목소리에 웃음기가 실려 있었다. 「넌 내가 생각했던 것보다 훨씬 재미있군, 천기.」",
+                  "emotion": "愉悦"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "拒绝合作",
+            "text": "협력 거절",
+            "description": "야청의 호의를 사양하고, 독립적 행동을 유지하며, 마도 누구에게도 빚을 지지 않는다.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "마도 미혹 은폐 상실",
+            "visible_reward": "절대적 독립 유지, 증거를 남기지 않음",
+            "risk_hint": "천기록 기운이 노출될 가능성",
+            "process_label": "独立行动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_拒绝合作_001",
+                  "character_id": "char_chenji",
+                  "content": "(传音하며) 필요 없다. 내 천기의 바둑판에 타인의干渉는 필요 없다.",
+                  "emotion": "冷淡"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0241_result_拒绝合作_002",
+                  "character_id": "char_yeqing",
+                  "content": "「……재미있군.」야청은 잠시 침묵했다. 「그러면 내가 봐주지, 너这只小狐狸가 어떻게 이 바둑에서 빠져나가는지.」",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_012",
+        "content": "자객의 독침이 이미 손을 떠나, 세 줄기 한기가 현무종 대장로의 얼굴을 향해直取했다. 바로 이千钧一发之际, 천기는 마침내 움직였다——그는 직접 차단하지 않고, 번개처럼 섬광이 번지는 순간에, 소매로劲風을 일으켜 독침의 방향을 살짝 기울였다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_013",
+        "character_id": "char_hanlie",
+        "content": "현무종 제일的天才 한열(Han Lie)이 대갈이며 외쳤다: 「어느 쪽의宵小가 감히 우리 문파 대장로를 해치려 하느냐!」그의 한 주먹이 폭발하듯 나오며, 한 명의 사시를 혈안(血霧)으로 만들었다. 나머지 두 명의 사시가形势不妙를 느끼며后退하려 했지만, 천청종几位 장로들의联手之下退路가 차단되었다.",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_014",
+        "content": "全场이 떠들썩해졌다. 각 문파 제자들이惊慌失措하고, 장로들은 연하여 보물을 내밀어 제자들을 보호했다. 천기는混乱 속에서 조용히 뒤로 물러서며, 다시 한 번惊恐失措한 폐물 모습을 되찾았다. 다만 입꼬리에 잡히지 않는弧度가 떠올랐다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_015",
+        "character_id": "char_suqingyao",
+        "content": "천청종 내문 수석(內門首席) 소청요(Su Qingyao)의 미간이 미세하게 찡그려졌다. 그녀의目光이 군중 위를 쓸어 지나다가 결국 천기 위에 멈췄다. 그녀의 직감告诉她, 방금 그阵風이 너무 기묘하게 찾아왔다——하지만 그녀가 자세히 보려고 할 때, 그 폐물은 이미 군중 깊숙이 숨어버렸고, 얼음처럼無害한 얼굴이었다.",
+        "emotion": "怀疑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_016",
+        "content": "두 명의 마도 사시가 생포되었다. 각 문파 장로들의 심문 아래, 이들은 배후 주모자——마도 성종을 끌어냈다. 현무종 대장로는 부상을 입었지만, 천기의 소매 기울임으로 인해 독침이要害를 맞지 않아, 지금은철청색 얼굴로 천청종, 백호종 장로들과对策를 협의하고 있었다.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_017",
+        "content": "천기는 군중을 빠져나가 조용한 구석을 찾았다. 묵선생의 목소리가 다시 울렸다: 「잘 했어. 독침을 기울여 직접 차단하지 않은 것은, 사람을 구하면서도 주목을 끌지 않았네——하지만 소청요는 이미 의심하고 있어.」",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0241_018",
+        "character_id": "char_moxiansheng",
+        "content": "「문제없어.」천기는 담담하게 입을 열었다. 「그녀로 하여금 의심하게 둬라. 증거가 없다면, 그녀는 영원히 문밖에서 배회할 수밖에 없어.」그의目光이 군중을 넘어 먼 곳 구름 위那道隐约한黑影 위에 멈췄다——그것은 야청으로, 흥미진진한 빛으로 그를 응시하고 있었다.",
+        "emotion": "自信"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_019",
+        "content": "비경 입구가 천천히 열렸다. 황금빛 기둥 속에巍峨한 궁전 윤곽이 떠올랐다. 각 문파 장로들의 협의 결과: 입장 의식은 예정대로 진행하되, 각 문파는 각별히 경계해야 한다. 마도 세력이 이미 침투해 온 것은 분명하다. 현무종 대장로가冷哼하며 직접 시범을 들어 비경에 들어섰다. 천기가 그 뒤를 따라 들어섰다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0241_020",
+        "content": "비경에足を踏み入れる 순간, 천기는 천",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

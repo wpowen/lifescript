@@ -1,0 +1,425 @@
+{
+  "id": "天机录_ch0737",
+  "book_id": "天机录",
+  "number": 737,
+  "title": "The Sacrifice of Ten Thousand Years Ago",
+  "is_paid": true,
+  "next_chapter_hook": "Mo Xiansheng's wisp of remnant soul flickered faintly in the moonlight, as if waiting for Chen Ji to make his final choice—and this choice might determine the ultimate fate of the entire Chen bloodline.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0737_001",
+        "content": "A strange ripple spread through the Void, and Mo Xiansheng's familiar remnant soul phantom slowly coalesced into form. The first words from his mouth sent a chill down Chen Ji's spine: 'The roster of ten thousand years ago—did you think you were accidentally selected?' Chen Ji felt his mind buzzing; those fragments of fate he thought he controlled were now shattering into powder.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_002",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's remnant soul phantom drifted slowly before Chen Ji, his illusory eyes reflecting an ancient desolation: 'Do you know that ten thousand years ago, there was a sacrifice in this world that almost succeeded? The participants were all extraordinarily talented individuals, and your ancestor was the first offering of that sacrifice.'",
+        "emotion": "沉痛"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_003",
+        "content": "Chen Ji's fingertips trembled faintly; he wanted to retort, but found his throat blocked as if by something. All those miraculous aspects of the Tianji Record, all that foresight ability he took pride in—now seemed so ironic. So he was merely a selected chess piece after all.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_004",
+        "character_id": "char_moxiansheng",
+        "content": "'The so-called Tianji Record is not some cultivation technique.' Mo Xiansheng's voice arrived as if from the Nine Abysses. 'It is a vessel of covenant, a sacrifice pact between humanity and Heavenly Dao. The sacrifice of ten thousand years ago aimed to use specific bloodlines as a conduit to breach the barrier between the mortal realm and the Heavenly Dao's will.'",
+        "emotion": "揭露"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_005",
+        "content": "Moonlight filtered through the cracks of the Forbidden Grounds, illuminating Chen Ji's pallid profile. His mind continuously flickered through past scenes—every consumption of Heavenly Fate when using the Tianji Record, every bout of weakness after foresight. So that wasn't growing stronger, but walking step by step toward the sacrifice's endpoint.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_006",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's remnant soul phantom gradually solidified, as if bearing some immense pressure: 'The sacrifice of ten thousand years ago failed at the final moment. The offering rebelled against Heavenly Dao, the Heavenly Dao's will fell into slumber, and that pact shattered accordingly. The Tianji Record was divided into several pages, scattered across the world.'",
+        "emotion": "回忆"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_007",
+        "content": "Chen Ji finally found his voice again, hoarse even to his own ears: 'So this incomplete Tianji Record isn't some fortunate encounter... but deliberately arranged by someone?' His eyes flickered with a sharp light—even facing such dire straits, that calculating heart of his still raced rapidly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_008",
+        "character_id": "char_moxiansheng",
+        "content": "'Correct.' Mo Xiansheng's voice carried an unnoticeable bitterness. 'Dividing the Tianji Record was precisely to wait for the suitable bloodline to trigger it again. And this condition is—the continuation of the Chen bloodline. Your birth, your sister's birth, are all key steps to restarting the sacrifice.'",
+        "emotion": "揭露"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_009",
+        "content": "Chen Nian. Chen Ji's mind instantly flickered to his sister's blurry face—that girl taken away by the Holy Sect, was she from the beginning a piece in this chess game? His fists slowly clenched, his knuckles cracking from the force. The fury in his heart churned like magma, yet he pressed it down死死 in his chest.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_010",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng quietly observed Chen Ji's reaction; only after a long while did he continue: 'You are luckier than your ancestor, yet also more unfortunate. Luckier because you still have a chance to choose; more unfortunate because this choice's price may be heavier than you imagine.'",
+        "emotion": "警告"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0737_choice_001",
+        "prompt": "Facing this cruel truth, Chen Ji must make a choice—does he accept this so-called fate, or does he question the高高在上的天道?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0737_accept",
+            "text": "Accept Fate",
+            "description": "Since this is the fate of the Chen bloodline, then face it calmly. Perhaps within this destiny, a thread of survival might still be found.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose自主反抗的意志",
+            "visible_reward": "Gain Mo Xiansheng's further guidance",
+            "risk_hint": "May completely沦为天道的棋子",
+            "process_label": "接受并思考应对之策",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0737_result_accept_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji slowly closed his eyes. When he opened them again, those eyes had restored their usual composure and depth: 'Since this is fate, then I accept it. But I want to know—what exactly is the endpoint of this sacrifice?'",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0737_result_accept_002",
+                  "content": "Mo Xiansheng's remnant soul phantom fluctuated slightly, seemingly unexpected yet somewhat gratified by Chen Ji's response: 'You are more懂得隐忍 than your ancestor. The endpoint of this sacrifice... is the fusion of a mortal's soul with Heavenly Dao's will.届时，所谓的自由意志将不复存在。'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "接受命运"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0737_question",
+            "text": "Question Heavenly Dao",
+            "description": "What if Heavenly Dao selected the Chen family? Since the sacrifice of ten thousand years ago failed once, what makes them think it can succeed this time?",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May incur the注视 of Heavenly Dao's will",
+            "visible_reward": "Discover the漏洞 of the sacrifice pact",
+            "risk_hint": "May prematurely trigger Heavenly Dao's反噬",
+            "process_label": "质疑并寻找破绽",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0737_result_question_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji abruptly lifted his head, and in those eyes burned a cold, ghostly flame: \"You failed ten thousand years ago. What makes you think this time won't be a repeat of that failure? The Chen bloodline is no lamb. If Heaven wants to devour us, it'll have to break a few teeth!\"",
+                  "emotion": "愤怒"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0737_result_question_002",
+                  "content": "Mo Xiansheng fell silent for a long while, the wisp of remnant soul trembling slightly. After a pause, he let out a low laugh: \"Hahaha! Good! What fine words—'not a lamb'! Ten thousand years I've waited, and finally, a descendant of Chen who dares to say 'no' to Heaven!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "质疑天道"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0737_question_mo",
+            "text": "Question Mo Xiansheng's stance",
+            "description": "Is Mo Xiansheng friend or foe? He has guarded the Tianji Record Fragment for ten thousand years—is he protecting the Chen family, or serving as Heaven's keeper of sacrificial offerings?",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May lose crucial guidance",
+            "visible_reward": "Probe out Mo Xiansheng's true identity",
+            "risk_hint": "Mo Xiansheng may be concealing something",
+            "process_label": "试探墨先生真意",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0737_result_mo_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji did not rush to respond. Instead, he narrowed his eyes, gazing directly at Mo Xiansheng's remnant soul apparition: \"Mo Xiansheng, I have one more question. When you guarded the Tianji Record for ten thousand years, what were you truly guarding—the Chen family, or this very sacrifice? Are you Chen Xuan's protector left for me, or an eye placed by Heaven?\"",
+                  "emotion": "质疑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0737_result_mo_002",
+                  "content": "This question struck like a blade, piercing directly into Mo Xiansheng's ethereal remnant soul. The apparition convulsed violently, as though something dormant for ten thousand years had been disturbed. Mo Xiansheng's voice lowered and became complex: \"This question... once you ask it, there is no turning back. Are you certain you wish to know the answer?\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "追问墨先生"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_011",
+        "content": "Chen Ji's gaze turned deep and dangerous. He never fought without certainty. Mo Xiansheng's reaction had said it all—this guardian was far simpler than he appeared. Ten thousand years was enough to change too many things, and he needed to know whether that change made him foe or friend.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_012",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's form grew increasingly ethereal under the moonlight, as if lost in memories of something impossibly distant: \"Ten thousand years ago, I too was one of the chosen. But I chose another path—not to become a sacrifice, but a guardian. Do you think my stance has changed over these long years?\"",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_013",
+        "content": "Chen Ji listened quietly, maintaining an impassive expression on the surface while his heart churned like a raging sea. Every word from Mo Xiansheng hid profound implications. The true identity of this remnant soul guardian was far more complex than what he revealed. Chen Ji secretly cataloged these details, waiting for the final answer.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0737_014",
+        "character_id": "char_moxiansheng",
+        "content": "\"Whose man am I?\" Mo Xiansheng's voice suddenly became aged and weary. \"Even I cannot answer that question. All I know is that when Chen Xuan entrusted his remnant soul to me, I made him one promise—to guard the Chen bloodline until the true variable appears.\"",
+        "emotion": "疲惫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_015",
+        "content": "From the depths of the Forbidden Grounds came rumbling sounds, as if some ancient existence was awakening. Mo Xiansheng's remnant soul apparition began growing unstable, his voice carrying a note of urgency: \"There is no time left. The Eye of Heaven has already sensed the anomaly here. It will soon turn its gaze upon this place.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0737_choice_002",
+        "prompt": "As the gaze of the Eye of Heaven was about to descend, Chen Ji had to make a swift decision—whether to seize this opportunity to obtain more information, or immediately leave this dangerous place.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0737_stay",
+            "text": "Continue pressing for answers",
+            "description": "Since the Eye of Heaven is about to descend, why not take this chance to clarify all truths? In a narrow path, the brave prevail. Let's see how terrifying this so-called Eye of Heaven truly is.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Confront the Eye of Heaven's gaze directly",
+            "visible_reward": "Obtain complete intelligence about the Eye of Heaven",
+            "risk_hint": "May be directly obliterated by the Eye of Heaven",
+            "process_label": "孤注一掷追问真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0737_result_stay_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji strode forward abruptly, his gaze sharp as a blade: \"Since it's already here, let it see! Mo Xiansheng, what exactly is the Eye of Heaven? Why must my Chen family's fate be decided by some high-and-mighty consciousness!\"",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0737_result_stay_002",
+                  "content": "Just then, the void tore apart with a thunderous crack. A massive eye emerged from the rift—within that eye was no white, only endless darkness with eerie runes flickering within. The Eye of Heaven had finally descended. Mo Xiansheng's remnant soul dimmed instantly, yet still forcefully shielded Chen Ji.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "直面天道之眼"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0737_retreat",
+            "text": "Strategic retreat",
+            "description": "Preserve the strength to fight another day. Confronting the Eye of Heaven now makes no sense. Better to withdraw and plan for the future.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Miss the opportunity to obtain crucial intelligence",
+            "visible_reward": "Preserve your strength, avoid direct confrontation",
+            "risk_hint": "Your aura may be locked onto by the Heavenly Eye",
+            "process_label": "暂时撤退保存实力",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0737_result_retreat_001",
+                  "character_id": "char_chenji",
+                  "content": "A cold light flickered in Chen Ji's eyes as he quickly stepped back: 'Mo Xiansheng, retreat! This debt, I've noted it. If Heaven wants to devour the Chen Family, let it show me whether it has the teeth for it!'",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0737_result_retreat_002",
+                  "content": "Mo Xiansheng's remnant soul nodded faintly, then turned into a stream of light and vanished into the Tianji Record. The formations in the Forbidden Grounds began to operate, creating an escape route for Chen Ji. Behind him, the Heavenly Eye was slowly approaching, and that suffocating pressure instantly soaked Chen Ji's back with cold sweat.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "战略撤退"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_016",
+        "content": "Chen Ji moved through the formations in the Forbidden Grounds, behind him the terrifying gaze of the Heavenly Eye. His heart hammered like a drum, yet he forced himself to remain calm. This night, everything he knew had been completely overturned—turns out he was not some chosen one, but a selected sacrifice. Ridiculous, truly ridiculous.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_017",
+        "content": "But it was precisely this ridiculousness that ignited the deepest anger in Chen Ji's heart. He had been treated as trash since childhood, enduring endless humiliation, yet never gave up the thought of revenge. Now this so-called Heaven wanted his life? Fine, very well. He wanted to see if all the gods and Buddhas in the heavens could withstand Chen Ji's schemes.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_018",
+        "content": "When Chen Ji finally stepped out of the Forbidden Grounds, the first light of dawn was just piercing through the clouds. He stood atop the mountain peak, looking back at the Forbidden Grounds still trembling slightly, his eyes burning with an unprecedented light. He had already learned most of the secrets of the Tianji Record. The road ahead, though infinitely dangerous, he was no longer lost.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0737_019",
+        "content": "Mo Xiansheng's voice echoed悠悠 within the Tianji Record, carrying a hint of fatigue and relief: 'You made a correct choice. Remember, while the sacrifice contract is powerful, it is not invulnerable. The failure ten thousand years ago has proven one thing—Heaven is not invincible.' Chen Ji did not answer, only casting his gaze toward the distant horizon, where there were answers he must seek, and people he must save.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "id": "天机录_ch1050",
+  "book_id": "天机录",
+  "number": 1050,
+  "title": "The Summoning of the Tianji Pavilion",
+  "is_paid": true,
+  "next_chapter_hook": "The complete Tianji Record emitted unprecedented light, heralding the arrival of Chen Ji's turning point—next chapter, he would officially embark on the path to breaking the seven-hundred-chapter death prophecy.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1050_001",
+        "content": "Before the golden light of the forbidden secret technique had faded, Chen Ji propped himself up with one hand on the broken Turtle Shell divine artifact, beads of sweat forming at his temples. The afterimages of three fate lines still intertwined and coiled within his Mental Sea, like three venomous serpents seeking prey, ready to strike a lethal blow at any moment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_002",
+        "content": "The leftmost line led to scorched earth and mountains of corpses, where Han Lie's blood-soaked figure could be vaguely seen; the middle line was shrouded in chaotic mist, nothing clear; and at the end of the rightmost line—Chen Ji's fingers tightened—a figure stood that he never expected to see.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_003",
+        "character_id": "char_chenji",
+        "content": "Nian'er...",
+        "emotion": "震动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_004",
+        "content": "It was his sister Chen Nian, missing for years. But why would she appear at the end of that fate line? Why specifically this one? Chen Ji took a deep breath, forcing himself to extract from the shock. Regardless, the layout of the heavens cannot be stopped, and the pieces on the mortal chessboard should also be set in motion.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_001",
+        "prompt": "The chessboard of fate has already been laid out, and Chen Ji needs to decide the next primary action.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_001_opt_a",
+            "text": "Immediately contact Su Qingyao",
+            "description": "The Inner Disciple Senior Fellow has completed key node deployments; her progress needs confirmation and final instructions transmitted.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume 2 Heavenly Fate points",
+            "visible_reward": "Obtain Su Qingyao's latest intelligence, integrate the internal power network of the Tianqing Sect",
+            "risk_hint": "Prolonged contact may expose one's location",
+            "process_label": "联络盟友",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -2
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_a_001",
+                  "content": "Chen Ji drew a emerald transmission talisman from his sleeve, gently activating it with spiritual power. Moments later, Su Qingyao's cold voice rang out from the talisman: \"You've finally decided to contact me. I've cleared out those informants in the outer court, but regarding Ling Yuan... something's not right.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶情报整合",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_b",
+            "text": "First contact Ye Qing to confirm demonic path movements",
+            "description": "The Holy Sect's Saintess possesses key abilities to conceal the Tianji Record's aura; her deployment is crucial to the overall success.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Risk of exposure for colluding with the demonic path",
+            "visible_reward": "Obtain demonic path fog cover, allowing the Tianji Record's aura to be completely concealed",
+            "risk_hint": "Once exposed, one becomes an enemy of all righteous paths",
+            "process_label": "魔道布局",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_b_001",
+                  "content": "Chen Ji switched to a pitch-black demon crystal stone, softly chanting an odd string of incantations. Moments later, Ye Qing's languid laughter came through: \"Missing me already, Chen公子? Don't worry, I've spread the demonic path fog three thousand li wide—even if the Eye of Heaven itself came, it couldn't sniff out the scent of your broken book pages.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "魔道迷雾就绪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_001_opt_c",
+            "text": "Independently deduce the third fate line",
+            "description": "The fate line ending with Chen Nian is the most bizarre; every detail within must be clearly seen.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Consume large amounts of Heavenly Fate points, may fall into backlash",
+            "visible_reward": "Glimpse Chen Nian's location and key intelligence",
+            "risk_hint": "A drastic drop in Heavenly Fate may cause the foresight ability to temporarily fail",
+            "process_label": "窥探命运",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_001_opt_c_001",
+                  "content": "Chen Ji gritted his teeth and activated the Tianji Record, the runes on the fragment spinning frantically. Agony struck, and he saw—a tower shrouded in black mist, Chen Nian bound by chains at the top, her eyes empty. And behind her stood Ling Yuan's hunched figure. \"Found you...\" Blood trickled from Chen Ji's mouth, yet a fierce killing intent flashed in his eyes. \"Old thing, dare touch a single hair on her.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": "陈念位置确认",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_005",
+        "content": "A faint static came through the transmission talisman; Chen Ji frowned—though Su Qingyao's tone was calm, he could hear the suppressed anxiety beneath. The storm within the Tianqing Sect was coming faster than he anticipated. That old fox Ling Yuan, it seemed, could no longer wait to make his move.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_006",
+        "character_id": "char_suqingyao",
+        "content": "Chen Ji, don't misunderstand. Ling Yuan... he has set up a restriction in the Rear Mountain Forbidden Grounds. I can't enter. But I can sense something awakening inside.",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_007",
+        "content": "Chen Ji closed his eyes in contemplation. The Rear Mountain Forbidden Grounds of the Tianqing Sect was where past sect masters sealed forbidden objects. If Ling Yuan wanted to set restrictions there, he was either trying to cover something up—or release something. Either possibility meant the situation was sliding toward a direction beyond his control.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_002",
+        "prompt": "The three-pronged layout is nearly complete, but Ling Yuan's movements have disrupted the rhythm. Chen Ji needs to make a decisive choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_002_opt_a",
+            "text": "Have Su Qingyao forcefully break through the restriction",
+            "description": "The Inner Disciple Senior Fellow's strength is sufficient to shake most restrictions; forcing entry might expose Ling Yuan's hidden cards.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Su Qingyao may be exposed, drawing Ling Yuan's direct targeting",
+            "visible_reward": "Obtain key intelligence on Ling Yuan's secrets",
+            "risk_hint": "If failed, Su Qingyao will fall into dangerous circumstances",
+            "process_label": "强攻禁制",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_a_001",
+                  "content": "Su Qingyao fell silent for a moment, then coldly said: \"What kind of person do you take me for?\" The sword light erupted. However, the restriction's backlash force far exceeded expectations; she grunted and was knocked back several steps. \"This restriction... is not an ordinary restriction. It's an ancient sealing technique! Chen Ji, what exactly is that old thing planning?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "上古封印术发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_b",
+            "text": "Mobilize Ye Qing's demonic path forces for flanking support",
+            "description": "Using demonic path secret techniques, perhaps the restriction's weakness can be found without exposing Su Qingyao's identity.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Demonic path involvement in the Tianqing Sect may trigger righteous path investigation afterward",
+            "visible_reward": "Bypass the restriction to directly obtain internal intelligence",
+            "risk_hint": "If discovered colluding with the demonic path, all previous efforts will be wasted",
+            "process_label": "魔道策应",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_b_001",
+                  "content": "Ye Qing's voice sounded again, this time with added gravity: \"Interesting, this restriction carries my bloodline mark... Chen公子, your elder Ling Yuan seems more restless than we imagined. I smell a familiar scent—the aura of the Holy Sect.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "圣宗气息发现",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_002_opt_c",
+            "text": "Temporarily hold position and observe the situation",
+            "description": "The more frequently Ling Yuan acts, the more it shows his guilty conscience. Might as well turn his own scheme against him, letting him expose himself.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May miss the opportunity to strike first",
+            "visible_reward": "Strike with certainty after clearly seeing all of Ling Yuan's cards",
+            "risk_hint": "If Ling Yuan acts first, will fall into a passive position",
+            "process_label": "以静制动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "天命值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1050_result_choice_002_opt_c_001",
+                  "content": "Chen Ji said calmly, \"Not urgent.\" He raised his head to look at the horizon, the runes on the fragment slowly turning. \"Let the old fox jump around for another two days. The more panicked he is, the more openings he reveals.\" Before the words even finished, the Turtle Shell divine artifact suddenly vibrated violently; an aged and icy-cold voice emerged: \"Chen Ji... did you think you were hiding well?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "凌渊主动现身",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_008",
+        "content": "Ling Yuan's voice was like a basin of ice water poured over his head. Chen Ji's pupils contracted sharply—he never expected that old fox to have extended his divine sense into the Turtle Shell divine artifact. What did this mean? It meant the opponent's layout was far deeper and earlier than he had imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_009",
+        "character_id": "char_lingyuan",
+        "content": "Hehe, surprised? When I received the qualification as a Tianji Record candidate from your master all those years ago, I knew this day would eventually come. Unfortunately, he chose you, this废物, but he made the wrong choice.",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_010",
+        "content": "Chen Ji slowly straightened his body, the cowardice and timidity of his past completely stripped away in this moment. He lifted his head, a hint of cold indifference curving his lips. That was a true smile, the smile of a chess player—cold, precise, without a single trace of superfluous emotion.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_011",
+        "character_id": "char_chenji",
+        "content": "Elder Ling Yuan, since you love the Tianji Record so much, why didn't you just grab it back then? Why wait until today, pulling these shameful tricks in the Rear Mountain Forbidden Grounds?",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1050_choice_003",
+        "prompt": "Ling Yuan's mockery was piercing to the ear, but Chen Ji knew the true confrontation had just begun.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch1050_choice_003_opt_a",
+            "text": "Directly retort, exposing his background",
+            "description": "Bring up Ling Yuan's old scandals, making him lose ground in momentum first.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May provoke Ling Yuan to act prematurely",
+            "visible_reward": "Strike the opponent's morale, deter the hidden observers",
+            "risk_hint": "Ling Yuan is extremely scheming and won't lose his temper easily",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_a_001",
+                  "character_id": "char_chenji",
+                  "content": "Oh, I forgot. Elder was someone who was personally rejected by the Tianji Record. The taste of being scorned by a dead object isn't pleasant, right? So that's why you hate me so much? Hate that I inherited what you sought but couldn't obtain?\"",
+                  "emotion": "傲慢"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_b",
+            "text": "Cold mockery and barbed remarks, advancing step by step to extract information",
+            "description": "No direct confrontation, but using rhetoric to lure the other party into revealing more information.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires extremely high linguistic skill",
+            "visible_reward": "Obtain key clues to Ling Yuan's true intentions",
+            "risk_hint": "If exposed, will alert the target",
+            "process_label": "套取情报",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 6
+              },
+              {
+                "stat": "天命值",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_b_001",
+                  "character_id": "char_chenji",
+                  "content": "Elder, setting up such a grand formation in the Rear Mountain, surely you don't just want to catch up with the junior, right? Ancient sealing techniques, the aura of the Holy Sect... tsk tsk, are you planning to establish your own sect, or have you sold yourself off?\"",
+                  "emotion": "玩味"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1050_choice_003_opt_c",
+            "text": "Reveal trump card to deter the opponent",
+            "description": "Directly inform Ling Yuan that his sister Chen Nian is in the opponent's hands, using this to test the opponent's reaction.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Exposing one's care for Chen Nian may be exploited by the opponent",
+            "visible_reward": "Clearly see Ling Yuan's true attitude toward Chen Nian",
+            "risk_hint": "If Ling Yuan uses this as leverage, will fall into a passive position",
+            "process_label": "以命相胁",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1050_result_choice_003_opt_c_001",
+                  "character_id": "char_chenji",
+                  "content": "\"By the way, Elder. How have you been 'taking care of' my useless younger sister? The ancient tower's top floor, quite good feng shui, isn't it?\"",
+                  "emotion": "阴冷"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_012",
+        "content": "The voice from the Turtle Shell divine artifact cut off abruptly. A moment of silence spoke louder than any words. Chen Ji caught that imperceptible trace of astonishment—Ling Yuan hadn't expected him to have already discovered Chen Nian's whereabouts. This meant, in the upcoming game, the opponent's biggest bargaining chip was no longer a secret.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_013",
+        "character_id": "char_lingyuan",
+        "content": "\"You... how could you know!\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_014",
+        "content": "Chen Ji laughed lightly, that laugh cold and composed, echoing through the silent void. He raised his hand; the runes on the fragment blazed suddenly, and a illusory image projected from it—the very tower shrouded in black mist, the young woman in red bound at its peak, indeed Chen Nian.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_015",
+        "character_id": "char_chenji",
+        "content": "\"Elder, did you think only you know how to lay out schemes? I've been playing this chess game for seven years. Every move of yours, I've been watching.\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_016",
+        "content": "As the words fell, the aura within the Turtle Shell divine artifact suddenly turned dark and heavy. After a moment, Ling Yuan's voice sounded again, this time stripped of that mask of pretended kindness, carrying a naked killing intent: \"Good, good, good! Truly Chen Xuan's disciple. Since you so desperately want to see your sister, then this old man will grant your wish—in seven days, the Tianji Pavilion opens. If you don't come, she dies in your place!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_017",
+        "content": "The communication cut off abruptly. Chen Ji gripped the Turtle Shell divine artifact, his knuckles white from force. On his face was no anger, no panic, only a calm so profound it seemed bottomless. Seven years. He had waited seven years, and finally, Ling Yuan had shown himself. In seven days, the Tianji Pavilion—that would be the battlefield where everything would be decided.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1050_018",
+        "character_id": "char_chenji",
+        "content": "\"Nian'er, wait for your brother. Seven days... no, within three days, I will definitely come to take you home.\"",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1050_019",
+        "content": "The runes on the Tianji Record fragment began spinning wildly;",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "id": "天机录_ch1033",
+  "book_id": "天机录",
+  "number": 1033,
+  "title": "Chaos in the Mortal Realm",
+  "is_paid": true,
+  "next_chapter_hook": "At the very moment the Imperial Envoy stepped through the Chen Estate's gates, the turtle shell divine artifact pressed against Chen Ji's chest suddenly blazed with scorching heat, and an ancient rune identical to the one on the golden tablet faintly emerged in the night air—the will of a higher existence had descended upon the mortal realm.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1033_001",
+        "content": "In the void at the border of the Celestial Realm, Chen Ji stared intently at the familiar aura drifting slowly toward him—the unique scent of his mother Chen Xuan, mingling frost with sandalwood, like incense burning on a winter night, seeping into his bones. Yet just as he prepared to approach, the Tianji Record Fragment blazed with scorching intensity, and a blinding golden light erupted from the direction of the mortal realm, tearing apart the connection between him and his mother.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_002",
+        "content": "Meanwhile, across the territories of the three major sects in the mortal realm, the spiritual energy of heaven and earth suddenly fell into chaos. At the Xuanwu Sect's Main Peak, Sect Master Han Xiaotian's eyes snapped open as the turtle shell in his hand spontaneously shattered, pointing toward the depths of the heavens. Within the White Tiger Sect's Holy Hall, ancient monsters who had been in seclusion for years burst forth from their retreats, gazing at the sky with uncertainty. And at the Crimson Phoenix Sect's Flaming Mountain summit, an ancient bell that had lain dormant for a millennium spontaneously rang out, startling the entire sect. All three major sects simultaneously sensed that world-altering aura, mistaking it for the descent of Heavenly Dao, and hastily sounded the war alarm.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_003",
+        "character_id": "char_chenian",
+        "content": "Within the Chen Estate, Chen Nian was instructing clan members in cultivation at the Martial Arena when a celestial omen suddenly descended—stars scattered across the sky even in daylight. She raised her gaze skyward, and an unsettling feeling surged within her heart—where her brother resided. \"Brother...\" she murmured softly, the sword in her hand humming as if sensing its master's anxiety.",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_004",
+        "content": "At that moment, a scout rushed in breathlessly and knelt to report: \"My lord! The Imperial Envoy has arrived thirty li outside the city, bearing a golden tablet, demanding to meet the Chen Family's head!\" Chen Nian's brow furrowed as she exchanged a glance with Elder Zhou beside her. The Imperial Court had never interfered in sect affairs—sending someone now must carry profound implications. Even more unsettling was the timing, coinciding precisely with the celestial omen—this was no mere coincidence.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_005",
+        "character_id": "char_chenian",
+        "content": "\"Did the envoy announce their name?\" Chen Nian asked in a deep tone, her voice steady enough to betray no emotion. The scout reported: \"The visitor calls themselves the 'Heavenly Pivot Envoy,' bearing an ancient golden tablet inscribed with...\" The scout hesitated. \"...an unfamiliar rune.\" Chen Nian's heart lurched—that rune, she had seen before on her brother's turtle shell artifact.",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1033_006",
+        "prompt": "The Imperial Envoy appeared bearing a golden tablet etched with mysterious runes, claiming to represent the will of a higher existence. Chen Nian must decide how to respond to this sudden unpredictable factor.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch1033_meet_envoy",
+            "text": "Personally go out to meet and gauge the true situation",
+            "description": "Personally welcome the envoy as the current head of the Chen Family to investigate the Imperial Court's intentions and the origins of the mysterious tablet.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May expose the Chen Family's hidden cards",
+            "visible_reward": "Obtain crucial intelligence",
+            "risk_hint": "The visitor's intentions remain unclear, possibly a trap",
+            "process_label": "陈念整理衣衫，准备前往城门",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_meet_envoy_001",
+                  "content": "Chen Nian straightened her attire and was about to step forward when she suddenly sensed a burning heat in her chest—the protective jade talisman her brother had left her before departing, now rapidly heating up as if conveying some message. Her steps halted, her brow furrowing deeply.",
+                  "emphasis": "system"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_meet_envoy_002",
+                  "character_id": "char_chenian",
+                  "content": "\"Brother...\" She closed her eyes and attempted to perceive her brother's condition through the jade talisman. After a moment, she suddenly opened her eyes, her complexion slightly altered. \"He's in trouble.\" Elder Zhou urgently asked: \"What kind of trouble?\" Chen Nian shook her head, gazing toward the city gate. \"Handle the matter at hand first. Brother's arrangements cannot be compromised here.\"",
+                  "emotion": "焦虑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "envoy_met"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_wait_envoy",
+            "text": "Seal the gates tightly and observe developments calmly",
+            "description": "Remain unmoved to face all changes, allowing the envoy to enter the city before observing, while covertly activating defensive formations.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May offend the Imperial Court",
+            "visible_reward": "Seize the initiative",
+            "risk_hint": "If the envoy employs forceful measures, it may escalate tensions",
+            "process_label": "陈念下令启动护山大阵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_wait_envoy_001",
+                  "content": "Chen Nian raised her hand, and formations throughout the Chen Estate subtly activated, a faint golden barrier shimmering around the residence. Elder Zhou nodded slightly—the young mistress's judgment was remarkably mature. \"Block the perception of that protective jade talisman,\" Chen Nian instructed quietly. \"I don't want to distract my brother.\" She knew her brother faced formidable enemies in the Celestial Realm and could not allow him to perceive the turmoil in the mortal realm.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "defense_raised"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_investigate_envoy",
+            "text": "Secretly dispatch people to investigate the envoy's background",
+            "description": "No rush to meet; first dispatch people to ascertain the envoy's origins, the number of attendants, and the secrets of that golden tablet.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Time-consuming",
+            "visible_reward": "Act only after obtaining complete intelligence",
+            "risk_hint": "May miss the chance for direct contact with the envoys",
+            "process_label": "陈念暗中布置眼线",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_investigate_envoy_001",
+                  "character_id": "char_chenian",
+                  "content": "Old Zhou, send someone to investigate the origins of this 'Heavenly Pivot Envoy',\" Chen Nian ordered. \"As for the runes on that gold medallion, I need to know where they come from.\" Old Zhou accepted the order and left. Chen Nian stood alone in the center of the Martial Arena, looking up at the sword that was still humming, calculating the time in her heart—her brother should have already learned of the trouble in the mortal realm, right?",
+                  "emotion": "忧虑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "investigation_started"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_007",
+        "content": "At the same time, in the demonic mist at the Heavenly Realm entrance, Ye Qing's figure suddenly appeared. Behind her were dozens of elite disciples from the Holy Sect of the Demonic Path, each wearing an ecstatic expression on their faces. \"Your Highness, the seal at the entrance has loosened,\" one disciple reported. \"In another hour, we can forcefully break through.\" Ye Qing gazed at the entrance emanating soft light, a complex glint flickering in her eyes—that man had told her to let him handle the Heavenly Realm matters first, and that she should appear when he needed her.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_008",
+        "character_id": "char_yeqing",
+        "content": "\"Wait.\" Ye Qing's voice was cold, yet carried undeniable resolve. The disciple was puzzled: \"Your Highness, the opportunity—\" Ye Qing turned sharply, her eyes blazing with cold light. \"I said wait!\" Her voice suddenly dropped to freezing temperatures. \"Do you think I don't know what your Holy Sect is planning? Once that Heavenly Realm entrance is broken, do you intend to use me as the vanguard, or do you want to take this opportunity to release that thing?\" The disciples exchanged uncertain glances, not daring to speak further.",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_009",
+        "content": "Meanwhile, within the Tianqing Sect, Su Qingyao's eyes snapped open. Her perceptual abilities were amplified to the extreme at this moment, every breeze and movement within the entire sect was caught by her senses. Yet there was one place that felt abnormal to her—the direction Chen Ji had left, where some kind of incomprehensible aura was fluctuating intensely.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_010",
+        "character_id": "char_suqingyao",
+        "content": "\"What is he confronting?\" Su Qingyao murmured softly, her brow furrowed. As Inner Disciple Senior Fellow, she was well aware of Chen Ji's strength—it absolutely could not match the force before his eyes. Unless... She suddenly recalled what Chen Ji had said that day in the secret chamber: 'There are some things it's more dangerous for you to know.' She rose abruptly. \"No, I have to go take a look.\"",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_011",
+        "content": "Just as Su Qingyao stepped out of her room, she saw Ye Qing's figure descending from the sky. The two exchanged a glance, no words necessary—both saw the same anxiety in each other's eyes. \"You sensed it too?\" Su Qingyao asked. Ye Qing nodded: \"He's in trouble, bigger than I anticipated.\" The two fell silent for a moment before Su Qingyao spoke first: \"Let's go to the Heavenly Realm.\" Ye Qing curved her lips into a smile: \"Rare that you and I think alike.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1033_012",
+        "prompt": "Su Qingyao and Ye Qing decided to go to the Heavenly Realm to support Chen Ji, but they only had limited intelligence on the Heavenly Realm entrance's location, and the two had to choose their route of advance.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch1033_rush_entrance",
+            "text": "Rush directly to the Heavenly Realm entrance",
+            "description": "Rush at top speed toward the Heavenly Realm entrance shrouded in demonic mist, rendezvous with Ye Qing's forces, and force entry.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May encounter Demonic Path ambush",
+            "visible_reward": "Reach Chen Ji's side at the earliest possible moment",
+            "risk_hint": "Demonic Path forces are active near the entrance, risk is extremely high",
+            "process_label": "两人化作遁光破空而去",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_rush_entrance_001",
+                  "content": "Two streaks of light tore through the sky, Su Qingyao and Ye Qing passing over the horizon at maximum speed. However, just as they approached the demonic mist zone, Ye Qing suddenly grabbed Su Qingyao's wrist. \"Wait.\" She narrowed her eyes. \"There's an ambush.\" Su Qingyao followed her gaze downward, only to see dozens of black figures hidden in the valley below, glaring covetously toward the Heavenly Realm entrance.",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_rush_entrance_002",
+                  "character_id": "char_yeqing",
+                  "content": "\"'They're from the Holy Sect.' Ye Qing's voice turned cold. 'It seems they have no intention of letting me move freely.' Su Qingyao frowned: 'What do we do?' Ye Qing's lips curved into a cold smile: 'My people, I'll handle myself.' She raised her hand, and the demonic mist surged, completely engulfing those hidden black figures. A moment later, the mist dispersed—the ambushers had all been knocked unconscious.",
+                  "emotion": "冷厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "entrance_approached"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_seek_alliance",
+            "text": "First contact other forces",
+            "description": "Unite the forces of the three great sects to jointly head to the Heavenly Realm, overwhelming Demonic Path interference with numerical superiority.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consumes more time",
+            "visible_reward": "Gain powerful reinforcements",
+            "risk_hint": "May encounter sect refusal or be taken advantage of for leverage",
+            "process_label": "两人分头联系宗门",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 2
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_seek_alliance_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"'I'll go find Han Lie of the Xuanwu Sect.' Su Qingyao said. 'That guy may lack brains, but his combat ability is truly strong.' Ye Qing raised an eyebrow: 'Are you sure he'll help?' Su Qingyao said coolly: 'He owes me a favor.' Ye Qing shrugged: 'Then I'll contact the people from the Vermillion Bird Sect, and，顺便……' She paused. 'See if there are any usable pieces on the Holy Sect's side.'",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "alliance_seeking"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_013",
+        "content": "In a certain hidden valley in the mortal realm, a black-armored army was assembling. The leader wore pitch-black battle armor, his face hidden beneath his helmet, only revealing a pair of eerie green eyes. On the army's banner was embroidered a black phoenix spreading its wings—the symbol of the ancient forbidden force, the 'Fallen Gods Pavilion'. \"Report to the Commander,\" a scout knelt and reported, \"The Heavenly Realm entrance has loosened.预计一个时辰后可以强行破开。另外，目标的妹妹就在附近的陈家——\" The scout's words hadn't finished when the Commander raised his hand to interrupt him.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_014",
+        "character_id": "char_chenian",
+        "content": "\"Chen family?\" The Commander's voice was hoarse and low. \"Chen Ji's sister, that waste's sister?\" He suddenly laughed, his laughter echoing through the valley. \"Interesting... How interesting. The Lord said that boy is the inheritor of the Tianji Record, and his sister is the 'Heavenly Fate Lock Key'... Tonight, we'll take this brother and sister together.\" He raised his hand, and the black-armored army surged toward the Chen family like a tide. \"Move out!\"",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_015",
+        "content": "Night fell, and suddenly war cries erupted around the Chen family mansion. Chen Nian stood in the center of the Martial Arena, gazing at the black shadows pouring in from all directions, a cold glint flickering in her eyes. The enemies were more numerous than she had anticipated—at least three hundred, all in black garments and black armor, highly trained. And the Chen family guards she had on hand numbered only a hundred, with no more than fifty cultivators capable of fighting.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_016",
+        "character_id": "char_chenian",
+        "content": "\"Form formation!\" Chen Nian's voice rang out clear and resolute. The Chen family guards swiftly arranged their formation, forming a defensive circle with the Martial Arena as its center. Yet the leading black-armored Commander in the enemy ranks simply smiled faintly, raised his hand, and sent a streak of black light hurtling toward the Chen family gate—a thunderous roar as the mountain-protecting formation shuddered violently, cracks spreading rapidly. \"This level of formation?\" The Commander said with disdain. \"Break it for me!\"",
+        "emotion": "嚣张"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1033_017",
+        "prompt": "The Chen Family Grand Formation is about to be breached. The enemy forces are overwhelming. Chen Nian must make a decision—fight or retreat?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "ch1033_fight_enemy",
+            "text": "Defend to the death, await brother's return for reinforcements",
+            "description": "Lead the clan members in defending the estate to the death, hold off the enemy, await brother Chen Ji's return from the battlefield.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Clan members may suffer heavy casualties",
+            "visible_reward": "Buy time for brother",
+            "risk_hint": "If brother delays too long, the Chen Family may be destroyed",
+            "process_label": "陈念拔剑而立",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1033_result_ch1033_fight_enemy_001",
+                  "character_id": "char_chenian",
+                  "content": "\"Chen Family descendants, follow me in fighting to the death!\" Chen Nian's voice rang through the night sky. The longsword in her hand suddenly burst forth with dazzling light—that was the accumulated power she had cultivated for years. The Chen Family guards cried out in unison, their battle意志 soaring. Yet the enemy commander laughed aloud: \"Fight to the death? With just your bunch?\" He stepped forward, terrifying pressure bore down like a tidal wave. \"Tonight, not a single soul from the Chen Family shall remain!\"",
+                  "emotion": "悲壮"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "last_stand"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈念在关键时刻选择为兄长死守",
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_retreat_family",
+            "text": "Lead core clan members in breakout and relocation",
+            "description": "Leave some clan members as rearguard, lead key personnel in breaking through to preserve the Chen Family bloodline.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "The rearguard may sacrifice themselves",
+            "visible_reward": "Preserve the Chen Family bloodline",
+            "risk_hint": "May bear the stigma of abandoning clan members",
+            "process_label": "陈念秘密召集核心族人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_retreat_family_001",
+                  "content": "Chen Nian spoke softly to Elder Zhou: \"Activate the backup passage, lead the clan members to evacuate through the secret tunnel.\" Elder Zhou's expression changed: \"Young Mistress, the rearguard—\" Chen Nian interrupted him: \"I'll hold the rearguard.\" As Elder Zhou tried to speak again, Chen Nian raised her hand to stop him, \"My mind is made up. Go quickly!\" She turned to gaze at the formation on the verge of collapse, a resolute light flickering in her eyes—Brother, this is all this sister can do for you?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "tactical_retreat"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "ch1033_use_trump_card",
+            "text": "Deploy the trump card brother left behind",
+            "description": "Activate the final line of defense Chen Ji arranged before his departure, forcibly awakening part of the Turtle Shell artifact's power through secret techniques.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May expose Chen Ji's arrangements",
+            "visible_reward": "Instantly turn the tide of battle",
+            "risk_hint": "May draw greater attention and danger",
+            "process_label": "陈念取出一枚古朴玉符",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1033_result_ch1033_use_trump_card_001",
+                  "content": "Chen Nian drew from her chest an ancient jade talisman, the final resort her brother had entrusted to her before his departure—\"If you face a certain-death situation, crush this talisman.\" This moment was precisely such a scenario. She forcefully crushed the jade talisman, and a surge of boundless power erupted from the fragments, coalescing above the Chen Family estate into an enormous golden turtle shadow, gazing down upon all living beings. The enemy commander's smile instantly froze on his face: \"This is—the aura of the Tianji Record?!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "trump_card_activated"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_018",
+        "content": "Meanwhile, in the depths of the Celestial Realm, Chen Ji felt a sudden stab in his chest. Looking down, he saw the Turtle Shell artifact he kept close to his body suddenly burn hot, a faint golden light emanating from within, as if resonating with something far away. Mo Xiansheng's voice rang in his mind: \"Something has happened in the mortal realm... and it's directed at your sister.\" Chen Ji's pupils contracted sharply, the composure on his face collapsing completely in that instant, replaced by a chilling killing intent.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1033_019",
+        "character_id": "char_moxiansheng",
+        "content": "Just as Chen Ji prepared to return to the mortal realm at all costs, a familiar aura once again emanated from the direction of the celestial boundary—his mother's icy snow and sandalwood fragrance, closer than before, as if within arm's reach. At the same moment, a majestic voice resounded between heaven and earth: \"Chen Family descendant, by imperial decree of the Dynasty, you are commanded to present yourself immediately.\" That voice came from the direction of the mortal realm, carrying an authority that transcended the mundane world.",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1033_020",
+        "content": "The moment the imperial envoy stepped through the Chen estate's gates, the Turtle Shell artifact against Chen Ji's chest burned searing hot, and an ancient rune pattern, identical to the one on that golden badge, faintly manifested in the night—indicating a higher being's will had descended upon the mortal realm.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

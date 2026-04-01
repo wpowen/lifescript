@@ -1,0 +1,453 @@
+{
+  "id": "天机录_ch0583",
+  "book_id": "天机录",
+  "number": 583,
+  "title": "Sibling Conspiracy",
+  "is_paid": true,
+  "next_chapter_hook": "As the two were plotting, a dark purple transmission talisman burst through the window. Ye Qing's urgent voice rang through the secret chamber: \"Chen Ji! Ling Yuan is surrounded by the three great护法 of the Demonic Path at Qingyun Gorge—life and death on a razor's edge—come quickly!\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0583_001",
+        "content": "In the secret chamber, flickering candlelight cast Chen Ji and Chen Nian's shadows on the mottled walls, like an ink wash painting. Chen Ji listened quietly to his sister's words, his expression unchanged, only his fingers hanging at his side curling slightly, joints turning white. He didn't immediately speak, but slowly shifted his gaze toward the heavy night outside the window, as if contemplating, or suppressing something. After a long while, he spoke softly: \"Rewriting Heavenly Fate... what grandiose ambition.\" His tone was flat as if discussing today's weather, only those who knew him well could hear the undercurrents churning beneath that calm surface."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_002",
+        "character_id": "char_chenian",
+        "content": "\"Brother, what you saw in the Forbidden Grounds... is that related to this too?\"",
+        "emotion": "关切而试探"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_003",
+        "content": "Chen Ji turned around, candlelight dancing in his deep eyes, reflecting an ambiguous light and shadow. He walked slowly toward Chen Nian, stopping before her, reaching up to gently brush away the loose hair at her temple, his gesture tender unlike his usual calculating self. \"I've seen things far beyond what you can imagine.\" His voice was low, carrying a hint of exhaustion he himself wasn't aware of. \"But some things, seeing them isn't necessarily a good thing. Nian Nian, you shouldn't have come back.\" He paused, his Adam's apple moved slightly, as if words were stuck in his throat, finally only becoming a barely audible sigh."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_004",
+        "character_id": "char_chenian",
+        "content": "\"Shouldn't come back? Brother, you've been carrying this alone for so many years. As your sister, should I just survive in the shadows?\"",
+        "emotion": "倔强中带着哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_005",
+        "content": "Chen Nian's eyes reddened slightly, but she held back her tears. Taken away by the Holy Sect since childhood, through those dark and sunless days, the only thought sustaining her was finding her brother, telling him in person that she was alive, that she still remembered that warm afternoon when he carried her through the streets as a child to buy sugar-coated hawthorns. \"All these years in the Holy Sect, every day I wondered if you thought I was dead.\" She raised her head, her gaze burning as she stared directly at Chen Ji. \"Brother, I'm no longer the little girl who needed your protection back then.\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_006",
+        "prompt": "Facing Chen Nian's persistence, how should Chen Ji respond?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0583_006_a",
+            "text": "Gently accept her decision",
+            "description": "After a moment of silence, Chen Ji finally let go of his obsession, acknowledged that his sister had grown up, and chose to respect her choice",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Losing the peace of mind from controlling the overall situation alone",
+            "visible_reward": "The siblings truly fighting side by side, trust greatly increased",
+            "risk_hint": "Having to divert attention to protect sister's safety in battle",
+            "process_label": "接受并肩",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_006_a_result_1",
+                  "character_id": "char_chenji",
+                  "content": "\"Very well. Since Nian Nian insists... then we shall do this together.\"",
+                  "emotion": "释然与温柔"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sibling_battle_partner"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "兄妹并肩",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_006_b",
+            "text": "Persist in having her stay behind the scenes",
+            "description": "Chen Ji assumed the authority of an elder brother, demanding Chen Nian provide intelligence support from behind the scenes rather than personally risking danger",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May hurt sister's self-esteem",
+            "visible_reward": "Protect sister's safety and maintain a safer strategic position",
+            "risk_hint": "Chen Nian may develop resistance, affecting subsequent cooperation",
+            "process_label": "坚持保护",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_006_b_result_1",
+                  "character_id": "char_chenian",
+                  "content": "\"Brother! You're always like this, carrying everything yourself... Do you think I'm just a burden?\"",
+                  "emotion": "委屈与愤怒"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_backstage"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "理念冲突",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_007",
+        "content": "The two siblings stood facing each other, a subtle tension filling the air. Outside the window, the night wind suddenly rose, making the candlelight flicker violently, casting fluctuating shadows on Chen Nian's face. She took a deep breath and slowly drew an ancient jade pendant from her bosom. The pendant was deep blue throughout, with flowing light seeming to move within, faintly emanating an aura similar to the fragment in Chen Ji's possession. \"Brother, this is the Dragon Vein Fragment I've condensed over the years by secretly learning Holy Sect techniques.\" She held the jade pendant in her palm. \"The Holy Sect people don't know, but I've already been able to sense where the other fragment is located—that's where the complete Tianji Record is hidden.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_008",
+        "character_id": "char_chenji",
+        "content": "\"Are you insane? The Dragon Vein Fragment is connected to your soul—if you remove it...\"",
+        "emotion": "震惊与担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_009",
+        "content": "Chen Ji's words cut off abruptly—he of course knew what the price would be. The moment the Dragon Vein Fragment was removed, the soul would surely suffer severe damage, at best causing cultivation regression, at worst destroying the foundation entirely. His gaze fell on Chen Nian's pale complexion, then shifted to the jade pendant with its flowing dark light in her hand, an ache stirring in some corner of his heart. This foolish girl, for this moment, how long had she been plotting in secret? His lips pressed into a thin line. After a long while, he spoke heavily: \"What you've told me... does the Holy Sect know?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_010",
+        "character_id": "char_chenian",
+        "content": "\"Not for now. But the Emperor and the Holy Sect have already noticed my unusual movements, which is why they're rushing to conduct that ritual. Brother, the imperial court isn't monolithic—three major sects are watching eagerly, and the Demonic Path is stirring... this is our opportunity.\"",
+        "emotion": "冷静而坚定"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_011",
+        "prompt": "How should Chen Ji integrate this intelligence and formulate the next plan?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0583_011_a",
+            "text": "First obtain the Tianji Record, then destroy the Emperor",
+            "description": "Utilize Chen Nian's Dragon Vein sensing ability to first find the complete Tianji Record and enhance strength, then scheme against the Emperor",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Need to venture into the unknown Forbidden Grounds",
+            "visible_reward": "Obtain the complete Tianji Record, strength soars dramatically",
+            "risk_hint": "The Forbidden Grounds may contain traps laid by the Emperor",
+            "process_label": "寻觅天机",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_011_a_result_1",
+                  "content": "Good, I shall follow your words. But before that, you must first heal your wounds. The matter of the Dragon Vein fragment... let's discuss it later."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_heaven_record_first"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "先取天机录",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_011_b",
+            "text": "Use the Emperor's ritual for a decisive countermeasure",
+            "description": "Strike at the critical moment of the Emperor's ritual, destroying the ceremony while weakening the imperial dynasty and Holy Sect",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Requires precise timing, with extremely low margin for error",
+            "visible_reward": "Kill two birds with one stone, both stopping the Emperor and potentially acquiring Dragon Vein power",
+            "risk_hint": "The ritual site will surely be a dragon's pool and tiger's den",
+            "process_label": "破坏仪式",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_011_b_result_1",
+                  "content": "The Emperor wants to rewrite Heavenly Fate... Hmph, then let him witness what it truly means to have fate on one's side."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_sabotage_ritual"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "釜底抽薪",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_011_c",
+            "text": "Contact the Demonic Path Saint for a three-way chess game",
+            "description": "Establish a secret alliance with the Demonic Path through Ye Qing, using their blade to kill, letting the imperial dynasty and Holy Sect destroy each other",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May invite wolves into the house, the Demonic Path cannot necessarily be trusted",
+            "visible_reward": "Obtain powerful external allies while dispersing enemy attention",
+            "risk_hint": "The situation may spiral out of control after the Demonic Path's involvement",
+            "process_label": "借力打力",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 7
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_011_c_result_1",
+                  "character_id": "char_chenian",
+                  "content": "Brother, do you trust the people of the Demonic Path?",
+                  "emotion": "疑惑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "plan_alliance_demon"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "借力打力",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_012",
+        "content": "Chen Ji stood with hands behind his back, candlelight sketching a slender silhouette against his back. After contemplating silently for a moment, he finally revealed a faint smile, carrying a warmth absent for far too long. 'You've grown up, Niannian.' He walked slowly to the window and pushed it open, night wind carrying the pine song from distant mountains flooding into the secret chamber. 'All these years I have been positioning myself across the world, seemingly calculating flawlessly, yet in truth... one hand clapping makes no sound.' He turned around, gaze falling upon Chen Nian. 'With your words, I know this chess game has yet to reach its conclusion.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_013",
+        "character_id": "char_chenian",
+        "content": "Brother, that Mo Xiansheng you mentioned... can he really be trusted? He's merely a remnant soul, does he really know all the secrets of the Tianji Record?",
+        "emotion": "谨慎而好奇"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_014",
+        "content": "Upon hearing this, Chen Ji's lips curved slightly, yet his smile was profound. 'Trustworthy?' He shook his head. 'Niannian, in this world, no one is absolutely trustworthy. Mo Xiansheng, Ling Yuan, even heaven itself...' His gaze deepened, as if piercing through this small secret chamber to gaze at a more distant void. 'What matters is never whether they can be trusted, but whether I can squeeze their value dry before they betray me.' His tone was calm as water, yet Chen Nian felt a chill creep up her spine. This was her brother—with that gentle face, what a cold and ruthless heart he concealed?"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0583_015",
+        "prompt": "After Chen Ji and his sister had an in-depth conversation, should he reveal more about the Tianji Record's secrets?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0583_015_a",
+            "text": "Honestly tell about the price of the Tianji Record",
+            "description": "Tell Chen Nian that each use of the Tianji Record consumes Heavenly Fate Value, along with fate's deadly backlash",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Chen Nian might act rashly due to worry",
+            "visible_reward": "Remove barriers, siblings truly opening up to each other",
+            "risk_hint": "Chen Nian might try to stop Chen Ji from using the Tianji Record",
+            "process_label": "袒露真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0583_015_a_result_1",
+                  "character_id": "char_chenian",
+                  "content": "Brother! Why didn't you tell me sooner!",
+                  "emotion": "震惊与心疼"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_knows_cost"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "坦白代价",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0583_015_b",
+            "text": "Only reveal partial information",
+            "description": "Tell Chen Nian about the abilities of the Tianji Record, but omit the fatal flaws such as Heavenly Fate consumption",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Concealment may lead to a trust crisis in the future",
+            "visible_reward": "Protect my younger sister from being burdened by the secrets of the Tianji Record",
+            "risk_hint": "At critical moments, Chen Nian might make misjudgments due to lack of knowledge",
+            "process_label": "有所保留",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0583_015_b_result_1",
+                  "content": "The Tianji Record is powerful, but it has its limitations. Nian Nian, you only need to know that as long as I am here, no one can harm you in the slightest."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_partial_info"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "适度隐瞒",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_016",
+        "content": "The night wind suddenly turned bitter cold, and the candle flame in the secret chamber abruptly dimmed. Chen Ji's brow furrowed slightly as he sensed a familiar yet strange aura breaking through the air. It was the dark purple Spiritual Light unique to the Demonic Path—Ye Qing's transmission talisman. With a gentle lift of his fingers, the purple light settled steadily into his palm. As the talisman burned, Ye Qing's urgent and tense voice exploded within the secret chamber: \"Chen Ji! Ling Yuan is surrounded by the three great protectors of the Demonic Path at Qingyun Gorge, on the brink of life and death—come quickly!\" The talisman burned away, ashes falling softly, and Chen Ji's eyes sharply contracted. Ling Yuan... that old sect master who appeared to shelter him while harboring treacherous intentions, was now truly on the verge of death?"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_017",
+        "character_id": "char_chenian",
+        "content": "Ling Yuan? Brother, isn't he someone you've always been wary of? Why save him?",
+        "emotion": "困惑"
+      },
+      "text": {
+        "id": "天机录_ch0583_018",
+        "content": "Chen Ji did not answer immediately. He stood with hands clasped behind his back, his gaze profound as he looked toward the window, countless thoughts racing through his mind. Ling Yuan, the old sect master of Tianqing Sect, his sworn enemy, yet also a crucial piece in this chess game. If he died now, the schemes behind the scenes, those truths yet to be uncovered... would all sink into the abyss along with him. Moreover, if Ling Yuan died at the hands of the Demonic Path, Tianqing Sect and the Demonic Path would inevitably break all ties, and the entire landscape of the cultivation world would be thoroughly disrupted. He slowly turned to face Chen Nian, saying: \"The chess game is not yet finished; the pieces cannot die.\" His voice was low and calm, \"Nian Nian, you just said you wanted to fight side by side with me—now, I may need to show you what it means to survive amidst chaos.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0583_019",
+        "character_id": "char_chenian",
+        "content": "Brother, tell me what to do, I'll follow your lead.",
+        "emotion": "坚定而信任"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0583_020",
+        "content": "Chen Ji gazed at the light in his sister's eyes, an indescribable emotion surging in his heart. After more than a decade of separation and reunion, she chose to stand by his side without a single complaint, stepping into this chaotic world alongside him. He stepped forward, gently placing his hand on Chen Nian's shoulder, the warmth of his palm seeping through the thin fabric. \"Nian Nian, remember tonight's words.\" His voice suddenly turned gentle, shedding its usual coldness and calculation, \"No matter what happens in the future, brother will always protect you. This time—we are together.\" As the words fell, the candlelight in the secret chamber seemed to burn brighter. Chen Nian's eyes glistened with a faint redness as she nodded vigorously, carving that fervent promise deep into her heart. Beyond the window, the night was as dark as ink, and distant rumblings of thunder echoed—toward Qingyun Gorge, a storm capable of shaking the world was brewing. And Chen Ji had already set foot on a new journey."
+      }
+    }
+  ]
+}

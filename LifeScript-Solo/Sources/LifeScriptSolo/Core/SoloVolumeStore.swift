@@ -1,5 +1,6 @@
 import Foundation
 import Observation
+import os
 import StoreKit
 
 struct SoloStoreProduct: Equatable, Sendable {
@@ -20,7 +21,13 @@ protocol SoloPurchaseProviding: Sendable {
     func currentEntitlementProductIDs() async -> Set<String>
     func purchase(productID: String) async throws -> SoloPurchaseOutcome
     func syncPurchases() async throws
+    /// 完成之前未正常 finish 的交易（如购买途中 App 崩溃），应在启动时调用
+    func processUnfinishedTransactions() async
+    /// 实时交易更新流：Ask-to-Buy 审批、外部设备购买同步、退款等
+    nonisolated func transactionUpdates() -> AsyncStream<String>
 }
+
+// MARK: - StoreKit 2 Implementation
 
 actor StoreKitPurchaseClient: SoloPurchaseProviding {
     private var cachedProducts: [String: Product] = [:]
@@ -76,6 +83,29 @@ actor StoreKitPurchaseClient: SoloPurchaseProviding {
         try await AppStore.sync()
     }
 
+    func processUnfinishedTransactions() async {
+        for await result in Transaction.unfinished {
+            guard case .verified(let transaction) = result else { continue }
+            await transaction.finish()
+        }
+    }
+
+    nonisolated func transactionUpdates() -> AsyncStream<String> {
+        AsyncStream { continuation in
+            let task = Task {
+                for await result in Transaction.updates {
+                    guard case .verified(let transaction) = result else { continue }
+                    await transaction.finish()
+                    continuation.yield(transaction.productID)
+                }
+                continuation.finish()
+            }
+            continuation.onTermination = { _ in task.cancel() }
+        }
+    }
+
+    // MARK: - Private Helpers
+
     private func productsForIDs(_ ids: [String]) async throws -> [String: Product] {
         let missingIDs = ids.filter { cachedProducts[$0] == nil }
         if !missingIDs.isEmpty {
@@ -98,6 +128,8 @@ actor StoreKitPurchaseClient: SoloPurchaseProviding {
     }
 }
 
+// MARK: - Errors
+
 enum SoloStoreKitError: LocalizedError {
     case productNotFound(String)
     case unverifiedTransaction
@@ -111,6 +143,8 @@ enum SoloStoreKitError: LocalizedError {
         }
     }
 }
+
+// MARK: - Volume Store
 
 @MainActor
 @Observable
@@ -129,7 +163,15 @@ final class SoloVolumeStore {
     private(set) var productsByID: [String: SoloStoreProduct] = [:]
     private(set) var unlockedProductIDs: Set<String> = []
     private(set) var activePurchaseProductID: String?
+    private(set) var isRestoring: Bool = false
     private(set) var statusMessage: String?
+
+    var isOperationInProgress: Bool {
+        activePurchaseProductID != nil || isRestoring
+    }
+
+    @ObservationIgnored
+    private var transactionListenerTask: Task<Void, Never>?
 
     init(
         storyId: String = SoloStoryConfig.storyId,
@@ -137,6 +179,10 @@ final class SoloVolumeStore {
     ) {
         self.storyId = storyId
         self.purchaseClient = purchaseClient
+    }
+
+    deinit {
+        transactionListenerTask?.cancel()
     }
 
     var plans: [SoloVolumePlan] {
@@ -152,6 +198,8 @@ final class SoloVolumeStore {
         loadState = .loading
         statusMessage = nil
 
+        await purchaseClient.processUnfinishedTransactions()
+
         let productIDs = plans.compactMap(\.productID)
 
         if !productIDs.isEmpty {
@@ -160,13 +208,16 @@ final class SoloVolumeStore {
                 productsByID = Dictionary(uniqueKeysWithValues: products.map { ($0.id, $0) })
             } catch {
                 productsByID = [:]
-                statusMessage = "商品信息暂时没有同步成功，先按预设价格展示。"
+                statusMessage = SoloLocalization.localized("商品信息暂时没有同步成功，先按预设价格展示。")
             }
         }
 
         await refreshEntitlements()
+        startTransactionListenerIfNeeded()
         loadState = .ready
     }
+
+    // MARK: - Access State
 
     func chapterAccessState(chapterId: String, chapterNumber: Int) -> SoloChapterAccessState {
         guard let lockedVolume = lockedVolume(for: chapterNumber) else {
@@ -183,7 +234,11 @@ final class SoloVolumeStore {
             chapterId: chapterId,
             isLocked: true,
             volume: lockedVolume,
-            primaryActionTitle: "解锁\(lockedVolume.shortTitle) · \(displayPrice(for: lockedVolume))",
+            primaryActionTitle: SoloLocalization.format(
+                "解锁%@ · %@",
+                lockedVolume.shortTitle,
+                displayPrice(for: lockedVolume)
+            ),
             supportingLine: lockedVolume.teaser
         )
     }
@@ -209,8 +264,11 @@ final class SoloVolumeStore {
         return productsByID[productID]?.displayPrice ?? volume.fallbackPriceText
     }
 
+    // MARK: - Purchase & Restore
+
     func purchase(_ volume: SoloVolumePlan) async -> Bool {
         guard let productID = volume.productID else { return true }
+        guard !isOperationInProgress else { return false }
 
         activePurchaseProductID = productID
         defer { activePurchaseProductID = nil }
@@ -228,10 +286,10 @@ final class SoloVolumeStore {
             switch outcome {
             case .success:
                 await refreshEntitlements()
-                statusMessage = "已解锁\(volume.title)，可以继续推进了。"
+                statusMessage = SoloLocalization.format("已解锁%@，可以继续推进了。", volume.title)
                 return true
             case .pending:
-                statusMessage = "交易正在等待确认，确认完成后会自动解锁。"
+                statusMessage = SoloLocalization.localized("交易正在等待确认（如家长审批），确认通过后会自动解锁。")
                 return false
             case .userCancelled:
                 return false
@@ -243,15 +301,20 @@ final class SoloVolumeStore {
     }
 
     func restorePurchases() async -> Bool {
+        guard !isOperationInProgress else { return false }
+
+        isRestoring = true
+        defer { isRestoring = false }
+
         do {
             try await purchaseClient.syncPurchases()
             await refreshEntitlements()
             statusMessage = unlockedProductIDs.isEmpty
-                ? "当前没有可恢复的卷购买记录。"
-                : "购买记录已恢复，可以继续阅读。"
+                ? SoloLocalization.localized("当前没有可恢复的卷购买记录。")
+                : SoloLocalization.localized("购买记录已恢复，可以继续阅读。")
             return true
         } catch {
-            statusMessage = "恢复购买失败，请稍后再试。"
+            statusMessage = SoloLocalization.localized("恢复购买失败，请稍后再试。")
             return false
         }
     }
@@ -260,8 +323,28 @@ final class SoloVolumeStore {
         statusMessage = nil
     }
 
+    // MARK: - Private
+
+    private static let logger = Logger(subsystem: "com.lifescript.solo", category: "VolumeStore")
+
     private func refreshEntitlements() async {
         let latestEntitlements = await purchaseClient.currentEntitlementProductIDs()
+        let previousCount = unlockedProductIDs.count
         unlockedProductIDs = latestEntitlements
+        Self.logger.info(
+            "Entitlements refreshed: \(latestEntitlements.count) unlocked (was \(previousCount))"
+        )
+    }
+
+    /// 监听 StoreKit 实时交易更新，收到变更后自动刷新权益
+    private func startTransactionListenerIfNeeded() {
+        guard transactionListenerTask == nil else { return }
+        let stream = purchaseClient.transactionUpdates()
+        transactionListenerTask = Task { [weak self] in
+            for await _ in stream {
+                guard !Task.isCancelled else { break }
+                await self?.refreshEntitlements()
+            }
+        }
     }
 }

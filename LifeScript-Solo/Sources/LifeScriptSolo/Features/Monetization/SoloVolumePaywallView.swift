@@ -14,12 +14,12 @@ struct SoloVolumePaywallView: View {
                 artworkCard
 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("卷一已免费开放")
+                    Text(SoloLocalization.localized("卷一已免费开放"))
                         .font(.caption.weight(.bold))
                         .tracking(3)
                         .foregroundStyle(SoloTheme.gold)
 
-                    Text("接下来即将进入\(volume.title)")
+                    Text(SoloLocalization.format("接下来即将进入%@", volume.title))
                         .font(SoloTypography.posterTitle(size: 30))
                         .foregroundStyle(SoloTheme.ink)
                         .fixedSize(horizontal: false, vertical: true)
@@ -31,19 +31,28 @@ struct SoloVolumePaywallView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 12) {
-                    detailRow(title: "待解锁章节", value: "第 \(chapter.number) 章 · \(chapter.title)")
-                    detailRow(title: "解锁价格", value: volumeStore.displayPrice(for: volume))
-                    detailRow(title: "解锁方式", value: "单卷永久解锁，可恢复购买")
+                    detailRow(
+                        title: SoloLocalization.localized("待解锁章节"),
+                        value: SoloLocalization.format("第 %d 章 · %@", chapter.number, chapter.title)
+                    )
+                    detailRow(
+                        title: SoloLocalization.localized("解锁价格"),
+                        value: priceDisplay
+                    )
+                    detailRow(
+                        title: SoloLocalization.localized("解锁方式"),
+                        value: SoloLocalization.localized("单卷永久解锁，可恢复购买")
+                    )
                 }
                 .padding(18)
                 .soloPanel(.stage, prominence: 0.20)
 
                 if let previewSnippet = chapter.openingPreviewSnippet {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("下一章试读")
+                        Text(SoloLocalization.localized("下一章试读"))
                             .font(SoloTypography.meta)
                             .foregroundStyle(SoloTheme.gold)
-                        Text("第 \(chapter.number) 章 · \(chapter.title)")
+                        Text(SoloLocalization.format("第 %d 章 · %@", chapter.number, chapter.title))
                             .font(.subheadline.weight(.semibold))
                             .foregroundStyle(SoloTheme.ink)
                         Text(previewSnippet)
@@ -66,45 +75,68 @@ struct SoloVolumePaywallView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
 
-                VStack(spacing: 12) {
-                    Button(primaryActionTitle) {
-                        Task {
-                            if volumeStore.isUnlocked(volume) {
-                                onContinue()
-                                return
-                            }
-
-                            let unlocked = await volumeStore.purchase(volume)
-                            if unlocked {
-                                onContinue()
-                            }
-                        }
-                    }
-                    .buttonStyle(SoloPrimaryActionButtonStyle())
-                    .disabled(isPrimaryActionDisabled)
-
-                    Button("恢复已购卷") {
-                        Task { _ = await volumeStore.restorePurchases() }
-                    }
-                    .buttonStyle(SoloGhostActionButtonStyle())
-                    .foregroundStyle(SoloTheme.jade)
-
-                    Button("稍后再说") {
-                        onClose()
-                    }
-                    .buttonStyle(SoloGhostActionButtonStyle())
-                    .foregroundStyle(SoloTheme.muted)
-                }
+                actionButtons
             }
             .padding(.horizontal, 20)
             .padding(.top, 24)
             .padding(.bottom, 40)
         }
+        .overlay { loadingOverlay }
         .background(SoloBackdrop())
-        .navigationTitle("解锁新卷")
+        .navigationTitle(SoloLocalization.localized("解锁新卷"))
         .navigationBarTitleDisplayMode(.inline)
         .task { await volumeStore.loadIfNeeded() }
         .onDisappear { volumeStore.clearStatusMessage() }
+    }
+
+    // MARK: - Subviews
+
+    private var actionButtons: some View {
+        VStack(spacing: 12) {
+            Button(primaryActionTitle) {
+                Task {
+                    if volumeStore.isUnlocked(volume) {
+                        onContinue()
+                        return
+                    }
+
+                    let unlocked = await volumeStore.purchase(volume)
+                    if unlocked {
+                        onContinue()
+                    }
+                }
+            }
+            .buttonStyle(SoloPrimaryActionButtonStyle())
+            .disabled(volumeStore.isOperationInProgress)
+
+            Button(SoloLocalization.localized("恢复已购卷")) {
+                Task { _ = await volumeStore.restorePurchases() }
+            }
+            .buttonStyle(SoloGhostActionButtonStyle())
+            .foregroundStyle(SoloTheme.jade)
+            .disabled(volumeStore.isOperationInProgress)
+
+            Button(SoloLocalization.localized("稍后再说")) {
+                onClose()
+            }
+            .buttonStyle(SoloGhostActionButtonStyle())
+            .foregroundStyle(SoloTheme.muted)
+        }
+    }
+
+    @ViewBuilder
+    private var loadingOverlay: some View {
+        if volumeStore.loadState == .loading {
+            ZStack {
+                Color.black.opacity(0.3)
+                    .ignoresSafeArea()
+                ProgressView()
+                    .tint(SoloTheme.gold)
+                    .scaleEffect(1.2)
+            }
+            .transition(.opacity)
+            .animation(.easeInOut(duration: 0.25), value: volumeStore.loadState)
+        }
     }
 
     private var artworkCard: some View {
@@ -121,17 +153,21 @@ struct SoloVolumePaywallView: View {
         )
     }
 
-    private var primaryActionTitle: String {
-        if volumeStore.isUnlocked(volume) {
-            return "继续进入\(volume.shortTitle)"
-        }
+    // MARK: - Computed
 
-        return "解锁\(volume.shortTitle) · \(volumeStore.displayPrice(for: volume))"
+    private var priceDisplay: String {
+        if volumeStore.loadState == .loading {
+            return SoloLocalization.localized("正在获取…")
+        }
+        return volumeStore.displayPrice(for: volume)
     }
 
-    private var isPrimaryActionDisabled: Bool {
-        guard let productID = volume.productID else { return false }
-        return volumeStore.activePurchaseProductID == productID
+    private var primaryActionTitle: String {
+        if volumeStore.isUnlocked(volume) {
+            return SoloLocalization.format("继续进入%@", volume.shortTitle)
+        }
+
+        return SoloLocalization.format("解锁%@ · %@", volume.shortTitle, volumeStore.displayPrice(for: volume))
     }
 
     private func detailRow(title: String, value: String) -> some View {

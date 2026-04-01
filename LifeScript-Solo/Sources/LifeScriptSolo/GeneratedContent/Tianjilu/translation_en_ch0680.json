@@ -1,0 +1,594 @@
+{
+  "id": "天机录_ch0680",
+  "book_id": "天机录",
+  "number": 680,
+  "title": "\"Prince's Order Issued\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"The Xuanwu Sect Master found himself trapped in Chen Ji's Chess Game of Fate, his fury mixed with apprehension—for the first time, he realized that the power held in this废物杂役弟子's hands was far more terrifying than imagined.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0680_001",
+        "content": "\"Above the thousand-li sea of clouds, a wisp of remnant soul transformed into a speck of light, piercing through the Void and plummeting straight into Chen Ji's Brow Center. In that instant, countless images flooded his Mental Sea like a torrent—the Tianqing Sect Mountain Gate consumed by flames, disciples lying dead across the land, and among that mountain of corpses and sea of blood, a blurry figure reaching out toward him. Mo Xiansheng's voice echoed in his mind: 'Go... I cannot hold on much longer...' The moment the remnant soul completely dissipated, Chen Ji felt as though a piece of his chest had been carved out.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_002",
+        "content": "\"Chen Ji猛地 opened his eyes, cold sweat sliding down his temples. Su Qingyao beside him sensed something amiss and was about to ask, when she saw Chen Ji already pull a golden-patterned command banner from his怀中. The moment that banner appeared, the room's temperature dropped three degrees, and an invisible pressure radiated outward from its center. Su Qingyao's pupils constricted: 'This is... Prince's Banner? How do you possess something like this!' Chen Ji gave no answer, merely lowering his gaze to the dragon clawing across the banner, a cold sneer curling at the corner of his mouth.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_003",
+        "character_id": "char_chenji",
+        "content": "\"(Cold sneer) The Prince's Grand Tutor travels with protective artifacts—how could he not? Senior Sister Su, I had meant to wait longer... but some debts are due for settlement.\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_004",
+        "character_id": "char_suqingyao",
+        "content": "\"(Furrowed brows) Wait, Chen Ji, what exactly are you doing? Once this Prince's Banner is raised, you'll drag the Imperial Court into sect conflicts—are you mad?\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_005",
+        "content": "\"Chen Ji stood up, tucking the banner into his sleeve with movements so composed it seemed he was merely tidying ordinary clothing. He gazed toward the Tianqing Sect, a flicker of tenderness crossing his eyes before being replaced by icy coldness: 'Mad? I am never mad. I merely follow one principle—unless others offend me, I do not offend them. If they dare to offend me...' He paused, his voice turning chillingly cold: 'I repay a hundredfold. Since the Xuanwu Sect dared to move against my Tianqing Sect, they should prepare to endure the Imperial Court's wrath.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0680_006",
+        "prompt": "\"Su Qingyao blocked Chen Ji's path, preventing him from leaving. She needed the truth.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0680_006_a",
+            "text": "\"Lay everything bare\"",
+            "description": "\"Tell her you are of Tianqing Sect Bloodline, the Prince's Grand Tutor identity, and all your schemes\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Lose the information asymmetry advantage\"",
+            "visible_reward": "\"Gain Su Qingyao's full support\"",
+            "risk_hint": "\"She may be unable to accept that you were always acting\"",
+            "process_label": "陈机决定信任她",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_006_a_1",
+                  "content": "\"Chen Ji stopped his steps, standing with his back to Su Qingyao in silence for a moment. When he turned around, that usually calm face finally showed a trace of fluctuation: 'Senior Sister Su, do you know... what my original surname is?' Su Qingyao froze—she had never heard Chen Ji mention his surname. Chen Ji took a deep breath: 'Chen. The Chen from the dawn of creation. The founding ancestor of Tianqing Sect... was my progenitor.'\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_006_a_2",
+                  "content": "\"Su Qingyao's eyes widened, scarcely believing her ears. The Chen lineage of Tianqing Sect had severed its bloodline transmission a hundred years ago—how could this be... Chen Ji smiled bitterly: 'So you understand now? I am not a disciple of Tianqing Sect, I am the... orphan of Tianqing Sect. Mo Xiansheng used his final power to awaken the memories in my bloodline, and let me know what I must do.' He retrieved the Prince's Banner: 'This is a heirloom from my mother's clan, and the first step in my scheme to manipulate the world.'\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶得知陈机真实身份",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0680_006_b",
+            "text": "\"Only mention the scheme\"",
+            "description": "\"Tell her about Xuanwu Sect's conspiracy and your counterattack, but keep your identity secret\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Hide partial truth\"",
+            "visible_reward": "\"Keep trump cards hidden, avoid revealing all strength\"",
+            "risk_hint": "\"Su Qingyao may grow distrustful due to your concealment\"",
+            "process_label": "陈机选择有所保留",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_006_b_1",
+                  "content": "\"Chen Ji gently pushed Su Qingyao's hand away, his voice so calm it carried no hint of emotion: 'Senior Sister Su, some things are better left unknown for your sake. You only need to know one thing—Tianqing Sect is in peril, and I must act.' Su Qingyao wished to press further, but was stopped by a look from Chen Ji. That gaze was too complex—firm and unquestionable, yet also carrying a hint she had never seen before... pleading.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0680_006_c",
+            "text": "\"Turn the tables\"",
+            "description": "\"Use words to test whether she is trustworthy, letting her choose whether to continue probing\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "\"May sharpen contradictions\"",
+            "visible_reward": "\"Test Su Qingyao's stance and attitude\"",
+            "risk_hint": "\"If she chooses not to believe you, cooperation may collapse\"",
+            "process_label": "陈机以退为进",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_006_c_1",
+                  "content": "\"Chen Ji suddenly halted his steps, gazing at Su Qingyao with an amused half-smile: 'Senior Sister Su, you investigated me three times—did you find anything?' Su Qingyao started,下意识edly shaking her head. Chen Ji laughed lightly: 'That's right. If I wanted to harm people, would I leave evidence for you to find? If I wanted to use you, why would I wait until today?' His words were like an invisible blade, precisely piercing Su Qingyao's doubts: 'So, Senior Sister Su, why not trust me this once? Chen Ji's actions have never wronged those beside him.'\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_007",
+        "content": "\"Just then, hurried footsteps sounded outside the hall. A Tianqing Sect disciple stumbled in, covered in blood, and dropped to his knees: 'Chen... Chen Senior Brother! Terrible news! Xuanwu Sect's great army has broken through three outer defense lines! Leader Ling issued orders to defend the Sect Gate to the death, but the brothers can't hold much longer!' Chen Ji's gaze instantly turned sharp as a blade—that burst of momentum made everyone present feel suffocated.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_008",
+        "character_id": "char_chenji",
+        "content": "\"(Voice ice-cold) Xuanwu Sect Master Han Yuan? Excellent, let me see how many heads he has to spare. All Tianqing Sect disciples, withdraw thirty li! Enter the Imperial border army's defensive zone! Any who disobey—expelled from the sect!\"",
+        "emotion": "冷酷决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_009",
+        "content": "\"Chen Ji strode out of the hall, the Prince's Banner in hand catching the wind and blazing with golden light. That golden radiance pierced the clouds, transforming into a visible pillar of light shooting toward the nine heavens. Far beyond a hundred li, in the command tent of the Imperial border army's thirty thousand soldiers, a lieutenant general suddenly looked up at that冲天金光 and immediately knelt on one knee: 'Prince's Banner! Entire army, assemble! March to reinforce Tianqing Sect!' In an instant, war drums thundered, armor clanged, and thirty thousand elite border soldiers marched like a steel torrent toward Tianqing Sect.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_010",
+        "character_id": "char_lingyuan",
+        "content": "\"(Voice drifting from afar, carrying a chill) Chen Ji ah Chen Ji, you think mobilizing the Imperial border army can save Tianqing Sect? This old man has waited for this day... for a very long time!\"",
+        "emotion": "阴险"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_011",
+        "content": "\"Chen Ji's footsteps faltered as he turned toward the source of the voice. Ling Yuan's figure appeared mid-air, hair and beard bristling, exuding a terrifying pressure that chilled to the bone. More alarming to Chen Ji were the dozens of cloaked figures standing behind Ling Yuan—those were elite soldiers of the Demonic Path Holy Sect. Chen Ji narrowed his eyes, a cold smile forming in his heart: as expected... the old fox had long since colluded with the Demonic Path. Mo Xiansheng's sacrifice was indeed for this moment.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0680_012",
+        "prompt": "\"Ling Yuan's collusion with the Demonic Path Holy Sect is now exposed. Chen Ji must make a choice.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0680_012_a",
+            "text": "\"Expose publicly\"",
+            "description": "\"Reveal Ling Yuan's crimes of colluding with the Demonic Path before everyone, destroying his reputation\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Reveal trump cards prematurely\"",
+            "visible_reward": "\"Ling Yuan's reputation ruined, Tianqing Sect disciples' morale soars\"",
+            "risk_hint": "\"Ling Yuan may be driven to desperation and strike directly\"",
+            "process_label": "陈机选择正面对决",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 25
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 50
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_012_a_1",
+                  "content": "\"Instead of retreating, Chen Ji threw his head back and burst into laughter: 'Sect Master Ling, you collude with the Demonic Path Holy Sect, plotting to overthrow Tianqing Sect—before the heroes of the world today, dare you confess your crimes?' At these words, the Tianqing Sect disciples erupted in uproar. Ling Yuan's face turned ashen, and those cloaked figures radiated killing intent. Chen Ji drew a recording stone from his怀中, and as light flickered, images of Ling Yuan's secret dealings with the Demonic Path Holy Sect were projected mid-air—irrefutable evidence!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0680_012_b",
+            "text": "\"Lure the snake from its hole\"",
+            "description": "\"Pretend ignorance of Ling Yuan's identity, letting him expose more weaknesses before the enemy\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"Xuanwu Sect's assault continues, causing more casualties\"",
+            "visible_reward": "\"Obtain more evidence, netting all enemies in one sweep\"",
+            "risk_hint": "\"Casualties may mount, stirring discontent among Tianqing Sect disciples\"",
+            "process_label": "陈机选择隐忍布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_012_b_1",
+                  "content": "\"Chen Ji withdrew his gaze as if he hadn't seen Ling Yuan, turning to murmur to Su Qingyao: 'Senior Sister, now is not the time to expose him. The evidence of Ling Yuan's collusion with the Demonic Path is not yet sufficient—I want him to reveal himself before all the enemies.' Though anxious beyond words, Su Qingyao chose to trust Chen Ji's judgment. A subtle smile played at Chen Ji's lips as he murmured: 'Watch—the best is yet to come.'\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0680_012_c",
+            "text": "\"Turn the enemy's scheme against them\"",
+            "description": "\"Use Ling Yuan's conspiracy to set a trap and force him into the net\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "\"Requires precise control of the situation\"",
+            "visible_reward": "\"Resolve all enemies at once\"",
+            "risk_hint": "\"One misstep and it's total defeat\"",
+            "process_label": "陈机决定孤注一掷",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_012_c_1",
+                  "content": "\"A sharp gleam flashed in Chen Ji's eyes—he had already glimpsed the key to this battle: Ling Yuan. Since the old fox was so eager to throw away his life, Chen Ji would grant his wish. Chen Ji secretly channeled the Tianji Record, countless future visions flickering through his mind at lightning speed. A perfect strand of fate gradually took shape: Ling Yuan would lose his reason in fury, actively stepping into the trap Chen Ji had laid, and at that moment, all charges would be conclusively proven.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_013",
+        "content": "\"Just then, Xuanwu Sect Master Han Yuan personally led his great army to attack. This hegemon who had ruled Xuanwu Sect for decades radiated a fiery aura that made the air for li around him seem to burn. The moment he saw the Prince's Banner in Chen Ji's hand and the thirty thousand Imperial border troops rushing to arrive, he erupted in rage: 'A mere border army dares obstruct Xuanwu Sect's path? Seeking death!'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_014",
+        "character_id": "char_hanlie",
+        "content": "\"(Han Yuan stands upon the clouds, gazing down at Chen Ji) Trash! I want to see who your Prince's Banner can save! The Imperial Court? A border backwater—dare to interfere in sect affairs and you court your own doom!\"",
+        "emotion": "狂傲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_015",
+        "content": "\"Before the words finished, an envoy clad in Imperial Court official robes flew out from the border army, bearing an imperial edict, and proclaimed loudly: 'Xuanwu Sect Master Han Yuan, receive the imperial decree! By order of the Imperial Court—Tianqing Sect is granted the title of National Sect by imperial decree; any force that dares to infringe upon it makes an enemy of the Imperial Court! Thirty thousand border troops are ordered to reinforce immediately—let it be so!' Han Yuan's expression darkened, yet he did not place this envoy in his sights. He laughed coldly and suddenly struck—a fierce Spiritual Energy straight for the envoy—\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_016",
+        "character_id": "char_chenji",
+        "content": "\"(Voice like glacial waters from the Nine Abysses) Han Yuan, you dare kill an Imperial emissary—open treason. Do you know what crime this carries?\"",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_017",
+        "content": "\"Yet Han Yuan paid no heed to Chen Ji's warning. That Spiritual Energy instantly pierced the envoy's chest, blood staining the imperial edict crimson. The Imperial envoy's eyes bulged wide—he could not believe until death that someone would dare raise a hand against an Imperial emissary. Han Yuan flicked the blood from his hand and laughed coldly: 'The Imperial Court? Merely a tiny country. My Xuanwu Sect commands a hundred thousand disciples, a hundred Golden Core Elders—why would I fear your mere thirty thousand border troops? Today I shall teach you what true power means!'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_018",
+        "content": "\"Chen Ji gazed at the Imperial envoy lying in a pool of blood, a cold killing intent flickering in his eyes. The surrounding border army soldiers were equally outraged—their commander, the Prince's Grand Tutor of the Imperial Court, had descended to the battlefield; how could the army stand by? Chen Ji slowly raised his hand, lifting the Prince's Banner high, his voice carrying to every corner: 'Imperial border army, hear my command—Xuanwu Sect Master Han Yuan has slain an Imperial emissary and committed open treason! From this day forth, Xuanwu Sect is declared a rebel faction—total annihilation!'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0680_019",
+        "prompt": "\"Chen Ji has officially broken with Xuanwu Sect and ordered a full-scale counterattack.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0680_019_a",
+            "text": "\"Total suppression\"",
+            "description": "\"Crush Xuanwu Sect with overwhelming force, teaching them the taste of Imperial power\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "\"The thirty thousand border army may suffer significant casualties\"",
+            "visible_reward": "\"Xuanwu Sect destroyed, border army prestige greatly increased\"",
+            "risk_hint": "\"Xuanwu Sect's deep foundations mean they will not submit easily\"",
+            "process_label": "陈机选择堂堂正正碾压",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "战力",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_019_a_1",
+                  "content": "\"Chen Ji waved his banner, and thirty thousand border troops surged toward the Xuanwu Sect positions like a tide. These border troops had fought the Demonic Path for years—their combat experience far surpassed that of pampered sect disciples. The Imperial border army's elite soldiers wielded custom-made rune-piercing crossbows, each volley penetrating the protective Spiritual auras of several Xuanwu Sect disciples. Han Yuan's expression turned ashen; he had never expected the Imperial border army's Combat Power to be so formidable.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0680_019_b",
+            "text": "\"Chess Game of Fate\"",
+            "description": "\"Let Xuanwu Sect's main force enter the预设 Chess Game of Fate trap, annihilating them in one blow\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"Consume 5 Heavenly Fate Value\"",
+            "visible_reward": "\"Annihilate Xuanwu Sect's vanguard at minimal cost\"",
+            "risk_hint": "\"Heavenly Fate consumption will accelerate fate's deadly backlash\"",
+            "process_label": "陈机选择以智取胜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_019_b_1",
+                  "content": "\"Chen Ji secretly channeled the Tianji Record, countless runes drifting from the banner and dissolving into the Void. The Xuanwu Sect pursuers never knew they had stepped into an invisible net. Han Yuan laughed coldly: 'Trash remains trash—you only know paltry tricks...' Before he finished, the surrounding scenery abruptly transformed—mountains and rivers vanished, replaced by endless Void. The Chess Game of Fate—formally begins!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0680_019_c",
+            "text": "\"Capture the king to capture the army\"",
+            "description": "\"Strike personally, taking Han Yuan's head and leaving Xuanwu Sect leaderless\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Expose true strength\"",
+            "visible_reward": "\"If Han Yuan dies, Xuanwu Sect will fall into chaos\"",
+            "risk_hint": "\"Han Yuan's strength is profound and unfathomable—may be a one-way trip\"",
+            "process_label": "陈机决定亲自出手",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 20
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0680_result_019_c_1",
+                  "content": "\"Chen Ji's form flickered and he actually appeared directly before Han Yuan. Han Yuan's pupils constricted—how could this废物 possess such speed? Chen Ji's expression was blank, a pitch-black longsword somehow now in his hand: 'Sect Master Han, you just called me废物? How about now?' The words fell, sword light blazed, aiming straight for Han Yuan's throat. Han Yuan roared in fury and defended with all his might—yet he discovered this废物 was actually forcing him to retreat!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_020",
+        "content": "\"Within the Void of the Chess Game of Fate, Xuanwu Sect's vanguard army fell into an endless loop. They charged forward yet never reached the end; they struck the enemy yet blade and sword always passed through the target. Han Yuan finally realized something was wrong—he crazily channeled all his Spiritual Power, attempting to shatter this Void, yet only summoned more runes—those coiled around him like chains, pinning him in place. Han Yuan's eyes bulged, his face disbelief incarnate: 'This... what sorcery is this!'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0680_021",
+        "character_id": "char_chenji",
+        "content": "\"(Walking slowly into the Void, voice flat) Sect Master Han, this is called fate. When you slaughtered the affiliated families of Tianqing Sect all those years ago, did you ever imagine this day? This is heavenly retribution—karmic recompense.\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_022",
+        "content": "\"Meanwhile, in the depths of Chen Ji's consciousness, the will of the Heavenly Eye descended once more. That transcendent existence coldly observed Chen Ji's every action, as if examining a chess piece's worth. 'Interesting... you consumed Heavenly Fate Value to set another trap. Do you think this is your own choice? Laughable—you merely walk along the trajectory I have preset.' Chen Ji sensed that gaze yet showed not a trace of fear—he had grown accustomed to being toyed with by fate, but being played does not mean surrendering.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_023",
+        "content": "\"Chen Ji withdrew his consciousness, gazing at the trapped Xuanwu Sect army within the Chess Game of Fate, a cold smile curling at his lips. This war, from the moment he raised the Prince's Banner, was no longer a struggle between sects but a clash of national fate between the Imperial Court and Xuanwu Sect. He cried aloud: 'Border army, receive orders—total offensive! Today, let the world witness—those who defy Imperial authority, no matter how far, shall be destroyed!' Thirty thousand border soldiers roared in unison, their battle cry piercing the heavens. The Imperial iron heel had finally stepped onto the stage of sect supremacy.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0680_024",
+        "content": "\"The Xuanwu Sect Master found himself trapped in Chen Ji's Chess Game of Fate, fury mixed with apprehension—for the first time, he realized that the power held in this废物杂役弟子's hands was far more terrifying than imagined. Yet what terrified him more was that, in the depths of that Chess Game of Fate, he saw countless blurred figures walking toward him—those were fate's backlash, the settlement of karmic debt. Chen Ji stood atop the heights, overlooking all this, his gaze as tranquil as a pool of dead water. This game of chess... has only just begun.\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

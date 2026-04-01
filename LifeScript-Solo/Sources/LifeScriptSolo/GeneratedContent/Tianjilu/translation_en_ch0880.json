@@ -1,0 +1,501 @@
+{
+  "id": "天机录_ch0880",
+  "book_id": "天机录",
+  "number": 880,
+  "title": "Mo Xiansheng Appears",
+  "is_paid": true,
+  "next_chapter_hook": "\"Just as Mo Xiansheng's words fell, the Tianji Record mark on Chen Ji's Brow Center suddenly burned scorching—he saw a blurry vision, eyes beyond the chessboard piercing through the Void, gazing at him.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0880_001",
+        "content": "\"The Void trembled, and a figure stepped out from nothingness, as if torn from the pages of history ten thousand years ago. Mo Xiansheng—or rather, that self-proclaimed remnant soul guardian—now was no longer sleeping text within the Tianji Record, but a presence so real it was almost blinding. Chaotic-colored mist swirled around him, each wisp carrying ancient karma and obsession. The Demonic Path commander-in-chief's demonic flames automatically retreated before him, as if even fire knew the danger of the one before it.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_002",
+        "content": "\"'Enough.' Mo Xiansheng's voice was unhurried yet carried irresistible pressure. His gaze swept across everyone present—Han Lie suppressed by the demonic flames, Chen Ji's entire body tense, and the still-roaring Demonic Path commander—finally settling on the violently trembling Tianji Mark on Chen Ji's Brow Center. 'Ten thousand years, and you still repeat the same mistake.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_003",
+        "character_id": "char_moxiansheng",
+        "content": "\"'You—Who are you!' The Demonic Path commander-in-chief's roar carried a tremor he himself hadn't noticed, 'A mere remnant soul dares obstruct the Holy Sect's great cause!'\"",
+        "emotion": "暴怒且忌惮"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_004",
+        "content": "\"Mo Xiansheng didn't even glance at him. His tattered sleeve lightly waved, and an invisible force crushed the demonic flames capable of destroying half a city into nothingness. The Demonic Path commander stumbled backward, vomiting black blood, and true fear finally appeared in his eyes—the despair of an ant facing the heavens.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_005",
+        "character_id": "char_hanlie",
+        "content": "\"'Cough, cough...' Han Lie struggled to rise from the ground, most of his bones shattered, yet he死死 stared at Mo Xiansheng, voice hoarse, 'What do you mean by \"the same mistake\"...? The Twin Fates... What exactly are you!'\"",
+        "emotion": "痛苦且困惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_006",
+        "content": "\"Chen Ji stood in place, his expression unruffled, but his heart was already churning. The golden light of the Tianji Record pulsed wildly at his Brow Center—it was warning him that this existence was one whose secrets he could not peer into through the Tianji Record. This loss of control made him instinctively want to retreat, but reason nailed his feet to the ground.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_007",
+        "character_id": "char_moxiansheng",
+        "content": "\"'Ten thousand years ago,' Mo Xiansheng finally spoke, his voice seeming to come from the depths of history, 'The Tianji Record was never a divine artifact, but a prison. What it imprisoned was the last complete will that the Heavenly Dao split off—I watched it being divided in two, half becoming the Tianji Record, and the other half becoming...' His gaze fell between Chen Ji and Han Lie, 'The Twin Fates.'\"",
+        "emotion": "沉重且怀念"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_008",
+        "content": "\"The air seemed to freeze. Chen Ji felt his heartbeat thunder in his ears amid this deathly silence. He recalled the fragmented prophecies on the Tianji Record Fragment, the soul-tearing pain every time he consumed Heavenly Fate Value—so it was all not coincidence, but a fate already destined for reincarnation.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_009",
+        "character_id": "char_hanlie",
+        "content": "\"'So... We are the same existence torn apart?' Han Lie's face turned deathly pale, 'Then what does \"world destruction\" mean! Will merging destroy it?'\"",
+        "emotion": "震惊且愤怒"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0880_choice_001",
+        "prompt": "\"Mo Xiansheng's words stirred massive waves in Chen Ji's heart. As someone accustomed to controlling everything, he had to decide how to respond to this witness from ten thousand years ago.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "信任墨先生",
+            "text": "\"Inquire About the Truth of Merging\"",
+            "description": "\"Since Mo Xiansheng knows the secrets of ten thousand years ago, perhaps he can reveal how to avoid the \"world destruction\" ending. This is an opportunity to gain crucial information.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Consume one Tianji Record Golden Light warning\"",
+            "visible_reward": "\"Obtain clues about the truth of the Twin Fates' separation\"",
+            "risk_hint": "\"Mo Xiansheng's motives are unclear; blindly trusting may lead into a new chess game\"",
+            "process_label": "陈机决定冒险信任这个神秘的知情者",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0880_result_trust_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji suppressed his wariness and stepped forward, his voice steady as if he wasn't facing an existence holding the secrets of his fate: 'What exactly happened during the separation ceremony ten thousand years ago? Why would merging lead to destruction?'\"",
+                  "emotion": "冷静且专注"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生信任开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生似乎对陈机的冷静有些意外",
+            "branch_route_id": null
+          },
+          {
+            "id": "质疑墨先生",
+            "text": "\"Question His Identity and Motives\"",
+            "description": "\"A self-proclaimed remnant soul guardian possesses power that dwarfs the Demonic Path commander-in-chief, yet is trapped within a page of a残book. Chen Ji would not easily believe anyone, especially such 'delivered-on-a-silver-platter' intelligence.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"May miss crucial information\"",
+            "visible_reward": "\"Force Mo Xiansheng to reveal more cards to prove his innocence\"",
+            "risk_hint": "\"Angering Mo Xiansheng may lead to loss of control\"",
+            "process_label": "陈机决定试探这个神秘存在的真实意图",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0880_result_doubt_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji didn't move; instead, he retreated half a step, the corner of his lips curving into a faint arc: 'A witness from ten thousand years ago? An existence powerful enough to crush the Demonic Path commander, yet trapped in a page of残book? Sir, aren't you contradicting yourself?'\"",
+                  "emotion": "锐利且审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "墨先生质疑开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生眼中闪过一丝意外，似乎对陈机的敏锐感到有趣",
+            "branch_route_id": null
+          },
+          {
+            "id": "沉默观察",
+            "text": "\"Silence to Observe and Wait\"",
+            "description": "\"Don't take the initiative to state a position; let Mo Xiansheng reveal more cards himself. In the information war, silence is sometimes more powerful than questioning.\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"Waste possible intelligence-gaining opportunities\"",
+            "visible_reward": "\"Observe Mo Xiansheng's response to judge his personality weaknesses\"",
+            "risk_hint": "\"May be seen as weak or acquiescent\"",
+            "process_label": "陈机选择静观其变，等待对方露出破绽",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0880_result_silent_001",
+                  "content": "\"Chen Ji merely stood quietly, the golden light at his Brow Center still pulsing, yet he seemed like an outsider watching a show. Mo Xiansheng's brow furrowed slightly, as if encountering an opponent who didn't follow the usual playbook for the first time.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "沉默观察开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生第一次正视陈机的眼睛，似乎在重新评估这个'废物'",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_010",
+        "content": "\"Mo Xiansheng gazed at Chen Ji's reaction and fell silent for a moment before suddenly letting out a low laugh. That laughter carried a hint of... appreciation? 'Interesting. Ten thousand years have passed, and finally someone who isn't eager for answers.' His gaze deepened, 'You know what? The one who split the Tianji Record back then feared most the fool who 'eagerly wanted to merge'.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_011",
+        "content": "\"'Merging will indeed destroy the world,' Mo Xiansheng continued, his tone growing solemn, 'Because that means the complete return of the Heavenly Dao's will. But that is only the first choice—the stupidest choice.' He raised three fingers, 'The second choice is eternal separation, letting two incomplete existences tear at each other in eternal agony.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_012",
+        "character_id": "char_moxiansheng",
+        "content": "\"'And the third choice—' Mo Xiansheng's gaze fell on Chen Ji, carrying an almost seductive implication, 'is incomplete merging. Maintain各自 independence while sharing that part of power originally belonging to the same source. You don't need to become one person, yet can reach realms only accessible when complete.'\"",
+        "emotion": "诱导且真诚"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_013",
+        "content": "\"Han Lie abruptly looked up, eyes burning with complex emotions: 'This... How is this possible? We are enemies, sworn foes, existences destined to fight to the death! What makes you think we can cooperate?' His questioning carried a hope he himself hadn't noticed.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0880_choice_002",
+        "prompt": "\"Mo Xiansheng's third choice shattered Chen Ji's original chess game calculations. He needed to quickly assess the credibility and risks of this plan.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "接受第三选择",
+            "text": "\"Consider the Possibility of Cooperation\"",
+            "description": "\"If the third choice is feasible, it would completely change Chen Ji's layout for the future. Sharing power with a sworn enemy—though the risk is enormous, so is the reward.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Abandon the original killing plan against Han Lie\"",
+            "visible_reward": "\"Obtain the prototype ability of resonance with the Twin Fates' source\"",
+            "risk_hint": "\"Mo Xiansheng's true purpose is unclear; he may sacrifice Chen Ji in a larger chess game\"",
+            "process_label": "陈机开始认真权衡第三种选择的利弊",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0880_result_accept_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji slowly spoke, his voice still calm: 'What conditions does the third choice require? What is the price?' He didn't immediately refuse or accept—this was his consistent style, to摸清 all the cards before making any decision.\"",
+                  "emotion": "审慎且冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "第三选择考虑中"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "韩烈注意到陈机的态度变化，第一次对这个'废物'产生了复杂的情绪",
+            "branch_route_id": null
+          },
+          {
+            "id": "追问第二种选择",
+            "text": "\"Inquire About the Details of Eternal Separation\"",
+            "description": "\"Since there are three choices, what exactly does the second 'eternal separation' mean? If that is a trap set by the Heavenly Dao's will, Chen Ji needs to know more.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May touch upon truth one doesn't want to face\"",
+            "visible_reward": "\"Understand the fate the Twin Fates will face in a state of separation\"",
+            "risk_hint": "\"The truth may be more cruel than merging\"",
+            "process_label": "陈机决定先了解第二种选择的代价",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0880_result_separate_001",
+                  "character_id": "char_chenji",
+                  "content": "\"'What is the price of eternal separation?' Chen Ji asked, 'Is it like now, where one constantly consumes Heavenly Fate Value for foresight ability, while the other is eternally rejected from the core by fate?' His gaze fell on Han Lie, 'Or another kind of... more thorough tragedy?'\"",
+                  "emotion": "锐利且洞察"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "永恒分离追问"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生的表情第一次出现了细微的波动，似乎触及了某个痛点",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_014",
+        "content": "\"Upon hearing this, Mo Xiansheng's expression subtly changed. He fell silent for a long time, so long that Chen Ji thought he wouldn't answer. Finally, he spoke, his voice carrying a trace of indiscernible sorrow: 'Eternal separation... means you will be eternally trapped in your respective hells. One counterattacked by the Tianji Record, every vision reducing lifespan; the other rejected by the Heavenly Dao, every breakthrough bringing one step closer to destruction.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_015",
+        "character_id": "char_moxiansheng",
+        "content": "\"'And the third choice...' Mo Xiansheng's gaze grew distant, 'is a possibility I spent three thousand years finding. Incomplete merging, preserving各自 consciousness and memories, only sharing source power at crucial moments. The price is—you must establish absolute trust between yourselves, otherwise the backlash will turn you both to ash.'\"",
+        "emotion": "严肃且期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_016",
+        "content": "\"'Absolute trust?' Han Lie burst out laughing, the laughter bitter, 'You want two people who恨不得对方去死 to establish trust?' He looked at Chen Ji, eyes burning with complex light, 'Do you know what he did? Every prophecy of the Tianji Record was calculating against me!'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_017",
+        "content": "\"Chen Ji didn't反驳. He merely stood there quietly, the golden light at his Brow Center finally calming, reflecting his eternally unruffled face. Han Lie's accusations didn't stir a ripple in his heart—calculating against enemies is only natural, isn't it? It was Mo Xiansheng's mention of 'absolute trust' that truly made him fall into thought.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_018",
+        "character_id": "char_hanlie",
+        "content": "\"'...At least,' Han Lie's voice suddenly dropped, 'you didn't add a knife when I was at my weakest.' He lifted his head, directly meeting Chen Ji's eyes, 'You know I had countless moments where I could easily kill you, yet you never made a single move. Why?'\"",
+        "emotion": "困惑且复杂"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0880_choice_003",
+        "prompt": "\"Han Lie's question made the atmosphere suddenly freeze. Chen Ji had to decide how to respond—this not only concerned the present choice but would determine the future trajectory of his relationship with the Twin Fates.\"",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "坦诚回应",
+            "text": "\"Admit Admiration\"",
+            "description": "\"Tell Han Lie the truth: you are the most pure warrior I've ever seen. Crushing an opponent who won't grow is meaningless. Admitting your enemy is also admitting yourself.\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Expose true inner thoughts\"",
+            "visible_reward": "\"Establish subtle resonance with Han Lie, planting seeds for 'absolute trust'\"",
+            "risk_hint": "\"Han Lie may see this as an insult, or may see it as recognition\"",
+            "process_label": "陈机罕见地选择了坦诚",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0880_result_honest_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji looked at Han Lie, the corner of his lips slowly curving into an enigmatic arc: 'Because every time you fall, you become stronger. I like raising fighting insects, watching my opponent approach their limit step by step... then at the final moment, harvest everything.' His voice was soft as if murmuring to himself, 'In this world, opponents worth my serious attention are few.'\"",
+                  "emotion": "危险且真诚"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈机韩烈羁绊开启"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "韩烈愣住了，愤怒的表情下隐藏着某种复杂的情绪——那是棋逢对手时才会有的共鸣",
+            "branch_route_id": null
+          },
+          {
+            "id": "继续算计",
+            "text": "\"Deny the Existence of Admiration\"",
+            "description": "\"Maintain distance from Han Lie, emphasizing this is merely one piece in the chess game. He needs no friends, let alone bonds with sworn enemies.\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"Miss the opportunity to build trust\"",
+            "visible_reward": "\"Maintain Chen Ji's consistent air of mystery and coldness, reinforcing the 'trash' persona\"",
+            "risk_hint": "\"Mo Xiansheng may thus judge the third choice impossible to achieve\"",
+            "process_label": "陈机选择了保持距离",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0880_result_cold_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Chen Ji收回目光, his voice indifferent: 'You think too much. I didn't kill you just because you're still useful.' He turned to Mo Xiansheng, 'Sir, after saying so much, what exactly do you want? It's not out of goodwill reminding two people destined to die, surely.'\"",
+                  "emotion": "冷漠且防备"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "保持距离"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "墨先生轻轻叹息，似乎在为陈机的选择感到惋惜",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_019",
+        "content": "\"Mo Xiansheng quietly listened to the exchange between the two, then suddenly burst out laughing. That laughter echoed in the Void, carrying释然 after历经沧桑. 'Good, good, good!' He said three good words in succession, 'Ten thousand years, and finally let me see this possibility. Chen Ji, your scheming is unmatched in the world, but you know what? The opposite of excessive calculation is not daring to trust.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0880_020",
+        "character_id": "char_moxiansheng",
+        "content": "\"'Your fate is far more complex than what I said.' Mo Xiansheng's voice suddenly dropped, 'Beneath the chess game of the ultimate chess master, there exist higher beings. That being... has been watching you since the moment you were born.' He looked at the pulsing mark on Chen Ji's Brow Center, 'You think the Tianji Record is your greatest trump card, but you don't know it is simultaneously the greatest chain.'\"",
+        "emotion": "警告且忧虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0880_021",
+        "content": "\"Chen Ji's pupils abruptly constricted. The golden light of the Tianji Record trembled violently, as if confirming Mo Xiansheng's words—that feeling of being watched, he was no stranger to. That cold chill at his back every time he used the Tianji Record, that sensation of eyes piercing through time and space with every glimpse of the future... So none of it was an illusion. Mo Xiansheng's figure began to blur; his power was depleting. Before dissipating, he took one last look at Chen Ji: 'The Tianji Record will guide you to find the remaining pages... But remember, with each page unlocked, you draw one step closer to that watcher.'\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

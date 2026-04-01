@@ -1,0 +1,496 @@
+{
+  "id": "天机录_ch0926",
+  "book_id": "天机录",
+  "number": 926,
+  "title": "Destiny's Choice",
+  "is_paid": true,
+  "next_chapter_hook": "At the very moment Chen Ji shattered fate, an unprecedented transformation occurred across the Three Realms—the will of the Heavenly Eye was shaken, and the unchanging River of Fate, unaltered for eons, saw its first divergence. A brand new possibility was being born.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0926_001",
+        "content": "As Chen Ji gazed into the Abyss, from two distant directions in the mortal realm, two threads of karmic bond were piercing through the void toward him—those of Su Qingyao and Ye Qing, prayers spanning across the Three Realms.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_002",
+        "content": "Chen Ji felt a searing heat in his chest, as the Tianji Record Fragment trembled violently. Silver-white light burst forth from its pages, intersecting with the two prayers in mid-air, forming three intertwined pillars of light that rushed directly toward his crown.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_003",
+        "content": "At the same moment, Mo Xiansheng's remnant soul awakened from the first page, his voice trembling for the first time: 'Do you perceive it? A Three Realms resonance... This is a phenomenon that only appears when the Tianji Record reaches its complete form!'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_004",
+        "character_id": "char_moxiansheng",
+        "content": "Chen Ji, before you lie three paths—become the new Heavenly Will, inherit the mantle of the Fate Scribe, or... be utterly consumed by these shackles. But I must tell you, no one has ever dared to choose the fourth path.",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_005",
+        "content": "Chen Ji slowly opened his eyes, his pupils reflecting the terrifying pressure of the Heavenly Eye. The surrounding space twisted, time shattered, and countless threads of karma like venomous serpents coiled around his limbs, attempting to drag him into the endless abyss of fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_006",
+        "content": "The Heavenly Eye's voice thundered in his mind: 'Chen Ji, since time immemorial, countless seers have attempted to break free from my control, yet all turned to nothing. You are merely the most insignificant ant among them—how dare you defy fate?'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "Surrender, and give me your will. Your so-called bonds—Su Qingyao, Ye Qing, even your sister Chen Nian—are merely pieces on my chessboard. Obedience is your only path forward.",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_008",
+        "content": "Chen Ji suddenly laughed, the smile appearing so eerie beneath fate's oppression. The corners of his lips slightly curved upward, yet there was not a trace of fear in his eyes—only an abyss of composure and madness.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0926_choice_001",
+        "prompt": "The Heavenly Eye's pressure weighed like mountains, and Chen Ji felt his Heavenly Fate draining rapidly. In this moment of life-and-death decision, he had to make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0926_opt_accept",
+            "text": "Accept Fate",
+            "description": "Merge your own will with the Heavenly Eye, becoming part of the new cosmic will. This is the safest choice, but it means completely losing yourself.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose Self-Consciousness",
+            "visible_reward": "Gain Eternal Existence",
+            "risk_hint": "This Means Total Dissolution",
+            "process_label": "陈机缓缓伸出手，准备接受天道之力",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0926_result_accept_001",
+                  "content": "Chen Ji's hand slowly rose, threads of fate coiling around his fingertips. However, the moment before they were about to touch the Heavenly Eye, a hint of mockery flashed in his eyes—this was the most exquisite of stratagems.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0926_opt_reject",
+            "text": "Defy Fate",
+            "description": "Challenge the cosmic laws with your own will, issuing the ultimate declaration of war against fate. This is the third path no one has dared to walk since time immemorial.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Massive Heavenly Fate Consumption",
+            "visible_reward": "Shatter Fate's Shackles",
+            "risk_hint": "Risk Complete Annihilation",
+            "process_label": "陈机冷笑，凝聚全身力量对抗天道",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 100
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0926_result_reject_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji abruptly lifted his head, his voice like a sword piercing the heavens—My fate, I myself shall write!",
+                  "emotion": "震撼"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0926_result_reject_002",
+                  "content": "The moment his words ended, the three threads of karmic bond surged into his body simultaneously—the sword intent of Su Qingyao, the demonic aura of Ye Qing, and the final knowledge sealed within Mo Xiansheng's remnant soul. The three fused and erupted within Chen Ji's body with unprecedented radiance.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0926_opt_merge",
+            "text": "Fusion of Powers",
+            "description": "Merge the power of the Tianji Record and the Fate Scribe, creating a brand new ability that surpasses both. This requires tremendous courage and sacrifice.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "The Tianji Record may disintegrate",
+            "visible_reward": "Gain power beyond fate",
+            "risk_hint": "Success rate unknown",
+            "process_label": "陈机将天机录与书写者之力开始融合",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 30
+              },
+              {
+                "stat": "天命值",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0926_result_merge_001",
+                  "content": "The fragments of the Tianji Record begin to shake violently. Mo Xiansheng's remnant soul and the power of the Fate Scribe begin to merge under Chen Ji's guidance. An unprecedented tome is being born.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_009",
+        "content": "The power of the Three Realms resonating together surges into Chen Ji's body like a tide. Within the Tianqing Sect, Su Qingyao suddenly opens her eyes, her sword intent involuntarily piercing through the air; deep within the Holy Sect of the Demonic Path, Ye Qing's surrounding demonic mist transforms into blades, cutting through the chains binding her.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_010",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's body gradually becomes translucent in the light, yet his laughter grows increasingly unrestrained—Eyes of Heavenly Dao, did you think you were the only one laying plans? I have waited for this moment for far too long!",
+        "emotion": "癫狂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_011",
+        "content": "The fragments of the Tianji Record begin to flip violently. Countless golden characters fly from the pages, no longer records of fate, but—fetters of fate itself! Chen Ji forcibly merges the Tianji Record and the Fate Scribe's power, intending to forge them into a blade that severs these chains!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_012",
+        "content": "Mo Xiansheng's voice rises in the chaos, carrying unprecedented excitement: \"This is not fusion—it is transcendence! He is creating entirely new laws! This is a path that no prophet has ever dared to imagine since ancient times!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "For the first time, a tremor appears in the voice of the Eyes of Heavenly Dao—Impossible! No one in this world can break free from the fetters of fate! You are mad! You are courting your own destruction!",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_014",
+        "content": "Chen Ji's form dissolves completely in the light, yet reforms in another manifestation. His eyes turn pure silver, and an illusory scroll appears behind him—a completely new existence that transcends both the Tianji Record and the Fate Scribe.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0926_choice_002",
+        "prompt": "At the crucial moment of power fusion, Chen Ji must make the final choice—the merged power needs a core consciousness to guide it.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0926_opt_self",
+            "text": "With self as the core",
+            "description": "Let Chen Ji's will dominate this power, becoming a new existence that transcends Heavenly Dao. This is the true third path.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Lose the complete functions of the Tianji Record",
+            "visible_reward": "Gain the power to determine one's own fate",
+            "risk_hint": "The Eyes of Heavenly Dao will counterattack with full force",
+            "process_label": "陈机以自身意志为核心统御新力量",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 50
+              },
+              {
+                "stat": "天命值",
+                "delta": -40
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 50
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0926_result_self_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji's voice explodes through the void—from this day forward, my fate, I myself shall write! Not belonging to Heavenly Dao, not belonging to fate, only belonging to myself!",
+                  "emotion": "震撼"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0926_result_self_002",
+                  "content": "As his words fall, the fetters of fate emit a piercing sound of breaking. The will of the Eyes of Heavenly Dao is torn apart by an irresistible force, and the ancient unchanging cosmic order cracks for the first time.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0926_opt_shared",
+            "text": "With bonds as the core",
+            "description": "Let Su Qingyao, Ye Qing, and Mo Xiansheng's wills participate together, becoming a new power shared by the Three Realms. Lower risk, but the power is dispersed.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "The power is not as strong as when controlled alone",
+            "visible_reward": "The Three Realms jointly protect the new order",
+            "risk_hint": "May not be enough to break fate",
+            "process_label": "陈机将力量与三界羁绊共享",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              },
+              {
+                "stat": "名望",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 40
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0926_result_shared_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji murmured—I have never fought alone. This power belongs to all who dare to resist fate.",
+                  "emotion": "感动"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0926_result_shared_002",
+                  "content": "Three bonds of power converged in the air—Su Qingyao's sword intent, Ye Qing's demonic energy, and Mo Xiansheng's remnant soul merged into Chen Ji. The newborn power rose like the morning sun, warm and unwavering.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_015",
+        "content": "The will of the Heavenly Eye let out a furious roar—Cang Yutian felt that power beyond fate, and for the first time, terror tinged his voice: 'Impossible! Since time immemorial, no one has dared to defy the cosmic will! You court your own destruction!'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_016",
+        "content": "Chen Ji slowly opened his eyes—no emotional fluctuation remained in those eyes, only pure, almost cold willpower. His voice was terrifyingly calm—court my own destruction? No, this is the opportunity I've waited countless cycles for.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_017",
+        "content": "He raised his hand, and that illusory new book slowly rotated in his palm. The golden text no longer recorded fate, but—possibility! Countless branches, countless futures, all within his single thought.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_018",
+        "character_id": "char_chenji",
+        "content": "Chen Ji's voice echoed through the void with unprecedented arrogance—Heavenly Eye, you are indeed powerful. You've manipulated countless generations, treating all seers like pawns. Yet you've made a fatal mistake...",
+        "emotion": "讥讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_019",
+        "content": "He paused, a mocking curve forming at the corner of his lips—you should never, ever have let me meet Su Qingyao and Ye Qing. You thought they were my weakness? No, they are my greatest variables—and you, fear variables above all else.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_020",
+        "content": "Chen Ji fiercely waved his hand, and the reborn tome erupted with light that illuminated the Three Realms. The chains of destiny shattered in this radiance, the Heavenly Eye's will forcibly torn apart by a power surpassing the cosmos—the river of fate, unchanging since ancient times, branched for the first time!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_021",
+        "content": "Just at this moment, unprecedented anomalies appeared across the Three Realms—a golden fissure split open in the sky above Tianqing Sect, a brilliant pillar of light rose from the depths of the Demonic Holy Sect, and countless mortals in the mortal realm simultaneously looked up, witnessing that figure that had torn through fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_022",
+        "character_id": "char_tiandaozhiyan",
+        "content": "Cang Yutian's voice emitted a final howl amidst the collapse—Chen Ji! You will regret this! Fate... fate cannot be broken! Someday, you will understand, everything you've done...",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_023",
+        "content": "Chen Ji coldly cut it off—someday I will understand? Unnecessary. Because from this day forth, I will not permit any 'someday' to exist. My fate, I myself shall write. And now—",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_024",
+        "content": "He took a deep breath, feeling the completely new power within him. This was no longer the ability to foresee the future, but—the ability to create the future! He was no longer a chess piece manipulated by fate, but the chess player who writes fate!",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_025",
+        "content": "The anomalies across the Three Realms continued, but Chen Ji already sensed the changes. After the chains of fate broke, the bonds between him and Su Qingyao, Ye Qing grew even stronger—their power continuously flowing into him, filling the energy he'd consumed in breaking fate.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_026",
+        "content": "Mo Xiansheng's voice rang out with a smile—well done, Chen Ji. You've accomplished what diviners of all ages dared not imagine. From this day, the Tianji Record is no longer the shackle of fate, but a book recording possibilities—what you wish to write, that shall be the future.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0926_027",
+        "character_id": "char_chenji",
+        "content": "Chen Ji smiled faintly, his smile devoid of the gloom of old, only a kind of clarity after traversing hardships—Possibilities? This is the power I truly desire.",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_028",
+        "content": "He looked toward the convergence of the Three Realms, sensing that void being reshaped. Though the chains of fate were broken, the Heavenly Eye had not completely vanished—it was waiting, waiting for the next opportunity to rise again.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_029",
+        "content": "However, Chen Ji was not worried. Because he had already understood—true power lies not in foreseeing fate, but in creating possibilities. As long as he stood together with Su Qingyao, Ye Qing, Mo Xiansheng, and all companions who dared to defy fate, nothing was impossible.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_030",
+        "content": "At this moment, Chen Ji stood at the convergence of the Three Realms, surrounded by golden light. In his hand he held that brand-new book—it had no name, because its infinite possibilities needed no definition. And in his eyes, the true light of freedom finally appeared.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0926_031",
+        "content": "Just as Chen Ji shattered fate, unprecedented anomalies appeared across the Three Realms—the will of the Heavenly Eye was shaken, the river of fate, unchanging since ancient times, branched for the first time, and a brand-new possibility was being born. That was Chen Ji's possibility, the possibility of all who dared to defy fate, the possibility of infinite futures!",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

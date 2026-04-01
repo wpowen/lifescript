@@ -1,0 +1,394 @@
+{
+  "id": "天机录_ch0181",
+  "book_id": "天机录",
+  "number": 181,
+  "title": "The Storm Rises in the Cleansing",
+  "is_paid": true,
+  "next_chapter_hook": "Under the firelight, when Chen Ji clearly saw that familiar face, his pupils constricted sharply—that face should have appeared in that fire three years ago.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0181_001",
+        "content": "At the third quarter of the Zi hour, the bronze crane incense burner before the Tianqing Sect main hall still breathed wisps of blue smoke. Sect Master Liu Xuanqing sat upright in the main seat, weariness evident between his brows—less than three days had passed since news of the great cleansing spread, and already the entire sect was seized with unease. The disciples patrolling outside the hall were double the usual number, their torches fragmenting the night into intersecting shards of light and darkness. No one noticed a gray-robed menial servant crouching in the shadow of a pillar, his fingers gently caressing a yellowed page in his arms.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0181_002",
+        "character_id": "char_moxiansheng",
+        "content": "\"Coming.\" The voice of the fragmented soul Mo Xiansheng seeped into Chen Ji's mind like a wisp of blue smoke. \"Thirty-seven remnants of the Five Elders and traitors from the Outer Sect have infiltrated through the Rear Mountain secret passage. The leader is the Outer Sect Executive Deacon Zhao Heng—a man expelled from the sect three days ago, whose grudge is hardly surprising. But this old one must warn you... Ling Yuan has not left his meditation chamber tonight.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_003",
+        "content": "A faint smile curled at the corner of Chen Ji's lips, yet no笑意 reached his eyes. Thirty-seven attackers, including at least eight formidable Foundation Building Seventh Stage experts. Though Zhao Heng was merely an Outer Sect Executive Deacon, his cultivation had reached Foundation Building Peak. Such a lineup, if they assaulted the Sect Master's Hall directly, the outcome would still be uncertain. But they chose a night raid instead of direct confrontation... That meant they still had hidden cards.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_004",
+        "content": "Suddenly, the sharp sound of a teacup shattering echoed from within the hall. Immediately followed by Liu Xuanqing's question, his voice tight with suppressed fury: \"Who?\" Before the words even finished, the hall doors burst open, a sword light like a silver serpent piercing the night, directly targeting the main seat! Chen Ji discerned the trajectory of that sword beam by moonlight—fast, ruthless, precise—far beyond what an ordinary disciple could achieve.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0181_005",
+        "character_id": "char_suqingyao",
+        "content": "\"Chen Ji! What are you doing here?\" Su Qingyao's voice rang out from behind him, cold yet scrutinizing. Clad in fitted combat attire with a sword at her waist, she had clearly arrived upon hearing the commotion. Chen Ji noticed her hand gripping the sword was faintly white—had she been injured? No, it was the trace of spiritual energy exhaustion. So she had already fought someone.",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_006",
+        "content": "\"Senior Sister Su.\" Chen Ji bowed respectfully, his voice betraying not a trace of panic. \"This disciple heard the disturbance and came to investigate.\" Su Qingyao's brow furrowed, her gaze lingering on him for a moment as if wanting to say something, but another explosion of shouts came from the hall. She snorted coldly, her form flashing as she swept into the hall.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_007",
+        "content": "Through the hall doors, Chen Ji saw Liu Xuanqing blocking that sword with his sword sheath, the sleeve of his robe torn by the sword energy. The assassin wore a black mask, but that凌厉 sword technique... Chen Ji's pupils constricted—this was the entry-level technique \"Xuanwu Slash\" from the Xuanwu Sect. Why would it appear in Tianqing Sect's internal conflict?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0181_008",
+        "prompt": "The Sect Master is wounded, the situation critical! Thirty-seven attackers have flooded the hall from all directions, Su Qingyao fights alone—you must make a choice—",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "direct_confront",
+            "text": "Intervene Directly",
+            "description": "Seize the chaos to reveal a portion of your strength, help the Sect Master's faction repel the attackers, and build goodwill in front of everyone.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Revealing strength may attract more attention",
+            "visible_reward": "Sect Master Favor +10, Su Qingyao Trust +5",
+            "risk_hint": "Ling Yuan has yet to make a move—will your intervention fall into his calculations?",
+            "process_label": "战",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 0
+              },
+              {
+                "stat": "名望",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0181_result_direct_confront_001",
+                  "content": "Chen Ji's form flickered, emerging from behind the pillar. He did not employ any profound techniques, merely using the most basic Outer Disciple martial art \"Stone-Crushing Palm\" to face the enemy. Each palm strike precisely struck the attackers' vital acupoints—appearing random yet secretly aligning with gaps in their battle formation. In just three breaths, five men had fallen.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "revealed_combat_ability"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "本章展现了部分实力",
+            "branch_route_id": null
+          },
+          {
+            "id": "observe_patiently",
+            "text": "Observe Discreetly",
+            "description": "Continue hiding your strength, watch the battle coldly, search for the true mastermind behind the scenes.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be perceived as cowardice",
+            "visible_reward": "Clearly see the full battlefield, discover the truth of Xuanwu Sect's involvement",
+            "risk_hint": "If the Sect Master's faction is defeated, your situation will also become dangerous.",
+            "process_label": "观",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0181_result_observe_001",
+                  "content": "Chen Ji stepped back two paces, his form completely hidden within the shadows. His gaze swept across the battlefield like a hawk, capturing every detail—Zhao Heng's sword technique carried traces of Xuanwu Sect; the attacker on the right displayed movement techniques unmistakably from the Holy Sect; and at the main entrance, the master of that sword energy... was deliberately holding back?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hidden_observer"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "本章保持低调观察",
+            "branch_route_id": null
+          },
+          {
+            "id": "secret_manipulation",
+            "text": "Scheme Secretly",
+            "description": "While it's chaotic, secretly move to the enemy's rear, disrupt the attackers' formation's focal point, causing them to unknowingly expose weaknesses.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Requires energy expenditure to set up",
+            "visible_reward": "Defeat the mighty with the small, silently turn the tide of battle",
+            "risk_hint": "If discovered, you will be seen as a traitor by both sides.",
+            "process_label": "谋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0181_result_manipulation_001",
+                  "content": "Chen Ji glided along the wall like a ghost. At the center of the battlefield, Su Qingyao fought three opponents alone, her sword light weaving like silk; the Sect Master, besieged by three experts, showed signs of exhaustion. He did not pause, but lightly tapped a formation node behind the hall—the crucial point maintaining the attackers' combined attack formation.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "secret_manipulator"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "本章暗中操控战局",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_009",
+        "content": "At this moment, a aged yet robust laugh rang out from the Rear Mountain: \"Sect Master Liu, such excitement on this deep night—why not let this old man join the fun?\" Ling Yuan! Chen Ji's heart tightened. This old sect master's voice sounded like he had come to help, but he noticed—the footsteps of Ling Yuan came from the direction of the Rear Mountain, and the direction of the attackers' assault... coincided precisely with the Rear Mountain.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0181_010",
+        "character_id": "char_lingyuan",
+        "content": "Ling Yuan descended gracefully into the hall, his robes fluttering with the demeanor of a master. He glanced at the battlefield, brow furrowing slightly: \"Sect Master, what on earth is happening? This old one was just meditating in the quiet room when a sky-shaking roar of fighting reached my ears...\" Liu Xuanqing gritted his teeth without speaking, but Su Qingyao's sword placed itself between Ling Yuan and the Sect Master.",
+        "emotion": "剑拔弩张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_011",
+        "content": "\"Su girl, what do you mean by this?\" Ling Yuan narrowed his eyes, his tone gentle yet penetrated with a chill. \"This old one has come to help.\" Chen Ji, hidden in the shadows, witnessed this scene. Su Qingyao's intuition was correct—Ling Yuan's arrival was too perfectly timed, as if calculated. But accusing an old sect master at this moment was no different than seeking death.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0181_012",
+        "prompt": "Su Qingyao was caught in a dilemma—she suspected Ling Yuan but had no evidence. How will you help her break the deadlock?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "expose_evidence",
+            "text": "Present Evidence",
+            "description": "Have Mo Xiansheng cooperate to create an omen, publicly expose the Xuanwu Sect sword energy residue on Ling Yuan's sleeve.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Completely break with Ling Yuan",
+            "visible_reward": "Ling Yuan's true face exposed, the Sect Master's faction's morale greatly boosted",
+            "risk_hint": "Will Ling Yuan go desperate and resort to dangerous measures?",
+            "process_label": "揭",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 20
+              },
+              {
+                "stat": "黑化值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0181_result_expose_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Sect Master Ling,\" Chen Ji's voice sounded from the shadows, neither servile nor overbearing, \"your sleeve... seems to have gotten onto something it shouldn't.\" Everyone turned to look—on the edge of Ling Yuan's wide sleeve, a faint blue light glimmered—the unique sword energy residue of the Xuanwu Sect.",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "exposed_lingyuan"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "当众揭露凌渊",
+            "branch_route_id": null
+          },
+          {
+            "id": "feigned_ignorance",
+            "text": "Pretend Ignorance",
+            "description": "This is not the time to expose anything, let Ling Yuan become complacent, settle the score later.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Swallow this grievance for now",
+            "visible_reward": "Preserve your trump card, let Ling Yuan lower his guard",
+            "risk_hint": "Ling Yuan will become even more arrogant.",
+            "process_label": "忍",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0181_result_feign_001",
+                  "content": "Chen Ji swallowed the words at his lips. At this moment Ling Yuan's momentum was strong; even if exposed, he might not necessarily be overthrown—better to let him think he had succeeded, and when evidence was solid later, settle accounts together. He lowered his eyes, assuming the demeanor of a terrified servant, and quietly withdrew from the battle circle.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "secret_grudge"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "忍下这口气",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_013",
+        "content": "Ling Yuan's expression changed slightly, his wide sleeve unfurling, that blue light instantly dissipating without a trace. \"Just some elixir residue,\" he said calmly, \"this old one has been studying a new technique lately, occasional overflow is natural.\" His gaze swept toward where the voice had come from, but he only saw a gray-robed servant huddled in the corner. A disdainful smile curled at the corner of his lips as he turned to Liu Xuanqing with cupped hands: \"Sect Master, the rebellion is quelled—why not let this old one escort you back to the inner hall to rest?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_014",
+        "content": "Chen Ji coldly smiled in his heart. Ling Yuan's reaction was too fast—too prepared. But this precisely proved—he had a guilty conscience. An innocent person would not rush to destroy evidence. Mo Xiansheng's voice once again sounded in his mind: \"Boy, did you notice? Zhao Heng's sword was originally aimed at the Sect Master's heart, but at the last moment it veered off three cun. It was Ling Yuan's handiwork—he deliberately preserved the Sect Master's life.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_015",
+        "content": "Chen Ji's back went cold. Ling Yuan did not want to kill Liu Xuanqing, but to... control him? Keep him alive so the Sect Master would owe a debt of gratitude for his salvation, then in the future, power within the Tianqing Sect would be entirely under Ling Yuan's grasp. What deep scheming! Chen Ji suddenly recalled what Mo Xiansheng had said: when the Tianji Record selected an inheritor, it bypassed Ling Yuan. Now it seemed, this grudge might be deeper than imagined.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0181_016",
+        "character_id": "char_suqingyao",
+        "content": "\"Sect Master,\" Su Qingyao sheathed her sword, her voice cold and hard, \"tonight's events are riddled with suspicious points. Before the investigation is concluded, no one should be allowed to approach the Sect Master alone.\" Liu Xuanqing nodded, rubbing his brow wearily. The smile on Ling Yuan's face stiffened for an instant, then returned to normal: \"The Su girl speaks sense. This old one will take my leave now.\" The moment he turned, Chen Ji distinctly caught a flash of viciousness in his eyes.",
+        "emotion": "紧张"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_017",
+        "content": "The crowd gradually dispersed, leaving only the battlefield's wreckage to narrate the just-passed danger. As Chen Ji was about to leave, his peripheral vision swept across the captured prisoners—the assassins' masks had been removed, revealing faces both young and old. His gaze abruptly stopped on one face. It was a man in his early thirties, with an old scar at the corner of his left eyebrow, his expression wooden, as if already resigned to his fate. Chen Ji knew him. Three years ago, the steward of the Outer Disciple Servants' Quarters—Uncle Zhou. The man who had secretly slipped him half a mantou when he first entered the sect.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_018",
+        "content": "Uncle Zhou... why would he be here? Chen Ji remembered clearly—after the fire three years ago, Uncle Zhou had disappeared, everyone thought he had died in the flames. Now he appeared here as a traitor. Chen Ji suddenly recalled what Mo Xiansheng had said—the Heavenly Fate Lock Key could interfere with the Tianji Record's foresight. And Uncle Zhou was precisely one of the candidates assigned to care for Chen Nian back then. His heart sank heavily.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_019",
+        "content": "The night wind carried the smell of blood, torches crackled. Standing in the shadows, watching Uncle Zhou being escorted toward the sect's dungeon, Chen Ji's heart churned with indescribable emotions. Who exactly died in that fire three years ago? Chen Nian's disappearance, Uncle Zhou's faked death, Ling Yuan's hidden malice... behind all this, was there an invisible hand at play? The Tianji Record did not give him an answer, because that answer might make him make a choice he could not bear.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0181_020",
+        "content": "\"Chen Ji.\" Su Qingyao's voice sounded behind him, breaking his contemplation. She approached a few steps, moonlight illuminating her pallid features. \"Just now... did you know something?\" Her gaze was sharp as a sword, directly piercing Chen Ji's eyes. Chen Ji lowered his eyes, offering a bitter, fearful smile: \"This disciple is merely a servant, how would I dare know anything. It's just... tonight's events are too suspicious.\" Su Qingyao stared at him for a long while, finally sighing softly: \"If you know something, you may tell me.\" Her tone carried an unexpected plea. Chen Ji raised his head, meeting her gaze, each word deliberate: \"Senior Sister Su, the moon tonight is truly beautiful.\" It was an answer, yet not an answer. Su Qingyao stood stunned for a moment, as if wanting to say something, but ultimately simply shook her head and turned to leave. Chen Ji watched her retreating figure, the bitter smile at the corner of his lips gradually收敛, replaced by an abyss of cold unfathomable depths. Ling Yuan, remnants of the Five Elders, the shadow of the Xuanwu Sect, the missing Uncle Zhou... these clues were like scattered chess pieces, awaiting his step-by-step piecing together of the truth. Before that truth revealed itself, he must continue playing the role of a cowardly, useless servant disciple. Yet this time, his eyes held a resolution unseen by others—the matter of Uncle Zhou, he would never sit by and ignore.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

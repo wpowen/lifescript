@@ -37,7 +37,7 @@ struct SoloCarouselCard: View {
 
             HStack(spacing: 8) {
                 capsule(text: SoloCharacterCodex.roleLabel(for: character.role), tint: accent)
-                capsule(text: relation?.attitudeLabel ?? "未入局", tint: relation == nil ? SoloTheme.muted : accent)
+                capsule(text: relation?.attitudeLabel ?? SoloLocalization.localized("未入局"), tint: relation == nil ? SoloTheme.muted : accent)
                 Spacer(minLength: 0)
             }
             .padding(.horizontal, 12)

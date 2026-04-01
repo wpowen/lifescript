@@ -1,0 +1,357 @@
+{
+  "id": "天机录_ch1194",
+  "book_id": "天机录",
+  "number": 1194,
+  "title": "Path of Freedom",
+  "is_paid": true,
+  "next_chapter_hook": "When the shadow of dimensional invasion enveloped the Tianqing Sect, Chen Ji, having lost his divine power, would place the most unimaginable piece on the board of fate with a mortal body—in this game, he would no longer manipulate the chess pieces, but rather, grasp his heart.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1194_001",
+        "content": "Golden light surged like a tide, and four paths unfolded before Chen Ji, like four distinctly different scrolls of fate.\n\nThe leftmost path was shrouded in a faint white glow, with wisps of cooking smoke visible at its end, the ordinary days of a village with barking dogs and crowing roosters—that was the path of mortals, freedom after completely stripping away divine power. The two middle paths: one glimmered with black light, the path of the chess player, meaning to continue playing in this grand chess game of heaven and earth; the other burned with crimson flames, the path of destruction, crushing all obstacles with absolute power.\n\nThe rightmost path was shrouded in primordial chaos, the path of convergence, its fate unclear.\n\nChen Ji's gaze drifted slowly across the four paths, a profound smile playing at the corners of his mouth.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_002",
+        "content": "The Tianji Record Fragment in his sleeve trembled slightly, as if urging him. Mo Xiansheng's remnant soul spoke in his Mental Sea, tinged with rare gravity: \"The first path offers freedom, but at the cost of losing all divine power, condemning one to a mortal existence. The second path allows continued manipulation of the chessboard, yet the backlash from the Tianji Record will intensify. The third path leads to destruction...\" The remnant soul paused, \"The fourth path remains beyond my perception.\"\n\nChen Ji offered no response, his eyes fixed intently on the first path. The village's outline grew increasingly distinct, and he could even detect children's laughter and women calling their families echoing through the wind. That was—the complete life he had never possessed.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1194_003",
+        "prompt": "Four roads stretched beneath him, with time pressing, Chen Ji had to make an immediate choice.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "choose_freedom",
+            "text": "Step onto the Path of Freedom",
+            "description": "Abandon the foresight of the Tianji Record Fragment, becoming a mortal with a complete life",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Lose the divine power of the Tianji Record, Heavenly Fate, and foresight ability",
+            "visible_reward": "Break free from the shackles of fate, gain a complete life, and the possibility of a normal relationship with Su Qingyao",
+            "risk_hint": "After losing power, he would be utterly defenseless against sect infighting and dimensional invasion",
+            "process_label": "挣脱枷锁",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -100
+              },
+              {
+                "stat": "战力",
+                "delta": -1000
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1194_result_freedom_001",
+                  "character_id": "char_chenji",
+                  "content": "\"I choose the first path. Freedom.\"",
+                  "emotion": "平静而坚定"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch1194_result_freedom_002",
+                  "content": "The moment the words fell, Chen Ji stepped onto the path shrouded in white glow. Golden light suddenly contracted, and the Tianji Record Fragment in his sleeve trembled violently, as if emitting a final wail.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "freedom_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择了自由之路",
+            "branch_route_id": null
+          },
+          {
+            "id": "choose_chessmaster",
+            "text": "Choose the Chess Player's Path",
+            "description": "Continue using the Tianji Record's foresight power to strategize the world in the chaotic game",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Continuous consumption of Heavenly Fate and intensifying backlash",
+            "visible_reward": "Possibility to continue controlling fate and searching for his sister",
+            "risk_hint": "Backlash may cause irreversible consequences, and never be able to escape the identity of a chess piece",
+            "process_label": "继续执棋",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1194_result_chess_001",
+                  "character_id": "char_chenji",
+                  "content": "\"I still have too much left undone... Chess player.\"",
+                  "emotion": "犹豫而决绝"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chessmaster_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_004",
+        "character_id": "char_chenji",
+        "content": "\"Tianji Record, oh Tianji Record, you lent me ten years of divine calculation, now it's time to return a complete Chen Ji to you.\"",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_005",
+        "content": "Before the words finished, a soul-piercing agony spread from his dantian to every limb. The Tianji Record Fragment seemed to come alive, golden light transforming into countless fine threads forcibly extracted from his body—the prophetic power he had accumulated over a decade, the Heavenly Fate gained through countless glimpses of heavenly secrets, was dissipating visibly.\n\nChen Ji groaned, falling to one knee with veins bulging on his forehead. Each strand of divine power being stripped felt like having flesh cut away. He could sense the violent fluctuation of Mo Xiansheng's remnant soul in his Mental Sea, and feel the Tianji Record desperately struggling, trembling, and wailing in his sleeve—a lament of being abandoned by its master.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_006",
+        "content": "At this moment, a crack suddenly appeared in the Void.\n\nThis was no ordinary fissure, but an eye formed by countless starlike points—the Eye of Heavenly Dao. It was massive, so enormous that Chen Ji had to look up to see its entirety. The eye held no emotion, only a cold, scrutinizing gaze, like a deity looking down at ants.\n\nA voice descended from the heavens, directly resonating in Chen Ji's Mental Sea: \"Do you know what you are abandoning?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_007",
+        "character_id": "char_tiandaozhiyan",
+        "content": "After countless years of scheming, do you think the Tianji Record merely coincidentally fell into your hands? Chen Ji, you are the chess player I have selected. Losing this power means losing everything—sect protection, family expectations, and even that woman named Su Qingyao will not glance at a废物. After losing power, what will you use to find your sister? What will you use to resist the impending dimensional invasion? In chaos, mortals are even less than ants!",
+        "emotion": "冷漠的威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_008",
+        "content": "The Eye of Heavenly Dao's words pierced Chen Ji's heart like an ice pick, each word digging into his most vulnerable places.\n\nIndeed, what was he doing? Abandoning the Tianji Record meant relinquishing his source of information about his sister Chen Nian; abandoning his trump card against enemies like Ling Yuan and Han Lie; abandoning his ability to survive the scheming among the three major sects. More importantly, it meant the delicate red thread between him and Su Qingyao, precious because of his \"废物\" identity, would be completely severed.\n\nThe Tianji Record Fragment trembled even more violently, as if making a final desperate struggle. The extraction of golden light suddenly accelerated, and Chen Ji felt his meridians breaking one by one.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1194_009",
+        "prompt": "The Eye of Heavenly Dao's words made Chen Ji's heart shake—after losing power, could he truly bear everything that would follow?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "reject_tiandao",
+            "text": "\"My will is already set.\"",
+            "description": "Even if I lose all power, I will break free from the chains of fate and reshape my life with a mortal heart",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Completely lose divine power, facing all difficulties only with mortal means",
+            "visible_reward": "Completely break free from the shackles of the Tianji Record, obtaining true freedom",
+            "risk_hint": "No room for regret anymore",
+            "process_label": "挣脱",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "战力",
+                "delta": -500
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1194_result_reject_001",
+                  "character_id": "char_chenji",
+                  "content": "You're right, without power, I might be worse than an ant. But I'm done with these ten years of being a chess piece. Eye of Heavenly Dao, since you call yourself a chess observer, you should know—sometimes sacrificing a piece is the cruelest move in chess!",
+                  "emotion": "傲然"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch1194_result_reject_002",
+                  "content": "Chen Ji abruptly raised his head, staring directly at that sky-covering eye. His eyes held no fear, no hesitation, only a kind of light the Eye of Heavenly Dao had never seen before—the light unique to mortals, the refusal to be a chess piece.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "defied_tiandao"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "当面违抗天道之眼",
+            "branch_route_id": null
+          },
+          {
+            "id": "hesitate",
+            "text": "After a moment of hesitation",
+            "description": "The Eye of Heavenly Dao's words shook Chen Ji, causing him to reconsider this decision",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Missed the optimal moment to break free",
+            "visible_reward": "Became more certain of his choice amid wavering",
+            "risk_hint": "Might miss the chance to break free completely",
+            "process_label": "动摇",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1194_result_hesitate_001",
+                  "content": "Chen Ji's hand trembled slightly, his grip on the Tianji Record Fragment loosening. The Eye of Heavenly Dao's words echoed in his mind—without power, could he truly find his sister? Could he protect the people he cared about in this chaotic world?",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_010",
+        "character_id": "char_tiandaozhiyan",
+        "content": "Foolish.\n\nThe Eye of Heavenly Dao's voice grew colder: \"You think breaking free from shackles means gaining freedom? Mortals without power don't even have the qualification to choose. Your sister Chen Nian is waiting for death in the Holy Sect's dungeon right now. Without the Tianji Record, what do you have to save her? Your worthless life?\"",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_011",
+        "character_id": "char_chenji",
+        "content": "Chen Ji laughed.\n\nThat smile was especially glaring under the Eye of Heavenly Dao's pressure. He used all his strength to stand up, though every step felt like walking on knife edges, though his meridians were on the verge of tearing apart, he stood firmly before that sky-covering eye.\n\nHis life? Chen Ji said softly: \"Whether my life is worthless or not is not for you to decide.\" He raised his hand and violently pulled out the trembling Tianji Record Fragment from his sleeve—the golden fragment struggled frantically in his palm, but he held it tightly. \"Ten years ago you chose me, wasn't it because you coveted this 'worthless life' of mine?\"",
+        "emotion": "傲然反击"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_012",
+        "content": "Chen Ji took a deep breath and raised the Tianji Record Fragment high.\n\n\"You want a chess piece that will always play chess for you? Sorry, Chen has never been accustomed to being led by the nose.\"\n\nThe moment the words fell, he hurled the fragment toward that white halo—\n\nGolden light exploded.\n\nThe Tianji Record Fragment turned into scattered light spots in the air, like countless fireflies flying toward that road of mortals. Chen Ji felt something being completely extracted from his body—not power, but—the shackles. That invisible chain that had bound him for ten years finally shattered completely.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_013",
+        "character_id": "char_chenji",
+        "content": "Go, Tianji Record. Our fate ends here.\n\nChen Ji's voice was very soft, yet carried an unprecedented lightness. The golden light disappeared into the end of the road; Mo Xiansheng's remnant soul in his Mental Sea sent one final sigh: \"Kid, you're more daring than this old man imagined.\" Then, that voice that had accompanied him for ten years fell completely silent.\n\nChen Ji looked down at his hands—no golden light, no Heavenly Fate, couldn't even sense any spiritual fluctuation. He had become a complete mortal.",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_014",
+        "content": "The Eye of Heavenly Dao fell silent.\n\nThat sky-covering eye showed fluctuations for the first time—not anger, but an indescribable complexity. After a moment, it slowly closed, and the rift also closed. The only thing remaining was the Eye of Heavenly Dao's voice echoing in the Void: \"Interesting. Since you insist on walking the mortal path, so be it. However—\"\n\nThe voice turned cold: \"Dimensional invaders won't spare the Tianqing Sect just because you lost your power. In three days, you'll know whether the so-called freedom is liberation or disaster.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_015",
+        "content": "The golden light completely dissipated, and the four roads also faded away.\n\nChen Ji found himself standing at the Cliff Edge of the Tianqing Sect Back Mountain again, night wind brushing his face, carrying the unique grass and wood fragrance of the mountains. No golden light, no voice in his Mental Sea, couldn't even sense spiritual power—his cultivation was visibly declining.\n\nQi Refining stage... Foundation Building stage...\n\nWhen the last trace of spiritual energy dissipated from his dantian, Chen Ji felt unprecedentedly light.\n\nHe spread his arms, letting the night wind tousle his long hair, and deeply inhaled mortal air.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_016",
+        "character_id": "char_chenji",
+        "content": "So this is the taste of freedom.\n\nChen Ji murmured softly, a genuine smile curving his lips—not the cold smile of plotting hearts, not the disguise of playing dumb to devour tigers, but a sincere, childlike smile from the bottom of his heart. Ten years, he could finally stop calculating everything, stop planning every step, stop living in the next moment's foresight.\n\nHe looked down at his waist—that jade pendant that had hung for ten years was still there, the only keepsake he left with his sister Chen Nian when they parted. Without the Tianji Record, he still had this jade pendant. Still had memories. Still had—\n\n\"Chen Ji!\"",
+        "emotion": "轻松"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_017",
+        "content": "A white-robed figure rushed from the Mountain Path, and it was Su Qingyao.\n\nHer face carried rare panic, three thousand strands of blue hair flying in the night wind. When she saw Chen Ji standing safely at the Cliff Edge, she visibly relaxed. But the next moment, her brow tightly furrowed—she sensed it, the aura of this man in front of her had changed.\n\nCompletely changed.\n\nNo spiritual fluctuation, no Heavenly Fate presence, couldn't even sense a trace of extraordinary aura. He... had become a mortal?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_018",
+        "character_id": "char_suqingyao",
+        "content": "Your power... Su Qingyao's voice trembled slightly as she walked up to Chen Ji, reaching for his pulse. After a moment, she abruptly raised her head, eyes full of disbelief: \"You abandoned the Tianji Record?\"\n\nHer fingers trembled, her eye sockets actually reddened: \"Are you crazy? Without the Tianji Record, how will you deal with Ling Yuan? How will you deal with Han Lie? How... how will you deal with the incoming dimensional invasion? You think your current cultivation can survive in this chaotic world?!\"",
+        "emotion": "震惊与心疼"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1194_019",
+        "character_id": "char_chenji",
+        "content": "Chen Ji quietly looked at this outwardly cold but internally strong woman—at this moment, where was her dignity as an Inner Disciple Senior Fellow? Her eyes were red, her voice trembling, even the force of her grip on Chen Ji's wrist was so intense.\n\nHe gently raised his hand, covering the back of her hand, his palm conveying mortal warmth.\n\nQingyao, I'm tired. Chen Ji's voice was soft, yet carried unprecedented honesty: \"Ten years, I've lived too exhausting. Every step was calculating, every choice required weighing pros and cons, even sleeping had to guard against being ambushed.\" He paused, \"Now, I just want to be a mortal who can eat normally with you, cultivate normally, normally...\" Before he finished, he himself laughed first: \"normally quarrel.\"",
+        "emotion": "温柔"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_020",
+        "content": "Su Qingyao was stunned.\n\nShe looked at this man—at his clear and calm gaze, without the以往深不可测的深不可测的算计，却多了一种让她心悸的真实。这就是那个在外门杂役中隐忍十年的陈机吗？这就是那个算无遗策、在三大宗门倾轧中游刃有余的陈机吗？\n\n他居然……在笑。\n\n真真切切地，没有任何伪装地，在笑。\n\n傻瓜。苏青瑶低低骂了一声，眼泪却不受控制地滑落。她没有抽回手，反而反握住陈机的掌心：\"你知不知道，没有力量的你，在这乱世中会有多危险？凌渊不会放过你，韩烈不会放过你，甚至天道之眼——\"\n\n那就让他们来。陈机轻声打断她，目光温柔地看着她脸上的泪痕：\"没有了天机录，我反而能看清很多事。比如……\"他顿了顿，嘴角的笑意更深了几分：\"比如某位内门首席，每次调查我的时候，眼里藏的都不是杀意。\"",
+        "emphasis": "情感爽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_021",
+        "content": "苏青瑶的脸瞬间涨红，伸手就要打他，却被他握住了手腕。\n\n陈机轻轻将她的手放在自己胸口——那里没有灵力的波动，没有天命的气息，只有一颗普通人的心脏，平稳而有力地跳动着。\n\n感受到了吗？他的声音很轻：这颗心，以后只为你一个人跳。没了天机录，我还有这双手，还有一身还算不错的剑术，还有——\"\n\n他俯身，在苏青瑶耳边轻声说了一句话，声音低得只有两人能听见。\n\n苏青瑶的身体明显僵了一下，随即，她狠狠瞪了陈机一眼，眼眶却更红了。但她没有再说什么，只是紧紧握住了陈机的手。",
+        "emphasis": "情感爽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1194_022",
+        "content": "夜风渐凉，星河璀璨。\n\n陈机看着头顶的星空，忽然想起十年前得到天机录的那个夜晚。那一晚，他也是站在这样的星空下，满心以为自己得到了逆天改命的机缘。如今想来，那不过是另一副枷锁罢了。\n\n墨先生的声音最后一次在识海中响起，带着几分欣慰：\"小子，你比为师强。这条路……走对了。\"\n\n随即，识海彻底归于沉寂。\n\n陈机深吸一口气，转头看向天青宗的方向。没了天机录，他确实失去了很多——预言未来的能力、布局天下的底牌、甚至最基本的修为。但他也得到了很多——一颗真正自由的心，一个愿意与他并肩的人，以及……\n\n他低头看向自己紧握着的苏青瑶的手，嘴角微微上扬。\n\n以及，一种全新的可能。\n\n三日之后，维度入侵者将至。届时，没有神力的陈机，将以凡人之躯，在这修仙世界的舞台上，落下他人生中最不可思议的一步棋。\n\n这一局，他不再执棋，而是——执心。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "id": "天机录_ch0587",
+  "book_id": "天机录",
+  "number": 587,
+  "title": "The Deathtrick Scheme",
+  "is_paid": true,
+  "next_chapter_hook": "When everything was ready, the countdown to the fake death had begun. Yet at this moment, three unhurried knocks sounded at the door—at this hour, in this remote servants' quarters, no one should have come.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0587_001",
+        "content": "Tianqing Sect Back Mountain, Servants' Quarters. Moonlight was devoured by heavy dark clouds, and the night wind carried the mountain's unique damp chill through the gaps in the decayed window lattice. Chen Ji sat alone beneath the dim oil lamp, his face expressionless, yet deep within his eyes, a faint light flickered like a firefly in the abyss, pulsing quietly. That gaze—that eye overlooking the fate of all living things—still lingered in his mind, impossible to shake.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_002",
+        "content": "He slowly raised his right hand, gazing at the faint pattern on his palm. Forty-three points of Heavenly Fate remained—each point was life itself. That glimpse of those eyes had cost him a full ten points. 'The malicious intent of the chess player never ceases...' Chen Ji softly repeated the words he had seen in his Mental Sea moments ago, and a faint curve appeared at the corner of his lips. This was no bitter smile, but the peculiar excitement of a chess player facing certain defeat."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_003",
+        "character_id": "char_chenji",
+        "content": "'You want me dead? Then you'll watch me die.'",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_004",
+        "content": "He knocked three times on the table—that was the signal he had agreed upon with Su Qingyao. A moment later, a soft sound came from outside the window, and a slender figure glided in silently like a falling leaf. The newcomer wore a blue veil over her face—she was Su Qingyao, the Inner Disciple Senior Fellow of Tianqing Sect. She landed soundlessly, her gaze sweeping over Chen Ji like frost and snow, then spoke coldly:",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_005",
+        "character_id": "char_suqingyao",
+        "content": "'Chen Ji, do you understand what you're doing? Deceiving the sect with a fake death—if exposed, it's a capital offense from which there is no return.'",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_006",
+        "content": "Chen Ji did not answer. He merely took out a Jade Slip from his sleeve and pushed it gently toward her. The slip contained the detailed procedures for the Imperial Marriage Ceremony three days hence—when the leaders of the three great sects would gather, and the Sect Master of Tianqing would attend in person. 'Everyone will be watching the marriage ceremony,' Chen Ji finally spoke, his voice平静得近乎漠然，'no one will notice whether a servant disciple lives or dies.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0587_choice_01",
+        "prompt": "Su Qingyao stared at the Jade Slip, her brow furrowed. This was not the first time she had conspired with Chen Ji, yet each time, the calculations of this 'waste' left her alarmed. How should she respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0587_c1_opt1",
+            "text": "Choose to trust, cooperate fully",
+            "description": "Though doubts remained, Su Qingyao remembered how Chen Ji had rescued her from peril multiple times. She decided to let down her guard and fully cooperate with the fake death plan.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Bear tremendous risk",
+            "visible_reward": "Gain Chen Ji's deeper trust",
+            "risk_hint": "If the plan is exposed, she will share the blame",
+            "process_label": "信任已托",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c1_opt1_001",
+                  "content": "Su Qingyao took a deep breath and tucked the Jade Slip into her sleeve. Her gaze lingered on Chen Ji's face for a moment, as if trying to discern something from this 'waste' of a junior's eyes. Finally, she merely said coolly: 'Speak. What do you want me to do?'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶全力配合假死计划",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c1_opt2",
+            "text": "Demand to know the entire plan",
+            "description": "Su Qingyao refused to be a blind pawn any longer. She demanded Chen Ji reveal more of the inside information, or she would refuse to participate in this dangerous game.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May provoke Chen Ji's anger",
+            "visible_reward": "Gain more intelligence",
+            "risk_hint": "Chen Ji may hold back information",
+            "process_label": "质疑中试探",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c1_opt2_001",
+                  "character_id": "char_suqingyao",
+                  "content": "'I am not your tool,' Su Qingyao's voice turned three degrees colder, 'since you're asking me to risk my life, you should at least let me know where this pawn stands in the entire game.'",
+                  "emotion": "质疑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶要求更多知情权",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c1_opt3",
+            "text": "Probe his attitude toward Ling Yuan",
+            "description": "As Inner Disciple Senior Fellow, Su Qingyao had long noticed the anomalies in former Sect Master Ling Yuan. She wanted to take this opportunity to probe Chen Ji's true attitude toward this shadow ruler.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose her suspicions",
+            "visible_reward": "Confirm whether Chen Ji is an ally",
+            "risk_hint": "May alert Chen Ji",
+            "process_label": "试探进行中",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c1_opt3_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"The old sect master seems to pay you special attention,\" Su Qingyao's tone shifted, her gaze sharp as a blade. \"Chen Ji, tell me honestly, how much does Ling Yuan actually know?\"",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶与陈机谈及凌渊",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_007",
+        "content": "Upon hearing this, Chen Ji's expression remained unchanged, only tilting his gaze slightly. Moonlight carved a cold, hard contour on his profile, giving that ordinarily plain face an enigmatic depth. \"Ling Yuan...\" he softly pronounced the name, a hint of playful amusement in his tone. \"Since senior sister asks, surely you already have an answer in mind.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_008",
+        "character_id": "char_chenji",
+        "content": "\"He knows more than you think he does; he can do less than you imagine.\"",
+        "emotion": "意味深长"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_009",
+        "content": "The words struck Su Qingyao's heart like a thunderclap. As she prepared to press for more details, Chen Ji rose, retrieving a completely black jade bottle from a hidden compartment. The liquid inside rippled gently, emanating a subtle yet hauntingly sweet and fishy scent. \"A Demonic Path secret elixir,\" Chen Ji stated, placing the bottle delicately on the table. \"After consuming it, one enters a death-like state for three days, with heart pulse and breathing resembling a corpse, preserving only a single meridian point with a thread of life—sufficient for me to awaken at a critical moment.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_010",
+        "character_id": "char_yeqing",
+        "content": "\"This was sent by Ye Qing,\" Chen Ji added. \"She claimed it was her first debt to me.\"",
+        "emotion": "淡漠"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_011",
+        "content": "Su Qingyao stared at the jade bottle, her brow furrowing even more deeply. Demonic Path artifacts were traditionally sinister and treacherous, triggering her instinctive resistance. Yet she recalled Chen Ji's meticulous approach to every endeavor. \"How do you plan to fabricate evidence of demonic deviation?\" she finally questioned. Chen Ji smiled subtly, producing a talisman from his garments. Intricate formation runes densely covered its surface, emanating an eerie dark crimson glow in the dim surroundings.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_012",
+        "character_id": "char_chenji",
+        "content": "\"Those who perish from demonic deviation suffer complete meridian disintegration. This talisman can replicate such damage within the time it takes to burn a single incense stick.\"",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_013",
+        "content": "He unfurled the talisman, his fingertip gently touching a specific formation node. A dark crimson light flared intensely, followed by a wild, almost manic energy erupting from the talisman, causing Su Qingyao to instinctively retreat half a step. The energy perfectly mirrored genuine demonic deviation! \"Three days from now, during the betrothal ceremony,\" Chen Ji carefully folded the talisman, his voice maintaining its usual calm, \"I will consume the elixir in this chamber, and I will require senior sister's assistance when the sect conducts the autopsy...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_014",
+        "character_id": "char_chenji",
+        "content": "...turn a blind eye.",
+        "emotion": "淡然"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0587_choice_02",
+        "prompt": "Su Qingyao remained silent for a moment. The feigned death scheme was intricately interconnected, with any single error potentially causing total collapse. How should she respond to Chen Ji's request?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0587_c2_opt1",
+            "text": "Agree to help conceal the cause of death",
+            "description": "Su Qingyao resolved to cooperate fully, manipulating the autopsy to ensure no one could uncover Chen Ji's feigned death deception.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Bear the guilt of deceiving the sect",
+            "visible_reward": "Deepen the alliance with Chen Ji",
+            "risk_hint": "Once exposed, reputation will be completely destroyed",
+            "process_label": "承诺已下",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c2_opt1_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"Very well.\" Su Qingyao's response was succinct and resolute. She understood there was no turning back—from the moment she chose to stand with Chen Ji, their destinies had become intertwined.",
+                  "emotion": "决然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶承诺掩盖假死真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c2_opt2",
+            "text": "Propose additional conditions",
+            "description": "Su Qingyao was willing to cooperate, but she demanded that Chen Ji reveal the complete truth about Ling Yuan once the plan succeeded.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May provoke Chen Ji's anger",
+            "visible_reward": "Obtain crucial intelligence",
+            "risk_hint": "Chen Ji might have reservations",
+            "process_label": "谈判进行中",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c2_opt2_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"I will assist you, but you must pledge something to me—\" Su Qingyao's intense gaze fixed intently on Chen Ji. \"Regardless of your scheming, regardless of Ling Yuan's role in this, I demand to know the entire truth after the matter is settled.\"",
+                  "emotion": "坚定"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶要求得知凌渊真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c2_opt3",
+            "text": "Express deep-seated concerns",
+            "description": "A lingering sense of unease persisted within Su Qingyao's heart. She worried that the scheme's seemingly smooth progression might conceal a subtle, dangerous trap.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Expose inner weakness",
+            "visible_reward": "Gain more guidance from Chen Ji",
+            "risk_hint": "Or appear indecisive",
+            "process_label": "内心挣扎",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 1
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0587_result_c2_opt3_001",
+                  "character_id": "char_suqingyao",
+                  "content": "\"Too smooth...\" Su Qingyao murmured, \"Why would Ye Qing help you unconditionally? The Holy Sect's Saint Maiden of the Demonic Path must have ulterior motives. Chen Ji, do you truly trust her?\"",
+                  "emotion": "疑虑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶质疑夜清的动机",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_015",
+        "content": "Upon hearing this, Chen Ji's gaze dimmed slightly. He didn't directly answer Su Qingyao's concerns, but instead slowly walked to the window, his eyes passing through the night to gaze at the mist-shrouded Main Peak in the distance.\n\n\"Trust?\" His voice was low, carrying an indescribable weariness, \"In this world, no one trusts another without reason.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_016",
+        "character_id": "char_chenji",
+        "content": "\"Ye Qing helped me because I gave her a choice—a choice she couldn't refuse. As for whether she trusts me...\" Chen Ji turned around, a cold smile curling at his lips, \"That doesn't matter. What matters is that we share common interests at this moment.\"",
+        "emotion": "冷酷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_017",
+        "content": "A chill ran through Su Qingyao's heart. She suddenly realized that this so-called废物 junior brother had a depth of scheming that far exceeded her imagination.\n\nJust then, Chen Ji's expression suddenly tensed. His gaze越过 Su Qingyao, staring directly at the漆黑的夜空 outside the window, as if sensing something.\n\n\"Someone is coming.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_018",
+        "character_id": "char_chenji",
+        "content": "Su Qingyao's heart tightened, her hand instinctively gripping the short sword hidden in her sleeve.\n\n\"Is it someone from Ling Yuan?\"",
+        "emotion": "戒备"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_019",
+        "content": "Chen Ji didn't answer, but quickly swept the jade bottle and talismans into his sleeve while taking out an unremarkable formation disk from his怀.\n\n\"Senior sister, leave first.\" His voice remained calm, but Su Qingyao heard an unquestionable resolve within it, \"Leave through the back window, disturb no one.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_020",
+        "character_id": "char_suqingyao",
+        "content": "\"Then you—\"",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_021",
+        "character_id": "char_chenji",
+        "content": "\"It doesn't matter,\" Chen Ji cut her off, a meaningful arc curling at his lips, \"I've been waiting for this moment for a long time.\"",
+        "emotion": "深沉"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0587_choice_03",
+        "prompt": "Su Qingyao gazed at Chen Ji for a moment, then finally nodded and left. The instant she climbed out the window, a pallid figure had already appeared outside the courtyard gate. Was it a spy sent by Ling Yuan, or the old Sect Master himself? Chen Ji had to make a decision.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0587_c3_opt1",
+            "text": "Take the initiative to show weakness, pretend to be panicked",
+            "description": "Chen Ji decided to continue playing the废物 persona, showing due panic and狼狈 when facing the possible监视者, causing the other party to relax their guard.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May be further looked down upon",
+            "visible_reward": "Deepen the disguise, reduce Ling Yuan's vigilance",
+            "risk_hint": "If exposed, the consequences will be severe",
+            "process_label": "伪装启动",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": -1
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c3_opt1_001",
+                  "content": "Chen Ji quickly收敛ed the sharpness in his eyes, replacing it with a panicked and unsettled expression. He even deliberately knocked over the oil lamp on the table, plunging the room into deeper darkness, then stumbled toward the door—as if a废物 disciple whose courage had been shattered."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机继续扮演废物",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c3_opt2",
+            "text": "Retreat to advance, proactively reveal part of the plan",
+            "description": "Chen Ji decided to take a risk and reveal part of the plan's content, letting the监视者 think they controlled the overall situation, when in fact it was precisely what Chen Ji desired.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May leak key information",
+            "visible_reward": "Turn the enemy's scheme to one's advantage, make the enemy a pawn",
+            "risk_hint": "The other party may see through the intention",
+            "process_label": "布局开始",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 2
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 1
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c3_opt2_001",
+                  "content": "Chen Ji took a deep breath, making a bold decision. Instead of hiding, he strode to the door and actively pushed open the worn wooden door. Standing outside was a gray-robed elder, Ling Yuan's confidant—Steward Zhou."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机主动接触监视者",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0587_c3_opt3",
+            "text": "Activate the Tianji Record to probe the visitor's intentions",
+            "description": "Chen Ji decided to take the risk and use the Tianji Record, peering into the visitor's true intentions and plans within three hours to make the most precise countermeasure.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume 5 points of Heavenly Fate",
+            "visible_reward": "Obtain critical intelligence, make optimal decisions",
+            "risk_hint": "Heavenly Fate was already insufficient",
+            "process_label": "天机启动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0587_result_c3_opt3_001",
+                  "content": "Chen Ji closed his eyes, a thread of divine consciousness sinking deep into his Mental Sea. The Tianji Record Fragment slowly unfurled, and that familiar tingling sensation came again—as three hours' worth of images surged into his mind like a tidal wave. The visions were blurry and fragmented, but enough for him to see one thing clearly: the visitor was not an enemy, but... an unexpected person."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机窥见未来片段",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_022",
+        "content": "Outside the courtyard gate, a hunched figure stood motionless. Moonlight filtered through gaps in the clouds, illuminating the visitor's face—a face covered in wrinkles, eyes murky yet concealing a hidden sharpness. It was Manager Zhou, the most loyal lackey under Ling Yuan.\n\n\"Chen Ji, it's deep into the night. Why aren't you resting?\" Manager Zhou's voice was hoarse and sharp. \"The old man was sent by the Sect Master to deliver some tonic. I didn't expect to disturb the disciple's cultivation.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_023",
+        "character_id": "char_chenji",
+        "content": "\"Thank you for your concern, Manager Zhou,\" Chen Ji replied, head bowed, voice trembling slightly. \"This disciple nearly went into Qi deviation during cultivation earlier and nearly damaged my foundations. I was just about to seek a physician...\"",
+        "emotion": "惶恐"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_024",
+        "content": "Manager Zhou's gaze lingered on Chen Ji's face for a moment, then swept past his shoulders into the room. The dim oil lamp, the cluttered desk, the medicinal residues scattered on the floor—everything appeared to match the狼狈 of a worthless disciple who had suffered a Qi deviation.\n\n\"Oh? Qi deviation?\" Manager Zhou narrowed his eyes, smiling meaningfully. \"Nephew Chen, do be careful. The Spiritual Energy in this Servants' Quarters was always thin. Disciples with unstable foundations are prone to problems if they're not careful.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_025",
+        "content": "Chen Ji kept his head bowed, nodding and fawning, appearing completely intimidated. But his peripheral vision never ceased capturing every subtle movement of Manager Zhou, every flicker of his gaze.\n\nLing Yuan sent someone to \"deliver tonic\"—truly caring for a junior? Chen Ji sneered in his heart. Clearly, this was reconnaissance, surveillance, waiting for him to slip up.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_026",
+        "content": "Manager Zhou stuffed a porcelain bottle into Chen Ji's hands. The bottle was ice-cold, its touch eerie. \"This is a Foundation Nurturing Elixir personally refined by the Sect Master. It greatly benefits stabilizing foundations.\" His voice carried a barely perceptible sneer. \"Nephew Chen, do not waste the Sect Master's kindness.\"\n\nChen Ji accepted the medicine bottle with both hands and bowed deeply. \"This disciple thanks the Sect Master for his generous care. I will surely treasure it.\"\n\nManager Zhou snorted coldly, turned, and left. He had taken several steps when he suddenly stopped and glanced back at Chen Ji.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_027",
+        "character_id": "char_lingyuan",
+        "content": "\"By the way, at the betrothal ceremony three days from now, the Sect Master hopes all disciples will attend the ceremony.\" Manager Zhou's voice drifted from the night. \"Nephew Chen, such a废物... ah no, a disciple with thin foundations, should especially go to broaden his horizons.\"",
+        "emotion": "轻蔑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_028",
+        "content": "Chen Ji still kept his head bowed, body hunched, appearing so chastened that he didn't even dare breathe loudly. Only when Manager Zhou's figure completely vanished into the night did he slowly straighten his waist.\n\nMoonlight fully emerged from behind the clouds, illuminating his expressionless face. The spineless disciple who had just been terrified and uneasy now had ice-cold eyes.\n\n\"Ling Yuan...\" Chen Ji murmured the name softly, his fingertips caressing the porcelain bottle in his hand. \"You're more impatient than I am.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_029",
+        "content": "He pulled out the stopper, and a pungent medicinal smell assailed his nostrils. Chen Ji only needed to smell it to identify its components—it was nothing more than an ordinary Foundation Nurturing Elixir, mixed with some calming herbs, having no effect whatsoever on his \"feigned death plan.\"\n\nLing Yuan's move was merely an excuse to monitor his movements.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_030",
+        "content": "But this suited his purposes perfectly.\n\nChen Ji tucked the porcelain bottle into his sleeve and turned to walk back inside. He didn't light a lamp, only standing in the darkness, gazing at the moon outside the window as a cold smile slowly curled his lips.\n\nThe betrothal ceremony, the three-day deadline, Ling Yuan's surveillance, Manager Zhou's reconnaissance... everything was proceeding according to plan.\n\n\"Come then,\" he murmured to himself, \"all of you, come. Let me see—who will ultimately be the Chess Player in this game.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_031",
+        "content": "The preparations for the feigned death were nearly complete. The Demonic Path secret medicine was in hand, talismans for faking injuries hidden in his sleeves, Su Qingyao's cooperation was secured, and Ling Yuan's surveillance was being manipulated in the palm of his hand.\n\nThe day after tomorrow's betrothal ceremony would be the moment of his \"death.\"\n\nHowever, just as Chen Ji believed everything was under control, three unhurried knocks sounded at the door—\n\nKnock, knock, knock.\n\nAt this hour, in this remote corner of the Servants' Quarters, no one should be visiting.\n\nChen Ji's gaze suddenly hardened.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_032",
+        "character_id": "char_chenji",
+        "content": "\"Who's there?\"",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_033",
+        "content": "There was no response from outside. Only the night wind passing through the bamboo grove, making rustling sounds, as if something were chuckling in the darkness.\n\nChen Ji didn't move. He stood motionless, breathing slowed, heartbeat slowed, expanding his perception to its extreme—then he sensed a familiar aura.\n\nThat aura was cold, eerie, yet carried an inexplicable hint of... gentleness?\n\n\"It's you...\" Chen Ji murmured, his gaze flickering.\n\nOutside the door, a cold female voice sounded: \"Chen Ji, open the door. I have something to ask you.\"\n\nIt was Ye Qing.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0587_034",
+        "content": "Chen Ji didn't open the door immediately. He stood motionless, quickly weighing the pros and cons—why would Ye Qing come personally at this hour? The Holy Sect's Saintess of the Demonic Path, risking infiltration into the Tianqing Sect, just to \"ask something\"?\n\nThere must be something suspicious here.\n\nHowever, Ye Qing outside the door didn't seem inclined to give him time to think.\n\n\"I know what you're thinking,\" her voice drifted through the wooden door, calm and certain. \"But this matter is more important than your feigned death plan.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0587_035",
+        "character_id": "char_yeqing",
+        "content": "\"If you still want your plan to proceed—open the door.\"",
+        "emotion": "警告"
+      }
+    }
+  ]
+}

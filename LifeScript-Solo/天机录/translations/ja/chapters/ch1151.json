@@ -1,0 +1,481 @@
+{
+  "id": "天机录_ch1151",
+  "book_id": "天机录",
+  "number": 1151,
+  "title": "誓約之夜",
+  "is_paid": true,
+  "next_chapter_hook": "蘇青瑶が筆を執って書いていると、墨跡が運命の河に染み込み、一行一行の誓いが金色 の銘文となって天地の間に浮かび上がる――そして彼女が最後の名前を書き終えた瞬間、天機録の奥底から年老いた慰めに満ちた吐息が伝わってきた。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1151_001",
+        "content": "天青宗裏山、夜色が墨のように暗い。皆が仮設の誓壇を取り囲んで座り、焚き火が一人一人の顔を明滅させた。陳機の持つあの欠けた天機録の最後の頁が蒼白い微光を放ち、まるで長く潜んでいた巨獣がようやく片目を開けたようだった。墨先生の残魂が彼の識海の中で低く告げた「時が来た、残頁が共鳴する時、全ての誓いが運命に因果として刻まれる――覚悟はいいか？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_002",
+        "character_id": "char_yeqing",
+        "content": "夜清率先起身，魔道聖女的气息在夜色中如墨蓮绽放。她緩步走向誓壇中央，声音清冷卻帶著從未有過的鄭重「我，夜清，以魔道觀測者之名立誓――此後無論陳機勝負、生死，我將以第三隻眼記錄他的一切選擇。這些記錄將成為……打破天道的證詞。」",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_003",
+        "content": "魔道の霧が夜清の周囲に渦巻き、無数の小さな光点となって四方へと散っていく。それは天道観測者の権能だった――彼女は自らの運命を陳機の軌跡に完全に結びつけた。凌淵は目を細め、この老狐は初めて夜清に真の敬意を抱いた。韓烈は鼻を鳴らしつつも、难得口污しさを逞ませなかった。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_004",
+        "character_id": "char_chenji",
+        "content": "陳機が立ち上がり、夜清の前に歩み寄った。彼は何も感謝言葉は言わず、ただ手を伸ばし彼女の掌に軽く触れた。それは天機録残頁が共鳴する位置だった――沈黙の約束。",
+        "emotion": "内敛"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_005",
+        "character_id": "char_lingyuan",
+        "content": "凌淵の枯瘦な指が石桌を叩き、澄んだ音を響かせた。この天機録に見捨てられた老人は突然笑い、その笑い声は蒼涼で意味深長だった「老夫は今日を三百年間待っていた……陳機、老夫は認める，当初お前を選んだのは誤りだった――だが今看来、この誤りこそ正しいより素晴らしい結末成就できるかもしれないな。」",
+        "emotion": "释然"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_006",
+        "character_id": "char_hanlie",
+        "content": "韓烈猛然と立ち上がり、玄武宗第一天才の気勢は火山のように爆発した「老hores、何を言っている？」しかし凌淵は淡々と彼を一瞥するだけで「私の意味は明確だ，今度の戦い、老人は陳機を支持する。韓烈、あなたとの宿怨は戦後精算でいい――だが今夜，老人はこの廃物を信じる。」",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_007",
+        "content": "韓烈は怒目に燃え、拳を握りしめて軋んだ。三年間、彼は陳機に押し込められた三年，每一次彼が勝算を握ったと思った時、この廃物はいつも卑怯な手で形勢逆転した。しかし此刻，面对凌淵那双看透世俗的眼睛，彼はふいに気づいた――今夜もし個人怨恨に固執すれば，明日の战场上，彼は陳機を唯一打ち負かせるかもしれない機会を失うだろう。"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_008",
+        "prompt": "宿敵が珍しく共识達成，你该如何回应这份沉重的信任？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "yeqing_sworn",
+            "text": "坦然接受",
+            "description": "「いい、今夜以后，旧怨は両切れ。」一言、不卑不亢で、選択権を相手に返す。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "なし",
+            "visible_reward": "凌淵、韓烈信頼+10",
+            "risk_hint": "あなたの坦然は凌淵に高く評価させるが，韓烈はあなたを心虚と思うかもしれない。",
+            "process_label": "陈机接受了这份信任",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_sworn_001",
+                  "character_id": "char_lingyuan",
+                  "content": "凌淵が頷き、枯淡の目に複雑な光が闪烁した「あなたは老夫の想像より沉稳している……いい，老夫の三百年執念，今夜放下しよう。」",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊放下执念"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "yeqing_challenge",
+            "text": "激将试探",
+            "description": "「韓烈，害怕不是因为合作選擇したのか？」嘴毒の本性暴露无遗。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "激怒の可能有韓烈",
+            "visible_reward": "韓烈の戦意激发，战斗中可获得其全力配合",
+            "risk_hint": "韓烈の性格は暴躁で，可能当场翻脸。",
+            "process_label": "陈机用激将法试探韩烈",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_challenge_001",
+                  "character_id": "char_hanlie",
+                  "content": "韓烈猛然大笑，笑声は焚き火を激しく揺らした「いい！陳機、お前はやっぱしその毒舌だな！いい、俺様は今日ここに言葉を残す――明日の戦い、俺様がお前のために三招を遮る！」",
+                  "emotion": "狂傲"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "韩烈立下军令状"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "yeqing_secret",
+            "text": "真相揭示",
+            "description": "「凌淵先生，天機録が私を選んだのは，它需要一个能够自毁の刃だからだ。」透露部分真相换取更深信任。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "弱点暴露",
+            "visible_reward": "凌渊は三百年分の修練の心得を惜しみなく授ける",
+            "risk_hint": "天機録の致命的な欠陥を暴露すれば、連鎖反応を引き起こす可能性がある。",
+            "process_label": "陈机揭示天机录真相",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 25
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_yeqing_secret_001",
+                  "character_id": "char_lingyuan",
+                  "content": "凌渊は体全体を震わせ、混濁した老眼忽然と驚異的な精光を放った：「自壊の刀……なるほど！Chen Ji、わしは分かった！安心しろ、明日之战、わしは底知れぬ力を全てお前に授ける！」",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "凌渊传授绝学"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_009",
+        "content": "焚き火がパチパチと音をたて、皆の視線がChen Jiに集まる。Mo Xianshengの残魂はMental Seaの中で囁いた：「天機録の最終頁は待っている……全ての誓いは因果を改める碇として記録される。生死的契約をどのような形で結ぶか、もう決めたのか？」"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_010",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xianshengの声がChen JiのMental Seaから溢れ出し、誓壇全体に反響した：「諸君、天機録の最終頁には三道の誓いが記録できる——第一道、天命の誓、気運を賭けとする；第二道、血脈の誓、血統の継承を担保とする；第三道、輪廻の誓、来世の輪廻を契約とする。異なる誓いは、重みが異なり、 힘도 다르다.」",
+        "emotion": "苍老"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_011",
+        "prompt": "生死の約束、お前はどの誓いの形式を選ぶ？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "tianming_oath",
+            "text": "天命の誓",
+            "description": "気運を賭けとして、誓いが破れば気運は崩散する——これが最も重い誓いである。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "敗北すれば、気運はゼロになる",
+            "visible_reward": "誓いの力は最も強く、天道の因果律を揺さぶることができる",
+            "risk_hint": "一度失敗すれば、お前は永不に淪落する。",
+            "process_label": "陈机选择天命之誓",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1151_result_tianming_oath_001",
+                  "content": "天機録の最終頁忽然と眩い黄金の光を放ち、その光芒は眾人をして次々と目を背けさせた。凌渊は低く囁いた：「天命の誓……この若者は狂っているのか？」Han Lieは珍しく黙り込み、初めて眼前のこの廃物赌け込んだものが、彼の全ての矜持より重いものであることに気づいた。"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天命之誓成立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "xuanyu_oath",
+            "text": "輪廻の誓",
+            "description": "来世の輪廻を契約とし、誓いが砕ければ来世は永劫に輪廻に堕ちる——これが最も断固とした誓いである。",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "来世の運命がロックされる",
+            "visible_reward": "全ての味方がお前と生死で結ばれ、死んでも輪廻の中で再聚する",
+            "risk_hint": "来世の運命は永遠にこれらの人々と纠缠する。",
+            "process_label": "陈机选择轮回之誓",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 30
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1151_result_xuanyu_oath_001",
+                  "content": "天機録の最終頁に暗い銘文が浮かび上がり、それは輪廻法則の印であった。Ye Qingは忽然と胸口的熱さを感じた——彼女の運命線はChen Jiの線と絡み合い、もはや分離できない。Han Lieは唸った：「この男……本気なのか？」"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "轮回之誓成立"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_012",
+        "character_id": "char_chenji",
+        "content": "Chen Jiは深く息を吸い込み、声音は平静だが不容置疑の断固さを帯びた：「今夜ここに誓いを立てる——三界新生の日、我ら必ず此刻此地に戻聚する。若し此の誓いに違えば……」と一拍置き、視線を一人一人に掃いた、「天命崩碎し、輪廻止まず。」",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_013",
+        "content": "言葉が落ちると、天機録の最終頁は轟然と洞開し、黄金と幽藍の光が交錯して夜空に冲天而起し、巨大な誓約の紋様を形成した。一人一人の身上には誓いに繋がる紋様が浮かび上がり——それは運命が刻んだ印である。凌渊は目を閉じ、横跨三百年歳月の執念がようやく帰する処を得たことを感じた。"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_014",
+        "character_id": "char_yeqing",
+        "content": "Ye Qingは静かにChen Jiの側に歩み寄り、彼女の声音は穏やかだが揺るぎない：「我、Ye Qing、今よりChen Jiに効命す——予言のためでもなく、取引のためでもなく，而是因为……」と一拍置き、「お前は初めて、私に運命を変えるということに、全てを賭ける価値があると思わせた人である。」",
+        "emotion": "动容"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_015",
+        "character_id": "char_hanlie",
+        "content": "Han Lieは天を仰いで大笑いし、その笑いには三分狂気七分痛快が混じっていた：「いい！いいぞ、廃物め！わしは三年打ち、三年負け、今夜で初めて本当に佩服した！Chen Ji、明日之战——お前が戦死すれば、わしが屍を収集する；お前が死なねば、わしはお前を兄と認む！」",
+        "emotion": "狂放"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_016",
+        "content": "焚き火はこの瞬間、まるで霊性이라도 얻たように、炎は冲天而起し、皆の誓いを夜空に刻み上げた。Mo Xianshengの声がMental Seaの深奥から传来し、稀に見る温かみを帯びた：「よくやった……この夜の後、結末如何あれ、お前らの運命は改められるのだ。」"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1151_017",
+        "prompt": "誓いは既に立てられた。眾人がこの瞬間に沉浸している時、お前は選択する……",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "speak_chenian",
+            "text": "Chen Nianに触れる",
+            "description": "「まだ一人がおる……私の妹、Chen Nianだ。万一私が戻れぬ場合、彼女を見つけてくれることを願う。」",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "急所の暴露",
+            "visible_reward": "Ye Qing、Ling YuanはChen Nianを探すことを己の任とする",
+            "risk_hint": "皆はChen Nianがあなた最大の弱点であることを知るだろう。",
+            "process_label": "陈机提及妹妹陈念",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_speak_chenian_001",
+                  "character_id": "char_lingyuan",
+                  "content": "Ling Yuanは目を細め、当時の連れ去られた少女を思い出した：「Chen Nian……天命の鍵、Holy Sectの手によるものだ。Chen Jiよ、安心せよ、もしあなたが戦死すれば、老人は自らHoly Sectへ出向き彼女を連れ出す。」",
+                  "emotion": "郑重"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "众人知晓陈念存在"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "silent_witness",
+            "text": "沈黙の注視",
+            "description": "何も言わず、ただ焚き火に照らされた各々の顔を静かに見つめている——この沈黙そのものが答えである。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "なし",
+            "visible_reward": "Mo Xianshengは追加でTianji Recordの一ページを解封する",
+            "risk_hint": "衆があなたを深く知る機会を逃す。",
+            "process_label": "陈机选择沉默注视",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1151_result_silent_witness_001",
+                  "character_id": "char_moxiansheng",
+                  "content": "Mo Xianshengの声がMental Seaに響き、赞辞を込めて：「良い、言わぬは言うより良し……今夜の各顔を忘れぬように、彼らは天道を破る鍵となる。」Mental Seaの奥底で、埃人被的知识の一頁がゆっくりと解封されていく。",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录知识解封"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1151_018",
+        "character_id": "char_suqingyao",
+        "content": "誓いの余韻がまだ消えぬうちに、暗い影の中から冷たい声が響いた：「诸位、ご機嫌よう。」Su Qingyaoはゆっくりと歩み寄り、手には一支の純白の玉筆を握っていた——それは運命記録者の至宝である。彼女の視線が衆人を掃き、最終的にChen Jiに定まった：「生死の約束……私Su Qingyaoも、一筆を加えたい。」",
+        "emotion": "清冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_019",
+        "content": "運命記録者の玉筆が宙に浮かび、Su Qingyaoが呪文を口中で黙読する中、金色の銘文が筆先から流淌して天地間に浮かんでいる。每一个の名前が因果の川に錨となって沈んでいく。Chen Jiは那些人名を見つめている——Ye Qing、Ling Yuan、Han Lie、Su Qingyao……そして自分自身。Tianji Record最後の頁の光が応じ、誓約の紋様が完成する。"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1151_020",
+        "content": "「この夜、私は運命を改めるに十分な誓いを記録した。」Su Qingyaoは玉筆を納め、冷たい瞳に微かな温度が宿る。「明日の決戦、私は運命の筆で给你们开路する——Chen Jiよ、最好活着回来，否则这些誓言将成为你最大の槛となる。」言い終わり、彼女は踵を返し、その姿は夜色に溶けて消えた。夜風の中、焚き火が徐々に消えていくが、 Those金色の銘文は 여전히天高く浮かび、星のように永遠に輝く。"
+      }
+    }
+  ]
+}

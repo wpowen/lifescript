@@ -96,6 +96,154 @@
       }
     },
     {
+      "choice": {
+        "id": "天机录_ch0043_012b",
+        "prompt": "苏青瑶袒露了她最深的秘密——圣女候选人的命运。此刻她正等待你的回应。关于天机录，你要透露多少？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0043_012b_A",
+            "text": "全盘托出",
+            "description": "将天机录、墨先生、父亲的往事全部告诉她，以最大的诚意回应她的信任。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "天命值-5，秘密完全暴露",
+            "visible_reward": "苏青瑶成为最坚定的盟友",
+            "risk_hint": "一旦她变心，你将毫无退路",
+            "process_label": "坦诚",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0043_012b_A_result",
+                  "content": "陈机深吸一口气，做出了一个或许会改变一切的决定。\n\n他决定不再隐瞒——既然她敢以命运相托，他便以全部真相回报。\n\n\"青瑶，我有些话，憋在心里太久了。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "full_reveal_suqingyao"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择向苏青瑶全盘托出天机录的秘密",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0043_012b_B",
+            "text": "半真半假",
+            "description": "只透露天机录的存在和预知能力，隐去墨先生与父亲的关键信息。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "保留退路，但也保留了隔阂",
+            "visible_reward": "既展示诚意又保护核心秘密",
+            "risk_hint": "她的直觉极强，半真半假可能适得其反",
+            "process_label": "权衡",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好奇",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0043_012b_B_result",
+                  "content": "陈机在心中迅速权衡——全部真相太过危险，但完全不说又辜负了她的真诚。\n\n他选择了一条中间之路：说出足够让她信任的部分，藏起那些可能将她卷入更深漩涡的秘密。\n\n\"青瑶，我确实有一个秘密。但我只能告诉你一部分——不是不信任你，而是剩下的部分，知道得越少越安全。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "partial_reveal_suqingyao"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择半真半假地透露天机录",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0043_012b_C",
+            "text": "只谈合作",
+            "description": "承认自己有秘密，但不透露具体内容，只提议结成同盟共同对抗命运。",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "她可能认为你不够真诚",
+            "visible_reward": "保留全部底牌",
+            "risk_hint": "错失深入信任的最佳窗口",
+            "process_label": "保留",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好奇",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0043_012b_C_result",
+                  "content": "陈机沉默了片刻，最终缓缓开口：\"我也有不能说的秘密。现在还不是时候——但我可以向你保证一件事。\"\n\n他直视苏青瑶的双眸，声音低沉而笃定：\"无论你的命运是什么，我不会袖手旁观。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机选择只谈合作不透露秘密",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
       "dialogue": {
         "id": "天机录_ch0043_013",
         "character_id": "char_chenji",
@@ -161,6 +309,108 @@
         "character_id": "char_suqingyao",
         "content": "苏青瑶忽然笑了。\n\n那笑容如同冰雪初融，美得惊心动魄。\n\n“陈机，你知道吗？这是我第一次觉得，你的话说得这么好听。”\n\n她收敛笑意，目光变得柔和：“既然我们都是被命运摆布的人，那你愿不愿意……和我做一个约定？”",
         "emotion": "温柔"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0043_021b",
+        "prompt": "苏青瑶提出了互不背叛的誓约——\"无论发生什么，我们互不背叛。\"你要如何回应这份郑重？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0043_021b_A",
+            "text": "郑重发誓",
+            "description": "以同等的郑重回应，伸出手，加上你自己的条件——谁先找到破局之法，都要拉着对方一起。",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "承诺即枷锁，违背誓言代价惨重",
+            "visible_reward": "缔结最深厚的羁绊",
+            "risk_hint": "若未来你们的利益发生冲突……",
+            "process_label": "发誓",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0043_021b_A_result",
+                  "content": "陈机静静地听完，心中涌起一股难以言喻的暖意。\n\n他想起墨先生的话，想起父亲的往事，想起自己这些年来的孤独与隐忍。\n\n原来，被人真正理解是这种感觉。\n\n\"青瑶。\"他轻声唤她的名字，声音中带着一丝从未有过的温度，\"我接受这个约定。但我想加一条——无论谁先找到破局之法，都要拉着对方一起。\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "solemn_oath"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0043_021b_B",
+            "text": "轻描淡写",
+            "description": "用一个简单的\"好\"字回应，将千言万语化为最朴素的承诺。",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "她可能觉得你不够认真",
+            "visible_reward": "保持你一贯的从容形象",
+            "risk_hint": "低调的承诺有时比誓言更有重量",
+            "process_label": "从容",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0043_021b_B_result",
+                  "content": "陈机只是淡淡一笑，吐出一个字：\"好。\"\n\n这个字轻如鸿毛，却重若千钧。\n\n苏青瑶微微一怔，随即读懂了这份朴素中蕴含的分量——有些人发千言万语的誓，不过是风中的尘土；有些人一个字的承诺，却能撼动山河。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
       }
     },
     {

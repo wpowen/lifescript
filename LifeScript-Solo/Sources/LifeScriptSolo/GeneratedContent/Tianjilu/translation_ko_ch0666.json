@@ -1,0 +1,656 @@
+{
+  "id": "天机录_ch0666",
+  "book_id": "天机录",
+  "number": 666,
+  "title": "천기 웃음담",
+  "is_paid": true,
+  "next_chapter_hook": "천기가 손에서 서서히 사라지는 잔혼을 바라보며 입꼬리가 점차 굳어진다: \"이번엔 내가 널 구하러 왔다.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0666_001",
+        "content": "허공 속에서 부서진 천기록이 연한 빛을 발하며, 천“天명(陈天命)”의 모습은 바람 속의 물결처럼 흔들리듯 쓰러질 듯 말 듯 하지만 차마 꺼지지 않는다. 자신과 일곱彩信相似的 얼굴을 마주하고 그는 홀연히 웃었다.\"서 있어 뭐해?\" 천“天명”은 삿되게 입을 열었지만 목소리에는 힘이 없다,\"아버지 아직 완전히 죽지 않았어, 이리 와서 제대로 좀 봐.\" 천기가 천천히 다가서며 익숙하면서도 낯선 그 모습을 바라보았다. 목이 뭔가에 막힌 듯했다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_002",
+        "character_id": "陈天命",
+        "content": "\"음, 키가 컸네.\" 천“天명”은 그를 위아래로 훑어보더니 문득 눈을 찌푸렸다,\"그렇게 마른 건 왜지, 얼굴도 까맣고——천청종 밥이 이렇게 못 먹는 거야? 아니면 또 영석을 술로 바꿔 쓴 거야?\"",
+        "emotion": "打趣"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_003",
+        "character_id": "char_chenji",
+        "content": "천기 입꼬리가 떨렸다,\"아버지, 그 잔혼이 다 흩어지려고 하는데 밥 걱정을?\" 그는 깊게 숨을 들이쉬고 이는 듯한 감정을 누르며,\"천기록 제4페이지가 뭔가요, 아까那道 선택問題は——\"",
+        "emotion": "无奈"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_004",
+        "character_id": "陈天命",
+        "content": "\"급하게 뭣 해!\" 천“天명”은 손을 저으며 그를 끊었다,\"잔혼이 바로 사라지는 게 아니야, 아까비 적어도 반각각은 버틸 수 있어.\" 그의 시선이 조금 부드러워졌다,\"하고 싶은 말이 있었어, 십수 년 동안 마음에 담아뒀는데, 오늘 마침내 당면해서 할 수 있겠구나.\"",
+        "emotion": "温和"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0666_choice001",
+        "prompt": "이突如其来的温情时刻에 천기는 선택한다……",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0666_opt001a",
+            "text": "正经回应",
+            "description": "难得父亲清醒，抓紧时间问清楚天机录的事",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "错过父子温情",
+            "visible_reward": "获得关键情报",
+            "risk_hint": "可能显得太功利",
+            "process_label": "陈机选择直奔主题",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001a_1",
+                  "character_id": "char_chenji",
+                  "content": "천기가 진지하게 말했다:\"아버지, 천기록 제4페이지的事, 처음부터 명확하게 말씀하세요. 이게 당신이 돌아올 수 있느냐的问题니까——\"",
+                  "emotion": "认真"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001a_2",
+                  "character_id": "陈天命",
+                  "content": "천“天명”은 한숨을 내쉬었다, 눈빛에 복잡함이 스쳤다:\"네 성격, 젊은 시절의 나와 똑같아, 급해 죽겠어. 됐어 됐어, 내가 말할 때까지 들어.\"",
+                  "emotion": "无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt001b",
+            "text": "配合温情",
+            "description": "难得老爹清醒，先享受一下这来之不易的父子时光",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "时间紧迫可能问不完",
+            "visible_reward": "增进父子羁绊",
+            "risk_hint": "可能浪费时间",
+            "process_label": "陈机决定先叙旧",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001b_1",
+                  "character_id": "char_chenji",
+                  "content": "천기가 깊게 숨을 들이쉬고, 그냥 다리를 펴고 앉았다:\"좋아요, 천천히 말씀하세요. 어차피这辈子 듣는 것도 얼마 안 되니까.\"",
+                  "emotion": "放松"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001b_2",
+                  "character_id": "陈天命",
+                  "content": "천“天명”의 눈가가 촉촉해졌다:\"이 놀,……오늘 다 들려줄게!\"",
+                  "emotion": "欣慰"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt001c",
+            "text": "吐槽怼回去",
+            "description": "既然老爹还有力气打趣，那就来比一比谁嘴更毒",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能惹恼老爹",
+            "visible_reward": "获得对话主导权",
+            "risk_hint": "小心被怼得更惨",
+            "process_label": "陈机选择嘴炮反击",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001c_1",
+                  "character_id": "char_chenji",
+                  "content": "천기가 눈썩을 치켜올렸다:\"밥이 맛없다고? 당신当年把我扔在 Tianqing Sect 当杂役的时候，可没见您操心过我的伙食。\"",
+                  "emotion": "嘲讽"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_001c_2",
+                  "character_id": "陈天命",
+                  "content": "천“天명”은愣了一下，随即哈哈大笑：\"好小子，嘴皮子倒是利索了！当年那个被我一句话骂哭的小鬼头，现在也会顶嘴了。\"",
+                  "emotion": "好笑"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_001c_3",
+                  "content": "천기 얼굴이 살짝 빨개졌지만，仍强装镇定：\"那是沙子迷眼！\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_005",
+        "character_id": "陈天命",
+        "content": "\"沙子迷眼？\" 천“天命”笑得前仰后合，残魂都跟着颤抖，\"你那会儿才五岁，在院子里哭着喊'爹坏蛋'，喊了整整一个时辰，声音震得房梁上的瓦都在抖！\"",
+        "emotion": "大笑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_006",
+        "character_id": "char_chenji",
+        "content": "천기额角青筋直跳：\"아버지！당신은 잔혼이라고 했지, 이야기하는 게 아니라고！천기록 제4페이지가 뭔지——\"",
+        "emotion": "崩溃"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_007",
+        "character_id": "陈天命",
+        "content": "\"正经的？\" 천“天命”收敛笑意，目光变得深邃，\"正经的就是——第四页天机录，是你娘用命换来的。\"",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_008",
+        "content": "空气仿佛凝固了一瞬。천기는愣在原地，那个从未谋面、只在陈天命偶尔醉酒后提及的名字，此刻以一种沉重的姿态砸进他的脑海。他张了张嘴，却发不出声音。천“天命”叹了口气，残魂的光芒似乎又黯淡了几分。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_009",
+        "character_id": "陈天命",
+        "content": "\"你娘不是凡人，\" 천“天命”声音低沉，\"她是上古预言者一脉最后的血脉。天机录选中了她，也选中了我——但预言者的宿命，是成为天道的棋子。她不甘心，所以……\"",
+        "emotion": "沉痛"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_010",
+        "character_id": "char_chenji",
+        "content": "천기는猛地抬头，眼中闪过一丝精光，恢复了那副算无遗策的神情：\"所以她把力量封入第四页，留给我？第四页既是击败天道之眼的关键，也是让您复生的钥匙——因为那是她的心血，蕴含着您当年的气息。\"",
+        "emotion": "冷静分析"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_011",
+        "content": "천“天命”欣慰地看着儿子：\"你比我想象中还要聪明。不愧是我陈天命的种。\"他顿了顿，语气变得凝重，\"但天道之眼不是那么容易对付的。它已经存在了千万年，吞噬过无数预言者。你若想赢，就必须比我走得更远。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0666_choice002",
+        "prompt": "父亲提到母亲和天道之眼，천기心中翻涌，面上却波澜不惊。그는 선택한다……",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0666_opt002a",
+            "text": "追问母亲之事",
+            "description": "既然父亲主动提起，就该问清楚母亲的一切",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能消耗父亲残魂之力",
+            "visible_reward": "了解身世真相",
+            "risk_hint": "残魂可能因此加速消散",
+            "process_label": "陈机追问母亲下落",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002a_1",
+                  "character_id": "char_chenji",
+                  "content": "천기深吸一口气：\"아버지, 엄마는……지금은 어디에 계세요? 정말 이미——\"",
+                  "emotion": "压抑"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002a_2",
+                  "character_id": "陈天命",
+                  "content": "천“天命”沉默片刻，声音沙哑：\"她的魂魄……在天道之眼的深处。但如果你能击败它，或许……\"",
+                  "emotion": "心痛"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_002a_3",
+                  "content": "천기의双拳不自觉地握紧，眼神却冷得像万年寒冰。他没有追问，只是在心中默默记下了这个可能性。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt002b",
+            "text": "关注天道之眼",
+            "description": "母亲的事暂且放下，眼前最大的敌人是天道之眼",
+            "satisfaction_type": "谋略爽",
+            "visible_cost": "暂时搁置个人情感",
+            "visible_reward": "获得对抗天道的方法",
+            "risk_hint": "可能错过母亲的关键线索",
+            "process_label": "陈机决定先问正事",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002b_1",
+                  "character_id": "char_chenji",
+                  "content": "천기压下翻涌的情绪，声音恢复了平静：\"천도지안……它现在在哪里？有多强？\"",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002b_2",
+                  "character_id": "陈天命",
+                  "content": "천“天命”点点头：\"问得好。它无处不在，又无迹可寻。它以众生信念为食，以天命为锁链。凡是被天机录选中的人，都是它的猎物。\"",
+                  "emotion": "严肃"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_002b_3",
+                  "content": "천기眉头紧锁，天机录的气息在体内流转，仿佛在印证着父亲的话。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt002c",
+            "text": "黑色幽默",
+            "description": "既然气氛太沉重，那就用毒舌来缓解——这是他一贯的风格",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能显得没心没肺",
+            "visible_reward": "缓解气氛，获取更多情报",
+            "risk_hint": "小心老爹翻脸",
+            "process_label": "陈机开启嘴毒模式",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": -1
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002c_1",
+                  "character_id": "char_chenji",
+                  "content": "천기忽然笑了：\"所以咱家基因里就写着'被天道针对'五个大字？难怪您当年混成那副德行。\"",
+                  "emotion": "嘲讽"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_002c_2",
+                  "character_id": "陈天命",
+                  "content": "천“天命”愣了愣，随即笑骂：\"臭小子！你爹我好歹也是一代天骄，怎么说话的？\"",
+                  "emotion": "哭笑不得"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_002c_3",
+                  "content": "但他的眼底却闪过一丝笑意，这小子……倒真有几分他的风范。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_012",
+        "character_id": "陈天命",
+        "content": "行了行了，\" 천“天命”摆摆手，残魂的光芒又黯淡了一些，\"시간不多，我长话短说。第四页天机录需要三样东西才能解封——你的天命值、你妹妹陈念的血、以及……一件你娘留下的遗物。\"",
+        "emotion": "急促"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_013",
+        "character_id": "char_chenji",
+        "content": "\"陈念？\" 천기瞳孔微缩，脑海中浮现出那个模糊的身影，那个他寻找多年却始终无果的妹妹，\"她在圣宗手里……您是说，她的存在还有别的意义？\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_014",
+        "character_id": "陈天命",
+        "content": "\"陈念是'天命锁钥'，\" 천“天命”声音沉重，\"她的血脉可以打开天道之眼的枷锁——无论是封印它，还是释放它。圣宗那群蠢货以为控制了她就能要挟天道，殊不知……\"",
+        "emotion": "冷笑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_015",
+        "content": "\"殊不知他们才是被天道玩弄于鼓掌之间。\" 천기接过话头，眼中精光闪烁，\"我明白了。爹，还有别的吗？\"他的语气平静，但握着天机录的手却微微颤抖——那是即将触及真相的激动，也是对妹妹处境的担忧。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0666_016",
+        "character_id": "陈天命",
+        "content": "천“天命”看着儿子，忽然露出一个欣慰的笑容：\"没了。最后一句话——比我当年还能作死，很好。\"他伸出手，想拍拍천기的肩膀，却发现自己的手穿过了他的身体。",
+        "emotion": "释然"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_017",
+        "content": "천기愣住了，看着父亲残魂的手穿过自己的肩膀，那触感虚无缥缈，却让他鼻子一酸。他深吸一口气，硬生生把那股情绪压了回去，脸上重新挂起了那副玩世不恭的笑容。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0666_choice003",
+        "prompt": "面对即将消散的父亲残魂，천기想说点什么……",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0666_opt003a",
+            "text": "郑重告别",
+            "description": "难得正经一回，给老爹一个像样的告别",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "可能被老爹笑话",
+            "visible_reward": "了却一桩心事",
+            "risk_hint": "残魂可能因此消散得更快",
+            "process_label": "陈机选择郑重告别",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "陈天命",
+                "dimension": "依赖",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003a_1",
+                  "character_id": "char_chenji",
+                  "content": "천기缓缓跪下，重重磕了三个头：\"아버지, 아들은 불효합니다,这些年让您操心了。放心——我一定会把陈念带回来，把娘也带回来。\"",
+                  "emotion": "郑重"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003a_2",
+                  "character_id": "陈天命",
+                  "content": "천“天命”怔了怔，眼眶微微泛红，却还是忍不住笑骂：\"臭小子，搞这套……\"他的声音渐渐变轻，残魂的光芒越来越淡，\"记住，你是我陈天命的儿子……谁都不能……\"",
+                  "emotion": "哽咽"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003a_3",
+                  "content": "话音未落，천“天命”的残魂便如风般消散，只留下最后一丝温暖的气息萦绕在천기周围。天机录的第一页上，隐隐浮现出一行小字：'吾儿勿念，勿忘初心。'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "父亲的嘱托",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt003b",
+            "text": "毒舌收尾",
+            "description": "既然温情不适合他们父子，那就用最陈机的方式告别",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能留下遗憾",
+            "visible_reward": "保持一贯风格",
+            "risk_hint": "老爹可能走得不安详",
+            "process_label": "陈机选择毒舌告别",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "陈天命",
+                "dimension": "信任",
+                "delta": 2
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003b_1",
+                  "character_id": "char_chenji",
+                  "content": "천기站起身，拍了拍膝盖上的灰：\"行了行了，知道您还有话没说完。放心，我陈机什么时候让您失望过？\"他顿了顿，低声补了一句，\"……아버지, 잘 가세요.\"",
+                  "emotion": "掩饰"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003b_2",
+                  "character_id": "陈天命",
+                  "content": "천“天命”哈哈一笑，残魂却在笑声中逐渐透明：\"臭小子……记住你说的话……我会在天上……看你怎么作死……\"",
+                  "emotion": "欣慰"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003b_3",
+                  "content": "话音未落，那道残魂便彻底消散在虚空中。天机录轻轻震动，第一页上浮现出一行新的文字——那是천“天命”留下的最后一句话。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003b_4",
+                  "content": "천기录第一页上，字迹缓缓显现：'比我当年还能作死，很好。勿忘初心，吾儿。'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "父亲的嘱托",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0666_opt003c",
+            "text": "沉默以对",
+            "description": "有些话不需要说出口，沉默才是最好的告别",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "可能显得冷漠",
+            "visible_reward": "内心获得平静",
+            "risk_hint": "可能错过最后交流的机会",
+            "process_label": "陈机选择沉默",
+            "stat_effects": [],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003c_1",
+                  "content": "천기没有说话，只是静静地看着父亲的身影一点点消散。他的表情平静得可怕，仿佛在看着一件与己无关的事。但握着天机录的手，却紧紧攥着，指节泛白。",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0666_result_003c_2",
+                  "character_id": "陈天命",
+                  "content": "천“天命”看着儿子的表情，忽然叹了口气：\"你这性子……跟她娘一模一样，有话都憋在心里。\"他的声音越来越轻，\"也好。男子汉嘛，就该这样。\"",
+                  "emotion": "理解"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0666_result_003c_3",
+                  "content": "残魂彻底消散的瞬间，천기终于轻声开口：\"……我知道了。\"他的声音很轻，却带着前所未有的坚定。天机录上，천“天命”的字迹缓缓浮现，仿佛在回应着这份沉默。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "父亲的嘱托",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_018",
+        "content": "허공 속에서 다시 고요가 찾아왔다. 천기록만이 연한 빛을 발하고 있다. 천기는 천천히 일어서며手中的残页를 바라본다. 아버지의 말이 아직 귷가에 맴돈다: 천命锁钥、천도지안、어머니의 유물……这一切이 얽혀 거대한 위험한 chess game를 그려낸다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_019",
+        "content": "홀연히 그는 웃었다, 그 웃음에는 비꼬움이 있고 자조가 있고, 남들이看不懂ところ의 부드러움도 섞여 있다.\"比我还能作死?\" 천기는 혼잣말처럼 중얼거렸다, 천기록을 품에 넣으며,\"아버지, 당신은 정말……날 너무 높게 보셨네요.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_020",
+        "content": "그는 허공을 향해 몸을 돌렸다, 눈빛에 날카로운 빛이 스쳤다. 성종, 천도지안, 陈念——모든 것이 그를 기다리고 있다. 그리고 이제, 마침내 명확한 방향을 얻었다.\"제4페이지……\" 천기는 주먹을 불끈 쥐었다,\"내가 직접 解开한다. 이번엔 내가 你们를 구하러 온다.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_021",
+        "content": "천기록이 가볍게 진동하며 그의 결의에 응하는 듯했다. 첫 번째 페이지에서 천“天명”의 글씨가 서서히 사라지고, 그 자리를 대신하여 새로운 글자가 나타났다——그것은 제4페이지로 가는 실마리이자, 아버지가 남긴 마지막 선물이었다.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0666_022",
+        "content": "천기는 그 글자를 바라보며 입꼬리에 익숙한 곡선을 그렸다.\"재미있네.\" 그는 낮게 중얼거렸다, 눈빛이 날카로워졌다,\"아버지, 엄마, 陈念——다 기다려.\"说罢，他迈步走向虚空，身影渐渐融入天机录的光芒之中，等待着下一次命运的考验。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

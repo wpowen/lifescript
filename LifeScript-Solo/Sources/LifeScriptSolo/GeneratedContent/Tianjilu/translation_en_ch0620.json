@@ -1,0 +1,618 @@
+{
+  "id": "天机录_ch0620",
+  "book_id": "天机录",
+  "number": 620,
+  "title": "Dark Currents in the Imperial Capital",
+  "is_paid": true,
+  "next_chapter_hook": "The jade slip carved with patterns unique to the Heavenly Secrets Pavilion ruins—whose hand did it come from? And what is this person's purpose in investigating Chen Nian?",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0620_001",
+        "content": "Night fell like ink, yet the Drunken Immortal Pavilion in the southeast corner of the imperial capital blazed with lights.\n\nChen Ji changed out of his conspicuous court robes, donning a simple blue garment as he stood by the window of an elegant room on the second floor. His fingers tapped lightly on the sandalwood frame. The clamor of the street below was deliberately kept at bay, leaving only the crackle of candles, which cast his features in deeper shadows.\n\n\"My lord, Minister Qin of the Ministry of War has arrived below,\" the attendant reported in a low voice.\n\nA faint smile curved Chen Ji's lips, yet the expression held not a trace of warmth. Just that morning in court, the humiliating sight of that envoy clutching his face as he retreated still lingered. But now—this was merely the first piece he had set in motion.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_002",
+        "character_id": "char_chenji",
+        "content": "\"Please send him up.\n\nChen Ji turned and personally poured a cup of tea for Minister Qin. His movements flowed like water, as if this were not a treacherous game of intrigue but a casual reunion between old acquaintances.\n\nQin Mingda was over fifty, a burly man with deep furrows lining his face. His tiger-like eyes gleamed with contained sharpness. He glanced at the teacup, then fixed his gaze on Chen Ji. After a long pause, he spoke: \"Lord Chen is in high spirits tonight, inviting me so late—are you not afraid of walls having ears?\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_003",
+        "character_id": "char_chenji",
+        "content": "Chen Ji pushed the teacup forward, his smile gentle: \"Minister Qin, you've spent half your life on the battlefield. Do a few thin walls frighten you?\"\n\nHe paused, his tone suddenly cooling: \"To be frank, I invited you here tonight to discuss a matter of mutual benefit. The Xuanwu Sect has been making moves lately—surely you're aware?\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_004",
+        "content": "Qin Mingda lifted the teacup and took a small sip, yet his gaze remained fixed on Chen Ji's face. This young rising star of the court had managed to thoroughly offend the Xuanwu Sect's envoy in just a few days—yet the Emperor had protected him.\n\nThe winds of the court shifted too quickly, leaving even this old fox somewhat unsettled. But Qin Mingda had witnessed too many rises and falls to know that those who stood firm through turmoil were never the sharpest blade, but the hand hidden deepest.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0620_005",
+        "prompt": "Qin Mingda, entrenched in officialdom for years, was a crafty old fox. Chen Ji needed to show sufficient bargaining chips to move this old fox—what method will you use to persuade him?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0620_005_A",
+            "text": "Exchange of Interests",
+            "description": "Reveal the chips directly: the military deployment maps within the Xuanwu Sect and the locations of three secret granaries. Military power needs intelligence support—this is the most tangible asset.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Consume a piece of valuable intelligence",
+            "visible_reward": "Gain Qin Mingda's trust, the Ministry of War provides covert support",
+            "risk_hint": "Once intelligence is given, initiative is lost—if Qin Mingda switches allegiance, it becomes a hidden threat",
+            "process_label": "以利驱之",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_005_A_1",
+                  "content": "Qin Mingda took the sealed letter from Chen Ji, unfolded it, and his pupils constricted sharply.\n\n\"This...\" His voice turned hoarse. \"Where did Lord Chen obtain this?\"\n\nChen Ji merely smiled: \"Minister Qin only needs to know that this intelligence is enough to cripple thirty percent of the Xuanwu Sect's combat strength before any war begins. As for the source—\" he paused, \"you'll understand in time.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_A_2",
+                  "character_id": "char_chenji",
+                  "content": "After a long silence, Qin Mingda suddenly clasped his hands in salute: \"With such assets in hand, this official is willing to take orders. However—\" his eyes flickered, \"if you intend to make enemies of the Xuanwu Sect, how do you plan to handle the undercurrents within the Tianqing Sect itself?\"\n\nA subtle gleam passed through Chen Ji's eyes. So the old fox had caught a scent of something after all.",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_005_B",
+            "text": "Threatened Cooperation",
+            "description": "Don't rush to reveal your hand. Instead, hint that you know about Qin Mingda's secret dealings with the Demonic Path. Use this leverage to force him to pick a side.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May create a mortal enemy",
+            "visible_reward": "Qin Mingda is forced to comply, wouldn't dare have second thoughts",
+            "risk_hint": "Qin Mingda is a veteran of the battlefield—push him too far and he'll bite back like a cornered dog, potentially becoming an enemy",
+            "process_label": "以势压之",
+            "stat_effects": [
+              {
+                "stat": "黑化值",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_B_1",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji's smile didn't waver as he drew a jade token from his sleeve and set it lightly on the table. Carved on its surface was a bizarre demonic pattern—the mark of the Holy Sect of the Demonic Path.\n\n\"Does Minister Qin recognize this?\" His voice was gentle to the point of cruelty. \"Evidence of your secret dealings with the Demonic Path during the Northern Campaign three years ago—this official has more.\"",
+                  "emotion": "阴冷"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_B_2",
+                  "character_id": "char_chenji",
+                  "content": "Qin Mingda's expression changed abruptly. The gleam in his tiger-eyes blazed暴涨, his hand already secretly gripping his sword's hilt.\n\nYet Chen Ji acted as if he noticed nothing, calmly lifting his teacup: \"Minister Qin, no need to be tense. If this official wanted to report you, why come personally? Today I invited you to make a deal—your Northern border military authority in exchange for my silence.\"\n\nThe air froze. After a long moment, Qin Mingda slowly released his sword hilt.",
+                  "emotion": "隐忍"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_005_C",
+            "text": "Display of Strength",
+            "description": "Don't reveal your hand. Only display the information network you control. Let Qin Mingda realize that opposing you is far more dangerous than being your ally.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Expose part of the intelligence network",
+            "visible_reward": "Qin Mingda proactively curries favor, wouldn't dare play tricks",
+            "risk_hint": "Displaying strength may invite the covetousness and probing of more forces.",
+            "process_label": "以威服之",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 4
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_005_C_1",
+                  "content": "\"Master Qin, do you know who sent the box of pearl powder your daughter purchased at the cosmetics shop in the west of the city today?\"\n\nQin Mingda's expression changed slightly.\n\n\"And the three thousand taels of spirit stones your son owes at the gambling den—\" Chen Ji continued unhurriedly, \"I'm afraid they will be due next month.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_005_C_2",
+                  "character_id": "char_chenji",
+                  "content": "Fine beads of sweat appeared on Qin Mingda's forehead. He prided himself on being thorough in his dealings, yet he hadn't expected to stand naked before this young man.\n\nChen Ji gracefully withdrew his pressure, his tone softening: \"This officer has no intention of making things difficult for you, Master Qin. I merely wish to remind you—the waters of this imperial capital run deeper than you can imagine. Rather than being used as a chess piece by others—\"\n\nHe pivoted smoothly, his smile gentle: \"—walk alongside those who understand.\"",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_006",
+        "content": "Inside the private room, candlelight flickered and tea fragrance curled.\n\nQin Mingda finally spoke, his voice hoarse: \"What does Master Chen want?\"\n\n\"Simple.\" Chen Ji raised one finger. \"If the Xuanwu Sect makes any move, you simply hold your position. Additionally—\" He paused, his gaze profound. \"This officer needs to borrow your official post road passage permit. Just once, within three days.\"\n\nThe request seemed simple, yet Qin Mingda's heart tightened. The passage permit could mobilize fast horses and intelligence networks from official relay stations—this was asking for military eyes and legs.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_007",
+        "character_id": "char_chenji",
+        "content": "Chen Ji seemed to read his顾虑, adding: \"Rest assured, I won't make things difficult for you. Should anything go wrong, I'll bear full responsibility.\"\n\nQin Mingda stared at him for a long moment before finally sighing: \"Very well. I'll trust you this once.\"\n\nHe rose to take his leave, but stopped at the door: \"Master Chen, one more thing—are you truly capable of handling Ling Yuan?\"",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_008",
+        "content": "Chen Ji watched Qin Mingda's figure disappear around the stairwell, his faint smile slowly fading.\n\nLing Yuan.\n\nThese three characters were like a thorn, pricking the deepest part of his heart. That old Tianqing Sect patriarch appeared kind on the surface, but his schemes ran as deep as a dry well—Chen Xuan's inheritance position had been ruined by this very man.\n\nAnd tonight, there was something even more urgent.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_009",
+        "content": "At the third quarter of the midnight hour, a black shadow silently glided into the rear alley of the Drunken Immortal Pavilion.\n\nChen Ji pushed open a hidden door and welcomed in a masked woman. The newcomer removed her veil, revealing a face as cold and beautiful as frost—it was the demon path saintess Ye Qing.\n\n\"It's urgent.\" Ye Qing came straight to the point, her voice pressed extremely low. \"The temporal rift near the Heavenly Secrets Pavilion ruins is showing abnormal fluctuations tonight.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_010",
+        "character_id": "char_yeqing",
+        "content": "Chen Ji's expression subtly hardened: \"Abnormal fluctuations? What degree?\"\n\n\"Thirty percent stronger than last time.\" Ye Qing took out a jade slip from her sleeve and handed it to him. \"And the fluctuation frequency is accelerating—as if something is brewing. My people didn't dare approach, but that aura...\"\n\nShe paused, a flicker of apprehension crossing her eyes: \"It's as if something wants to come out from inside.\"",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_011",
+        "content": "Chen Ji took the jade slip, his spiritual sense probing within. The slip contained a remnant of fluctuation energy, eerie and ancient, as if from the deepest folds of time itself.\n\nHeavenly Secrets Pavilion ruins... temporal rift...\n\nFragments from the Heavenly Secrets Record flashed through his mind. During ancient times, the Heavenly Secrets Pavilion had been the agency through which heavenly will operated in the mortal realm, and beneath those ruins, a段 of unspeakable historical truth was said to be sealed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_012",
+        "character_id": "char_chenji",
+        "content": "Chen Ji tucked the jade slip into his sleeve, his expression unchanged: \"I've noted it. Anything else?\"\n\nYe Qing had already turned to leave but stopped at his words, looking back at him. That gaze was complex and indecipherable—half probing, half carrying emotions she couldn't quite articulate.\n\n\"You... truly aren't afraid?\" she suddenly asked. \"If what's in those ruins comes out, the entire cultivation world may be turned upside down.\"",
+        "emotion": "困惑"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0620_013",
+        "character_id": "char_chenji",
+        "content": "Chen Ji smiled calmly: \"What difference does it make whether I'm afraid or not? What must come will come. Rather than worrying pointlessly—\"\n\nBefore he could finish, his brow suddenly furrowed.\n\nThe Heavenly Secrets Record fragment in his sleeve grew faintly warm, and a blurry image flooded his mind: someone was investigating a woman named \"Chen Nian,\" and the investigator's methods... carried the distinctive aura of the Heavenly Secrets Pavilion ruins.",
+        "emotion": "警觉"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_014",
+        "content": "Chen Ji's expression changed drastically.\n\nChen Nian—his sister, missing for years, taken by the Holy Sect to serve as a \"Heavenly Fate Lock Key.\" The Heavenly Secrets Record was always fuzzy about any foresight concerning her, which was why he could never pinpoint her location.\n\nBut now, someone was secretly investigating her?\n\nWhat alarmed him more was that the investigator was using techniques from the Heavenly Secrets Pavilion ruins. What did this mean? Were there other survivors within the ruins? Or—had someone obtained something from within the ruins?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0620_015",
+        "prompt": "The Heavenly Secrets Record captured a blurry foresight about Chen Nian—this was extremely unusual. Chen Ji had to make a judgment from the limited information—what will you do?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0620_015_A",
+            "text": "Enlist Ye Qing's demon path intelligence network",
+            "description": "As a cooperating condition, request Ye Qing to use the Holy Sect's intelligence channels to track this person. You may reveal part of the Heavenly Secrets Record's information as exchange.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Reveal part of your hidden cards to Ye Qing",
+            "visible_reward": "Obtain full support from the demon path intelligence network",
+            "risk_hint": "Although Ye Qing is an ally, the internal forces of the demon path are complex, and intelligence may leak",
+            "process_label": "借力盟友",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_A_1",
+                  "character_id": "char_yeqing",
+                  "content": "After hearing his request, Ye Qing fell silent for a moment.\n\n\"Chen Nian... Heavenly Fate Lock Key...\" she murmured, repeating these words, her eyes flashing with complex emotions. \"So that's your weakness.\"\n\nChen Ji did not deny it, simply watching her quietly.",
+                  "emotion": "复杂"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_A_2",
+                  "character_id": "char_yeqing",
+                  "content": "After a moment, Ye Qing nodded: \"Very well. The demon path intelligence network can be used, but I have one condition.\"\n\n\"Speak.\"\n\n\"If investigation reveals this person is connected to the Heavenly Secrets Pavilion ruins—I want to know immediately.\" Her gaze burned with intensity. \"That ruins has been coveted by my Holy Sect for a long time.\"",
+                  "emotion": "精明"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_015_B",
+            "text": "Personally investigate secretly",
+            "description": "Without alerting anyone, use your own underground connections to investigate alone. This is about Chen Nian—you trust no one.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Will consume time and energy, potentially missing key clues",
+            "visible_reward": "Maintain absolute secrecy, not exposing weaknesses",
+            "risk_hint": "Acting alone has limited strength; if the other party is prepared, you may fall into a passive situation",
+            "process_label": "独行",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_015_B_1",
+                  "content": "Chen Ji shook his head: \"No need. I have my own arrangements for this matter.\"\n\nYe Qing's brow furrowed slightly, clearly dissatisfied with this answer, but she did not press further. Having worked with Chen Ji until now, she knew well that this man never did anything without purpose.\n\n\"Very well.\" She turned toward the window. \"Within three days, I will deliver detailed intelligence on the ruins' fluctuations to you.\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_B_2",
+                  "character_id": "char_yeqing",
+                  "content": "Before leaving, Ye Qing suddenly looked back: \"By the way, that aura from those ruins... I always feel somewhat familiar.\"\n\nChen Ji's heart stirred: \"Familiar?\"\n\n\"Like something I felt somewhere, a very long time ago.\" She frowned in contemplation for a moment, then shook her head. \"I can't remember. Perhaps I'm overthinking.\"\n\nWith that, she leaped into the night and vanished among the rooftops of the imperial city.",
+                  "emotion": "若有所思"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_015_C",
+            "text": "\"Test Ling Yuan's attitude\"",
+            "description": "\"There must be some connection between Ling Yuan and the Heavenly Secrets Pavilion ruins. We might as well take this opportunity to test this man's reaction. If he is involved, he will inevitably show weaknesses.\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"May alert the target prematurely\"",
+            "visible_reward": "\"If Ling Yuan is indeed involved, we can set up a countermeasure in advance\"",
+            "risk_hint": "\"Ling Yuan is extremely scheming; the probe might backfire and get us outmaneuvered\"",
+            "process_label": "以身为饵",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_015_C_1",
+                  "content": "Chen Ji pondered silently for a moment, then made a decision.\n\n\"Ye Qing, do you know—\" he suddenly spoke up. \"Does the former Sect Master of Tianqing Sect, Ling Yuan, have any connection to those Heavenly Secrets Pavilion ruins?\"\n\nYe Qing's footsteps halted. She turned to look at him, a flash of surprise flickering in her eyes: \"You suspect him?\"",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_015_C_2",
+                  "character_id": "char_yeqing",
+                  "content": "Chen Ji did not answer directly, merely saying coolly: \"I'm merely thinking—this old Sect Master who has navigated between court and sect so effortlessly all these years... what secrets must he be hiding in his hands?\"\n\nYe Qing mused thoughtfully: \"What do you plan to do?\"\n\n\"Not so fast.\" Chen Ji's gaze darkened slightly. \"Let the bullet fly a while longer. I want to see who is investigating my sister—and why.\"",
+                  "emotion": "冷厉"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_016",
+        "content": "After Ye Qing left, Chen Ji stood alone before the window.\n\nThe imperial city night remained bustling; in the distance came the watchman's night-watch beats, drifting悠悠荡荡 through layers of rooftops. He lowered his gaze to the jade slip in his palm—the traces left by the investigator were too deliberate, as if purposely meant for him to discover.\n\nA trap, or a clue?\n\nRegardless, this person's purpose was certainly not simple. Chen Nian was Chen Ji's only weakness—something he had never told anyone. Yet the other party had precisely touched upon this forbidden zone.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_017",
+        "content": "Chen Ji's gaze gradually turned cold.\n\nThe aura of the Heavenly Secrets Pavilion ruins... the fluctuations of the time-space rift... Ling Yuan's covert surveillance... these clues intertwined rapidly in his mind, gradually sketching out a vague net.\n\nThe center of the net was Chen Nian.\n\nHe took a deep breath, pressing all emotions back into his heart. Whoever the other party was, whoever dared to target Chen Nian was his enemy. Debts owed, Chen Ji always remembered clearly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0620_018",
+        "prompt": "It was deep night, and Chen Ji needed to decide his next move. Facing the contest of multiple forces, he had to make取舍—you hope he does what?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0620_018_A",
+            "text": "\"Steady and solid\"",
+            "description": "\"Continue to consolidate the power base as planned; if there are no unusual events tomorrow, go meet the Vice Minister of Rites to further expand political influence.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"Time cost\"",
+            "visible_reward": "\"Political power base further consolidated\"",
+            "risk_hint": "\"The investigator may take further action during this window period\"",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_018_A_1",
+                  "content": "Chen Ji straightened his clothes and turned toward the hidden door.\n\nTonight had already been quite rewarding—Qin Mingda's military support, intelligence on the time-space rift, and that mysterious investigator. Whoever the other party was, since they dared to show themselves, they couldn't blame him for settling accounts later.\n\n\"Tomorrow's chess game, let us see how the next chapter unfolds.\" He murmured softly, a meaningful smile floating at the corner of his lips.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_018_B",
+            "text": "\"Take the initiative\"",
+            "description": "\"Tonight, utilize Qin Mingda's courier passage token to have someone trace the source of that jade slip's aura. Speed is paramount in battle, giving the other party no time to prepare.\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"Advance consumption of Qin Mingda this card\"",
+            "visible_reward": "\"May抢先一步 find clues first\"",
+            "risk_hint": "\"Utilizing Qin Mingda may alert other forces\"",
+            "process_label": "先发制人",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenji",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0620_result_018_B_1",
+                  "content": "Chen Ji made a decisive decision on the spot and took out the courier passage token left by Qin Mingda.\n\nHalf a quarter hour later, three swift horses thundered out from the east gate of the imperial city. The riders wore courier uniforms, yet each had restrained their auras—those were the death warriors Chen Ji had secretly trained.\n\nObjective: Trace the source of the jade slip's aura.\n\nAs for Chen Ji himself, he stood with hands clasped behind his back at the Drunken Immortal Pavilion window, watching those few lights vanish into the night.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0620_018_C",
+            "text": "\"Consult Mo Xiansheng\"",
+            "description": "The Mo Xiansheng sealed within the Tianji Record Fragment might know more details. Though the remnant soul guardian only speaks \"what should be said\" each time, at this moment he cannot afford to hold back.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May hear unwanted news",
+            "visible_reward": "Obtain key information",
+            "risk_hint": "Mo Xiansheng's words often hide profound meanings—understanding them is difficult, and misunderstanding them is worse.",
+            "process_label": "问道于师",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              },
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_018_C_1",
+                  "character_id": "char_moxiansheng",
+                  "content": "Chen Ji returned to his quarters and took out the Tianji Record Fragment. As pale golden light circulated, an elderly figure emerged from the pages.\n\n\"Lad, something happened again?\" Mo Xiansheng's voice was hoarse and distant.\n\n\"Someone is investigating Chen Nian.\" Chen Ji got straight to the point, \"They're using techniques from the Heavenly Secrets Pavilion ruins.\"",
+                  "emotion": "急切"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0620_result_018_C_2",
+                  "character_id": "char_moxiansheng",
+                  "content": "Mo Xiansheng fell silent for a moment, the remnant soul rippling slightly.\n\n\"Interesting.\" He finally spoke, his tone carrying a hint of deep meaning, \"It seems someone is more impatient than this old man anticipated.\"\n\nChen Ji frowned: \"Do you know who?\"\n\n\"This old man only speaks what should be said—the fall of the Heavenly Secrets Pavilion was never an accident. And your sister... is more important than yourself.\"",
+                  "emotion": "神秘"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_019",
+        "content": "Chen Ji carefully stored the Tianji Record Fragment and looked toward the window.\n\nThe eastern horizon was already turning pale white, and the long night was about to end. But he clearly knew that the true storm was just beginning.\n\nThe Xuanwu Sect's grudge, the anomaly of the temporal rift, the appearance of the mysterious investigator, Ling Yuan's unfathomable depths... these pieces were slowly moving across the chessboard, and he, Chen Ji—would never be content to be merely a piece being manipulated.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0620_020",
+        "content": "Whose hand did that Jade Slip engraved with the unique patterns of the Heavenly Secrets Pavilion ruins come from? And what was this person's purpose in investigating Chen Nian?\n\nThe morning light grew stronger, and the imperial city began to awaken. A new day, a new chess game. And Chen Ji had already made his first move.",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

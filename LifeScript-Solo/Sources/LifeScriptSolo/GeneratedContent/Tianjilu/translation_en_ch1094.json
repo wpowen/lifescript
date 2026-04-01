@@ -1,0 +1,555 @@
+{
+  "id": "天机录_ch1094",
+  "book_id": "天机录",
+  "number": 1094,
+  "title": "Arrangement of the Three Realms",
+  "is_paid": true,
+  "next_chapter_hook": "When the gears of fate begin to turn, what answer will Chen Ji write on the final page of the Tianji Record?",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1094_001",
+        "content": "Tianqing Sect Back Mountain, twilight descending.\n\nChen Ji slowly opened his eyes. The surging tide of fate within the Tianji Record space had finally receded, replaced by an uncanny stillness. He looked down at his palm, the Heavenly Fate number flickering in his vision—seventy-three points, a full forty-five less than before entering the space.\n\nThis was the greatest consumption of his life.\n\nMountain wind rose suddenly, a sharp sword intent cutting through the void. Chen Ji didn't turn, merely shifting slightly sideways as a cyan flash grazed past his ear and pierced three inches into the ancient tree behind him.\n\n\"Your energy is in such chaos—are you playing chess with the Heavenly Dao?\"\n\nSu Qingyao's voice came from behind, cold and sharp, yet carrying an undercurrent of subtle anxiety. She landed ten steps away, her blue robes billowing, her brow furrowed with scrutiny.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_002",
+        "character_id": "char_suqingyao",
+        "content": "\"Just a minor deviation during cultivation, Senior Sister Su. No need to be alarmed.\"\n\nChen Ji turned around, wearing his usual timid smile, his tone casual as if commenting on the pleasant weather.",
+        "emotion": "审视"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_003",
+        "character_id": "char_suqingyao",
+        "content": "A deviation?\n\nSu Qingyao冷笑一声：\"你当我是三岁小孩？方才那股气息波动，整个天青宗都感应到了——那是天机术的气息。\"\n\nHer eyes burned with intensity as she pressed closer, demanding the truth she sensed he was hiding.",
+        "emotion": "质问"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_004",
+        "content": "This question again.\n\nChen Ji sighed inwardly, yet noticed something different in Su Qingyao's gaze—less sharp than before, carrying an indefinable emotion. He suddenly recalled the visions from the Tianji Record—in this timeline, Su Qingyao would ultimately become his most steadfast guardian.\n\n\"Senior Sister Su,\" Chen Ji dropped his smile, speaking earnestly, \"would you follow me somewhere? There's something I need to tell you in person.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_005",
+        "character_id": "char_suqingyao",
+        "content": "\"You're finally willing to speak?\"\n\nA flash of surprise crossed Su Qingyao's eyes before her cold demeanor returned. But she didn't refuse, simply folding her hands behind her back, waiting for Chen Ji's words.",
+        "emotion": "期待"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_006",
+        "content": "Inside the Tianqing Sect Council Hall, candlelight flickered.\n\nAfter Su Qingyao finished listening to Chen Ji's brief account, she fell into a long silence. Night wind howled outside the hall, making candlelight dance and cast shifting shadows across her face.\n\n\"The Tianji Record... the Eye of the Heavenly Dao...\" she murmured, repeating these words, her voice somewhat hoarse. \"So from the very beginning, you were never a废物.\"\n\nChen Ji didn't answer, merely watching her quietly.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1094_007",
+        "prompt": "Facing Su Qingyao who had finally learned the truth, what choice will Chen Ji make?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "trust_suqingyao",
+            "text": "Full Disclosure",
+            "description": "Reveal all the secrets of the Tianji Record, his own plans, and the consumption of Heavenly Fate to Su Qingyao, making her a true insider and companion.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Lose the biggest trump card secret",
+            "visible_reward": "Gain Su Qingyao's complete trust, unlock the prerequisite for \"Shared Destiny\"",
+            "risk_hint": "Once leaked, it will lead to utter destruction",
+            "process_label": "坦诚相告",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1094_result_trust_suqingyao_001",
+                  "content": "\"Senior Sister,\" Chen Ji took a deep breath, making his decision, \"at this point, I won't hide it from you anymore.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_truth"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶得知天机录真相",
+            "branch_route_id": null
+          },
+          {
+            "id": "partial_truth",
+            "text": "Selective Disclosure",
+            "description": "Only tell Su Qingyao part of the truth, preserving the most sensitive information like the Heavenly Fate consumption mechanism.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Preserve trump cards",
+            "visible_reward": "Maintain the existing dynamic of strategic博弈 while gradually deepening trust.",
+            "risk_hint": "Su Qingyao may detect the omissions and develop distrust.",
+            "process_label": "有所保留",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_partial_truth_001",
+                  "character_id": "char_chenji",
+                  "content": "\"The Tianji Record is indeed in my hands,\" Chen Ji chose his words carefully, \"but it's incomplete, and... every use comes with a price.\"",
+                  "emotion": "试探"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "suqingyao_partial"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "deflect",
+            "text": "Beat Around the Bush",
+            "description": "Avoid answering Su Qingyao's probing questions directly, steering the conversation toward the upcoming final battle.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May provoke Su Qingyao.",
+            "visible_reward": "Buy time and wait until the situation becomes clearer before speaking.",
+            "risk_hint": "Su Qingyao might temporarily leave, missing the opportunity for in-depth exchange",
+            "process_label": "转移话题",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_deflect_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Senior Su,\" Chen Ji shifted his tone, \"compared to digging into my secrets, there's something more important right now—the backlash from the Eye of Heavenly Dao is coming faster than we anticipated.\"",
+                  "emotion": "严肃"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "deflect_topic"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_008",
+        "content": "Regardless of Chen Ji's choice, a bizarre purple glow suddenly blazed in the night sky outside the Council Hall.\n\nThat purple light stretched across the horizon, like a distinctive mark of the Demonic Path, heralding a message from afar. Su Qingyao's expression subtly changed: \"Has the Demonic Path sent word?\"\n\nChen Ji nodded, a sharp glint flickering in his eyes: \"Ye Qing's people arrived three days earlier than agreed. It seems... she sensed something as well.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_009",
+        "character_id": "char_yeqing",
+        "content": "Before the words finished, a graceful figure drifted through the entrance of the Council Hall.\n\nPurple纱 veil covering her face, demonic energy restrained within, Ye Qing's aura had grown several times stronger than when they last met. She first glanced at Su Qingyao, the corner of her lips curving into an amused arc, then her gaze fell upon Chen Ji.\n\n\"Young Master Chen, I've arrived ahead of schedule for our appointment. You don't mind, do you?\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_010",
+        "character_id": "char_suqingyao",
+        "content": "\"Demonic Path witch!\"\n\nSu Qingyao's sword intent surged wildly, green light shooting directly toward Ye Qing's throat. \"How dare you set foot even half a step into Tianqing Sect!\"\n\nYe Qing neither dodged nor evaded, merely tilting her head lightly to look at Chen Ji: \"Young Master Chen, your Inner Sect senior sister seems rather unwelcoming toward me.\"",
+        "emotion": "挑衅"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_011",
+        "content": "The atmosphere within the hall suddenly tensed.\n\nChen Ji, unhurried, raised his hand and gently pressed down Su Qingyao's sword blade: \"Senior Su, she's a guest.\"\n\nSu Qingyao glared furiously: \"Have you lost your mind? She's the Saintess of the Demonic Path!\"\n\n\"She came to help us.\" Chen Ji's voice was soft, yet carried an undeniable certainty. \"This, I can guarantee with my life.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_012",
+        "character_id": "char_yeqing",
+        "content": "Hearing this, a strange glint flickered deep in Ye Qing's eyes.\n\nShe had encountered countless hypocritical pretenders with honeyed words and hidden daggers. Chen Ji's unadorned trust反而让她有些不知所措。沉默了片刻，她才开口，声音少了几分戏谑：「圣宗援军已集结完毕，共计三千魔修，随时可听候调遣。」\n\nShe paused, then added: \"But the commander has made it clear beforehand—the dimensional fragments must be divided equally after the matter is settled.\"",
+        "emotion": "认真"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1094_013",
+        "prompt": "Facing the Demonic Path's condition for sharing dimensional fragments, how should Chen Ji respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "accept_division",
+            "text": "Agree readily",
+            "description": "Though dimensional fragments are precious, the Demonic Path's combat power is indispensable; let's secure the ally first",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Lose half the dimensional fragments",
+            "visible_reward": "Gain the full support of three thousand demonic cultivators, eliminating worries about the rear",
+            "risk_hint": "If either party reneges afterward, it may spark new disputes",
+            "process_label": "爽快应允",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_accept_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Deal.\" Chen Ji spoke decisively. \"Though dimensional fragments are valuable, without Lady Ye's tremendous assistance, we might not even have the chance to see them alive.\"",
+                  "emotion": "果断"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "mo_dao_alliance_confirmed"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_better",
+            "text": "Haggle",
+            "description": "Propose new conditions: the Demonic Path provides personnel and effort, but dimensional fragments belong to Chen Ji's side, with other compensation to be given to the Demonic Path afterward",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Negotiations may break down",
+            "visible_reward": "Retain all dimensional fragments while maintaining the alliance",
+            "risk_hint": "If negotiations break down, the Demonic Path reinforcements will be lost",
+            "process_label": "据理力争",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_negotiate_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Lady Ye,\" Chen Ji smiled faintly, \"dimensional fragments hold extraordinary significance for me. Perhaps we could try a different approach—the Demonic Path contributes its efforts in this battle, and I shall gift the Holy Sect with three treasures from the ancient forbidden realm afterward. What do you think?\"",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "conditional_accept",
+            "text": "Agree with conditions",
+            "description": "Agree to equal division, but set prerequisite conditions: dimensional fragments are to be distributed only after the Eye of Heavenly Dao is completely defeated, and the Demonic Path must obey all commands throughout",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Compromise",
+            "visible_reward": "Both secure the ally and grasp the initiative",
+            "risk_hint": "The Demonic Path may consider the conditions too harsh",
+            "process_label": "设下框架",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_conditional_001",
+                  "character_id": "char_chenji",
+                  "content": "\"A fifty-fifty split is acceptable, but with one condition—until the Heavenly Eye is completely crushed, all actions must be under unified command.\" Chen Ji's gaze was calm yet profound. \"What does the Night Saint Maiden think?\"",
+                  "emotion": "沉稳"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_014",
+        "content": "Just as both sides were negotiating, a commotion suddenly arose outside the Council Hall.\n\nA Tianqing Sect disciple rushed in stumbling, his expression terrified: \"Ch-Brother Chen! There's someone at the Sect Gate claiming to be... your sister who went missing years ago!\"\n\nChen Ji's pupils contracted sharply.\n\nChen Nian. Why would she be here?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_015",
+        "character_id": "char_chenian",
+        "content": "At the entrance of the Council Hall, a slender figure slowly walked in.\n\nShe was a young woman of about seventeen or eighteen, with delicate features tinged with pallor. Her eyes bore a seventy percent resemblance to Chen Ji's. Her gaze was hollow, as if she had seen through all worldly affairs, yet remained unmoved by anything.\n\n\"Brother.\"\n\nJust one word, yet it froze Chen Ji in place.",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_016",
+        "content": "How many years had it been?\n\nChen Ji remembered the last time he saw Chen Nian—twelve years ago. That day, cultivators from the Holy Sect stormed into Chen Family Village and took her along with the other children from the village. He fought with all his might to stop them, but was struck by a palm and sent flying, watching helplessly as his sister was dragged into the darkness.\n\nTwelve years of waiting, twelve years of scheming—all for this day.\n\nBut why would she appear here? A trap, or...?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_017",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing suddenly spoke, her voice grave: \"The energy on her... it's a Heavenly Fate Key from the Holy Sect. I recognize it.\"\n\nSu Qingyao also furrowed her brow: \"Heavenly Fate Key? What is that?\"\n\nYe Qing didn't answer, only looking at Chen Ji with a complicated expression: \"Young Master Chen, your sister... she's probably not here on her own. The Holy Sect is using her.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_018",
+        "content": "Chen Ji didn't speak.\n\nHe walked slowly toward Chen Nian, each step like treading on knife blades. For twelve years, he thought he had learned to be cold, to scheme, to bury all emotions deep in his heart.\n\nBut now, facing this sister he had lost and found again, he discovered his heart could still ache.\n\n\"Nian Nian.\" He stopped before Chen Nian, his voice somewhat hoarse. \"Tell me, who brought you here?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_019",
+        "character_id": "char_chenian",
+        "content": "Chen Nian lifted her head, and a ripple finally appeared in those hollow eyes.\n\n\"Brother,\" her voice was soft, \"they let me go. They said... as long as you surrender, we can be reunited.\"\n\nShe paused, a flash of pain crossing her eyes: \"But I know you won't. So I escaped. I don't want to... become their bargaining chip.\"",
+        "emotion": "痛苦"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1094_020",
+        "prompt": "Faced with his sister's return and the Holy Sect's conspiracy, how should Chen Ji choose?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "protect_sister",
+            "text": "Protect her first, no matter what",
+            "description": "Chen Nian is Chen Ji's only remaining family. Ensure her safety at any cost, temporarily setting aside other plans",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May disrupt the entire strategic deployment",
+            "visible_reward": "Reunite with his sister, give her a safe harbor",
+            "risk_hint": "The Holy Sect may take the opportunity to strike",
+            "process_label": "护妹心切",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1094_result_protect_001",
+                  "content": "Chen Ji pulled Chen Nian into his embrace, his voice low but firm: \"It's alright. Brother is here. From now on, no one will dare lay a finger on you.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sister_protected"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "strategic_analysis",
+            "text": "Analyze the situation calmly",
+            "description": "First comfort his sister, but immediately discuss with everyone whether this might be a trap set by the Holy Sect",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May make his sister feel alienated",
+            "visible_reward": "Avoid falling into the enemy's trap, maintain strategic initiative",
+            "risk_hint": "Chen Nian may misunderstand her brother's attitude",
+            "process_label": "冷静布局",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_analysis_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji gently patted Chen Nian's back, then looked up at Ye Qing: \"Night Saint Maiden, you should know the abilities of a Heavenly Fate Key. Could you help me confirm... if there are tracking marks on her?\"",
+                  "emotion": "冷静"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "question_chinian",
+            "text": "Inquire deeply about the details",
+            "description": "Before taking action, detailedly inquire about how Chen Nian escaped and the Holy Sect's arrangements, seeking weaknesses",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Time-consuming",
+            "visible_reward": "Obtain crucial intelligence to provide basis for subsequent countermeasures",
+            "risk_hint": "Chen Nian may not fully understand all the truth",
+            "process_label": "审慎求证",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch1094_result_question_001",
+                  "character_id": "char_chenji",
+                  "content": "\"Nian Nian,\" Chen Ji said, supporting his sister by the shoulders, his gaze gentle yet earnest. \"Tell me, what exactly did they say? How did you manage to escape? During your escape, did you notice anything unusual?\"",
+                  "emotion": "关切"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_021",
+        "content": "It was deep in the night. The people in the Council Hall dispersed one by one, leaving only Chen Ji alone in the vast hall. The candles had burned out completely, only moonlight filtering through the window lattice, casting mottled shadows on the ground. Chen Ji stood alone before the window, gazing at the cold, bright moon in the heavens. In his hand, the Tianji Record Fragment emitted a faint, eerie glow. \"Today's consumption was a bit too much.\" Mo Xiansheng's voice came from the fragment, carrying a hint of exhaustion. \"Heavenly Fate Value at seventy-three points... barely sufficient, but should another unexpected situation arise...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_022",
+        "character_id": "char_moxiansheng",
+        "content": "\"Mo Xiansheng,\" Chen Ji spoke, his voice so calm it was as if he weren't discussing his own life and death at all. \"You say... if I were to die in this final battle, who would the Tianji Record choose?\" The voice within the fragment fell silent for a moment. \"Master, why do you ask this?\"",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_023",
+        "content": "Chen Ji gave no answer. He slowly opened the Tianji Record, his gaze falling upon those densely packed prophetic visions. Every glimpse of the future consumed precious Heavenly Fate Value; every alteration of destiny brought heavenly backlash. His entire life, from waste to chess master, from chess piece to chess player—seemingly glorious, yet he had long since made light of life and death. But tonight, watching Chen Nian return, watching Su Qingyao and Ye Qing each taking their positions, he suddenly felt a tremor of wavering.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1094_024",
+        "character_id": "char_moxiansheng",
+        "content": "\"Master,\" Mo Xiansheng's voice suddenly softened, \"this old servant has followed you for so long, yet never have I heard you ask such a question.\" \"Is it because you saw your sister today?\" Chen Ji still did not answer. He merely closed the Tianji Record and said quietly: \"Mo Xiansheng, you say... can the layout of my entire life truly break the chess game of the Eye of Heavenly Providence?\"",
+        "emotion": "迷茫"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1094_025",
+        "content": "Moonlight flowed like water, drenching the cover of the Tianji Record. Chen Ji suddenly smiled, that smile carrying a hint of self-mockery: \"Forget it, what's the point of asking these things? Regardless of the outcome, the path I must walk remains the same.\" He took out the Jade Slip he carried, carving several lines upon it: \"If I can survive, the fourth possibility is to break the shackles; if I must die, I shall at least take the Heavenly Providence with me.\" This was his testament letter, and also his final gambit. Outside the window, the east had begun to glow with the pale light of dawn. A new day was about to arrive, and the curtain was about to rise on the final decisive battle.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

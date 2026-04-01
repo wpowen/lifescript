@@ -1,0 +1,517 @@
+{
+  "id": "天机录_ch0838",
+  "book_id": "天机录",
+  "number": 838,
+  "title": "\"The Night Before the Final Battle\"",
+  "is_paid": true,
+  "next_chapter_hook": "\"As Ye Qing turned to leave, a black scale slipped from her sleeve and glinted in the moonlight—that was the Holy Sect圣女令 of the Demonic Path, and also proof that she had never truly betrayed.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0838_001",
+        "content": "\"Moonlight flowed like water, spilling over Chen Ji's thin shoulders. He stood alone at the Cliff of the Tianqing Sect Back Mountain, the ancient key in his hand radiating faint light, resonating with the starry sky above. That resonance of fate spanning a thousand years still echoed in his chest, like a dream too real to be true. \"Chen Tianming... how deep a hole did you dig for me?\" he murmured to himself, a self-deprecating smile tugging at his lips. The moment the key touched his palm, countless images flashed through his mind like a carousel—fragments of the final battle, broken and blood-soaked.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0838_002",
+        "character_id": "char_suqingyao",
+        "content": "\"\"Standing on the cliff edge being dramatic?\" A cold female voice came from behind, accompanied by a familiar orchid fragrance. \"Tomorrow is the battle, yet here you are, in such a leisurely mood.\" Su Qingyao walked closer, the moonlight outlining her cold elegance, though her eyes held a trace of unnoticeable worry.\"",
+        "emotion": "担忧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0838_003",
+        "content": "\"Chen Ji didn't turn around, merely tucking the key into his sleeve with a lazy tone. \"What brings the Inner Disciple Senior Fellow to graced us with her presence? Inspection or farewell? If it's the latter, please prepare the death gratuity. I'm afraid I might not make it back.\" He turned around, wearing his usual foolish dummy smile, but his eyes seemed particularly profound under the moonlight. Su Qingyao's brow furrowed slightly—that smile always felt like it was hiding something, yet she couldn't quite put her finger on it. Under the moonlight, their shadows overlapped on the ground. The wind blew, lifting Su Qingyao's robes and Chen Ji's disheveled hair. The clouds below churned like a tide, as if ready to swallow everything at any moment.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0838_004",
+        "character_id": "char_suqingyao",
+        "content": "\"\"Stop playing word games with me.\" Su Qingyao stepped forward, her gaze fixed on Chen Ji's sleeve. \"That light just now—what was it? I sensed abnormal Heavenly Secrets fluctuations even from within the sect. Did you... use the Tianji Record again?\" Her voice was low but carried an unquestionable interrogation. \"How much Heavenly Fate Value do you have left? Don't tell me you're planning to push through again.\"",
+        "emotion": "追问"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0838_005",
+        "prompt": "\"Su Qingyao's interrogation made the atmosphere微妙. How should Chen Ji respond?\"",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0838_005_a",
+            "text": "\"Pretend to be stupid and cute, muddle through\"",
+            "description": "\"Use the fool persona's silly smile to cover up, change the subject and ask her if the moonlight tonight is beautiful\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"May cost Su Qingyao's trust\"",
+            "visible_reward": "\"Keep the secret, maintain the persona\"",
+            "risk_hint": "\"Su Qingyao is already suspicious\"",
+            "process_label": "陈机决定装傻",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_005_a_1",
+                  "character_id": "char_suqingyao",
+                  "content": "\"\"Moonlight?\" Su Qingyao coldly laughed. She reached up and grabbed Chen Ji's ear. \"Do you think I'm stupid? I sensed the Heavenly Secrets fluctuation and you're talking about moonlight with me? Heavenly Fate Value, how much is left? Tell me honestly!\"",
+                  "emotion": "恼怒"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_005_a_2",
+                  "content": "\"Chen Ji grimaced, but secretly made a mental note: we'll settle the ear thing after the battle. Surface-level fool, secretly vindictive—that was his true nature.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶追问天命值",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0838_005_b",
+            "text": "\"Reveal half-truths\"",
+            "description": "\"Tell her he did use the Tianji Record, but hide the specific consumption and the key's existence\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"May expose more secrets\"",
+            "visible_reward": "\"Su Qingyao's trust and reliance deepen\"",
+            "risk_hint": "\"She may worry about you more\"",
+            "process_label": "陈机决定坦白部分",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_005_b_1",
+                  "character_id": "char_suqingyao",
+                  "content": "\"After listening, Su Qingyao fell silent for a moment, her expression complex and unreadable in the moonlight. After a long while, she sighed softly: \"Always like this... always carrying everything alone.\" She didn't press further, simply taking out a jade bottle from her sleeve and pressing it into Chen Ji's hand. \"This is the Soul-Congealing Elixir. I saved it for three years. I was going to use it for breaking through my bottleneck, but now... you need it more than I do.\"",
+                  "emotion": "心疼"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_005_b_2",
+                  "content": "\"Chen Ji's hand tightened around the jade bottle. He suddenly felt that if he could survive tomorrow's battle, perhaps it wouldn't be such a bad thing after all. At least someone would be waiting for him under the moonlight.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "苏青瑶赠凝魂丹",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0838_005_c",
+            "text": "\"Turn the tables and flirt with her\"",
+            "description": "\"\"Does Senior Fellow Su care so much about me because she likes me?\" Watch her blush, then get to business\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"May anger her\"",
+            "visible_reward": "\"Watching her flustered is quite amusing\"",
+            "risk_hint": "\"We fight side by side tomorrow, don't go too far\"",
+            "process_label": "陈机决定调戏",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 3
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_005_c_1",
+                  "character_id": "char_suqingyao",
+                  "content": "\"\"You—!\" Su Qingyao clearly hadn't expected him to suddenly say something like that. Her pale cheeks instantly flushed red. \"Who、who likes you! I just don't want this废物 to die on the battlefield and embarrass Tianqing Sect!\" Her voice trembled slightly, her gaze drifting to avoid his. Under the moonlight, the redness at her ear tips was clearly visible.\"",
+                  "emotion": "羞涩"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_005_c_2",
+                  "content": "\"Chen Ji watched this woman who was usually cold as ice, the Inner Disciple Senior Fellow, now acting like an angry cat. He couldn't help but laugh. So this was what Su Qingyao looked like when her guard was down. \"Alright, alright, I'm flattering myself.\" He laughed and raised both hands in surrender. \"That's reassuring, at least I don't have to worry about being secretly admired and losing focus during battle.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "调戏苏青瑶",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0838_006",
+        "content": "\"Just as the atmosphere gradually became微妙, a black shadow flashed across the night sky like a specter and landed on an old pine nearby. Su Qingyao instantly composed herself, sword light flickering in her hand, but Chen Ji pressed down on her wrist. \"Don't be nervous, she's one of us.\" Chen Ji squinted at the figure, a playful smile curling at his lips. The visitor was precisely the Demonic Path Holy Woman Ye Qing, her black dress billowing in the night wind. Her expression, however, carried rare solemnity. The moonlight illuminated her pallid features, and that faint smile at the corner of her lips seemed especially profound at this moment.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0838_007",
+        "character_id": "char_yeqing",
+        "content": "\"Ye Qing leaped down from the pine branch, landing soundlessly. Her dark eyes shimmered with complex light. She first glanced at Su Qingyao, the corner of her lips lifting slightly: \"Senior Fellow Su is here too? It seems Young Master Chen's charm is considerable, even the ice beauty of Tianqing Sect would agree to a late-night meeting.\" Su Qingyao冷哼一声，却没有反驳。 Ye Qing turned to Chen Ji, her expression suddenly serious: \"I have intelligence. Regarding tomorrow's battle—the Holy Sect will launch a sneak attack at the third watch of midnight, main assault direction: the Forbidden Grounds of the Tianqing Sect Back Mountain.\"",
+        "emotion": "严肃"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0838_008",
+        "content": "\"The night wind suddenly turned biting. Chen Ji lowered his gaze, playing with the jade bottle in his hand. His smile remained, but a sharp glint flickered in his eyes. \"Third watch of midnight, Back Mountain Forbidden Grounds...\" He repeated, raising his eyes to Ye Qing. \"Holy Woman Ye visits in the deep night, just to deliver this intelligence? Or does that mean—\" He paused, his tone becoming meaningful. \"You want me to owe you a favor?\" Upon hearing this, a flash of surprise crossed Ye Qing's eyes, then transformed into an appreciative smile. This废物杂役 was indeed not as simple as he appeared. Under the moonlight, the shadows of three people intertwined, as if foreshadowing the entanglement of future fates.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0838_009",
+        "character_id": "char_yeqing",
+        "content": "\"\"Young Master Chen is indeed clever.\" Ye Qing laughed lightly, her voice like a nightingale's song. \"However, this time, you're wrong. I don't want a favor. I only want—\" She paused, her dark eyes directly meeting Chen Ji's. \"For you to live.\" This was said too directly, causing even Su Qingyao to slightly glance over. Ye Qing, however, seemed unaware, continuing on her own: \"If you die, who will I settle accounts with for what happened back then?\" Her tone was light and teasing, but there was a fleeting seriousness in her eyes. Chen Ji caught that momentary emotional fluctuation, his heart stirring—perhaps this woman was far more complex than he imagined.\"",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0838_010",
+        "prompt": "\"Ye Qing's words stirred ripples in Chen Ji's heart. How should he respond?\"",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0838_010_a",
+            "text": "\"Seize the opportunity to tease and defuse the awkwardness\"",
+            "description": "\"\"Is Holy Woman Ye confessing? I'm flattered, but I'll have to decline—I have a battle tomorrow, afraid of losing focus.\"\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "\"May make the situation more awkward\"",
+            "visible_reward": "\"Relieve the atmosphere, showcase verbal skill\"",
+            "risk_hint": "\"Su Qingyao may get jealous\"",
+            "process_label": "陈机调侃夜清",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_010_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "\"Ye Qing froze for a moment, then covered her mouth and laughed, her laughter especially pleasant in the night wind. \"Young Master Chen is indeed interesting. No wonder you got Senior Fellow Su to meet secretly at night.\" She blinked, mischievously looking at Su Qingyao. \"Don't worry, I'm not interested in you—at least not now.\" Su Qingyao's face grew even darker.\"",
+                  "emotion": "促狭"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_010_a_2",
+                  "content": "\"The three people's breaths intertwined under the moonlight. Chen Ji suddenly felt that if tomorrow's decisive battle could have such a night as company, perhaps it wouldn't be such a terrible ending after all.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "调侃夜清",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0838_010_b",
+            "text": "\"Seriously ask about her true intentions\"",
+            "description": "\"\"The intelligence about the third watch of midnight is crucial, but I want to know more—which side are you really on?\" Look directly into her eyes\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "\"May damage the current friendly atmosphere\"",
+            "visible_reward": "\"Reveal Ye Qing's true stance\"",
+            "risk_hint": "\"She may not answer directly\"",
+            "process_label": "陈机追问真相",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_010_b_1",
+                  "character_id": "char_yeqing",
+                  "content": "\"Ye Qing's smile gradually faded. The moonlight illuminated the hidden exhaustion and resolve in her eyes. She was silent for a long while before speaking softly: \"Which side am I on?\" She raised her hand, pointing to her own heart. \"This side.\" Chen Ji frowned: \"What do you mean?\" Ye Qing gave a sad smile: \"It means I never truly served the Holy Sect. The things they made me do over the years... you wouldn't want to know.\" Her voice trembled slightly. \"Chen Ji, I just want to... end all of this.\"",
+                  "emotion": "决绝"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_010_b_2",
+                  "content": "\"Under the moonlight, tears glistened in Ye Qing's eyes. At this moment, she was no longer the terrifying Demonic Path Holy Woman, just a woman toyed with by fate. Chen Ji suddenly remembered the prophecy in the Tianji Record—some chess pieces, from the very beginning, were unwilling to be manipulated.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清真相解锁"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清袒露心声",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0838_010_c",
+            "text": "\"Change the subject to discuss business\"",
+            "description": "\"\"Alright, I'll remember this favor. Regarding tomorrow's deployment, we need to discuss the details.\" Pragmatically discuss tactics\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May miss the chance to understand Ye Qing\"",
+            "visible_reward": "\"Gain more tactical intelligence\"",
+            "risk_hint": "\"Ye Qing may think you're too cold-blooded\"",
+            "process_label": "陈机讨论战术",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 2
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_010_c_1",
+                  "character_id": "char_yeqing",
+                  "content": "\"Ye Qing was slightly stunned, then showed an appreciative expression. \"Indeed you. Never hesitating at critical moments.\" She composed herself and returned to that calm demeanor. \"Third watch of midnight, the Holy Sect's main force and beast horde will feint from the east. The real killing blow is at the Back Mountain Forbidden Grounds—there's a secret passage there that only the Holy Woman knows about.\" Su Qingyao frowned: \"Secret passage?\" Ye Qing nodded: \"It leads to the sect's spiritual vein. If the enemy seizes it, Tianqing Sect will collapse from within.\"",
+                  "emotion": "冷静"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_010_c_2",
+                  "content": "\"Chen Ji narrowed his eyes. The vague images in the Tianji Record suddenly became clear. So that's it—the enemy's killing blow was hidden here. He looked at Ye Qing with deeper meaning. How many more trump cards was this woman hiding?\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "获得暗道情报",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0838_011",
+        "content": "\"The moon deepened. The three sat around a blue stone at the cliff's edge, discussing tomorrow's tactics. The night wind howled, yet couldn't dispel this rare tranquility. Chen Ji listened to Su Qingyao and Ye Qing discussing the battle formation, back and forth. He suddenly felt the scene rather absurd—the Inner Disciple Senior Fellow of Tianqing Sect and the Demonic Path Holy Woman, actually sitting on the same stone bench. \"Hey, you two, stop arguing.\" He yawned. \"I've already arranged things with Han Lie. His bull-headed nature will definitely have him charging at the front tomorrow. Then we can turn their plan against them...\" As he spoke, a cunning smile curved his lips. Su Qingyao and Ye Qing exchanged a glance, both seeing a hint of helplessness in each other's eyes. This废物师弟/杂役—where was that brain of his?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0838_012",
+        "character_id": "char_suqingyao",
+        "content": "\"As the tactical discussion neared its end, Su Qingyao suddenly spoke: \"Chen Ji, how do you plan to arrange yourself tomorrow?\" She stared into his eyes. \"With your strength, you're not suited for frontal assault. Regarding the Back Mountain Forbidden Grounds... let me go.\" Chen Ji shook his head: \"No. Only I can break the formations there.\" Su Qingyao grew anxious: \"But your Heavenly Fate Value—\"\"Enough.\" Chen Ji interrupted her, his tone unusually serious. \"Su Qingyao, I know what you're worried about. But some things, I must do personally.\" He stood up, the moonlight stretching his shadow long. \"You only need to do one thing—live, and wait for me to come back.\"",
+        "emotion": "认真"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0838_013",
+        "character_id": "char_yeqing",
+        "content": "\"Ye Qing watched this scene quietly, a complex smile appearing on her lips. She suddenly spoke: \"Chen Ji, have you ever thought about—\" She paused. \"If you die tomorrow, how many people will grieve?\" This question was too abrupt. Chen Ji froze for a moment. Su Qingyao also glanced over, not understanding why Ye Qing suddenly asked this. Ye Qing stood up, her black dress floating in the wind. \"I've looked into your past. A servant disciple considered废物, no background, no backing, yet you've made it this far.\" She turned to face Chen Ji directly. \"How did you do it?\" Under the moonlight, her gaze burned intensely, as if trying to see through all of Chen Ji's disguises.\"",
+        "emotion": "追问"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0838_014",
+        "prompt": "\"Ye Qing's question touched the secret deep in Chen Ji's heart. How should he answer?\"",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0838_014_a",
+            "text": "\"Muddle through with jokes\"",
+            "description": "\"\"By having a thick face, you know? My face here, even a sword can't cut through.\" Pointing at his own face with a grin\"",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "\"May disappoint Ye Qing\"",
+            "visible_reward": "\"Keep the secret, maintain a relaxed atmosphere\"",
+            "risk_hint": "\"Ye Qing will see through your evasion\"",
+            "process_label": "陈机玩笑回应",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_014_a_1",
+                  "character_id": "char_yeqing",
+                  "content": "\"Ye Qing stared at him for a long while, then suddenly laughed. \"Chen Ji ah Chen Ji, you really are...\" She shook her head, didn't finish, but the disappointment in her eyes was unmistakable. Su Qingyao furrowed her brows, about to speak, but Chen Ji raised his hand to stop her. \"Some things,\" Chen Ji's voice suddenly dropped low, \"I'll tell you after the battle. The前提 is—we all survive.\"",
+                  "emotion": "认真"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_014_a_2",
+                  "content": "\"Hearing this, a flash of light appeared in Ye Qing's eyes. She didn't press further, just nodded lightly. Under the moonlight, the three people's breaths gradually synchronized, as if reaching some wordless understanding.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机承诺战后坦白",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0838_014_b",
+            "text": "\"Reveal part of the heart\"",
+            "description": "\"\"Because I have no retreat. A废物 who doesn't fight desperately can only wait for death.\" Calmly acknowledge one's situation\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Expose a vulnerable side\"",
+            "visible_reward": "\"Draw closer to Ye Qing\"",
+            "risk_hint": "\"May make them worry about you even more\"",
+            "process_label": "陈机袒露心声",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "依赖",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_014_b_1",
+                  "character_id": "char_yeqing",
+                  "content": "\"Ye Qing fell silent. Something in her eyes shifted—from initial inquiry, to understanding, finally becoming a touch of tenderness. \"No retreat, eh...\" she murmured. \"I understand.\" Su Qingyao also fell silent. Under the moonlight, her eyes were slightly red. So this seemingly shameless man carried such weight on his shoulders.\"",
+                  "emotion": "动容"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_014_b_2",
+                  "content": "\"Chen Ji watched the rare emotional displays on both women's faces, suddenly feeling somewhat uncomfortable. He cleared his throat and changed the subject: \"Alright, alright, making it sound like we're parting forever. It's just a battle. Look at you all, faces like bitter gourds. Anyone who didn't know would think I was going to my death.\" He clapped his hands. \"Come on, say something happy—do you think that bull Han Lie will get beat up what way tomorrow?\" This one sentence successfully pulled the atmosphere back from melancholy.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清理解陈机",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0838_014_c",
+            "text": "\"Act mysterious and profound\"",
+            "description": "\"\"Because behind me stand people I must protect.\" Glance at Su Qingyao, then at Ye Qing\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "\"May make the situation even more ambiguous\"",
+            "visible_reward": "\"Both women will remember these words\"",
+            "risk_hint": "\"Tomorrow they may be distracted from worrying about you\"",
+            "process_label": "陈机故作高深",
+            "stat_effects": [],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0838_result_014_c_1",
+                  "character_id": "char_yeqing",
+                  "content": "\"Ye Qing and Su Qingyao both froze. Under the moonlight, Chen Ji's gaze was unprecedentedly serious, not a hint of jest in it. Ye Qing recovered first, a playful smile curling at her lips: \"Oh? People you must protect? I wonder which beauty is so fortunate?\" Su Qingyao's face flushed red, but she didn't refute, only turning her head away, pretending to watch the distant clouds.\"",
+                  "emotion": "促狭"
+                }
+              },
+              {
+                "text": {
+                  "id": "天机录_ch0838_result_014_c_2",
+                  "content": "\"Chen Ji watched the two women's completely different reactions, laughing inwardly. He didn't name anyone, just meaningfully glanced at Su Qingyao, then at Ye Qing. That one look made both women heartbeats accelerate. \"Alright, it's getting late.\" He stood up and stretched. \"We have a battle tomorrow, everyone go rest. Especially Senior Fellow Su, don't stay up and get dark circles—you won't look good fighting.\" Su Qingyao glared at him but didn't argue. Ye Qing covered her mouth and laughed, eyes full of teasing. Under the moonlight, the laughter of three people echoed by the cliff, dispelling the gloom before battle.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "陈机暗示守护她们",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0838_015",
+        "content": "\"It was deep night. Su Qingyao and Ye Qing departed one after another. Chen Ji stood alone at the cliff's edge, gazing at the brightening horizon in the east, his fingers unconsciously rubbing the key in his sleeve. Tomorrow... no, today, was the decisive battle. Images from the Tianji Record flashed through his mind—blood and fire, sword light and thunder, countless figures battling in chaos. And in the deepest part, he glimpsed a vague silhouette, beckoning to him. \"Chen Nian...\" he whispered, eyes flickering with tenderness and guilt. Little sister, wait for me. After this battle, no matter what, I will find you. The night wind lifted his thin robes, yet couldn't dispel the flames burning in his eyes. Behind him, the bell of Tianqing Sect rang悠悠—a new day had begun.\""
+      }
+    }
+  ]
+}

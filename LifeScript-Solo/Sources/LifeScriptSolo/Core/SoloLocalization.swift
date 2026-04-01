@@ -157,6 +157,15 @@ struct SoloTranslationAvailability: Identifiable, Equatable, Sendable {
 }
 
 enum SoloTranslationCatalog {
+    private struct TranslationManifest: Decodable {
+        let languages: [String: TranslationLanguageManifest]
+    }
+
+    private struct TranslationLanguageManifest: Decodable {
+        let chapterCount: Int
+        let files: [String]
+    }
+
     static func chapterAvailability(
         for bookId: String,
         totalChapterCount: Int,
@@ -173,7 +182,11 @@ enum SoloTranslationCatalog {
                 )
             }
 
-            let chapterCount = translatedChapterURLs(language: language, bundle: bundle).count
+            let chapterCount = translatedChapterURLs(
+                language: language,
+                bookId: bookId,
+                bundle: bundle
+            ).count
             return SoloTranslationAvailability(
                 language: language,
                 translatedChapterCount: chapterCount,
@@ -184,8 +197,17 @@ enum SoloTranslationCatalog {
 
     static func translatedChapterURLs(
         language: SoloAppLanguage,
+        bookId: String? = nil,
         bundle: Bundle = .main
     ) -> [String: URL] {
+        if let manifestURLs = translatedChapterURLsFromManifest(
+            language: language,
+            bookId: bookId,
+            bundle: bundle
+        ) {
+            return manifestURLs
+        }
+
         guard let resourceRoot = bundle.resourceURL else {
             return [:]
         }
@@ -202,9 +224,14 @@ enum SoloTranslationCatalog {
         var result: [String: URL] = [:]
         let compiledPrefix = "translation_\(language.rawValue)_"
         let legacyLanguageFolder = language.translationFolderName
+        let scopedDirectoryPath = translationScopedDirectoryPath(for: bookId, bundle: bundle)
 
         while let fileURL = enumerator.nextObject() as? URL {
             guard fileURL.pathExtension == "json" else { continue }
+            if let scopedDirectoryPath,
+               !fileURL.path.hasPrefix(scopedDirectoryPath) {
+                continue
+            }
 
             let filename = fileURL.lastPathComponent
 
@@ -225,5 +252,73 @@ enum SoloTranslationCatalog {
         }
 
         return result
+    }
+
+    private static func translatedChapterURLsFromManifest(
+        language: SoloAppLanguage,
+        bookId: String?,
+        bundle: Bundle
+    ) -> [String: URL]? {
+        guard let manifestURL = translationManifestURL(for: bookId, bundle: bundle) else {
+            return nil
+        }
+
+        guard let data = try? Data(contentsOf: manifestURL, options: .mappedIfSafe),
+              let manifest = try? JSONDecoder().decode(TranslationManifest.self, from: data),
+              let languageEntry = manifest.languages[language.rawValue] else {
+            return nil
+        }
+
+        let directoryURL = manifestURL.deletingLastPathComponent()
+        let compiledPrefix = "translation_\(language.rawValue)_"
+        var result: [String: URL] = [:]
+
+        for filename in languageEntry.files {
+            guard filename.hasPrefix(compiledPrefix) else { continue }
+
+            let fileURL = directoryURL.appendingPathComponent(filename)
+            guard FileManager.default.fileExists(atPath: fileURL.path) else { continue }
+
+            let chapterFilename = String(filename.dropFirst(compiledPrefix.count))
+            result[chapterFilename] = fileURL
+        }
+
+        return result
+    }
+
+    private static func translationManifestURL(
+        for bookId: String?,
+        bundle: Bundle
+    ) -> URL? {
+        if let scopedDirectoryPath = translationScopedDirectoryPath(for: bookId, bundle: bundle) {
+            let scopedDirectoryURL = URL(fileURLWithPath: scopedDirectoryPath, isDirectory: true)
+            let manifestURL = scopedDirectoryURL.appendingPathComponent("translation_manifest.json")
+            if FileManager.default.fileExists(atPath: manifestURL.path) {
+                return manifestURL
+            }
+        }
+
+        return bundle.url(forResource: "translation_manifest", withExtension: "json")
+    }
+
+    private static func translationScopedDirectoryPath(
+        for bookId: String?,
+        bundle: Bundle
+    ) -> String? {
+        guard let bookId else { return nil }
+
+        if let manifestURL = bundle.url(forResource: "manifest_\(bookId)", withExtension: "json") {
+            return manifestURL.deletingLastPathComponent().path
+        }
+
+        if let bookURL = bundle.url(forResource: "book_\(bookId)", withExtension: "json") {
+            return bookURL.deletingLastPathComponent().path
+        }
+
+        if let chaptersURL = bundle.url(forResource: "chapters_\(bookId)", withExtension: "json") {
+            return chaptersURL.deletingLastPathComponent().path
+        }
+
+        return nil
     }
 }

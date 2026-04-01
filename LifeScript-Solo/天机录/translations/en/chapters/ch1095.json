@@ -1,0 +1,557 @@
+{
+  "id": "天机录_ch1095",
+  "book_id": "天机录",
+  "number": 1095,
+  "title": "Observer Ascends the Throne · Finale",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ji ascended alone to the highest point of the imperial capital, the golden characters on the final page of the Tianji Record slowly revealed themselves—that was the beginning of the twenty-five day countdown, and also the prelude to the ultimate showdown between the Observer and him.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch1095_001",
+        "content": "Dawn had barely broken, yet the smoke over the Golden Phoenix Hall had not yet dispersed.\n\nChen Ji stood before the white jade steps, gazing at the ruined capital, yet his heart was unexpectedly calm. On the streets, the common people had already begun clearing the rubble on their own, rebuilding their homes. Some wept, some laughed, but most silently carried broken bricks and shattered tiles.\n\nWas this the new order he sought? The Observer's rules—survival of the fittest, heaven's way without mercy. Yet what he witnessed now was the glimmer of hope in the eyes of those who had survived the catastrophe.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_002",
+        "content": "\"My lord, Han Lie of the Tianqing Sect requests an audience.\" The attendant's voice broke Chen Ji's contemplation.\n\nA faint smile curved Chen Ji's lips. Han Lie—that Xuanwu Sect's number one genius who had been repeatedly crushed by him yet grew stronger with each defeat—had finally come seeking an audience at this moment. He was curious to see what arguments this \"sworn enemy\" had prepared this time.\n\n\"Let him in.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_003",
+        "character_id": "char_hanlie",
+        "content": "Han Lie strode into the hall, his killing aura still undispersed, yet his gaze held an unexpected complexity. He knelt on one knee, voice hoarse: \"Observer, Chen Ji—no, what should I call you? Master of the Tianji Record?\"\n\nChen Ji looked down at this former nemesis with composure: \"What do you want to say?\"\n\nHan Lie abruptly raised his head, humiliation and defiance flickering in his eyes: \"Twenty-five years! I've chased you for twenty-five years! Every time I thought I could finally crush you, you—you always managed a stunning reversal!\"",
+        "emotion": "激动"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_004",
+        "content": "Han Lie's words struck Chen Ji's heart like a heavy hammer. Twenty-five years of pursuit—back when he was just a talented youth who knew only brute force, Han Lie had now grown into an existence capable of standing against the Observer.\n\n\"You came today to end this?\" Chen Ji asked.\n\nHan Lie shook his head, rising to his feet, and a trace of a smile actually appeared in his eyes: \"No, I've come to tell you something—Lin Yuan has joined forces with the remnants of the dimensional invaders. The Heavenly Fate Guardians Alliance is officially a rebel army from this day forward.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_005",
+        "prompt": "Han Lie's intelligence is crucial—how will you respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_005a",
+            "text": "Accept Han Lie's alliance proposal",
+            "description": "A former nemesis now proactively extends an olive branch—perhaps this is the perfect opportunity to turn an enemy into an ally.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Requires sacrificing some independence",
+            "visible_reward": "Gain the combat power support of Xuanwu Sect's number one genius",
+            "risk_hint": "Han Lie's loyalty remains doubtful—he may turn against you at a critical moment",
+            "process_label": "握手言和",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 500
+              },
+              {
+                "stat": "名望",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005a_1",
+                  "content": "A flash of surprise flickered in Han Lie's eyes, then transformed into determination. He extended his calloused palm, clasping Chen Ji's hand. \"Excellent! From this day forward, Han Lie's fist shall be your backing!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "hanlie_alliance"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "韩烈正式结盟",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_005b",
+            "text": "Maintain distance, only accept intelligence",
+            "description": "A sworn enemy is still a sworn enemy—twenty-five years of grudges cannot be erased with a single statement.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Lose a potential powerful ally",
+            "visible_reward": "Maintain strategic autonomy, free from entanglement",
+            "risk_hint": "Will face more enemies alone in the final battle",
+            "process_label": "冷淡应对",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 150
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005b_1",
+                  "content": "Chen Ji smiled faintly: \"I accept your intelligence. As for the alliance—\" He paused, \"Prove your sincerity in the final battle first.\" Han Lie's expression turned grim, yet he cupped his fists and departed.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_005c",
+            "text": "Probe Han Lie's true intentions",
+            "description": "A sworn enemy suddenly showing goodwill must have hidden motives. Let's feel out the details first.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May provoke Han Lie",
+            "visible_reward": "Obtain deeper intelligence",
+            "risk_hint": "May miss the alliance window",
+            "process_label": "言语交锋",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 100
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_005c_1",
+                  "content": "Chen Ji's eyes narrowed slightly: \"Han Lie, we've fought each other for twenty-five years. When did you learn to extend olive branches? Speak—what do you really want?\" Han Lie's expression shifted, then burst into laughter: \"As expected, I can't hide it from you! I want to know—where is Chen Nian?\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_006",
+        "content": "The name Chen Nian was like a blade, piercing directly into the softest corner of Chen Ji's heart. His pupils contracted sharply, yet his expression remained calm: \"Why are you asking about her?\"\n\nHan Lie drew a deep breath, complex emotions surfacing in his eyes: \"Because Lin Yuan has captured her. She is—the Heavenly Fate Lock-Key.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_007",
+        "character_id": "char_chenji",
+        "content": "Chen Ji abruptly rose, a surge of boundless fury erupting from his body. The air in the Golden Phoenix Hall instantly froze, and cracks began spreading across the floor.\n\n\"Say it again.\" His voice was dangerously low.\n\nHan Lie showed no retreat: \"Lin Yuan has collaborated with the dimensional invaders. They need an 'anchor' to stabilize the dimensional rift. Chen Nian—your sister—is that anchor.\"",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_008",
+        "content": "Chen Ji drew a deep breath, forcibly suppressing the churning emotions. Remembering grudges without acting rashly—this was his greatest strength. Lin Yuan, you dare touch Chen Nian—this debt, he would remember.\n\n\"Twenty-five years.\" Chen Ji suddenly spoke, his voice regaining calm, \"You chased me for twenty-five years, never once winning. But this time—\" He raised his head, a fierce gleam flashing in his eyes, \"I won't disappoint you either.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_009",
+        "content": "Han Lie was momentarily stunned, then revealed a relieved smile. He turned to leave, pausing at the door: \"Chen Ji, victory or defeat between us will be decided in this final battle.\"\n\nThe palace doors closed, Chen Ji stood alone in the vast hall. Mo Xiansheng's voice rang in his mind: \"Master, Chen Nian is indeed in Lin Yuan's hands. Are you—prepared?\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_010",
+        "prompt": "Chen Nian has been captured by Lin Yuan—you must make a decision.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_010a",
+            "text": "Rescue Chen Nian immediately",
+            "description": "His sister was his greatest weakness—even if it disrupted all his plans, he had to save her.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Disrupt all strategic deployments",
+            "visible_reward": "Rescue Chen Nian and resolve the heartache",
+            "risk_hint": "May fall right into Lin Yuan's trap",
+            "process_label": "立即行动",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -200
+              },
+              {
+                "stat": "天命值",
+                "delta": -50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010a_1",
+                  "content": "Chen Ji abruptly rose, determination flashing in his eyes: \"Prepare the horses! I will go personally—\" Before he finished, a familiar voice came from outside the hall: \"Wait!\" Su Qingyao, in her martial attire, strode in.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "chenian_rescue"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定营救陈念",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_010b",
+            "text": "Proceed with the original battle plan",
+            "description": "The greater good comes first. The prerequisite for rescuing Chen Nian is first ending this chaotic world.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Chen Nian will endure more suffering",
+            "visible_reward": "Maintain strategic advantage and lay foundations for final victory",
+            "risk_hint": "May be used by Lin Yuan as leverage",
+            "process_label": "隐忍布局",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 300
+              },
+              {
+                "stat": "黑化值",
+                "delta": 30
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": -20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010b_1",
+                  "content": "Chen Ji slowly sat back down, his fists clenching tightly. \"Tell Lin Yuan,\" his voice was ice-cold, \"In twenty-five days, I will personally go to retrieve her. At that time, I will make him regret today's choice.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "strategic_calm"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "选择大局为重",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_010c",
+            "text": "Pursue both lines simultaneously, secretly maneuver",
+            "description": "Neither abandon Chen Nian nor disrupt the battle plan. Use the Tianji Record to find an optimal solution for both.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Consume a large amount of Heavenly Fate",
+            "visible_reward": "Find the optimal solution for rescue and the final battle",
+            "risk_hint": "Excessive Heavenly Fate consumption may affect the final battle",
+            "process_label": "消耗天命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -35
+              },
+              {
+                "stat": "谋略",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_010c_1",
+                  "content": "Chen Ji closed his eyes, the Tianji Record fragments unfurling in his mind. A blurry image emerged—Chen Nian imprisoned somewhere, yet that place was in the same mountain range as the final battlefield.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "dual_line"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 50
+            },
+            "memory_label": "天机录预见陈念位置",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_011",
+        "character_id": "char_suqingyao",
+        "content": "Su Qingyao walked before Chen Ji, handing over a secret letter: \"I've investigated Lin Yuan's movements. He has occupied the main peak of the Heavenly Secrets Mountains, which is precisely where the dimensional rift is most unstable.\"\n\nHer gaze fell on Chen Ji's face, her voice unusually gentle: \"Whatever decision you make, I will stand by your side.\"",
+        "emotion": "坚定"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_012",
+        "content": "Chen Ji took the secret letter, his gaze complex as he looked at Su Qingyao. This Inner Disciple Senior Fellow of the Tianqing Sect, who had countless times attempted to uncover his true identity, had now become his most steadfast guardian.\n\nShared Fate—that special buff unlocked at full affection—was now faintly radiating a warm glow.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_013",
+        "character_id": "char_yeqing",
+        "content": "Outside the hall, a black figure descended gracefully. Ye Qing, the Demonic Path Saintess, in black robes that accentuated her graceful curves, yet her expression carried unprecedented solemnity.\n\n\"Observer,\" her voice was cold and clear, \"The remnants of the dimensional invaders have completely merged with Lin Yuan. They are activating the ancient altar deep in the Heavenly Secrets Mountains—this is a scheme to swallow the entire capital into the dimension.\"",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_014",
+        "content": "Chen Ji closed his eyes in contemplation. All the clues, at this moment, connected together. The Turtle Shell artifact pointing to the Heavenly Secrets Mountains, the benefactor's method for bloodline awakening, the bond between twin fates—all pointed to the same location.\n\nHe abruptly opened his eyes: \"Transmit my order—in three days, the court assembly will announce the final battle date. I want the entire world to know in what manner the Observer's new order will descend.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch1095_015",
+        "prompt": "The final battle date is set—you must choose how to face these last twenty-five days.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch1095_015a",
+            "text": "Embrace Destiny",
+            "description": "As the Observer, face this fateful battle with dignity and honor.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Bear all the pressure alone",
+            "visible_reward": "Greatly increase reputation, win the hearts of the people",
+            "risk_hint": "May expose more weaknesses",
+            "process_label": "正面迎敌",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 500
+              },
+              {
+                "stat": "魅力",
+                "delta": 200
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 30
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015a_1",
+                  "content": "Su Qingyao and Ye Qing exchanged glances, then simultaneously cupped their fists: \"Willing to follow the Observer through fire and water!\" Chen Ji looked at these two women of vastly different personalities, and warmth surged in his heart.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "embrace_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "决定正面迎接命运",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_015b",
+            "text": "Rewrite Destiny",
+            "description": "Utilize the power of the Tianji Record to foresee all variables, grasp destiny in your own hands.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume a large amount of Heavenly Fate",
+            "visible_reward": "Gain crucial intelligence, seize battlefield initiative",
+            "risk_hint": "Too low Heavenly Fate may cause inaccurate foresight",
+            "process_label": "天机推演",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -60
+              },
+              {
+                "stat": "谋略",
+                "delta": 400
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015b_1",
+                  "content": "The Tianji Record fragments materialized in Chen Ji's palm, golden characters writhing like living things. Image after image flooded his mind—Lin Yuan's traps, the dimensional rift's weaknesses, and... the location of Chen Nian.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "rewrite_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 80
+            },
+            "memory_label": "天机录展现关键情报",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch1095_015c",
+            "text": "Transcend Destiny",
+            "description": "Walk a path no predecessors have taken, create a brand new path belonging to the Observer—yourself.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Need to bear unknown risks",
+            "visible_reward": "May gain breakthrough power",
+            "risk_hint": "Breaking conventions means possible loss of control",
+            "process_label": "突破极限",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 600
+              },
+              {
+                "stat": "黑化值",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 40
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch1095_result_015c_1",
+                  "content": "Mo Xiansheng's remnant soul trembled within Chen Ji: \"Excellent! Master, you have finally taken this step! I will unseal the final page of the complete Tianji Record for you in advance!\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "transcend_fate"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "天机录完整版解封",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_016",
+        "content": "Three days later, the court assembly.\n\nIn the Golden Phoenix Hall, Chen Ji, in the Observer's black-gold robe, sat high beside the dragon throne. Below, all officials stood solemnly, their gazes carrying both reverence and anticipation.\n\n\"Esteemed ministers,\" Chen Ji's voice echoed through the hall, \"In twenty-five days, I will engage in the final decisive battle with Lin Yuan at the Heavenly Secrets Mountains. This battle concerns the survival of all under heaven, the fate of the new order.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch1095_017",
+        "character_id": "char_chenji",
+        "content": "Chen Ji slowly rose, his black-gold robe billowing in the morning wind. His gaze swept across the ministers, his voice loud and firm: \"In twenty-five days, I will engage in the final decisive battle with Lin Yuan at the Heavenly Secrets Mountains. This battle—concerns the very survival of all under heaven!\"\n\nAs his words fell, silence reigned in the Golden Phoenix Hall. Then, all officials cried out in unison: \"Long live the Observer! Long live the new order!\"",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_018",
+        "content": "The court assembly concluded. Chen Ji ascended alone to the highest point of the imperial capital—the Star-Picking Tower. This hundred-zhang tower was a symbol of the Observer's power, as well as the apex of the entire capital.\n\nHe stood atop the tower, gazing down at this city that had survived catastrophe. On the streets below, signs of life were returning; in the distant mountains, an unsealed dimensional rift hung like a狰狞的伤疤，悬浮在天际。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_019",
+        "content": "风吹拂过陈机的发梢，带来一丝凉意。他摊开手掌，天机录残页浮现其上。金色文字如活物般蠕动，一行从未见过的句子缓缓显现：\n\n「第1095章 倒计时25日——观测者，你准备好了吗？」\n\n陈机嘴角勾起一抹淡笑：\"准备好？从我得到你的那一刻起，我就一直在准备。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch1095_020",
+        "content": "天机录仿佛感应到了他的意志，金色文字骤然变化，化作一行新的预言：\n\n「命运的棋盘已至终局。观测者陈机，你将以何种姿态，书写最后一页？」\n\n陈机仰头望向那道狰狞的维度裂缝，眼中闪过一抹决然。二十五日——他已经等得太久了。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

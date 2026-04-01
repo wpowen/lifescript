@@ -1,0 +1,442 @@
+{
+  "id": "天机录_ch0523",
+  "book_id": "天机录",
+  "number": 523,
+  "title": "\"Shadows of the Imperial City\"",
+  "is_paid": true,
+  "next_chapter_hook": "The hoarse voice rang out in the darkness. Chen Ji turned sharply—could it be him? The old man who had handed him the Tianji Record Fragment amidst the ruins now stood behind him, his eyes showing no surprise at all, as if everything had long been within his expectations.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0523_001",
+        "content": "Morning mist draped over the imperial city's majestic walls like a thin silk veil. Chen Ji had changed into a plain cyan silk robe, with a distinctive jade pendant from the Donghai Merchant Association hanging from his waist—giving him the perfect appearance of a wealthy merchant. He stood beside a small tea stall on the official road, lifting a coarse porcelain bowl for a sip, yet his gaze remained fixed on the slowly opening city gate. The gate guards were performing routine inspections, but Chen Ji noticed that every incense stick's time, several inconspicuous cargo carts would slip through the side gate—a privileged passage requiring no inspection. A faint smile tugged at the corner of his mouth. This lead was a piece he had positioned three days prior.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0523_002",
+        "character_id": "char_chenji",
+        "content": "\"Boss, is business good in the imperial city?\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_003",
+        "content": "The tea stall owner was a swarthy middle-aged man. Hearing this, he lowered his voice: \"Esteemed guest, if you're doing legitimate business, the Merchant Street in the western district is quite lively. But if you want to do some...\" He glanced left and right, holding up three fingers in a gesture. \"You'll need to find another way.\" Chen Ji's heart stirred, yet his expression remained unchanged as he tossed him a few more copper coins. \"Brother, you're well-informed. I wonder where this 'way' might be?\" The owner's eyes flickered as he pointed toward an unremarkable alley on the left side of the city gate: \"The Drunken Immortal Tavern. Look for someone called Liu Mazi—he specializes in this kind of business. But sir, let me give you a word of advice—the imperial city waters run deep. Don't drown.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_004",
+        "content": "Chen Ji set down the coarse porcelain bowl, leaving a few pieces of silver, and walked slowly into the deep alley. Both sides were lined with towering courtyard walls, the roof tiles gleaming coldly in the morning light. After about a hundred steps, a vermillion lacquered gate appeared before him. Above the doorframe hung a weathered plaque with the characters \"Drunken Immortal Tavern,\" the calligraphy already blurred by time. A lean young attendant leaned against the doorframe, dozing.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0523_005",
+        "character_id": "char_chenji",
+        "content": "\"I'm looking for Liu Mazi.\"",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_006",
+        "content": "The attendant didn't even lift an eyelid at his words, merely extending one hand with five fingers spread. Chen Ji drew a silver ingot from his sleeve and placed it lightly in his palm. The attendant weighed it, then grinned: \"Please, honored guest, come inside. Master Liu is receiving guests in the back courtyard at the moment. Please wait a moment.\" With that, he led Chen Ji through the main hall and around to a side room in the back courtyard.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_007",
+        "content": "The side room was small but elegantly appointed. A splash-ink landscape painting hung on the wall, and a faint sandalwood incense burned on the table. Chen Ji sat in the mahogany chair, his gaze casually sweeping the surroundings—the vase in the corner harbored tiny holes, surveillance mechanisms; the carvings on the armrest appeared exquisite but could be pressed to summon hidden guards. He filed away each detail while maintaining his leisurely tea-drinking facade. After about half a tea's time, footsteps sounded outside, and a middle-aged man with a pockmarked face pushed through the door, his triangular eyes gleaming with sharp intelligence.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0523_008",
+        "character_id": "char_chenji",
+        "content": "\"Master Liu, your great name precedes you. I冒昧登门 today to inquire about someone.\"",
+        "emotion": "从容"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0523_009",
+        "character_id": "char_chenji",
+        "content": "\"Oh? I wonder who the honored guest wishes to inquire about. In this imperial city, there is no one that I, Liu Mazi, cannot find.\"",
+        "emotion": "傲慢"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_010",
+        "content": "Chen Ji drew a portrait from his sleeve and slid it across. The painting depicted a young woman, her features delicate yet carrying an stubborn edge—it was Chen Nian. Liu Mazi took the portrait, studying it with narrowed eyes, yet the smile on his face gradually froze: \"This... Where did the honored guest obtain this portrait?\" Chen Ji noticed his fingers tightening around the painting and understood three parts of the situation: \"What do you mean, Master Liu? Have you seen her?\" Liu Mazi fell silent for a moment before pushing the portrait back: \"I have. Three days ago, people from the Holy Sect escorted a batch of 'goods' into the city, and this young lady was among them.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0523_choice01",
+        "prompt": "Chen Ji realized the situation was far more complex than anticipated. He needed to make a choice: bribe Liu Mazi with a large sum for more information, use influence to force his cooperation, or take an alternative route to gather intelligence through other channels?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "重金收买",
+            "text": "\"Bribe with Gold\"",
+            "description": "\"Use ten times the price to stun Liu Mazi, making him speak without reservation\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Wealth -2000",
+            "visible_reward": "Obtain key intelligence",
+            "risk_hint": "May expose the extent of Chen Ji's attachment to Chen Nian",
+            "process_label": "以利诱之",
+            "stat_effects": [
+              {
+                "stat": "财富",
+                "delta": -2000
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_重金收买_01",
+                  "content": "Chen Ji drew a stack of banknotes from his chest, a thick wad worth at least ten thousand taels of silver, and placed it lightly on the table. Liu Mazi gazed at that stack, his Adam's apple bobbing, a flash of greed crossing his face, but it was soon replaced by some hesitation. Chen Ji observed this, and without changing expression, produced a token—the Supreme VIP token of the Donghai Merchant Association. Liu Mazi's expression finally shifted.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "借势施压",
+            "text": "\"Exert Pressure with Influence\"",
+            "description": "\"Reveal the Donghai Merchant Association background, use connections within imperial city commerce to force Liu Mazi's cooperation\"",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Reputation -100",
+            "visible_reward": "Obtain more insider information",
+            "risk_hint": "May attract the attention of certain forces within the imperial city",
+            "process_label": "以势压人",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": -100
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_借势施压_01",
+                  "content": "Chen Ji placed the token lightly on the table. Liu Mazi's face instantly drained of color. He knew full well this token's weight in the imperial city's commercial circles—its holder was equivalent to half the owner of the Donghai Merchant Association. He thudded to his knees: \"So a great person has graced us with their presence! Your servant had eyes but failed to recognize Mount Tai! The young lady in the portrait...\" He lowered his voice. \"Your servant indeed knows some information.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "暗藏玄机",
+            "text": "\"Hide True Intentions\"",
+            "description": "\"Do not reveal true intentions, merely use seeking a lost relative as an excuse, gather intelligence through indirect methods\"",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Heavenly Fate -5",
+            "visible_reward": "Safely obtain intelligence without leaving evidence",
+            "risk_hint": "May consume Heavenly Fate",
+            "process_label": "以智取胜",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_暗藏玄机_01",
+                  "content": "Chen Ji's eyes slightly narrowed. The Tianji Record rippled with faint light in his Mental Sea. A blurry vision emerged—Liu Mazi would be silenced for leaking secrets in three days, and his family was currently under house arrest somewhere. He withdrew his gaze, his expression unchanged: \"To be honest, this is my sister who wandered away from home. I humbly ask Master Liu for his assistance.\" Liu Mazi sighed: \"I won't hide it from you, honored guest. This young lady is currently imprisoned in the 'Dragon Vein Forbidden Grounds' in the northwestern corner of the imperial city. The guards there are numerous and the defenses tight—no ordinary person could get in...\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0523_011",
+        "character_id": "char_chenji",
+        "content": "\"The Dragon Vein Forbidden Grounds? What kind of place is that?\"",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_012",
+        "content": "Liu Mazi glanced left and right, confirming no one was eavesdropping, then lowered his voice: \"That is a forbidden land that has existed since the founding of the imperial city. Legend says it connects to the dynasty's Dragon Vein. For a hundred years, the imperial family has stationed heavy troops there. Ordinary people approaching face the crime of death.\" He paused. \"But recent circumstances have changed. Crown Prince殿下 and Princess Anning are locked in an irreconcilable struggle over the succession, and both factions are vying for the Holy Sect's support. And this batch of 'goods'... is precisely the bargaining chip they both desperately want to control.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_013",
+        "content": "Chen Ji's fingers tapped lightly on the table. His heart was already clear as crystal. The Crown Prince and Princess's struggle, the Holy Sect's involvement, clues about his father and sister—everything pointed toward this grand game played out within the imperial city. He raised his eyes, his gaze平静得如同古井深潭: \"Master Liu, do you know the defense layout of this forbidden grounds?\" Liu Mazi's face showed difficulty: \"This... your servant is merely a minor figure in the underground circles. How could I access such classified intelligence? However...\" He hesitated. \"Your servant has heard of something—the imperial family will hold the Heaven-Worshipping Ceremony in three days. At that time, most of the guards at the Dragon Vein Forbidden Grounds will be抽调. This might be the only opportunity.\"",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0523_choice02",
+        "prompt": "The Heaven-Worshipping Ceremony three days later was the only opportunity, but Chen Ji still had three days to utilize. He needed to decide: use these three days to deeply investigate the imperial city's power structure and seek other allies; or go directly to scout the surroundings of the Dragon Vein Forbidden Grounds and formulate a rescue plan?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "广结人脉",
+            "text": "\"Build Connections\"",
+            "description": "\"Use his merchant identity to befriend various factions within the imperial city over three days, seeking more allies for the rescue operation\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Time",
+            "visible_reward": "Obtain covert support from imperial city forces",
+            "risk_hint": "May expose one's whereabouts",
+            "process_label": "布局三天",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 100
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_广结人脉_01",
+                  "content": "Chen Ji rose to take his leave. Liu Mazi personally saw him to the door. Just as Chen Ji was about to step over the threshold, Liu Mazi suddenly said in a low voice: \"Honored guest, let your servant add one more word—recently, a mysterious figure arrived in the imperial city. It's said he has an old grudge against the Holy Sect. If you could make contact with him, perhaps there will be unexpected gains.\" With that, he retreated inside and closed the great gate. Chen Ji stood where he was, his gaze profound. Would this \"mysterious figure\" be his ally, or another variable?",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "实地踩点",
+            "text": "\"Scout the Location\"",
+            "description": "\"Immediately go to the outskirts of the Dragon Vein Forbidden Grounds, conduct on-site reconnaissance of terrain and guard distribution\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Combat Power -50",
+            "visible_reward": "Obtain first-hand intelligence on the forbidden grounds",
+            "risk_hint": "May alert the enemy",
+            "process_label": "以身犯险",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": -50
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_实地踩点_01",
+                  "content": "After parting with Liu Mazi, Chen Ji did not rush to leave the imperial city. He detoured to the western district, rented an unremarkable courtyard, changed into rough cloth garments like an ordinary commoner, and headed northwest. The Dragon Vein Forbidden Grounds lay in the deepest corner of the imperial city, surrounded by towering blue stone walls covered in dense arrays of runes—prohibitory talismans preventing cultivators from peeking. Chen Ji watched from afar, silently memorizing shift changes and patrol routes. Suddenly, a familiar aura flickered past behind him. His pupils contracted—that was the distinctive fluctuation of the Tianji Record Fragment. Someone was secretly observing him, and not just one person.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_014",
+        "content": "Chen Ji continued forward without changing expression, yet his pace secretly quickened by three degrees. He turned into a narrow alley, flanked by tall residences. The sun was blocked by eaves, making the alley dim. The presence behind him followed at intervals, yet never revealed its true form. Chen Ji's lips curved slightly as he drew a copper coin from his sleeve and flicked it toward the shadows behind him. The coin flew with a sharp whooshing sound, yet was deflected three feet away by an invisible force. \"Indeed, there's an expert.\" Chen Ji murmured without stopping, walking straight toward the alley's depths.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_015",
+        "content": "The alley ended at a dead wall, its surface weathered and old, seemingly unremarkable. Yet Chen Ji walked directly to the wall's base and lightly knocked three times on the third brick. After a moment, the wall silently sank inward, revealing a deep tunnel. He entered without hesitation. By the time pursuers arrived, only a wall restored to its original state met their eyes. Inside the tunnel was pitch black, yet Chen Ji walked as if in his own backyard. He knew—this tunnel was part of the \"Dark Web\" of the imperial city's underground forces: an intelligence network hidden beneath the imperial city, woven together by countless outlaws and various factions. When he had initially laid out his web in the imperial city, he had planted a piece here.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0523_016",
+        "character_id": "char_chenji",
+        "content": "At the tunnel's end, a stone chamber blazed with light. Chen Ji pushed open the door and entered. Inside sat a withered old man, his flower-white beard falling to his chest, yet his eyes blazed with startling brightness. Upon seeing Chen Ji, surprise flickered in his eyes before he rose and bowed deeply: \"Master, why have you come personally? This old servant thought...\" Chen Ji raised a hand to interrupt: \"Brother An, circumstances have changed. On the day of the Heaven-Worshipping Ceremony three days from now, I need you to do something.\" The old man's expression grew solemn: \"Please command, Master.\" Chen Ji drew a blueprint from his chest. It depicted precisely the defense layout of the Dragon Vein Forbidden Grounds—though how he had obtained it remained a mystery.",
+        "emotion": "沉稳"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_017",
+        "content": "Chen Ji spread out the blueprint, his fingertip landing on a mark at the eastern side of the forbidden grounds: \"Here there is an underground waterway—an abandoned drainage channel from a century ago. If we're to infiltrate during the Heaven-Worshipping Ceremony, this is the best breakthrough point.\" Brother An took the blueprint and studied it carefully before frowning: \"Master, although the guards here are few, they are close to the Dragon Vein's core. Once the formations are triggered...\" Chen Ji smiled faintly: \"Therefore I need you to help me with something else.\" He drew a small jade bottle from his sleeve. The bottle's body was translucent as water, yet a faint trace of blood-red glowed within. \"This is the 'Dragon Vein Blood' I obtained from a Holy Sect disciple. Just one drop can briefly shield the Dragon Vein formation's perception.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0523_choice03",
+        "prompt": "The rescue plan had taken initial shape, yet Chen Ji still felt a thread of unease in his heart—Chen Nian was imprisoned deep within the Dragon Vein's core. What awaited him there? Should he take the opportunity to deeply investigate the imperial city's internal power structure, or proceed as planned, focusing on rescuing his sister?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "深入调查",
+            "text": "\"Deep Investigation\"",
+            "description": "\"Use Brother An's underground network to deeply investigate the truth behind the Crown Prince and Princess's struggle\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Time -2 days",
+            "visible_reward": "May discover greater secrets",
+            "risk_hint": "May miss the optimal rescue timing",
+            "process_label": "步步为营",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_深入调查_01",
+                  "content": "Brother An received his orders and departed. Chen Ji sat alone in the stone chamber contemplating for a moment, then ultimately made his decision. He took out the Tianji Record Fragment and silently activated it—a thread of Heavenly Fate quietly dissipated, and a blurry vision of three days later appeared before his eyes. The chaotic Heaven-Worshipping Ceremony, lax guards at the forbidden grounds, and... a figure shrouded in black mist standing at the Dragon Vein's core, as if waiting for something. His eyes snapped open. An ill premonition surged in his heart: \"Chen Nian... What do they intend to do with you?\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "专注营救",
+            "text": "\"Focus on Rescue\"",
+            "description": "\"Proceed as planned, do not alert the enemy, ensure the rescue operation three days later proceeds without a hitch\"",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Abandon intelligence opportunity",
+            "visible_reward": "Increase rescue success rate",
+            "risk_hint": "May miss important information",
+            "process_label": "稳中求胜",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0523_result_专注营救_01",
+                  "content": "Chen Ji put away the Tianji Record Fragment and closed his eyes, pressing down all those tangled thoughts. What mattered most now was saving a life—everything else... could wait until his sister was safe. He turned and left the stone chamber, returning to the surface along the tunnel. Dusk had fallen deep. The imperial city's hustle and bustle gradually quieted. Only the distant imperial palace's outline loomed indistinctly in the night—like a dormant beast. He took a deep breath, his form flashing, and vanished into the night. The three-day deadline would arrive in an instant. And when that moment came, he would personally tear apart the net of fate.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_018",
+        "content": "Night如同浓墨, Chen Ji stood atop the highest tavern in the imperial city, overlooking the vast city below. Ten thousand household lights dimmed one by one. Only the direction of the imperial palace remained brightly lit—the Heaven-Worshipping Ceremony preparations there were in full swing. His gaze passed through layers of rooftops, falling on that area in the northwest corner shrouded in dense Spiritual Energy—the Dragon Vein Forbidden Grounds. Suddenly, an extremely faint fluctuation came from that direction. Chen Ji's pupils contracted. That was the Tianji Record Fragment's fluctuation, yet it was entirely different from his own aura. Someone... was using a force similar to the Tianji Record in that place? No, that wasn't it—that was more like the Tianji Record resonating.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_019",
+        "content": "Chen Ji's breathing quickened slightly. He recalled what Mo Xiansheng had once said: \"The Tianji Record is not a unique copy. Over the long years, it was divided into countless fragments, scattered across the world.\" Could it be... that Chen Nian's imprisonment in the Dragon Vein Forbidden Grounds was not merely because she was a \"Heavenly Fate Lock Key,\" but also because she carried another piece of the Tianji Record Fragment? This thought stirred an indescribable emotion in his heart—concern, anger, or perhaps some hidden anticipation? He took a deep breath, forcing himself to remain calm. Whatever the truth, on the day of the Heaven-Worshipping Ceremony three days hence, he must step into that forbidden grounds.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0523_020",
+        "content": "Just as he turned to leave, a hoarse voice suddenly sounded behind him: \"Young friend, we meet again.\" Chen Ji turned sharply. An elderly man with white hair had somehow appeared on the tavern's rooftop. The old man's frame was hunched, wearing a faded blue cloth robe, his face withered like tree bark, yet his eyes were deep as an abyss, as if holding endless years and secrets. Chen Ji's pupils contracted sharply—this voice, this figure, he had seen in countless late-night dreams. That was the guide who had led him to obtain the Tianji Record Fragment, and also one of the greatest mysteries in his fate. \"Senior...\" Chen Ji's voice was slightly tense. \"What brings you here?\"",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

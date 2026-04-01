@@ -1,0 +1,472 @@
+{
+  "id": "天机录_ch0958",
+  "book_id": "天机录",
+  "number": 958,
+  "title": "A Choice of Fate",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ji stepped onto that most perilous path, Mo Xiansheng, dormant within the depths of the Tianji Record, suddenly opened his eyes—this choice would determine the life and death of all.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0958_001",
+        "content": "The Realm of Heavenly Secrets, vast and dark as ink. Chen Ji stood above the void, beneath his feet flowed rivers of stars, above his head stretched endless chaos. He could sense his divine consciousness extending in some inconceivable way, covering every corner of the continent. Countless threads of destiny wove into a web before his eyes, and he stood at the center of this web, gazing down upon the joys and sorrows of all living beings. However, just as he tried to peer into the more distant future, an icy gaze suddenly pierced through the void, locking directly onto him. Cang Yutian's smile seemed to still linger somewhere in the real world, but the true chess player had already revealed himself.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_002",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Interesting.\" The voice came not from any direction but appeared directly within Chen Ji's consciousness, like the low hum of heaven's operation. \"The new vessel of the Tianji Record actually dares to enter here. Do you know that the Realm of Heavenly Secrets is originally a prison?\"",
+        "emotion": "审视"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_003",
+        "content": "Chen Ji's divine consciousness slightly condensed. He sensed the surrounding void slowly contracting, those beautiful rivers of stars turning into cages imprisoning him. Was this the power of the Heavenly Eye? Merely a confrontation of consciousness produced such intense pressure. But he did not retreat; instead, he proactively faced that gaze, his voice unusually calm: \"A prison? You overestimate yourself, senior. If this place truly were a prison, why would you bother appearing to speak with me?\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_004",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Hahaha!\" A hint of amusement appeared in the Heavenly Eye's voice, but that amusement was colder than frost. \"Bold indeed. No wonder the Tianji Record chose you. However, since you've come, I'll give you a chance—choose your path. To break the局 alone, to unite with others, or to... exchange sacrifice for breaking the局?\"",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0958_005",
+        "prompt": "The three paths the Heavenly Eye cast each led to a different future. Chen Ji had to make his choice at this moment.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "独自破局",
+            "text": "Breaking the局 Alone",
+            "description": "Sever all bonds and use the complete power of the Tianji Record to oppose the Heavenly Dao alone. This path is the most dangerous but also the purest—no one will be weighed down by him.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Losing all ally support, bearing the heavenly fate backlash alone",
+            "visible_reward": "Tianji Record completeness +30%, gaining the \"Tianji独自\" passive ability",
+            "risk_hint": "Once failed, one will face eternal destruction with no possibility of comeback",
+            "process_label": "独行",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -50
+              },
+              {
+                "stat": "谋略",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_独自破局_001",
+                  "content": "Chen Ji's divine consciousness suddenly contracted, all emotional bonds severed by his own will at this moment. He felt the Tianji Record trembling, seemingly begging, but he did not look back. The shackles of fate were崩解 on his body, new power flooding into his body—this was the true power of heavenly secrets, absolute power without any human emotion mixed in.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "alone_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 100
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "联合破局",
+            "text": "Breaking the局 Together",
+            "description": "Integrate all available forces—Su Qingyao, Ye Qing, even the twin souls of destiny—into a web of alliance sufficient to oppose the Heavenly Dao.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Need to share qi fortune, and there may be traitors within the alliance",
+            "visible_reward": "Gain the \"Community of Fate\" skill, sharing Heavenly Fate consumption with allies",
+            "risk_hint": "Every weakness of the alliance could become a fatal flaw",
+            "process_label": "共谋",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_联合破局_001",
+                  "content": "Chen Ji's divine consciousness suddenly expanded, establishing connections with Su Qingyao miles away, Ye Qing, and even those two twin souls of destiny. He felt warm currents flooding into his body, that was the power of bonds, the proof of being born as a human. The Heavenly Eye was right—this path was indeed the most complex, but also the most... warm.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "union_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "联合破局路线开启",
+            "branch_route_id": null
+          },
+          {
+            "id": "牺牲破局",
+            "text": "Sacrifice to Break the局",
+            "description": "Using oneself as an offering to reshape the laws of the Heavenly Dao. This is the ultimate mission of the fate writer—to exchange generations of prophet's sacrifices for humanity's breathing room.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Losing self-awareness, the Tianji Record will select a new vessel",
+            "visible_reward": "Heavenly Dao laws reshaped, everyone gains free will",
+            "risk_hint": "The sacrificer will forever disappear from between heaven and earth",
+            "process_label": "舍身",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -200
+              },
+              {
+                "stat": "名望",
+                "delta": 50
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_牺牲破局_001",
+                  "content": "Chen Ji's divine consciousness began to burn. He saw his fate's end—not death, but complete dissipation. The Heavenly Eye's voice sounded again, this time with a trace of imperceptible respect: \"Are you willing, like the generations of fate writers before you, to die for the cause?\" Chen Ji did not answer, only revealing a meaningful smile. Die for the cause? He never intended to be a saint.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "sacrifice_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_006",
+        "content": "The Heavenly Eye's pupil slightly contracted. It seemed to sense the abnormality in Chen Ji's smile, but as an existence transcending all, it was not in a hurry to expose anything. \"Regardless of which path you choose,\" its voice was low and majestic, \"you must understand one thing—I am not your enemy. I am merely the enforcer of order, the rules themselves. And the Tianji Record in your hands has been part of the rules from the very beginning.\""
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_007",
+        "character_id": "char_chenji",
+        "content": "\"Rules?\" Chen Ji's voice carried a hint of mockery. \"If the Heavenly Dao truly is just rules, then why let Su Qingyao endure endless torment? Why make Ye Qing a puppet of the Demonic Path? Why turn my sister into the so-called 'Heavenly Fate Key'? Elder, the 'rules' you speak of are merely shackles you've crafted yourself.\"",
+        "emotion": "冷嘲"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_008",
+        "content": "The Tianji Realm shuddered violently. Chen Ji's words seemed to touch upon some forbidden taboo, the surrounding Void beginning to twist intensely, countless golden runes emerging from the chaos, forming chains that rushed toward him. But just as these chains were about to bind him, a familiar voice rang out from the depths of the Tianji Record—it was Mo Xiansheng. \"Chen Ji,\" Mo Xiansheng's voice was aged and urgent, \"the time has come to tell you the truth. The inheritance of the Fate Scribe... is not what you imagined.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_009",
+        "character_id": "char_moxiansheng",
+        "content": "\"The so-called Fate Scribe,\" Mo Xiansheng's remnant soul finally manifested within the Tianji Realm, his voice carrying infinite vicissitudes, \"never was a chess piece of the Heavenly Dao. We are the Third Extremity—an existence independent from the Heavenly Dao and all things. Our mission is not to follow destiny, but to protect all beings' right to freely choose. Every page of the Tianji Record records methods to break shackles.\"",
+        "emotion": "庄重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_010",
+        "content": "Chen Ji's pupils contracted sharply. Mo Xiansheng's words completely overturned his understanding of the Tianji Record. So from the very beginning, the Tianji Record was not a tool of the Heavenly Dao, but a weapon against it? Then what about the sacrifices of the Fate Scribes throughout the ages? Just as he doubted, the Heavenly Eye suddenly burst into laughter, that laughter carrying a hint of mockery: \"Protect all beings? Ridiculous! Your so-called 'protection' is merely a struggle to delay the inevitable. A universe without order can only be eternal chaos.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0958_011",
+        "prompt": "Mo Xiansheng revealed the truth of the Fate Scribe, while the Heavenly Eye presented the opposition between order and chaos. Chen Ji must make his final stance in the Tianji Realm.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "质疑墨先生",
+            "text": "Question Mo Xiansheng",
+            "description": "Mo Xiansheng's words came at too convenient a time. He needs more evidence before he can believe this so-called \"Third Extremity\" truth. The truth may be far more complex than it appears.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May lose Mo Xiansheng's trust and guidance",
+            "visible_reward": "Obtain the 'Eye of Insight' skill, with a chance to see through all lies",
+            "risk_hint": "If Mo Xiansheng speaks the truth, may miss key information",
+            "process_label": "求真",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0958_result_质疑墨先生_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji did not immediately take a stance. He looked at Mo Xiansheng, his gaze carrying scrutiny: \"Sir, you didn't say this earlier, nor later, but precisely at this moment. Forgive my directness—were you helping me, or using me to complete your unfinished mission?\" Mo Xiansheng fell silent for a moment, then smiled bitterly: \"You really are like him. Back then, Chen Xuan asked me the same question.\"",
+                  "emotion": "审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "doubt_mo"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "接受第三极",
+            "text": "Accept the Third Extremity",
+            "description": "Choose to believe Mo Xiansheng, become a true guardian of the Third Extremity, and confront the Heavenly Eye directly. This is the consciousness a Fate Scribe should possess.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Formally become an enemy of the Heavenly Dao, and will endure the Heavenly Dao's full suppression",
+            "visible_reward": "Unlock the Tianji Record's hidden skill 'Fate Weaving', extending the three-hour foresight to three days",
+            "risk_hint": "The Heavenly Dao will not sit by as the Third Extremity rises",
+            "process_label": "觉醒",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 30
+              },
+              {
+                "stat": "谋略",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_接受第三极_001",
+                  "content": "Chen Ji took a deep breath and made his decision. \"I choose to believe.\" His voice echoed through the Tianji Realm, \"Not because your words are flawless, but because—I refuse to be anyone's chess piece. Neither the Heavenly Dao, nor the so-called Third Extremity.\" His gaze swept across Mo Xiansheng and the Heavenly Eye, \"From now on, I only walk my own path.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "third_pole"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "觉醒为第三极守护者",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_012",
+        "content": "The Heavenly Eye's pupil suddenly contracted into a thin line. It never imagined that a mere mortal would dare to say \"only walk my own path\" before it. \"Bold!\" Its voice turned ice-cold, \"Since you insist on being an enemy of order, don't blame me...\" Before it could finish, the entire Tianji Realm suddenly shook violently. Two figures stepped out from the Void—precisely the Twin Fates—Cang Yutian and Cang Yudi.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0958_013",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Enough.\" Cang Yutian's voice was calm and majestic, completely different from the man who had worn that meaningful smile before, \"Heavenly Eye, you have overstepped. The Tianji Realm is the trial ground of the Fate Scribe, not a place for you to display authority.\" Cang Yudi followed closely behind, forming seals with both hands, a golden barrier unfolding before Chen Ji: \"Chen Ji is our candidate, you have no right to interfere with his choice.\"",
+        "emotion": "威严"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_014",
+        "content": "Chen Ji froze for a moment. So that smile on Cang Yutian's face earlier was not the satisfaction of a schemer, but the tacit understanding between comrades? He looked at the Twin Fates, then at Mo Xiansheng, finally his gaze fell upon the Heavenly Eye. At this moment, he suddenly understood the true meaning of the so-called \"chess game\"—from the very beginning, he was not fighting alone. The Fate Scribes of past generations, the Twin Fates, even Mo Xiansheng—all had been paving the way for him in their own ways.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0958_015",
+        "prompt": "The Twin Fates intervened, and suddenly Chen Ji had many supporters behind him. At this critical moment, he needs to decide his stance.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "与命运双生子联手",
+            "text": "Join hands with the Twin Fates",
+            "description": "Accept the Twin Fates' support, and together resist the Heavenly Eye's suppression. This is the path of least resistance, but will also be constrained by the Twin Fates' forces.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "Must bear the karma of the Twin Fates' previous machinations",
+            "visible_reward": "Obtain the 'Destined Twins' buff, sharing partial abilities with Cang Yutian and Cang Yudi",
+            "risk_hint": "The Destined Twins have their own agenda and may not be entirely trustworthy",
+            "process_label": "借势",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 40
+              },
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0958_result_与命运双生子联手_001",
+                  "content": "Chen Ji did not hesitate, nodding slightly to the Destined Twins: 'Since the two seniors are willing to lend a hand, Chen Ji is deeply grateful.' Cang Yutian showed an approving smile: 'No need for thanks. We have waited for this day for a very long time.' At this moment, the auras of the three converged and fused, forming a faint opposition against the Heavenly Celestial Eye.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "alliance_with_fate_twins"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与命运双生子结盟",
+            "branch_route_id": null
+          },
+          {
+            "id": "坚持独立",
+            "text": "Persist alone",
+            "description": "Thank you for the kindness of the Destined Twins, but Chen Ji insists on facing Heaven's Mandate alone. He wants to prove he has the ability to break the shackles, without needing anyone's protection.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Will bear the full pressure of the Heavenly Celestial Eye alone",
+            "visible_reward": "Tianji Record completion rate +20% extra, unlocking the hidden title 'Heaven Defier'",
+            "risk_hint": "The suppression of the Heavenly Celestial Eye will be several times stronger than before",
+            "process_label": "逆天",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              },
+              {
+                "stat": "战力",
+                "delta": 25
+              },
+              {
+                "stat": "谋略",
+                "delta": 15
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "敬畏",
+                "delta": 25
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0958_result_坚持独立_001",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji shook his head, cupping his hands to the Destined Twins: 'Chen Ji appreciates the two seniors' kindness. But this is my own battle.' His gaze fixed on the Heavenly Celestial Eye, a cold smile curling at the corner of his mouth, 'I want to see exactly how much weight this high-and-mighty Heavenly Will carries.' Cang Yutian and Cang Yudi exchanged glances, both seeing surprise and admiration in each other's eyes.",
+                  "emotion": "坚毅"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "independent_path"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "独立挑战天道之眼",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_016",
+        "content": "The Heavenly Celestial Eye let out a cold hum. Its patience had finally run out. 'Since you insist on seeking death, I shall grant your wish.' It slowly closed its eyes, and the entire Tianji Realm began to collapse. Endless chaos forces surged from all directions, forming destructive vortices. Chen Ji felt his Heavenly Fate draining frantically, every second like burning his very life. But he did not retreat; instead, he moved forward actively—the Tianji Record in his hand burst forth with dazzling radiance, the final legacy left by the destined scribes of generations past.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_017",
+        "content": "At this critical moment, countless images flashed through Chen Ji's mind—Su Qingyao's figure waiting for him at the Tianqing Sect, Ye Qing's lonely struggling gaze in the Demonic Holy Sect, Chen Nian's blurred yet warm smile... these people, those people, everyone he wanted to protect, were all intertwined with his destiny at this moment. He understood. The so-called breaking of the situation was never a one-person battle. He took a deep breath, raising the Tianji Record high: 'Everyone—the time has come to break the shackles of destiny!'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_018",
+        "content": "The Tianji Record erupted with unprecedented radiance, that light piercing through chaos, through the Void, through the shackles of destiny, shining toward the entire cultivation world. In that moment, countless people simultaneously lifted their heads—Su Qingyao abruptly opened her eyes during Inner Sect cultivation, Ye Qing paused mid-step in the depths of the Demonic Path, even Ling Yuan and Han Lie gazed thoughtfully toward a certain direction. The Heavenly Celestial Eye let out a roar, sensing the threat, sensing that power about to break the order. But it was already too late. Chen Ji's fate decision had been completed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_019",
+        "content": "The light gradually faded, and the Tianji Realm stabilized once more. Chen Ji found himself still standing in place, but everything around him had changed. The Heavenly Celestial Eye still existed, but its domineering pressure had diminished considerably. The Destined Twins, Mo Xiansheng, and even the residual shadows of the destined scribes throughout history emerging from the Void, all nodded slightly toward him. Chen Ji knew this was only the beginning. The Heavenly Celestial Eye would not take this lying down, and a greater storm was brewing. But for now, he could finally breathe a temporary sigh of relief—because he had taken the most crucial step.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0958_020",
+        "content": "When Chen Ji exited the Tianji Realm and opened his eyes once more, he found himself still standing on the Rear Mountain of the Tianqing Sect. Su Qingyao was anxiously waiting nearby, and when she saw him awaken, a flash of joy appeared in her eyes. Chen Ji offered her a gentle smile: 'Qingyao, I'm back.' Simple four words, yet they made Su Qingyao's eyes turn slightly red. She did not know what had happened in the Tianji Realm, but she could sense—Chen Ji had changed. Not just in strength, but something deeper. The gears of destiny had begun to turn, and the era belonging to Chen Ji was about to arrive.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

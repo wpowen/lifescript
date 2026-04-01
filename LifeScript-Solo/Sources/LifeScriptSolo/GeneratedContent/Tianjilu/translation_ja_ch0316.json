@@ -1,0 +1,381 @@
+{
+  "id": "天机录_ch0316",
+  "book_id": "天机录",
+  "number": 316,
+  "title": "秘境の変",
+  "is_paid": true,
+  "next_chapter_hook": "封印の奥底からの低く唸る声と天機録が共鳴した瞬間、陳機の眉間に鋭い痛みが走った——それは天命値の暴走的な流出への警告だった。何か、起こすべきではなかったものがゆっくりと目を覚まそうとしている。彼は知っていた。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0316_001",
+        "content": "秘境の核心エリア、天地の霊気が濃縮されて実質化しそうなほど。陳機が率いる探査チームは既に三日にわたって深く潜り込んでいた。一路で遭遇した禁制の機構は百を超えず、いずれも彼の怪異的な直感で次々と回避した。背後の天青宗弟子たちがこの「廃物師兄」への畏敬の念は盲目的な域に達していた——彼らには知らなかった、この廃物大宗師兄の脳内では次々と棋譜が高速計算されていたのだ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_002",
+        "character_id": "char_yeqing",
+        "content": "这里的灵气浓度不对劲,\"夜清的声音在陈机识海中响起，带着一丝凝重,\"比圣宗典籍中记载的上古秘境要浓三成不止。有人在后面补充灵气。\"",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_003",
+        "content": "陳機の足は止まらなかったが、その眼差しは微微かに細められた。天機録残頁が識海の中で微かに熱を帯びている——これは予兆機能が発動した信号であり、単なる警告ではなく某种......召喚のようなものだった。彼は声を発せず、ただ足を微かに緩め、队伍を自分と三丈の距離を保たせた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_004",
+        "character_id": "char_chenji",
+        "content": "夜清姑娘，你在圣宗可曾听过\"天命锁钥\"四字？\"陈机的声音极低，几乎只有夜清能通过神识捕捉。这是他第一次主动询问对方关于陈念的线索。\"",
+        "emotion": "压抑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_005",
+        "content": "夜清はしばらく沈黙し、それから言った：「聖宗には確かに関連する記録があるが、すべて最高機密......なぜ知っている——」言い終わる前に、前方のトンネルの尽头に猛烈な金色の光が灯った。封印だ！陳機の瞳孔は縮み、その金色の光に宿る威圧は通常の禁制を遥かに超え、上古の洪荒の蒼莽の息吹を帯びていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_006",
+        "content": "散开！\"陈机暴喝一声，灵力瞬间在身前凝成屏障。就在众人惊慌后退之际，他注意到一个细节——那道金光并非被触发，而是......被人为引导着朝他们方向汇聚。有人，在背后操控这一切。\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0316_007",
+        "prompt": "封印出现异动，金光汇聚而来，背后显然有人操控。队伍已经暴露在危险之中——你如何应对这突如其来的危机？",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "cautious",
+            "text": "谨慎探查",
+            "description": "立即后撤，利用天机录预见三时辰内变化，寻找安全路线重新规划",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗天命值5点",
+            "visible_reward": "获得完整情报，掌握敌人布局",
+            "risk_hint": "可能错失先机",
+            "process_label": "以天机录窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_cautious_001",
+                  "content": "陳機の眸光が閃いた。天機録残頁が俄かに回転した。五息の間、彼は見た——封印は单一の禁制ではなく、三重に嵌套された阵法で構成され、最も外側の層は既に改竄されていた。彼らの当前位置は、丁度第三重の阵法の発動点にある。「左へ三丈退け。そこには阵法の間隙がある。」彼の声は冷静を絵に描いたように怖かった。",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 5
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "aggressive",
+            "text": "冒险深入",
+            "description": "将计就计，顺着金光引导的方向强行突进，直取封印核心",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "可能触发未知陷阱",
+            "visible_reward": "抢先占据核心区域，掌握主动权",
+            "risk_hint": "正面冲突风险极高",
+            "process_label": "以其人之道还治其人之身",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_aggressive_001",
+                  "content": "陳機の口元に冷淡な笑みが浮かんだ。「既然有人想请我们入瓮，那便遂了他的愿。」话音未落，他身形骤然暴射而出，直直冲向金光汇聚之处，速度快得连夜清都来不及阻止。身后弟子惊呼出声，却见陈机单手结印，竟将那道金光强行牵引，朝自己掌心汇聚。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_008",
+        "character_id": "char_yeqing",
+        "content": "你疯了！那是上古封印，不是——\"夜清的声音戛然而止，因为她感受到了陈机掌心中那股力量的性质。那不是单纯的灵力，而是......魔道功法！而且是极其纯正的魔道功法，与她所修如出一辙。",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_009",
+        "content": "陳機の答えはなかった。ただその金色の光を强行に压缩して一团にまとめ、背後の弟子に投げつけた。「受けろ。」振り返らずに言った。背後から弟子たちの惊呼が聞こえたが、その金色の光の团が半空で俄かに散开し、無数の細い糸となって各人の眉心に没入した——竟是某种護身禁制。陳機はあっと言う間に、阵法改造を完成させた。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_010",
+        "content": "这时，封印深处传来一阵低沉的嗡鸣。那不是机关运转的声音，而是某种生物的呼吸——极其古老，极其庞大，每一次吐息都让空间微微震颤。夜清的脸色瞬间煞白：\"这是......不可能！封印里怎么会——\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0316_011",
+        "prompt": "封印中的远古存在正在苏醒，同时你还感应到了一股熟悉的气息——魔道特有的气息。这绝非偶然，是谁在背后布局？",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "analyze",
+            "text": "冷静分析",
+            "description": "先摸清局势，让夜清确认魔道气息来源",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "消耗时间",
+            "visible_reward": "确认幕后黑手身份",
+            "risk_hint": "可能错失撤退时机",
+            "process_label": "顺藤摸瓜",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0316_result_analyze_001",
+                  "character_id": "char_yeqing",
+                  "content": "夜清は双眼を閉じ、神識を全力に向け延伸した。三息後、彼女は猛然と目を開け、その目には信じられない色が満ちていた：「この気配......聖宗の長老レベルだ！而且不止一人，至少有三位！他们用魔道迷雾遮掩了气息，若非我对这套功法极为熟悉，根本察觉不到。」",
+                  "emotion": "惊骇"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "confront",
+            "text": "主动出击",
+            "description": "不废话，直接冲着魔道气息来源出手",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "暴露实力",
+            "visible_reward": "先发制人，打乱对方节奏",
+            "risk_hint": "对方人数优势",
+            "process_label": "以其人之道",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 3
+              },
+              {
+                "stat": "名望",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_confront_001",
+                  "content": "陳機に迷いはなかった。掌心の霊力が俄かに凝聚し、一道の無形剣気となって左側の岩壁に向かって斬り込んだ。「出てこい。」彼の声は冷淡で霜のようだった。次の瞬間、岩壁が砕け散り、三つの黑影が悲惨な様子で退出した。首位の者の顔は鉄のように青かった——彼は自分の魔道迷雾が区区の天青宗雑役に見破られるとは思っていなかった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_012",
+        "content": "与此同时，封印中的低鸣愈发清晰。那声音仿佛来自九幽深渊，带着令人灵魂颤栗的威压。陈机感到胸口一阵灼热——天机录残页正在疯狂震颤，识海中浮现出模糊的画面：一只遮天巨眼，正从封印深处缓缓睁开。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_013",
+        "character_id": "char_chenji",
+        "content": "夜清，\"陈机的声音压得极低，\"这秘境是你们圣宗开启的？\"他的目光没有看向夜清，而是死死盯着那道金光涌来的方向。他在试探——如果夜清知情，反应会出卖她。",
+        "emotion": "冷厉"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0316_014",
+        "character_id": "char_yeqing",
+        "content": "夜清は首を振り，神色は珍しく真面目だった：「聖宗はこの秘境を探しているのは確かだが、来る前に它是从未开启过。这次异变......是有人故意触发的。」彼女は言い顿了顿、声を落として続けた、「而且那三股气息,不是来找我们的——他们是来唤醒封印中那东西的。」",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_015",
+        "content": "陳機の心の中で冷笑が浮かんだ。封印の物を起こす？随分と大きな策だ。三人の聖宗長老クラスの人物が、身分暴露の危険を冒して天青宗秘境に潜り込み、ただ一匹の上古の存在を唤醒するため？这里面牵扯的利益，远比他想象的要大。夜清が積極的に合作を申し出たのも、墙角に追い詰められたからだ。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0316_016",
+        "prompt": "局势已经明朗——有人在唤醒封印中的远古存在，而你需要做出选择：是阻止这一切，还是......趁乱谋取更大的利益？",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "stop",
+            "text": "阻止异变",
+            "description": "与夜清联手压制封印异动，保住秘境不被破坏",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "消耗大量灵力",
+            "visible_reward": "获得夜清完全信任，揭开圣宗部分阴谋",
+            "risk_hint": "可能与三位长老正面冲突",
+            "process_label": "逆天改命",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0316_result_stop_001",
+                  "content": "陳機が深く息を吸い、両手で複雑な法印を結んだ。「協力が必要だ。」夜清に言った、「あなたの魔道迷雾が我的気配を遮掩できる、私は十息の時間を稼ぐ必要がある，再次稳固封印阵法。」夜清は深く看了他一眼，点头。下一瞬、漆黑如墨の霧気が彼女の体内から湧き出し、陳機を完全に包んだ。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清第一次完全信任陈机的判断",
+            "branch_route_id": null
+          },
+          {
+            "id": "exploit",
+            "text": "趁机渔利",
+            "description": "让他们唤醒那东西，自己则在混乱中夺取封印核心的控制权",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "背负巨大因果",
+            "visible_reward": "获得封印核心控制权，实力大涨",
+            "risk_hint": "可能被远古存在盯上",
+            "process_label": "浑水摸鱼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 12
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0316_result_exploit_001",
+                  "character_id": "char_yeqing",
+                  "content": "陳機の口元に意味深长な弧度が浮かんだ。「让他们斗。」他的声音带着一丝冰冷，「那东西既然要出来，总得有人付出代价。三位长老の命，正好用来献祭。」夜清瞳孔骤缩，看向陈机的目光中多了一丝复杂的忌惮。この男は、彼女が想像していたよりもさらに......残忍だった。",
+                  "emotion": "震惊"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清首次见识到陈机的真实面目",
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0316_017",
+        "content": "就在此时，封印深处传来一声沉闷的低鸣。那声音不再是隐约的呼吸，而是清晰的......呼唤。陈机感到眉心一阵剧痛，天机录残页仿佛被某种力量牵引，正在疯狂震颤。他知道，有什么东西正在注视着这里，注视着他。而那股注视中蕴含的恶意，让他的灵魂都在颤抖。",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

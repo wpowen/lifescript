@@ -1,0 +1,451 @@
+{
+  "id": "天机录_ch0351",
+  "book_id": "天机录",
+  "number": 351,
+  "title": "The Price of Shackles",
+  "is_paid": true,
+  "next_chapter_hook": "Chen Ji decided to use the mission mechanism for reverse operations, actively searching for clues to break his shackles—he wanted to find his own place on the chessboard woven by Heavenly Dao.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0351_001",
+        "content": "The Heavenly Dao pressure from that jet-black rift felt like a materialized death sentence. Chen Ji felt every bone in his body creaking. The Transformed God realm pressure—this was absolutely beyond his current ability to resist. Mo Xiansheng's remnant soul on the first page of the Tianji Record trembled violently, his voice fragmenting: \"It has come... three hundred years earlier than I calculated...\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_002",
+        "content": "Chen Ji didn't panic. He slowly raised his head, gazing directly into those profound black eyes that seemed capable of piercing through all things, his voice surprisingly calm: \"So, the Eye of Heavenly Dao has finally decided to speak with me?\" At that moment, he even smiled, a cold and sardonic smile, \"I thought you would continue hiding behind the scenes, watching me slave away for you like all the other fools until death.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_003",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"You know more than you realize.\" The Eye of Heavenly Dao's voice didn't come from the rift but rang directly in Chen Ji's Mental Sea, like thunder rolling across the heavens, \"But knowing too much has never been a good thing.\"",
+        "emotion": "威压"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_004",
+        "content": "The agony in his Mental Sea drew a pained grunt from Chen Ji, blood seeping from his seven apertures. Yet he stood resolute, wiping the crimson from his lips, and declared coldly: \"Since you've revealed yourself, it means you have a task for me. Speak then, what mission?\" His tone resembled a mundane business transaction, as if the crushing weight hadn't just been pressed upon himself.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_005",
+        "character_id": "char_tiandaozhiyan",
+        "content": "\"Western Wasteland Ruins, the second page of the Tianji Record fragment.\" The Eye of Heavenly Dao intoned emotionlessly. \"Complete it, and you shall acquire the third ability. Refuse...\" Those profound black eyes narrowed slightly, \"You should understand the consequences of refusal.\"",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_006",
+        "content": "Chen Ji sensed the omnipresent threat of death. The Eye of Heavenly Dao needed no further explanation, as the overwhelming force unmistakably communicated: refuse the task, and he would perish within a quarter of an hour. He had once believed himself a master strategist, but now truly comprehended the essence of absolute authority.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_007",
+        "content": "\"I'll go.\" Chen Ji declared the two words succinctly. The gaze of the Eye of Heavenly Dao receded, the rift sealing gradually. Yet before vanishing, that voice concluded: \"Excellent. Remember, each time you use the Tianji Record, you inch closer to the end.\" Chen Ji detected the underlying mockery.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_008",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's remnant soul materialized in the void, his expression grave beyond measure: \"Master, you should not have agreed so hastily. This mission's price... is likely far more terrifying than you can imagine.\"",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0351_009",
+        "prompt": "Mo Xiansheng's hesitant demeanor unsettled Chen Ji. How should he respond?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "force_truth",
+            "text": "Forcing the Truth",
+            "description": "Directly confront Mo Xiansheng, demanding he reveal all concealed information without reservation",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May shake Mo Xiansheng's trust",
+            "visible_reward": "Obtain complete intelligence",
+            "risk_hint": "Mo Xiansheng might reveal devastating truths",
+            "process_label": "逼迫师尊吐露全部秘密",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_force_truth_001",
+                  "content": "Chen Ji pivoted sharply, a fierce glint in his eyes: \"Mo Xiansheng, I address you as master out of respect for your protection until now. But from this moment, I recognize only facts—what is the price of each fragment? What is the Heavenly Dao's true intention? Cease your cryptic wordplay.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "patient_listen",
+            "text": "Patiently Listen",
+            "description": "Suppress inner fury, granting Mo Xiansheng an opportunity to narrate the sequence of events",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Waste time",
+            "visible_reward": "Comprehend the full mission scope",
+            "risk_hint": "May hear more bad news",
+            "process_label": "静心聆听师尊的解释",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_patient_listen_001",
+                  "content": "Chen Ji drew a steadying breath, forcibly suppressing his surging rage, and settled onto the meditation cushion: \"Speak. I am listening.\" His tone was terrifyingly composed, resembling someone receiving a long-anticipated death sentence."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "contact_yeqing",
+            "text": "Contact Ye Qing",
+            "description": "Immediately reach out to the Demonic Path Saint Ye Qing, leveraging her intelligence network to corroborate Mo Xiansheng's information",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Expose his location to Ye Qing",
+            "visible_reward": "Obtain external intelligence verification",
+            "risk_hint": "May owe Ye Qing a favor",
+            "process_label": "紧急联络魔道圣女",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_contact_yeqing_001",
+                  "content": "Chen Ji did not immediately respond to Mo Xiansheng. Instead, he took out the communication Jade Slip left by Ye Qing and quietly activated it. A moment later, Ye Qing's languid voice came from the slip: 'Missing me already?' Chen Ji said coldly: 'I need you to investigate something for me—the causes of death of all previous Tianji Record holders.'"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_010",
+        "content": "Three days later, West Desert Ruins. This deadly ground, called the 'Tomb of Heavenly Dao,' was perpetually shrouded in gray-black miasma, the air thick with the stench of decay and death. Legend held that during ancient times, this place had been the site of a half-step Great Being's self-detonation, where spiritual energy for a thousand li in all directions was utterly destroyed by that explosion.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_011",
+        "content": "The moment Chen Ji stepped into the ruins, the words on the Tianji Record blazed brightly. A cold directive appeared in his mind: 'Three hundred zhang northeast, thirty zhang underground, the first page fragment.' He followed the guidance, his footsteps echoing hollowly across the cracked stone ground.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_012",
+        "content": "The excavation was not difficult. When Chen Ji lifted a dust-covered jade box from underground, his fingers trembled slightly. Not from excitement, but because he already sensed something was wrong—the jade box was carved with countless tiny runes, those were... contract patterns.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_013",
+        "character_id": "char_chenji",
+        "content": "'As expected.' Chen Ji coldly laughed, forcefully opening the jade box. Inside lay a yellowed fragment, on which the additional clause was clearly written: 'The holder of this page will have their Heavenly Fate consumption doubled for each use of the Tianji Record ability.' He gripped the fragment, his knuckles white, 'What a generous 'reward' indeed.'",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_014",
+        "content": "Chen Ji did not stop. He continued deeper into the ruins following the Tianji Record's guidance. An hour later, he had already collected three fragments. And each page carried increasingly harsh compulsory clauses: the second page required the user to hide the existence of the Tianji Record from those closest to them; the third page required one year of lifespan reduction for each page unsealed.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_015",
+        "character_id": "char_chenji",
+        "content": "'Lifespan reduced by one year?' Chen Ji's voice was cold as ice, 'I've already gone from three months to two months, and now you want to reduce it another year?' He suddenly threw his head back in laughter, the sound echoing through the ruins with a hint of madness, 'Excellent! Excellent indeed! Heavenly Dao's Eye, how generous of you!'",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_016",
+        "content": "Right at that moment, the third page of the Tianji Record suddenly awakened. A powerful force surged from the fragment, manifesting as a golden chain phantom that tightly wound around Chen Ji's soul. He felt his lifespan being compressed again—three months, two months... one month and fifteen days.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_017",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's voice rang in his mind, carrying deep guilt: 'Master... this is the Tianji Record's rule. Each fragment obtained tightens the shackles further. I originally thought... thought you could break this cycle...' His voice grew softer, 'I'm sorry.'",
+        "emotion": "愧疚"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_018",
+        "character_id": "char_yeqing",
+        "content": "The moment Chen Ji left the ruins, the Jade Slip violently vibrated. Ye Qing's voice came through, her tone uncharacteristically grave: 'Chen Ji, I found the intelligence you wanted. Do you know why every previous Tianji Record holder died so quickly?' She paused, 'Because they were all completing tasks for the Heavenly Dao's Eye. Every task completed required one use of the Tianji Record, and each use... caused the Heavenly Fate to be consumed frantically.'",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_019",
+        "content": "'All previous holders died trapped in this cycle.' Ye Qing's voice carried a chill, 'They weren't killed by enemies, they were slowly drained by the Tianji Record itself... by the Heavenly Dao's Eye, bit by bit.' Chen Ji fell silent. Ye Qing continued: 'Even more terrifying, each of them was executing tasks until their final moments—as if manipulated like puppets, until the moment their Heavenly Fate was completely exhausted.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_020",
+        "content": "Chen Ji stood at the edge of the ruins, gazing at the darkening horizon in the distance. He suddenly smiled, his expression cold and derisive: 'So the Heavenly Dao's Eye isn't using me—it's raising silkworms. Using the Tianji Record's abilities to attract ambitious people, then using tasks to drive them into constant consumption until... death.' His eyes flashed with a hint of madness, 'What it needs is a tool that constantly uses its abilities, not a true master.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0351_021",
+        "character_id": "char_chenji",
+        "content": "'Then,' Chen Ji's voice was low and dangerous, 'what if I don't play by its rules? What if I... actively seek out methods to remove these shackles?' He turned to look at the Jade Slip, a cold smile curling his lips, 'The Heavenly Dao's Eye thinks it's controlling everything, but it forgot one thing—I am not one of those fools.'",
+        "emotion": "决绝"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_022",
+        "content": "Ye Qing fell silent on the other end of the Jade Slip for a moment, then laughed softly: 'Interesting. What do you plan to do?' Chen Ji did not answer. His gaze fell on the Tianji Record fragment in his hand, and in his heart, he had already begun deducing—since each fragment carried compulsory clauses, then those clauses themselves are clues. The one who makes the rules will always leave a way to break them.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0351_023",
+        "prompt": "Chen Ji realized he had fallen into a deadly trap—accepting tasks would accelerate his death, but refusing tasks would cause immediate death. How could he break this situation?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "execute_trap",
+            "text": "Execute the trap task",
+            "description": "Superficially comply with Tianji Record's guidance, secretly collect information about compulsory clauses from each fragment, seek vulnerabilities within them",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Continue consuming Heavenly Fate",
+            "visible_reward": "Obtain more fragment clues",
+            "risk_hint": "May fall into a deeper trap",
+            "process_label": "将计就计的反向操作",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 0
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_execute_trap_001",
+                  "content": "'Fine, then I'll continue being your good chess piece.' Chen Ji said in a low voice, his tone carrying cold mockery. He began carefully recording the compulsory clauses of each fragment, attempting to find patterns—since the Heavenly Dao's Eye could make rules, it must be possible to find loopholes in those rules."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "find_third_way",
+            "text": "Seek a third path",
+            "description": "Temporarily setting aside the mission, instead investigating the origin of the Tianji Record itself and the source of the shackles, searching for unknown methods to break the seal",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Time is running out, the shackle countdown continues",
+            "visible_reward": "May discover hidden clues",
+            "risk_hint": "The Heavenly Eye may punish disobedience",
+            "process_label": "主动出击寻找破局之法",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 8
+              },
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_find_third_way_001",
+                  "content": "\"I don't need to follow its script.\" A ruthless glint flashed in Chen Ji's eyes. \"Ye Qing, help me investigate someone—who was the first holder of the Tianji Record.\" Since this game was set up by the Heavenly Eye, its origin must hold the key to breaking the cycle."
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "negotiate_with_heaven",
+            "text": "Negotiate with the Heavenly Dao",
+            "description": "Directly and proactively contact the Heavenly Eye, demanding to renegotiate mission terms, probing its bottom line",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May expose his intentions",
+            "visible_reward": "May gain a breathing space",
+            "risk_hint": "The Heavenly Eye may see through his plan",
+            "process_label": "以进为退的豪赌",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": -3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0351_result_negotiate_with_heaven_001",
+                  "content": "Chen Ji took a deep breath, sinking his consciousness into the Mental Sea, facing that lofty, pitch-black profound gaze: \"I have something to say.\" The Heavenly Eye's voice carried a hint of playfulness: \"Oh? What do you want to talk about—begging for mercy, or negotiating conditions?\" Chen Ji said coldly: \"Neither. I just want to know what you're truly afraid of.\""
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_024",
+        "content": "No matter which path he chose, Chen Ji had clearly recognized one thing: he was trapped in an elaborately designed deadly game. Accepting the mission meant dying faster, refusing it meant dying even sooner. This dilemma seemed unsolvable.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_025",
+        "content": "But Chen Ji was no ordinary person. He was the meticulous Chen Ji, the one who could find a way out in the most desperate circumstances. A cold smile curved his lips—the Heavenly Eye thought it could control him with shackles and missions, but it forgot one thing: the distance between a chess piece and a chess player is sometimes just a single thought apart.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_026",
+        "content": "He slowly closed the Tianji Record, his gaze becoming deep and dangerous. A bold plan took shape in his mind—since the Heavenly Eye wanted him to constantly use his abilities, then he would. But not being driven to use them, instead using them proactively, precisely, calculating every ounce of cost. He would let the Heavenly Eye see the results it desired, while secretly dismantling this seemingly unsolvable cage step by step.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0351_027",
+        "content": "From afar, Ye Qing's Jade Talisman lit up again: \"Chen Ji, I've found something interesting. The shackles of the Tianji Record... seem to be related to a catastrophe from ancient times.\" Her voice turned low. \"Among the survivors of that catastrophe, there's a person whose name shares the same surname as yours.\" Chen Ji's heart sank heavily. Chen—this seemingly ordinary surname, what secrets could it possibly hide?",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "id": "天机录_ch0494",
+  "book_id": "天机录",
+  "number": 494,
+  "title": "The Chess Game Begins",
+  "is_paid": true,
+  "next_chapter_hook": "Just as everyone believed Chen Ji was dead, a figure clad in dragon robes deep within the imperial palace suddenly opened his eyes, murmuring to himself: 'Interesting... this Variable is more intriguing than I anticipated.' A greater storm is brewing.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0494_001",
+        "content": "A blood-red glow spread across the first page of the Tianji Record. Mo Xiansheng's fragmented form suddenly solidified somewhat, and even those invisible eyes rare expressed a trace of solemnity. 'Tianji Record completeness at seventeen percent. The convergence point of the three great sects' fortunes has appeared.' His voice was deep like an evening drum. 'Kid, are you certain you want to enter the game at this juncture? Once you become a Variable, you become a piece for the Heavenly Eye—no, a discarded piece.' Before the words finished, Chen Ji felt a sharp sting in his brow center—that was the Tianji Record sounding the alarm.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0494_002",
+        "character_id": "char_moxiansheng",
+        "content": "'A Variable entering the game will certainly trigger the Heavenly Eye's pursuit order—not to kill you, but to 'correct' you.' Mo Xiansheng's voice abruptly rose. 'Throughout history, no Variable has met a good end! Their fates have only two outcomes: being assimilated by Heaven's Way, or being completely erased! Your little bit of Heavenly Fate is nowhere near enough to squander!'",
+        "emotion": "急切"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_003",
+        "content": "Chen Ji did not respond to Mo Xiansheng's warning. Instead, he asked: 'Sir just mentioned the most crucial element—what is it?' Mo Xiansheng fell silent for a moment, his remnant soul trembling slightly, as if weighing whether he should speak. Finally, he opened his mouth, his voice carrying an emotion Chen Ji had never heard before: 'Throughout history, all Variables share one thing in common... they never knew why they died until their final moment.'",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0494_004",
+        "character_id": "char_chenji",
+        "content": "'I will not accept such an ending.' Chen Ji's voice was soft, yet carried an unshakable certainty. He lowered his gaze to the incomplete page of the Tianji Record in his palm, a faint smile curving his lips. 'Since Heaven's Way wishes to play chess, then I shall be the piece that overturns the chessboard.'",
+        "emotion": "冷静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_005",
+        "content": "At that moment, the sky suddenly darkened. An invisible pressure poured down from beyond the nine heavens. Chen Ji's Tianji Record abruptly emitted a piercing alarm. Mo Xiansheng cried out in alarm: 'It's here—the Heavenly Eye's gaze! It... it has directly locked onto you!' Chen Ji felt as though his entire body had fallen into an ice cavern—that suffocating sensation of being watched by an supreme existence, as if in the next instant, devastating power would crush him to dust.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0494_006",
+        "prompt": "The Heavenly Eye's pursuit order has descended. Chen Ji must make an immediate choice:",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0494_006_a",
+            "text": "Activate 'Tianji Veil'",
+            "description": "Consume 30 Heavenly Fate points to activate the concealment function of the Tianji Record Fragment, temporarily severing the Heavenly Eye's tracking.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Heavenly Fate -30",
+            "visible_reward": "Gain a three-hour invisible window period",
+            "risk_hint": "Heavenly Fate below 50 will trigger the Tianji Record's backlash mechanism",
+            "process_label": "天机录残页泛起幽蓝光芒，陈机气息瞬间从天道之眼的感知中消失",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -30
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0494_result_006_a_001",
+                  "content": "Chen Ji bit through his fingertip, letting drops of refined blood fall onto the Tianji Record. In an instant, the fragment burst forth with a ghostly blue radiance. His presence dispersed like dust merging into the void, completely vanishing from the Heavenly Eye's perception. That suffocating gaze swept past, yet touched only emptiness, capturing nothing. 'It worked!' Mo Xiansheng breathed a sigh of relief. 'Three hours—enough for you to set your pieces. But remember, every use of this veil reduces your fusion degree with the Tianji Record.'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机遮蔽启动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 30
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0494_006_b",
+            "text": "Declare war as a 'Variable'",
+            "description": "No hiding, no evasion—directly issue a challenge declaration against the pursuit order, using a feint to draw away attention.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Reputation -20, may expose core trump cards",
+            "visible_reward": "Force the Heavenly Eye to reassess Chen Ji's threat level, buying time for布局",
+            "risk_hint": "May attract pursuers from higher echelons",
+            "process_label": "陈机傲立于原地，冷眼看向虚空，仿佛在直视那天道之眼",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "黑化值",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_tiandaozhiyan",
+                "dimension": "敌意",
+                "delta": 30
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0494_result_006_b_001",
+                  "content": "Instead of hiding, Chen Ji stepped forward, fixing his gaze upon that虚无的注视. 'Think you can 'correct' me with a pursuit order?' His voice echoed through the void, carrying a hint of mockery. 'Then come—let me see whose chess pieces are more numerous in this heavenly game!' The gaze paused for an instant, as if reassessing this 'Variable.' A moment later, a cold hmph echoed from beyond the nine heavens. The pursuit order's pressure doubled, yet did not immediately descend. Mo Xiansheng murmured: 'It's waiting for you to make a mistake... Kid, you've gambled correctly. It dares not act directly—for now.'",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "变数宣战"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_007",
+        "content": "Just as Chen Ji stabilized the situation, a domineering aura came hurtling from the direction of Tianqing Sect. Mo Xiansheng's face changed abruptly: 'It's that old fogey Ling Yuan—no, his aura... it's changed!' Chen Ji looked up to see a streak of azure light like a sword shooting across the sky. The newcomer was precisely Tianqing Sect's former Sect Master Ling Yuan. His gaze was deeper than before, and his entire being radiated an inexplicable, bizarre aura, as though ready to devour anyone who crossed his path.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0494_008",
+        "character_id": "char_lingyuan",
+        "content": "'Chen Ji—or should I address you as 'Variable'?' Ling Yuan's voice was ice-cold, yet carried a诡异的 smile. 'This old man has waited for this day for a very long time.' His gaze swept across the Tianji Record Fragment in Chen Ji's hand, a flicker of greed flashing in his eyes. 'You think yourself a Chess Player? How laughable... On this chessboard, there have only ever been two types of pieces—useful ones, and useless ones.'",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0494_009",
+        "character_id": "char_chenji",
+        "content": "Chen Ji gazed at Ling Yuan calmly, showing no trace of fear. He even smiled, lightly and faintly: 'The old Sect Master's stance is,出乎意料, even more... ambiguous than this junior anticipated.' After a pause, he meaningfully added, 'But it doesn't matter. In this chaotic world, an enemy's enemy may not necessarily be a friend, but an enemy's enemy is certainly useful.' Ling Yuan narrowed his eyes, as if reassessing this young man anew.",
+        "emotion": "嘲讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_010",
+        "content": "As the two confronted each other, another violent aura came sweeping from another direction. The newcomer was precisely Xuanwu Sect's number one prodigy Han Lie, who was drenched in flames of battle, his killing intent soaring to the heavens. Those tiger-like eyes stared fixedly at Chen Ji, as if wanting to devour him alive. 'Waste! You think hiding behind a woman's skirts can keep you alive?' Han Lie roared. 'Today, I will teach you what a true genius is!' Mo Xiansheng murmured: 'There are pursuers from five or six other sects behind him... Kid, time is running out.'",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0494_011",
+        "prompt": "Ling Yuan's stance remains mysterious, Han Lie's killing intent surges to the heavens, pursuers approach—how will Chen Ji break this局面?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0494_011_a",
+            "text": "Provoke Ling Yuan, drive wolves to devour tigers",
+            "description": "Use words to provoke Ling Yuan into attacking Han Lie, letting the two major forces wear each other down while seizing the chaos to escape.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Must precisely control Ling Yuan's psychology",
+            "visible_reward": "Ling Yuan and Han Lie fight fiercely, Chen Ji seizes the opportunity to escape",
+            "risk_hint": "If Ling Yuan sees through the scheme, the situation will become even more dangerous",
+            "process_label": "陈机后退一步，将战场\"让\"给两位高手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0494_result_011_a_001",
+                  "content": "Chen Ji feigned a fearful retreat, yet as he passed by Ling Yuan, he whispered, \"Senior Sect Master, Han Lie pursues me ostensibly for the Xuanwu Sect, but secretly... I fear he covets the lower volume of the Qingming Art in your possession.\" Ling Yuan's eyes flickered with sharpness, but Chen Ji had already drifted backward. Enraged, Han Lie struck at Chen Ji, only to be casually blocked by Ling Yuan. \"Boy, this concerns my business with the Tianqing Sect—why does the Xuanwu Sect involve itself?\" Their auras collided instantly, a violent shockwave destroying all vegetation for several zhang around.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "驱狼吞虎成功"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0494_011_b",
+            "text": "Face Han Lie head-on",
+            "description": "Abandon pretense, crush Han Lie with genuine strength, establish a legendary reputation in a single battle to awe all heroes.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "Revealing true strength may attract even more powerful enemies",
+            "visible_reward": "Han Lie severely wounded, reputation soaring, all pursuers trembling in fear",
+            "risk_hint": "Ling Yuan may be lurking nearby, waiting for the right moment to strike",
+            "process_label": "陈机眼中精光一闪，周身气势陡然攀升",
+            "stat_effects": [
+              {
+                "stat": "战力",
+                "delta": 15
+              },
+              {
+                "stat": "名望",
+                "delta": 25
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 50
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0494_result_011_b_001",
+                  "content": "Han Lie's assault came like a raging storm, yet Chen Ji suddenly smiled—a cold, world-dominating smirk. \"Waste?\" he repeated softly. In the next instant, his figure vanished like a ghost. \"Let me show you what a true genius looks like—\" Before the words finished, Chen Ji's palm had already landed on Han Lie's chest. A seemingly gentle strike contained terrifying force enough to shatter mountains. Han Lie's protective spiritual light shattered instantly, and he flew backward like a broken kite, blood scattering across the sky. \"This... this is impossible!\" Han Lie stared wide-eyed, disbelief etched across his face.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "真实实力曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_012",
+        "content": "Han Lie lay severely wounded on the ground, and the surrounding pursuers erupted in chaos. They never imagined that this 'waste' ridiculed by the entire martial world harbored such terrifying strength. For a moment, no one dared approach. Ling Yuan's eyes flickered slightly, as if deep in thought. Just then, Chen Ji suddenly threw his head back and laughed—madness and bitter desolation intertwined in that laughter. \"Enough, enough!\" he declared loudly, \"Since you all insist on driving me to death, then today, I'll show you this 'waste's' final stand!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0494_013",
+        "character_id": "char_moxiansheng",
+        "content": "Mo Xiansheng's voice urgently rang in Chen Ji's mind: \"Boy, you're insane! Do you intend to use that—\" Chen Ji gave no response, merely concentrating all his focus. In the next moment, his body suddenly radiated blinding golden light, transforming him into a blazing sun. The scorching aura forced everyone present to retreat. \"This is...\" Ling Yuan's pupils contracted sharply, \"Life-Burning Forbidden Technique?!\"",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_014",
+        "content": "In the brilliant golden light, Chen Ji's voice was chillingly calm: \"Everyone, today I, Chen Ji, shall offer this body as a sacrifice to heaven—\" Before he finished, his body suddenly froze. The blinding golden light收敛 rapidly, and Chen Ji collapsed softly backward. At the same moment, blood-red formation runes spread from beneath him, completely engulfing his form. \"This is... a teleportation array?\" Han Lie struggled to his feet, face full of astonishment. Ling Yuan's expression turned grimly阴沉: \"He had prepared this all along—damn it, this is the 'Gold Cicada Shedding Shell' tactic!\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_015",
+        "content": "As the blood-red formation runes flickered, Chen Ji's body began to grow translucent. A faint smile curved his lips—a composed confidence of a chess master who had already calculated victory a thousand moves ahead. \"Everyone—\" his voice grew distant, yet clearly entered each person's ears, \"Parting ways today, we'll meet again in the martial world. I hope, by then, you'll still have the leisure to amuse yourselves like today.\" Ling Yuan struck out abruptly, a fierce sword energy shooting toward Chen Ji, but it only pierced through a phantom. The teleportation array exploded with a thunderous roar, and when the dust settled, Chen Ji had long vanished without a trace.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0494_016",
+        "prompt": "The fake death escape succeeded, but two choices emerge for the teleportation array's destination:",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0494_016_a",
+            "text": "Travel to the imperial capital to scheme in the shadows",
+            "description": "The imperial capital is the center of world power, a battleground for various forces, suitable for manipulating the chess game from a macro perspective.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Enter the enemy's heartland, extremely high risk",
+            "visible_reward": "Gain entry to the imperial court's political chess game, enabling access to higher-level intelligence networks",
+            "risk_hint": "The imperial capital is a dragon's pool and tiger's den, with constant risk of identity exposure",
+            "process_label": "陈机身形一闪，消失在虚空之中",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 20
+              },
+              {
+                "stat": "名望",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0494_result_016_a_001",
+                  "content": "When Chen Ji opened his eyes again, he found himself in a dilapidated temple at the edge of the imperial capital. Mo Xiansheng's voice sounded: \"Boy, you've chosen the hardest path. In the imperial capital, the eyes of the Heavenly Eye are everywhere—you could be discovered at any moment.\" Chen Ji wiped the blood from the corner of his mouth, revealing a faint smile: \"The most dangerous place is also the safest. Besides...\" He drew from his chest a golden token—the trump card he had deliberately kept when glimpsing the future through the Tianji Record, \"The intelligence I need only exists in the imperial capital.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "皇城布局启动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0494_016_b",
+            "text": "Infiltrate the Demonic Holy Sect",
+            "description": "The Demonic Holy Sect is within Ye Qing's sphere of influence; one can hide using allied forces and wait for the right moment.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Being forced to act on Demonic Path territory means being at their mercy.",
+            "visible_reward": "We can secretly contact Ye Qing to obtain intelligence from within the Demonic Path, and even get leads on the 'Heavenly Fate Key'.",
+            "risk_hint": "The internal forces of the Demonic Path are complex, and Ye Qing's situation is also far from optimistic.",
+            "process_label": "传送阵的目的地骤然改变，陈机被送往未知之地",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 15
+              },
+              {
+                "stat": "天命值",
+                "delta": -10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0494_result_016_b_001",
+                  "content": "When Chen Ji opened his eyes again, a pungent mix of blood and medicinal herbs assaulted his senses. He found himself in a dark underground palace, surrounded by eerie runes on all sides. Mo Xiansheng whispered, 'This is the forbidden land of the Demonic Holy Sect... Bold of you, boy.' Before his words faded, a familiar voice emerged from the darkness: 'Chen Ji?' Ye Qing stepped out from the shadows, rare surprise flickering across her face. 'You... you actually dared to come here?' Chen Ji smiled faintly: 'Seeking the most reliable ally at the most dangerous moment—is there a problem with that?'",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "魔道潜伏启动"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_017",
+        "content": "Meanwhile, above the ruins of the Tianqing Sect, Ling Yuan stood with hands clasped behind his back, gazing silently in the direction where Chen Ji had disappeared. Han Lie, being supported by others, wore an expression of utter不甘: 'Old Sect Master, why not pursue? That废物 can't have gone far!' Ling Yuan turned to glance at him, his turbid eyes flickering with an inexplicable glint. 'Pursue? What would that accomplish?' His voice was soft, yet carried an indescribable depth of meaning. 'This chess game... has only just begun.' With that, he swept his sleeves and departed, leaving Han Lie and the pursuing disciples standing there in stunned bewilderment.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_018",
+        "content": "News spread through the cultivation world like wildfire—Chen Ji, the废物 disciple of the Tianqing Sect, had publicly slain Han Lie, the number one genius of the Xuanwu Sect, then escaped using the life-burning forbidden technique, supposedly dying in the process. The martial world was shaken; opinions flew in every direction. Some claimed he had long since perished from the technique's backlash, his body transported to some unknown corner. Others whispered he had hidden himself within an ancient ruin, licking his wounds. There were even rumors that he was the reincarnation of some ancient great being, and that this 'death' was merely another period of dormant preparation...",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0494_019",
+        "character_id": "char_lingyuan",
+        "content": "However, while everyone was buzzing with speculation, deep within the Tianqing Sect, Ling Yuan walked alone into a secret chamber. At its center stood an ancient bronze mirror, its surface as black as ink, seeming capable of devouring all light. Ling Yuan stood before it, murmuring to himself: 'The variable has entered the game—the Tianji Record's holder... interesting.' He reached out, stroking the mirror's surface. 'I only wonder—are you the one who will break the game, or... the next chess piece to be sacrificed?' The bronze mirror suddenly rippled, and a hoarse, majestic voice emerged from within: 'Ling Yuan, how goes the task this one entrusted to you?' Ling Yuan bowed reverently, his posture so respectful it bordered on obscene: 'Reporting to my lord, everything is under control.'",
+        "emotion": "阴冷"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0494_020",
+        "content": "Let us shift perspective back to the imperial capital. Chen Ji wore rough cloth garments, his features altered beyond recognition by the Tianji Record's伪装术—a perfect disguise transforming him into an unremarkable middle-aged man. He walked through the capital's most bustling market district, gazing at the thronging crowds, his lips curving slightly upward. 'Everyone thinks I'm dead.' He murmured softly. 'Good, this is the best possible situation.' Mo Xiansheng's voice materialized: 'Boy, what's your next move?' Chen Ji offered no response, merely raising his gaze toward that magnificent palace at the capital's heart, dangerous light flickering in the depths of his eyes. 'Start from the imperial court.' He said. 'How can this world-shaking game proceed without my piece?' His figure swiftly vanished into the human tide, as if he had never existed. Yet deep within the imperial palace, a figure draped in dragon robes suddenly opened his eyes, muttering: 'Interesting... This variable is more intriguing than朕 anticipated.'",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

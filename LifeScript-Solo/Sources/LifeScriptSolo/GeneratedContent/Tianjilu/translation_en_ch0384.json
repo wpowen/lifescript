@@ -1,0 +1,427 @@
+{
+  "id": "天机录_ch0384",
+  "book_id": "天机录",
+  "number": 384,
+  "title": "Ye Qing's Secret",
+  "is_paid": true,
+  "next_chapter_hook": "After Ye Qing left, Chen Ji unfolded the Tianji Record Fragment, only to find the image of the Heavenly Fate Key even more blurred than before—Chen Nian's position seemed to be moving.",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0384_001",
+        "content": "The night wind cut like a blade. In the bamboo grove at the Tianqing Sect Back Mountain, Chen Ji stood with hands clasped behind his back. His gaze pierced through the layers of bamboo shadows, landing on the faintly visible figure in black gauze in the distance. The words of the Holy Sect Elder still echoed in his ears—'The Heavenly Fate Key is about to mature.' Chen Nian's name cut a bloody gash across his heart, only to be pressed down by an even deeper cold. Footsteps approached, and he suppressed the fleeting killing intent in his eyes, replacing it with his usual indifferent mask."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_002",
+        "character_id": "char_yeqing",
+        "content": "'You're bold, daring to summon me at such a time.' Ye Qing's voice drifted from the bamboo shadows, carrying a faint trace of demonic path mist, yet noticeably less fierce than before. She advanced three feet, then stopped, the moonlight carving out her tense jawline. 'I have something to tell you. About me... about the Holy Sect.'",
+        "emotion": "凝重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_003",
+        "content": "Chen Ji's brow furrowed slightly. Ye Qing voluntarily mentioning the Holy Sect caught him off guard. This demonic path saint was typically enigmatic, yet today she willingly revealed a corner of her mask. He posed no further questions, merely waiting in silence as bamboo leaves rustled down between them, the sound filling the void. Ye Qing drew a deep breath, her lashes trembling beneath the moonlight as if finally summoning a resolute decision."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_004",
+        "character_id": "char_yeqing",
+        "content": "'I'm not an ordinary saint.' Ye Qing raised her gaze, a fleeting vulnerability flickering in her eyes. 'Fifteen years ago, the Demonic Path Commander found a starving orphan in ruins—that was me. He took me in, taught me, and raised me into the Holy Sect's saint.' Her voice grew slightly hoarse. 'He's my savior, and also... my father.'",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_005",
+        "character_id": "char_chenji",
+        "content": "Chen Ji remained silent for a moment, then spoke: 'So you've come to inform on me?' His tone was calm, yet carried an indistinct probe. Bamboo leaves slipped from his shoulder, and he brushed them away with a composed gesture. 'Or could it be... you've also discovered something?'",
+        "emotion": "平静试探"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_01",
+        "prompt": "Ye Qing's words made the situation delicate. Chen Ji needed to choose between trust and probing—whether to open his heart and form an alliance, or first understand her true purpose for revealing these things.",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "c01_trust",
+            "text": "Respond candidly, show sincerity",
+            "description": "Directly state that you are also investigating the Holy Sect, hint that both parties' goals align, and demonstrate a willingness to cooperate.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose some of your trump cards",
+            "visible_reward": "Quickly build trust, advance the relationship",
+            "risk_hint": "May expose your intentions too early",
+            "process_label": "坦诚以对",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 0
+              },
+              {
+                "stat": "谋略",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c01_01",
+                  "character_id": "char_chenji",
+                  "content": "'Since you're being forthright, I won't hold back either.' Chen Ji stood with hands clasped behind his back, moonlight swirling in his eyes. 'The Holy Sect has been making frequent moves recently, especially their布局 regarding the 'Heavenly Fate Key'... If our goals truly align, why not each take what we need?'",
+                  "emotion": "淡然"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_basic"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "与夜清初步建立信任",
+            "branch_route_id": null
+          },
+          {
+            "id": "c01_probe",
+            "text": "Continue to probe, leave room for maneuvering",
+            "description": "Don't rush to take a stance; let Ye Qing reveal all her cards first, then decide on the depth of cooperation.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "May make Ye Qing feel distrusted",
+            "visible_reward": "Gain more information, avoid traps",
+            "risk_hint": "May miss the opportunity for candor",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c01_02",
+                  "character_id": "char_chenji",
+                  "content": "'Interesting.' Chen Ji said calmly, 'But before I commit—You said the Commander has been acting strangely in recent years, what specifically?' His gaze fell on Ye Qing's face, unhurried. 'Since we're to cooperate, I should at least know who I'm cooperating with.'",
+                  "emotion": "冷静审视"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_suspicion"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_006",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing let out a bitter laugh: 'Starting three years ago, he changed. The old him was a true枭雄, with principles and ambition. But now... he seems to be executing some larger plan, and Holy Sect disciples are merely chess pieces—even I am.' She gripped her sleeve tightly, her knuckles white. 'Recently he's been frequently contacting a mysterious existence, and when he returns, his eyes are like... as if something has taken possession of them.'",
+        "emotion": "恐惧"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_007",
+        "content": "Chen Ji's gaze sharpened. Mysterious existence—fragment projection of the Eye of Heavenly Secrets, or something else? Ye Qing's words coincided with Mo Xiansheng's past implications, sending a chill through his heart. But on the surface, he remained unmoved, simply watching this woman who was struggling to maintain composure. Beneath the moonlight, the bloodshot in her eyes was clearly visible—she had clearly not slept peacefully for many days."
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_008",
+        "character_id": "char_yeqing",
+        "content": "'I've investigated.' Ye Qing lowered her voice. 'The Heavenly Fate Key—she might be your relative, right?' She stared into Chen Ji's eyes. 'I saw your expression when you were reading ancient texts. That kind of look... only appears when a close family member has been missing for years. The Holy Sect wants to harvest the Heavenly Fate Key, you won't sit by and do nothing.'",
+        "emotion": "洞察"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_009",
+        "character_id": "char_chenji",
+        "content": "Chen Ji offered no response. He simply gazed at Ye Qing, and the bamboo grove suddenly grew so quiet that only the wind remained. In this moment, his mind raced—She knows of Chen Nian's existence, what does this mean? Is it a布局 of the Holy Sect, or Ye Qing's own investigation? After a moment, the corner of his mouth lifted slightly, but the smile didn't reach his eyes: 'Your intelligence network is quite efficient.'",
+        "emotion": "深不可测"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_02",
+        "prompt": "Ye Qing has revealed some of her cards, and Chen Ji must decide whether to let her know more truth—about Chen Nian, about the Tianji Record, or to maintain the mystery?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "c02_share_truth",
+            "text": "Reveal Chen Nian's identity, deepen the alliance",
+            "description": "Tell Ye Qing that Chen Nian is his sister, further deepen trust, and make her a true ally.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose your greatest vulnerability",
+            "visible_reward": "Gain Ye Qing's complete trust, unlock deeper cooperation",
+            "risk_hint": "Once the vulnerability is exposed, the consequences are hard to predict",
+            "process_label": "以诚换诚",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": 0
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 20
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c02_01",
+                  "character_id": "char_chenji",
+                  "content": "'Chen Nian.' Chen Ji uttered this name softly, yet it carried the weight of a thousand pounds. 'She's my sister. The Holy Sect took her ten years ago.' He looked at Ye Qing, his eyes revealing a rare vulnerability. 'I've searched for her for ten years.'",
+                  "emotion": "隐痛"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_knows_chenian"
+            ],
+            "requires_flag": "yeqing_alliance_basic",
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "夜清得知陈念身份",
+            "branch_route_id": null
+          },
+          {
+            "id": "c02_keep_secret",
+            "text": "Maintain mystery, only discuss cooperation",
+            "description": "Don't reveal Chen Nian's identity; only reach consensus on the cooperation level, maintaining information advantage.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Limited depth of cooperation",
+            "visible_reward": "Maintain information disparity, leaving more room for maneuvering later",
+            "risk_hint": "Ye Qing may develop a sense of distance",
+            "process_label": "留有后手",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c02_02",
+                  "character_id": "char_chenji",
+                  "content": "'Each of us has our own secrets,' Chen Ji said calmly, 'but at least one thing can be confirmed—the Holy Sect is our common enemy.' He paused. 'Before the truth comes to light, our cooperation is limited to this. As for more...' He glanced at her meaningfully. 'There's plenty of time ahead.'",
+                  "emotion": "克制"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "yeqing_alliance_shallow"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_010",
+        "content": "Ye Qing remained silent for a long while. Bamboo shadows shifted across her face, reflecting her internal struggle. Finally, she nodded lightly: 'Fine. I'll continue monitoring the Commander's movements. Any abnormality, I'll inform you immediately.' She raised her hand, and a faint black pattern emerged in her palm. 'This is the Demonic Path Mist Mark; it can temporarily conceal Heavenly Secrets aura—consider it... a token of cooperative sincerity.'"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_011",
+        "character_id": "char_chenji",
+        "content": "Chen Ji accepted the black pattern, and the moment his fingertips touched it, a cool sensation spread through him. He raised his gaze to Ye Qing: 'This thing... you're willing to give it?' The Demonic Path Mist was Ye Qing's lifesaving divine ability, yet she handed it over so easily—this level of sincerity surprised him. Ye Qing turned her face away, and beneath the moonlight, the roots of her ears seemed slightly flushed: 'Your Tianji Record's aura is too easily exposed anyway. It does me no good if someone's watching you.'",
+        "emotion": "口是心非"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0384_choice_03",
+        "prompt": "Ye Qing has gifted the Demonic Path Mist; how should Chen Ji respond to this unexpected sincerity?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "c03_grateful",
+            "text": "Accept solemnly, express gratitude",
+            "description": "Sincere acceptance of this gift, express gratitude, allowing the relationship to take another step forward.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "May seem slightly weak",
+            "visible_reward": "Ye Qing's goodwill increases significantly, relationship undergoes qualitative change",
+            "risk_hint": "May make the other party think you're being sycophantic",
+            "process_label": "真心接纳",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 25
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "依赖",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c03_01",
+                  "character_id": "char_chenji",
+                  "content": "Chen Ji tucked the black pattern into his sleeve and said solemnly: 'This favor, I'll remember.' His tone carried less of his usual distance, gaining a hint of sincerity instead. Ye Qing was stunned for a moment, then turned her face away, the corners of her mouth lifting slightly: 'Cut the act... Remember, you owe me a drink.'",
+                  "emotion": "微赧"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "c03_casual",
+            "text": "Accept composedly, reciprocate in kind",
+            "description": "Maintain your usual calmness, accept naturally without showing too much emotion, respond as an equal.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May make Ye Qing feel neglected",
+            "visible_reward": "Maintain a sense of mystery, don't be outmatched",
+            "risk_hint": "May miss the opportunity for relationship warmth",
+            "process_label": "不卑不亢",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "好感",
+                "delta": 10
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0384_result_c03_02",
+                  "character_id": "char_chenji",
+                  "content": "'An equal exchange, that's all.' Chen Ji tucked the pattern into his sleeve, his expression unchanged. 'You have your purpose, I have my needs. This debt, I'll clear someday.' Ye Qing stared at him for a moment, then suddenly let out a light laugh: 'You're really... airtight.'",
+                  "emotion": "无奈"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_012",
+        "character_id": "char_yeqing",
+        "content": "'Regarding the Commander, I'll find a way.' Ye Qing adjusted her collar, recovering some of the saint's cold arrogance. 'But be careful within the Tianqing Sect—I received news that Ling Yuan has been secretly mobilizing personnel recently, seemingly looking for something.' She paused, lowering her voice. 'And that Su senior sister of yours... she seems to have grown suspicious of you.'",
+        "emotion": "警告"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0384_013",
+        "character_id": "char_chenji",
+        "content": "'Su Qingyao?' Chen Ji's brow arched slightly, a glint of amusement flickering in his eyes. This Inner Disciple Senior Fellow was indeed sharp, but he was already prepared. He smiled noncommittally: 'Thanks for the warning. But this Su Senior Sister... I have my own measures.' Ye Qing glanced at him, as if wanting to say something, but ultimately just shook her head: 'You really are... unfathomable.'",
+        "emotion": "复杂"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_014",
+        "content": "The night wind rose, stirring her black gauze. She stepped back several paces, her form beginning to merge into the night. Before departing, she suddenly stopped, her back facing Chen Ji as she softly said: 'Next time we meet... you owe me a drink.' The voice carried a rare coyness, worlds apart from her usual fierce demonic path saint demeanor. Chen Ji was momentarily stunned, then the corner of his mouth lifted slightly: 'Sure.' Ye Qing didn't look back, yet her figure stiffened for a moment. Moments later, she vanished into the depths of the bamboo grove, leaving only a faint trace of demonic path mist fragrance."
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0384_015",
+        "content": "The bamboo grove returned to silence. Chen Ji stood with hands clasped behind his back, gazing toward where Ye Qing had disappeared, his expression gradually growing heavy. The Demonic Path Mist Mark in his sleeve warmed slightly, resonating with his Tianji Record aura. He unfolded the fragment, and the images on it had indeed become clearer—but regarding Chen Nian's portion, it remained a blur of rippling water. He gripped the fragment tightly, his knuckles white. Chen Nian, wait a bit longer. Brother will definitely find you. The night deepened like ink, and the distant lights of the Tianqing Sect flickered intermittently. A new chess game had already quietly unfolded."
+      }
+    }
+  ]
+}

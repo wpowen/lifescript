@@ -1,0 +1,536 @@
+{
+  "id": "天机录_ch0935",
+  "book_id": "天机录",
+  "number": 935,
+  "title": "Bloodline Resonance",
+  "is_paid": true,
+  "next_chapter_hook": "Just as Chen Ling suppressed the surging ancient will within her body with her Bloodline Power, the lingering consciousness that had slumbered for ten thousand years, at the moment of being subdued, uttered a whisper that made Chen Ji's soul tremble—\"We shall become one.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0935_001",
+        "content": "The crisp sound of the mask hitting the ground echoed endlessly through the silent hall. Chen Ji stared at that face, almost identical to his memories, momentarily disoriented. Seven years. He had believed his sister had long perished in the Holy Sect's catastrophe, believing the guilt from midnight dreams would accompany him forever. Yet here she stood, just beyond three zhang, the childish innocence in her features completely faded, yet still the little girl who would tug at his robe and shout \"Brother.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_002",
+        "character_id": "char_chenian",
+        "content": "\"Brother.\" Chen Ling's voice trembled slightly, the title that had not rolled off her tongue for seven years now felt somewhat rusty. Gazing at this man with an entirely different aura, her eyes suddenly reddened. \"You've grown thin.\"",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_003",
+        "content": "Chen Ji's throat churned, the usual indifferent smile at the corner of his lips silently crumbling. He stepped forward, but paused the moment his foot lifted—the Tianji Record Fragment within his body suddenly seared with an unprecedented burning pain, causing his brow to furrow deeply. Fate seemed to bare its fangs at this moment, yet he could not discern whether this scene was a blessing or a curse.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_004",
+        "character_id": "char_chenian",
+        "content": "\"I know what you're worried about.\" Chen Ling wiped away the tear stains at the corners of her eyes, her gaze suddenly becoming clear yet profound. \"The Tianji Record in your body is experiencing a rejection response, because it sensed... another aura within me.\" She paused. \"Three hundred Xuanwu Elite Forces who came with me have surrounded this hall tightly. But they are not here to capture you, Brother—they are here to repay a debt.\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0935_005",
+        "prompt": "Chen Ling claims she brought the Xuanwu Elite Forces—how should Chen Ji respond to this sudden \"encirclement\"?",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0935_005_a",
+            "text": "First stabilize the situation, secretly activate the Tianji Record to peer into the truth",
+            "description": "Although the Tianji Record rejects Chen Ling, the instinct to peer into the future makes Chen Ji unwilling to abandon this crucial intelligence.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Consume 5 points of Heavenly Fate",
+            "visible_reward": "Obtain key information about Chen Ling's true purpose for this visit",
+            "risk_hint": "The Tianji Record may provide blurry foresight due to the rejection",
+            "process_label": "天机录在你掌心泛起微光，命运的丝线却缠绕成乱麻......",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_005_a_1",
+                  "content": "The Tianji Record Fragment trembles in his palm, Chen Ji stares intently at the blurry light shadows emerging. The figure of Chen Ling in the images flickers in and out, like through a veil of water—an unprecedented omen. \"Heavenly Fate Lock Key...\" he murmurs, his pupils dilating sharply. \"Her existence will blur the foresight...\" The \"Seventh Chess Player Reincarnation\" that Chen Ling mentioned is actually true.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_005_b",
+            "text": "Proactively approach, test whether Chen Ling still remembers childhood events",
+            "description": "The instinct of blood-related kin drives Chen Ji to confirm whether this person is truly his sister he has searched for over many years.",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "Expose his softer inner self",
+            "visible_reward": "Confirm Chen Ling's identity while simultaneously awakening her more complete memories",
+            "risk_hint": "If Chen Ling's memories are incomplete, he might fall into an unknown trap",
+            "process_label": "你的指尖在袖中微微颤抖，七年的思念在这一刻决堤......",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 10
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_005_b_1",
+                  "content": "Chen Ji took a deep breath and stepped forward. \"Xiaoling, do you remember... that New Year's Eve, when you stole and ate my sugar figure, and Mother made you kneel as punishment?\" Chen Ling trembled all over, her eyes reddening once more. \"You cried your eyes out and even wanted me to kneel for you...\" She rushed forward and tightly embraced him, \"Brother, I remember everything now. All of it.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "血脉相认",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_005_c",
+            "text": "Coldly question: Why would imperial envoys turn out to be Xuanwu Elite Forces?",
+            "description": "Chen Ji's caution prevents him from readily trusting this sudden \"family connection\", especially since he has numerous enemies.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "May hurt Chen Ling's feelings",
+            "visible_reward": "Probe Chen Ling's true stance, obtain more information",
+            "risk_hint": "If Chen Ling is truly an ally, suspicion might create emotional distance",
+            "process_label": "你的语气骤然转冷，眼底的温度消失殆尽——这才是外人熟知的废材陈。",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": -5
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "敌意",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_005_c_1",
+                  "content": "Chen Ji stood with hands behind his back, a mocking curve forming at the corner of his lips. \"Imperial envoys, Xuanwu Elite Forces, Chen family orphan... Miss Chen Ling, how many layers of skin are you wearing?\" He paced slowly. \"I don't recall owing the Xuanwu Sect anything, but I do want to know—what is the purpose of this grand display?\" Chen Ling showed no anger; instead, she revealed a meaningful smile. \"Brother is indeed the same calculating brother as always.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0935_006",
+        "content": "No matter what choice Chen Ji made, Chen Ling slowly walked to the center of the grand hall, taking an ancient jade slip from her embrace. The runes on that jade slip were all too familiar to Chen Ji—identical to the patterns on the Tianji Record fragment in his palm. \"This was left to me by our father before he died.\" Her voice was cold and firm. \"He said, when the day came to find Brother, I was to hand this jade slip to you. What it contains is the complete truth about the seventh Chess Player.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_007",
+        "character_id": "char_chenian",
+        "content": "\"Father...\" Chen Ji murmured, the figure long blurred in his memory now seemingly gazing back at him across time and space. Chen Tianming, the once-in-a-century genius of the Tianqing Sect a hundred years ago, and the previous chosen inheritor of the Tianji Record. The fragments he left behind in the archives had allowed Chen Ji to piece together a vague outline, but never had he imagined the truth would be hidden within this sister he thought long dead.",
+        "emotion": "震撼"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_008",
+        "content": "Chen Ling extended the jade slip toward Chen Ji, but her fingertips suddenly froze the moment they touched him. \"Brother, something... is awakening within you!\" Before her words finished, Chen Ji erupted with dazzling blood-colored light, and an ancient, vast aura surged from between his brows. This was an phenomenon the Tianji Record fragment had never displayed—as if some existence dormant for ten thousand years was attempting to use his body as a vessel to awaken.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_009",
+        "character_id": "char_chenian",
+        "content": "\"Don't resist!\" Chen Ling shouted sharply, biting her fingertip hard. A crimson blood arrow shot forth, directly entering Chen Ji's brow. This was the most primordial power in her bloodline—the \"Heavenly Fate Key\" blood that the Chen family had guarded for generations. The scorching blood exploded within Chen Ji's body, yet instead of burning, it was like spring wind and rain, smoothing the surging anomalous forces. The ancient will's howl echoed in Chen Ji's mind, but it could never breach the barrier forged by that bloodline.",
+        "emotion": "焦急"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_010",
+        "content": "Chen Ji felt his body wracked with splitting pain, but gradually calmed under the nourishment of Chen Ling's bloodline power. He gazed at the pale-faced girl before him, her eyes filled with worry and resolve. \"Xiao Ling...\" he rasped. \"It's alright, Brother.\" Chen Ling managed a smile. \"Father said the purpose of the Heavenly Fate Key is to stabilize a Chess Player's soul at critical moments. That ancient will within you... it wants to seize the opportunity to possess you.\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0935_011",
+        "prompt": "The ancient will's possession was temporarily suppressed. How should Chen Ji face this existence that had been lurking within him all along?",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0935_011_a",
+            "text": "Inquire with Chen Ling about the origins of the ancient will",
+            "description": "Since Chen Ling knows the secret of the Heavenly Fate Key, perhaps she also knows the details of this ancient will.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Temporarily set aside vigilance against the ancient will",
+            "visible_reward": "Acquire important intelligence regarding the ancient will",
+            "risk_hint": "The ancient will may take advantage of the conversation to strike the seal again",
+            "process_label": "你按捺住心中的不安，决定先弄清楚敌人究竟是什么。",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_011_a_1",
+                  "content": "Chen Ji steadied his mind and looked at Chen Ling. \"What exactly is that ancient will? Why does it reside within the Tianji Record?\" Chen Ling fell silent for a moment, then slowly said: \"It's the remnant soul of a great one from the ancient era who was on the verge of ascension. Father said the Tianji Record itself is a cross-realm artifact, and over the long years it has attracted many remnant spirits to dwell within. And that one... is the strongest among them.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_011_b",
+            "text": "Attempt to use the power of the Tianji Record to turn against the ancient will",
+            "description": "Chen Ji had never been one to passively endure attacks; even against an ancient existence, he wanted to take the initiative.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May backfire on oneself, consuming a large amount of Heavenly Fate Value",
+            "visible_reward": "May severely injure the ancient will, weakening its possession ability",
+            "risk_hint": "If it fails, the ancient will will completely lose control",
+            "process_label": "你眼中闪过一丝狠厉，掌心天机录残页骤然绽放出璀璨光华......",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -10
+              },
+              {
+                "stat": "战力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_011_b_1",
+                  "content": "The Tianji Record fragment suddenly erupted with unprecedented might, golden runes coiling like chains around the ancient will. A shrill howl echoed in his mind; that existence seemed not to have anticipated Chen Ji daring to strike first, and for a moment was so suppressed it couldn't move. \"Xiao Ling, now!\" Chen Ji shouted. Understanding, Chen Ling poured in another wave of bloodline power. With the two forces attacking from both sides, the ancient will let out an enraged roar and was sealed back into a deeper slumber.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": true,
+            "flags_set": [
+              "远古意志被压制"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 20
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_011_c",
+            "text": "Remain silent, contemplating the deeper meaning behind Chen Tianming's arrangements from years ago",
+            "description": "Chen Ji realized that his father cultivating Chen Ling as the Heavenly Fate Key was no coincidence; there must be a deeper purpose behind all this.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Unable to obtain more information for now",
+            "visible_reward": "May be able to deduce the key thread of his father's plan",
+            "risk_hint": "The ancient will may take the opportunity to recover, missing the best opportunity for counterattack",
+            "process_label": "你的眼神变得幽深，命运的棋盘在你脑海中缓缓展开......",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_011_c_1",
+                  "content": "Chen Ji didn't speak, but his mind raced rapidly. Father passed the Tianji Record fragment to him, gave the secret of the Heavenly Fate Key to his sister, and deliberately brought them together at this moment... this was no coincidence. Chen Tianming had set this move in motion decades ago; Chen Ji and Chen Ling were merely two chess pieces on the board that had finally come together. \"Father... what exactly does he want us to do?\" he murmured.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0935_012",
+        "content": "The atmosphere in the great hall froze like ice; the footsteps of the three hundred Xuanwu elite soldiers outside were perfectly synchronized, yet none dared to enter. Chen Ji and Chen Ling exchanged a glance, then finally Chen Ji reached out and accepted the jade slip. The moment his fingertips touched it, a torrential flow of information surged into his Mental Sea—this was Chen Tianming's lifelong dedication, and also the complete inheritance of the seventh Chess Player.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_013",
+        "character_id": "char_chenian",
+        "content": "\"Father said the Tianji Record has nine pages, scattered across different eras and realms.\" Chen Ling's voice sounded beside Chen Ji's ear. \"And the Chess Player is the one chosen by the Tianji Record to piece it together. Father was the sixth generation, you are the seventh. But you're different from him... there's another existence in your body coveting this flesh.\" She paused. \"That's why Father made me the Heavenly Fate Lock Key—I am the key medium to break the fetters of destiny. Without me, you can never truly control the Tianji Record.\"",
+        "emotion": "郑重"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_014",
+        "content": "Chen Ji gazed at the densely packed text emerging from the Jade Slip—Father's ultimate revelation about the Tianji Record, the Ancient Will, the Eye of Heavenly Dao, and the entire cultivation world's structure. The more he read, the more his heart shuddered—an apparent Heavenly Dao Will was nothing but a幕后黑手 using 'Heavenly Dao' as a name to manipulate all Seers; every inheritance of the Tianji Record in the world was a piece it had set in motion.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_015",
+        "character_id": "char_chenian",
+        "content": "\"Brother, there's one more thing I need to tell you.\" Chen Ling suddenly gripped his hand, her eyes reddening. \"All these years at the Xuanwu Sect, I've been secretly searching for everything about you. The Holy Sect captured me back then, wanting to experiment with the Lock Key's bloodline... but they failed, because my memories were sealed by Father. Until three months ago when the seal loosened, I remembered everything—remembered I had a brother, remembered Father's dying command, remembered...\" She choked. \"Remembered I owed you seven years of companionship.\"",
+        "emotion": "哽咽"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0935_016",
+        "prompt": "How should Chen Ji respond to Chen Ling's guilt and genuine emotional outpouring?",
+        "choice_type": "characterPref",
+        "choices": [
+          {
+            "id": "天机录_ch0935_016_a",
+            "text": "\"Pull his sister into his embrace\"",
+            "description": "\"Seven years of separation collapsed in this moment, and Chen Ji chose to respond to this blood-deep kinship in the most direct way possible.\"",
+            "satisfaction_type": "情感爽",
+            "visible_cost": "\"Expose the softest side of his heart\"",
+            "visible_reward": "\"The sibling bond deepens, and the bloodline power resonance intensifies\"",
+            "risk_hint": "\"May allow the Xuanwu elite present to glimpse another side of the废物 Chen Ji\"",
+            "process_label": "你的手臂微微颤抖，这个在敌人眼中冷酷无情的执棋者，在这一刻只是一个想要弥补遗憾的哥哥。",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 15
+              },
+              {
+                "character_id": "char_chenian",
+                "dimension": "依赖",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_016_a_1",
+                  "content": "Chen Ji pulled Chen Ling tightly into his embrace, resting his chin on her hair. \"Silly girl, I searched for you for seven years... not to hear you say sorry.\" His voice turned hoarse. \"As long as you're alive. As long as you're alive.\" Their bloodline powers resonated at this moment, and golden light motes materialized in the hall, circling like fireflies around this pair of siblings reunited after bitter separation.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": "血脉羁绊",
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_016_b",
+            "text": "\"Tease with feigned casualness\"",
+            "description": "Chen Ji habitually concealed his true feelings with a cynical attitude, but the warmth in his tone couldn't be hidden.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May cause Chen Ling to feel her brother is being dismissive",
+            "visible_reward": "Ease the atmosphere, dissolving all barriers between siblings",
+            "risk_hint": "If the tone is too flippant, it may hurt Chen Ling's heart",
+            "process_label": "你的嘴角勾起一抹久违的笑意，眼底却是化不开的温柔。",
+            "stat_effects": [
+              {
+                "stat": "魅力",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "好感",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_016_b_1",
+                  "content": "Chen Ji rubbed the top of Chen Ling's head, just like when they were children. \"What are you crying for? A leader of Xuanwu elite shouldn't be sniffling, you know.\" He said with feigned disgust, though the corners of his eyes slightly reddened. \"Besides, who told you to run around? No more of that, understand?\" Chen Ling broke into laughter through her tears and nodded vigorously. In this moment, seven years of bitterness and waiting seemed to finally have meaning.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0935_016_c",
+            "text": "\"Calmly analyze the current situation and practically plan the next steps\"",
+            "description": "\"Although his heart churned within, Chen Ji understood this wasn't the time for sentiment—only strength can protect kinship in chaotic times.\"",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "May cause Chen Ling to feel her brother is too cold\"",
+            "visible_reward": "\"Gain more specific methods about breaking the fetters of destiny\"",
+            "risk_hint": "Chen Ling may feel lost if not understood",
+            "process_label": "你深吸一口气，强迫自己冷静下来——废材陈的皮囊下，是执棋者的理智。",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_chenian",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0935_result_016_c_1",
+                  "content": "Chen Ji lightly patted Chen Ling's shoulder, then steered the conversation back on track. \"Xiaoling, you said you're the key medium to break the fetters of destiny—what does that specifically mean?\" His gaze sharpened. \"Father left too much information in the Jade Slip. I need you to help me sort out the most critical parts.\" Chen Ling gathered her emotions, her expression turning serious. \"It's simple... for the Tianji Record to become complete, it requires the blood of the Heavenly Fate Lock Key as the guide. And I am that key.\"",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      },
+      "text": {
+        "id": "天机录_ch0935_017",
+        "content": "The moment Chen Ling uttered the word \"key,\" the suppressed Ancient Will within Chen Ji suddenly surged violently. It seemed to sense something terrifying, letting out an earth-shaking roar as it madly crashed against the barrier forged by bloodline. Chen Ji's face instantly turned deathly pale, veins bulging at his temples, beads of sweat rolling down his cheeks. \"Brother!\" Chen Ling cried out, immediately biting her fingertip again, channeling more bloodline power into his body.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0935_018",
+        "character_id": "char_chenian",
+        "content": "\"It's afraid...\" Chen Ji挤出几个字 from between his teeth, sweat dripping from his forehead. \"It's afraid of you... no, afraid of us joining forces...\" He lifted his head sharply, a flash of brilliance in his eyes. \"Xiaoling, I understand now! The Heavenly Fate Lock Key isn't just a medium—it's also a seal! As long as you're by my side, that thing cannot fully awaken!\"",
+        "emotion": "恍然大悟"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_019",
+        "content": "Chen Ling's eyes suddenly brightened. \"So that's why Father arranged for us to meet!\" she exclaimed激动地. \"He long calculated this day would come—the Tianji Record chose you, the Ancient Will parasitizes within you, and the only thing that can suppress it is bloodline resonance with me, the Heavenly Fate Lock Key!\" Before her words finished, their bloodline powers intertwined once more, golden light blazing brilliantly, and the Ancient Will's roar gradually grew faint.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_020",
+        "content": "\"But just as Chen Ji thought everything had settled, a cold voice suddenly exploded in his mind—that voice was old and domineering, carrying an irresistible pressure: 'You think this can suppress this Lord forever?' Chen Ji's entire body froze. 'Chen Tianda is underestimating this Lord...' The voice let out a cold laugh, 'Bloodline Lock Key? Nothing but a delay. As you collect more Tianji Record Fragments, this Lord's power will also recover. Then—' The voice suddenly turned low, carrying a chilling certainty, 'We will eventually become one.'\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0935_021",
+        "content": "Chen Ji abruptly opened his eyes, golden light flickering in his pupils. 'Brother? What's wrong?' Chen Ling sensed something was off, anxiously grasping his hand. Chen Ji didn't answer, only gazing toward some invisible direction in the void, the corners of his mouth slowly curving into a cold smirk. 'Become one?' he murmured, his tone carrying a depth and mockery unbecoming of his age, 'Then let's wait and see.' He turned to look at Chen Ling, his gaze softening. 'Xiao Ling, from now on, stay by my side.' He paused, then added, 'Not as the leader of the Xuanwu Elite—but as Chen Ji's little sister.'",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

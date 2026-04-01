@@ -1,0 +1,563 @@
+{
+  "id": "天机录_ch0821",
+  "book_id": "天机录",
+  "number": 821,
+  "title": "皇朝の使者",
+  "is_paid": true,
+  "next_chapter_hook": "皇朝の使者狼狈として退去したが、陳機にはこれが更大的な嵐の前奏曲に過ぎないことが分かっていた——天機録の気配は既に露呈し、より危険な存在が暗躍している。",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0821_001",
+        "content": "天青宗の議事大殿、晨霧はまだ晴れ切っていない。一隊の玄金紋袍を身にまとった使者が殿前に整列し、先頭に立つ者は皇令を手に、傲然と玉階の下に立っていた。韓烈は人群の中で、その複雑な目で这一切を見守っていた。彼は昨日ようやく陳機と交歓しており，此刻は観客としてこの芝居を見ていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_002",
+        "character_id": "char_hanlie",
+        "content": "（低く独り言）この廃物は一体何を企んでいるのか……",
+        "emotion": "疑惑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_003",
+        "content": "陳機が緩りと側殿から現れ、白い弟子服を身にまとい、顔无表情とも呼べぬ平静さで歩み出した。彼が「死んだ」一件は既に宗門に広まっており，此刻の「蘇生」姿は外人眼里では単なる臨終のような不気味さでしかなかった。そして皇朝の使者たちはその仕組みを知らず、ただ彼を間もなく死ぬ者と見ていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_004",
+        "character_id": "char_chenji",
+        "content": "（微かに拱手し）使者各位、遠路はるばるお越しいただき、陳機の出迎えが不届きいたします。",
+        "emotion": "平静"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_005",
+        "content": "皇朝の使者が冷哼一声，玄金令旗高高举起、刺目の金光が大殿で炸裂した。「陳機、お前はただの一介の廃材であり、太子の師という地位を窃取したのは既に欺君罔上だ！今日旨意に従い——天機録残頁を提出せよ、さすれば全き屍を許してやる！」彼の声は金石が相撃むが如く、傲岸不遜に満ちていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_006",
+        "character_id": "char_chenji",
+        "content": "（軽笑し）全き屍を許すと？使者各位は大层な威光を呈することよ。ただ、この旨意は一体どちらの貴人の意向だろうか？",
+        "emotion": "玩味"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_007",
+        "content": "使者の笑容僵了一瞬旋即恢复傲慢。「お前がただの死にかけている者が这些事情を問うて何になる？天機録は上古禁物であり、お前が染み切れるものではない！速やかに提出せよ、まだ陳家の最後のメンツを守れるぞ。」彼の視線は殿中众人に扫过，满是不屑。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_01",
+        "prompt": "皇朝使者の脅迫に面し、陳機の選択は——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c1_打脸",
+            "text": "当场揭底打顔",
+            "description": "使者の裏にある魔道聖宗との秘密取引を公然と暴露し，使其当衆出醜させる",
+            "satisfaction_type": "打脸",
+            "visible_cost": "一部情報を暴露する",
+            "visible_reward": "使者颜面尽失",
+            "risk_hint": "更高層の注目を引き起こす可能性がある",
+            "process_label": "冷笑一声",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 15
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c1_001",
+                  "content": "陳機が慌てず騒がず衣の袖を整え，嘴角に意味深い笑みを浮かべた。「使者各位のおっしゃる秘密取引とは，去年の幽州での魔道聖宗三護法との会合でしょうか？それとも您の奥様にある『特殊なお客さん』が今も傷を養っている之事でしょうか？」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c1_002",
+                  "character_id": "char_chenji",
+                  "content": "（声が急に冷たくなり）私がただの死にかけている者なら，使者各位はなぜそんなに急ぐのです？",
+                  "emotion": "凌压"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_智取",
+            "text": "太子の師の身份を持ち出す",
+            "description": "太子の師の公式身份で反論し，使者は宗門領地で执法无权である",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "政治資本を消耗する",
+            "visible_reward": "使者进退两难",
+            "risk_hint": "後で更高層から追求される可能性がある",
+            "process_label": "淡淡开口",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "谋略",
+                "delta": 8
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": -5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_001",
+                  "content": "陳기가 뒤로 기대어 서서, 차분하게 그一面玄金令旗을 바라보았다. 「태자태사 직책은 폐하께서 친히 임명하신 것이니, 使者各位は同样的な聖旨をお持ちですか？もし同等な 효력이 无ければ、この令旗は天青宗において……ただの廃鉄に過ぎません。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c2_002",
+                  "character_id": "char_chenji",
+                  "content": "（微笑みを含み）各位がここで执法したいなら、まず天青宗の長老各位にご挨拶されるのは如何ですか？",
+                  "emotion": "从容"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_威慑",
+            "text": "天機録の力を見せる",
+            "description": "一小試牛刀で予見能力を示し，使者を彼が手を出せない存在だと分からせる",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "天命値を5点消耗する",
+            "visible_reward": "使者彻底胆寒",
+            "risk_hint": "能力を暴露すれば更大的觊觎を招く可能性がある",
+            "process_label": "指尖微动",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "名望",
+                "delta": 20
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 15
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_001",
+                  "content": "陳機がゆっくりと手を挙げ、指先に淡い光が灯った。「使者各位、三息後にくしゃみをするでしょう、五息後に後ろの左から二番目の人が階段を踏み外す、七息後に……」彼は一拍置いて、「您の腰の玉佩に亀裂が一本入るでしょう。」",
+                  "emphasis": "dramatic"
+                }
+              },
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_002",
+                  "character_id": "char_chenji",
+                  "content": "（手を下ろし）天機録の使い道、お分かりになりましたか？",
+                  "emotion": "淡漠"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_008",
+        "content": "殿中は瞬時に静寂に包まれ、使者の顔はみるみる蒼白になった。彼は無意識に腰の玉佩に触れ、その価値千金の暖玉の上に不知何时已多了一道細い亀裂が走っている。「お、お前は……妖術だ！」彼の声は震え、先ほどの余裕などどこにも無かった。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_009",
+        "character_id": "char_hanlie",
+        "content": "（息を呑み、低く）この廃物め……一体どうやったんだ……",
+        "emotion": "震惊"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_010",
+        "content": "陳기가 뒤로 기대어 서서, 눈빛은 고요한 우물의 파문 없는 물결처럼 미세한 동요도 없다. 「妖術だと？天機録は上古の至宝であり、三つの時の天機を窺うことができる。使者各位は私がなぜこの地位を窃取できたかと問われた，今お分かりになっただろうか——窃取ではなく、私がそれに値するのだ。」彼の声は高くはないが、一言一句が刃のように切り裂く。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_011",
+        "character_id": "char_chenji",
+        "content": "（ゆっくりと前進し）ましてや您的裏にいるあの貴人については……各位，回去给你们的主人带个话——天機録が主を選ぶ時、从来不会问身份的贵贱。若是他坚持要夺……我倒想看看，他有几条命可以赌。",
+        "emotion": "冰冷"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_02",
+        "prompt": "使者は狼狈として后退し、陳기의決定——",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c2_1_穷追猛打",
+            "text": "追い打ちをかけて口を割らせる",
+            "description": "さらに圧力をかけ、使者に幕后の指図主の身份を吐かせる",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "皇朝彻底得罪",
+            "visible_reward": " ключевая情报到手",
+            "risk_hint": "皇朝の報復を引き起こす可能性がある",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 10
+              },
+              {
+                "stat": "名望",
+                "delta": 10
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_1_001",
+                  "content": "陳기가さらに一歩踏み出すと，使者は连连后退，背中は既に玉階に押し当てられていた。「不如说说，是谁让您来趟这浑水的？我陳기가記性好ければ，日后好去拜访。」彼の笑みは眼底まで届いていない。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c2_2_见好就收",
+            "text": "一行を下がらせる",
+            "description": "使者を帰らせるが、意味ありげな警告を残す",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "情报を見逃す可能性がある",
+            "visible_reward": "皇朝に内応棋子埋め込む",
+            "risk_hint": "相手は再来年来る可能性がある",
+            "process_label": "侧身让路",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c2_2_001",
+                  "content": "陳기가ふいに一歩引いて、背后に手組合せた。「罢了，使者各位遠来はられます，陳기가ルールを分かった者입니다。今日之事，就当给您一个教训。回去告诉您主子——天機録は私の手にある限り、一日も手を出せないものです。」",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "使者狼狈离开"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_012",
+        "content": "使者は連転帯 связиで退出し、玄金令旗すら持ち運ぶ暇が無かった。殿中の哄笑声が広がる中，原本陳機を軽視していた弟子たちは顔を見合わせ、その視線には言いようもない畏敬の念が混じるになっていた。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_013",
+        "character_id": "char_hanlie",
+        "content": "（歯を食いしばり、低く）豚の皮を被って虎を食う……またこの手か！",
+        "emotion": "愤怒"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_014",
+        "content": "陳기가ゆっくりと振り返り、視線がふと韓烈的身上扫过。その瞬间の对视、韓烈は深い骨髓に染み入るような寒さを感じた——この「廃物」の眼差しには、明確な軽蔑が満ちていた。使者に向けられた軽蔑ではなく、場にいる所有人への軽蔑だ。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0821_choice_03",
+        "prompt": "韓烈が近づいて詰問しようとした瞬間、陳기가——",
+        "choice_type": "styleChoice",
+        "choices": [
+          {
+            "id": "天机录_ch0821_c3_1_无视离开",
+            "text": "直接無視して离开",
+            "description": "空気でも見るように韓烈のそばを通り過ぎ、彻底的な無視は如何なる嘲笑よりも屈辱的だ",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "矛盾を激化させる可能性がある",
+            "visible_reward": "韓烈颜面扫地",
+            "risk_hint": "韓烈が当场発狂する可能性がある",
+            "process_label": "转身离去",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 10
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0821_result_c3_1_001",
+                  "content": "陳기는一秒も韩烈身上停留せず、衣の袖を整えるだけ,然后缓步走向侧殿。その後ろ姿は众人眼中渐渐远り、一殿の沈黙と韓烈の真っ青な顔を置いていった。",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_2_嘴毒补刀",
+            "text": "离れる前に毒舌一句",
+            "description": "離れる前に軽く一言、韓烈の怒りの炎を完全に燃え上がらせる",
+            "satisfaction_type": "打脸",
+            "visible_cost": "韓烈を完全に激怒させる",
+            "visible_reward": "精神攻撃が最高潮に",
+            "risk_hint": "後日韓烈はもっとつけ込んでくるだろう",
+            "process_label": "边走边说",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 8
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敌意",
+                "delta": 20
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_2_001",
+                  "character_id": "char_chenji",
+                  "content": "（足を止めずに）韓师兄、上次切磋承让了。改日有空，再向师兄请教——放心，我不会用天機録。",
+                  "emotion": "轻蔑"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0821_c3_3_意味深长",
+            "text": "一句预言を残す",
+            "description": "天機録の能力で韓烈に「善意な提醒」を与え、彼が寝食不安になるらせる",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "また5点天命値を消耗する",
+            "visible_reward": "韓烈は恐怖に陥る",
+            "risk_hint": "天命値が危機的状況に",
+            "process_label": "驻足侧头",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_hanlie",
+                "dimension": "敬畏",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "dialogue": {
+                  "id": "天机录_ch0821_result_c3_3_001",
+                  "character_id": "char_chenji",
+                  "content": "（足を止めて振り返り）韓师兄、三日以内に後山禁地へ行かない方がいい。行けば……疗伤丹を十分に持っていくようにな。",
+                  "emotion": "意味深长"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_015",
+        "content": "殿外では晨霧が次第に晴れ，阳光が天青峰顶上洒落した。陳기가大殿を踏み出した那一刻，嘴角微微上扬——今日の這一局、彼は見事に勝った。ただ、その笑みの奥底には、一抹の凝重が過ぎった。天機録の気配は，终究还是暴露した。あの暗閣で一切を監視している存在は、おそらく既に何かを察知している。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_016",
+        "content": "彼は心中で黙って計算していた：天命値はまた十点消耗し、今はあと百日ほどしかない。次の天機録の使用は、より慎重にならねばならない。そしてあの所谓の「皇朝貴人」は，显然只是台前的駒，真正的博弈才刚刚开始。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0821_017",
+        "character_id": "char_moxiansheng",
+        "content": "（天機録残頁から苍老的声音が伝わる）良いhma daが、時の余裕がないな。皇朝の裏にいるのは、凡人だけではないぞ。",
+        "emotion": "警告"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_018",
+        "content": "陳기는返事もなく、ただ天辺を見上げた。云層の上には，仿佛有一只无形的天眼正注视着他。天道之眼——その最終的な大敌，此刻是否也在暗中注视着他的每一步棋？風が天青峰を吹き抜け、使者の狼狈とした足音を持ち去ったが、空気中に弥漫する山雨来からんとする压迫感は消えなかった。",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_019",
+        "content": "今日の一战、彼はすべての人に見せた——陳機，不是废物。ただ、彼らは誰も知らなかった，这场“表演”背后，他已经算计好了多少歩の棋。皇朝の使者狼狈离开，但陳機知道这只是更大风暴的前奏——天機録的气息已经暴露，更危险的存在正在暗中注视。",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0821_020",
+        "content": "而在某处看不见的虚空中，一道超越人类理解的存在微微颤动。天道之眼的触角，正悄然伸向这个胆敢挑衅它棋局的蝼蟻。運命的车轮，已经开始转动。",
+        "emphasis": "system"
+      }
+    }
+  ]
+}

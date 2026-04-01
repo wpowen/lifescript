@@ -1,0 +1,456 @@
+{
+  "id": "天机录_ch0723",
+  "book_id": "天机录",
+  "number": 723,
+  "title": "Identity Crisis",
+  "is_paid": true,
+  "next_chapter_hook": "When Chen Ji pressed for the origin of that emblem, the envoy's lips curved into a meaningful smile—\"Lord Chen, do you truly not remember? The great fire ten thousand years ago, it was you who lit it yourself.\"",
+  "nodes": [
+    {
+      "text": {
+        "id": "天机录_ch0723_001",
+        "content": "The moment the Imperial envoy stepped into the Tianqing Sect Mountain Gate, Chen Ji's pupils constricted—that face bore an uncanny resemblance to the Chen family branch emblem on the Tianji Record's roster from ten thousand years ago. The envoy wore dark official robes, a white jade pendant at his waist, and walked with the bearing of a dragon and tiger, clearly the demeanor of one long accustomed to power. Behind him followed twelve golden-armored guards, each emanating no less than Core Formation level pressure. This was naked force intimidation, the opening of a meticulously orchestrated political hunt.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_002",
+        "character_id": "char_lingyuan",
+        "content": "\"Grand Tutor to the Crown Prince, Chen Ji, respectfully welcomes the Imperial favor.\" The envoy stopped precisely three feet from Chen Ji, intoning this title with sarcasm. \"What imposing authority—a Grand Tutor who rose from the ranks of a servant disciple. This envoy has truly never seen the like.\" His gaze swept across the surroundings before finally settling on Chen Ji's face, a sharp glint flickering in his eyes. \"This envoy has come bearing the Emperor's oral decree—to conduct a thorough investigation into the Tianqing Sect for harboring demonic path remnants.\"",
+        "emotion": "讥讽"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_003",
+        "content": "Chen Ji's expression remained unchanged, but his heart churned like a raging tide. Demonic path remnants? When had the Tianqing Sect ever sheltered anyone from the demonic path? Unless... he knew who they meant. That fragment of the Tianji Record pulsed warmly in his Mental Sea, as if sensing some danger. And what chilled him more was the Chen family emblem on the envoy's face—that branch that had been annihilated in the great fire ten thousand years ago. And the arsonist of that fire was precisely...",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_004",
+        "character_id": "char_suqingyao",
+        "content": "\"Envoy, this is an internal affair of the Tianqing Sect. Why should the Imperial court involve itself?\" Su Qingyao stepped forward from the crowd, her sword-like brows raised in anger. \"Furthermore, where does this talk of demonic path remnants come from? The Inner Disciple Senior Fellow is present, and she has never encountered any demonic practitioners.\" Her voice was cold as frost, yet as she turned, she discreetly signaled to Chen Ji—a warning that the visitor meant trouble.",
+        "emotion": "警惕"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_005",
+        "content": "Just then, a familiar figure emerged from the shadows of the Mountain Path. Ye Qing, draped in black纱, her demonic saint aura suppressed almost to nothingness by the \"Demonic Path Mist,\" yet in Chen Ji's presence, she could still sense that intangible connection. She curtsied to the envoy, her voice honeyed: \"Ye Qing of the Holy Saint Sect greets the honored official.\" The envoy's brow furrowed, about to retort, when Ye Qing preemptively spoke: \"You wish to investigate demonic remnants? Why not let Ye Qing help you identify them?\""
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0723_006",
+        "prompt": "Ye Qing volunteering to \"identify demonic remnants\"—this was an obvious trap. Did she want to use the刀 to kill, or did she have ulterior motives? Chen Ji had to make an immediate judgment.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0723_006_a",
+            "text": "Turn the tide, follow the current",
+            "description": "Pretend to take the bait, let Ye Qing identify a non-existent target, then expose her collusion with the Imperial court on the spot.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Expose Ye Qing as the insider",
+            "visible_reward": "Gain the opportunity to publicly unmask Ye Qing",
+            "risk_hint": "May drive Ye Qing to desperate action",
+            "process_label": "以退为进",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 2
+              },
+              {
+                "stat": "名望",
+                "delta": -1
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 15
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_006_a_001",
+                  "content": "A faint smile tugged at Chen Ji's lips as he adopted an expression of fear: \"Miss Ye Qing wishes to make an identification? Very well, whom will you accuse?\" His tone carried perfectly calibrated trembling—acting worthy of an award. The envoy and Ye Qing exchanged a glance—they had taken the bait.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清陷阱触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_006_b",
+            "text": "Strike first, expose their identity",
+            "description": "Directly reveal Ye Qing as the demonic saint, publicly point out her collusion with the envoy, and put her on the spot.",
+            "satisfaction_type": "直接爽",
+            "visible_cost": "May alert the enemy",
+            "visible_reward": "Shock the entire assembly",
+            "risk_hint": "The envoy may have backup plans",
+            "process_label": "主动出击",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 3
+              },
+              {
+                "stat": "黑化值",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 20
+              },
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敬畏",
+                "delta": 5
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_006_b_001",
+                  "content": "Chen Ji suddenly let out a cold laugh, his voice clear and ringing: \"Miss Ye Qing, what audacity. The saintess of the Holy Saint Sect personally comes to the Tianqing Sect to 'identify demonic remnants'? This play, for whose benefit is it?\" The entire venue erupted. The envoy's expression changed dramatically, and Ye Qing was utterly shaken—she had never expected Chen Ji to tear down the facade so decisively.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清身份曝光"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_006_c",
+            "text": "Secretly arrange, lure the snake from its hole",
+            "description": "Pretend ignorance of Ye Qing's identity, have Su Qingyao cooperate in the act, and wait for the enemy to reveal more cards before closing the net.",
+            "satisfaction_type": "阴谋爽",
+            "visible_cost": "Time-consuming",
+            "visible_reward": "Gain more intelligence",
+            "risk_hint": "Variables increase",
+            "process_label": "静观其变",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 5
+              },
+              {
+                "character_id": "char_yeqing",
+                "dimension": "信任",
+                "delta": -10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_006_c_001",
+                  "content": "Chen Ji nodded slightly, adopting an expression of \"I am all ears.\" As Ye Qing was about to speak, suddenly—a blurry image flashed through Chen Ji's Mental Sea. It was his sister Chen Nian's face, flickering in and out of visibility within chaos, eerily resonating with the fourth page of the Tianji Record. His heart tightened, but his expression remained unchanged: \"Please, Miss Ye Qing, proceed.\"",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈念共鸣触发"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_007",
+        "content": "Within the Mental Sea, the Tianji Record Fragment trembled violently. Blurry images flickered continuously—Chen Nian imprisoned by chains in a chamber covered in runes; the old Sect Master Ling Yuan's back standing in the shadows, seemingly conversing with someone; and Ye Qing, her face contorted, repeatedly uttering the words \"I'm sorry,\" yet her eyes reflected profound inner turmoil and unwillingness. Chen Ji clenched his fists tightly. He committed this to memory. When the moment ripened, he would settle every score with interest.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_008",
+        "character_id": "char_yeqing",
+        "content": "Ye Qing surveyed her surroundings before speaking: \"The demonic path remnants...are farther than the heavens, yet closer than the eye.\" She raised her hand deliberately, pointing toward an unremarkable servant disciple at the crowd's edge. \"It's him!\" The servant disciple's face filled with terror as he tried to defend himself, but the golden-armored guards descended upon him like wolves. A flicker of guilt passed through Ye Qing's eyes, vanishing as quickly as it appeared—she had no other choice.",
+        "emotion": "挣扎"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_009",
+        "content": "Chen Ji observed with cold eyes. The servant disciple was genuinely innocent, yet Chen Ji chose not to intervene—not from inability, but reluctance to reveal his strength at this moment. He was waiting, waiting for Ye Qing to expose more flaws, waiting for the envoy to reveal their true cards. Yet...the three words \"I'm sorry\" echoed repeatedly through the Tianji Record's vision, stirring an unusual disturbance in his heart. Ye Qing, what burdens are you truly bearing?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_010",
+        "character_id": "char_lingyuan",
+        "content": "\"Excellent!\" The envoy burst into laughter. \"Since the demonic remnants have been brought to justice, I have another announcement—\" From his sleeve, he produced a bright yellow imperial edict, declaring loudly, \"By the mandate of heaven, the emperor decrees: Chen Ji, Grand Preceptor to the Crown Prince, carries the bloodline of surviving Chen clan members from the previous dynasty. He shall be immediately escorted to the capital for trial!\" Before the words finished, twelve golden-armored guards advanced in unison, their Nascent Soul stage pressure bearing down like collapsing mountains. The Tianqing Sect disciples' faces turned ashen, yet no one dared move.",
+        "emotion": "威胁"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_011",
+        "content": "\"Previous dynasty remnants?\" Chen Ji suddenly laughed. The laughter was quiet, yet it reached everyone present. The envoy's brow furrowed: \"What are you laughing at?\" Chen Ji stood with hands clasped behind his back, his gaze tranquil as still water: \"I laugh because the imperial court investigates cases yet actually unearths ancient matters like 'previous dynasty remnants' from ten thousand years ago. I wonder which brilliant mind is pulling strings behind the scenes?\" He paused, shifting topics, \"Or perhaps...someone wishes to use the imperial court's hands to eliminate a 'waste'?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_012",
+        "content": "The envoy's expression darkened. He hadn't anticipated that this rumored worthless servant would possess such razor-sharp words. More unsettling was the sense that Chen Ji had already seen through everything. Chen Ji's next words struck like ice into his bones: \"That emblem around the envoy's neck—it's the Chen family name, isn't it? The branch of the Chen family from ten thousand years ago, the one destroyed a century ago—rumor has it that the Chen main lineage sent someone to start that fire.\" Chen Ji smiled faintly, \"So, have you come for revenge, or to silence witnesses?\"",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "choice": {
+        "id": "天机录_ch0723_013",
+        "prompt": "A crack appeared in the truth, the envoy's true identity emerging. Ye Qing stirred beside them, seemingly searching for an escape route. Su Qingyao's hand rested on her sword hilt. The situation hung by a thread, forcing Chen Ji to make the final decision.",
+        "choice_type": "keyDecision",
+        "choices": [
+          {
+            "id": "天机录_ch0723_013_a",
+            "text": "Press forward and force the envoy to show his hand",
+            "description": "Intensify pressure and publicly expose the envoy as a survivor of the Chen family's destroyed branch, forcing him to reveal his true intentions.",
+            "satisfaction_type": "碾压爽",
+            "visible_cost": "May trigger intense combat",
+            "visible_reward": "Publicly expose the conspiracy",
+            "risk_hint": "The golden-armored guards possess considerable strength",
+            "process_label": "步步紧逼",
+            "stat_effects": [
+              {
+                "stat": "名望",
+                "delta": 5
+              },
+              {
+                "stat": "黑化值",
+                "delta": 3
+              },
+              {
+                "stat": "天命值",
+                "delta": -5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_lingyuan",
+                "dimension": "敌意",
+                "delta": 10
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_013_a_001",
+                  "content": "\"The sole survivor of the Chen family branch destroyed ten thousand years ago—\" Chen Ji articulated each word deliberately, \"—that would be you, correct? What should I call you, Chen... Shouzhen?\" The envoy's pupils contracted violently, instinctively retreating a step. That momentary loss of composure spoke louder than any words. Surrounding them, shocked gasps erupted one after another.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "陈守真身份暴露"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_013_b",
+            "text": "Turn toward Ye Qing and expose her betrayal",
+            "description": "For now, let the envoy go and instead question Ye Qing about spreading false intelligence, pinning her to the pillar of shame.",
+            "satisfaction_type": "扮猪吃虎",
+            "visible_cost": "Expose the flaws in letting the envoy escape",
+            "visible_reward": "Sever the envoy's allies",
+            "risk_hint": "Ye Qing likely has a backup plan",
+            "process_label": "分化瓦解",
+            "stat_effects": [
+              {
+                "stat": "谋略",
+                "delta": 4
+              },
+              {
+                "stat": "名望",
+                "delta": 2
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_yeqing",
+                "dimension": "敌意",
+                "delta": 25
+              },
+              {
+                "character_id": "char_suqingyao",
+                "dimension": "信任",
+                "delta": 8
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_013_b_001",
+                  "content": "Chen Ji abruptly shifted his gaze to Ye Qing, his voice turning icy cold: \"Miss Ye Qing, that false intelligence—it was you who passed it to me, wasn't it? 'The imperial court only sent a Nascent Soul stage envoy'—who were you covering for?\" Ye Qing's entire body stiffened, her face draining of color. The envoy sensed danger and attempted to speak in her defense, but Su Qingyao's sword forced him back three feet.",
+                  "emphasis": "dramatic"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "夜清背叛坐实"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": null,
+            "memory_label": null,
+            "branch_route_id": null
+          },
+          {
+            "id": "天机录_ch0723_013_c",
+            "text": "Utilize the Tianji Record to peer into the truth",
+            "description": "Consume 5 Heavenly Fate points to activate the Tianji Record and glimpse the next three hours, identifying the true mastermind behind everything.",
+            "satisfaction_type": "延迟爽",
+            "visible_cost": "Heavenly Fate -5",
+            "visible_reward": "Acquire critical intelligence",
+            "risk_hint": "Expose the aura of the Tianji Record",
+            "process_label": "窥探天机",
+            "stat_effects": [
+              {
+                "stat": "天命值",
+                "delta": -5
+              },
+              {
+                "stat": "谋略",
+                "delta": 5
+              }
+            ],
+            "relationship_effects": [
+              {
+                "character_id": "char_moxiansheng",
+                "dimension": "信任",
+                "delta": 3
+              }
+            ],
+            "result_nodes": [
+              {
+                "text": {
+                  "id": "天机录_ch0723_result_013_c_001",
+                  "content": "Chen Ji closed his eyes and concentrated, and within his Mental Sea, the Tianji Record Fragment burst open with a thunderous sound. Images flashed rapidly—the messenger, Ye Qing, Ling Yuan, even a mysterious figure far away in the Imperial Capital... Their threads of destiny intertwined, and at the end of all these lines pointed to a massive eye composed of countless runes. That was... the Heavenly Dao Eye?! Chen Ji opened his eyes abruptly, cold sweat streaming down his face.",
+                  "emphasis": "system"
+                }
+              }
+            ],
+            "is_premium": false,
+            "flags_set": [
+              "天机录暴露风险"
+            ],
+            "requires_flag": null,
+            "forbids_flag": null,
+            "stat_gate": {
+              "stat": "天命值",
+              "min": 10
+            },
+            "memory_label": null,
+            "branch_route_id": null
+          }
+        ]
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_014",
+        "content": "Just at this moment, a violent headache struck. Chen Ji supported his forehead with one hand, and his vision briefly blurred. Within his Mental Sea, the edges of the Tianji Record Fragment began to glow faintly—the fourth page, a page he had never touched before, now actively resonated with him. A strange yet familiar force surged into his body, carrying a faint trace of... Chen Nian's aura. Sister, is that you?",
+        "emphasis": "system"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_015",
+        "character_id": "char_chenian",
+        "content": "A faint voice echoed in Chen Ji's Mental Sea, fragmented and断续, like a candle flame in the wind: \"Brother... don't trust her... it's a trap... Ling Yuan and the Heavenly Dao Eye...\" The voice cut off abruptly, as if severed by some force. Chen Ji's heart clenched tightly. His sister was warning him! Ling Yuan—surely had been a chess piece of the mastermind behind the scenes from start to finish. And Ye Qing... her betrayal, perhaps was not of her own will.",
+        "emotion": "焦虑"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_016",
+        "content": "Chen Ji took a deep breath, suppressing the surging emotions. He raised his head again, his gaze sharp as a blade, staring directly at the messenger—no, he should be called Chen Shouzhen. The opponent's face was ashen, clearly not expecting his background to be exposed publicly by a \"waste.\" And Ye Qing, standing to the side, her body trembling slightly, her eyes complex as she looked at Chen Ji—fear, guilt, and... a trace of relief?",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_017",
+        "content": "\"Interesting.\" Chen Ji suddenly spoke, his tone light and carefree. \"Chen Shouzhen, orphaned remnant of the Chen family's branch from ten thousand years ago; Ye Qing, Holy Sect Saint of the Demonic Path, actually a chess piece of the old sect master Ling Yuan; and Ling Yuan...\" He paused deliberately, his gaze sweeping across the surroundings. \"Old Sect Master Ling, shouldn't you also step out to meet some old friends?\" The crowd stirred, and an elderly figure slowly walked out from the depths of the mountain gate. It was precisely the old sect master of the Tianqing Sect—Ling Yuan.",
+        "emphasis": "dramatic"
+      }
+    },
+    {
+      "dialogue": {
+        "id": "天机录_ch0723_018",
+        "character_id": "char_lingyuan",
+        "content": "\"Good disciple-nephew, truly impossible to瞒住.\" Ling Yuan stood leaning on his staff, his turbid old eyes flashing with keen light. \"But you only guessed half. Ye Qing is not my chess piece—she is an abandoned child of the Heavenly Dao—much like yourself.\" He looked at Chen Ji, the corner of his mouth curving into a meaningful smile. \"You think the Tianji Record chose you by coincidence? Child, this chess game began the moment you were born, and we... are merely chess pieces.\"",
+        "emotion": "阴森"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_019",
+        "content": "Ling Yuan's words poured over Chen Ji like a basin of cold water. The Heavenly Dao Eye, the Chen family's extermination, the ten-thousand-year layout—all the clues rapidly connected in Chen Ji's mind. He finally understood why the Tianji Record Fragment appeared in his hands, why the Tianji Record had listed him ten thousand years ago. Everything was destined ten thousand years ago. And his so-called \"flawless calculations,\" perhaps from the very beginning were in someone else's script.",
+        "emphasis": "system"
+      }
+    },
+    {
+      "text": {
+        "id": "天机录_ch0723_020",
+        "content": "\"Script?\" Chen Ji suddenly laughed. That laughter rose from low to high, finally turning into a long roar toward the heavens. \"Old Sect Master Ling, you're right, we are all chess pieces. But you forgot one thing—\" He raised his gaze, his eyes blazing with fierce light. \"Chess pieces can also devour the Chess Player!\" Before the words even finished, he urgently activated the Tianji Record Fragment. A brilliant light shot from his Brow Center, erupting into the sky, tearing apart the layers of mist shrouding the Tianqing Sect. The chess game of destiny, from this moment forward, officially began its reversal.",
+        "emphasis": "dramatic"
+      }
+    }
+  ]
+}

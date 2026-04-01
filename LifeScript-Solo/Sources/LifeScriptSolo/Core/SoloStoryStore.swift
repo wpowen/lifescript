@@ -510,7 +510,8 @@ final class SoloStoryStore {
             approachingSignals: approaching,
             sealedCount: sealedCount,
             totalSignalCount: hiddenSignalCount,
-            boardLine: boardLine
+            boardLine: boardLine,
+            destinyStatus: routeSnapshot.destinyStatus
         )
     }
 
