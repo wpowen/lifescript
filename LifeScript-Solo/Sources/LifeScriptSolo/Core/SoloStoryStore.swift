@@ -163,8 +163,8 @@ final class SoloStoryStore {
         }
 
         return SoloWelcomeSnapshot(
-            title: book?.title ?? branding.storyDisplayName,
-            author: book?.author ?? SoloLocalization.localized("命书工作室"),
+            title: book.map { SoloLocalization.localized($0.title) } ?? branding.storyDisplayName,
+            author: book.map { SoloLocalization.localized($0.author) } ?? SoloLocalization.localized("命书工作室"),
             eyebrow: branding.entryEyebrow,
             headline: headline,
             detail: detail,
@@ -263,7 +263,7 @@ final class SoloStoryStore {
         return SoloRouteMapSnapshot(
             currentChapterID: currentChapter?.id,
             currentStageID: currentGuide?.stageId,
-            currentStageTitle: stage(for: currentGuide)?.title,
+            currentStageTitle: stage(for: currentGuide).map { SoloLocalization.localized($0.title) },
             currentObjective: currentGuide?.objective,
             generatedChapterCount: chapters.count,
             plannedChapterCount: plannedChapterTotal,
@@ -277,14 +277,14 @@ final class SoloStoryStore {
         let relationships = currentRelationships(progress: progress)
         let darklineSnapshot = darklineBoardSnapshot(progress: progress)
         let heartSnapshot = humanHeartsSnapshot(progress: progress)
-        let stageTitle = routeSnapshot.currentStageTitle ?? "迷雾初开"
-        let objective = routeSnapshot.currentObjective ?? "继续推进眼前章节，新的征兆会在行动后显形。"
-        let stageLine = "当前命局停在「\(stageTitle)」，你已经走完 \(routeSnapshot.completedChapterIDs.count) 章。"
+        let stageTitle = routeSnapshot.currentStageTitle ?? SoloLocalization.localized("迷雾初开")
+        let objective = routeSnapshot.currentObjective ?? SoloLocalization.localized("继续推进眼前章节，新的征兆会在行动后显形。")
+        let stageLine = SoloLocalization.format("当前命局停在「%@」，你已经走完 %d 章。", stageTitle, routeSnapshot.completedChapterIDs.count)
         let pressureLine = darklineSnapshot.discoveredSignals.isEmpty
-            ? "暗线仍在潜伏，先稳住当前局面。"
-            : "已有 \(darklineSnapshot.discoveredSignals.count) 条异动露头，别让节奏被暗线牵走。"
-        let destinySummary = "天命值 \(routeSnapshot.destinyStatus.value) · \(routeSnapshot.destinyStatus.thresholdHint)"
-        let stageProgress = "\(routeSnapshot.generatedChapterCount) / \(routeSnapshot.plannedChapterCount) \(SoloStoryConfig.branding.chapterUnitName)"
+            ? SoloLocalization.localized("暗线仍在潜伏，先稳住当前局面。")
+            : SoloLocalization.format("已有 %d 条异动露头，别让节奏被暗线牵走。", darklineSnapshot.discoveredSignals.count)
+        let destinySummary = SoloLocalization.format("天命值 %d · %@", routeSnapshot.destinyStatus.value, routeSnapshot.destinyStatus.thresholdHint)
+        let stageProgress = SoloLocalization.format("%d / %d %@", routeSnapshot.generatedChapterCount, routeSnapshot.plannedChapterCount, SoloStoryConfig.branding.chapterUnitName)
 
         return SoloRouteMapHubSnapshot(
             currentObjective: objective,
@@ -294,27 +294,27 @@ final class SoloStoryStore {
             destinyStatus: routeSnapshot.destinyStatus,
             destinyCard: SoloRouteMapHubCard(
                 id: "destiny",
-                title: "命途",
-                subtitle: "看已行之路、眼前棋局与将至征兆",
-                statusLine: "当前阶段：\(stageTitle) · 显形进度 \(stageProgress)",
-                badge: routeSnapshot.currentStageTitle == nil ? "待显形" : "在局中",
-                callToAction: "进入命途推演"
+                title: SoloLocalization.localized("命途"),
+                subtitle: SoloLocalization.localized("看已行之路、眼前棋局与将至征兆"),
+                statusLine: SoloLocalization.format("当前阶段：%@ · 显形进度 %@", stageTitle, stageProgress),
+                badge: routeSnapshot.currentStageTitle == nil ? SoloLocalization.localized("待显形") : SoloLocalization.localized("在局中"),
+                callToAction: SoloLocalization.localized("进入命途推演")
             ),
             heartsCard: SoloRouteMapHubCard(
                 id: "hearts",
-                title: "人心",
-                subtitle: "看谁已入局、谁可试探、谁需警惕",
+                title: SoloLocalization.localized("人心"),
+                subtitle: SoloLocalization.localized("看谁已入局、谁可试探、谁需警惕"),
                 statusLine: heartSnapshot.spotlightLine,
-                badge: "\(relationships.count) 人在局",
-                callToAction: "进入人心盘"
+                badge: SoloLocalization.format("%d 人在局", relationships.count),
+                callToAction: SoloLocalization.localized("进入人心盘")
             ),
             darklineCard: SoloRouteMapHubCard(
                 id: "darkline",
-                title: "暗线",
-                subtitle: "看异动、疑云与未显形缺口",
+                title: SoloLocalization.localized("暗线"),
+                subtitle: SoloLocalization.localized("看异动、疑云与未显形缺口"),
                 statusLine: darklineSnapshot.boardLine,
-                badge: "\(darklineSnapshot.discoveredSignals.count) 已识别",
-                callToAction: "进入暗线观测"
+                badge: SoloLocalization.format("%d 已识别", darklineSnapshot.discoveredSignals.count),
+                callToAction: SoloLocalization.localized("进入暗线观测")
             )
         )
     }
@@ -341,18 +341,18 @@ final class SoloStoryStore {
 
             return SoloDestinyStageNode(
                 id: stage.id,
-                title: isUnlocked ? stage.title : "未显形阶段",
-                summary: isUnlocked ? stage.summary : "你只能感知这段命途存在，仍看不清它的真相。",
+                title: isUnlocked ? SoloLocalization.localized(stage.title) : SoloLocalization.localized("未显形阶段"),
+                summary: isUnlocked ? SoloLocalization.localized(stage.summary) : SoloLocalization.localized("你只能感知这段命途存在，仍看不清它的真相。"),
                 visibility: visibility,
                 completedChapterCount: completedCount,
                 totalChapterCount: stage.chapterIds.count
             )
         }
 
-        let currentStageTitle = routeSnapshot.currentStageTitle ?? "迷雾初开"
+        let currentStageTitle = routeSnapshot.currentStageTitle ?? SoloLocalization.localized("迷雾初开")
         let currentGuide = guide(forChapterID: routeSnapshot.currentChapterID)
-        let omenLine = currentGuide?.hiddenRouteHint ?? "继续推进当前章节，新的征兆会浮出水面。"
-        let progressLine = "已显形 \(routeSnapshot.generatedChapterCount) / \(routeSnapshot.plannedChapterCount) \(SoloStoryConfig.branding.chapterUnitName)"
+        let omenLine = currentGuide?.hiddenRouteHint ?? SoloLocalization.localized("继续推进当前章节，新的征兆会浮出水面。")
+        let progressLine = SoloLocalization.format("已显形 %d / %d %@", routeSnapshot.generatedChapterCount, routeSnapshot.plannedChapterCount, SoloStoryConfig.branding.chapterUnitName)
 
         return SoloDestinyAtlasSnapshot(
             stageNodes: stageNodes,
@@ -366,8 +366,8 @@ final class SoloStoryStore {
     func humanHeartsSnapshot(progress: ReadingProgress?) -> SoloHumanHeartsSnapshot {
         guard let book else {
             return SoloHumanHeartsSnapshot(
-                spotlightLine: "局中人物尚未载入。",
-                pressureLine: "暂无可分析人心信号。",
+                spotlightLine: SoloLocalization.localized("局中人物尚未载入。"),
+                pressureLine: SoloLocalization.localized("暂无可分析人心信号。"),
                 rings: []
             )
         }
@@ -403,26 +403,26 @@ final class SoloStoryStore {
         let rings: [SoloHeartRing] = [
             SoloHeartRing(
                 id: "in-play",
-                title: "已入局",
-                subtitle: "这些人会直接反馈你的落子。",
+                title: SoloLocalization.localized("已入局"),
+                subtitle: SoloLocalization.localized("这些人会直接反馈你的落子。"),
                 characterIDs: inPlay
             ),
             SoloHeartRing(
                 id: "testable",
-                title: "可试探",
-                subtitle: "可以先用低成本动作探边界。",
+                title: SoloLocalization.localized("可试探"),
+                subtitle: SoloLocalization.localized("可以先用低成本动作探边界。"),
                 characterIDs: testable
             ),
             SoloHeartRing(
                 id: "dangerous",
-                title: "需警惕",
-                subtitle: "这批关系已带有明显对抗或防备。",
+                title: SoloLocalization.localized("需警惕"),
+                subtitle: SoloLocalization.localized("这批关系已带有明显对抗或防备。"),
                 characterIDs: dangerous
             ),
             SoloHeartRing(
                 id: "veiled",
-                title: "尚未看透",
-                subtitle: "轮廓已在，但真实立场还未显形。",
+                title: SoloLocalization.localized("尚未看透"),
+                subtitle: SoloLocalization.localized("轮廓已在，但真实立场还未显形。"),
                 characterIDs: veiled
             )
         ]
@@ -431,14 +431,14 @@ final class SoloStoryStore {
         let spotlightLine: String
         if let spotlight,
            let character = book.characters.first(where: { $0.id == spotlight.characterId }) {
-            spotlightLine = "\(character.name)目前最容易牵动局势，态度落在「\(spotlight.attitudeLabel)」。"
+            spotlightLine = SoloLocalization.format("%@目前最容易牵动局势，态度落在「%@」。", character.name, spotlight.attitudeLabel)
         } else {
-            spotlightLine = "人心线索仍浅，继续推进互动后再回看。"
+            spotlightLine = SoloLocalization.localized("人心线索仍浅，继续推进互动后再回看。")
         }
 
         let pressureLine = dangerous.isEmpty
-            ? "目前没有明显失控的人心风险。"
-            : "至少 \(dangerous.count) 条关系处在高警惕区，优先止损。"
+            ? SoloLocalization.localized("目前没有明显失控的人心风险。")
+            : SoloLocalization.format("至少 %d 条关系处在高警惕区，优先止损。", dangerous.count)
 
         return SoloHumanHeartsSnapshot(
             spotlightLine: spotlightLine,
@@ -464,14 +464,14 @@ final class SoloStoryStore {
             guard let hint = guide.hiddenRouteHint else { continue }
             hiddenSignalCount += 1
 
-            let stageTitle = stageByID[guide.stageId]?.title ?? "未知阶段"
-            let chapterTitle = chapterByID[guide.chapterId]?.title ?? "未知章节"
+            let stageTitle = stageByID[guide.stageId].map { SoloLocalization.localized($0.title) } ?? SoloLocalization.localized("未知阶段")
+            let chapterTitle = chapterByID[guide.chapterId].map { SoloLocalization.localized($0.title) } ?? SoloLocalization.localized("未知章节")
 
             if completedIDs.contains(guide.chapterId) {
                 discovered.append(
                     SoloDarklineSignal(
                         id: guide.chapterId,
-                        title: "已识别异动",
+                        title: SoloLocalization.localized("已识别异动"),
                         hint: hint,
                         sourceStageTitle: stageTitle,
                         sourceChapterTitle: chapterTitle,
@@ -485,7 +485,7 @@ final class SoloStoryStore {
                 approaching.append(
                     SoloDarklineSignal(
                         id: guide.chapterId,
-                        title: "正在逼近",
+                        title: SoloLocalization.localized("正在逼近"),
                         hint: approachingDarklineHint(stageTitle: stageTitle, chapterTitle: chapterTitle),
                         sourceStageTitle: stageTitle,
                         sourceChapterTitle: chapterTitle,
@@ -498,11 +498,11 @@ final class SoloStoryStore {
         let sealedCount = max(0, hiddenSignalCount - discovered.count - approaching.count)
         let boardLine: String
         if discovered.isEmpty && approaching.isEmpty {
-            boardLine = "暗线仍在水下，你还没有抓住它的尾迹。"
+            boardLine = SoloLocalization.localized("暗线仍在水下，你还没有抓住它的尾迹。")
         } else if discovered.isEmpty {
-            boardLine = "你已经感觉到 \(approaching.count) 股异动逼近，但还不能直接看穿它。"
+            boardLine = SoloLocalization.format("你已经感觉到 %d 股异动逼近，但还不能直接看穿它。", approaching.count)
         } else {
-            boardLine = "你已识别 \(discovered.count) 条暗线尾迹，眼前还有 \(approaching.count) 股异动正在逼近。"
+            boardLine = SoloLocalization.format("你已识别 %d 条暗线尾迹，眼前还有 %d 股异动正在逼近。", discovered.count, approaching.count)
         }
 
         return SoloDarklineBoardSnapshot(
@@ -605,9 +605,9 @@ final class SoloStoryStore {
 
     private func identityValue(for progressSummary: SoloProgressSummary, stageTitle: String?) -> String {
         if let stageTitle {
-            return "第 \(progressSummary.currentChapterNumber) \(SoloStoryConfig.branding.chapterUnitName) · \(stageTitle)"
+            return SoloLocalization.format("第 %d %@ · %@", progressSummary.currentChapterNumber, SoloStoryConfig.branding.chapterUnitName, stageTitle)
         }
-        return "第 \(progressSummary.currentChapterNumber) \(SoloStoryConfig.branding.chapterUnitName)"
+        return SoloLocalization.format("第 %d %@", progressSummary.currentChapterNumber, SoloStoryConfig.branding.chapterUnitName)
     }
 
     private func entryExperienceStats(
@@ -625,10 +625,10 @@ final class SoloStoryStore {
         } ?? 0
 
         return [
-            SoloEntryExperienceStat(id: "chapter-scale", title: "章节规模", valueText: "\(totalChapters) \(branding.chapterUnitName)"),
-            SoloEntryExperienceStat(id: "route-scale", title: "公开分路", valueText: "\(totalRoutes) 条"),
-            SoloEntryExperienceStat(id: "character-scale", title: "关键人物", valueText: "\(totalCharacters) 人"),
-            SoloEntryExperienceStat(id: "interaction-scale", title: "交互密度", valueText: "\(totalInteractions) 次"),
+            SoloEntryExperienceStat(id: "chapter-scale", title: SoloLocalization.localized("章节规模"), valueText: "\(totalChapters) \(branding.chapterUnitName)"),
+            SoloEntryExperienceStat(id: "route-scale", title: SoloLocalization.localized("公开分路"), valueText: SoloLocalization.format("%d 条", totalRoutes)),
+            SoloEntryExperienceStat(id: "character-scale", title: SoloLocalization.localized("关键人物"), valueText: SoloLocalization.format("%d 人", totalCharacters)),
+            SoloEntryExperienceStat(id: "interaction-scale", title: SoloLocalization.localized("交互密度"), valueText: SoloLocalization.format("%d 次", totalInteractions)),
         ]
     }
 
@@ -803,66 +803,66 @@ final class SoloStoryStore {
     private func dossierStatCards(for book: Book, stats: ProtagonistStats) -> [SoloDossierStatCard] {
         if book.id == "天机录" {
             return [
-                SoloDossierStatCard(id: "combat", title: "落子", value: stats.combat, tint: .emberGold),
-                SoloDossierStatCard(id: "fame", title: "牌面", value: stats.fame, tint: .royalPlum),
-                SoloDossierStatCard(id: "strategy", title: "机锋", value: stats.strategy, tint: .oracleJade),
-                SoloDossierStatCard(id: "wealth", title: "残页", value: stats.wealth, tint: .sapphireMist),
-                SoloDossierStatCard(id: "charm", title: "人心", value: stats.charm, tint: .oracleJade),
-                SoloDossierStatCard(id: "darkness", title: "心魇", value: stats.darkness, tint: .royalPlum),
-                SoloDossierStatCard(id: "destiny", title: "天命", value: stats.destiny, tint: .emberGold),
+                SoloDossierStatCard(id: "combat", title: SoloLocalization.localized("落子"), value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: SoloLocalization.localized("牌面"), value: stats.fame, tint: .royalPlum),
+                SoloDossierStatCard(id: "strategy", title: SoloLocalization.localized("机锋"), value: stats.strategy, tint: .oracleJade),
+                SoloDossierStatCard(id: "wealth", title: SoloLocalization.localized("残页"), value: stats.wealth, tint: .sapphireMist),
+                SoloDossierStatCard(id: "charm", title: SoloLocalization.localized("人心"), value: stats.charm, tint: .oracleJade),
+                SoloDossierStatCard(id: "darkness", title: SoloLocalization.localized("心魇"), value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: SoloLocalization.localized("天命"), value: stats.destiny, tint: .emberGold),
             ]
         }
 
         switch book.genre {
         case .cultivation:
             return [
-                SoloDossierStatCard(id: "combat", title: "剑势", value: stats.combat, tint: .emberGold),
-                SoloDossierStatCard(id: "fame", title: "声名", value: stats.fame, tint: .royalPlum),
-                SoloDossierStatCard(id: "strategy", title: "机锋", value: stats.strategy, tint: .moonJade),
-                SoloDossierStatCard(id: "wealth", title: "灵资", value: stats.wealth, tint: .sapphireMist),
-                SoloDossierStatCard(id: "charm", title: "气度", value: stats.charm, tint: .moonJade),
-                SoloDossierStatCard(id: "darkness", title: "心魇", value: stats.darkness, tint: .royalPlum),
-                SoloDossierStatCard(id: "destiny", title: "天命", value: stats.destiny, tint: .emberGold),
+                SoloDossierStatCard(id: "combat", title: SoloLocalization.localized("剑势"), value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: SoloLocalization.localized("声名"), value: stats.fame, tint: .royalPlum),
+                SoloDossierStatCard(id: "strategy", title: SoloLocalization.localized("机锋"), value: stats.strategy, tint: .moonJade),
+                SoloDossierStatCard(id: "wealth", title: SoloLocalization.localized("灵资"), value: stats.wealth, tint: .sapphireMist),
+                SoloDossierStatCard(id: "charm", title: SoloLocalization.localized("气度"), value: stats.charm, tint: .moonJade),
+                SoloDossierStatCard(id: "darkness", title: SoloLocalization.localized("心魇"), value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: SoloLocalization.localized("天命"), value: stats.destiny, tint: .emberGold),
             ]
         case .businessWar:
             return [
-                SoloDossierStatCard(id: "combat", title: "压制力", value: stats.combat, tint: .emberGold),
-                SoloDossierStatCard(id: "fame", title: "声望", value: stats.fame, tint: .sapphireMist),
-                SoloDossierStatCard(id: "strategy", title: "筹谋", value: stats.strategy, tint: .moonJade),
-                SoloDossierStatCard(id: "wealth", title: "资本", value: stats.wealth, tint: .emberGold),
-                SoloDossierStatCard(id: "charm", title: "游说", value: stats.charm, tint: .moonJade),
-                SoloDossierStatCard(id: "darkness", title: "代价", value: stats.darkness, tint: .royalPlum),
-                SoloDossierStatCard(id: "destiny", title: "风向", value: stats.destiny, tint: .sapphireMist),
+                SoloDossierStatCard(id: "combat", title: SoloLocalization.localized("压制力"), value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: SoloLocalization.localized("声望"), value: stats.fame, tint: .sapphireMist),
+                SoloDossierStatCard(id: "strategy", title: SoloLocalization.localized("筹谋"), value: stats.strategy, tint: .moonJade),
+                SoloDossierStatCard(id: "wealth", title: SoloLocalization.localized("资本"), value: stats.wealth, tint: .emberGold),
+                SoloDossierStatCard(id: "charm", title: SoloLocalization.localized("游说"), value: stats.charm, tint: .moonJade),
+                SoloDossierStatCard(id: "darkness", title: SoloLocalization.localized("代价"), value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: SoloLocalization.localized("风向"), value: stats.destiny, tint: .sapphireMist),
             ]
         case .suspenseSurvival:
             return [
-                SoloDossierStatCard(id: "combat", title: "求生", value: stats.combat, tint: .emberGold),
-                SoloDossierStatCard(id: "fame", title: "暴露", value: stats.fame, tint: .royalPlum),
-                SoloDossierStatCard(id: "strategy", title: "判断", value: stats.strategy, tint: .moonJade),
-                SoloDossierStatCard(id: "wealth", title: "物资", value: stats.wealth, tint: .sapphireMist),
-                SoloDossierStatCard(id: "charm", title: "说服", value: stats.charm, tint: .moonJade),
-                SoloDossierStatCard(id: "darkness", title: "污染", value: stats.darkness, tint: .royalPlum),
-                SoloDossierStatCard(id: "destiny", title: "直觉", value: stats.destiny, tint: .emberGold),
+                SoloDossierStatCard(id: "combat", title: SoloLocalization.localized("求生"), value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: SoloLocalization.localized("暴露"), value: stats.fame, tint: .royalPlum),
+                SoloDossierStatCard(id: "strategy", title: SoloLocalization.localized("判断"), value: stats.strategy, tint: .moonJade),
+                SoloDossierStatCard(id: "wealth", title: SoloLocalization.localized("物资"), value: stats.wealth, tint: .sapphireMist),
+                SoloDossierStatCard(id: "charm", title: SoloLocalization.localized("说服"), value: stats.charm, tint: .moonJade),
+                SoloDossierStatCard(id: "darkness", title: SoloLocalization.localized("污染"), value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: SoloLocalization.localized("直觉"), value: stats.destiny, tint: .emberGold),
             ]
         case .apocalypsePower:
             return [
-                SoloDossierStatCard(id: "combat", title: "战备", value: stats.combat, tint: .emberGold),
-                SoloDossierStatCard(id: "fame", title: "声噪", value: stats.fame, tint: .royalPlum),
-                SoloDossierStatCard(id: "strategy", title: "决断", value: stats.strategy, tint: .moonJade),
-                SoloDossierStatCard(id: "wealth", title: "补给", value: stats.wealth, tint: .sapphireMist),
-                SoloDossierStatCard(id: "charm", title: "凝聚", value: stats.charm, tint: .moonJade),
-                SoloDossierStatCard(id: "darkness", title: "异化", value: stats.darkness, tint: .royalPlum),
-                SoloDossierStatCard(id: "destiny", title: "火种", value: stats.destiny, tint: .emberGold),
+                SoloDossierStatCard(id: "combat", title: SoloLocalization.localized("战备"), value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: SoloLocalization.localized("声噪"), value: stats.fame, tint: .royalPlum),
+                SoloDossierStatCard(id: "strategy", title: SoloLocalization.localized("决断"), value: stats.strategy, tint: .moonJade),
+                SoloDossierStatCard(id: "wealth", title: SoloLocalization.localized("补给"), value: stats.wealth, tint: .sapphireMist),
+                SoloDossierStatCard(id: "charm", title: SoloLocalization.localized("凝聚"), value: stats.charm, tint: .moonJade),
+                SoloDossierStatCard(id: "darkness", title: SoloLocalization.localized("异化"), value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: SoloLocalization.localized("火种"), value: stats.destiny, tint: .emberGold),
             ]
         case .urbanReversal:
             return [
-                SoloDossierStatCard(id: "combat", title: "锋芒", value: stats.combat, tint: .emberGold),
-                SoloDossierStatCard(id: "fame", title: "牌面", value: stats.fame, tint: .sapphireMist),
-                SoloDossierStatCard(id: "strategy", title: "手段", value: stats.strategy, tint: .moonJade),
-                SoloDossierStatCard(id: "wealth", title: "底气", value: stats.wealth, tint: .emberGold),
-                SoloDossierStatCard(id: "charm", title: "拿捏", value: stats.charm, tint: .moonJade),
-                SoloDossierStatCard(id: "darkness", title: "反噬", value: stats.darkness, tint: .royalPlum),
-                SoloDossierStatCard(id: "destiny", title: "势头", value: stats.destiny, tint: .sapphireMist),
+                SoloDossierStatCard(id: "combat", title: SoloLocalization.localized("锋芒"), value: stats.combat, tint: .emberGold),
+                SoloDossierStatCard(id: "fame", title: SoloLocalization.localized("牌面"), value: stats.fame, tint: .sapphireMist),
+                SoloDossierStatCard(id: "strategy", title: SoloLocalization.localized("手段"), value: stats.strategy, tint: .moonJade),
+                SoloDossierStatCard(id: "wealth", title: SoloLocalization.localized("底气"), value: stats.wealth, tint: .emberGold),
+                SoloDossierStatCard(id: "charm", title: SoloLocalization.localized("拿捏"), value: stats.charm, tint: .moonJade),
+                SoloDossierStatCard(id: "darkness", title: SoloLocalization.localized("反噬"), value: stats.darkness, tint: .royalPlum),
+                SoloDossierStatCard(id: "destiny", title: SoloLocalization.localized("势头"), value: stats.destiny, tint: .sapphireMist),
             ]
         }
     }
@@ -882,23 +882,23 @@ final class SoloStoryStore {
         return [
             SoloDossierModuleCard(
                 id: "tianji-buffer",
-                title: "天机余裕",
+                title: SoloLocalization.localized("天机余裕"),
                 valueText: "\(stats.destiny + stats.strategy)",
-                detailText: "天命越高，你越能提前窥一步；机锋越足，你越能把这一步伪装成顺势而为。",
+                detailText: SoloLocalization.localized("天命越高，你越能提前窥一步；机锋越足，你越能把这一步伪装成顺势而为。"),
                 tint: .emberGold
             ),
             SoloDossierModuleCard(
                 id: "tianji-threads",
-                title: "关系阈值",
-                valueText: "\(stableThreads) 条可牵引线",
-                detailText: "真正关键的不是绝对好感，而是谁既愿意信你、又还没完全看穿你。",
+                title: SoloLocalization.localized("关系阈值"),
+                valueText: SoloLocalization.format("%d 条可牵引线", stableThreads),
+                detailText: SoloLocalization.localized("真正关键的不是绝对好感，而是谁既愿意信你、又还没完全看穿你。"),
                 tint: .oracleJade
             ),
             SoloDossierModuleCard(
                 id: "tianji-pressure",
-                title: "暗线牵引",
+                title: SoloLocalization.localized("暗线牵引"),
                 valueText: "\(hiddenPull + hostilityPressure)",
-                detailText: "残页、机锋与人心正在一起拖动暗线。你手里的筹码越多，盯着你的人也越多。",
+                detailText: SoloLocalization.localized("残页、机锋与人心正在一起拖动暗线。你手里的筹码越多，盯着你的人也越多。"),
                 tint: .royalPlum
             )
         ]
@@ -912,23 +912,23 @@ final class SoloStoryStore {
         return [
             SoloDossierModuleCard(
                 id: "realmMomentum",
-                title: "境界势能",
+                title: SoloLocalization.localized("境界势能"),
                 valueText: "\(stats.combat + stats.destiny)",
-                detailText: "战力与天命正在共同抬升你的破境势能，黑化值越高，后续代价越重。",
+                detailText: SoloLocalization.localized("战力与天命正在共同抬升你的破境势能，黑化值越高，后续代价越重。"),
                 tint: .emberGold
             ),
             SoloDossierModuleCard(
                 id: "karmaNetwork",
-                title: "人脉因果",
-                valueText: "\(trustedCount) 条稳固线",
-                detailText: "真正能替你挡劫的不是嘴上的盟友，而是高信任与高敬畏叠起来的关系。",
+                title: SoloLocalization.localized("人脉因果"),
+                valueText: SoloLocalization.format("%d 条稳固线", trustedCount),
+                detailText: SoloLocalization.localized("真正能替你挡劫的不是嘴上的盟友，而是高信任与高敬畏叠起来的关系。"),
                 tint: .moonJade
             ),
             SoloDossierModuleCard(
                 id: "fameStake",
-                title: "名望与筹码",
+                title: SoloLocalization.localized("名望与筹码"),
                 valueText: "\(stats.fame + stats.wealth + stats.strategy)",
-                detailText: "名望决定你是否被看见，财富和谋略决定你被看见之后有没有资格继续压局。",
+                detailText: SoloLocalization.localized("名望决定你是否被看见，财富和谋略决定你被看见之后有没有资格继续压局。"),
                 tint: .royalPlum
             )
         ]
@@ -942,23 +942,23 @@ final class SoloStoryStore {
         return [
             SoloDossierModuleCard(
                 id: "leverage",
-                title: "杠杆总量",
+                title: SoloLocalization.localized("杠杆总量"),
                 valueText: "\(leverage)",
-                detailText: "真正有用的不是你手里有什么，而是你能逼对方以为你还有什么。",
+                detailText: SoloLocalization.localized("真正有用的不是你手里有什么，而是你能逼对方以为你还有什么。"),
                 tint: .sapphireMist
             ),
             SoloDossierModuleCard(
                 id: "boardTrust",
-                title: "牌桌信号",
-                valueText: "\(relationships.filter { $0.trust >= 55 }.count) 人偏向你",
-                detailText: "高信任并不一定可靠，但低信任一定会在关键回合动摇。",
+                title: SoloLocalization.localized("牌桌信号"),
+                valueText: SoloLocalization.format("%d 人偏向你", relationships.filter { $0.trust >= 55 }.count),
+                detailText: SoloLocalization.localized("高信任并不一定可靠，但低信任一定会在关键回合动摇。"),
                 tint: .moonJade
             ),
             SoloDossierModuleCard(
                 id: "risk",
-                title: "反噬风险",
+                title: SoloLocalization.localized("反噬风险"),
                 valueText: "\(stats.darkness + relationships.map(\.hostility).reduce(0, +))",
-                detailText: "你压住的敌意越多，后面需要付出的切割成本就越大。",
+                detailText: SoloLocalization.localized("你压住的敌意越多，后面需要付出的切割成本就越大。"),
                 tint: .royalPlum
             )
         ]
@@ -972,23 +972,23 @@ final class SoloStoryStore {
         return [
             SoloDossierModuleCard(
                 id: "threat",
-                title: "威胁浓度",
+                title: SoloLocalization.localized("威胁浓度"),
                 valueText: "\(threatScore)",
-                detailText: "敌意与黑化并行升高时，说明危险不只在外面，也开始向你体内渗透。",
+                detailText: SoloLocalization.localized("敌意与黑化并行升高时，说明危险不只在外面，也开始向你体内渗透。"),
                 tint: .royalPlum
             ),
             SoloDossierModuleCard(
                 id: "clarity",
-                title: "线索清晰度",
+                title: SoloLocalization.localized("线索清晰度"),
                 valueText: "\(stats.strategy + stats.destiny)",
-                detailText: "谋略与直觉越高，越能在碎片信息里看见真正的因果链。",
+                detailText: SoloLocalization.localized("谋略与直觉越高，越能在碎片信息里看见真正的因果链。"),
                 tint: .sapphireMist
             ),
             SoloDossierModuleCard(
                 id: "anchors",
-                title: "安全锚点",
-                valueText: "\(relationships.filter { $0.trust >= 60 }.count) 个",
-                detailText: "在高压故事里，能否找到真正的安全锚点，比一时赢一局更重要。",
+                title: SoloLocalization.localized("安全锚点"),
+                valueText: SoloLocalization.format("%d 个", relationships.filter { $0.trust >= 60 }.count),
+                detailText: SoloLocalization.localized("在高压故事里，能否找到真正的安全锚点，比一时赢一局更重要。"),
                 tint: .moonJade
             )
         ]
@@ -1005,23 +1005,23 @@ final class SoloStoryStore {
         return [
             SoloDossierModuleCard(
                 id: "zonePressure",
-                title: "避难区承压",
+                title: SoloLocalization.localized("避难区承压"),
                 valueText: "\(pressureScore)",
-                detailText: "越多人知道你手里握着钥匙，越多人会把恐惧和怨气一起压到你身上。",
+                detailText: SoloLocalization.localized("越多人知道你手里握着钥匙，越多人会把恐惧和怨气一起压到你身上。"),
                 tint: .royalPlum
             ),
             SoloDossierModuleCard(
                 id: "teamSignal",
-                title: "队伍信号",
-                valueText: "\(trustCount) 条稳定线",
-                detailText: "真正能陪你熬过断电夜的，不是嘴上说愿意，而是在高压下仍愿意跟着你的人。",
+                title: SoloLocalization.localized("队伍信号"),
+                valueText: SoloLocalization.format("%d 条稳定线", trustCount),
+                detailText: SoloLocalization.localized("真正能陪你熬过断电夜的，不是嘴上说愿意，而是在高压下仍愿意跟着你的人。"),
                 tint: .moonJade
             ),
             SoloDossierModuleCard(
                 id: "survivalLeverage",
-                title: "生存筹码",
+                title: SoloLocalization.localized("生存筹码"),
                 valueText: "\(leverage)",
-                detailText: "补给、判断和那点还没熄掉的火种，决定你接下来是守住秩序，还是被局势反咬。",
+                detailText: SoloLocalization.localized("补给、判断和那点还没熄掉的火种，决定你接下来是守住秩序，还是被局势反咬。"),
                 tint: .emberGold
             )
         ]
@@ -1035,23 +1035,23 @@ final class SoloStoryStore {
         return [
             SoloDossierModuleCard(
                 id: "momentum",
-                title: "翻盘势能",
+                title: SoloLocalization.localized("翻盘势能"),
                 valueText: "\(stats.combat + stats.strategy)",
-                detailText: "翻盘从来不是一拳打回去，而是你在对方以为稳了的时候突然反过来控局。",
+                detailText: SoloLocalization.localized("翻盘从来不是一拳打回去，而是你在对方以为稳了的时候突然反过来控局。"),
                 tint: .emberGold
             ),
             SoloDossierModuleCard(
                 id: "socialCapital",
-                title: "场面筹码",
+                title: SoloLocalization.localized("场面筹码"),
                 valueText: "\(socialCapital)",
-                detailText: "名望、魅力和财富共同决定你在公开场面上的压制力。",
+                detailText: SoloLocalization.localized("名望、魅力和财富共同决定你在公开场面上的压制力。"),
                 tint: .sapphireMist
             ),
             SoloDossierModuleCard(
                 id: "supporters",
-                title: "站队倾向",
-                valueText: "\(relationships.filter { $0.trust + $0.affection > $0.hostility + 20 }.count) 人",
-                detailText: "站队不是口头支持，而是对方在关键节点是否愿意替你付代价。",
+                title: SoloLocalization.localized("站队倾向"),
+                valueText: SoloLocalization.format("%d 人", relationships.filter { $0.trust + $0.affection > $0.hostility + 20 }.count),
+                detailText: SoloLocalization.localized("站队不是口头支持，而是对方在关键节点是否愿意替你付代价。"),
                 tint: .moonJade
             )
         ]

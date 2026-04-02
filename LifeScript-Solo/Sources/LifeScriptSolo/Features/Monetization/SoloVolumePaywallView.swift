@@ -19,12 +19,12 @@ struct SoloVolumePaywallView: View {
                         .tracking(3)
                         .foregroundStyle(SoloTheme.gold)
 
-                    Text(SoloLocalization.format("接下来即将进入%@", volume.title))
+                    Text(SoloLocalization.format("接下来即将进入%@", volume.localizedTitle))
                         .font(SoloTypography.posterTitle(size: 30))
                         .foregroundStyle(SoloTheme.ink)
                         .fixedSize(horizontal: false, vertical: true)
 
-                    Text(volume.teaser)
+                    Text(volume.localizedTeaser)
                         .font(SoloTypography.detail)
                         .foregroundStyle(SoloTheme.muted)
                         .lineSpacing(6)
@@ -33,7 +33,7 @@ struct SoloVolumePaywallView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     detailRow(
                         title: SoloLocalization.localized("待解锁章节"),
-                        value: SoloLocalization.format("第 %d 章 · %@", chapter.number, chapter.title)
+                        value: SoloLocalization.format("第 %d 章 · %@", chapter.number, SoloLocalization.localized(chapter.title))
                     )
                     detailRow(
                         title: SoloLocalization.localized("解锁价格"),
@@ -52,7 +52,7 @@ struct SoloVolumePaywallView: View {
                         Text(SoloLocalization.localized("下一章试读"))
                             .font(SoloTypography.meta)
                             .foregroundStyle(SoloTheme.gold)
-                        Text(SoloLocalization.format("第 %d 章 · %@", chapter.number, chapter.title))
+                        Text(SoloLocalization.format("第 %d 章 · %@", chapter.number, SoloLocalization.localized(chapter.title)))
                             .font(.subheadline.weight(.semibold))
                             .foregroundStyle(SoloTheme.ink)
                         Text(previewSnippet)

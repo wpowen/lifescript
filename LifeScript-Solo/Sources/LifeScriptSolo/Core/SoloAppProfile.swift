@@ -9,11 +9,11 @@ struct SoloAppProfile: Equatable, Sendable {
     }
 
     static func resolve(infoDictionary: [String: Any]) -> SoloAppProfile {
-        let appDisplayName = localizedValue("CFBundleDisplayName", in: infoDictionary) ?? "灰烬执政官"
+        let appDisplayName = localizedValue("CFBundleDisplayName", in: infoDictionary) ?? SoloLocalization.localized("灰烬执政官")
         let palettePreset = SoloPalettePreset(rawValue: stringValue("SoloPalettePreset", in: infoDictionary) ?? "") ?? .ashCrimson
         let storyDisplayName = localizedValue("SoloStoryDisplayName", in: infoDictionary) ?? appDisplayName
-        let dossierTitle = localizedValue("SoloDossierTitle", in: infoDictionary) ?? "生存档案"
-        let routeMapTitle = localizedValue("SoloRouteMapTitle", in: infoDictionary) ?? "灾变路线"
+        let dossierTitle = localizedValue("SoloDossierTitle", in: infoDictionary) ?? SoloLocalization.localized("生存档案")
+        let routeMapTitle = localizedValue("SoloRouteMapTitle", in: infoDictionary) ?? SoloLocalization.localized("灾变路线")
         let landing = resolveLandingConfig(
             infoDictionary: infoDictionary,
             palettePreset: palettePreset,
@@ -25,18 +25,18 @@ struct SoloAppProfile: Equatable, Sendable {
         let branding = SoloBranding(
             appDisplayName: appDisplayName,
             storyDisplayName: storyDisplayName,
-            entryEyebrow: localizedValue("SoloEntryEyebrow", in: infoDictionary) ?? "末日剧场 · 互动长篇",
-            promise: localizedValue("SoloPromise", in: infoDictionary) ?? "你不是在旁观末日。你是在决定谁能活到明天。",
-            continueHint: localizedValue("SoloContinueHint", in: infoDictionary) ?? "回到停电后的安全区，让上一夜留下的余波继续扩散。",
-            currentRunTitle: localizedValue("SoloCurrentRunTitle", in: infoDictionary) ?? "当前夜线",
-            recapTitle: localizedValue("SoloRecapTitle", in: infoDictionary) ?? "上一夜回响",
-            currentStageTitle: localizedValue("SoloStageTitle", in: infoDictionary) ?? "当前生存阶段",
-            objectiveTitle: localizedValue("SoloObjectiveTitle", in: infoDictionary) ?? "眼下保命目标",
+            entryEyebrow: localizedValue("SoloEntryEyebrow", in: infoDictionary) ?? SoloLocalization.localized("末日剧场 · 互动长篇"),
+            promise: localizedValue("SoloPromise", in: infoDictionary) ?? SoloLocalization.localized("你不是在旁观末日。你是在决定谁能活到明天。"),
+            continueHint: localizedValue("SoloContinueHint", in: infoDictionary) ?? SoloLocalization.localized("回到停电后的安全区，让上一夜留下的余波继续扩散。"),
+            currentRunTitle: localizedValue("SoloCurrentRunTitle", in: infoDictionary) ?? SoloLocalization.localized("当前夜线"),
+            recapTitle: localizedValue("SoloRecapTitle", in: infoDictionary) ?? SoloLocalization.localized("上一夜回响"),
+            currentStageTitle: localizedValue("SoloStageTitle", in: infoDictionary) ?? SoloLocalization.localized("当前生存阶段"),
+            objectiveTitle: localizedValue("SoloObjectiveTitle", in: infoDictionary) ?? SoloLocalization.localized("眼下保命目标"),
             dossierTitle: dossierTitle,
             routeMapTitle: routeMapTitle,
-            settlementTitle: localizedValue("SoloSettlementTitle", in: infoDictionary) ?? "本章余波",
-            chapterUnitName: localizedValue("SoloChapterUnitName", in: infoDictionary) ?? "章",
-            atmosphereLine: localizedValue("SoloAtmosphereLine", in: infoDictionary) ?? "警报还没停，火光已经把人心照得太清楚。",
+            settlementTitle: localizedValue("SoloSettlementTitle", in: infoDictionary) ?? SoloLocalization.localized("本章余波"),
+            chapterUnitName: localizedValue("SoloChapterUnitName", in: infoDictionary) ?? SoloLocalization.localized("章"),
+            atmosphereLine: localizedValue("SoloAtmosphereLine", in: infoDictionary) ?? SoloLocalization.localized("警报还没停，火光已经把人心照得太清楚。"),
             ornamentSymbol: stringValue("SoloOrnamentSymbol", in: infoDictionary) ?? "bolt.horizontal.circle.fill",
             palettePreset: palettePreset,
             landing: landing
@@ -95,86 +95,86 @@ struct SoloAppProfile: Equatable, Sendable {
         switch palettePreset {
         case .ashCrimson:
             return SoloEntryLandingConfig(
-                interactivePrompt: "你决定先救谁、怀疑谁、向谁隐瞒真相，都会让安全区里的关系和代价发生偏移。",
-                primaryActionTitle: "进入避难夜",
-                secondaryActionTitle: "先看灾变路线",
-                identityLabel: "当前生存身份",
-                dossierSubtitle: "先看谁还能信、谁已经松动，也看哪些关系正在被资源和恐惧拉扯。",
-                routeMapSubtitle: "先看明面上的撤离线，再看那些只露出半句警报的暗线。",
-                hookTitle: "\(storyDisplayName) 不会等你准备好",
-                hookBody: "你现在打开的不是目录，而是一场已经开始倒数的灾变夜。只要按下去，就有人会因为你的决定活下来，也有人不会。",
+                interactivePrompt: SoloLocalization.localized("你决定先救谁、怀疑谁、向谁隐瞒真相，都会让安全区里的关系和代价发生偏移。"),
+                primaryActionTitle: SoloLocalization.localized("进入避难夜"),
+                secondaryActionTitle: SoloLocalization.localized("先看灾变路线"),
+                identityLabel: SoloLocalization.localized("当前生存身份"),
+                dossierSubtitle: SoloLocalization.localized("看谁还能信、谁已经松动，也看哪些关系正在被资源和恐惧拉扯。"),
+                routeMapSubtitle: SoloLocalization.localized("看明面上的撤离线，也看那些只露出半句警报的暗线。"),
+                hookTitle: SoloLocalization.localized("今夜的第一声警报"),
+                hookBody: SoloLocalization.localized("这不是目录，而是一场已经开始倒数的灾变夜。你越快进去，越能感到每一步决定到底在牺牲什么。"),
                 valueCards: [
-                    SoloEntryValueCard(id: "immersive-dialogue", title: "不是普通阅读", detail: "每一句安抚、试探或命令都会留下后果。你不是旁观者，而是安全区秩序的一部分。", tint: palettePreset),
-                    SoloEntryValueCard(id: "branching-destiny", title: "不是单线求生", detail: "同一场警报，会因为你先保住谁、先牺牲谁，而长出截然不同的局势与人心。", tint: .royalPlum),
-                    SoloEntryValueCard(id: "replay-value", title: "不是一次性消费", detail: "重开不是重看，而是重新验证另一种生存策略会把世界推向哪里。", tint: .moonJade),
-                    SoloEntryValueCard(id: "crafted-experience", title: "不是廉价灾变壳", detail: "警报、火光、余波与界面反馈一起服务于压迫感，而不是把末日题材随手贴在文字外面。", tint: .sapphireMist),
+                    SoloEntryValueCard(id: "immersive-dialogue", title: SoloLocalization.localized("不是普通阅读"), detail: SoloLocalization.localized("每一次安抚、试探和命令，都会在断电夜里留下回声。"), tint: palettePreset),
+                    SoloEntryValueCard(id: "branching-destiny", title: SoloLocalization.localized("不是单线求生"), detail: SoloLocalization.localized("同一场警报，会因为你先保住谁、先牺牲谁，而长出完全不同的夜线。"), tint: .royalPlum),
+                    SoloEntryValueCard(id: "replay-value", title: SoloLocalization.localized("不是一次性消费"), detail: SoloLocalization.localized("重开不是重看，而是重新验证另一种生存策略会把世界推向哪里。"), tint: .moonJade),
+                    SoloEntryValueCard(id: "crafted-experience", title: SoloLocalization.localized("不是廉价灾变壳"), detail: SoloLocalization.localized("警报、火光、余波与界面反馈一起服务于压迫感，而不是把末日题材随手贴在文字外面。"), tint: .sapphireMist),
                 ],
                 flowSteps: [
-                    SoloEntryFlowStep(id: "enter-story", title: "进入现场", detail: "不是读一段旁白，而是直接进入电力崩塌、物资失衡和人心松动的那一夜。", tint: palettePreset),
-                    SoloEntryFlowStep(id: "make-response", title: "做出回应", detail: "你可以封锁、安抚、试探、强压，人物会沿着你的处理方式重新站队。", tint: .moonJade),
-                    SoloEntryFlowStep(id: "change-destiny", title: "灾变偏转", detail: "资源、阵营、秘密与死亡名单都会变化，你走出来的夜线不会和别人一样。", tint: .royalPlum),
+                    SoloEntryFlowStep(id: "enter-story", title: SoloLocalization.localized("进入现场"), detail: SoloLocalization.localized("不是读旁白，而是直接进入电力崩塌、物资失衡和人心松动的那一夜。"), tint: palettePreset),
+                    SoloEntryFlowStep(id: "make-response", title: SoloLocalization.localized("做出回应"), detail: SoloLocalization.localized("你可以封锁、安抚、试探、强压，人物会沿着你的处理方式重新站队。"), tint: .moonJade),
+                    SoloEntryFlowStep(id: "change-destiny", title: SoloLocalization.localized("灾变偏转"), detail: SoloLocalization.localized("资源、阵营、秘密与死亡名单都会变化，你走出来的夜线不会和别人一样。"), tint: .royalPlum),
                 ],
                 proofCards: [
-                    SoloEntryProofCard(id: "dialogue-preview", kind: .dialogue, title: "对话预览", detail: "你在恐慌里说过的话，会被记住，也会在下一次断电前重新找上你。", tint: palettePreset),
-                    SoloEntryProofCard(id: "choice-preview", kind: .choice, title: "分支预览", detail: "你以为只是换一种处置方式，实际可能是在把避难区推向另一条生存线。", tint: .royalPlum),
-                    SoloEntryProofCard(id: "dossier-preview", kind: .dossier, title: dossierTitle, detail: "看人物态度、资源紧张和当前局势，理解谁愿意跟你熬过这一关，谁在等你失手。", tint: .moonJade),
-                    SoloEntryProofCard(id: "route-preview", kind: .routeMap, title: routeMapTitle, detail: "公开路线会亮出撤离承诺，而真正危险的暗线，通常只会先漏出一点信号。", tint: .sapphireMist),
+                    SoloEntryProofCard(id: "dialogue-preview", kind: .dialogue, title: SoloLocalization.localized("对话预览"), detail: SoloLocalization.localized("你在恐慌里说过的话，会在下一次断电前重新找上你。"), tint: palettePreset),
+                    SoloEntryProofCard(id: "choice-preview", kind: .choice, title: SoloLocalization.localized("分支预览"), detail: SoloLocalization.localized("不是选项换皮，而是真正会推动关系、资源和撤离线变化的决定。"), tint: .royalPlum),
+                    SoloEntryProofCard(id: "dossier-preview", kind: .dossier, title: dossierTitle, detail: SoloLocalization.localized("人物态度、补给压力和当前站位，都会在这里留下痕迹。"), tint: .moonJade),
+                    SoloEntryProofCard(id: "route-preview", kind: .routeMap, title: routeMapTitle, detail: SoloLocalization.localized("公开路线会给你撤离承诺，真正危险的变化往往藏在暗线后面。"), tint: .sapphireMist),
                 ]
             )
         case .moonJade:
             return SoloEntryLandingConfig(
-                interactivePrompt: "你何时出手、如何回应、要不要继续追问那句被压住的真相，都会让这条路改道。",
-                primaryActionTitle: "进入第一幕",
-                secondaryActionTitle: "先看剑路图",
-                identityLabel: "当前剑局",
-                dossierSubtitle: "先看人物态度、势能消长，以及谁正在把筹码压到你身上。",
-                routeMapSubtitle: "先看明面上的路，也看那些尚未真正亮出来的潜流。",
-                hookTitle: "\(storyDisplayName) 不是旁观故事",
-                hookBody: "你现在打开的不是目录，而是一场已经开始发酵的局。只要按下去，人物就会开始记住你的态度。",
+                interactivePrompt: SoloLocalization.localized("你选择何时出剑、如何回应、要不要继续追问那句被压住的真相，都会改变剑局。"),
+                primaryActionTitle: SoloLocalization.localized("进入第一幕"),
+                secondaryActionTitle: SoloLocalization.localized("先看剑路图"),
+                identityLabel: SoloLocalization.localized("当前剑局"),
+                dossierSubtitle: SoloLocalization.localized("看人物态度、剑势消长与谁正在把筹码压到你身上。"),
+                routeMapSubtitle: SoloLocalization.localized("看明面上的剑路，也看那些尚未真正亮出来的潜流。"),
+                hookTitle: SoloLocalization.localized("今夜的第一道剑鸣"),
+                hookBody: SoloLocalization.localized("这不是一次普通的开场，而是一场会持续发酵的试剑局。你越早进去，越能感觉到每一步后果。"),
                 valueCards: [
-                    SoloEntryValueCard(id: "immersive-dialogue", title: "不是普通阅读", detail: "人物不是等你看完，而是在等你回应。态度不同，回声就会不同。", tint: palettePreset),
-                    SoloEntryValueCard(id: "branching-destiny", title: "不是线性剑路", detail: "同一个起点，会因为你的判断不同，长出完全不一样的因果和代价。", tint: .royalPlum),
-                    SoloEntryValueCard(id: "replay-value", title: "不是一次性消费", detail: "重开不是重看，而是把此前错过的人心、暗线和伏笔重新照亮。", tint: .emberGold),
-                    SoloEntryValueCard(id: "crafted-experience", title: "不是低成本拼装", detail: "文案、界面、节奏和反馈共同构成沉浸感，而不是把文字简单装进壳子里。", tint: .sapphireMist),
+                    SoloEntryValueCard(id: "immersive-dialogue", title: SoloLocalization.localized("不是普通阅读"), detail: SoloLocalization.localized("人物不是等你看完，而是在等你回应。态度不同，回声就会不同。"), tint: palettePreset),
+                    SoloEntryValueCard(id: "branching-destiny", title: SoloLocalization.localized("不是线性剑路"), detail: SoloLocalization.localized("同一柄残剑，可以走出不同的因果、不同的人心与不同的证道路。"), tint: .royalPlum),
+                    SoloEntryValueCard(id: "replay-value", title: SoloLocalization.localized("不是一次性消费"), detail: SoloLocalization.localized("重开后你会看到先前忽略的暗示、错过的人物动机，以及另一套局势走向。"), tint: .emberGold),
+                    SoloEntryValueCard(id: "crafted-experience", title: SoloLocalization.localized("不是低成本拼装"), detail: SoloLocalization.localized("文案、界面、节奏和反馈共同构成沉浸感，而不是把文字简单装进壳子里。"), tint: .sapphireMist),
                 ],
                 flowSteps: [
-                    SoloEntryFlowStep(id: "enter-story", title: "进入局中", detail: "不是站在外面读故事，而是直接被卷进那场会留下后果的事件。", tint: palettePreset),
-                    SoloEntryFlowStep(id: "make-response", title: "做出回应", detail: "你可以试探、压制、追问、退让，每一种姿态都会让人物重新判断你。", tint: .emberGold),
-                    SoloEntryFlowStep(id: "change-destiny", title: "局势偏转", detail: "分支、关系、暗线与结局都会变化，你走出来的路不会和别人一样。", tint: .royalPlum),
+                    SoloEntryFlowStep(id: "enter-story", title: SoloLocalization.localized("进入剧情"), detail: SoloLocalization.localized("以第一人称走进试剑局，而不是站在外面旁观一卷故事。"), tint: palettePreset),
+                    SoloEntryFlowStep(id: "make-response", title: SoloLocalization.localized("做出回应"), detail: SoloLocalization.localized("你可以试探、压制、追问、退让，每一种姿态都会让人物重新判断你。"), tint: .emberGold),
+                    SoloEntryFlowStep(id: "change-destiny", title: SoloLocalization.localized("剑局偏转"), detail: SoloLocalization.localized("剧情分支、角色好感、隐藏线索和最终结局会随你的判断发生偏移。"), tint: .royalPlum),
                 ],
                 proofCards: [
-                    SoloEntryProofCard(id: "dialogue-preview", kind: .dialogue, title: "对话预览", detail: "你说过的话，往往会在后面的对局里被重新提起。", tint: palettePreset),
-                    SoloEntryProofCard(id: "choice-preview", kind: .choice, title: "分支预览", detail: "不是选项换皮，而是真正会推动关系和分路变化的决定。", tint: .royalPlum),
-                    SoloEntryProofCard(id: "dossier-preview", kind: .dossier, title: dossierTitle, detail: "看人物态度、当前局势和你自己的命格变化，理解谁站在你身边，谁在等你失手。", tint: .emberGold),
-                    SoloEntryProofCard(id: "route-preview", kind: .routeMap, title: routeMapTitle, detail: "公开路线会给你承诺，真正高价值的暗线往往只露出半步。", tint: .sapphireMist),
+                    SoloEntryProofCard(id: "dialogue-preview", kind: .dialogue, title: SoloLocalization.localized("对话预览"), detail: SoloLocalization.localized("一段对话不仅推进剧情，也会把关系推向不同的温度。"), tint: palettePreset),
+                    SoloEntryProofCard(id: "choice-preview", kind: .choice, title: SoloLocalization.localized("分支预览"), detail: SoloLocalization.localized("一次回答方式的变化，可能就是另一条剑路的入口。"), tint: .royalPlum),
+                    SoloEntryProofCard(id: "dossier-preview", kind: .dossier, title: dossierTitle, detail: SoloLocalization.localized("角色态度、当前局势和你自己的命格变化都会被沉淀下来。"), tint: .emberGold),
+                    SoloEntryProofCard(id: "route-preview", kind: .routeMap, title: routeMapTitle, detail: SoloLocalization.localized("公开路线展示方向，真正高价值的暗线则要靠你自己逼出来。"), tint: .sapphireMist),
                 ]
             )
         default:
             return SoloEntryLandingConfig(
-                interactivePrompt: "你说过的话、做出的判断和选择站位，都会让人物关系、分支和真相显露顺序发生偏移。",
-                primaryActionTitle: "进入第一幕",
-                secondaryActionTitle: "先看路线图",
-                identityLabel: "当前状态",
-                dossierSubtitle: "先看谁已经被你卷进局里，也看谁还没有真正亮出态度。",
-                routeMapSubtitle: "先看公开路线，再看还有哪些暗线没有彻底浮出水面。",
-                hookTitle: "\(storyDisplayName) 不是一本书",
-                hookBody: "你现在打开的不是目录，而是一处已经开始运转的事件现场。只要按下去，角色就会开始记住你的态度。",
+                interactivePrompt: SoloLocalization.localized("你选择何时动用天机录、先稳哪条关系、要不要提前摊牌，都会让因果链条发生偏转。"),
+                primaryActionTitle: SoloLocalization.localized("进入第一幕"),
+                secondaryActionTitle: SoloLocalization.localized("先看命途图"),
+                identityLabel: SoloLocalization.localized("当前棋局"),
+                dossierSubtitle: SoloLocalization.localized("看谁开始信你、谁在提防你，也看天命值与因果压力如何堆高。"),
+                routeMapSubtitle: SoloLocalization.localized("看主线阶段，也看那些要靠关系阈值与天命代价才能逼出来的暗线。"),
+                hookTitle: SoloLocalization.localized("命数第一次回响"),
+                hookBody: SoloLocalization.localized("这不是普通书架，而是一场会越走越深的谋局修仙。你越早进去，越能感到每一次提前落子都在改命。"),
                 valueCards: [
-                    SoloEntryValueCard(id: "immersive-dialogue", title: "不是普通阅读", detail: "沉浸式对话推进。你不是旁观者，而是会被回应的剧情参与者。", tint: palettePreset),
-                    SoloEntryValueCard(id: "branching-destiny", title: "不是线性故事", detail: "同一个起点，不同判断，会带来不同关系、真相与结局倾斜。", tint: .royalPlum),
-                    SoloEntryValueCard(id: "replay-value", title: "不是一次性消费", detail: "可重玩、可回溯、可解锁隐藏线，每次重进都会看见另一层动机。", tint: .moonJade),
-                    SoloEntryValueCard(id: "crafted-experience", title: "不是廉价拼贴", detail: "电影化叙事与精细交互设计一起服务于沉浸感，而不是堆砌设定。", tint: .sapphireMist),
+                    SoloEntryValueCard(id: "immersive-dialogue", title: SoloLocalization.localized("不是普通阅读"), detail: SoloLocalization.localized("人物不是等你看完，而是在等你回应。态度不同，回声就会不同。"), tint: palettePreset),
+                    SoloEntryValueCard(id: "branching-destiny", title: SoloLocalization.localized("不是线性剑路"), detail: SoloLocalization.localized("同一柄残剑，可以走出不同的因果、不同的人心与不同的证道路。"), tint: .royalPlum),
+                    SoloEntryValueCard(id: "replay-value", title: SoloLocalization.localized("不是一次性消费"), detail: SoloLocalization.localized("重开后你会看到先前忽略的暗示、错过的人物动机，以及另一套局势走向。"), tint: .moonJade),
+                    SoloEntryValueCard(id: "crafted-experience", title: SoloLocalization.localized("不是低成本拼装"), detail: SoloLocalization.localized("文案、界面、节奏和反馈共同构成沉浸感，而不是把文字简单装进壳子里。"), tint: .sapphireMist),
                 ],
                 flowSteps: [
-                    SoloEntryFlowStep(id: "enter-story", title: "进入剧情", detail: "以第一人称视角进入故事现场，而不是站在外面看一段文字。", tint: palettePreset),
-                    SoloEntryFlowStep(id: "make-response", title: "做出回应", detail: "你可以选择态度、行动和追问方向，人物会记住你如何开口。", tint: .moonJade),
-                    SoloEntryFlowStep(id: "change-destiny", title: "命运改变", detail: "分支、关系、线索和结局倾斜都会变化，你走出来的路不会和别人完全一样。", tint: .royalPlum),
+                    SoloEntryFlowStep(id: "enter-story", title: SoloLocalization.localized("进入剧情"), detail: SoloLocalization.localized("以第一人称走进试剑局，而不是站在外面旁观一卷故事。"), tint: palettePreset),
+                    SoloEntryFlowStep(id: "make-response", title: SoloLocalization.localized("做出回应"), detail: SoloLocalization.localized("你可以试探、压制、追问、退让，每一种姿态都会让人物重新判断你。"), tint: .moonJade),
+                    SoloEntryFlowStep(id: "change-destiny", title: SoloLocalization.localized("改命偏转"), detail: SoloLocalization.localized("人物态度、命数压力和隐藏线路一起偏转，后果会在下一章立刻回响。"), tint: .royalPlum),
                 ],
                 proofCards: [
-                    SoloEntryProofCard(id: "dialogue-preview", kind: .dialogue, title: "对话预览", detail: "你说的话，会被角色记住，也会被下一次相遇悄悄追上。", tint: palettePreset),
-                    SoloEntryProofCard(id: "choice-preview", kind: .choice, title: "分支预览", detail: "你以为只是换一种回答方式，实际可能是在把命运推向另一条线。", tint: .royalPlum),
-                    SoloEntryProofCard(id: "dossier-preview", kind: .dossier, title: dossierTitle, detail: "看人物态度、关系势能与当前局势，理解谁站在你身边，谁在等你失手。", tint: .moonJade),
-                    SoloEntryProofCard(id: "route-preview", kind: .routeMap, title: routeMapTitle, detail: "公开路线会提前亮出承诺，而真正危险的暗线，往往只露出一点回声。", tint: .sapphireMist),
+                    SoloEntryProofCard(id: "dialogue-preview", kind: .dialogue, title: SoloLocalization.localized("对话预览"), detail: SoloLocalization.localized("你一句藏锋或摊牌，都会让人物对你的判断立刻变味。"), tint: palettePreset),
+                    SoloEntryProofCard(id: "choice-preview", kind: .choice, title: SoloLocalization.localized("分支预览"), detail: SoloLocalization.localized("一次回答方式的变化，可能就是另一条剑路的入口。"), tint: .royalPlum),
+                    SoloEntryProofCard(id: "dossier-preview", kind: .dossier, title: dossierTitle, detail: SoloLocalization.localized("角色态度、当前局势和你自己的命格变化都会被沉淀下来。"), tint: .moonJade),
+                    SoloEntryProofCard(id: "route-preview", kind: .routeMap, title: routeMapTitle, detail: SoloLocalization.localized("公开路线展示方向，真正高价值的暗线则要靠你自己逼出来。"), tint: .sapphireMist),
                 ]
             )
         }

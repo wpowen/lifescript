@@ -18,7 +18,7 @@
         "id": "天机录_ch0729_002",
         "character_id": "char_yeqing",
         "content": "이건... 불가능하다! 만 년 전의 파동? 천기, 빨리 물러나라, 이건 네가 접촉할 수 있는 차원이 아니다!",
-        "emotion": "震惊"
+        "emotion": "충격"
       }
     },
     {
@@ -33,7 +33,7 @@
         "id": "天机录_ch0729_004",
         "character_id": "char_moxiansheng",
         "content": "놀라지 마라, 꼬마여.老夫가 이 날을 기다린 것은 이미 만 년이다.",
-        "emotion": "平静"
+        "emotion": "평온"
       }
     },
     {
@@ -48,7 +48,7 @@
         "id": "天机录_ch0729_006",
         "character_id": "char_chenji",
         "content": "(내면의 격류) 모선생... 원래 당신은 계속 야청의 몸 안에 있었던 건가? 아니, 대체 당신은 누구인가?",
-        "emotion": "警惕"
+        "emotion": "경계"
       }
     },
     {
@@ -56,7 +56,7 @@
         "id": "天机录_ch0729_007",
         "character_id": "char_moxiansheng",
         "content": "나는 모선생이다. 만 년 전 당신들이 부르는 「천명」에 의해 선택되어 천기록의 수호 잔혼이 되었다. 그러나 그 전, 나는 또 다른 신분을 가졌다—운명 서사자, 천도 지안의失败的 도전자.",
-        "emotion": "沉重"
+        "emotion": "무겁다"
       }
     },
     {
@@ -70,7 +70,7 @@
         "id": "天机录_ch0729_009",
         "character_id": "char_moxiansheng",
         "content": "만 년 전, 우리 일곱 사람은 함께 천도의 의지에 도전했다. 나는 유일한 생존자였지만, 다만 잔혼의 형태로나命을 잇고 있었다. 천명이 나를 찾았을 때, 내 힘은 이미 거의 남아 있지 않았다.",
-        "emotion": "苦涩"
+        "emotion": "쓴맛"
       }
     },
     {
@@ -85,13 +85,13 @@
         "id": "天机录_ch0729_011",
         "character_id": "char_moxiansheng",
         "content": "네 손에 있는 잔편의 운명은 네가 생각하는 것보다 훨씬 무겁다. 천기록은 천도의 은혜가 아니라, 우리 일곱 사람의 의지 결정체—천도 지안을 가둔 감옥이다.",
-        "emotion": "郑重"
+        "emotion": "진지"
       }
     },
     {
       "choice": {
         "id": "天机录_ch0729_choice_001",
-        "prompt": "모선생의 폭로는 사람을震惊시켰다. 천기는 반드시 선택을 내려야 했다:",
+        "prompt": "모선생의 폭로는 사람을충격시켰다. 천기는 반드시 선택을 내려야 했다:",
         "choice_type": "keyDecision",
         "choices": [
           {
@@ -102,17 +102,17 @@
             "visible_cost": "더 많은 약점을 노출할 가능성이 있다",
             "visible_reward": "열쇠가 되는 정보를 얻다",
             "risk_hint": "모선생은 다른 뜻이 있을 수 있다",
-            "process_label": "追问真相",
+            "process_label": "진상을 캐묻다",
             "stat_effects": [
               {
-                "stat": "天命值",
+                "stat": "천명",
                 "delta": -5
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "信任",
+                "dimension": "신뢰",
                 "delta": 10
               }
             ],
@@ -121,8 +121,8 @@
                 "dialogue": {
                   "id": "天机录_ch0729_result_trust_001",
                   "character_id": "char_chenji",
-                  "content": "(눈빛이 침착하게) 당신이 천명을 선택했다면, 어찌하여 나까지 선택한 건가? 나는 그저废物杂役일 뿐인데.",
-                  "emotion": "试探"
+                  "content": "(눈빛이 침착하게) 당신이 천명을 선택했다면, 어찌하여 나까지 선택한 건가? 나는 그저폐물杂役일 뿐인데.",
+                  "emotion": "시험"
                 }
               },
               {
@@ -151,26 +151,26 @@
             "visible_cost": "5점 천명치를 소비한다",
             "visible_reward": "모선생이 숨기고 있는 것이 있는지看穿하다",
             "risk_hint": "역으로 위축당할 수 있다",
-            "process_label": "暗中窥探",
+            "process_label": "몰래 살피다",
             "stat_effects": [
               {
-                "stat": "天命值",
+                "stat": "천명",
                 "delta": -5
               },
               {
-                "stat": "谋略",
+                "stat": "계략",
                 "delta": 1
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "信任",
+                "dimension": "신뢰",
                 "delta": -5
               },
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "敬畏",
+                "dimension": "경외",
                 "delta": 5
               }
             ],
@@ -180,7 +180,7 @@
                   "id": "天机录_ch0729_result_probe_001",
                   "character_id": "char_chenji",
                   "content": "(손가락이 미세하게 움직이며) 당신이 실패자라고 하면서도 지금까지 살아남았다고 한다. 내가 어떻게 믿겠나, 당신이 천도의 또 다른 장기，不是가?",
-                  "emotion": "冷冽"
+                  "emotion": "냉기"
                 }
               },
               {
@@ -198,7 +198,7 @@
             "requires_flag": null,
             "forbids_flag": null,
             "stat_gate": {
-              "stat": "天命值",
+              "stat": "천명",
               "min": 10
             },
             "memory_label": null,
@@ -215,19 +215,19 @@
             "process_label": "暗布棋子",
             "stat_effects": [
               {
-                "stat": "谋略",
+                "stat": "계략",
                 "delta": 2
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "敌意",
+                "dimension": "적의",
                 "delta": -3
               },
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "敬畏",
+                "dimension": "경외",
                 "delta": 8
               }
             ],
@@ -237,7 +237,7 @@
                   "id": "天机录_ch0729_result_trap_001",
                   "character_id": "char_chenji",
                   "content": "(은밀히 소매 속 부호를 활성화시키며) 선배가 만 년을 기다렸다면, 분명 중요한 일이 있으실 겁니다. 차라리 말씀直接してください, 저 천기는恭聆의 자세로 듣고 있겠습니다.",
-                  "emotion": "沉稳"
+                  "emotion": "침착"
                 }
               },
               {
@@ -265,8 +265,8 @@
       "dialogue": {
         "id": "天机录_ch0729_012",
         "character_id": "char_moxiansheng",
-        "content": "좋은 질문이다. 천명이 당신을 선택한 것은 바로 당신이 '废物'이기 때문이다. 천기록이 필요로 하는 것은 운명의 은총을받지 않는 자—오직 그래야만必死의的局面에서도 피를 내어 길을 열 수 있다.",
-        "emotion": "深邃"
+        "content": "좋은 질문이다. 천명이 당신을 선택한 것은 바로 당신이 '폐물'이기 때문이다. 천기록이 필요로 하는 것은 운명의 은총을받지 않는 자—오직 그래야만必死의的局面에서도 피를 내어 길을 열 수 있다.",
+        "emotion": "깊음"
       }
     },
     {
@@ -281,7 +281,7 @@
         "id": "天机录_ch0729_014",
         "character_id": "char_moxiansheng",
         "content": "천명은 단순히 천기록을 남긴 것이 아니다. 그는 천도 지안의 주의를 자신에게로 돌렸다. 자신의 존재를 대가로 바쳐 천기록의 탄생을 이끌어낸 것이다. 그리고 당신... 그 棋局의 마지막 한 수다.",
-        "emotion": "沉重"
+        "emotion": "무겁다"
       }
     },
     {
@@ -296,7 +296,7 @@
         "id": "天机录_ch0729_015b",
         "character_id": "char_yeqing",
         "content": "(傳音) 천기, 그가 뭐라고 하는 거야? 모르겠는데, 이 정보량이 보통 수사의 神識을 압도하기에 충분하다는 느낌이 들어!",
-        "emotion": "焦虑"
+        "emotion": "불안"
       }
     },
     {
@@ -316,18 +316,18 @@
             "process_label": "强行接收",
             "stat_effects": [
               {
-                "stat": "天命值",
+                "stat": "천명",
                 "delta": -10
               },
               {
-                "stat": "谋略",
+                "stat": "계략",
                 "delta": 5
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "信任",
+                "dimension": "신뢰",
                 "delta": 15
               }
             ],
@@ -347,7 +347,7 @@
             "requires_flag": null,
             "forbids_flag": null,
             "stat_gate": {
-              "stat": "天命值",
+              "stat": "천명",
               "min": 20
             },
             "memory_label": null,
@@ -364,19 +364,19 @@
             "process_label": "主动掌控",
             "stat_effects": [
               {
-                "stat": "谋略",
+                "stat": "계략",
                 "delta": 3
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "敬畏",
+                "dimension": "경외",
                 "delta": 10
               },
               {
                 "character_id": "char_moxiansheng",
-                "dimension": "信任",
+                "dimension": "신뢰",
                 "delta": -3
               }
             ],
@@ -386,7 +386,7 @@
                   "id": "天机录_ch0729_result_interrupt_001",
                   "character_id": "char_chenji",
                   "content": "(문득 연결을 끊으며) 충분하다. 나는全部알 필요 없다. 다만 알아야 할 것은—나는 어떻게 해야 하는가.",
-                  "emotion": "冷冽"
+                  "emotion": "냉기"
                 }
               }
             ],
@@ -408,7 +408,7 @@
         "id": "天机录_ch0729_016",
         "character_id": "char_moxiansheng",
         "content": "(가볍게 한숨을 쉬며) 네가 천명보다 더慎重한 것은 사실이다. 그는 너무 조급했기에 몸을 미끼로 내밀 수밖에 없었다. 그러나 너... 아마 더 멀리 갈 수 있을 것이다.",
-        "emotion": "欣慰"
+        "emotion": "안심"
       }
     },
     {
@@ -423,7 +423,7 @@
         "id": "天机录_ch0729_018",
         "character_id": "char_moxiansheng",
         "content": "네가 물었으니, 내가 가장 핵심적인 한 가지만 알려주마: 천명은 아직 살아 있다. 그러나 그의 귀환에는 대가가 필요할 것이다.",
-        "emotion": "沉重"
+        "emotion": "무겁다"
       }
     },
     {
@@ -445,7 +445,7 @@
         "id": "天机录_ch0729_021",
         "character_id": "char_moxiansheng",
         "content": "천기록이 너를 이끌 것이다. 대가에 대해서는... 네가 정말 그를 찾았을 때,自然会明白한다. 기억해라, 꼬마여, 만 년 전 우리 일곱은 모두 패했다. 약해서가 아니라, 너무 自負했기 때문이다. 너는覆轍을 밟지 않길 바란다.",
-        "emotion": "沧桑"
+        "emotion": "창힐"
       }
     },
     {
@@ -460,7 +460,7 @@
         "id": "天机录_ch0729_023",
         "character_id": "char_yeqing",
         "content": "(급하게) 천기, 괜찮아? 방금 그 찰나, 네 기운이 극도로 혼란스러워진 것을 느꼈는데...",
-        "emotion": "担忧"
+        "emotion": "걱정"
       }
     },
     {
@@ -475,7 +475,7 @@
         "id": "天机录_ch0729_025",
         "character_id": "char_chenji",
         "content": "(간신히站稳하며, 목소리가 갈라짐) 괜찮다... 시간을 두고 소화해야 할 뿐이야. 야청, 오늘 밤 일을 기억해라. 아무에게도 입 밖으로 내지 마라.",
-        "emotion": "疲惫"
+        "emotion": "피로"
       }
     },
     {

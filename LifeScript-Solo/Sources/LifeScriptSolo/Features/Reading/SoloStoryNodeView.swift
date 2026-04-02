@@ -322,10 +322,11 @@ struct SoloStoryNodeView: View {
                             .font(.caption2.weight(.bold))
                             .tracking(0.5)
                             .foregroundStyle(isChosen ? Color.black.opacity(0.70) : Color.black)
+                            .fixedSize(horizontal: false, vertical: true)
                             .padding(.horizontal, 7)
                             .padding(.vertical, 3)
                             .background(isChosen ? SoloTheme.gold.opacity(0.55) : SoloTheme.gold)
-                            .clipShape(Capsule())
+                            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
                     }
                     if !isChosen {
                         HStack(spacing: 3) {

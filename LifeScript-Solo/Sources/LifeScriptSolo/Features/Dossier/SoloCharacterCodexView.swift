@@ -53,7 +53,7 @@ enum SoloCharacterCodex {
     }
 
     static func roleLabel(for role: Character.CharacterRole) -> String {
-        role.rawValue
+        role.displayName
     }
 
     static func dimensions(for relation: RelationshipState?) -> [(RelationshipEffect.RelationshipDimension, Int)] {
@@ -295,7 +295,7 @@ struct SoloCharacterRosterCard: View {
                 VStack(alignment: .leading, spacing: 8) {
                     ForEach(SoloCharacterCodex.dimensions(for: relation).prefix(2), id: \.0.rawValue) { dimension, value in
                         SoloCharacterMeterRow(
-                            title: dimension.rawValue,
+                            title: dimension.displayName,
                             value: value,
                             tint: SoloCharacterCodex.tint(for: dimension)
                         )
@@ -439,7 +439,7 @@ struct SoloCharacterDetailView: View {
 
                 ForEach(SoloCharacterCodex.dimensions(for: relation), id: \.0.rawValue) { dimension, value in
                     SoloCharacterMeterRow(
-                        title: dimension.rawValue,
+                        title: dimension.displayName,
                         value: value,
                         tint: SoloCharacterCodex.tint(for: dimension),
                         detail: dimensionNarration(for: dimension, value: value)

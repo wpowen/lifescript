@@ -6,6 +6,10 @@ struct SoloArtworkAsset: Equatable, Sendable {
     let title: String
     let subtitle: String
     let caption: String?
+
+    var localizedTitle: String { SoloLocalization.localized(title) }
+    var localizedSubtitle: String { SoloLocalization.localized(subtitle) }
+    var localizedCaption: String? { caption.map { SoloLocalization.localized($0) } }
 }
 
 struct SoloBundledArtworkImage: View {
@@ -62,14 +66,14 @@ struct SoloArtworkCard: View {
                 )
 
             VStack(alignment: .leading, spacing: 6) {
-                Text(asset.title)
+                Text(asset.localizedTitle)
                     .font(SoloTypography.meta)
                     .foregroundStyle(tint)
-                Text(asset.subtitle)
+                Text(asset.localizedSubtitle)
                     .font(SoloTypography.sceneHeadline(size: 20))
                     .foregroundStyle(SoloTheme.ink)
                     .fixedSize(horizontal: false, vertical: true)
-                if let caption = asset.caption {
+                if let caption = asset.localizedCaption {
                     Text(caption)
                         .font(SoloTypography.detail)
                         .foregroundStyle(SoloTheme.warmInk)
@@ -124,6 +128,8 @@ struct TianjiluVolumeVisual: Equatable, Sendable {
     let cover: SoloArtworkAsset
     let banner: SoloArtworkAsset
     let keyframe: SoloArtworkAsset
+
+    var localizedVolumeLabel: String { SoloLocalization.localized(volumeLabel) }
 }
 
 enum TianjiluArtworkCatalog {

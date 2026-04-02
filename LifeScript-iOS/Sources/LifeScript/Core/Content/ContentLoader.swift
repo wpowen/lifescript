@@ -425,17 +425,23 @@ actor BundledContentLoader: ContentProviding {
             let chapter = try decoder.decode(Chapter.self, from: normalizedData)
             guard translatedChapterMatchesFallback(chapter, fallback: fallback),
                   chapter.bookId == bookId else {
+                #if DEBUG
                 NSLog("‼️ translation mismatch for %@ -> fallback", url.lastPathComponent)
+                #endif
                 return fallback
             }
 
             if translationContainsSuspiciousArtifacts(chapter, language: language) {
+                #if DEBUG
                 NSLog("‼️ suspicious translation artifacts in %@ -> fallback", url.lastPathComponent)
+                #endif
                 return fallback
             }
             return chapter
         } catch {
+            #if DEBUG
             NSLog("‼️ translation decode error for %@: %@", url.lastPathComponent, String(describing: error))
+            #endif
             return fallback
         }
     }

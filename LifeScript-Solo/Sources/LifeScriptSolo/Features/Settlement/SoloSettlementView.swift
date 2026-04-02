@@ -82,7 +82,7 @@ struct SoloSettlementView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading, spacing: 18) {
                         section(
-                            title: chapter.title,
+                            title: SoloLocalization.localized(chapter.title),
                             content: introBody
                         )
 
@@ -283,7 +283,7 @@ struct SoloSettlementView: View {
         return dimensions
             .map { dimension in
                 let delta = current.value(for: dimension) - previous.value(for: dimension)
-                return (dimension.rawValue, delta)
+                return (dimension.displayName, delta)
             }
             .filter { $0.1 != 0 }
             .max { abs($0.1) < abs($1.1) }

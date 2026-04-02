@@ -63,7 +63,7 @@ struct SoloCharacterSheet: View {
             if let relation {
                 ForEach(SoloCharacterCodex.dimensions(for: relation), id: \.0.rawValue) { dimension, value in
                     SoloCharacterMeterRow(
-                        title: dimension.rawValue,
+                        title: dimension.displayName,
                         value: value,
                         tint: SoloCharacterCodex.tint(for: dimension)
                     )

@@ -137,9 +137,9 @@ enum SoloStoreKitError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .productNotFound:
-            return "当前卷商品还没有在 App Store Connect 配好，请先补齐内购商品。"
+            return SoloLocalization.localized("当前卷商品还没有在 App Store Connect 配好，请先补齐内购商品。")
         case .unverifiedTransaction:
-            return "交易校验失败，本次解锁没有生效。"
+            return SoloLocalization.localized("交易校验失败，本次解锁没有生效。")
         }
     }
 }
@@ -239,7 +239,7 @@ final class SoloVolumeStore {
                 lockedVolume.shortTitle,
                 displayPrice(for: lockedVolume)
             ),
-            supportingLine: lockedVolume.teaser
+            supportingLine: lockedVolume.localizedTeaser
         )
     }
 
@@ -285,8 +285,11 @@ final class SoloVolumeStore {
 
             switch outcome {
             case .success:
-                await refreshEntitlements()
-                statusMessage = SoloLocalization.format("已解锁%@，可以继续推进了。", volume.title)
+                // 乐观更新：立即标记为已解锁，确保 UI 即时响应
+                // 不再调用 refreshEntitlements()——它会进入 actor 查询
+                // Transaction.currentEntitlements，在测试环境中可能 hang
+                unlockedProductIDs.insert(productID)
+                statusMessage = SoloLocalization.format("已解锁%@，可以继续推进了。", volume.localizedTitle)
                 return true
             case .pending:
                 statusMessage = SoloLocalization.localized("交易正在等待确认（如家长审批），确认通过后会自动解锁。")
@@ -328,11 +331,24 @@ final class SoloVolumeStore {
     private static let logger = Logger(subsystem: "com.lifescript.solo", category: "VolumeStore")
 
     private func refreshEntitlements() async {
-        let latestEntitlements = await purchaseClient.currentEntitlementProductIDs()
+        let latestEntitlements = await withTaskGroup(of: Set<String>.self) { group in
+            group.addTask {
+                await self.purchaseClient.currentEntitlementProductIDs()
+            }
+            // 5 秒超时保护：防止 Transaction.currentEntitlements 在测试环境中 hang
+            group.addTask {
+                try? await Task.sleep(for: .seconds(5))
+                return Set<String>()
+            }
+            let first = await group.next() ?? []
+            group.cancelAll()
+            return first
+        }
         let previousCount = unlockedProductIDs.count
-        unlockedProductIDs = latestEntitlements
+        // 使用 formUnion 合并，而非覆盖——防止超时时丢失乐观插入的 productID
+        unlockedProductIDs.formUnion(latestEntitlements)
         Self.logger.info(
-            "Entitlements refreshed: \(latestEntitlements.count) unlocked (was \(previousCount))"
+            "Entitlements refreshed: \(self.unlockedProductIDs.count) unlocked (was \(previousCount))"
         )
     }
 

@@ -1,0 +1,66 @@
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    sh "cd .. && xcodegen generate"
+  end
+
+  # ── Tianjilu (天机录) ──────────────────────────────────────
+
+  desc "Run unit tests for Solo"
+  lane :test do
+    run_tests(
+      project: "LifeScriptSolo.xcodeproj",
+      scheme: "LifeScriptSoloTianjilu",
+      device: "iPhone 16",
+      clean: true
+    )
+  end
+
+  desc "Build Tianjilu for development"
+  lane :build do
+    build_app(
+      project: "LifeScriptSolo.xcodeproj",
+      scheme: "LifeScriptSoloTianjilu",
+      configuration: "Debug",
+      skip_codesigning: true,
+      skip_archive: true
+    )
+  end
+
+  desc "Build Tianjilu and upload to TestFlight"
+  lane :beta do
+    increment_build_number(xcodeproj: "LifeScriptSolo.xcodeproj")
+    build_app(
+      project: "LifeScriptSolo.xcodeproj",
+      scheme: "LifeScriptSoloTianjilu",
+      configuration: "Release",
+      export_method: "app-store"
+    )
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+  end
+
+  desc "Build Tianjilu and submit to App Store"
+  lane :release do
+    increment_build_number(xcodeproj: "LifeScriptSolo.xcodeproj")
+    build_app(
+      project: "LifeScriptSolo.xcodeproj",
+      scheme: "LifeScriptSoloTianjilu",
+      configuration: "Release",
+      export_method: "app-store"
+    )
+    upload_to_app_store(
+      submit_for_review: false,
+      automatic_release: false,
+      force: true
+    )
+  end
+
+  desc "Sync signing certificates and profiles"
+  lane :certs do
+    match(type: "development")
+    match(type: "appstore")
+  end
+end

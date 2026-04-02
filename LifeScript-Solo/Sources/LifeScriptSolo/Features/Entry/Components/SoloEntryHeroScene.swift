@@ -38,7 +38,7 @@ struct SoloEntryHeroScene: View {
                 tianjiluCalligraphicTitle
                     .padding(.bottom, 10)
             } else {
-                Text(book.title)
+                Text(SoloLocalization.localized(book.title))
                     .font(SoloTypography.posterTitle(size: 56))
                     .foregroundStyle(SoloTheme.ink)
                     .fixedSize(horizontal: false, vertical: true)
@@ -356,7 +356,7 @@ struct SoloEntryHeroScene: View {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
 
-                Text(volume.volumeLabel)
+                Text(volume.localizedVolumeLabel)
                     .font(.caption2.weight(.bold))
                     .foregroundStyle(SoloTheme.ink)
                     .padding(.horizontal, 10)
@@ -368,10 +368,10 @@ struct SoloEntryHeroScene: View {
                     .font(.caption2.weight(.bold))
                     .tracking(1.4)
                     .foregroundStyle(SoloTheme.gold)
-                Text(volume.cover.subtitle)
+                Text(volume.cover.localizedSubtitle)
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(SoloTheme.ink)
-                if let caption = volume.cover.caption {
+                if let caption = volume.cover.localizedCaption {
                     Text(caption)
                         .font(.caption)
                         .foregroundStyle(SoloTheme.warmInk)
@@ -417,34 +417,66 @@ struct SoloEntryHeroScene: View {
 
     // MARK: - 天机录 Calligraphic Title
 
+    private var isCJKLocale: Bool {
+        let lang = Locale.current.language.languageCode?.identifier ?? ""
+        return ["zh", "ja", "ko"].contains(lang)
+    }
+
     private var tianjiluCalligraphicTitle: some View {
         VStack(spacing: 0) {
             topOrnamentLine
                 .padding(.bottom, 8)
 
-            HStack(alignment: .bottom, spacing: 6) {
-                calligraphyChar("天", size: 62, yOffset: -2)
-                calligraphyChar("机", size: 72, yOffset: 0)
-                calligraphyChar("录", size: 58, yOffset: 2)
-            }
-            .overlay(
-                RoundedRectangle(cornerRadius: 2)
-                    .fill(
+            if isCJKLocale {
+                let localizedTitle = SoloLocalization.localized("天机录")
+                HStack(alignment: .bottom, spacing: 6) {
+                    ForEach(Array(localizedTitle.enumerated()), id: \.offset) { index, char in
+                        let sizes: [CGFloat] = [62, 72, 58]
+                        let offsets: [CGFloat] = [-2, 0, 2]
+                        calligraphyChar(
+                            String(char),
+                            size: index < sizes.count ? sizes[index] : 64,
+                            yOffset: index < offsets.count ? offsets[index] : 0
+                        )
+                    }
+                }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 2)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color.clear,
+                                    SoloTheme.gold.opacity(0.40 + portalPulse * 0.20),
+                                    SoloTheme.jade.opacity(0.20),
+                                    Color.clear,
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(height: 1.5)
+                        .offset(y: 42)
+                )
+                .padding(.bottom, 10)
+            } else {
+                Text(SoloLocalization.localized("天机录"))
+                    .font(.system(size: 56, weight: .black, design: .serif))
+                    .foregroundStyle(
                         LinearGradient(
                             colors: [
-                                Color.clear,
-                                SoloTheme.gold.opacity(0.40 + portalPulse * 0.20),
-                                SoloTheme.jade.opacity(0.20),
-                                Color.clear,
+                                Color(red: 0.96, green: 0.86, blue: 0.52),
+                                Color(red: 0.88, green: 0.72, blue: 0.38),
+                                Color(red: 0.50, green: 0.82, blue: 0.76),
                             ],
-                            startPoint: .leading,
-                            endPoint: .trailing
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
                         )
                     )
-                    .frame(height: 1.5)
-                    .offset(y: 42)
-            )
-            .padding(.bottom, 10)
+                    .shadow(color: SoloTheme.gold.opacity(0.55 + portalPulse * 0.30), radius: 12, x: 0, y: 4)
+                    .shadow(color: SoloTheme.jade.opacity(0.20 + portalPulse * 0.10), radius: 24, x: 0, y: 0)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 10)
+            }
 
             bottomOrnamentLine
         }

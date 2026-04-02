@@ -256,7 +256,7 @@ private struct OracleArtifactDetailCard: View {
                 .tracking(4)
 
             VStack(spacing: 8) {
-                Text(artifact.asset.title)
+                Text(artifact.asset.localizedTitle)
                     .font(.system(size: 22, weight: .bold, design: .serif))
                     .foregroundStyle(Color.white)
 
@@ -274,7 +274,7 @@ private struct OracleArtifactDetailCard: View {
                     )
             }
 
-            if let caption = artifact.asset.caption, !caption.isEmpty {
+            if let caption = artifact.asset.localizedCaption, !caption.isEmpty {
                 Text(caption)
                     .font(.system(size: 14, weight: .regular, design: .serif))
                     .foregroundStyle(Color.white.opacity(0.65))
@@ -282,7 +282,7 @@ private struct OracleArtifactDetailCard: View {
                     .lineSpacing(4)
                     .padding(.horizontal, 16)
             } else if !artifact.asset.subtitle.isEmpty {
-                Text(artifact.asset.subtitle)
+                Text(artifact.asset.localizedSubtitle)
                     .font(.system(size: 14, weight: .regular, design: .serif))
                     .foregroundStyle(Color.white.opacity(0.65))
                     .multilineTextAlignment(.center)

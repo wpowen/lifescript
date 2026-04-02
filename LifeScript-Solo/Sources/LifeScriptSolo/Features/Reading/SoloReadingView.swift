@@ -202,11 +202,11 @@ struct SoloReadingView: View {
                         if let chapter = viewModel.currentChapter {
                             // 章节标题 — 电影感大字
                             VStack(alignment: .leading, spacing: 10) {
-                                Text(SoloLocalization.format("第 %d 章 · %@", chapter.number, book.title))
+                                Text(SoloLocalization.format("第 %d 章 · %@", chapter.number, SoloLocalization.localized(book.title)))
                                     .font(.caption2.weight(.bold))
                                     .tracking(3)
                                     .foregroundStyle(SoloTheme.gold)
-                                Text(chapter.title)
+                                Text(SoloLocalization.localized(chapter.title))
                                     .font(SoloTypography.posterTitle(size: 28))
                                     .foregroundStyle(SoloTheme.ink)
                                     .fixedSize(horizontal: false, vertical: true)
@@ -344,7 +344,7 @@ struct SoloReadingView: View {
                         .tracking(3.5)
                         .foregroundStyle(SoloTheme.gold)
                     if let chapter = viewModel.currentChapter {
-                        Text(chapter.title)
+                        Text(SoloLocalization.localized(chapter.title))
                             .font(SoloTypography.posterTitle(size: 26))
                             .foregroundStyle(SoloTheme.ink)
                             .fixedSize(horizontal: false, vertical: true)
@@ -805,7 +805,7 @@ struct SoloReadingView: View {
     }
 
     private var navigationTitle: String {
-        viewModel.currentChapter?.title ?? book.title
+        viewModel.currentChapter.map { SoloLocalization.localized($0.title) } ?? SoloLocalization.localized(book.title)
     }
 
     private func scrollAfterUpdate(using proxy: ScrollViewProxy, previousCount: Int) {

@@ -9,7 +9,7 @@
     {
       "text": {
         "id": "天机录_ch0889_001",
-        "content": "Dawn had barely broken when the official road outside Tianqing Sect was already crowded with people. Today was Chen Ji's first day entering court as Grand Tutor, and countless eyes in the palace were watching every move of this 'waste'. In the distance, hoofbeats sounded as an unremarkable blue-cloth carriage slowly approached, its curtain slightly lifted to reveal a face平静到近乎木讷—正是陈机。他望着巍峨的宫殿轮廓，嘴角勾起一抹几不可察的弧度：帝国使者，你准备好了吗？"
+        "content": "Dawn had barely broken when the official road outside Tianqing Sect was already crowded with people. Today was Chen Ji's first day entering court as Grand Tutor, and countless eyes in the palace were watching every move of this 'waste'. In the distance, hoofbeats sounded as an unremarkable blue-cloth carriage slowly approached, its curtain slightly lifted to reveal a facecalm到近乎木讷—正是陈机。他望着巍峨的宫殿轮廓，嘴角勾起一抹几不可察的弧度：帝国使者，你准备好了吗？"
       }
     },
     {
@@ -17,7 +17,7 @@
         "id": "天机录_ch0889_002",
         "character_id": "char_chenji",
         "content": "Good morning, distinguished officials. Chen is new here and hopes for your guidance.",
-        "emotion": "谦卑"
+        "emotion": "humble"
       }
     },
     {
@@ -31,7 +31,7 @@
         "id": "天机录_ch0889_004",
         "character_id": "char_tiandaozhiyan",
         "content": "Elder Chen, this official has something unclear—if you received great favor from Tianqing Sect yet now hold the position of Grand Tutor, which loyalty should take precedence with this dual allegiance?",
-        "emotion": "质问"
+        "emotion": "questioning"
       }
     },
     {
@@ -49,26 +49,26 @@
           {
             "id": "ch0889_opt_confront",
             "text": "Fight head-on",
-            "description": "Playing the waste persona for too long, today let everyone见识一下太师的锋芒。当众质问赵崇的家族丑闻，让他当场下不来台。",
+            "description": "Playing the waste persona for too long, today let everyone见识一下太师的edge。当众questioning赵崇的家族丑闻，让他当场下不来台。",
             "satisfaction_type": "直接爽",
             "visible_cost": "Expose strength, draw more attention",
             "visible_reward": "Humiliate the envoy publicly, greatly increase reputation",
             "risk_hint": "May alert the snakes, making hidden forces vigilant",
-            "process_label": "正面反击",
+            "process_label": "counterattack directly",
             "stat_effects": [
               {
-                "stat": "名望",
+                "stat": "reputation",
                 "delta": 15
               },
               {
-                "stat": "谋略",
+                "stat": "strategy",
                 "delta": 5
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "敌意",
+                "dimension": "hostility",
                 "delta": 20
               }
             ],
@@ -78,7 +78,7 @@
                   "id": "天机录_ch0889_result_ch0889_opt_confront_001",
                   "character_id": "char_chenji",
                   "content": "Elder Zhao asks an excellent question. Since it's dual allegiance, Chen ventures to ask—within Elder Zhao's three generations of ancestors, can you remember what surname you bear?",
-                  "emotion": "冷笑"
+                  "emotion": "sneer"
                 }
               },
               {
@@ -93,7 +93,7 @@
             "requires_flag": null,
             "forbids_flag": null,
             "stat_gate": {
-              "stat": "谋略",
+              "stat": "strategy",
               "min": 50
             },
             "memory_label": "展示锋芒",
@@ -102,26 +102,26 @@
           {
             "id": "ch0889_opt_retreat",
             "text": "Strategic retreat",
-            "description": "Continue playing the waste persona, publicly declare limited knowledge,主动请辞太师之位，以退为进让对方无话可说。",
+            "description": "Continue playing the waste persona, publicly declare limited knowledge,主动请辞太师之位，retreat to advance让对方无话可说。",
             "satisfaction_type": "扮猪吃虎",
             "visible_cost": "Temporarily放下太师身份",
             "visible_reward": "Imperial representative's attention rises, gain opportunity to turn things around",
             "risk_hint": "May be顺势解职",
-            "process_label": "示弱请辞",
+            "process_label": "feign weakness to resign",
             "stat_effects": [
               {
-                "stat": "名望",
+                "stat": "reputation",
                 "delta": -5
               },
               {
-                "stat": "谋略",
+                "stat": "strategy",
                 "delta": 10
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "信任",
+                "dimension": "trust",
                 "delta": 10
               }
             ],
@@ -131,7 +131,7 @@
                   "id": "天机录_ch0889_result_ch0889_opt_retreat_001",
                   "character_id": "char_chenji",
                   "content": "Elder Zhao speaks truly. Chen is indeed of limited learning and truly unfit for this great position. Perhaps I should hereby resign the Grand Tutorship, to avoid... occupying a position without fulfilling duties.",
-                  "emotion": "谦卑"
+                  "emotion": "humble"
                 }
               },
               {
@@ -157,21 +157,21 @@
             "visible_cost": "欠下皇帝代表人情",
             "visible_reward": "Succeeded in deflecting attention, borrowed a blade to slay",
             "risk_hint": "The intent might be seen through by the Emperor's representative",
-            "process_label": "借力打力",
+            "process_label": "turn force against them",
             "stat_effects": [
               {
-                "stat": "谋略",
+                "stat": "strategy",
                 "delta": 12
               },
               {
-                "stat": "名望",
+                "stat": "reputation",
                 "delta": 8
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "敬畏",
+                "dimension": "awe",
                 "delta": 15
               }
             ],
@@ -181,7 +181,7 @@
                   "id": "天机录_ch0889_result_ch0889_opt_借势_001",
                   "character_id": "char_chenji",
                   "content": "\"Chen is foolish, not daring to speak carelessly about matters of allegiance... However...\" Chen Ji turned his words, slightly bowing towards the imperial representative, \"This matter truly requires Your Majesty's sacred judgment.\"",
-                  "emotion": "恭顺"
+                  "emotion": "reverently obedient"
                 }
               },
               {
@@ -196,7 +196,7 @@
             "requires_flag": null,
             "forbids_flag": null,
             "stat_gate": {
-              "stat": "魅力",
+              "stat": "charm",
               "min": 40
             },
             "memory_label": "借势脱身",
@@ -216,13 +216,13 @@
         "id": "天机录_ch0889_007",
         "character_id": "char_chenji",
         "content": "\"Minister Zhao just asked where Chen's roots lie... Chen would like to first ask Minister — are your Zhao family's three generations of roots still on this land?\"",
-        "emotion": "意味深长"
+        "emotion": "meaningful"
       }
     },
     {
       "text": {
         "id": "天机录_ch0889_008",
-        "content": "\"At these words, Zhao Chong's face changed abruptly. The hundred officials in the hall also sensed the strange atmosphere — was this废物 Grand Tutor speaking with hidden meaning? Chen Ji did not give him time to react, taking a yellowed paper from his sleeve. The Tianji Record Fragment's runes faintly glowed. He slightly closed his eyes, actually having already injected his Heavenly Fate Value into it — five points of Heavenly Fate, in exchange for three hours of foresight. After a moment, he opened his eyes, his smile deepening. 'Minister Zhao, Chen dares to speculate — did your grandfather have a grandmother of... mixed blood?'\""
+        "content": "\"At these words, Zhao Chong's face changed abruptly. The hundred officials in the hall also sensed the strange atmosphere — was thistrash Grand Tutor speaking with hidden meaning? Chen Ji did not give him time to react, taking a yellowed paper from his sleeve. The Tianji Record Fragment's runes faintly glowed. He slightly closed his eyes, actually having already injected his Heavenly Fate Value into it — five points of Heavenly Fate, in exchange for three hours of foresight. After a moment, he opened his eyes, his smile deepening. 'Minister Zhao, Chen dares to speculate — did your grandfather have a grandmother of... mixed blood?'\""
       }
     },
     {
@@ -239,25 +239,25 @@
             "visible_cost": "\"Consume 5 Heavenly Fate Value\"",
             "visible_reward": "\"Envoy's prestige ruined, Chen Ji's reputation greatly increased\"",
             "risk_hint": "\"The Tianji Record's aura might be exposed\"",
-            "process_label": "揭露真相",
+            "process_label": "expose the truth",
             "stat_effects": [
               {
-                "stat": "天命值",
+                "stat": "fate",
                 "delta": -5
               },
               {
-                "stat": "名望",
+                "stat": "reputation",
                 "delta": 20
               },
               {
-                "stat": "黑化值",
+                "stat": "corruption",
                 "delta": 3
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "敌意",
+                "dimension": "hostility",
                 "delta": 25
               }
             ],
@@ -293,30 +293,30 @@
             "visible_cost": "\"Consume 5 Heavenly Fate Value\"",
             "visible_reward": "\"Envoy falls into passive position yet cannot refute, wisdom and strategy demonstrated\"",
             "risk_hint": "\"Effect might not be as satisfying as direct public exposure\"",
-            "process_label": "引蛇出洞",
+            "process_label": "lure out the enemy",
             "stat_effects": [
               {
-                "stat": "天命值",
+                "stat": "fate",
                 "delta": -5
               },
               {
-                "stat": "谋略",
+                "stat": "strategy",
                 "delta": 15
               },
               {
-                "stat": "名望",
+                "stat": "reputation",
                 "delta": 12
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "敌意",
+                "dimension": "hostility",
                 "delta": 15
               },
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "敬畏",
+                "dimension": "awe",
                 "delta": 10
               }
             ],
@@ -350,7 +350,7 @@
     {
       "text": {
         "id": "天机录_ch0889_009",
-        "content": "\"The atmosphere in court had completely reversed. The imperial envoy who had been high and mighty just moments ago was now like a stray dog, kneeling on the ground trembling. The hundred officials' gazes toward Chen Ji also changed — what was this '废物' Grand Tutor's background? Actually able to investigate the Zhao family's three-generation secret? Chen Ji looked around, taking in everyone's reactions, while calculating his next move in his heart — this moment was precisely the best opportunity to retreat in order to advance.\""
+        "content": "\"The atmosphere in court had completely reversed. The imperial envoy who had been high and mighty just moments ago was now like a stray dog, kneeling on the ground trembling. The hundred officials' gazes toward Chen Ji also changed — what was this 'trash' Grand Tutor's background? Actually able to investigate the Zhao family's three-generation secret? Chen Ji looked around, taking in everyone's reactions, while calculating his next move in his heart — this moment was precisely the best opportunity to retreat in order to advance.\""
       }
     },
     {
@@ -358,13 +358,13 @@
         "id": "天机录_ch0889_010",
         "character_id": "char_chenji",
         "content": "\"Your Majesty, Minister Zhao... Chen only today realized how treacherous and cloudy court politics can be. Chen is merely a humble wanderer, truly unsuited for these temple struggles. I earnestly request Your Majesty permit Chen to resign from the Grand Tutor position, return to the mountain sect, and quietly cultivate.\"",
-        "emotion": "谦卑"
+        "emotion": "humble"
       }
     },
     {
       "text": {
         "id": "天机录_ch0889_011",
-        "content": "\"At these words, the court erupted in commotion once more. The hundred officials looked at each other in disbelief — this废物 Grand Tutor had slapped the imperial envoy's face, yet still wanted to resign? Conscience-stricken or retreating to advance? Zhao Chong, kneeling on the ground, a fierce gleam flickering in his eyes, was about to speak and impeach, when he saw the Emperor's representative raise a hand to stop him. 'Master Chen,' the old man walked out from behind the pearl curtain, his aged gaze carrying a hint of playfulness, 'Is this resignation of yours sincere, or retreating to advance?'\""
+        "content": "\"At these words, the court erupted in commotion once more. The hundred officials looked at each other in disbelief — thistrash Grand Tutor had slapped the imperial envoy's face, yet still wanted to resign? Conscience-stricken or retreating to advance? Zhao Chong, kneeling on the ground, a fierce gleam flickering in his eyes, was about to speak and impeach, when he saw the Emperor's representative raise a hand to stop him. 'Master Chen,' the old man walked out from behind the pearl curtain, his aged gaze carrying a hint of playfulness, 'Is this resignation of yours sincere, or retreating to advance?'\""
       }
     },
     {
@@ -381,26 +381,26 @@
             "visible_cost": "Expose One's True Colors",
             "visible_reward": "The Emperor's representative's favor increases greatly, possibly gaining important information",
             "risk_hint": "Might be considered too calculating",
-            "process_label": "坦诚相对",
+            "process_label": "frank exchange",
             "stat_effects": [
               {
-                "stat": "魅力",
+                "stat": "charm",
                 "delta": 8
               },
               {
-                "stat": "谋略",
+                "stat": "strategy",
                 "delta": 5
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "信任",
+                "dimension": "trust",
                 "delta": 20
               },
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "好感",
+                "dimension": "affection",
                 "delta": 15
               }
             ],
@@ -410,7 +410,7 @@
                   "id": "天机录_ch0889_result_ch0889_opt_admit_001",
                   "character_id": "char_chenji",
                   "content": "\"Chen Ji dares not deceive Your Majesty.\" Chen Ji slightly bowed, his tone calm. \"Chen Ji did indeed have the intention to retreat in order to advance. But more than that... I don't want this court to have another person like Lord Zhao who only knows how to form factions and attack opponents.\"",
-                  "emotion": "坦诚"
+                  "emotion": "frank"
                 }
               },
               {
@@ -438,26 +438,26 @@
             "visible_cost": "Miss the chance to build a deeper connection with the Emperor's representative",
             "visible_reward": "Persona becomes more solidified, creating greater operational space in the future",
             "risk_hint": "Might be considered hypocritical",
-            "process_label": "坚持伪装",
+            "process_label": "maintain disguise",
             "stat_effects": [
               {
-                "stat": "谋略",
+                "stat": "strategy",
                 "delta": 8
               },
               {
-                "stat": "名望",
+                "stat": "reputation",
                 "delta": -3
               }
             ],
             "relationship_effects": [
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "信任",
+                "dimension": "trust",
                 "delta": 5
               },
               {
                 "character_id": "char_tiandaozhiyan",
-                "dimension": "敬畏",
+                "dimension": "awe",
                 "delta": 10
               }
             ],
@@ -467,7 +467,7 @@
                   "id": "天机录_ch0889_result_ch0889_opt_deny_001",
                   "character_id": "char_chenji",
                   "content": "\"Your Majesty jesting, Chen Ji merely... merely doesn't want to be involved in these court disputes.\" Chen Ji kept his head lowered, his tone carrying几分 fear. \"Chen Ji has never been good at these things since childhood, only wishing to cultivate in peace...\"",
-                  "emotion": "惶恐"
+                  "emotion": "apprehensive"
                 }
               },
               {
@@ -517,7 +517,7 @@
         "id": "天机录_ch0889_016",
         "character_id": "char_chenji",
         "content": "\"This... this is impossible!\" Chen Ji lost composure for the first time, sharply looking up at the Emperor's representative. \"How does Your Majesty know of her?\"",
-        "emotion": "震惊"
+        "emotion": "shocked"
       }
     },
     {

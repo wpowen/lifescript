@@ -30,7 +30,7 @@ struct SoloChapterBrowserView: View {
 
     private var currentChapterTitle: String? {
         guard let id = currentChapterId else { return nil }
-        return chapters.first(where: { $0.id == id })?.title
+        return chapters.first(where: { $0.id == id }).map { SoloLocalization.localized($0.title) }
     }
 
     private var overallProgressFraction: Double {
@@ -66,7 +66,7 @@ struct SoloChapterBrowserView: View {
                 .padding(.bottom, 40)
             }
         }
-        .navigationTitle("章节目录")
+        .navigationTitle(SoloLocalization.localized("章节目录"))
         .navigationBarTitleDisplayMode(.large)
         .toolbar(.visible, for: .navigationBar)
         .safeAreaInset(edge: .bottom) {
@@ -99,7 +99,7 @@ struct SoloChapterBrowserView: View {
         VStack(alignment: .leading, spacing: 14) {
             // Header row
             HStack(alignment: .firstTextBaseline) {
-                Text("阅读进度")
+                Text(SoloLocalization.localized("阅读进度"))
                     .font(SoloTypography.meta)
                     .foregroundStyle(SoloTheme.gold)
                 Spacer()
@@ -119,7 +119,7 @@ struct SoloChapterBrowserView: View {
             // Current chapter display
             if let title = currentChapterTitle, let num = currentChapterNumber {
                 VStack(alignment: .leading, spacing: 3) {
-                    Text("第\(num)章")
+                    Text(SoloLocalization.format("第%d章", num))
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(SoloTheme.gold.opacity(0.72))
                     Text(title)
@@ -128,7 +128,7 @@ struct SoloChapterBrowserView: View {
                         .lineLimit(1)
                 }
             } else {
-                Text("尚未开始阅读")
+                Text(SoloLocalization.localized("尚未开始阅读"))
                     .font(SoloTypography.sceneHeadline(size: 20))
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -165,12 +165,12 @@ struct SoloChapterBrowserView: View {
             // Footer stat
             HStack {
                 if let n = currentChapterNumber {
-                    Text("已读 \(n) 章")
+                    Text(SoloLocalization.format("已读 %d 章", n))
                         .font(SoloTypography.caption)
                         .foregroundStyle(SoloTheme.muted)
                 }
                 Spacer()
-                Text("共 \(chapters.count) 章")
+                Text(SoloLocalization.format("共 %d 章", chapters.count))
                     .font(SoloTypography.caption)
                     .foregroundStyle(SoloTheme.muted)
             }
@@ -285,18 +285,18 @@ struct SoloChapterBrowserView: View {
 
                     // Content
                     VStack(alignment: .leading, spacing: 5) {
-                        Text(volume.title)
+                        Text(volume.localizedTitle)
                             .font(SoloTypography.chromeTitle(size: 17, weight: .semibold))
                             .foregroundStyle(SoloTheme.ink)
                             .lineLimit(1)
 
-                        Text("第\(volume.chapterRange.lowerBound)–\(volume.chapterRange.upperBound)章 · 共\(chapterCount)节")
+                        Text(SoloLocalization.format("第%d–%d章 · 共%d节", volume.chapterRange.lowerBound, volume.chapterRange.upperBound, chapterCount))
                             .font(.caption2.weight(.medium))
                             .foregroundStyle(SoloTheme.muted)
 
                         // Teaser — only visible when collapsed
                         if !isExpanded && !volume.teaser.isEmpty {
-                            Text(volume.teaser)
+                            Text(volume.localizedTeaser)
                                 .font(SoloTypography.detail)
                                 .foregroundStyle(SoloTheme.muted.opacity(0.75))
                                 .lineLimit(2)
@@ -330,7 +330,7 @@ struct SoloChapterBrowserView: View {
     @ViewBuilder
     private func volumeStatusBadge(volume: SoloVolumePlan, isUnlocked: Bool) -> some View {
         if volume.isFree {
-            Text("免费")
+            Text(SoloLocalization.localized("免费"))
                 .font(.caption2.weight(.bold))
                 .foregroundStyle(SoloTheme.jade)
                 .padding(.horizontal, 9)
@@ -341,7 +341,7 @@ struct SoloChapterBrowserView: View {
             HStack(spacing: 4) {
                 Image(systemName: "checkmark.circle.fill")
                     .font(.caption2)
-                Text("已解锁")
+                Text(SoloLocalization.localized("已解锁"))
                     .font(.caption2.weight(.semibold))
             }
             .foregroundStyle(SoloTheme.gold)
@@ -357,13 +357,17 @@ struct SoloChapterBrowserView: View {
             HStack(spacing: 4) {
                 Image(systemName: "lock.fill")
                     .font(.caption2)
-                Text(volumeStore.displayPrice(for: volume))
+                Text(SoloLocalization.format("未解锁 · %@", volumeStore.displayPrice(for: volume)))
                     .font(.caption2.weight(.semibold))
             }
-            .foregroundStyle(SoloTheme.muted)
+            .foregroundStyle(SoloTheme.gold.opacity(0.92))
             .padding(.horizontal, 9)
             .padding(.vertical, 4)
-            .background(Color.white.opacity(0.07))
+            .background(SoloTheme.gold.opacity(0.10))
+            .overlay(
+                Capsule()
+                    .strokeBorder(SoloTheme.gold.opacity(0.18), lineWidth: 1)
+            )
             .clipShape(Capsule())
         }
     }
@@ -372,88 +376,130 @@ struct SoloChapterBrowserView: View {
 
     private func unlockButtonRow(volume: SoloVolumePlan) -> some View {
         let isPurchasing = purchasingVolume?.id == volume.id
+        let price = volumeStore.displayPrice(for: volume)
 
-        return Button {
-            Task {
-                purchasingVolume = volume
-                _ = await volumeStore.purchase(volume)
-                purchasingVolume = nil
+        return VStack(alignment: .leading, spacing: 14) {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text(SoloLocalization.localized("本卷需解锁后阅读"))
+                        .font(.caption.weight(.bold))
+                        .tracking(1.6)
+                        .foregroundStyle(SoloTheme.gold)
+                    Spacer()
+                    Text(price)
+                        .font(.subheadline.weight(.bold))
+                        .foregroundStyle(SoloTheme.gold)
+                }
+
+                Text(volume.localizedTitle)
+                    .font(SoloTypography.sceneHeadline(size: 22))
+                    .foregroundStyle(SoloTheme.ink)
+
+                HStack(spacing: 10) {
+                    unlockMetaChip(
+                        icon: "text.book.closed.fill",
+                        text: SoloLocalization.format(
+                            "第%d-%d章",
+                            volume.chapterRange.lowerBound,
+                            volume.chapterRange.upperBound
+                        )
+                    )
+                    unlockMetaChip(
+                        icon: "tray.and.arrow.down.fill",
+                        text: SoloLocalization.localized("单卷永久解锁")
+                    )
+                    unlockMetaChip(
+                        icon: "arrow.clockwise",
+                        text: SoloLocalization.localized("支持恢复购买")
+                    )
+                }
+
+                Text(volume.localizedTeaser)
+                    .font(SoloTypography.detail)
+                    .foregroundStyle(SoloTheme.warmInk.opacity(0.86))
+                    .lineSpacing(4)
             }
-        } label: {
-            HStack(spacing: 14) {
-                // Left icon
-                ZStack {
-                    Circle()
-                        .fill(SoloTheme.gold.opacity(0.14))
-                        .frame(width: 40, height: 40)
+            .padding(.horizontal, 16)
+            .padding(.top, 16)
+
+            Button {
+                Task {
+                    purchasingVolume = volume
+                    _ = await volumeStore.purchase(volume)
+                    purchasingVolume = nil
+                }
+            } label: {
+                HStack(spacing: 12) {
                     if isPurchasing {
                         ProgressView()
                             .progressViewStyle(.circular)
-                            .tint(SoloTheme.gold)
-                            .scaleEffect(0.80)
+                            .tint(SoloTheme.ink)
+                            .scaleEffect(0.82)
                     } else {
                         Image(systemName: "lock.open.fill")
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(SoloTheme.gold)
+                            .font(.subheadline.weight(.bold))
                     }
-                }
 
-                // Text content
-                VStack(alignment: .leading, spacing: 3) {
                     Text(
                         isPurchasing
-                            ? "正在处理…"
-                            : SoloLocalization.format("解锁%@ · %@", volume.shortTitle, volumeStore.displayPrice(for: volume))
+                            ? SoloLocalization.localized("正在处理购买…")
+                            : SoloLocalization.format("解锁%@并继续阅读", volume.shortTitle)
                     )
-                    .font(SoloTypography.label)
-                    .foregroundStyle(SoloTheme.ink)
+                    .font(.headline.weight(.semibold))
 
-                    Text("单卷永久解锁，可随时恢复")
-                        .font(SoloTypography.caption)
-                        .foregroundStyle(SoloTheme.muted)
+                    Spacer()
+
+                    Text(price)
+                        .font(.headline.weight(.bold))
                 }
-
-                Spacer()
-
-                // Price pill
-                if !isPurchasing {
-                    Text(volumeStore.displayPrice(for: volume))
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(SoloTheme.gold)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 5)
-                        .overlay(
-                            Capsule()
-                                .strokeBorder(SoloTheme.gold.opacity(0.36), lineWidth: 1)
-                        )
-                        .clipShape(Capsule())
-                }
+                .foregroundStyle(SoloTheme.ink)
+                .padding(.horizontal, 18)
+                .padding(.vertical, 16)
+                .frame(maxWidth: .infinity)
+                .background(SoloTheme.gold)
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
-            .background(
-                LinearGradient(
-                    colors: [SoloTheme.gold.opacity(0.16), SoloTheme.gold.opacity(0.06)],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: [SoloTheme.gold.opacity(0.45), SoloTheme.gold.opacity(0.15)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 1.2
-                    )
-            )
-            .opacity(isPurchasing ? 0.65 : 1.0)
+            .buttonStyle(.plain)
+            .disabled(isPurchasing || volumeStore.isOperationInProgress)
+            .opacity(isPurchasing ? 0.70 : 1.0)
         }
-        .buttonStyle(.plain)
-        .disabled(isPurchasing || volumeStore.isOperationInProgress)
+        .padding(.horizontal, 16)
+        .padding(.bottom, 16)
+        .background(
+            LinearGradient(
+                colors: [SoloTheme.gold.opacity(0.16), SoloTheme.gold.opacity(0.06)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [SoloTheme.gold.opacity(0.45), SoloTheme.gold.opacity(0.15)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1.2
+                )
+        )
+        .opacity(isPurchasing ? 0.76 : 1.0)
+    }
+
+    private func unlockMetaChip(icon: String, text: String) -> some View {
+        HStack(spacing: 6) {
+            Image(systemName: icon)
+                .font(.caption2.weight(.semibold))
+            Text(text)
+                .font(.caption.weight(.semibold))
+                .lineLimit(1)
+        }
+        .foregroundStyle(SoloTheme.warmInk)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 7)
+        .background(Color.white.opacity(0.06))
+        .clipShape(Capsule())
     }
 
     // MARK: - Chapter Row
@@ -503,7 +549,7 @@ struct SoloChapterBrowserView: View {
                     .frame(width: 14, alignment: .center)
 
                     // Chapter number
-                    Text("第\(chapter.number)章")
+                    Text(SoloLocalization.format("第%d章", chapter.number))
                         .font(.system(size: 11, weight: isCurrent ? .bold : .semibold, design: .serif))
                         .foregroundStyle(
                             isCurrent
@@ -513,7 +559,7 @@ struct SoloChapterBrowserView: View {
                         .frame(width: 56, alignment: .leading)
 
                     // Chapter title
-                    Text(chapter.title)
+                    Text(SoloLocalization.localized(chapter.title))
                         .font(
                             isCurrent
                                 ? .subheadline.weight(.semibold)
@@ -534,7 +580,7 @@ struct SoloChapterBrowserView: View {
 
                     // Right indicator
                     if isCurrent {
-                        Text("阅读中")
+                        Text(SoloLocalization.localized("阅读中"))
                             .font(.caption2.weight(.bold))
                             .foregroundStyle(SoloTheme.gold)
                             .padding(.horizontal, 8)
