@@ -40,7 +40,7 @@ final class SoloStoryStoreTests: XCTestCase {
 
         XCTAssertEqual(summary.currentChapterNumber, 2)
         XCTAssertEqual(summary.completedChapterCount, 1)
-        XCTAssertEqual(summary.totalChapterCount, 2)
+        XCTAssertEqual(summary.totalChapterCount, 3)
         XCTAssertEqual(sut.resumeChapterId(progress: progress), "chapter_2")
     }
 
@@ -329,7 +329,8 @@ final class SoloStoryStoreTests: XCTestCase {
 
         XCTAssertEqual(snapshot.generatedChapterCount, 3)
         XCTAssertEqual(snapshot.plannedChapterCount, 1200)
-        XCTAssertTrue(snapshot.serialReleaseLine.contains("3 / 1200"))
+        XCTAssertTrue(snapshot.serialReleaseLine.contains("共 3 章"))
+        XCTAssertTrue(snapshot.serialReleaseLine.contains("开局试剑"))
         XCTAssertEqual(snapshot.destinyStatus.headline, "天命充盈")
     }
 

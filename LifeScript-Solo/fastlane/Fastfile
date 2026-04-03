@@ -2,7 +2,7 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
-    sh "cd .. && xcodegen generate"
+    sh "cd #{File.expand_path('..', __dir__)} && xcodegen generate"
   end
 
   # ── Tianjilu (天机录) ──────────────────────────────────────
@@ -12,7 +12,7 @@ platform :ios do
     run_tests(
       project: "LifeScriptSolo.xcodeproj",
       scheme: "LifeScriptSoloTianjilu",
-      device: "iPhone 16",
+      device: "iPhone 17 Pro",
       clean: true
     )
   end

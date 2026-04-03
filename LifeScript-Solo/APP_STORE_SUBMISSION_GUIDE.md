@@ -107,7 +107,7 @@
 ```
 1. This is an offline interactive fiction app. No internet connection is required for core functionality.
 
-2. The first 30 chapters are free. Subsequent chapters are unlocked via non-consumable in-app purchases organized by volume ($0.99 per volume). Each purchase grants permanent access.
+2. Volume 1 is fully free, which means the first 120 chapters are available without purchase. Subsequent chapters are unlocked via non-consumable in-app purchases organized by volume ($0.99 per volume). Each purchase grants permanent access.
 
 3. All story content is original fiction. No real persons, events, or locations are depicted.
 
@@ -117,7 +117,7 @@
 
 6. Demo account: Not applicable (offline app, no login required).
 
-7. To test IAP: The first 30 chapters are accessible without purchase. To review the paywall, navigate past chapter 30 to trigger the volume gate screen.
+7. To test IAP: Volume 1 (chapters 1-120) is accessible without purchase. To review the paywall, navigate past chapter 120 to trigger the volume gate screen.
 ```
 
 ### 演示账号
@@ -132,8 +132,10 @@
 
 | 设备 | 分辨率 | 数量 |
 |------|--------|------|
-| iPhone 6.7" (15 Pro Max) | 1290 × 2796 | 至少 3 张，建议 5 张 |
-| iPhone 6.5" (11 Pro Max) | 1242 × 2688 | 至少 3 张，建议 5 张 |
+| iPhone 6.9" | 1320 × 2868 / 1290 × 2796 / 1260 × 2736 | 1-10 张，建议 5 张 |
+| iPhone 6.5"（如未提供 6.9"） | 1284 × 2778 / 1242 × 2688 | 1-10 张，建议 5 张 |
+
+> 以 Apple Developer 当前截图规范为准。当前 iPhone 提交可优先提供一组 6.9" 截图；若不提供 6.9"，则至少需要 6.5" 截图。
 
 ### 建议截图内容
 
@@ -193,8 +195,10 @@ xcodebuild -project LifeScriptSolo.xcodeproj \
 
 ### 代码 & 构建
 - [x] NSLog 调试日志已用 `#if DEBUG` 包裹
-- [ ] `xcodegen generate` 成功生成项目
-- [ ] Release 构建通过（无 warning 视为加分）
+- [x] `xcodegen generate` 成功生成项目
+- [x] Release 构建通过
+- [x] 本地测试通过（52 tests）
+- [ ] App Store 导出通过（当前缺 `com.lifescript.solo.tianjilu` 的 App Store profile）
 - [ ] StoreKit 测试通过（sandbox 环境购买流程）
 
 ### Metadata
@@ -208,11 +212,12 @@ xcodebuild -project LifeScriptSolo.xcodeproj \
 - [x] 服务条款页面（中文 + 英文）
 - [x] 用户支持页面（中文 + 英文）
 - [x] 内容分级说明（中文 + 英文）
-- [ ] 法律页面 URL 可公开访问
+- [ ] 法律页面 URL 可公开访问（当前 `lifescript.app` 仍未解析）
 
 ### App Store Connect
 - [ ] App 已创建（Bundle ID 注册）
 - [ ] 9 个 IAP 非消耗品已创建
+- [ ] 为 `com.lifescript.solo.tianjilu` 创建 App Store Distribution profile
 - [ ] 年龄分级问卷已填写（预期 17+）
 - [ ] App 分类已选择
 - [ ] 审核备注已填写
@@ -234,7 +239,7 @@ xcodebuild -project LifeScriptSolo.xcodeproj \
 ```bash
 cd LifeScript-Solo
 
-# 1. 同步证书
+# 1. 先确保本机已安装 fastlane，并补齐 App Store profile
 fastlane certs
 
 # 2. 上传到 TestFlight（先内测）
@@ -242,6 +247,15 @@ fastlane beta
 
 # 3. 上传到 App Store（正式提交）
 fastlane release
+```
+
+如果要用 `xcodebuild` 手动导出，可使用：
+
+```bash
+xcodebuild -exportArchive \
+  -archivePath /tmp/LifeScriptSoloTianjilu_signed.xcarchive \
+  -exportPath /tmp/LifeScriptSoloExport \
+  -exportOptionsPlist fastlane/ExportOptions-app-store-connect.plist
 ```
 
 ---

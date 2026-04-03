@@ -1,7 +1,7 @@
 import Foundation
 @testable import LifeScriptSolo
 
-final class MockContentLoader: ContentProviding {
+final class MockContentLoader: ContentProviding, @unchecked Sendable {
     var stubbedBook: Book?
     var stubbedChapters: [Chapter] = []
     var stubbedWalkthrough: BookWalkthrough?
