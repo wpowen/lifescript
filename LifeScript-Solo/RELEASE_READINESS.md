@@ -20,8 +20,11 @@
 
 ### 2. 法律链接未上线
 
-- `https://lifescript.app/privacy`
-- `https://lifescript.app/support`
+- `https://wpowen.github.io/wpprivacy/lifescript-solo/privacy.html`
+- `https://wpowen.github.io/wpprivacy/lifescript-solo/support.html`
+- `https://wpowen.github.io/wpprivacy/lifescript-solo/contact.html`
+- `https://wpowen.github.io/wpprivacy/lifescript-solo/terms.html`
+- `https://wpowen.github.io/wpprivacy/lifescript-solo/content-rating.html`
 - 当前都无法解析，提审前必须可访问
 
 ### 3. 商店素材未产出

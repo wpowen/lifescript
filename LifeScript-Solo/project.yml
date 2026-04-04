@@ -10,6 +10,7 @@ settings:
     SWIFT_VERSION: "5.9"
     MARKETING_VERSION: 1.0
     CURRENT_PROJECT_VERSION: 1
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
 
 targetDefaults:
   appSources: &appSources
@@ -33,7 +34,7 @@ targetDefaults:
     ITSAppUsesNonExemptEncryption: false
   signingSettings: &signingSettings
     CODE_SIGN_STYLE: Automatic
-    DEVELOPMENT_TEAM: PGQH8BWU56
+    DEVELOPMENT_TEAM: PT2325KAQ6
   apocalypseSkuInfo: &apocalypseSkuInfo
     CFBundleDisplayName: "灰烬执政官"
     SoloStoryID: "apocalypse_001"
@@ -357,6 +358,7 @@ targets:
     settings:
       base:
         <<: *signingSettings
+        TARGETED_DEVICE_FAMILY: "1"
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo
         INFOPLIST_KEY_CFBundleDisplayName: "灰烬执政官"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -376,6 +378,7 @@ targets:
     settings:
       base:
         <<: *signingSettings
+        TARGETED_DEVICE_FAMILY: "1"
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.cultivation
         INFOPLIST_KEY_CFBundleDisplayName: "残剑问仙"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIconCultivation
@@ -421,6 +424,7 @@ targets:
     settings:
       base:
         <<: *signingSettings
+        TARGETED_DEVICE_FAMILY: "1"
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.tianjilu
         INFOPLIST_KEY_CFBundleDisplayName: "天机录"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIconTianjilu
@@ -440,6 +444,7 @@ targets:
     settings:
       base:
         <<: *signingSettings
+        TARGETED_DEVICE_FAMILY: "1"
         PRODUCT_BUNDLE_IDENTIFIER: com.lifescript.solo.validate50
         INFOPLIST_KEY_CFBundleDisplayName: "觉醒纪元"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

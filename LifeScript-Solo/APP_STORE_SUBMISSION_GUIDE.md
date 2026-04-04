@@ -173,19 +173,22 @@ xcodebuild -project LifeScriptSolo.xcodeproj \
 
 | 用途 | URL |
 |------|-----|
-| 隐私政策 | https://lifescript.app/privacy |
-| 用户支持 | https://lifescript.app/support |
+| 隐私政策 | https://wpowen.github.io/wpprivacy/lifescript-solo/privacy.html |
+| 用户支持 | https://wpowen.github.io/wpprivacy/lifescript-solo/support.html |
+| 联系我们 | https://wpowen.github.io/wpprivacy/lifescript-solo/contact.html |
+| 服务条款 / 免责声明 | https://wpowen.github.io/wpprivacy/lifescript-solo/terms.html |
+| 内容分级说明 | https://wpowen.github.io/wpprivacy/lifescript-solo/content-rating.html |
 
 ### 部署方案
 
 **方案 A: 自有域名**
-将 `LegalPages/` 目录部署到 `lifescript.app` 域名。
+将 `LegalPages/` 目录部署到 GitHub Pages 或等价静态站点。
 
 **方案 B: GitHub Pages（备选）**
 1. 创建 GitHub 仓库（如 `lifescript-legal`）
 2. 将 `LegalPages/` 内容推送到该仓库
 3. 启用 GitHub Pages
-4. 更新 metadata 中的 URL 指向 `https://yourname.github.io/lifescript-legal/privacy.html`
+4. 更新 metadata 中的 URL 指向实际公开可访问的法律页面
 
 > **重要**: 如果 URL 返回 404，审核会被拒绝。提交前务必测试所有链接。
 
@@ -212,7 +215,7 @@ xcodebuild -project LifeScriptSolo.xcodeproj \
 - [x] 服务条款页面（中文 + 英文）
 - [x] 用户支持页面（中文 + 英文）
 - [x] 内容分级说明（中文 + 英文）
-- [ ] 法律页面 URL 可公开访问（当前 `lifescript.app` 仍未解析）
+- [ ] 法律页面 URL 可公开访问（当前使用 `wpowen.github.io/wpprivacy/lifescript-solo/...`）
 
 ### App Store Connect
 - [ ] App 已创建（Bundle ID 注册）
